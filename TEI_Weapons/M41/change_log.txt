@@ -1,0 +1,4 @@
+setup the model for export, its the fbx file in the anim folder.
+added starting hand animations, will adjust more when in game. 
+
+-Sw4l(theEngi) 

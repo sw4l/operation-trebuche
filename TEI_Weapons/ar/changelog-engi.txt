@@ -1,0 +1,3 @@
+-changed hand animations.
+-Added bolt animations.(still wip) 
+- Single shots are not audiable while in single fire mode. 
