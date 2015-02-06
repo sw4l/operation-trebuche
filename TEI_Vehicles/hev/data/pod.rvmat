@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture = "TEI_Vehicles\pod\data\pod_dt.paa";
+	texture = "TEI_Vehicles\hev\data\pod_dt.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture = "TEI_Vehicles\pod\data\pod_as.paa";
+	texture = "TEI_Vehicles\hev\data\pod_as.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "TEI_Vehicles\pod\data\pod_smdi.paa";
+	texture = "TEI_Vehicles\hev\data\pod_smdi.paa";
 	uvSource = "tex";
 	class uvTransform
 	{

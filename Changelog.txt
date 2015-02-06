@@ -1,0 +1,307 @@
+Post any and all changes you make to the source files in this text file with the following format
+
+*12/21/2014*
+Scorch052
+TEI_Weapons\BR
+	-Changed displayname to "BR55HB Battle Rifle"
+
+*12/25/2014*
+TheDog88
+TEI_Weapons
+-added fire geo to pistol
+-added materials to pistol
+-added materials to BR
+-added amterials to all 3 variants of shotguns
+
+TEI_Vehicles
+-fixed passenger turrets causing player to eject from 2 meters above ground causing damage
+
+TEI_units
+-added army pilot, light, medium, heavy variants to uniforms, as well as desert variants
+-added army vacuum helmet (full face) (desert, medic, woodland)
+-added army vacuum vest (neckbrace) (desert, medic, woodland)
+-added army medic
+-added marine vacuum soldier
+-updated standard marine
+-added marine knee pads (hidden selections attach_leftknee2)
+-added marine shoulder armor (attach_leftshoulder2)
+
+*12/29/2014*
+TheDog88
+TEI_Weapons
+-added magazine model for shotgun (thanks to Stirls for the quick model + texture)
+-added shadowlod 0 and 5 to BR
+-added shadowlod 0 and 5 to AR
+
+*12/30/2014*
+TheDog88
+TEI_UNSC_Units
+-added backfaces to all armor pieces for the odst uniform model
+-custom shapped the leg armor to better fit the ODST for a more natural look
+-moved the shoulder pieces on the odst in a bit more for a slimmer appearance
+
+
+*12/31/2014*
+TheDog88
+TEI_UNSC_Units
+-added backfaces to all armor pieces for the odst vest model. helmet done as well
+-moved the shoulder pieces on the odst in a bit more for a slimmer appearance
+-added the most up to date textures for the marines
+-added marine variants (pilot, light, medium, heavy, heavy/vacuum)
+-added odst variants (light, medium, heavy, off duty, sniper)
+-added new shadow to odst. this one fits more. starting to add armor shadows
+
+*01/01/2015*
+TheDog88
+TEI_UNSC_Units
+-added odst medic variant
+-added training ODST uniforms (recruit and instructor)
+-adjusted the straps on the soldier uniform to be more form fitting/ slightly slimmer appearance
+-added shadow lod to all units, vests, and uniforms however they need to be optimized
+-added backfacing to army/marine uniform
+
+SpaceNavy
+TEI_Core
+-changed TEI_Ins_Man_class to TEI_Ins_Man_ER_class (Eridanus Rebels faction)
+-added TEI_Ins_Man_URF_class (United Rebel Front faction)
+-added TEI_UNSC_Armored_class (tanks, APCs)
+-added TEI_Ins_Armored_class
+-added TEI_UNSC_Auto_class (UAVs)
+-added TEI_Ins_Auto_class
+-changed displayName "(Vehicles)" to "(Cars)"
+
+TEI_Vehicles
+-changed Insurrection M12 FAV side = 0;
+-fixed crew name error in all Warthogs
+
+TEI_Ins_Units
+-Added TEI_Ins_Units PBO folder
+-Added Insurrectionist "Rebel"
+
+
+*01/02/2015*
+TheDog88
+
+TEI_UNSC_Units
+-added backfacing to army/marine vest (all backfacing SHOULD be fixed at this point)
+-fixed uniforms showing up in virtual arsenal for all UNSC units
+
+*01/03/2015*
+TheDog88
+
+TEI_UNSC_Units
+-added army/marine pants hidden selection with a slim and normal variant to reduce FATNESS on the legs when wearing shinguards
+-changed capacity and weight levels for all UNSC Army/ Marine units
+-randomthigh attachment faces that are not attached to hidden selections removed
+-changed capacity and weight levels on odst
+
+*01/04/2015*
+TheDog88
+
+TEI_Weapons
+-updated the AR code to make the GL functional. code was fixed by engi
+-added and updated the weapons with zeros new textures
+
+*01/05/2015*
+SpaceNavy
+TEI_Misc
+	-added Crates
+	-added "TEI Magic Box"
+
+TEI_Core
+	-added TEI_Ammo_class
+
+TEI_Weapons
+	-added opticView2 to MA5B ammo counter p3d
+	-added scope view for MA5
+	-changed BR55 scope sight to HAMR reticle
+	-changed M6G scope sight to Nightstalker reticle
+	-changed zoom variables for all scopes
+	-fixed BR55 tracer magazine bugs
+
+TEI_UNSC_Units
+	-balanced armor/mass on Marines and Army uniforms, vests, and helmets
+
+*01/14/2015*
+SpaceNavy 
+TEI_Weapons
+	-added custom sounds to AR, BR, Pistol, Shotgun (shotgun not coded)
+	-added Engi/Sw4l's custom AR animations
+	-fixed weapon fire rates to match closer to game
+	-fixed burst fire issue on full auto with AR
+
+*01/24/2015*
+Thedog88
+TEI_UNSC_Units
+	army/marine
+	-changed uv mapping to match updated textures
+	-seperated uniform and armor to enable 1 texture for armor and 1 texture for the uniform
+	-renamed the uniform textures to armor
+	-added new uniform textures, higher quality
+	-updated config to use updated textures
+	-"addons" now change to proper texture (still need to define a few of the textures)
+
+*01/25/2015*
+SpaceNavy
+TEI_Weapons
+	M6G
+	-Fixed tracer magazine issue with M6G
+	MA5B
+	-Fixed FullAuto sounds for MA5BGL
+
+*01/26/2015*
+SpaceNavy
+TEI_Vehicles
+	Warthog
+	-Fixed MG Warthog gunner FOV issue
+	-Changed MG Warthog turret gun from 6.5 LMG to .50cal HMG with 500 RPM ROF
+	-Changed Innie Hog texture to more greyish/less pink verison
+
+*01/27/2015*
+SpaceNavy
+TEI_Vehicles
+	Warthog
+	-Adjusted elevation allowance of Warthog MG turret
+
+*01/27/2015*
+TheDog88
+TEI_Intro
+	-added intro cutscene to replace arma 3 default main menu
+
+TEI_Weapons
+	-added category "items"
+	-added biofoam to items (used the same as the Arma 3 FAK)
+	-added med pack to items (used the same as Arma 3 MediKit)
+	-added M41 SSR Rockets
+
+*01/28/2015*
+SpaceNavy
+TEI_Weapons
+	-fixed "M41_rockets" to "TEI_M41_rockets"; rockets working now
+TEI_Core
+	-added "TEI_UNSC_Man_Army_W_class" and "TEI_UNSC_Man_Army_D_class"
+	-add contents of TEI_Intro
+TEI_Intro
+	-contents moved to TEI_Core
+	-deleted TEI_Intro
+TEI_Vehicles
+	-added Innie MG Hog
+	-added camo2 hiddenselection to Hogs
+
+*01/28/2015*
+Scorch052
+TEI_Vehicles
+	-fixed HEV Animation
+	-Updated HEV Texture
+	-Added HEV Scripts (Very early test)
+TEI_UNSC_Units
+	-updated Army classnames/displaynames
+	-updated item mass/capacity
+
+*01/28/2015*
+TheDog88
+TEI_UNSC_Units
+	-marine addons (neckbrace and chest pouch) now showing again
+	-fixed marine kneepad shadow lod
+	-fixed selections on all army units
+	-odst uniform now visible in virtual arsenal, however, model not appearing	
+
+TEI_Core
+	-fixed error in intro asking for wrong pilot class name, no more error
+	-fixed intro music
+
+TEI_Vehicles
+	-changed the crew for all vehicles to be appropriate (including innie hog and desert variants)	
+	-edited HEV sqf's to have proper pathing
+
+*01/28/2015*
+SpaceNavy
+TEI_Ins_Units
+	-added Terrorist (OD) and (Brown)
+	-added Booniehat (Grey) and (Green)
+TEI_UNSC_Units
+	-updated Marine, Army/D, Army/W addon diffuse textures
+	-updated Marine Uniform armor diffuse texture
+
+*01/29/2015*
+SpaceNavy
+TEI_Weapons
+	-updated M41 Rocket Launcher configs (added missile types and fixed inheritance)
+
+Thedog88
+TEI_Weapons
+	-scaled the BR up by 5%
+	-applied proper texture to BR magazine when dropped on ground
+	-BR proxies for scopes shifted down slightly
+	-added magazine model for pistol mag when dropped
+
+*01/30/2015*
+SpaceNavy
+TEI_Ins_Units
+	-added different unit classes
+
+*01/31/2015*
+TheDog
+TEI_Vehicles
+	-changed pelican flight model to taru
+	-fixed view cargo gear, only wheels went up, not the full gear piece
+	-fixed view cargo glass, was not see through
+	-fixed fire geo material, should show sparks when shot now
+	-fixed shadow lod clipping through onto main lod causing shadows where there are none
+
+*02/01/2015*
+TheDog
+TEI_UNSC_Units
+	-fixed missing uniform_as.paa error
+	-fixed missing uniform_smdi.paa error
+
+TEI_Vehicles
+	pelican
+	-config overhaul for pelican
+	-fixed left cargo turret
+	-fixed flight model
+	-re-defined cargo turret turn radius
+	-fixed error "no entry 'bin\config.bin\cfgvehicles\TEI_Pelican_F/hitpoints/hithull.material'."
+	-fixed error "no entry 'bin\config.bin\cfgvehicles\TEI_Pelican_F/turrets/mainturret.primaryobserver'."
+	-tweaked window textures, still not done
+	-adjusted cargo+ cargo turret positioning to seat them properly
+	-fixed exhaust fumes
+
+*02/02/2015*
+TheDog
+TEI_Weapons
+	-added backpacks category
+	-added ILCS backpack with variants
+
+TEI_UNSC_Units
+	-instructor and recruit now show weapons (was a missing proxy issue)
+	-odst standard uniform now showing in virtual arsenal (uniform name had an error)
+	-vests now showing again in first person (a few proxies were deleted)
+
+
+*02/03/2015*
+TheDog
+TEI_Vehicles
+	-pelican co-pilot/gunner position working
+	-fixed error "no entry 'bin\config.bin\cfgvehicles\TEI_Pelican_F/turrets/copilotturret.soundservo'."
+	-fixed error "no entry 'bin\config.bin\cfgvehicles\TEI_Pelican_F/turrets/copilotturret.selectionfireanim'."
+	-pelican co-pilot/gunner turret+ optics+ vision modes fully operational
+	-changed max sling load capacity on the pelican, can now lift pretty much anything
+
+
+*02/04/2015*
+TheDog
+TEI_Vehicles
+	-created and added pelican wreckage model, pelican destruction fully functional
+	-pelican lod levels fixed. texture and animations appear properly at distance
+	-pelican cargo turrets (left and right seat) working properly
+TEI_Misc
+	-added soldier and odst grave
+
+*02/05/2015*
+TheDog
+TEI_Misc
+	-fixed soldier and odst grave shadows
+
+TEI_Vehicles
+	-pelican engine animations move and correctly

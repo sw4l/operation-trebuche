@@ -306,22 +306,22 @@ class cfgWeapons
 		{
 			uniformModel																		= "-";
 			uniformClass																		= "TEI_UNSC_ODST_Soldier";
-			containerClass																		= "Supply20";
-			mass																				= 45; //The weight and storage capacity of the uniform
+			containerClass																		= "Supply50";
+			mass																				= 60; //The weight and storage capacity of the uniform
 			modelSides[] 																		= {6};
 		};
 	};
 	class TEI_UNSC_ODST_uniform: TEI_UNSC_ODST_uniform_base
 	{
-		scope																					= 0;
+		scope																					= 2;
 		author																					= "Eridanus Insurrection Team";
 		displayName																				= "[UNSC] ODST Uniform";
 		class ItemInfo: UniformItem
 		{
 			uniformModel																		= "-";
-			uniformClass																		= "TEI_UNSC_ODST_Soldier_heavy";
-			containerClass																		= "Supply20";
-			mass																				= 45;
+			uniformClass																		= "TEI_UNSC_ODST_Soldier";
+			containerClass																		= "Supply60";
+			mass																				= 60;
 			modelSides[] 																		= {6};
 		};
 	};
@@ -334,8 +334,8 @@ class cfgWeapons
 		{
 			uniformModel																		= "-";
 			uniformClass																		= "TEI_UNSC_ODST_Soldier_light";
-			containerClass																		= "Supply20";
-			mass																				= 45;
+			containerClass																		= "Supply50";
+			mass																				= 50;
 			modelSides[] 																		= {6};
 		};
 	};
@@ -348,8 +348,8 @@ class cfgWeapons
 		{
 			uniformModel																		= "-";
 			uniformClass																		= "TEI_UNSC_ODST_Soldier_medium";
-			containerClass																		= "Supply20";
-			mass																				= 45;
+			containerClass																		= "Supply50";
+			mass																				= 50;
 			modelSides[] 																		= {6};
 		};
 	};
@@ -362,8 +362,8 @@ class cfgWeapons
 		{
 			uniformModel																		= "-";
 			uniformClass																		= "TEI_UNSC_ODST_Soldier_sniper";
-			containerClass																		= "Supply20";
-			mass																				= 45;
+			containerClass																		= "Supply50";
+			mass																				= 50;
 			modelSides[] 																		= {6};
 		};
 	};
@@ -376,8 +376,8 @@ class cfgWeapons
 		{
 			uniformModel																		= "-";
 			uniformClass																		= "TEI_UNSC_ODST_Soldier_medic";
-			containerClass																		= "Supply20";
-			mass																			= 45;
+			containerClass																		= "Supply60";
+			mass																			= 60;
 			modelSides[] 																		= {6};
 		};
 	};
@@ -391,7 +391,7 @@ class cfgWeapons
 			uniformModel																		= "-";
 			uniformClass																		= "TEI_UNSC_ODST_Soldier_instructor";
 			containerClass																		= "Supply20";
-			mass																			= 45;
+			mass																			= 30;
 			modelSides[] 																		= {6};
 		};
 	};
@@ -405,7 +405,7 @@ class cfgWeapons
 			uniformModel																		= "-";
 			uniformClass																		= "TEI_UNSC_ODST_Soldier_recruit";
 			containerClass																		= "Supply20";
-			mass																			= 45;
+			mass																			= 30;
 			modelSides[] 																		= {6};
 		};
 	};
@@ -484,6 +484,7 @@ class cfgWeapons
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\helmet_co.paa","TEI_UNSC_Units\ODST\data\helmet_co.paa"}; /// what texture is going to be used
 		hiddenSelectionsMaterials[]   															= {"TEI_UNSC_Units\ODST\data\helmet.rvmat","TEI_UNSC_Units\ODST\data\helmet.rvmat"}; /// what texture is going to be used
+		allowedFacewear[] 																		= {""};
 		class ItemInfo: HeadgearItem 
 		{
 			uniformModel   																		= "\TEI_UNSC_Units\ODST\helmet.p3d"; /// what model does the vest use

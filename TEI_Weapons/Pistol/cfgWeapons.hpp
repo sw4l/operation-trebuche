@@ -110,7 +110,7 @@ class CfgWeapons
 		displayName 								= "M6G Magnum";
 		descriptionShort 							= "12.7x40mm Magnum Pistol";
 		picture 									= "\TEI_Weapons\Pistol\data\pistol.paa";
-		magazines[] 								= {"TEI_8Rnd_127x40_Mag"};
+		magazines[] 								= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag_Tracer"};
 		modelOptics 								= "-";
 		modes[] 									= {"Single"};
 		dexterity 									= 1.5;
@@ -159,10 +159,11 @@ class CfgWeapons
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				begin1[] 							= {"\TEI_Weapons\Pistol\data\sounds\fire1.ogg",1.3,1,200};
-				soundBegin[] 						= {"begin1",1};
+				begin1[] 							= {"\TEI_Weapons\Pistol\data\sounds\Magnum_1.wss",1.3,1,200};
+				begin2[] 							= {"\TEI_Weapons\Pistol\data\sounds\Magnum_2.wss",1.3,1,200};
+				soundBegin[] 						= {"begin1",1,"begin1",1};
 			};
-			reloadTime 								= 0.15;
+			reloadTime 								= 0.3;
 			dispersion 								= 0.00005;
 			minRange 								= 2;
 			minRangeProbab 							= 0.20;

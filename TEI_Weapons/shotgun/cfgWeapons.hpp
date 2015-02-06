@@ -157,7 +157,7 @@ class CfgWeapons
 				begin1[] 							= {"\TEI_Weapons\Shotgun\data\sounds\fire1.ogg",1.3,1,200};
 				soundBegin[] 						= {"begin1",1};
 			};
-			reloadTime 								= 0.75;
+			reloadTime 								= 1.11; //0.75
 			dispersion 								= 0.00005;
 			minRange 								= 2;
 			minRangeProbab 								= 0.20;
