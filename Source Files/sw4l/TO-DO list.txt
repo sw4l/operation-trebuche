@@ -1,0 +1,5 @@
+-MA5B Assault Rifle hand positions
+-M41 Rocket Launcher hand positions (Zero's folder)
+
+-ODST HEV pod (done?)
+-Ammo crate sliding door (not completed)

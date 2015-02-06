@@ -1,0 +1,31 @@
+Arma uses opticsZoomMin and Max and is calculated in FOV measured in radians...
+ZoomMin is the smallest detail you can see and Max is the opposite.
+Example: 0.0001 is a higher zoom leve than 0.5
+
+
+
+BR55HB A2 Scope - 2-4x32 - opticsZoomMin = 0.0623 - opticsZoomMax = 0.083;
+
+M6 KFA-2 Scope - 2x - opticsZoomMax = 0.083;
+
+M6C/S VnSLS-V 6E Scope - 4x - opticsZoomMin = 0.0623;
+
+Ma5 Ammo Counter - ~1-3x variable - opticsZoomMin = 0.075 - opticsZoomMax = 1.0;
+
+DMR 3x Scope - 4x - opticsZoomMin = 0.0623;
+
+SMG M7 Reflex - 1x - opticsZoomMax = 1.0;
+
+Sniper Oracle-N Scope - 5-20x56 - opticsZoomMax = 0.0553 - opticsZoomMin = 0.0178;
+
+---------
+
+M16A4 ACOG (Arma2) - 4x32 - opticsZoomMin = 0.0623
+
+M24 Rifle (Arma2) - 10x - opticsZoomMin = 0.0249
+
+M4SPR? (Arma2) - ??x - opticsZoomMin = 0.0277 - opticsZoomMax = 0.083;
+
+M4_CQB (A2) - ??x - opticsZoomMin = 0.25 - opticsZoomMax = 1.1;
+
+M107 50cal (A2) - 4.5-14x - opticsZoomMax = 0.0553 - opticsZoomMin = 0.0178;

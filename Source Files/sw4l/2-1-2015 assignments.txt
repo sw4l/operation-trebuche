@@ -1,0 +1,13 @@
+before the end of this week:
+
+-the BR's bolt handle (there is no moving bolt i think and no ejection port :/)
+
+-the M6G's slide blowback and mag eject
+
+-the shotgun is fine for now i think. the reload animation needs tweaked but we dont need to worry about it right now.
+
+-the MA5 is pretty much done right now except for a small arm breaking thing where you lower the weapon. pretty low priority but something to look into.
+
+-we need to figure out how to make the MA5's GL sight flip down when not in use and flip up when you select the GL weapon.
+
+-only thing for the M41 rockets is the hand animations that you said you were finishing up.

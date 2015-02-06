@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<varlist name="Settings">
+	<varlist name="MapViewOptions">
+		<varlist name="HF">
+			<string name="IndexedPalette">Monochrome</string>
+		</varlist>
+		<varlist name="WS">
+			<string name="IndexedPalette">Thermal</string>
+		</varlist>
+		<varlist name="SH">
+			<string name="IndexedPalette">InverseBoolean</string>
+		</varlist>
+	</varlist>
+	<varlist name="Georeferencing">
+		<short name="EPSG_proj_code">4326</short>
+		<varlist name="Extents">
+			<double name="left">39.6054</double>
+			<double name="right">39.7387</double>
+			<double name="top">-4.00875</double>
+			<double name="bottom">-4.10708</double>
+			<short name="UnitCode">0</short>
+		</varlist>
+	</varlist>
+	<varlist name="HF">
+		<float name="HorizScale">92.6886</float>
+		<int name="nx">160</int>
+		<int name="ny">118</int>
+	</varlist>
+	<int name="SettingsVersion">2540</int>
+</varlist>

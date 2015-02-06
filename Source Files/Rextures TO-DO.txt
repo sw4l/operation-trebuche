@@ -1,0 +1,67 @@
+Check dropbox location: "DB > SpaceNavy > Images > Re-textures > Burgess" 
+to know what textures we already have and what color/texture they are using.
+
+Also, before you retexture anything, you should contact me so I can help you with references especially.
+
+FORMAT:
+"Texture to be retextured" W: (want) | H: (have)
+
+
+
+Colors: 
+
+Olive Drab (#3d392e)
+
+Tan (#5e4f3d)
+
+Brown (#261e16)
+
+Green (#2c3426)
+
+Blue (#317fad)
+
+Grey (#302925)
+
+
+
+Uniforms:
+
+[X] "Combat Fatigues" W: Olive drab (No camo, flags) | H: 0
+
+[X] "Combat Fatigues [AFF] (Officer)" W: Olive Drab (No camo, flags, ranks, ribbons) | H: 0
+
+[X] "Guerilla Garment" W: Tan | H: 2 (Grey and Olive Drab)
+
+[X] "Guerilla Apparel" W: 0 | H: 2 (Olive Drab and Green)
+
+[X] "Guerilla Smocks" W: 0 | H: 2 (Brown and Olive Drab)
+
+"Guerilla Outfit" W: Brown | H: 0
+
+[X] "Hunting Clothes" W: Olive Drab and Tan | H: 0
+
+[X] "Worker Coveralls" W: Blue | H: 0
+
+"Worn Clothes" W: Civilian looking clothes and colors, no strict colors or patterns here: | H: 0
+
+Vests:
+
+"GA Carrier GL Rig (Digi)" W: Olive drab
+
+"Vest (Press)" W: Olive drab
+
+Headgear:
+
+[X] "Booniehat" W: Olive Drab | H: 2 (Grey and Green)
+
+[X] "Patrol Cap" W: Olive Drab and Green | H: 2 (Brown and Black)
+
+"UNSC Helmet" W: Scratches and "beat up" look. | H: Olive Drab, Green and Tan (ask me especially before retexuting this)
+
+"Beret" W: Olive drab
+
+[X] "MICH" W: Olive Drab and Green | H: 0
+
+
+Facewear:
+
