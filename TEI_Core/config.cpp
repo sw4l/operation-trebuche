@@ -6,7 +6,7 @@ class CfgPatches //This configures the identification of the pbo to the game
 		weapons[] 																				= {};																								
 		requiredVersion 																		= 0.1;
 		version																					= 0.1;
-		requiredAddons[] 																		= {"Extended_EventHandlers", "cba_main"};
+		requiredAddons[] 																		= {"Extended_EventHandlers", "cba_main", "A3_Map_Stratis"};
 		author[] 																				= {"Eridanus Insurrection Team"};
 		fileName 																				= "TEI_Core.pbo";
 	};
@@ -37,6 +37,22 @@ class CfgFactionClasses //This configures the in-game factions
 		side 																					= 2;
 		icon 																					= "\TEI_Core\data\icon_Caa_ca.paa";
 		flag 																					= "\TEI_Core\Data\flag_Caa_ca.paa";
+	};
+	class TEI_NMPD
+	{
+		displayName 																			= "New Mombasa PD";
+		priority 																				= 1;
+		side 																					= 2;
+		//icon 																					= "\TEI_Core\data\icon_UNSC_ca.paa";
+		//flag 																					= "\TEI_Core\Data\flag_UNSC_ca.paa";
+	};
+	class TEI_UNSC_Civ
+	{
+		displayName 																			= "Civilians (UNSC)";
+		priority 																				= 1;
+		side 																					= 3;
+		//icon 																					= "\TEI_Core\data\icon_UNSC_ca.paa";
+		//flag 																					= "\TEI_Core\Data\flag_UNSC_ca.paa";
 	};
 };
 
@@ -72,6 +88,16 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 		displayName 																			= "Men (Army)";
 		author																					= "Eridanus Insurrection Team";
 	};
+	class TEI_UNSC_Man_Army_W_class
+	{
+		displayName 																			= "Men (Army/Woodland)";
+		author																					= "Eridanus Insurrection Team";
+	};
+	class TEI_UNSC_Man_Army_D_class
+	{
+		displayName 																			= "Men (Army/Desert)";
+		author																					= "Eridanus Insurrection Team";
+	};
 	class TEI_UNSC_Man_Marines_class
 	{
 		displayName 																			= "Men (Marines)";
@@ -79,7 +105,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class TEI_UNSC_Man_ODST_class
 	{
-		displayName 																			= "Men (ODSTs)";
+		displayName 																			= "Men (ODST)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_UNSC_Object_class
@@ -162,6 +188,16 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 		displayName 																			= "Insurrection (Ammo)";
 		author																					= "Eridanus Insurrection Team";
 	};
+	class TEI_NMPD_Man_class
+	{
+		displayName 																			= "Men (NMPD)";
+		author																					= "Eridanus Insurrection Team";
+	};
+	class TEI_UNSC_civ_Man_class
+	{
+		displayName 																			= "Men";
+		author																					= "Eridanus Insurrection Team";
+	};
 	class TEI_Object_class 
 	{
 		displayName 																			= "TEI (Objects)";
@@ -186,5 +222,26 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	{
 		displayName 																			= "TEI (Ammo)";
 		author																					= "Eridanus Insurrection Team";
+	};
+};
+
+	class CfgMissions
+{
+	class Cutscenes
+	{
+		class Stratis_intro1  //magic happens here
+		{
+			directory = "TEI_Core\scenes\TEI_Intro.Stratis";
+		};
+	};
+};
+
+class CfgMusic
+{
+	tracks[]={"inniedance"};
+	class TEI_InnieDance
+	{
+		name="TEI Innie Dance";
+		sound[]={"\TEI_Core\Music\Inniedance.ogg",1,1};
 	};
 };

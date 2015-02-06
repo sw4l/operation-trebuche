@@ -1,0 +1,1 @@
+ intro = [] execVM "intro.sqf";
