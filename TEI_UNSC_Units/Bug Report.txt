@@ -6,18 +6,24 @@ TEI_UNSC_Units
 	-all units, RV mats for "addons" needs a second look. seems to be an issue with them.
 	-all uniforms, vests, helmets need inventory icons
 	-all rv mats need to be re-done
-	
 	-left shoulder pad middle deforming check UVs and/or weights?
+	-UNSC Pilot uniform shadow lod errors
 
 	/// ODST
 	-Visor script not working properly (Disabled for now) [Scorch052]
 	-Recon Helmet Normal Maps broken [Scorch052]
 	-Icons needed
-	-Spawned with goggles on and they clipped through the visor 
+	-Spawned with goggles on and they clipped through the visor (allowedHeadgear values in config)
 	-change armor values for light, medium, heavy variants
 	-shadow lods need to be optimized
 	-backfacing on the ODST helmet visible with depolarized visor
 	-ODST (Heavy) has no pants in MP
+	-ODST (Medic) vest is grey/green instead of white
+	-ODST Vest does not show in 1st person
+	-ODST Helmet and Vest shadow lods are fuzzy ingame
+	-Two ODST Helmet [Recon] helmets exist; one polarizzed the other depolar
+	-Add depolarized visors with scope = 1 (or 0?);
+	-Recon Helmet rvmats are seriously fucked right now
 
 	/// Army
 	-Give olive drab/tan backpacks to variants
@@ -27,12 +33,11 @@ TEI_UNSC_Units
 	-change armor values for light, medium, heavy variants
 	-shadow lods need to be optimized
 	-move Woodland and Desert units to seperate classes to make Men (Army/Desert) and Men (Army/Woodland)- not all combined in Men (Army)
-	-old texture remains on pants in first person
 	-addons_as.paa was removed... why?
 	-shadow not showing for helmet and vest
-	-pilot has some glitch in the shadow
-	
+	-remove Medic vacuum vest and helmet
 
+	
 	/// Marines
 	-Give olive drab/tan backpacks to variant
 	-full face helmet visor is causing some weird glitch where the visor interior will be transparent/white
@@ -40,7 +45,6 @@ TEI_UNSC_Units
 	-change armor values for light, medium, heavy variants
 	-shadow lods need to be optimized
 	-Marine addon shoulder pad shadows are wrong and dark in absense of light
-
 	
 
 *Please put your name in brackets at the end of whatever issue(s) you are currently working on

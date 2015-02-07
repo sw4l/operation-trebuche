@@ -9,7 +9,6 @@ TEI_Weapons
 	/// BR55HB Battle Rifle
 
 >>!! THE GAME CRASHES WHEN YOU SELECT IT WITH ASDG JR ON !!<<
-
 	-Weapon Animations (Bolt, Mag Eject, etc.) do not work
 	-Icons needed
 	-Bullet type too strong? (one shots if you shoot in the legs)
@@ -20,9 +19,9 @@ TEI_Weapons
 
 	/// M6G Pistol
 	-Weapon Animations (slide blowback, Mag Eject, etc.) do not work
-	-custom animation needs to be created, left hand clipping through weapon
 	-shadow lod causing trouble, wont show	
 	-different custom scope sight
+	-secondary scope sight missing
 
 	/// M45 Shotgun
 	-remove Olive and Tan verisons for now
@@ -33,7 +32,6 @@ TEI_Weapons
 	/// MA5B Assault Rifle
 
 >>!! THE GAME CRASHES WHEN YOU SELECT IT WITH ASDG JR ON !!<<
-
 	-figure out how to make ammo counter work, get player magazine size replace counter with number texture ## = (https://community.bistudio.com/wiki/setObjectTextureGlobal)(https://community.bistudio.com/wiki/setObjectMaterial)
 	-shadow lod missing for ammo counter
 	-add no iron sight version of ammo counter as scope
@@ -48,10 +46,9 @@ TEI_Weapons
 	-geometery needs thinned out on one side (stands up when dropped sometimes)
 	-materials need changed (dirt instead of metal right now)
 	-rocket launcher case box normal map uses the Battle Rifle's - RVmat issue?
-	-needs adjusted hand animations
 	-add custom scope reticule and zoom level
 	-adjust missile ballistics to match closer to game
-	-new M41 animations are not working
+	-M41 hand animations are not working
 
 	/// biofoam
 	-needs icon image
