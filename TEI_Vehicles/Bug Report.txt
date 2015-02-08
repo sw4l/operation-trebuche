@@ -30,13 +30,10 @@ TEI_Vehicles
 >>>!!! when a player is in, the warthog locks and no one can get inside (Multiplayer tested) !!!<<<
 
 	/// Pelican
-	-needs rvmats
-	-config needs to be cleaned up
-	-window texture needs to be fixed to have the mirrored windows
 	-cockpit gadgets not working, honestly wouldnt bother with it as the cockpit will be overhauled later
-	-gear don't show as retracted in MP for other people
 	-pelican wreck texture needs to be blackened out (green wings)
 	-geometry needs added to the front landing gear
+	-can't hit the pelican with missiles (projectiles fly through)
 
 
 *Please put your name in brackets at the end of whatever issue(s) you are currently working on

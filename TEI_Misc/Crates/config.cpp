@@ -29,6 +29,14 @@ class CfgVehicles
 {
 	class ReammoBox;
 	class NATO_Box_Base;
+	class Box_NATO_Wps_F;
+	class Box_NATO_Ammo_F;
+	class Box_NATO_WpsSpecial_F;
+	class Box_NATO_AmmoOrd_F;
+	class Box_NATO_Grenades_F;
+	class Box_NATO_Support_F;
+	class Box_NATO_WpsLaunch_F;
+	class Box_NATO_AmmoVeh_F;
 	
 	
 	class TEI_Magic_Box: NATO_Box_Base
@@ -165,5 +173,116 @@ class CfgVehicles
 				count = 50;
 			};
 		};
+	};
+	class TEI_supply_pod: NATO_Box_Base
+	{
+		scope = 2;
+		vehicleClass = "TEI_Ammo_class";
+		displayName = "[UNSC] Supply Pod";
+		model = "\tei_misc\crates\Supply_pod.p3d";
+		author = "Eridanus Insurrection Team";
+		icon = "iconCrateWpns";
+		transportMaxWeapons = 5;
+		transportMaxMagazines = 500;
+	};
+	class TEI_UNSC_ammobox: Box_NATO_Ammo_F
+	{
+		scope = 2;
+		vehicleClass = "TEI_Ammo_class";
+		displayName = "[UNSC] Ammo Box";
+		author = "Eridanus Insurrection Team";
+		hiddenSelections[] = {"Camo_Signs","Camo"};
+		hiddenSelectionsTextures[] = {"TEI_Misc\Crates\data\TEI_UNSC_ammobox_signs_ca.paa","TEI_Misc\Crates\data\TEI_UNSC_ammobox_ca.paa"};
+		//icon = "iconCrateWpns";
+		//transportMaxWeapons = 5;
+		//transportMaxMagazines = 500;
+	};
+	class TEI_UNSC_weaponsbox: Box_NATO_Wps_F
+	{
+		scope = 2;
+		vehicleClass = "TEI_Ammo_class";
+		displayName = "[UNSC] Weapons Box";
+		author = "Eridanus Insurrection Team";
+		hiddenSelections[] = {"Camo_Signs","Camo"};
+		hiddenSelectionsTextures[] = {"TEI_Misc\Crates\data\TEI_UNSC_ammobox_signs_ca.paa","TEI_Misc\Crates\data\TEI_UNSC_ammobox_ca.paa"};
+		//transportMaxWeapons = 5;
+		//transportMaxMagazines = 500;
+	};
+	class TEI_UNSC_specialbox: Box_NATO_WpsSpecial_F
+	{
+		scope = 2;
+		vehicleClass = "TEI_Ammo_class";
+		displayName = "[UNSC] Special Weapons Box";
+		author = "Eridanus Insurrection Team";
+		hiddenSelections[] = {"Camo_Signs","Camo"};
+		hiddenSelectionsTextures[] = {"TEI_Misc\Crates\data\TEI_UNSC_ammobox_signs_ca.paa","TEI_Misc\Crates\data\TEI_UNSC_ammobox_ca.paa"};
+		//transportMaxWeapons = 5;
+		//transportMaxMagazines = 500;
+	};
+	class TEI_UNSC_ordbox: Box_NATO_AmmoOrd_F
+	{
+		scope = 2;
+		vehicleClass = "TEI_Ammo_class";
+		displayName = "[UNSC] Explosives Box";
+		author = "Eridanus Insurrection Team";
+		hiddenSelections[] = {"Camo_Signs","Camo"};
+		hiddenSelectionsTextures[] = {"TEI_Misc\Crates\data\TEI_UNSC_ammobox_signs_ca.paa","TEI_Misc\Crates\data\TEI_UNSC_ammobox_ca.paa"};
+		//transportMaxWeapons = 5;
+		//transportMaxMagazines = 500;
+	};
+	class TEI_UNSC_grenadebox: Box_NATO_Grenades_F
+	{
+		scope = 2;
+		vehicleClass = "TEI_Ammo_class";
+		displayName = "[UNSC] Grenades Box";
+		author = "Eridanus Insurrection Team";
+		hiddenSelections[] = {"Camo_Signs","Camo"};
+		hiddenSelectionsTextures[] = {"TEI_Misc\Crates\data\TEI_UNSC_ammobox_signs_ca.paa","TEI_Misc\Crates\data\TEI_UNSC_ammobox_ca.paa"};
+		//transportMaxWeapons = 5;
+		//transportMaxMagazines = 500;
+	};
+	class TEI_UNSC_supportbox: Box_NATO_Support_F
+	{
+		scope = 2;
+		vehicleClass = "TEI_Ammo_class";
+		displayName = "[UNSC] Support Box";
+		author = "Eridanus Insurrection Team";
+		hiddenSelections[] = {"Camo_Signs","Camo"};
+		hiddenSelectionsTextures[] = {"TEI_Misc\Crates\data\TEI_UNSC_ammobox_signs_ca.paa","TEI_Misc\Crates\data\TEI_UNSC_ammobox_ca.paa"};
+		//transportMaxWeapons = 5;
+		//transportMaxMagazines = 500;
+	};
+	class TEI_UNSC_itembox: Box_NATO_Support_F
+	{
+		scope = 2;
+		vehicleClass = "TEI_Ammo_class";
+		displayName = "[UNSC] Item Box";
+		author = "Eridanus Insurrection Team";
+		hiddenSelections[] = {"Camo_Signs","Camo"};
+		hiddenSelectionsTextures[] = {"TEI_Misc\Crates\data\TEI_UNSC_ammobox_signs_ca.paa","TEI_Misc\Crates\data\TEI_UNSC_ammobox_ca.paa"};
+		//transportMaxWeapons = 5;
+		//transportMaxMagazines = 500;
+	};
+	class TEI_UNSC_launcherbox: Box_NATO_WpsLaunch_F
+	{
+		scope = 2;
+		vehicleClass = "TEI_Ammo_class";
+		displayName = "[UNSC] Launchers Box";
+		author = "Eridanus Insurrection Team";
+		hiddenSelections[] = {"Camo_Signs","Camo"};
+		hiddenSelectionsTextures[] = {"TEI_Misc\Crates\data\TEI_UNSC_ammobox_signs_ca.paa","TEI_Misc\Crates\data\TEI_UNSC_ammobox_ca.paa"};
+		//transportMaxWeapons = 5;
+		//transportMaxMagazines = 500;
+	};
+	class TEI_UNSC_vehammobox: Box_NATO_AmmoVeh_F
+	{
+		scope = 2;
+		vehicleClass = "TEI_Ammo_class";
+		displayName = "[UNSC] Vehicle Ammo Box";
+		author = "Eridanus Insurrection Team";
+		hiddenSelections[] = {"Camo_Signs","Camo"};
+		hiddenSelectionsTextures[] = {"TEI_Misc\Crates\data\TEI_UNSC_ammobox_signs_ca.paa","A3\Weapons_F\Ammoboxes\data\AmmoVeh_CO.paa"};
+		//transportMaxWeapons = 5;
+		//transportMaxMagazines = 500;
 	};
 };
