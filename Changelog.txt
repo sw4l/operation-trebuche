@@ -305,3 +305,50 @@ TEI_Misc
 
 TEI_Vehicles
 	-pelican engine animations move and correctly
+
+
+*02/06/2015*
+TheDog
+TEI_Vehicles
+	-pelican glass fixed
+
+TEI_Weapons
+	-added como backpack
+
+TEI_misc
+	-added supply pod to ammocrates
+
+*02/07/2015*
+SpaceNavy
+TEI_Core
+	-added CfgGroups
+	-added Army Sentry (W) group to UNSCDF
+
+*02/08/2015*
+TheDog
+TEI_Vehicles
+	-changed flight model to Commanche
+	-added proper geo lod to pelican
+	-added proper fire geo lod to pelican
+	-added proper gey phys lod to pelican
+	-pelican no longer sits on belly, now sits on its landing gear
+	-fixed front wheel geo lod on pelican
+	-removed "test wing" add action on pelican
+	-added propper hit points to pelican
+
+*02/09/2015*
+SpaceNavy
+TEI_Vehicles
+	-edited Hull and HEngine hitpoints to allow survivalable landings
+
+Scorch052
+TEI_Vehicles
+	-added Gauss hog (turret selections fucked up cant figure it out)
+	-refined Warthog classnames
+	-fixed Warthog camo selections
+	-fixed HEV pod killing passenger on dismount
+	-fixed HEV script missing sounds
+
+Thedog88
+TEI_Vehicles
+	-pelican had 1 extra passenger seat, fixed. 

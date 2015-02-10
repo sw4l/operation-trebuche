@@ -1,7 +1,3 @@
-General 
-	-all png files should be removed only leaving tga or paa
-
-
 TEI_Weapons
 	
 	-All weapon inventory icons are fully transparent. you can barely make out the image. possibly a channel issue.
