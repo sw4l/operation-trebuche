@@ -151,8 +151,8 @@ while {!(_landed)} do
 	_collision = lineIntersects [getposATL _ODST_POD_DrawUp, getposATL _ODST_POD_DrawDown, _ODST_POD_DrawUp, _ODST_POD_DrawDown];
 	hintSilent format["ALTITUDE (ATL) = %1\nALTITUDE(ASL) = %2\nMagnetic Locks = %3", _height, _waterheight, _collision];
 	
-	[_pod, "ODST_POD_Wind1",50] call CBA_fnc_globalSay3d;
-	[_pod, "ODST_POD_Wind2",50] call CBA_fnc_globalSay3d;
+	[_pod, "ODST_POD_Wind1", 50] call CBA_fnc_globalSay3d;
+	[_pod, "ODST_POD_Wind2", 50] call CBA_fnc_globalSay3d;
 	
 	if ((_height < 125) && (_height > 75) && !(_chutedeployed)) then
 	{
@@ -211,8 +211,10 @@ _light setLightColor[0,1,0];
 
 sleep 1;
 
-_unit addaction [("<t color=""#DF0101"">" + ("/// EMERGENCY DOOR EJECT ///") +"</t>"),"\tei_vehicles\hev\scripts\ODST_POD_Door.sqf", "", 7, true, true, "", "_this == driver _target"];
+//_unit addaction [("<t color=""#DF0101"">" + ("/// EMERGENCY DOOR EJECT ///") +"</t>"),"\tei_vehicles\hev\scripts\ODST_POD_Door.sqf", "", 7, true, true, "", "_this == driver _target"];
 
 _pod setvehiclelock "UNLOCKED";
 _pod allowdamage true;
+waitUntil {vehicle _unit == _unit};
+sleep 1;
 _unit allowdamage true;

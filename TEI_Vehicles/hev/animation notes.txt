@@ -1,3 +1,0 @@
-main door needs to rotate upwards ~120 with the axis centered on the top connection
-
-the two side doors(door_L and door_R) should both rotate outwards 90 degrees

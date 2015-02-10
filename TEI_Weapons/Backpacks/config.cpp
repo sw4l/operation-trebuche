@@ -132,4 +132,20 @@ class cfgVehicles {
 				hiddenSelections[] 								= {"camo1","biofoam"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_tan_CO.paa"};
         };
+		class TEI_Como_pack_1 : B_Bergen_Base 
+		{
+				scope = public;
+				class TransportMagazines{};
+				class TransportWeapons{};
+				isbackpack = 1;
+				transportMaxWeapons = 1;
+				transportMaxMagazines = 4;
+				class DestructionEffects{};
+                		displayName = "[UNSC] Communications Pack";
+                		model = "\TEI_weapons\backpacks\como_ruck.p3d";
+				vehicleClass = "Backpacks";
+				allowedSlots[] = {901};
+				hiddenSelections[] 								= {"camo1"};
+				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\como_pack_co.paa"};
+        };
 };

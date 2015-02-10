@@ -76,6 +76,7 @@ class CfgVehicles
 			class HitBody;
 		};
 	};
+	
 	class TEI_M12_base: Car_F
 	{
 		mapSize										= 9.2;
@@ -89,7 +90,7 @@ class CfgVehicles
 		};
 		nameSound									= "veh_vehicle_MRAP_s";
 		author										= "Eridanus Insurrection Team";
-		displayName 								= "M12 FAV Warthog"; /// displayed in Editor
+		displayName 								= ""; /// displayed in Editor
 		class Library
 		{
 			libTextDesc								= "The M12 FAV Warthog is the UNSC's primary ground vehicle, used for its scouting and reconnaissance capacity, or as an integral part of a mechanized infantry unit; the M12 has been a part of the UNSC's armored vehicle fleet for fifty years, and is the most recognizable vehicle in their arsenal. It is a highly mobile, all-wheel-drive, all-wheel-steering, ICE-powered (Internal combustion engine) vehicle equipped with a contuously-variable transmission.";
@@ -105,7 +106,7 @@ class CfgVehicles
 		crewCrashProtection								= 0.015;
 		armor										= 120;
 		cost										= 500000;
-		canFloat 									= 1;
+		canFloat 									= 0;
 		threat[]									= {0.8,0.6,0.3};
 		camouflage 									= 4;
 		destrType 									= "DestructBuilding";
@@ -390,14 +391,14 @@ class CfgVehicles
 
 	class TEI_M12_FAV: TEI_M12_base
 	{
-		displayName									= "M12 FAV Warthog"; /// displayed in Editor
+		displayName									= "M12 FAV Warthog (Unarmed)"; /// displayed in Editor
 		scope										= 2;
 		author										= "Eridanus Insurrection Team";
 		faction										= "TEI_UNSC";
 		side										= 1;
 		transportSoldier								= 0;
 		crew										= "TEI_UNSC_Army_Rifleman_H_WDL";
-		hiddenSelections[] 								= {"camo1","camo2","attach_apc","attach_mg","attach_troop","attach_gauss"};
+		hiddenSelections[] 								= {"camo1","camo2","attach_apc","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[] 							= {"TEI_Vehicles\Warthog\data\warthog_co.paa"};
 		vehicleClass									= "TEI_UNSC_Vehicle_class";
 		class CargoTurret;
@@ -453,49 +454,50 @@ class CfgVehicles
     };
 	class TEI_M12_FAV_black: TEI_M12_FAV
 	{
-		displayName									= "M12 FAV Warthog (Black)"; /// displayed in Editor
+		displayName									= "M12 FAV Warthog (Unarmed) [Black]"; /// displayed in Editor
 		author										= "Eridanus Insurrection Team";
-		hiddenSelections[] 								= {"camo1","camo2","attach_apc","attach_mg","attach_troop","attach_gauss"};
+		hiddenSelections[] 								= {"camo1","camo2","attach_apc","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[] 							= {"TEI_Vehicles\Warthog\data\warthog_black_co.paa"};
 	};
 	class TEI_M12_FAV_tan: TEI_M12_FAV
 	{
-		displayName									= "M12 FAV Warthog (Tan)"; /// displayed in Editor
+		displayName									= "M12 FAV Warthog (Unarmed) [Tan]"; /// displayed in Editor
 		crew										= "TEI_UNSC_Army_Rifleman_H_DES";
 		author										= "Eridanus Insurrection Team";
-		hiddenSelections[] 								= {"camo1","camo2","attach_apc","attach_mg","attach_troop","attach_gauss"};
+		hiddenSelections[] 								= {"camo1","camo2","attach_apc","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[] 							= {"TEI_Vehicles\Warthog\data\warthog_tan_co.paa"};
 	};
 	class TEI_M12_FAV_snow: TEI_M12_FAV
 	{
-		displayName									= "M12 FAV Warthog (Snow)"; /// displayed in Editor
+		displayName									= "M12 FAV Warthog (Unarmed) [Snow]"; /// displayed in Editor
 		author										= "Eridanus Insurrection Team";
-		hiddenSelections[] 								= {"camo1","camo2","attach_apc","attach_mg","attach_troop","attach_gauss"};
+		hiddenSelections[] 								= {"camo1","camo2","attach_apc","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[] 							= {"TEI_Vehicles\Warthog\data\warthog_snow_co.paa"};
 	};
 	class TEI_M12_FAV_ins: TEI_M12_FAV
 	{
-		displayName									= "M12 FAV Warthog (Insurrection)"; /// displayed in Editor
+		displayName									= "M12 FAV Warthog (Unarmed) [Innie]"; /// displayed in Editor
 		author										= "Eridanus Insurrection Team";
-		hiddenSelections[] 								= {"camo1","camo2","attach_apc","attach_mg","attach_troop","attach_gauss"};
-		hiddenSelectionsTextures[] 							= {"TEI_Vehicles\Warthog\data\warthog_ins_co.paa"};
-		vehicleClass									= "TEI_Ins_Vehicle_class";
+		hiddenSelections[] 							= {"camo1","camo2","attach_apc","attach_mg","attach_troop"};
+		hiddenSelectionsTextures[] 					= {"TEI_Vehicles\Warthog\data\warthog_ins_co.paa"};
+		vehicleClass								= "TEI_Ins_Vehicle_class";
 		side										= 0;
 		crew										= "TEI_Ins_ER_Rebel_green";
 		faction										= "TEI_Ins";
 	};
+	
 	class TEI_M813_TT: TEI_M12_base
 	{
-		displayName									= "M831 TT Troophog"; /// displayed in Editor
+		displayName									= "M831 TT Warthog (Transport)"; /// displayed in Editor
 		scope										= 2;
 		author										= "Eridanus Insurrection Team";
 		faction										= "TEI_UNSC";
 		side										= 1;
-		transportSoldier								= 0;
+		transportSoldier							= 0;
 		crew										= "TEI_UNSC_Army_Rifleman_H_WDL";
-		hiddenSelections[] 								= {"camo1","camo2","attach_apc","attach_mg","attach_gauss"};
-		hiddenSelectionsTextures[] 							= {"TEI_Vehicles\Warthog\data\warthog_co.paa"};
-		vehicleClass									= "TEI_UNSC_Vehicle_class";
+		hiddenSelections[] 							= {"camo1","camo2","attach_apc","attach_mg"};
+		hiddenSelectionsTextures[] 					= {"TEI_Vehicles\Warthog\data\warthog_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_co.paa"};
+		vehicleClass								= "TEI_UNSC_Vehicle_class";
 		class CargoTurret;
 		class Turrets:Turrets
 		{
@@ -605,36 +607,36 @@ class CfgVehicles
     	};
 	class TEI_M813_TT_black: TEI_M813_TT
 	{
-		displayName									= "M831 TT Troophog (Black)"; /// displayed in Editor
+		displayName									= "M831 TT Warthog (Transport) [Black]"; /// displayed in Editor
 		author										= "Eridanus Insurrection Team";
-		hiddenSelections[] 								= {"camo1","camo2","attach_apc","attach_mg","attach_gauss"};
-		hiddenSelectionsTextures[] 							= {"TEI_Vehicles\Warthog\data\warthog_black_co.paa"};
+		hiddenSelections[] 							= {"camo1","camo2","attach_apc","attach_mg"};
+		hiddenSelectionsTextures[] 					= {"TEI_Vehicles\Warthog\data\warthog_black_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_black_co.paa"};
 	};
 	class TEI_M813_TT_tan: TEI_M813_TT
 	{
-		displayName									= "M831 TT Troophog (Tan)"; /// displayed in Editor
+		displayName									= "M831 TT Warthog (Transport) [Tan]"; /// displayed in Editor
 		crew										= "TEI_UNSC_Army_Rifleman_H_DES";
 		author										= "Eridanus Insurrection Team";
-		hiddenSelections[] 								= {"camo1","camo2","attach_apc","attach_mg","attach_gauss"};
-		hiddenSelectionsTextures[] 							= {"TEI_Vehicles\Warthog\data\warthog_tan_co.paa"};
+		hiddenSelections[] 								= {"camo1","camo2","attach_apc","attach_mg"};
+		hiddenSelectionsTextures[] 							= {"TEI_Vehicles\Warthog\data\warthog_tan_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_tan_co.paa"};
 	};
 	class TEI_M813_TT_snow: TEI_M813_TT
 	{
-		displayName									= "M831 TT Troophog (Snow)"; /// displayed in Editor
+		displayName									= "M831 TT Warthog (Transport) [Snow]"; /// displayed in Editor
 		author										= "Eridanus Insurrection Team";
-		hiddenSelections[] 								= {"camo1","camo2","attach_apc","attach_mg","attach_gauss"};
-		hiddenSelectionsTextures[] 							= {"TEI_Vehicles\Warthog\data\warthog_snow_co.paa"};
+		hiddenSelections[] 								= {"camo1","camo2","attach_apc","attach_mg"};
+		hiddenSelectionsTextures[] 							= {"TEI_Vehicles\Warthog\data\warthog_snow_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_snow_co.paa"};
 	};
 
 
-	class TEI_M12_LRV_LAAG: TEI_M12_FAV
+	class TEI_M12_LRV: TEI_M12_FAV
 	{
-		displayName 								= "M12 LRV LAAG Warthog";
+		displayName 								= "M12 LRV Warthog (MG)";
 		author										= "Eridanus Insurrection Team";
 		faction										= "TEI_UNSC";
 		transportSoldier							= 0;
-		hiddenSelections[] 							= {"camo1","camo2","attach_apc","attach_troop","attach_gauss"};
-		hiddenSelectionsTextures[] 					= {"TEI_Vehicles\Warthog\data\warthog_co.paa"};
+		hiddenSelections[] 							= {"camo1","camo2","attach_apc","attach_troop"};
+		hiddenSelectionsTextures[] 					= {"TEI_Vehicles\Warthog\data\warthog_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_co.paa"};
 		class RenderTargets
 		{
 			class FrontView
@@ -700,13 +702,13 @@ class CfgVehicles
 		};
 		class Turrets: Turrets
 		{
-						class CargoTurret_01:CargoTurret
+			class CargoTurret_01:CargoTurret
 			{
 				gunnerAction						= "passenger_inside_2";
 				gunnerCompartments					= "Compartment1";
 				memoryPointsGetInGunner				= "pos cargo";
 				memoryPointsGetInGunnerDir			= "pos cargo dir";
-				memoryPointGunnerOptics= "";
+				memoryPointGunnerOptics				= "";
 				gunnerName							= "Front Passenger";
 				proxyIndex							= 1;
 				maxElev								= 10;
@@ -728,8 +730,8 @@ class CfgVehicles
 				gunAxis								= "Osa Hlavne";
 				gunBeg 								= "Usti hlavne";
 				gunEnd 								= "konec hlavne";
-				minElev 							= -8; //was -4
-				maxElev 							= 16; //was 10
+				minElev 							= -8;
+				maxElev 							= 16;
 				minTurn 							= -360;
 				maxTurn 							= 360;
 				initTurn							= 0;
@@ -752,11 +754,9 @@ class CfgVehicles
 				gunnerLeftHandAnimName				= "trigger";
 				gunnerRightHandAnimName				= "trigger";
 				memoryPointGun						= "machinegun";
-				//weapons[] 							= {"HMG_127"};
 				weapons[] 							= {"TEI_M41_LAAG"};
 				magazines[] 						= {"500Rnd_127x99_mag_Tracer_Yellow"};
 				memoryPointGunnerOptics 			= "gunnerview";
-				//memoryPointGunnerOptics 			= "gunneroutview";
 				gunnerOpticsShowCursor 				= true;
 				castGunnerShadow 					= true;
 				startEngine							= false;
@@ -772,262 +772,212 @@ class CfgVehicles
 			};
 		};
 	};
-	class TEI_M12_LRV_LAAG_black: TEI_M12_LRV_LAAG
+	class TEI_M12_LRV_black: TEI_M12_LRV
 	{
-		displayName									= "M12 LRV LAAG Warthog (Black)"; /// displayed in Editor
+		displayName									= "M12 LRV Warthog (MG) [Black]"; /// displayed in Editor
 		author										= "Eridanus Insurrection Team";
-		hiddenSelections[] 							= {"camo1","camo2","attach_apc","attach_troop","attach_gauss"};
-		hiddenSelectionsTextures[] 							= {"TEI_Vehicles\Warthog\data\warthog_black_co.paa"};
+		hiddenSelections[] 							= {"camo1","camo2","attach_apc","attach_troop"};
+		hiddenSelectionsTextures[] 					= {"TEI_Vehicles\Warthog\data\warthog_black_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_black_co.paa"};
 	};
-	class TEI_M12_LRV_LAAG_tan: TEI_M12_LRV_LAAG
+	class TEI_M12_LRV_tan: TEI_M12_LRV
 	{
-		displayName									= "M12 LRV LAAG Warthog (Tan)"; /// displayed in Editor
+		displayName									= "M12 LRV Warthog (MG) [Tan]"; /// displayed in Editor
 		crew										= "TEI_UNSC_Army_Rifleman_H_DES";
 		author										= "Eridanus Insurrection Team";
-		hiddenSelections[] 							= {"camo1","camo2","attach_apc","attach_troop","attach_gauss"};
-		hiddenSelectionsTextures[] 							= {"TEI_Vehicles\Warthog\data\warthog_tan_co.paa"};
+		hiddenSelections[] 							= {"camo1","camo2","attach_apc","attach_troop"};
+		hiddenSelectionsTextures[] 					= {"TEI_Vehicles\Warthog\data\warthog_tan_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_tan_co.paa"};
 	};
-	class TEI_M12_LRV_LAAG_snow: TEI_M12_LRV_LAAG
+	class TEI_M12_LRV_snow: TEI_M12_LRV
 	{
-		displayName									= "M12 LRV LAAG Warthog (Snow)"; /// displayed in Editor
+		displayName									= "M12 LRV Warthog (MG) [Snow]"; /// displayed in Editor
 		author										= "Eridanus Insurrection Team";
-		hiddenSelections[] 							= {"camo1","camo2","attach_apc","attach_troop","attach_gauss"};
-		hiddenSelectionsTextures[] 							= {"TEI_Vehicles\Warthog\data\warthog_snow_co.paa"};
+		hiddenSelections[] 							= {"camo1","camo2","attach_apc","attach_troop"};
+		hiddenSelectionsTextures[] 					= {"TEI_Vehicles\Warthog\data\warthog_snow_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_snow_co.paa"};
 	};
-	class TEI_M12_LRV_LAAG_ins: TEI_M12_LRV_LAAG
+	class TEI_M12_LRV_ins: TEI_M12_LRV
 	{
-		displayName									= "M12 LRV LAAG Warthog (Insurrection)"; /// displayed in Editor
+		displayName									= "M12 LRV Warthog (MG) [Innie]"; /// displayed in Editor
 		author										= "Eridanus Insurrection Team";
-		hiddenSelections[] 							= {"camo1","camo2","attach_apc","attach_troop","attach_gauss"};
-		hiddenSelectionsTextures[] 							= {"TEI_Vehicles\Warthog\data\warthog_ins_co.paa","warthog_addons_ins_CO.paa"};
-		vehicleClass									= "TEI_Ins_Vehicle_class";
+		hiddenSelections[] 							= {"camo1","camo2","attach_apc","attach_troop"};
+		hiddenSelectionsTextures[] 					= {"TEI_Vehicles\Warthog\data\warthog_ins_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_ins_CO.paa"};
+		vehicleClass								= "TEI_Ins_Vehicle_class";
 		side										= 0;
 		crew										= "TEI_Ins_ER_Rebel_tan";
 		faction										= "TEI_Ins";
 	};
-	/*class UNSC_warthog_AA:UNSC_warthog_base
+	
+	class TEI_M12G1_LRV: TEI_M12_LRV
 	{
-	model 	= "\unsc_warthog\models\UNSC_Warthog_AA.p3d";  /// simple path to model
-	displayName = "M12R LAAV Missile-hog"; /// displayed in Editor
-     	scope	= 2;
-	author="Eridanus Insurrection Team";
-	faction="UNSC";
-	side=1;
-	transportSoldier=2;
-	armor=130;
-	cost=600000;
-	threat[]={1,0.8,0.3};
-	hiddenSelections[]={};
-	crew="B_Pilot_F";
-	class Turrets: Turrets										/// just a copilot seat as a turret to enable taking the controls
+		model 										= "TEI_Vehicles\Warthog\Warthog_G.p3d";
+		displayName 								= "M12G1 LRV Warthog (Gauss)";
+		hiddenSelections[] 							= {"camo1","camo2"};
+		hiddenSelectionsTextures[] 					= {"TEI_Vehicles\Warthog\data\warthog_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_CO.paa"};
+		class RenderTargets
 		{
+			class FrontView
+			{
+				renderTarget						= "rendertarget0";
+				class CameraView1
+				{
+					pointPosition					= "PIP0_pos";
+					pointDirection					= "PIP0_dir";
+					renderQuality					= 2;
+					renderVisionMode				= 0;
+					fov								= 0.7;
+				};
+			};
+            		class RearView
+			{
+				renderTarget						= "rendertarget1";
+				class CameraView1
+				{
+					pointPosition					= "PIP1_pos";
+					pointDirection					= "PIP1_dir";
+					renderQuality					= 2;
+					renderVisionMode				= 0;
+					fov								= 0.7;
+				};
+			};
+            		class leftMirror
+			{
+				renderTarget						= "rendertarget2";
+				class CameraView1
+				{
+					pointPosition					= "PIP2_pos";
+					pointDirection					= "PIP2_dir";
+					renderQuality					= 2;
+					renderVisionMode				= 0;
+					fov								= 0.7;
+				};
+			};
+            		class rightMirror
+			{
+				renderTarget						= "rendertarget3";
+				class CameraView1
+				{
+					pointPosition					= "PIP3_pos";
+					pointDirection					= "PIP3_dir";
+					renderQuality					= 2;
+					renderVisionMode				= 0;
+					fov								= 0.7;
+				};
+			};
+            		class GunScreen
+			{
+				renderTarget						= "rendertarget4";
+				class CameraView1
+				{
+					pointPosition					= "PIP3_pos";
+					pointDirection					= "PIP3_dir";
+					renderQuality					= 2;
+					renderVisionMode				= 0;
+					fov						= 0.5;
+				};
+			};
+		};
+		class Turrets: Turrets
+		{
+			class CargoTurret_01:CargoTurret
+			{
+				gunnerAction						= "passenger_inside_2";
+				gunnerCompartments					= "Compartment1";
+				memoryPointsGetInGunner				= "pos cargo";
+				memoryPointsGetInGunnerDir			= "pos cargo dir";
+				memoryPointGunnerOptics				= "";
+				gunnerName							= "Front Passenger";
+				proxyIndex							= 1;
+				maxElev								= 10;
+				minElev								= -40;
+				maxTurn								= 95;
+				minTurn								= -95;
+				isPersonTurret						= 1;
+				class dynamicViewLimits
+				{
+					CargoTurret_02[]				= {-65,95};
+				};
+			};
 			class MainTurret:MainTurret
 			{
-			body = "OtocVez";
-			gun = "OtocHlaven";
-			missileBeg= "spice rakety" 
-			missileEnd= "konec rakety" 
-			minElev = -4;
-			maxElev = 50;
-			minTurn = -360;
-			maxTurn = 360;
-			initTurn=0;
-			turretAxis = "OsaVeze";
-                 	maxHorizontalRotSpeed= 1.2;
-                  	maxVerticalRotSpeed= 1.2;
-			gunnerAction="driver_boat01";
-			gunnerInAction= "driver_boat01";
-			gunnerGetInAction= "GetInMRAP_01";
-			gunnerGetOutAction= "GetOutMRAP_01"; 
-			gunnerName= "Gunner"; 
-			hideWeaponsGunner= true;
-			soundServo[]={"",0.01,1};
-			outGunnerMayFire=1;
-			commanding=-1;
-			primaryGunner=1;
-			memoryPointsGetInGunner="Pos Gunner";
-			memoryPointsGetInGunnerDir="Pos Gunner dir";
-			gunnerLeftHandAnimName="trigger";
-			gunnerRightHandAnimName="trigger";
-			weapons[] = {"missiles_titan_static"};	/// array of various vehicle weapons mounted on the heli;
-			magazines[] = {"1Rnd_GAA_missiles","1Rnd_GAA_missiles","1Rnd_GAA_missiles","1Rnd_GAA_missiles","1Rnd_GAA_missiles","1Rnd_GAA_missiles"}; /// array of corresponding magazines;
-			memoryPointGunnerOptics = "gunnerview";
-			gunnerOpticsShowCursor = true;
-			castGunnerShadow = 1;
-			memoryPointLMissile = "missile_1";	/// from what memory point should the even missiles start
-			memoryPointRMissile = "missile_2";	/// from what memory point should the odd missiles start
-			gunnerOpticsModel="";
-			gunnerOpticsEffect[]={"TankCommanderOptics1","BWTV"};
-			gunnerForceOptics=0;
-			turretInfoType="RscOptics_Heli_Attack_01_gunner";
-			discreteDistance[]={100,200,300,400,500,600,700,800,1000,1200,1500,1800,2100};
-			discreteDistanceInitIndex=5;
-				class OpticsIn
+				body 								= "mainturret";
+				gun 								= "maingun";
+				animationsourcebody					= "mainturret";
+				animationSourceGun 					= "maingun";
+				gunAxis								= "Osa Hlavne";
+				gunBeg 								= "Usti hlavne";
+				gunEnd 								= "konec hlavne";
+				minElev 							= -8;
+				maxElev 							= 16;
+				minTurn 							= -360;
+				maxTurn 							= 360;
+				initTurn							= 0;
+				turretAxis 							= "OsaVeze";
+				maxHorizontalRotSpeed				= 1.2;
+				maxVerticalRotSpeed					= 1.2;
+				gunnerAction						= "driver_boat01";
+				gunnerInAction						= "driver_boat01";
+				gunnerGetInAction					= "GetInMRAP_01";
+				gunnerGetOutAction					= "GetOutMRAP_01"; 
+				gunnerName							= "Gunner"; 
+				hideWeaponsGunner					= false;
+				soundServo[]						= {"",0.01,1};
+				outGunnerMayFire					= 1;
+				inGunnerMayFire 					= 1;
+				commanding							= 1;
+				primaryGunner						= 1;
+				memoryPointsGetInGunner				= "Pos Gunner";
+				memoryPointsGetInGunnerDir			= "Pos Gunner dir";
+				gunnerLeftHandAnimName				= "trigger";
+				gunnerRightHandAnimName				= "trigger";
+				memoryPointGun						= "machinegun";
+				weapons[] 							= {"cannon_125mm"};
+				magazines[] 						= {"12Rnd_125mm_HE"};
+				memoryPointGunnerOptics 			= "gunnerview";
+				gunnerOpticsShowCursor 				= true;
+				castGunnerShadow 					= true;
+				startEngine							= false;
+				enableManualFire 					= false;
+				gunnerOpticsModel 					= "a3\weapons_f\Reticle\optics_empty";
+				gunnerForceOptics 					= 0;
+				class ViewGunner: ViewOptics
 				{
-					class Wide
-					{
-						opticsDisplayName="W";
-						initAngleX=0;
-						minAngleX=-30;
-						maxAngleX=30;
-						initAngleY=0;
-						minAngleY=-100;
-						maxAngleY=100;
-						initFov=0.466;
-						minFov=0.466;
-						maxFov=0.466;
-						visionMode[]={"Normal","NVG","Ti"};
-						thermalMode[]={0,1};
-						gunnerOpticsModel="\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_wide_F";
-					};
-					class Medium:Wide
-					{
-						opticsDisplayName="M";
-						initFov=0.093;
-						minFov=0.093;
-						maxFov=0.093;
-						gunnerOpticsModel="\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_medium_F";
-					};
-					class Narrow:Wide
-					{
-						opticsDisplayName="N";
-						gunnerOpticsModel="\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_narrow_F";
-						initFov=0.029;
-						minFov=0.029;
-						maxFov=0.029;
-					};
-				};
-				class OpticsOut
-				{
-					class Monocular
-					{
-						initAngleX=0;
-						minAngleX=-30;
-						maxAngleX=30;
-						initAngleY=0;
-						minAngleY=-100;
-						maxAngleY=100;
-						initFov=1.1;
-						minFov=0.133;
-						maxFov=1.1;
-						visionMode[]={"Normal","NVG"};
-						gunnerOpticsModel="";
-						gunnerOpticsEffect[]={};
-					};
+					initFov = 0.7;
+					minFov = 0.25;
+					maxFov = 1.1;
 				};
 			};
 		};
 	};
-	class UNSC_warthog_Gauss:UNSC_warthog_base
+	
+	/*class TEI_M12R_LRV: TEI_M12_LRV
 	{
-	model 	= "\unsc_warthog\models\UNSC_Warthog_gauss.p3d";  /// simple path to model
-	displayName = "M12G1 LAAV Gauss-hog"; /// displayed in Editor
-     	scope	= 2;
-	author="Eridanus Insurrection Team";
-	faction="UNSC";
-	side=1;
-	transportSoldier=2;
-	armor=130;
-	cost=600000;
-	threat[]={1,0.8,0.3};
-	hiddenSelections[]={};
-	crew="B_Pilot_F";
-	class Turrets: Turrets										/// just a copilot seat as a turret to enable taking the controls
+	model 											= "TEI_Vehicles\Warthog\Warthog_AA.p3d";
+	displayName 									= "M12R LRV Warthog (AA)";
+	class Turrets: Turrets
 		{
 			class MainTurret:MainTurret
 			{
-
-			body = "OtocVez";
-			gun = "OtocHlaven";
-			gunAxis = "Osa Hlavne";
-			gunBeg = "usti hlavne";
-			gunEnd = "konec hlavne";
-			minElev = -4;
-			maxElev = 10;
-			minTurn = -360;
-			maxTurn = 360;
-			initTurn=0;
-			turretAxis = "OsaVeze";
-                 	maxHorizontalRotSpeed= 1.2;
-                  	maxVerticalRotSpeed= 1.2;
-			gunnerAction="driver_boat01";
-			gunnerInAction= "driver_boat01";
-			gunnerGetInAction= "GetInMRAP_01";
-			gunnerGetOutAction= "GetOutMRAP_01"; 
-			gunnerName= "Gunner"; 
-			hideWeaponsGunner= true;
-			soundServo[]={"",0.01,1};
-			outGunnerMayFire=1;
-			commanding=-1;
-			primaryGunner=1;
-			memoryPointsGetInGunner="Pos Gunner";
-			memoryPointsGetInGunnerDir="Pos Gunner dir";
-			gunnerLeftHandAnimName="trigger";
-			gunnerRightHandAnimName="trigger";
-			memoryPointGun="machinegun";
-			weapons[] = {"cannon_125mm"};	/// array of various vehicle weapons mounted on the heli;
-			magazines[] = {"12Rnd_125mm_HE"}; /// array of corresponding magazines;
-			memoryPointGunnerOptics = "gunnerview";
-			gunnerOpticsShowCursor = true;
-			castGunnerShadow = 1;
+			missileBeg								= "spice rakety";
+			missileEnd								= "konec rakety";
+			weapons[] 								= {"missiles_titan_static"};
+			magazines[] 							= {"1Rnd_GAA_missiles","1Rnd_GAA_missiles","1Rnd_GAA_missiles","1Rnd_GAA_missiles","1Rnd_GAA_missiles","1Rnd_GAA_missiles"};
+			memoryPointLMissile 					= "missile_1";
+			memoryPointRMissile 					= "missile_2";
 			};
 		};
 	};
-	class UNSC_warthog_at:UNSC_warthog_base
+	
+	class TEI_M12A1_LRV: TEI_M12_LRV
 	{
-	model 	= "\unsc_warthog\models\UNSC_Warthog_at.p3d";  /// simple path to model
-	displayName = "M12A1 LAAV Rocket-hog"; /// displayed in Editor
-     	scope	= 2;
-	author="Eridanus Insurrection Team";
-	faction="UNSC";
-	side=1;
-	transportSoldier=2;
-	armor=130;
-	cost=600000;
-	threat[]={1,0.8,0.3};
-	hiddenSelections[]={};
-	crew="B_Pilot_F";
-	class Turrets: Turrets										/// just a copilot seat as a turret to enable taking the controls
+	model 											= "TEI_Vehicles\Warthog\Warthog_AT.p3d";
+	displayName 									= "M12A1 LRV Warthog (AT)";
+	class Turrets: Turrets
 		{
 			class MainTurret:MainTurret
 			{
-
-			body = "OtocVez";
-			gun = "OtocHlaven";
-			gunAxis = "Osa Hlavne";
-			gunBeg = "usti hlavne";
-			gunEnd = "konec hlavne";
-			minElev = -4;
-			maxElev = 10;
-			minTurn = -360;
-			maxTurn = 360;
-			initTurn=0;
-			turretAxis = "OsaVeze";
-                 	maxHorizontalRotSpeed= 1.2;
-                  	maxVerticalRotSpeed= 1.2;
-			gunnerAction="driver_boat01";
-			gunnerInAction= "driver_boat01";
-			gunnerGetInAction= "GetInMRAP_01";
-			gunnerGetOutAction= "GetOutMRAP_01"; 
-			gunnerName= "Gunner"; 
-			hideWeaponsGunner= true;
-			soundServo[]={"",0.01,1};
-			outGunnerMayFire=1;
-			commanding=-1;
-			primaryGunner=1;
-			memoryPointsGetInGunner="Pos Gunner";
-			memoryPointsGetInGunnerDir="Pos Gunner dir";
-			gunnerLeftHandAnimName="trigger";
-			gunnerRightHandAnimName="trigger";
-			memoryPointGun="machinegun";
-			weapons[] = {"missiles_titan_static"};	/// array of various vehicle weapons mounted on the heli;
-			magazines[] = {"1Rnd_GAT_missiles","1Rnd_GAT_missiles","1Rnd_GAT_missiles","1Rnd_GAT_missiles","1Rnd_GAT_missiles","1Rnd_GAT_missiles","1Rnd_GAT_missiles","1Rnd_GAT_missiles","1Rnd_GAT_missiles"}; /// array of corresponding magazines;
-			memoryPointGunnerOptics = "gunnerview";
-			gunnerOpticsShowCursor = true;
-			castGunnerShadow = 1;
+			weapons[] 								= {"missiles_titan_static"};
+			magazines[] 							= {"1Rnd_GAT_missiles","1Rnd_GAT_missiles","1Rnd_GAT_missiles","1Rnd_GAT_missiles","1Rnd_GAT_missiles","1Rnd_GAT_missiles","1Rnd_GAT_missiles","1Rnd_GAT_missiles","1Rnd_GAT_missiles"};
 			};
 		};
-
 	};*/
 };
 	

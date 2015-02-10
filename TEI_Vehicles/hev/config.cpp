@@ -36,31 +36,31 @@ class CfgSounds
 	class ODST_POD_Wind1
 	{
 		name = "ODST_POD_Wind1";
-		sound[] = {"ODST_POD_Wind1.ogg", 1, 1};
+		sound[] = {"\tei_vehicles\hev\scripts\ODST_POD_Wind1.ogg", 1, 1};
 		titles[] = {};
 	};
 	class ODST_POD_Wind2
 	{
 		name = "ODST_POD_Wind2";
-		sound[] = {"ODST_POD_Wind2.ogg", 1, 1};
+		sound[] = {"\tei_vehicles\hev\scripts\ODST_POD_Wind2.ogg", 1, 1};
 		titles[] = {};
 	};
 	class ODST_POD_Door
 	{
 		name = "ODST_POD_Door";
-		sound[] = {"ODST_POD_Door.ogg", 1, 1};
+		sound[] = {"\tei_vehicles\hev\scripts\ODST_POD_Door.ogg", 1, 1};
 		titles[] = {};
 	};
 	class ODST_POD_Pop
 	{
 		name = "ODST_POD_Pop";
-		sound[] = {"ODST_POD_Pop.ogg", 1, 1};
+		sound[] = {"\tei_vehicles\hev\scripts\ODST_POD_Pop.ogg", 1, 1};
 		titles[] = {};
 	};
 	class ODST_POD_Chute
 	{
 		name = "ODST_POD_Chute";
-		sound[] = {"ODST_POD_Chute.ogg", 1, 1};
+		sound[] = {"\tei_vehicles\hev\scripts\ODST_POD_Chute.ogg", 1, 1};
 		titles[] = {};
 	};
 };
@@ -151,7 +151,7 @@ class CfgVehicles //This configures units and backpacks
 				position																= "";
 				radius																	= 4;
 				condition																= "((this animationPhase ""main_door_rotation"" == 0) && (this animationPhase ""left_door_rotation"" == 0) && (this animationPhase ""right_door_rotation"" == 0))";
-				statement																= "this animate [""main_door_rotation"",1]; this animate [""left_door_rotation"",1]; this animate [""right_door_rotation"",1];";
+				statement																= "this animate [""main_door_rotation"",1]; this animate [""left_door_rotation"",1]; this animate [""right_door_rotation"",1]; [this, ""ODST_POD_Door"",50] call CBA_fnc_globalSay3d;";
 				onlyforplayer															= 1;
 			};
 			class door_close

@@ -15,14 +15,23 @@ class CfgVehicles
 		class Helicopter_Base_F: Helicopter
 	{
 		class Turrets;
+		class HitPoints;
 	};
 
-	class O_Heli_Transport_04_F: Helicopter_Base_F
+	class B_Heli_Attack_01_F: Helicopter_Base_F
 	{
 		class CargoTurret;
 		class Turrets: Turrets
 		{
 			class mainturret;
+		};
+		class HitPoints:HitPoints
+		{
+			class HitHull;
+			class HitFuel;
+			class HitAvionics;
+			class HitHRotor;
+			class HitVRotor;
 		};
 		class AnimationSources;
 		class Eventhandlers;
@@ -37,9 +46,9 @@ class CfgVehicles
 
 
 
-	class TEI_Pelican_F: O_Heli_Transport_04_F
+	class TEI_Pelican_F: B_Heli_Attack_01_F
 	{
-        armor = 40;						        /// just some protection against missiles, collisions and explosions
+        armor = 60;						        /// just some protection against missiles, collisions and explosions
 		destrType = DestructWreck;
 		gearRetracting=1;		
 		accuracy = 0.5;							/// how hard it is to distinguish the type of the vehicle (bigger number means harder)
@@ -48,20 +57,22 @@ class CfgVehicles
 		icon = "TEI_Vehicles\Pelican\Data\icon.paa";			/// icon in map/editor
 		picture = "TEI_Vehicles\Pelican\Data\icon2.paa";		/// small picture in command menu
 		driveOnComponent[] = {"wheel_1_1", "wheel_2_1", "wheel_2_2"};
-
+		damageResistance = 0.00555;
+		
 	///HANDLING
 		//altFullForce = 8000;					 	/// in what height do the engines still have full thrust
 		//altNoForce = 12000;					 	/// thrust of the engines interpolates to zero between altFullForce and altNoForce
-		maxSpeed = 800;						 	/// what is the maximum speed of the vehicle
-		///maxFordingDepth = 0.55;		   			 	/// how deep could the vehicle be in water without getting some damage
-		///mainBladeRadius = 7.0;						/// describes the radius of main rotor - used for collision detection
-		//liftForceCoef = 50;						///multiplier of lift force	
+		maxSpeed = 300;						 	/// what is the maximum speed of the vehicle
+		//maxFordingDepth = 0.55;		   			 	/// how deep could the vehicle be in water without getting some damage
+		//mainBladeRadius = 7.0;						/// describes the radius of main rotor - used for collision detection
+		liftForceCoef = 2;						///multiplier of lift force	
 		//bodyFrictionCoef = 1;						///multiplier of body friction
 		//cyclicAsideForceCoef = 2.0;		   			///multiplier of bank force
         //cyclicForwardForceCoef = 2.0;	   				///multiplier of dive force
 		///simulation = helicopterX;
 		//frontRotorForceCoef = 30;         				///front rotor(strenth of lift)
 		//backRotorForceCoef = 30;          				///tailrotor(strength of horzontal movement=)
+		bodyFrictionCoef=0.2;
         ///HANDLING END
 
         ///ACTIONS AND CARGO
@@ -96,6 +107,51 @@ class CfgVehicles
 		ejectDeadGunner = "false";	
 		cargoProxyIndexes[] = {3,4,5,6,7,8,9,10,11,12};		/// what indexes does regular cargo sit on
 
+		
+///hit points
+				class HitPoints:HitPoints
+		{
+			class HitHull:HitHull
+			{
+				armor=999;
+				visual="Hull";
+				depends="Total";
+				radius=0.01;
+			};
+			class HitFuel:HitFuel
+			{
+				armor=1;
+				radius=1;
+				minimalHit=0.05;
+				name="fuel";
+			};
+			class HitAvionics:HitAvionics
+			{
+				armor=2;
+				radius=1;
+				minimalHit=0.05;
+				name="elektronika";
+			};
+			class HitHRotor:HitHRotor
+			{
+				armor=999; //1.8
+				radius=1;
+				minimalHit=0.09;
+				name="mainrotor";
+				explosionShielding=2.5;
+				visual = “mainrotors”;
+			};
+			class HitVRotor:HitVRotor
+			{
+				armor=1.4;
+				radius=1;
+				minimalHit=0.05;
+				name="tailrotor";
+				explosionShielding=6;
+				visual = “tailrotors”;
+			};
+		};
+/// hit points end
 ///transport items		
 		class TransportBackpacks	/// adds various backpacks to cargo hold of the heli
 		{};
@@ -417,17 +473,6 @@ class CfgVehicles
             statement="this animate [""cargoDoor_1"",0];this animate [""cargoDoor_2"",0]";
 			animPeriod = 10;
             };
-			class wingPos
-            {
-			userActionID 		= 62;
-            displayName="TestWings";
-            displayNameDefault="TestWings";
-            position=cargo_door_handle;
-			radius=6;
-			onlyForPlayer=true;
-			condition="alive(this)";//this animationPhase ""ramp"" < 0.5 && alive(this) && driver == player
-			statement="this animate [""fWingRot"",1]";
-			};
 		};
 		hiddenSelections[] = //// we want to allow changing of colours, this defines on what selection are the textures used
 		{

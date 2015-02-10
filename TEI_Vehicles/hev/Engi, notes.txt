@@ -1,3 +1,0 @@
-the animation code is in the model config, however i cant get it to animate in game. Could simulation be getting disabled? if so the animations will not work. 
-a second note should be said that some of the animations could be backwords in game if they are change the max value to the negative value of what it is now.
-the value entries are what control how far they go at phase = 1 and at 0.

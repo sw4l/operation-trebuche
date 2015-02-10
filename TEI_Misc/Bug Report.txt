@@ -1,9 +1,0 @@
-General 
-	-all png files should be removed only leaving tga or paa
-
-TEI_Misc
-	///Crates
-	-add more boxes and items
-	
-
-*Please put your name in brackets at the end of whatever issue(s) you are currently working on

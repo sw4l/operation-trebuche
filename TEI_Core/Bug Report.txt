@@ -1,8 +1,0 @@
-General 
-	-all png files should be removed only leaving tga or paa
-
-TEI_Core
-
-	-add Altis action/combat-style intro cutscene
-
-*Please put your name in brackets at the end of whatever issue(s) you are currently working on

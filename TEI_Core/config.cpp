@@ -29,6 +29,7 @@ class CfgFactionClasses //This configures the in-game factions
 		side 																					= 0;
 		icon 																					= "\TEI_Core\data\icon_Ins_ca.paa";
 		flag 																					= "\TEI_Core\Data\flag_Ins_ca.paa";
+		primaryLanguage 																		= "EN";
 	};
 	class TEI_CAA
 	{
@@ -37,6 +38,7 @@ class CfgFactionClasses //This configures the in-game factions
 		side 																					= 2;
 		icon 																					= "\TEI_Core\data\icon_Caa_ca.paa";
 		flag 																					= "\TEI_Core\Data\flag_Caa_ca.paa";
+		primaryLanguage 																		= "EN";
 	};
 	class TEI_NMPD
 	{
@@ -45,6 +47,7 @@ class CfgFactionClasses //This configures the in-game factions
 		side 																					= 2;
 		//icon 																					= "\TEI_Core\data\icon_UNSC_ca.paa";
 		//flag 																					= "\TEI_Core\Data\flag_UNSC_ca.paa";
+		primaryLanguage 																		= "EN";
 	};
 	class TEI_UNSC_Civ
 	{
@@ -53,6 +56,7 @@ class CfgFactionClasses //This configures the in-game factions
 		side 																					= 3;
 		//icon 																					= "\TEI_Core\data\icon_UNSC_ca.paa";
 		//flag 																					= "\TEI_Core\Data\flag_UNSC_ca.paa";
+		primaryLanguage 																		= "EN";
 	};
 };
 
@@ -60,27 +64,27 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 {
 	class TEI_UNSC_Backpack_class
 	{
-		displayName 																			= "UNSC (Backpacks)";
+		displayName 																			= "Backpacks (UNSC)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_UNSC_Vehicle_class
 	{
-		displayName 																			= "UNSC (Cars)";
+		displayName 																			= "Cars (UNSC)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_UNSC_Armored_class
 	{
-		displayName 																			= "UNSC (Armored)";
+		displayName 																			= "Armored (UNSC)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_UNSC_Air_class
 	{
-		displayName 																			= "UNSC (Air)";
+		displayName 																			= "Air (UNSC)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_UNSC_Auto_class
 	{
-		displayName 																			= "UNSC (Autonomous)";
+		displayName 																			= "Autonomous (UNSC)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_UNSC_Man_Army_class
@@ -110,52 +114,52 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class TEI_UNSC_Object_class
 	{
-		displayName 																			= "UNSC (Objects)";
+		displayName 																			= "Objects (UNSC)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_UNSC_Structure_class
 	{
-		displayName 																			= "UNSC (Structures)";
+		displayName 																			= "Structures (UNSC)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_UNSC_Fortification_class
 	{
-		displayName 																			= "UNSC (Fortifications)";
+		displayName 																			= "Fortifications (UNSC)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_UNSC_Ammo_class
 	{
-		displayName 																			= "UNSC (Ammo)";
+		displayName 																			= "Ammo (UNSC)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_UNSC_HEV_class 
 	{
-		displayName 																			= "UNSC (HEVs)";
+		displayName 																			= "HEVs (UNSC)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_Ins_Backpack_class
 	{
-		displayName 																			= "Insurrection (Backpacks)";
+		displayName 																			= "Backpacks (Insurrection)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_Ins_Vehicle_class
 	{
-		displayName 																			= "Insurrection (Cars)";
+		displayName 																			= "Cars (Insurrection)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_Ins_Armored_class
 	{
-		displayName 																			= "Insurrection (Armored)";
+		displayName 																			= "Armored (Insurrection)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_Ins_Air_class
 	{
-		displayName 																			= "Insurrection (Air)";
+		displayName 																			= "Air (Insurrection)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_Ins_Auto_class
 	{
-		displayName 																			= "Insurrection (Autonomous)";
+		displayName 																			= "Autonomous (Insurrection)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_Ins_Man_ER_class
@@ -170,22 +174,22 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class TEI_Ins_Object_class
 	{
-		displayName 																			= "Insurrection (Objects)";
+		displayName 																			= "Objects (Insurrection)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_Ins_Structure_class
 	{
-		displayName 																			= "Insurrection (Structures)";
+		displayName 																			= "Structures (Insurrection)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_Ins_Fortification_class
 	{
-		displayName 																			= "Insurrection (Fortifications)";
+		displayName 																			= "Fortifications (Insurrection)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_Ins_Ammo_class
 	{
-		displayName 																			= "Insurrection (Ammo)";
+		displayName 																			= "Ammo (Insurrection)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_NMPD_Man_class
@@ -200,27 +204,27 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class TEI_Object_class 
 	{
-		displayName 																			= "TEI (Objects)";
+		displayName 																			= "Objects (TEI)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_Structure_class 
 	{
-		displayName 																			= "TEI (Structures)";
+		displayName 																			= "Structures (TEI)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_Item_class 
 	{
-		displayName 																			= "TEI (Items)";
+		displayName 																			= "Items (TEI)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_Weapon_class 
 	{
-		displayName 																			= "TEI (Weapons)";
+		displayName 																			= "Weapons (TEI)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_Ammo_class 
 	{
-		displayName 																			= "TEI (Ammo)";
+		displayName 																			= "Ammo (TEI)";
 		author																					= "Eridanus Insurrection Team";
 	};
 };
@@ -243,5 +247,60 @@ class CfgMusic
 	{
 		name="TEI Innie Dance";
 		sound[]={"\TEI_Core\Music\Inniedance.ogg",1,1};
+	};
+};
+
+class CfgWorlds
+{
+	class GenericNames
+	{
+		class TEI_Names_UNSC
+		{
+			class FirstNames
+			{
+				FName = "FName";
+			};
+			
+			class LastNames
+			{
+				LName = "LName";
+			};
+		};
+	};
+};
+
+class CfgGroups
+{
+	class West
+	{
+		class TEI_UNSC //TEI_Ins
+		{
+			name = "UNSCDF";
+			class Infantry //Air, Mechanized, Motorized, Armored, SpecOps, Support
+			{
+				name = "Infantry";
+				class UNSC_Army_W_InfSentry
+				{
+					name = "Army Sentry (W)";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_Rifleman_WDL";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_Rifleman_WDL";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+					};
+				};
+			};
+		};
 	};
 };
