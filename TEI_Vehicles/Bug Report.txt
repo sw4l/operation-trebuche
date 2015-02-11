@@ -29,8 +29,7 @@ TEI_Vehicles
 	/// Pelican
 	-cockpit gadgets not working, honestly wouldnt bother with it as the cockpit will be overhauled later
 	-pelican wreck texture needs to be blackened out (green wings)
-	-geometry needs added to the front landing gear
-	-can't hit the pelican with missiles (projectiles fly through)
+
 
 
 *Please put your name in brackets at the end of whatever issue(s) you are currently working on
