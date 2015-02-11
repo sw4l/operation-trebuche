@@ -51,6 +51,8 @@ class CfgVehicles
 			class HitGlass4;
 			class HitGlass5;
 			class HitGlass6;
+			class Gatling;
+			class Gatling_flash;
 		};
 		class Turrets
 		{
@@ -190,12 +192,13 @@ class CfgVehicles
 			class Gatling
 			{
 				source 								= "revolving";			/// returns bullets left in magazine of said weapon
-				weapon 								= "gatling_20mm";	/// this is the said weapon
+				weapon 								= "TEI_M41_LAAG";	/// this is the said weapon
+				animPeriod = 0.01;
 			};
 			class Gatling_flash
 			{
-				source 								= "ammorandom";			/// this source returns some random value changine each time ammo is spent from this weapon - used for muzzle flashes
-				weapon 								= "gatling_20mm";	/// this is the said weapon
+				source 								= "ammorandom";		/// this source returns some random value changine each time ammo is spent from this weapon - used for muzzle flashes
+				weapon 								= "TEI_M41_LAAG";	/// this is the said weapon
 			};
 		};
 		class HitPoints: HitPoints
