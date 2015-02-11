@@ -950,6 +950,50 @@ class CfgVehicles
 			};
 		};
 	};
+	class TEI_M12_FAV_APC: TEI_M12_FAV
+		{
+			displayName									= "M12 FAV Warthog (APC)"; /// displayed in Editor
+			author										= "Eridanus Insurrection Team";
+			hiddenSelections[] 							= {"camo1","camo2","attach_mg","attach_troop"};
+			hiddenSelectionsTextures[] 					= {"TEI_Vehicles\Warthog\data\warthog_ins_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_ins_CO.paa"};
+			vehicleClass								= "TEI_Ins_Vehicle_class";
+			side										= 0;
+			crew										= "TEI_Ins_ER_Rebel_tan";
+			faction										= "TEI_Ins";
+			class Turrets: Turrets
+			{
+				class CargoTurret_01:CargoTurret
+				{
+				gunnerAction						= "vehicle_turnout_1";
+				gunnerCompartments					= "Compartment1";
+				memoryPointsGetInGunner				= "pos cargo";
+				memoryPointsGetInGunnerDir			= "pos cargo dir";
+				memoryPointGunnerOptics				= "";
+				gunnerName							= "Hatch Gunner";
+				proxyIndex							= 10;
+				maxElev								= 10;
+				minElev								= -40;
+				maxTurn								= 95;
+				minTurn								= -95;
+				isPersonTurret						= 1;
+				};
+				class CargoTurret_02:CargoTurret
+				{
+				gunnerAction						= "passenger_inside_2";
+				gunnerCompartments					= "Compartment1";
+				memoryPointsGetInGunner				= "pos cargo";
+				memoryPointsGetInGunnerDir			= "pos cargo dir";
+				memoryPointGunnerOptics				= "";
+				gunnerName							= "Front Passenger";
+				proxyIndex							= 11;
+				maxElev								= 10;
+				minElev								= -40;
+				maxTurn								= 95;
+				minTurn								= -95;
+				isPersonTurret						= 1;
+				};
+			};
+		};
 	
 	/*class TEI_M12R_LRV: TEI_M12_LRV
 	{

@@ -23,7 +23,11 @@ TEI_Vehicles
 	-Editor/map icon too large
 	-Warthog too illuminated RVMat issue?
 	-missing shell ejection out of MG turret
-	-missing camo2 selection for turret variants
+	-hatch gunner in apc hog needs to be adjusted
+	-bench needs to be added for the hatch gunner needs to be added, where he stands on 
+	-passenger proxy needs to be moved back a bit
+	-rear passenger proxies need to be added
+
 >>>!!! when a player is in, the warthog locks and no one can get inside (Multiplayer tested) !!!<<<
 
 	/// Pelican
