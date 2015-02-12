@@ -81,7 +81,7 @@ class CfgVehicles
 	
 	class TEI_M12_base: Car_F
 	{
-		mapSize	Gatling									= 9.2;
+		mapSize									= 9.2;
 		class SpeechVariants
 		{
 			class Default
