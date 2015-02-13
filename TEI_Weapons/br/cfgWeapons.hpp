@@ -194,4 +194,15 @@ class CfgWeapons
 			};
  		};
 	};
+	class TEI_BR55HB_Scope_F: TEI_BR55HB /// standard issue variant with holo optics and laser pointer
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "TEI_BR55HB_Scope";
+			};			
+		};
+	};
 };

@@ -175,7 +175,7 @@ class cfgWeapons
 	{
 		scope															= 2;
 		author															= "Eridanus Insurrection Team";
-		displayName														= "[UNSC] Marine Heavy Uniform";
+		displayName														= "[UNSC] Marine BDU (Heavy)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel													= "-";
@@ -189,7 +189,7 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
-		displayName										= "[UNSC] Marine Pilot Uniform";
+		displayName										= "[UNSC] Pilot Uniform [Marine]";
 		class ItemInfo: UniformItem
 		{
 			uniformModel									= "-";
@@ -203,7 +203,7 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
-		displayName										= "[UNSC] Marine Medium Uniform";
+		displayName										= "[UNSC] Marine BDU (Medium)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel									= "-";
@@ -217,7 +217,7 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
-		displayName										= "[UNSC] Marine Light Uniform";
+		displayName										= "[UNSC] Marine BDU (Light)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel									= "-";
@@ -252,7 +252,7 @@ class cfgWeapons
 	{	
 		scope 											= 2; /// scope needs to be 2 to have a visible class
 		author											= "Eridanus Insurrection Team";
-		displayName  										= "[UNSC] Marine Vest"; /// how would the stuff be displayed in inventory and on ground
+		displayName  										= "[UNSC] M52 Body Armor (Marine)"; /// how would the stuff be displayed in inventory and on ground
 		picture   										= ""; /// this icon fits the vest surprisingly well
 		model     										= "\TEI_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
 		hiddenSelections[]   									= {"camo1","camo2","attach_knife","attach_neck"}; /// what selection in model could have different textures
@@ -273,7 +273,7 @@ class cfgWeapons
 	{	
 		scope 											= 2; /// scope needs to be 2 to have a visible class
 		author											= "Eridanus Insurrection Team";
-		displayName  									= "[UNSC] Marine Vacuum Vest"; /// how would the stuff be displayed in inventory and on ground
+		displayName  									= "[UNSC] M52[V] Body Armor (Marine)"; /// how would the stuff be displayed in inventory and on ground
 		picture   										= ""; /// this icon fits the vest surprisingly well
 		model     										= "\TEI_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
 		hiddenSelections[]   							= {"camo1","camo2","attach_knife"}; /// what selection in model could have different textures
@@ -318,7 +318,7 @@ class cfgWeapons
 	{	
 		scope   										= 2; /// scope needs to be 2 to have a visible class
 		author											= "Eridanus Insurrection Team";
-		displayName    										= "[UNSC] Marine Helmet"; /// how would the stuff be displayed in inventory and on ground
+		displayName    										= "[UNSC] CH252 Helmet (Marine)"; /// how would the stuff be displayed in inventory and on ground
 		picture   										= ""; /// this icon fits the vest surprisingly well
 		model     										= "\TEI_UNSC_Units\Army\helmet.p3d"; /// what model does the vest use
 		hiddenSelections[]   									= {"camo1","camo2","attach_face"}; /// what selection in model could have different textures
@@ -338,7 +338,7 @@ class cfgWeapons
 	{	
 		scope   										= 2; /// scope needs to be 2 to have a visible class
 		author											= "Eridanus Insurrection Team";
-		displayName    										= "[UNSC] Marine Vacuum Helmet"; /// how would the stuff be displayed in inventory and on ground
+		displayName    										= "[UNSC] CH252[V] Helmet (Marine)"; /// how would the stuff be displayed in inventory and on ground
 		picture   										= ""; /// this icon fits the vest surprisingly well
 		model     										= "\TEI_UNSC_Units\Army\helmet.p3d"; /// what model does the vest use
 		hiddenSelections[]   									= {"camo1","camo2"}; /// what selection in model could have different textures

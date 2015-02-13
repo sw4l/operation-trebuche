@@ -92,6 +92,11 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 		displayName 																			= "Men (Army)";
 		author																					= "Eridanus Insurrection Team";
 	};
+	class TEI_UNSC_Woman_Army_class
+	{
+		displayName 																			= "Women (Army)";
+		author																					= "Eridanus Insurrection Team";
+	};
 	class TEI_UNSC_Man_Army_W_class
 	{
 		displayName 																			= "Men (Army/Woodland)";

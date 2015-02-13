@@ -24,7 +24,7 @@ class CfgWeapons
 		weaponInfoType 								= "RscWeaponZeroing";
 		class ItemInfo: InventoryFirstAidKitItem_Base_F
 		{
-			mass=8;
+			mass=6;
 		};
 	};
 		class TEI_MedKit: Medikit
