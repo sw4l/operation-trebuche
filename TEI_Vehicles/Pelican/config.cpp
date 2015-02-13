@@ -565,4 +565,18 @@ class CfgVehicles
 		hiddenSelections[]= {"camo1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_black_CO.paa"};
 	};
+	class TEI_Pelican_unarmed_ins: TEI_Pelican_unarmed_green
+	{
+		displayName = "D77-TC Pelican (Insurrection)";
+		scope 	= 2;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
+		side = 0;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
+		faction	= "TEI_Ins";					/// defines the faction inside of the side
+		crew = "TEI_Ins_ER_Rebel_tan";					/// lets use the sample soldier we have as default captain of the boat
+		accuracy = 1.50; 					/// harder to distinguish side than vehicle type
+	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
+	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
+		vehicleClass = "TEI_Ins_Air_class";
+		hiddenSelections[]= {"camo1"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_innie_CO.paa"};
+	};
 };

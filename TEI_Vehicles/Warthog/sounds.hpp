@@ -1,4 +1,4 @@
-attenuationEffectType="CarAttenuation";
+attenuationEffectType="OpenHeliAttenuation";
 		soundGetIn[]							= {"A3\Sounds_F\vehicles\soft\MRAP_01\getin",0.5623413,1};
 		soundGetOut[]							= {"A3\Sounds_F\vehicles\soft\MRAP_01\getout",0.5623413,1,40};
 		soundDammage[]							= {"",0.5623413,1};
