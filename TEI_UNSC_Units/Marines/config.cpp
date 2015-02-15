@@ -76,28 +76,6 @@ class CfgVehicles //This configures units and backpacks
 		hiddenSelections[] 												= {"camo1","camo2","insignia","attach_leftshoulder","attach_rightshoulder","attach_pant1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_CO.paa"};
 	};
-	class TEI_UNSC_Marine_pilot: B_Soldier_F //Configures the unit part of the Units Uniform
-	{
-		scope															= 2;
-		faction															= "TEI_UNSC";
-		author															= "Eridanus Insurrection Team";
-		displayName														= "Pilot";
-		vehicleClass													= "TEI_UNSC_Man_Marines_class";
-		uniformAccessories[]											= {};
-		nakedUniform 													= "U_BasicBody";
-		uniformClass													= "TEI_UNSC_Marine_Uniform_pilot";
-		model															= "\TEI_UNSC_Units\Army\uniform.p3d";
-		weapons[]														= {"Throw","Put"};
-		respawnWeapons[]												= {"Throw","Put"};
-		Items[]															= {"FirstAidKit"};
-		RespawnItems[]													= {"FirstAidKit"};
-		magazines[]														= {};
-		respawnMagazines[]												= {};
-		linkedItems[] 													= {"TEI_UNSC_Marine_Vest_vacuum","TEI_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] 											= {"TEI_UNSC_Marine_Vest_vacuum","TEI_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		hiddenSelections[] 												= {"camo1","camo2","insignia","attach_leftknee","attach_rightknee","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftthigh","attach_rightthigh","attach_rightknee2","attach_leftknee2","attach_pant2"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_CO.paa"};
-	};	
 class TEI_UNSC_Marine_medium: B_Soldier_F //Configures the unit part of the Units Uniform
 	{
 		scope															= 2;
@@ -168,15 +146,27 @@ class TEI_UNSC_Marine_medium: B_Soldier_F //Configures the unit part of the Unit
 		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
 		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
 	};
-	class TEI_UNSC_Marine_Pilot: TEI_UNSC_Marine_pilot
+	class TEI_UNSC_Marine_Pilot: B_Soldier_F
 	{
-		scope											= 2;
-		displayName										= "Pilot";
-		vehicleClass									= "TEI_UNSC_Man_Marines_class";
-		weapons[] 										= {"TEI_M6G_SF","TEI_M6G_Scope","Throw","Put"};
-		respawnWeapons[] 								= {"TEI_M6G_SF","TEI_M6G_Scope","Throw","Put"};
-		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag"};
-		respawnMagazines[]	 							= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag"};
+		scope															= 2;
+		faction															= "TEI_UNSC";
+		author															= "Eridanus Insurrection Team";
+		displayName														= "Pilot";
+		vehicleClass													= "TEI_UNSC_Man_Marines_class";
+		uniformAccessories[]											= {};
+		nakedUniform 													= "U_BasicBody";
+		uniformClass													= "TEI_UNSC_Marine_Uniform_pilot";
+		model															= "\TEI_UNSC_Units\Army\uniform.p3d";
+		weapons[] 														= {"TEI_M6G_SF","TEI_M6G_Scope","Throw","Put"};
+		respawnWeapons[] 												= {"TEI_M6G_SF","TEI_M6G_Scope","Throw","Put"};
+		magazines[] 													= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag"};
+		respawnMagazines[]	 											= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag"};
+		Items[]															= {"FirstAidKit"};
+		RespawnItems[]													= {"FirstAidKit"};
+		linkedItems[] 													= {"TEI_UNSC_Marine_Vest_vacuum","TEI_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] 											= {"TEI_UNSC_Marine_Vest_vacuum","TEI_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","attach_leftknee","attach_rightknee","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftthigh","attach_rightthigh","attach_rightknee2","attach_leftknee2","attach_pant2"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_CO.paa"};
 	};
 	class TEI_UNSC_Marine_Rifleman_AR: TEI_UNSC_Marine_vacuum_heavy
 	{
@@ -266,7 +256,7 @@ class TEI_UNSC_Marine_medium: B_Soldier_F //Configures the unit part of the Unit
 		respawnWeapons[] 								= {"TEI_MA5BGL_AC","Throw","Put"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
 		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
-	}
+	};
 	class TEI_UNSC_Marine_Rifleman_Light: TEI_UNSC_Marine_medium
 	{
 		scope											= 2;
