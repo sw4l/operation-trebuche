@@ -205,4 +205,20 @@ class CfgWeapons
 			};
  		};
 	};
+	class TEI_M6G_SF: TEI_M6G /// standard issue variant with holo optics and laser pointer
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "TEI_M6G_Scope";
+			};	
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "TEI_M6G_Flashlight";
+			};			
+		};
+	};
 };

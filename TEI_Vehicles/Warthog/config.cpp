@@ -1379,10 +1379,10 @@ class CfgVehicles
 				memoryPointGunnerOptics="";
 				gunnerName="Hatch Gunner";
 				proxyIndex=10;
-				maxElev=10;
-				minElev=-40;
-				maxTurn=95;
-				minTurn=-95;
+				maxElev=25;
+				minElev=-20;
+				maxTurn=65;
+				minTurn=-65;
 				isPersonTurret=1;
 			};
 			class CargoTurret_02:CargoTurret
@@ -1395,9 +1395,9 @@ class CfgVehicles
 				gunnerName="Front Passenger";
 				proxyIndex=11;
 				maxElev=10;
-				minElev=-40;
-				maxTurn=95;
-				minTurn=-95;
+				minElev=-5;
+				maxTurn=-15;
+				minTurn=-55;
 				isPersonTurret=1;
 			};
 		};
