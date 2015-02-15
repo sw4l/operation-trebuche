@@ -201,8 +201,21 @@
                             };
                     };
             };
-            class TEI_MA5BGL: TEI_MA5B
-            {
+			
+		class TEI_MA5B_AC: TEI_MA5B
+		{
+			class LinkedItems
+			{
+				class LinkedItemsOptic
+				{
+				slot = "CowsSlot";
+				item = "TEI_MA5B_AmmoCounter";
+				};			
+			};
+		};
+			
+        class TEI_MA5BGL: TEI_MA5B
+        {
                     scope                                                                   = 2;
                     handAnim[]                                                              = {"OFP2_ManSkeleton", "\TEI_Weapons\AR\data\anim\hand_anim_ma5c.rtm"};
                     model                                                                   = "\TEI_Weapons\AR\ARGL.p3d";
@@ -336,5 +349,17 @@
                                     scope                                                   = 2;
                             };
                     };
-            };
+        };
+			
+	class TEI_MA5BGL_AC: TEI_MA5BGL
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "TEI_MA5B_AmmoCounter";
+			};			
+		};
+	};
 };

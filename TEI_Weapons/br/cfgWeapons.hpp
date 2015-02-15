@@ -194,7 +194,7 @@ class CfgWeapons
 			};
  		};
 	};
-	class TEI_BR55HB_Scope_F: TEI_BR55HB /// standard issue variant with holo optics and laser pointer
+	class TEI_BR55HB_ScopedRifle: TEI_BR55HB /// standard issue variant with holo optics and laser pointer
 	{
 		class LinkedItems
 		{
