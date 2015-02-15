@@ -1038,6 +1038,7 @@ class CfgVehicles
 		displayName="M12 LRV Warthog (MG)";
 		author="Eridanus Insurrection Team";
 		faction="TEI_UNSC";
+		model="TEI_Vehicles\Warthog\Warthog_MG.p3d";
 		transportSoldier=0;
 		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_co.paa"};
