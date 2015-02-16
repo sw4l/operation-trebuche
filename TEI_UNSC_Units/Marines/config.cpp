@@ -34,7 +34,7 @@ class CfgVehicles //This configures units and backpacks
 	
 	class TEI_UNSC_Marine_heavy: B_Soldier_F //Configures the unit part of the Units Uniform
 	{
-		scope															= 2;
+		scope															= 1;
 		faction															= "TEI_UNSC";
 		author															= "Eridanus Insurrection Team";
 		displayName														= "Rifleman [Heavy]";
@@ -56,7 +56,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class TEI_UNSC_Marine_vacuum_heavy: B_Soldier_F //Configures the unit part of the Units Uniform
 	{
-		scope															= 2;
+		scope															= 1;
 		faction															= "TEI_UNSC";
 		author															= "Eridanus Insurrection Team";
 		displayName														= "Rifleman [Heavy/Vacuum]";
@@ -78,7 +78,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 class TEI_UNSC_Marine_medium: B_Soldier_F //Configures the unit part of the Units Uniform
 	{
-		scope															= 2;
+		scope															= 1;
 		faction															= "TEI_UNSC";
 		author															= "Eridanus Insurrection Team";
 		displayName														= "Rifleman [Medium]";
@@ -100,7 +100,7 @@ class TEI_UNSC_Marine_medium: B_Soldier_F //Configures the unit part of the Unit
 	};
 	class TEI_UNSC_Marine_light: B_Soldier_F //Configures the unit part of the Units Uniform
 	{
-		scope															= 2;
+		scope															= 1;
 		faction															= "TEI_UNSC";
 		author															= "Eridanus Insurrection Team";
 		displayName														= "Rifleman [Light]";
@@ -243,8 +243,8 @@ class TEI_UNSC_Marine_medium: B_Soldier_F //Configures the unit part of the Unit
 		vehicleClass									= "TEI_UNSC_Man_Marines_class";
 		weapons[] 										= {"TEI_BR55HB_ScopedRifle","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_BR55HB_ScopedRifle","Throw","Put"};
-		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
-		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
+		magazines[] 									= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag"};
+		respawnMagazines[] 								= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag"};
 	};
 	class TEI_UNSC_Marine_Grenadier: TEI_UNSC_Marine_vacuum_heavy
 	{
