@@ -10,13 +10,53 @@ class CfgPatches
 		ammo[]={};
 	};
 };
+/*class CfgAmmo
+{
+	class Default;
+	class 20Rnd_105mm_HEAT_MP;
+	class 20Rnd_ALIM_GAUSS:20Rnd_105mm_HEAT_MP
+	{
+		displayName="20 Rounds ALIM GAUSS";
+		displayNameShort="20 Rounds ALIM GAUSS";
+		ammo="Sh_105mm_HEAT_MP";
+		//initSpeed=1330;
+		initSpeed=50;
+		count=20;
+	};
+};
+*/
 class CfgWeapons
 {
 	class HMG_127;
 	class MGun;
+	class cannon_105mm;
 	class TEI_M41_LAAG:HMG_127
 	{
+		class GunParticles
+        {
+            class effect1
+        {
+			positionName = "konec hlavne";
+			directionName = "Usti hlavne";
+            effectName = "MachineGunCloud";
+            };
+            class effect2
+            {
+            positionName = "machinegun_eject_pos";
+            directionName = "machinegun_eject_dir";
+            effectName = "MachineGunEject";
+            };
+            class effect3
+            {
+            positionName = "machinegun_eject_pos";
+            directionName = "machinegun_eject_dir";
+            effectName = "MachineGunCartridge2";
+            };
+        };
+		selectionFireAnim = "muzzleFlash";						/// what selection is hidden when machinegun doesn't shoot
 		displayName="M41 Light Anti-Aircraft Gun";
+		aiDispersionCoefY = 15.0;
+        aiDispersionCoefX = 20.0;
 		class manual:MGun
 		{
 			displayName="M41 Light Anti-Aircraft Gun";
@@ -24,6 +64,32 @@ class CfgWeapons
 			dispersion=0.00087;
 			sounds[]={"StandardSound"};
 		};
+	};
+	class TEI_M68_GAUSS:cannon_105mm
+	{
+		class GunParticles
+        {
+            class effect1
+        {
+			positionName = "konec hlavne";
+			directionName = "Usti hlavne";
+            effectName = "MachineGunCloud";
+            };
+            class effect2
+            {
+            positionName = "machinegun_eject_pos";
+            directionName = "machinegun_eject_dir";
+            effectName = "MachineGunEject";
+            };
+            class effect3
+            {
+            positionName = "machinegun_eject_pos";
+            directionName = "machinegun_eject_dir";
+            effectName = "MachineGunCartridge2";
+            };
+        };
+		selectionFireAnim = "muzzleFlash";						/// what selection is hidden when machinegun doesn't shoot
+		displayName="M68 ALIM Gauss";
 	};
 };
 class CfgVehicles
@@ -191,11 +257,10 @@ class CfgVehicles
 			{
 				source="revolving";
 				weapon="TEI_M41_LAAG";
-				animPeriod=0.5;
 			};
 			class Gatling_flash
 			{
-				source="ammorandom";
+				source="reload";
 				weapon="TEI_M41_LAAG";
 			};
 		};
@@ -1163,6 +1228,7 @@ class CfgVehicles
 				inGunnerMayFire=1;
 				commanding=1;
 				primaryGunner=1;
+				turretInfoType="RscWeaponZeroing";
 				memoryPointsGetInGunner="Pos Gunner";
 				memoryPointsGetInGunnerDir="Pos Gunner dir";
 				gunnerLeftHandAnimName="trigger";
@@ -1179,9 +1245,13 @@ class CfgVehicles
 				gunnerForceOptics=0;
 				class ViewGunner:ViewOptics
 				{
-					initFov=0.7;
-					minFov=0.25;
-					maxFov=1.1;
+					initAngleX=-15;
+					minAngleX=-45;
+					maxAngleX=45;
+					initFov=0.9;
+					minFov=0.42;
+					maxFov=0.9;
+					visionMode[]={};
 				};
 			};
 		};
@@ -1346,10 +1416,13 @@ class CfgVehicles
 				gunnerLeftHandAnimName="trigger";
 				gunnerRightHandAnimName="trigger";
 				memoryPointGun="machinegun";
-				weapons[]={"cannon_125mm"};
-				magazines[]={"12Rnd_125mm_HE"};
+				//weapons[]={"cannon_125mm"};
+				//magazines[]={"12Rnd_125mm_HE"};
+				weapons[]={"TEI_M68_GAUSS"};
+				magazines[]={""};
 				memoryPointGunnerOptics="gunnerview";
 				gunnerOpticsShowCursor=1;
+				turretInfoType="RscWeaponZeroing";
 				castGunnerShadow=1;
 				startEngine=0;
 				enableManualFire=0;
