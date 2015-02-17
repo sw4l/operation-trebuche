@@ -24,18 +24,73 @@ class CfgAmmo
 		
 		scope = 2;
 		caliber = 50;
-		typicalSpeed = 9000;
-		maxSpeed = 9999;
+		//typicalSpeed = 9000;
+		//maxSpeed = 9999;
 		cost = 1000;
 		hit = 500;
+		whistleOnFire = 1;
+		whistleDist = 14;
 		tracerScale = 6;
 		tracerStartTime = 0.001;
 		tracerEndTime = 10.0;
 		indirectHit = 15;
 		indirectHitRange = 1;
-		CraterEffects = "GrenadeCrater";
-		explosionEffects = "GrenadeExplosion";
+		
+		CraterEffects = "HEShellCrater";
+		CraterWaterEffects = "ImpactEffectsWaterHE";
+		ExplosionEffects = "HEShellExplosion";
+		
+		//CraterEffects = "GrenadeCrater";
+		//explosionEffects = "GrenadeExplosion";
+		
 		allowAgainstInfantry = 1;
+		soundHit1[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_1",3.1622777,1,2000};
+		soundHit2[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_2",3.1622777,1,2000};
+		soundHit3[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_3",3.1622777,1,2000};
+		soundHit4[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_4",3.1622777,1,2000};
+		soundHit5[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_5",3.1622777,1,2000};
+		soundHit6[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_6",3.1622777,1,2000};
+		soundHit7[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_7",3.1622777,1,2000};
+		soundHit8[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_8",3.1622777,1,2000};
+		multiSoundHit[] = {"soundHit1",0.13,"soundHit2",0.13,"soundHit3",0.13,"soundHit4",0.13,"soundHit5",0.12,"soundHit6",0.12,"soundHit7",0.12,"soundHit8",0.12};
+		class HitEffects
+		{
+			hitMetal = "ImpactMetalSabotBig";
+			hitMetalPlate = "ImpactMetalSabotBig";
+			hitBuilding = "ImpactConcreteSabot";
+			hitConcrete = "ImpactConcreteSabot";
+			hitGroundSoft = "ImpactEffectsGroundSabot";
+			hitGroundHard = "ImpactEffectsGroundSabot";
+			default_mat = "ImpactEffectsGroundSabot";
+		};
+		class CamShakeExplode
+		{
+			power = "(180^0.5)";
+			duration = "((round (180^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = "((180^0.5)*3)";
+		};
+		class CamShakeHit
+		{
+			power = 180;
+			duration = "((round (180^0.25))*0.2 max 0.2)";
+			frequency = 20;
+			distance = 1;
+		};
+		class CamShakeFire
+		{
+			power = "(120^0.25)";
+			duration = "((round (120^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = "((120^0.5)*8)";
+		};
+		class CamShakePlayerFire
+		{
+			power = 0.02;
+			duration = 0.1;
+			frequency = 20;
+			distance = 1;
+		};
 	};
 	/*class Sh_120mm_APFSDS: ShellBase
 	{
@@ -109,8 +164,9 @@ class CfgMagazines
 		displayName="20 Rnd ALIM Gauss Slugs";
 		displayNameShort="Gauss Slug";
 		ammo="TEI_25x130mm_Slug";
+		//nameSound = "missiles";
 		//ammo = "Sh_120mm_APFSDS";
-		//initSpeed=50000;
+		initSpeed = 10000;
 		count=20;
 	};
 };
@@ -121,6 +177,7 @@ class CfgWeapons
 	class MGun;
 	class autocannon_35mm;
 	class cannon_120mm;
+	class RCWSOptics;
 	class TEI_M41_LAAG: HMG_127
 	{
 		class GunParticles
@@ -159,6 +216,9 @@ class CfgWeapons
 	
 	class TEI_M68_GAUSS: cannon_120mm
 	{
+		cursor = "EmptyCursor";
+		cursorAim = "cannon";
+		nameSound = "cannon";
 		reloadSound[] = {"A3\sounds_f\vehicles\armor\noises\reload_tank_cannon_2",31.622776,1,10};
 		minRange = 5;
 		minRangeProbab = 0.7;
@@ -172,6 +232,9 @@ class CfgWeapons
 		ballisticsComputer = 1;
 		canLock = 2;
 		autoFire = 0;
+		selectionFireAnim = "muzzleFlash";						/// what selection is hidden when machinegun doesn't shoot
+		displayName = "M68 ALIM Gauss Cannon";
+		magazines[] = {"TEI_20Rnd_ALIM_GAUSS_slugs"};
 		class GunParticles
 		{
 			class effect1
@@ -193,10 +256,7 @@ class CfgWeapons
             effectName = "MachineGunCartridge2";
             };
 		};
-		selectionFireAnim = "muzzleFlash";						/// what selection is hidden when machinegun doesn't shoot
-		displayName = "M68 ALIM Gauss Cannon";
-		magazines[] = {"TEI_20Rnd_ALIM_GAUSS_slugs"};
-		//recoil = "recoil_recoiless_weapon";
+		
 	};
 };
 
@@ -1462,7 +1522,8 @@ class CfgVehicles
 					fov=0.7;
 				};
 			};
-			class GunScreen
+			//class GunScreen
+			class Gunner_display
 			{
 				renderTarget="rendertarget4";
 				class CameraView1
@@ -1470,7 +1531,7 @@ class CfgVehicles
 					pointPosition="PIP4_pos";
 					pointDirection="PIP4_dir";
 					renderQuality=2;
-					renderVisionMode=0;
+					renderVisionMode=2;
 					fov=0.5;
 				};
 			};
@@ -1529,22 +1590,25 @@ class CfgVehicles
 				gunnerLeftHandAnimName="trigger";
 				gunnerRightHandAnimName="trigger";
 				memoryPointGun="machinegun";
-				//weapons[]={"cannon_125mm"};
-				//magazines[]={"12Rnd_125mm_HE"};
 				weapons[]={"TEI_M68_GAUSS"};
 				magazines[] = {"TEI_20Rnd_ALIM_GAUSS_slugs","TEI_20Rnd_ALIM_GAUSS_slugs"};
 				memoryPointGunnerOptics="gunnerview";
+				gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";
+				//gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+				//gunnerOpticsModel="a3\weapons_f\Reticle\optics_empty";
 				gunnerOpticsShowCursor=1;
 				turretInfoType="RscWeaponZeroing";
+				//turretInfoType="RscOptics_crows";
+				visionMode[] = {"Normal","NVG","TI"};
 				castGunnerShadow=1;
 				startEngine=0;
 				enableManualFire=0;
-				gunnerOpticsModel="a3\weapons_f\Reticle\optics_empty";
+
 				gunnerForceOptics=0;
 				class ViewGunner:ViewOptics
 				{
 					initFov=0.7;
-					minFov=0.25;
+					minFov=0.05;
 					maxFov=1.1;
 				};
 			};
