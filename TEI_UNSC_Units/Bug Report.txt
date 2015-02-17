@@ -4,7 +4,7 @@ TEI_UNSC_Units
 	-all uniforms, vests, helmets need inventory icons
 	-all rv mats need to be re-done
 	-left shoulder pad middle deforming check UVs and/or weights?
-	-UNSC Pilot uniform shadow lod errors
+
 
 	/// ODST
 	-Visor script not working properly (Disabled for now) [Scorch052]
@@ -23,20 +23,17 @@ TEI_UNSC_Units
 	-Recon Helmet rvmats are seriously fucked right now
 
 	/// Army
-	-Give olive drab/tan backpacks to variants
 	-"addons" need proper rvmats
 	-full face helmet visor is causing some weird glitch where the visor interior will be transparent/white
 	-helmet attachments for variants need to be added, just take the attachments from odst helmets, same thing
 	-change armor values for light, medium, heavy variants
 	-shadow lods need to be optimized
-	-move Woodland and Desert units to seperate classes to make Men (Army/Desert) and Men (Army/Woodland)- not all combined in Men (Army)
 	-addons_as.paa was removed... why?
 	-shadow not showing for helmet and vest
-	-remove Medic vacuum vest and helmet
+
 
 	
 	/// Marines
-	-Give olive drab/tan backpacks to variant
 	-full face helmet visor is causing some weird glitch where the visor interior will be transparent/white
 	-helmet attachments for variants need to be added, just take the attachments from odst helmets, same thing
 	-change armor values for light, medium, heavy variants
