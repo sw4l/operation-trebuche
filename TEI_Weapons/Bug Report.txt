@@ -16,8 +16,6 @@ TEI_Weapons
 	/// M6G Pistol
 	-Weapon Animations (slide blowback, Mag Eject, etc.) do not work
 	-shadow lod causing trouble, wont show	
-	-different custom scope sight
-	-secondary scope sight missing
 
 	/// M45 Shotgun
 	-remove Olive and Tan verisons for now
@@ -39,8 +37,6 @@ TEI_Weapons
 	-gl fires too low compared to sights	
 
 	/// M41 Rocket Launcher
-	-geometery needs thinned out on one side (stands up when dropped sometimes)
-	-materials need changed (dirt instead of metal right now)
 	-rocket launcher case box normal map uses the Battle Rifle's - RVmat issue?
 	-add custom scope reticule and zoom level
 	-adjust missile ballistics to match closer to game

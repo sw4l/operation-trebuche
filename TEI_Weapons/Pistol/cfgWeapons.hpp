@@ -60,8 +60,7 @@ class CfgWeapons
 		};
 		inertia 									= 0.1;
  	};
-	
-	class TEI_M6G_Scope: ItemCore
+		class TEI_M6G_Scope: ItemCore
 	{
 		scope 										= 2;
 		displayName 								= "M6G KFA-2 SmartLink Scope";
@@ -72,33 +71,41 @@ class CfgWeapons
 		class ItemInfo: InventoryOpticsItem_Base_F
 		{
 			mass 									= 4;
-			opticType 								= 2;
-			weaponInfoType 							= "RscWeaponRangeZeroingFOV";
+			opticType		 						= 1;
 			optics 									= 1;
-			modelOptics 							= "\A3\Weapons_F\acc\reticle_MRCO_F";
+			modelOptics 							= "\TEI_Weapons\Pistol\scope.p3d";
 			class OpticsModes
 			{
-				class Snip
+				class TEI_M6G_BUIS
 				{
-					opticsID 						= 1;
-					opticsDisplayName 				= "WFOV";
-					useModelOptics 					= 1;
-					opticsPPEffects[]	 			= {""};
-					opticsZoomMin 					= 0.083;
-					opticsZoomMax 					= 0.083;
-					opticsZoomInit 					= 0.083;
-					distanceZoomMin 				= 100;
-					distanceZoomMax 				= 100;
-					memoryPointCamera 				= "opticView";
-					modelOptics[] 					= {"\A3\Weapons_F\acc\reticle_nightstalker_F"};
-					visionMode[] 					= {"Normal"};
-					opticsFlare 					= 0;
+					opticsID  						= 1;
+					useModelOptics  				= 0;
+					opticsPPEffects[]  				= {""};
+					opticsFlare  					= 0;
 					opticsDisablePeripherialVision 	= 0;
-					cameraDir 						= "";
+					opticsZoomMin  					= 0.375;
+					opticsZoomMax  					= 0.375;
+					opticsZoomInit  				= 0.375;
+					memoryPointCamera  				= "opticView2";
+					visionMode[]  					= {};
+					distanceZoomMin  				= 300;
+					distanceZoomMax 				= 300;
+					cameraDir  						= "";
 				};
+				class TEI_M6G_Scope: TEI_M6G_BUIS
+				{
+					opticsID  						= 2;
+					useModelOptics  				= 1;
+					opticsZoomMin  					= 0.0623;
+					opticsZoomMax 					= 0.0623;
+					opticsZoomInit 					= 0.0623;
+					memoryPointCamera 				= "opticView";
+					modelOptics 					= "\A3\Weapons_F\acc\reticle_MRCO_F";
+					visionMode[] 					= {"Normal"};
+				};
+			};
 		};
 		inertia 									= 0.1;
-		};
 	};
 	
 	//WEAPONS
