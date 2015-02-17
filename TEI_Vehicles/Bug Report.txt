@@ -22,7 +22,9 @@ TEI_Vehicles
 	-Turret barrel twisting animation missing
 	-Editor/map icon too large
 	-Warthog too illuminated RVMat issue?
-	-missing shell ejection out of MG turret
+	-MG turret middle pip sight needs to be moved to the right very slightly about 1 or 2 cm (shoots to the right)
+	-shell ejection memory point needs adjusted and delay needs fixed
+	-add scope view and crosshairs to PiP screen on Gauss hog
 
 >>>!!! when a player is in, the warthog locks and no one can get inside (Multiplayer tested) !!!<<<
 

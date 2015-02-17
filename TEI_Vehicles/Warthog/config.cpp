@@ -10,27 +10,118 @@ class CfgPatches
 		ammo[]={};
 	};
 };
-/*class CfgAmmo
+
+class CfgAmmo
+{
+	class B_35mm_AA;
+	class B_40mm_GPR;
+	class B_40mm_APFSDS;
+	class B_40mm_APFSDS_Tracer_Green;
+	class Sh_120mm_APFSDS;
+	class B_coil_20g_spike;
+	class TEI_25x130mm_Slug: B_40mm_APFSDS_Tracer_Green
+	{
+		
+		scope = 2;
+		caliber = 50;
+		typicalSpeed = 9000;
+		maxSpeed = 9999;
+		cost = 1000;
+		hit = 500;
+		tracerScale = 6;
+		tracerStartTime = 0.001;
+		tracerEndTime = 10.0;
+		indirectHit = 15;
+		indirectHitRange = 1;
+		CraterEffects = "GrenadeCrater";
+		explosionEffects = "GrenadeExplosion";
+		allowAgainstInfantry = 1;
+	};
+	/*class Sh_120mm_APFSDS: ShellBase
+	{
+		explosive = 0;
+		hit = 500;
+		indirectHit = 12;
+		indirectHitRange = 0.4;
+		typicalSpeed = 1680;
+		cost = 500;
+		airFriction = -3.96e-005;
+		CraterEffects = "ExploAmmoCrater";
+		explosionEffects = "ExploAmmoExplosion";
+		caliber = 30;
+		timeToLive = 15;
+		whistleOnFire = 1;
+		whistleDist = 14;
+		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_white";
+		tracerScale = 3;
+		tracerStartTime = 0.1;
+		tracerEndTime = 3.0;
+		muzzleEffect = "";
+		class HitEffects
+		{
+			hitMetal = "ImpactMetalSabotBig";
+			hitMetalPlate = "ImpactMetalSabotBig";
+			hitBuilding = "ImpactConcreteSabot";
+			hitConcrete = "ImpactConcreteSabot";
+			hitGroundSoft = "ImpactEffectsGroundSabot";
+			hitGroundHard = "ImpactEffectsGroundSabot";
+			default_mat = "ImpactEffectsGroundSabot";
+		};
+		allowAgainstInfantry = 0;
+		class CamShakeExplode
+		{
+			power = "(180^0.5)";
+			duration = "((round (180^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = "((180^0.5)*3)";
+		};
+		class CamShakeHit
+		{
+			power = 180;
+			duration = "((round (180^0.25))*0.2 max 0.2)";
+			frequency = 20;
+			distance = 1;
+		};
+		class CamShakeFire
+		{
+			power = "(120^0.25)";
+			duration = "((round (120^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = "((120^0.5)*8)";
+		};
+		class CamShakePlayerFire
+		{
+			power = 0.02;
+			duration = 0.1;
+			frequency = 20;
+			distance = 1;
+		};
+	};*/
+};
+
+class CfgMagazines
 {
 	class Default;
-	class 20Rnd_105mm_HEAT_MP;
-	class 20Rnd_ALIM_GAUSS:20Rnd_105mm_HEAT_MP
+	class 30Rnd_120mm_APFSDS_shells;
+	class TEI_20Rnd_ALIM_GAUSS_slugs: 30Rnd_120mm_APFSDS_shells
 	{
-		displayName="20 Rounds ALIM GAUSS";
-		displayNameShort="20 Rounds ALIM GAUSS";
-		ammo="Sh_105mm_HEAT_MP";
-		//initSpeed=1330;
-		initSpeed=50;
+		scope = 2;
+		displayName="20 Rnd ALIM Gauss Slugs";
+		displayNameShort="Gauss Slug";
+		ammo="TEI_25x130mm_Slug";
+		//ammo = "Sh_120mm_APFSDS";
+		//initSpeed=50000;
 		count=20;
 	};
 };
-*/
+
 class CfgWeapons
 {
 	class HMG_127;
 	class MGun;
-	class cannon_105mm;
-	class TEI_M41_LAAG:HMG_127
+	class autocannon_35mm;
+	class cannon_120mm;
+	class TEI_M41_LAAG: HMG_127
 	{
 		class GunParticles
         {
@@ -65,11 +156,25 @@ class CfgWeapons
 			sounds[]={"StandardSound"};
 		};
 	};
-	class TEI_M68_GAUSS:cannon_105mm
+	
+	class TEI_M68_GAUSS: cannon_120mm
 	{
+		reloadSound[] = {"A3\sounds_f\vehicles\armor\noises\reload_tank_cannon_2",31.622776,1,10};
+		minRange = 5;
+		minRangeProbab = 0.7;
+		midRange = 1200;
+		midRangeProbab = 0.7;
+		maxRange = 2500;
+		maxRangeProbab = 0.1;
+		reloadTime = 6;
+		magazineReloadTime = 6;
+		autoReload = 1;
+		ballisticsComputer = 1;
+		canLock = 2;
+		autoFire = 0;
 		class GunParticles
-        {
-            class effect1
+		{
+			class effect1
         {
 			positionName = "konec hlavne";
 			directionName = "Usti hlavne";
@@ -87,11 +192,19 @@ class CfgWeapons
             directionName = "machinegun_eject_dir";
             effectName = "MachineGunCartridge2";
             };
-        };
+		};
 		selectionFireAnim = "muzzleFlash";						/// what selection is hidden when machinegun doesn't shoot
-		displayName="M68 ALIM Gauss";
+		displayName = "M68 ALIM Gauss Cannon";
+		magazines[] = {"TEI_20Rnd_ALIM_GAUSS_slugs"};
+		//recoil = "recoil_recoiless_weapon";
 	};
 };
+
+class cfgRecoils
+{
+	recoil_recoiless_weapon[] = {0.5,0,0.04};
+};
+
 class CfgVehicles
 {
 	class LandVehicle;
@@ -1296,7 +1409,7 @@ class CfgVehicles
 	class TEI_M12G1_LRV:TEI_M12_LRV
 	{
 		model="TEI_Vehicles\Warthog\Warthog_G.p3d";
-		displayName="M12G1 LRV Warthog (Gauss)";
+		displayName="M12G1 Warthog (Gauss)";
 		hiddenSelections[]={"camo1","camo2"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_CO.paa"};
 		class RenderTargets
@@ -1419,7 +1532,7 @@ class CfgVehicles
 				//weapons[]={"cannon_125mm"};
 				//magazines[]={"12Rnd_125mm_HE"};
 				weapons[]={"TEI_M68_GAUSS"};
-				magazines[]={""};
+				magazines[] = {"TEI_20Rnd_ALIM_GAUSS_slugs","TEI_20Rnd_ALIM_GAUSS_slugs"};
 				memoryPointGunnerOptics="gunnerview";
 				gunnerOpticsShowCursor=1;
 				turretInfoType="RscWeaponZeroing";
@@ -1439,14 +1552,14 @@ class CfgVehicles
 	};
 	class TEI_M12G1_LRV_black:TEI_M12G1_LRV
 	{
-		displayName="M12G1 LRV Warthog (Gauss) [Black]";
+		displayName="M12G1 Warthog (Gauss) [Black]";
 		author="Eridanus Insurrection Team";
 		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_black_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_black_co.paa"};
 	};
 	class TEI_M12G1_LRV_tan:TEI_M12G1_LRV
 	{
-		displayName="M12G1 LRV Warthog (Gauss) [Tan]";
+		displayName="M12G1 Warthog (Gauss) [Tan]";
 		crew="TEI_UNSC_Army_D_Rifleman_AR";
 		author="Eridanus Insurrection Team";
 		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop"};
@@ -1454,7 +1567,7 @@ class CfgVehicles
 	};
 	class TEI_M12G1_LRV_snow:TEI_M12G1_LRV
 	{
-		displayName="M12G1 LRV Warthog (Gauss) [Snow]";
+		displayName="M12G1 Warthog (Gauss) [Snow]";
 		author="Eridanus Insurrection Team";
 		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_snow_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_snow_co.paa"};
