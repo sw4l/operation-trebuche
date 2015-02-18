@@ -337,6 +337,7 @@ class CfgVehicles
 		model="TEI_Vehicles\Warthog\Warthog.p3d";
 		picture="TEI_Vehicles\Warthog\Data\picture.paa";
 		Icon="TEI_Vehicles\Warthog\Data\icon.paa";
+		mapSize = 4;
 		transportMaxBackpacks=5;
 		slingLoadCargoMemoryPoints[]={"SlingLoadCargo1","SlingLoadCargo2","SlingLoadCargo3","SlingLoadCargo4"};
 		vehicleClass="Car";

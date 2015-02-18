@@ -55,6 +55,7 @@ class CfgVehicles
 		displayName = "Pelican"; 					/// how is the heli displayed in editor
 		model = "TEI_Vehicles\Pelican\Pelican_base.p3d"; 		/// path to model of the heli
 		icon = "TEI_Vehicles\Pelican\Data\icon.paa";			/// icon in map/editor
+		mapSize = 25; //size of icon in editor- square only in meters
 		picture = "TEI_Vehicles\Pelican\Data\icon2.paa";		/// small picture in command menu
 		driveOnComponent[] = {"wheel_1_1", "wheel_2_1", "wheel_2_2"};
 		damageResistance = 0.00555;
