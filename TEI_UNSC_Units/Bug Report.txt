@@ -4,6 +4,7 @@ TEI_UNSC_Units
 	-all uniforms, vests, helmets need inventory icons
 	-all rv mats need to be re-done
 	-left shoulder pad middle deforming check UVs and/or weights?
+	-vacuum sealed vests have two "buttons"? near the back of the legs (http://cloud-4.steamusercontent.com/ugc/709652207099798183/4ACA02C9340CDA7345280E2407AB4FE199EBFF5B/)
 
 
 	/// ODST
