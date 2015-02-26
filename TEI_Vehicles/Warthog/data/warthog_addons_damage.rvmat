@@ -1,13 +1,9 @@
-class StageTI
-{
-	texture = "a3\soft_f\mrap_01\data\mrap_01_base_ti_ca.paa";
-};
 ambient[] = {1,1,1,1};
 diffuse[] = {1,1,1,1};
-forcedDiffuse[] = {0,0,0,1};
-emmisive[] = {0,0,0,0};
-specular[] = {0.137255,0.137255,0.137255,1};
-specularPower = 50.4;
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,1};
+specular[] = {0.1,0.1,0.1,1};
+specularPower = 100;
 PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
@@ -24,24 +20,24 @@ class Stage1
 };
 class Stage2
 {
-	texture = "#(argb,8,8,3)color(0.5,0.5,0.5,1,DT)";
-	uvSource = "tex";
+	texture="TEI_Vehicles\damage_dt.paa";
+	uvSource="tex";
 	class uvTransform
 	{
-		aside[] = {10,0,0};
-		up[] = {0,10,0};
-		dir[] = {0,0,0};
-		pos[] = {0,0,0};
+		aside[]={16,0,0};
+		up[]={0,16,0};
+		dir[]={0,0,0};
+		pos[]={0,0,0};
 	};
 };
 class Stage3
 {
-	texture = "a3\data_f\destruct\damage_metalsheet_mca.paa";
+	texture="#(argb,8,8,3)color(0,0,0,0,MC)";
 	uvSource = "tex";
 	class uvTransform
 	{
-		aside[] = {2,0,0};
-		up[] = {0,2,0};
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
 		dir[] = {0,0,0};
 		pos[] = {0,0,0};
 	};
@@ -54,8 +50,8 @@ class Stage4
 	{
 		aside[] = {1,0,0};
 		up[] = {0,1,0};
-		dir[] = {0,0,1};
-		pos[] = {0,0,1};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
 	};
 };
 class Stage5
@@ -66,26 +62,18 @@ class Stage5
 	{
 		aside[] = {1,0,0};
 		up[] = {0,1,0};
-		dir[] = {0,0,1};
-		pos[] = {0,0,1};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
 	};
 };
 class Stage6
 {
-	texture = "#(ai,64,64,1)fresnel(7.53,5.44)";
-	uvSource = "none";
+	texture="#(ai,32,128,1)fresnel(3.21,4.01)";
+	uvSource="none";
 };
 class Stage7
 {
-	texture = "a3\data_f\env_land_ca.paa";
-	useWorldEnvMap = "true";
-	uvSource = "tex";
-	class uvTransform
-	{
-		aside[] = {1.0,0.0,0.0};
-		up[] = {0.0,1.0,0.0};
-		dir[] = {0.0,0.0,0.0};
-		pos[] = {0.0,0.0,0.0};
-	};
+	texture="a3\data_f\env_land_co.paa";
+	uvSource="none";
 };
 //};

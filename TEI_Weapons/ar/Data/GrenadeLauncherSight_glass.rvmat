@@ -32,7 +32,7 @@ class Stage2
 };
 class Stage3
 {
-	texture="#(argb,8,8,3)color(0.1,0.1,0.1,0,MC)";
+	texture="#(argb,8,8,3)color(0,0,0,0,MC)";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -68,26 +68,12 @@ class Stage5
 };
 class Stage6
 {
-	texture="#(ai,64,64,1)fresnelGlass(2.4)";
-	uvSource = "tex";
-	class uvTransform
-	{
-		aside[] = {1,0,0};
-		up[] = {0,1,0};
-		dir[] = {0,0,0};
-		pos[] = {0,0,0};
-	};
+	texture="#(ai,64,64,1)fresnelGlass(1.5)";
+	uvSource = "none";
 };
 class Stage7
 {
 	texture = "a3\data_f\env_land_co.paa";
-	uvSource = "tex";
-	class uvTransform
-	{
-		aside[] = {1,0,0};
-		up[] = {0,1,0};
-		dir[] = {0,0,0};
-		pos[] = {0,0,0};
-	};
+	uvSource = "none";
 };
 //};
