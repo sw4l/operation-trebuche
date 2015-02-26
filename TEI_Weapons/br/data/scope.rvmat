@@ -2,8 +2,8 @@ ambient[] = {1,1,1,1};
 diffuse[] = {1,1,1,1};
 forcedDiffuse[] = {0,0,0,0};
 emmisive[] = {0,0,0,1};
-specular[] = {0.1,0.1,0.1,1};
-specularPower = 100;
+specular[] = {0.5,0.5,0.5,1};
+specularPower = 50;
 PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
@@ -20,14 +20,14 @@ class Stage1
 };
 class Stage2
 {
-	texture="TEI_Weapons\gun_dt.paa";
-	uvSource="tex";
+	texture = "#(argb,8,8,3)color(0.5,0.5,0.5,1,DT)";
+	uvSource = "tex";
 	class uvTransform
 	{
-		aside[]={4,0,0};
-		up[]={0,4,0};
-		dir[]={0,0,0};
-		pos[]={0,0,0};
+		aside[] = {0,9,0};
+		up[] = {4.5,0,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
 	};
 };
 class Stage3
@@ -68,7 +68,7 @@ class Stage5
 };
 class Stage6
 {
-	texture="#(ai,64,64,1)fresnel(3.12,3.87)";
+	texture="#(ai,32,128,1)fresnel(5.8,0.3)";
 	uvSource="none";
 };
 class Stage7
