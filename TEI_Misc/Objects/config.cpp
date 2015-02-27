@@ -54,3 +54,20 @@ class CfgVehicles
 		icon = "iconCrateWpns";
 	};
 };
+
+class CfgGlasses 
+{ 
+    class G_Balaclava_blk; 
+    class TEI_Cigarette: G_Balaclava_blk 
+    { 
+        displayName = "Cigarette"; 
+        model = "\TEI_Misc\Objects\cigarette.p3d";
+		picture = "";
+    }; 
+    class TEI_Cigar: TEI_Cigarette
+    { 
+        displayName = "Cigar"; 
+        model = "\TEI_Misc\Objects\cigar.p3d";
+		picture = "";
+    }; 
+};  
