@@ -72,7 +72,7 @@ class Stage5
 };
 class Stage6
 {
-	texture="#(ai,32,128,1)fresnel(5.8,0.3)";
+	texture="#(ai,64,64,1)fresnel(3.12,3.87)";
 	uvSource="none";
 };
 class Stage7
