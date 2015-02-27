@@ -52,7 +52,7 @@ class CfgVehicles //This configures units and backpacks
 		linkedItems[] 													= {"TEI_UNSC_Marine_Vest","TEI_UNSC_Marine_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] 											= {"TEI_UNSC_Marine_Vest","TEI_UNSC_Marine_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		hiddenSelections[] 												= {"camo1","camo2","insignia","attach_leftshoulder","attach_rightshoulder","attach_pant1"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_CO.paa"};
+		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_Ca.paa"};
 	};
 	class TEI_UNSC_Marine_vacuum_heavy: B_Soldier_F //Configures the unit part of the Units Uniform
 	{
@@ -74,7 +74,7 @@ class CfgVehicles //This configures units and backpacks
 		linkedItems[] 													= {"TEI_UNSC_Marine_Vest_vacuum","TEI_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] 											= {"TEI_UNSC_Marine_Vest_vacuum","TEI_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		hiddenSelections[] 												= {"camo1","camo2","insignia","attach_leftshoulder","attach_rightshoulder","attach_pant1"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_CO.paa"};
+		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_Ca.paa"};
 	};
 class TEI_UNSC_Marine_medium: B_Soldier_F //Configures the unit part of the Units Uniform
 	{
@@ -96,7 +96,7 @@ class TEI_UNSC_Marine_medium: B_Soldier_F //Configures the unit part of the Unit
 		linkedItems[] 													= {"TEI_UNSC_Marine_Vest","TEI_UNSC_Marine_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] 											= {"TEI_UNSC_Marine_Vest","TEI_UNSC_Marine_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		hiddenSelections[] 												= {"camo1","camo2","insignia","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_pant2"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_CO.paa"};
+		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_Ca.paa"};
 	};
 	class TEI_UNSC_Marine_light: B_Soldier_F //Configures the unit part of the Units Uniform
 	{
@@ -118,7 +118,7 @@ class TEI_UNSC_Marine_medium: B_Soldier_F //Configures the unit part of the Unit
 		linkedItems[] 													= {"TEI_UNSC_Marine_Vest","TEI_UNSC_Marine_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] 											= {"TEI_UNSC_Marine_Vest","TEI_UNSC_Marine_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		hiddenSelections[] 												= {"camo1","camo2","insignia","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_pant2"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_CO.paa"};
+		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_Ca.paa"};
 	};
 	
 	//CLASSES WITH WEAPONS
@@ -163,7 +163,7 @@ class TEI_UNSC_Marine_medium: B_Soldier_F //Configures the unit part of the Unit
 		linkedItems[] 													= {"TEI_UNSC_Marine_Vest_vacuum","TEI_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] 											= {"TEI_UNSC_Marine_Vest_vacuum","TEI_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		hiddenSelections[] 												= {"camo1","camo2","insignia","attach_leftknee","attach_rightknee","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftthigh","attach_rightthigh","attach_rightknee2","attach_leftknee2","attach_pant2"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_CO.paa"};
+		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_Ca.paa"};
 	};
 	class TEI_UNSC_Marine_Rifleman_AR: TEI_UNSC_Marine_vacuum_heavy
 	{
@@ -523,7 +523,7 @@ class cfgWeapons
 		picture   										= ""; /// this icon fits the vest surprisingly well
 		model     										= "\TEI_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
 		hiddenSelections[]   									= {"camo1","camo2","attach_knife","attach_neck"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   								= {"TEI_UNSC_Units\Marines\data\vest_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_co.paa"}; /// what texture is going to be used
+		hiddenSelectionsTextures[]   								= {"TEI_UNSC_Units\Marines\data\vest_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_ca.paa"}; /// what texture is going to be used
 		class ItemInfo: VestItem 
 		{
 			uniformModel   									= "\TEI_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
@@ -533,7 +533,7 @@ class cfgWeapons
 			passThrough   									= 0.1; /// coef of damage passed to total damage
 			modelSides[]   									= {6};
 			hiddenSelections[]   								= {"camo1","camo2","attach_knife","attach_neck"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   							= {"TEI_UNSC_Units\Army\data\vest_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_co.paa"}; /// what texture is going to be used
+			hiddenSelectionsTextures[]   							= {"TEI_UNSC_Units\Army\data\vest_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_ca.paa"}; /// what texture is going to be used
 		};
 	};
 	class TEI_UNSC_Marine_vest_vacuum: TEI_UNSC_Marine_vest_base
@@ -544,7 +544,7 @@ class cfgWeapons
 		picture   										= ""; /// this icon fits the vest surprisingly well
 		model     										= "\TEI_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
 		hiddenSelections[]   							= {"camo1","camo2","attach_knife"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   					= {"TEI_UNSC_Units\Marines\data\vest_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_co.paa"}; /// what texture is going to be used
+		hiddenSelectionsTextures[]   					= {"TEI_UNSC_Units\Marines\data\vest_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_ca.paa"}; /// what texture is going to be used
 		class ItemInfo: VestItem 
 		{
 			uniformModel   								= "\TEI_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
@@ -554,7 +554,7 @@ class cfgWeapons
 			passThrough   								= 0.1; /// coef of damage passed to total damage
 			modelSides[]   								= {6};
 			hiddenSelections[]   						= {"camo1","camo2","attach_knife"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   				= {"TEI_UNSC_Units\Army\data\vest_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_co.paa"}; /// what texture is going to be used
+			hiddenSelectionsTextures[]   				= {"TEI_UNSC_Units\Army\data\vest_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_ca.paa"}; /// what texture is going to be used
 		};
 	};
 
@@ -578,7 +578,7 @@ class cfgWeapons
 			modelSides[]   									= {6};
 			passThrough   									= 0; /// coef of damage passed to total damage
 			hiddenSelections[]   								= {"camo1","camo2","attach_face"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   							= {"TEI_UNSC_Units\Marines\data\helmet_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_co.paa"}; /// what texture is going to be used
+			hiddenSelectionsTextures[]   							= {"TEI_UNSC_Units\Marines\data\helmet_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_ca.paa"}; /// what texture is going to be used
 		};
 	};
 	class TEI_UNSC_Marine_helmet: TEI_UNSC_Marine_helmet_base
@@ -589,7 +589,7 @@ class cfgWeapons
 		picture   										= ""; /// this icon fits the vest surprisingly well
 		model     										= "\TEI_UNSC_Units\Army\helmet.p3d"; /// what model does the vest use
 		hiddenSelections[]   									= {"camo1","camo2","attach_face"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   								= {"TEI_UNSC_Units\Marines\data\helmet_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_co.paa"}; /// what texture is going to be used
+		hiddenSelectionsTextures[]   								= {"TEI_UNSC_Units\Marines\data\helmet_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_ca.paa"}; /// what texture is going to be used
 		class ItemInfo: HeadgearItem 
 		{
 			uniformModel   									= "\TEI_UNSC_Units\Army\helmet.p3d"; /// what model does the vest use
@@ -609,7 +609,7 @@ class cfgWeapons
 		picture   										= ""; /// this icon fits the vest surprisingly well
 		model     										= "\TEI_UNSC_Units\Army\helmet.p3d"; /// what model does the vest use
 		hiddenSelections[]   									= {"camo1","camo2"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   								= {"TEI_UNSC_Units\Marines\data\helmet_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_co.paa"}; /// what texture is going to be used
+		hiddenSelectionsTextures[]   								= {"TEI_UNSC_Units\Marines\data\helmet_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_ca.paa"}; /// what texture is going to be used
 		class ItemInfo: HeadgearItem 
 		{
 			uniformModel   									= "\TEI_UNSC_Units\Army\helmet.p3d"; /// what model does the vest use
