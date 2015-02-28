@@ -205,13 +205,15 @@ class CfgWeapons
 	{
 	model										= "\TEI_Weapons\Shotgun\shotgun_tan.p3d";
 	displayName 									= "M45 Tactical Shotgun [Tan]";
-	picture 									= "\TEI_Weapons\Shotgun\data\icon_tan.paa";
+	//picture 									= "\TEI_Weapons\Shotgun\data\icon_tan.paa";
+	picture 									= "";
 	};	
 	
 	class TEI_M45_olive : TEI_M45
 	{
 	model										= "\TEI_Weapons\Shotgun\shotgun_olive.p3d";
 	displayName 									= "M45 Tactical Shotgun [Olive]";
-	picture 									= "\TEI_Weapons\Shotgun\data\icon_olive.paa";
+	//picture 									= "\TEI_Weapons\Shotgun\data\icon_olive.paa";
+	picture 									= "";
 	};
 };
