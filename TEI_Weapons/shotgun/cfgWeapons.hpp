@@ -104,7 +104,8 @@ class CfgWeapons
 		model										= "\TEI_Weapons\Shotgun\shotgun.p3d";
 		displayName 									= "M45 Tactical Shotgun";
 		descriptionShort 								= "8 Gauge Shotgun";
-		picture 									= "\TEI_Weapons\Shotgun\data\icon_shotgun.paa";
+		//picture 									= "\TEI_Weapons\Shotgun\data\icon_shotgun.paa";
+		picture 									= "";
 		magazines[] 									= {"TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs"};
 		modelOptics 									= "-";
 		modes[] 									= {"Single"};

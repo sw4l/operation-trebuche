@@ -27,7 +27,6 @@ TEI_Weapons
 
 >>!! THE GAME CRASHES WHEN YOU SELECT IT WITH ASDG JR ON !!<<
 	-figure out how to make ammo counter work, get player magazine size replace counter with number texture ## = (https://community.bistudio.com/wiki/setObjectTextureGlobal)(https://community.bistudio.com/wiki/setObjectMaterial)
-	-shadow lod missing for ammo counter
 	-add no iron sight version of ammo counter as scope
 	-when suppressor is added and then removed the muzzle flash appears and does not go away
 	-hand animation "breaks arm" when weapon is rested (Ctrl x2)
@@ -40,7 +39,14 @@ TEI_Weapons
 	-rocket launcher case box normal map uses the Battle Rifle's - RVmat issue?
 	-add custom scope reticule and zoom level
 	-adjust missile ballistics to match closer to game
-	-M41 hand animations are not working
+
+	/// M7 Submachine Gun
+	-Reflex sight needs added
+	-Flashlight needs added
+	-Laser needs added
+	-Muzzle proxy needs adjusted drastically (silencer p3d model needs to be zero'd on the axis)
+	-Muzzle flash error
+	-RVmats
 
 	/// biofoam
 	-needs icon image

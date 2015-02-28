@@ -1,13 +1,13 @@
 	
 
-    class Mode_SemiAuto;    // External class reference
-    class Mode_Burst;       // External class reference
-    class Mode_FullAuto;    // External class reference
-    class asdg_FrontSideRail;
-    class asdg_OpticRail1913;
+class Mode_SemiAuto;    // External class reference
+class Mode_Burst;       // External class reference
+class Mode_FullAuto;    // External class reference
+class asdg_FrontSideRail;
+class asdg_OpticRail1913;
      
-    class CfgWeapons
-    {
+class CfgWeapons
+{
             class WeaponSlotsInfo;
             class SlotInfo;
             class ItemCore;
@@ -17,23 +17,22 @@
 			class InventoryFlashLightItem_Base_F;
      
             //ATTACHMENTS
-     
-            class TEI_M7_silencer: ItemCore
-            {
-                    scope                                                                   = 2;
-                    displayName                                                             = "M7 Silencer";
-                    picture                                                                 = "\A3\weapons_F\Data\UI\gear_acco_Sniper_CA.paa";
-                    model                                                                   = "\TEI_Weapons\SMG\m7_silencer.p3d";
-                    descriptionShort                                                        = "M7 Silencer";
-                    inertia                                                                 = 0.1;
-					class ItemInfo: InventoryMuzzleItem_Base_F
+		class muzzle_snds_acp;
+        class TEI_M7_silencer: muzzle_snds_acp
+       {
+           scope                                                                   = 2;
+           displayName                                                             = "M7 Silencer";
+           picture                                                                 = "\A3\weapons_F\Data\UI\gear_acca_snds_l_CA.paa";
+           model                                                                   = "\TEI_Weapons\SMG\m7_silencer.p3d";
+           descriptionShort                                                        = "M7 Silencer";
+           inertia                                                                 = 0.1;
+			class ItemInfo: InventoryMuzzleItem_Base_F
 			{
 				mass = 5;
 				class MagazineCoef
 				{
 					initSpeed 		= 0.6;
 				};
-			
 				class AmmoCoef
 				{
 					// bullet ballistic modifiers
@@ -48,12 +47,9 @@
 					audibleFireTime	= 0.5;
 					cost			= 1;
 				}; 
-
 				muzzleEnd 			= "zaslehPoint"; // memory point in muzzle supressor's model
 				alternativeFire 	= "Zasleh2";  // class in cfgWeapons with model of muzzle flash	
-
 				soundTypeIndex		= 1; /// defines the position in sound[] array in the rifle
-
 				class MuzzleCoef
 				{
 					dispersionCoef			= 0.8f;
@@ -69,13 +65,17 @@
 					maxRangeCoef = 1.0f; maxRangeProbabCoef = 1.0f;
 				};			
 			};
-			class TEI_M7_Flashlight: ItemCore
+	   };
+	   
+			class acc_flashlight;
+			class TEI_M7_Flashlight: acc_flashlight
 			{
 				scope 										= 2;
 				displayName 								= "M7 Flashlight";
 				picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
 				descriptionShort 							= "Flashlight for the M7 SMG";
 				model 										= "\TEI_Weapons\SMG\m7_flashlight.p3d";
+				inertia 									= 0.1;
 				class ItemInfo: InventoryFlashLightItem_Base_F
 					{
 						mass 									= 4;
@@ -104,22 +104,21 @@
 									hardLimitEnd 					= 30;
 									};
 								scale[] 							= {0};
-							};
 						};
-					inertia 									= 0.1;
+					};
+					
 			};
-		};
      
-            //WEAPONS
+       //WEAPONS
      
             class SMG_01_F;
             class TEI_M7: SMG_01_F
             {
                     scope                                                                   = 2;
-            /*		handAnim[]                                                              = {"OFP2_ManSkeleton", "\TEI_Weapons\AR\data\anim\hand_anim_ma5c.rtm"};		*/
+            		//handAnim[]                                                              = {"OFP2_ManSkeleton", "\TEI_Weapons\AR\data\anim\hand_anim_ma5c.rtm"};
                     model                                                                   = "\TEI_Weapons\SMG\SMG.p3d";
-                    displayName                                                             = "M7 SMG";
-                    descriptionShort                                                        = "UNSC Sub Machine Gun";
+                    displayName                                                             = "M7/Caseless SMG";
+                    descriptionShort                                                        = "UNSC M7 SMG";
                     picture                                                                 = "";
                     magazines[]                                                             = {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag_tracer","TEI_48Rnd_5x23mm_Mag","TEI_48Rnd_5x23mm_Mag_tracer"};
                     modelOptics                                                             = "-";
@@ -127,7 +126,77 @@
                     muzzlePos                                                               = "usti hlavne";
                     muzzleEnd                                                               = "konec hlavne";
                     reloadAction                                                            = "GestureReloadKatiba";
-                    inertia                                                                 = 0.6;
+                    inertia   																= 0.6;
+					
+					modes[] = {"Single","FullAuto"};
+                    class Single: Mode_SemiAuto
+                    {
+                            sounds[] = {"StandardSound","SilencedSound"};
+                            class BaseSoundModeType
+                            {
+                                    weaponSoundEffect = "DefaultRifle";
+                                    closure1[] = {};
+                                    closure2[] = {};
+                                    soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                            };
+                            class StandardSound: BaseSoundModeType
+                            {
+                                    begin1[] = {"\TEI_Weapons\SMG\Data\sounds\SMG_1.wss",1.0,1,2000};
+                                    begin2[] = {"\TEI_Weapons\SMG\Data\sounds\SMG_2.wss",1.0,1,2000}; 
+                                    soundBegin[] = {"begin1",0.34,"begin2",0.33};
+                            };
+                            class SilencedSound: BaseSoundModeType
+                            {
+                                    begin1[] = {"\TEI_Weapons\SMG\Data\sounds\Silenced_1.wss",1.0,1,600};
+                                    begin2[] = {"\TEI_Weapons\SMG\Data\sounds\Silenced_1.wss",1.0,1,600};
+                                    soundBegin[] = {"begin1",0.5,"begin2",0.5};
+                            };
+                            reloadTime = 0.066; 		
+                            dispersion = 0.0013;
+                            recoil = "recoil_auto_smg_01";
+							recoilProne = "recoil_auto_prone_smg_01";
+                            minRange = 2;
+                            minRangeProbab = 0.3;
+                            midRange = 50;
+                            midRangeProbab = 0.7;
+                            maxRange = 400;
+                            maxRangeProbab = 0.05;
+                    };
+                    class FullAuto: Mode_FullAuto
+                    {
+                            sounds[] = {"StandardSound","SilencedSound"};
+                            class BaseSoundModeType
+                            {
+                                    weaponSoundEffect = "DefaultRifle";
+                                    closure1[] = {};
+                                    closure2[] = {};
+                                    soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                            };
+                            class StandardSound: BaseSoundModeType
+                            {
+                                    begin1[] = {"\TEI_Weapons\SMG\Data\sounds\SMG_1.wss",1.0,1,2000};
+                                    begin2[] = {"\TEI_Weapons\SMG\Data\sounds\SMG_2.wss",1.0,1,2000}; 
+                                    soundBegin[] = {"begin1",0.34,"begin2",0.33};
+                            };
+                            class SilencedSound: BaseSoundModeType
+                            {
+                                    begin1[] = {"\TEI_Weapons\SMG\Data\sounds\Silenced_1.wss",1.0,1,600};
+                                    begin2[] = {"\TEI_Weapons\SMG\Data\sounds\Silenced_1.wss",1.0,1,600};
+                                    soundBegin[] = {"begin1",0.5,"begin2",0.5};
+                            };
+                            reloadTime = 0.066; 
+                            dispersion = 0.0013;
+                            recoil = "recoil_auto_smg_01";
+							recoilProne = "recoil_auto_prone_smg_01";
+                            minRange = 2;
+                            minRangeProbab = 0.3;
+                            midRange = 50;
+                            midRangeProbab = 0.7;
+                            maxRange = 400;
+                            maxRangeProbab = 0.05;
+                            soundBurst = 0;
+                            burst = 1;
+                    };
                     class GunParticles: GunParticles
                     {
                        class SecondEffect
@@ -150,15 +219,17 @@
                             class CowsSlot: SlotInfo
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"TEI_M7_sights", "optic_Holosight", "optic_Hamr", "optic_Aco", "optic_Aco_grn", "optic_Arco", "optic_mrco", "optic_nightstalker", "optic_tws", "optic_mrd"};
-                                    displayname                                             = "Optics Slot";
+                                    compatibleitems[]                                       = {"optic_Holosight", "optic_Hamr", "optic_Aco", "optic_Aco_grn", "optic_Arco", "optic_mrco", "optic_nightstalker", "optic_tws", "optic_mrd"};
+                                    //"TEI_M7_sights"
+									displayname                                             = "Optics Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\TOP";
                                     scope                                                   = 2;
                             };
                             class PointerSlot: SlotInfo
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"TEI_M7_flashlight","TEI_M7_laser" };
+                                    compatibleitems[]                                       = {"TEI_M7_flashlight"};
+									//"TEI_M7_laser" 
                                     displayname                                             = "Pointer Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\SIDE";
                                     scope                                                   = 2;
@@ -166,4 +237,4 @@
                     };
 					
             };
-        };
+};
