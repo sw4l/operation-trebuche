@@ -38,7 +38,7 @@ class CfgVehicles
 	class TEI_odst_grave: static
 	{
 		scope = 2;
-		vehicleClass = "TEI_Ins_Object_class";
+		vehicleClass = "TEI_UNSC_Object_class";
 		displayName = "ODST Grave";
 		model = "\TEI_Misc\Objects\odst_grave.p3d";
 		author = "Eridanus Insurrection Team";
@@ -47,9 +47,18 @@ class CfgVehicles
 	class TEI_soldier_grave: static
 	{
 		scope = 2;
-		vehicleClass = "TEI_Ins_Object_class";
+		vehicleClass = "TEI_UNSC_Object_class";
 		displayName = "Soldier Grave";
 		model = "\TEI_Misc\Objects\soldier_grave.p3d";
+		author = "Eridanus Insurrection Team";
+		icon = "iconCrateWpns";
+	};
+	class TEI_monument: static
+	{
+		scope = 2;
+		vehicleClass = "TEI_UNSC_Object_class";
+		displayName = "Monument";
+		model = "\TEI_Misc\Objects\monument.p3d";
 		author = "Eridanus Insurrection Team";
 		icon = "iconCrateWpns";
 	};
