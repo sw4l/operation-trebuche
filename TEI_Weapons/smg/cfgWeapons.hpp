@@ -1,5 +1,3 @@
-	
-
 class Mode_SemiAuto;    // External class reference
 class Mode_Burst;       // External class reference
 class Mode_FullAuto;    // External class reference
@@ -8,15 +6,15 @@ class asdg_OpticRail1913;
      
 class CfgWeapons
 {
-            class WeaponSlotsInfo;
-            class SlotInfo;
-            class ItemCore;
-            class InventoryOpticsItem_Base_F;
-            class GunParticles;
-			class InventoryMuzzleItem_Base_F;
-			class InventoryFlashLightItem_Base_F;
+    class WeaponSlotsInfo;
+    class SlotInfo;
+    class ItemCore;
+    class InventoryOpticsItem_Base_F;
+    class GunParticles;
+	class InventoryMuzzleItem_Base_F;
+	class InventoryFlashLightItem_Base_F;
      
-            //ATTACHMENTS
+        //ATTACHMENTS
 		class muzzle_snds_acp;
         class TEI_M7_silencer: muzzle_snds_acp
        {
@@ -66,9 +64,8 @@ class CfgWeapons
 				};			
 			};
 	   };
-	   
-			class acc_flashlight;
-			class TEI_M7_Flashlight: acc_flashlight
+		class acc_flashlight;
+		class TEI_M7_Flashlight: acc_flashlight
 			{
 				scope 										= 2;
 				displayName 								= "M7 Flashlight";
@@ -88,8 +85,8 @@ class CfgWeapons
 							innerAngle 							= 20;
 							outerAngle 							= 80;
 							coneFadeCoef 						= 5;
-							position 							= "flash dir";
-							direction 							= "flash";
+							position 							= "flash";
+							direction 							= "flash dir";
 							useFlare 							= 1;
 							flareSize 							= 1.4;
 							flareMaxDistance 					= "100.0f";
@@ -108,6 +105,62 @@ class CfgWeapons
 					};
 					
 			};
+		class optic_Aco;
+		class TEI_M7_Sight: optic_Aco
+		{
+			scope 										= 2;
+			displayName 								= "M7 RDS";
+			picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
+			descriptionShort 							= "Red Dot Sight for the M7 SMG";
+			model 										= "\TEI_Weapons\SMG\m7_sights.p3d";
+			inertia 									= 0.1;
+			class ItemInfo: InventoryOpticsItem_Base_F
+			{
+				mass = 4;
+				modelOptics = "\A3\Weapons_F\empty";
+				optics = 1;
+				class OpticsModes
+				{
+					class RDS
+					{
+						opticsID = 1;
+						useModelOptics = 0;
+						opticsZoomMin = 0.375;
+						opticsZoomMax = 1.1;
+						opticsZoomInit = 0.75;
+						memoryPointCamera = "eye";
+						opticsFlare = 0;
+						opticsDisablePeripherialVision = 0;
+						distanceZoomMin = 100;
+						distanceZoomMax = 100;
+						cameraDir = "";
+						visionMode[] = {};
+						opticsPPEffects[] = {""};
+					};
+				};
+			};
+		};
+		class acc_pointer_IR;
+		class TEI_M7_Laser: acc_pointer_IR
+		{
+			scope 										= 2;
+			displayName 								= "M7 IR Laser";
+			picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
+			descriptionShort 							= "IR Laser for the M7 SMG";
+			model 										= "\TEI_Weapons\SMG\m7_laser.p3d";
+			inertia 									= 0.1;
+			class ItemInfo: InventoryFlashLightItem_Base_F
+			{
+				mass = 4;
+				class Pointer
+				{
+					irLaserPos = "laser dir";
+					irLaserEnd = "laser";
+					irDistance = 5;
+				};
+				class FlashLight{};
+			};
+		};
      
        //WEAPONS
      
@@ -115,7 +168,7 @@ class CfgWeapons
             class TEI_M7: SMG_01_F
             {
                     scope                                                                   = 2;
-            		//handAnim[]                                                              = {"OFP2_ManSkeleton", "\TEI_Weapons\AR\data\anim\hand_anim_ma5c.rtm"};
+            		//handAnim[]                                                            = {"OFP2_ManSkeleton", "\TEI_Weapons\AR\data\anim\hand_anim_ma5c.rtm"};
                     model                                                                   = "\TEI_Weapons\SMG\SMG.p3d";
                     displayName                                                             = "M7/Caseless SMG";
                     descriptionShort                                                        = "UNSC M7 SMG";
@@ -219,8 +272,7 @@ class CfgWeapons
                             class CowsSlot: SlotInfo
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"optic_Holosight", "optic_Hamr", "optic_Aco", "optic_Aco_grn", "optic_Arco", "optic_mrco", "optic_nightstalker", "optic_tws", "optic_mrd"};
-                                    //"TEI_M7_sights"
+                                    compatibleitems[]                                       = {"TEI_M7_Sight","optic_Holosight", "optic_Hamr", "optic_Aco", "optic_Aco_grn", "optic_Arco", "optic_mrco", "optic_nightstalker", "optic_tws", "optic_mrd"};
 									displayname                                             = "Optics Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\TOP";
                                     scope                                                   = 2;
@@ -228,8 +280,7 @@ class CfgWeapons
                             class PointerSlot: SlotInfo
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"TEI_M7_flashlight"};
-									//"TEI_M7_laser" 
+                                    compatibleitems[]                                       = {"TEI_M7_flashlight","TEI_M7_Laser"};\
                                     displayname                                             = "Pointer Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\SIDE";
                                     scope                                                   = 2;
