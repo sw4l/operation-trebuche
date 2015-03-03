@@ -3,29 +3,23 @@ TEI_Weapons
 	-All weapon inventory icons are fully transparent. you can barely make out the image. possibly a channel issue.
 
 	/// BR55HB Battle Rifle
-
->>!! THE GAME CRASHES WHEN YOU SELECT IT WITH ASDG JR ON !!<<
+!!!!!!!!-THE GAME CRASHES WHEN YOU SELECT IT WITH ASDG JR ON
 	-Weapon Animations (Bolt, Mag Eject, etc.) do not work
 	-Icons needed
-	-Bullet type too strong? (one shots if you shoot in the legs)
 	-figure out how to make ammo counter work, get player magazine size replace counter with number texture ## = (https://community.bistudio.com/wiki/setObjectTextureGlobal)(https://community.bistudio.com/wiki/setObjectMaterial)
 	-texture seems to be mirrored. any text is mirrored (see magazine or side of rifle)
-	-hand animation needs slight readjustment after scaling, forward hand needs to come down a bit, trigger hand needs to move back a bit
-	-BR scope is now non-fuctional.
 
 	/// M6G Pistol
 	-Weapon Animations (slide blowback, Mag Eject, etc.) do not work
 	-shadow lod causing trouble, wont show	
 
 	/// M45 Shotgun
-	-remove Olive and Tan verisons for now
 	-slide slideback on firing missing
 	-Reload animation wrong (loads 8 shells when we only have 6)
-	-getting error missing icon
+	-getting missing icon error
 
 	/// MA5B Assault Rifle
-
->>!! THE GAME CRASHES WHEN YOU SELECT IT WITH ASDG JR ON !!<<
+!!!!!!!!-THE GAME CRASHES WHEN YOU SELECT IT WITH ASDG JR ON
 	-figure out how to make ammo counter work, get player magazine size replace counter with number texture ## = (https://community.bistudio.com/wiki/setObjectTextureGlobal)(https://community.bistudio.com/wiki/setObjectMaterial)
 	-add no iron sight version of ammo counter as scope
 	-when suppressor is added and then removed the muzzle flash appears and does not go away
@@ -50,16 +44,12 @@ TEI_Weapons
 
 	/// biofoam
 	-needs icon image
-	-rvmat needs to be done properly
-	-missing biofoam_as.paa texture?
 	
 	/// medi pack
 	-needs icon image
-	-rvmat needs to be done properly
 
 	///ILCS Rucksacks
 	-needs icon image
-	-rvmat needs to be done properly
 	-shadow hidden selections not disappearing
 
 

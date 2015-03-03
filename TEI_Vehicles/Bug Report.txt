@@ -4,29 +4,19 @@ TEI_Vehicles
 	-add retextured UNSC Zamak "M1015 Mule"
 
 	/// HEV
+!!!!!!!!-player gets launched after ejecing and dies
 	-script suite needs to be fully tested [Scorch052]
 	-needs proper Geo and Contact LODs
 	-should try to create a new "vehicle" instead of inheriting from the ATV (why not just make it an object instead of a vehicle?)
 	-emergency door not working
-	-player dies upon ejecting (related to the "eject" option and position of exit)
-	-missing icon in editor
 	-remove horn
 	-remove option to "turn on" the vehicle
-	-crater floats slightly above the ground (possible cause of exit death- player clips the ground and dies)
-	-sounds need to be defined in config, otherwise cause error for "not found" aka missing path
+	-RVmats?
 
 	/// Warthog
-	-fire geo lod needed for the attachments (apc cover, gun, etc)
+!!!!!!!!-when a player is in, the warthog locks and no one can get inside (Multiplayer)
+!!!!!!!!-fire geo lod needed for the attachments (apc cover, gun, etc)
 	-sounds extremely quiet in driver seat
-	-Icons needed
-	-Turret barrel twisting animation missing
-	-Editor/map icon too large
-	-Warthog too illuminated RVMat issue?
-	-MG turret middle pip sight needs to be moved to the right very slightly about 1 or 2 cm (shoots to the right)
-	-shell ejection memory point needs adjusted and delay needs fixed
-	-add scope view and crosshairs to PiP screen on Gauss hog
-
->>>!!! when a player is in, the warthog locks and no one can get inside (Multiplayer tested) !!!<<<
 
 	/// Pelican
 	-cockpit gadgets not working, honestly wouldnt bother with it as the cockpit will be overhauled later

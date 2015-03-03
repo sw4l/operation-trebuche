@@ -1,8 +1,8 @@
 TEI_Ins_Units 
 	
 	-More Insurrectionists units need added [SpaceNavy]
-	-add the UCAV retextured "MAKO drone"
-	-add the Zamak variants retextured "M1015 Mule"
-	-groups needed
+	-add the UCAV retextured "MAKO drone" [SpaceNavy]
+	-add the Zamak variants retextured "M1015 Mule" [SpaceNavy]
+	-Innie groups need made [SpaceNavy]
 
 *Please put your name in brackets at the end of whatever issue(s) you are currently working on
