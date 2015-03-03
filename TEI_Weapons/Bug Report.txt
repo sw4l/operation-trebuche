@@ -16,7 +16,7 @@ TEI_Weapons
 	/// M45 Shotgun
 	-slide slideback on firing missing
 	-Reload animation wrong (loads 8 shells when we only have 6)
-	-getting missing icon error
+!!!!!!!!-getting missing icon error
 
 	/// MA5B Assault Rifle
 !!!!!!!!-THE GAME CRASHES WHEN YOU SELECT IT WITH ASDG JR ON
@@ -27,20 +27,13 @@ TEI_Weapons
 
 	/// MA5B (M309 GL)
 	-gl sight needs flip down animation
-	-gl fires too low compared to sights	
+!!!!!!!!-gl fires too low compared to sights	
 
 	/// M41 Rocket Launcher
-	-rocket launcher case box normal map uses the Battle Rifle's - RVmat issue?
 	-add custom scope reticule and zoom level
-	-adjust missile ballistics to match closer to game
 
 	/// M7 Submachine Gun
-	-Reflex sight needs added
-	-Flashlight needs added
-	-Laser needs added
-	-Muzzle proxy needs adjusted drastically (silencer p3d model needs to be zero'd on the axis)
-	-Muzzle flash error
-	-RVmats
+	-when suppressor is added and then removed the muzzle flash appears and does not go away
 
 	/// biofoam
 	-needs icon image
