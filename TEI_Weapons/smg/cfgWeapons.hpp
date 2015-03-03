@@ -72,39 +72,37 @@ class CfgWeapons
 				picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
 				descriptionShort 							= "Flashlight for the M7 SMG";
 				model 										= "\TEI_Weapons\SMG\m7_flashlight.p3d";
-				inertia 									= 0.1;
-				class ItemInfo: InventoryFlashLightItem_Base_F
-					{
-						mass 									= 4;
-						class FlashLight
-						{
-							color[] 							= {180,156,120};
-							ambient[] 							= {0.9,0.78,0.6};
-							intensity 							= 5;
-							size 								= 1;
-							innerAngle 							= 20;
-							outerAngle 							= 80;
-							coneFadeCoef 						= 5;
-							position 							= "flash";
-							direction 							= "flash dir";
-							useFlare 							= 1;
-							flareSize 							= 1.4;
-							flareMaxDistance 					= "100.0f";
-							dayLight 							= 0;
-								class Attenuation
-									{
-									start 							= 0.5;
-									constant 						= 0;
-									linear 							= 0;
-									quadratic 						= 1.1;
-									hardLimitStart 					= 20;
-									hardLimitEnd 					= 30;
-									};
-								scale[] 							= {0};
-						};
-					};
-					
+		class ItemInfo: InventoryFlashLightItem_Base_F
+		{
+			mass 									= 4;
+			class flashlight
+			{
+				color[] 							= {180,156,120};
+				ambient[] 							= {0.9,0.78,0.6};
+				intensity 							= 5;
+				size 								= 1;
+				innerAngle 							= 20;
+				outerAngle 							= 80;
+				coneFadeCoef 						= 5;
+				position 							= "flash dir";
+				direction 							= "flash";
+				useFlare 							= 1;
+				flareSize 							= 1.4;
+				flareMaxDistance 					= "100.0f";
+				dayLight 							= 0;
+				class Attenuation
+				{
+					start 							= 0.5;
+					constant 						= 0;
+					linear 							= 0;
+					quadratic 						= 1.1;
+					hardLimitStart 					= 20;
+					hardLimitEnd 					= 30;
+				};
+				scale[] 							= {0};
 			};
+		};
+		};
 		class optic_Aco;
 		class TEI_M7_Sight: optic_Aco
 		{
@@ -158,7 +156,6 @@ class CfgWeapons
 					irLaserEnd = "laser";
 					irDistance = 5;
 				};
-				class FlashLight{};
 			};
 		};
      
