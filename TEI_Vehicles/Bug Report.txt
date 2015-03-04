@@ -14,9 +14,12 @@ TEI_Vehicles
 	-RVmats?
 
 	/// Warthog
-!!!!!!!!-when a player is in, the warthog locks and no one can get inside (Multiplayer)
 !!!!!!!!-fire geo lod needed for the attachments (apc cover, gun, etc)
 	-sounds extremely quiet in driver seat
+	-cargo enterance positions need switched around
+	-cargo switching while inside needs fixing
+	-penetrator plate rvmat error???
+	-innie APC texture is the old pink version
 
 	/// Pelican
 	-cockpit gadgets not working, honestly wouldnt bother with it as the cockpit will be overhauled later

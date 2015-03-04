@@ -272,8 +272,8 @@ class TEI_UNSC_Marine_medium: B_Soldier_F //Configures the unit part of the Unit
 		vehicleClass									= "TEI_UNSC_Man_Marines_class";
 		weapons[] 										= {"TEI_BR55HB_ScopedRifle","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_BR55HB_ScopedRifle","Throw","Put"};
-		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
-		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
+		magazines[] 									= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag"};
+		respawnMagazines[] 								= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag"};
 	};
 	class TEI_UNSC_Marine_Grenadier: TEI_UNSC_Marine_vacuum_heavy
 	{

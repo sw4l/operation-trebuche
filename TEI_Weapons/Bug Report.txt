@@ -1,6 +1,7 @@
 TEI_Weapons
 	
-	-All weapon inventory icons are fully transparent. you can barely make out the image. possibly a channel issue.
+	-All weapon inventory icons are fully transparent. you can barely make out the image. image much be square 512x512 <---- USE IT
+	-None of the weapons have a muzzle flash, just the puff of smoke from the barrel.
 
 	/// BR55HB Battle Rifle
 !!!!!!!!-THE GAME CRASHES WHEN YOU SELECT IT WITH ASDG JR ON
@@ -16,31 +17,22 @@ TEI_Weapons
 	/// M45 Shotgun
 	-slide slideback on firing missing
 	-Reload animation wrong (loads 8 shells when we only have 6)
-	-getting missing icon error
+!!!!!!!!-getting missing icon error
 
 	/// MA5B Assault Rifle
 !!!!!!!!-THE GAME CRASHES WHEN YOU SELECT IT WITH ASDG JR ON
 	-figure out how to make ammo counter work, get player magazine size replace counter with number texture ## = (https://community.bistudio.com/wiki/setObjectTextureGlobal)(https://community.bistudio.com/wiki/setObjectMaterial)
 	-add no iron sight version of ammo counter as scope
-	-when suppressor is added and then removed the muzzle flash appears and does not go away
 	-hand animation "breaks arm" when weapon is rested (Ctrl x2)
 
 	/// MA5B (M309 GL)
 	-gl sight needs flip down animation
-	-gl fires too low compared to sights	
+!!!!!!!!-gl fires too low compared to sights	
 
 	/// M41 Rocket Launcher
-	-rocket launcher case box normal map uses the Battle Rifle's - RVmat issue?
 	-add custom scope reticule and zoom level
-	-adjust missile ballistics to match closer to game
 
 	/// M7 Submachine Gun
-	-Reflex sight needs added
-	-Flashlight needs added
-	-Laser needs added
-	-Muzzle proxy needs adjusted drastically (silencer p3d model needs to be zero'd on the axis)
-	-Muzzle flash error
-	-RVmats
 
 	/// biofoam
 	-needs icon image
