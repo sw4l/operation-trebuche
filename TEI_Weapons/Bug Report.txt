@@ -1,6 +1,7 @@
 TEI_Weapons
 	
-	-All weapon inventory icons are fully transparent. you can barely make out the image. possibly a channel issue.
+	-All weapon inventory icons are fully transparent. you can barely make out the image. image much be square 512x512 <---- USE IT
+	-None of the weapons have a muzzle flash, just the puff of smoke from the barrel.
 
 	/// BR55HB Battle Rifle
 !!!!!!!!-THE GAME CRASHES WHEN YOU SELECT IT WITH ASDG JR ON
@@ -22,7 +23,6 @@ TEI_Weapons
 !!!!!!!!-THE GAME CRASHES WHEN YOU SELECT IT WITH ASDG JR ON
 	-figure out how to make ammo counter work, get player magazine size replace counter with number texture ## = (https://community.bistudio.com/wiki/setObjectTextureGlobal)(https://community.bistudio.com/wiki/setObjectMaterial)
 	-add no iron sight version of ammo counter as scope
-	-when suppressor is added and then removed the muzzle flash appears and does not go away
 	-hand animation "breaks arm" when weapon is rested (Ctrl x2)
 
 	/// MA5B (M309 GL)
@@ -33,7 +33,6 @@ TEI_Weapons
 	-add custom scope reticule and zoom level
 
 	/// M7 Submachine Gun
-	-when suppressor is added and then removed the muzzle flash appears and does not go away
 
 	/// biofoam
 	-needs icon image
