@@ -285,4 +285,25 @@ class CfgWeapons
                     };
 					
             };
+			class TEI_M7S: TEI_M7
+			{
+				class LinkedItems
+				{
+					class LinkedItemsOptic
+					{
+					slot = "CowsSlot";
+					item = "TEI_M7_Sight";
+					};
+					class LinkedItemsAcc
+					{
+					slot = "PointerSlot";
+					item = "TEI_M7_Laser";
+					};
+					class LinkedItemsMuzzle
+					{
+					slot = "MuzzleSlot";
+					item = "TEI_M7_Silencer";
+					};	
+				};
+			};
 };

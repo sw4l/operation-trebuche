@@ -1,0 +1,51 @@
+"TEI_8Rnd_127x40_Mag"
+"TEI_6Rnd_8Gauge_Pellets"
+"TEI_6Rnd_8Gauge_Slugs"
+"TEI_M41_Twin_HEAT"
+"TEI_M41_Twin_"
+"TEI_32Rnd_762x51_Mag"
+"TEI_60Rnd_762x51_Mag"
+"TEI_36Rnd_95x40_Mag"
+"TEI_60Rnd_5x23mm_Mag"
+
+"ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"
+
+------------------------------------
+ srifle_EBR_MRCO_pointer_F 
+ srifle_GM6_SOS_F 
+ LMG_Zafir_F
+------------------------------------
+LOT OF MAGAZINES
+10x rifle
+4x pistol
+2x rockets
+10x shotgun
+8x sniper
+4x grenades
+11x GL grenades
+
+"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag"
+
+"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"
+
+"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag"
+
+"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag"
+
+"TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Slugs"
+
+"TEI_M41_Twin_HEAT","TEI_M41_Twin_HEAT"
+
+"HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"
+
+"1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell"
+
+"150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box",
+
+"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag"
+
+"5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag",
+
+
+------------------------------------
+
