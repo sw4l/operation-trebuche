@@ -2,6 +2,7 @@ TEI_Vehicles
 
 	-add retextured UNSC HEMTT "M1087 Stallion"
 	-add retextured UNSC Zamak "M1015 Mule"
+	-Thermal imaging RVmats? textures? how the fuck does thermal work
 
 	/// HEV
 !!!!!!!!-player gets launched after ejecing and dies

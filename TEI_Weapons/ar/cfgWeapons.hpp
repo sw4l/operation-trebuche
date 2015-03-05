@@ -89,7 +89,7 @@
                     dexterity                                                               = 3.25;
                     muzzlePos                                                               = "usti hlavne";
                     muzzleEnd                                                               = "konec hlavne";
-                    reloadAction                                                            = "GestureReloadKatiba";
+                    reloadAction                                                            = "GestureReloadTRG";
                     inertia                                                                 = 0.6;
                     class GunParticles: GunParticles
                     {

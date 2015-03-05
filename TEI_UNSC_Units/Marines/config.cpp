@@ -121,6 +121,9 @@ class TEI_UNSC_Marine_medium: B_Soldier_F //Configures the unit part of the Unit
 		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_Ca.paa"};
 	};
 	
+	
+	
+	
 	//CLASSES WITH WEAPONS
 	
 	class TEI_UNSC_Marine_Corpsman: TEI_UNSC_Army_Medic //Configures the unit part of the Units Uniform
@@ -409,6 +412,11 @@ class TEI_UNSC_Marine_medium: B_Soldier_F //Configures the unit part of the Unit
 		respawnMagazines[] 								= {};
 	};
 };
+
+
+
+
+
 
 class cfgWeapons
 {

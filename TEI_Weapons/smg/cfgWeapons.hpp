@@ -19,7 +19,7 @@ class CfgWeapons
         class TEI_M7_silencer: muzzle_snds_acp
        {
            scope                                                                   = 2;
-           displayName                                                             = "M7 Silencer";
+           displayName                                                             = "M7 SS-M 49 Suppressor";
            picture                                                                 = "\A3\weapons_F\Data\UI\gear_acca_snds_l_CA.paa";
            model                                                                   = "\TEI_Weapons\SMG\m7_silencer.p3d";
            descriptionShort                                                        = "M7 Silencer";
@@ -68,7 +68,7 @@ class CfgWeapons
 		class TEI_M7_Flashlight: acc_flashlight
 			{
 				scope 										= 2;
-				displayName 								= "M7 Flashlight";
+				displayName 								= "M7 Illumination Torch";
 				picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
 				descriptionShort 							= "Flashlight for the M7 SMG";
 				model 										= "\TEI_Weapons\SMG\m7_flashlight.p3d";
@@ -107,7 +107,7 @@ class CfgWeapons
 		class TEI_M7_Sight: optic_Aco
 		{
 			scope 										= 2;
-			displayName 								= "M7 RDS";
+			displayName 								= "M7 Reflex Sight";
 			picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
 			descriptionShort 							= "Red Dot Sight for the M7 SMG";
 			model 										= "\TEI_Weapons\SMG\m7_sights.p3d";
@@ -142,7 +142,7 @@ class CfgWeapons
 		class TEI_M7_Laser: acc_pointer_IR
 		{
 			scope 										= 2;
-			displayName 								= "M7 IR Laser";
+			displayName 								= "M7 Laser Aiming Module";
 			picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
 			descriptionShort 							= "IR Laser for the M7 SMG";
 			model 										= "\TEI_Weapons\SMG\m7_laser.p3d";
@@ -175,7 +175,7 @@ class CfgWeapons
                     dexterity                                                               = 3.25;
                     muzzlePos                                                               = "usti hlavne";
                     muzzleEnd                                                               = "konec hlavne";
-                    reloadAction                                                            = "GestureReloadKatiba";
+                    reloadAction                                                            = "GestureReloadSMG_03";
                     inertia   																= 0.6;
 					
 					modes[] = {"Single","FullAuto"};

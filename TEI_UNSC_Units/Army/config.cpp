@@ -48,8 +48,8 @@ class CfgVehicles //This configures units and backpacks
 		RespawnItems[]									= {"FirstAidKit"};
 		magazines[]										= {};
 		respawnMagazines[]								= {};
-		linkedItems[] 									= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
-		respawnlinkedItems[] 							= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
+		linkedItems[] 									= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnlinkedItems[] 							= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		hiddenSelections[] 								= {"camo1","camo2","insignia","attach_leftknee","attach_rightknee","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftthigh","attach_rightthigh","attach_rightknee2","attach_leftknee2","attach_pant2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 						= {"TEI_UNSC_Units\Army\data\armor_co.paa","TEI_UNSC_Units\Army\data\uniform_cam1_co.paa"};
 		identityTypes[] 								= {"LanguageENG_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","LanguageGRE_F","Head_Greek","Head_African","Head_Euro","Head_Asian","Head_NATO"};
@@ -65,8 +65,8 @@ class CfgVehicles //This configures units and backpacks
 		displayName										= "Pilot [Woodland]";
 		uniformClass									= "TEI_UNSC_Army_Pilot_BDU_WDL";
 		model											= "\TEI_UNSC_Units\Army\uniform.p3d";
-		linkedItems[] 									= {"TEI_UNSC_M52V_Vest_WDL","TEI_UNSC_CH252V_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
-		respawnlinkedItems[] 							= {"TEI_UNSC_M52V_Vest_WDL","TEI_UNSC_CH252V_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
+		linkedItems[] 									= {"TEI_UNSC_M52V_Vest_WDL","TEI_UNSC_CH252V_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnlinkedItems[] 							= {"TEI_UNSC_M52V_Vest_WDL","TEI_UNSC_CH252V_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		hiddenSelections[] 								= {"camo1","camo2","insignia","attach_leftknee","attach_rightknee","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftthigh","attach_rightthigh","attach_rightknee2","attach_leftknee2","attach_pant2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 						= {"TEI_UNSC_Units\Army\data\armor_co.paa","TEI_UNSC_Units\Army\data\uniform_cam1_co.paa"};
 	};
@@ -76,8 +76,8 @@ class CfgVehicles //This configures units and backpacks
 		author											= "Eridanus Insurrection Team";
 		displayName										= "Rifleman (Light) [Woodland]";
 		uniformClass									= "TEI_UNSC_Army_BDU_L_WDL";
-		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
-		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		hiddenSelections[] 								= {"camo1","camo2","insignia","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_rightknee2","attach_leftknee2","attach_pant2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 						= {"TEI_UNSC_Units\Army\data\armor_co.paa","TEI_UNSC_Units\Army\data\uniform_cam1_co.paa"};
 	};
@@ -86,8 +86,8 @@ class CfgVehicles //This configures units and backpacks
 		author											= "Eridanus Insurrection Team";
 		displayName										= "Rifleman [Woodland]";
 		uniformClass									= "TEI_UNSC_Army_BDU_WDL";
-		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
-		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		hiddenSelections[] 								= {"camo1","camo2","insignia","attach_leftshin","attach_rightshin","attach_leftshoulder2","attach_rightshoulder2","attach_rightknee2","attach_leftknee2","attach_pant2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 						= {"TEI_UNSC_Units\Army\data\armor_co.paa","TEI_UNSC_Units\Army\data\uniform_cam1_co.paa"};
 	};
@@ -96,8 +96,8 @@ class CfgVehicles //This configures units and backpacks
 		author											= "Eridanus Insurrection Team";
 		displayName										= "Rifleman (Heavy) [Woodland]";
 		uniformClass									= "TEI_UNSC_Army_BDU_H_WDL";
-		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
-		respawnlinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnlinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		hiddenSelections[] 								= {"camo1","camo2","insignia","attach_leftshoulder2","attach_rightshoulder2","attach_rightknee2","attach_leftknee2","attach_pant1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 						= {"TEI_UNSC_Units\Army\data\armor_co.paa","TEI_UNSC_Units\Army\data\uniform_cam1_co.paa"};
 	};
@@ -114,8 +114,8 @@ class CfgVehicles //This configures units and backpacks
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
 		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
-		linkedItems[] 									= {"TEI_UNSC_M52_Vest_Medic","TEI_UNSC_CH252_Helmet_Medic","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_MedKit","TEI_Biofoam"};
-		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_Medic","TEI_UNSC_CH252_Helmet_Medic","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_MedKit","TEI_Biofoam"};
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_Medic","TEI_UNSC_CH252_Helmet_Medic","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_MedKit","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_Medic","TEI_UNSC_CH252_Helmet_Medic","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_MedKit","TEI_Biofoam","TEI_NVG"};
 		hiddenSelections[] 								= {"camo1","camo2","insignia","attach_leftshoulder2","attach_rightshoulder2","attach_rightknee2","attach_leftknee2","attach_pant1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 						= {"TEI_UNSC_Units\Army\data\armor_medic_co.paa","TEI_UNSC_Units\Army\data\uniform_cam3_co.paa"};
 	};
@@ -124,8 +124,8 @@ class CfgVehicles //This configures units and backpacks
 		author											= "Eridanus Insurrection Team";
 		displayName										= "Pilot [Desert]";
 		uniformClass									= "TEI_UNSC_Army_Pilot_BDU_DES";
-		linkedItems[] 									= {"TEI_UNSC_M52V_Vest_DES","TEI_UNSC_CH252V_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
-		respawnlinkedItems[] 							= {"TEI_UNSC_M52V_Vest_DES","TEI_UNSC_CH252V_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
+		linkedItems[] 									= {"TEI_UNSC_M52V_Vest_DES","TEI_UNSC_CH252V_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnlinkedItems[] 							= {"TEI_UNSC_M52V_Vest_DES","TEI_UNSC_CH252V_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		hiddenSelections[] 								= {"camo1","camo2","insignia","attach_leftknee","attach_rightknee","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftthigh","attach_rightthigh","attach_rightknee2","attach_leftknee2","attach_pant2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 						= {"TEI_UNSC_Units\Army\data\armor_cam2_co.paa","TEI_UNSC_Units\Army\data\uniform_cam2_co.paa"};
 	};
@@ -134,8 +134,8 @@ class CfgVehicles //This configures units and backpacks
 		author											= "Eridanus Insurrection Team";
 		displayName										= "Rifleman (Light) [Desert]";
 		uniformClass									= "TEI_UNSC_Army_BDU_L_DES";
-		linkedItems[] 									= {"TEI_UNSC_M52_Vest_DES","TEI_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
-		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_DES","TEI_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_DES","TEI_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_DES","TEI_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		hiddenSelections[] 								= {"camo1","camo2","insignia","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_rightknee2","attach_leftknee2","attach_pant2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 						= {"TEI_UNSC_Units\Army\data\armor_cam2_co.paa","TEI_UNSC_Units\Army\data\uniform_cam2_co.paa"};
 	};
@@ -144,8 +144,8 @@ class CfgVehicles //This configures units and backpacks
 		author											= "Eridanus Insurrection Team";
 		displayName										= "Rifleman [Desert]";
 		uniformClass									= "TEI_UNSC_Army_BDU_DES";
-		linkedItems[] 									= {"TEI_UNSC_M52_Vest_DES","TEI_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
-		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_DES","TEI_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_DES","TEI_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_DES","TEI_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		hiddenSelections[] 								= {"camo1","camo2","insignia","attach_leftshin","attach_rightshin","attach_leftshoulder2","attach_rightshoulder2","attach_rightknee2","attach_leftknee2","attach_pant2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 						= {"TEI_UNSC_Units\Army\data\armor_cam2_co.paa","TEI_UNSC_Units\Army\data\uniform_cam2_co.paa"};
 	};
@@ -154,11 +154,14 @@ class CfgVehicles //This configures units and backpacks
 		author											= "Eridanus Insurrection Team";
 		displayName										= "Rifleman (Heavy) [Desert]";
 		uniformClass									= "TEI_UNSC_Army_BDU_H_DES";
-		linkedItems[] 									= {"TEI_UNSC_M52_Vest_DES","TEI_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
-		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_DES","TEI_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_DES","TEI_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_DES","TEI_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		hiddenSelections[] 								= {"camo1","camo2","insignia","attach_leftshoulder2","attach_rightshoulder2","attach_rightknee2","attach_leftknee2","attach_pant1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 						= {"TEI_UNSC_Units\Army\data\armor_cam2_co.paa","TEI_UNSC_Units\Army\data\uniform_cam2_co.paa"};
 	};
+	
+	
+	
 	
 	
 		// ARMY WOODLAND SOLDIERS CLASSES (W/ WEAPONS)
@@ -176,22 +179,22 @@ class CfgVehicles //This configures units and backpacks
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
 		uniformClass									= "TEI_UNSC_Army_BDU_H_WDL";
 		backpack 										= "TEI_Como_pack_1";
-		weapons[] 										= {"TEI_MA5B_AC","Throw","Put"};
-		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put"};
-		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
-		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
-		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
-		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
+		weapons[] 										= {"TEI_M7","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_M7","Throw","Put"};
+		magazines[] 									= {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 	};
 	class TEI_UNSC_Army_W_Pilot: TEI_UNSC_Army_Pilot_WDL
 	{
 		scope											= 2;
 		displayName										= "Pilot";
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
-		weapons[] 										= {"TEI_M6G_SF","TEI_M6G_Scope","Throw","Put"};
-		respawnWeapons[] 								= {"TEI_M6G_SF","TEI_M6G_Scope","Throw","Put"};
-		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag"};
-		respawnMagazines[]	 							= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag"};
+		weapons[] 										= {"TEI_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_M6G_SF","Throw","Put"};
+		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		respawnMagazines[]	 							= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
 	};
 	class TEI_UNSC_Army_W_Rifleman_AR: TEI_UNSC_Army_Rifleman_H_WDL
 	{
@@ -201,8 +204,8 @@ class CfgVehicles //This configures units and backpacks
 		backpack 										= "B_Kitbag_rgr";
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put"};
-		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
-		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 	};
 	class TEI_UNSC_Army_W_Rifleman_BR: TEI_UNSC_Army_Rifleman_H_WDL
 	{
@@ -212,29 +215,31 @@ class CfgVehicles //This configures units and backpacks
 		backpack 										= "B_Kitbag_rgr";
 		weapons[] 										= {"TEI_BR55HB_ScopedRifle","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_BR55HB_ScopedRifle","Throw","Put"};
-		magazines[] 									= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag"};
-		respawnMagazines[] 								= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag"};
+		magazines[] 									= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 	};
 	class TEI_UNSC_Army_W_Rifleman_AT: TEI_UNSC_Army_Rifleman_WDL
 	{
 		scope											= 2;
 		displayName										= "Rifleman (AT)";
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
-		backpack 										= "B_Kitbag_rgr";
+		backpack 										= "B_Kitbag_rgr"; //rockets inside?
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
-		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAT_G"};
-		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAT_G"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 	};
 	class TEI_UNSC_Army_W_Rifleman_Light: TEI_UNSC_Army_Rifleman_WDL
 	{
 		scope											= 2;
 		displayName										= "Rifleman (Light)";
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put"};
-		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
-		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 	};
 	class TEI_UNSC_Army_W_AT_Specialist: TEI_UNSC_Army_Rifleman_WDL
 	{
@@ -244,8 +249,8 @@ class CfgVehicles //This configures units and backpacks
 		backpack 										= "B_Kitbag_rgr";
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
-		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAT_G"};
-		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAT_G"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAT_G","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAT_G","SmokeShell","SmokeShellGreen"};
 	};
 	class TEI_UNSC_Army_W_AA_Specialist: TEI_UNSC_Army_Rifleman_WDL
 	{
@@ -255,8 +260,8 @@ class CfgVehicles //This configures units and backpacks
 		backpack 										= "B_Kitbag_rgr";
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
-		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAA","TEI_M41_Twin_HEAA"};
-		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAA","TEI_M41_Twin_HEAA"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAA","TEI_M41_Twin_HEAA","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAA","TEI_M41_Twin_HEAA","SmokeShell","SmokeShellGreen"};
 	};
 	class TEI_UNSC_Army_W_Engineer: TEI_UNSC_Army_Rifleman_WDL
 	{
@@ -264,7 +269,7 @@ class CfgVehicles //This configures units and backpacks
 		displayName										= "Engineer";
 		engineer 										= 1;
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
-		backpack 										= "B_Kitbag_rgr";
+		backpack 										= "";
 		weapons[] 										= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
 		respawnWeapons[] 								= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
 		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs"};
@@ -275,7 +280,6 @@ class CfgVehicles //This configures units and backpacks
 		scope											= 2;
 		displayName										= "Breacher";
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
-		backpack 										= "B_Kitbag_rgr";
 		weapons[] 										= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
 		respawnWeapons[] 								= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
 		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs"};
@@ -287,21 +291,23 @@ class CfgVehicles //This configures units and backpacks
 		displayName										= "Team Leader";
 		backpack 										= "B_Kitbag_rgr";
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
-		weapons[] 										= {"TEI_BR55HB_ScopedRifle","Throw","Put"};
-		respawnWeapons[] 								= {"TEI_BR55HB_ScopedRifle","Throw","Put"};
-		magazines[] 									= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag"};
-		respawnMagazines[] 								= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag"};
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnlinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		weapons[] 										= {"TEI_MA5BGL_AC","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_MA5BGL_AC","Throw","Put"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
 	};
 	class TEI_UNSC_Army_W_SquadLead: TEI_UNSC_Army_Rifleman_H_WDL
 	{
 		scope											= 2;
 		displayName										= "Squad Leader";
-		backpack 										= "B_Kitbag_rgr";
+		backpack 										= "TEI_Como_pack_1";
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
-		weapons[] 										= {"TEI_BR55HB_ScopedRifle","Throw","Put"};
-		respawnWeapons[] 								= {"TEI_BR55HB_ScopedRifle","Throw","Put"};
-		magazines[] 									= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag"};
-		respawnMagazines[] 								= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag"};
+		weapons[] 										= {"TEI_BR55HB_ScopedRifle","TEI_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_BR55HB_ScopedRifle","TEI_M6G_SF","Throw","Put"};
+		magazines[] 									= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag_Tracer","TEI_36Rnd_95x40_Mag_Tracer","TEI_36Rnd_95x40_Mag_Tracer","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","SmokeShell","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag_Tracer","TEI_36Rnd_95x40_Mag_Tracer","TEI_36Rnd_95x40_Mag_Tracer","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","SmokeShell","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
 	};
 	class TEI_UNSC_Army_W_Grenadier: TEI_UNSC_Army_Rifleman_H_WDL
 	{
@@ -311,99 +317,105 @@ class CfgVehicles //This configures units and backpacks
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
 		weapons[] 										= {"TEI_MA5BGL_AC","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_MA5BGL_AC","Throw","Put"};
-		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
-		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
 	};
-	class TEI_Autorifleman: TEI_UNSC_Army_Rifleman_WDL
+	class TEI_UNSC_Army_W_Autorifleman: TEI_UNSC_Army_Rifleman_WDL
 	{
 		scope											= 2;
 		displayName										= "Autorifleman";
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
-		weapons[] 										= {"Weapon_LMG_Zafir_F","Throw","Put"};
-		respawnWeapons[] 								= {"Weapon_LMG_Zafir_F","Throw","Put"};
-		magazines[] 									= {"150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box"};
-		respawnMagazines[] 								= {"150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box"};
+		//backpack										= assistance AR backpack with ammo inside
+		weapons[] 										= {"LMG_Zafir_F","Throw","Put"};
+		respawnWeapons[] 								= {"LMG_Zafir_F","Throw","Put"};
+		magazines[] 									= {"150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 	};
-	class TEI_Assist_Autorifleman: TEI_UNSC_Army_Rifleman_WDL
+	class TEI_UNSC_Army_W_Assist_Autorifleman: TEI_UNSC_Army_Rifleman_WDL
 	{
 		scope											= 2;
 		displayName										= "Assistant Autorifleman";
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
+		//backpack										= assistance AR backpack with ammo inside
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put"};
-		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","150Rnd_762x51_Box","150Rnd_762x51_Box"};
-		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","150Rnd_762x51_Box","150Rnd_762x51_Box"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
 	};
-	class TEI_Marksman: TEI_UNSC_Army_Rifleman_H_WDL
+	class TEI_UNSC_Army_W_Marksman: TEI_UNSC_Army_Rifleman_H_WDL
 	{
 		scope											= 2;
 		displayName										= "Designated Marksman";
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
-		weapons[] 										= {"Weapon_srifle_EBR_F","Throw","Put"};
-		respawnWeapons[] 								= {"Weapon_srifle_EBR_F","Throw","Put"};
-		magazines[] 									= {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag"};
-		respawnMagazines[] 								= {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag"};
+		weapons[] 										= {"srifle_EBR_MRCO_pointer_F","TEI_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"srifle_EBR_MRCO_pointer_F","TEI_M6G_SF","Throw","Put"};
+		magazines[] 									= {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 	};
-	class TEI_Sniper: TEI_UNSC_Army_Rifleman_WDL //change to sniper uniform
+	class TEI_UNSC_Army_W_Sniper: TEI_UNSC_Army_Rifleman_WDL //change to sniper uniform
 	{
 		scope											= 2;
 		displayName										= "Sniper";
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
-		weapons[] 										= {"Weapon_srifle_GM6_F","Throw","Put"};
-		respawnWeapons[] 								= {"Weapon_srifle_GM6_F","Throw","Put"};
-		magazines[] 									= {"5Rnd_127x108_Mag","5Rnd_127x108_Mag","5Rnd_127x108_Mag","5Rnd_127x108_Mag","5Rnd_127x108_Mag","5Rnd_127x108_Mag"};
-		respawnMagazines[] 								= {"5Rnd_127x108_Mag","5Rnd_127x108_Mag","5Rnd_127x108_Mag","5Rnd_127x108_Mag","5Rnd_127x108_Mag","5Rnd_127x108_Mag"};
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest2_WDL","TEI_UNSC_CH252_Helmet2_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest2_WDL","TEI_UNSC_CH252_Helmet2_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		weapons[] 										= {"srifle_GM6_SOS_F","TEI_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"srifle_GM6_SOS_F","TEI_M6G_SF","Throw","Put"};
+		magazines[] 									= {"5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 	};
-	class TEI_Observer: TEI_UNSC_Army_Rifleman_WDL
+	class TEI_UNSC_Army_W_Observer: TEI_UNSC_Army_Rifleman_WDL
 	{
 		scope											= 2;
 		displayName										= "Observer";
 		backpack 										= "B_Kitbag_rgr";
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest2_WDL","TEI_UNSC_CH252_Helmet2_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest2_WDL","TEI_UNSC_CH252_Helmet2_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		Items[]											= {"FirstAidKit","Item_Laserdesignator"};
 		RespawnItems[]									= {"FirstAidKit","Item_Laserdesignator"};
-		weapons[] 										= {"TEI_BR55HB_ScopedRifle","Throw","Put"};
-		respawnWeapons[] 								= {"TEI_BR55HB_ScopedRifle","Throw","Put"};
-		magazines[] 									= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag"};
-		respawnMagazines[] 								= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag"};
+		weapons[] 										= {"TEI_BR55HB_ScopedRifle","TEI_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_BR55HB_ScopedRifle","TEI_M6G_SF","Throw","Put"};
+		magazines[] 									= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","Laserbatteries","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag"};
+		respawnMagazines[] 								= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","Laserbatteries","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag"};
 	};
-	class TEI_Crewman: TEI_UNSC_Army_W_Pilot
+	class TEI_UNSC_Army_W_Crewman: TEI_UNSC_Army_W_Pilot
 	{
 		displayName										= "Crewman";
-		weapons[] 										= {"TEI_M6G_SF","TEI_M6G_Scope","Throw","Put"}; //change to SMG
-		respawnWeapons[] 								= {"TEI_M6G_SF","TEI_M6G_Scope","Throw","Put"};
-		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag"};
-		respawnMagazines[]	 							= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag"};
-		Items[]											= {"FirstAidKit"};
-		RespawnItems[]									= {"FirstAidKit"};
+		weapons[] 										= {"TEI_M7","TEI_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_M7","TEI_M6G_SF","Throw","Put"};
+		linkedItems[] 									= {"TEI_UNSC_M52V_Vest_WDL","H_HelmetCrew_B","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnlinkedItems[] 							= {"TEI_UNSC_M52V_Vest_WDL","H_HelmetCrew_B","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		magazines[] 									= {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[]	 							= {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShellGreen"};
 	};
-	class TEI_Demolitions: TEI_UNSC_Army_Rifleman_WDL
+	class TEI_UNSC_Army_W_Demolitions: TEI_UNSC_Army_Rifleman_WDL
 	{
 		scope											= 2;
 		displayName										= "Demolitions";
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
-		backpack 										= "B_Kitbag_rgr";
+		//backpack 										= explosives backpack
+		engineer 										= 1;
 		weapons[] 										= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
 		respawnWeapons[] 								= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
-		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs"};
-		respawnMagazines[] 								= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs"};
-		Items[]											= {"FirstAidKit"}; //give explosives
-		RespawnItems[]									= {"FirstAidKit"};
+		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","HandGrenade","HandGrenade","SmokeShell","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag"};
+		respawnMagazines[] 								= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","HandGrenade","HandGrenade","SmokeShell","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag"};
 	};
-	class TEI_UAV_Op: TEI_UNSC_Army_Rifleman_WDL
+	class TEI_UNSC_Army_W_UAV_Op: TEI_UNSC_Army_Rifleman_WDL
 	{
 		scope											= 2;
 		displayName										= "UAV Operator";
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
-		backpack 										= "B_Kitbag_rgr";
+		backpack 										= "B_UAV_01_backpack_F";
+		uavHacker 										= 1;
 		weapons[] 										= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
 		respawnWeapons[] 								= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
-		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs"};
-		respawnMagazines[] 								= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs"};
-		Items[]											= {"FirstAidKit","Item_B_UavTerminal"};
-		RespawnItems[]									= {"FirstAidKit","Item_B_UavTerminal"};
+		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShellGreen"};
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG","B_UavTerminal"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG","B_UavTerminal"};
 	};
-	class TEI_Unarmed: TEI_UNSC_Army_Rifleman_WDL
+	class TEI_UNSC_Army_W_Unarmed: TEI_UNSC_Army_Rifleman_WDL
 	{
 		scope											= 2;
 		displayName										= "Unarmed";
@@ -413,18 +425,27 @@ class CfgVehicles //This configures units and backpacks
 		magazines[] 									= {};
 		respawnMagazines[] 								= {};
 	};
-	class TEI_Officer: TEI_UNSC_Army_W_Pilot
+	class TEI_UNSC_Army_W_Officer: TEI_UNSC_Army_W_Pilot
 	{
 		scope											= 2;
 		displayName										= "Officer";
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		weapons[] 										= {"TEI_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_M6G_SF","Throw","Put"};
+		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		respawnMagazines[]	 							= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
 	};
 	
 	
 	
+	
+	
+	
 		// ARMY DESERT SOLDIERS CLASSES (W/ WEAPONS)
-
-	class TEI_UNSC_Army_D_Medic: TEI_UNSC_Army_W_Medic //Configures the unit part of the Units Uniform
+		
+class TEI_UNSC_Army_D_Medic: TEI_UNSC_Army_W_Medic //Configures the unit part of the Units Uniform
 	{
 		scope 											= 2;
 		attendant 										= 1;
@@ -435,12 +456,14 @@ class CfgVehicles //This configures units and backpacks
 		scope 											= 2;
 		displayName										= "Radio Operator";
 		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
-		uniformClass									= "TEI_UNSC_Army_BDU_H_DES";
+		//uniformClass									= "TEI_UNSC_Army_BDU_H_WDL";
 		backpack 										= "TEI_Como_pack_1";
-		weapons[] 										= {"TEI_MA5B_AC","Throw","Put"};
-		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put"};
-		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
-		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
+		weapons[] 										= {"TEI_M7","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_M7","Throw","Put"};
+		magazines[] 									= {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_DES","TEI_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_DES","TEI_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 	};
 	class TEI_UNSC_Army_D_Pilot: TEI_UNSC_Army_Pilot_DES
 	{
@@ -449,73 +472,95 @@ class CfgVehicles //This configures units and backpacks
 		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
 		weapons[] 										= {"TEI_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_M6G_SF","Throw","Put"};
-		magazines[]										= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag"};
-		respawnMagazines[] 								= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag"};
+		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		respawnMagazines[]	 							= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
 	};
 	class TEI_UNSC_Army_D_Rifleman_AR: TEI_UNSC_Army_Rifleman_H_DES
 	{
 		scope											= 2;
 		displayName										= "Rifleman (MA5)";
-		backpack 										= "B_Kitbag_cbr";
 		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
+		backpack 										= "B_Kitbag_cbr";
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put"};
-		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
-		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 	};
 	class TEI_UNSC_Army_D_Rifleman_BR: TEI_UNSC_Army_Rifleman_H_DES
 	{
 		scope											= 2;
 		displayName										= "Rifleman (BR55)";
-		backpack 										= "B_Kitbag_cbr";
 		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
+		backpack 										= "B_Kitbag_cbr";
 		weapons[] 										= {"TEI_BR55HB_ScopedRifle","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_BR55HB_ScopedRifle","Throw","Put"};
-		magazines[] 									= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag"};
-		respawnMagazines[] 								= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag"};
+		magazines[] 									= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 	};
 	class TEI_UNSC_Army_D_Rifleman_AT: TEI_UNSC_Army_Rifleman_DES
 	{
 		scope											= 2;
-		displayName										= "AT Specialist";
-		backpack 										= "B_Kitbag_cbr";
+		displayName										= "Rifleman (AT)";
 		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
+		backpack 										= "B_Kitbag_cbr"; //rockets inside?
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
-		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAT_G"};
-		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAT_G"};	
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 	};
-		class TEI_UNSC_Army_D_Rifleman_AA: TEI_UNSC_Army_Rifleman_DES
+	class TEI_UNSC_Army_D_Rifleman_Light: TEI_UNSC_Army_Rifleman_DES
+	{
+		scope											= 2;
+		displayName										= "Rifleman (Light)";
+		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_DES","H_MilCap_mcamo","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_DES","H_MilCap_mcamo","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		weapons[] 										= {"TEI_MA5B_AC","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+	};
+	class TEI_UNSC_Army_D_AT_Specialist: TEI_UNSC_Army_Rifleman_DES
+	{
+		scope											= 2;
+		displayName										= "AT Specialist";
+		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
+		backpack 										= "B_Kitbag_cbr";
+		weapons[] 										= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
+		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAT_G","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAT_G","SmokeShell","SmokeShellGreen"};
+	};
+	class TEI_UNSC_Army_D_AA_Specialist: TEI_UNSC_Army_Rifleman_DES
 	{
 		scope											= 2;
 		displayName										= "AA Specialist";
-		backpack 										= "B_Kitbag_cbr";
 		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
+		backpack 										= "B_Kitbag_cbr";
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
-		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAA","TEI_M41_Twin_HEAA"};
-		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAA","TEI_M41_Twin_HEAA"};	
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAA","TEI_M41_Twin_HEAA","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAA","TEI_M41_Twin_HEAA","SmokeShell","SmokeShellGreen"};
 	};
-		class TEI_UNSC_Army_D_Engineer: TEI_UNSC_Army_Rifleman_DES
+	class TEI_UNSC_Army_D_Engineer: TEI_UNSC_Army_Rifleman_DES
 	{
 		scope											= 2;
 		displayName										= "Engineer";
 		engineer 										= 1;
-		backpack 										= "B_Kitbag_cbr";
 		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
-		weapons[] 										= {"TEI_M45_tan","Throw","Put","TEI_M6G_SF"};
-		respawnWeapons[] 								= {"TEI_M45_tan","Throw","Put","TEI_M6G_SF"};
+		backpack 										= "";
+		weapons[] 										= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
+		respawnWeapons[] 								= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
 		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs"};
 		respawnMagazines[] 								= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs"};
 	};
-		class TEI_UNSC_Army_D_Breacher: TEI_UNSC_Army_Rifleman_H_DES
+	class TEI_UNSC_Army_D_Breacher: TEI_UNSC_Army_Rifleman_DES
 	{
 		scope											= 2;
 		displayName										= "Breacher";
-		backpack 										= "B_Kitbag_cbr";
 		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
-		weapons[] 										= {"TEI_M45_tan","Throw","Put","TEI_M6G_SF"};
-		respawnWeapons[] 								= {"TEI_M45_tan","Throw","Put","TEI_M6G_SF"};
+		weapons[] 										= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
+		respawnWeapons[] 								= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
 		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs"};
 		respawnMagazines[] 								= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs"};
 	};
@@ -525,11 +570,24 @@ class CfgVehicles //This configures units and backpacks
 		displayName										= "Team Leader";
 		backpack 										= "B_Kitbag_cbr";
 		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
-		weapons[] 										= {"TEI_BR55HB_ScopedRifle","Throw","Put"};
-		respawnWeapons[] 								= {"TEI_BR55HB_ScopedRifle","Throw","Put"};
-		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
-		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
-};
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_DES","H_MilCap_mcamo","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnlinkedItems[] 							= {"TEI_UNSC_M52_Vest_DES","H_MilCap_mcamo","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		weapons[] 										= {"TEI_MA5BGL_AC","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_MA5BGL_AC","Throw","Put"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+	};
+	class TEI_UNSC_Army_D_SquadLead: TEI_UNSC_Army_Rifleman_H_DES
+	{
+		scope											= 2;
+		displayName										= "Squad Leader";
+		backpack 										= "TEI_Como_pack_1";
+		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
+		weapons[] 										= {"TEI_BR55HB_ScopedRifle","TEI_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_BR55HB_ScopedRifle","TEI_M6G_SF","Throw","Put"};
+		magazines[] 									= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag_Tracer","TEI_36Rnd_95x40_Mag_Tracer","TEI_36Rnd_95x40_Mag_Tracer","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","SmokeShell","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag_Tracer","TEI_36Rnd_95x40_Mag_Tracer","TEI_36Rnd_95x40_Mag_Tracer","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","SmokeShell","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+	};
 	class TEI_UNSC_Army_D_Grenadier: TEI_UNSC_Army_Rifleman_H_DES
 	{
 		scope											= 2;
@@ -538,10 +596,129 @@ class CfgVehicles //This configures units and backpacks
 		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
 		weapons[] 										= {"TEI_MA5BGL_AC","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_MA5BGL_AC","Throw","Put"};
-		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
-		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
 	};
+	class TEI_UNSC_Army_D_Autorifleman: TEI_UNSC_Army_Rifleman_DES
+	{
+		scope											= 2;
+		displayName										= "Autorifleman";
+		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
+		//backpack										= assistance AR backpack with ammo inside
+		weapons[] 										= {"LMG_Zafir_F","Throw","Put"};
+		respawnWeapons[] 								= {"LMG_Zafir_F","Throw","Put"};
+		magazines[] 									= {"150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+	};
+	class TEI_UNSC_Army_D_Assist_Autorifleman: TEI_UNSC_Army_Rifleman_DES
+	{
+		scope											= 2;
+		displayName										= "Assistant Autorifleman";
+		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
+		//backpack										= assistance AR backpack with ammo inside
+		weapons[] 										= {"TEI_MA5B_AC","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
+	};
+	class TEI_UNSC_Army_D_Marksman: TEI_UNSC_Army_Rifleman_H_DES
+	{
+		scope											= 2;
+		displayName										= "Designated Marksman";
+		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
+		weapons[] 										= {"srifle_EBR_MRCO_pointer_F","TEI_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"srifle_EBR_MRCO_pointer_F","TEI_M6G_SF","Throw","Put"};
+		magazines[] 									= {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+	};
+	class TEI_UNSC_Army_D_Sniper: TEI_UNSC_Army_Rifleman_DES //change to sniper uniform
+	{
+		scope											= 2;
+		displayName										= "Sniper";
+		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest2_WDL","TEI_UNSC_CH252_Helmet2_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest2_WDL","TEI_UNSC_CH252_Helmet2_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		weapons[] 										= {"srifle_GM6_SOS_F","TEI_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"srifle_GM6_SOS_F","TEI_M6G_SF","Throw","Put"};
+		magazines[] 									= {"5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+	};
+	class TEI_UNSC_Army_D_Observer: TEI_UNSC_Army_Rifleman_DES
+	{
+		scope											= 2;
+		displayName										= "Observer";
+		backpack 										= "B_Kitbag_cbr";
+		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest2_WDL","TEI_UNSC_CH252_Helmet2_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest2_WDL","TEI_UNSC_CH252_Helmet2_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		Items[]											= {"FirstAidKit","Item_Laserdesignator"};
+		RespawnItems[]									= {"FirstAidKit","Item_Laserdesignator"};
+		weapons[] 										= {"TEI_BR55HB_ScopedRifle","TEI_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_BR55HB_ScopedRifle","TEI_M6G_SF","Throw","Put"};
+		magazines[] 									= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","Laserbatteries","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag"};
+		respawnMagazines[] 								= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","Laserbatteries","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag"};
+	};
+	class TEI_UNSC_Army_D_Crewman: TEI_UNSC_Army_Pilot_DES
+	{
+		displayName										= "Crewman";
+		weapons[] 										= {"TEI_M7","TEI_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_M7","TEI_M6G_SF","Throw","Put"};
+		linkedItems[] 									= {"TEI_UNSC_M52V_Vest_WDL","H_HelmetCrew_B","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnlinkedItems[] 							= {"TEI_UNSC_M52V_Vest_WDL","H_HelmetCrew_B","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		magazines[] 									= {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[]	 							= {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShellGreen"};
+	};
+	class TEI_UNSC_Army_D_Demolitions: TEI_UNSC_Army_Rifleman_DES
+	{
+		scope											= 2;
+		displayName										= "Demolitions";
+		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
+		//backpack 										= explosives backpack
+		engineer 										= 1;
+		weapons[] 										= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
+		respawnWeapons[] 								= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
+		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","HandGrenade","HandGrenade","SmokeShell","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag"};
+		respawnMagazines[] 								= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","HandGrenade","HandGrenade","SmokeShell","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag"};
+	};
+	class TEI_UNSC_Army_D_UAV_Op: TEI_UNSC_Army_Rifleman_DES
+	{
+		scope											= 2;
+		displayName										= "UAV Operator";
+		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
+		backpack 										= "B_UAV_01_backpack_F";
+		uavHacker 										= 1;
+		weapons[] 										= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
+		respawnWeapons[] 								= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
+		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShellGreen"};
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_DES","TEI_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG","B_UavTerminal"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_DES","TEI_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG","B_UavTerminal"};
+	};														
+	class TEI_UNSC_Army_D_Unarmed: TEI_UNSC_Army_Rifleman_DES
+	{
+		scope											= 2;
+		displayName										= "Unarmed";
+		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
+		weapons[] 										= {"Throw","Put"};
+		respawnWeapons[] 								= {"Throw","Put"};
+		magazines[] 									= {};
+		respawnMagazines[] 								= {};
+	};
+	class TEI_UNSC_Army_D_Officer: TEI_UNSC_Army_Pilot_DES
+	{
+		scope											= 2;
+		displayName										= "Officer";
+		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_DES","H_MilCap_mcamo","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_DES","H_MilCap_mcamo","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		weapons[] 										= {"TEI_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_M6G_SF","Throw","Put"};
+		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		respawnMagazines[]	 							= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+	};
+	
 };
+	
 
 
 
@@ -555,9 +732,22 @@ class cfgWeapons
 	class VestItem;
 	class HeadgearItem;
 	class H_HelmetB;
+	class NVGoggles;
 	
 	
-	
+	class TEI_NVG: NVGoggles
+	{
+		author											= "Eridanus Insurrection Team";
+		displayName										= "UNSC Neural Implant Vision Enhancement";
+		class ItemInfo
+		{
+			type = 616;
+			hmdType = 0;
+			uniformModel = "";
+			modelOff = "";
+			mass = 1;
+		};
+	};
 	
 	// UNIFORMS
 	
