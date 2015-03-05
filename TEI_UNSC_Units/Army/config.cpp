@@ -44,8 +44,8 @@ class CfgVehicles //This configures units and backpacks
 		model											= "\TEI_UNSC_Units\Army\uniform.p3d";
 		weapons[]										= {"Throw","Put"};
 		respawnWeapons[]								= {"Throw","Put"};
-		Items[]											= {"FirstAidKit"};
-		RespawnItems[]									= {"FirstAidKit"};
+		Items[]											= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		RespawnItems[]									= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		magazines[]										= {};
 		respawnMagazines[]								= {};
 		linkedItems[] 									= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
@@ -109,7 +109,7 @@ class CfgVehicles //This configures units and backpacks
 		cost 											= 300000;
 		icon 											= "iconManMedic";
 		uniformClass									= "TEI_UNSC_Army_BDU_Medic";
-		backpack 										= "TEI_ILCS_Rucksack_Medical";
+		backpack 										= "TEI_ILCS_Rucksack_Medical1";
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag"};
@@ -372,8 +372,8 @@ class CfgVehicles //This configures units and backpacks
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
 		linkedItems[] 									= {"TEI_UNSC_M52_Vest2_WDL","TEI_UNSC_CH252_Helmet2_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest2_WDL","TEI_UNSC_CH252_Helmet2_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
-		Items[]											= {"FirstAidKit","Item_Laserdesignator"};
-		RespawnItems[]									= {"FirstAidKit","Item_Laserdesignator"};
+		Items[]											= {"TEI_Biofoam","Item_Laserdesignator"};
+		RespawnItems[]									= {"TEI_Biofoam","Item_Laserdesignator"};
 		weapons[] 										= {"TEI_BR55HB_ScopedRifle","TEI_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_BR55HB_ScopedRifle","TEI_M6G_SF","Throw","Put"};
 		magazines[] 									= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","Laserbatteries","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag"};

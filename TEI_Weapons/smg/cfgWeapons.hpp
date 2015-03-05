@@ -165,7 +165,7 @@ class CfgWeapons
             class TEI_M7: SMG_01_F
             {
                     scope                                                                   = 2;
-            		//handAnim[]                                                            = {"OFP2_ManSkeleton", "\TEI_Weapons\AR\data\anim\hand_anim_ma5c.rtm"};
+            		handAnim[]                                                            = {"OFP2_ManSkeleton", "\TEI_Weapons\SMG\data\anim\smg_hand_anim.rtm"};
                     model                                                                   = "\TEI_Weapons\SMG\SMG.p3d";
                     displayName                                                             = "M7/Caseless SMG";
                     descriptionShort                                                        = "UNSC M7 SMG";

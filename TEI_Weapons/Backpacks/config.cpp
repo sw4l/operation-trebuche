@@ -18,6 +18,7 @@ class CfgPatches {
 class cfgVehicles {
 		class ContainerSupply;
 		class Bag_Base;
+		class B_AssaultPack_rgr_Medic;
         class B_Bergen_Base;    // External class reference
         	       
         class TEI_ILCS_Rucksack_Black : B_Bergen_Base 
@@ -52,11 +53,27 @@ class cfgVehicles {
 				hiddenSelections[] 								= {"camo1","biofoam"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_black_CO.paa"};
         };
-				class TEI_ILCS_Rucksack_Medical : B_Bergen_Base 
+		class TEI_ILCS_Rucksack_Medical : B_Bergen_Base 
 		{
-				scope = public;
+				scope = protected;
 				class TransportMagazines{};
 				class TransportWeapons{};
+				isbackpack = 1;
+				transportMaxWeapons = 1;
+				transportMaxMagazines = 16;
+				class DestructionEffects{};
+                displayName = "[UNSC] ILCS Medical Base";
+                model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
+				vehicleClass = "Backpacks";
+				allowedSlots[] = {901};
+				hiddenSelections[] 								= {"camo1"};
+				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_med_CO.paa"};
+        };
+		
+		class TEI_ILCS_Rucksack_Medical1: B_AssaultPack_rgr_Medic
+		{
+				scope = public;
+				
 				isbackpack = 1;
 				transportMaxWeapons = 1;
 				transportMaxMagazines = 16;
@@ -67,7 +84,23 @@ class cfgVehicles {
 				allowedSlots[] = {901};
 				hiddenSelections[] 								= {"camo1"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_med_CO.paa"};
-        };
+				class TransportMagazines{};
+				class TransportWeapons{};
+				class TransportItems
+				{
+					class _xx_TEI_Medkit
+					{
+					name = "TEI_Medkit";
+					count = 1;
+					};
+					class _xx_TEI_Biofoam
+					{
+					name = "TEI_Biofoam";
+					count = 10;
+					};
+				};
+		};
+				
 		        class TEI_ILCS_Rucksack_green : B_Bergen_Base 
 		{
 				scope = public;

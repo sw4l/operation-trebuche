@@ -227,7 +227,7 @@
                     dexterity                                                               = 3.25;
                     muzzlePos                                                               = "usti hlavne";
                     muzzleEnd                                                               = "konec hlavne";
-                    reloadAction                                                            = "GestureReloadKatiba";
+                    reloadAction                                                            = "GestureReloadTRG";
                     muzzles[]                                                           = {"this", "M309GL"}; // this was the missing
                     inertia                                                                 = 0.6;
                     class GunParticles: GunParticles
