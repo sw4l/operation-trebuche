@@ -1,27 +1,27 @@
-ambient[]={1,1,1,1};
-diffuse[]={1,1,1,1};
-forcedDiffuse[]={0,0,0,0};
-emmisive[]={0,0,0,1};
-specular[] = {0.1,0.1,0.1,1};
-specularPower=100;
-PixelShaderID="Super";
-VertexShaderID="Super";
+ambient[] = {1,1,1,1};
+diffuse[] = {1,1,1,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,1};
+specular[] = {1,1,1,1};
+specularPower = 100;
+PixelShaderID = "Super";
+VertexShaderID = "Super";
 class Stage1
 {
 	texture = "TEI_Weapons\Pistol\data\scope_nohq.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
-		aside[] = {1.0,0.0,0.0};
-		up[] = {0.0,1.0,0.0};
-		dir[] = {0.0,0.0,0.0};
-		pos[] = {0.0,0.0,0.0};
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
 	};
 };
 class Stage2
 {
-	texture="TEI_Weapons\gun_dt.paa";
-	uvSource="tex";
+	texture = "TEI_Weapons\gun_dt.paa";
+	uvSource = "tex";
 	class uvTransform
 	{
 		aside[]={4,0,0};
@@ -36,10 +36,10 @@ class Stage3
 	uvSource = "tex";
 	class uvTransform
 	{
-		aside[] = {1.0,0.0,0.0};
-		up[] = {0.0,1.0,0.0};
-		dir[] = {0.0,0.0,0.0};
-		pos[] = {0.0,0.0,0.0};
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
 	};
 };
 class Stage4
@@ -48,10 +48,10 @@ class Stage4
 	uvSource = "tex";
 	class uvTransform
 	{
-		aside[] = {1.0,0.0,0.0};
-		up[] = {0.0,1.0,0.0};
-		dir[] = {0.0,0.0,0.0};
-		pos[] = {0.0,0.0,0.0};
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
 	};
 };
 class Stage5
@@ -60,20 +60,20 @@ class Stage5
 	uvSource = "tex";
 	class uvTransform
 	{
-		aside[] = {1.0,0.0,0.0};
-		up[] = {0.0,1.0,0.0};
-		dir[] = {0.0,0.0,0.0};
-		pos[] = {0.0,0.0,0.0};
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
 	};
 };
 class Stage6
 {
-	texture="#(ai,64,64,1)fresnel(2.59,4.55)";
-	uvSource="none";
+	texture = "#(ai,64,64,1)fresnel(2.59,4.55)";
+	uvSource = "none";
 };
 class Stage7
 {
-	texture="a3\data_f\env_land_co.paa";
-	uvSource="none";
+	texture = "a3\data_f\env_land_co.paa";
+	uvSource = "none";
 };
 //};
