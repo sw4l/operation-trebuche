@@ -114,6 +114,7 @@ class CfgVehicles //This configures units and backpacks
 			vehicleClass 																= "TEI_UNSC_HEV_class";
 			icon 																		= "iconObject";
 			mapSize 																	= 2.5;
+			weapons[]={};
 			armor 																		= 10000;
 			typicalCargo[] 																= {};
 			driverAction 																= "TEI_Driver_HEV";
