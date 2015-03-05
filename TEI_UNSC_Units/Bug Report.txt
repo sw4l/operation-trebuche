@@ -4,12 +4,10 @@ TEI_UNSC_Units
 !!!!!!!!!-Groups need added
 
 	-all uniforms, vests, helmets need inventory icons
-	-left shoulder pad middle deforming check UVs and/or weights?
-	-vacuum sealed vests have two "buttons"? near the back of the legs (http://cloud-4.steamusercontent.com/ugc/709652207099798183/4ACA02C9340CDA7345280E2407AB4FE199EBFF5B/)
 
 
 	/// ODST
-!!!!!!!!!- ODST Vest does not show in 1st person
+
 !!!!!!!!!-ODST (Heavy) has no pants in MP
 	-Visor script not working properly (Disabled for now) [Scorch052]
 	-Spawned with goggles on and they clipped through the visor (allowedHeadgear values in config?)
@@ -17,6 +15,8 @@ TEI_UNSC_Units
 	-ODST Helmet and Vest shadow lods are missing
 	-ODST Helmets need renamed to match what they actually are
 	-Add depolarized visors with scope = 1 (or 0?); //dont add depolarized for now
+
+	-training odst having some shadow lod issues on the ass^^
 
 
 	/// Army
