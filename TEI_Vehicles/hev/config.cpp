@@ -111,9 +111,11 @@ class CfgVehicles //This configures units and backpacks
 			faction																		= "TEI_UNSC";
 			crew 																		= "TEI_UNSC_ODST_Soldier";
 			transportSoldier															= 0;
+			isBicycle																	= true;
 			vehicleClass 																= "TEI_UNSC_HEV_class";
 			icon 																		= "iconObject";
 			mapSize 																	= 2.5;
+			weapons[]																	={};
 			armor 																		= 10000;
 			typicalCargo[] 																= {};
 			driverAction 																= "TEI_Driver_HEV";
@@ -126,7 +128,7 @@ class CfgVehicles //This configures units and backpacks
 			enableSweep																	= true;
 			driverIsCommander															= true;
 			canFloat 																	= true;
-			fuelCapacity 																= 1;
+			fuelCapacity 																= 0;
 			fuelConsumptionRate 														= 0;
 			crewCrashProtection 														= 0;
 			crewExplosionProtection 													= 1;

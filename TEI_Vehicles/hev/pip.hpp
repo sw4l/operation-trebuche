@@ -9,7 +9,19 @@
 						pointDirection = "PIP0_dir";
 						renderQuality = 2;
 						renderVisionMode = 0;
-						fov = 0.7;
+						fov = 0.6;
+					};
+			};
+			class pilotCam
+			{
+				renderTarget = "rendertarget1";
+					class CameraView1
+					{
+						pointPosition = "PIP1_pos";
+						pointDirection = "PIP1_dir";
+						renderQuality = 2;
+						renderVisionMode = 0;
+						fov = 0.3;
 					};
 			};	
 		};
