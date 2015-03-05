@@ -79,7 +79,7 @@ class CfgVehicles //This configures units and backpacks
 	
 	class TEI_UNSC_ODST_Soldier: B_Soldier_F //Configures the unit part of the ODST Uniform
 	{
-		scope																					= 2;
+		scope																					= 1;
 		faction																					= "TEI_UNSC";
 		author																					= "Eridanus Insurrection Team";
 		displayName																				= "ODST [Heavy]";
@@ -90,18 +90,18 @@ class CfgVehicles //This configures units and backpacks
 		model																					= "\TEI_UNSC_Units\ODST\uniform.p3d";
 		weapons[]																				= {"Throw","Put"};
 		respawnWeapons[]																		= {"Throw","Put"};
-		Items[]																					= {"FirstAidKit"};
-		RespawnItems[]																			= {"FirstAidKit"};
+		Items[]																					= {"TEI_Biofoam"};
+		RespawnItems[]																			= {"TEI_Biofoam"};
 		magazines[]																				= {};
 		respawnMagazines[]																		= {};
-		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] 																	= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
+		respawnLinkedItems[] 																	= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		hiddenSelections[] 																		= {"camo1","insignia" }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																= {"TEI_UNSC_Units\ODST\data\uniform_co.paa"};
 	};
 	class TEI_UNSC_ODST_Soldier_light: B_Soldier_F //Configures the unit part of the ODST Uniform
 	{
-		scope																				= 2;
+		scope																				= 1;
 		faction																				= "TEI_UNSC";
 		author																				= "Eridanus Insurrection Team";
 		displayName																			= "ODST [Light]";
@@ -123,7 +123,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class TEI_UNSC_ODST_Soldier_medium: B_Soldier_F //Configures the unit part of the ODST Uniform
 	{
-		scope																				= 2;
+		scope																				= 1;
 		faction																				= "TEI_UNSC";
 		author																				= "Eridanus Insurrection Team";
 		displayName																			= "ODST [Medium]";
@@ -145,7 +145,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class TEI_UNSC_ODST_Soldier_Sniper: B_Soldier_F //Configures the unit part of the ODST Uniform
 	{
-		scope																				= 2;
+		scope																				= 1;
 		faction																				= "TEI_UNSC";
 		author																				= "Eridanus Insurrection Team";
 		displayName																			= "ODST [Sniper]";
@@ -167,7 +167,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class TEI_UNSC_ODST_Soldier_medic: B_Soldier_F //Configures the unit part of the ODST Uniform
 	{
-		scope																				= 2;
+		scope																				= 1;
 		faction																				= "TEI_UNSC";
 		author																				= "Eridanus Insurrection Team";
 		displayName																			= "ODST [Medic]";
@@ -192,7 +192,7 @@ class CfgVehicles //This configures units and backpacks
 		scope																				= 2;
 		faction																				= "TEI_UNSC";
 		author																				= "Eridanus Insurrection Team";
-		displayName																			= "ODST [Instructor]";
+		displayName																			= "ODST Instructor";
 		vehicleClass																			= "TEI_UNSC_Man_ODST_class";
 		uniformAccessories[]																		= {};
 		nakedUniform 																			= "U_BasicBody";
@@ -214,7 +214,7 @@ class CfgVehicles //This configures units and backpacks
 		scope																				= 2;
 		faction																				= "TEI_UNSC";
 		author																				= "Eridanus Insurrection Team";
-		displayName																			= "ODST [Recruit]";
+		displayName																			= "Recruit";
 		vehicleClass																			= "TEI_UNSC_Man_ODST_class";
 		uniformAccessories[]																		= {};
 		nakedUniform 																			= "U_BasicBody";
@@ -232,54 +232,149 @@ class CfgVehicles //This configures units and backpacks
 		hiddenSelectionsTextures[] 																	= {"TEI_UNSC_Units\ODST\data\basic_odst_co.paa"};
 	};
 	
-	// BACKPACKS
 	
-	/*class TEI_UNSC_ODST_Backpack_base : B_Kitbag_rgr //Base class for regular backpack
+	
+	//SOLDIER CLASSES W/ WEAPONS
+
+		
+	class TEI_UNSC_ODST_Scout: TEI_UNSC_ODST_Soldier
 	{
-			scope 																				= 0;
-			author																				= "Eridanus Insurrection Team";
-			class TransportMagazines{};
-			class TransportWeapons{};
-			isbackpack 																			= 1;
-			transportMaxWeapons 																= 2;
-			transportMaxMagazines 																= 30;
-			class DestructionEffects{};
-            displayName 																		= "-";
-            model 																				= "\TEI_UNSC_ODST\backpack.p3d";
-			hiddenSelections[] 																	= {"camo1","camo2"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[] 															= {"TEI_Core\data\base\light_grey.paa","TEI_Core\data\base\dark_grey.paa"}; /// what texture is going to be used
-			vehicleClass 																		= "TEI_UNSC_Backpack_class";
-			allowedSlots[] 																		= {901};
-			maximumLoad 																		= 300;
-			side 																				= 4;
-    };
-    class TEI_UNSC_ODST_Backpack : TEI_UNSC_ODST_Backpack_base
+		scope 											= 2;
+		displayName										= "ODST Scout";
+		backpack 										= "TEI_ILCS_Rucksack_Black";
+		weapons[] 										= {"TEI_M7S","M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_M7S","M6G_SF","Throw","Put"};
+		magazines[] 									= {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+	
+	};
+	class TEI_UNSC_ODST_Scout_AT: TEI_UNSC_ODST_Soldier
 	{
-			scope 																				= 2;
-			author																				= "Eridanus Insurrection Team";
-            displayName 																		= "[UNSC] ODST Backpack";
-            model 																				= "\TEI_UNSC_Units\ODST\backpack.p3d";
-			hiddenSelections[] 																	= {"camo1","camo2","attach_Pouches","attach_Biofoam"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[] 															= {"TEI_Core\data\base\light_grey.paa","TEI_Core\data\base\dark_grey.paa"}; /// what texture is going to be used
-    };
-    class TEI_UNSC_ODST_Rucksack_Medical : TEI_UNSC_ODST_Backpack_base
+		scope											= 2;
+		displayName										= "ODST Scout (AT)";
+		backpack 										= "TEI_ILCS_Rucksack_Black"; //rockets inside?
+		weapons[] 										= {"TEI_MA5B_AC","M6G_SF","Throw","Put","TEI_M41_SSR"};
+		respawnWeapons[] 								= {"TEI_MA5B_AC","M6G_SF","Throw","Put","TEI_M41_SSR"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+	
+	};
+	class TEI_UNSC_ODST_Rifleman_AR: TEI_UNSC_ODST_Soldier
 	{
-			scope 																				= 2;
-			author																				= "Eridanus Insurrection Team";
-            displayName 																		= "[UNSC] ODST Backpack (Medical)";
-            model 																				= "\TEI_UNSC_Units\ODST\backpack.p3d";
-			hiddenSelections[] 																	= {"camo1","camo2","camo3"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[] 															= {"TEI_Core\data\base\light_grey.paa","TEI_Core\data\base\dark_grey.paa","TEI_Core\data\base\green.paa"}; /// what texture is going to be used
-    };
-    class TEI_UNSC_ODST_Manpack : TEI_UNSC_ODST_Backpack_base
+		scope											= 2;
+		displayName										= "ODST Rifleman (MA5)";
+		backpack 										= "TEI_ILCS_Rucksack_Black";
+		weapons[] 										= {"TEI_MA5B_AC","M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_MA5B_AC","M6G_SF","Throw","Put"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+	
+	};
+	class TEI_UNSC_ODST_Rifleman_BR: TEI_UNSC_ODST_Soldier
 	{
-			scope 																				= 2;
-			author																				= "Eridanus Insurrection Team";
-            displayName 																		= "[UNSC] ODST Radiopack";
-            model 																				= "\TEI_UNSC_Units\ODST\radiopack.p3d";
-			hiddenSelections[] 																	= {"camo1","camo2"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[] 															= {"TEI_Core\data\base\light_grey.paa","TEI_Core\data\base\black.paa"}; /// what texture is going to be used
-	};*/
+		scope											= 2;
+		displayName										= "ODST Rifleman (BR55)";
+		backpack 										= "TEI_ILCS_Rucksack_Black";
+		weapons[] 										= {"TEI_BR55HB_ScopedRifle","M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_BR55HB_ScopedRifle","M6G_SF","Throw","Put"};
+		magazines[] 									= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+	
+	};
+	class TEI_UNSC_ODST_Rifleman_AT: TEI_UNSC_ODST_Soldier
+	{
+		scope											= 2;
+		displayName										= "ODST Rifleman (AT)";
+		backpack 										= "TEI_ILCS_Rucksack_Black"; //rockets inside?
+		weapons[] 										= {"TEI_MA5B_AC","M6G_SF","Throw","Put","TEI_M41_SSR"};
+		respawnWeapons[] 								= {"TEI_MA5B_AC","M6G_SF","Throw","Put","TEI_M41_SSR"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+	
+	};
+	class TEI_UNSC_ODST_Autorifleman: TEI_UNSC_ODST_Soldier
+	{
+		scope											= 2;
+		displayName										= "ODST Autorifleman";
+		backpack										= "TEI_ILCS_Rucksack_Black";
+		weapons[] 										= {"LMG_Zafir_F","M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"LMG_Zafir_F","M6G_SF","Throw","Put"};
+		magazines[] 									= {"150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+	};
+	class TEI_UNSC_ODST_Marksman: TEI_UNSC_ODST_Soldier_Sniper
+	{
+		scope											= 2;
+		displayName										= "ODST Marksman";
+		backpack										= "TEI_ILCS_Rucksack_Black";
+		weapons[] 										= {"srifle_EBR_MRCO_pointer_F","TEI_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"srifle_EBR_MRCO_pointer_F","TEI_M6G_SF","Throw","Put"};
+		magazines[] 									= {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+	
+	};
+	class TEI_UNSC_ODST_Scout_Sniper: TEI_UNSC_ODST_Soldier_Sniper
+	{
+		scope											= 2;
+		displayName										= "ODST Scout Sniper";
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest2_WDL","TEI_UNSC_CH252_Helmet2_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest2_WDL","TEI_UNSC_CH252_Helmet2_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		weapons[] 										= {"srifle_GM6_SOS_F","TEI_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"srifle_GM6_SOS_F","TEI_M6G_SF","Throw","Put"};
+		magazines[] 									= {"5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+	
+	};
+	class TEI_UNSC_ODST_TeamLead: TEI_UNSC_ODST_Soldier
+	{
+		scope											= 2;
+		displayName										= "ODST Team Leader";
+		backpack										= "TEI_ILCS_Rucksack_Black";
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnlinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		weapons[] 										= {"TEI_MA5BGL_AC","M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_MA5BGL_AC","M6G_SF","Throw","Put"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+	
+	};
+	class TEI_UNSC_ODST_Paramedic: TEI_UNSC_ODST_Soldier_medic
+	{
+		attendant 										= 1;
+		displayName										= "ODST Paramedic";
+		cost 											= 300000;
+		icon 											= "iconManMedic";
+		backpack 										= "TEI_ILCS_Rucksack_Medical1";
+		weapons[] 										= {"TEI_MA5B_AC","M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_MA5B_AC","M6G_SF","Throw","Put"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag"};
+		hiddenSelections[] 								= {"camo1","camo2","insignia","attach_leftshoulder2","attach_rightshoulder2","attach_rightknee2","attach_leftknee2","attach_pant1"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] 						= {"TEI_UNSC_Units\Army\data\armor_medic_co.paa","TEI_UNSC_Units\Army\data\uniform_cam3_co.paa"};
+	
+	};
+	class TEI_UNSC_ODST_Demo: TEI_UNSC_ODST_Soldier
+	{
+		scope											= 2;
+		displayName										= "ODST Demolitions";
+		backpack										= "TEI_ILCS_Rucksack_Black";
+		weapons[] 										= {"TEI_MA5BGL_AC","M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_MA5BGL_AC","M6G_SF","Throw","Put"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
+	
+	};
+	class TEI_UNSC_ODST_ONI_Op: TEI_UNSC_ODST_Soldier
+	{
+		scope											= 2;
+		displayName										= "ONI Operator";
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		weapons[] 										= {"TEI_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_M6G_SF","Throw","Put"};
+		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		respawnMagazines[]	 							= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+	};
 };
 
 class cfgWeapons

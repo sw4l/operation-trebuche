@@ -1,8 +1,0 @@
-need to do:
-
-create and apply rvmats
-config
-convert textures for rvmats
-scope started
-
-animation and magazine model (for when dropped on the floor) are done and added to drop box

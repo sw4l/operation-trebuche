@@ -140,6 +140,18 @@ TEI_UNSC_Marine_Unarmed
 TEI_UNSC_Marine_Officer
 TEI_UNSC_Marine_Sgt_Johnson
 
+UNSC ODST Classnames:
+
+
+
+INS United Rebel Front Classnames:
+
+
+
+INS Eridanus Rebels Classnames:
+
+
+
 -----------------------------------
 
 

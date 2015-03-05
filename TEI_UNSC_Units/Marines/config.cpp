@@ -440,12 +440,28 @@ class TEI_UNSC_Marine_medium: TEI_UNSC_Marine_Soldier_Base //Configures the unit
 		respawnMagazines[] 								= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag_Tracer","TEI_36Rnd_95x40_Mag_Tracer","TEI_36Rnd_95x40_Mag_Tracer","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","SmokeShell","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
 	};
 };
-
+class CfgFaces
+{
+	class Default;
+	class Jesus;
+	class Man_A3: Default
+	{
+		class Default;
+		class Jesus;
+		class Avery_Johnson: Jesus
+		{
+			name = "Avery_Johnson";
+			displayname = "Avery Johnson";
+			//identityTypes[] = {"head_female","Zee_Oakes"};
+			//head = "Oakes_head";
+		};
+	};
+};
 class CfgIdentities
 {
 	class TEI_Sgt_Johnson_ID
 	{
-		name = "Avery Johnson";
+		name = "Avery_Johnson";
 		glasses = "None";
 		speaker = "Male01ENG";
 		face="AfricanHead_03";
