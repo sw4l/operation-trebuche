@@ -7,20 +7,20 @@ class Mission
 		"a3_map_stratis",
 		"TEI_UNSC_Units_ODST",
 		"A3_Modules_F_Effects",
-		"A3_Structures_F_Furniture"
+		"A3_Structures_F_Furniture",
+		"TEI_Ins_Object_class"
 	};
 	addOnsAuto[]=
 	{
-		"TEI_UNSC_Units_Army",
 		"TEI_UNSC_Units_ODST",
 		"A3_Modules_F_Effects",
 		"A3_Structures_F_Furniture",
+		"TEI_Ins_Object_class",
 		"a3_map_stratis"
 	};
 	randomSeed=2139224;
 	class Intel
 	{
-		briefingName="TEI_Intro";
 		startWeather=0.16;
 		startFog=0.56999999;
 		startWind=0.099999994;
@@ -52,7 +52,7 @@ class Mission
 					azimut=393.10501;
 					id=0;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier_light";
+					vehicle="TEI_UNSC_ODST_Scout";
 					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
@@ -72,11 +72,10 @@ class Mission
 					azimut=175.535;
 					id=1;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier";
+					vehicle="TEI_UNSC_ODST_Scout";
 					leader=1;
 					skill=0.60000002;
 					text="man3";
-					init="removeGoggles this; this addmagazine ""TEI_60Rnd_762x51_Mag""; this addmagazine ""TEI_60Rnd_762x51_Mag"";this addmagazine ""TEI_60Rnd_762x51_Mag""; this addWeapon ""TEI_MA5B"";  this addPrimaryWeaponItem ""TEI_MA5B_AmmoCounter"";  ";
 				};
 			};
 		};
@@ -89,14 +88,13 @@ class Mission
 				class Item0
 				{
 					position[]={6076.3755,18.558813,5610.0801};
-					azimut=269.89572;
+					azimut=269.896;
 					id=2;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier_Sniper";
+					vehicle="TEI_UNSC_ODST_Scout";
 					leader=1;
 					skill=0.60000002;
 					text="man5";
-					init="removeGoggles this; this addmagazine ""TEI_60Rnd_762x51_Mag""; this addmagazine ""TEI_60Rnd_762x51_Mag"";this addmagazine ""TEI_60Rnd_762x51_Mag""; this addWeapon ""TEI_MA5B"";  this addPrimaryWeaponItem ""TEI_MA5B_AmmoCounter"";  ";
 				};
 			};
 		};
@@ -1153,11 +1151,10 @@ class Mission
 					offsetY=0.69999999;
 					id=14;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier";
+					vehicle="TEI_UNSC_ODST_Scout";
 					leader=1;
 					skill=0.60000002;
 					text="man6";
-					init="removeGoggles this; this addmagazine ""TEI_60Rnd_762x51_Mag""; this addmagazine ""TEI_60Rnd_762x51_Mag"";this addmagazine ""TEI_60Rnd_762x51_Mag""; this addWeapon ""TEI_MA5B"";  this addPrimaryWeaponItem ""TEI_MA5B_AmmoCounter"";  ";
 				};
 			};
 		};
@@ -1170,14 +1167,14 @@ class Mission
 				class Item0
 				{
 					position[]={6075.043,18.536171,5610.2373};
-					azimut=273.65622;
+					azimut=273.65601;
 					id=15;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier";
+					vehicle="TEI_UNSC_ODST_Scout";
 					leader=1;
 					skill=0.60000002;
 					text="man1";
-					init="this setdamage 1; removeheadgear this;";
+					init="removeheadgear this;";
 				};
 			};
 		};
@@ -1190,14 +1187,13 @@ class Mission
 				class Item0
 				{
 					position[]={6073.791,18.498695,5610.6738};
-					azimut=122.02904;
+					azimut=122.029;
 					id=16;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier_medic";
+					vehicle="TEI_UNSC_ODST_Rifleman_AR";
 					leader=1;
 					skill=0.60000002;
 					text="man7";
-					init="this setunitpos ""middle""; removeGoggles this; this addmagazine ""TEI_60Rnd_762x51_Mag""; this addmagazine ""TEI_60Rnd_762x51_Mag"";this addmagazine ""TEI_60Rnd_762x51_Mag""; this addWeapon ""TEI_MA5B"";  this addPrimaryWeaponItem ""TEI_MA5B_AmmoCounter"";  ";
 				};
 			};
 		};
@@ -1213,11 +1209,10 @@ class Mission
 					azimut=84.833397;
 					id=17;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier";
+					vehicle="TEI_UNSC_ODST_Autorifleman";
 					leader=1;
 					skill=0.60000002;
 					text="man2";
-					init="removeGoggles this; this addmagazine ""TEI_60Rnd_762x51_Mag""; this addmagazine ""TEI_60Rnd_762x51_Mag"";this addmagazine ""TEI_60Rnd_762x51_Mag""; this addWeapon ""TEI_MA5B"";  this addPrimaryWeaponItem ""TEI_MA5B_AmmoCounter"";  ";
 				};
 			};
 		};
@@ -1233,11 +1228,10 @@ class Mission
 					azimut=141.57201;
 					id=18;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier";
+					vehicle="TEI_UNSC_ODST_Rifleman_BR";
 					leader=1;
 					skill=0.60000002;
 					text="man4";
-					init="removeGoggles this; this addmagazine ""TEI_60Rnd_762x51_Mag""; this addmagazine ""TEI_60Rnd_762x51_Mag"";this addmagazine ""TEI_60Rnd_762x51_Mag""; this addWeapon ""TEI_MA5B"";  this addPrimaryWeaponItem ""TEI_MA5B_AmmoCounter"";  ";
 				};
 			};
 		};
@@ -1250,14 +1244,14 @@ class Mission
 				class Item0
 				{
 					position[]={6070.752,18.570549,5608.4878};
-					azimut=230.59547;
+					azimut=230.595;
 					id=19;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier";
+					vehicle="TEI_UNSC_ODST_TeamLead";
 					leader=1;
 					skill=0.60000002;
 					text="man8";
-					init="removeGoggles this; this addmagazine ""TEI_60Rnd_762x51_Mag""; this addmagazine ""TEI_60Rnd_762x51_Mag"";this addmagazine ""TEI_60Rnd_762x51_Mag""; this addWeapon ""TEI_MA5B"";  this addPrimaryWeaponItem ""TEI_MA5B_AmmoCounter"";  ";
+					init=" ";
 				};
 			};
 		};
@@ -1273,11 +1267,10 @@ class Mission
 					azimut=66.187202;
 					id=20;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier";
+					vehicle="TEI_UNSC_ODST_Rifleman_AR";
 					leader=1;
 					skill=0.60000002;
 					text="man9";
-					init="removeGoggles this; this addmagazine ""TEI_60Rnd_762x51_Mag""; this addmagazine ""TEI_60Rnd_762x51_Mag"";this addmagazine ""TEI_60Rnd_762x51_Mag""; this addWeapon ""TEI_MA5B"";  this addPrimaryWeaponItem ""TEI_MA5B_AmmoCounter"";  ";
 				};
 			};
 		};
@@ -1382,18 +1375,17 @@ class Mission
 					offsetY=0.25;
 					id=22;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier";
+					vehicle="TEI_UNSC_ODST_Rifleman_AR";
 					leader=1;
 					skill=0.60000002;
 					text="man10";
-					init="removeGoggles this; this addmagazine ""TEI_60Rnd_762x51_Mag""; this addmagazine ""TEI_60Rnd_762x51_Mag"";this addmagazine ""TEI_60Rnd_762x51_Mag""; this addWeapon ""TEI_MA5B"";  this addPrimaryWeaponItem ""TEI_MA5B_AmmoCounter"";  ";
 				};
 			};
 		};
 	};
 	class Vehicles
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			position[]={6074.8281,18.449379,5611.9194};
@@ -1405,6 +1397,17 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="log2";
+		};
+		class Item1
+		{
+			position[]={6075.3945,18.501991,5611.0088};
+			azimut=-45.715469;
+			offsetY=0.5;
+			id=24;
+			side="EMPTY";
+			vehicle="TEI_odst_grave";
+			leader=1;
+			skill=0.60000002;
 		};
 	};
 	class Sensors
@@ -1474,7 +1477,6 @@ class Intro
 	};
 	addOnsAuto[]=
 	{
-		"TEI_UNSC_Units_Army",
 		"TEI_UNSC_Units_ODST",
 		"A3_Modules_F_Effects",
 		"A3_Structures_F_Furniture",
