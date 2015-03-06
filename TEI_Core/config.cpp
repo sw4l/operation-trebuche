@@ -12,8 +12,6 @@ class CfgPatches //This configures the identification of the pbo to the game
 	};
 };
 
-#include "cfgFunctions.hpp"
-
 class CfgFactionClasses //This configures the in-game factions
 {
 	class TEI_UNSC
@@ -23,7 +21,6 @@ class CfgFactionClasses //This configures the in-game factions
 		side 																					= 1;
 		icon 																					= "\TEI_Core\data\icon_UNSC_ca.paa";
 		flag 																					= "\TEI_Core\Data\flag_UNSC_ca.paa";
-		primaryLanguage 																		= "EN";
 	};
 	class TEI_Ins
 	{
@@ -39,8 +36,8 @@ class CfgFactionClasses //This configures the in-game factions
 		displayName 																			= "Colonial Military Admin";
 		priority 																				= 1;
 		side 																					= 2;
-		//icon 																					= "\TEI_Core\data\icon_Caa_ca.paa";
-		//flag 																					= "\TEI_Core\Data\flag_Caa_ca.paa";
+		icon 																					= "\TEI_Core\data\icon_Caa_ca.paa";
+		flag 																					= "\TEI_Core\Data\flag_Caa_ca.paa";
 		primaryLanguage 																		= "EN";
 	};
 	class TEI_NMPD
@@ -237,7 +234,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 };
 
-class CfgMissions
+	class CfgMissions
 {
 	class Cutscenes
 	{
@@ -250,54 +247,13 @@ class CfgMissions
 
 class CfgMusic
 {
-	tracks[]={"TEI_Music_Innie_Dance","TEI_Music_Call_to_Arms","TEI_Music_Engaged","TEI_Music_Eve_of_Battle","TEI_Music_Firefight","TEI_Music_Going_Loud","TEI_Music_Prepare_to_Drop","TEI_Music_Unforgotten","TEI_Music_Warthogs"};
-	class TEI_Music_Innie_Dance
+	tracks[]={"inniedance"};
+	class TEI_InnieDance
 	{
-		name="[TEI] Innie Dance";
-		sound[]={"\TEI_Core\Music\Innie_Dance.ogg",1,1};
-	};
-	class TEI_Music_Call_to_Arms
-	{
-		name="[TEI] Call to Arms";
-		sound[]={"\TEI_Core\Music\Call_to_Arms.ogg",1,1};
-	};
-	class TEI_Music_Engaged
-	{
-		name="[TEI] Engaged";
-		sound[]={"\TEI_Core\Music\Engaged.ogg",1,1};
-	};
-	class TEI_Music_Eve_of_Battle
-	{
-		name="[TEI] Eve of Battle";
-		sound[]={"\TEI_Core\Music\Eve_of_Battle.ogg",1,1};
-	};
-	class TEI_Music_Firefight
-	{
-		name="[TEI] Firefight";
-		sound[]={"\TEI_Core\Music\Firefight.ogg",1,1};
-	};
-	class TEI_Music_Going_Loud
-	{
-		name="[TEI] Going Loud";
-		sound[]={"\TEI_Core\Music\Going_Loud.ogg",1,1};
-	};
-	class TEI_Music_Prepare_to_Drop
-	{
-		name="[TEI] Prepare to Drop";
-		sound[]={"\TEI_Core\Music\Prepare_to_Drop.ogg",1,1};
-	};
-	class TEI_Music_Unforgotten
-	{
-		name="[TEI] Unforgotten";
-		sound[]={"\TEI_Core\Music\Unforgotten.ogg",1,1};
-	};
-	class TEI_Music_Warthogs
-	{
-		name="[TEI] Warthogs";
-		sound[]={"\TEI_Core\Music\Warthogs.ogg",1,1};
+		name="TEI Innie Dance";
+		sound[]={"\TEI_Core\Music\Inniedance.ogg",1,1};
 	};
 };
-
 
 class CfgWorlds
 {
