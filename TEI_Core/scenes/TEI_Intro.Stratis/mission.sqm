@@ -1473,13 +1473,15 @@ class Intro
 		"TEI_UNSC_Units_Army",
 		"TEI_UNSC_Units_ODST",
 		"A3_Modules_F_Effects",
-		"A3_Structures_F_Furniture"
+		"A3_Structures_F_Furniture",
+		"TEI_Ins_Object_class"
 	};
 	addOnsAuto[]=
 	{
-		"TEI_UNSC_Units_ODST",
 		"A3_Modules_F_Effects",
+		"TEI_UNSC_Units_ODST",
 		"A3_Structures_F_Furniture",
+		"TEI_Ins_Object_class",
 		"a3_map_stratis"
 	};
 	randomSeed=1436945;
@@ -1505,21 +1507,101 @@ class Intro
 		items=23;
 		class Item0
 		{
-			side="WEST";
+			side="LOGIC";
 			class Vehicles
 			{
 				items=1;
 				class Item0
 				{
-					position[]={6068.0698,18.625486,5598.6357};
-					azimut=393.10501;
+					position[]={6069.8638,17.1922,5647.7969};
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorAlpha";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Timeout";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="10";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="50";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Expansion";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSpeed";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifting";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="WindEffect";
+						};
+					};
 					id=0;
-					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier_light";
-					player="PLAYER COMMANDER";
+					side="LOGIC";
+					vehicle="ModuleEffectsSmoke_F";
 					leader=1;
+					lock="UNLOCKED";
 					skill=0.60000002;
-					init="this exec ""intro.sqf"";";
 				};
 			};
 		};
@@ -1531,15 +1613,14 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6074.8071,18.452829,5611.8452};
-					azimut=175.535;
+					position[]={6068.0703,18.625978,5598.6509};
+					azimut=393.10501;
 					id=1;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier";
+					vehicle="TEI_UNSC_ODST_Scout";
 					leader=1;
 					skill=0.60000002;
-					text="man3";
-					init="removeGoggles this; this addmagazine ""TEI_60Rnd_762x51_Mag""; this addmagazine ""TEI_60Rnd_762x51_Mag"";this addmagazine ""TEI_60Rnd_762x51_Mag""; this addWeapon ""TEI_MA5B"";  this addPrimaryWeaponItem ""TEI_MA5B_AmmoCounter"";  ";
+					init="this exec ""intro.sqf"";";
 				};
 			};
 		};
@@ -1551,104 +1632,33 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6076.3555,18.559053,5610.0723};
-					azimut=269.896;
-					offsetY=0.34999999;
+					position[]={6074.8076,18.452078,5611.8604};
+					azimut=175.535;
 					id=2;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier_Sniper";
+					vehicle="TEI_UNSC_ODST_Scout";
 					leader=1;
 					skill=0.60000002;
-					text="man5";
-					init="removeGoggles this; this addWeapon ""TEI_BR55HB"";  this addPrimaryWeaponItem ""TEI_BR55HB_Scope""; this addGoggles ""G_Bandanna_blk"";";
+					text="man3";
 				};
 			};
 		};
 		class Item3
 		{
-			side="LOGIC";
+			side="WEST";
 			class Vehicles
 			{
 				items=1;
 				class Item0
 				{
-					position[]={6069.375,17.251728,5646.7529};
-					class args
-					{
-						items=11;
-						class Item0
-						{
-							value="0.5";
-							parentCls="ModuleEffectsFire_F";
-							typeName="ColorRed";
-						};
-						class Item1
-						{
-							value="0.5";
-							parentCls="ModuleEffectsFire_F";
-							typeName="ColorGreen";
-						};
-						class Item2
-						{
-							value="0.5";
-							parentCls="ModuleEffectsFire_F";
-							typeName="ColorBlue";
-						};
-						class Item3
-						{
-							value="0";
-							parentCls="ModuleEffectsFire_F";
-							typeName="Timeout";
-						};
-						class Item4
-						{
-							value="1";
-							parentCls="ModuleEffectsFire_F";
-							typeName="FireDamage";
-						};
-						class Item5
-						{
-							value="5";
-							parentCls="ModuleEffectsFire_F";
-							typeName="EffectSize";
-						};
-						class Item6
-						{
-							value="25";
-							parentCls="ModuleEffectsFire_F";
-							typeName="ParticleDensity";
-						};
-						class Item7
-						{
-							value="0.6";
-							parentCls="ModuleEffectsFire_F";
-							typeName="ParticleLifeTime";
-						};
-						class Item8
-						{
-							value="3";
-							parentCls="ModuleEffectsFire_F";
-							typeName="ParticleSize";
-						};
-						class Item9
-						{
-							value=".5";
-							parentCls="ModuleEffectsFire_F";
-							typeName="ParticleSpeed";
-						};
-						class Item10
-						{
-							value="0";
-							parentCls="ModuleEffectsFire_F";
-							typeName="ParticleOrientation";
-						};
-					};
+					position[]={6076.356,18.5583,5610.0874};
+					azimut=269.896;
 					id=3;
-					side="LOGIC";
-					vehicle="ModuleEffectsFire_F";
+					side="WEST";
+					vehicle="TEI_UNSC_ODST_Scout";
 					leader=1;
-					lock="UNLOCKED";
 					skill=0.60000002;
+					text="man5";
 				};
 			};
 		};
@@ -1660,7 +1670,7 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6074.3208,18.642464,5606.6187};
+					position[]={6069.3755,17.250965,5646.7681};
 					class args
 					{
 						items=11;
@@ -1748,7 +1758,7 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6072.3213,18.62105,5607.4019};
+					position[]={6074.0947,18.640429,5606.3027};
 					class args
 					{
 						items=11;
@@ -1836,92 +1846,80 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6073.083,18.687098,5604.2124};
+					position[]={6072.0952,18.629854,5607.0859};
 					class args
 					{
-						items=13;
+						items=11;
 						class Item0
 						{
 							value="0.5";
-							parentCls="ModuleEffectsSmoke_F";
+							parentCls="ModuleEffectsFire_F";
 							typeName="ColorRed";
 						};
 						class Item1
 						{
 							value="0.5";
-							parentCls="ModuleEffectsSmoke_F";
+							parentCls="ModuleEffectsFire_F";
 							typeName="ColorGreen";
 						};
 						class Item2
 						{
 							value="0.5";
-							parentCls="ModuleEffectsSmoke_F";
+							parentCls="ModuleEffectsFire_F";
 							typeName="ColorBlue";
 						};
 						class Item3
 						{
-							value="0.5";
-							parentCls="ModuleEffectsSmoke_F";
-							typeName="ColorAlpha";
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="Timeout";
 						};
 						class Item4
 						{
-							value="0";
-							parentCls="ModuleEffectsSmoke_F";
-							typeName="Timeout";
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="FireDamage";
 						};
 						class Item5
 						{
-							value="1";
-							parentCls="ModuleEffectsSmoke_F";
+							value="5";
+							parentCls="ModuleEffectsFire_F";
 							typeName="EffectSize";
 						};
 						class Item6
 						{
-							value="10";
-							parentCls="ModuleEffectsSmoke_F";
+							value="25";
+							parentCls="ModuleEffectsFire_F";
 							typeName="ParticleDensity";
 						};
 						class Item7
 						{
-							value="50";
-							parentCls="ModuleEffectsSmoke_F";
+							value="0.6";
+							parentCls="ModuleEffectsFire_F";
 							typeName="ParticleLifeTime";
 						};
 						class Item8
 						{
-							value="1";
-							parentCls="ModuleEffectsSmoke_F";
+							value="3";
+							parentCls="ModuleEffectsFire_F";
 							typeName="ParticleSize";
 						};
 						class Item9
 						{
-							value="1";
-							parentCls="ModuleEffectsSmoke_F";
-							typeName="Expansion";
+							value=".5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSpeed";
 						};
 						class Item10
 						{
-							value="1";
-							parentCls="ModuleEffectsSmoke_F";
-							typeName="ParticleSpeed";
-						};
-						class Item11
-						{
-							value="1";
-							parentCls="ModuleEffectsSmoke_F";
-							typeName="ParticleLifting";
-						};
-						class Item12
-						{
-							value="1";
-							parentCls="ModuleEffectsSmoke_F";
-							typeName="WindEffect";
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleOrientation";
 						};
 					};
 					id=6;
 					side="LOGIC";
-					vehicle="ModuleEffectsSmoke_F";
+					vehicle="ModuleEffectsFire_F";
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -1936,7 +1934,7 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6078.0439,18.270788,5616.1245};
+					position[]={6073.0835,18.686754,5604.2275};
 					class args
 					{
 						items=13;
@@ -2036,7 +2034,7 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6069.8638,17.1922,5647.7969};
+					position[]={6078.0444,18.270191,5616.1396};
 					class args
 					{
 						items=13;
@@ -2136,7 +2134,7 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6070.1304,18.643089,5605.3896};
+					position[]={6070.1309,18.642677,5605.4048};
 					class args
 					{
 						items=13;
@@ -2236,7 +2234,7 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6082.7515,17.692677,5638.1855};
+					position[]={6082.752,17.691631,5638.2007};
 					class args
 					{
 						items=11;
@@ -2324,7 +2322,7 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6082.8828,17.621708,5639.251};
+					position[]={6082.8833,17.620663,5639.2661};
 					class args
 					{
 						items=13;
@@ -2424,7 +2422,7 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6074.2524,17.940248,5623.9697};
+					position[]={6074.2529,17.939842,5623.9849};
 					class args
 					{
 						items=11;
@@ -2512,7 +2510,7 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6074.7412,17.930233,5625.0137};
+					position[]={6074.7417,17.929976,5625.0288};
 					class args
 					{
 						items=13;
@@ -2612,16 +2610,15 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6070.1655,18.244938,5614.6313};
+					position[]={6070.166,18.244072,5614.6465};
 					azimut=-29.048901;
 					offsetY=0.69999999;
 					id=14;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier";
+					vehicle="TEI_UNSC_ODST_Scout";
 					leader=1;
 					skill=0.60000002;
 					text="man6";
-					init="removeGoggles this; this addmagazine ""TEI_60Rnd_762x51_Mag""; this addmagazine ""TEI_60Rnd_762x51_Mag"";this addmagazine ""TEI_60Rnd_762x51_Mag""; this addWeapon ""TEI_MA5B"";  this addPrimaryWeaponItem ""TEI_MA5B_AmmoCounter"";  this addGoggles ""G_Bandanna_blk"";";
 				};
 			};
 		};
@@ -2633,15 +2630,15 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6075.0229,18.536312,5610.2295};
+					position[]={6075.0234,18.535561,5610.2446};
 					azimut=273.65601;
 					id=15;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier";
+					vehicle="TEI_UNSC_ODST_Scout";
 					leader=1;
 					skill=0.60000002;
 					text="man1";
-					init="this setdamage 1; removeheadgear this;";
+					init="removeheadgear this;";
 				};
 			};
 		};
@@ -2653,16 +2650,14 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6073.771,18.498837,5610.666};
+					position[]={6073.7715,18.498085,5610.6812};
 					azimut=122.029;
-					offsetY=0.34999999;
 					id=16;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier_medic";
+					vehicle="TEI_UNSC_ODST_Rifleman_AR";
 					leader=1;
 					skill=0.60000002;
 					text="man7";
-					init="this setunitpos ""middle""; removeGoggles this; this addmagazine ""TEI_60Rnd_762x51_Mag""; this addmagazine ""TEI_60Rnd_762x51_Mag"";this addmagazine ""TEI_60Rnd_762x51_Mag""; this addWeapon ""TEI_MA5B"";  this addPrimaryWeaponItem ""TEI_MA5B_AmmoCounter"";  this addGoggles ""G_Bandanna_blk"";";
 				};
 			};
 		};
@@ -2674,16 +2669,14 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6078.728,18.447399,5612.7251};
+					position[]={6078.7285,18.446573,5612.7402};
 					azimut=84.833397;
-					offsetY=0.40000001;
 					id=17;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier";
+					vehicle="TEI_UNSC_ODST_Autorifleman";
 					leader=1;
 					skill=0.60000002;
 					text="man2";
-					init="removeGoggles this; this addmagazine ""TEI_60Rnd_762x51_Mag""; this addmagazine ""TEI_60Rnd_762x51_Mag"";this addmagazine ""TEI_60Rnd_762x51_Mag""; this addWeapon ""TEI_MA5B"";  this addPrimaryWeaponItem ""TEI_MA5B_AmmoCounter"";  this addGoggles ""G_Bandanna_blk"";";
 				};
 			};
 		};
@@ -2695,15 +2688,14 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6077.7598,18.467365,5612.186};
+					position[]={6077.7603,18.466537,5612.2012};
 					azimut=141.57201;
 					id=18;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier";
+					vehicle="TEI_UNSC_ODST_Rifleman_BR";
 					leader=1;
 					skill=0.60000002;
 					text="man4";
-					init="removeGoggles this; this addmagazine ""TEI_60Rnd_762x51_Mag""; this addmagazine ""TEI_60Rnd_762x51_Mag"";this addmagazine ""TEI_60Rnd_762x51_Mag""; this addWeapon ""TEI_MA5B"";  this addPrimaryWeaponItem ""TEI_MA5B_AmmoCounter"";  this addGoggles ""G_Bandanna_blk"";";
 				};
 			};
 		};
@@ -2715,15 +2707,15 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6070.7319,18.57058,5608.48};
+					position[]={6070.7324,18.569944,5608.4951};
 					azimut=230.595;
 					id=19;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier";
+					vehicle="TEI_UNSC_ODST_TeamLead";
 					leader=1;
 					skill=0.60000002;
 					text="man8";
-					init="removeGoggles this; this addmagazine ""TEI_36Rnd_95x40_Mag"";  this addGoggles ""G_Bandanna_blk"";this addWeapon ""TEI_BR55HB"";  this addPrimaryWeaponItem ""TEI_BR55HB_Scope""; ";
+					init=" ";
 				};
 			};
 		};
@@ -2735,15 +2727,14 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6070.9082,18.141266,5616.7188};
+					position[]={6070.9087,18.140625,5616.7339};
 					azimut=66.187202;
 					id=20;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier";
+					vehicle="TEI_UNSC_ODST_Rifleman_AR";
 					leader=1;
 					skill=0.60000002;
 					text="man9";
-					init="removeGoggles this; this addWeapon ""TEI_M45""; this addGoggles ""G_Bandanna_blk"";";
 				};
 			};
 		};
@@ -2755,7 +2746,7 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6069.1108,18.525967,5608.9575};
+					position[]={6068.8848,18.536003,5608.6416};
 					class args
 					{
 						items=11;
@@ -2843,26 +2834,25 @@ class Intro
 				items=1;
 				class Item0
 				{
-					position[]={6074.7227,18.64423,5607.9214};
+					position[]={6074.7231,18.644197,5607.9365};
 					azimut=219.91499;
 					offsetY=0.25;
 					id=22;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Soldier";
+					vehicle="TEI_UNSC_ODST_Rifleman_AR";
 					leader=1;
 					skill=0.60000002;
 					text="man10";
-					init="this allowdamage false; removeGoggles this; this addmagazine ""TEI_60Rnd_762x51_Mag""; this addmagazine ""TEI_60Rnd_762x51_Mag"";this addmagazine ""TEI_60Rnd_762x51_Mag""; this addWeapon ""TEI_MA5B"";  this addPrimaryWeaponItem ""TEI_MA5B_AmmoCounter"";   this addGoggles ""G_Bandanna_blk"";";
 				};
 			};
 		};
 	};
 	class Vehicles
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
-			position[]={6074.8081,18.44952,5611.9116};
+			position[]={6074.8086,18.448769,5611.9268};
 			azimut=175.535;
 			offsetY=-0.5;
 			id=23;
@@ -2872,13 +2862,24 @@ class Intro
 			skill=0.60000002;
 			text="log2";
 		};
+		class Item1
+		{
+			position[]={6075.375,18.501381,5611.0161};
+			azimut=-45.715469;
+			offsetY=0.5;
+			id=24;
+			side="EMPTY";
+			vehicle="TEI_odst_grave";
+			leader=1;
+			skill=0.60000002;
+		};
 	};
 	class Sensors
 	{
 		items=4;
 		class Item0
 		{
-			position[]={6074.3882,18.642544,5606.9233};
+			position[]={6074.3887,18.642511,5606.9385};
 			a=5;
 			b=5;
 			activationBy="ANY";
@@ -2891,7 +2892,7 @@ class Intro
 		};
 		class Item1
 		{
-			position[]={6072.7529,18.620249,5607.665};
+			position[]={6072.7534,18.620218,5607.6802};
 			a=5;
 			b=5;
 			activationBy="ANY";
@@ -2904,7 +2905,7 @@ class Intro
 		};
 		class Item2
 		{
-			position[]={6071.1455,18.567591,5608.6963};
+			position[]={6071.146,18.566956,5608.7114};
 			a=5;
 			b=5;
 			activationBy="ANY";
@@ -2917,7 +2918,7 @@ class Intro
 		};
 		class Item3
 		{
-			position[]={6077.2617,18.662357,5608.1421};
+			position[]={6077.2622,18.661604,5608.1572};
 			activationBy="ANY";
 			interruptable=1;
 			age="UNKNOWN";
