@@ -5,14 +5,11 @@ TEI_Vehicles
 	-Thermal imaging RVmats? textures? how the fuck does thermal work
 
 	/// HEV
-!!!!!!!!-player gets launched after ejecing and dies
+!!!!!!!!-drop pods do not work
 	-script suite needs to be fully tested [Scorch052]
 	-needs proper Geo and Contact LODs
-	-should try to create a new "vehicle" instead of inheriting from the ATV (why not just make it an object instead of a vehicle?)
 	-emergency door not working
-	-remove horn
 	-remove option to "turn on" the vehicle
-	-RVmats?
 	-cooldown timer for the dropping sequence?
 
 	/// Warthog
@@ -20,8 +17,8 @@ TEI_Vehicles
 	-sounds extremely quiet in driver seat
 !!!!!!!!-cargo enterance positions need switched around
 !!!!!!!!-cargo switching while inside needs fixing
-	-penetrator plate rvmat error???
-	-innie APC texture is the old pink version
+!!!!!!!!-penetrator plate rvmat error???
+!!!!!!!!-rear Warthog tires pop easily
 
 	/// Pelican
 	-cockpit gadgets not working, honestly wouldnt bother with it as the cockpit will be overhauled later

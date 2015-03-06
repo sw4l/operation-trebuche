@@ -1,21 +1,18 @@
 TEI_UNSC_Units
 
-!!!!!!!!!-Classes need updated
-!!!!!!!!!-Groups need added
-
 	-all uniforms, vests, helmets need inventory icons
 	-Thermal imaging RVmats? textures? how the fuck does thermal work
 
 	/// ODST
 
-!!!!!!!!!-ODST (Heavy) has no pants in MP
+	?!-ODST (Heavy) has no pants in MP
 	-Visor script not working properly (Disabled for now) [Scorch052]
 	-Spawned with goggles on and they clipped through the visor (allowedHeadgear values in config?)
 	-ODST (Medic) vest is grey/green instead of white
 	-ODST Helmet and Vest shadow lods are missing
 
 	-training odst having some shadow lod issues on the ass^^
-	-instructor and recruit uniforms/hats have issues with other uniforms (removing for alpha)
+!!!!!!!!-instructor and recruit uniforms/hats have issues with other uniforms (removing for alpha)
 
 
 	/// Army

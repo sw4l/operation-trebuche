@@ -14,8 +14,9 @@ TEI_Weapons
 	-model needs flipped (like the Hog turrets, things are reversed)
 
 	/// M6G Pistol
-	-Weapon Animations (slide blowback, Mag Eject, etc.) do not work
 	-shadow lod causing trouble, wont show	
+	-text does not move with slide
+	-slow slide return
 
 	/// M45 Shotgun
 	-slide slideback on firing missing
@@ -26,7 +27,7 @@ TEI_Weapons
 	/// MA5B Assault Rifle
 !!!!!!!!-THE GAME CRASHES WHEN YOU SELECT IT WITH ASDG JR ON
 	-figure out how to make ammo counter work, get player magazine size replace counter with number texture ## = (https://community.bistudio.com/wiki/setObjectTextureGlobal)(https://community.bistudio.com/wiki/setObjectMaterial)
-	-add no iron sight version of ammo counter as scope
+!!!!!!!!-add no iron sight version of ammo counter as scope
 	-hand animation "breaks arm" when weapon is rested (Ctrl x2)
 
 	/// MA5B (M309 GL)
@@ -35,10 +36,12 @@ TEI_Weapons
 
 	/// M41 Rocket Launcher
 	-add custom scope reticule and zoom level
+	-does not fire an actual projectile (check model in cfgammo?)
+	-Twin rocket ammo box disappears randomly
 
-	/// M7 Submachine Gun
-	-side rail attachments not placed correctly	
-	-Weapon Animations (slide blowback, Mag Eject, etc.) do not work
+	/// M7 Submachine Gun	
+	-Weapon Animations (slide blowback, Mag Eject, reload) do not work
+!!!!!!!!-RDS sight glass is opaque white
 
 	/// biofoam
 	-needs icon image

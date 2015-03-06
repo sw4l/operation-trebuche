@@ -1,9 +1,9 @@
 TEI_Ins_Units 
 
-	!!!!!!!!!-Classes need updated
-	!!!!!!!!!-Groups need added
-	-add the UCAV retextured "MAKO drone" [SpaceNavy]
-	-add the Zamak variants retextured "M1015 Mule" [SpaceNavy]
+!!!!!!!!-Classes need updated
+!!!!!!!!-Groups need added
+!!!!!!!!-add the UCAV retextured "MAKO drone" [SpaceNavy]
+!!!!!!!!-add the Zamak variants retextured "M1015 Mule" [SpaceNavy]
 	-boarding coveralls invisible
 	-combat fatigues [OD] invissible
 
