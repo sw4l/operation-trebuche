@@ -1,5 +1,7 @@
 TEI_UNSC_Units
 
+	-reset profiles?
+!!!!!!!!-Cannot load texture - initialshadinggroup
 	-all uniforms, vests, helmets need inventory icons
 	-Thermal imaging RVmats? textures? how the fuck does thermal work
 

@@ -10,7 +10,8 @@ TEI_Vehicles
 	-needs proper Geo and Contact LODs
 	-emergency door not working
 	-remove option to "turn on" the vehicle
-	-cooldown timer for the dropping sequence?
+	-cooldown timer for the dropping sequence?	
+	-include a readme on how to use droppod when scripts are released
 
 	/// Warthog
 !!!!!!!!-fire geo lod needed for the attachments (apc cover, gun, etc)
@@ -24,6 +25,7 @@ TEI_Vehicles
 	-cockpit gadgets not working, honestly wouldnt bother with it as the cockpit will be overhauled later
 	-pelican wreck texture needs to be blackened out (green wings)
 	-landing gear geometery lod needs tweaking (AI get stuck on them)
+	-lifting capabilities seriously need up'd
 
 
 

@@ -1,6 +1,9 @@
 TEI_Misc
 	///Crates
 	-add more boxes and items
+
+	///Objects
+	-graves have a shadow lod error (non closed)
 	
 
 *Please put your name in brackets at the end of whatever issue(s) you are currently working on

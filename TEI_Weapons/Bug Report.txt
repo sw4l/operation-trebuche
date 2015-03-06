@@ -1,5 +1,6 @@
 TEI_Weapons
 
+!!!!!!!!-Reduce weapon damage
 	-All weapon inventory icons are fully transparent. you can barely make out the image. image much be square 512x512 <---- USE IT
 	-None of the weapons have a muzzle flash, just the puff of smoke from the barrel.
 	-Thermal imaging RVmats? textures? how the fuck does thermal work
@@ -17,12 +18,14 @@ TEI_Weapons
 	-shadow lod causing trouble, wont show	
 	-text does not move with slide
 	-slow slide return
+	-reverse the scope settings (scope default, irons second)
 
 	/// M45 Shotgun
 	-slide slideback on firing missing
 !!!!!!!!-Reload animation wrong (loads 8 shells when we only have 6)
 	-getting missing icon error
 	-dirt material
+!!!!!!!!-reloading while prone stands you up
 
 	/// MA5B Assault Rifle
 !!!!!!!!-THE GAME CRASHES WHEN YOU SELECT IT WITH ASDG JR ON
