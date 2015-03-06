@@ -791,7 +791,7 @@ class CfgGroups
 					class Unit2
 					{
 						side = 1;
-						vehicle = "TEI_UNSC_Army_W_AT_Specialist";
+						vehicle = "TEI_UNSC_Marine_TeamLead";
 						rank = "PRIVATE";
 						position[] = {-5,-5,0};
 					};
