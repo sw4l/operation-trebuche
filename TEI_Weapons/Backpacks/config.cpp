@@ -181,4 +181,31 @@ class cfgVehicles {
 				hiddenSelections[] 								= {"camo1"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\como_pack_co.paa"};
         };
+		class TEI_Kitbag_COLOR_Rockets: B_Carryall_oli
+		{
+			scope = 1;
+			class TransportMagazines
+			{
+				class TEI_M41_Twin_HEAT
+				{
+				magazine = "TEI_M41_Twin_HEAT";
+				count = 1;
+				};
+				class TEI_M41_Twin_HEAT_G
+				{
+				magazine = "TEI_M41_Twin_HEAT_G";
+				count = 2;
+				};
+			};
+			class TransportItems
+			{
+				class _xx_ToolKit
+				{
+				};
+				class _xx_MineDetector
+				{
+				};
+			};
+		};.
+
 };

@@ -585,13 +585,11 @@ class CfgGroups
 						position[] = {5,-5,0};
 					};
 				};
-				
-			};
 			
 			
 			
 			
-			class TEI_UNSC_Marine_Inf_Sentry
+				class TEI_UNSC_Marine_Inf_Sentry
 				{
 					name = "Marine Sentry";
 					side = 1;
@@ -864,7 +862,7 @@ class CfgGroups
 					};
 				};
 			
-			
+			};
 			
 			
 			class SpecOps
