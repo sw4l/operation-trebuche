@@ -17,6 +17,7 @@ TEI_UNSC_Units
 	-Add depolarized visors with scope = 1 (or 0?); //dont add depolarized for now
 
 	-training odst having some shadow lod issues on the ass^^
+	-instructor and recruit uniforms/hats have issues with other uniforms (removing for alpha)
 
 
 	/// Army

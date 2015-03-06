@@ -40,8 +40,8 @@
                                             opticsFlare                                     = 0;
                                             opticsDisablePeripherialVision  = 0;
                                             opticsZoomMin                                   = 0.375;
-                                            opticsZoomMax                                   = 1.1;
-                                            opticsZoomInit                                  = 0.75;
+                                            opticsZoomMax                                   = 0.755;
+                                            opticsZoomInit                                  = 0.755;
                                             memoryPointCamera                               = "opticView";
                                             visionMode[]                                    = {"Normal"};
                                             distanceZoomMin                                 = 300;
@@ -222,15 +222,15 @@
                     displayName                                                             = "MA5B + M309 Assault Rifle";
                     descriptionShort                                                        = "UNSC Assault Rifle + GL";
                     picture                                                                 = "";
-                    magazines[]                                                             = {"TEI_60Rnd_762x51_Mag","TEI_60Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag_Tracer"};
-                    modelOptics                                                             = "-";
-                    dexterity                                                               = 3.25;
-                    muzzlePos                                                               = "usti hlavne";
-                    muzzleEnd                                                               = "konec hlavne";
-                    reloadAction                                                            = "GestureReloadTRG";
+                    //magazines[]                                                             = {"TEI_60Rnd_762x51_Mag","TEI_60Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag_Tracer"};
+                    //modelOptics                                                             = "-";
+                    //dexterity                                                               = 3.25;
+                    //muzzlePos                                                               = "usti hlavne";
+                    //muzzleEnd                                                               = "konec hlavne";
+                    //reloadAction                                                            = "GestureReloadTRG";
                     muzzles[]                                                           = {"this", "M309GL"}; // this was the missing
                     inertia                                                                 = 0.6;
-                    class GunParticles: GunParticles
+                    /*class GunParticles: GunParticles
                     {
                        class SecondEffect
                        {
@@ -309,7 +309,7 @@
                             maxRangeProbab = 0.05;
                             soundBurst = 0;
                             burst = 1;
-                    };
+                    };*/
                     class M309GL: UGL_F /// Some grenade launcher to have some more fun
                     {
                             displayName = "M309 Grenade Launcher";
