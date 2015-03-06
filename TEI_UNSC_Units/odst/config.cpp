@@ -252,7 +252,7 @@ class CfgVehicles //This configures units and backpacks
 	{
 		scope											= 2;
 		displayName										= "ODST Scout (AT)";
-		backpack 										= "TEI_ILCS_Rucksack_Black"; //rockets inside?
+		backpack 										= "TEI_ILCS_Black_Rockets"; //rockets inside?
 		weapons[] 										= {"TEI_M7S","TEI_M6G_SF","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_M7S","TEI_M6G_SF","Throw","Put","TEI_M41_SSR"};
 		magazines[] 									= {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_M41_Twin_HEAT","TEI_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
@@ -285,7 +285,7 @@ class CfgVehicles //This configures units and backpacks
 	{
 		scope											= 2;
 		displayName										= "ODST Rifleman (AT)";
-		backpack 										= "TEI_ILCS_Rucksack_Black"; //rockets inside?
+		backpack 										= "TEI_ILCS_Black_Rockets"; //rockets inside?
 		weapons[] 										= {"TEI_MA5B_AC","TEI_M6G_SF","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","TEI_M6G_SF","Throw","Put","TEI_M41_SSR"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_M41_Twin_HEAT","TEI_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
@@ -403,7 +403,7 @@ class cfgWeapons
 			uniformModel																		= "-";
 			uniformClass																		= "TEI_UNSC_ODST_Soldier";
 			containerClass																		= "Supply50";
-			mass																				= 60; //The weight and storage capacity of the uniform
+			mass																				= 45; //The weight and storage capacity of the uniform
 			modelSides[] 																		= {6};
 		};
 	};
@@ -411,41 +411,41 @@ class cfgWeapons
 	{
 		scope																					= 2;
 		author																					= "Eridanus Insurrection Team";
-		displayName																				= "[UNSC] ODST Uniform";
+		displayName																				= "[UNSC] ODST Undersuit";
 		class ItemInfo: UniformItem
 		{
 			uniformModel																		= "-";
 			uniformClass																		= "TEI_UNSC_ODST_Soldier";
 			containerClass																		= "Supply60";
-			mass																				= 60;
+			mass																				= 40;
 			modelSides[] 																		= {6};
 		};
 	};
 	class TEI_UNSC_ODST_uniform_light: TEI_UNSC_ODST_uniform_base
 	{
-		scope																					= 2;
+		scope																					= 1;
 		author																					= "Eridanus Insurrection Team";
-		displayName																				= "[UNSC] ODST Light Uniform";
+		displayName																				= "[UNSC] ODST Light Undersuit";
 		class ItemInfo: UniformItem
 		{
 			uniformModel																		= "-";
 			uniformClass																		= "TEI_UNSC_ODST_Soldier_light";
 			containerClass																		= "Supply50";
-			mass																				= 50;
+			mass																				= 30;
 			modelSides[] 																		= {6};
 		};
 	};
 	class TEI_UNSC_ODST_uniform_medium: TEI_UNSC_ODST_uniform_base
 	{
-		scope																					= 2;
+		scope																					= 1;
 		author																					= "Eridanus Insurrection Team";
-		displayName																				= "[UNSC] ODST Medium Uniform";
+		displayName																				= "[UNSC] ODST Medium Undersuit";
 		class ItemInfo: UniformItem
 		{
 			uniformModel																		= "-";
 			uniformClass																		= "TEI_UNSC_ODST_Soldier_medium";
 			containerClass																		= "Supply50";
-			mass																				= 50;
+			mass																				= 35;
 			modelSides[] 																		= {6};
 		};
 	};
@@ -453,13 +453,13 @@ class cfgWeapons
 	{
 		scope																					= 2;
 		author																					= "Eridanus Insurrection Team";
-		displayName																				= "[UNSC] ODST Sniper Uniform";
+		displayName																				= "[UNSC] ODST Sniper Undersuit";
 		class ItemInfo: UniformItem
 		{
 			uniformModel																		= "-";
 			uniformClass																		= "TEI_UNSC_ODST_Soldier_sniper";
 			containerClass																		= "Supply50";
-			mass																				= 50;
+			mass																				= 35;
 			modelSides[] 																		= {6};
 		};
 	};
@@ -467,13 +467,13 @@ class cfgWeapons
 	{
 		scope																					= 2;
 		author																					= "Eridanus Insurrection Team";
-		displayName																				= "[UNSC] ODST Medic Uniform";
+		displayName																				= "[UNSC] ODST Medic Undersuit";
 		class ItemInfo: UniformItem
 		{
 			uniformModel																		= "-";
 			uniformClass																		= "TEI_UNSC_ODST_Soldier_medic";
 			containerClass																		= "Supply60";
-			mass																			= 60;
+			mass																				= 40;
 			modelSides[] 																		= {6};
 		};
 	};
@@ -529,7 +529,7 @@ class cfgWeapons
 	{	
 		scope 																					= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Eridanus Insurrection Team";
-		displayName  																			= "[UNSC] ODST Vest"; /// how would the stuff be displayed in inventory and on ground
+		displayName  																			= "[UNSC] ODST M53 Body Armor"; /// how would the stuff be displayed in inventory and on ground
 		picture   																				= ""; /// this icon fits the vest surprisingly well
 		model     																				= "\TEI_UNSC_Units\ODST\vest.p3d"; /// what model does the vest use
 		hiddenSelections[]   																	= {"camo1","camo2"}; /// what selection in model could have different textures
@@ -550,7 +550,7 @@ class cfgWeapons
 	{	
 		scope 																					= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Eridanus Insurrection Team";
-		displayName  																			= "[UNSC] ODST Medic Vest"; /// how would the stuff be displayed in inventory and on ground
+		displayName  																			= "[UNSC] ODST M53 Body Armor (Medic)"; /// how would the stuff be displayed in inventory and on ground
 		picture   																				= ""; /// this icon fits the vest surprisingly well
 		model     																				= "\TEI_UNSC_Units\ODST\vest.p3d"; /// what model does the vest use
 		hiddenSelections[]   																	= {"camo1","camo2"}; /// what selection in model could have different textures
@@ -595,7 +595,7 @@ class cfgWeapons
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Eridanus Insurrection Team";
-		displayName    																			= "[UNSC] ODST Helmet"; /// how would the stuff be displayed in inventory and on ground
+		displayName    																			= "[UNSC] ODST CH253 Helmet"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\helmet_co.paa","TEI_UNSC_Units\ODST\data\helmet_co.paa"}; /// what texture is going to be used
 		class ItemInfo: HeadgearItem 
@@ -613,7 +613,7 @@ class cfgWeapons
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Eridanus Insurrection Team";
-		displayName    																			= "[UNSC] ODST Helmet (Demo)"; /// how would the stuff be displayed in inventory and on ground
+		displayName    																			= "[UNSC] ODST CH253 Helmet (Demo)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_communication","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\helmet2_co.paa","TEI_UNSC_Units\ODST\data\helmet2_co.paa"}; /// what texture is going to be used
 		class ItemInfo: HeadgearItem 
@@ -631,7 +631,7 @@ class cfgWeapons
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Eridanus Insurrection Team";
-		displayName    																			= "[UNSC] ODST Helmet (Sniper)"; /// how would the stuff be displayed in inventory and on ground
+		displayName    																			= "[UNSC] ODST CH253 Helmet (Sniper)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather", "attach_laser"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\helmet1_co.paa","TEI_UNSC_Units\ODST\data\helmet1_co.paa"}; /// what texture is going to be used
 		class ItemInfo: HeadgearItem 
@@ -649,7 +649,7 @@ class cfgWeapons
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Eridanus Insurrection Team";
-		displayName    																			= "[UNSC] ODST Helmet (Comms)"; /// how would the stuff be displayed in inventory and on ground
+		displayName    																			= "[UNSC] ODST CH253 Helmet (Comms)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_rebreather","attach_rangefinder","attach_laser"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\helmet3_co.paa","TEI_UNSC_Units\ODST\data\helmet3_co.paa"}; /// what texture is going to be used
 		class ItemInfo: HeadgearItem 
@@ -667,7 +667,7 @@ class cfgWeapons
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Eridanus Insurrection Team";
-		displayName    																			= "[UNSC] ODST Helmet (Medic)"; /// how would the stuff be displayed in inventory and on ground
+		displayName    																			= "[UNSC] ODST CH253 Helmet (Medic)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather","attach_rangefinder", "attach_laser"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\helmet_medic_co.paa","TEI_UNSC_Units\ODST\data\helmet_medic_co.paa"}; /// what texture is going to be used
 		class ItemInfo: HeadgearItem 
@@ -685,7 +685,7 @@ class cfgWeapons
 	{	
 		scope   																			  	= 1; /// scope needs to be 2 to have a visible class
 		author																					= "Eridanus Insurrection Team";
-		displayName    																			= "[UNSC] ODST Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
+		displayName    																			= "[UNSC] ODST CH253 Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\helmet_co.paa","TEI_Core\data\base\glass_ca.paa"}; /// what texture is going to be used
 		class ItemInfo: HeadgearItem 
@@ -703,7 +703,7 @@ class cfgWeapons
 	{	
 		scope   																			  	= 1; /// scope needs to be 2 to have a visible class
 		author																					= "Eridanus Insurrection Team";
-		displayName    																			= "[UNSC] ODST Helmet (Recon)[Depolarized]"; /// how would the stuff be displayed in inventory and on ground
+		displayName    																			= "[UNSC] ODST CH253 Helmet (Demo)[Depolarized]"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\helmet_co.paa","TEI_Core\data\base\glass_ca.paa"}; /// what texture is going to be used
 		class ItemInfo: HeadgearItem 
@@ -721,7 +721,7 @@ class cfgWeapons
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Eridanus Insurrection Team";
-		displayName    																			= "[UNSC] Recon Helmet"; /// how would the stuff be displayed in inventory and on ground
+		displayName    																			= "[UNSC] ONI Recon Helmet"; /// how would the stuff be displayed in inventory and on ground
 		model     																				= "\TEI_UNSC_Units\ODST\recon_helmet.p3d"; /// what model does the vest use
 		hiddenSelections[]   																	= {"camo1"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\recon_helmet_co.paa"}; /// what texture is going to be used

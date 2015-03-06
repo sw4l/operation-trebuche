@@ -127,7 +127,7 @@ class CfgGroups
 						side = 1;
 						vehicle = "TEI_UNSC_Army_W_TeamLead";
 						rank = "CORPORAL";
-						position[] = (-20,-5,0};
+						position[] = {-20,-5,0};
 					};
 				};
 				
@@ -219,7 +219,7 @@ class CfgGroups
 				
 				class TEI_UNSC_Army_W_Inf_AntiTank
 				{
-					name = "Army Fireteam (W)";
+					name = "Army Anti-Tank Team (W)";
 					side = 1;
 					faction = "TEI_UNSC";
 					rarityGroup = 0.3;
@@ -255,7 +255,7 @@ class CfgGroups
 				
 				class TEI_UNSC_Army_W_Inf_AntiAir
 				{
-					name = "Army Fireteam (W)";
+					name = "Army Anti-Air Team (W)";
 					side = 1;
 					faction = "TEI_UNSC";
 					rarityGroup = 0.3;
@@ -402,7 +402,7 @@ class CfgGroups
 						side = 1;
 						vehicle = "TEI_UNSC_Army_D_TeamLead";
 						rank = "CORPORAL";
-						position[] = (-20,-5,0};
+						position[] = {-20,-5,0};
 					};
 				};
 				
@@ -494,7 +494,7 @@ class CfgGroups
 				
 				class TEI_UNSC_Army_D_Inf_AntiTank
 				{
-					name = "Army Fireteam (D)";
+					name = "Army Anti-Tank Team (D)";
 					side = 1;
 					faction = "TEI_UNSC";
 					rarityGroup = 0.3;
@@ -530,7 +530,7 @@ class CfgGroups
 				
 				class TEI_UNSC_Army_D_Inf_AntiAir
 				{
-					name = "Army Fireteam (D)";
+					name = "Army Anti-Air Team (D)";
 					side = 1;
 					faction = "TEI_UNSC";
 					rarityGroup = 0.3;
@@ -678,7 +678,7 @@ class CfgGroups
 						side = 1;
 						vehicle = "TEI_UNSC_Marine_TeamLead";
 						rank = "CORPORAL";
-						position[] = (-20,-5,0};
+						position[] = {-20,-5,0};
 					};
 				};
 				
@@ -770,7 +770,7 @@ class CfgGroups
 				
 				class TEI_UNSC_Marine_Inf_AntiTank
 				{
-					name = "Marine Fireteam";
+					name = "Marine Anti-Tank Team";
 					side = 1;
 					faction = "TEI_UNSC";
 					rarityGroup = 0.3;
@@ -806,7 +806,7 @@ class CfgGroups
 				
 				class TEI_UNSC_Marine_Inf_AntiAir
 				{
-					name = "Marine Fireteam";
+					name = "Marine Anti-Air Team";
 					side = 1;
 					faction = "TEI_UNSC";
 					rarityGroup = 0.3;

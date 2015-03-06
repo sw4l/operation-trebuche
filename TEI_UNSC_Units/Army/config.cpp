@@ -223,7 +223,7 @@ class CfgVehicles //This configures units and backpacks
 		scope											= 2;
 		displayName										= "Rifleman (AT)";
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
-		backpack 										= "B_Kitbag_rgr"; //rockets inside?
+		backpack 										= "TEI_Kitbag_rgr_Rockets"; //rockets inside?
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT","TEI_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
@@ -247,7 +247,7 @@ class CfgVehicles //This configures units and backpacks
 		scope											= 2;
 		displayName										= "AT Specialist";
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
-		backpack 										= "B_Kitbag_rgr";
+		backpack 										= "TEI_Kitbag_rgr_Rockets";
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAT_G","SmokeShell","SmokeShellGreen"};
@@ -259,7 +259,7 @@ class CfgVehicles //This configures units and backpacks
 		scope											= 2;
 		displayName										= "AA Specialist";
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
-		backpack 										= "B_Kitbag_rgr";
+		backpack 										= "TEI_Kitbag_rgr_Rockets";
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAA","TEI_M41_Twin_HEAA","SmokeShell","SmokeShellGreen"};
@@ -511,7 +511,7 @@ class TEI_UNSC_Army_D_Medic: TEI_UNSC_Army_W_Medic //Configures the unit part of
 		scope											= 2;
 		displayName										= "Rifleman (AT)";
 		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
-		backpack 										= "B_Kitbag_cbr"; //rockets inside?
+		backpack 										= "TEI_Kitbag_cbr_Rockets"; //rockets inside?
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT","TEI_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
@@ -535,7 +535,7 @@ class TEI_UNSC_Army_D_Medic: TEI_UNSC_Army_W_Medic //Configures the unit part of
 		scope											= 2;
 		displayName										= "AT Specialist";
 		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
-		backpack 										= "B_Kitbag_cbr";
+		backpack 										= "TEI_Kitbag_cbr_Rockets";
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAT_G","SmokeShell","SmokeShellGreen"};
@@ -547,7 +547,7 @@ class TEI_UNSC_Army_D_Medic: TEI_UNSC_Army_W_Medic //Configures the unit part of
 		scope											= 2;
 		displayName										= "AA Specialist";
 		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
-		backpack 										= "B_Kitbag_cbr";
+		backpack 										= "TEI_Kitbag_cbr_Rockets";
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAA","TEI_M41_Twin_HEAA","SmokeShell","SmokeShellGreen"};
@@ -781,7 +781,7 @@ class cfgWeapons
 			uniformModel								= "-";
 			uniformClass								= "TEI_UNSC_Army_Soldier_Base";
 			containerClass								= "Supply50";
-			mass										= 50; //The weight and storage capacity of the uniform
+			mass										= 40; //The weight and storage capacity of the uniform
 			modelSides[] 								= {6};
 		};
 	};
@@ -789,13 +789,13 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
-		displayName										= "[UNSC] Pilot Uniform [Woodland]";
+		displayName										= "[UNSC] Pilot Coveralls [Woodland]";
 		class ItemInfo: ItemInfo
 		{
 			uniformModel								= "-";
 			uniformClass								= "TEI_UNSC_Army_Pilot_WDL";
 			containerClass								= "Supply30";
-			mass										= 30;
+			mass										= 25;
 			modelSides[] 								= {6};
 		};
 	};
@@ -803,7 +803,7 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
-		displayName										= "[UNSC] Army BDU (Light) [Woodland]";
+		displayName										= "[UNSC] Army BDU (Light/Woodland) [Woodland]";
 		class ItemInfo: UniformItem
 		{
 			uniformModel								= "-";
@@ -817,13 +817,13 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
-		displayName										= "[UNSC] Army BDU [Woodland]";
+		displayName										= "[UNSC] Army BDU (Medium/Woodland)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel								= "-";
 			uniformClass								= "TEI_UNSC_Army_Rifleman_WDL";
 			containerClass								= "Supply40";
-			mass										= 40;
+			mass										= 35;
 			modelSides[] 								= {6};
 		};
 	};
@@ -831,13 +831,13 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
-		displayName										= "[UNSC] Army BDU (Heavy) [Woodland]";
+		displayName										= "[UNSC] Army BDU (Heavy/Woodland)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel								= "-";
 			uniformClass								= "TEI_UNSC_Army_Rifleman_H_WDL";
 			containerClass								= "Supply50";
-			mass										= 50;
+			mass										= 40;
 			modelSides[] 								= {6};
 		};
 	};
@@ -845,13 +845,13 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
-		displayName										= "[UNSC] Pilot Uniform [Desert]";
+		displayName										= "[UNSC] Pilot Coveralls [Desert]";
 		class ItemInfo: UniformItem
 		{
 			uniformModel								= "-";
 			uniformClass								= "TEI_UNSC_Army_Pilot_DES";
 			containerClass								= "Supply30";
-			mass										= 30;
+			mass										= 25;
 			modelSides[] 								= {6};
 		};
 	};
@@ -859,7 +859,7 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
-		displayName										= "[UNSC] Army BDU (Light) [Desert]";
+		displayName										= "[UNSC] Army BDU (Light/Desert)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel								= "-";
@@ -873,13 +873,13 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
-		displayName										= "[UNSC] Army BDU [Desert]";
+		displayName										= "[UNSC] Army BDU (Medium/Desert)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel								= "-";
 			uniformClass								= "TEI_UNSC_Army_Rifleman_DES";
 			containerClass								= "Supply40";
-			mass										= 40;
+			mass										= 35;
 			modelSides[] 								= {6};
 		};
 	};
@@ -887,13 +887,13 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
-		displayName										= "[UNSC] Army BDU (Heavy) [Desert]";
+		displayName										= "[UNSC] Army BDU (Heavy/Desert)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel									= "-";
 			uniformClass									= "TEI_UNSC_Army_Rifleman_H_DES";
 			containerClass									= "Supply50";
-			mass											= 50;
+			mass											= 40;
 			modelSides[] 									= {6};
 		};
 	};
@@ -907,7 +907,7 @@ class cfgWeapons
 			uniformModel									= "-";
 			uniformClass									= "TEI_UNSC_Army_Medic";
 			containerClass									= "Supply50";
-			mass											= 50;
+			mass											= 40;
 			modelSides[] 									= {6};
 		};
 	};
@@ -1201,7 +1201,7 @@ class cfgWeapons
 	{	
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
-		displayName    									= "[UNSC] CH252 Helmet (Woodland)(Ghillie)"; /// how would the stuff be displayed in inventory and on ground
+		displayName    									= "[UNSC] CH252 Helmet (Woodland) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","camo3","attach_face"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   					= {"TEI_UNSC_Units\Army\data\helmet_co.paa","TEI_UNSC_Units\Army\data\addons_co.paa","TEI_UNSC_Units\Army\data\ghillie_1_ca.paa"}; /// what texture is going to be used
 		class ItemInfo: ItemInfo
@@ -1212,8 +1212,9 @@ class cfgWeapons
 	};
 		class TEI_UNSC_CH252_Helmet2b_WDL: TEI_UNSC_CH252_Helmet2_WDL
 	{	
+		scope = 1;
 		author											= "Eridanus Insurrection Team";
-		displayName    									= "[UNSC] CH252 Helmet V (Woodland)(Ghillie)"; /// how would the stuff be displayed in inventory and on ground
+		displayName    									= "[UNSC] CH252[V] Helmet (Woodland) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","camo3"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   					= {"TEI_UNSC_Units\Army\data\helmet_co.paa","TEI_UNSC_Units\Army\data\addons_co.paa","TEI_UNSC_Units\Army\data\ghillie_1_ca.paa"}; /// what texture is going to be used
 		class ItemInfo: ItemInfo
@@ -1226,7 +1227,7 @@ class cfgWeapons
 	{	
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
-		displayName    									= "[UNSC] CH252 Helmet (Desert)(Ghillie)"; /// how would the stuff be displayed in inventory and on ground
+		displayName    									= "[UNSC] CH252 Helmet (Desert) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","camo3","attach_face"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   					= {"TEI_UNSC_Units\Army\data\helmet_cam2_co.paa","TEI_UNSC_Units\Army\data\addons_cam2_ca.paa","TEI_UNSC_Units\Army\data\ghillie_3_ca.paa"}; /// what texture is going to be used
 		class ItemInfo: ItemInfo
@@ -1237,8 +1238,9 @@ class cfgWeapons
 	};
 		class TEI_UNSC_CH252_Helmet2b_DES: TEI_UNSC_CH252_Helmet2_DES
 	{	
+		scope = 1;
 		author											= "Eridanus Insurrection Team";
-		displayName    									= "[UNSC] CH252 Helmet V (Desert)(Ghillie)"; /// how would the stuff be displayed in inventory and on ground
+		displayName    									= "[UNSC] CH252[V] Helmet (Desert) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","camo3"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   					= {"TEI_UNSC_Units\Army\data\helmet_cam2_co.paa","TEI_UNSC_Units\Army\data\addons_cam2_ca.paa","TEI_UNSC_Units\Army\data\ghillie_3_ca.paa"}; /// what texture is going to be used
 		class ItemInfo: ItemInfo

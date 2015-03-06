@@ -13,18 +13,20 @@ TEI_Vehicles
 	-remove horn
 	-remove option to "turn on" the vehicle
 	-RVmats?
+	-cooldown timer for the dropping sequence?
 
 	/// Warthog
 !!!!!!!!-fire geo lod needed for the attachments (apc cover, gun, etc)
 	-sounds extremely quiet in driver seat
-	-cargo enterance positions need switched around
-	-cargo switching while inside needs fixing
+!!!!!!!!-cargo enterance positions need switched around
+!!!!!!!!-cargo switching while inside needs fixing
 	-penetrator plate rvmat error???
 	-innie APC texture is the old pink version
 
 	/// Pelican
 	-cockpit gadgets not working, honestly wouldnt bother with it as the cockpit will be overhauled later
 	-pelican wreck texture needs to be blackened out (green wings)
+	-landing gear geometery lod needs tweaking (AI get stuck on them)
 
 
 

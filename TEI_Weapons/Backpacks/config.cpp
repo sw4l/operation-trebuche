@@ -20,6 +20,8 @@ class cfgVehicles {
 		class Bag_Base;
 		class B_AssaultPack_rgr_Medic;
         class B_Bergen_Base;    // External class reference
+		class B_Kitbag_cbr;
+		class B_Kitbag_rgr;
         	       
         class TEI_ILCS_Rucksack_Black : B_Bergen_Base 
 		{
@@ -181,7 +183,7 @@ class cfgVehicles {
 				hiddenSelections[] 								= {"camo1"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\como_pack_co.paa"};
         };
-		class TEI_Kitbag_COLOR_Rockets: B_Carryall_oli
+		class TEI_Kitbag_cbr_Rockets: B_Kitbag_cbr
 		{
 			scope = 1;
 			class TransportMagazines
@@ -191,13 +193,13 @@ class cfgVehicles {
 				magazine = "TEI_M41_Twin_HEAT";
 				count = 1;
 				};
-				class TEI_M41_Twin_HEAT_G
+				/*class TEI_M41_Twin_HEAT_G
 				{
 				magazine = "TEI_M41_Twin_HEAT_G";
 				count = 2;
-				};
+				};*/
 			};
-			class TransportItems
+			/*class TransportItems
 			{
 				class _xx_ToolKit
 				{
@@ -205,7 +207,59 @@ class cfgVehicles {
 				class _xx_MineDetector
 				{
 				};
+			};*/
+		};
+		class TEI_Kitbag_rgr_Rockets: B_Kitbag_rgr
+		{
+			scope = 1;
+			class TransportMagazines
+			{
+				class TEI_M41_Twin_HEAT
+				{
+				magazine = "TEI_M41_Twin_HEAT";
+				count = 2;
+				};
+				/*class TEI_M41_Twin_HEAT_G
+				{
+				magazine = "TEI_M41_Twin_HEAT_G";
+				count = 2;
+				};*/
 			};
-		};.
+			/*class TransportItems
+			{
+				class _xx_ToolKit
+				{
+				};
+				class _xx_MineDetector
+				{
+				};
+			};*/
+		};
+		class TEI_ILCS_Black_Rockets: TEI_ILCS_Rucksack_Black
+		{
+			scope = 1;
+			class TransportMagazines
+			{
+				class TEI_M41_Twin_HEAT
+				{
+				magazine = "TEI_M41_Twin_HEAT";
+				count = 1;
+				};
+				/*class TEI_M41_Twin_HEAT_G
+				{
+				magazine = "TEI_M41_Twin_HEAT_G";
+				count = 2;
+				};*/
+			};
+			/*class TransportItems
+			{
+				class _xx_ToolKit
+				{
+				};
+				class _xx_MineDetector
+				{
+				};
+			};*/
+		};
 
 };

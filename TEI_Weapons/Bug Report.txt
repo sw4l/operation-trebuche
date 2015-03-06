@@ -1,15 +1,17 @@
 TEI_Weapons
-	
+
 	-All weapon inventory icons are fully transparent. you can barely make out the image. image much be square 512x512 <---- USE IT
 	-None of the weapons have a muzzle flash, just the puff of smoke from the barrel.
 	-Thermal imaging RVmats? textures? how the fuck does thermal work
+	?!-Ran into a bug one time where magazines were being "eaten" on reload. Didnt happen again but watch out
 
 	/// BR55HB Battle Rifle
 !!!!!!!!-THE GAME CRASHES WHEN YOU SELECT IT WITH ASDG JR ON
 	-Weapon Animations (Bolt, Mag Eject, etc.) do not work
 	-Icons needed
 	-figure out how to make ammo counter work, get player magazine size replace counter with number texture ## = (https://community.bistudio.com/wiki/setObjectTextureGlobal)(https://community.bistudio.com/wiki/setObjectMaterial)
-	-texture seems to be mirrored. any text is mirrored (see magazine or side of rifle)
+	-dirt material
+	-model needs flipped (like the Hog turrets, things are reversed)
 
 	/// M6G Pistol
 	-Weapon Animations (slide blowback, Mag Eject, etc.) do not work
@@ -17,8 +19,9 @@ TEI_Weapons
 
 	/// M45 Shotgun
 	-slide slideback on firing missing
-	-Reload animation wrong (loads 8 shells when we only have 6)
-!!!!!!!!-getting missing icon error
+!!!!!!!!-Reload animation wrong (loads 8 shells when we only have 6)
+	-getting missing icon error
+	-dirt material
 
 	/// MA5B Assault Rifle
 !!!!!!!!-THE GAME CRASHES WHEN YOU SELECT IT WITH ASDG JR ON

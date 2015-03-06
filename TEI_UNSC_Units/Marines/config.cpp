@@ -218,7 +218,7 @@ class TEI_UNSC_Marine_medium: TEI_UNSC_Marine_Soldier_Base //Configures the unit
 		scope											= 2;
 		displayName										= "Rifleman (AT)";
 		vehicleClass									= "TEI_UNSC_Man_Marines_class";
-		backpack 										= "B_Kitbag_rgr";
+		backpack 										= "TEI_Kitbag_rgr_Rockets";
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT","TEI_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
@@ -242,7 +242,7 @@ class TEI_UNSC_Marine_medium: TEI_UNSC_Marine_Soldier_Base //Configures the unit
 		scope											= 2;
 		displayName										= "AT Specialist";
 		vehicleClass									= "TEI_UNSC_Man_Marines_class";
-		backpack 										= "B_Kitbag_rgr";
+		backpack 										= "TEI_Kitbag_rgr_Rockets";
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAT_G","SmokeShell","SmokeShellGreen"};
@@ -254,7 +254,7 @@ class TEI_UNSC_Marine_medium: TEI_UNSC_Marine_Soldier_Base //Configures the unit
 		scope											= 2;
 		displayName										= "AA Specialist";
 		vehicleClass									= "TEI_UNSC_Man_Marines_class";
-		backpack 										= "B_Kitbag_rgr";
+		backpack 										= "TEI_Kitbag_rgr_Rockets";
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAA","TEI_M41_Twin_HEAA","SmokeShell","SmokeShellGreen"};
@@ -506,7 +506,7 @@ class cfgWeapons
 			uniformModel													= "-";
 			uniformClass													= "TEI_UNSC_Marine_Soldier";
 			containerClass													= "Supply20";
-			mass														= 50; //The weight and storage capacity of the uniform
+			mass														= 40; //The weight and storage capacity of the uniform
 			modelSides[] 													= {6};
 		};
 	};
@@ -520,7 +520,7 @@ class cfgWeapons
 			uniformModel													= "-";
 			uniformClass													= "TEI_UNSC_Marine_Heavy";
 			containerClass													= "Supply60";
-			mass														= 70;
+			mass														= 40;
 			modelSides[] 													= {6};
 		};
 	};
@@ -534,7 +534,7 @@ class cfgWeapons
 			uniformModel									= "-";
 			uniformClass									= "TEI_UNSC_Marine_pilot";
 			containerClass									= "Supply30";
-			mass										= 40;
+			mass										= 25;
 			modelSides[] 									= {6};
 		};
 	};
@@ -548,7 +548,7 @@ class cfgWeapons
 			uniformModel									= "-";
 			uniformClass									= "TEI_UNSC_Marine_medium";
 			containerClass									= "Supply50";
-			mass										= 60;
+			mass										= 35;
 			modelSides[] 									= {6};
 		};
 	};
@@ -562,7 +562,7 @@ class cfgWeapons
 			uniformModel									= "-";
 			uniformClass									= "TEI_UNSC_Marine_light";
 			containerClass									= "Supply50";
-			mass										= 50;
+			mass										= 30;
 			modelSides[] 									= {6};
 		};
 	};
