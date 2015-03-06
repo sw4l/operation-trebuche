@@ -25,11 +25,6 @@ class CfgPatches //This configures the identification of the pbo to the game
 	};
 };
 
-class Extended_PreInit_EventHandlers //This is a CBA configuration for the HUD
-{
-	TEI_POD_Init 																			= "[] execVM '\TEI_Vehicles\HEV\scripts\ODST_POD_init.sqf'";
-};
-
 class CfgSounds
 {
 	sounds[] = {};

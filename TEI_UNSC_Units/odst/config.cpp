@@ -25,11 +25,6 @@ class CfgPatches //This configures the identification of the pbo to the game
 	};
 };
 
-class Extended_PreInit_EventHandlers //This is a CBA configuration for the HUD
-{
-	TEI_UNSC_ODST_HUD_Init 																		= "[] execVM '\TEI_UNSC_Units\ODST\scripts\ODST_HUD_init.sqf'";
-};
-
 class RscStdText //More HUD Stuff
 {
 	type																						= 0;
