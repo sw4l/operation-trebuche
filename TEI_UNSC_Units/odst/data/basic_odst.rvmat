@@ -52,7 +52,7 @@ class Stage3
 
 class Stage4
 {
-	texture = "TEI_UNSC_Units\ODST\data\data\basic_odst_as.paa";
+	texture = "TEI_UNSC_Units\ODST\data\basic_odst_as.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
