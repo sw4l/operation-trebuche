@@ -157,8 +157,8 @@ class TEI_UNSC_Marine_medium: TEI_UNSC_Marine_Soldier_Base //Configures the unit
 		displayName										= "Corpsman";
 		attendant 										= 1;
 		vehicleClass									= "TEI_UNSC_Man_Marines_class";
-		linkedItems[] 									= {"TEI_UNSC_M52V_Vest_Medic","TEI_UNSC_CH252V_Helmet_Medic","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_MedKit","TEI_Biofoam"};
-		respawnLinkedItems[] 							= {"TEI_UNSC_M52V_Vest_Medic","TEI_UNSC_CH252V_Helmet_Medic","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_MedKit","TEI_Biofoam"};
+		linkedItems[] 									= {"TEI_UNSC_M52V_Vest_Medic","TEI_UNSC_CH252V_Helmet_Medic","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52V_Vest_Medic","TEI_UNSC_CH252V_Helmet_Medic","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam"};
 	};
 	class TEI_UNSC_Marine_Radioman: TEI_UNSC_Marine_vacuum_heavy //Configures the unit part of the Units Uniform
 	{
@@ -267,7 +267,7 @@ class TEI_UNSC_Marine_medium: TEI_UNSC_Marine_Soldier_Base //Configures the unit
 		displayName										= "Engineer";
 		engineer 										= 1;
 		vehicleClass									= "TEI_UNSC_Man_Marines_class";
-		backpack 										= "B_Kitbag_rgr";
+		backpack 										= "TEI_Kitbag_rgr_Exp";
 		weapons[] 										= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
 		respawnWeapons[] 								= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
 		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs"};
@@ -393,7 +393,7 @@ class TEI_UNSC_Marine_medium: TEI_UNSC_Marine_Soldier_Base //Configures the unit
 		displayName										= "Demolitions";
 		vehicleClass									= "TEI_UNSC_Man_Marines_class";
 		engineer 										= 1;
-		backpack										= "";
+		backpack										= "TEI_Kitbag_rgr_Exp";
 		weapons[] 										= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
 		respawnWeapons[] 								= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
 		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","HandGrenade","HandGrenade","SmokeShell","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag"};

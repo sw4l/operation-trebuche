@@ -94,8 +94,8 @@ class CfgVehicles //This configures units and backpacks
 		RespawnItems[]																			= {"TEI_Biofoam"};
 		magazines[]																				= {};
 		respawnMagazines[]																		= {};
-		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
-		respawnLinkedItems[] 																	= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
+		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG","TEI_NVG"};
+		respawnLinkedItems[] 																	= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG","TEI_NVG"};
 		hiddenSelections[] 																		= {"camo1","insignia" }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																= {"TEI_UNSC_Units\ODST\data\uniform_co.paa"};
 	};
@@ -112,12 +112,12 @@ class CfgVehicles //This configures units and backpacks
 		model																				= "\TEI_UNSC_Units\ODST\uniform.p3d";
 		weapons[]																			= {"Throw","Put"};
 		respawnWeapons[]																		= {"Throw","Put"};
-		Items[]																				= {"FirstAidKit"};
-		RespawnItems[]																			= {"FirstAidKit"};
+		Items[]																				= {"TEI_Biofoam"};
+		RespawnItems[]																			= {"TEI_Biofoam"};
 		magazines[]																			= {};
 		respawnMagazines[]																		= {};
-		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
+		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		hiddenSelections[] 																		= {"camo1","insignia","attach_leftforearm", "attach_leftshoulder", "attach_rightforearm", "attach_rightshoulder" }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																	= {"TEI_UNSC_Units\ODST\data\uniform_co.paa"};
 	};
@@ -134,12 +134,12 @@ class CfgVehicles //This configures units and backpacks
 		model																				= "\TEI_UNSC_Units\ODST\uniform.p3d";
 		weapons[]																			= {"Throw","Put"};
 		respawnWeapons[]																		= {"Throw","Put"};
-		Items[]																				= {"FirstAidKit"};
-		RespawnItems[]																			= {"FirstAidKit"};
+		Items[]																				= {"TEI_Biofoam"};
+		RespawnItems[]																			= {"TEI_Biofoam"};
 		magazines[]																			= {};
 		respawnMagazines[]																		= {};
-		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
+		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		hiddenSelections[] 																		= {"camo1","insignia", "attach_leftshoulder", "attach_rightshoulder" }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																	= {"TEI_UNSC_Units\ODST\data\uniform_co.paa"};
 	};
@@ -156,12 +156,12 @@ class CfgVehicles //This configures units and backpacks
 		model																				= "\TEI_UNSC_Units\ODST\uniform.p3d";
 		weapons[]																			= {"Throw","Put"};
 		respawnWeapons[]																		= {"Throw","Put"};
-		Items[]																				= {"FirstAidKit"};
-		RespawnItems[]																			= {"FirstAidKit"};
+		Items[]																				= {"TEI_Biofoam"};
+		RespawnItems[]																			= {"TEI_Biofoam"};
 		magazines[]																			= {};
 		respawnMagazines[]																		= {};
-		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet_sniper","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet_sniper","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet_sniper","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
+		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_Helmet_sniper","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		hiddenSelections[] 																		= {"camo1","insignia", "attach_rightshoulder" }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																	= {"TEI_UNSC_Units\ODST\data\uniform_co.paa"};
 	};
@@ -178,12 +178,12 @@ class CfgVehicles //This configures units and backpacks
 		model																				= "\TEI_UNSC_Units\ODST\uniform.p3d";
 		weapons[]																			= {"Throw","Put"};
 		respawnWeapons[]																		= {"Throw","Put"};
-		Items[]																				= {"FirstAidKit"};
-		RespawnItems[]																			= {"FirstAidKit"};
+		Items[]											= {"TEI_Biofoam"};
+		RespawnItems[]									= {"TEI_Biofoam"};
 		magazines[]																			= {};
 		respawnMagazines[]																		= {};
-		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest_medic","TEI_UNSC_ODST_Helmet_medic","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_Vest_medic","TEI_UNSC_ODST_Helmet_medic","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest_medic","TEI_UNSC_ODST_Helmet_medic","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
+		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_Vest_medic","TEI_UNSC_ODST_Helmet_medic","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		hiddenSelections[] 																		= {"camo1","insignia" }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																	= {"TEI_UNSC_Units\ODST\data\uniform_medic_co.paa"};
 	};
@@ -200,12 +200,12 @@ class CfgVehicles //This configures units and backpacks
 		model																				= "\TEI_UNSC_Units\ODST\training.p3d";
 		weapons[]																			= {"Throw","Put"};
 		respawnWeapons[]																		= {"Throw","Put"};
-		Items[]																				= {"FirstAidKit"};
-		RespawnItems[]																			= {"FirstAidKit"};
+		Items[]																				= {"TEI_Biofoam"};
+		RespawnItems[]																			= {"TEI_Biofoam"};
 		magazines[]																			= {};
 		respawnMagazines[]																		= {};
-		linkedItems[] 																			= {"TEI_UNSC_ODST_InstructorHat","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_InstructorHat","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] 																			= {"TEI_UNSC_ODST_InstructorHat","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
+		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_InstructorHat","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		hiddenSelections[] 																		= {"camo1","insignia" }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																	= {"TEI_UNSC_Units\ODST\data\odst_instr_co.paa"};
 	};
@@ -222,12 +222,12 @@ class CfgVehicles //This configures units and backpacks
 		model																				= "\TEI_UNSC_Units\ODST\training.p3d";
 		weapons[]																			= {"Throw","Put"};
 		respawnWeapons[]																		= {"Throw","Put"};
-		Items[]																				= {"FirstAidKit"};
-		RespawnItems[]																			= {"FirstAidKit"};
+		Items[]																				= {"TEI_Biofoam"};
+		RespawnItems[]																			= {"TEI_Biofoam"};
 		magazines[]																			= {};
 		respawnMagazines[]																		= {};
-		linkedItems[] 																			= {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] 																		= {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] 																			= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
+		respawnLinkedItems[] 																		= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		hiddenSelections[] 																		= {"camo1","insignia" }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																	= {"TEI_UNSC_Units\ODST\data\basic_odst_co.paa"};
 	};
@@ -329,8 +329,8 @@ class CfgVehicles //This configures units and backpacks
 		scope											= 2;
 		displayName										= "ODST Team Leader";
 		backpack										= "TEI_ILCS_Rucksack_Black";
-		linkedItems[] 									= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_helmet_com","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
-		respawnlinkedItems[] 							= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_helmet_com","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		linkedItems[] 									= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_helmet_com","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG","TEI_Biofoam","TEI_NVG"};
+		respawnlinkedItems[] 							= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_helmet_com","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG","TEI_Biofoam","TEI_NVG"};
 		weapons[] 										= {"TEI_MA5BGL_AC","TEI_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_MA5BGL_AC","TEI_M6G_SF","Throw","Put"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
@@ -355,9 +355,9 @@ class CfgVehicles //This configures units and backpacks
 	{
 		scope											= 2;
 		displayName										= "ODST Demolitions";
-		backpack										= "TEI_ILCS_Rucksack_Black";
-		linkedItems[] 									= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_helmet_recon","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
-		respawnlinkedItems[] 							= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_helmet_recon","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		backpack										= "TEI_ILCS_Black_Exp";
+		linkedItems[] 									= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_helmet_recon","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG","TEI_Biofoam","TEI_NVG"};
+		respawnlinkedItems[] 							= {"TEI_UNSC_ODST_Vest","TEI_UNSC_ODST_helmet_recon","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG","TEI_Biofoam","TEI_NVG"};
 		weapons[] 										= {"TEI_MA5BGL_AC","TEI_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_MA5BGL_AC","TEI_M6G_SF","Throw","Put"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
@@ -368,8 +368,8 @@ class CfgVehicles //This configures units and backpacks
 	{
 		scope											= 2;
 		displayName										= "ONI Operator";
-		linkedItems[] 									= {"TEI_UNSC_ODST_Vest","TEI_UNSC_Recon_helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
-		respawnLinkedItems[] 							= {"TEI_UNSC_ODST_Vest","TEI_UNSC_Recon_helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		linkedItems[] 									= {"TEI_UNSC_ODST_Vest","TEI_UNSC_Recon_helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_ODST_Vest","TEI_UNSC_Recon_helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG","TEI_Biofoam","TEI_NVG"};
 		weapons[] 										= {"TEI_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_M6G_SF","Throw","Put"};
 		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};

@@ -34,7 +34,7 @@ class cfgVehicles {
 				class DestructionEffects{};
                 displayName = "[UNSC] ILCS Rucksack (Black)";
                 model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
-				vehicleClass = "Backpacks";
+				vehicleClass = "TEI_UNSC_Backpack_class";
 				allowedSlots[] = {901};
 				hiddenSelections[] 								= {"camo1","pouches","biofoam"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_black_CO.paa"};
@@ -50,7 +50,7 @@ class cfgVehicles {
 				class DestructionEffects{};
                 displayName = "[UNSC] ILCS Rucksack+ (Black)";
                 model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
-				vehicleClass = "Backpacks";
+				vehicleClass = "TEI_UNSC_Backpack_class";
 				allowedSlots[] = {901};
 				hiddenSelections[] 								= {"camo1","biofoam"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_black_CO.paa"};
@@ -66,42 +66,11 @@ class cfgVehicles {
 				class DestructionEffects{};
                 displayName = "[UNSC] ILCS Medical Base";
                 model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
-				vehicleClass = "Backpacks";
+				vehicleClass = "TEI_UNSC_Backpack_class";
 				allowedSlots[] = {901};
 				hiddenSelections[] 								= {"camo1"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_med_CO.paa"};
         };
-		
-		class TEI_ILCS_Rucksack_Medical1: B_AssaultPack_rgr_Medic
-		{
-				scope = public;
-				
-				isbackpack = 1;
-				transportMaxWeapons = 1;
-				transportMaxMagazines = 16;
-				class DestructionEffects{};
-                displayName = "[UNSC] ILCS Rucksack+ (Medical)";
-                model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
-				vehicleClass = "Backpacks";
-				allowedSlots[] = {901};
-				hiddenSelections[] 								= {"camo1"};
-				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_med_CO.paa"};
-				class TransportMagazines{};
-				class TransportWeapons{};
-				class TransportItems
-				{
-					class _xx_TEI_Medkit
-					{
-					name = "TEI_Medkit";
-					count = 1;
-					};
-					class _xx_TEI_Biofoam
-					{
-					name = "TEI_Biofoam";
-					count = 10;
-					};
-				};
-		};
 				
 		        class TEI_ILCS_Rucksack_green : B_Bergen_Base 
 		{
@@ -114,7 +83,7 @@ class cfgVehicles {
 				class DestructionEffects{};
                 displayName = "[UNSC] ILCS Rucksack (Green)";
                 model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
-				vehicleClass = "Backpacks";
+				vehicleClass = "TEI_UNSC_Backpack_class";
 				allowedSlots[] = {901};
 				hiddenSelections[] 								= {"camo1","pouches","biofoam"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_Green_CO.paa"};
@@ -130,7 +99,7 @@ class cfgVehicles {
 				class DestructionEffects{};
                 displayName = "[UNSC] ILCS Rucksack+ (Green)";
                 model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
-				vehicleClass = "Backpacks";
+				vehicleClass = "TEI_UNSC_Backpack_class";
 				allowedSlots[] = {901};
 				hiddenSelections[] 								= {"camo1","biofoam"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_Green_CO.paa"};
@@ -146,7 +115,7 @@ class cfgVehicles {
 				class DestructionEffects{};
                 displayName = "[UNSC] ILCS Rucksack (Tan)";
                 model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
-				vehicleClass = "Backpacks";
+				vehicleClass = "TEI_UNSC_Backpack_class";
 				allowedSlots[] = {901};
 				hiddenSelections[] 								= {"camo1","pouches","biofoam"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_tan_CO.paa"};
@@ -162,7 +131,7 @@ class cfgVehicles {
 				class DestructionEffects{};
                 displayName = "[UNSC] ILCS Rucksack+ (Tan)";
                 model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
-				vehicleClass = "Backpacks";
+				vehicleClass = "TEI_UNSC_Backpack_class";
 				allowedSlots[] = {901};
 				hiddenSelections[] 								= {"camo1","biofoam"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_tan_CO.paa"};
@@ -178,7 +147,7 @@ class cfgVehicles {
 				class DestructionEffects{};
                 		displayName = "[UNSC] Communications Pack";
                 		model = "\TEI_weapons\backpacks\como_ruck.p3d";
-				vehicleClass = "Backpacks";
+				vehicleClass = "TEI_UNSC_Backpack_class";
 				allowedSlots[] = {901};
 				hiddenSelections[] 								= {"camo1"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\como_pack_co.paa"};
@@ -186,6 +155,7 @@ class cfgVehicles {
 		class TEI_Kitbag_cbr_Rockets: B_Kitbag_cbr
 		{
 			scope = 1;
+			
 			class TransportMagazines
 			{
 				class TEI_M41_Twin_HEAT
@@ -212,6 +182,7 @@ class cfgVehicles {
 		class TEI_Kitbag_rgr_Rockets: B_Kitbag_rgr
 		{
 			scope = 1;
+			vehicleClass = "TEI_UNSC_Backpack_class";
 			class TransportMagazines
 			{
 				class TEI_M41_Twin_HEAT
@@ -237,6 +208,7 @@ class cfgVehicles {
 		};
 		class TEI_ILCS_Black_Rockets: TEI_ILCS_Rucksack_Black
 		{
+			vehicleClass = "TEI_UNSC_Backpack_class";
 			scope = 1;
 			class TransportMagazines
 			{
@@ -261,5 +233,151 @@ class cfgVehicles {
 				};
 			};*/
 		};
-
+		class TEI_ILCS_Rucksack_Medical1: B_AssaultPack_rgr_Medic
+		{
+				scope = public;
+				
+                displayName = "[UNSC] ILCS Rucksack+ (Medical)";
+                model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
+				vehicleClass = "TEI_UNSC_Backpack_class";
+				allowedSlots[] = {901};
+				hiddenSelections[] 								= {"camo1"};
+				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_med_CO.paa"};
+				class TransportMagazines{};
+				class TransportWeapons{};
+				class TransportItems
+				{
+					class _xx_Medikit
+					{
+					name = "Medikit";
+					count = 1;
+					};
+					class _xx_TEI_Biofoam
+					{
+					name = "TEI_Biofoam";
+					count = 10;
+					};
+				};
+		};
+		
+		class TEI_Kitbag_rgr_Exp: B_Kitbag_rgr
+		{
+			scope = 1;
+			class TransportMagazines
+			{
+				class _xx_APERSBoundingMine_Range_Mag
+				{
+				magazine = "APERSBoundingMine_Range_Mag";
+				count = 3;
+				};
+				class _xx_ClaymoreDirectionalMine_Remote_Mag
+				{
+				magazine = "ClaymoreDirectionalMine_Remote_Mag";
+				count = 2;
+				};
+				class _xx_SLAMDirectionalMine_Wire_Mag
+				{
+				magazine = "SLAMDirectionalMine_Wire_Mag";
+				count = 2;
+				};
+				class _xx_DemoCharge_Remote_Mag
+				{
+				magazine = "DemoCharge_Remote_Mag";
+				count = 1;
+				};
+			};
+			class TransportItems
+			{
+				class _xx_ToolKit
+				{
+					name = "ToolKit";
+					count = 1;
+				};
+				class _xx_MineDetector
+				{
+					name = "MineDetector";
+					count = 1;
+				};
+			};
+		};
+		class TEI_Kitbag_cbr_Exp: B_Kitbag_cbr
+		{
+			scope = 1;
+			class TransportMagazines
+			{
+				class _xx_APERSBoundingMine_Range_Mag
+				{
+				magazine = "APERSBoundingMine_Range_Mag";
+				count = 3;
+				};
+				class _xx_ClaymoreDirectionalMine_Remote_Mag
+				{
+				magazine = "ClaymoreDirectionalMine_Remote_Mag";
+				count = 2;
+				};
+				class _xx_SLAMDirectionalMine_Wire_Mag
+				{
+				magazine = "SLAMDirectionalMine_Wire_Mag";
+				count = 2;
+				};
+				class _xx_DemoCharge_Remote_Mag
+				{
+				magazine = "DemoCharge_Remote_Mag";
+				count = 1;
+				};
+			};
+			class TransportItems
+			{
+				class _xx_ToolKit
+				{
+					name = "ToolKit";
+					count = 1;
+				};
+				class _xx_MineDetector
+				{
+					name = "MineDetector";
+					count = 1;
+				};
+			};
+		};
+		class TEI_ILCS_Black_Exp: TEI_ILCS_Rucksack_Black
+		{
+			scope = 1;
+			class TransportMagazines
+			{
+				class _xx_APERSBoundingMine_Range_Mag
+				{
+				magazine = "APERSBoundingMine_Range_Mag";
+				count = 3;
+				};
+				class _xx_ClaymoreDirectionalMine_Remote_Mag
+				{
+				magazine = "ClaymoreDirectionalMine_Remote_Mag";
+				count = 2;
+				};
+				class _xx_SLAMDirectionalMine_Wire_Mag
+				{
+				magazine = "SLAMDirectionalMine_Wire_Mag";
+				count = 2;
+				};
+				class _xx_DemoCharge_Remote_Mag
+				{
+				magazine = "DemoCharge_Remote_Mag";
+				count = 1;
+				};
+			};
+			class TransportItems
+			{
+				class _xx_ToolKit
+				{
+					name = "ToolKit";
+					count = 1;
+				};
+				class _xx_MineDetector
+				{
+					name = "MineDetector";
+					count = 1;
+				};
+			};
+		};
 };
