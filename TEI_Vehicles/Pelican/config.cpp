@@ -530,7 +530,7 @@ class CfgVehicles
 		scope 	= 2;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		faction	= "TEI_UNSC";					/// defines the faction inside of the side
-		crew = "TEI_UNSC_Army_Pilot_WDL";					/// lets use the sample soldier we have as default captain of the boat
+		crew = "TEI_UNSC_Army_W_Pilot";					/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 					/// harder to distinguish side than vehicle type
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
@@ -544,7 +544,7 @@ class CfgVehicles
 		scope 	= 2;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		faction	= "TEI_UNSC";					/// defines the faction inside of the side
-		crew = "TEI_UNSC_Army_Pilot_WDL";					/// lets use the sample soldier we have as default captain of the boat
+		crew = "TEI_UNSC_Army_D_Pilot";					/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 					/// harder to distinguish side than vehicle type
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
@@ -558,7 +558,7 @@ class CfgVehicles
 		scope 	= 2;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		faction	= "TEI_UNSC";					/// defines the faction inside of the side
-		crew = "TEI_UNSC_Army_Pilot_WDL";					/// lets use the sample soldier we have as default captain of the boat
+		crew = "TEI_UNSC_Army_W_Pilot";					/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 					/// harder to distinguish side than vehicle type
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
