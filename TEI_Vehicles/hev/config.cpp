@@ -109,7 +109,7 @@ class CfgVehicles //This configures units and backpacks
 			nameSound																	= "chopper";
 			hasgunner																	= 0;
 			faction																		= "TEI_UNSC";
-			crew 																		= "TEI_UNSC_ODST_Soldier";
+			crew 																		= "TEI_UNSC_ODST_Scout";
 			transportSoldier															= 0;
 			isBicycle																	= true;
 			vehicleClass 																= "TEI_UNSC_HEV_class";
