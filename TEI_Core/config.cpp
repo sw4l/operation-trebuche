@@ -273,39 +273,3 @@ class CfgWorlds
 		};
 	};
 };
-
-class CfgGroups
-{
-	class West
-	{
-		class TEI_UNSC //TEI_Ins
-		{
-			name = "UNSCDF";
-			class Infantry //Air, Mechanized, Motorized, Armored, SpecOps, Support
-			{
-				name = "Infantry";
-				class UNSC_Army_W_InfSentry
-				{
-					name = "Army Sentry (W)";
-					side = 1;
-					faction = "TEI_UNSC";
-					rarityGroup = 0.3;
-					class Unit0
-					{
-						side = 1;
-						vehicle = "TEI_UNSC_Army_Rifleman_WDL";
-						rank = "CORPORAL";
-						position[] = {0,0,0};
-					};
-					class Unit1
-					{
-						side = 1;
-						vehicle = "TEI_UNSC_Army_Rifleman_WDL";
-						rank = "PRIVATE";
-						position[] = {5,-5,0};
-					};
-				};
-			};
-		};
-	};
-};

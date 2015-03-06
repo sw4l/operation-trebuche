@@ -34,6 +34,8 @@ TEI_Weapons
 	-add custom scope reticule and zoom level
 
 	/// M7 Submachine Gun
+	-side rail attachments not placed correctly	
+	-Weapon Animations (slide blowback, Mag Eject, etc.) do not work
 
 	/// biofoam
 	-needs icon image

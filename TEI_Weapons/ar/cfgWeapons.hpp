@@ -40,8 +40,8 @@
                                             opticsFlare                                     = 0;
                                             opticsDisablePeripherialVision  = 0;
                                             opticsZoomMin                                   = 0.375;
-                                            opticsZoomMax                                   = 0.755;
-                                            opticsZoomInit                                  = 0.755;
+                                            opticsZoomMax                                   = 0.55;
+                                            opticsZoomInit                                  = 0.55;
                                             memoryPointCamera                               = "opticView";
                                             visionMode[]                                    = {"Normal"};
                                             distanceZoomMin                                 = 300;

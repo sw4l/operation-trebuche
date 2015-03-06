@@ -13,8 +13,6 @@ TEI_UNSC_Units
 	-Spawned with goggles on and they clipped through the visor (allowedHeadgear values in config?)
 	-ODST (Medic) vest is grey/green instead of white
 	-ODST Helmet and Vest shadow lods are missing
-	-ODST Helmets need renamed to match what they actually are
-	-Add depolarized visors with scope = 1 (or 0?); //dont add depolarized for now
 
 	-training odst having some shadow lod issues on the ass^^
 	-instructor and recruit uniforms/hats have issues with other uniforms (removing for alpha)
