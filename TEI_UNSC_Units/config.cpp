@@ -37,7 +37,8 @@ class CfgGroups
 			class Infantry //Air, Mechanized, Motorized, Armored, SpecOps, Support
 			{
 				name = "Infantry";
-				class UNSC_Army_W_Inf_Sentry
+				
+				class TEI_UNSC_Army_W_Inf_Sentry
 				{
 					name = "Army Sentry (W)";
 					side = 1;
@@ -46,21 +47,22 @@ class CfgGroups
 					class Unit0
 					{
 						side = 1;
-						vehicle = "TEI_UNSC_Army_Rifleman_WDL";
+						vehicle = "TEI_UNSC_Army_W_Rifleman_AR";
 						rank = "CORPORAL";
 						position[] = {0,0,0};
 					};
 					class Unit1
 					{
 						side = 1;
-						vehicle = "TEI_UNSC_Army_Rifleman_WDL";
+						vehicle = "TEI_UNSC_Army_W_Grenadier";
 						rank = "PRIVATE";
 						position[] = {5,-5,0};
 					};
 				};
-				class UNSC_Army_W_Inf_RifleSquad
+				
+				class TEI_UNSC_Army_W_Inf_RifleSquad
 				{
-					name = "Army Sentry (W)";
+					name = "Army Rifle Squad (W)";
 					side = 1;
 					faction = "TEI_UNSC";
 					rarityGroup = 0.3;
@@ -68,14 +70,14 @@ class CfgGroups
 					{
 						side = 1;
 						vehicle = "TEI_UNSC_Army_W_SquadLead";
-						rank = "CORPORAL";
+						rank = "SERGEANT";
 						position[] = {0,0,0};
 					};
 					class Unit1
 					{
 						side = 1;
 						vehicle = "TEI_UNSC_Army_W_TeamLead";
-						rank = "PRIVATE";
+						rank = "CORPORAL";
 						position[] = {5,-5,0};
 					};
 					class Unit2
@@ -120,9 +122,747 @@ class CfgGroups
 						rank = "PRIVATE";
 						position[] = {20,-5,0};
 					};
+					class Unit8
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_TeamLead";
+						rank = "CORPORAL";
+						position[] = (-20,-5,0};
+					};
 				};
+				
+				class TEI_UNSC_Army_W_Inf_Fireteam
+				{
+					name = "Army Fireteam (W)";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_TeamLead";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_Autorifleman";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+					};
+					class Unit2
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_Grenadier";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+					};
+					class Unit3
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_Rifleman_AT";
+						rank = "PRIVATE";
+						position[] = {10,-5,0};
+					};
+				};
+				
+				class TEI_UNSC_Army_W_Inf_CmdSquad
+				{
+					name = "Army Command Squad (W)";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_SquadLead";
+						rank = "SERGEANT";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_TeamLead";
+						rank = "CORPORAL";
+						position[] = {5,-5,0};
+					};
+					class Unit2
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_Radioman";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+					};
+					class Unit3
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_Observer";
+						rank = "PRIVATE";
+						position[] = {10,-5,0};
+					};
+					class Unit4
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_Medic";
+						rank = "PRIVATE";
+						position[] = {-10,-5,0};
+					};
+					class Unit5
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_Rifleman_AR";
+						rank = "PRIVATE";
+						position[] = {15,-5,0};
+					};
+				};
+				
+				class TEI_UNSC_Army_W_Inf_AntiTank
+				{
+					name = "Army Fireteam (W)";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_TeamLead";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_AT_Specialist";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+					};
+					class Unit2
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_AT_Specialist";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+					};
+					class Unit3
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_Observer";
+						rank = "PRIVATE";
+						position[] = {10,-5,0};
+					};
+				};
+				
+				class TEI_UNSC_Army_W_Inf_AntiAir
+				{
+					name = "Army Fireteam (W)";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_TeamLead";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_AA_Specialist";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+					};
+					class Unit2
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_AA_Specialist";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+					};
+					class Unit3
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_Observer";
+						rank = "PRIVATE";
+						position[] = {10,-5,0};
+					};
+				};
+				
+				class TEI_UNSC_Army_W_Inf_Sniper
+				{
+					name = "Army Sniper Team (W)";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_Sniper";
+						rank = "SERGEANT";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_Observer";
+						rank = "CORPORAL";
+						position[] = {5,-5,0};
+					};
+				};
+				
+				
+				
+				class TEI_UNSC_Army_D_Inf_Sentry
+				{
+					name = "Army Sentry (D)";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Rifleman_AR";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Grenadier";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+					};
+				};
+				
+				class TEI_UNSC_Army_D_Inf_RifleSquad
+				{
+					name = "Army Rifle Squad (D)";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_SquadLead";
+						rank = "SERGEANT";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_TeamLead";
+						rank = "CORPORAL";
+						position[] = {5,-5,0};
+					};
+					class Unit2
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Grenadier";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+					};
+					class Unit3
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Grenadier";
+						rank = "PRIVATE";
+						position[] = {10,-5,0};
+					};
+					class Unit4
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Autorifleman";
+						rank = "PRIVATE";
+						position[] = {-10,-5,0};
+					};
+					class Unit5
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Rifleman_AR";
+						rank = "PRIVATE";
+						position[] = {15,-5,0};
+					};
+					class Unit6
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Marksman";
+						rank = "PRIVATE";
+						position[] = {-15,-5,0};
+					};
+					class Unit7
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Rifleman_AT";
+						rank = "PRIVATE";
+						position[] = {20,-5,0};
+					};
+					class Unit8
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_TeamLead";
+						rank = "CORPORAL";
+						position[] = (-20,-5,0};
+					};
+				};
+				
+				class TEI_UNSC_Army_D_Inf_Fireteam
+				{
+					name = "Army Fireteam (D)";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_TeamLead";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Autorifleman";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+					};
+					class Unit2
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Grenadier";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+					};
+					class Unit3
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Rifleman_AT";
+						rank = "PRIVATE";
+						position[] = {10,-5,0};
+					};
+				};
+				
+				class TEI_UNSC_Army_D_Inf_CmdSquad
+				{
+					name = "Army Command Squad (D)";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_SquadLead";
+						rank = "SERGEANT";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_TeamLead";
+						rank = "CORPORAL";
+						position[] = {5,-5,0};
+					};
+					class Unit2
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Radioman";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+					};
+					class Unit3
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Observer";
+						rank = "PRIVATE";
+						position[] = {10,-5,0};
+					};
+					class Unit4
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Medic";
+						rank = "PRIVATE";
+						position[] = {-10,-5,0};
+					};
+					class Unit5
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Rifleman_AR";
+						rank = "PRIVATE";
+						position[] = {15,-5,0};
+					};
+				};
+				
+				class TEI_UNSC_Army_D_Inf_AntiTank
+				{
+					name = "Army Fireteam (D)";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_TeamLead";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_AT_Specialist";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+					};
+					class Unit2
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_AT_Specialist";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+					};
+					class Unit3
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Observer";
+						rank = "PRIVATE";
+						position[] = {10,-5,0};
+					};
+				};
+				
+				class TEI_UNSC_Army_D_Inf_AntiAir
+				{
+					name = "Army Fireteam (D)";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_TeamLead";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_AA_Specialist";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+					};
+					class Unit2
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_AA_Specialist";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+					};
+					class Unit3
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Observer";
+						rank = "PRIVATE";
+						position[] = {10,-5,0};
+					};
+				};
+				
+				class TEI_UNSC_Army_D_Inf_Sniper
+				{
+					name = "Army Sniper Team (D)";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Sniper";
+						rank = "SERGEANT";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_D_Observer";
+						rank = "CORPORAL";
+						position[] = {5,-5,0};
+					};
+				};
+				
 			};
 			
+			
+			
+			
+			class TEI_UNSC_Marine_Inf_Sentry
+				{
+					name = "Marine Sentry";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Rifleman_AR";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Grenadier";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+					};
+				};
+				
+				class TEI_UNSC_Marine_Inf_RifleSquad
+				{
+					name = "Marine Rifle Squad";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_SquadLead";
+						rank = "SERGEANT";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_TeamLead";
+						rank = "CORPORAL";
+						position[] = {5,-5,0};
+					};
+					class Unit2
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Grenadier";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+					};
+					class Unit3
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Grenadier";
+						rank = "PRIVATE";
+						position[] = {10,-5,0};
+					};
+					class Unit4
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Autorifleman";
+						rank = "PRIVATE";
+						position[] = {-10,-5,0};
+					};
+					class Unit5
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Rifleman_AR";
+						rank = "PRIVATE";
+						position[] = {15,-5,0};
+					};
+					class Unit6
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Marksman";
+						rank = "PRIVATE";
+						position[] = {-15,-5,0};
+					};
+					class Unit7
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Rifleman_AT";
+						rank = "PRIVATE";
+						position[] = {20,-5,0};
+					};
+					class Unit8
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_TeamLead";
+						rank = "CORPORAL";
+						position[] = (-20,-5,0};
+					};
+				};
+				
+				class TEI_UNSC_Marine_Inf_Fireteam
+				{
+					name = "Marine Fireteam";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_TeamLead";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Autorifleman";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+					};
+					class Unit2
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Grenadier";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+					};
+					class Unit3
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Rifleman_AT";
+						rank = "PRIVATE";
+						position[] = {10,-5,0};
+					};
+				};
+				
+				class TEI_UNSC_Marine_Inf_CmdSquad
+				{
+					name = "Marine Command Squad";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_SquadLead";
+						rank = "SERGEANT";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_TeamLead";
+						rank = "CORPORAL";
+						position[] = {5,-5,0};
+					};
+					class Unit2
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Radioman";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+					};
+					class Unit3
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Observer";
+						rank = "PRIVATE";
+						position[] = {10,-5,0};
+					};
+					class Unit4
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Corpsman";
+						rank = "PRIVATE";
+						position[] = {-10,-5,0};
+					};
+					class Unit5
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Rifleman_AR";
+						rank = "PRIVATE";
+						position[] = {15,-5,0};
+					};
+				};
+				
+				class TEI_UNSC_Marine_Inf_AntiTank
+				{
+					name = "Marine Fireteam";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_AT_Specialist";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_AT_Specialist";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+					};
+					class Unit2
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Army_W_AT_Specialist";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+					};
+					class Unit3
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Observer";
+						rank = "PRIVATE";
+						position[] = {10,-5,0};
+					};
+				};
+				
+				class TEI_UNSC_Marine_Inf_AntiAir
+				{
+					name = "Marine Fireteam";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_TeamLead";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_AA_Specialist";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+					};
+					class Unit2
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_AA_Specialist";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+					};
+					class Unit3
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Observer";
+						rank = "PRIVATE";
+						position[] = {10,-5,0};
+					};
+				};
+				
+				class TEI_UNSC_Marine_Inf_Sniper
+				{
+					name = "Marine Sniper Team";
+					side = 1;
+					faction = "TEI_UNSC";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Sniper";
+						rank = "SERGEANT";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 1;
+						vehicle = "TEI_UNSC_Marine_Observer";
+						rank = "CORPORAL";
+						position[] = {5,-5,0};
+					};
+				};
 			
 			
 			
@@ -131,7 +871,7 @@ class CfgGroups
 			{
 				name = "Special Forces";
 				
-				class UNSC_ODST_Sentry
+				class TEI_UNSC_ODST_Sentry
 				{
 					name = "ODST Sentry";
 					side = 1;
@@ -153,7 +893,7 @@ class CfgGroups
 					};
 				};
 				
-				class UNSC_ODST_Fireteam
+				class TEI_UNSC_ODST_Fireteam
 				{
 					name = "ODST Fireteam";
 					side = 1;
@@ -189,7 +929,7 @@ class CfgGroups
 					};
 				};
 				
-				class UNSC_ODST_Scout_Fireteam
+				class TEI_UNSC_ODST_Scout_Fireteam
 				{
 					name = "ODST Scout Fireteam";
 					side = 1;
@@ -225,7 +965,7 @@ class CfgGroups
 					};
 				};
 				
-				class UNSC_ODST_Squad
+				class TEI_UNSC_ODST_Squad
 				{
 					name = "ODST Fireteam";
 					side = 1;
@@ -250,14 +990,14 @@ class CfgGroups
 						side = 1;
 						vehicle = "TEI_UNSC_ODST_Rifleman_AT";
 						rank = "PRIVATE";
-						position[] = {0,-5,0};
+						position[] = {-5,-5,0};
 					};
 					class Unit3
 					{
 						side = 1;
 						vehicle = "TEI_UNSC_ODST_Scout_Sniper";
 						rank = "PRIVATE";
-						position[] = {10,-5,0};
+						position[] = {-10,-5,0};
 					};
 					class Unit4
 					{
@@ -271,14 +1011,14 @@ class CfgGroups
 						side = 1;
 						vehicle = "TEI_UNSC_ODST_Demo";
 						rank = "PRIVATE";
-						position[] = {10,-5,0};
+						position[] = {15,-5,0};
 					};
 					class Unit6
 					{
 						side = 1;
 						vehicle = "TEI_UNSC_ODST_Autorifleman";
 						rank = "PRIVATE";
-						position[] = {10,-5,0};
+						position[] = {-15,-5,0};
 					};
 				};
 			};
