@@ -296,6 +296,21 @@ class CfgMusic
 		name="[TEI] Warthogs";
 		sound[]={"\TEI_Core\Music\Warthogs.ogg",1,1};
 	};
+	class TEI_Music_shotgun
+	{
+		name="[TEI] Shotgun";
+		sound[]={"\TEI_Core\Music\shotgun.ogg",1,1};
+	};
+	class TEI_Music_drum_run
+	{
+		name="[TEI] Drum Run";
+		sound[]={"\TEI_Core\Music\drum_run.ogg",1,1};
+	};
+	class TEI_Music_impend
+	{
+		name="[TEI] Impend";
+		sound[]={"\TEI_Core\Music\impend.ogg",1,1};
+	};
 };
 
 
