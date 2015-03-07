@@ -1,86 +1,49 @@
 class CfgFunctions
 {
-	class TEI
+	class TEI_HEV
 	{
-		class HEV_Init
+		class TEI_HEV
 		{
 			file = "\TEI_Core\scripts\HEV";
 			class Init{};
-		};
-		class HEV_podPrepare
-		{
-			file = "\TEI_Core\scripts\HEV";
 			class podPrepare{};
-		};
-		class HEV_podPrepareAI
-		{
-			file = "\TEI_Core\scripts\HEV";
 			class podPrepareAI{};
-		};
-		class HEV_podLaunch
-		{
-			file = "\TEI_Core\scripts\HEV";
 			class podLaunch{};
-		};
-		class HEV_podLaunchAI
-		{
-			file = "\TEI_Core\scripts\HEV";
 			class podLaunchAI{};
-		};
-		class HEV_podLand
-		{
-			file = "\TEI_Core\scripts\HEV";
 			class podLand{};
-		};
-		class HEV_podDoor
-		{
-			file = "\TEI_Core\scripts\HEV";
 			class podDoor{};
-		};
-		class HEV_podCallAI
-		{
-			file = "\TEI_Core\scripts\HEV";
 			class podCallAI{};
-		};
-		class HEV_podCallSelf
-		{
-			file = "\TEI_Core\scripts\HEV";
 			class podCallSelf{};
 		};
-		class ODST_Helmet_Init
+	};
+	class TEI_HUD
+	{
+		class TEI_HUD
 		{
-			file = "\TEI_Core\scripts\ODST_Helmet";
+			file = "\TEI_Core\scripts\HUD";
 			class Init{};
-		};
-		class ODST_Helmet_VisorToggle
-		{
-			file = "\TEI_Core\scripts\ODST_Helmet";
 			class VisorToggle{};
-		};
-		class ODST_Helmet_getHelmet
-		{
-			file = "\TEI_Core\scripts\ODST_Helmet";
 			class getHelmet{};
-		};
-		class ODST_Helmet_setHelmet
-		{
-			file = "\TEI_Core\scripts\ODST_Helmet";
 			class setHelmet{};
-		};
-		class ODST_Helmet_LowLightToggle
-		{
-			file = "\TEI_Core\scripts\ODST_Helmet";
 			class LowLightToggle{};
 		};
 	};
 };
 
-
-
-class Extended_PreInit_EventHandlers //This is a CBA configuration for the HUD
+class Extended_PostInit_EventHandlers //This is a CBA configuration for the HUD
 {
-	TEI_ODST_Helmet_Init 																		= TEI_fnc_ODST_Helmet_Init;
-	TEI_HEV_Init 																				= TEI_fnc_HEV_Init;
+	class TEI_HUD
+	{
+		init	 																				= "call TEI_HUD_fnc_Init";
+		serverInit 																				= "call TEI_HUD_fnc_Init";
+		disableModuload 																		= "true";
+	};
+	class TEI_HEV
+	{
+		init	 																				= "call TEI_HEV_fnc_Init";
+		serverInit 																				= "call TEI_HEV_fnc_Init";
+		disableModuload 																		= "true";
+	};
 };
 
 class RscStdText //More HUD Stuff
@@ -96,26 +59,26 @@ class RscStdText //More HUD Stuff
 
 class RscTitles //Even More HUD Stuff
 {
-	titles[] 																					= {"TEI_UNSC_ODST_HUD"};
-	class TEI_UNSC_ODST_HUD
+	titles[] 																					= {"TEI_ODST_HUD"};
+	class TEI_ODST_HUD
 	{
 		idd																						= -1; // ID ... always -1
 		movingEnable 																			= false; // always false
 		duration																				= 999999999; // time of the effect (in seconds)
-		name 																					= "TEI_UNSC_ODST_HUD"; // name in editor
+		name 																					= "TEI_ODST_HUD"; // name in editor
 		sizeEx 																					= 256;// Size required for ARMA
-		controls[]																				= {"TEI_UNSC_ODST_HUD_class"};
+		controls[]																				= {"TEI_ODST_HUD_class"};
 		fadein																					= 0;
 		fadeout																					= 0;
 
-		class TEI_UNSC_ODST_HUD_class : RscStdText //RscPicture // For pictures
+		class TEI_ODST_HUD_class : RscStdText //RscPicture // For pictures
 		{
 			style																				= 48; 
 			x 																					= safeZoneXAbs; 
 			y 																					= safeZoneY; 
 			w 																					= safeZoneWAbs; 
 			h 																					= safeZoneH;
-			text																				= "\TEI_Core\scripts\Data\ODST_HUD.paa";
+			text																				= "\TEI_Core\scripts\Data\odst_hud_lightblue_ca.paa";
 			sizeEx 																				= 1;
 		};
 	};
@@ -154,9 +117,9 @@ class CfgSounds
 		sound[] = {"\tei_core\scripts\sounds\HEV_Chute.ogg", 1, 1};
 		titles[] = {};
 	};
-	class TEI_ODST_Helmet_Visor
+	class TEI_HUD_Helmet_Visor
 	{
-		name = "[TEI] ODST Helmet Visor";
+		name = "[TEI] Helmet Visor";
 		sound[] = {"\tei_core\scripts\sounds\ODST_Helmet_Visor.ogg", 1, 1};
 		titles[] = {};
 	};

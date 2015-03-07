@@ -55,12 +55,12 @@ while {!(_landed)} do
 	_waterheight = round (_waterpos select 2);
 	_collision = lineIntersects [getposATL _ODST_POD_DrawUp, getposATL _ODST_POD_DrawDown, _ODST_POD_DrawUp, _ODST_POD_DrawDown];
 	
-	[_pod, "ODST_POD_Wind1",50] call CBA_fnc_globalSay3d;
-	[_pod, "ODST_POD_Wind2",50] call CBA_fnc_globalSay3d;
+	[_pod, "TEI_HEV_Wind1",50] call CBA_fnc_globalSay3d;
+	[_pod, "TEI_HEV_Wind2",50] call CBA_fnc_globalSay3d;
 	
 	if ((_height < 125) && (_height > 75) && !(_chutedeployed)) then
 	{
-		[_pod, "ODST_POD_Chute",100] call CBA_fnc_globalSay3d;
+		[_pod, "TEI_HEV_Chute",100] call CBA_fnc_globalSay3d;
 		
 		_chute attachto [_pod,[0,0,0.6],"chute_attach"];
 		_chutedeployed = true;
@@ -82,4 +82,4 @@ while {!(_landed)} do
 	};
 };
 
-[_pod, _unit, _chute, _impact, _fire] call TEI_fnc_HEV_podLand;
+[_pod, _unit, _chute, _impact, _fire] call TEI_HEV_fnc_podLand;
