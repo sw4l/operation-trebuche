@@ -6,7 +6,6 @@ specular[] = {0.1,0.1,0.1,1};
 specularPower = 100;
 PixelShaderID = "Super";
 VertexShaderID = "Super";
-renderFlags[] = {NoZWrite};
 class Stage1
 {
 	texture = "TEI_UNSC_Units\army\data\Ghillie_nohq.paa";
