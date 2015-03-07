@@ -14,6 +14,8 @@
 [fixed] tei_music envaged not working
 [fixed] warthog cannot load armour_plate
 [fixed] glitch on warthog windows causing no visual effect on turrets
+[fixed] shadow lod on odst grave
+[fixed] shadow lod on army grave
 [changed] innie hogs now have armed soldiers as crew
 [changed] innie warthog proper texture
 [removed] mp3 music files
