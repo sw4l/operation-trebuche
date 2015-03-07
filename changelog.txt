@@ -49,6 +49,3 @@
 [added] tei_music rescue mission
 [added] tei_music scorpion mix
 [added] tei_music under cover of moonlight
-[added] hev functions (reference templates folder in @TEI)
-
-
