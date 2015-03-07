@@ -3,7 +3,7 @@ class CfgAmmo
 	class B_762x51_Ball;
 	class TEI_B_762x51_Ball: B_762x51_Ball
 	{
-		hit = 10;
+		hit = 11;
 	};
 	class TEI_B_762x51_Tracer: TEI_B_762x51_Ball
 	{

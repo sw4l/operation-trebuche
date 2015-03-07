@@ -34,7 +34,8 @@ class CfgWeapons
 		{
 			libtextdesc = "The M41 Surface-to-Surface Rocket Medium Anti-Vehicle/Assault Weapon formally known as the Medium Anti-Vehicle / Assault Weapon, Bore 102mm, M41 Surface-to-Surface Rocket Launcher, is a heavy ordnance weapon of the UNSC arsenal";
 		};
-		magazines[] = {"TEI_M41_HEAT","TEI_M41_HEAT_G","TEI_M41_HEAP","TEI_M41_HEAA","TEI_M41_Twin_HEAT","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAP","TEI_M41_Twin_HEAA"};
+		magazines[] = {"TEI_M41_Twin_HEAT","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAP","TEI_M41_Twin_HEAA"};
+				//magazines[] = {"TEI_M41_HEAT","TEI_M41_HEAT_G","TEI_M41_HEAP","TEI_M41_HEAA","TEI_M41_Twin_HEAT","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAP","TEI_M41_Twin_HEAA"};
 		picture = "";
 		model = "\TEI_Weapons\Rockets\M41_launcher.p3d";
 		handAnim[]={"OFP2_ManSkeleton","\TEI_Weapons\Rockets\Data\Anim\m41_hand_anim.rtm"};
