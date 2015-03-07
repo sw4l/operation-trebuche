@@ -4,4 +4,5 @@
 */
 
 //Toggles the HUD Overlay that shows whenever the user wears an ODST helmet
-TEI_HUD_Enabled = true; //Values are true and false
+TEI_HUD_Enabled = false; //causing long load times in the editor, use caution when making this true
+//Values are true and false
