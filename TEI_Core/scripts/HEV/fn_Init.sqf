@@ -5,15 +5,15 @@
 if (isMultiplayer) then
 {
 	{
-		_authcheck = _x getVariable ["TEI_HEV_CanCallInAI", 0];
-		if (_authcheck == 1) then {
+		_authcheck = _x getVariable ["TEI_HEV_CanCallInAI", false];
+		if (_authcheck) then {
 			_x addaction [("<t color=""#81BEF7"">" + ("Request ODST Support") +"</t>"), TEI_HEV_fnc_podCallAI, "", 7, true, true, "", "_this == _target"];
 		};
 	} forEach playableUnits;
 } else
 {
-	_authcheckSP = player getVariable ["TEI_HEV_CanCallInAI", 0];
-	if (_authcheckSP == 1) then {
+	_authcheckSP = player getVariable ["TEI_HEV_CanCallInAI", false];
+	if (_authcheckSP) then {
 		player addaction [("<t color=""#81BEF7"">" + ("Request ODST Support") +"</t>"), TEI_HEV_fnc_podCallAI, "", 7, true, true, "", "_this == _target"];
 	};
 };
@@ -28,4 +28,5 @@ while {count vehicles >= 0} do
 			_x setVariable ["TEI_HEV_HasAction", true, true];
 		};
 	} forEach vehicles;
+	sleep 1;
 };
