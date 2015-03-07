@@ -150,7 +150,7 @@ while {!(_landed)} do
 	_waterheight = round (_waterpos select 2);
 	_collision = lineIntersects [getposATL _ODST_POD_DrawUp, getposATL _ODST_POD_DrawDown, _ODST_POD_DrawUp, _ODST_POD_DrawDown];
 	hintSilent format["ALTITUDE (ATL) = %1\nALTITUDE(ASL) = %2\nMagnetic Locks = %3", _height, _waterheight, _collision];
-	
+	sleep 0.025;
 	[_pod, "TEI_HEV_Wind1", 50] call CBA_fnc_globalSay3d;
 	[_pod, "TEI_HEV_Wind2", 50] call CBA_fnc_globalSay3d;
 	

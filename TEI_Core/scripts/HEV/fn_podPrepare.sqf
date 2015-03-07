@@ -12,5 +12,4 @@ _Selfpod attachto [_attach,[0,0,0]];
 _Selfpod setdir 180;
 _Selfpod setVectorUp [0,0,1];
 _Selfpod addaction [("<t color=""#DF0101"">" + ("/// INITIATE DROP SEQUENCE ///") +"</t>"), TEI_HEV_fnc_podLaunch, "", 7, true, true, "", "_this == driver _target"];
-waitUntil {vehicle _unit == _unit};
 deletemarker "SelfDrop";

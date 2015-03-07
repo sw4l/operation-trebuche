@@ -54,7 +54,7 @@ while {!(_landed)} do
 	_height = round (_pos select 2);
 	_waterheight = round (_waterpos select 2);
 	_collision = lineIntersects [getposATL _ODST_POD_DrawUp, getposATL _ODST_POD_DrawDown, _ODST_POD_DrawUp, _ODST_POD_DrawDown];
-	
+	sleep 0.025;
 	[_pod, "TEI_HEV_Wind1",50] call CBA_fnc_globalSay3d;
 	[_pod, "TEI_HEV_Wind2",50] call CBA_fnc_globalSay3d;
 	
