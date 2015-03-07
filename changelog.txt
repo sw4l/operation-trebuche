@@ -20,6 +20,7 @@
 [fixed] shadow lod on odst grave
 [fixed] shadow lod on army grave
 [fixed] m7 rds opaque texture
+[fixed] backpack causing missing texture error
 [changed] innie hogs now have armed soldiers as crew
 [changed] innie warthog proper texture
 [removed] mp3 music files
