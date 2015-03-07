@@ -18,8 +18,8 @@
      
             class TEI_MA5B_AmmoCounter: ItemCore
             {
-                    scope                                                                           = 2;
-                    displayName                                                             = "MA5B Ammo Counter";
+                    scope                                                                   = 2;
+                    displayName                                                             = "MA5B Ammo Counter (IS)";
                     picture                                                                 = "\A3\weapons_F\Data\UI\gear_acco_Sniper_CA.paa";
                     model                                                                   = "\TEI_Weapons\AR\AR_AmmoCount.p3d";
                     descriptionShort                                                        = "MA5B Ammunition Counter and Direction Finder";
@@ -63,6 +63,48 @@
                     };
                     inertia                                                                 = 0.1;
             };
+			class TEI_MA5B_AmmoCounter_NoIS: ItemCore
+			{
+				displayName                                                             = "MA5B Ammo Counter";
+				model                                                                   = "\TEI_Weapons\AR\AR_AmmoCount _NoIS.p3d";
+				class ItemInfo: InventoryOpticsItem_Base_F
+                    {
+                            mass                                                            = 10;
+                            opticType                                                       = 1;
+                            optics                                                          = 1;
+                            modelOptics                                                     = "\TEI_Weapons\AR\AR_AmmoCount _NoIS.p3d";
+                            class OpticsModes
+                            {
+                                    class MA5B_BUIS
+                                    {
+                                            opticsID                                                = 1;
+                                            useModelOptics                                  = 0;
+                                            opticsPPEffects[]                               = {""};
+                                            opticsFlare                                     = 0;
+                                            opticsDisablePeripherialVision  = 0;
+                                            opticsZoomMin                                   = 0.375;
+                                            opticsZoomMax                                   = 0.55;
+                                            opticsZoomInit                                  = 0.55;
+                                            memoryPointCamera                               = "opticView";
+                                            visionMode[]                                    = {"Normal"};
+                                            distanceZoomMin                                 = 300;
+                                            distanceZoomMax                                 = 300;
+                                            cameraDir                                       = "";
+                                    };
+                                    class MA5B_AC_IS_Scope: MA5B_BUIS
+                                    {
+                                            opticsID                                                = 2;
+                                            useModelOptics                                  = 1;
+                                            opticsZoomMin                                   = 0.075;
+                                            opticsZoomMax                                   = 0.75;
+                                            opticsZoomInit                                  = 0.75;
+                                            memoryPointCamera                               = "opticView2";
+                                            modelOptics[]                                   = {"\A3\Weapons_F\acc\reticle_arco_F"/*,"\A3\Weapons_F\acc\reticle_sniper_z_F"*/};
+                                            visionMode[]                                    = {"Normal"};
+                                    };
+                            };
+                    };
+			};
      
             //WEAPONS
      
@@ -186,7 +228,7 @@
                             class CowsSlot: SlotInfo
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"TEI_MA5B_AmmoCounter", "optic_Holosight", "optic_Hamr", "optic_Aco", "optic_Aco_grn", "optic_Arco", "optic_mrco", "optic_nightstalker", "optic_tws", "optic_mrd"};
+                                    compatibleitems[]                                       = {"TEI_MA5B_AmmoCounter", "TEI_MA5B_AmmoCounter_NoIS", "optic_Holosight", "optic_Hamr", "optic_Aco", "optic_Aco_grn", "optic_Arco", "optic_mrco", "optic_nightstalker", "optic_tws", "optic_mrd"};
                                     displayname                                             = "Optics Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\TOP";
                                     scope                                                   = 2;
@@ -335,7 +377,7 @@
                             class CowsSlot: SlotInfo
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"TEI_MA5B_AmmoCounter", "optic_Holosight", "optic_Hamr", "optic_Aco", "optic_Aco_grn", "optic_Arco", "optic_mrco", "optic_nightstalker", "optic_tws", "optic_mrd"};
+                                    compatibleitems[]                                       = {"TEI_MA5B_AmmoCounter", "TEI_MA5B_AmmoCounter_NoIS", "optic_Holosight", "optic_Hamr", "optic_Aco", "optic_Aco_grn", "optic_Arco", "optic_mrco", "optic_nightstalker", "optic_tws", "optic_mrd"};
                                     displayname                                             = "Optics Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\TOP";
                                     scope                                                   = 2;

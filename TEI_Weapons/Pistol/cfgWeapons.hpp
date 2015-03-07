@@ -76,10 +76,24 @@ class CfgWeapons
 			modelOptics 							= "\TEI_Weapons\Pistol\scope.p3d";
 			class OpticsModes
 			{
+				class TEI_M6G_Scope
+				{
+					opticsID  						= 1; //2
+					useModelOptics  				= 1; //1
+					opticsZoomMin  					= 0.0623;
+					opticsZoomMax 					= 0.0623;
+					opticsZoomInit 					= 0.0623;
+					memoryPointCamera 				= "opticView";
+					modelOptics 					= "\A3\Weapons_F\acc\reticle_MRCO_F";
+					visionMode[] 					= {"Normal"};
+					distanceZoomMin  				= 300;
+					distanceZoomMax 				= 300;
+					cameraDir  						= "";
+				};
 				class TEI_M6G_BUIS
 				{
-					opticsID  						= 1;
-					useModelOptics  				= 0;
+					opticsID  						= 2; //1
+					useModelOptics  				= 0; //0
 					opticsPPEffects[]  				= {""};
 					opticsFlare  					= 0;
 					opticsDisablePeripherialVision 	= 0;
@@ -91,17 +105,6 @@ class CfgWeapons
 					distanceZoomMin  				= 300;
 					distanceZoomMax 				= 300;
 					cameraDir  						= "";
-				};
-				class TEI_M6G_Scope: TEI_M6G_BUIS
-				{
-					opticsID  						= 2;
-					useModelOptics  				= 1;
-					opticsZoomMin  					= 0.0623;
-					opticsZoomMax 					= 0.0623;
-					opticsZoomInit 					= 0.0623;
-					memoryPointCamera 				= "opticView";
-					modelOptics 					= "\A3\Weapons_F\acc\reticle_MRCO_F";
-					visionMode[] 					= {"Normal"};
 				};
 			};
 		};
@@ -170,7 +173,7 @@ class CfgWeapons
 				begin2[] 							= {"\TEI_Weapons\Pistol\data\sounds\Magnum_2.wss",1.3,1,200};
 				soundBegin[] 						= {"begin1",1,"begin1",1};
 			};
-			reloadTime 								= 0.3;
+			reloadTime 								= 0.24; //0.3
 			dispersion 								= 0.00005;
 			minRange 								= 2;
 			minRangeProbab 							= 0.20;

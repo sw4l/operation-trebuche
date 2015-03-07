@@ -111,8 +111,9 @@ class CfgWeapons
 		modes[] 									= {"Single"};
 		dexterity 									= 1.5;
 		muzzlePos									= "usti hlavne";
-       		muzzleEnd									= "konec hlavne";
-		reloadAction 									= "GestureReloadM4SSAS";
+       	muzzleEnd									= "konec hlavne";
+		//reloadAction 									= "GestureReloadM4SSAS";
+		reloadAction 									= "ReloadGM6";
 		maxRecoilSway 									= 0.0120;
 		swayDecaySpeed 									= 1.20;
 		drySound[] 									= {"A3\Sounds_F\weapons\Other\dry6.wss",0.1,1};

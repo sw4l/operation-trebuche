@@ -6,7 +6,7 @@ class CfgMagazines
 	{
 		model							= "\TEI_Weapons\pistol\m6_Magazine.p3d";
 		displayname						= "8Rnd 12.7x40mm Magazine";
-		displaynameshort				= "12.7x40mm Rounds";
+		displaynameshort				= "12.7x40mm";
 		ammo							= "TEI_B_127x40_Ball";
 		count							= 8;
 		initspeed						= 450;
@@ -19,7 +19,7 @@ class CfgMagazines
 	class TEI_8Rnd_127x40_Mag_Tracer : TEI_8Rnd_127x40_Mag
 	{
 		displayname						= "8Rnd 12.7x40mm Magazine (Tracers)";
-		displaynameshort				= "12.7x40mm Tracer Rounds";
+		displaynameshort				= "12.7x40mm Tracer";
 		ammo							= "TEI_B_127x40_Tracer";
 		descriptionshort				= "8 Round Magazine<br>12.7x40mm<br>Semi-Armor Piercing High Explosive Tracer";
 		tracersEvery 					= 1;

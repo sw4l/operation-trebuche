@@ -3,7 +3,7 @@ class CfgAmmo
 	class B_762x51_Ball;
 	class TEI_B_127x40_Ball : B_762x51_Ball   
 	{
-		hit 							= 19;
+		hit 							= 14;
 		cartridge 						= "FxCartridge_small";
 		caliber 						= 2.8;
 		typicalSpeed					= 430;
