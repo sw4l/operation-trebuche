@@ -48,12 +48,16 @@ class CfgVehicles
 
 	class TEI_Pelican_F: B_Heli_Attack_01_F
 	{		
+		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
+		vehicleClass = "TEI_UNSC_Air_class";
+		faction	= "TEI_UNSC";					/// defines the faction inside of the side
+		crew = "TEI_UNSC_Army_W_Pilot";					/// lets use the sample soldier we have as default captain of the boat
 		scope 	= 1;
         armor = 60;						        /// just some protection against missiles, collisions and explosions
 		destrType = DestructWreck;
 		gearRetracting=1;		
 		accuracy = 0.5;							/// how hard it is to distinguish the type of the vehicle (bigger number means harder)
-		displayName = "Pelican"; 					/// how is the heli displayed in editor
+		displayName = "Pelican_base"; 					/// how is the heli displayed in editor
 		model = "TEI_Vehicles\Pelican\Pelican_base.p3d"; 		/// path to model of the heli
 		icon = "TEI_Vehicles\Pelican\Data\icon.paa";			/// icon in map/editor
 		mapSize = 25; //size of icon in editor- square only in meters
@@ -532,12 +536,13 @@ class CfgVehicles
 		displayName = "D77-TC Pelican (Green)";
 		scope 	= 2;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
+		vehicleClass = "TEI_UNSC_Air_class";
 		faction	= "TEI_UNSC";					/// defines the faction inside of the side
 		crew = "TEI_UNSC_Army_W_Pilot";					/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 					/// harder to distinguish side than vehicle type
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
-		vehicleClass = "TEI_UNSC_Air_class";
+		
 		hiddenSelections[]= {"camo1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_green_CO.paa"};
 	};
