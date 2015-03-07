@@ -49,3 +49,5 @@
 [added] tei_music rescue mission
 [added] tei_music scorpion mix
 [added] tei_music under cover of moonlight
+[added] UNSC weapon rack
+[added] UNSC ammo rack

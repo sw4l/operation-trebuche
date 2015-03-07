@@ -285,4 +285,26 @@ class CfgVehicles
 		//transportMaxWeapons = 5;
 		//transportMaxMagazines = 500;
 	};
+	class TEI_weapon_rack: NATO_Box_Base
+	{
+		scope = 2;
+		vehicleClass = "TEI_Ammo_class";
+		displayName = "[UNSC] Weapons Rack";
+		model = "\tei_misc\crates\weaponcrate.p3d";
+		author = "Eridanus Insurrection Team";
+		icon = "iconCrateWpns";
+		transportMaxWeapons = 20;
+		transportMaxMagazines = 500;
+	};
+	class TEI_ammo_rack: NATO_Box_Base
+	{
+		scope = 2;
+		vehicleClass = "TEI_Ammo_class";
+		displayName = "[UNSC] Ammo Rack";
+		model = "\tei_misc\crates\ammocrate.p3d";
+		author = "Eridanus Insurrection Team";
+		icon = "iconCrateWpns";
+		transportMaxWeapons = 5;
+		transportMaxMagazines = 1000;
+	};
 };
