@@ -76,6 +76,7 @@ class CfgWeapons
 			modelOptics 							= "\TEI_Weapons\Pistol\scope.p3d";
 			class OpticsModes
 			{
+			
 				class TEI_M6G_Scope
 				{
 					opticsID  						= 1; //2
@@ -106,6 +107,7 @@ class CfgWeapons
 					distanceZoomMax 				= 300;
 					cameraDir  						= "";
 				};
+				
 			};
 		};
 		inertia 									= 0.1;

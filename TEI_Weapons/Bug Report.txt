@@ -1,23 +1,19 @@
 TEI_Weapons
 
-X	-Reduce weapon damage
 	-All weapon inventory icons must be square 512x512 <---- USE IT
 	-None of the weapons have a muzzle flash, just the puff of smoke from the barrel.
 	-Thermal imaging RVmats? textures? how the fuck does thermal work
 	?!-Ran into a bug one time where magazines were being "eaten" on reload. Didnt happen again but watch out
 
 	/// BR55HB Battle Rifle
-!!!!!!!!-THE GAME CRASHES WHEN YOU SELECT IT WITH ASDG JR ON
 	-Icons needed
 	-figure out how to make ammo counter work, get player magazine size replace counter with number texture ## = (https://community.bistudio.com/wiki/setObjectTextureGlobal)(https://community.bistudio.com/wiki/setObjectMaterial)
 	-dirt material
 	-model needs flipped (like the Hog turrets, things are reversed)
 
 	/// M6G Pistol
-	-shadow lod causing trouble, wont show	
-X	-text does not move with slide
-X	-slow slide return
 X	-reverse the scope settings (scope default, irons second)
+	-pistol slide nearly slides off the reciever when reloading on empty magazine
 
 	/// M45 Shotgun
 	-slide slideback on firing missing
@@ -54,6 +50,5 @@ X	-gl fires too low compared to sights
 
 	///Commo Rucksack
 	-make a TFAR backpack
-
 
 *Please put your name in brackets at the end of whatever issue(s) you are currently working on

@@ -66,13 +66,13 @@
 			class TEI_MA5B_AmmoCounter_NoIS: ItemCore
 			{
 				displayName                                                             = "MA5B Ammo Counter";
-				model                                                                   = "\TEI_Weapons\AR\AR_AmmoCount _NoIS.p3d";
+				model                                                                   = "\TEI_Weapons\AR\AR_AmmoCount_NoIS.p3d";
 				class ItemInfo: InventoryOpticsItem_Base_F
                     {
                             mass                                                            = 10;
                             opticType                                                       = 1;
                             optics                                                          = 1;
-                            modelOptics                                                     = "\TEI_Weapons\AR\AR_AmmoCount _NoIS.p3d";
+                            modelOptics                                                     = "\TEI_Weapons\AR\AR_AmmoCount_NoIS.p3d";
                             class OpticsModes
                             {
                                     class MA5B_BUIS
