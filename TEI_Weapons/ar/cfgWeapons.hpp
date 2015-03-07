@@ -19,7 +19,7 @@
             class TEI_MA5B_AmmoCounter: ItemCore
             {
                     scope                                                                   = 2;
-                    displayName                                                             = "MA5B Ammo Counter (IS)";
+                    displayName                                                             = "MA5B Ammo Counter";
                     picture                                                                 = "\A3\weapons_F\Data\UI\gear_acco_Sniper_CA.paa";
                     model                                                                   = "\TEI_Weapons\AR\AR_AmmoCount.p3d";
                     descriptionShort                                                        = "MA5B Ammunition Counter and Direction Finder";
@@ -65,7 +65,8 @@
             };
 			class TEI_MA5B_AmmoCounter_NoIS: ItemCore
 			{
-				displayName                                                             = "MA5B Ammo Counter";
+				scope = 2;
+				displayName                                                             = "MA5B Ammo Counter (No IS)";
 				model                                                                   = "\TEI_Weapons\AR\AR_AmmoCount_NoIS.p3d";
 				class ItemInfo: InventoryOpticsItem_Base_F
                     {

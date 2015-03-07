@@ -25,7 +25,7 @@ TEI_Vehicles
 	-cockpit gadgets not working, honestly wouldnt bother with it as the cockpit will be overhauled later
 	-pelican wreck texture needs to be blackened out (green wings)
 	-landing gear geometery lod needs tweaking (AI get stuck on them)?
-	-lifting capabilities seriously need up'd
+!!!!!!!!-lifting capabilities seriously need up'd
 
 
 

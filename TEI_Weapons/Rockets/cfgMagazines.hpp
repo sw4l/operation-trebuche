@@ -30,8 +30,8 @@ class CfgMagazines
 		displayname="M19 HEAT Rocket";
 		displaynameshort="HEAT";
 		modelSpecial="\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
-		scope=1;
-		mass = 50;
+		scope=0;
+		mass = 40;
 		initSpeed = 140;
 	};
 	class TEI_M41_HEAT_G: NLAW_F
@@ -43,8 +43,8 @@ class CfgMagazines
 		model="\TEI_Weapons\Rockets\M41_Case";	
 		modelSpecial="\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
 		count=1;
-		scope=1;
-		mass = 50;
+		scope=0;
+		mass = 40;
 	};
 	class TEI_M41_HEAP: RPG32_HE_F
 	{
@@ -54,8 +54,8 @@ class CfgMagazines
 		displayname="M19 HEAP Rocket";
 		displaynameshort="HEDP";
 		modelSpecial="\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
-		scope=1;
-		mass = 50;
+		scope=0;
+		mass = 40;
 		initSpeed=255;
 	};
 	class TEI_M41_HEAA: Titan_AA
@@ -66,9 +66,13 @@ class CfgMagazines
 		ammo="TEI_M41_Rocket_HEAA";
 		model="\TEI_Weapons\Rockets\M41_Case";	
 		modelSpecial="\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
-		scope=1;
-		mass = 50;
+		scope=0;
+		mass = 40;
 	};
+	
+	
+	
+	
 	class TEI_M41_Twin_HEAT: RPG32_HE_F
 	{
 		displayname="M19 HEAT Twin Rockets";
@@ -80,7 +84,7 @@ class CfgMagazines
 		count=2;
 		//picture = "";
 		scope=2;
-		mass = 100;
+		mass = 80;
 	};
 	class TEI_M41_Twin_HEAT_G: NLAW_F
 	{
@@ -93,7 +97,7 @@ class CfgMagazines
 		count=2;
 		//picture = "";
 		scope=2;
-		mass = 100;
+		mass = 80;
 	};
 	class TEI_M41_Twin_HEAP: RPG32_HE_F
 	{
@@ -105,7 +109,7 @@ class CfgMagazines
 		modelSpecial="\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
 		scope=2;
 		//picture = "";
-		mass = 100;
+		mass = 80;
 		count = 2;
 		initSpeed=255;
 	};
@@ -120,6 +124,6 @@ class CfgMagazines
 		count=2;
 		//picture = "";
 		scope=2;
-		mass = 100;
+		mass = 80;
 	};
 };
