@@ -5,7 +5,7 @@ class CfgPatches
 		units[]={"TEI_M12_FAV","TEI_M12_FAV_black","TEI_M12_FAV_tan","TEI_M12_FAV_snow","TEI_M12_FAV_ins","TEI_M813_TT","TEI_M813_TT_black","TEI_M813_TT_tan","TEI_M813_TT_snow","TEI_M12_LRV","TEI_M12_LRV_black","TEI_M12_LRV_tan","TEI_M12_LRV_snow","TEI_M12_LRV_ins","TEI_M12G1_LRV","TEI_M12_FAV_APC"};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]={"TEI_Core"};
+		requiredAddons[]={"A3_Air_F","A3_Air_F_Beta","A3_Weapons_F","TEI_Core"};
 		magazines[]={};
 		ammo[]={};
 	};
@@ -1128,7 +1128,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_ins_co.paa"};
 		vehicleClass="TEI_Ins_Vehicle_class";
 		side=0;
-		crew="TEI_Ins_ER_Rebel_green";
+		crew="TEI_Ins_URF_Rifleman_AR";
 		faction="TEI_Ins";
 	};
 	
@@ -1460,7 +1460,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_ins_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_ins_CO.paa"};
 		vehicleClass="TEI_Ins_Vehicle_class";
 		side=0;
-		crew="TEI_Ins_ER_Rebel_tan";
+		crew="TEI_Ins_URF_Rifleman_AR";
 		faction="TEI_Ins";
 	};
 	
@@ -1649,7 +1649,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_ins_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_ins_CO.paa"};
 		vehicleClass="TEI_Ins_Vehicle_class";
 		side=0;
-		crew="TEI_Ins_ER_Rebel_tan";
+		crew="TEI_Ins_URF_Rifleman_AR";
 		faction="TEI_Ins";
 		transportSoldier=4;
 		cargoAction[]={"passenger_apc_narrow_generic01","passenger_apc_narrow_generic01","passenger_apc_narrow_generic02","passenger_generic01_leanright"};

@@ -5,13 +5,42 @@
 [fixed] odst clipping around the hands
 [fixed] army/ marine clipping around the hands
 [fixed] pelican entry/exit points
+[fixed] pelican bounced off water, missing bouy lod
 [removed] pelican in nato class
 [tweaked] engine exhaust fumes moving with engines
 [fixed] tei_intro music not playing
 [fixed] tei_intro some odst sunk into the ground
 [fixed] tei_music call to arms not working
 [fixed] tei_music envaged not working
+[fixed] warthog cannot load armour_plate
+[fixed] glitch on warthog windows causing no visual effect on turrets
+[changed] innie hogs now have armed soldiers as crew
+[removed] mp3 music files
 [added] tei_music drum run
 [added] tei_music impend
 [added] tei_music shotgun
-[removed] mp3 music files
+[added] tei_music amber clad
+[added] tei_music armor battle
+[added] tei_music axios
+[added] tei_music brave
+[added] tei_music choose wisely
+[added] tei_music covenant dance
+[added] tei_music creeping
+[added] tei_music creeping 2
+[added] tei_music desperate measures
+[added] tei_music follow our brothers
+[added] tei_music lead redux
+[added] tei_music life
+[added] tei_music live action
+[added] tei_music mjolner remastered
+[added] tei_music movement
+[added] tei_music movement 2
+[added] tei_music movement 3
+[added] tei_music night ops
+[added] tei_music our brothers
+[added] tei_music peril and jeopardy
+[added] tei_music rescue mission
+[added] tei_music scorpion mix
+[added] tei_music under cover of moonlight
+
+
