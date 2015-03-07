@@ -311,6 +311,121 @@ class CfgMusic
 		name="[TEI] Impend";
 		sound[]={"\TEI_Core\Music\impend.ogg",1,1};
 	};
+	class TEI_amber_clad
+	{
+		name="[TEI] Amber Clad";
+		sound[]={"\TEI_Core\Music\amber_clad.ogg",1,1};
+	};
+	class TEI_armor_battle
+	{
+		name="[TEI] Armor Battle";
+		sound[]={"\TEI_Core\Music\armor_battle.ogg",1,1};
+	};
+	class TEI_axios
+	{
+		name="[TEI] Axios";
+		sound[]={"\TEI_Core\Music\axios.ogg",1,1};
+	};
+	class TEI_brave
+	{
+		name="[TEI] Brave";
+		sound[]={"\TEI_Core\Music\brave.ogg",1,1};
+	};
+	class TEI_choose_wisely
+	{
+		name="[TEI] Choose Wisely";
+		sound[]={"\TEI_Core\Music\choose_wisely.ogg",1,1};
+	};
+	class TEI_covenant_dance
+	{
+		name="[TEI] Covenant Dance";
+		sound[]={"\TEI_Core\Music\covenant_dance.ogg",1,1};
+	};
+	class TEI_creeping
+	{
+		name="[TEI] Creeping";
+		sound[]={"\TEI_Core\Music\creeping.ogg",1,1};
+	};
+	class TEI_creeping_2
+	{
+		name="[TEI] Creeping 2";
+		sound[]={"\TEI_Core\Music\creeping_2.ogg",1,1};
+	};
+	class TEI_desperate_measures
+	{
+		name="[TEI] Desperate Measures";
+		sound[]={"\TEI_Core\Music\desperate_measures.ogg",1,1};
+	};
+	class TEI_follow_our_brothers
+	{
+		name="[TEI] Follow our Brothers";
+		sound[]={"\TEI_Core\Music\follow_our_brothers.ogg",1,1};
+	};
+	class TEI_lead_redux
+	{
+		name="[TEI] Lead Redux";
+		sound[]={"\TEI_Core\Music\lead_redux.ogg",1,1};
+	};
+	class TEI_life
+	{
+		name="[TEI] Life";
+		sound[]={"\TEI_Core\Music\life.ogg",1,1};
+	};
+	class TEI_live_action
+	{
+		name="[TEI] Live Action";
+		sound[]={"\TEI_Core\Music\live_action.ogg",1,1};
+	};
+	class TEI_Mjolnir_Remastered
+	{
+		name="[TEI] Mjolnir Remastered";
+		sound[]={"\TEI_Core\Music\Mjolnir_Remastered.ogg",1,1};
+	};
+	class TEI_movement
+	{
+		name="[TEI] Movement";
+		sound[]={"\TEI_Core\Music\movement.ogg",1,1};
+	};
+	class TEI_movement_2
+	{
+		name="[TEI] Movement 2";
+		sound[]={"\TEI_Core\Music\movement_2.ogg",1,1};
+	};
+	class TEI_movement_3
+	{
+		name="[TEI] Movement 3";
+		sound[]={"\TEI_Core\Music\movement_3.ogg",1,1};
+	};
+	class TEI_night_ops
+	{
+		name="[TEI] Night Ops";
+		sound[]={"\TEI_Core\Music\night_ops.ogg",1,1};
+	};
+	class TEI_our_brothers
+	{
+		name="[TEI] Our Brothers";
+		sound[]={"\TEI_Core\Music\our_brothers.ogg",1,1};
+	};
+	class TEI_peril_and_jeopardy
+	{
+		name="[TEI] Peril and Jeopardy";
+		sound[]={"\TEI_Core\Music\peril_and_jeopardy.ogg",1,1};
+	};
+	class TEI_rescue_mission
+	{
+		name="[TEI] Rescue Mission";
+		sound[]={"\TEI_Core\Music\rescue_mission.ogg",1,1};
+	};
+	class TEI_scorpion_mix
+	{
+		name="[TEI] Scorpion Mix";
+		sound[]={"\TEI_Core\Music\scorpion_mix.ogg",1,1};
+	};
+	class TEI_under_cover_of_moonlight
+	{
+		name="[TEI] Under cover of Moonlight";
+		sound[]={"\TEI_Core\Music\under_cover_of_moonlight.ogg",1,1};
+	};
 };
 
 

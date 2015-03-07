@@ -7,3 +7,11 @@
 [fixed] pelican entry/exit points
 [removed] pelican in nato class
 [tweaked] engine exhaust fumes moving with engines
+[fixed] tei_intro music not playing
+[fixed] tei_intro some odst sunk into the ground
+[fixed] tei_music call to arms not working
+[fixed] tei_music envaged not working
+[added] tei_music drum run
+[added] tei_music impend
+[added] tei_music shotgun
+[removed] mp3 music files
