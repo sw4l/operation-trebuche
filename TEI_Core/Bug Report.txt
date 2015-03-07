@@ -1,7 +1,5 @@
 TEI_Core
 
 	-add Altis action/combat-style intro cutscene
-	-change directory for the TEI menu logo
-	-include in readme the class names for ALiVE
 
 *Please put your name in brackets at the end of whatever issue(s) you are currently working on

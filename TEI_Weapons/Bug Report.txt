@@ -56,5 +56,8 @@ TEI_Weapons
 	-needs icon image
 	-shadow hidden selections not disappearing
 
+	///Commo Rucksack
+	-make a TFAR backpack
+
 
 *Please put your name in brackets at the end of whatever issue(s) you are currently working on
