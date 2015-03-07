@@ -49,7 +49,7 @@ class CfgVehicles
 	class TEI_Pelican_F: B_Heli_Attack_01_F
 	{		
 		scope 	= 1;
-        	armor = 60;						        /// just some protection against missiles, collisions and explosions
+        armor = 60;						        /// just some protection against missiles, collisions and explosions
 		destrType = DestructWreck;
 		gearRetracting=1;		
 		accuracy = 0.5;							/// how hard it is to distinguish the type of the vehicle (bigger number means harder)
@@ -60,13 +60,15 @@ class CfgVehicles
 		picture = "TEI_Vehicles\Pelican\Data\icon2.paa";		/// small picture in command menu
 		driveOnComponent[] = {"wheel_1_1", "wheel_2_1", "wheel_2_2"};
 		damageResistance = 0.00555;
+		fuelCapacity = 600;
+		fuelConsumptionRate = 0.045;
 		
 	///HANDLING
 		//altFullForce = 8000;					 	/// in what height do the engines still have full thrust
 		//altNoForce = 12000;					 	/// thrust of the engines interpolates to zero between altFullForce and altNoForce
 		maxSpeed = 300;						 	/// what is the maximum speed of the vehicle
-		//maxFordingDepth = 0.55;		   			 	/// how deep could the vehicle be in water without getting some damage
-		//mainBladeRadius = 7.0;						/// describes the radius of main rotor - used for collision detection
+		maxFordingDepth = 0.55;		   			 	/// how deep could the vehicle be in water without getting some damage
+		mainBladeRadius = 0.1;						/// describes the radius of main rotor - used for collision detection
 		liftForceCoef = 2;						///multiplier of lift force	
 		//bodyFrictionCoef = 1;						///multiplier of body friction
 		//cyclicAsideForceCoef = 2.0;		   			///multiplier of bank force
@@ -87,7 +89,7 @@ class CfgVehicles
 		cargoGetOutAction[] = {"GetOutHelicopterCargo"};	/// that means every cargo position could use different action to get in
 		transportSoldier = 11;					/// how many cargo positions are available
 		cargoCanEject = 1;					/// cargo should be able to grab a chute and drop out of the vehicle
-		driverCanEject = 0;					/// pilot shouldn't be able to do so as he doesn't have eject seat
+		driverCanEject = 1;					/// pilot shouldn't be able to do so as he doesn't have eject seat
 		cargoAction[] = 					/// the same array as getIn/getOut actions for actions to switch to for cargo while inside the heli
 						{
 							"passenger_apc_narrow_generic01",
@@ -115,21 +117,21 @@ class CfgVehicles
 		{
 			class HitHull:HitHull
 			{
-				armor=999;
+				armor=300;
 				visual="Hull";
 				depends="Total";
 				radius=0.01;
 			};
 			class HitFuel:HitFuel
 			{
-				armor=1;
+				armor=100;
 				radius=1;
 				minimalHit=0.05;
 				name="fuel";
 			};
 			class HitAvionics:HitAvionics
 			{
-				armor=2;
+				armor=50;
 				radius=1;
 				minimalHit=0.05;
 				name="elektronika";
@@ -145,7 +147,7 @@ class CfgVehicles
 			};
 			class HitVRotor:HitVRotor
 			{
-				armor=1.4;
+				armor=999;
 				radius=1;
 				minimalHit=0.05;
 				name="tailrotor";

@@ -5,7 +5,7 @@ class CfgAmmo
 	
 	class TEI_8Gauge_Pellets : ShotgunBase   
 	{
-		hit 							= 15;
+		hit 							= 12;
 		indirectHit 					= 0;
 		indirectHitRange 				= 0;
 		visibleFire 					= 1;	// how much is visible when this weapon is fired
@@ -208,7 +208,7 @@ class CfgAmmo
 
 	class TEI_8Gauge_Slugs : BulletBase   
 	{
-		hit 							= 20;
+		hit 							= 16;
 		indirectHit 					= 0;
 		indirectHitRange 				= 0;
 		visibleFire 					= 1;	// how much is visible when this weapon is fired
