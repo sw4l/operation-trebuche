@@ -682,9 +682,10 @@ class TEI_UNSC_Army_D_Medic: TEI_UNSC_Army_W_Medic //Configures the unit part of
 		displayName										= "Crewman";
 		weapons[] 										= {"TEI_M7","TEI_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_M7","TEI_M6G_SF","Throw","Put"};
-		engineer = 1;
-		linkedItems[] 									= {"TEI_UNSC_M52V_Vest_WDL","H_HelmetCrew_B","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
-		respawnlinkedItems[] 							= {"TEI_UNSC_M52V_Vest_WDL","H_HelmetCrew_B","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		engineer										= 1;
+		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
+		linkedItems[] 									= {"TEI_UNSC_M52V_Vest_DES","H_HelmetCrew_B","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnlinkedItems[] 							= {"TEI_UNSC_M52V_Vest_DES","H_HelmetCrew_B","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		magazines[] 									= {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShellGreen"};
 		respawnMagazines[]	 							= {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShellGreen"};
 	};

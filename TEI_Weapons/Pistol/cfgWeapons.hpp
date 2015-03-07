@@ -76,24 +76,9 @@ class CfgWeapons
 			modelOptics 							= "\TEI_Weapons\Pistol\scope.p3d";
 			class OpticsModes
 			{
-			
-				class TEI_M6G_Scope
+			class TEI_M6G_BUIS
 				{
-					opticsID  						= 1; //2
-					useModelOptics  				= 1; //1
-					opticsZoomMin  					= 0.0623;
-					opticsZoomMax 					= 0.0623;
-					opticsZoomInit 					= 0.0623;
-					memoryPointCamera 				= "opticView";
-					modelOptics 					= "\A3\Weapons_F\acc\reticle_MRCO_F";
-					visionMode[] 					= {"Normal"};
-					distanceZoomMin  				= 300;
-					distanceZoomMax 				= 300;
-					cameraDir  						= "";
-				};
-				class TEI_M6G_BUIS
-				{
-					opticsID  						= 2; //1
+					opticsID  						= 1; //1
 					useModelOptics  				= 0; //0
 					opticsPPEffects[]  				= {""};
 					opticsFlare  					= 0;
@@ -107,7 +92,23 @@ class CfgWeapons
 					distanceZoomMax 				= 300;
 					cameraDir  						= "";
 				};
-				
+				class TEI_M6G_Scope: TEI_M6G_BUIS
+				{
+					opticsID  						= 2; //2
+					useModelOptics  				= 1; //1
+					opticsZoomMin  					= 0.0623;
+					opticsZoomMax 					= 0.0623;
+					opticsZoomInit 					= 0.0623;
+					memoryPointCamera 				= "opticView";
+					modelOptics 					= "\A3\Weapons_F\acc\reticle_MRCO_F";
+					visionMode[] 					= {"Normal"};
+					distanceZoomMin  				= 300;
+					distanceZoomMax 				= 300;
+					cameraDir  						= "";
+					opticsPPEffects[]  				= {""};
+					opticsFlare  					= 0;
+					opticsDisablePeripherialVision 	= 0;
+				};
 			};
 		};
 		inertia 									= 0.1;
