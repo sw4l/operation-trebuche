@@ -1,0 +1,9 @@
+[fixed] army right shoulder pad, missing face
+[fixed] army/ marine pants uv mapping
+[fixed] army/ marine clipping around the neck
+[fixed] odst clipping around the neck
+[fixed] odst clipping around the hands
+[fixed] army/ marine clipping around the hands
+[fixed] pelican entry/exit points
+[removed] pelican in nato class
+[tweaked] engine exhaust fumes moving with engines

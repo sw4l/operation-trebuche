@@ -1,4 +1,4 @@
-class CfgPatches
+﻿class CfgPatches
 {
 	class TEI_Vehicles_Pelican
 	{
@@ -47,8 +47,9 @@ class CfgVehicles
 
 
 	class TEI_Pelican_F: B_Heli_Attack_01_F
-	{
-        armor = 60;						        /// just some protection against missiles, collisions and explosions
+	{		
+		scope 	= 1;
+        	armor = 60;						        /// just some protection against missiles, collisions and explosions
 		destrType = DestructWreck;
 		gearRetracting=1;		
 		accuracy = 0.5;							/// how hard it is to distinguish the type of the vehicle (bigger number means harder)
