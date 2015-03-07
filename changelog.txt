@@ -15,6 +15,7 @@
 [fixed] warthog cannot load armour_plate
 [fixed] glitch on warthog windows causing no visual effect on turrets
 [changed] innie hogs now have armed soldiers as crew
+[changed] innie warthog proper texture
 [removed] mp3 music files
 [added] tei_music drum run
 [added] tei_music impend
