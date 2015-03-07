@@ -8,6 +8,9 @@
 [fixed] pelican bounced off water, missing bouy lod
 [removed] pelican in nato class
 [tweaked] engine exhaust fumes moving with engines
+[tweaked] all ammunition damage values
+[tweaked] pelican armor and hitpoints made tougher
+[tweaked] pelican handling
 [fixed] tei_intro music not playing
 [fixed] tei_intro some odst sunk into the ground
 [fixed] tei_music call to arms not working
@@ -16,6 +19,7 @@
 [fixed] glitch on warthog windows causing no visual effect on turrets
 [fixed] shadow lod on odst grave
 [fixed] shadow lod on army grave
+[fixed] m7 rds opaque texture
 [changed] innie hogs now have armed soldiers as crew
 [changed] innie warthog proper texture
 [removed] mp3 music files
@@ -45,5 +49,6 @@
 [added] tei_music rescue mission
 [added] tei_music scorpion mix
 [added] tei_music under cover of moonlight
+[added] hev functions (reference templates folder in @TEI)
 
 
