@@ -65,22 +65,28 @@ class CfgVehicles
 		driveOnComponent[] = {"wheel_1_1", "wheel_2_1", "wheel_2_2"};
 		damageResistance = 0.00555;
 		fuelCapacity = 600;
-		fuelConsumptionRate = 0.045;
+		fuelConsumptionRate = 0.03845;
+		insideSoundCoef = 0.0116228;
+		noseDownCoef = 0; //?
+		
+	///AI HANDLING
+	
+	 landingSpeed = 20;        /// used for AI to approach the runawy, the plane should be stable at this speed
+     acceleration = 150;     /// used for AI to plan the waypoints and accelerating, doesn't affect plane performance
 		
 	///HANDLING
-		//altFullForce = 8000;					 	/// in what height do the engines still have full thrust
-		//altNoForce = 12000;					 	/// thrust of the engines interpolates to zero between altFullForce and altNoForce
-		maxSpeed = 300;						 	/// what is the maximum speed of the vehicle
+		altFullForce = 50000;					 	/// in what height do the engines still have full thrust
+		altNoForce = 12000;					 	/// thrust of the engines interpolates to zero between altFullForce and altNoForce
+		maxSpeed = 400;						 	/// what is the maximum speed of the vehicle
 		maxFordingDepth = 0.55;		   			 	/// how deep could the vehicle be in water without getting some damage
 		mainBladeRadius = 0.1;						/// describes the radius of main rotor - used for collision detection
-		liftForceCoef = 2;						///multiplier of lift force	
-		//bodyFrictionCoef = 1;						///multiplier of body friction
-		//cyclicAsideForceCoef = 2.0;		   			///multiplier of bank force
-        //cyclicForwardForceCoef = 2.0;	   				///multiplier of dive force
-		///simulation = helicopterX;
-		//frontRotorForceCoef = 30;         				///front rotor(strenth of lift)
-		//backRotorForceCoef = 30;          				///tailrotor(strength of horzontal movement=)
-		bodyFrictionCoef=0.2;
+		liftForceCoef = 20; //2					///multiplier of lift force	
+		bodyFrictionCoef = 1.4777;	//0.2				///multiplier of body friction
+		cyclicAsideForceCoef = 4.0;	//2	   			///multiplier of bank force
+        cyclicForwardForceCoef = 2.0;	   				///multiplier of dive force
+		//simulation = helicopterX;
+		//frontRotorForceCoef = 10000;  //30       				///front rotor(strenth of lift)
+		backRotorForceCoef = 2;   //30       				///tailrotor(strength of horzontal movement=)
         ///HANDLING END
 
         ///ACTIONS AND CARGO

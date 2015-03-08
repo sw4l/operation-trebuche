@@ -53,8 +53,8 @@
                                             opticsID                                                = 2;
                                             useModelOptics                                  = 1;
                                             opticsZoomMin                                   = 0.075;
-                                            opticsZoomMax                                   = 0.75;
-                                            opticsZoomInit                                  = 0.75;
+                                            opticsZoomMax                                   = 0.0523;
+                                            opticsZoomInit                                  = 0.0523;
                                             memoryPointCamera                               = "opticView2";
                                             modelOptics[]                                   = {"\A3\Weapons_F\acc\reticle_arco_F"/*,"\A3\Weapons_F\acc\reticle_sniper_z_F"*/};
                                             visionMode[]                                    = {"Normal"};
@@ -97,8 +97,8 @@
                                             opticsID                                                = 2;
                                             useModelOptics                                  = 1;
                                             opticsZoomMin                                   = 0.075;
-                                            opticsZoomMax                                   = 0.75;
-                                            opticsZoomInit                                  = 0.75;
+                                            opticsZoomMax                                   = 0.0523;
+                                            opticsZoomInit                                  = 0.0523;
                                             memoryPointCamera                               = "opticView2";
                                             modelOptics[]                                   = {"\A3\Weapons_F\acc\reticle_arco_F"/*,"\A3\Weapons_F\acc\reticle_sniper_z_F"*/};
                                             visionMode[]                                    = {"Normal"};

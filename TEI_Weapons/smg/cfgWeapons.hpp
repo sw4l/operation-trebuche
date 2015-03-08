@@ -107,9 +107,9 @@ class CfgWeapons
 		class TEI_M7_Sight: optic_Aco
 		{
 			scope 										= 2;
-			displayName 								= "M7 Reflex Sight";
+			displayName 								= "M7 SLS/V 5B Reflex";
 			picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
-			descriptionShort 							= "Red Dot Sight for the M7 SMG";
+			descriptionShort 							= "Smart Link Scope Reflex Sight for the M7 SMG";
 			model 										= "\TEI_Weapons\SMG\m7_sights.p3d";
 			inertia 									= 0.1;
 			class ItemInfo: InventoryOpticsItem_Base_F

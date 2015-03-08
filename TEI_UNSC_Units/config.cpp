@@ -965,7 +965,7 @@ class CfgGroups
 				
 				class TEI_UNSC_ODST_Squad
 				{
-					name = "ODST Fireteam";
+					name = "ODST Squad";
 					side = 1;
 					faction = "TEI_UNSC";
 					rarityGroup = 0.3;
