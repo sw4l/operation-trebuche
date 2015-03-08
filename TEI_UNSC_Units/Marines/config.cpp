@@ -499,7 +499,7 @@ class cfgWeapons
 		scope															= 0;
 		author															= "Eridanus Insurrection Team";
 		displayName														= "-";
-		picture															= "";
+		picture   														= "\TEI_UNSC_Units\marines\icons\marine_uniform_des.paa";
 		model															= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
@@ -514,6 +514,7 @@ class cfgWeapons
 	{
 		scope															= 2;
 		author															= "Eridanus Insurrection Team";
+		picture   														= "\TEI_UNSC_Units\marines\icons\marine_uniform_hvy.paa";
 		displayName														= "[UNSC] Marine BDU (Heavy)";
 		class ItemInfo: UniformItem
 		{
@@ -528,6 +529,7 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\marines\icons\marine_uniform.paa";
 		displayName										= "[UNSC] Pilot Uniform [Marine]";
 		class ItemInfo: UniformItem
 		{
@@ -542,6 +544,7 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\marines\icons\marine_uniform_hvy.paa";
 		displayName										= "[UNSC] Marine BDU (Medium)";
 		class ItemInfo: UniformItem
 		{
@@ -556,6 +559,7 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\marines\icons\marine_uniform.paa";
 		displayName										= "[UNSC] Marine BDU (Light)";
 		class ItemInfo: UniformItem
 		{

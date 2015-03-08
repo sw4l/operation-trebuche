@@ -779,7 +779,7 @@ class cfgWeapons
 		scope											= 0;
 		author											= "Eridanus Insurrection Team";
 		displayName										= "-";
-		picture											= "";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_uniform_wdl.paa";
 		model											= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
@@ -794,6 +794,7 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_uniform_wdl.paa";
 		displayName										= "[UNSC] Pilot Coveralls [Woodland]";
 		class ItemInfo: ItemInfo
 		{
@@ -808,6 +809,7 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_uniform_wdl.paa";
 		displayName										= "[UNSC] Army BDU (Light/Woodland)";
 		class ItemInfo: UniformItem
 		{
@@ -822,6 +824,7 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
 		displayName										= "[UNSC] Army BDU (Medium/Woodland)";
 		class ItemInfo: UniformItem
 		{
@@ -837,6 +840,7 @@ class cfgWeapons
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
 		displayName										= "[UNSC] Army BDU (Heavy/Woodland)";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
 		class ItemInfo: UniformItem
 		{
 			uniformModel								= "-";
@@ -850,6 +854,7 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_uniform_wdl.paa";
 		displayName										= "[UNSC] Pilot Coveralls [Desert]";
 		class ItemInfo: UniformItem
 		{
@@ -864,6 +869,7 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_uniform_des.paa";
 		displayName										= "[UNSC] Army BDU (Light/Desert)";
 		class ItemInfo: UniformItem
 		{
@@ -878,6 +884,7 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_uniform_des_hvy.paa";
 		displayName										= "[UNSC] Army BDU (Medium/Desert)";
 		class ItemInfo: UniformItem
 		{
@@ -892,6 +899,7 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_uniform_des_hvy.paa";
 		displayName										= "[UNSC] Army BDU (Heavy/Desert)";
 		class ItemInfo: UniformItem
 		{
@@ -906,6 +914,7 @@ class cfgWeapons
 	{
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_uniform_med.paa";
 		displayName										= "[UNSC] Medic BDU";
 		class ItemInfo: UniformItem
 		{
@@ -1040,6 +1049,7 @@ class cfgWeapons
 	{	
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_vest_wdl_gil.paa";
 		displayName  									= "[UNSC] M52 Body Armor (Woodland) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","camo3","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   					= {"TEI_UNSC_Units\Army\data\vest_co.paa","TEI_UNSC_Units\Army\data\addons_co.paa","TEI_UNSC_Units\Army\data\ghillie_1_ca.paa"}; /// what texture is going to be used
@@ -1053,6 +1063,7 @@ class cfgWeapons
 	{	
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_vest_wdl_gil_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor (Woodland) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","camo3","attach_knife","attach_pack"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   					= {"TEI_UNSC_Units\Army\data\vest_co.paa","TEI_UNSC_Units\Army\data\addons_co.paa","TEI_UNSC_Units\Army\data\ghillie_1_ca.paa"}; /// what texture is going to be used
@@ -1066,6 +1077,7 @@ class cfgWeapons
 	{	
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_vest_des_gil.paa";
 		displayName  									= "[UNSC] M52 Body Armor (Desert) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","camo3","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   					= {"TEI_UNSC_Units\Army\data\vest_cam2_co.paa","TEI_UNSC_Units\Army\data\addons_cam2_ca.paa","TEI_UNSC_Units\Army\data\ghillie_3_ca.paa"}; /// what texture is going to be used
@@ -1079,6 +1091,7 @@ class cfgWeapons
 	{	
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_vest_des_gil_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor (Desert) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","camo3","attach_knife","attach_pack"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   					= {"TEI_UNSC_Units\Army\data\vest_cam2_co.paa","TEI_UNSC_Units\Army\data\addons_cam2_ca.paa","TEI_UNSC_Units\Army\data\ghillie_3_ca.paa"}; /// what texture is going to be used
@@ -1216,6 +1229,7 @@ class cfgWeapons
 	{	
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_helmet_wdl_gil.paa";
 		displayName    									= "[UNSC] CH252 Helmet (Woodland) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","camo3","attach_face"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   					= {"TEI_UNSC_Units\Army\data\helmet_co.paa","TEI_UNSC_Units\Army\data\addons_co.paa","TEI_UNSC_Units\Army\data\ghillie_1_ca.paa"}; /// what texture is going to be used
@@ -1229,6 +1243,7 @@ class cfgWeapons
 	{	
 		scope = 1;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_helmet_wdl_gil_vac.paa";
 		displayName    									= "[UNSC] CH252[V] Helmet (Woodland) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","camo3"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   					= {"TEI_UNSC_Units\Army\data\helmet_co.paa","TEI_UNSC_Units\Army\data\addons_co.paa","TEI_UNSC_Units\Army\data\ghillie_1_ca.paa"}; /// what texture is going to be used
@@ -1242,6 +1257,7 @@ class cfgWeapons
 	{	
 		scope											= 2;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_helmet_des_gil.paa";
 		displayName    									= "[UNSC] CH252 Helmet (Desert) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","camo3","attach_face"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   					= {"TEI_UNSC_Units\Army\data\helmet_cam2_co.paa","TEI_UNSC_Units\Army\data\addons_cam2_ca.paa","TEI_UNSC_Units\Army\data\ghillie_3_ca.paa"}; /// what texture is going to be used
@@ -1255,6 +1271,7 @@ class cfgWeapons
 	{	
 		scope = 1;
 		author											= "Eridanus Insurrection Team";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_helmet__des_gil_vac.paa";
 		displayName    									= "[UNSC] CH252[V] Helmet (Desert) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","camo3"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   					= {"TEI_UNSC_Units\Army\data\helmet_cam2_co.paa","TEI_UNSC_Units\Army\data\addons_cam2_ca.paa","TEI_UNSC_Units\Army\data\ghillie_3_ca.paa"}; /// what texture is going to be used
