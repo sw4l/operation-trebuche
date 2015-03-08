@@ -113,7 +113,7 @@ class CfgVehicles //This configures units and backpacks
 				position																= "";
 				radius																	= 4;
 				condition																= "((this animationPhase ""main_door_rotation"" == 0) && (this animationPhase ""left_door_rotation"" == 0) && (this animationPhase ""right_door_rotation"" == 0))";
-				statement																= "this animate [""main_door_rotation"",1]; this animate [""left_door_rotation"",1]; this animate [""right_door_rotation"",1]; [this, ""ODST_POD_Door"",50] call CBA_fnc_globalSay3d;";
+				statement																= "this animate [""main_door_rotation"",1]; this animate [""left_door_rotation"",1]; this animate [""right_door_rotation"",1];";
 				onlyforplayer															= 1;
 			};
 			class door_close
