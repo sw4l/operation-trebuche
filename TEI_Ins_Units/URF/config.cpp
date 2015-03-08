@@ -70,7 +70,7 @@ class CfgVehicles
 	 {
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
-        scope                               = 0;
+        scope                               = 1;
         faction                             = "TEI_Ins";
         author                              = "Eridanus Insurrection Team";
         displayName                         = "-";
@@ -96,7 +96,7 @@ class CfgVehicles
 	 {
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
-        scope                               = 0;
+        scope                               = 1;
         faction                             = "TEI_Ins";
         author                              = "Eridanus Insurrection Team";
         displayName                         = "Rifleman";
@@ -121,7 +121,7 @@ class CfgVehicles
 	 {
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
-        scope                               = 0;
+        scope                               = 1;
         faction                             = "TEI_Ins";
         author                              = "Eridanus Insurrection Team";
         displayName                         = "Officer";
@@ -522,7 +522,7 @@ class cfgWeapons
 		scope 								= 2;
 		displayName 						= "[INS] Boarding Coveralls";
 		author								= "Eridanus Insurrection Team";
-		//picture 							= "";
+		picture = "\A3\characters_f_kart\data\ui\icon_u_driver_02_ca.paa";
 		model								= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         class ItemInfo : UniformItem 
 		{
@@ -539,7 +539,7 @@ class cfgWeapons
 		scope 								= 2;
 		displayName 						= "[INS] Combat Fatigues (OD)";
 		author								= "Eridanus Insurrection Team";
-		//picture 							= "";
+		picture = "\A3\characters_f_beta\data\ui\icon_U_IR_CrewUniform_rucamo_ca.paa";
 		model								= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         class ItemInfo : UniformItem 
 		{
@@ -557,7 +557,7 @@ class cfgWeapons
 		scope 								= 2;
 		displayName 						= "[INS] Officer Fatigues [Ins]";
 		author								= "Eridanus Insurrection Team";
-		//picture 							= "";
+		picture = "\A3\characters_f_beta\data\ui\icon_U_IR_CombatUniform_rucamo_ca.paa";
 		model								= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         class ItemInfo : UniformItem 
 		{
@@ -595,6 +595,7 @@ class cfgWeapons
 		weaponPoolAvailable 				= 1;
         displayName 						= "[INS] Beret (OD)"; //In-Game name
         model 								= "\A3\Characters_F\Common\headgear_beret01";
+		picture = "\A3\characters_f\Data\UI\icon_H_Beret_blk_CA.paa";
         hiddenSelections[] 					= {"camo"};
         hiddenSelectionsTextures[] 			= {"TEI_Ins_Units\data\innie_h_beret_od_co.paa"}; // Path to your texture.
         class ItemInfo: HeadgearItem
@@ -613,9 +614,9 @@ class cfgWeapons
 	class TEI_v_Ins_vest: Vest_Camo_Base
 	{
 		scope = 2;
-		picture = ""; //Menu Picture
-		displayName = "[INS] Vest (OD)"; //In-Game name
+		displayName = "[INS] Bulletproof Vest"; //In-Game name
 		model = "\A3\Characters_F_EPC\Civil\equip_press_vest_01";
+		picture = "\TEI_Ins_Units\data\icon_innie_vest_press_od_ca.paa";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"TEI_Ins_Units\data\innie_vest_od1_co.paa"}; //Vest texture path
 		class ItemInfo: ItemInfo
@@ -631,9 +632,9 @@ class cfgWeapons
 	class TEI_v_Ins_GAvest: Vest_Camo_Base
 	{
 		scope = 2;
-		picture = ""; //Menu Picture
-		displayName = "[INS] Insurrectionist Vest"; //In-Game name
+		displayName = "[INS] Plate Carrier"; //In-Game name
 		model = "A3\Characters_F_Beta\INDEP\equip_ia_vest02";
+		picture = "\A3\characters_f_Beta\Data\UI\icon_V_I_Vest_02_ca.paa";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"TEI_Ins_Units\data\innie_cmbtvest_od1_co.paa"}; //Vest texture path
 		class ItemInfo: ItemInfo

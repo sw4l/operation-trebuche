@@ -34,7 +34,7 @@
                             {
                                     class MA5B_BUIS
                                     {
-                                            opticsID                                                = 1;
+                                            opticsID                                        = 1;
                                             useModelOptics                                  = 0;
                                             opticsPPEffects[]                               = {""};
                                             opticsFlare                                     = 0;
@@ -43,7 +43,7 @@
                                             opticsZoomMax                                   = 0.55;
                                             opticsZoomInit                                  = 0.55;
                                             memoryPointCamera                               = "opticView";
-                                            visionMode[]                                    = {"Normal"};
+                                            visionMode[]                                    = {};
                                             distanceZoomMin                                 = 300;
                                             distanceZoomMax                                 = 300;
                                             cameraDir                                       = "";
@@ -57,7 +57,7 @@
                                             opticsZoomInit                                  = 0.0523;
                                             memoryPointCamera                               = "opticView2";
                                             modelOptics[]                                   = {"\A3\Weapons_F\acc\reticle_HAMR"/*,"\A3\Weapons_F\acc\reticle_arco_F"*/};
-                                            visionMode[]                                    = {"Normal"};
+                                            visionMode[]                                    = {};
                                     };
                             };
                     };
@@ -76,7 +76,7 @@
                             modelOptics                                                     = "\TEI_Weapons\AR\AR_AmmoCount_NoIS.p3d";
                             class OpticsModes
                             {
-                                    class MA5B_BUIS
+                                    class MA5B_Top
                                     {
                                             opticsID                                                = 1;
                                             useModelOptics                                  = 0;
@@ -87,12 +87,12 @@
                                             opticsZoomMax                                   = 0.55;
                                             opticsZoomInit                                  = 0.55;
                                             memoryPointCamera                               = "opticView";
-                                            visionMode[]                                    = {"Normal"};
+                                            visionMode[]                                    = {};
                                             distanceZoomMin                                 = 300;
                                             distanceZoomMax                                 = 300;
                                             cameraDir                                       = "";
                                     };
-                                    class MA5B_AC_IS_Scope: MA5B_BUIS
+                                    class MA5B_AC_Scope: MA5B_Top
                                     {
                                             opticsID                                                = 2;
                                             useModelOptics                                  = 1;
@@ -101,7 +101,7 @@
                                             opticsZoomInit                                  = 0.0523;
                                             memoryPointCamera                               = "opticView2";
                                             modelOptics[]                                   = {"\A3\Weapons_F\acc\reticle_HAMR"/*,"\A3\Weapons_F\acc\reticle_arco_F"*/};
-                                            visionMode[]                                    = {"Normal"};
+                                            visionMode[]                                    = {};
                                     };
                             };
                     };

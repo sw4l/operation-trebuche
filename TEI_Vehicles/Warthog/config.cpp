@@ -1409,7 +1409,7 @@ class CfgVehicles
 				gunnerRightHandAnimName="trigger";
 				memoryPointGun="machinegun";
 				weapons[]={"TEI_M41_LAAG"};
-				magazines[]={"500Rnd_127x99_mag_Tracer_Yellow"};
+				magazines[]={"500Rnd_127x99_mag_Tracer_Yellow","500Rnd_127x99_mag_Tracer_Yellow","500Rnd_127x99_mag_Tracer_Yellow"};
 				memoryPointGunnerOptics="gunnerview";
 				gunnerOpticsShowCursor=1;
 				castGunnerShadow=1;
@@ -1460,7 +1460,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_ins_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_ins_CO.paa"};
 		vehicleClass="TEI_Ins_Vehicle_class";
 		side=0;
-		crew="TEI_Ins_URF_Rifleman_AR";
+		crew="TEI_Ins_URF_Rifleman_BR";
 		faction="TEI_Ins";
 	};
 	

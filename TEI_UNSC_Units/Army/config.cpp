@@ -761,7 +761,7 @@ class cfgWeapons
 	class TEI_NVG: NVGoggles
 	{
 		author											= "Eridanus Insurrection Team";
-		displayName										= "UNSC Neural Implant Vision Enhancement";
+		displayName										= "[UNSC] Neural Implant Vision Enhancement";
 		class ItemInfo
 		{
 			type = 616;

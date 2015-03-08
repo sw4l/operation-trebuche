@@ -55,7 +55,7 @@ class CfgWeapons
 					opticsZoomInit 					= 0.0623;
 					memoryPointCamera 				= "opticView";
 					modelOptics[] 					= {"\A3\Weapons_F\acc\reticle_HAMR"};
-					visionMode[] 					= {"Normal"};
+					visionMode[] 					= {};
 				};
 			};
 		};

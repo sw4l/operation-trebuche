@@ -214,7 +214,7 @@ class cfgWeapons
         scope 											= 2;
 		author											= "Eridanus Insurrection Team";
         displayName 									= "[INS] Insurrectionist Apparel (Tan)"; //In-Game name
-		//picture 										= "";
+		picture = "\A3\characters_f_bootcamp\data\ui\icon_U_G_guerrilla_6_1_ca.paa";									
 		model											= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         class ItemInfo: UniformItem
         {
@@ -230,6 +230,7 @@ class cfgWeapons
         scope 											= 2;
 		author											= "Eridanus Insurrection Team";
         displayName 									= "[INS] Insurrectionist Apparel (Green)"; //In-Game name
+		picture = "\A3\characters_f_bootcamp\data\ui\icon_U_G_guerrilla_6_1_ca.paa";
 		model											= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         class ItemInfo: UniformItem
         {
@@ -245,6 +246,7 @@ class cfgWeapons
         scope 											= 2;
 		author											= "Eridanus Insurrection Team";
         displayName 									= "[INS] Insurrectionist Garments (OD)"; //In-Game name
+		picture = "\A3\characters_f_bootcamp\data\ui\icon_U_G_guerrilla1_1_ca.paa";
 		model											= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         class ItemInfo: UniformItem
         {
@@ -260,6 +262,7 @@ class cfgWeapons
         scope 											= 2;
 		author											= "Eridanus Insurrection Team";
         displayName 									= "[INS] Insurrectionist Garments (Grey)"; //In-Game name
+		picture = "\A3\characters_f_bootcamp\data\ui\icon_U_G_guerrilla1_1_ca.paa";
 		model											= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         class ItemInfo: UniformItem
         {
@@ -272,9 +275,10 @@ class cfgWeapons
 	};
 	class TEI_Ins_ER_uniform_GSbrown: Uniform_Base
     {
-        scope 											= 2;
+        scope 											= 1;
 		author											= "Eridanus Insurrection Team";
         displayName 									= "[INS] Insurrectionist Smocks (Brown)"; //In-Game name
+		picture = "\A3\characters_f_gamma\Guerrilla\data\ui\icon_U_G_guerrilla3_1_ca.paa";
 		model											= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         class ItemInfo: UniformItem
         {
@@ -289,7 +293,7 @@ class cfgWeapons
         scope 											= 2;
 		author											= "Eridanus Insurrection Team";
         displayName 									= "[INS] Insurrectionist Smocks (OD)"; //In-Game name
-		//picture 										= "\A3\characters_f_gamma\Guerrilla\data\ui\icon_U_G_guerrilla3_1_ca.paa";
+		picture = "\A3\characters_f_gamma\Guerrilla\data\ui\icon_U_G_guerrilla3_1_ca.paa";
 		model											= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
         {
@@ -329,7 +333,7 @@ class cfgWeapons
         scope = 2;
         weaponPoolAvailable = 1;
         displayName = "[INS] Booniehat (Grey)"; //In-Game name
-       // picture = "\A3\characters_f\Data\UI\icon_H_HelmetB_CA.paa"; //Menu Picture
+		picture = "\A3\characters_f\Data\UI\icon_H_booniehat_desert_ca.paa";
         model = "\a3\characters_f\Common\booniehat"; // Model
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"TEI_Ins_Units\data\innie_boonie_grey_co.paa"}; // Path to your texture.
@@ -345,7 +349,9 @@ class cfgWeapons
 	};
 	class TEI_h_Booniehat_Green: TEI_h_Booniehat_Grey
 	{
+		scope = 1;
 		displayName = "[INS] Booniehat (Green)";
+		picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_H_Booniehat_oli_ca.paa";
 		hiddenSelectionsTextures[] = {"TEI_Ins_Units\data\innie_boonie_green_co.paa"};
 	};
 	class TEI_h_PatrolCap_Green: ItemCore
@@ -354,6 +360,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
         displayName = "[INS] Military Cap (Green)"; //In-Game name
         model = "\a3\characters_f\Common\cappatrol"; // Model
+		picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_H_MilCap_gry_ca.paa";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"TEI_Ins_Units\data\innie_patrolcap_green_co.paa"}; // Path to your texture.
         class ItemInfo: HeadgearItem
@@ -370,6 +377,7 @@ class cfgWeapons
         displayName = "[INS] Military Cap (Brown)"; //In-Game name
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"TEI_Ins_Units\data\innie_patrolcap_Brown_co.paa"};
+		picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_H_MilCap_gry_ca.paa";
         class ItemInfo: HeadgearItem
         {
 			uniformModel = "\a3\characters_f\Common\cappatrol";
@@ -383,6 +391,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
         displayName = "[INS] MICH (OD)"; //In-Game name
         model = "\A3\Characters_F_Beta\INDEP\headgear_helmet_canvas";
+		picture = "\A3\characters_F_Beta\Data\UI\icon_H_I_Helmet_canvas_ca.paa";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"TEI_Ins_Units\data\inne_MICHOD_co.paa"}; // Path to your texture.
         class ItemInfo: HeadgearItem

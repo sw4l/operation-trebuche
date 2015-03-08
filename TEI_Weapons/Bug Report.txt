@@ -13,12 +13,10 @@ TEI_Weapons
 
 	/// M6G Pistol
 	-reverse the scope settings (scope default, irons second)
-	-pistol slide nearly slides off the reciever when reloading on empty magazine
 
 	/// M45 Shotgun
 	-slide slideback on firing missing
 	-Reload animation wrong (loads 8 shells when we only have 6)
-	-getting missing icon error
 	-dirt material
 
 	/// MA5B Assault Rifle

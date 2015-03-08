@@ -1,12 +1,10 @@
 Bugs for Alpha Release v0.12
 ----------------------------------
 
+-Easy to pop rear Warthog tires
 -Reload breaking in VA? (details requested)
 -Some Insurrectionist clothing is invisible in the VA
--Game crashes with ASDG-JR on (with BR55 and MA5B)
 -Dirt material on many assets when shot
--Missing icon errors on some items/weapons
--MA5B GL sight isn't zero'd
 -Many issues with SOEIV Drop Pod and scripts
 -ODST HUD does not work
 -Fire Geo LOD for Warthogs broken
@@ -15,7 +13,6 @@ Bugs for Alpha Release v0.12
 -Awful looking Pelican cockpit
 -SMG animations missing
 -Thermal support needs added
--Icons for all items/weapons need added
 -Eridanus Rebel classes need updated
 -Eridanus Rebel groups need added
 -M1087 Stallion needs added
