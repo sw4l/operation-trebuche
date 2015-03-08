@@ -442,28 +442,28 @@ class CfgVehicles
 		{
 			class HitLFWheel:HitLFWheel
 			{
-				armor=300;
+				armor=500;
 				explosionShielding=0.8;
 				radius=0.25;
 				passThrough=0;
 			};
 			class HitLBWheel:HitLBWheel
 			{
-				armor=300;
+				armor=1000;
 				explosionShielding=0.8;
 				radius=0.25;
 				passThrough=0;
 			};
 			class HitRFWheel:HitRFWheel
 			{
-				armor=300;
+				armor=500;
 				explosionShielding=0.8;
 				radius=0.25;
 				passThrough=0;
 			};
 			class HitRBWheel:HitRBWheel
 			{
-				armor=300;
+				armor=1000;
 				explosionShielding=0.8;
 				radius=0.25;
 				passThrough=0;
@@ -1600,7 +1600,8 @@ class CfgVehicles
 				gunnerOpticsShowCursor=1;
 				turretInfoType="RscWeaponZeroing";
 				//turretInfoType="RscOptics_crows";
-				visionMode[] = {"Normal","NVG","TI"};
+				visionMode[] = {"Normal","Ti"};
+				thermalMode[] = {2};
 				castGunnerShadow=1;
 				startEngine=0;
 				enableManualFire=0;

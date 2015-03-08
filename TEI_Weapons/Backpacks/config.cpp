@@ -206,7 +206,7 @@ class cfgVehicles {
 				};
 			};*/
 		};
-		class TEI_ILCS_Black_Rockets: TEI_ILCS_Rucksack_Black
+		class TEI_ILCS_Black_Rockets: TEI_ILCS_Rucksack_Black2
 		{
 			vehicleClass = "TEI_UNSC_Backpack_class";
 			scope = 1;
@@ -340,7 +340,7 @@ class cfgVehicles {
 				};
 			};
 		};
-		class TEI_ILCS_Black_Exp: TEI_ILCS_Rucksack_Black
+		class TEI_ILCS_Black_Exp: TEI_ILCS_Rucksack_Black2
 		{
 			scope = 1;
 			class TransportMagazines
