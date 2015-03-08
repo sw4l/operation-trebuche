@@ -473,7 +473,7 @@ class CfgVehicles
             position=cargo_door_handle;
             radius=6;
             onlyForPlayer=true;
-			condition 			= "this doorPhase ""cargoDoors"" < 0.5 AND Alive(this) AND (player in crew this)"; /// only openable from inside and when closed
+			condition 			= "((this animationPhase ""cargoDoor_1"" == 0) && (this animationPhase ""cargoDoor_2"" == 0))"; /// only openable from inside and when closed
             statement="this animate [""cargoDoor_1"",1];this animate [""cargoDoor_2"",1]";
 			animPeriod = 10;
             };
@@ -483,7 +483,7 @@ class CfgVehicles
             displayName="Close ramp";
             displayNameDefault="Close ramp";
 			textToolTip 		= "Close ramp";
-			condition 			= "this doorPhase ""cargoDoors"" < 0.5 AND Alive(this) AND (player in crew this)"; /// only openable from inside and when closed
+			condition 			= "((this animationPhase ""cargoDoor_1"" == 1) && (this animationPhase ""cargoDoor_2"" == 1))"; /// only openable from inside and when closed
             statement="this animate [""cargoDoor_1"",0];this animate [""cargoDoor_2"",0]";
 			animPeriod = 10;
             };
