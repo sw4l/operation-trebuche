@@ -56,7 +56,7 @@
                                             opticsZoomMax                                   = 0.0523;
                                             opticsZoomInit                                  = 0.0523;
                                             memoryPointCamera                               = "opticView2";
-                                            modelOptics[]                                   = {"\A3\Weapons_F\acc\reticle_arco_F"/*,"\A3\Weapons_F\acc\reticle_sniper_z_F"*/};
+                                            modelOptics[]                                   = {"\A3\Weapons_F\acc\reticle_HAMR"/*,"\A3\Weapons_F\acc\reticle_arco_F"*/};
                                             visionMode[]                                    = {"Normal"};
                                     };
                             };
@@ -100,7 +100,7 @@
                                             opticsZoomMax                                   = 0.0523;
                                             opticsZoomInit                                  = 0.0523;
                                             memoryPointCamera                               = "opticView2";
-                                            modelOptics[]                                   = {"\A3\Weapons_F\acc\reticle_arco_F"/*,"\A3\Weapons_F\acc\reticle_sniper_z_F"*/};
+                                            modelOptics[]                                   = {"\A3\Weapons_F\acc\reticle_HAMR"/*,"\A3\Weapons_F\acc\reticle_arco_F"*/};
                                             visionMode[]                                    = {"Normal"};
                                     };
                             };
