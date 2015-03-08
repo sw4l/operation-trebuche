@@ -30,7 +30,7 @@ class CfgFunctions
 	};
 };
 
-class Extended_PostInit_EventHandlers //This is a CBA configuration for the HUD
+/*class Extended_PostInit_EventHandlers //This is a CBA configuration for the HUD
 {
 	class TEI_HUD
 	{
@@ -44,7 +44,7 @@ class Extended_PostInit_EventHandlers //This is a CBA configuration for the HUD
 		serverInit 																				= "call TEI_HEV_fnc_Init";
 		disableModuload 																		= "true";
 	};
-};
+};*/
 
 class RscStdText //More HUD Stuff
 {
