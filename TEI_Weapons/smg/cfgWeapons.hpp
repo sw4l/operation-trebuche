@@ -29,7 +29,7 @@ class CfgWeapons
 				mass = 5;
 				class MagazineCoef
 				{
-					initSpeed 		= 0.6;
+					initSpeed 		= 1;
 				};
 				class AmmoCoef
 				{
