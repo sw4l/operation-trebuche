@@ -25,7 +25,7 @@ class CfgWeapons
 	{
  		scope 										= 2;
  		displayName 								= "M6G Flashlight";
- 		picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
+ 		picture = "\TEI_weapons\pistol\icons\flashlight.paa";
 		descriptionShort 							= "Flashlight for the M6G Handgun";
  		model 										= "\TEI_Weapons\Pistol\flashlight.p3d";
 		class ItemInfo: InventoryFlashLightItem_Base_F
@@ -64,7 +64,7 @@ class CfgWeapons
 	{
 		scope 										= 2;
 		displayName 								= "M6G KFA-2 SmartLink Scope";
-		picture 									= "\A3\weapons_F\Data\UI\gear_acco_Sniper_CA.paa";
+		picture = "\TEI_weapons\pistol\icons\scope.paa";
 		model 										= "\TEI_Weapons\Pistol\scope.p3d";
 		descriptionShort 							= "KFA-2 2x SmartLink Scope for M6G Magnum";
 		weaponInfoType 								= "RscWeaponZeroing";
@@ -122,7 +122,7 @@ class CfgWeapons
 		model										= "\TEI_Weapons\Pistol\pistol.p3d";
 		displayName 								= "M6G Magnum";
 		descriptionShort 							= "12.7x40mm Magnum Pistol";
-		picture 									= "\TEI_Weapons\Pistol\data\pistol.paa";
+		picture = "\TEI_weapons\pistol\icons\pistol_a.paa";
 		magazines[] 								= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag_Tracer"};
 		modelOptics 								= "-";
 		modes[] 									= {"Single"};
@@ -220,6 +220,7 @@ class CfgWeapons
 	};
 	class TEI_M6G_SF: TEI_M6G /// standard issue variant with holo optics and laser pointer
 	{
+		picture = "\TEI_weapons\pistol\icons\pistol_b.paa";
 		class LinkedItems
 		{
 			class LinkedItemsOptic

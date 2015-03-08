@@ -20,7 +20,7 @@
             {
                     scope                                                                   = 2;
                     displayName                                                             = "MA5B Ammo Counter";
-                    picture                                                                 = "\A3\weapons_F\Data\UI\gear_acco_Sniper_CA.paa";
+					picture = "\TEI_weapons\ar\icons\scope_a.paa";
                     model                                                                   = "\TEI_Weapons\AR\AR_AmmoCount.p3d";
                     descriptionShort                                                        = "MA5B Ammunition Counter and Direction Finder";
                     weaponInfoType                                                          = "RscWeaponZeroing";
@@ -67,6 +67,7 @@
 			{
 				scope = 2;
 				displayName                                                             = "MA5B Ammo Counter (No IS)";
+				picture = "\TEI_weapons\ar\icons\scope_b.paa";
 				model                                                                   = "\TEI_Weapons\AR\AR_AmmoCount_NoIS.p3d";
 				class ItemInfo: InventoryOpticsItem_Base_F
                     {
@@ -126,7 +127,7 @@
                     model                                                                   = "\TEI_Weapons\AR\AR.p3d";
                     displayName                                                             = "MA5B ICWS Assault Rifle";
                     descriptionShort                                                        = "UNSC Assault Rifle";
-                    picture                                                                 = "";
+                    picture = "\TEI_weapons\ar\icons\ar_a.paa";
                     magazines[]                                                             = {"TEI_60Rnd_762x51_Mag","TEI_60Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag_Tracer"};
                     modelOptics                                                             = "-";
                     dexterity                                                               = 3.25;
@@ -247,6 +248,7 @@
 			
 		class TEI_MA5B_AC: TEI_MA5B
 		{
+			picture = "\TEI_weapons\ar\icons\ar_b.paa";
 			class LinkedItems
 			{
 				class LinkedItemsOptic
@@ -264,7 +266,7 @@
                     model                                                                   = "\TEI_Weapons\AR\ARGL.p3d";
                     displayName                                                             = "MA5B + M309 Assault Rifle";
                     descriptionShort                                                        = "UNSC Assault Rifle + GL";
-                    picture                                                                 = "";
+                    picture = "\TEI_weapons\ar\icons\argl_a.paa";
                     //magazines[]                                                             = {"TEI_60Rnd_762x51_Mag","TEI_60Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag_Tracer"};
                     //modelOptics                                                             = "-";
                     //dexterity                                                               = 3.25;
@@ -396,6 +398,7 @@
 			
 	class TEI_MA5BGL_AC: TEI_MA5BGL
 	{
+		picture = "\TEI_weapons\ar\icons\argl_b.paa";
 		class LinkedItems
 		{
 			class LinkedItemsOptic

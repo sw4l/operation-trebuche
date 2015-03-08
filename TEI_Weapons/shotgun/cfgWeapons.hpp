@@ -105,7 +105,7 @@ class CfgWeapons
 		displayName 									= "M45 Tactical Shotgun";
 		descriptionShort 								= "8 Gauge Shotgun";
 		//picture 									= "\TEI_Weapons\Shotgun\data\icon_shotgun.paa";
-		picture 									= "";
+		picture = "\TEI_weapons\shotgun\icons\shotgun_black.paa";
 		magazines[] 									= {"TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs"};
 		modelOptics 									= "-";
 		modes[] 									= {"Single"};
@@ -206,15 +206,13 @@ class CfgWeapons
 	{
 	model										= "\TEI_Weapons\Shotgun\shotgun_tan.p3d";
 	displayName 									= "M45 Tactical Shotgun [Tan]";
-	//picture 									= "\TEI_Weapons\Shotgun\data\icon_tan.paa";
-	picture 									= "";
+	picture = "\TEI_weapons\shotgun\icons\shotgun_tan.paa";
 	};	
 	
 	class TEI_M45_olive : TEI_M45
 	{
 	model										= "\TEI_Weapons\Shotgun\shotgun_olive.p3d";
 	displayName 									= "M45 Tactical Shotgun [Olive]";
-	//picture 									= "\TEI_Weapons\Shotgun\data\icon_olive.paa";
-	picture 									= "";
+	picture = "\TEI_weapons\shotgun\icons\shotgun_green.paa";
 	};
 };

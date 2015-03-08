@@ -20,7 +20,7 @@ class CfgWeapons
        {
            scope                                                                   = 2;
            displayName                                                             = "M7 SS-M 49 Suppressor";
-           picture                                                                 = "\A3\weapons_F\Data\UI\gear_acca_snds_l_CA.paa";
+           picture = "\TEI_weapons\smg\icons\silencer.paa";
            model                                                                   = "\TEI_Weapons\SMG\m7_silencer.p3d";
            descriptionShort                                                        = "M7 Silencer";
            inertia                                                                 = 0.1;
@@ -69,7 +69,7 @@ class CfgWeapons
 			{
 				scope 										= 2;
 				displayName 								= "M7 Illumination Torch";
-				picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
+				picture = "\TEI_weapons\smg\icons\flashlight.paa";
 				descriptionShort 							= "Flashlight for the M7 SMG";
 				model 										= "\TEI_Weapons\SMG\m7_flashlight.p3d";
 		class ItemInfo: InventoryFlashLightItem_Base_F
@@ -108,7 +108,7 @@ class CfgWeapons
 		{
 			scope 										= 2;
 			displayName 								= "M7 SLS/V 5B Reflex";
-			picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
+			picture = "\TEI_weapons\smg\icons\scope.paa";
 			descriptionShort 							= "Smart Link Scope Reflex Sight for the M7 SMG";
 			model 										= "\TEI_Weapons\SMG\m7_sights.p3d";
 			inertia 									= 0.1;
@@ -143,7 +143,7 @@ class CfgWeapons
 		{
 			scope 										= 2;
 			displayName 								= "M7 Laser Aiming Module";
-			picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
+			picture = "\TEI_weapons\smg\icons\laser.paa";
 			descriptionShort 							= "IR Laser for the M7 SMG";
 			model 										= "\TEI_Weapons\SMG\m7_laser.p3d";
 			inertia 									= 0.1;
@@ -169,7 +169,7 @@ class CfgWeapons
                     model                                                                   = "\TEI_Weapons\SMG\SMG.p3d";
                     displayName                                                             = "M7/Caseless SMG";
                     descriptionShort                                                        = "UNSC M7 SMG";
-                    picture                                                                 = "";
+                    picture = "\TEI_weapons\smg\icons\smg.paa";
                     magazines[]                                                             = {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag_tracer","TEI_48Rnd_5x23mm_Mag","TEI_48Rnd_5x23mm_Mag_tracer"};
                     modelOptics                                                             = "-";
                     dexterity                                                               = 3.25;

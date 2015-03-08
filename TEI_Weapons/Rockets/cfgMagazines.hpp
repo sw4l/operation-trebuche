@@ -29,6 +29,7 @@ class CfgMagazines
 		model = "TEI_weapons\rockets\M41_rocket.p3d";
 		displayname="M19 HEAT Rocket";
 		displaynameshort="HEAT";
+		picture = "\TEI_weapons\rockets\icons\rocket.paa";
 		modelSpecial="\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
 		scope=1;
 		mass = 40;
@@ -40,7 +41,8 @@ class CfgMagazines
 		displayname="M19 HEAT Guided Rocket";
 		displaynameshort="HEAT(G)";
 		descriptionshort="Type: Guided surface-to-surface HEAT (High Explosive Anti Tank)<br/>Used in: M41 SSR MAV/AW";
-		model="\TEI_Weapons\Rockets\M41_Case";	
+		model="\TEI_Weapons\Rockets\M41_Case";
+		picture = "\TEI_weapons\rockets\icons\rocket.paa";		
 		modelSpecial="\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
 		count=1;
 		scope=1;
@@ -50,6 +52,7 @@ class CfgMagazines
 	{
 		ammo="TEI_M41_Rocket_HEAP";
 		model = "TEI_weapons\rockets\M41_rocket.p3d";
+		picture = "\TEI_weapons\rockets\icons\rocket.paa";
 		descriptionshort="Type: Surface-to-surface HEAP (High Explosive Anti Personnel)<br/>Used in: M41 SSR MAV/AW";
 		displayname="M19 HEAP Rocket";
 		displaynameshort="HEDP";
@@ -62,6 +65,7 @@ class CfgMagazines
 	{
 		displayname="M19 HEAA Rockets";
 		displaynameshort="HEAA";
+		picture = "\TEI_weapons\rockets\icons\rocket.paa";
 		descriptionshort="Type: Guided surface-to-air HEAA (High Explosive Anti Air)<br/>Used in: M41 SSR MAV/AW";
 		ammo="TEI_M41_Rocket_HEAA";
 		model="\TEI_Weapons\Rockets\M41_Case";	
@@ -79,6 +83,7 @@ class CfgMagazines
 		displaynameshort="HEAT Twin";
 		descriptionshort="Type: Guided surface-to-surface HEAT (High Explosive Anti Tank)<br/>Used in: M41 SSR MAV/AW";
 		ammo="TEI_M41_Rocket_HEAT";
+		picture = "\TEI_weapons\rockets\icons\rocket.paa";
 		model="\TEI_Weapons\Rockets\M41_Case";	
 		modelSpecial="\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
 		count=2;
@@ -91,6 +96,7 @@ class CfgMagazines
 		ammo="TEI_M41_Rocket_HEAT_Guided";
 		displayname="M19 HEAT Guided Twin Rockets";
 		displaynameshort="HEAT(G) Twin";
+		picture = "\TEI_weapons\rockets\icons\rocket.paa";
 		descriptionshort="Type: Guided surface-to-surface HEAT (High Explosive Anti Tank)<br/>Used in: M41 SSR MAV/AW";
 		model="\TEI_Weapons\Rockets\M41_Case";	
 		modelSpecial="\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
@@ -105,6 +111,7 @@ class CfgMagazines
 		model="\TEI_Weapons\Rockets\M41_Case";	
 		descriptionshort="Type: Surface-to-surface HEAP (High Explosive Anti Personnel)<br/>Used in: M41 SSR MAV/AW";
 		displayname="M19 HEAP Twin Rockets";
+		picture = "\TEI_weapons\rockets\icons\rocket.paa";
 		displaynameshort="HEDP Twin";
 		modelSpecial="\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
 		scope=2;
@@ -117,6 +124,7 @@ class CfgMagazines
 	{
 		displayname="M19 HEAA Twin Rockets";
 		displaynameshort="HEAA Twin";
+		picture = "\TEI_weapons\rockets\icons\rocket.paa";
 		descriptionshort="Type: Guided surface-to-surface HEAT (High Explosive Anti Tank)<br/>Used in: M41 SSR MAV/AW";
 		ammo="TEI_M41_Rocket_HEAA";
 		model="\TEI_Weapons\Rockets\M41_Case";	

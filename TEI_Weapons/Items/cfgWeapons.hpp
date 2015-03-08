@@ -18,7 +18,7 @@ class CfgWeapons
 	{
 		scope 										= 2;
 		displayName 								= "Medical Biofoam";
-		picture 									= "\A3\Weapons_F\Items\data\UI\gear_FirstAidKit_CA.paa"; //change
+		picture 									= "\TEI_weapons\items\icons\biofoam.paa";
 		model 										= "\TEI_Weapons\items\Biofoam.p3d";
 		descriptionShort 							= "Self-sealing coagulant foam to stop bleeding and haemorrhaging";
 		weaponInfoType 								= "RscWeaponZeroing";
@@ -31,7 +31,7 @@ class CfgWeapons
 	{
 		scope 										= 1;
 		displayName 								= "Medical Pack";
-		picture 									= "\A3\Weapons_F\Items\data\UI\gear_Medikit_CA.paa"; //change
+		picture 									= "\TEI_weapons\items\icons\medkit.paa";
 		model 										= "\TEI_Weapons\items\MedKit.p3d";
 		descriptionShort 							= "Medical Kit to treat all combat inflicted wounds and injuries";
 		weaponInfoType 								= "RscWeaponZeroing";

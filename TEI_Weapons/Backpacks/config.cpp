@@ -29,6 +29,7 @@ class cfgVehicles {
 				class TransportMagazines{};
 				class TransportWeapons{};
 				isbackpack = 1;
+				picture = "\TEI_weapons\backpacks\icons\rucksack_black.paa";
 				transportMaxWeapons = 1;
 				transportMaxMagazines = 13;
 				class DestructionEffects{};
@@ -45,6 +46,7 @@ class cfgVehicles {
 				class TransportMagazines{};
 				class TransportWeapons{};
 				isbackpack = 1;
+				picture = "\TEI_weapons\backpacks\icons\rucksack_black_po.paa";
 				transportMaxWeapons = 1;
 				transportMaxMagazines = 16;
 				class DestructionEffects{};
@@ -61,6 +63,7 @@ class cfgVehicles {
 				class TransportMagazines{};
 				class TransportWeapons{};
 				isbackpack = 1;
+				picture = "\TEI_weapons\backpacks\icons\rucksack_med.paa";
 				transportMaxWeapons = 1;
 				transportMaxMagazines = 16;
 				class DestructionEffects{};
@@ -78,6 +81,7 @@ class cfgVehicles {
 				class TransportMagazines{};
 				class TransportWeapons{};
 				isbackpack = 1;
+				picture = "\TEI_weapons\backpacks\icons\rucksack_green.paa";
 				transportMaxWeapons = 1;
 				transportMaxMagazines = 13;
 				class DestructionEffects{};
@@ -94,6 +98,7 @@ class cfgVehicles {
 				class TransportMagazines{};
 				class TransportWeapons{};
 				isbackpack = 1;
+				picture = "\TEI_weapons\backpacks\icons\rucksack_green_po.paa";
 				transportMaxWeapons = 1;
 				transportMaxMagazines = 16;
 				class DestructionEffects{};
@@ -110,6 +115,7 @@ class cfgVehicles {
 				class TransportMagazines{};
 				class TransportWeapons{};
 				isbackpack = 1;
+				picture = "\TEI_weapons\backpacks\icons\rucksack_tan.paa";
 				transportMaxWeapons = 1;
 				transportMaxMagazines = 13;
 				class DestructionEffects{};
@@ -126,6 +132,7 @@ class cfgVehicles {
 				class TransportMagazines{};
 				class TransportWeapons{};
 				isbackpack = 1;
+				picture = "\TEI_weapons\backpacks\icons\rucksack_tan_po.paa";
 				transportMaxWeapons = 1;
 				transportMaxMagazines = 16;
 				class DestructionEffects{};
@@ -142,6 +149,7 @@ class cfgVehicles {
 				class TransportMagazines{};
 				class TransportWeapons{};
 				isbackpack = 1;
+				picture = "\TEI_weapons\backpacks\icons\como_pack.paa";
 				transportMaxWeapons = 1;
 				transportMaxMagazines = 4;
 				class DestructionEffects{};

@@ -9,8 +9,7 @@ class CfgMagazines
 		ammo								= "TEI_B_762x51_Ball";
 		count								= 60;
 		initspeed							= 900;
-		//picture								= "\TEI_Weapons\AR\data\MA5CMAGAZINE.paa";
-		picture 							= "\A3\weapons_f\data\ui\m_20stanag_green_ca.paa";
+		picture = "\TEI_weapons\ar\icons\magazine.paa";
 		descriptionshort						= "60 Round Magazine<br>7.62x51mm";
 		mass								= 20;
 		tracersEvery 							= 0;
@@ -21,6 +20,7 @@ class CfgMagazines
 		displayname							= "60Rnd 7.62x51mm Magazine (Tracers)";
 		displaynameshort						= "7.62x51mm Tracer";
 		ammo								= "TEI_B_762x51_Tracer";
+		picture = "\TEI_weapons\ar\icons\magazine.paa";
 		descriptionshort						= "60 Round Magazine<br>7.62x51mm<br>Tracer";
 		tracersEvery 							= 1;
 		lastRoundsTracer 						= 60;
@@ -30,6 +30,7 @@ class CfgMagazines
 		model								= "\TEI_Weapons\AR\AR_Magazine.p3d";
 		displayname							= "32Rnd 762x51mm Magazine";
 		displaynameshort						= "7.62x51mm";
+		picture = "\TEI_weapons\ar\icons\magazine.paa";
 		ammo								= "TEI_B_762x51_Ball";
 		count								= 32;
 		initspeed							= 900;
@@ -42,6 +43,7 @@ class CfgMagazines
 	{
 		displayname							= "32Rnd 7.62x51mm Magazine (Tracers)";
 		displaynameshort						= "7.62x51mm Tracer";
+		picture = "\TEI_weapons\ar\icons\magazine.paa";
 		ammo								= "TEI_B_762x51_Tracer";
 		descriptionshort						= "32 Round Magazine<br>7.62x51mm<br>Tracer";
 		tracersEvery 							= 1;

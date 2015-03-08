@@ -22,7 +22,7 @@ class CfgMagazines
 		ammo								= "TEI_B_95x40_Ball";
 		count								= 36;
 		initspeed							= 620;
-		picture 							= "\A3\weapons_f\data\ui\m_20stanag_green_ca.paa";
+		picture = "\TEI_weapons\br\icons\magazine.paa";
 		descriptionshort					= "36 Round Magazine<br>9.5x40mm";
 		mass								= 10;
 		tracersEvery 						= 0;
@@ -32,6 +32,7 @@ class CfgMagazines
 	{
 		displayname							= "36Rnd 9.5x40mm Magazine (Tracers)";
 		displaynameshort					= "9.5x40mm Tracer";
+		picture = "\TEI_weapons\br\icons\magazine.paa";
 		ammo								= "TEI_B_95x40_Tracer";
 		descriptionshort					= "36 Round Magazine<br>9.5x40mm<br>Tracer";
 		tracersEvery 						= 1;

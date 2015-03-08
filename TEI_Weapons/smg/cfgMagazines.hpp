@@ -9,8 +9,7 @@ class CfgMagazines
 		ammo								= "TEI_B_5x23_Caseless";
 		count								= 60;
 		initspeed							= 427;
-		//picture							= "\TEI_Weapons\AR\data\MA5CMAGAZINE.paa";
-		picture 							= "\A3\Weapons_F\Data\UI\M_30Rnd_45ACP_CA.paa";
+		picture = "\TEI_weapons\smg\icons\magazine.paa";
 		descriptionshort					= "60 Round Magazine<br>5x23mm";
 		mass								= 15;
 		tracersEvery 						= 0;
@@ -20,6 +19,7 @@ class CfgMagazines
 	{
 		displayname							= "60Rnd 5x23mm Magazine (Tracers)";
 		displaynameshort					= "5x23mm Tracer";
+		picture = "\TEI_weapons\smg\icons\magazine.paa";
 		ammo								= "TEI_B_5x23_Caseless_Tracer";
 		descriptionshort					= "60 Round Magazine<br>5x23mm<br>Tracer";
 		tracersEvery 						= 1;
@@ -30,6 +30,7 @@ class CfgMagazines
 		model								= "\TEI_Weapons\smg\m7_Magazine.p3d";
 		displayname							= "48Rnd 5x23mm Magazine";
 		displaynameshort					= "5x23mm";
+		picture = "\TEI_weapons\smg\icons\magazine.paa";
 		ammo								= "TEI_B_5x23_Caseless";
 		count								= 48;
 		initspeed							= 427;
@@ -42,6 +43,7 @@ class CfgMagazines
 	{
 		displayname							= "48Rnd 5x23mm Magazine (Tracers)";
 		displaynameshort					= "5x23mm Tracer";
+		picture = "\TEI_weapons\smg\icons\magazine.paa";
 		ammo								= "TEI_B_5x23_Caseless_Tracer";
 		descriptionshort					= "48 Round Magazine<br>5x23mm<br>Tracer";
 		tracersEvery 						= 1;

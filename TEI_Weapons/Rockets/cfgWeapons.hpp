@@ -36,7 +36,7 @@ class CfgWeapons
 		};
 		magazines[] = {"TEI_M41_Twin_HEAT","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAP","TEI_M41_Twin_HEAA"};
 				//magazines[] = {"TEI_M41_HEAT","TEI_M41_HEAT_G","TEI_M41_HEAP","TEI_M41_HEAA","TEI_M41_Twin_HEAT","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAP","TEI_M41_Twin_HEAA"};
-		picture = "";
+		picture = "\TEI_weapons\rockets\icons\launcher.paa";
 		model = "\TEI_Weapons\Rockets\M41_launcher.p3d";
 		handAnim[]={"OFP2_ManSkeleton","\TEI_Weapons\Rockets\Data\Anim\m41_hand_anim.rtm"};
 		drysound[] = {"A3\sounds_f\weapons\other\dry6", 0.0316228, 1, 10};
