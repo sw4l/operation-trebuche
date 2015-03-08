@@ -71,12 +71,12 @@ class CfgGlasses
     { 
         displayName = "Cigarette"; 
         model = "\TEI_Misc\Objects\cigarette.p3d";
-		picture = "";
+		picture   										= "\TEI_misc\objects\icons\cigarette.paa";
     }; 
     class TEI_Cigar: TEI_Cigarette
     { 
         displayName = "Cigar"; 
         model = "\TEI_Misc\Objects\cigar.p3d";
-		picture = "";
+		picture   										= "\TEI_misc\objects\icons\cigar.paa";
     }; 
 };  
