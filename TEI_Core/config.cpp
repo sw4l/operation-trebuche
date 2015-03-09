@@ -258,183 +258,224 @@ class CfgMissions
 	};
 };
 
+class CfgMusicClasses
+{
+	class TEI_OST
+	{
+		displayName = "TEI Soundtrack";
+	};
+};
 class CfgMusic
 {
-	tracks[]={"TEI_Music_Innie_Dance","TEI_Music_Call_to_Arms","TEI_Music_Engaged","TEI_Music_Eve_of_Battle","TEI_Music_Firefight","TEI_Music_Going_Loud","TEI_Music_Prepare_to_Drop","TEI_Music_Unforgotten","TEI_Music_Warthogs"};
 	class TEI_Music_Innie_Dance
 	{
-		name="[TEI] Innie Dance";
-		sound[]={"\TEI_Core\Music\Innie_Dance.ogg",1,1};
+		name	="[TEI] Innie Dance";
+		sound[]	={"\TEI_Core\Music\Innie_Dance.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
 	class TEI_Music_Call_to_Arms
 	{
 		name="[TEI] Call to Arms";
 		sound[]={"\TEI_Core\Music\Call_to_Arms.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
 	class TEI_Music_Engaged
 	{
 		name="[TEI] Engaged";
 		sound[]={"\TEI_Core\Music\Engaged.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
 	class TEI_Music_Eve_of_Battle
 	{
 		name="[TEI] Eve of Battle";
 		sound[]={"\TEI_Core\Music\Eve_of_Battle.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
 	class TEI_Music_Firefight
 	{
 		name="[TEI] Firefight";
 		sound[]={"\TEI_Core\Music\Firefight.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
 	class TEI_Music_Going_Loud
 	{
 		name="[TEI] Going Loud";
 		sound[]={"\TEI_Core\Music\Going_Loud.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
 	class TEI_Music_Prepare_to_Drop
 	{
 		name="[TEI] Prepare to Drop";
 		sound[]={"\TEI_Core\Music\Prepare_to_Drop.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
 	class TEI_Music_Unforgotten
 	{
 		name="[TEI] Unforgotten";
 		sound[]={"\TEI_Core\Music\Unforgotten.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
 	class TEI_Music_Warthogs
 	{
 		name="[TEI] Warthogs";
 		sound[]={"\TEI_Core\Music\Warthogs.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_Music_shotgun
+	class TEI_Music_Shotgun
 	{
 		name="[TEI] Shotgun";
 		sound[]={"\TEI_Core\Music\shotgun.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_Music_drum_run
+	class TEI_Music_Drum_Run
 	{
 		name="[TEI] Drum Run";
 		sound[]={"\TEI_Core\Music\drum_run.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_Music_impend
+	class TEI_Music_Impend
 	{
 		name="[TEI] Impend";
 		sound[]={"\TEI_Core\Music\impend.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_amber_clad
+	class TEI_Music_Amber_Clad
 	{
 		name="[TEI] Amber Clad";
 		sound[]={"\TEI_Core\Music\amber_clad.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_armor_battle
+	class TEI_Music_Armor_Battle
 	{
 		name="[TEI] Armor Battle";
 		sound[]={"\TEI_Core\Music\armor_battle.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_axios
+	class TEI_Music_Axios
 	{
 		name="[TEI] Axios";
 		sound[]={"\TEI_Core\Music\axios.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_brave
+	class TEI_Music_Brave
 	{
 		name="[TEI] Brave";
 		sound[]={"\TEI_Core\Music\brave.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_choose_wisely
+	class TEI_Music_Choose_Wisely
 	{
 		name="[TEI] Choose Wisely";
 		sound[]={"\TEI_Core\Music\choose_wisely.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_covenant_dance
+	class TEI_Music_Covenant_Dance
 	{
 		name="[TEI] Covenant Dance";
 		sound[]={"\TEI_Core\Music\covenant_dance.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_creeping
+	class TEI_Music_Creeping
 	{
 		name="[TEI] Creeping";
 		sound[]={"\TEI_Core\Music\creeping.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_creeping_2
+	class TEI_Music_Creeping_2
 	{
 		name="[TEI] Creeping 2";
 		sound[]={"\TEI_Core\Music\creeping_2.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_desperate_measures
+	class TEI_Music_Desperate_Measures
 	{
 		name="[TEI] Desperate Measures";
 		sound[]={"\TEI_Core\Music\desperate_measures.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_follow_our_brothers
+	class TEI_Music_Follow_Our_Brothers
 	{
 		name="[TEI] Follow our Brothers";
 		sound[]={"\TEI_Core\Music\follow_our_brothers.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_lead_redux
+	class TEI_Music_Lead_Redux
 	{
 		name="[TEI] Lead Redux";
 		sound[]={"\TEI_Core\Music\lead_redux.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_life
+	class TEI_Music_Life
 	{
 		name="[TEI] Life";
 		sound[]={"\TEI_Core\Music\life.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_live_action
+	class TEI_Music_Live_Action
 	{
 		name="[TEI] Live Action";
 		sound[]={"\TEI_Core\Music\live_action.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_Mjolnir_Remastered
+	class TEI_Music_Mjolnir_Remastered
 	{
 		name="[TEI] Mjolnir Remastered";
 		sound[]={"\TEI_Core\Music\Mjolnir_Remastered.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_movement
+	class TEI_Music_Movement
 	{
 		name="[TEI] Movement";
 		sound[]={"\TEI_Core\Music\movement.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_movement_2
+	class TEI_Music_Movement_2
 	{
 		name="[TEI] Movement 2";
 		sound[]={"\TEI_Core\Music\movement_2.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_movement_3
+	class TEI_Music_Movement_3
 	{
 		name="[TEI] Movement 3";
 		sound[]={"\TEI_Core\Music\movement_3.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_night_ops
+	class TEI_Music_Night_Ops
 	{
 		name="[TEI] Night Ops";
 		sound[]={"\TEI_Core\Music\night_ops.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_our_brothers
+	class TEI_Music_Our_Brothers
 	{
 		name="[TEI] Our Brothers";
 		sound[]={"\TEI_Core\Music\our_brothers.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_peril_and_jeopardy
+	class TEI_Music_Peril_and_Jeopardy
 	{
 		name="[TEI] Peril and Jeopardy";
 		sound[]={"\TEI_Core\Music\peril_and_jeopardy.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_rescue_mission
+	class TEI_Music_Rescue_Mission
 	{
 		name="[TEI] Rescue Mission";
 		sound[]={"\TEI_Core\Music\rescue_mission.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_scorpion_mix
+	class TEI_Music_Scorpion_Mix
 	{
 		name="[TEI] Scorpion Mix";
 		sound[]={"\TEI_Core\Music\scorpion_mix.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
-	class TEI_under_cover_of_moonlight
+	class TEI_Music_Under_Cover_of_Moonlight
 	{
 		name="[TEI] Under cover of Moonlight";
 		sound[]={"\TEI_Core\Music\under_cover_of_moonlight.ogg",1,1};
+		musicClass = "TEI_OST";
 	};
 };
 
