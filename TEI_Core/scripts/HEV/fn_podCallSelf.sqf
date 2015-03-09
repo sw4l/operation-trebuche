@@ -1,5 +1,4 @@
-(_this select 0) removeaction (_this select 2);
-
+_unit = _this select 1;
 openmap true;
 hint "Mark position for orbital insertion";
-onMapSingleClick "openmap false; _selfdrop = createMarker ['SelfDrop', _pos]; 'SelfDrop' setmarkertype 'mil_triangle'; 'SelfDrop' setMarkerText 'ODST Inbound'; 'SelfDrop' setMarkerColor 'ColorBLUFOR'; [_this select 0] call TEI_HEV_fnc_podPrepare; onmapsingleclick '';";
+[_unit] onMapSingleClick "openmap false; _selfdrop = createMarkerLocal ['SelfDrop', _pos]; _podPrepare_fnc = [_this select 0] spawn xt_TEI_HEV_fnc_podPrepare; onmapsingleclick '';";

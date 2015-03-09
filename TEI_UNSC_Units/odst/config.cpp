@@ -618,7 +618,7 @@ class cfgWeapons
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Eridanus Insurrection Team";
 		picture   																				= "\TEI_UNSC_Units\ODST\icons\odst_helmet_recon.paa";
-		displayName    																			= "[UNSC] ODST CH253 Helmet (Demo)"; /// how would the stuff be displayed in inventory and on ground
+		displayName    																			= "[UNSC] ODST CH253 Helmet (Recon)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_communication","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\helmet2_co.paa","TEI_UNSC_Units\ODST\data\helmet2_co.paa"}; /// what texture is going to be used
 		class ItemInfo: HeadgearItem 
@@ -651,7 +651,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]   														= {"TEI_UNSC_Units\ODST\data\helmet1_co.paa","TEI_UNSC_Units\ODST\data\helmet1_co.paa"}; /// what texture is going to be used
 		};
 	};
-		class TEI_UNSC_ODST_helmet_com: TEI_UNSC_ODST_helmet_base
+	class TEI_UNSC_ODST_helmet_com: TEI_UNSC_ODST_helmet_base
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Eridanus Insurrection Team";
@@ -697,15 +697,59 @@ class cfgWeapons
 		displayName    																			= "[UNSC] ODST CH253 Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\helmet_co.paa","TEI_Core\data\base\glass_ca.paa"}; /// what texture is going to be used
+		hiddenSelectionsMaterials[]   															= {"TEI_UNSC_Units\ODST\data\helmet.rvmat","tei_vehicles\pelican\data\reflective_glass.rvmat"}; /// what texture is going to be used
 		class ItemInfo: HeadgearItem 
 		{
 			uniformModel   																		= "\TEI_UNSC_Units\ODST\helmet.p3d"; /// what model does the vest use
 			armor   																			= 20; /// what protection does the vest provide
 			mass   																				= 30;
-			modelSides[]   																	= {6};
-			passThrough   																	= 0.1; /// coef of damage passed to total damage
-			hiddenSelections[]   															= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
+			modelSides[]   																		= {6};
+			passThrough   																		= 0.1; /// coef of damage passed to total damage
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   														= {"TEI_UNSC_Units\ODST\data\helmet_co.paa","TEI_Core\data\base\glass_ca.paa"}; /// what texture is going to be used
+			hiddenSelectionsMaterials[]   														= {"TEI_UNSC_Units\ODST\data\helmet.rvmat","tei_vehicles\pelican\data\reflective_glass.rvmat"}; /// what texture is going to be used
+		};
+	};
+	class TEI_UNSC_ODST_helmet_sniper_dp: TEI_UNSC_ODST_helmet_base
+	{	
+		scope   																			  	= 1; /// scope needs to be 2 to have a visible class
+		author																					= "Eridanus Insurrection Team";
+		picture   																				= "\TEI_UNSC_Units\ODST\icons\odst_helmet_sniper.paa";
+		displayName    																			= "[UNSC] ODST CH253 Helmet (Sniper) [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather", "attach_laser"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\helmet1_co.paa","TEI_Core\data\base\glass_ca.paa"}; /// what texture is going to be used
+		hiddenSelectionsMaterials[]   															= {"TEI_UNSC_Units\ODST\data\helmet.rvmat","tei_vehicles\pelican\data\reflective_glass.rvmat"}; /// what texture is going to be used
+		class ItemInfo: HeadgearItem 
+		{
+			uniformModel   																		= "\TEI_UNSC_Units\ODST\helmet.p3d"; /// what model does the vest use
+			armor   																			= 20; /// what protection does the vest provide
+			mass   																				= 30;
+			modelSides[]   																		= {6};
+			passThrough   																		= 0.1; /// coef of damage passed to total damage
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather", "attach_laser"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   														= {"TEI_UNSC_Units\ODST\data\helmet1_co.paa","TEI_Core\data\base\glass_ca.paa"}; /// what texture is going to be used
+			hiddenSelectionsMaterials[]   														= {"TEI_UNSC_Units\ODST\data\helmet.rvmat","tei_vehicles\pelican\data\reflective_glass.rvmat"}; /// what texture is going to be used
+		};
+	};
+	class TEI_UNSC_ODST_helmet_com_dp: TEI_UNSC_ODST_helmet_base
+	{	
+		scope   																			  	= 1; /// scope needs to be 2 to have a visible class
+		author																					= "Eridanus Insurrection Team";
+		picture   																				= "\TEI_UNSC_Units\ODST\icons\odst_helmet_como.paa";
+		displayName    																			= "[UNSC] ODST CH253 Helmet (Comms) [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_rebreather","attach_rangefinder","attach_laser"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\helmet3_co.paa","TEI_Core\data\base\glass_ca.paa"}; /// what texture is going to be used
+		hiddenSelectionsMaterials[]   															= {"TEI_UNSC_Units\ODST\data\helmet.rvmat","tei_vehicles\pelican\data\reflective_glass.rvmat"}; /// what texture is going to be used
+		class ItemInfo: HeadgearItem 
+		{
+			uniformModel   																		= "\TEI_UNSC_Units\ODST\helmet.p3d"; /// what model does the vest use
+			armor   																			= 20; /// what protection does the vest provide
+			mass   																				= 30;
+			modelSides[]   																		= {6};
+			passThrough   																		= 0.1; /// coef of damage passed to total damage
+			hiddenSelections[]   																= {"camo1","camo2","attach_flashlight","attach_rebreather","attach_rangefinder","attach_laser"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   														= {"TEI_UNSC_Units\ODST\data\helmet3_co.paa","TEI_Core\data\base\glass_ca.paa"}; /// what texture is going to be used
+			hiddenSelectionsMaterials[]   														= {"TEI_UNSC_Units\ODST\data\helmet.rvmat","tei_vehicles\pelican\data\reflective_glass.rvmat"}; /// what texture is going to be used
 		};
 	};
 	class TEI_UNSC_ODST_helmet_recon_dp: TEI_UNSC_ODST_helmet_base
@@ -713,9 +757,10 @@ class cfgWeapons
 		scope   																			  	= 1; /// scope needs to be 2 to have a visible class
 		author																					= "Eridanus Insurrection Team";
 		picture   																				= "\TEI_UNSC_Units\ODST\icons\odst_helmet_recon.paa";
-		displayName    																			= "[UNSC] ODST CH253 Helmet (Demo)[Depolarized]"; /// how would the stuff be displayed in inventory and on ground
+		displayName    																			= "[UNSC] ODST CH253 Helmet (Recon) [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\helmet_co.paa","TEI_Core\data\base\glass_ca.paa"}; /// what texture is going to be used
+			hiddenSelectionsMaterials[]   														= {"TEI_UNSC_Units\ODST\data\helmet.rvmat","tei_vehicles\pelican\data\reflective_glass.rvmat"}; /// what texture is going to be used
 		class ItemInfo: HeadgearItem 
 		{
 			uniformModel   																		= "\TEI_UNSC_Units\ODST\helmet.p3d"; /// what model does the vest use
@@ -725,6 +770,28 @@ class cfgWeapons
 			passThrough   																		= 0.1; /// coef of damage passed to total damage
 			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   														= {"TEI_UNSC_Units\ODST\data\helmet3_co.paa","TEI_Core\data\base\glass_ca.paa"}; /// what texture is going to be used
+			hiddenSelectionsMaterials[]   														= {"TEI_UNSC_Units\ODST\data\helmet.rvmat","tei_vehicles\pelican\data\reflective_glass.rvmat"}; /// what texture is going to be used
+		};
+	};
+	class TEI_UNSC_ODST_helmet_Medic_dp: TEI_UNSC_ODST_helmet_base
+	{	
+		scope   																			  	= 1; /// scope needs to be 2 to have a visible class
+		author																					= "Eridanus Insurrection Team";
+		picture   																				= "\TEI_UNSC_Units\ODST\icons\odst_helmet_med.paa";
+		displayName    																			= "[UNSC] ODST CH253 Helmet (Medic) [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather","attach_rangefinder", "attach_laser"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   														= {"TEI_UNSC_Units\ODST\data\helmet_medic_co.paa","TEI_Core\data\base\glass_ca.paa"}; /// what texture is going to be used
+			hiddenSelectionsMaterials[]   														= {"TEI_UNSC_Units\ODST\data\helmet.rvmat","tei_vehicles\pelican\data\reflective_glass.rvmat"}; /// what texture is going to be used
+		class ItemInfo: HeadgearItem 
+		{
+			uniformModel   																		= "\TEI_UNSC_Units\ODST\helmet.p3d"; /// what model does the vest use
+			armor   																			= 20; /// what protection does the vest provide
+			mass   																				= 30;
+			modelSides[]   																		= {6};
+			passThrough   																		= 0.1; /// coef of damage passed to total damage
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather","attach_rangefinder", "attach_laser"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   														= {"TEI_UNSC_Units\ODST\data\helmet_medic_co.paa","TEI_Core\data\base\glass_ca.paa"}; /// what texture is going to be used
+			hiddenSelectionsMaterials[]   														= {"TEI_UNSC_Units\ODST\data\helmet.rvmat","tei_vehicles\pelican\data\reflective_glass.rvmat"}; /// what texture is going to be used
 		};
 	};
 	class TEI_UNSC_Recon_helmet: TEI_UNSC_ODST_helmet_base
@@ -734,8 +801,8 @@ class cfgWeapons
 		picture   																				= "\TEI_UNSC_Units\ODST\icons\odst_recon.paa";
 		displayName    																			= "[UNSC] ONI Recon Helmet"; /// how would the stuff be displayed in inventory and on ground
 		model     																				= "\TEI_UNSC_Units\ODST\recon_helmet.p3d"; /// what model does the vest use
-		hiddenSelections[]   																	= {"camo1"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\recon_helmet_co.paa"}; /// what texture is going to be used
+		hiddenSelections[]   																	= {"camo1","camo2"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\recon_helmet_co.paa","TEI_UNSC_Units\ODST\data\recon_helmet_co.paa"}; /// what texture is going to be used
 		class ItemInfo: HeadgearItem 
 		{
 			uniformModel   																		= "\TEI_UNSC_Units\ODST\recon_helmet.p3d"; /// what model does the vest use
@@ -743,8 +810,28 @@ class cfgWeapons
 			mass   																				= 20;
 			modelSides[]   																		= {6};
 			passThrough   																		= 0.1; /// coef of damage passed to total damage
-			hiddenSelections[]   																= {"camo1"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"TEI_UNSC_Units\ODST\data\recon_helmet_co.paa"}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   														= {"TEI_UNSC_Units\ODST\data\recon_helmet_co.paa","TEI_UNSC_Units\ODST\data\recon_helmet_co.paa"}; /// what texture is going to be used
+		};
+	};
+	class TEI_UNSC_Recon_helmet_dp: TEI_UNSC_ODST_helmet_base
+	{	
+		scope   																			  	= 1; /// scope needs to be 2 to have a visible class
+		author																					= "Eridanus Insurrection Team";
+		picture   																				= "\TEI_UNSC_Units\ODST\icons\odst_recon.paa";
+		displayName    																			= "[UNSC] ONI Recon Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
+		model     																				= "\TEI_UNSC_Units\ODST\recon_helmet.p3d"; /// what model does the vest use
+		hiddenSelections[]   																	= {"camo1","camo2"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\recon_helmet_co.paa",""}; /// what texture is going to be used
+		class ItemInfo: HeadgearItem 
+		{
+			uniformModel   																		= "\TEI_UNSC_Units\ODST\recon_helmet.p3d"; /// what model does the vest use
+			armor   																			= 20; /// what protection does the vest provide
+			mass   																				= 20;
+			modelSides[]   																		= {6};
+			passThrough   																		= 0.1; /// coef of damage passed to total damage
+			hiddenSelections[]   																= {"camo1","camo2"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   														= {"TEI_UNSC_Units\ODST\data\recon_helmet_co.paa",""}; /// what texture is going to be used
 		};
 	};
 	class TEI_UNSC_ODST_InstructorHat: TEI_UNSC_ODST_helmet_base

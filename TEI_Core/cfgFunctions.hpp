@@ -11,6 +11,7 @@ class CfgFunctions
 			class podLaunch{};
 			class podLaunchAI{};
 			class podLand{};
+			class podLandAI{};
 			class podDoor{};
 			class podCallAI{};
 			class podCallSelf{};
@@ -30,21 +31,11 @@ class CfgFunctions
 	};
 };
 
-/*class Extended_PostInit_EventHandlers //This is a CBA configuration for the HUD
+class Extended_PostInit_EventHandlers
 {
-	class TEI_HUD
-	{
-		init	 																				= "call TEI_HUD_fnc_Init";
-		serverInit 																				= "call TEI_HUD_fnc_Init";
-		disableModuload 																		= "true";
-	};
-	class TEI_HEV
-	{
-		init	 																				= "call TEI_HEV_fnc_Init";
-		serverInit 																				= "call TEI_HEV_fnc_Init";
-		disableModuload 																		= "true";
-	};
-};*/
+	TEI_HEV_Fncs_Init 																			= [] spawn TEI_HEV_fnc_Init;
+	TEI_HUD_Fncs_Init 																			= [] spawn TEI_HUD_fnc_Init;
+};
 
 class RscStdText //More HUD Stuff
 {
@@ -59,26 +50,26 @@ class RscStdText //More HUD Stuff
 
 class RscTitles //Even More HUD Stuff
 {
-	titles[] 																					= {"TEI_ODST_HUD"};
-	class TEI_ODST_HUD
+	titles[] 																					= {"TEI_ODST_HUD_blue"};
+	class TEI_ODST_HUD_blue
 	{
 		idd																						= -1; // ID ... always -1
 		movingEnable 																			= false; // always false
 		duration																				= 999999999; // time of the effect (in seconds)
-		name 																					= "TEI_ODST_HUD"; // name in editor
+		name 																					= "TEI_ODST_HUD_blue"; // name in editor
 		sizeEx 																					= 256;// Size required for ARMA
-		controls[]																				= {"TEI_ODST_HUD_class"};
+		controls[]																				= {"TEI_ODST_HUD_blue_class"};
 		fadein																					= 0;
 		fadeout																					= 0;
 
-		class TEI_ODST_HUD_class : RscStdText //RscPicture // For pictures
+		class TEI_ODST_HUD_blue_class : RscStdText //RscPicture // For pictures
 		{
 			style																				= 48; 
 			x 																					= safeZoneXAbs; 
 			y 																					= safeZoneY; 
 			w 																					= safeZoneWAbs; 
 			h 																					= safeZoneH;
-			text																				= "\TEI_Core\scripts\Data\odst_hud_lightblue_ca.paa";
+			text																				= "\TEI_Core\scripts\Data\odst_hud_blue_ca.paa";
 			sizeEx 																				= 1;
 		};
 	};

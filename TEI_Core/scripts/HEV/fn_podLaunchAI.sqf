@@ -39,12 +39,10 @@ _impact = createVehicle ["G_40mm_HE", [0,0,10000], [], 0, ""];
 _impact attachto [_pod,[0,0,0]];
 
 _ODST_POD_DrawUp = createVehicle ["Sign_Sphere10cm_F", [_pos select 0,_pos select 1,0], [], 0, ""];
-_ODST_POD_DrawDown = createVehicle ["Sign_Sphere10cm_F", [_pos select 0,_pos select 1,10000], [], 0, ""];
+_ODST_POD_DrawDown = createVehicle ["Sign_Sphere10cm_F", [_pos select 0,_pos select 1,0], [], 0, ""];
 _ODST_POD_DrawUp hideObjectGlobal true;
 _ODST_POD_DrawDown hideObjectGlobal true;
 _ODST_POD_DrawUp attachto [_pod,[0,0,2]];
-
-_collision = lineIntersects [getposATL _ODST_POD_DrawUp, getposATL _ODST_POD_DrawDown, _ODST_POD_DrawUp, _ODST_POD_DrawDown];
 _landed = false;
 
 while {!(_landed)} do
@@ -54,14 +52,9 @@ while {!(_landed)} do
 	_height = round (_pos select 2);
 	_waterheight = round (_waterpos select 2);
 	_collision = lineIntersects [getposATL _ODST_POD_DrawUp, getposATL _ODST_POD_DrawDown, _ODST_POD_DrawUp, _ODST_POD_DrawDown];
-	sleep 0.025;
-	[_pod, "TEI_HEV_Wind1",50] call CBA_fnc_globalSay3d;
-	[_pod, "TEI_HEV_Wind2",50] call CBA_fnc_globalSay3d;
 	
 	if ((_height < 125) && (_height > 75) && !(_chutedeployed)) then
 	{
-		[_pod, "TEI_HEV_Chute",100] call CBA_fnc_globalSay3d;
-		
 		_chute attachto [_pod,[0,0,0.6],"chute_attach"];
 		_chutedeployed = true;
 		
@@ -76,10 +69,10 @@ while {!(_landed)} do
 		];
 	};
 	
-	if ((_height < 3) || (_collision) || (_waterheight < 3)) then
+	if ((_height < 2) || (_collision) || (_waterheight < 2)) then
 	{
 		_landed = true;
 	};
 };
 
-[_pod, _unit, _chute, _impact, _fire] call TEI_HEV_fnc_podLand;
+[_pod, _unit, _chute, _impact, _fire, _height, _light] spawn xt_TEI_HEV_fnc_podLandAI;

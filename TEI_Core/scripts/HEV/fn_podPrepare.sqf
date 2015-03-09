@@ -1,4 +1,4 @@
-_unit = _this select 1;
+_unit = _this select 0;
 _Selfpod = "TEI_HEV" createVehicle [0,0,10000];
 _Selfpod setPos [getmarkerPos "SelfDrop" select 0, getmarkerPos "SelfDrop" select 1, 500];
 _Selfpod setdir (random 360);
@@ -11,5 +11,4 @@ _attach setdir (getdir _Selfpod);
 _Selfpod attachto [_attach,[0,0,0]];
 _Selfpod setdir 180;
 _Selfpod setVectorUp [0,0,1];
-_Selfpod addaction [("<t color=""#DF0101"">" + ("/// INITIATE DROP SEQUENCE ///") +"</t>"), TEI_HEV_fnc_podLaunch, "", 7, true, true, "", "_this == driver _target"];
 deletemarker "SelfDrop";

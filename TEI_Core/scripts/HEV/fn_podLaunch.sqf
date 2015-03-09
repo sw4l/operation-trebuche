@@ -2,7 +2,7 @@ _pod = _this select 0;
 _unit = _this select 1;
 _action = _this select 2;
 _launchloading = 1;
-_counter = 1;
+_counter = 5;
 _chutedeployed = false;
 _pod removeaction _action;
 
@@ -32,7 +32,7 @@ _vel = velocity _pod;
 _pod setVelocity [
 	(_vel select 0),
 	(_vel select 1),
-	(_vel select 2) - 30
+	(_vel select 2) - 40
 ];
 
 _pod setvehiclelock "LOCKED";
@@ -58,112 +58,28 @@ _chute = createVehicle ["TEI_HEV_Chute", [0,0,10000], [], 0, ""];
 _impact = createVehicle ["G_40mm_HE", [0,0,10000], [], 0, ""];
 _impact attachto [_pod,[0,0,0]];
 
-_ODST_POD_DrawUp = createVehicle ["Sign_Sphere10cm_F", [_pos select 0,_pos select 1,0], [], 0, ""];
-_ODST_POD_DrawDown = createVehicle ["Sign_Sphere10cm_F", [_pos select 0,_pos select 1,0], [], 0, ""];
-_ODST_POD_DrawUp hideObjectGlobal true;
-_ODST_POD_DrawDown hideObjectGlobal true;
-_ODST_POD_DrawUp attachto [_pod,[0,0,2]];
 _landed = false;
-
-/*
-[17, [false, false, false], 
-{
-	_steerpod = vehicle player;
-	_steerpos = getposASL _steerpod;
-	_steerdir = getdir _steerpod; 
-	_steerpod setVelocity [0,0,0];
-	_steervel = velocity _steerpod;
-	_steerpod setVelocity [
-	(_steervel select 0) + (sin _steerdir * 0.5),
-	(_steervel select 1) + (cos _steerdir * 0.5),
-	(_steervel select 2) - 0.1
-	];
-}, "keyDown", "ODST_POD_AdjustForwards"] call CBA_fnc_addKeyHandler;
-
-[31, [false, false, false], 
-{
-	_steerpod = vehicle player;
-	_steerpos = getposASL _steerpod;
-	_steerdir = getdir _steerpod; 
-	_steerpod setVelocity [0,0,0];
-	_steervel = velocity _steerpod;
-	_steerpod setVelocity [
-	(_steervel select 0) - (sin _steerdir * 0.5),
-	(_steervel select 1) - (cos _steerdir * 0.5),
-	(_steervel select 2) - 0.1
-	];
-}, "keyDown", "ODST_POD_AdjustBackwards"] call CBA_fnc_addKeyHandler;
-
-[40, [false, false, false], 
-{
-	_steerpod = vehicle player;
-	_steerpos = getposASL _steerpod;
-	_steerdir = getdir _steerpod; 
-	_steerpod setVelocity [0,0,0];
-	_steervel = velocity _steerpod;
-	_steerpod setVelocity [
-	(_steervel select 0) + (cos _steerdir * 0.5),
-	(_steervel select 1) + (sin _steerdir * 0.5),
-	(_steervel select 2) - 0.1
-	];
-}, "keyDown", "ODST_POD_AdjustLeft"] call CBA_fnc_addKeyHandler;
-
-[32, [false, false, false], 
-{
-	_steerpod = vehicle player;
-	_steerpos = getposASL _steerpod;
-	_steerdir = getdir _steerpod;
-	_steerpod setVelocity [0,0,0];
-	_steervel = velocity _steerpod;
-	_steerpod setVelocity [
-	(_steervel select 0) + (cos _steerdir * 0.5),
-	(_steervel select 1) + (sin _steerdir * 0.5),
-	(_steervel select 2) - 0.1
-	];
-}, "keyDown", "ODST_POD_AdjustRight"] call CBA_fnc_addKeyHandler;
-
-[18, [false, false, false], 
-{
-	_steerpod = vehicle player;
-	_steerdir = getdir _steerpod;
-	_steerpod setdir (_steerdir + 5);
-	_steerpos = getposATL _Steerpod;
-	_steerpod setpos [(_steerpos select 0),(_steerpos select 1),(_steerpos select 2)-4];
-}, "keyDown", "ODST_POD_TurnRight"] call CBA_fnc_addKeyHandler;
-
-[16, [false, false, false], 
-{
-	_steerpod = vehicle player;
-	_steerdir = getdir _steerpod;
-	_steerpod setdir (_steerdir - 5);
-	_steervel = velocity _steerpod;
-	_steerpos = getposATL _Steerpod;
-	_steerpod setpos [(_steerpos select 0),(_steerpos select 1),(_steerpos select 2)-4];
-}, "keyDown", "ODST_POD_TurnLeft"] call CBA_fnc_addKeyHandler;
-*/
 
 while {!(_landed)} do
 {
 	_pos = getposATL _pod;
 	_waterpos = getposASL _pod;
+	_vel = velocity _pod;
 	_height = round (_pos select 2);
 	_waterheight = round (_waterpos select 2);
-	_collision = lineIntersects [getposATL _ODST_POD_DrawUp, getposATL _ODST_POD_DrawDown, _ODST_POD_DrawUp, _ODST_POD_DrawDown];
-	hintSilent format["ALTITUDE (ATL) = %1\nALTITUDE(ASL) = %2\nMagnetic Locks = %3", _height, _waterheight, _collision];
-	sleep 0.025;
+	_downvel = round (_vel select 2);
+	hintSilent format["ALTITUDE (ATL) = %1\nALTITUDE(ASL) = %2\nVELOCITY = %3", _height, _waterheight, _downvel];
+	
 	[_pod, "TEI_HEV_Wind1", 50] call CBA_fnc_globalSay3d;
 	[_pod, "TEI_HEV_Wind2", 50] call CBA_fnc_globalSay3d;
 	
 	if ((_height < 125) && (_height > 75) && !(_chutedeployed)) then
 	{
 		[_pod, "TEI_HEV_Chute",100] call CBA_fnc_globalSay3d;
-		
 		_chute attachto [_pod,[0,0,0.6],"chute_attach"];
 		_chutedeployed = true;
-		
 		detach _fire;
 		deletevehicle _fire;
-		
 		_vel = velocity _pod;
 		_pod setVelocity [
 		(_vel select 0),
@@ -172,10 +88,10 @@ while {!(_landed)} do
 		];
 	};
 	
-	if ((_height < 2) || (_collision) || (_waterheight < 2)) then
+	if (((_vel select 2) > -5) && (_height < 100)) then
 	{
 		_landed = true;
 	};
 };
 
-[_pod, _unit, _chute, _impact, _fire, _height] call TEI_HEV_fnc_podLand;
+[_pod, _unit, _chute, _impact, _fire, _height, _light] spawn xt_TEI_HEV_fnc_podLand;

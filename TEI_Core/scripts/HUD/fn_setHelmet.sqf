@@ -1,5 +1,5 @@
 _helmet = (headgear player);
-call TEI_HUD_fnc_getHelmet;
+ _getHelmet_fnc = TEI_HUD_fnc_getHelmet;
 if (TEI_HUD_Type == 1) then {
 	removeHeadgear player;
 	_DepHelmet = _helmet + "_dp";
