@@ -623,8 +623,8 @@ class cfgWeapons
 		{
 			uniformModel = "\A3\Characters_F_EPC\Civil\equip_press_vest_01";
 			containerClass = "Supply160"; //Carry Amount
-			mass = 50; // Weight
-			armor = "5*1.4";
+			mass = 30; // Weight
+			armor = "30";
 			passThrough = 0.4;
 			hiddenSelections[] = {"camo"};
 		};
@@ -642,7 +642,7 @@ class cfgWeapons
 			uniformModel = "A3\Characters_F_Beta\INDEP\equip_ia_vest02";
 			containerClass = "Supply160"; //Carry Amount
 			mass = 50; // Weight
-			armor = "5*1.4";
+			armor = "30";
 			passThrough = 0.4;
 			hiddenSelections[] = {"camo"};
 		};

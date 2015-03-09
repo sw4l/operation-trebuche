@@ -1,6 +1,6 @@
 class StageTI
 {
-	texture = "TEI_Misc\Objects\data\cigarette_emission_ca";
+	texture = "\TEI_Misc\Objects\data\cigarette_emission_ca";
 };
 ambient[] = {1,1,1,1};
 diffuse[] = {1,1,1,1};
