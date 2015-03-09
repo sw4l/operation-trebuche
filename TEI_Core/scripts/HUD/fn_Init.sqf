@@ -14,5 +14,9 @@ while {player == player} do {
 	} else {
 		117 cutText ["", "PLAIN"];
 	};
+	if (!TEI_HUD_MainCheck) then {
+		setAperture -1;
+		TEI_HUD_NVOn = 0;
+	};
 	sleep 0.1;
 };

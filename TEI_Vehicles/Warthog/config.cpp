@@ -27,7 +27,7 @@ class CfgAmmo
 		//typicalSpeed = 9000;
 		//maxSpeed = 9999;
 		cost = 1000;
-		hit = 500;
+		hit = 300;
 		whistleOnFire = 1;
 		whistleDist = 14;
 		tracerScale = 6;

@@ -36,7 +36,7 @@ class CfgUnitInsignia //Unit Insignias to show on players' shoulders
 		texture = "\TEI_Emblems\data\medic.paa"; // Image path
 		textureVehicle = ""; // Does nothing currently, reserved for future use
 	};
-	class TEI_Insignia_odstlogo1
+	/*class TEI_Insignia_odstlogo1
 	{
 		displayName = "[UNSC] ODST 1"; // Name displayed in Arsenal
 		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
@@ -525,5 +525,5 @@ class CfgUnitInsignia //Unit Insignias to show on players' shoulders
 		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
 		texture = "\TEI_Emblems\data\yinyang.paa"; // Image path
 		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
+	};*/
 };

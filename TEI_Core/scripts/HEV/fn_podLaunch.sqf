@@ -94,4 +94,4 @@ while {!(_landed)} do
 	};
 };
 
-[_pod, _unit, _chute, _impact, _fire, _height, _light] spawn xt_TEI_HEV_fnc_podLand;
+[_pod, _unit, _chute, _impact, _fire, _height, _light] spawn TEI_HEV_fnc_podLand;
