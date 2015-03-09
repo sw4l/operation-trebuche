@@ -29,7 +29,7 @@ class CfgWeapons
 	};
 		class TEI_MedKit: Medikit
 	{
-		scope 										= 1;
+		scope 										= 2;
 		displayName 								= "Medical Pack";
 		picture 									= "\TEI_weapons\items\icons\medkit.paa";
 		model 										= "\TEI_Weapons\items\MedKit.p3d";

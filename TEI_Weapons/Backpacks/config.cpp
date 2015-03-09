@@ -59,7 +59,7 @@ class cfgVehicles {
         };
 		class TEI_ILCS_Rucksack_Medical : B_Bergen_Base 
 		{
-				scope = protected;
+				scope = 2;
 				class TransportMagazines{};
 				class TransportWeapons{};
 				isbackpack = 1;
@@ -67,7 +67,7 @@ class cfgVehicles {
 				transportMaxWeapons = 1;
 				transportMaxMagazines = 16;
 				class DestructionEffects{};
-                displayName = "[UNSC] ILCS Medical Base";
+                displayName = "[UNSC] ILCS Medical Backpack";
                 model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
 				vehicleClass = "TEI_UNSC_Backpack_class";
 				allowedSlots[] = {901};
@@ -243,11 +243,11 @@ class cfgVehicles {
 		};
 		class TEI_ILCS_Rucksack_Medical1: B_AssaultPack_rgr_Medic
 		{
-				scope = public;
-				
-                displayName = "[UNSC] ILCS Rucksack+ (Medical)";
+				scope = 1;
+                displayName = "[UNSC] ILCS Medical Backpack";
                 model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
 				vehicleClass = "TEI_UNSC_Backpack_class";
+				picture = "\TEI_Weapons\Backpacks\icons\rucksack_med.paa";
 				allowedSlots[] = {901};
 				hiddenSelections[] 								= {"camo1"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_med_CO.paa"};
@@ -255,9 +255,9 @@ class cfgVehicles {
 				class TransportWeapons{};
 				class TransportItems
 				{
-					class _xx_Medkit
+					class _xx_TEI_MedKit
 					{
-					name = "Medkit";
+					name = "TEI_Medkit";
 					count = 1;
 					};
 					class _xx_TEI_Biofoam
