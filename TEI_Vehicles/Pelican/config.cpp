@@ -82,8 +82,8 @@ class CfgVehicles
 		mainBladeRadius = 0.1;						/// describes the radius of main rotor - used for collision detection
 		liftForceCoef = 20; //2					///multiplier of lift force	
 		bodyFrictionCoef = 1.4777;	//0.2				///multiplier of body friction
-		cyclicAsideForceCoef = 4.0;	//2	   			///multiplier of bank force
-        cyclicForwardForceCoef = 2.0;	   				///multiplier of dive force
+		cyclicAsideForceCoef = 3.5;	//2	   			///multiplier of bank force
+        cyclicForwardForceCoef = 1.3;	   				///multiplier of dive force
 		//simulation = helicopterX;
 		//frontRotorForceCoef = 10000;  //30       				///front rotor(strenth of lift)
 		backRotorForceCoef = 2;   //30       				///tailrotor(strength of horzontal movement=)

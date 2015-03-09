@@ -6,7 +6,7 @@ class CfgAmmo
 	
 	class TEI_B_5x23_Caseless: B_9x21_Ball
 	{
-		hit = 8;
+		hit = 9;
 		cartridge = "FxCartridge_65_caseless";
 	};
 	class TEI_B_5x23_Caseless_Tracer: B_9x21_Ball_Tracer_Green

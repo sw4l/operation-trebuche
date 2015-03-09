@@ -68,7 +68,7 @@ icon = "iconManOfficer";
 
 CLASS NAMES
 
-UNSC Army - Woodland Classnames:
+UNSC Army - Woodland Classnames: TEI_UNSC_Man_Army_W_class
 
 TEI_UNSC_Army_W_Medic
 TEI_UNSC_Army_W_Radioman
@@ -95,7 +95,7 @@ TEI_UNSC_Army_W_UAV_Op
 TEI_UNSC_Army_W_Unarmed
 TEI_UNSC_Army_W_Officer
 
-UNSC Army - Desert Classnames:
+UNSC Army - Desert Classnames: TEI_UNSC_Man_Army_D_class
 
 TEI_UNSC_Army_D_Medic
 TEI_UNSC_Army_D_Radioman
@@ -122,7 +122,7 @@ TEI_UNSC_Army_D_UAV_Op
 TEI_UNSC_Army_D_Unarmed
 TEI_UNSC_Army_D_Officer
 
-UNSC Marines Classnames:
+UNSC Marines Classnames: TEI_UNSC_Man_Marines_class
 
 TEI_UNSC_Marine_Corpsman
 TEI_UNSC_Marine_Radioman
@@ -165,14 +165,38 @@ TEI_UNSC_ODST_Paramedic
 TEI_UNSC_ODST_Demo
 TEI_UNSC_ODST_ONI_Op
 
-INS United Rebel Front Classnames:
+INS United Rebel Front Classnames: TEI_Ins_Man_URF_class
 
+TEI_Ins_URF_Boarder
+TEI_Ins_URF_Medic
+TEI_Ins_URF_Radioman
+TEI_Ins_URF_Pilot
+TEI_Ins_URF_Rifleman_AR
+TEI_Ins_URF_Rifleman_BR
+TEI_Ins_URF_Rifleman_AT
+TEI_Ins_URF_Rifleman_Light
+TEI_Ins_URF_AT_Specialist
+TEI_Ins_URF_AA_Specialist
+TEI_Ins_URF_Engineer
+TEI_Ins_URF_Breacher
+TEI_Ins_URF_TeamLead
+TEI_Ins_URF_SquadLead
+TEI_Ins_URF_Grenadier
+TEI_Ins_URF_Autorifleman
+TEI_Ins_URF_Assist_Autorifleman
+TEI_Ins_URF_Marksman
+TEI_Ins_URF_Sniper
+TEI_Ins_URF_Observer
+TEI_Ins_URF_Crewman
+TEI_Ins_URF_Demolitions
+TEI_Ins_URF_UAV_Op
+TEI_Ins_URF_Unarmed
+TEI_Ins_URF_Officer
 
-
-INS Eridanus Rebels Classnames:
+INS Eridanus Rebels Classnames: TEI_Ins_Man_ER_class
 
 TEI_Ins_ER_Surgeon
-TEI_Ins_Guerilla_AR
+TEI_Ins_ER_Guerilla_AR
 TEI_Ins_ER_Insurgent_BR
 TEI_Ins_ER_Rebel_AT
 TEI_Ins_ER_Farmer
