@@ -516,7 +516,7 @@ class cfgWeapons
         hiddenSelectionsTextures[] = {"TEI_Ins_Units\data\innie_boonie_grey_co.paa"}; // Path to your texture.
         class ItemInfo: HeadgearItem
         {
-            mass = 40; // Weight
+            mass = 5; // Weight
             uniformModel = "\a3\characters_f\Common\booniehat";
             modelSides[] = {6};
             //armor = "3*0.6";
@@ -542,7 +542,7 @@ class cfgWeapons
         hiddenSelectionsTextures[] = {"TEI_Ins_Units\data\innie_patrolcap_green_co.paa"}; // Path to your texture.
         class ItemInfo: HeadgearItem
         {
-            mass = 40; 
+            mass = 5; 
             uniformModel = "\a3\characters_f\Common\cappatrol";
 			hiddenSelections[] = {"camo"};
 			hiddenSelectionsTextures[] = {"TEI_Ins_Units\data\innie_patrolcap_green_co.paa"};
@@ -573,7 +573,7 @@ class cfgWeapons
         hiddenSelectionsTextures[] = {"TEI_Ins_Units\data\inne_MICHOD_co.paa"}; // Path to your texture.
         class ItemInfo: HeadgearItem
         {
-            mass = 40; 
+            mass = 30; 
             uniformModel = "\A3\Characters_F_Beta\INDEP\headgear_helmet_canvas";
 			hiddenSelections[] = {"camo"};
 			hiddenSelectionsTextures[] = {"TEI_Ins_Units\data\inne_MICHOD_co.paa"};

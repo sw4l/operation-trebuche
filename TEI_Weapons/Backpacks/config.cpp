@@ -255,9 +255,9 @@ class cfgVehicles {
 				class TransportWeapons{};
 				class TransportItems
 				{
-					class _xx_Medikit
+					class _xx_Medkit
 					{
-					name = "Medikit";
+					name = "Medkit";
 					count = 1;
 					};
 					class _xx_TEI_Biofoam

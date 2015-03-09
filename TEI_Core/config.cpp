@@ -120,6 +120,11 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 		displayName 																			= "Men (ODST)";
 		author																					= "Eridanus Insurrection Team";
 	};
+	class TEI_UNSC_Man_Special_class
+	{
+		displayName																				= "Men (Special)";
+		author																					= "Eridanus Insurrection Team";
+	};
 	class TEI_UNSC_Object_class
 	{
 		displayName 																			= "Objects (UNSC)";
@@ -178,6 +183,11 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class TEI_Ins_Man_URF_class
 	{
 		displayName 																			= "Men (United Rebel Front)";
+		author																					= "Eridanus Insurrection Team";
+	};
+	class TEI_Ins_Man_Special_class
+	{
+		displayName																				= "Men (Special)";
 		author																					= "Eridanus Insurrection Team";
 	};
 	class TEI_Ins_Object_class

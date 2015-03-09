@@ -297,8 +297,8 @@ class CfgVehicles //This configures units and backpacks
 		displayName										= "Team Leader";
 		backpack 										= "B_Kitbag_rgr";
 		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
-		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
-		respawnlinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_h_Jarhead_cap_Marine","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnlinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_h_Jarhead_cap_Marine","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		weapons[] 										= {"TEI_MA5BGL_AC","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_MA5BGL_AC","Throw","Put"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
@@ -586,8 +586,8 @@ class TEI_UNSC_Army_D_Medic: TEI_UNSC_Army_W_Medic //Configures the unit part of
 		displayName										= "Team Leader";
 		backpack 										= "B_Kitbag_cbr";
 		vehicleClass									= "TEI_UNSC_Man_Army_D_class";
-		linkedItems[] 									= {"TEI_UNSC_M52_Vest_DES","H_MilCap_mcamo","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
-		respawnlinkedItems[] 							= {"TEI_UNSC_M52_Vest_DES","H_MilCap_mcamo","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_DES","TEI_h_Jarhead_cap_Marine","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnlinkedItems[] 							= {"TEI_UNSC_M52_Vest_DES","TEI_h_Jarhead_cap_Marine","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		weapons[] 										= {"TEI_MA5BGL_AC","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_MA5BGL_AC","Throw","Put"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
