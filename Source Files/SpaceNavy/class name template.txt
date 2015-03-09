@@ -171,7 +171,18 @@ INS United Rebel Front Classnames:
 
 INS Eridanus Rebels Classnames:
 
-
+TEI_Ins_ER_Surgeon
+TEI_Ins_Guerilla_AR
+TEI_Ins_ER_Insurgent_BR
+TEI_Ins_ER_Rebel_AT
+TEI_Ins_ER_Farmer
+TEI_Ins_ER_MAdvisor
+TEI_Ins_ER_Deserter_GL
+TEI_Ins_ER_Militia_MG
+TEI_Ins_ER_Assassin
+TEI_Ins_ER_Terrorist
+TEI_Ins_ER_Unarmed
+TEI_Ins_ER_Warlord
 
 -----------------------------------
 

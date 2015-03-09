@@ -38,6 +38,10 @@ class CfgVehicles
 	class C_man_hunter_1_F;	
 	class I_G_Soldier_M_F;
 	class I_G_Soldier_A_F;
+	class TEI_Ins_URF_officer_base;
+	class TEI_Ins_URF_soldierCmbtUni_OD_base;
+	
+	
 	
 	// SOLDIERS
 	
@@ -56,12 +60,12 @@ class CfgVehicles
         model                               = "";
         weapons[]                           = {"Throw","Put"};
         respawnWeapons[]             	    = {"Throw","Put"};
-        Items[]                             = {"FirstAidKit"};
-        RespawnItems[]                      = {"FirstAidKit"};
+        Items[]                             = {"TEI_Biofoam"};
+        RespawnItems[]                      = {"TEI_Biofoam"};
         magazines[]                         = {};
         respawnMagazines[]                  = {};
-        linkedItems[]                 	    = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-        respawnLinkedItems[]           	    = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        linkedItems[]                 	    = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        respawnLinkedItems[]           	    = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
         headgearProbability            	    = 0;
         allowedHeadgear[]                   = {};
         backpack                            = "";
@@ -85,8 +89,8 @@ class CfgVehicles
 		RespawnItems[]									= {"TEI_Biofoam"};
 		magazines[]										= {};
 		respawnMagazines[]								= {};
-		linkedItems[] 									= {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] 							= {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] 									= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+		respawnLinkedItems[] 							= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
 		hiddenSelections[] 								= {"camo"}; //Determines what hiddenselections are enabled
 		//hiddenSelectionsTextures[] 						= {"TEI_Ins_Units\Data\innie_uniform_ _CO.paa"};
 	};
@@ -103,8 +107,8 @@ class CfgVehicles
 		RespawnItems[]									= {"TEI_Biofoam"};
 		magazines[]										= {};
 		respawnMagazines[]								= {};
-		linkedItems[] 									= {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] 							= {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] 									= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+		respawnLinkedItems[] 							= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
 		hiddenSelections[] 								= {"camo"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 						= {"TEI_Ins_Units\Data\innie_apparel_tan_CO.paa"};
 	};
@@ -134,8 +138,8 @@ class CfgVehicles
 		RespawnItems[]									= {"TEI_Biofoam"};
 		magazines[]										= {};
 		respawnMagazines[]								= {};
-		linkedItems[] 									= {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] 							= {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] 									= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+		respawnLinkedItems[] 							= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
 		hiddenSelections[] 								= {"camo"};
 		hiddenSelectionsTextures[] 						= {"TEI_Ins_Units\Data\innie_smocks_od_co.paa"};
 	};
@@ -159,12 +163,12 @@ class CfgVehicles
         model                               = "\A3\characters_F_gamma\Guerrilla\ig_guerrilla1_1.p3d";
         weapons[]                           = {"Throw","Put"};
         respawnWeapons[]             	    = {"Throw","Put"};
-        Items[]                             = {"FirstAidKit"};
-        RespawnItems[]                      = {"FirstAidKit"};
+        Items[]                             = {"TEI_Biofoam"};
+        RespawnItems[]                      = {"TEI_Biofoam"};
         magazines[]                         = {};
         respawnMagazines[]                  = {};
-        linkedItems[]                 	    = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-        respawnLinkedItems[]           	    = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        linkedItems[]                 	    = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        respawnLinkedItems[]           	    = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
         headgearProbability            	    = 0;
         allowedHeadgear[]                   = {};
         backpack                            = "";
@@ -182,79 +186,110 @@ class CfgVehicles
 	 
 	 
 	 
+	 //H_Beret_blk
+	 //H_MilCap_gry
+	 //TEI_h_Ins_beret_od
+	 //TEI_v_Ins_vest
+	 //TEI_v_Ins_GAvest
+	 //TEI_h_MICH_OD
+	 //TEI_h_PatrolCap_Brown
+	 //TEI_h_PatrolCap_Green
+	 //TEI_h_Booniehat_Green
+	 //TEI_h_Booniehat_Grey
+	 //H_Watchcap_blk
+	 //H_Booniehat_oli
+	 
+	 //B_AssaultPack_khk
+	 //B_AssaultPack_rgr
 	 
 	 
 	 class TEI_Ins_ER_Surgeon: TEI_Ins_URF_officer_base //Configures the unit part of the Units Uniform
 	{
+		
 		scope 											= 2;
 		attendant 										= 1;
-		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
+		displayName										= "Surgeon";
+		backpack 										= "TEI_ILCS_Rucksack_Medical1";
+		weapons[] 										= {"TEI_MA5B_AC","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put"};
+		linkedItems[]                 	    = {"TEI_v_Ins_vest","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        respawnLinkedItems[]           	    = {"TEI_v_Ins_vest","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 		//press vest + grey military cap
+		
 	};
-	class TEI_Ins_Guerilla_AR: 
+	class TEI_Ins_ER_Guerilla_AR: TEI_Ins_ER_Insurgent_Grey
 	{
 		scope											= 2;
-		displayName										= "Rifleman (MA5)";
-		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
-		backpack 										= "B_Kitbag_rgr";
+		displayName										= "Guerilla (MA5)";
+		backpack 										= "B_AssaultPack_rgr";
+		linkedItems[]                 	    = {"TEI_v_Ins_vest","TEI_h_Booniehat_Grey","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        respawnLinkedItems[]           	    = {"TEI_v_Ins_vest","TEI_h_Booniehat_Grey","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 	};
-	class TEI_Ins_ER_Insurgent_BR: 
+	class TEI_Ins_ER_Insurgent_BR: TEI_Ins_ER_Insurgent_OD
 	{
 		scope											= 2;
-		displayName										= "Rifleman (BR55)";
-		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
-		backpack 										= "B_Kitbag_rgr";
+		displayName										= "Insurgent (BR55)";
+		backpack 										= "B_AssaultPack_rgr";
+		linkedItems[]                 	    = {"TEI_v_Ins_vest","H_Booniehat_oli","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        respawnLinkedItems[]           	    = {"TEI_v_Ins_vest","H_Booniehat_oli","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
 		weapons[] 										= {"TEI_BR55HB_ScopedRifle","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_BR55HB_ScopedRifle","Throw","Put"};
 		magazines[] 									= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 		respawnMagazines[] 								= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 	};
-	class TEI_Ins_ER_Rebel_AT: 
+	class TEI_Ins_ER_Rebel_AT: TEI_Ins_ER_Rebel_tan
 	{
 		scope											= 2;
-		displayName										= "Rifleman (AT)";
-		vehicleClass									= "TEI_UNSC_Man_Army_W_class";
-		backpack 										= "TEI_Kitbag_rgr_Rockets"; //rockets inside?
+		displayName										= "Rebel (AT)";
+		backpack 										= "B_AssaultPack_khk"; //"TEI_Kitbag_rgr_Rockets"; //rockets inside?
+		linkedItems[]                 	    = {"TEI_v_Ins_vest","TEI_h_Ins_beret_od","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        respawnLinkedItems[]           	    = {"TEI_v_Ins_vest","TEI_h_Ins_beret_od","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT","TEI_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT","TEI_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 		icon = "iconManAT";
 	};
-	class TEI_Ins_ER_Farmer: 
+	class TEI_Ins_ER_Farmer: TEI_Ins_ER_Terrorist_Brown
 	{
 		scope											= 2;
 		displayName										= "Farmer (M45)";
 		engineer 										= 1;
-		backpack 										= "TEI_Kitbag_rgr_Exp";
+		backpack 										= "TEI_Kitbag_rgr_Exp"; //B_AssaultPack_khk
+		linkedItems[]                 	    = {"TEI_v_Ins_vest","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        respawnLinkedItems[]           	    = {"TEI_v_Ins_vest","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
 		weapons[] 										= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
 		respawnWeapons[] 								= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
 		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs"};
 		respawnMagazines[] 								= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs"};
 		icon = "iconManEngineer";
 	};
-	class TEI_Ins_ER_MAdvisor: 
+	class TEI_Ins_ER_MAdvisor: TEI_Ins_URF_soldierCmbtUni_OD_base
 	{
 		scope											= 2;
 		displayName										= "Militia Advisor";
-		backpack 										= "B_Kitbag_rgr";
-		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
-		respawnlinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		backpack 										= "B_AssaultPack_rgr";
+		linkedItems[] 									= {"TEI_v_Ins_GAvest","TEI_h_MICH_OD","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles","TEI_Biofoam","TEI_NVG"};
+		respawnlinkedItems[] 							= {"TEI_v_Ins_GAvest","TEI_h_MICH_OD","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles","TEI_Biofoam","TEI_NVG"};
 		weapons[] 										= {"TEI_MA5BGL_AC","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_MA5BGL_AC","Throw","Put"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
 		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag_Tracer","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
 		icon = "iconManLeader";
 	};
-	class TEI_Ins_ER_Deserter_GL: 
+	class TEI_Ins_ER_Deserter_GL: TEI_Ins_ER_Terrorist_Brown
 	{
 		scope											= 2;
 		displayName										= "Deserter (GL)";
-		backpack 										= "B_Kitbag_rgr";
+		backpack 										= "B_AssaultPack_khk";
+		linkedItems[]                 	    = {"TEI_v_Ins_vest","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        respawnLinkedItems[]           	    = {"TEI_v_Ins_vest","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
 		weapons[] 										= {"TEI_MA5BGL_AC","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_MA5BGL_AC","Throw","Put"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
@@ -264,29 +299,33 @@ class CfgVehicles
 	{
 		scope											= 2;
 		displayName										= "Militia (MG)";
-		//backpack										= assistance AR backpack with ammo inside
+		//backpack										= assistance AR backpack with ammo inside //B_AssaultPack_khk
+		linkedItems[]                 	    = {"TEI_v_Ins_vest","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        respawnLinkedItems[]           	    = {"TEI_v_Ins_vest","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
 		weapons[] 										= {"LMG_Zafir_F","Throw","Put"};
 		respawnWeapons[] 								= {"LMG_Zafir_F","Throw","Put"};
 		magazines[] 									= {"150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 		respawnMagazines[] 								= {"150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 		icon = "iconManMG";
 	};
-	class TEI_Ins_ER_Assassin: 
+	class TEI_Ins_ER_Assassin: TEI_Ins_ER_Insurgent_OD
 	{
 		scope											= 2;
 		displayName										= "Assassin";
-		linkedItems[] 									= {"TEI_UNSC_M52_Vest2_WDL","TEI_UNSC_CH252_Helmet2_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
-		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest2_WDL","TEI_UNSC_CH252_Helmet2_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		linkedItems[] 									= {"H_Watchcap_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"H_Watchcap_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles","TEI_Biofoam","TEI_NVG"};
 		weapons[] 										= {"srifle_GM6_SOS_F","TEI_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"srifle_GM6_SOS_F","TEI_M6G_SF","Throw","Put"};
-		magazines[] 									= {"5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
-		respawnMagazines[] 								= {"5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		magazines[] 									= {"5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","SmokeShell","SmokeShellGreen"};
 	};
-	class TEI_Ins_ER_Terrorist: 
+	class TEI_Ins_ER_Terrorist: TEI_Ins_ER_Insurgent_Grey
 	{
 		scope											= 2;
 		displayName										= "Terrorist";
 		backpack 										= "TEI_Kitbag_rgr_Exp";
+		linkedItems[]                 	    = {"TEI_v_Ins_vest","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        respawnLinkedItems[]           	    = {"TEI_v_Ins_vest","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
 		engineer 										= 1;
 		weapons[] 										= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
 		respawnWeapons[] 								= {"TEI_M45_olive","Throw","Put","TEI_M6G_SF"};
@@ -294,7 +333,7 @@ class CfgVehicles
 		respawnMagazines[] 								= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs","HandGrenade","HandGrenade","SmokeShell","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag"};
 		icon = "iconManExplosive";
 	};
-	class TEI_Ins_ER_Unarmed: 
+	class TEI_Ins_ER_Unarmed: TEI_Ins_ER_Rebel_tan
 	{
 		scope											= 2;
 		displayName										= "Unarmed";
@@ -303,12 +342,12 @@ class CfgVehicles
 		magazines[] 									= {};
 		respawnMagazines[] 								= {};
 	};
-	class TEI_Ins_ER_Warlord: 
+	class TEI_Ins_ER_Warlord: TEI_Ins_URF_officer_base
 	{
 		scope											= 2;
 		displayName										= "Warlord";
-		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
-		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		linkedItems[] 									= {"TEI_UNSC_M52_Vest_WDL","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles","TEI_Biofoam","TEI_NVG"};
 		weapons[] 										= {"TEI_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_M6G_SF","Throw","Put"};
 		magazines[] 									= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};

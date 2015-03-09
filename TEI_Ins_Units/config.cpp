@@ -310,6 +310,139 @@ class CfgGroups
 						position[] = {5,-5,0};
 					};
 				};
+				
+				
+				
+				
+				
+				class TEI_Ins_ER_Inf_Patrol
+				{
+					name = "Patrol";
+					side = 0;
+					faction = "TEI_Ins";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 0;
+						vehicle = "TEI_Ins_ER_Guerilla_AR";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 0;
+						vehicle = "TEI_Ins_ER_Deserter_GL";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+					};
+				};
+				
+				class TEI_Ins_ER_Inf_MSquad
+				{
+					name = "Militia Squad";
+					side = 0;
+					faction = "TEI_Ins";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 0;
+						vehicle = "TEI_Ins_ER_MAdvisor";
+						rank = "SERGEANT";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 0;
+						vehicle = "TEI_Ins_ER_Terrorist";
+						rank = "CORPORAL";
+						position[] = {5,-5,0};
+					};
+					class Unit2
+					{
+						side = 0;
+						vehicle = "TEI_Ins_ER_Deserter_GL";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+					};
+					class Unit3
+					{
+						side = 0;
+						vehicle = "TEI_Ins_ER_Insurgent_BR";
+						rank = "PRIVATE";
+						position[] = {10,-5,0};
+					};
+					class Unit4
+					{
+						side = 0;
+						vehicle = "TEI_Ins_ER_Militia_MG";
+						rank = "PRIVATE";
+						position[] = {-10,-5,0};
+					};
+					class Unit5
+					{
+						side = 0;
+						vehicle = "TEI_Ins_ER_Farmer";
+						rank = "PRIVATE";
+						position[] = {15,-5,0};
+					};
+					class Unit6
+					{
+						side = 0;
+						vehicle = "TEI_Ins_ER_Assassin";
+						rank = "PRIVATE";
+						position[] = {-15,-5,0};
+					};
+					class Unit7
+					{
+						side = 0;
+						vehicle = "TEI_Ins_ER_Rebel_AT";
+						rank = "PRIVATE";
+						position[] = {20,-5,0};
+					};
+					class Unit8
+					{
+						side = 0;
+						vehicle = "TEI_Ins_URF_TeamLead";
+						rank = "CORPORAL";
+						position[] = {-20,-5,0};
+					};
+				};
+				
+				class TEI_Ins_ER_Inf_Group
+				{
+					name = "Group";
+					side = 0;
+					faction = "TEI_Ins";
+					rarityGroup = 0.3;
+					class Unit0
+					{
+						side = 0;
+						vehicle = "TEI_Ins_ER_MAdvisor";
+						rank = "CORPORAL";
+						position[] = {0,0,0};
+					};
+					class Unit1
+					{
+						side = 0;
+						vehicle = "TEI_Ins_ER_Militia_MG";
+						rank = "PRIVATE";
+						position[] = {5,-5,0};
+					};
+					class Unit2
+					{
+						side = 0;
+						vehicle = "TEI_Ins_ER_Insurgent_BR";
+						rank = "PRIVATE";
+						position[] = {-5,-5,0};
+					};
+					class Unit3
+					{
+						side = 0;
+						vehicle = "TEI_Ins_ER_Guerilla_AR";
+						rank = "PRIVATE";
+						position[] = {10,-5,0};
+					};
+				};
 			};		
 		};
 	};
