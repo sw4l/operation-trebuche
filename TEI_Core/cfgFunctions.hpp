@@ -62,7 +62,6 @@ class RscTitles //Even More HUD Stuff
 		controls[]																				= {"TEI_ODST_HUD_blue_class"};
 		fadein																					= 0;
 		fadeout																					= 0;
-
 		class TEI_ODST_HUD_blue_class : RscStdText //RscPicture // For pictures
 		{
 			style																				= 48; 
@@ -72,6 +71,42 @@ class RscTitles //Even More HUD Stuff
 			h 																					= safeZoneH;
 			text																				= "\TEI_Core\scripts\Data\odst_hud_blue_ca.paa";
 			sizeEx 																				= 1;
+		};
+	};
+	class TEI_ODST_HUD_purple: TEI_ODST_HUD_blue
+	{
+		name 																					= "TEI_ODST_HUD_purple";
+		controls[]																				= {"TEI_ODST_HUD_purple_class"};
+		class TEI_ODST_HUD_purple_class : TEI_ODST_HUD_blue_class //RscPicture // For pictures
+		{
+			text																				= "\TEI_Core\scripts\Data\odst_hud_purple_ca.paa";
+		};
+	};
+	class TEI_ODST_HUD_white: TEI_ODST_HUD_blue
+	{
+		name 																					= "TEI_ODST_HUD_white";
+		controls[]																				= {"TEI_ODST_HUD_white_class"};
+		class TEI_ODST_HUD_purple_class : TEI_ODST_HUD_blue_class //RscPicture // For pictures
+		{
+			text																				= "\TEI_Core\scripts\Data\odst_hud_white_ca.paa";
+		};
+	};
+	class TEI_ODST_HUD_green: TEI_ODST_HUD_blue
+	{
+		name 																					= "TEI_ODST_HUD_green";
+		controls[]																				= {"TEI_ODST_HUD_green_class"};
+		class TEI_ODST_HUD_purple_class : TEI_ODST_HUD_blue_class //RscPicture // For pictures
+		{
+			text																				= "\TEI_Core\scripts\Data\odst_hud_green_ca.paa";
+		};
+	};
+	class TEI_ODST_HUD_orange: TEI_ODST_HUD_blue
+	{
+		name 																					= "TEI_ODST_HUD_orange";
+		controls[]																				= {"TEI_ODST_HUD_orange_class"};
+		class TEI_ODST_HUD_purple_class : TEI_ODST_HUD_blue_class //RscPicture // For pictures
+		{
+			text																				= "\TEI_Core\scripts\Data\odst_hud_orange_ca.paa";
 		};
 	};
 };
