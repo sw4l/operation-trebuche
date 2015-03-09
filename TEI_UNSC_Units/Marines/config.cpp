@@ -443,8 +443,8 @@ class TEI_UNSC_Marine_medium: TEI_UNSC_Marine_Soldier_Base //Configures the unit
 		displayName										= "Sgt. Avery Johnson";
 		vehicleClass									= "TEI_UNSC_Man_Marines_class";
 		identityTypes[] 								= {"TEI_Sgt_Johnson_ID"};
-		linkedItems[] 									= {"TEI_UNSC_Marine_Vest","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
-		respawnLinkedItems[] 							= {"TEI_UNSC_Marine_Vest","TEI_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		linkedItems[] 									= {"TEI_UNSC_Marine_Vest","TEI_h_Jarhead_cap_Marine","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
+		respawnLinkedItems[] 							= {"TEI_UNSC_Marine_Vest","TEI_h_Jarhead_cap_Marine","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		weapons[] 										= {"TEI_BR55HB_ScopedRifle","TEI_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_BR55HB_ScopedRifle","TEI_M6G_SF","Throw","Put"};
 		magazines[] 									= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag_Tracer","TEI_36Rnd_95x40_Mag_Tracer","TEI_36Rnd_95x40_Mag_Tracer","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","SmokeShell","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
@@ -696,5 +696,23 @@ class cfgWeapons
 			hiddenSelections[]   								= {"camo1","camo2"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   							= {"TEI_UNSC_Units\Army\data\helmet_cam3_co.paa","TEI_UNSC_Units\Army\data\addons_co.paa"}; /// what texture is going to be used
 		};
+	};
+	class TEI_h_Jarhead_cap_Marine: ItemCore
+    {
+        scope = 2;
+		weaponPoolAvailable = 1;
+        displayName = "[UNSC] Jarhead Cap (Marine)"; //In-Game name
+        model = "\a3\characters_f\Common\cappatrol"; // Model
+		picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_H_MilCap_gry_ca.paa";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\TEI_UNSC_Units\Marines\jarhead_co.paa"}; // Path to your texture.
+        class ItemInfo: HeadgearItem
+        {
+            mass = 5; 
+            uniformModel = "\a3\characters_f\Common\cappatrol";
+			hiddenSelections[] = {"camo"};
+			hiddenSelectionsTextures[] = {"\TEI_UNSC_Units\Marines\jarhead_co.paa"};
+            modelSides[] = {6};
+        };
 	};
 };

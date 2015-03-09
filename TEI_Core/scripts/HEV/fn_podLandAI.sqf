@@ -28,7 +28,7 @@ _light setLightColor[0,1,0];
 
 sleep 1;
 
-//_podDoor_fnc = [_unit, _pod] spawn xt_TEI_HEV_fnc_podDoor;
+_podDoor_fnc = [_unit, _pod] spawn TEI_HEV_fnc_podDoorAI;
 
 _pod setvehiclelock "UNLOCKED";
 _pod allowdamage true;

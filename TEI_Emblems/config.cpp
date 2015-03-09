@@ -1,19 +1,3 @@
-enum {
-DESTRUCTENGINE 																					= 2,
-DESTRUCTDEFAULT 																				= 6,
-DESTRUCTWRECK 																					= 7,
-DESTRUCTTREE 																					= 3,
-DESTRUCTTENT 																					= 4,
-STABILIZEDINAXISX 																				= 1,
-STABILIZEDINAXESXYZ 																			= 4,
-STABILIZEDINAXISY 																				= 2,
-STABILIZEDINAXESBOTH 																			= 3,
-DESTRUCTNO 																						= 0,
-STABILIZEDINAXESNONE 																			= 0,
-DESTRUCTMAN 																					= 5,
-DESTRUCTBUILDING 																				= 1,
-};
-
 class CfgPatches //This configures the identification of the pbo to the game
 {
 	class TEI_Emblems
@@ -31,12 +15,12 @@ class CfgUnitInsignia //Unit Insignias to show on players' shoulders
 {
 	class TEI_Insignia_medic
 	{
-		displayName = "[UNSC] Medic 1"; // Name displayed in Arsenal
+		displayName = "[TEI] Medic"; // Name displayed in Arsenal
 		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
 		texture = "\TEI_Emblems\data\medic.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		textureVehicle = "\TEI_Emblems\data\medic.paa"; // Does nothing currently, reserved for future use
 	};
-	class TEI_Insignia_odstlogo1
+	/*class TEI_Insignia_odstlogo1
 	{
 		displayName = "[UNSC] ODST 1"; // Name displayed in Arsenal
 		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
@@ -525,5 +509,5 @@ class CfgUnitInsignia //Unit Insignias to show on players' shoulders
 		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
 		texture = "\TEI_Emblems\data\yinyang.paa"; // Image path
 		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
+	};*/
 };

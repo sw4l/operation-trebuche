@@ -77,6 +77,7 @@ class CfgVehicles //This configures units and backpacks
 			mapSize 																	= 2.5;
 			weapons[]																	={};
 			armor 																		= 10000;
+			explosionShielding 															= 1;
 			typicalCargo[] 																= {};
 			driverAction 																= "TEI_Driver_HEV";
 			getInAction 																= "bench_Heli_Light_01_get_in";	
@@ -90,9 +91,13 @@ class CfgVehicles //This configures units and backpacks
 			canFloat 																	= true;
 			fuelCapacity 																= 0;
 			fuelConsumptionRate 														= 0;
-			crewCrashProtection 														= 0;
+			fuelExplosionPower 															= 0;
+			occludeSoundsWhenIn 														= 0;
+			obstructSoundsWhenIn 														= 0;
+			crewCrashProtection 														= 1;
 			crewExplosionProtection 													= 1;
-			soundAttenuationCargo[] 													= {0,0};
+			hiddenSelections[]															= {"camo1","camo2","camo3","camo4"};
+			hiddenSelectionsTextures[]													= {"TEI_Vehicles\hev\data\pod_CO.paa","#(argb,256,512,1)r2t(rendertarget0,1.0)","#(argb,256,512,1)r2t(rendertarget1,1.0)","tei_core\data\base\glass_ca.paa"};
 			ejectDeadDriver 															= 0;
 			#include "pip.hpp"
 
