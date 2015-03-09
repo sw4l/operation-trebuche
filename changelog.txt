@@ -3,10 +3,16 @@ ADDED
 	-Several Music tracks (Courtesy of Mcchaffee)
 	-UNSC weapon and ammo racks
 	-Night vision mode to A2, MA5, and Pistol scopes
-	-M9 Grenade
 	-Inventory Icons
 	-HEV and HUD function suites
+	-improved readme with installation instructions and FAQ
+	-No Ironsights verison of the MA5 ammo counter
+	-GL Sight flip-up animation
+	-new ODST body suit texture
+	-UNSC Jarhead cap for Team Leaders
 FIXED
+	-MA5B shadow glitch
+	-Arma 3 crashing with ASDG-JR (if you use it, update to 0.13)
 	-army right shoulder pad, missing face
 	-army/ marine pants uv mapping
 	-army/ marine clipping around the neck
@@ -18,7 +24,7 @@ FIXED
 	-tei_intro music not playing
 	-tei_intro some odst sunk into the ground
 	-tei_music call to arms not working
-	-tei_music envaged not working
+	-tei_music engaged not working
 	-warthog cannot load armour_plate
 	-glitch on warthog windows causing no visual effect on turrets
 	-shadow lod on odst grave
@@ -29,14 +35,24 @@ FIXED
 	-innie warthog proper texture
 	-pistol slide animations
 	-backpack shadow lods
-	-GL Sight flip-up and accuracy
+	-GL Sight accuracy
+	-rocket launcher ammo firing incorrectly
+	-pelican open/close ramp dialog not going away
+	
 TWEAKED
+	-AR ammo counter modelOptics
+	-pelican sound loudness
 	-engine exhaust fumes moving with engines
 	-all ammunition damage values
+	-all armor values
 	-pelican armor and hitpoints
 	-pelican handling
+	-ONI operator has light armor now
 REMOVED
 	-MP3 Music Files (dun goofed)
 	-NATO Pelican
+
+------------------------------------------------------------------
+
 v0.1
 	-Released

@@ -1,21 +1,27 @@
 v0.12
 
 UNITS
-	-Some Insurrectionist clothing is invisible in the VA
-	-Fire Geo LOD for Warthogs broken
-	-Awful looking Pelican cockpit
+
+	-Random facewear can spawn on units with closed headgear
+	-can see out the inside of the ODST helmet
 	
 VEHICLES
+
 	-Easy to pop rear Warthog tires
 	-M1087 Stallion needs added
 	-M1015 Mule needs added
+	-Awful looking Pelican cockpit
+	-Gauss cannon aimming off a bit
+
 WEAPONS
+
 	-SMG animations missing
-	-Weapon/Item crates need filled
+	-SMG and M6G are too small
+	-Muzzle flashes missing
+	-MA5B flashlight not an attachment
+
 MISC
+
 	-Dirt material on many assets when shot
 	-Fuzzy shadows for many assets
 	-Thermal support needs added
-v0.1
-
-ALOT
