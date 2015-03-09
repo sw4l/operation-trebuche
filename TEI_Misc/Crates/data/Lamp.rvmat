@@ -8,7 +8,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "TEI_Misc\Crates\data\guncrate_nohq.paa";
+	texture = "TEI_Misc\Crates\data\lamp_nohq.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture = "TEI_Misc\Crates\data\guncrate_as.paa";
+	texture = "#(argb,8,8,3)color(0,1,1,1,AS)";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "TEI_Misc\Crates\data\guncrate_smdi.paa";
+	texture = "TEI_Misc\Crates\data\lamp_smdi.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
