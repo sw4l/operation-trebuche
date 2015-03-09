@@ -47,8 +47,8 @@ class CfgVehicles
 		model = "\A3\weapons_F\AmmoBoxes\Supplydrop";
 		author = "Eridanus Insurrection Team";
 		icon = "iconCrateWpns";
-		transportMaxWeapons = 500;
-		transportMaxMagazines = 5000;
+		transportMaxWeapons = 50000;
+		transportMaxMagazines = 5000000;
 		class TransportMagazines
 		{
 			class xx_TEI_60Rnd_762x51_Mag
@@ -101,6 +101,45 @@ class CfgVehicles
 				magazine = "TEI_8Rnd_127x40_Mag_Tracer";
 				count = 99;
 			};
+			class xx_TEI_M41_Twin_HEAT
+			{
+				magazine = "TEI_M41_Twin_HEAT";
+				count = 99;
+			};
+			class xx_TEI_M41_Twin_HEAT_G
+			{
+				magazine = "TEI_M41_Twin_HEAT_G";
+				count = 99;
+			};
+			class xx_TEI_M41_Twin_HEAP
+			{
+				magazine = "TEI_M41_Twin_HEAP";
+				count = 99;
+			};class xx_TEI_M41_Twin_HEAA
+			{
+				magazine = "TEI_M41_Twin_HEAA";
+				count = 99;
+			};
+			class xx_TEI_60Rnd_5x23mm_Mag
+			{
+				magazine = "TEI_60Rnd_5x23mm_Mag";
+				count = 99;
+			};
+			class xx_TEI_60Rnd_5x23mm_Mag_Tracer
+			{
+				magazine = "TEI_60Rnd_5x23mm_Mag_Tracer";
+				count = 99;
+			};
+			class xx_TEI_48Rnd_5x23mm_Mag
+			{
+				magazine = "TEI_48Rnd_5x23mm_Mag";
+				count = 99;
+			};
+			class xx_TEI_48Rnd_5x23mm_Mag_Tracer
+			{
+				magazine = "TEI_48Rnd_5x23mm_Mag_Tracer";
+				count = 99;
+			};
 		};
 		class TransportWeapons
 		{
@@ -139,6 +178,16 @@ class CfgVehicles
 				weapon = "TEI_M6G";
 				count = 50;
 			};
+			class xx_TEI_M41_SSR
+			{
+				weapon = "TEI_M41_SSR";
+				count = 50;
+			};
+			class xx_TEI_M7
+			{
+				weapon = "TEI_M7";
+				count = 50;
+			};
 		};
 		class TransportItems
 		{
@@ -174,6 +223,28 @@ class CfgVehicles
 			};
 		};
 	};
+	class TEI_weapon_rack: NATO_Box_Base
+	{
+		scope = 2;
+		vehicleClass = "TEI_Ammo_class";
+		displayName = "[UNSC] Weapons Rack";
+		model = "\tei_misc\crates\weaponcrate.p3d";
+		author = "Eridanus Insurrection Team";
+		icon = "iconCrateWpns";
+		transportMaxWeapons = 50;
+		transportMaxMagazines = 500;
+	};
+	class TEI_ammo_rack: NATO_Box_Base
+	{
+		scope = 2;
+		vehicleClass = "TEI_Ammo_class";
+		displayName = "[UNSC] Ammo Rack";
+		model = "\tei_misc\crates\ammocrate.p3d";
+		author = "Eridanus Insurrection Team";
+		icon = "iconCrateWpns";
+		transportMaxWeapons = 10;
+		transportMaxMagazines = 1000;
+	};
 	class TEI_supply_pod: NATO_Box_Base
 	{
 		scope = 2;
@@ -183,11 +254,17 @@ class CfgVehicles
 		author = "Eridanus Insurrection Team";
 		icon = "iconCrateWpns";
 		transportMaxWeapons = 5;
-		transportMaxMagazines = 500;
+		transportMaxMagazines = 20;
 	};
+	
+	
+	
+	
+	
+	
 	class TEI_UNSC_ammobox: Box_NATO_Ammo_F
 	{
-		scope = 2;
+		scope = 1;
 		vehicleClass = "TEI_Ammo_class";
 		displayName = "[UNSC] Ammo Box";
 		author = "Eridanus Insurrection Team";
@@ -199,7 +276,7 @@ class CfgVehicles
 	};
 	class TEI_UNSC_weaponsbox: Box_NATO_Wps_F
 	{
-		scope = 2;
+		scope = 1;
 		vehicleClass = "TEI_Ammo_class";
 		displayName = "[UNSC] Weapons Box";
 		author = "Eridanus Insurrection Team";
@@ -210,7 +287,7 @@ class CfgVehicles
 	};
 	class TEI_UNSC_specialbox: Box_NATO_WpsSpecial_F
 	{
-		scope = 2;
+		scope = 1;
 		vehicleClass = "TEI_Ammo_class";
 		displayName = "[UNSC] Special Weapons Box";
 		author = "Eridanus Insurrection Team";
@@ -221,7 +298,7 @@ class CfgVehicles
 	};
 	class TEI_UNSC_ordbox: Box_NATO_AmmoOrd_F
 	{
-		scope = 2;
+		scope = 1;
 		vehicleClass = "TEI_Ammo_class";
 		displayName = "[UNSC] Explosives Box";
 		author = "Eridanus Insurrection Team";
@@ -232,7 +309,7 @@ class CfgVehicles
 	};
 	class TEI_UNSC_grenadebox: Box_NATO_Grenades_F
 	{
-		scope = 2;
+		scope = 1;
 		vehicleClass = "TEI_Ammo_class";
 		displayName = "[UNSC] Grenades Box";
 		author = "Eridanus Insurrection Team";
@@ -243,7 +320,7 @@ class CfgVehicles
 	};
 	class TEI_UNSC_supportbox: Box_NATO_Support_F
 	{
-		scope = 2;
+		scope = 1;
 		vehicleClass = "TEI_Ammo_class";
 		displayName = "[UNSC] Support Box";
 		author = "Eridanus Insurrection Team";
@@ -254,7 +331,7 @@ class CfgVehicles
 	};
 	class TEI_UNSC_itembox: Box_NATO_Support_F
 	{
-		scope = 2;
+		scope = 1;
 		vehicleClass = "TEI_Ammo_class";
 		displayName = "[UNSC] Item Box";
 		author = "Eridanus Insurrection Team";
@@ -265,7 +342,7 @@ class CfgVehicles
 	};
 	class TEI_UNSC_launcherbox: Box_NATO_WpsLaunch_F
 	{
-		scope = 2;
+		scope = 1;
 		vehicleClass = "TEI_Ammo_class";
 		displayName = "[UNSC] Launchers Box";
 		author = "Eridanus Insurrection Team";
@@ -276,7 +353,7 @@ class CfgVehicles
 	};
 	class TEI_UNSC_vehammobox: Box_NATO_AmmoVeh_F
 	{
-		scope = 2;
+		scope = 1;
 		vehicleClass = "TEI_Ammo_class";
 		displayName = "[UNSC] Vehicle Ammo Box";
 		author = "Eridanus Insurrection Team";
@@ -284,27 +361,5 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"TEI_Misc\Crates\data\TEI_UNSC_ammobox_signs_ca.paa","A3\Weapons_F\Ammoboxes\data\AmmoVeh_CO.paa"};
 		//transportMaxWeapons = 5;
 		//transportMaxMagazines = 500;
-	};
-	class TEI_weapon_rack: NATO_Box_Base
-	{
-		scope = 2;
-		vehicleClass = "TEI_Ammo_class";
-		displayName = "[UNSC] Weapons Rack";
-		model = "\tei_misc\crates\weaponcrate.p3d";
-		author = "Eridanus Insurrection Team";
-		icon = "iconCrateWpns";
-		transportMaxWeapons = 20;
-		transportMaxMagazines = 500;
-	};
-	class TEI_ammo_rack: NATO_Box_Base
-	{
-		scope = 2;
-		vehicleClass = "TEI_Ammo_class";
-		displayName = "[UNSC] Ammo Rack";
-		model = "\tei_misc\crates\ammocrate.p3d";
-		author = "Eridanus Insurrection Team";
-		icon = "iconCrateWpns";
-		transportMaxWeapons = 5;
-		transportMaxMagazines = 1000;
 	};
 };
