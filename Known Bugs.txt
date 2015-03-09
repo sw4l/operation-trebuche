@@ -1,0 +1,21 @@
+v0.12
+
+UNITS
+	-Some Insurrectionist clothing is invisible in the VA
+	-Fire Geo LOD for Warthogs broken
+	-Awful looking Pelican cockpit
+	
+VEHICLES
+	-Easy to pop rear Warthog tires
+	-M1087 Stallion needs added
+	-M1015 Mule needs added
+WEAPONS
+	-SMG animations missing
+	-Weapon/Item crates need filled
+MISC
+	-Dirt material on many assets when shot
+	-Fuzzy shadows for many assets
+	-Thermal support needs added
+v0.1
+
+ALOT

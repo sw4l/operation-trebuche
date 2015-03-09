@@ -1,54 +1,42 @@
-[fixed] army right shoulder pad, missing face
-[fixed] army/ marine pants uv mapping
-[fixed] army/ marine clipping around the neck
-[fixed] odst clipping around the neck
-[fixed] odst clipping around the hands
-[fixed] army/ marine clipping around the hands
-[fixed] pelican entry/exit points
-[fixed] pelican bounced off water, missing bouy lod
-[removed] pelican in nato class
-[tweaked] engine exhaust fumes moving with engines
-[tweaked] all ammunition damage values
-[tweaked] pelican armor and hitpoints made tougher
-[tweaked] pelican handling
-[fixed] tei_intro music not playing
-[fixed] tei_intro some odst sunk into the ground
-[fixed] tei_music call to arms not working
-[fixed] tei_music envaged not working
-[fixed] warthog cannot load armour_plate
-[fixed] glitch on warthog windows causing no visual effect on turrets
-[fixed] shadow lod on odst grave
-[fixed] shadow lod on army grave
-[fixed] m7 rds opaque texture
-[fixed] backpack causing missing texture error
-[changed] innie hogs now have armed soldiers as crew
-[changed] innie warthog proper texture
-[removed] mp3 music files
-[added] tei_music drum run
-[added] tei_music impend
-[added] tei_music shotgun
-[added] tei_music amber clad
-[added] tei_music armor battle
-[added] tei_music axios
-[added] tei_music brave
-[added] tei_music choose wisely
-[added] tei_music covenant dance
-[added] tei_music creeping
-[added] tei_music creeping 2
-[added] tei_music desperate measures
-[added] tei_music follow our brothers
-[added] tei_music lead redux
-[added] tei_music life
-[added] tei_music live action
-[added] tei_music mjolner remastered
-[added] tei_music movement
-[added] tei_music movement 2
-[added] tei_music movement 3
-[added] tei_music night ops
-[added] tei_music our brothers
-[added] tei_music peril and jeopardy
-[added] tei_music rescue mission
-[added] tei_music scorpion mix
-[added] tei_music under cover of moonlight
-[added] UNSC weapon rack
-[added] UNSC ammo rack
+v0.12
+ADDED
+	-Several Music tracks (Courtesy of Mcchaffee)
+	-UNSC weapon and ammo racks
+	-Night vision mode to A2, MA5, and Pistol scopes
+	-M9 Grenade
+	-Inventory Icons
+	-HEV and HUD function suites
+FIXED
+	-army right shoulder pad, missing face
+	-army/ marine pants uv mapping
+	-army/ marine clipping around the neck
+	-odst clipping around the neck
+	-odst clipping around the hands
+	-army/ marine clipping around the hands
+	-pelican entry/exit points
+	-pelican bounced off water, missing bouy lod
+	-tei_intro music not playing
+	-tei_intro some odst sunk into the ground
+	-tei_music call to arms not working
+	-tei_music envaged not working
+	-warthog cannot load armour_plate
+	-glitch on warthog windows causing no visual effect on turrets
+	-shadow lod on odst grave
+	-shadow lod on army grave
+	-m7 rds opaque texture
+	-backpack causing missing texture error
+	-innie hogs now have armed soldiers as crew
+	-innie warthog proper texture
+	-pistol slide animations
+	-backpack shadow lods
+	-GL Sight flip-up and accuracy
+TWEAKED
+	-engine exhaust fumes moving with engines
+	-all ammunition damage values
+	-pelican armor and hitpoints
+	-pelican handling
+REMOVED
+	-MP3 Music Files (dun goofed)
+	-NATO Pelican
+v0.1
+	-Released

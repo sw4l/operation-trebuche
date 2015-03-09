@@ -1,0 +1,76 @@
+Format
+	- classname (displayname)
+
+FACTIONS
+	- TEI_UNSC (UNSCDF)
+	- TEI_Ins (Insurrectionists)
+
+GROUPS
+	TEI_Ins
+		- TEI_Ins_URF_Inf_Sentry (Sentry)
+		- TEI_Ins_URF_Inf_RifleSquad (Rifle Squad)
+		- TEI_Ins_URF_Inf_Fireteam (Fireteam)
+		- TEI_Ins_URF_Inf_CmdSquad (Command Squad)
+		- TEI_Ins_URF_Inf_AntiTank (Anti-Tank Team)
+		- TEI_Ins_URF_Inf_AntiAir (Anti-Air Team)
+		- TEI_Ins_URF_Inf_Sniper (Sniper Team)
+		- TEI_Ins_ER_Inf_Patrol (Patrol)
+		- TEI_Ins_ER_Inf_MSquad (Militia Squad)
+		- TEI_Ins_ER_Inf_Group (Group)
+	TEI_UNSC
+		- TEI_UNSC_Army_W_Inf_Sentry (Army Sentry (W))
+		- TEI_UNSC_Army_W_Inf_RifleSquad (Army Rifle Squad (W))
+		- TEI_UNSC_Army_W_Inf_Fireteam (Army Fireteam (W))
+		- TEI_UNSC_Army_W_Inf_CmdSquad (Army Command Squad (W))
+		- TEI_UNSC_Army_W_Inf_AntiTank (Army Anti-Tank Team (W))
+		- TEI_UNSC_Army_W_Inf_AntiAir (Army Anti-Air Team (W))
+		- TEI_UNSC_Army_W_Inf_Sniper (Army Sniper Team (W))
+		- Desert Variants - TEI_UNSC_Army_W_Inf_Sentry (W -> D) TEI_UNSC_Army_D_Inf_Sentry
+		- Marine Variants - TEI_UNSC_Army_W_Inf_Sentry (Army_W -> Marine) TEI_UNSC_Marine_Inf_Sentry
+		- TEI_UNSC_ODST_Sentry (ODST Sentry)
+		- TEI_UNSC_ODST_Fireteam (ODST Fireteam)
+		- TEI_UNSC_ODST_Scout_Fireteam (ODST Scout Fireteam)
+		- TEI_UNSC_ODST_Squad (ODST Squad)
+
+WEAPONS
+	- TEI_MA5B (MA5B ICWS Assault Rifle)
+	- TEI_MA5B_AC (MA5B ICWS Assault Rifle) [Attached - MA5B Ammocounter]
+	- TEI_MA5BGL (MA5B + M309 Assault Rifle)
+	- TEI_MA5BGL_AC (MA5B ICWS Assault Rifle) [Attached - MA5B Ammocounter]
+	- TEI_BR55 (BR55HB Battle Rifle)
+	- TEI_BR55HB_ScopedRifle (BR55HB Battle Rifle) [Attached - BR55 A2 Scope]
+	- TEI_M6G (M6G Magnum)
+	- TEI_M6G_SF (M6G Magnum) [Attached - M6G KFA-2 SmartLink Scope, M6G Flashlight]
+	- TEI_M41_SSR (M41 SSR MAV/AW)
+	- TEI_M45 (M45 Tactical Shotgun)
+	- TEI_M45_tan (M45 Tactical Shotgun [Tan])
+	- TEI_M45_olive (M45 Tactical Shotgun [Olive])
+	- TEI_M7 (M7/Caseless SMG)
+	- TEI_M7S (M7/Caseless SMG) [Attached - M7 SLS/V 5B Reflex, M7 Laser Aiming Module, M7 SS-M 49 Suppressor]
+	- TEI_M9_Frag (M9 HE-DP Grenade)
+
+MAGAZINES
+	- TEI_60Rnd_762x51_Mag
+	- TEI_60Rnd_762x51_Mag_Tracer
+	- TEI_32Rnd_762x51_Mag
+	- TEI_32Rnd_762x51_Mag_Tracer
+	- TEI_36Rnd_95x40_Mag
+	- TEI_36Rnd_95x40_Mag_Tracer
+	- TEI_8Rnd_127x40_Mag
+	- TEI_8Rnd_127x40_Mag_Tracer
+	- TEI_M41_HEAT
+	- TEI_M41_HEAT_G
+	- TEI_M41_HEAP
+	- TEI_M41_HEAA
+	- TEI_M41_Twin_HEAT
+	- TEI_M41_Twin_HEAT_G
+	- TEI_M41_Twin_HEAP
+	- TEI_M41_Twin_HEAA
+	- TEI_6Rnd_8Gauge_Pellets
+	- TEI_6Rnd_8Gauge_Slugs
+	- TEI_60Rnd_5x23mm_Mag
+	- TEI_60Rnd_5x23mm_Mag_tracer
+	- TEI_48Rnd_5x23mm_Mag
+	- TEI_48Rnd_5x23mm_Mag_tracer
+	
+ITEMS
