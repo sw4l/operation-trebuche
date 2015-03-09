@@ -29,7 +29,7 @@ _light setLightColor[0,1,0];
 
 sleep 1;
 
-_unit addaction [("<t color=""#DF0101"">" + ("/// EMERGENCY DOOR EJECT ///") +"</t>"),[_unit, _pod] spawn TEI_HEV_fnc_podDoor, "", 7, true, true, "", "_this == driver _target"];
+_unit addaction [("<t color=""#DF0101"">" + ("/// EMERGENCY DOOR EJECT ///") +"</t>"), TEI_HEV_fnc_podDoor, [_unit, _pod], 7, true, true, "", "_this == driver _target"];
 
 _pod setvehiclelock "UNLOCKED";
 _pod allowdamage true;

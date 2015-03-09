@@ -13,6 +13,7 @@ class CfgFunctions
 			class podLand{};
 			class podLandAI{};
 			class podDoor{};
+			class podDoorAI{};
 			class podCallAI{};
 			class podCallSelf{};
 		};
