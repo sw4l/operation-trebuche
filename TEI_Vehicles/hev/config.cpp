@@ -93,8 +93,8 @@ class CfgVehicles //This configures units and backpacks
 			crewCrashProtection 														= 0;
 			crewExplosionProtection 													= 1;
 			soundAttenuationCargo[] 													= {0,0};
-			hiddenSelections[]															= {"camo1"};
-			hiddenSelectionsTextures[]													= {"TEI_Vehicles\hev\data\pod_CO.paa"};
+			hiddenSelections[]															= {"camo1","camo2","camo3"};
+			hiddenSelectionsTextures[]													= {"TEI_Vehicles\hev\data\pod_CO.paa","#(argb,256,512,1)r2t(rendertarget0,1.0)","#(argb,256,512,1)r2t(rendertarget1,1.0)"};
 			ejectDeadDriver 															= 0;
 			#include "pip.hpp"
 
