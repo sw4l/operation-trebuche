@@ -8,7 +8,7 @@ _pod removeaction _action;
 
 while {_launchloading == 1} do
 {
-	hint format["HEV Insertion Initiating.\n\nPlease keep hands and feet inside the pod until you have safely reached the surface\n\nUse W/A/S/D to control the course correction boosters\n\nExpect hostile forces to greet you upon arrival\n\nHave a nice day!\n\n%1", _counter];
+	hint format["HEV Insertion Initiating.\n\nPlease keep hands and feet inside the pod until you have safely reached the surface\n\nExpect hostile forces to greet you upon arrival\n\nHave a nice day!\n\n%1", _counter];
 	sleep 1;
 	if (_counter == 0) then
 	{

@@ -1,5 +1,8 @@
 _unit = _this select 3 select 0;
 _pod = _this select 3 select 1;
+_action = _this select 2;
+_pod removeaction _action;
+
 _pod setobjecttextureglobal [0,""];
 _door = createVehicle ["TEI_HEV_Door", [0,0,10000], [], 0, ""];
 _door attachto [_pod,[0,3,0.5]];
