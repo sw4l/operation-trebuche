@@ -1271,7 +1271,7 @@ class cfgWeapons
 	{	
 		scope = 1;
 		author											= "Eridanus Insurrection Team";
-		picture   										= "\TEI_UNSC_Units\Army\icons\army_helmet__des_gil_vac.paa";
+		picture   										= "\TEI_UNSC_Units\Army\icons\army_helmet_des_gil_vac.paa";
 		displayName    									= "[UNSC] CH252[V] Helmet (Desert) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","camo3"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   					= {"TEI_UNSC_Units\Army\data\helmet_cam2_co.paa","TEI_UNSC_Units\Army\data\addons_cam2_ca.paa","TEI_UNSC_Units\Army\data\ghillie_3_ca.paa"}; /// what texture is going to be used
