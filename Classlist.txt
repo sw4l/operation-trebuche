@@ -47,7 +47,7 @@ WEAPONS
 	- TEI_M45_olive (M45 Tactical Shotgun [Olive])
 	- TEI_M7 (M7/Caseless SMG)
 	- TEI_M7S (M7/Caseless SMG) [Attached - M7 SLS/V 5B Reflex, M7 Laser Aiming Module, M7 SS-M 49 Suppressor]
-	- TEI_M9_Frag (M9 HE-DP Grenade)
+	- TEI_M9_Frag (M9 HE-DP Grenade) //not included yet
 
 MAGAZINES
 	- TEI_60Rnd_762x51_Mag
@@ -74,3 +74,99 @@ MAGAZINES
 	- TEI_48Rnd_5x23mm_Mag_tracer
 	
 ITEMS
+
+TEI_Biofoam
+TEI_MedKit
+
+TEI_M6G_Flashlight
+TEI_M6G_Scope
+
+TEI_M7_silencer
+TEI_M7_Sight
+TEI_M7_Laser
+TEI_M7_Flashlight
+
+TEI_BR55HB_Scope
+
+TEI_MA5B_AmmoCounter
+TEI_MA5B_AmmoCounter_NoIS
+TEI_MA5B_Flashlight //not usable yet
+
+TEI_Como_pack_1
+TEI_ILCS_Rucksack_Black
+TEI_ILCS_Rucksack_Black2
+TEI_ILCS_Rucksack_Medical
+TEI_ILCS_Rucksack_green
+TEI_ILCS_Rucksack_green2
+TEI_ILCS_Rucksack_tan
+TEI_ILCS_Rucksack_tan2
+
+
+
+VEHICLES
+
+TEI_M12_FAV
+TEI_M12_FAV_black
+TEI_M12_FAV_tan
+TEI_M12_FAV_snow
+TEI_M12_FAV_ins
+
+TEI_M813_TT
+TEI_M813_TT_black
+TEI_M813_TT_tan
+TEI_M813_TT_snow
+
+TEI_M12_LRV
+TEI_M12_LRV_black
+TEI_M12_LRV_tan
+TEI_M12_LRV_snow
+TEI_M12_LRV_ins
+
+TEI_M12G1_LRV
+TEI_M12G1_LRV_black
+TEI_M12G1_LRV_tan
+TEI_M12G1_LRV_snow
+
+TEI_M12_FAV_APC
+
+TEI_Pelican_unarmed_green
+TEI_Pelican_unarmed_tan
+TEI_Pelican_unarmed_black
+TEI_Pelican_unarmed_ins
+
+TEI_HEV
+TEI_HEV_Door
+TEI_HEV_Chute
+
+
+STATIC
+
+TEI_odst_grave
+TEI_soldier_grave
+TEI_monument
+
+FACEWEAR
+
+TEI_Cigarette
+TEI_Cigar
+
+HEADGEAR
+
+TEI_UNSC_ODST_helmet
+TEI_UNSC_ODST_helmet_recon
+TEI_UNSC_ODST_helmet_sniper
+TEI_UNSC_ODST_helmet_com
+TEI_UNSC_ODST_helmet_Medic
+..._dp //depolarized
+TEI_UNSC_ODST_InstructorHat
+
+
+UNIFORMS
+
+
+
+VESTS
+
+
+
+
