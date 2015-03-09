@@ -73,10 +73,17 @@ MAGAZINES
 	- TEI_48Rnd_5x23mm_Mag
 	- TEI_48Rnd_5x23mm_Mag_tracer
 	
-ITEMS
+
+
+
+	ITEMS
 
 TEI_Biofoam
 TEI_MedKit
+
+
+
+	ATTACHMENTS
 
 TEI_M6G_Flashlight
 TEI_M6G_Scope
@@ -92,6 +99,14 @@ TEI_MA5B_AmmoCounter
 TEI_MA5B_AmmoCounter_NoIS
 TEI_MA5B_Flashlight //not usable yet
 
+TEI_M45_Flashlight
+TEI_M45_Flashlight_red
+
+
+
+
+	BACKPACKS
+
 TEI_Como_pack_1
 TEI_ILCS_Rucksack_Black
 TEI_ILCS_Rucksack_Black2
@@ -103,7 +118,8 @@ TEI_ILCS_Rucksack_tan2
 
 
 
-VEHICLES
+
+	VEHICLES
 
 TEI_M12_FAV
 TEI_M12_FAV_black
@@ -139,18 +155,29 @@ TEI_HEV_Door
 TEI_HEV_Chute
 
 
-STATIC
+
+
+
+	STATIC
 
 TEI_odst_grave
 TEI_soldier_grave
 TEI_monument
 
-FACEWEAR
+
+
+
+
+	FACEWEAR
 
 TEI_Cigarette
 TEI_Cigar
 
-HEADGEAR
+
+
+
+
+	HEADGEAR
 
 TEI_UNSC_ODST_helmet
 TEI_UNSC_ODST_helmet_recon
@@ -160,13 +187,90 @@ TEI_UNSC_ODST_helmet_Medic
 ..._dp //depolarized
 TEI_UNSC_ODST_InstructorHat
 
+TEI_UNSC_CH252_Helmet_WDL
+TEI_UNSC_CH252V_Helmet_WDL
+TEI_UNSC_CH252_Helmet_DES
+TEI_UNSC_CH252V_Helmet_DES
+TEI_UNSC_CH252_Helmet_Medic
+TEI_UNSC_CH252V_Helmet_Medic
+TEI_UNSC_CH252_Helmet2_WDL
+TEI_UNSC_CH252_Helmet2b_WDL
+TEI_UNSC_CH252_Helmet2_DES
+TEI_UNSC_CH252_Helmet2b_DES
+TEI_UNSC_Marine_helmet
+TEI_UNSC_Marine_helmet_vacuum
+TEI_h_Jarhead_cap_Marine
 
-UNIFORMS
+TEI_h_Ins_beret_od
+TEI_h_Booniehat_Grey
+TEI_h_Booniehat_Green
+TEI_h_PatrolCap_Green
+TEI_h_PatrolCap_Brown
+TEI_h_MICH_OD
 
 
 
-VESTS
+
+
+	UNIFORMS
+
+TEI_UNSC_ODST_uniform
+TEI_UNSC_ODST_uniform_light
+TEI_UNSC_ODST_uniform_medium
+TEI_UNSC_ODST_uniform_Sniper
+TEI_UNSC_ODST_uniform_Medic
+TEI_UNSC_ODST_uniform_instructor
+TEI_UNSC_ODST_uniform_recruit
+
+TEI_UNSC_Marine_uniform_heavy
+TEI_UNSC_Marine_uniform_pilot
+TEI_UNSC_Marine_uniform_medium
+TEI_UNSC_Marine_uniform_light
+
+TEI_UNSC_Army_Pilot_BDU_WDL
+TEI_UNSC_Army_BDU_L_WDL
+TEI_UNSC_Army_BDU_WDL
+TEI_UNSC_Army_BDU_H_WDL
+TEI_UNSC_Army_Pilot_BDU_DES
+TEI_UNSC_Army_BDU_L_DES
+TEI_UNSC_Army_BDU_DES
+TEI_UNSC_Army_BDU_H_DES
+TEI_UNSC_Army_BDU_Medic
+
+TEI_Ins_URF_uniform_boarder
+TEI_Ins_URF_uniform_combatuni_OD
+TEI_Ins_URF_uniform_officer
+
+TEI_Ins_ER_uniform_GAtan
+TEI_Ins_ER_uniform_GAgreen
+TEI_Ins_ER_uniform_GGod
+TEI_Ins_ER_uniform_GGgrey
+TEI_Ins_ER_uniform_GSbrown
+TEI_Ins_ER_uniform_GSod
 
 
 
+
+	VESTS
+
+TEI_UNSC_ODST_vest
+TEI_UNSC_ODST_vest_medic
+
+TEI_UNSC_Marine_vest
+TEI_UNSC_Marine_vest_vacuum
+
+TEI_UNSC_M52_Vest_WDL
+TEI_UNSC_M52V_Vest_WDL
+TEI_UNSC_M52_Vest_DES
+TEI_UNSC_M52V_Vest_DES
+TEI_UNSC_M52_Vest_Medic
+TEI_UNSC_M52V_Vest_Medic
+TEI_UNSC_M52_Vest2_base
+TEI_UNSC_M52_Vest2_WDL
+TEI_UNSC_M52_Vest2b_WDL
+TEI_UNSC_M52_Vest2_DES
+TEI_UNSC_M52_Vest2b_DES
+
+TEI_v_Ins_vest
+TEI_v_Ins_GAvest
 

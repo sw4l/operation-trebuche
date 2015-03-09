@@ -196,6 +196,11 @@ class CfgVehicles
 				name = "TEI_MA5B_AmmoCounter";
 				count = 50;
 			};
+			class xx_TEI_MA5B_AmmoCounter_NoIS
+			{
+				name = "TEI_MA5B_AmmoCounter_NoIS";
+				count = 50;
+			};
 			class xx_TEI_BR55HB_Scope
 			{
 				name = "TEI_BR55HB_Scope";
@@ -219,6 +224,26 @@ class CfgVehicles
 			class xx_TEI_M6G_Scope
 			{
 				name = "TEI_M6G_Scope";
+				count = 50;
+			};
+			class xx_TEI_M7_silencer
+			{
+				name = "TEI_M7_silencer";
+				count = 50;
+			};
+			class xx_TEI_M7_Sight
+			{
+				name = "TEI_M7_Sight";
+				count = 50;
+			};
+			class xx_TEI_M7_Laser
+			{
+				name = "TEI_M7_Laser";
+				count = 50;
+			};
+			class xx_TEI_M7_Flashlight
+			{
+				name = "TEI_M7_Flashlight";
 				count = 50;
 			};
 		};
