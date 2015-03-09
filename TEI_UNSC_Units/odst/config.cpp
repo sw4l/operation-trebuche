@@ -305,6 +305,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class TEI_UNSC_ODST_Paramedic: TEI_UNSC_ODST_Soldier_medic
 	{
+		scope 											= 2;
 		attendant 										= 1;
 		displayName										= "ODST Paramedic";
 		cost 											= 300000;

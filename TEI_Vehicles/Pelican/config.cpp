@@ -64,7 +64,7 @@ class CfgVehicles
 		picture = "TEI_Vehicles\Pelican\Data\icon2.paa";		/// small picture in command menu
 		driveOnComponent[] = {"wheel_1_1", "wheel_2_1", "wheel_2_2"};
 		damageResistance = 0.00555;
-		fuelCapacity = 600;
+		fuelCapacity = 2000;
 		fuelConsumptionRate = 0.03845;
 		insideSoundCoef = 0.0116228;
 		noseDownCoef = 0; //?

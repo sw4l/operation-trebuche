@@ -65,7 +65,7 @@ class CfgVehicles //This configures units and backpacks
 			scope 																		= 2;
 			author																		= "Eridanus Insurrection Team";
 			model 																		= "TEI_Vehicles\HEV\hev_pod.p3d";
-			displayName 																= "Human Entry Vehicle";
+			displayName 																= "SOEIV Human Entry Vehicle";
 			nameSound																	= "chopper";
 			hasgunner																	= 0;
 			faction																		= "TEI_UNSC";

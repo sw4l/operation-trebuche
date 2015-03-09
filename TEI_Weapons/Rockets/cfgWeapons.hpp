@@ -44,6 +44,7 @@ class CfgWeapons
 		minRange = 10;
 		midRange = 250;
 		maxRange = 500;
+		modelOptics = "\A3\Weapons_F\acc\reticle_RPG_F";
 		recoil = "recoil_single_law";
 		aiRateOfFire = 10.0;	// delay between shots at given distance
 		aiRateOfFireDistance = 250;

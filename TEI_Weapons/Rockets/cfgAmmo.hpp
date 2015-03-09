@@ -23,16 +23,16 @@ class CfgAmmo
 	class M_NLAW_AT_F;
 	class ShotDeployBase;
 	
-	class TEI_M41_Rocket_HEAT: M_NLAW_AT_F
+	class TEI_M41_Rocket_HEAT: R_PG32V_F
 	{
 		scope = 2;
-		//model = "TEI_weapons\rockets\M41_rocket.p3d";
-		sideairfriction=0.075;
-		thrust=200;
-		thrusttime=0.4;
-		timetolive=10;
-		maxspeed=200;
-		canLock = 0;
+		model = "TEI_weapons\rockets\M41_rocket.p3d";
+		//sideairfriction=0.075;
+		//thrust=200;
+		//thrusttime=0.4;
+		//timetolive=10;
+		//maxspeed=200;
+		//canLock = 0;
 		/*
 		initSpeed=255;
 		hit = 600;
@@ -53,23 +53,23 @@ class CfgAmmo
 		maneuvrability = 0;
 		allowAgainstInfantry = 0;*/
 	};
-	class TEI_M41_Rocket_HEAT_Guided: M_NLAW_AT_F
+	class TEI_M41_Rocket_HEAT_Guided: R_PG32V_F
 	{
 		scope = 2;
-		//model = "TEI_weapons\rockets\M41_rocket.p3d";
+		model = "TEI_weapons\rockets\M41_rocket.p3d";
 		canLock = 2;
 
 	};
 	class TEI_M41_Rocket_HEAP: R_TBG32V_F
 	{
 		scope = 2;
-		//model = "TEI_weapons\rockets\M41_rocket.p3d";
-		sideairfriction=0.075;
-		thrust=255;
-		thrusttime=0.4;
-		canLock = 0;
-		timetolive=10;
-		maxspeed=255;
+		model = "TEI_weapons\rockets\M41_rocket.p3d";
+		//sideairfriction=0.075;
+		//thrust=255;
+		//thrusttime=0.4;
+		//canLock = 0;
+		//timetolive=10;
+		//maxspeed=255;
 	};
 	class TEI_M41_Rocket_HEAA: M_Titan_AA
 	{
@@ -77,7 +77,7 @@ class CfgAmmo
 		//thrust = 255;
 		//initSpeed = 350;
 		//maxSpeed = 350;
-		//model = "TEI_weapons\rockets\M41_rocket.p3d";
+		model = "TEI_weapons\rockets\M41_rocket.p3d";
 		//trackLead = 1;
 		//airLock = 2;
 		//irLock = 1;
