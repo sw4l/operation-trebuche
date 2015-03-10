@@ -18,7 +18,7 @@ if (isMultiplayer) then
 	};
 };
 
-while {count vehicles >= 0} do
+while {time > 0} do
 {	
 	{
 		if ((typeOf _x == "TEI_HEV") && !(_x getVariable ["TEI_HEV_HasAction", false])) then
@@ -28,7 +28,7 @@ while {count vehicles >= 0} do
 			_x setVariable ["TEI_HEV_HasAction", true, true];
 		};
 	} forEach vehicles;
-	sleep 1;
+	sleep 0.1;
 };
 
 _podCallAI_preprocess = preprocessFileLineNumbers "scripts\HEV\fn_podCallAI.sqf";
