@@ -5,14 +5,14 @@
 if (isMultiplayer) then
 {
 	{
-		_authcheck = _x getVariable ["xt_TEI_HEV_CanCallInAI", false];
+		_authcheck = _x getVariable ["TEI_HEV_CanCallInAI", false];
 		if (_authcheck) then {
 			_x addaction [("<t color=""#81BEF7"">" + ("Request ODST Support") +"</t>"), TEI_HEV_fnc_podCallAI, "", 7, true, true, "", "_this == _target"];
 		};
 	} forEach playableUnits;
 } else
 {
-	_authcheckSP = player getVariable ["xt_TEI_HEV_CanCallInAI", false];
+	_authcheckSP = player getVariable ["TEI_HEV_CanCallInAI", false];
 	if (_authcheckSP) then {
 		player addaction [("<t color=""#81BEF7"">" + ("Request ODST Support") +"</t>"), TEI_HEV_fnc_podCallAI, "", 7, true, true, "", "_this == _target"];
 	};

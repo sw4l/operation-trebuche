@@ -86,7 +86,7 @@ class RscTitles //Even More HUD Stuff
 	{
 		name 																					= "TEI_ODST_HUD_white";
 		controls[]																				= {"TEI_ODST_HUD_white_class"};
-		class TEI_ODST_HUD_purple_class : TEI_ODST_HUD_blue_class //RscPicture // For pictures
+		class TEI_ODST_HUD_white_class : TEI_ODST_HUD_blue_class //RscPicture // For pictures
 		{
 			text																				= "\TEI_Core\scripts\Data\odst_hud_white_ca.paa";
 		};
@@ -95,7 +95,7 @@ class RscTitles //Even More HUD Stuff
 	{
 		name 																					= "TEI_ODST_HUD_green";
 		controls[]																				= {"TEI_ODST_HUD_green_class"};
-		class TEI_ODST_HUD_purple_class : TEI_ODST_HUD_blue_class //RscPicture // For pictures
+		class TEI_ODST_HUD_green_class : TEI_ODST_HUD_blue_class //RscPicture // For pictures
 		{
 			text																				= "\TEI_Core\scripts\Data\odst_hud_green_ca.paa";
 		};
@@ -104,7 +104,7 @@ class RscTitles //Even More HUD Stuff
 	{
 		name 																					= "TEI_ODST_HUD_orange";
 		controls[]																				= {"TEI_ODST_HUD_orange_class"};
-		class TEI_ODST_HUD_purple_class : TEI_ODST_HUD_blue_class //RscPicture // For pictures
+		class TEI_ODST_HUD_orange_class : TEI_ODST_HUD_blue_class //RscPicture // For pictures
 		{
 			text																				= "\TEI_Core\scripts\Data\odst_hud_orange_ca.paa";
 		};
