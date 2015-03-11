@@ -34,7 +34,7 @@ class CfgVehicles
 		scope = 2;
 		vehicleClass = "TEI_UNSC_Object_class";
 		displayName = "Final Dawn";
-		model = "\TEI_frigate\finaldawn.p3d";
+		model = "\TEI_frigate\finaldawn_empty.p3d";
 		author = "Eridanus Insurrection Team";
 		icon = "iconCrateWpns";
 	};
