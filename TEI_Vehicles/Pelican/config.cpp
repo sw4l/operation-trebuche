@@ -63,6 +63,8 @@ class CfgVehicles
 		mapSize = 25; //size of icon in editor- square only in meters
 		picture = "TEI_Vehicles\Pelican\Data\icon2.paa";		/// small picture in command menu
 		driveOnComponent[] = {"wheel_1_1", "wheel_2_1", "wheel_2_2"};
+		//nameSound = "veh_air_gunship_s";
+		nameSound = "veh_air_plane_s";
 		damageResistance = 0.00555;
 		fuelCapacity = 2000;
 		fuelConsumptionRate = 0.03845;

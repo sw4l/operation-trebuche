@@ -92,72 +92,15 @@ class CfgAmmo
 			distance = 1;
 		};
 	};
-	/*class Sh_120mm_APFSDS: ShellBase
-	{
-		explosive = 0;
-		hit = 500;
-		indirectHit = 12;
-		indirectHitRange = 0.4;
-		typicalSpeed = 1680;
-		cost = 500;
-		airFriction = -3.96e-005;
-		CraterEffects = "ExploAmmoCrater";
-		explosionEffects = "ExploAmmoExplosion";
-		caliber = 30;
-		timeToLive = 15;
-		whistleOnFire = 1;
-		whistleDist = 14;
-		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_white";
-		tracerScale = 3;
-		tracerStartTime = 0.1;
-		tracerEndTime = 3.0;
-		muzzleEffect = "";
-		class HitEffects
-		{
-			hitMetal = "ImpactMetalSabotBig";
-			hitMetalPlate = "ImpactMetalSabotBig";
-			hitBuilding = "ImpactConcreteSabot";
-			hitConcrete = "ImpactConcreteSabot";
-			hitGroundSoft = "ImpactEffectsGroundSabot";
-			hitGroundHard = "ImpactEffectsGroundSabot";
-			default_mat = "ImpactEffectsGroundSabot";
-		};
-		allowAgainstInfantry = 0;
-		class CamShakeExplode
-		{
-			power = "(180^0.5)";
-			duration = "((round (180^0.5))*0.2 max 0.2)";
-			frequency = 20;
-			distance = "((180^0.5)*3)";
-		};
-		class CamShakeHit
-		{
-			power = 180;
-			duration = "((round (180^0.25))*0.2 max 0.2)";
-			frequency = 20;
-			distance = 1;
-		};
-		class CamShakeFire
-		{
-			power = "(120^0.25)";
-			duration = "((round (120^0.5))*0.2 max 0.2)";
-			frequency = 20;
-			distance = "((120^0.5)*8)";
-		};
-		class CamShakePlayerFire
-		{
-			power = 0.02;
-			duration = 0.1;
-			frequency = 20;
-			distance = 1;
-		};
-	};*/
 };
 
 class CfgMagazines
 {
 	class Default;
 	class 30Rnd_120mm_APFSDS_shells;
+	class 5Rnd_GAT_missiles;
+	class 4Rnd_GAA_missiles;
+	
 	class TEI_20Rnd_ALIM_GAUSS_slugs: 30Rnd_120mm_APFSDS_shells
 	{
 		scope = 2;
@@ -169,6 +112,39 @@ class CfgMagazines
 		initSpeed = 10000;
 		count=20;
 	};
+	
+	class 3Rnd_102mm_rockets: 5Rnd_GAT_missiles
+	{
+		scope = 2;
+		displayName = "3Rnd 102mm Guided AT Rockets";
+		displayNameShort = "AT";
+		count = 3;
+		ammo = "M_Titan_AT";
+		initSpeed = 40;
+		maxLeadSpeed = 40;
+		sound[] = {"A3\Sounds_F\weapons\Rockets\titan_2",1.25893,1,1000};
+		weaponSoundEffect = "DefaultRifle";
+		soundFly[] = {"A3\Sounds_F\weapons\Rockets\rocket_fly_2",0.501187,1.3,400};
+		soundHit[] = {"",1.25893,1,1};
+		reloadSound[] = {"",0.000316228,1,20};
+		nameSound = "missiles";
+	};
+	class 6Rnd_65mm_rockets: 4Rnd_GAA_missiles
+	{
+		scope = 2;
+		displayName = "6Rnd 65mm Guided AA Rockets";
+		displayNameShort = "AA";
+		count = 6;
+		ammo = "M_Zephyr";
+		initSpeed = 40;
+		maxLeadSpeed = 320;
+		sound[] = {"A3\Sounds_F\weapons\Rockets\titan_2",1.25893,1,1000};
+		weaponSoundEffect = "DefaultRifle";
+		soundFly[] = {"A3\Sounds_F\weapons\Rockets\rocket_fly_2",0.501187,1.3,400};
+		soundHit[] = {"",1.25893,1,1};
+		reloadSound[] = {"",0.000316228,1,20};
+		nameSound = "missiles";
+	};
 };
 
 class CfgWeapons
@@ -178,6 +154,8 @@ class CfgWeapons
 	class autocannon_35mm;
 	class cannon_120mm;
 	class RCWSOptics;
+	class missiles_titan;
+	
 	class TEI_M41_LAAG: HMG_127
 	{
 		class GunParticles
@@ -208,6 +186,38 @@ class CfgWeapons
 		class manual:MGun
 		{
 			displayName="M41 Light Anti-Aircraft Gun";
+			reloadTime=0.0667;
+			dispersion=0.00087;
+			sounds[]={"StandardSound"};
+		};
+	};
+	
+	class TEI_102R_Turret: missiles_titan
+	{
+		//selectionFireAnim = "muzzleFlash";						/// what selection is hidden when machinegun doesn't shoot
+		displayName="102mm SC-HE Turret";
+		magazines[] = {"3Rnd_102mm_rockets"};
+		aiDispersionCoefY = 15.0;
+        aiDispersionCoefX = 20.0;
+		class manual:MGun
+		{
+			displayName="102mm SC-HE Turret";
+			reloadTime=0.0667;
+			dispersion=0.00087;
+			sounds[]={"StandardSound"};
+		};
+	};
+	
+	class TEI_M79_MLRS: missiles_titan
+	{
+		//selectionFireAnim = "muzzleFlash";						/// what selection is hidden when machinegun doesn't shoot
+		displayName="M79 MLRS";
+		magazines[] = {"6Rnd_65mm_rockets"};
+		aiDispersionCoefY = 15.0;
+        aiDispersionCoefX = 20.0;
+		class manual:MGun
+		{
+			displayName="M79 MLRS";
 			reloadTime=0.0667;
 			dispersion=0.00087;
 			sounds[]={"StandardSound"};
@@ -327,7 +337,6 @@ class CfgVehicles
 				speechPlural[]={"veh_vehicle_MRAP_p"};
 			};
 		};
-		nameSound="veh_vehicle_MRAP_s";
 		author="Eridanus Insurrection Team";
 		displayName="";
 		class Library
@@ -343,6 +352,7 @@ class CfgVehicles
 		vehicleClass="Car";
 		transportSoldier=0;
 		crewVulnerable=1;
+		nameSound = "veh_car";
 		crewCrashProtection=0.015;
 		armor=120;
 		cost=500000;
@@ -1637,6 +1647,304 @@ class CfgVehicles
 		author="Eridanus Insurrection Team";
 		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_snow_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_snow_co.paa"};
+	};
+	class TEI_M12A1_LRV:TEI_M12_LRV
+	{
+		model="TEI_Vehicles\Warthog\warthog_AT.p3d";
+		displayName="M12A1 Warthog (Rocket)";
+		hiddenSelections[]={"camo1","camo2"};
+		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_CO.paa"};
+		class RenderTargets
+		{
+			class FrontView
+			{
+				renderTarget="rendertarget0";
+				class CameraView1
+				{
+					pointPosition="PIP0_pos";
+					pointDirection="PIP0_dir";
+					renderQuality=2;
+					renderVisionMode=0;
+					fov=0.7;
+				};
+			};
+			class RearView
+			{
+				renderTarget="rendertarget1";
+				class CameraView1
+				{
+					pointPosition="PIP1_pos";
+					pointDirection="PIP1_dir";
+					renderQuality=2;
+					renderVisionMode=0;
+					fov=0.7;
+				};
+			};
+			class leftMirror
+			{
+				renderTarget="rendertarget2";
+				class CameraView1
+				{
+					pointPosition="PIP2_pos";
+					pointDirection="PIP2_dir";
+					renderQuality=2;
+					renderVisionMode=0;
+					fov=0.7;
+				};
+			};
+			class rightMirror
+			{
+				renderTarget="rendertarget3";
+				class CameraView1
+				{
+					pointPosition="PIP3_pos";
+					pointDirection="PIP3_dir";
+					renderQuality=2;
+					renderVisionMode=0;
+					fov=0.7;
+				};
+			};
+			//class GunScreen
+			class Gunner_display
+			{
+				renderTarget="rendertarget4";
+				class CameraView1
+				{
+					pointPosition="PIP4_pos";
+					pointDirection="PIP4_dir";
+					renderQuality=2;
+					renderVisionMode=2;
+					fov=0.5;
+				};
+			};
+		};
+		class Turrets:Turrets
+		{
+			class CargoTurret_01:CargoTurret
+			{
+				gunnerAction="passenger_inside_2";
+				gunnerCompartments="Compartment1";
+				memoryPointsGetInGunner="pos cargo";
+				memoryPointsGetInGunnerDir="pos cargo dir";
+				memoryPointGunnerOptics="";
+				gunnerName="Front Passenger";
+				proxyIndex=1;
+				maxElev=10;
+				minElev=-40;
+				maxTurn=95;
+				minTurn=-95;
+				isPersonTurret=1;
+				class dynamicViewLimits
+				{
+					CargoTurret_02[]={-65,95};
+				};
+			};
+			class MainTurret:MainTurret
+			{
+				body="mainturret";
+				gun="maingun";
+				animationsourcebody="mainturret";
+				animationSourceGun="maingun";
+				gunAxis="Osa Hlavne";
+				gunBeg="Usti hlavne";
+				gunEnd="konec hlavne";
+				minElev=-8;
+				maxElev=16;
+				minTurn=-360;
+				maxTurn=360;
+				initTurn=0;
+				turretAxis="OsaVeze";
+				maxHorizontalRotSpeed=1.2;
+				maxVerticalRotSpeed=1.2;
+				gunnerAction="driver_boat01";
+				gunnerInAction="driver_boat01";
+				gunnerGetInAction="GetInMRAP_01";
+				gunnerGetOutAction="GetOutMRAP_01";
+				gunnerName="Gunner";
+				hideWeaponsGunner=0;
+				soundServo[]={"",0.01,1};
+				outGunnerMayFire=1;
+				inGunnerMayFire=1;
+				commanding=1;
+				primaryGunner=1;
+				memoryPointsGetInGunner="Pos Gunner";
+				memoryPointsGetInGunnerDir="Pos Gunner dir";
+				gunnerLeftHandAnimName="trigger";
+				gunnerRightHandAnimName="trigger";
+				memoryPointGun="machinegun";
+				weapons[]={"TEI_102R_Turret"};
+				magazines[] = {"3Rnd_102mm_rockets","3Rnd_102mm_rockets"};
+				memoryPointGunnerOptics="gunnerview";
+				gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";
+				//gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+				//gunnerOpticsModel="a3\weapons_f\Reticle\optics_empty";
+				gunnerOpticsShowCursor=1;
+				turretInfoType="RscWeaponZeroing";
+				//turretInfoType="RscOptics_crows";
+				visionMode[] = {"Normal","Ti"};
+				thermalMode[] = {2};
+				castGunnerShadow=1;
+				startEngine=0;
+				enableManualFire=0;
+
+				gunnerForceOptics=0;
+				class ViewGunner:ViewOptics
+				{
+					initFov=0.7;
+					minFov=0.05;
+					maxFov=1.1;
+				};
+			};
+		};
+	};
+	class TEI_M12R_AA:TEI_M12_LRV
+	{
+		model="TEI_Vehicles\Warthog\warthog_AA.p3d";
+		displayName="M12R Warthog (AA)";
+		hiddenSelections[]={"camo1","camo2"};
+		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_CO.paa"};
+		class RenderTargets
+		{
+			class FrontView
+			{
+				renderTarget="rendertarget0";
+				class CameraView1
+				{
+					pointPosition="PIP0_pos";
+					pointDirection="PIP0_dir";
+					renderQuality=2;
+					renderVisionMode=0;
+					fov=0.7;
+				};
+			};
+			class RearView
+			{
+				renderTarget="rendertarget1";
+				class CameraView1
+				{
+					pointPosition="PIP1_pos";
+					pointDirection="PIP1_dir";
+					renderQuality=2;
+					renderVisionMode=0;
+					fov=0.7;
+				};
+			};
+			class leftMirror
+			{
+				renderTarget="rendertarget2";
+				class CameraView1
+				{
+					pointPosition="PIP2_pos";
+					pointDirection="PIP2_dir";
+					renderQuality=2;
+					renderVisionMode=0;
+					fov=0.7;
+				};
+			};
+			class rightMirror
+			{
+				renderTarget="rendertarget3";
+				class CameraView1
+				{
+					pointPosition="PIP3_pos";
+					pointDirection="PIP3_dir";
+					renderQuality=2;
+					renderVisionMode=0;
+					fov=0.7;
+				};
+			};
+			//class GunScreen
+			class Gunner_display
+			{
+				renderTarget="rendertarget4";
+				class CameraView1
+				{
+					pointPosition="PIP4_pos";
+					pointDirection="PIP4_dir";
+					renderQuality=2;
+					renderVisionMode=2;
+					fov=0.5;
+				};
+			};
+		};
+		class Turrets:Turrets
+		{
+			class CargoTurret_01:CargoTurret
+			{
+				gunnerAction="passenger_inside_2";
+				gunnerCompartments="Compartment1";
+				memoryPointsGetInGunner="pos cargo";
+				memoryPointsGetInGunnerDir="pos cargo dir";
+				memoryPointGunnerOptics="";
+				gunnerName="Front Passenger";
+				proxyIndex=1;
+				maxElev=10;
+				minElev=-40;
+				maxTurn=95;
+				minTurn=-95;
+				isPersonTurret=1;
+				class dynamicViewLimits
+				{
+					CargoTurret_02[]={-65,95};
+				};
+			};
+			class MainTurret:MainTurret
+			{
+				body="mainturret";
+				gun="maingun";
+				animationsourcebody="mainturret";
+				animationSourceGun="maingun";
+				gunAxis="Osa Hlavne";
+				gunBeg="Usti hlavne";
+				gunEnd="konec hlavne";
+				minElev=-8;
+				maxElev=16;
+				minTurn=-360;
+				maxTurn=360;
+				initTurn=0;
+				turretAxis="OsaVeze";
+				maxHorizontalRotSpeed=1.2;
+				maxVerticalRotSpeed=1.2;
+				gunnerAction="driver_boat01";
+				gunnerInAction="driver_boat01";
+				gunnerGetInAction="GetInMRAP_01";
+				gunnerGetOutAction="GetOutMRAP_01";
+				gunnerName="Gunner";
+				hideWeaponsGunner=0;
+				soundServo[]={"",0.01,1};
+				outGunnerMayFire=1;
+				inGunnerMayFire=1;
+				commanding=1;
+				primaryGunner=1;
+				memoryPointsGetInGunner="Pos Gunner";
+				memoryPointsGetInGunnerDir="Pos Gunner dir";
+				gunnerLeftHandAnimName="trigger";
+				gunnerRightHandAnimName="trigger";
+				//memoryPointGun="machinegun";
+				weapons[]={"TEI_M79_MLRS"};
+				magazines[] = {"6Rnd_65mm_rockets"};
+				memoryPointGunnerOptics="gunnerview";
+				gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";
+				//gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+				//gunnerOpticsModel="a3\weapons_f\Reticle\optics_empty";
+				gunnerOpticsShowCursor=1;
+				turretInfoType="RscWeaponZeroing";
+				//turretInfoType="RscOptics_crows";
+				visionMode[] = {"Normal","Ti"};
+				thermalMode[] = {2};
+				castGunnerShadow=1;
+				startEngine=0;
+				enableManualFire=0;
+
+				gunnerForceOptics=0;
+				class ViewGunner:ViewOptics
+				{
+					initFov=0.7;
+					minFov=0.05;
+					maxFov=1.1;
+				};
+			};
+		};
 	};
 	
 	/// apc hog
