@@ -1,0 +1,504 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"tei_ins_object_class",
+		"map_vr",
+		"TEI_Vehicles_Pelican"
+	};
+	addOnsAuto[]=
+	{
+		"TEI_Vehicles_Pelican",
+		"tei_ins_object_class",
+		"map_vr"
+	};
+	randomSeed=14271824;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4343.0225,5,4144.2856};
+					azimut=-70.410194;
+					special="FLY";
+					id=0;
+					side="WEST";
+					vehicle="TEI_Pelican_unarmed_tan";
+					player="PLAYER DRIVER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=31;
+		class Item0
+		{
+			position[]={4049.6763,5,4250.0742};
+			offsetY=200;
+			id=1;
+			side="EMPTY";
+			vehicle="TEI_1_box";
+			skill=0.60000002;
+			text="box1";
+		};
+		class Item1
+		{
+			position[]={4150.2002,5,4755.0957};
+			offsetY=200;
+			id=2;
+			side="EMPTY";
+			vehicle="TEI_2_box";
+			skill=0.60000002;
+			text="box2";
+		};
+		class Item2
+		{
+			position[]={4247.7236,5,4752.6577};
+			offsetY=200;
+			id=3;
+			side="EMPTY";
+			vehicle="TEI_3_box";
+			skill=0.60000002;
+			text="box3";
+		};
+		class Item3
+		{
+			position[]={4352.562,5,4750.2197};
+			offsetY=200;
+			id=4;
+			side="EMPTY";
+			vehicle="TEI_4_box";
+			skill=0.60000002;
+			text="box4";
+		};
+		class Item4
+		{
+			position[]={4454.9619,5,4751.0322};
+			offsetY=200;
+			id=5;
+			side="EMPTY";
+			vehicle="TEI_5_box";
+			skill=0.60000002;
+			text="box5";
+		};
+		class Item5
+		{
+			position[]={4661.8252,5,4751.0322};
+			offsetY=200;
+			id=6;
+			side="EMPTY";
+			vehicle="TEI_7_box";
+			skill=0.60000002;
+			text="box7";
+		};
+		class Item6
+		{
+			position[]={4766.6636,5,4750.2197};
+			offsetY=200;
+			id=7;
+			side="EMPTY";
+			vehicle="TEI_8_box";
+			skill=0.60000002;
+			text="box8";
+		};
+		class Item7
+		{
+			position[]={4865,5,4746.9688};
+			offsetY=200;
+			id=8;
+			side="EMPTY";
+			vehicle="TEI_9_box";
+			skill=0.60000002;
+			text="box9";
+		};
+		class Item8
+		{
+			position[]={4962.5244,5,4751.0322};
+			offsetY=200;
+			id=9;
+			side="EMPTY";
+			vehicle="TEI_10_box";
+			skill=0.60000002;
+			text="box10";
+		};
+		class Item9
+		{
+			position[]={4541.8438,5,4754.1016};
+			offsetY=200;
+			id=10;
+			side="EMPTY";
+			vehicle="TEI_6_box";
+			skill=0.60000002;
+			text="box6";
+		};
+		class Item10
+		{
+			position[]={3848.7415,5,4251.4102};
+			offsetY=200;
+			special="FLY";
+			id=11;
+			side="EMPTY";
+			vehicle="TEI_final_dawn";
+			leader=1;
+			skill=0.60000002;
+			text="dawn";
+		};
+		class Item11
+		{
+			position[]={4962.5244,5,4858.6221};
+			offsetY=200;
+			id=12;
+			side="EMPTY";
+			vehicle="TEI_11_box";
+			skill=0.60000002;
+			text="box11";
+		};
+		class Item12
+		{
+			position[]={4875.1035,5,4860.9326};
+			offsetY=200;
+			id=13;
+			side="EMPTY";
+			vehicle="TEI_12_box";
+			skill=0.60000002;
+			text="box12";
+		};
+		class Item13
+		{
+			position[]={4753.8521,5,4855.8091};
+			offsetY=200;
+			id=14;
+			side="EMPTY";
+			vehicle="TEI_13_box";
+			skill=0.60000002;
+			text="box13";
+		};
+		class Item14
+		{
+			position[]={4670.1709,5,4850.6855};
+			offsetY=200;
+			id=15;
+			side="EMPTY";
+			vehicle="TEI_14_box";
+			skill=0.60000002;
+			text="box14";
+		};
+		class Item15
+		{
+			position[]={4554.043,5,4852.3936};
+			offsetY=200;
+			id=16;
+			side="EMPTY";
+			vehicle="TEI_15_box";
+			skill=0.60000002;
+			text="box15";
+		};
+		class Item16
+		{
+			position[]={4449.8682,5,4845.5625};
+			offsetY=200;
+			id=17;
+			side="EMPTY";
+			vehicle="TEI_16_box";
+			skill=0.60000002;
+			text="box16";
+		};
+		class Item17
+		{
+			position[]={4352.5249,5,4854.1016};
+			offsetY=200;
+			id=18;
+			side="EMPTY";
+			vehicle="TEI_17_box";
+			skill=0.60000002;
+			text="box17";
+		};
+		class Item18
+		{
+			position[]={4256.8896,5,4854.1016};
+			offsetY=200;
+			id=19;
+			side="EMPTY";
+			vehicle="TEI_19_box";
+			skill=0.60000002;
+			text="box19";
+		};
+		class Item19
+		{
+			position[]={4154.4238,5,4852.3936};
+			offsetY=200;
+			id=20;
+			side="EMPTY";
+			vehicle="TEI_20_box";
+			skill=0.60000002;
+			text="box20";
+		};
+		class Item20
+		{
+			position[]={4153.166,5,4954.5186};
+			offsetY=200;
+			id=21;
+			side="EMPTY";
+			vehicle="TEI_21_box";
+			skill=0.60000002;
+			text="box21";
+		};
+		class Item21
+		{
+			position[]={4252.4399,5,4950.918};
+			offsetY=200;
+			id=22;
+			side="EMPTY";
+			vehicle="TEI_22_box";
+			skill=0.60000002;
+			text="box22";
+		};
+		class Item22
+		{
+			position[]={4346.0552,5,4952.9756};
+			offsetY=200;
+			id=23;
+			side="EMPTY";
+			vehicle="TEI_23_box";
+			skill=0.60000002;
+			text="box23";
+		};
+		class Item23
+		{
+			position[]={4449.4438,5,4951.9468};
+			offsetY=200;
+			id=24;
+			side="EMPTY";
+			vehicle="TEI_24_box";
+			skill=0.60000002;
+			text="box24";
+		};
+		class Item24
+		{
+			position[]={4557.4619,5,4952.4609};
+			offsetY=200;
+			id=25;
+			side="EMPTY";
+			vehicle="TEI_25_box";
+			skill=0.60000002;
+			text="box25";
+		};
+		class Item25
+		{
+			position[]={4655.7075,5,4949.8896};
+			offsetY=200;
+			id=26;
+			side="EMPTY";
+			vehicle="TEI_26_box";
+			skill=0.60000002;
+			text="box26";
+		};
+		class Item26
+		{
+			position[]={4754.4663,5,4952.4619};
+			offsetY=200;
+			id=27;
+			side="EMPTY";
+			vehicle="TEI_27_box";
+			skill=0.60000002;
+			text="box27";
+		};
+		class Item27
+		{
+			position[]={4853.7407,5,4950.4043};
+			offsetY=200;
+			id=28;
+			side="EMPTY";
+			vehicle="TEI_28_box";
+			skill=0.60000002;
+			text="box28";
+		};
+		class Item28
+		{
+			position[]={4956.6143,5,4947.3184};
+			offsetY=200;
+			id=29;
+			side="EMPTY";
+			vehicle="TEI_29_box";
+			skill=0.60000002;
+			text="box29";
+		};
+		class Item29
+		{
+			position[]={4953.9951,5,5043.1387};
+			offsetY=200;
+			id=30;
+			side="EMPTY";
+			vehicle="TEI_30_box";
+			skill=0.60000002;
+			text="box30";
+		};
+		class Item30
+		{
+			position[]={4836.5005,5,5038.2432};
+			offsetY=200;
+			id=31;
+			side="EMPTY";
+			vehicle="TEI_31_box";
+			skill=0.60000002;
+			text="box31";
+		};
+	};
+	class Sensors
+	{
+		items=3;
+		class Item0
+		{
+			position[]={5428.0908,5,4477.4634};
+			activationBy="ALPHA";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="connect geo lod";
+			expActiv="box2 attachTo [box1, [0, 62, .65] ]; detach box2; box3 attachTo [box2, [0, 63, -7.55] ]; detach box3; box4 attachTo [box3, [0, 59.1, 0] ]; detach box4; box5 attachTo [box4, [0, 45.5, -8.55] ]; detach box5; box6 attachTo [box5, [0, 30, 34] ]; detach box6; box7 attachTo [box1, [0, 2, -44] ]; detach box7; box8 attachTo [box7, [0, 63.4, -3.6] ]; detach box8; box9 attachTo [box8, [0, 61.2, -1.8] ]; detach box9; box10 attachTo [box9, [0, 60.1, 1.5] ]; detach box10; box11 attachTo [box3, [36, -40, -16] ]; detach box11; box12 attachTo [box11, [.6, 49.2, 2.1] ]; detach box12; box13 attachTo [box12, [0, 48.65, 5.67] ]; detach box13; box14 attachTo [box13, [0, 48.65, 0] ]; detach box14; box15 attachTo [box11, [-71.6, 0, 0] ]; detach box15; box16 attachTo [box15, [0, 49.2, 2.1] ]; detach box16; box17 attachTo [box16, [0, 48.65, 5.67] ]; detach box17; box19 attachTo [box17, [0, 50.70, 0] ]; detach box19; box20 attachTo [box10, [0, 69, -10] ]; detach box20; box21 attachTo [box20, [0, 67.9, -3.275] ]; detach box21; box22 attachTo [box21, [42, 34, 30] ]; detach box22; box23 attachTo [box21, [-42, 34, 30] ]; detach box23;  box24 attachTo [box22, [0, 72.8, 0] ]; detach box24; box25 attachTo [box23, [0, 72.8, 0] ]; detach box25; box26 attachTo [box22, [40, -30, 0] ]; detach box26; box27 attachTo [box26, [0, 68, 0] ]; detach box27; box28 attachTo [box27, [0, 68, 0] ]; detach box28; box29 attachTo [box22, [-125, -30, 0] ]; detach box29; box30 attachTo [box29, [0, 68, 0] ]; detach box30; box31 attachTo [box30, [0, 68, 0] ]; detach box31; ";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={5431.5991,5,4340.6318};
+			activationBy="BRAVO";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="overlay hull";
+			expActiv="dawn attachTo [box1, [0, 218, -32] ]; ";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={5431.5991,5,4200.292};
+			activationBy="CHARLIE";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="start old camera";
+			expActiv="player exec ""camera.sqs"";";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"map_vr"
+	};
+	addOnsAuto[]=
+	{
+		"map_vr"
+	};
+	randomSeed=11949109;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"map_vr"
+	};
+	addOnsAuto[]=
+	{
+		"map_vr"
+	};
+	randomSeed=10449686;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"map_vr"
+	};
+	addOnsAuto[]=
+	{
+		"map_vr"
+	};
+	randomSeed=12013209;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+};
