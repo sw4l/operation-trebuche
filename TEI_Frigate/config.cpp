@@ -308,4 +308,40 @@ class CfgVehicles
 		author = "Eridanus Insurrection Team";
 		icon = "iconCrateWpns";
 	};
+	class TEI_interior: static
+	{
+		scope = 2;
+		vehicleClass = "TEI_UNSC_Object_class";
+		displayName = "Interior";
+		model = "\TEI_frigate\interior.p3d";
+		author = "Eridanus Insurrection Team";
+		icon = "iconCrateWpns";
+	};
+	class TEI_console: static
+	{
+		scope = 2;
+		vehicleClass = "TEI_UNSC_Object_class";
+		displayName = "Console";
+		model = "\TEI_frigate\console.p3d";
+		author = "Eridanus Insurrection Team";
+		icon = "iconCrateWpns";
+	};
+	class TEI_spawn_door: static
+	{
+		scope = 2;
+		vehicleClass = "TEI_UNSC_Object_class";
+		displayName = "Spawn Door";
+		model = "\TEI_frigate\spawn_door.p3d";
+		author = "Eridanus Insurrection Team";
+		icon = "iconCrateWpns";
+	};
+	class TEI_liftarm: static
+	{
+		scope = 2;
+		vehicleClass = "TEI_UNSC_Object_class";
+		displayName = "Lift Arm";
+		model = "\TEI_frigate\liftarm.p3d";
+		author = "Eridanus Insurrection Team";
+		icon = "iconCrateWpns";
+	};
 };
