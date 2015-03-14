@@ -353,6 +353,7 @@ class CfgVehicles
 		transportSoldier=0;
 		crewVulnerable=1;
 		nameSound = "veh_car";
+		//attenuationEffectType = "CarAttenuation";
 		crewCrashProtection=0.015;
 		armor=120;
 		cost=500000;
@@ -1610,8 +1611,20 @@ class CfgVehicles
 				gunnerOpticsShowCursor=1;
 				turretInfoType="RscWeaponZeroing";
 				//turretInfoType="RscOptics_crows";
-				visionMode[] = {"Normal","Ti"};
-				thermalMode[] = {2};
+				class Viewoptics: ViewOptics
+				{
+					/*initAngleX = 0;
+					minAngleX = 0;
+					maxAngleX = 0;
+					initAngleY = 0;
+					minAngleY = 0;
+					maxAngleY = 0;
+					initFov = 1;
+					minFov = 0.3;
+					maxFov = 1.2;*/
+					visionMode[] = {"Normal","Ti"};
+					thermalMode[] = {0,1};
+				};
 				castGunnerShadow=1;
 				startEngine=0;
 				enableManualFire=0;
