@@ -50,13 +50,13 @@ class CfgWeapons
 				soundTypeIndex		= 1; /// defines the position in sound[] array in the rifle
 				class MuzzleCoef
 				{
-					dispersionCoef			= 0.8f;
-					artilleryDispersionCoef	= 1.0f;
+					dispersionCoef			= 1;
+					artilleryDispersionCoef	= 1;
 	
 					fireLightCoef			= 0.1f;
 
-					recoilCoef				= 1.0f;
-					recoilProneCoef			= 1.0f;
+					recoilCoef				= 0.8f;
+					recoilProneCoef			= 0.8f;
 
 					minRangeCoef = 1.0f; minRangeProbabCoef = 1.0f;
 					midRangeCoef = 1.0f; midRangeProbabCoef = 1.0f;
@@ -65,15 +65,15 @@ class CfgWeapons
 			};
 	   };
 		class acc_flashlight;
-		class TEI_M7_Flashlight: acc_flashlight
-			{
-				scope 										= 2;
-				displayName 								= "M7 Illumination Torch";
-				picture = "\TEI_weapons\smg\icons\flashlight.paa";
-				descriptionShort 							= "Flashlight for the M7 SMG";
-				model 										= "\TEI_Weapons\SMG\m7_flashlight.p3d";
-		class ItemInfo: InventoryFlashLightItem_Base_F
+		class TEI_M7_Flashlight: ItemCore
 		{
+			scope 										= 1;
+			displayName 								= "M7 Illumination Torch";
+			picture 									= "\TEI_weapons\smg\icons\flashlight.paa";
+			descriptionShort 							= "Flashlight for the M7 SMG";
+			model 										= "\TEI_Weapons\SMG\m7_flashlight.p3d";
+			class ItemInfo: InventoryFlashLightItem_Base_F
+			{
 			mass 									= 4;
 			class flashlight
 			{

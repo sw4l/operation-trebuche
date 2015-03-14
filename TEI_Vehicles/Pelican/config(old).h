@@ -14,12 +14,17 @@ class CfgVehicles
 	class Helicopter;
 	class Helicopter_Base_F: Helicopter
 	{
+		class Turrets;
+		class HitPoints;
+	};
+	class B_Heli_Attack_01_F: Helicopter_Base_F
+	{
 		class CargoTurret;
-		class Turrets
+		class Turrets: Turrets
 		{
 			class mainturret;
 		};
-		class HitPoints
+		class HitPoints:HitPoints
 		{
 			class HitHull;
 			class HitFuel;
@@ -32,7 +37,7 @@ class CfgVehicles
 		class Viewoptics;
 		class ViewPilot;
 		class RotorLibHelicopterProperties;
-		class Reflectors
+		class Reflectors;
 		{
 			class Right;
 		};
@@ -40,13 +45,13 @@ class CfgVehicles
 
 
 
-	class TEI_Pelican_F: Helicopter_Base_F
+	class TEI_Pelican_F: B_Heli_Attack_01_F
 	{		
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		vehicleClass = "TEI_UNSC_Air_class";
 		faction	= "TEI_UNSC";					/// defines the faction inside of the side
 		crew = "TEI_UNSC_Army_W_Pilot";					/// lets use the sample soldier we have as default captain of the boat
-		scope 	= 0;
+		scope 	= 1;
         armor = 60;						        /// just some protection against missiles, collisions and explosions
 		destrType = DestructWreck;
 		gearRetracting=1;		
@@ -67,19 +72,19 @@ class CfgVehicles
 		
 	///AI HANDLING
 	
-		landingSpeed = 20;        /// used for AI to approach the runawy, the plane should be stable at this speed
-		acceleration = 150;     /// used for AI to plan the waypoints and accelerating, doesn't affect plane performance
+	 landingSpeed = 20;        /// used for AI to approach the runawy, the plane should be stable at this speed
+     acceleration = 150;     /// used for AI to plan the waypoints and accelerating, doesn't affect plane performance
 		
 	///HANDLING
 		altFullForce = 50000;					 	/// in what height do the engines still have full thrust
 		altNoForce = 12000;					 	/// thrust of the engines interpolates to zero between altFullForce and altNoForce
 		maxSpeed = 400;						 	/// what is the maximum speed of the vehicle
-		maxFordingDepth = 0.75;	//0.55	   			 	/// how deep could the vehicle be in water without getting some damage
+		maxFordingDepth = 0.55;		   			 	/// how deep could the vehicle be in water without getting some damage
 		mainBladeRadius = 0.1;						/// describes the radius of main rotor - used for collision detection
 		liftForceCoef = 20; //2					///multiplier of lift force	
-		bodyFrictionCoef = 0.2;	//1.4777			///multiplier of body friction
+		bodyFrictionCoef = 1.4777;	//0.2				///multiplier of body friction
 		cyclicAsideForceCoef = 3.5;	//2	   			///multiplier of bank force
-        cyclicForwardForceCoef = 1.5;	//1.3   				///multiplier of dive force
+        cyclicForwardForceCoef = 1.3;	   				///multiplier of dive force
 		//simulation = helicopterX;
 		//frontRotorForceCoef = 10000;  //30       				///front rotor(strenth of lift)
 		backRotorForceCoef = 2;   //30       				///tailrotor(strength of horzontal movement=)
@@ -113,20 +118,19 @@ class CfgVehicles
 		cargoIsCoDriver[] = {0, 0}; 				/// the cargo don't utilize some special memory points to get in
 		memoryPointsGetInCargo = "pos cargo";		/// on what memory points should the cargo get in the heli
 		memoryPointsGetInCargoDir = "pos cargo dir";/// what is the direction of the cargo facing during get in animation (and opposite for get out)
-		hideWeaponsCargo = 0;	//1
+		hideWeaponsCargo = 1;	
 		ejectDeadGunner = "false";	
 		cargoProxyIndexes[] = {3,4,5,6,7,8,9,10,11,12};		/// what indexes does regular cargo sit on
 
 		
 ///hit points
-		class HitPoints:HitPoints
+				class HitPoints:HitPoints
 		{
 			class HitHull:HitHull
 			{
-				armor=500;
+				armor=300;
 				visual="Hull";
 				depends="Total";
-				passThrough=1;
 				radius=0.01;
 			};
 			class HitFuel:HitFuel
@@ -134,7 +138,6 @@ class CfgVehicles
 				armor=100;
 				radius=1;
 				minimalHit=0.05;
-				passThrough=1;
 				name="fuel";
 			};
 			class HitAvionics:HitAvionics
@@ -146,7 +149,7 @@ class CfgVehicles
 			};
 			class HitHRotor:HitHRotor
 			{
-				armor=100; //1.8
+				armor=999; //1.8
 				radius=1;
 				minimalHit=0.09;
 				name="mainrotor";
@@ -155,7 +158,7 @@ class CfgVehicles
 			};
 			class HitVRotor:HitVRotor
 			{
-				armor=100;
+				armor=999;
 				radius=1;
 				minimalHit=0.05;
 				name="tailrotor";
@@ -265,7 +268,7 @@ class CfgVehicles
                     initFov				= 0.5;	/// Field of view size settings
 					minFov				= 0.5;	/// Field of view size settings
 					maxFov				= 0.5;	/// Field of view size settings
-                    visionMode[] 		= {"Normal","NVG","Ti"};	/// what vision modes are available
+                    visionMode[] 		= {"Normal","NVG"};	/// what vision modes are available
                     thermalMode[] 		= {0,1};			/// not necessary as there is no TI mode defined, but just in case
                     gunnerOpticsModel = "A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d"; /// some optics model
 				};
@@ -299,7 +302,7 @@ class CfgVehicles
 				gunnerGetOutAction = pilot_Heli_Light_02_Exit;	/// what action uses the copilot to get out the heli				
 				memoryPointsGetInGunner="Pos_Gunner";
 				memoryPointsGetInGunnerDir="Pos_Gunner_dir";
-				canEject = 1;	/// copilot shouldn't be able to do so as he doesn't have eject seat
+				canEject = 0;	/// copilot shouldn't be able to do so as he doesn't have eject seat
 				body="mainTurret";
 				gun="mainGun";
 				animationSourceBody="mainTurret";
@@ -412,7 +415,6 @@ class CfgVehicles
 				source = "user";	/// user source means it is waiting on some scripting input
 				animPeriod = 5;		/// how long does it take to change value from 0 to 1 (or vice versa)
 				initPhase = 0;		/// what value does it have while creating the vehicle
-				sound = "ServoRampSound_2";
 			};
 			class wingControl				/// the class name is later used in model.cfg
 			{
@@ -462,31 +464,28 @@ class CfgVehicles
 				initPhase	 = 0;
 			};					
 		};	
-		class UserActions
+		class UserACtions
 		{
 			class RampOpen
 			{
-			userActionID = 60;	
-            displayName = "Open Ramp";
-            displayNameDefault = "Open Ramp";
-			textToolTip = "Open Ramp";
-            position = cargo_door_handle;
-            radius = 6;
-			priority = 1.5;
-            onlyForPlayer = 1;
-			condition = "((this animationPhase ""cargoDoor_1"" < 0.5) AND (this animationPhase ""cargoDoor_2"" < 0.5) AND (alive this))"; /// only openable from inside and when closed
-            statement = "this animate [""cargoDoor_1"",1]; this animate [""cargoDoor_2"",1]";
+			userActionID 		= 60;	
+            displayName="Open ramp";
+            displayNameDefault="Open ramp";
+            position=cargo_door_handle;
+            radius=6;
+            onlyForPlayer=true;
+			condition 			= "((this animationPhase ""cargoDoor_1"" == 0) && (this animationPhase ""cargoDoor_2"" == 0))"; /// only openable from inside and when closed
+            statement="this animate [""cargoDoor_1"",1];this animate [""cargoDoor_2"",1]";
 			animPeriod = 10;
             };
             class RampClose: RampOpen
             {
-			userActionID = 61;
-            displayName = "Close Ramp";
-            displayNameDefault = "Close Ramp";
-			textToolTip = "Close Ramp";
-			priority = 1.5;
-			condition = "((this animationPhase ""cargoDoor_1"" > 0.5) AND (this animationPhase ""cargoDoor_2"" > 0.5) AND (alive this))"; /// only openable from inside and when closed
-            statement = "this animate [""cargoDoor_1"",0]; this animate [""cargoDoor_2"",0]";
+			userActionID 		= 61;
+            displayName="Close ramp";
+            displayNameDefault="Close ramp";
+			textToolTip 		= "Close ramp";
+			condition 			= "((this animationPhase ""cargoDoor_1"" == 1) && (this animationPhase ""cargoDoor_2"" == 1))"; /// only openable from inside and when closed
+            statement="this animate [""cargoDoor_1"",0];this animate [""cargoDoor_2"",0]";
 			animPeriod = 10;
             };
 		};
