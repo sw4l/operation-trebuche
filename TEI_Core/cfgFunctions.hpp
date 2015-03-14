@@ -10,6 +10,7 @@ class CfgFunctions
 			class podPrepareAI{};
 			class podLaunch{};
 			class podLaunchAI{};
+			class podLaunchInit{};
 			class podLand{};
 			class podLandAI{};
 			class podDoor{};
@@ -107,6 +108,42 @@ class RscTitles //Even More HUD Stuff
 		class TEI_ODST_HUD_orange_class : TEI_ODST_HUD_blue_class //RscPicture // For pictures
 		{
 			text																				= "\TEI_Core\scripts\Data\odst_hud_orange_ca.paa";
+		};
+	};
+	class TEI_ODST_HUD_pink: TEI_ODST_HUD_blue
+	{
+		name 																					= "TEI_ODST_HUD_pink";
+		controls[]																				= {"TEI_ODST_HUD_pink_class"};
+		class TEI_ODST_HUD_orange_class : TEI_ODST_HUD_blue_class //RscPicture // For pictures
+		{
+			text																				= "\TEI_Core\scripts\Data\odst_hud_pink_ca.paa";
+		};
+	};
+	class TEI_ODST_HUD_teal: TEI_ODST_HUD_blue
+	{
+		name 																					= "TEI_ODST_HUD_teal";
+		controls[]																				= {"TEI_ODST_HUD_teal_class"};
+		class TEI_ODST_HUD_teal_class : TEI_ODST_HUD_blue_class //RscPicture // For pictures
+		{
+			text																				= "\TEI_Core\scripts\Data\odst_hud_teal_ca.paa";
+		};
+	};
+	class TEI_ODST_HUD_red: TEI_ODST_HUD_blue
+	{
+		name 																					= "TEI_ODST_HUD_red";
+		controls[]																				= {"TEI_ODST_HUD_red_class"};
+		class TEI_ODST_HUD_orange_class : TEI_ODST_HUD_blue_class //RscPicture // For pictures
+		{
+			text																				= "\TEI_Core\scripts\Data\odst_hud_red_ca.paa";
+		};
+	};
+	class TEI_ODST_HUD_black: TEI_ODST_HUD_blue
+	{
+		name 																					= "TEI_ODST_HUD_black";
+		controls[]																				= {"TEI_ODST_HUD_black_class"};
+		class TEI_ODST_HUD_orange_class : TEI_ODST_HUD_blue_class //RscPicture // For pictures
+		{
+			text																				= "\TEI_Core\scripts\Data\odst_hud_black_ca.paa";
 		};
 	};
 };

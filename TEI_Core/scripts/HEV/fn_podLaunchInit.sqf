@@ -1,40 +1,10 @@
-_pod = _this select 0;
-_unit = _this select 1;
-_action = _this select 2;
-_launchloading = 1;
-_counter = 5;
-_chutedeployed = false;
-_pod removeaction _action;
-
-TEI_HEV_fnc_WindSounds =
-{
-	[(_this select 0), "TEI_HEV_Wind1", 50] call CBA_fnc_globalSay3d;
-	sleep 0.05;
-	[(_this select 0), "TEI_HEV_Wind2", 50] call CBA_fnc_globalSay3d;
-	sleep 0.25;
-};
-
-while {_launchloading == 1} do
-{
-	hint format["HEV Insertion Initiating.\n\nPlease keep hands and feet inside the pod until you have safely reached the surface\n\nExpect hostile forces to greet you upon arrival\n\nHave a nice day!\n\n%1", _counter];
-	sleep 1;
-	if (_counter == 0) then
-	{
-		_launchloading = 0;
-		hint "LAUNCHING";
-		if (isNull attachedTo _pod) then {
-			hintSilent "Oh shit you've already launched! lolwoops";
-		} else {
-			detach _pod;
-			_pod setVectorUp [0,0,1];
-		}
-	} else {
-		_counter = _counter - 1;
-	};
-};
-
+_pod = _this;
+_unit = driver _this;
+_pod enablesimulation false;
 _unit allowdamage false;
 _pod allowdamage false;
+
+waitUntil {player == player};
 
 _vel = velocity _pod;
 _pod setVelocity [
@@ -78,7 +48,8 @@ while {!(_landed)} do
 	_downvel = round (_vel select 2);
 	hintSilent format["ALTITUDE (ATL) = %1\nALTITUDE(ASL) = %2\nVELOCITY = %3", _height, _waterheight, _downvel];
 	
-	[_pod] spawn TEI_HEV_fnc_WindSounds;
+	[_pod, "TEI_HEV_Wind1", 50] call CBA_fnc_globalSay3d;
+	[_pod, "TEI_HEV_Wind2", 50] call CBA_fnc_globalSay3d;
 	
 	if ((_height < 125) && (_height > 75) && !(_chutedeployed)) then
 	{
