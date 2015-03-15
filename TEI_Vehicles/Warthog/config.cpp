@@ -1633,7 +1633,7 @@ class CfgVehicles
 				class ViewGunner:ViewOptics
 				{
 					initFov=0.7;
-					minFov=0.05;
+					minFov=0.002;
 					maxFov=1.1;
 				};
 			};
