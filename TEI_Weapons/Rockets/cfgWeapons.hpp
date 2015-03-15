@@ -41,17 +41,17 @@ class CfgWeapons
 		handAnim[]={"OFP2_ManSkeleton","\TEI_Weapons\Rockets\Data\Anim\m41_hand_anim.rtm"};
 		drysound[] = {"A3\sounds_f\weapons\other\dry6", 0.0316228, 1, 10};
 		soundfly[] = {"A3\sounds_f\weapons\rockets\rocket_fly_1", 0.316228, 1.5, 700};
-		minRange = 10;
-		midRange = 250;
-		maxRange = 500;
+		//minRange = 10;
+		//midRange = 250;
+		//maxRange = 500;
 		modelOptics = "\A3\Weapons_F\acc\reticle_RPG_F";
 		recoil = "recoil_single_law";
 		aiRateOfFire = 10.0;	// delay between shots at given distance
 		aiRateOfFireDistance = 250;
-		opticsZoomMin = 0.0625;
-		opticsZoomMax = 0.0625;
-		distanceZoomMin = 100;
-		distanceZoomMax = 100;
+		//opticsZoomMin = 0.0625;
+		//opticsZoomMax = 0.0625;
+		//distanceZoomMin = 100;
+		//distanceZoomMax = 100;
 		reloadaction = "ReloadRPG";
 		reloadmagazinesound[] = {"A3\sounds_f\weapons\rockets\titan_reload_final", 0.562341, 1, 50};
 	};

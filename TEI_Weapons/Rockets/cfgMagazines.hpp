@@ -33,7 +33,7 @@ class CfgMagazines
 		modelSpecial="\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
 		scope=1;
 		mass = 40;
-		initSpeed = 140;
+		initSpeed = 255;
 	};
 	class TEI_M41_HEAT_G: NLAW_F
 	{
@@ -47,6 +47,7 @@ class CfgMagazines
 		count=1;
 		scope=1;
 		mass = 40;
+		initSpeed = 255;
 	};
 	class TEI_M41_HEAP: RPG32_HE_F
 	{
@@ -90,6 +91,7 @@ class CfgMagazines
 		//picture = "";
 		scope=2;
 		mass = 80;
+		initSpeed = 255;
 	};
 	class TEI_M41_Twin_HEAT_G: NLAW_F
 	{
@@ -104,6 +106,7 @@ class CfgMagazines
 		//picture = "";
 		scope=2;
 		mass = 80;
+		initSpeed = 255;
 	};
 	class TEI_M41_Twin_HEAP: RPG32_HE_F
 	{
