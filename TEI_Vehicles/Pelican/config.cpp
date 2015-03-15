@@ -76,13 +76,13 @@ class CfgVehicles
 		maxSpeed = 400;						 	/// what is the maximum speed of the vehicle
 		maxFordingDepth = 0.75;	//0.55	   			 	/// how deep could the vehicle be in water without getting some damage
 		mainBladeRadius = 0.1;						/// describes the radius of main rotor - used for collision detection
-		liftForceCoef = 20; //2					///multiplier of lift force	
-		bodyFrictionCoef = 0.2;	//1.4777			///multiplier of body friction
-		cyclicAsideForceCoef = 3.5;	//2	   			///multiplier of bank force
-        cyclicForwardForceCoef = 1.5;	//1.3   				///multiplier of dive force
+		liftForceCoef = 2; //2					///multiplier of lift force	
+		bodyFrictionCoef = 0.6777;	//1.4777			///multiplier of body friction
+		cyclicAsideForceCoef = 3;	//2	   			///multiplier of bank force
+        cyclicForwardForceCoef = 1.1;	//1.3   				///multiplier of dive force
 		//simulation = helicopterX;
 		//frontRotorForceCoef = 10000;  //30       				///front rotor(strenth of lift)
-		backRotorForceCoef = 2;   //30       				///tailrotor(strength of horzontal movement=)
+		backRotorForceCoef = 1.377;   //30       				///tailrotor(strength of horzontal movement=)
         ///HANDLING END
 
         ///ACTIONS AND CARGO
