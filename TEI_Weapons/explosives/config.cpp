@@ -43,7 +43,7 @@ class CfgMagazines
 		mass = 10;
 		scope = 2;
 		value = 1;
-		displayName = "[UNSC] M9 HE-DP Grenade";
+		displayName = "M9 HE-DP Grenade [UNSC]";
 		descriptionShort = "Type: Defensive Grenade<br />Rounds: 1<br />Used in: Hand";
 		displayNameShort = "M9 Frag";
 		model = "\TEI_Weapons\explosives\m9_grenade.p3d";
@@ -64,5 +64,58 @@ class cfgAmmo
 	class TEI_G_M9_Frag: GrenadeHand
 	{
 		model = "\TEI_Weapons\explosives\m9_grenade.p3d";
+		hit = 8;
+		indirectHit = 8;
+		indirectHitRange = 6;
+		typicalspeed = 18;
+		visibleFire = 0.5;
+		audibleFire = 0.05;
+		visibleFireTime = 1;
+		fuseDistance = 0;
+	};
+	
+	class TEI_G_M2_Smoke
+	{
+		
+	};
+	
+	class TEI_G_M2_RSmoke
+	{
+		
+	};
+	
+	class TEI_G_M2_GSmoke
+	{
+		
+	};
+	
+	class TEI_G_M2_BSmoke
+	{
+		
+	};
+	
+	class TEI_G_M2_OSmoke
+	{
+		
+	};
+	
+	class TEI_G_M2_YSmoke
+	{
+		
+	};
+	
+	class TEI_G_M2_PSmoke
+	{
+		
+	};
+	
+	class TEI_G_M4_Stun
+	{
+		
+	};
+	
+	class TEI_G_M7_Napalm
+	{
+		
 	};
 };
