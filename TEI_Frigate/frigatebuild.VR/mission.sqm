@@ -6,12 +6,14 @@ class Mission
 		"tei_ins_object_class",
 		"map_vr",
 		"A3_Structures_F_Bootcamp_VR_CoverObjects",
-		"TEI_Vehicles_Pelican"
+		"TEI_Vehicles_Pelican",
+		"TEI_Vehicles_Warthog"
 	};
 	addOnsAuto[]=
 	{
 		"TEI_Vehicles_Pelican",
 		"tei_ins_object_class",
+		"TEI_Vehicles_Warthog",
 		"map_vr"
 	};
 	randomSeed=14271824;
@@ -43,7 +45,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4034.0068,5,4481.5078};
+					position[]={4056.4324,5,4484.6357};
 					azimut=188.905;
 					special="FLY";
 					id=0;
@@ -373,13 +375,12 @@ class Mission
 		};
 		class Item31
 		{
-			position[]={4316.9917,5,4248.1919};
+			position[]={5448.1807,5,4863.4521};
 			offsetY=200;
 			id=32;
 			side="EMPTY";
 			vehicle="TEI_interior";
 			skill=0.60000002;
-			text="inter";
 		};
 		class Item32
 		{
@@ -428,7 +429,7 @@ class Mission
 			special="NONE";
 			id=37;
 			side="EMPTY";
-			vehicle="TEI_Pelican_unarmed_green";
+			vehicle="TEI_M12_LRV_black";
 			leader=1;
 			skill=0.60000002;
 			text="peli";
@@ -436,7 +437,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=5;
+		items=6;
 		class Item0
 		{
 			position[]={5428.0908,5,4477.4634};
@@ -453,7 +454,6 @@ class Mission
 		class Item1
 		{
 			position[]={5431.5991,5,4340.6318};
-			activationBy="BRAVO";
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -497,6 +497,19 @@ class Mission
 			age="UNKNOWN";
 			text="open doors";
 			expActiv="null=[leftdoor,((direction leftdoor) + 180),10,0.1,5] spawn fn_MovingTarget; null=[rightdoor,((direction rightdoor) + 0),10,0.1,5] spawn fn_MovingTarget; ";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={5556.7549,5,4335.46};
+			activationBy="BRAVO";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="hull and interior";
+			expActiv="dawn attachTo [box1, [0, 218, -32] ]; conso attachTo [inter, [0, -35, -71.4] ]; detach conso; leftdoor attachTo [inter, [-.8, -16.4, -47] ]; rightdoor attachTo [inter, [-.8, 1.1, -47] ]; detach leftdoor; detach rightdoor; elev attachTo [conso, [-.8, 28,60] ]; detach elev;";
 			class Effects
 			{
 			};
