@@ -89,6 +89,18 @@ class CfgVehicles
 		author = "Eridanus Insurrection Team";
 		icon = "iconCrateWpns";
 	};
+	class TEI_holotable: static
+	{
+		scope = 2;
+		vehicleClass = "TEI_UNSC_Object_class";
+		displayName = "Holo Table";
+		model = "\TEI_Misc\Objects\holotable.p3d";
+		author = "Eridanus Insurrection Team";
+		icon = "iconCrateWpns";
+		hiddenSelections[]= {"map_stratis"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {};
+		
+	};
 };
 
 class CfgGlasses 
