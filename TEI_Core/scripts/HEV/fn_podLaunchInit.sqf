@@ -3,6 +3,7 @@ _unit = driver _this;
 _pod enablesimulation false;
 _unit allowdamage false;
 _pod allowdamage false;
+_chutedeployed = false;
 
 waitUntil {player == player};
 
