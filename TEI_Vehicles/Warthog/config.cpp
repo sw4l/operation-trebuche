@@ -352,7 +352,7 @@ class CfgVehicles
 		vehicleClass="Car";
 		transportSoldier=0;
 		crewVulnerable=1;
-		nameSound = "veh_car";
+		nameSound = car;
 		//attenuationEffectType = "CarAttenuation";
 		crewCrashProtection=0.015;
 		armor=120;
@@ -598,7 +598,7 @@ class CfgVehicles
 		driverDoor="";
 		cargoDoors[]={};
 		terrainCoef=1.5;
-		turnCoef=2.5;
+		turnCoef = 5.5; //2.5
 		precision=15;
 		weapons[]={"TruckHorn2"};
 		magazines[]={};
@@ -981,7 +981,7 @@ class CfgVehicles
 				mass=30;
 				MOI=2.8;
 				dampingRate=0.1;
-				maxBrakeTorque=2500;
+				maxBrakeTorque=2000; //2500
 				maxHandBrakeTorque=0;
 				suspTravelDirection[]={0,-1,0};
 				suspForceAppPointOffset="wheel_1_1_axis";
@@ -1004,7 +1004,7 @@ class CfgVehicles
 				boundary="wheel_1_2_bound";
 				suspForceAppPointOffset="wheel_1_2_axis";
 				tireForceAppPointOffset="wheel_1_2_axis";
-				maxHandBrakeTorque=3500;
+				maxHandBrakeTorque=2750; //3500
 				side="left";
 			};
 			class RF:LF
@@ -1025,7 +1025,7 @@ class CfgVehicles
 				boundary="wheel_2_2_bound";
 				suspForceAppPointOffset="wheel_2_2_axis";
 				tireForceAppPointOffset="wheel_2_2_axis";
-				maxHandBrakeTorque=3500;
+				maxHandBrakeTorque=2750; //3500
 				side="right";
 			};
 		};
