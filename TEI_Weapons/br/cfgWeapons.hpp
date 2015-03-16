@@ -62,55 +62,6 @@ class CfgWeapons
 		inertia 									= 0.1;
 	};
 	
-	class TEI_BR55HB_Collim_Scope: ItemCore
-	{
-		scope = 2;
-		displayName = "BR55 A2 Scope (Collimator)";
-		picture = "\TEI_weapons\br\icons\scope.paa";
-		model = "\TEI_Weapons\br\BR_Scope_collimator.p3d";
-		//descriptionShort = "Rifle Combat Optics<br />Magnification: 10x";
-		weaponInfoType = "RscWeaponZeroing";
-		class ItemInfo: InventoryOpticsItem_Base_F
-		{
-			mass = 8;
-			opticType = 1;
-			optics = 1;
-			modelOptics = "\A3\Weapons_F_Beta\acc\acco_hamr_f.p3d";
-			class OpticsModes
-			{
-				class BR_A2_Collimator
-				{
-					opticsID = 1;
-					useModelOptics = 0;
-					opticsPPEffects[] = {""};
-					opticsFlare = 0;
-					opticsDisablePeripherialVision = 0;
-					opticsZoomMin = 0.375;
-					opticsZoomMax = 1;
-					opticsZoomInit = 0.75;
-					memoryPointCamera = "eye";
-					visionMode[] = {};
-					distanceZoomMin = 300;
-					distanceZoomMax = 300;
-				};
-				class BR_A2_Scope
-				{
-					opticsID = 2;
-					useModelOptics = 0;
-					opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
-					opticsFlare = 1;
-					opticsDisablePeripherialVision = 1;
-					opticsZoomMin = 0.11;
-					opticsZoomMax = 0.11;
-					opticsZoomInit = 0.11;
-					memoryPointCamera = "opticView";
-					distanceZoomMin = 300;
-					distanceZoomMax = 300;
-				};
-			};
-		};
-		inertia = 0.1;
-	};
 		
 	//WEAPONS
 	
