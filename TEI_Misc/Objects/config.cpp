@@ -62,6 +62,33 @@ class CfgVehicles
 		author = "Eridanus Insurrection Team";
 		icon = "iconCrateWpns";
 	};
+	class TEI_kiosk_1: static
+	{
+		scope = 2;
+		vehicleClass = "TEI_UNSC_Object_class";
+		displayName = "Kiosk 1";
+		model = "\TEI_Misc\Objects\kiosk_1.p3d";
+		author = "Eridanus Insurrection Team";
+		icon = "iconCrateWpns";
+	};
+	class TEI_kiosk_2: static
+	{
+		scope = 2;
+		vehicleClass = "TEI_UNSC_Object_class";
+		displayName = "Kiosk 2";
+		model = "\TEI_Misc\Objects\kiosk_2.p3d";
+		author = "Eridanus Insurrection Team";
+		icon = "iconCrateWpns";
+	};
+	class TEI_kiosk_3: static
+	{
+		scope = 2;
+		vehicleClass = "TEI_UNSC_Object_class";
+		displayName = "Kiosk 3";
+		model = "\TEI_Misc\Objects\kiosk_3.p3d";
+		author = "Eridanus Insurrection Team";
+		icon = "iconCrateWpns";
+	};
 };
 
 class CfgGlasses 

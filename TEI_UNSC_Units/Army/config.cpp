@@ -57,6 +57,52 @@ class CfgVehicles //This configures units and backpacks
 		portrait 										= "";
 		picture	 										= "";
 		icon 											= "iconMan";
+		class HitPoints
+		{
+			class HitHead
+			{
+				armor = 1;
+				material = -1;
+				name = "head";
+				passThrough = 1;
+				radius = 0.1;
+				explosionShielding = 0.5;
+				minimalHit = 0;
+			};
+			class HitBody
+			{
+				armor = 10;
+				material = -1;
+				name = "body";
+				passThrough = 1;
+				radius = 0.15;
+				explosionShielding = 5;
+				visual = "injury_body";
+				minimalHit = 0;
+			};
+			class HitHands
+			{
+				armor = 10;
+				material = -1;
+				name = "hands";
+				passThrough = 1;
+				radius = 0.08;
+				explosionShielding = 0.5;
+				visual = "injury_hands";
+				minimalHit = 0;
+			};
+			class HitLegs
+			{
+				armor = 10;
+				material = -1;
+				name = "legs";
+				passThrough = 1;
+				radius = 0.1;
+				explosionShielding = 0.5;
+				visual = "injury_legs";
+				minimalHit = 0;
+			};
+		};
 	};
 	class TEI_UNSC_Army_Pilot_WDL: TEI_UNSC_Army_Soldier_Base //Configures the unit part of the Units Uniform
 	{
@@ -69,6 +115,29 @@ class CfgVehicles //This configures units and backpacks
 		respawnlinkedItems[] 							= {"TEI_UNSC_M52V_Vest_WDL","TEI_UNSC_CH252V_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		hiddenSelections[] 								= {"camo1","camo2","insignia","attach_leftknee","attach_rightknee","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftthigh","attach_rightthigh","attach_rightknee2","attach_leftknee2","attach_pant2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 						= {"TEI_UNSC_Units\Army\data\armor_co.paa","TEI_UNSC_Units\Army\data\uniform_cam1_co.paa"};
+		class HitPoints : HitPoints
+		{
+			class HitHead : HitHead 
+			{
+				armor = 1;
+				explosionShielding = 0.5;
+			};
+			class HitBody : HitBody
+			{
+				armor = 3;
+				explosionShielding = 7;
+			};
+			class HitHands : HitHands
+			{
+				armor = 3;
+				explosionShielding = 0.7;
+			};
+			class HitLegs : HitLegs
+			{
+				armor = 3;
+				explosionShielding = 0.7;
+			};
+		};
 	};
 	class TEI_UNSC_Army_Rifleman_L_WDL: TEI_UNSC_Army_Pilot_WDL //Configures the unit part of the Units Uniform
 	{
@@ -80,6 +149,29 @@ class CfgVehicles //This configures units and backpacks
 		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		hiddenSelections[] 								= {"camo1","camo2","insignia","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_rightknee2","attach_leftknee2","attach_pant2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 						= {"TEI_UNSC_Units\Army\data\armor_co.paa","TEI_UNSC_Units\Army\data\uniform_cam1_co.paa"};
+		class HitPoints : HitPoints
+		{
+			class HitHead : HitHead
+			{
+				armor = 1;
+				explosionShielding = 0.5;
+			};
+			class HitBody : HitBody
+			{
+				armor = 5;
+				explosionShielding = 6;
+			};
+			class HitHands : HitHands
+			{
+				armor = 5;
+				explosionShielding = 0.6;
+			};
+			class HitLegs : HitLegs
+			{
+				armor = 5;
+				explosionShielding = 0.6;
+			};
+		};
 	};
 	class TEI_UNSC_Army_Rifleman_WDL: TEI_UNSC_Army_Rifleman_L_WDL //Configures the unit part of the Units Uniform
 	{
@@ -90,6 +182,29 @@ class CfgVehicles //This configures units and backpacks
 		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		hiddenSelections[] 								= {"camo1","camo2","insignia","attach_leftshin","attach_rightshin","attach_leftshoulder2","attach_rightshoulder2","attach_rightknee2","attach_leftknee2","attach_pant2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 						= {"TEI_UNSC_Units\Army\data\armor_co.paa","TEI_UNSC_Units\Army\data\uniform_cam1_co.paa"};
+		class HitPoints : HitPoints
+		{
+			class HitHead : HitHead
+			{
+				armor = 1;
+				explosionShielding = 0.5;
+			};
+			class HitBody : HitBody
+			{
+				armor = 8;
+				explosionShielding = 5;
+			};
+			class HitHands : HitHands
+			{
+				armor = 8;
+				explosionShielding = 0.5;
+			};
+			class HitLegs : HitLegs
+			{
+				armor = 8;
+				explosionShielding = 0.5;
+			};
+		};
 	};
 	class TEI_UNSC_Army_Rifleman_H_WDL: TEI_UNSC_Army_Rifleman_L_WDL //Configures the unit part of the Units Uniform
 	{
@@ -100,6 +215,29 @@ class CfgVehicles //This configures units and backpacks
 		respawnlinkedItems[] 							= {"TEI_UNSC_M52_Vest_WDL","TEI_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_Biofoam","TEI_NVG"};
 		hiddenSelections[] 								= {"camo1","camo2","insignia","attach_leftshoulder2","attach_rightshoulder2","attach_rightknee2","attach_leftknee2","attach_pant1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 						= {"TEI_UNSC_Units\Army\data\armor_co.paa","TEI_UNSC_Units\Army\data\uniform_cam1_co.paa"};
+		class HitPoints : HitPoints
+		{
+			class HitHead : HitHead
+			{
+				armor = 1;
+				explosionShielding = 0.5;
+			};
+			class HitBody : HitBody
+			{
+				armor = 10;
+				explosionShielding = 5;
+			};
+			class HitHands : HitHands
+			{
+				armor = 10;
+				explosionShielding = 0.5;
+			};
+			class HitLegs : HitLegs
+			{
+				armor = 10;
+				explosionShielding = 0.5;
+			};
+		};
 	};
 	class TEI_UNSC_Army_Medic: TEI_UNSC_Army_Rifleman_L_WDL //Configures the unit part of the Units Uniform
 	{
@@ -120,6 +258,29 @@ class CfgVehicles //This configures units and backpacks
 		respawnLinkedItems[] 							= {"TEI_UNSC_M52_Vest_Medic","TEI_UNSC_CH252_Helmet_Medic","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		hiddenSelections[] 								= {"camo1","camo2","insignia","attach_leftshoulder2","attach_rightshoulder2","attach_rightknee2","attach_leftknee2","attach_pant1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 						= {"TEI_UNSC_Units\Army\data\armor_medic_co.paa","TEI_UNSC_Units\Army\data\uniform_cam3_co.paa"};
+		class HitPoints : HitPoints
+		{
+			class HitHead : HitHead
+			{
+				armor = 1;
+				explosionShielding = 0.5;
+			};
+			class HitBody : HitBody
+			{
+				armor = 10;
+				explosionShielding = 5;
+			};
+			class HitHands : HitHands
+			{
+				armor = 10;
+				explosionShielding = 0.5;
+			};
+			class HitLegs : HitLegs
+			{
+				armor = 10;
+				explosionShielding = 0.5;
+			};
+		};
 	};
 	class TEI_UNSC_Army_Pilot_DES: TEI_UNSC_Army_Pilot_WDL //Configures the unit part of the Units Uniform
 	{
@@ -161,10 +322,6 @@ class CfgVehicles //This configures units and backpacks
 		hiddenSelections[] 								= {"camo1","camo2","insignia","attach_leftshoulder2","attach_rightshoulder2","attach_rightknee2","attach_leftknee2","attach_pant1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 						= {"TEI_UNSC_Units\Army\data\armor_cam2_co.paa","TEI_UNSC_Units\Army\data\uniform_cam2_co.paa"};
 	};
-	
-	
-	
-	
 	
 		// ARMY WOODLAND SOLDIERS CLASSES (W/ WEAPONS)
 		
@@ -762,6 +919,7 @@ class cfgWeapons
 	{
 		author											= "Eridanus Insurrection Team";
 		displayName										= "[UNSC] Neural Implant Vision Enhancement";
+		modelOptics 									= "";
 		class ItemInfo
 		{
 			type = 616;
