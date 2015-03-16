@@ -104,7 +104,7 @@ class CfgMagazines
 		modelSpecial="\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
 		count=2;
 		//picture = "";
-		scope=2;
+		scope = 1;
 		mass = 80;
 		initSpeed = 255;
 	};
@@ -134,7 +134,7 @@ class CfgMagazines
 		modelSpecial="\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
 		count=2;
 		//picture = "";
-		scope=2;
+		scope = 1;
 		mass = 80;
 	};
 };

@@ -317,7 +317,7 @@ class CfgGroups
 				
 				class TEI_Ins_ER_Inf_Patrol
 				{
-					name = "Patrol";
+					name = "Militia Patrol";
 					side = 0;
 					faction = "TEI_Ins";
 					rarityGroup = 0.3;
@@ -410,7 +410,7 @@ class CfgGroups
 				
 				class TEI_Ins_ER_Inf_Group
 				{
-					name = "Group";
+					name = "Militia Group";
 					side = 0;
 					faction = "TEI_Ins";
 					rarityGroup = 0.3;

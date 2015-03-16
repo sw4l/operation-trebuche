@@ -76,10 +76,10 @@ class CfgVehicles
 		maxSpeed = 400;						 	/// what is the maximum speed of the vehicle
 		maxFordingDepth = 0.75;	//0.55	   			 	/// how deep could the vehicle be in water without getting some damage
 		mainBladeRadius = 0.1;						/// describes the radius of main rotor - used for collision detection
-		liftForceCoef = 2; //2					///multiplier of lift force	
-		bodyFrictionCoef = 0.6777;	//1.4777			///multiplier of body friction
-		cyclicAsideForceCoef = 3;	//2	   			///multiplier of bank force
-        cyclicForwardForceCoef = 1.1;	//1.3   				///multiplier of dive force
+		liftForceCoef = 2; //20				///multiplier of lift force	
+		bodyFrictionCoef = 0.6777;				///multiplier of body friction
+		cyclicAsideForceCoef = 3;	   			///multiplier of bank force
+        cyclicForwardForceCoef = 1.2;  				///multiplier of dive force
 		//simulation = helicopterX;
 		//frontRotorForceCoef = 10000;  //30       				///front rotor(strenth of lift)
 		backRotorForceCoef = 1.377;   //30       				///tailrotor(strength of horzontal movement=)
@@ -93,7 +93,7 @@ class CfgVehicles
 		GetOutAction = pilot_Heli_Light_02_Exit;		/// what action uses the pilot to get out of heli
 		cargoGetInAction[] = {"GetInHelicopterCargo"};		/// actions for the cargo, the last one in array is used for the rest
 		cargoGetOutAction[] = {"GetOutHelicopterCargo"};	/// that means every cargo position could use different action to get in
-		transportSoldier = 11;					/// how many cargo positions are available
+		transportSoldier = 10;					/// how many cargo positions are available
 		cargoCanEject = 1;					/// cargo should be able to grab a chute and drop out of the vehicle
 		driverCanEject = 1;					/// pilot shouldn't be able to do so as he doesn't have eject seat
 		cargoAction[] = 					/// the same array as getIn/getOut actions for actions to switch to for cargo while inside the heli
