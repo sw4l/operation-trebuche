@@ -74,7 +74,7 @@ class cfgAmmo
 		fuseDistance = 0;
 	};
 	
-	class TEI_G_M2_Smoke
+	/*class TEI_G_M2_Smoke
 	{
 		
 	};
@@ -117,5 +117,5 @@ class cfgAmmo
 	class TEI_G_M7_Napalm
 	{
 		
-	};
+	};*/
 };
