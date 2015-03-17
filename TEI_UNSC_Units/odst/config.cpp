@@ -176,6 +176,29 @@ class CfgVehicles //This configures units and backpacks
 		hiddenSelections[] 																		= {"camo1","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																= {"TEI_UNSC_Units\ODST\data\uniform_scorch_co.paa"};
 	};
+		class TEI_UNSC_ODST_Soldier_thedog: TEI_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
+	{
+		scope																					= 2;
+		author																					= "Eridanus Insurrection Team";
+		attendant 																				= 1;
+		engineer 																				= 1;
+		canDeactivateMines 																		= 1;
+		detectSkill 																			= 80;
+		displayName																				= "The Dog";
+		vehicleClass																			= "TEI_UNSC_Man_Special_class";
+		uniformClass																			= "TEI_UNSC_ODST_Uniform_thedog";		
+		backpack 																				= "TEI_ILCS_Rucksack_Black";
+		weapons[] 										= {"TEI_M7S","TEI_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"TEI_M7S","TEI_M6G_SF","Throw","Put"};
+		magazines[] 									= {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		Items[]																					= {"TEI_Biofoam","TEI_Biofoam"};
+		RespawnItems[]																			= {"TEI_Biofoam","TEI_Biofoam"};
+		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest_thedog","TEI_UNSC_ODST_Helmet_thedog","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","TEI_NVG"};
+		respawnLinkedItems[] 																	= {"TEI_UNSC_ODST_Vest_thedog","TEI_UNSC_ODST_Helmet_thedog","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","TEI_NVG"};
+		hiddenSelections[] 																		= {"camo1","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] 																= {"TEI_UNSC_Units\ODST\data\uniform_thedog_co.paa"};
+	};
 	class TEI_UNSC_ODST_Soldier_instructor: B_Soldier_F //Configures the unit part of the ODST Uniform
 	{
 		scope																				= 1;
@@ -483,6 +506,16 @@ class cfgWeapons
 			uniformClass																		= "TEI_UNSC_ODST_Soldier_scorch";
 		};
 	};
+	class TEI_UNSC_ODST_uniform_thedog: TEI_UNSC_ODST_uniform
+	{
+		scope																					= 2;
+		author																					= "Eridanus Insurrection Team";
+		displayName																				= "[UNSC] TheDog's ODST Undersuit";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass																		= "TEI_UNSC_ODST_Soldier_thedog";
+		};
+	};
 	class TEI_UNSC_ODST_uniform_instructor: TEI_UNSC_ODST_uniform_base
 	{
 		scope																					= 1;
@@ -586,6 +619,19 @@ class cfgWeapons
 		{
 			hiddenSelections[]   																= {"camo1","camo2"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   														= {"TEI_UNSC_Units\ODST\data\vest_scorch_co.paa",""}; /// what texture is going to be used
+		};
+	};
+		class TEI_UNSC_ODST_vest_thedog: TEI_UNSC_ODST_vest
+	{	
+		scope 																					= 2; /// scope needs to be 2 to have a visible class
+		author																					= "Eridanus Insurrection Team";
+		displayName  																			= "[UNSC] TheDog's ODST Armor"; /// how would the stuff be displayed in inventory and on ground
+		hiddenSelections[]   																	= {"camo1","camo2"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\odst_vest_thedog_co.paa",""}; /// what texture is going to be used
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]   																= {"camo1","camo2"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   														= {"TEI_UNSC_Units\ODST\data\odst_vest_thedog_co.paa",""}; /// what texture is going to be used
 		};
 	};
 	
@@ -721,6 +767,20 @@ class cfgWeapons
 		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\helmet_scorch_co.paa","TEI_UNSC_Units\ODST\data\helmet_scorch_co.paa"}; /// what texture is going to be used
 		};
 	};
+		class TEI_UNSC_ODST_helmet_thedog: TEI_UNSC_ODST_helmet_scorch
+	{	
+		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
+		author																					= "Eridanus Insurrection Team";
+		displayName    																			= "[UNSC] TheDog's ODST Helmet"; /// how would the stuff be displayed in inventory and on ground
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa","TEI_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa"}; /// what texture is going to be used
+		class ItemInfo: ItemInfo 
+		{
+			
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa","TEI_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa"}; /// what texture is going to be used
+		};
+	};
 	class TEI_UNSC_ODST_helmet_dp: TEI_UNSC_ODST_helmet_base
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
@@ -826,7 +886,23 @@ class cfgWeapons
 			hiddenSelectionsMaterials[]   														= {"TEI_UNSC_Units\ODST\data\helmet.rvmat","TEI_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
 		};
 	};
-	class TEI_UNSC_ODST_helmet_scorch_dp: TEI_UNSC_ODST_helmet_scorch
+	class TEI_UNSC_ODST_helmet_thedog_dp: TEI_UNSC_ODST_helmet_scorch
+	{	
+		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
+		author																					= "Eridanus Insurrection Team";
+		displayName    																			= "[UNSC] TheDog's ODST Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa","TEI_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa"}; /// what texture is going to be used
+			hiddenSelectionsMaterials[]   														= {"TEI_UNSC_Units\ODST\data\helmet.rvmat","TEI_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
+		class ItemInfo: ItemInfo 
+		{
+			
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa","TEI_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa"}; /// what texture is going to be used
+			hiddenSelectionsMaterials[]   														= {"TEI_UNSC_Units\ODST\data\helmet.rvmat","TEI_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
+		};
+	};
+		class TEI_UNSC_ODST_helmet_scorch_dp: TEI_UNSC_ODST_helmet_scorch
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Eridanus Insurrection Team";
