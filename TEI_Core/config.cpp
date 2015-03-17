@@ -24,6 +24,11 @@ class CfgFactionClasses //This configures the in-game factions
 		icon 																					= "\TEI_Core\data\icon_UNSC_ca.paa";
 		flag 																					= "\TEI_Core\Data\flag_UNSC_ca.paa";
 		primaryLanguage 																		= "EN";
+		
+		backpack_tf_faction_radio_api = "TEI_Como_pack_2";
+        /*personal_tf_faction_radio_api = "some_personal_radio_class";
+        rifleman_tf_faction_radio_api = "some_rifleman_radio_class";
+        airborne_tf_faction_radio_api = "some_airborne_radio_class";*/
 	};
 	class TEI_Ins
 	{
@@ -33,6 +38,8 @@ class CfgFactionClasses //This configures the in-game factions
 		icon 																					= "\TEI_Core\data\icon_Ins_ca.paa";
 		flag 																					= "\TEI_Core\Data\flag_Ins_ca.paa";
 		primaryLanguage 																		= "EN";
+		
+		backpack_tf_faction_radio_api = "TEI_Como_pack_2";
 	};
 	class TEI_CAA
 	{

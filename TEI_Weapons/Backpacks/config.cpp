@@ -145,7 +145,7 @@ class cfgVehicles {
         };
 		class TEI_Como_pack_1 : B_Bergen_Base 
 		{
-				scope = public;
+				scope = 1;
 				class TransportMagazines{};
 				class TransportWeapons{};
 				isbackpack = 1;
@@ -160,6 +160,30 @@ class cfgVehicles {
 				hiddenSelections[] 								= {"camo1"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\como_pack_co.paa"};
         };
+		
+		class TEI_Como_pack_2 : B_Bergen_Base 
+		{
+				scope = 2;
+				class TransportMagazines{};
+				class TransportWeapons{};
+				isbackpack = 1;
+				picture = "\TEI_weapons\backpacks\icons\como_pack.paa";
+				transportMaxWeapons = 1;
+				transportMaxMagazines = 4;
+				class DestructionEffects{};
+                		displayName = "[UNSC] LR91 Communications Pack";
+						descriptionShort = "LR91 TEI long range radio backpack 20km";
+                		model = "\TEI_weapons\backpacks\como_ruck.p3d";
+				vehicleClass = "TEI_UNSC_Backpack_class";
+				allowedSlots[] = {901};
+				hiddenSelections[] 								= {"camo1"};
+				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\como_pack_co.paa"};
+				
+				tf_encryptionCode = "tf_west_radio_code";
+				tf_dialog = "rt1523g_radio_dialog";
+				tf_subtype = "digital_lr";
+        };
+		
 		class TEI_Kitbag_cbr_Rockets: B_Kitbag_cbr
 		{
 			scope = 1;
