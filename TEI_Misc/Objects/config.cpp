@@ -70,6 +70,8 @@ class CfgVehicles
 		model = "\TEI_Misc\Objects\kiosk_1.p3d";
 		author = "Eridanus Insurrection Team";
 		icon = "iconCrateWpns";
+		hiddenSelections[]= {"camo1","camo2"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"TEI_Misc\Objects\data\kiosk1_poster.paa"};
 	};
 	class TEI_kiosk_2: static
 	{
@@ -79,6 +81,8 @@ class CfgVehicles
 		model = "\TEI_Misc\Objects\kiosk_2.p3d";
 		author = "Eridanus Insurrection Team";
 		icon = "iconCrateWpns";
+		hiddenSelections[]= {"camo1","camo2"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"TEI_Misc\Objects\data\kiosk2_poster.paa"};
 	};
 	class TEI_kiosk_3: static
 	{
