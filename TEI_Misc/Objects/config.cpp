@@ -92,6 +92,8 @@ class CfgVehicles
 		model = "\TEI_Misc\Objects\kiosk_3.p3d";
 		author = "Eridanus Insurrection Team";
 		icon = "iconCrateWpns";
+		hiddenSelections[]= {"camo1"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"TEI_Misc\Objects\data\kiosk3_poster.paa"};
 	};
 	class TEI_holotable: static
 	{
