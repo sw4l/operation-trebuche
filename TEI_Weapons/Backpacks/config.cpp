@@ -171,7 +171,7 @@ class cfgVehicles {
 				transportMaxWeapons = 1;
 				transportMaxMagazines = 4;
 				class DestructionEffects{};
-                		displayName = "[UNSC] LR91 Communications Pack";
+                		displayName = "[UNSC] LR91 CommPack";
 						descriptionShort = "LR91 TEI long range radio backpack 20km";
                 		model = "\TEI_weapons\backpacks\como_ruck.p3d";
 				vehicleClass = "TEI_UNSC_Backpack_class";

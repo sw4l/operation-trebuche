@@ -66,7 +66,7 @@
             //WEAPONS
      
             class Rifle_Long_Base_F;
-            class LMG_Zafir_F: Rifle_Long_Base_F
+            class EBR_Base_F: Rifle_Long_Base_F
             {
                     class WeaponSlotsInfo
                     {
@@ -74,14 +74,14 @@
                     };
                     class GunParticles;
             };
-            class TEI_M73: LMG_Zafir_F
+            class TEI_M73: EBR_Base_F
             {
                     scope                                                                   = 2;
-                    //handAnim[]                                                              = {"OFP2_ManSkeleton", "\TEI_Weapons\MG\data\anim\_.rtm"};
+                    handAnim[]                                                              = {"OFP2_ManSkeleton", "\A3\weapons_f\Machineguns\M200\data\Anim\M200.rtm"};
                     model                                                                   = "\TEI_Weapons\MG\M73.p3d";
                     displayName                                                             = "M73 Light Machine Gun";
                     descriptionShort                                                        = "UNSC Light Machine Gun";
-                    picture = "\TEI_weapons\ar\icons\ar_a.paa";
+                    picture 																= "";
                     magazines[]                                                             = {"TEI_100Rnd_95x40_Box","TEI_100Rnd_95x40_Box_Tracer","TEI_200Rnd_95x40_Box","TEI_200Rnd_95x40_Box_Tracer"};
                     modelOptics                                                             = "-";
                     dexterity                                                               = 3.25;
@@ -173,6 +173,7 @@
                     };
                     class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
                     {
+							mass = 160;
                             class MuzzleSlot: SlotInfo
                             {
                                     access                                                  = 1;
