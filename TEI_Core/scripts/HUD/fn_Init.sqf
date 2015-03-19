@@ -17,7 +17,7 @@ TEI_ODST_Helmet_HUD_LowLightToggle_Action = player addaction [("<t color=""#81BE
 waitUntil {time > 0};
 while {time > 0} do {
 	 _getHelmet_fnc = [] spawn TEI_HUD_fnc_getHelmet;
-	if ((TEI_HUD_Type == 1) && !(cameraView == "EXTERNAL")) then {
+	if ((TEI_HUD_Type == 1) && (cameraView == "INTERNAL")) then {
 		117 cutRsc [TEI_HUD_Color, "PLAIN", 0, true];
 	} else {
 		117 cutText ["", "PLAIN"];

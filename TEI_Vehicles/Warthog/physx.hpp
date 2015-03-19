@@ -1,7 +1,7 @@
 		/// splendid tutorial by RedPhoenix could be found at 
 		/// http://forums.bistudio.com/showthread.php?165390-Tutorial-Creating-Custom-Engine-Gearbox-and-Suspension-Vehicle-configuration
 		
-		thrustDelay									= 0.1;
+		thrustDelay									= 0.25; //0.1 to 0.25
 		brakeIdleSpeed									= 1.78;
 		maxSpeed									= 125;
 		fuelCapacity									= 150;
@@ -83,7 +83,7 @@
 		// slip a little while changing gears while weaker values are better for comfortable seamless ride.
 		// <Type>: float
 		// <Default>: 10.0
-		clutchStrength 								= 20;
+		clutchStrength 								= 15; //20 to 15
 	
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Engine parameters

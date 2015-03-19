@@ -94,8 +94,8 @@ class CfgVehicles //This configures units and backpacks
 			fuelExplosionPower 															= 0;
 			occludeSoundsWhenIn 														= 0;
 			obstructSoundsWhenIn 														= 0;
-			crewCrashProtection 														= 1;
-			crewExplosionProtection 													= 1;
+			crewCrashProtection 														= 0;
+			crewExplosionProtection 													= 0;
 			hiddenSelections[]															= {"camo1","camo2","camo3","camo4"};
 			hiddenSelectionsTextures[]													= {"TEI_Vehicles\hev\data\pod_CO.paa","#(argb,256,512,1)r2t(rendertarget0,1.0)","#(argb,256,512,1)r2t(rendertarget1,1.0)","tei_core\data\base\glass_ca.paa"};
 			ejectDeadDriver 															= 0;

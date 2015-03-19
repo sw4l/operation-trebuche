@@ -57,11 +57,13 @@ class CfgVehicles //This configures units and backpacks
 		portrait 										= "";
 		picture	 										= "";
 		icon 											= "iconMan";
+		armor											= 4;
+		armorStructural									= 5;
 		class HitPoints
 		{
 			class HitHead
 			{
-				armor = 1;
+				armor = 0.5;
 				material = -1;
 				name = "head";
 				passThrough = 1;
@@ -71,7 +73,7 @@ class CfgVehicles //This configures units and backpacks
 			};
 			class HitBody
 			{
-				armor = 10;
+				armor = 1.5;
 				material = -1;
 				name = "body";
 				passThrough = 1;
@@ -82,7 +84,7 @@ class CfgVehicles //This configures units and backpacks
 			};
 			class HitHands
 			{
-				armor = 10;
+				armor = 1.5;
 				material = -1;
 				name = "hands";
 				passThrough = 1;
@@ -93,7 +95,7 @@ class CfgVehicles //This configures units and backpacks
 			};
 			class HitLegs
 			{
-				armor = 10;
+				armor = 1.5;
 				material = -1;
 				name = "legs";
 				passThrough = 1;
@@ -119,23 +121,23 @@ class CfgVehicles //This configures units and backpacks
 		{
 			class HitHead : HitHead 
 			{
-				armor = 1;
+				armor = 0.5;
 				explosionShielding = 0.5;
 			};
 			class HitBody : HitBody
 			{
-				armor = 3;
-				explosionShielding = 7;
+				armor = 1;
+				explosionShielding = 5;
 			};
 			class HitHands : HitHands
 			{
-				armor = 3;
-				explosionShielding = 0.7;
+				armor = 1;
+				explosionShielding = 0.5;
 			};
 			class HitLegs : HitLegs
 			{
-				armor = 3;
-				explosionShielding = 0.7;
+				armor = 1;
+				explosionShielding = 0.5;
 			};
 		};
 	};
@@ -153,22 +155,22 @@ class CfgVehicles //This configures units and backpacks
 		{
 			class HitHead : HitHead
 			{
-				armor = 1;
+				armor = 0.5;
 				explosionShielding = 0.5;
 			};
 			class HitBody : HitBody
 			{
-				armor = 5;
+				armor = 1.2;
 				explosionShielding = 6;
 			};
 			class HitHands : HitHands
 			{
-				armor = 5;
+				armor = 1.2;
 				explosionShielding = 0.6;
 			};
 			class HitLegs : HitLegs
 			{
-				armor = 5;
+				armor = 1.2;
 				explosionShielding = 0.6;
 			};
 		};
@@ -186,23 +188,23 @@ class CfgVehicles //This configures units and backpacks
 		{
 			class HitHead : HitHead
 			{
-				armor = 1;
+				armor = 0.5;
 				explosionShielding = 0.5;
 			};
 			class HitBody : HitBody
 			{
-				armor = 8;
-				explosionShielding = 5;
+				armor = 1.4;
+				explosionShielding = 7;
 			};
 			class HitHands : HitHands
 			{
-				armor = 8;
-				explosionShielding = 0.5;
+				armor = 1.4;
+				explosionShielding = 0.7;
 			};
 			class HitLegs : HitLegs
 			{
-				armor = 8;
-				explosionShielding = 0.5;
+				armor = 1.4;
+				explosionShielding = 0.7;
 			};
 		};
 	};
@@ -219,23 +221,23 @@ class CfgVehicles //This configures units and backpacks
 		{
 			class HitHead : HitHead
 			{
-				armor = 1;
+				armor = 0.5;
 				explosionShielding = 0.5;
 			};
 			class HitBody : HitBody
 			{
-				armor = 10;
-				explosionShielding = 5;
+				armor = 1.5;
+				explosionShielding = 8;
 			};
 			class HitHands : HitHands
 			{
-				armor = 10;
-				explosionShielding = 0.5;
+				armor = 1.5;
+				explosionShielding = 0.8;
 			};
 			class HitLegs : HitLegs
 			{
-				armor = 10;
-				explosionShielding = 0.5;
+				armor = 1.5;
+				explosionShielding = 0.8;
 			};
 		};
 	};
@@ -262,22 +264,22 @@ class CfgVehicles //This configures units and backpacks
 		{
 			class HitHead : HitHead
 			{
-				armor = 1;
+				armor = 0.5;
 				explosionShielding = 0.5;
 			};
 			class HitBody : HitBody
 			{
-				armor = 10;
+				armor = 1.5;
 				explosionShielding = 5;
 			};
 			class HitHands : HitHands
 			{
-				armor = 10;
+				armor = 1.5;
 				explosionShielding = 0.5;
 			};
 			class HitLegs : HitLegs
 			{
-				armor = 10;
+				armor = 1.5;
 				explosionShielding = 0.5;
 			};
 		};

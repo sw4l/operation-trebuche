@@ -18,14 +18,14 @@
   --------------------------------------------------------*/
 			class Engine
 			{
-				sound[] = {"A3\Sounds_F\air\plane_fighter_03\Plane_Fighter_03_engi_ext", db5, 1.0, 900};
+				sound[] = {"A3\Sounds_F\air\plane_fighter_03\Plane_Fighter_03_engi_ext", db-5, 1.0, 900}; // changed "db5" to "db-5"
 				frequency = "rotorSpeed";
 				volume = "0.5*camPos*((rotorSpeed-0.72)*4)";
 				//volume = "camPos*((rotorSpeed-0.72)*4)";
 			};
 			class RotorLowOut
 			{
-				sound[] = {"A3\Sounds_F\air\plane_fighter_03\Plane_Fighter_03_low_ext", db3, 1.0, 1200};
+				sound[] = {"A3\Sounds_F\air\plane_fighter_03\Plane_Fighter_03_low_ext", db-3, 1.0, 1200}; // changed "db3" to "db-3"
 				frequency = "rotorSpeed";
 				volume = "0.5*camPos*(0 max (rotorSpeed-0.1))*(1 + rotorThrust/3)*0.8";
 				//volume = "camPos*(0 max (rotorSpeed-0.1))";
@@ -33,7 +33,7 @@
 			};
 			class RotorHighOut
 			{
-				sound[] = {"A3\Sounds_F\air\plane_fighter_03\Plane_Fighter_03_engi_ext", db5, 1.0, 1500};
+				sound[] = {"A3\Sounds_F\air\plane_fighter_03\Plane_Fighter_03_engi_ext", db-5, 1.0, 1500}; // changed "db5" to "db-5"
 				frequency = "rotorSpeed";
 				volume = "0.5*camPos*(rotorSpeed factor[0.4,1])";
 				//volume = "camPos*10*(0 max (rotorThrust-0.9))" ;
@@ -41,7 +41,7 @@
 			};
 			class RotorNoiseExt
 			{
-				sound[] = {"A3\Sounds_F\air\plane_fighter_03\Plane_Fighter_03-fors_ext", db0, 1, 800};
+				sound[] = {"A3\Sounds_F\air\plane_fighter_03\Plane_Fighter_03-fors_ext", db-0, 1, 800}; // changed "db0" to "db-0"
 				frequency = 1;
 				volume = "0.5*camPos*(0 max (rotorSpeed-0.1))*(1 + rotorThrust/3)*0.8";
 				cone[] = {1.6,3.14,1.6,0.95};
@@ -52,21 +52,21 @@
 
 			class EngineLowIn
 			{
-				sound[] =  {"A3\Sounds_F\air\Plane_Fighter_03\Plane_Fighter_03_low_int", db0, 1.0};
+				sound[] =  {"A3\Sounds_F\air\Plane_Fighter_03\Plane_Fighter_03_low_int", db-0, 1.0};
 				frequency = "rotorSpeed";
 				volume = "0.25*camPos*(0 max (rotorSpeed-0.1))*(1 + rotorThrust/3)*0.8";
 				//volume = (1-camPos)*((rpm factor[0.7, 0.1])*(rpm factor[0.1, 0.7]));
 			};
 			class EngineHighIn
 			{
-				sound[] =  {"A3\Sounds_F\air\Plane_Fighter_03\Plane_Fighter_03_engi_int", db0, 1.2};
+				sound[] =  {"A3\Sounds_F\air\Plane_Fighter_03\Plane_Fighter_03_engi_int", db-0, 1.2};
 				frequency = "rotorSpeed";
 				volume = "0.25*camPos*(rotorSpeed factor[0.4,1])";
 				//volume = "(1-camPos)*(rpm factor[0.85, 1.0])";
 			};
 			class ForsageIn
 			{
-				sound[] =  {"A3\Sounds_F\air\Plane_Fighter_03\Plane_Fighter_03-fors_int", db0, 1.0};
+				sound[] =  {"A3\Sounds_F\air\Plane_Fighter_03\Plane_Fighter_03-fors_int", db-0, 1.0};
 				frequency = "rotorSpeed";
 				volume = "0.25*(1-camPos)*(0 max (rotorSpeed-0.1))*(1 + rotorThrust)";
 				//volume = "(1-camPos)*(engineOn*(thrust factor[0.6, 1.0]))";

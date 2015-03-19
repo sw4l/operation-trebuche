@@ -240,7 +240,7 @@ class CfgWeapons
 		magazineReloadTime = 6;
 		autoReload = 1;
 		ballisticsComputer = 1;
-		canLock = 2;
+		canLock = 0; //2
 		autoFire = 0;
 		selectionFireAnim = "muzzleFlash";						/// what selection is hidden when machinegun doesn't shoot
 		displayName = "M68 ALIM Gauss Cannon";
@@ -355,7 +355,7 @@ class CfgVehicles
 		nameSound = car;
 		//attenuationEffectType = "CarAttenuation";
 		crewCrashProtection=0.015;
-		armor=120;
+		armor=100;
 		cost=500000;
 		canFloat=0;
 		threat[]={0.8,0.6,0.3};
@@ -453,28 +453,28 @@ class CfgVehicles
 		{
 			class HitLFWheel:HitLFWheel
 			{
-				armor=500;
+				armor=999;
 				explosionShielding=0.8;
 				radius=0.25;
 				passThrough=0;
 			};
 			class HitLBWheel:HitLBWheel
 			{
-				armor=1000;
+				armor=999;
 				explosionShielding=0.8;
 				radius=0.25;
 				passThrough=0;
 			};
 			class HitRFWheel:HitRFWheel
 			{
-				armor=500;
+				armor=999;
 				explosionShielding=0.8;
 				radius=0.25;
 				passThrough=0;
 			};
 			class HitRBWheel:HitRBWheel
 			{
-				armor=1000;
+				armor=999;
 				explosionShielding=0.8;
 				radius=0.25;
 				passThrough=0;
@@ -503,16 +503,17 @@ class CfgVehicles
 			};
 			class HitBody:HitBody
 			{
+				armor=1;
 				name="karoserie";
 				visual="body";
-				passThrough=0.95;
+				passThrough=1;
 				minimalHit=0.2;
 				explosionShielding=0.2;
 				radius=0.33;
 			};
 			class HitGlass1:HitGlass1
 			{
-				armor=2.5;
+				armor=0.25;
 				explosionShielding=0.25;
 				visual="glass1";
 				radius=0.25;
@@ -525,10 +526,10 @@ class CfgVehicles
 			tex[]={"TEI_Core\data\base\glass_ca.paa","TEI_Core\data\base\transparent.paa","TEI_Core\data\base\transparent.paa"};
 			mat[]={"TEI_Vehicles\Warthog\data\warthog.rvmat","TEI_Vehicles\Warthog\data\warthog_damage.rvmat","TEI_Vehicles\Warthog\data\warthog_destruct.rvmat","TEI_Vehicles\Warthog\data\warthog_addons.rvmat","TEI_Vehicles\Warthog\data\warthog_addons_damage.rvmat","TEI_Vehicles\Warthog\data\warthog_addons_destruct.rvmat","TEI_Core\data\base\reflective_glass.rvmat","TEI_Core\data\base\null.rvmat","TEI_Core\data\base\null.rvmat"};
 		};
-		wheelDamageThreshold=0.9;
-		wheelDestroyThreshold=0.99;
-		wheelDamageRadiusCoef=0.95;
-		wheelDestroyRadiusCoef=0.45;
+		wheelDamageThreshold=1;
+		wheelDestroyThreshold=1;
+		wheelDamageRadiusCoef=1;
+		wheelDestroyRadiusCoef=1;
 		driverLeftHandAnimName="drivewheel";
 		driverRightHandAnimName="drivewheel";
 		driverAction="Driver_low01";
@@ -593,11 +594,11 @@ class CfgVehicles
 		cargoGetInAction[]={"GetInMRAP_01_cargo"};
 		cargoGetOutAction[]={"GetOutMRAP_01"};
 		commanderCanSee=31;
-		hideWeaponsDriver=1;
+		hideWeaponsDriver=0;
 		hideWeaponsCargo=0;
 		driverDoor="";
 		cargoDoors[]={};
-		terrainCoef=1.5;
+		terrainCoef=0.25;
 		turnCoef = 5.5; //2.5
 		precision=15;
 		weapons[]={"TruckHorn2"};
@@ -930,7 +931,7 @@ class CfgVehicles
 				volume="engineOn*(1-asphalt)*(1-camPos)*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
 			};
 		};
-		thrustDelay=0.1;
+		thrustDelay=0.25; //0.1
 		brakeIdleSpeed=1.78;
 		maxSpeed=125;
 		fuelCapacity=150;

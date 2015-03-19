@@ -25,17 +25,6 @@ class CfgPatches //This configures the identification of the pbo to the game
 	};
 };
 
-class RscStdText //More HUD Stuff
-{
-	type																						= 0;
-	idc																							= -1;
-	style																						= 2;
-	colorBackground[]																			= {1,1,1,1};
-	colorText[]																					= {1,1,1,1};
-	font																						= "puristaMedium";
-	size																						= 1;
-};
-
 class CfgVehicles //This configures units and backpacks
 {
 	class B_Soldier_F;
@@ -62,20 +51,64 @@ class CfgVehicles //This configures units and backpacks
 		respawnMagazines[]																		= {};
 		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest","G_Balaclava_blk","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG","TEI_NVG"};
 		respawnLinkedItems[] 																	= {"TEI_UNSC_ODST_Vest","G_Balaclava_blk","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG","TEI_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia" }; //Determines what hiddenselections are enabled
+		hiddenSelections[] 																		= {"camo1","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																= {"TEI_UNSC_Units\ODST\data\uniform_co.paa"};
+		armor																					= 4;
+		armorStructural																			= 5;
+		class HitPoints
+		{
+			class HitHead
+			{
+				armor = 0.5;
+				material = -1;
+				name = "head";
+				passThrough = 1;
+				radius = 0.1;
+				explosionShielding = 0.5;
+				minimalHit = 0;
+			};
+			class HitBody
+			{
+				armor = 1.75;
+				material = -1;
+				name = "body";
+				passThrough = 1;
+				radius = 0.15;
+				explosionShielding = 8;
+				visual = "injury_body";
+				minimalHit = 0;
+			};
+			class HitHands
+			{
+				armor = 1.75;
+				material = -1;
+				name = "hands";
+				passThrough = 1;
+				radius = 0.08;
+				explosionShielding = 0.8;
+				visual = "injury_hands";
+				minimalHit = 0;
+			};
+			class HitLegs
+			{
+				armor = 1.75;
+				material = -1;
+				name = "legs";
+				passThrough = 1;
+				radius = 0.1;
+				explosionShielding = 0.8;
+				visual = "injury_legs";
+				minimalHit = 0;
+			};
+		};
 	};
-	class TEI_UNSC_ODST_Soldier_light: B_Soldier_F //Configures the unit part of the ODST Uniform
+	class TEI_UNSC_ODST_Soldier_light: TEI_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
 	{
 		scope																				= 1;
-		faction																				= "TEI_UNSC";
 		author																				= "Eridanus Insurrection Team";
 		displayName																			= "ODST [Light]";
-		vehicleClass																			= "TEI_UNSC_Man_ODST_class";
 		uniformAccessories[]																		= {};
-		nakedUniform 																			= "U_BasicBody";
 		uniformClass																			= "TEI_UNSC_ODST_Uniform_light";
-		model																				= "\TEI_UNSC_Units\ODST\uniform.p3d";
 		weapons[]																			= {"Throw","Put"};
 		respawnWeapons[]																		= {"Throw","Put"};
 		Items[]																				= {"TEI_Biofoam"};
@@ -86,8 +119,31 @@ class CfgVehicles //This configures units and backpacks
 		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_Vest","G_Balaclava_blk","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		hiddenSelections[] 																		= {"camo1","insignia","attach_leftforearm", "attach_leftshoulder", "attach_rightforearm", "attach_rightshoulder" }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																	= {"TEI_UNSC_Units\ODST\data\uniform_co.paa"};
+		class HitPoints : HitPoints
+		{
+			class HitHead : HitHead 
+			{
+				armor = 0.5;
+				explosionShielding = 0.5;
+			};
+			class HitBody : HitBody
+			{
+				armor = 1.5;
+				explosionShielding = 6;
+			};
+			class HitHands : HitHands
+			{
+				armor = 1.5;
+				explosionShielding = 0.6;
+			};
+			class HitLegs : HitLegs
+			{
+				armor = 1.5;
+				explosionShielding = 0.6;
+			};
+		};
 	};
-	class TEI_UNSC_ODST_Soldier_medium: B_Soldier_F //Configures the unit part of the ODST Uniform
+	class TEI_UNSC_ODST_Soldier_medium: TEI_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
 	{
 		scope																				= 1;
 		faction																				= "TEI_UNSC";
@@ -108,8 +164,31 @@ class CfgVehicles //This configures units and backpacks
 		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_Vest","G_Balaclava_blk","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		hiddenSelections[] 																		= {"camo1","insignia", "attach_leftshoulder", "attach_rightshoulder" }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																	= {"TEI_UNSC_Units\ODST\data\uniform_co.paa"};
+		class HitPoints : HitPoints
+		{
+			class HitHead : HitHead 
+			{
+				armor = 0.5;
+				explosionShielding = 0.5;
+			};
+			class HitBody : HitBody
+			{
+				armor = 1.6;
+				explosionShielding = 8;
+			};
+			class HitHands : HitHands
+			{
+				armor = 1.6;
+				explosionShielding = 0.8;
+			};
+			class HitLegs : HitLegs
+			{
+				armor = 1.6;
+				explosionShielding = 0.8;
+			};
+		};
 	};
-	class TEI_UNSC_ODST_Soldier_Sniper: B_Soldier_F //Configures the unit part of the ODST Uniform
+	class TEI_UNSC_ODST_Soldier_Sniper: TEI_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
 	{
 		scope																				= 1;
 		faction																				= "TEI_UNSC";
@@ -130,8 +209,31 @@ class CfgVehicles //This configures units and backpacks
 		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_Vest","G_Balaclava_blk","TEI_UNSC_ODST_Helmet_sniper","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		hiddenSelections[] 																		= {"camo1","insignia", "attach_rightshoulder" }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																	= {"TEI_UNSC_Units\ODST\data\uniform_co.paa"};
+		class HitPoints : HitPoints
+		{
+			class HitHead : HitHead 
+			{
+				armor = 0.5;
+				explosionShielding = 0.5;
+			};
+			class HitBody : HitBody
+			{
+				armor = 1.6;
+				explosionShielding = 8;
+			};
+			class HitHands : HitHands
+			{
+				armor = 1.6;
+				explosionShielding = 0.8;
+			};
+			class HitLegs : HitLegs
+			{
+				armor = 1.6;
+				explosionShielding = 0.8;
+			};
+		};
 	};
-	class TEI_UNSC_ODST_Soldier_medic: B_Soldier_F //Configures the unit part of the ODST Uniform
+	class TEI_UNSC_ODST_Soldier_medic: TEI_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
 	{
 		scope																				= 1;
 		faction																				= "TEI_UNSC";
@@ -152,6 +254,29 @@ class CfgVehicles //This configures units and backpacks
 		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_Vest_medic","TEI_UNSC_ODST_Helmet_medic","G_Balaclava_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		hiddenSelections[] 																		= {"camo1","insignia" }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																	= {"TEI_UNSC_Units\ODST\data\uniform_medic_co.paa"};
+		class HitPoints : HitPoints
+		{
+			class HitHead : HitHead 
+			{
+				armor = 0.5;
+				explosionShielding = 0.5;
+			};
+			class HitBody : HitBody
+			{
+				armor = 1.75;
+				explosionShielding = 6;
+			};
+			class HitHands : HitHands
+			{
+				armor = 1.75;
+				explosionShielding = 0.6;
+			};
+			class HitLegs : HitLegs
+			{
+				armor = 1.75;
+				explosionShielding = 0.6;
+			};
+		};
 	};
 	class TEI_UNSC_ODST_Soldier_scorch: TEI_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
 	{
@@ -224,7 +349,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class TEI_UNSC_ODST_Soldier_instructor: B_Soldier_F //Configures the unit part of the ODST Uniform
 	{
-		scope																				= 1;
+		scope																				= 2;
 		faction																				= "TEI_UNSC";
 		author																				= "Eridanus Insurrection Team";
 		displayName																			= "ODST Instructor";
@@ -246,7 +371,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class TEI_UNSC_ODST_Soldier_recruit: B_Soldier_F //Configures the unit part of the ODST Uniform
 	{
-		scope																				= 1;
+		scope																				= 2;
 		faction																				= "TEI_UNSC";
 		author																				= "Eridanus Insurrection Team";
 		displayName																			= "ODST Recruit";
