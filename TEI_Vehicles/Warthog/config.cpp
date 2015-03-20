@@ -316,6 +316,8 @@ class CfgVehicles
 			class HitLBWheel;
 			class HitRFWheel;
 			class HitRBWheel;
+			class HitLF2Wheel;
+			class HitRF2Wheel;
 			class HitGlass1;
 			class HitGlass2;
 			class HitGlass3;
@@ -458,7 +460,7 @@ class CfgVehicles
 				radius=0.25;
 				passThrough=0;
 			};
-			class HitLBWheel:HitLBWheel
+			class HitLF2Wheel:HitLF2Wheel
 			{
 				armor=999;
 				explosionShielding=0.8;
@@ -472,7 +474,7 @@ class CfgVehicles
 				radius=0.25;
 				passThrough=0;
 			};
-			class HitRBWheel:HitRBWheel
+			class HitRF2Wheel:HitRF2Wheel
 			{
 				armor=999;
 				explosionShielding=0.8;
