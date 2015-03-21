@@ -1740,8 +1740,8 @@ class CfgVehicles
 			{
 				gunnerAction="passenger_inside_2";
 				gunnerCompartments="Compartment1";
-				memoryPointsGetInGunner="pos cargo";
-				memoryPointsGetInGunnerDir="pos cargo dir";
+				memoryPointsGetInGunner="pos pas";
+				memoryPointsGetInGunnerDir="pos pas dir";
 				memoryPointGunnerOptics="";
 				gunnerName="Front Passenger";
 				proxyIndex=1;
@@ -1813,12 +1813,34 @@ class CfgVehicles
 			};
 		};
 	};
+	class TEI_M12A1_LRV_black:TEI_M12A1_LRV
+	{
+		displayName="M12A1 Warthog (Rocket) [Black]";
+		author="Eridanus Insurrection Team";
+		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop"};
+		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_black_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_black_co.paa"};
+	};
+	class TEI_M12A1_LRV_tan:TEI_M12A1_LRV
+	{
+		displayName="M12A1 Warthog (Rocket) [Tan]";
+		crew="TEI_UNSC_Army_D_Rifleman_AR";
+		author="Eridanus Insurrection Team";
+		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop"};
+		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_tan_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_tan_co.paa"};
+	};
+	class TEI_M12A1_LRV_snow:TEI_M12A1_LRV
+	{
+		displayName="M12A1 Warthog (Rocket) [Snow]";
+		author="Eridanus Insurrection Team";
+		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop"};
+		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_snow_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_snow_co.paa"};
+	};
 	class TEI_M12R_AA:TEI_M12_LRV
 	{
 		model="TEI_Vehicles\Warthog\warthog_AA.p3d";
 		displayName="M12R Warthog (AA)";
 		hiddenSelections[]={"camo1","camo2"};
-		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_CO.paa"};
+		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_co.paa","TEI_Vehicles\Warthog\data\warthog_aa_ca.paa"};
 		class RenderTargets
 		{
 			class FrontView
@@ -1889,8 +1911,8 @@ class CfgVehicles
 			{
 				gunnerAction="passenger_inside_2";
 				gunnerCompartments="Compartment1";
-				memoryPointsGetInGunner="pos cargo";
-				memoryPointsGetInGunnerDir="pos cargo dir";
+				memoryPointsGetInGunner="pos pas";
+				memoryPointsGetInGunnerDir="pos pas dir";
 				memoryPointGunnerOptics="";
 				gunnerName="Front Passenger";
 				proxyIndex=1;
@@ -1910,57 +1932,97 @@ class CfgVehicles
 				gun="maingun";
 				animationsourcebody="mainturret";
 				animationSourceGun="maingun";
+				missileBeg= "spicerakety";
 				gunAxis="Osa Hlavne";
-				gunBeg="Usti hlavne";
-				gunEnd="konec hlavne";
+				
+				missileEnd= "konec rakety";
 				minElev=-8;
-				maxElev=16;
+				maxElev=18;
 				minTurn=-360;
 				maxTurn=360;
 				initTurn=0;
+				
 				turretAxis="OsaVeze";
-				maxHorizontalRotSpeed=1.2;
-				maxVerticalRotSpeed=1.2;
+				maxHorizontalRotSpeed=1.5;
+				maxVerticalRotSpeed=1.5;
 				gunnerAction="driver_boat01";
 				gunnerInAction="driver_boat01";
 				gunnerGetInAction="GetInMRAP_01";
+				
 				gunnerGetOutAction="GetOutMRAP_01";
 				gunnerName="Gunner";
 				hideWeaponsGunner=0;
 				soundServo[]={"",0.01,1};
 				outGunnerMayFire=1;
 				inGunnerMayFire=1;
+				
 				commanding=1;
 				primaryGunner=1;
+				turretInfoType="RscWeaponZeroing";
 				memoryPointsGetInGunner="Pos Gunner";
 				memoryPointsGetInGunnerDir="Pos Gunner dir";
 				gunnerLeftHandAnimName="trigger";
 				gunnerRightHandAnimName="trigger";
-				//memoryPointGun="machinegun";
+				
 				weapons[]={"TEI_M79_MLRS"};
 				magazines[] = {"6Rnd_65mm_rockets"};
 				memoryPointGunnerOptics="gunnerview";
+				memoryPointGunneroutOptics="gunneroutview";
+				memoryPointGun="machinegun";
 				gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";
-				//gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
-				//gunnerOpticsModel="a3\weapons_f\Reticle\optics_empty";
+				
 				gunnerOpticsShowCursor=1;
-				turretInfoType="RscWeaponZeroing";
-				//turretInfoType="RscOptics_crows";
 				visionMode[] = {"Normal","Ti"};
 				thermalMode[] = {2};
 				castGunnerShadow=1;
+				
 				startEngine=0;
 				enableManualFire=0;
-
 				gunnerForceOptics=0;
 				class ViewGunner:ViewOptics
 				{
+					initAngleX=-15;
+					minAngleX=-45;
+					maxAngleX=45;
 					initFov=0.7;
 					minFov=0.05;
 					maxFov=1.1;
+					visionMode[] = {"Normal","Ti"};
 				};
 			};
 		};
+	};
+	class TEI_M12R_AA_black:TEI_M12R_AA
+	{
+		author="Eridanus Insurrection Team";
+		displayName="M12R Warthog (AA) [Black]";
+		hiddenSelections[]={"camo1","camo2"};
+		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_black_co.paa","TEI_Vehicles\Warthog\data\warthog_aa_black_ca.paa"};
+	};
+	class TEI_M12R_AA_tan:TEI_M12R_AA
+	{
+		crew="TEI_UNSC_Army_D_Rifleman_AR";
+		displayName="M12R Warthog (AA) [Tan]";
+		hiddenSelections[]={"camo1","camo2"};
+		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_tan_co.paa","TEI_Vehicles\Warthog\data\warthog_aa_tan_ca.paa"};
+	};
+	class TEI_M12R_AA_snow:TEI_M12R_AA
+	{
+
+		displayName="M12R Warthog (AA) [Snow]";
+		hiddenSelections[]={"camo1","camo2"};
+		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_snow_co.paa","TEI_Vehicles\Warthog\data\warthog_aa_snow_ca.paa"};
+	};
+	class TEI_M12R_AA_ins:TEI_M12R_AA
+	{
+
+		displayName="M12R Warthog (AA) [Innie]";
+		hiddenSelections[]={"camo1","camo2"};
+		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_ins_co.paa","TEI_Vehicles\Warthog\data\warthog_aa_ins_ca.paa"};
+		vehicleClass="TEI_Ins_Vehicle_class";
+		side=0;
+		crew="TEI_Ins_URF_Rifleman_AR";
+		faction="TEI_Ins";
 	};
 	
 	/// apc hog
