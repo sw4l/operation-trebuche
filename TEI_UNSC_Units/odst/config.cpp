@@ -128,17 +128,17 @@ class CfgVehicles //This configures units and backpacks
 			};
 			class HitBody : HitBody
 			{
-				armor = 1.5;
+				armor = 1;
 				explosionShielding = 6;
 			};
 			class HitHands : HitHands
 			{
-				armor = 1.5;
+				armor = 1;
 				explosionShielding = 0.6;
 			};
 			class HitLegs : HitLegs
 			{
-				armor = 1.5;
+				armor = 1.35;
 				explosionShielding = 0.6;
 			};
 		};
@@ -173,17 +173,17 @@ class CfgVehicles //This configures units and backpacks
 			};
 			class HitBody : HitBody
 			{
-				armor = 1.6;
+				armor = 1;
 				explosionShielding = 8;
 			};
 			class HitHands : HitHands
 			{
-				armor = 1.6;
+				armor = 1.15;
 				explosionShielding = 0.8;
 			};
 			class HitLegs : HitLegs
 			{
-				armor = 1.6;
+				armor = 1.35;
 				explosionShielding = 0.8;
 			};
 		};
@@ -218,17 +218,17 @@ class CfgVehicles //This configures units and backpacks
 			};
 			class HitBody : HitBody
 			{
-				armor = 1.6;
+				armor = 1;
 				explosionShielding = 8;
 			};
 			class HitHands : HitHands
 			{
-				armor = 1.6;
+				armor = 1.2;
 				explosionShielding = 0.8;
 			};
 			class HitLegs : HitLegs
 			{
-				armor = 1.6;
+				armor = 1.35;
 				explosionShielding = 0.8;
 			};
 		};
@@ -263,17 +263,17 @@ class CfgVehicles //This configures units and backpacks
 			};
 			class HitBody : HitBody
 			{
-				armor = 1.75;
+				armor = 1;
 				explosionShielding = 6;
 			};
 			class HitHands : HitHands
 			{
-				armor = 1.75;
+				armor = 1.35;
 				explosionShielding = 0.6;
 			};
 			class HitLegs : HitLegs
 			{
-				armor = 1.75;
+				armor = 1.35;
 				explosionShielding = 0.6;
 			};
 		};
@@ -586,7 +586,7 @@ class cfgWeapons
 	};
 	class TEI_UNSC_ODST_uniform_light: TEI_UNSC_ODST_uniform_base
 	{
-		scope																					= 1;
+		scope																					= 2;
 		author																					= "Eridanus Insurrection Team";
 		displayName																				= "[UNSC] ODST Light Undersuit";
 		picture   																				= "\TEI_UNSC_Units\ODST\icons\odst_uniform.paa";
@@ -601,7 +601,7 @@ class cfgWeapons
 	};
 	class TEI_UNSC_ODST_uniform_medium: TEI_UNSC_ODST_uniform_base
 	{
-		scope																					= 1;
+		scope																					= 2;
 		author																					= "Eridanus Insurrection Team";
 		picture   																				= "\TEI_UNSC_Units\ODST\icons\odst_uniform.paa";
 		displayName																				= "[UNSC] ODST Medium Undersuit";

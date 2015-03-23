@@ -15,6 +15,8 @@ class CfgUnitInsignia //Unit Insignias to show on players' shoulders
 {
 	class TEI_Insignia_medic
 	{
+		scope = 2;
+		scopeArsenal = 2;
 		displayName = "[TEI] Medic"; // Name displayed in Arsenal
 		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
 		texture = "\TEI_Emblems\data\medic.paa"; // Image path

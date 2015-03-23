@@ -134,17 +134,17 @@ class CfgVehicles //This configures units and backpacks
 			};
 			class HitBody : HitBody
 			{
-				armor = 1.5;
+				armor = 1;
 				explosionShielding = 5;
 			};
 			class HitHands : HitHands
 			{
-				armor = 1.5;
+				armor = 1.25;
 				explosionShielding = 0.5;
 			};
 			class HitLegs : HitLegs
 			{
-				armor = 1.5;
+				armor = 1.25;
 				explosionShielding = 0.5;
 			};
 		};
@@ -180,17 +180,17 @@ class CfgVehicles //This configures units and backpacks
 			};
 			class HitBody : HitBody
 			{
-				armor = 1.5;
+				armor = 1;
 				explosionShielding = 8;
 			};
 			class HitHands : HitHands
 			{
-				armor = 1.5;
+				armor = 1.25;
 				explosionShielding = 0.8;
 			};
 			class HitLegs : HitLegs
 			{
-				armor = 1.5;
+				armor = 1.25;
 				explosionShielding = 0.8;
 			};
 		};
@@ -225,17 +225,17 @@ class TEI_UNSC_Marine_medium: TEI_UNSC_Marine_Soldier_Base //Configures the unit
 			};
 			class HitBody : HitBody
 			{
-				armor = 1.4;
+				armor = 1;
 				explosionShielding = 7;
 			};
 			class HitHands : HitHands
 			{
-				armor = 1.4;
+				armor = 1.25;
 				explosionShielding = 0.7;
 			};
 			class HitLegs : HitLegs
 			{
-				armor = 1.4;
+				armor = 1.15;
 				explosionShielding = 0.7;
 			};
 		};
@@ -270,17 +270,17 @@ class TEI_UNSC_Marine_medium: TEI_UNSC_Marine_Soldier_Base //Configures the unit
 			};
 			class HitBody : HitBody
 			{
-				armor = 1.2;
+				armor = 1;
 				explosionShielding = 6;
 			};
 			class HitHands : HitHands
 			{
-				armor = 1.2;
+				armor = 1;
 				explosionShielding = 0.6;
 			};
 			class HitLegs : HitLegs
 			{
-				armor = 1.2;
+				armor = 1.15;
 				explosionShielding = 0.6;
 			};
 		};
