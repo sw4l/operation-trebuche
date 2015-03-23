@@ -1,4 +1,4 @@
-		attenuationEffectType = "CarAttenuation"; //utlumovani v interieru (odkaz do Attenuation.hpp ve slozce SOUNDS_F
+		attenuationEffectType = "HeliAttenuation"; //utlumovani v interieru (odkaz do Attenuation.hpp ve slozce SOUNDS_F
 
 		soundGetIn[]={"A3\Sounds_F\air\Heli_Light_02\open",db-5,1};
 		soundGetOut[]={"A3\Sounds_F\air\Heli_Light_02\close",db0,1, 50};
