@@ -12,6 +12,8 @@
             class SlotInfo;
             class ItemCore;
             class InventoryOpticsItem_Base_F;
+			class InventoryFlashLightItem_Base_F;
+			class InventoryMuzzleItem_Base_F;
             class GunParticles;
      
             //ATTACHMENTS
@@ -107,6 +109,45 @@
                             };
                     };
 			};
+			class TEI_MA5B_Flashlight: ItemCore
+			{
+			scope 										= 2;
+			displayName 									= "MA5B Flashlight";
+			picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
+			descriptionShort 								= "Flashlight for the MA5B Assault Rifle";
+			model 										= "\TEI_Weapons\AR\AR_flashlight.p3d";
+			class ItemInfo: InventoryFlashLightItem_Base_F
+			{
+				mass 									= 4;
+				class FlashLight
+				{
+					color[] 							= {180,156,120};
+					ambient[] 							= {0.9,0.78,0.6};
+					intensity 							= 5;
+					size 								= 1;
+					innerAngle 							= 20;
+					outerAngle 							= 80;
+					coneFadeCoef 							= 5;
+					position 							= "flash dir";
+					direction 							= "flash";
+					useFlare 							= 1;
+					flareSize 							= 1.4;
+					flareMaxDistance 						= "100.0f";
+					dayLight 							= 0;
+					class Attenuation
+					{
+						start 							= 0.5;
+						constant 						= 0;
+						linear 							= 0;
+						quadratic 						= 1.1;
+						hardLimitStart 						= 20;
+						hardLimitEnd 						= 30;
+					};
+					scale[] 							= {0};
+				};
+			};
+			inertia 									= 0.1;
+		};
      
             //WEAPONS
      
@@ -238,7 +279,7 @@
                             class PointerSlot: SlotInfo
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"acc_pointer_IR", "acc_flashlight"};
+                                    compatibleitems[]                                       = {"acc_pointer_IR", "acc_flashlight", "TEI_MA5B_Flashlight"};
                                     displayname                                             = "Pointer Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\SIDE";
                                     scope                                                   = 2;
