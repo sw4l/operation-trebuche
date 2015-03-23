@@ -2,25 +2,25 @@
 		/// http://forums.bistudio.com/showthread.php?165390-Tutorial-Creating-Custom-Engine-Gearbox-and-Suspension-Vehicle-configuration
 		
 		thrustDelay									= 0.25; //0.1 to 0.25
-		brakeIdleSpeed									= 1.78;
+		brakeIdleSpeed								= 1.78;
 		maxSpeed									= 125;
-		fuelCapacity									= 150;
-		wheelCircumference								= 3.924;
-		antiRollbarForceCoef								= 12;
-		antiRollbarForceLimit 								= 10;
-		antiRollbarSpeedMin								= 20;
-		antiRollbarSpeedMax								= 50;
+		fuelCapacity								= 150;
+		wheelCircumference							= 3.924;
+		antiRollbarForceCoef						= 12;
+		antiRollbarForceLimit 						= 10;
+		antiRollbarSpeedMin							= 20;
+		antiRollbarSpeedMax							= 50;
 		idleRpm										= 800;
 		redRpm										= 4500;
 		class complexGearbox
 		{
-			GearboxRatios[]								= {"R1",-3.182,"N",0,"D1",4.182,"D2",2.318,"D3",1.85,"D4",1.65,"D5",1.45};
-			TransmissionRatios[]							= {"High",5.539};
-			gearBoxMode 								= "auto";
+			GearboxRatios[]							= {"R1",-3.182,"N",0,"D1",4.182,"D2",2.318,"D3",1.85,"D4",1.65,"D5",1.45};
+			TransmissionRatios[]					= {"High",5.539};
+			gearBoxMode 							= "auto";
 			moveOffGear								= 1;
 			driveString								= "D";
-			neutralString								= "N";
-			reverseString								= "R";
+			neutralString							= "N";
+			reverseString							= "R";
 		};
 		
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -113,7 +113,7 @@
 		// Typical values in range (0.25,3). The simulation can become unstable with damping rates of 0.
 		// <Type>: float, float, float
 		// <Default>: 0.08, 2.0, 0.35
-		dampingRateFullThrottle 						= 0.08;
+		dampingRateFullThrottle 								= 0.08;
 		dampingRateZeroThrottleClutchEngaged 					= 2;
 		dampingRateZeroThrottleClutchDisengaged 				= 0.35;		
 
@@ -122,7 +122,7 @@
 		// multiplier in range (0,1) that is used to scale the peak torque. It is good to keep the values in mind while setting changeGearMinEffectivity.
 		// <Type>: Array[i][2] where i = number of samples, maximum 8;
 		// <Default>: {{0.0, 0.8}, {0.33, 1.0}, {1.0, 0.8}}
-		torqueCurve[]	= {{0,0},{0.178,0.5},{0.25,0.85},{0.4,0.9},{0.5,1},{0.725,0.95},{0.85,0.6},{1,0.3}};
+		torqueCurve[]							= {{0,0},{0.178,0.5},{0.25,0.85},{0.4,0.9},{0.5,1},{0.725,0.95},{0.85,0.6},{1,0.3}};
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Gearbox parameters
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -131,20 +131,20 @@
 		// <Range>: (0,1)
 		// <Type>: Array[i] where i = number of gears
 		// <Default>: 0.95 for every value (Neutral = 0.15 Not sure how important this is but we want to kick out of neutral very quickly)
-		changeGearMinEffectivity[]					= {0.95,0.15,0.95,0.95,0.95,0.95,0.95};
+		changeGearMinEffectivity[]				= {0.95,0.15,0.95,0.95,0.95,0.95,0.95};
 		
 		// <Description>: The switch time describes how long it takes (in seconds) for a gear change to be completed. This needs to be set to aggresive shifting
 		// or it would cause issues while trying to run aggressively (mainly during evading the enemies).
 		// <Type>: float
 		// <Default>: 0.01
-		switchTime												= 0.31;
+		switchTime								= 0.31;
 		
 		// <Description>: Set the latency time of the gearbox, specified in s.
 		// This is used to prevent instant shifting after changing gears - there is some power loss during gear change and it could seem that
 		// previous gear is better for a brief time after shifting.
 		// <Type>: float
 		// <Default>: 2.0
-		latency 												= 1.0;
+		latency 								= 1.0;
 	
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Wheels parameters
@@ -211,7 +211,7 @@
 				// that these are often expressed by manufacturers as braking horsepower or in "pounds inches". The values required here are in "Newton metres".
 				// <Type>: float
 				// <Default>: 2500
-				maxBrakeTorque			 		= 2500;
+				maxBrakeTorque			 		= 2000;
 				
 				// <Description>: This is the same as the max brake torque except for the handbrake rather than the brake. Typically, for a 4-wheeled car, 
 				// the handbrake is stronger than the brake and is only applied to the rear wheels. A value of 4000 for the rear wheels is a good starting point, 
@@ -305,9 +305,9 @@
 				steering	 					= 0;
 				center   						= "wheel_1_2_axis";
 				boundary 						= "wheel_1_2_bound";
-				suspForceAppPointOffset 				= "wheel_1_2_axis";
-				tireForceAppPointOffset 				= "wheel_1_2_axis";
-				maxHandBrakeTorque 					= 3500;
+				suspForceAppPointOffset 		= "wheel_1_2_axis";
+				tireForceAppPointOffset 		= "wheel_1_2_axis";
+				maxHandBrakeTorque 				= 3500;
 				side 							= "left";					
 			};
 			class RF : LF
@@ -315,8 +315,8 @@
 				boneName 						= "wheel_2_1_damper";
 				center   						= "wheel_2_1_axis";
 				boundary 						= "wheel_2_1_bound";
-				suspForceAppPointOffset 				= "wheel_2_1_axis";
-				tireForceAppPointOffset 				= "wheel_2_1_axis";
+				suspForceAppPointOffset 		= "wheel_2_1_axis";
+				tireForceAppPointOffset 		= "wheel_2_1_axis";
 				steering 						= 1;
 				side 							= "right";
 			};
@@ -326,9 +326,9 @@
 				steering 						= 0;
 				center   						= "wheel_2_2_axis";
 				boundary						= "wheel_2_2_bound";
-				suspForceAppPointOffset 				= "wheel_2_2_axis";
-				tireForceAppPointOffset 				= "wheel_2_2_axis";
-				maxHandBrakeTorque 					= 3500;
+				suspForceAppPointOffset 		= "wheel_2_2_axis";
+				tireForceAppPointOffset 		= "wheel_2_2_axis";
+				maxHandBrakeTorque 				= 3500;
 				side 							= "right";					
 			};
 		};
