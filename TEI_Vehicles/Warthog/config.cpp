@@ -355,9 +355,15 @@ class CfgVehicles
 		transportSoldier=0;
 		crewVulnerable=1;
 		nameSound = car;
+<<<<<<< HEAD
+		//attenuationEffectType = "CarAttenuation";
+		crewCrashProtection=0;
+		armor=60;
+=======
 		attenuationEffectType = "OpenCarAttenuation";
 		crewCrashProtection=0.015;
 		armor=100;
+>>>>>>> 8698304347304762d5f956c4deea4cf1a13f1bf5
 		cost=500000;
 		canFloat=0;
 		threat[]={0.8,0.6,0.3};
@@ -456,28 +462,28 @@ class CfgVehicles
 			class HitLFWheel:HitLFWheel
 			{
 				armor=999;
-				explosionShielding=0.8;
+				explosionShielding=;
 				radius=0.25;
 				passThrough=0;
 			};
 			class HitLF2Wheel:HitLF2Wheel
 			{
 				armor=999;
-				explosionShielding=0.8;
+				explosionShielding=0;
 				radius=0.25;
 				passThrough=0;
 			};
 			class HitRFWheel:HitRFWheel
 			{
 				armor=999;
-				explosionShielding=0.8;
+				explosionShielding=0;
 				radius=0.25;
 				passThrough=0;
 			};
 			class HitRF2Wheel:HitRF2Wheel
 			{
 				armor=999;
-				explosionShielding=0.8;
+				explosionShielding=0;
 				radius=0.25;
 				passThrough=0;
 			};
@@ -510,13 +516,13 @@ class CfgVehicles
 				visual="body";
 				passThrough=1;
 				minimalHit=0.2;
-				explosionShielding=0.2;
+				explosionShielding=0.4;
 				radius=0.33;
 			};
 			class HitGlass1:HitGlass1
 			{
 				armor=0.25;
-				explosionShielding=0.25;
+				explosionShielding=0.4;
 				visual="glass1";
 				radius=0.25;
 				name="glass1";
@@ -600,8 +606,6 @@ class CfgVehicles
 		hideWeaponsCargo=0;
 		driverDoor="";
 		cargoDoors[]={};
-		terrainCoef=0.25;
-		turnCoef = 5.5; //2.5
 		precision=15;
 		weapons[]={"TruckHorn2"};
 		magazines[]={};
@@ -932,6 +936,8 @@ class CfgVehicles
 				volume="engineOn*(1-asphalt)*(1-camPos)*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
 			};
 		};
+		/*terrainCoef=0.25;
+		turnCoef = 5.5; //2.5
 		thrustDelay=0.25; //0.1
 		brakeIdleSpeed=1.78;
 		maxSpeed=125;
@@ -1030,7 +1036,7 @@ class CfgVehicles
 				maxHandBrakeTorque=2750; //3500
 				side="right";
 			};
-		};
+		};*/
 		supplyRadius=5;
 		transportMaxMagazines=90;
 		class TransportMagazines
@@ -1047,6 +1053,7 @@ class CfgVehicles
 		class TransportWeapons
 		{
 		};
+		#include "physx.hpp"
 	};
 	class TEI_M12_FAV:TEI_M12_base
 	{

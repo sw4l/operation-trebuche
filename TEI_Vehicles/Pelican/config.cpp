@@ -47,7 +47,7 @@ class CfgVehicles
 		faction	= "TEI_UNSC";					/// defines the faction inside of the side
 		crew = "TEI_UNSC_Army_W_Pilot";					/// lets use the sample soldier we have as default captain of the boat
 		scope 	= 0;
-        armor = 300;						        /// just some protection against missiles, collisions and explosions
+        armor = 200;						        /// just some protection against missiles, collisions and explosions
 		destrType = DestructWreck;
 		gearRetracting=1;	
 		accuracy = 0.5;							/// how hard it is to distinguish the type of the vehicle (bigger number means harder)
@@ -127,6 +127,7 @@ class CfgVehicles
 				visual="Hull";
 				depends="Total";
 				passThrough=1;
+				explosionShielding=0.5;
 				radius=0.01;
 			};
 			class HitFuel:HitFuel
@@ -151,7 +152,7 @@ class CfgVehicles
 				radius=1;
 				minimalHit=0.09;
 				name="mainrotor";
-				explosionShielding=2.5;
+				explosionShielding=1;
 				passThrough=0.25;
 				visual = “mainrotors”;
 			};
@@ -161,20 +162,9 @@ class CfgVehicles
 				radius=1;
 				minimalHit=0.05;
 				name="tailrotor";
-				explosionShielding=6;
+				explosionShielding=1;
 				passThrough=0.25;
 				visual = “tailrotors”;
-			};
-			class HitEngine
-			{
-				armor=0.75;
-				name="motor";
-				material=-1;
-				visual="";
-				passThrough=0.75;
-				minimalHit=0.2;
-				explosionShielding=0.2;
-				radius=0.45;
 			};
 		};
 /// hit points end
@@ -183,7 +173,7 @@ class CfgVehicles
 		{};
 		class TransportItems		/// adds various items to cargo hold of the heli
 		{};		
-		maximumLoad = 2000;			/// capacity of cargo inventory for backpacks and various other item
+		maximumLoad = 5000;			/// capacity of cargo inventory for backpacks and various other item
 ///transport items	 end  
 		class Exhausts								/// describes the particle effects fro exhausts
 		{
@@ -488,7 +478,7 @@ class CfgVehicles
             radius = 6;
 			priority = 1.5;
             onlyForPlayer = 1;
-			condition = "((this animationPhase ""cargoDoor_1"" < 0.5) AND (this animationPhase ""cargoDoor_2"" < 0.5) AND (alive this))"; /// only openable from inside and when closed
+			condition = "((this animationPhase ""cargoDoor_1"" < 0.5) AND (this animationPhase ""cargoDoor_2"" < 0.5) AND (alive this) AND (player in (crew this)))"; /// only openable from inside and when closed
             statement = "this animate [""cargoDoor_1"",1]; this animate [""cargoDoor_2"",1]";
 			animPeriod = 10;
             };
@@ -499,7 +489,7 @@ class CfgVehicles
             displayNameDefault = "Close Ramp";
 			textToolTip = "Close Ramp";
 			priority = 1.5;
-			condition = "((this animationPhase ""cargoDoor_1"" > 0.5) AND (this animationPhase ""cargoDoor_2"" > 0.5) AND (alive this))"; /// only openable from inside and when closed
+			condition = "((this animationPhase ""cargoDoor_1"" > 0.5) AND (this animationPhase ""cargoDoor_2"" > 0.5) AND (alive this) AND (player in (crew this)))"; /// only openable from inside and when closed
             statement = "this animate [""cargoDoor_1"",0]; this animate [""cargoDoor_2"",0]";
 			animPeriod = 10;
             };
