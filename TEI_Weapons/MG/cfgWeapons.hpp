@@ -44,11 +44,11 @@
                                             visionMode[]                                    = {};
                                             distanceZoomMin                                 = 300;
                                             distanceZoomMax                                 = 300;
-                                            cameraDir                                       = "";
+                                            //cameraDir                                       = "";
                                     };
-                                    class M73_: M73_IS
+                                    class M73_Scope: M73_IS
                                     {
-                                            opticsID                                                = 2;
+                                            opticsID                                        = 2;
                                             useModelOptics                                  = 1;
                                             opticsZoomMin                                   = 0.075;
                                             opticsZoomMax                                   = 0.0523;

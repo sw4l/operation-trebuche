@@ -46,7 +46,7 @@ class CfgWeapons
 		//maxRange = 500;
 		modelOptics = "\A3\Weapons_F\acc\reticle_RPG_F";
 		recoil = "recoil_single_law";
-		aiRateOfFire = 10.0;	// delay between shots at given distance
+		aiRateOfFire = 5.0;	// delay between shots at given distance
 		aiRateOfFireDistance = 250;
 		//opticsZoomMin = 0.0625;
 		//opticsZoomMax = 0.0625;
@@ -54,6 +54,34 @@ class CfgWeapons
 		//distanceZoomMax = 100;
 		reloadaction = "ReloadRPG";
 		reloadmagazinesound[] = {"A3\sounds_f\weapons\rockets\titan_reload_final", 0.562341, 1, 50};
+	};
+	class TEI_M41_SSR_G: launch_Titan_base 
+	{
+		scope = 2;
+		author = "The Eridanus Insurrection Team";
+		displayname = "M41 SSR MAV/AW (Guided)";
+		descriptionshort = "Surface-to-Surface Rocket Medium Anti-Vehicle/Assault Weapon (Guided)";
+		class Library
+		{
+			libtextdesc = "The M41 Surface-to-Surface Rocket Medium Anti-Vehicle/Assault Weapon formally known as the Medium Anti-Vehicle / Assault Weapon, Bore 102mm, M41 Surface-to-Surface Rocket Launcher, is a heavy ordnance weapon of the UNSC arsenal";
+		};
+		magazines[] = {"TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAA"};
+		modelOptics = "\A3\Weapons_F_Beta\acc\reticle_titan.p3d";
+		picture = "\TEI_weapons\rockets\icons\launcher.paa";
+		model = "\TEI_Weapons\Rockets\M41_launcher.p3d";
+		lockingTargetSound[] = {"\A3\Sounds_F\weapons\Rockets\locked_1",0.316228,1};
+		lockedTargetSound[] = {"\A3\Sounds_F\weapons\Rockets\locked_3",0.316228,2.5};
+		handAnim[]={"OFP2_ManSkeleton","\TEI_Weapons\Rockets\Data\Anim\m41_hand_anim.rtm"};
+		canLock = 2;
+		weaponLockDelay = 3;
+		weaponLockSystem = 1;
+		cmImmunity = 0.9;
+		lockAcquire = 0;
+		
+		reloadaction = "ReloadRPG";
+		reloadmagazinesound[] = {"A3\sounds_f\weapons\rockets\titan_reload_final", 0.562341, 1, 50};
+		aiRateOfFire = 10.0;	// delay between shots at given distance
+		aiRateOfFireDistance = 2500;
 	};
 };
 

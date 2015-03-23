@@ -21,6 +21,7 @@ class CfgMagazines
 	class RPG32_F;
 	class NLAW_F;
 	class Titan_AA;
+	class Titan_AT;
 	
 	class TEI_M41_HEAT: RPG32_F
 	{
@@ -35,7 +36,7 @@ class CfgMagazines
 		mass = 40;
 		initSpeed = 255;
 	};
-	class TEI_M41_HEAT_G: NLAW_F
+	class TEI_M41_HEAT_G: Titan_AT
 	{
 		ammo="TEI_M41_Rocket_HEAT_Guided";
 		displayname="M19 HEAT Guided Rocket";
@@ -93,7 +94,7 @@ class CfgMagazines
 		mass = 80;
 		initSpeed = 255;
 	};
-	class TEI_M41_Twin_HEAT_G: NLAW_F
+	class TEI_M41_Twin_HEAT_G: Titan_AT
 	{
 		ammo="TEI_M41_Rocket_HEAT_Guided";
 		displayname="M19 HEAT Guided Twin Rockets";
@@ -104,7 +105,7 @@ class CfgMagazines
 		modelSpecial="\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
 		count=2;
 		//picture = "";
-		scope = 1;
+		scope = 2;
 		mass = 80;
 		initSpeed = 255;
 	};
@@ -123,18 +124,18 @@ class CfgMagazines
 		count = 2;
 		initSpeed=255;
 	};
-	class TEI_M41_Twin_HEAA: RPG32_HE_F
+	class TEI_M41_Twin_HEAA: Titan_AA
 	{
+		scope = 2;
+		count=2;
 		displayname="M19 HEAA Twin Rockets";
 		displaynameshort="HEAA Twin";
 		picture = "\TEI_weapons\rockets\icons\rocket.paa";
-		descriptionshort="Type: Guided surface-to-surface HEAT (High Explosive Anti Tank)<br/>Used in: M41 SSR MAV/AW";
+		descriptionshort="Type: Guided surface-to-air HEAA (High Explosive Anti Air)<br/>Used in: M41 SSR MAV/AW";
 		ammo="TEI_M41_Rocket_HEAA";
 		model="\TEI_Weapons\Rockets\M41_Case";	
 		modelSpecial="\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
-		count=2;
 		//picture = "";
-		scope = 1;
 		mass = 80;
 	};
 };

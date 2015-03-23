@@ -19,6 +19,7 @@ class CfgAmmo
 {
 	class R_PG32V_F; //rpg32
 	class R_TBG32V_F; //rpg 32 HE
+	class M_Titan_AT;
 	class M_Titan_AA; 
 	class M_NLAW_AT_F;
 	class ShotDeployBase;
@@ -53,11 +54,11 @@ class CfgAmmo
 		maneuvrability = 0;
 		allowAgainstInfantry = 0;*/
 	};
-	class TEI_M41_Rocket_HEAT_Guided: R_PG32V_F
+	class TEI_M41_Rocket_HEAT_Guided: M_Titan_AT
 	{
 		scope = 2;
 		model = "TEI_weapons\rockets\M41_rocket.p3d";
-		canLock = 2;
+		//canLock = 2;
 
 	};
 	class TEI_M41_Rocket_HEAP: R_TBG32V_F
