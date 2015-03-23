@@ -1,25 +1,18 @@
 TEI_UNSC_Units
 
-	-reset profiles?
-!!!!!!!!-Cannot load texture - initialshadinggroup
-	-all uniforms, vests, helmets need inventory icons
 	-Thermal imaging RVmats? textures? how the fuck does thermal work
+	-add H3/R/CE? pilot helmet
 
 	/// ODST
 
-	-Visor script not working properly (Disabled for now) [Scorch052]
 	-Spawned with goggles on and they clipped through the visor (allowedHeadgear values in config?)
-	-ODST (Medic) vest is grey/green instead of white
 	-ODST Helmet and Vest shadow lods are missing
-	-training odst having some shadow lod issues on the ass
-!!!!!!!!-instructor and recruit uniforms/hats have issues with other uniforms (removing for alpha)
-
+	-flip the ODST model
 
 	/// Army
 	-helmet attachments for variants need to be added, just take the attachments from odst helmets, same thing
 	-shadow lods need to be optimized and fixed
 	
-
 	/// Marines
 	-shadow lods need to be optimized
 	

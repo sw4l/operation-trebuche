@@ -1,50 +1,60 @@
 TEI_Weapons
 
-!!!!!!!!-All weapon inventory icons must be square 512x512 <---- USE IT
 	-None of the weapons have a muzzle flash, just the puff of smoke from the barrel.
 	-Thermal imaging RVmats? textures? how the fuck does thermal work
-	?!-Ran into a bug one time where magazines were being "eaten" on reload. Didnt happen again but watch out
+	-A3 style attachment icons
 
 	/// BR55HB Battle Rifle
-	-Icons needed
-	-figure out how to make ammo counter work, get player magazine size replace counter with number texture ## = (https://community.bistudio.com/wiki/setObjectTextureGlobal)(https://community.bistudio.com/wiki/setObjectMaterial)
-	-dirt material
+	-make ammo counter work
 	-model needs flipped (like the Hog turrets, things are reversed)
 
 	/// M6G Pistol
-	-reverse the scope settings (scope default, irons second)
 
 	/// M45 Shotgun
 	-slide slideback on firing missing
 	-Reload animation wrong (loads 8 shells when we only have 6)
-	-dirt material
 
 	/// MA5B Assault Rifle
-	-figure out how to make ammo counter work, get player magazine size replace counter with number texture ## = (https://community.bistudio.com/wiki/setObjectTextureGlobal)(https://community.bistudio.com/wiki/setObjectMaterial)
-	-hand animation "breaks arm" when weapon is rested (Ctrl x2)
+	-make ammo counter work
+	-add perphiral custom AR scope view
+	-hand animation "breaks arm" when weapon is rested
 
 	/// MA5B (M309 GL)
-	-gl sight needs flip down animation
 
 	/// M41 Rocket Launcher
 	-add custom scope reticule and zoom level
-	-does not fire an actual projectile
-	-Twin rocket ammo box disappears randomly
+	-Twin rocket ammo box disappears randomly when out of sight
+	-HEAA missiles can't hit aircraft
 
 	/// M7 Submachine Gun	
-!!!!!!!!-Weapon Animations (slide blowback, Mag Eject, reload) do not work
+
+	/// M73 Light Machine Gun
+	-update and improve textures
+	-rvmats
+	-opticView for SmartLink iron sights error
+
+	/// M247 Medium Machine Gun
+	-model/texture
+	-handheld
+	-tripod
+	-pelican/falcon floor mount
+	-turret
+	-deploying MG on tripod script [SpaceNavy]
+
+	/// M9 Frag
+
+	/// M2 Smoke
+	-add Stun/Napalm variants
 
 	/// biofoam
-	-needs icon image
-	
+	-AGM medical compat	
+
 	/// medi pack
-	-needs icon image
+	-AGM medical compat
 
 	///ILCS Rucksacks
-	-needs icon image
-	-shadow hidden selections not disappearing
 
 	///Commo Rucksack
-	-make a TFAR backpack
+	-custom TFAR radio HUD
 
 *Please put your name in brackets at the end of whatever issue(s) you are currently working on

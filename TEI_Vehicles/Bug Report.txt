@@ -1,32 +1,48 @@
 TEI_Vehicles
 
-	-add retextured UNSC HEMTT "M1087 Stallion"
-	-add retextured UNSC Zamak "M1015 Mule"
+	-Vehicle groups for all factions [SpaceNavy]
 	-Thermal imaging RVmats? textures? how the fuck does thermal work
 
 	/// HEV
-!!!!!!!!-drop pods do not work
-	-script suite needs to be fully tested [Scorch052]
-	-needs proper Geo and Contact LODs
-	-emergency door not working
 	-remove option to "turn on" the vehicle
 	-cooldown timer for the dropping sequence?	
-	-include a readme on how to use droppod when scripts are released
+	-include a readme/video? on how to use droppod scripts
 
 	/// Warthog
-!!!!!!!!-fire geo lod needed for the attachments (apc cover, gun, etc)
-	-sounds extremely quiet in driver seat
-!!!!!!!!-cargo enterance positions need switched around
-!!!!!!!!-cargo switching while inside needs fixing
-!!!!!!!!-penetrator plate rvmat error???
-!!!!!!!!-rear Warthog tires pop easily
+	-sounds extremely quiet inside
+	-remove crosshairs for Gauss hog
+	-add crosshairs for MG hog
+	-AA hog only firing from one side
+	-AT hog scope view error
 
 	/// Pelican
+	-better lights for exterior
+	-lights for interior cargo area
+	-lower pelican sounds?
+	-VTOL pelican variant
+	-force out cargo action?
+	-add standing pelican animations
+	-add Pelican gunship
+	-add M247 MMG turret to rear
+	-AGM fast roping compat
+	-Marine Pelican variant retexture?
 	-cockpit gadgets not working, honestly wouldnt bother with it as the cockpit will be overhauled later
-	-pelican wreck texture needs to be blackened out (green wings)
-	-landing gear geometery lod needs tweaking (AI get stuck on them)?
-!!!!!!!!-lifting capabilities seriously need up'd
 
+	/// Falcon
+	-needs textured
 
+	/// Wombat
+	-needs textured
+
+	/// Scorpion
+	-needs textured
+
+	/// Hornet 
+	-needs textured
+
+	/// Longsword
+	-needs O2'd [SpaceNavy]
+	-needs interior modelled and textured
+	-updated 4k textured [Zero]
 
 *Please put your name in brackets at the end of whatever issue(s) you are currently working on
