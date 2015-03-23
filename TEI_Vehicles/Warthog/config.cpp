@@ -355,7 +355,7 @@ class CfgVehicles
 		transportSoldier=0;
 		crewVulnerable=1;
 		nameSound = car;
-		//attenuationEffectType = "CarAttenuation";
+		attenuationEffectType = "OpenCarAttenuation";
 		crewCrashProtection=0.015;
 		armor=100;
 		cost=500000;
@@ -605,7 +605,6 @@ class CfgVehicles
 		precision=15;
 		weapons[]={"TruckHorn2"};
 		magazines[]={};
-		attenuationEffectType="CarAttenuation";
 		soundGetIn[]={"A3\Sounds_F\vehicles\soft\MRAP_01\getin",0.5623413,1};
 		soundGetOut[]={"A3\Sounds_F\vehicles\soft\MRAP_01\getout",0.5623413,1,40};
 		soundDammage[]={"",0.5623413,1};
