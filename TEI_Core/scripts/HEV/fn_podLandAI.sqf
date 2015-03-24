@@ -36,5 +36,7 @@ _unit disableCollisionWith _pod;
 sleep 1;
 moveOut _unit;
 waitUntil {vehicle _unit == _unit};
+_attach hideObjectGlobal true;
+_pod setvehiclelock "LOCKED";
 sleep 3;
 _unit allowdamage true;

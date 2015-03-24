@@ -35,6 +35,8 @@ _pod setvehiclelock "UNLOCKED";
 _pod allowdamage true;
 _unit disableCollisionWith _pod;
 waitUntil {vehicle _unit == _unit};
+_attach hideObjectGlobal true;
+_pod setvehiclelock "LOCKED";
 hintSilent "";
 sleep 3;
 _unit allowdamage true;

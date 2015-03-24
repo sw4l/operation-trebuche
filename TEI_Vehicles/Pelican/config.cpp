@@ -163,54 +163,42 @@ class CfgVehicles
 				visual="Hull";
 				depends="Total";
 				passThrough=1;
+				explosionShielding=1;
 				radius=0.01;
 			};
 			class HitFuel:HitFuel
 			{
 				armor=0.5;
 				radius=1;
-				minimalHit=0.05;
 				passThrough=1;
+				explosionShielding=0.5;
 				name="fuel";
 			};
 			class HitAvionics:HitAvionics
 			{
 				armor=0.1;
 				radius=1;
-				minimalHit=0.05;
 				passThrough=0;
+				explosionShielding=0.25;
 				name="elektronika";
 			};
 			class HitHRotor:HitHRotor
 			{
-				armor=0.75; //1.8
+				armor=1;
 				radius=1;
-				minimalHit=0.09;
 				name="mainrotor";
-				explosionShielding=2.5;
+				explosionShielding=1;
 				passThrough=0.25;
 				visual = “mainrotors”;
 			};
 			class HitVRotor:HitVRotor
 			{
-				armor=0.75;
+				armor=1;
 				radius=1;
-				minimalHit=0.05;
 				name="tailrotor";
-				explosionShielding=6;
+				explosionShielding=1;
 				passThrough=0.25;
 				visual = “tailrotors”;
-			};
-			class HitEngine
-			{
-				armor=0.75;
-				name="motor";
-				material=-1;
-				visual="";
-				passThrough=0.75;
-				minimalHit=0.2;
-				explosionShielding=0.2;
-				radius=0.45;
 			};
 		};
 /// hit points end

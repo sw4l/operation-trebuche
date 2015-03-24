@@ -12,3 +12,4 @@ _Selfpod attachto [_attach,[0,0,0]];
 _Selfpod setdir 180;
 _Selfpod setVectorUp [0,0,1];
 deletemarker "SelfDrop";
+_attach hideObjectGlobal true;

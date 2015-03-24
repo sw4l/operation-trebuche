@@ -38,5 +38,5 @@ while {time > 0} do
 			_x setVariable ["TEI_HEV_HasAction", true, true];
 		};
 	} forEach vehicles;
-	sleep 0.1;
+	sleep 0.05;
 };
