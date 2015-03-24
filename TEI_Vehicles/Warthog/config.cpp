@@ -357,7 +357,7 @@ class CfgVehicles
 		nameSound = car;
 		attenuationEffectType = "OpenCarAttenuation";
 		crewCrashProtection=0.015;
-		armor=100;
+		armor=75;
 		cost=500000;
 		canFloat=0;
 		threat[]={0.8,0.6,0.3};
@@ -456,28 +456,28 @@ class CfgVehicles
 			class HitLFWheel:HitLFWheel
 			{
 				armor=999;
-				explosionShielding=0.8;
+				explosionShielding=0;
 				radius=0.25;
 				passThrough=0;
 			};
 			class HitLF2Wheel:HitLF2Wheel
 			{
 				armor=999;
-				explosionShielding=0.8;
+				explosionShielding=0;
 				radius=0.25;
 				passThrough=0;
 			};
 			class HitRFWheel:HitRFWheel
 			{
 				armor=999;
-				explosionShielding=0.8;
+				explosionShielding=0;
 				radius=0.25;
 				passThrough=0;
 			};
 			class HitRF2Wheel:HitRF2Wheel
 			{
 				armor=999;
-				explosionShielding=0.8;
+				explosionShielding=0;
 				radius=0.25;
 				passThrough=0;
 			};
@@ -485,23 +485,15 @@ class CfgVehicles
 			{
 				armor=0.75;
 				name="palivo";
-				material=-1;
-				visual="";
 				passThrough=1;
-				minimalHit=0.2;
-				explosionShielding=0.2;
-				radius=0.25;
+				explosionShielding=0.75;
 			};
 			class HitEngine:HitEngine
 			{
 				armor=0.75;
 				name="motor";
-				material=-1;
-				visual="";
 				passThrough=0.75;
-				minimalHit=0.2;
-				explosionShielding=0.2;
-				radius=0.45;
+				explosionShielding=0.75;
 			};
 			class HitBody:HitBody
 			{
@@ -509,14 +501,13 @@ class CfgVehicles
 				name="karoserie";
 				visual="body";
 				passThrough=1;
-				minimalHit=0.2;
-				explosionShielding=0.2;
+				explosionShielding=1;
 				radius=0.33;
 			};
 			class HitGlass1:HitGlass1
 			{
 				armor=0.25;
-				explosionShielding=0.25;
+				explosionShielding=0.5;
 				visual="glass1";
 				radius=0.25;
 				name="glass1";
@@ -600,8 +591,6 @@ class CfgVehicles
 		hideWeaponsCargo=0;
 		driverDoor="";
 		cargoDoors[]={};
-		terrainCoef=0.25;
-		turnCoef = 5.5; //2.5
 		precision=15;
 		weapons[]={"TruckHorn2"};
 		magazines[]={};
@@ -932,7 +921,7 @@ class CfgVehicles
 				volume="engineOn*(1-asphalt)*(1-camPos)*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
 			};
 		};
-		thrustDelay=0.25; //0.1
+		/*thrustDelay=0.25; //0.1
 		brakeIdleSpeed=1.78;
 		maxSpeed=125;
 		fuelCapacity=150;
@@ -1030,7 +1019,10 @@ class CfgVehicles
 				maxHandBrakeTorque=2750; //3500
 				side="right";
 			};
-		};
+		};*/
+		
+		#include "physx.hpp"
+		
 		supplyRadius=5;
 		transportMaxMagazines=90;
 		class TransportMagazines

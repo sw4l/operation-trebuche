@@ -1,6 +1,8 @@
 		/// splendid tutorial by RedPhoenix could be found at 
 		/// http://forums.bistudio.com/showthread.php?165390-Tutorial-Creating-Custom-Engine-Gearbox-and-Suspension-Vehicle-configuration
 		
+		terrainCoef									= 0.1;
+		turnCoef 									= 5.5; //2.5
 		thrustDelay									= 0.25; //0.1 to 0.25
 		brakeIdleSpeed								= 1.78;
 		maxSpeed									= 125;
