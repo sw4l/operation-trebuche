@@ -83,7 +83,7 @@ class CfgVehicles
 		faction	= "TEI_UNSC";					/// defines the faction inside of the side
 		crew = "TEI_UNSC_Army_W_Pilot";					/// lets use the sample soldier we have as default captain of the boat
 		scope 	= 0;
-        armor = 300;						        /// just some protection against missiles, collisions and explosions
+        armor = 120;						        /// just some protection against missiles, collisions and explosions
 		destrType = DestructWreck;
 		gearRetracting=1;	
 		accuracy = 0.5;							/// how hard it is to distinguish the type of the vehicle (bigger number means harder)
