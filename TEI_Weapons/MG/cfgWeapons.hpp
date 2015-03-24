@@ -115,8 +115,8 @@
                                     begin2[] = {"A3\sounds_f\weapons\EBR\EBR_st_5",1.0,1,2000};
                                     begin3[] = {"A3\sounds_f\weapons\EBR\EBR_st_6",1.0,1,2000};*/
      
-                                    begin1[] = {"\TEI_Weapons\BR\Data\sounds\BattleRifle_1.wss",1.0,1,2000};
-									begin2[] = {"\TEI_Weapons\BR\Data\sounds\BattleRifle_2.wss",1.0,1,2000};
+                                    begin1[] = {"\TEI_Weapons\MG\data\sounds\M73_1.wss",1.0,1,2000};
+									begin2[] = {"\TEI_Weapons\MG\data\sounds\M73_2.wss",1.0,1,2000};
 									soundBegin[] = {"begin1",0.34,"begin2",0.33};
                             };
                             class SilencedSound: BaseSoundModeType
@@ -127,8 +127,8 @@
                             };
                             reloadTime = 0.0789; 		
                             dispersion = 0.00075;
-                            recoil = "recoil_single_ebr";
-                            recoilProne = "recoil_single_prone_ebr";
+                            recoil = "recoil_single_mx";
+							recoilProne = "recoil_single_prone_mx";
                             minRange = 2;
                             minRangeProbab = 0.3;
                             midRange = 300;
@@ -148,8 +148,8 @@
                             };
                             class StandardSound: BaseSoundModeType
                             {
-                                    begin1[] = {"\TEI_Weapons\BR\Data\sounds\BattleRifle_1.wss",1.0,1,2000};
-									begin2[] = {"\TEI_Weapons\BR\Data\sounds\BattleRifle_2.wss",1.0,1,2000};
+                                    begin1[] = {"\TEI_Weapons\MG\data\sounds\M73_1.wss",1.0,1,2000};
+									begin2[] = {"\TEI_Weapons\MG\data\sounds\M73_2.wss",1.0,1,2000};
 									soundBegin[] = {"begin1",0.34,"begin2",0.33};
                             };
                             class SilencedSound: BaseSoundModeType

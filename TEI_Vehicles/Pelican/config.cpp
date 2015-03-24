@@ -621,7 +621,17 @@ class CfgVehicles
 		acceleration = 250;     /// used for AI to plan the waypoints and accelerating, doesn't affect plane performance
 		
 	///HANDLING
-		vtol = 3;
+		vtol = 10;
+		
+		/*		class VTOLSettings
+		{
+			WeightRmpty = 5934;
+			WeightMaxVTOL = 10408;
+			WeightMaxFuel = 3540;
+			Thrust = 10793;
+			VTOLSpeed = 180;
+		};
+		*/
 		
         simulation = airplaneX;
 		
