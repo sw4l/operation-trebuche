@@ -1062,7 +1062,7 @@ class cfgWeapons
 		author																					= "Eridanus Insurrection Team";
 		picture   																				= "\TEI_UNSC_Units\ODST\icons\odst_helmet_recon.paa";
 		displayName    																			= "[UNSC] ODST CH253 Helmet (Recon) [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_rebreather","attach_rangefinder","attach_laser"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"TEI_UNSC_Units\ODST\data\helmet_co.paa","TEI_UNSC_Units\ODST\data\helmet_ca.paa"}; /// what texture is going to be used
 			hiddenSelectionsMaterials[]   														= {"TEI_UNSC_Units\ODST\data\helmet.rvmat","TEI_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
 		class ItemInfo: HeadgearItem 
