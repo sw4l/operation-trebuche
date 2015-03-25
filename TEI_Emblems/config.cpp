@@ -13,503 +13,232 @@ class CfgPatches //This configures the identification of the pbo to the game
 
 class CfgUnitInsignia //Unit Insignias to show on players' shoulders
 {
-	class TEI_Insignia_medic
+	class TEI_Insignia_foxgaming
 	{
 		scope = 2;
 		scopeArsenal = 2;
+		displayName = "[TEI] Fox Gaming"; // Name displayed in Arsenal
+		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
+		texture = "\TEI_Emblems\data\foxgaming.paa"; // Image path
+		textureVehicle = "\TEI_Emblems\data\foxgaming.paa"; // Does nothing currently, reserved for future use
+	};
+	class TEI_Insignia_ins
+	{
+		displayName = "[TEI] Insurrection"; // Name displayed in Arsenal
+		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
+		texture = "\TEI_Emblems\data\insurrection.paa"; // Image path
+		textureVehicle = "\TEI_Emblems\data\insurrection.paa"; // Does nothing currently, reserved for future use
+	};
+	class TEI_Insignia_medic : TEI_Insignia_foxgaming
+	{
 		displayName = "[TEI] Medic"; // Name displayed in Arsenal
 		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
 		texture = "\TEI_Emblems\data\medic.paa"; // Image path
 		textureVehicle = "\TEI_Emblems\data\medic.paa"; // Does nothing currently, reserved for future use
 	};
-	/*class TEI_Insignia_odstlogo1
+	class TEI_Insignia_odst_7th : TEI_Insignia_foxgaming
 	{
-		displayName = "[UNSC] ODST 1"; // Name displayed in Arsenal
+		displayName = "[TEI] ODST (7th STB)"; // Name displayed in Arsenal
 		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\odstlogo1.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		texture = "\TEI_Emblems\data\odst_7th.paa"; // Image path
+		textureVehicle = "\TEI_Emblems\data\odst_7th.paa"; // Does nothing currently, reserved for future use
 	};
-	class TEI_Insignia_odstlogo2
+	class TEI_Insignia_odst_13th : TEI_Insignia_foxgaming
 	{
-		displayName = "[UNSC] ODST 2"; // Name displayed in Arsenal
+		displayName = "[TEI] ODST (13th STB)"; // Name displayed in Arsenal
 		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\odstlogo2.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		texture = "\TEI_Emblems\data\odst_13th.paa"; // Image path
+		textureVehicle = "\TEI_Emblems\data\odst_13th.paa"; // Does nothing currently, reserved for future use
 	};
-	class TEI_Insignia_odstlogo3
+	class TEI_Insignia_odst_19th : TEI_Insignia_foxgaming
 	{
-		displayName = "[UNSC] ODST 3"; // Name displayed in Arsenal
+		displayName = "[TEI] ODST (19th STB)"; // Name displayed in Arsenal
 		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\odstlogo3.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		texture = "\TEI_Emblems\data\odst_19th.paa"; // Image path
+		textureVehicle = "\TEI_Emblems\data\odst_19th.paa"; // Does nothing currently, reserved for future use
 	};
-	class TEI_Insignia_anchor
+	class TEI_Insignia_oni : TEI_Insignia_foxgaming
 	{
-		displayName = "[UNSC] Anchor"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\anchor.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_arrowhead
-	{
-		displayName = "[UNSC] Arrowhead"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\arrowhead.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_assassin
-	{
-		displayName = "[UNSC] Assassin"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\assassin.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_atomic
-	{
-		displayName = "[UNSC] Atomic"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\atomic.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_bear
-	{
-		displayName = "[UNSC] Bear"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\bear.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_blackwidow
-	{
-		displayName = "[UNSC] Black Widow"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\blackwidow.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_blueflag
-	{
-		displayName = "[UNSC] Blue Flag"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\blueflag.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_bonebreaker
-	{
-		displayName = "[UNSC] Bonebreaker"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\bonebreaker.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_boot
-	{
-		displayName = "[UNSC] Boot"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\boot.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_bull
-	{
-		displayName = "[UNSC] Bull"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\bull.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_campfire
-	{
-		displayName = "[UNSC] Campfire"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\campfire.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_cancelled
-	{
-		displayName = "[UNSC] Cancelled"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\cancelled.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_cartridge
-	{
-		displayName = "[UNSC] Cartridge"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\cartridge.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_cartridges
-	{
-		displayName = "[UNSC] Cartridges"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\cartridges.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_cat
-	{
-		displayName = "[UNSC] Cat"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\cat.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_cobra
-	{
-		displayName = "[UNSC] Cobra"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\cobra.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_cone
-	{
-		displayName = "[UNSC] Cone"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\cone.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_corbulo
-	{
-		displayName = "[UNSC] Corbulo"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\corbulo.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_crosshairs
-	{
-		displayName = "[UNSC] Crosshairs"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\crosshairs.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_cube
-	{
-		displayName = "[UNSC] Cube"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\cube.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_dogtags
-	{
-		displayName = "[UNSC] Dogtags"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\dogtags.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_eagle
-	{
-		displayName = "[UNSC] Eagle"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\eagle.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_engineer
-	{
-		displayName = "[UNSC] Engineer"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\engineer.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_flaminghorns
-	{
-		displayName = "[UNSC] Flaming Horns"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\flaminghorns.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_flamingninja
-	{
-		displayName = "[UNSC] Flaming Ninja"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\flamingninja.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_fox1
-	{
-		displayName = "[UNSC] Fox (Black)"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\fox1.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_fox2
-	{
-		displayName = "[UNSC] Fox (White)"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\fox2.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_hazmat
-	{
-		displayName = "[UNSC] Hazmat"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\hazmat.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_headshot
-	{
-		displayName = "[UNSC] Headshot"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\headshot.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_hornet
-	{
-		displayName = "[UNSC] Hornet"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\hornet.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_ilovebees
-	{
-		displayName = "[UNSC] I Love Bees"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\ilovebees.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_insurrection
-	{
-		displayName = "[UNSC] Insurrection"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\insurrection.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_jollyroger
-	{
-		displayName = "[UNSC] Jolly Roger"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\jollyroger.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_keepitclean
-	{
-		displayName = "[UNSC] Keep It Clean"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\keepitclean.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_king
-	{
-		displayName = "[UNSC] King"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\king.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_lightning
-	{
-		displayName = "[UNSC] Lightning"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\lightning.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_lion
-	{
-		displayName = "[UNSC] Lion"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\lion.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_network
-	{
-		displayName = "[UNSC] Network"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\network.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_ninja
-	{
-		displayName = "[UNSC] Ninja"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\ninja.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_oni
-	{
-		displayName = "[UNSC] ONI"; // Name displayed in Arsenal
+		displayName = "[TEI] ONI"; // Name displayed in Arsenal
 		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
 		texture = "\TEI_Emblems\data\oni.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		textureVehicle = "\TEI_Emblems\data\oni.paa"; // Does nothing currently, reserved for future use
 	};
-	class TEI_Insignia_operator
+	class TEI_Insignia_unsc_9th : TEI_Insignia_foxgaming
 	{
-		displayName = "[UNSC] Operator"; // Name displayed in Arsenal
+		displayName = "[TEI] UNSC (9th MEU)"; // Name displayed in Arsenal
 		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\operator.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		texture = "\TEI_Emblems\data\unsc_9th.paa"; // Image path
+		textureVehicle = "\TEI_Emblems\data\unsc_9th.paa"; // Does nothing currently, reserved for future use
 	};
-	class TEI_Insignia_patch
+	class TEI_Insignia_unsc_1st : TEI_Insignia_foxgaming
 	{
-		displayName = "[UNSC] Patch"; // Name displayed in Arsenal
+		displayName = "[TEI] UNSC (1st Cav)"; // Name displayed in Arsenal
 		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\patch.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		texture = "\TEI_Emblems\data\unsc_1st.paa"; // Image path
+		textureVehicle = "\TEI_Emblems\data\unsc_1st.paa"; // Does nothing currently, reserved for future use
 	};
-	class TEI_Insignia_pathfinder
+	class TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Pathfinder"; // Name displayed in Arsenal
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[TEI] (Emblems) Black Widow"; // Name displayed in Arsenal
 		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\pathfinder.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		texture = "\TEI_Emblems\data\blackwidow.paa"; // Image path
+		textureVehicle = "\TEI_Emblems\data\blackwidow.paa"; // Does nothing currently, reserved for future use
 	};
-	class TEI_Insignia_pioneer
+	class TEI_Insignia_emblems_bull : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Pioneer"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\pioneer.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Bull";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\bull.paa";
+		textureVehicle = "\TEI_Emblems\data\bull.paa";
 	};
-	class TEI_Insignia_pirate
+	class TEI_Insignia_emblems_cartridges : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Pirate"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\pirate.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Cartridges";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\cartridges.paa";
+		textureVehicle = "\TEI_Emblems\data\cartridges.paa";
 	};
-	class TEI_Insignia_planet
+	class TEI_Insignia_emblems_cone : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Planet"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\planet.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Cone";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\cone.paa";
+		textureVehicle = "\TEI_Emblems\data\cone.paa";
 	};
-	class TEI_Insignia_radioactive
+	class TEI_Insignia_emblems_crosshairs : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Radioactive"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\radioactive.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Crosshairs";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\crosshairs.paa";
+		textureVehicle = "\TEI_Emblems\data\crosshairs.paa";
 	};
-	class TEI_Insignia_redflag
+	class TEI_Insignia_emblems_fox : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Red Flag"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\redflag.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Fox";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\fox.paa";
+		textureVehicle = "\TEI_Emblems\data\fox.paa";
 	};
-	class TEI_Insignia_rogue
+	class TEI_Insignia_emblems_hazmat : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Rogue"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\rogue.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Hazmat";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\hazmat.paa";
+		textureVehicle = "\TEI_Emblems\data\hazmat.paa";
 	};
-	class TEI_Insignia_rooster
+	class TEI_Insignia_emblems_hornet : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Rooster"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\rooster.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Hornet";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\hornet.paa";
+		textureVehicle = "\TEI_Emblems\data\hornet.paa";
 	};
-	class TEI_Insignia_runes
+	class TEI_Insignia_emblems_jollyroger : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Runes"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\runes.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Jolly Roger";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\jollyroger.paa";
+		textureVehicle = "\TEI_Emblems\data\jollyroger.paa";
 	};
-	class TEI_Insignia_skull1
+	class TEI_Insignia_emblems_keepitclean : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Skull 1"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\skull1.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Keep It Clean";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\keepitclean.paa";
+		textureVehicle = "\TEI_Emblems\data\keepitclean.paa";
 	};
-	class TEI_Insignia_skull2
+	class TEI_Insignia_emblems_king : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Skull 2"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\skull2.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) King";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\king.paa";
+		textureVehicle = "\TEI_Emblems\data\king.paa";
 	};
-	class TEI_Insignia_splatter
+	class TEI_Insignia_emblems_lightning : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Splatter"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\splatter.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Lightning";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\lightning.paa";
+		textureVehicle = "\TEI_Emblems\data\lightning.paa";
 	};
-	class TEI_Insignia_stalker
+	class TEI_Insignia_emblems_radioactive : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Stalker"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\stalker.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Radioactive";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\radioactive.paa";
+		textureVehicle = "\TEI_Emblems\data\radioactive.paa";
 	};
-	class TEI_Insignia_stallion
+	class TEI_Insignia_emblems_rooster : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Stallion"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\stallion.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Rooster";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\rooster.paa";
+		textureVehicle = "\TEI_Emblems\data\rooster.paa";
 	};
-	class TEI_Insignia_stare
+	class TEI_Insignia_emblems_skull : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] The Stare"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\stare.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Skull";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\skull.paa";
+		textureVehicle = "\TEI_Emblems\data\skull.paa";
 	};
-	class TEI_Insignia_stop
+	class TEI_Insignia_emblems_stallion : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Full Stop"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\stop.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Stallion";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\stallion.paa";
+		textureVehicle = "\TEI_Emblems\data\stallion.paa";
 	};
-	class TEI_Insignia_thehand
+	class TEI_Insignia_emblems_stare : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] The Hand"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\thehand.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) The Stare";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\stare.paa";
+		textureVehicle = "\TEI_Emblems\data\stare.paa";
 	};
-	class TEI_Insignia_tracker
+	class TEI_Insignia_emblems_thehand : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Tracker"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\tracker.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) The Hand";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\thehand.paa";
+		textureVehicle = "\TEI_Emblems\data\thehand.paa";
 	};
-	class TEI_Insignia_unicorn
+	class TEI_Insignia_emblems_unicorn : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Unicorn"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\unicorn.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Unicorn";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\unicorn.paa";
+		textureVehicle = "\TEI_Emblems\data\unicorn.paa";
 	};
-	class TEI_Insignia_uprising
+	class TEI_Insignia_emblems_uprising : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Uprising"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\uprising.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Uprising";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\uprising.paa";
+		textureVehicle = "\TEI_Emblems\data\uprising.paa";
 	};
-	class TEI_Insignia_valkyrie
+	class TEI_Insignia_emblems_valkyrie : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Valkyrie"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\valkyrie.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Valkyrie";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\valkyrie.paa";
+		textureVehicle = "\TEI_Emblems\data\valkyrie.paa";
 	};
-	class TEI_Insignia_viking
+	class TEI_Insignia_emblems_wolf : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Viking"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\viking.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Wolf";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\wolf.paa";
+		textureVehicle = "\TEI_Emblems\data\wolf.paa";
 	};
-	class TEI_Insignia_wetworks
+	class TEI_Insignia_emblems_yinyang : TEI_Insignia_emblems_blackwidow
 	{
-		displayName = "[UNSC] Wetworks"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\wetworks.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
+		displayName = "[TEI] (Emblems) Yin Yang";
+		author = "Eridanus Insurrection Team";
+		texture = "\TEI_Emblems\data\yinyang.paa";
+		textureVehicle = "\TEI_Emblems\data\yinyang.paa";
 	};
-	class TEI_Insignia_wolf
-	{
-		displayName = "[UNSC] Wolf Pack"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\wolf.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};
-	class TEI_Insignia_yinyang
-	{
-		displayName = "[UNSC] Yin Yang"; // Name displayed in Arsenal
-		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
-		texture = "\TEI_Emblems\data\yinyang.paa"; // Image path
-		textureVehicle = ""; // Does nothing currently, reserved for future use
-	};*/
 };

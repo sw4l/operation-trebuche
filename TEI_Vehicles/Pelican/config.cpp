@@ -1216,7 +1216,7 @@ class CfgVehicles
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
 		
-		hiddenSelections[]= {"camo1"}; //Determines what hiddenselections are enabled
+		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_green_CO.paa"};
 	};
 		class TEI_Pelican_unarmed_tan: TEI_Pelican_unarmed_green
@@ -1230,7 +1230,7 @@ class CfgVehicles
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
 		vehicleClass = "TEI_UNSC_Air_class";
-		hiddenSelections[]= {"camo1"}; //Determines what hiddenselections are enabled
+		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] = {"TEI_Vehicles\Pelican\data\PelicanExterior_Tan_CO.paa"};
 	};
 		class TEI_Pelican_unarmed_black: TEI_Pelican_unarmed_green
@@ -1244,7 +1244,7 @@ class CfgVehicles
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
 		vehicleClass = "TEI_UNSC_Air_class";
-		hiddenSelections[]= {"camo1"}; //Determines what hiddenselections are enabled
+		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_black_CO.paa"};
 	};
 	class TEI_Pelican_unarmed_ins: TEI_Pelican_unarmed_green
@@ -1258,7 +1258,7 @@ class CfgVehicles
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
 		vehicleClass = "TEI_Ins_Air_class";
-		hiddenSelections[]= {"camo1"}; //Determines what hiddenselections are enabled
+		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_innie_CO.paa"};
 	};
 	class TEI_Pelican_VTOL: TEI_Pelican_VTOL_base
@@ -1273,7 +1273,7 @@ class CfgVehicles
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
 		
-		hiddenSelections[]= {"camo1"}; //Determines what hiddenselections are enabled
+		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_green_CO.paa"};
 	};
 };
