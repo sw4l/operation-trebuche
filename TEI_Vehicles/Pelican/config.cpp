@@ -74,8 +74,6 @@ class CfgVehicles
 		};
 	};
 
-
-
 	class TEI_Pelican_F: Helicopter_Base_F
 	{		
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
@@ -83,7 +81,7 @@ class CfgVehicles
 		faction	= "TEI_UNSC";					/// defines the faction inside of the side
 		crew = "TEI_UNSC_Army_W_Pilot";					/// lets use the sample soldier we have as default captain of the boat
 		scope 	= 0;
-        armor = 120;						        /// just some protection against missiles, collisions and explosions
+        armor = 60;						        /// just some protection against missiles, collisions and explosions
 		destrType = DestructWreck;
 		gearRetracting=1;	
 		accuracy = 0.5;							/// how hard it is to distinguish the type of the vehicle (bigger number means harder)
@@ -109,7 +107,7 @@ class CfgVehicles
 	///HANDLING
 		altFullForce = 50000;					 	/// in what height do the engines still have full thrust
 		altNoForce = 12000;					 	/// thrust of the engines interpolates to zero between altFullForce and altNoForce
-		maxSpeed = 400;						 	/// what is the maximum speed of the vehicle
+		maxSpeed = 500;//400						 	/// what is the maximum speed of the vehicle
 		maxFordingDepth = 0.75;	//0.55	   			 	/// how deep could the vehicle be in water without getting some damage
 		mainBladeRadius = 0.1;						/// describes the radius of main rotor - used for collision detection
 		liftForceCoef = 2; //20				///multiplier of lift force	
@@ -159,46 +157,39 @@ class CfgVehicles
 		{
 			class HitHull:HitHull
 			{
-				armor=1;
+				armor=0.1;
 				visual="Hull";
-				depends="Total";
-				passThrough=1;
-				explosionShielding=1;
-				radius=0.01;
+				minimalHit = 0.05;
+				depends = "Total";
+				radius = 0.01;
 			};
 			class HitFuel:HitFuel
 			{
-				armor=0.5;
-				radius=1;
-				passThrough=1;
-				explosionShielding=0.5;
-				name="fuel";
+				armor = 0.7;
+				radius = 0.25;
+				minimalHit = 0.05;
+				explosionShielding = 2;
 			};
 			class HitAvionics:HitAvionics
 			{
-				armor=0.1;
-				radius=1;
-				passThrough=0;
-				explosionShielding=0.25;
-				name="elektronika";
+				armor = 1.3;
+				radius = 0.4;
+				minimalHit = 0.05;
+				explosionShielding = 1.5;
 			};
 			class HitHRotor:HitHRotor
 			{
-				armor=1;
-				radius=1;
-				name="mainrotor";
-				explosionShielding=1;
-				passThrough=0.25;
-				visual = “mainrotors”;
+				armor = 2.6;
+				radius = 0.4;
+				minimalHit = 0.09;
+				explosionShielding = 2.5;
 			};
 			class HitVRotor:HitVRotor
 			{
-				armor=1;
-				radius=1;
-				name="tailrotor";
-				explosionShielding=1;
-				passThrough=0.25;
-				visual = “tailrotors”;
+				armor = 1.3;
+				radius = 0.06;
+				minimalHit = 0.05;
+				explosionShielding = 6;
 			};
 		};
 /// hit points end
@@ -207,7 +198,7 @@ class CfgVehicles
 		{};
 		class TransportItems		/// adds various items to cargo hold of the heli
 		{};		
-		maximumLoad = 2000;			/// capacity of cargo inventory for backpacks and various other item
+		maximumLoad = 5000;			/// capacity of cargo inventory for backpacks and various other item
 ///transport items	 end  
 		class Exhausts								/// describes the particle effects fro exhausts
 		{

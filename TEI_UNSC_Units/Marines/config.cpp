@@ -52,7 +52,7 @@ class CfgVehicles //This configures units and backpacks
 		RespawnItems[]													= {"TEI_Biofoam"};
 		linkedItems[] 													= {"TEI_UNSC_Marine_Vest_vacuum","TEI_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		respawnLinkedItems[] 											= {"TEI_UNSC_Marine_Vest_vacuum","TEI_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
-		hiddenSelections[] 												= {"camo1","camo2","insignia","attach_leftshoulder","attach_rightshoulder","attach_pant1"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder","attach_rightshoulder","attach_pant1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_Ca.paa"};
 		armor															= 4;
 		armorStructural													= 5;
@@ -123,7 +123,7 @@ class CfgVehicles //This configures units and backpacks
 		respawnMagazines[]												= {};
 		linkedItems[] 													= {"TEI_UNSC_Marine_Vest","TEI_UNSC_Marine_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		respawnLinkedItems[] 											= {"TEI_UNSC_Marine_Vest","TEI_UNSC_Marine_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
-		hiddenSelections[] 												= {"camo1","camo2","insignia","attach_leftshoulder","attach_rightshoulder","attach_pant1"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder","attach_rightshoulder","attach_pant1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_Ca.paa"};
 		class HitPoints : HitPoints
 		{
@@ -169,7 +169,7 @@ class CfgVehicles //This configures units and backpacks
 		RespawnItems[]													= {"TEI_Biofoam"};
 		linkedItems[] 													= {"TEI_UNSC_Marine_Vest_vacuum","TEI_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		respawnLinkedItems[] 											= {"TEI_UNSC_Marine_Vest_vacuum","TEI_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
-		hiddenSelections[] 												= {"camo1","camo2","insignia","attach_leftshoulder","attach_rightshoulder","attach_pant1"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder","attach_rightshoulder","attach_pant1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_Ca.paa"};
 		class HitPoints : HitPoints
 		{
@@ -214,7 +214,7 @@ class TEI_UNSC_Marine_medium: TEI_UNSC_Marine_Soldier_Base //Configures the unit
 		respawnMagazines[]												= {};
 		linkedItems[] 													= {"TEI_UNSC_Marine_Vest","TEI_UNSC_Marine_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		respawnLinkedItems[] 											= {"TEI_UNSC_Marine_Vest","TEI_UNSC_Marine_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
-		hiddenSelections[] 												= {"camo1","camo2","insignia","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_pant2"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_pant2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_Ca.paa"};
 		class HitPoints : HitPoints
 		{
@@ -259,7 +259,7 @@ class TEI_UNSC_Marine_medium: TEI_UNSC_Marine_Soldier_Base //Configures the unit
 		respawnMagazines[]												= {};
 		linkedItems[] 													= {"TEI_UNSC_Marine_Vest","TEI_UNSC_Marine_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		respawnLinkedItems[] 											= {"TEI_UNSC_Marine_Vest","TEI_UNSC_Marine_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
-		hiddenSelections[] 												= {"camo1","camo2","insignia","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_pant2"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_pant2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_Ca.paa"};
 		class HitPoints : HitPoints
 		{
@@ -328,7 +328,7 @@ class TEI_UNSC_Marine_medium: TEI_UNSC_Marine_Soldier_Base //Configures the unit
 		respawnMagazines[]	 							= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
 		linkedItems[] 													= {"TEI_UNSC_Marine_Vest_vacuum","TEI_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] 											= {"TEI_UNSC_Marine_Vest_vacuum","TEI_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		hiddenSelections[] 												= {"camo1","camo2","insignia","attach_leftknee","attach_rightknee","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftthigh","attach_rightthigh","attach_rightknee2","attach_leftknee2","attach_pant2"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftknee","attach_rightknee","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftthigh","attach_rightthigh","attach_rightknee2","attach_leftknee2","attach_pant2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"TEI_UNSC_Units\Marines\data\armor_cam3_co.paa","TEI_UNSC_Units\Marines\data\uniform_cam3_co.paa","TEI_UNSC_Units\Marines\data\addons_cam3_Ca.paa"};
 		class HitPoints : HitPoints
 		{

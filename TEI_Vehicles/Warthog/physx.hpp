@@ -8,10 +8,10 @@
 		maxSpeed									= 125;
 		fuelCapacity								= 150;
 		wheelCircumference							= 3.924;
-		antiRollbarForceCoef						= 12;
-		antiRollbarForceLimit 						= 10;
+		antiRollbarForceCoef						= 20; //12
+		antiRollbarForceLimit 						= 2; //10
 		antiRollbarSpeedMin							= 20;
-		antiRollbarSpeedMax							= 50;
+		antiRollbarSpeedMax							= 80; //50
 		idleRpm										= 800;
 		redRpm										= 4500;
 		class complexGearbox
@@ -250,8 +250,8 @@
 				// <Description>: These values describe the maximum compression and elongation in metres that the spring can support.
 				// <Type>: float
 				// <Default>: 0.15
-				maxCompression 							= 0.5;
-				mMaxDroop 							= 0.1;
+				maxCompression 						= 1.0; //0.5
+				mMaxDroop 							= 0.5; //0.1
 				
 				// <Description>: This is the mass in kg that is supported by the suspension spring.
 				// <Type>: float

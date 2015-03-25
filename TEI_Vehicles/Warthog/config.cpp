@@ -27,21 +27,22 @@ class CfgAmmo
 		//typicalSpeed = 9000;
 		//maxSpeed = 9999;
 		cost = 1000;
+		explosive = 0;
 		hit = 300;
 		whistleOnFire = 1;
 		whistleDist = 14;
-		tracerScale = 6;
-		tracerStartTime = 0.001;
-		tracerEndTime = 10.0;
+		timeToLive = 30;
+		tracerScale = 3;
+		tracerStartTime = 0.05;
+		tracerEndTime = 1;
+		tracersEvery = 1;
+		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_white";
 		indirectHit = 15;
 		indirectHitRange = 1;
 		
 		CraterEffects = "HEShellCrater";
 		CraterWaterEffects = "ImpactEffectsWaterHE";
 		ExplosionEffects = "HEShellExplosion";
-		
-		//CraterEffects = "GrenadeCrater";
-		//explosionEffects = "GrenadeExplosion";
 		
 		allowAgainstInfantry = 1;
 		soundHit1[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_1",3.1622777,1,2000};
@@ -107,9 +108,7 @@ class CfgMagazines
 		displayName="20 Rnd ALIM Gauss Slugs";
 		displayNameShort="Gauss Slug";
 		ammo="TEI_25x130mm_Slug";
-		//nameSound = "missiles";
-		//ammo = "Sh_120mm_APFSDS";
-		initSpeed = 10000;
+		initSpeed = 13680;
 		count=20;
 	};
 	
@@ -356,8 +355,10 @@ class CfgVehicles
 		crewVulnerable=1;
 		nameSound = car;
 		attenuationEffectType = "OpenCarAttenuation";
-		crewCrashProtection=0.015;
-		armor=75;
+		crewCrashProtection=0;
+		crewExplosionProtection = 0.85;
+		fuelExplosionPower = 1;
+		armor=100;
 		cost=500000;
 		canFloat=0;
 		threat[]={0.8,0.6,0.3};
@@ -483,17 +484,17 @@ class CfgVehicles
 			};
 			class HitFuel:HitFuel
 			{
-				armor=0.75;
+				armor=0.5;
 				name="palivo";
-				passThrough=1;
-				explosionShielding=0.75;
+				passThrough=0.5;
+				explosionShielding=0.5;
 			};
 			class HitEngine:HitEngine
 			{
-				armor=0.75;
+				armor=0.5;
 				name="motor";
-				passThrough=0.75;
-				explosionShielding=0.75;
+				passThrough=0.5;
+				explosionShielding=0.5;
 			};
 			class HitBody:HitBody
 			{
@@ -501,15 +502,13 @@ class CfgVehicles
 				name="karoserie";
 				visual="body";
 				passThrough=1;
-				explosionShielding=1;
-				radius=0.33;
+				explosionShielding=0.5;
 			};
 			class HitGlass1:HitGlass1
 			{
 				armor=0.25;
-				explosionShielding=0.5;
+				explosionShielding=2;
 				visual="glass1";
-				radius=0.25;
 				name="glass1";
 				passThrough=0;
 			};
@@ -527,7 +526,7 @@ class CfgVehicles
 		driverRightHandAnimName="drivewheel";
 		driverAction="Driver_low01";
 		cargoAction[]={};
-		hiddenSelections[]={"camo1","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_co.paa"};
 		class RenderTargets
 		{
@@ -1024,7 +1023,7 @@ class CfgVehicles
 		#include "physx.hpp"
 		
 		supplyRadius=5;
-		transportMaxMagazines=90;
+		transportMaxMagazines=120;
 		class TransportMagazines
 		{
 		};
@@ -1049,7 +1048,7 @@ class CfgVehicles
 		side=1;
 		transportSoldier=0;
 		crew="TEI_UNSC_Army_W_Rifleman_AR";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_mg","attach_troop","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_co.paa"};
 		vehicleClass="TEI_UNSC_Vehicle_class";
 		class CargoTurret;
@@ -1107,7 +1106,7 @@ class CfgVehicles
 	{
 		displayName="M12 FAV Warthog (Unarmed) [Black]";
 		author="Eridanus Insurrection Team";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_mg","attach_troop","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_black_co.paa"};
 	};
 	class TEI_M12_FAV_tan:TEI_M12_FAV
@@ -1115,21 +1114,21 @@ class CfgVehicles
 		displayName="M12 FAV Warthog (Unarmed) [Tan]";
 		crew="TEI_UNSC_Army_D_Rifleman_AR";
 		author="Eridanus Insurrection Team";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_mg","attach_troop","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_tan_co.paa"};
 	};
 	class TEI_M12_FAV_snow:TEI_M12_FAV
 	{
 		displayName="M12 FAV Warthog (Unarmed) [Snow]";
 		author="Eridanus Insurrection Team";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_mg","attach_troop","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_snow_co.paa"};
 	};
 	class TEI_M12_FAV_ins:TEI_M12_FAV
 	{
 		displayName="M12 FAV Warthog (Unarmed) [Innie]";
 		author="Eridanus Insurrection Team";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_mg","attach_troop","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_ins_co.paa"};
 		vehicleClass="TEI_Ins_Vehicle_class";
 		side=0;
@@ -1149,7 +1148,7 @@ class CfgVehicles
 		side=1;
 		transportSoldier=0;
 		crew="TEI_UNSC_Army_W_Rifleman_AR";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_mg","attach_antenna","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_antenna"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_co.paa"};
 		vehicleClass="TEI_UNSC_Vehicle_class";
 		class CargoTurret;
@@ -1263,7 +1262,7 @@ class CfgVehicles
 	{
 		displayName="M831 TT Warthog (Transport) [Black]";
 		author="Eridanus Insurrection Team";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_mg","attach_antenna","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_antenna"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_black_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_black_co.paa"};
 	};
 	class TEI_M813_TT_tan:TEI_M813_TT
@@ -1271,14 +1270,14 @@ class CfgVehicles
 		displayName="M831 TT Warthog (Transport) [Tan]";
 		crew="TEI_UNSC_Army_D_Rifleman_AR";
 		author="Eridanus Insurrection Team";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_mg","attach_antenna","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_antenna"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_tan_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_tan_co.paa"};
 	};
 	class TEI_M813_TT_snow:TEI_M813_TT
 	{
 		displayName="M831 TT Warthog (Transport) [Snow]";
 		author="Eridanus Insurrection Team";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_mg","attach_antenna","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_antenna"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_snow_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_snow_co.paa"};
 	};
 	
@@ -1293,7 +1292,7 @@ class CfgVehicles
 		faction="TEI_UNSC";
 		model="TEI_Vehicles\Warthog\Warthog_MG.p3d";
 		transportSoldier=0;
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_co.paa"};
 		class RenderTargets
 		{
@@ -1439,7 +1438,7 @@ class CfgVehicles
 	{
 		displayName="M12 LRV Warthog (MG) [Black]";
 		author="Eridanus Insurrection Team";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_black_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_black_co.paa"};
 	};
 	class TEI_M12_LRV_tan:TEI_M12_LRV
@@ -1447,21 +1446,21 @@ class CfgVehicles
 		displayName="M12 LRV Warthog (MG) [Tan]";
 		crew="TEI_UNSC_Army_D_Rifleman_AR";
 		author="Eridanus Insurrection Team";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_tan_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_tan_co.paa"};
 	};
 	class TEI_M12_LRV_snow:TEI_M12_LRV
 	{
 		displayName="M12 LRV Warthog (MG) [Snow]";
 		author="Eridanus Insurrection Team";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_snow_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_snow_co.paa"};
 	};
 	class TEI_M12_LRV_ins:TEI_M12_LRV
 	{
 		displayName="M12 LRV Warthog (MG) [Innie]";
 		author="Eridanus Insurrection Team";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_ins_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_ins_CO.paa"};
 		vehicleClass="TEI_Ins_Vehicle_class";
 		side=0;
@@ -1637,7 +1636,7 @@ class CfgVehicles
 	{
 		displayName="M12G1 Warthog (Gauss) [Black]";
 		author="Eridanus Insurrection Team";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_black_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_black_co.paa"};
 	};
 	class TEI_M12G1_LRV_tan:TEI_M12G1_LRV
@@ -1645,14 +1644,14 @@ class CfgVehicles
 		displayName="M12G1 Warthog (Gauss) [Tan]";
 		crew="TEI_UNSC_Army_D_Rifleman_AR";
 		author="Eridanus Insurrection Team";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_tan_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_tan_co.paa"};
 	};
 	class TEI_M12G1_LRV_snow:TEI_M12G1_LRV
 	{
 		displayName="M12G1 Warthog (Gauss) [Snow]";
 		author="Eridanus Insurrection Team";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_snow_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_snow_co.paa"};
 	};
 	class TEI_M12A1_LRV:TEI_M12_LRV
@@ -1808,7 +1807,7 @@ class CfgVehicles
 	{
 		displayName="M12A1 Warthog (Rocket) [Black]";
 		author="Eridanus Insurrection Team";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_black_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_black_co.paa"};
 	};
 	class TEI_M12A1_LRV_tan:TEI_M12A1_LRV
@@ -1816,14 +1815,14 @@ class CfgVehicles
 		displayName="M12A1 Warthog (Rocket) [Tan]";
 		crew="TEI_UNSC_Army_D_Rifleman_AR";
 		author="Eridanus Insurrection Team";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_tan_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_tan_co.paa"};
 	};
 	class TEI_M12A1_LRV_snow:TEI_M12A1_LRV
 	{
 		displayName="M12A1 Warthog (Rocket) [Snow]";
 		author="Eridanus Insurrection Team";
-		hiddenSelections[]={"camo1","camo2","attach_apc","attach_troop","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_snow_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_snow_co.paa"};
 	};
 	class TEI_M12R_AA:TEI_M12_LRV
@@ -2023,7 +2022,7 @@ class CfgVehicles
 		displayName="M12 FAV Warthog (APC)";
 		author="Eridanus Insurrection Team";
 		model="TEI_Vehicles\Warthog\Warthog_APC.p3d";
-		hiddenSelections[]={"camo1","camo2","attach_mg","attach_troop","clan","clan_text","insignia"};
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_ins_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_ins_CO.paa"};
 		vehicleClass="TEI_Ins_Vehicle_class";
 		side=0;

@@ -51,7 +51,7 @@ class CfgVehicles //This configures units and backpacks
 		respawnMagazines[]																		= {};
 		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest","G_Balaclava_blk","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG","TEI_NVG"};
 		respawnLinkedItems[] 																	= {"TEI_UNSC_ODST_Vest","G_Balaclava_blk","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG","TEI_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 																		= {"camo1","insignia","clan"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																= {"TEI_UNSC_Units\ODST\data\uniform_co.paa"};
 		armor																					= 4;
 		armorStructural																			= 5;
@@ -117,7 +117,7 @@ class CfgVehicles //This configures units and backpacks
 		respawnMagazines[]																		= {};
 		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest","G_Balaclava_blk","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_Vest","G_Balaclava_blk","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia","attach_leftforearm", "attach_leftshoulder", "attach_rightforearm", "attach_rightshoulder" }; //Determines what hiddenselections are enabled
+		hiddenSelections[] 																		= {"camo1","insignia","clan","attach_leftforearm", "attach_leftshoulder", "attach_rightforearm", "attach_rightshoulder" }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																	= {"TEI_UNSC_Units\ODST\data\uniform_co.paa"};
 		class HitPoints : HitPoints
 		{
@@ -162,7 +162,7 @@ class CfgVehicles //This configures units and backpacks
 		respawnMagazines[]																		= {};
 		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest","G_Balaclava_blk","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_Vest","G_Balaclava_blk","TEI_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia", "attach_leftshoulder", "attach_rightshoulder" }; //Determines what hiddenselections are enabled
+		hiddenSelections[] 																		= {"camo1","insignia","clan", "attach_leftshoulder", "attach_rightshoulder" }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																	= {"TEI_UNSC_Units\ODST\data\uniform_co.paa"};
 		class HitPoints : HitPoints
 		{
@@ -207,7 +207,7 @@ class CfgVehicles //This configures units and backpacks
 		respawnMagazines[]																		= {};
 		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest","G_Balaclava_blk","TEI_UNSC_ODST_Helmet_sniper","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_Vest","G_Balaclava_blk","TEI_UNSC_ODST_Helmet_sniper","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia", "attach_rightshoulder" }; //Determines what hiddenselections are enabled
+		hiddenSelections[] 																		= {"camo1","insignia","clan", "attach_rightshoulder" }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																	= {"TEI_UNSC_Units\ODST\data\uniform_co.paa"};
 		class HitPoints : HitPoints
 		{
@@ -252,7 +252,7 @@ class CfgVehicles //This configures units and backpacks
 		respawnMagazines[]																		= {};
 		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest_medic","TEI_UNSC_ODST_Helmet_medic","G_Balaclava_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_Vest_medic","TEI_UNSC_ODST_Helmet_medic","G_Balaclava_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia" }; //Determines what hiddenselections are enabled
+		hiddenSelections[] 																		= {"camo1","insignia","clan" }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																	= {"TEI_UNSC_Units\ODST\data\uniform_medic_co.paa"};
 		class HitPoints : HitPoints
 		{
@@ -298,7 +298,7 @@ class CfgVehicles //This configures units and backpacks
 		RespawnItems[]																			= {"TEI_Biofoam","TEI_Biofoam"};
 		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest_scorch","TEI_UNSC_ODST_Helmet_scorch","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","TEI_NVG"};
 		respawnLinkedItems[] 																	= {"TEI_UNSC_ODST_Vest_scorch","TEI_UNSC_ODST_Helmet_scorch","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","TEI_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 																		= {"camo1","insignia","clan"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																= {"TEI_UNSC_Units\ODST\data\uniform_scorch_co.paa"};
 	};
 		class TEI_UNSC_ODST_Soldier_zero: TEI_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
@@ -321,7 +321,7 @@ class CfgVehicles //This configures units and backpacks
 		RespawnItems[]																			= {"TEI_Biofoam","TEI_Biofoam"};
 		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest_zero","TEI_UNSC_ODST_Helmet_zero","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","TEI_NVG"};
 		respawnLinkedItems[] 																	= {"TEI_UNSC_ODST_Vest_zero","TEI_UNSC_ODST_Helmet_zero","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","TEI_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 																		= {"camo1","insignia","clan"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																= {"TEI_UNSC_Units\ODST\data\uniform_zero_co.paa"};
 	};
 		class TEI_UNSC_ODST_Soldier_thedog: TEI_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
@@ -344,7 +344,7 @@ class CfgVehicles //This configures units and backpacks
 		RespawnItems[]																			= {"TEI_Biofoam","TEI_Biofoam"};
 		linkedItems[] 																			= {"TEI_UNSC_ODST_Vest_thedog","TEI_UNSC_ODST_Helmet_thedog","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","TEI_NVG"};
 		respawnLinkedItems[] 																	= {"TEI_UNSC_ODST_Vest_thedog","TEI_UNSC_ODST_Helmet_thedog","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","TEI_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 																		= {"camo1","insignia","clan"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																= {"TEI_UNSC_Units\ODST\data\uniform_thedog_co.paa"};
 	};
 	class TEI_UNSC_ODST_Soldier_instructor: B_Soldier_F //Configures the unit part of the ODST Uniform
@@ -366,7 +366,7 @@ class CfgVehicles //This configures units and backpacks
 		respawnMagazines[]																		= {};
 		linkedItems[] 																			= {"TEI_UNSC_ODST_InstructorHat","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		respawnLinkedItems[] 																		= {"TEI_UNSC_ODST_InstructorHat","ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia" }; //Determines what hiddenselections are enabled
+		hiddenSelections[] 																		= {"camo1","insignia","clan" }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																	= {"TEI_UNSC_Units\ODST\data\odst_instr_co.paa"};
 	};
 	class TEI_UNSC_ODST_Soldier_recruit: B_Soldier_F //Configures the unit part of the ODST Uniform
@@ -388,7 +388,7 @@ class CfgVehicles //This configures units and backpacks
 		respawnMagazines[]																		= {};
 		linkedItems[] 																			= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
 		respawnLinkedItems[] 																		= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","TEI_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia" }; //Determines what hiddenselections are enabled
+		hiddenSelections[] 																		= {"camo1","insignia","clan" }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																	= {"TEI_UNSC_Units\ODST\data\basic_odst_co.paa"};
 	};
 	
@@ -509,7 +509,7 @@ class CfgVehicles //This configures units and backpacks
 		respawnWeapons[] 								= {"TEI_M7S","TEI_M6G_SF","Throw","Put"};
 		magazines[] 									= {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag"};
 		respawnMagazines[] 								= {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag"};
-		hiddenSelections[] 								= {"camo1","camo2","insignia","attach_leftshoulder2","attach_rightshoulder2","attach_rightknee2","attach_leftknee2","attach_pant1"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 								= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_rightknee2","attach_leftknee2","attach_pant1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 						= {"TEI_UNSC_Units\Army\data\armor_medic_co.paa","TEI_UNSC_Units\Army\data\uniform_cam3_co.paa"};
 		icon 											= "iconManMedic";
 	};
