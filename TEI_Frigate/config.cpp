@@ -18,6 +18,11 @@ class CfgVehicles
 	class NonStrategic: Building {};
 	class TargetTraining: NonStrategic {};
 	class TargetGrenade: TargetTraining {};
+	class LandVehicle;
+	class StaticWeapon:LandVehicle
+	{
+		class NewTurret;
+	};
 	
 	
 	class TEI_testbox: static
@@ -344,4 +349,73 @@ class CfgVehicles
 		author = "Eridanus Insurrection Team";
 		icon = "iconCrateWpns";
 	};
+	class TEI_frigate_gun: StaticWeapon
+	{
+		scope = 2;
+		armor = 450;
+		vehicleClass = "TEI_UNSC_Object_class";
+		displayName = "Frigate Gun";
+		model = "\TEI_frigate\turret2.p3d";
+		author = "Eridanus Insurrection Team";
+		icon = "iconCrateWpns";
+		class Turrets: Turrets
+		{
+			class MainTurret:MainTurret
+			{
+				body="mainturret";
+				gun="maingun";
+				animationsourcebody="mainturret";
+				animationSourceGun="maingun";
+				gunAxis="Osa Hlavne";
+				gunBeg="Usti hlavne";
+				gunEnd="konec hlavne";
+				minElev=-8;
+				maxElev=16;
+				minTurn=-360;
+				maxTurn=360;
+				initTurn=0;
+				turretAxis="OsaVeze";
+				maxHorizontalRotSpeed=1.2;
+				maxVerticalRotSpeed=1.2;
+				gunnerAction="driver_boat01";
+				gunnerInAction="driver_boat01";
+				gunnerGetInAction="GetInMRAP_01";
+				gunnerGetOutAction="GetOutMRAP_01";
+				gunnerName="Gunner";
+				hideWeaponsGunner=0;
+				soundServo[]={"",0.01,1};
+				outGunnerMayFire=1;
+				inGunnerMayFire=1;
+				commanding=1;
+				primaryGunner=1;
+				memoryPointsGetInGunner="Pos Gunner";
+				memoryPointsGetInGunnerDir="Pos Gunner dir";
+				gunnerLeftHandAnimName="trigger";
+				gunnerRightHandAnimName="trigger";
+				memoryPointGun="machinegun";
+				weapons[]={"TEI_102R_Turret"};
+				magazines[] = {"3Rnd_102mm_rockets","3Rnd_102mm_rockets"};
+				memoryPointGunnerOptics="gunnerview";
+				gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";
+				//gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+				//gunnerOpticsModel="a3\weapons_f\Reticle\optics_empty";
+				gunnerOpticsShowCursor=1;
+				turretInfoType="RscWeaponZeroing";
+				//turretInfoType="RscOptics_crows";
+				visionMode[] = {"Normal","Ti"};
+				thermalMode[] = {2};
+				castGunnerShadow=1;
+				startEngine=0;
+				enableManualFire=0;
+
+				gunnerForceOptics=0;
+				class ViewGunner:ViewOptics
+				{
+					initFov=0.7;
+					minFov=0.05;
+					maxFov=1.1;
+				};
+			};
+		};
+	
 };
