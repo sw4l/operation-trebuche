@@ -30,116 +30,62 @@ class cfgVehicles {
 				class TransportWeapons{};
 				isbackpack = 1;
 				picture = "\TEI_weapons\backpacks\icons\rucksack_black.paa";
-				transportMaxWeapons = 1;
-				transportMaxMagazines = 13;
+				transportMaxWeapons = 5;
+				transportMaxMagazines = 50;
 				class DestructionEffects{};
                 displayName = "[UNSC] ILCS Rucksack (Black)";
                 model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
 				vehicleClass = "TEI_UNSC_Backpack_class";
 				allowedSlots[] = {901};
+				maximumLoad = 300;
+				mass = 40;
 				hiddenSelections[] 								= {"camo1","pouches","biofoam"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_black_CO.paa"};
         };
-		class TEI_ILCS_Rucksack_Black2 : B_Bergen_Base 
+		class TEI_ILCS_Rucksack_Black2 : TEI_ILCS_Rucksack_Black
 		{
-				scope = public;
-				class TransportMagazines{};
-				class TransportWeapons{};
-				isbackpack = 1;
 				picture = "\TEI_weapons\backpacks\icons\rucksack_black_po.paa";
-				transportMaxWeapons = 1;
-				transportMaxMagazines = 16;
-				class DestructionEffects{};
                 displayName = "[UNSC] ILCS Rucksack+ (Black)";
-                model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
-				vehicleClass = "TEI_UNSC_Backpack_class";
-				allowedSlots[] = {901};
+				maximumLoad = 350;
+				mass = 45;
 				hiddenSelections[] 								= {"camo1","biofoam"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_black_CO.paa"};
         };
-		class TEI_ILCS_Rucksack_Medical : B_Bergen_Base 
+		class TEI_ILCS_Rucksack_Medical : TEI_ILCS_Rucksack_Black 
 		{
-				scope = 2;
-				class TransportMagazines{};
-				class TransportWeapons{};
-				isbackpack = 1;
 				picture = "\TEI_weapons\backpacks\icons\rucksack_med.paa";
-				transportMaxWeapons = 1;
-				transportMaxMagazines = 16;
-				class DestructionEffects{};
                 displayName = "[UNSC] ILCS Medical Backpack";
-                model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
-				vehicleClass = "TEI_UNSC_Backpack_class";
-				allowedSlots[] = {901};
+				maximumLoad = 360;
+				mass = 50;
 				hiddenSelections[] 								= {"camo1"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_med_CO.paa"};
         };
 				
-		        class TEI_ILCS_Rucksack_green : B_Bergen_Base 
+		class TEI_ILCS_Rucksack_green : TEI_ILCS_Rucksack_Black
 		{
-				scope = public;
-				class TransportMagazines{};
-				class TransportWeapons{};
-				isbackpack = 1;
 				picture = "\TEI_weapons\backpacks\icons\rucksack_green.paa";
-				transportMaxWeapons = 1;
-				transportMaxMagazines = 13;
-				class DestructionEffects{};
                 displayName = "[UNSC] ILCS Rucksack (Green)";
-                model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
-				vehicleClass = "TEI_UNSC_Backpack_class";
-				allowedSlots[] = {901};
 				hiddenSelections[] 								= {"camo1","pouches","biofoam"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_Green_CO.paa"};
         };
-		class TEI_ILCS_Rucksack_green2 : B_Bergen_Base 
+		class TEI_ILCS_Rucksack_green2 : TEI_ILCS_Rucksack_Black2 
 		{
-				scope = public;
-				class TransportMagazines{};
-				class TransportWeapons{};
-				isbackpack = 1;
 				picture = "\TEI_weapons\backpacks\icons\rucksack_green_po.paa";
-				transportMaxWeapons = 1;
-				transportMaxMagazines = 16;
-				class DestructionEffects{};
                 displayName = "[UNSC] ILCS Rucksack+ (Green)";
-                model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
-				vehicleClass = "TEI_UNSC_Backpack_class";
-				allowedSlots[] = {901};
 				hiddenSelections[] 								= {"camo1","biofoam"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_Green_CO.paa"};
         };
-		class TEI_ILCS_Rucksack_tan : B_Bergen_Base 
+		class TEI_ILCS_Rucksack_tan : TEI_ILCS_Rucksack_Black
 		{
-				scope = public;
-				class TransportMagazines{};
-				class TransportWeapons{};
-				isbackpack = 1;
 				picture = "\TEI_weapons\backpacks\icons\rucksack_tan.paa";
-				transportMaxWeapons = 1;
-				transportMaxMagazines = 13;
-				class DestructionEffects{};
                 displayName = "[UNSC] ILCS Rucksack (Tan)";
-                model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
-				vehicleClass = "TEI_UNSC_Backpack_class";
-				allowedSlots[] = {901};
 				hiddenSelections[] 								= {"camo1","pouches","biofoam"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_tan_CO.paa"};
         };
-		class TEI_ILCS_Rucksack_tan2 : B_Bergen_Base 
+		class TEI_ILCS_Rucksack_tan2 : TEI_ILCS_Rucksack_Black2
 		{
-				scope = public;
-				class TransportMagazines{};
-				class TransportWeapons{};
-				isbackpack = 1;
 				picture = "\TEI_weapons\backpacks\icons\rucksack_tan_po.paa";
-				transportMaxWeapons = 1;
-				transportMaxMagazines = 16;
-				class DestructionEffects{};
                 displayName = "[UNSC] ILCS Rucksack+ (Tan)";
-                model = "\TEI_weapons\backpacks\ODST_ruck.p3d";
-				vehicleClass = "TEI_UNSC_Backpack_class";
-				allowedSlots[] = {901};
 				hiddenSelections[] 								= {"camo1","biofoam"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\ruck_tan_CO.paa"};
         };
@@ -161,28 +107,24 @@ class cfgVehicles {
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\como_pack_co.paa"};
         };
 		
-		class TEI_Como_pack_2 : B_Bergen_Base 
+		class TEI_Como_pack_2 : TEI_ILCS_Rucksack_Black
 		{
 				scope = 2;
-				class TransportMagazines{};
-				class TransportWeapons{};
-				isbackpack = 1;
 				picture = "\TEI_weapons\backpacks\icons\como_pack.paa";
 				transportMaxWeapons = 1;
-				transportMaxMagazines = 4;
-				class DestructionEffects{};
-                		displayName = "[UNSC] LR91 CommPack";
-						descriptionShort = "LR91 TEI long range radio backpack 20km";
-                		model = "\TEI_weapons\backpacks\como_ruck.p3d";
-				vehicleClass = "TEI_UNSC_Backpack_class";
-				allowedSlots[] = {901};
+				transportMaxMagazines = 10;
+                displayName = "[UNSC] LR91 CommPack";
+				descriptionShort = "LR91 TEI long range radio backpack 50km";
+                model = "\TEI_weapons\backpacks\como_ruck.p3d";
+				maximumLoad = 120;
+				mass = 25;
 				hiddenSelections[] 								= {"camo1"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\como_pack_co.paa"};
 				
 				tf_encryptionCode = "tf_west_radio_code";
 				tf_dialog = "rt1523g_radio_dialog";
 				tf_subtype = "digital_lr";
-				tf_range = 20000;
+				tf_range = 50000;
 				tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio = 1; 
         };

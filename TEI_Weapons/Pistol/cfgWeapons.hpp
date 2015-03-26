@@ -138,6 +138,7 @@ class CfgWeapons
 		dispersion 									= 0.00005;
 		discreteDistance[] 							= {50,100,200};
 		inertia										= 0.25;
+		maxZeroing = 500;
 		class GunParticles: GunParticles
 		{
 		   class SecondEffect
@@ -216,6 +217,7 @@ class CfgWeapons
 				linkproxy 							= "\A3\data_f\proxies\weapon_slots\SIDE";
 				scope 								= 2;
 			};
+			mass = 25;
  		};
 	};
 	class TEI_M6G_SF: TEI_M6G /// standard issue variant with holo optics and laser pointer

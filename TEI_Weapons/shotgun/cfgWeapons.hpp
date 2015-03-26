@@ -104,7 +104,6 @@ class CfgWeapons
 		model										= "\TEI_Weapons\Shotgun\shotgun.p3d";
 		displayName 									= "M45 Tactical Shotgun";
 		descriptionShort 								= "8 Gauge Shotgun";
-		//picture 									= "\TEI_Weapons\Shotgun\data\icon_shotgun.paa";
 		picture = "\TEI_weapons\shotgun\icons\shotgun_black.paa";
 		magazines[] 									= {"TEI_6Rnd_8Gauge_Pellets","TEI_6Rnd_8Gauge_Slugs"};
 		modelOptics 									= "-";
@@ -122,6 +121,7 @@ class CfgWeapons
 		dispersion 									= 0.00005;
 		discreteDistance[] 								= {50,100,200};
 		inertia										= 0.75;
+		maxZeroing = 300;
 		class GunParticles: GunParticles
 		{
 		   class SecondEffect
@@ -199,6 +199,7 @@ class CfgWeapons
 				linkproxy 							= "\A3\data_f\proxies\weapon_slots\SIDE";
 				scope 								= 2;
 			};
+			mass = 75;
  		};
 	};
 	

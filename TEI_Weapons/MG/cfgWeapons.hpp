@@ -40,7 +40,7 @@
                                             opticsZoomMin                                   = 0.375;
                                             opticsZoomMax                                   = 0.55;
                                             opticsZoomInit                                  = 0.55;
-                                            memoryPointCamera                               = "opticView";
+                                            memoryPointCamera                               = "opticView2";
                                             visionMode[]                                    = {};
                                             distanceZoomMin                                 = 300;
                                             distanceZoomMax                                 = 300;
@@ -53,7 +53,7 @@
                                             opticsZoomMin                                   = 0.075;
                                             opticsZoomMax                                   = 0.0523;
                                             opticsZoomInit                                  = 0.0523;
-                                            memoryPointCamera                               = "opticView2";
+                                            memoryPointCamera                               = "opticView";
                                             modelOptics[]                                   = {"\A3\Weapons_F\acc\reticle_HAMR"/*,"\A3\Weapons_F\acc\reticle_arco_F"*/};
                                             visionMode[]                                    = {};
                                     };
@@ -88,7 +88,10 @@
                     muzzlePos                                                               = "usti hlavne";
                     muzzleEnd                                                               = "konec hlavne";
                     reloadAction                                                            = "GestureReloadM200";
-                    inertia                                                                 = 0.6;
+					drySound[] = {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
+                    inertia                                                                 = 0.95;
+					maxRecoilSway = 0.0125;
+					swayDecaySpeed = 1.25;
                     class GunParticles: GunParticles
                     {
                        class SecondEffect

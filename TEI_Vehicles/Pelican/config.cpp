@@ -26,18 +26,10 @@ class CfgVehicles
 				class HitHull;
 				class HitFuel;
 				class HitAvionics;
-				class HitMissiles;
 				class HitEngine;
 				class HitHRotor;
 				class HitVRotor;
-				class HitGlass1;
-				class HitGlass2;
-				class HitGlass3;
-				class HitGlass4;
-				class HitGlass5;
-				class HitGlass6;
 			};
-			
 			class AnimationSources;
 			class Eventhandlers;
 			class Viewoptics;
@@ -81,7 +73,7 @@ class CfgVehicles
 		faction	= "TEI_UNSC";					/// defines the faction inside of the side
 		crew = "TEI_UNSC_Army_W_Pilot";					/// lets use the sample soldier we have as default captain of the boat
 		scope 	= 0;
-        armor = 60;						        /// just some protection against missiles, collisions and explosions
+        armor = 120;//60					        /// just some protection against missiles, collisions and explosions
 		destrType = DestructWreck;
 		gearRetracting=1;	
 		accuracy = 0.5;							/// how hard it is to distinguish the type of the vehicle (bigger number means harder)
@@ -681,9 +673,7 @@ class CfgVehicles
 
 		
 ///hit points
-		class HitPoints:HitPoints
-		{
-			class HitPoints:Hitpoints
+		class HitPoints:Hitpoints
 		{
 			class HitHull:HitHull
 			{
@@ -707,12 +697,6 @@ class CfgVehicles
 				minimalHit=0.05;
 				passThrough=0;
 				name="elektronika";
-			};
-			class HitMissiles:HitMissiles
-			{
-				armor=1;
-				radius=0.15;
-				minimalHit=0.05;
 			};
 			class HitEngine:HitEngine
 			{
@@ -759,64 +743,6 @@ class CfgVehicles
 				minimalHit=0.05;
 				explosionShielding=6;
 			};
-		};
-		
-		
-			/*class HitHull:HitHull
-			{
-				armor=1;
-				visual="Hull";
-				depends="Total";
-				passThrough=1;
-				radius=0.01;
-			};
-			class HitFuel:HitFuel
-			{
-				armor=0.5;
-				radius=1;
-				minimalHit=0.05;
-				passThrough=1;
-				name="fuel";
-			};
-			class HitAvionics:HitAvionics
-			{
-				armor=0.1;
-				radius=1;
-				minimalHit=0.05;
-				passThrough=0;
-				name="elektronika";
-			};
-			class HitHRotor:HitHRotor
-			{
-				armor=0.75; //1.8
-				radius=1;
-				minimalHit=0.09;
-				name="mainrotor";
-				explosionShielding=2.5;
-				passThrough=0.25;
-				visual = “mainrotors”;
-			};
-			class HitVRotor:HitVRotor
-			{
-				armor=0.75;
-				radius=1;
-				minimalHit=0.05;
-				name="tailrotor";
-				explosionShielding=6;
-				passThrough=0.25;
-				visual = “tailrotors”;
-			};
-			class HitEngine
-			{
-				armor=0.75;
-				name="motor";
-				material=-1;
-				visual="";
-				passThrough=0.75;
-				minimalHit=0.2;
-				explosionShielding=0.2;
-				radius=0.45;
-			};*/
 		};
 /// hit points end
 ///transport items		

@@ -250,8 +250,8 @@
 				// <Description>: These values describe the maximum compression and elongation in metres that the spring can support.
 				// <Type>: float
 				// <Default>: 0.15
-				maxCompression 						= 1.0; //0.5
-				mMaxDroop 							= 0.5; //0.1
+				maxCompression 						= 2.0; //0.5
+				mMaxDroop 							= 0.25; //0.1
 				
 				// <Description>: This is the mass in kg that is supported by the suspension spring.
 				// <Type>: float

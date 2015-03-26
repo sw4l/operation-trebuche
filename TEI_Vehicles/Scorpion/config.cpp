@@ -5,7 +5,7 @@ class CfgPatches
 		units[]={"TEI_Scorpion_base","TEI_UNSC_Scorpion_base","TEI_UNSC_Scorpion"};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]={"A3_Weapons_F","A3_Armor_F_Gamma","TEI_Core"};
+		requiredAddons[]={"A3_Weapons_F","TEI_Core"};
 		magazines[]={};
 		ammo[]={};
 	};
@@ -53,7 +53,7 @@ class CfgVehicles {
 		vehicleClass = "Armored";
 		displayName = "M808 Scorpion Base";
 		accuracy = 0.3;
-		scope = 2;
+		scope = 0;
 
 		// Model and look defines: paths to model, squad picture and map icon
 		model = "TEI_Vehicles\Scorpion\Scorpion.p3d";

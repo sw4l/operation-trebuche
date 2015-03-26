@@ -172,11 +172,15 @@ class CfgWeapons
                     picture = "\TEI_weapons\smg\icons\smg.paa";
                     magazines[]                                                             = {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag_tracer","TEI_48Rnd_5x23mm_Mag","TEI_48Rnd_5x23mm_Mag_tracer"};
                     modelOptics                                                             = "-";
-                    dexterity                                                               = 3.25;
                     muzzlePos                                                               = "usti hlavne";
                     muzzleEnd                                                               = "konec hlavne";
                     reloadAction                                                            = "GestureReloadSMG_03";
-                    inertia   																= 0.6;
+					inertia = 0.25;
+					dexterity = 1.8;
+					drySound[] = {"A3\sounds_f\weapons\other\dry1",0.1,1,20};
+					maxRecoilSway = 0.0075;
+					swayDecaySpeed = 1;
+					maxZeroing = 300;
 					
 					modes[] = {"Single","FullAuto"};
                     class Single: Mode_SemiAuto
@@ -282,6 +286,7 @@ class CfgWeapons
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\SIDE";
                                     scope                                                   = 2;
                             };
+							mass = 35;
                     };
 					
             };

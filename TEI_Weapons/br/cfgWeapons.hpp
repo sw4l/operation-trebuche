@@ -83,12 +83,15 @@ class CfgWeapons
 		descriptionShort 							= "UNSC Battle Rifle";
 		picture = "\TEI_weapons\br\icons\br.paa";
 		magazines[] 								= {"TEI_36Rnd_95x40_Mag","TEI_36Rnd_95x40_Mag_Tracer"};
+		drySound[] = {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
 		modelOptics 								= "-";
 		dexterity 									= 3.25;
 		muzzlePos									= "usti hlavne";
        	muzzleEnd									= "konec hlavne";
 		reloadAction 								= "GestureReloadTRG";
 		inertia										= 0.6;
+		maxRecoilSway = 0.0125;
+		swayDecaySpeed = 1.25;
 		class GunParticles: GunParticles
 		{
 		   class SecondEffect
@@ -193,6 +196,7 @@ class CfgWeapons
 				linkproxy 							= "\A3\data_f\proxies\weapon_slots\SIDE";
 				scope 								= 2;
 			};
+			mass = 60;
  		};
 	};
 	class TEI_BR55HB_ScopedRifle: TEI_BR55HB /// standard issue variant with holo optics and laser pointer

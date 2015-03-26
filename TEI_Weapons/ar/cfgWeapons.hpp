@@ -169,6 +169,7 @@
                     displayName                                                             = "MA5B ICWS Assault Rifle";
                     descriptionShort                                                        = "UNSC Assault Rifle";
                     picture = "\TEI_weapons\ar\icons\ar_a.paa";
+					drySound[] = {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
                     magazines[]                                                             = {"TEI_60Rnd_762x51_Mag","TEI_60Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag_Tracer"};
                     modelOptics                                                             = "-";
                     dexterity                                                               = 3.25;
@@ -176,6 +177,8 @@
                     muzzleEnd                                                               = "konec hlavne";
                     reloadAction                                                            = "GestureReloadTRG";
                     inertia                                                                 = 0.6;
+					maxRecoilSway = 0.0125;
+					swayDecaySpeed = 1.25;
                     class GunParticles: GunParticles
                     {
                        class SecondEffect
@@ -284,6 +287,7 @@
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\SIDE";
                                     scope                                                   = 2;
                             };
+							mass = 75;
                     };
             };
 			

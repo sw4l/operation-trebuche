@@ -27,8 +27,8 @@ class CfgAmmo
 		//typicalSpeed = 9000;
 		//maxSpeed = 9999;
 		cost = 1000;
-		explosive = 0;
-		hit = 300;
+		explosive = 0.25;
+		hit = 500;
 		whistleOnFire = 1;
 		whistleDist = 14;
 		timeToLive = 30;
@@ -37,7 +37,7 @@ class CfgAmmo
 		tracerEndTime = 1;
 		tracersEvery = 1;
 		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_white";
-		indirectHit = 15;
+		indirectHit = 50;
 		indirectHitRange = 1;
 		
 		CraterEffects = "HEShellCrater";
@@ -506,7 +506,7 @@ class CfgVehicles
 			};
 			class HitGlass1:HitGlass1
 			{
-				armor=0.25;
+				armor=0.5;
 				explosionShielding=2;
 				visual="glass1";
 				name="glass1";
@@ -1363,8 +1363,8 @@ class CfgVehicles
 			{
 				gunnerAction="passenger_inside_2";
 				gunnerCompartments="Compartment1";
-				memoryPointsGetInGunner="pos cargo";
-				memoryPointsGetInGunnerDir="pos cargo dir";
+				memoryPointsGetInGunner="pos pas";
+				memoryPointsGetInGunnerDir="pos pas dir";
 				memoryPointGunnerOptics="";
 				gunnerName="Front Passenger";
 				proxyIndex=1;
@@ -1547,8 +1547,8 @@ class CfgVehicles
 			{
 				gunnerAction="passenger_inside_2";
 				gunnerCompartments="Compartment1";
-				memoryPointsGetInGunner="pos cargo";
-				memoryPointsGetInGunnerDir="pos cargo dir";
+				memoryPointsGetInGunner="pos pas";
+				memoryPointsGetInGunnerDir="pos pas dir";
 				memoryPointGunnerOptics="";
 				gunnerName="Front Passenger";
 				proxyIndex=1;
@@ -2041,8 +2041,8 @@ class CfgVehicles
 			{
 				gunnerAction="vehicle_turnout_1";
 				gunnerCompartments="Compartment2";
-				memoryPointsGetInGunner="pos cargo";
-				memoryPointsGetInGunnerDir="pos cargo dir";
+				memoryPointsGetInGunner="pos pas";
+				memoryPointsGetInGunnerDir="pos pas dir";
 				memoryPointGunnerOptics="";
 				gunnerName="Hatch Gunner";
 				proxyIndex=10;
