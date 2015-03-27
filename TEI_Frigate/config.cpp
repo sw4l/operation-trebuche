@@ -637,8 +637,8 @@ class CfgVehicles
 				gunnerLeftHandAnimName="trigger";
 				gunnerRightHandAnimName="trigger";
 				memoryPointGun="machinegun";
-				weapons[]={"cannon_120mm"};
-				magazines[] = {"32Rnd_120mm_APFSDS_shells_Tracer_Red","32Rnd_120mm_APFSDS_shells_Tracer_Red","32Rnd_120mm_APFSDS_shells_Tracer_Red"};
+				weapons[]={"TEI_Frig_PDG"};
+				magazines[] = {"TEI_100rd_50mm","TEI_100rd_50mm""TEI_100rd_50mm","TEI_100rd_50mm","TEI_100rd_50mm"};
 				memoryPointGunnerOptics="gunnerview";
 				gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";
 				gunnerOpticsShowCursor=1;
@@ -659,5 +659,114 @@ class CfgVehicles
 				};
 			};
 		};
+	};
+};
+
+class cfgWeapons
+{
+	class autocannon_Base_F;
+	class TEI_Frig_PDG: autocannon_Base_F
+	{
+		scope = 1;
+		displayName = "M910 Point Defense Gun";
+		minRange = 5;
+		minRangeProbab = 0.7;
+		midRange = 1200;
+		midRangeProbab = 0.7;
+		maxRange = 2500;
+		maxRangeProbab = 0.1;
+		reloadTime = 0.12;
+		aiRateOfFire = 0.6;
+		aiRateOfFireDistance = 500;
+		magazineReloadTime = 2;
+		autoReload = 1;
+		ballisticsComputer = 1;
+		canLock = 2;
+		autoFire = 1;
+		modes[] = {"player","close","short","medium","far"};
+		shotFromTurret = 1;
+		showAimCursorInternal = 0;
+		
+		muzzles[] = {"HE"};
+		class player: Mode_FullAuto
+		{
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"A3\Sounds_F\weapons\30mm\30mm_st_02",1.99526,1,1500};
+				soundBegin[] = {"begin1",1};
+				weaponSoundEffect = "DefaultRifle";
+			};
+			soundContinuous = 0;
+			reloadTime = 0.12;
+			dispersion = 0.00035;
+		};
+		class HE: autocannon_Base_F
+		{
+			displayName = "50mm Point Defense Gun";
+			magazines[] = {"TEI_100rd_50mm"};
+			class player: player
+			{
+				dispersion = 0.00055;
+			};
+			class close: close
+			{
+				dispersion = 0.00055;
+			};
+			class short: short
+			{
+				dispersion = 0.00055;
+			};
+			class medium: medium
+			{
+				dispersion = 0.00055;
+			};
+			class far: far
+			{
+				dispersion = 0.00055;
+			};
+		};
+	};
+};
+
+class cfgAmmo
+{
+	class B_30mm_AP;
+	class TEI_50mm_PDG_ammo: B_30mm_AP
+	{
+		hit = 80;
+		indirectHit = 8;
+		indirectHitRange = 0.2;
+		caliber = 4.2;
+		visibleFire = 32;
+		audibleFire = 32;
+		visibleFireTime = 3;
+		cost = 50;
+		model = "\A3\Weapons_f\Data\bullettracer\tracer_white";
+		tracerScale = 2.5;
+		tracerStartTime = 0.1;
+		tracerEndTime = 2;
+		muzzleEffect = "";
+		deflecting = 10;
+		typicalSpeed = 1651;
+		airlock = 1;
+	};
+};
+
+class cfgMagazines
+{
+	class 250Rnd_30mm_HE_shells;
+	class TEI_100rd_50mm: 250Rnd_30mm_HE_shells
+	{
+		scope = 2;
+		displayName = "100rd 50mm Shells";
+		displayNameShort = "50mm";
+		ammo = "TEI_50mm_PDG_ammo";
+		count = 100;
+		initSpeed = 1651;
+		maxLeadSpeed = 300;
+		nameSound = "cannon";
+		tracersEvery = 1;
+		weight = 126;
 	};
 };

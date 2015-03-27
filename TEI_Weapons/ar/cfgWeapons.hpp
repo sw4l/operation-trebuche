@@ -301,6 +301,11 @@
 				slot = "CowsSlot";
 				item = "TEI_MA5B_AmmoCounter";
 				};			
+				class LinkedItemsAcc
+				{
+				slot = "PointerSlot";
+				item = "TEI_MA5B_Flashlight";
+				};
 			};
 		};
 			
@@ -450,7 +455,7 @@
 			{
 				slot = "CowsSlot";
 				item = "TEI_MA5B_AmmoCounter";
-			};			
+			};
 		};
 	};
 };
