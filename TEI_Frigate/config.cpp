@@ -6,7 +6,7 @@ class CfgPatches
 		units[]										= {};
 		weapons[]									= {};
 		requiredVersion								= 0.1;
-		requiredAddons[]							= {"TEI_Core","static_f"};
+		requiredAddons[]							= {"TEI_Core","A3_static_f"};
 	};
 };
 
