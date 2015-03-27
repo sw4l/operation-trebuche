@@ -139,7 +139,7 @@ class CfgVehicles
 		cargoIsCoDriver[] = {0, 0}; 				/// the cargo don't utilize some special memory points to get in
 		memoryPointsGetInCargo = "pos cargo";		/// on what memory points should the cargo get in the heli
 		memoryPointsGetInCargoDir = "pos cargo dir";/// what is the direction of the cargo facing during get in animation (and opposite for get out)
-		hideWeaponsCargo = 0;	//1
+		hideWeaponsCargo = 1;	//1
 		ejectDeadGunner = "false";	
 		cargoProxyIndexes[] = {3,4,5,6,7,8,9,10,11,12};		/// what indexes does regular cargo sit on
 
@@ -464,12 +464,12 @@ class CfgVehicles
 			class Gatling
 			{
 				source = "revolving";			/// returns bullets left in magazine of said weapon
-				weapon = "LMG_Minigun_heli";	/// this is the said weapon
+				weapon = "gatling_30mm";	/// this is the said weapon
 			};
 			class Gatling_flash
 			{
 				source = "ammorandom";			/// this source returns some random value changine each time ammo is spent from this weapon - used for muzzle flashes
-				weapon = "LMG_Minigun_heli";	/// this is the said weapon
+				weapon = "gatling_30mm";	/// this is the said weapon
 			};
 			class Missiles_revolving
 			{
@@ -511,10 +511,8 @@ class CfgVehicles
 			animPeriod = 10;
             };
 		};
-		hiddenSelections[] = //// we want to allow changing of colours, this defines on what selection are the textures used
-		{
-			"camo1"
-		};
+		hiddenSelections[] = {"attach_gun" }; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] = {"camo1"};
 		class Reflectors: Reflectors			/// landing lights of the heli, turned on by AI while in night and "careless" or "safe"
 		{
 			class Right
@@ -1133,7 +1131,7 @@ class CfgVehicles
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
 		
-		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelections[]= {"camo1","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_green_CO.paa"};
 	};
 		class TEI_Pelican_unarmed_tan: TEI_Pelican_unarmed_green
@@ -1147,7 +1145,7 @@ class CfgVehicles
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
 		vehicleClass = "TEI_UNSC_Air_class";
-		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelections[]= {"camo1","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] = {"TEI_Vehicles\Pelican\data\PelicanExterior_Tan_CO.paa"};
 	};
 		class TEI_Pelican_unarmed_black: TEI_Pelican_unarmed_green
@@ -1161,7 +1159,7 @@ class CfgVehicles
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
 		vehicleClass = "TEI_UNSC_Air_class";
-		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelections[]= {"camo1","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_black_CO.paa"};
 	};
 	class TEI_Pelican_unarmed_ins: TEI_Pelican_unarmed_green
@@ -1175,7 +1173,7 @@ class CfgVehicles
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
 		vehicleClass = "TEI_Ins_Air_class";
-		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelections[]= {"camo1","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_innie_CO.paa"};
 	};
 	class TEI_Pelican_VTOL: TEI_Pelican_VTOL_base
@@ -1190,7 +1188,7 @@ class CfgVehicles
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
 		
-		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelections[]= {"camo1","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_green_CO.paa"};
 	};
 	class TEI_Pelican_unarmed_marine: TEI_Pelican_F
@@ -1205,7 +1203,83 @@ class CfgVehicles
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
 		
-		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelections[]= {"camo1","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_Marine_CO.paa"};
+	};
+		class TEI_Pelican_armed_green: TEI_Pelican_F
+	{
+		displayName = "D77-TC Pelican MG (Green)";
+		scope 	= 2;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
+		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
+		vehicleClass = "TEI_UNSC_Air_class";
+		faction	= "TEI_UNSC";					/// defines the faction inside of the side
+		crew = "TEI_UNSC_Army_W_Pilot";					/// lets use the sample soldier we have as default captain of the boat
+		accuracy = 1.50; 					/// harder to distinguish side than vehicle type
+	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
+	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
+		class Turrets: Turrets										/// just a copilot seat as a turret to enable taking the controls
+		{
+			class CopilotTurret: mainturret						/// taking controls is already defined in parent class
+			{
+				gunnerAction = pilot_Heli_Light_02;				/// what action does copilot switch to
+				gunnerInAction = pilot_Heli_Light_02;				/// what action does copilot switch to
+				precisegetinout = 1;								/// describes what style of get in is used (0 - non-precise; 1 - precise on proxy; 2 - precise on model center)
+				gunnerGetInAction = pilot_Heli_Light_02_Enter;	/// what action uses the copilot to get in the heli, it uses "switchAction" script command on the proxy
+				gunnerGetOutAction = pilot_Heli_Light_02_Exit;	/// what action uses the copilot to get out the heli				
+				memoryPointsGetInGunner="Pos_Gunner";
+				memoryPointsGetInGunnerDir="Pos_Gunner_dir";
+				canEject = 1;	/// copilot shouldn't be able to do so as he doesn't have eject seat
+				body="mainTurret";
+				gun="mainGun";
+				animationSourceBody="mainTurret";
+				animationSourceGun="mainGun";
+				gunnerLeftHandAnimName = "";			/// what bone in model is the left hand connected to via IK (pilot has it set by default in parent class)
+				gunnerRightHandAnimName = "";			/// what bone in model is the right hand connected to via IK (pilot has it set by default in parent class)
+				maxHorizontalRotSpeed = 5;							/// how fast is the copilot able to look around (higher means faster)
+				maxVerticalRotSpeed = 5;							/// how fast is the copilot able to look around (higher means faster)
+				proxyindex = 1;
+				isCopilot = 1;
+				gunnerName = "Co-Pilot/Gunner";
+				primaryGunner = 1;	
+				visionMode[]={"Normal","NVG","Ti"};
+				weapons[] = {"gatling_30mm", "CMFlareLauncher","Laserdesignator_mounted"};	/// array of various vehicle weapons mounted on the heli
+				magazines[] = {"250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"}; /// array of corresponding magazines
+				minElev = -80;
+				maxElev = 15;
+				initElev = 0;
+				minTurn = -80;
+				maxTurn = 80;
+				initTurn = 0;
+				stabilizedInAxes = "StabilizedInAxesBoth";
+				startEngine = 0;
+				class Viewoptics
+					{
+                    minAngleX = -80;
+                    maxAngleX = 80;
+                    initAngleX = 0;
+                    minAngleY = -80;
+                    maxAngleY = 15;
+                    initAngleY = 0;
+                    initFov = 0.7;
+                    minFov = 0.6;
+                    maxFov = 3.0;
+					visionMode[]={"Normal","NVG","Ti"};
+					};
+				soundServo[] = {"",0.01,1};
+				outGunnerMayFire = 1;
+				commanding = -1;
+				gunBeg = "S_start";
+				gunEnd = "S_end";
+				memoryPointGunnerOptics = "gunner1";
+				selectionFireAnim = "";
+				castGunnerShadow = 0;
+				viewGunnerShadow = 0;
+				turretAxis="axisturret1";
+				gunnerOpticsModel="A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+				gunnerForceOptics = 0;
+			};
+		};
+		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_green_CO.paa"};
 	};
 };

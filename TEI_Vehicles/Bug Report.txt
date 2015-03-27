@@ -27,9 +27,15 @@ TEI_Vehicles
 	-AGM fast roping compat
 	-Marine Pelican variant retexture?
 	-cockpit gadgets not working, honestly wouldnt bother with it as the cockpit will be overhauled later
+	-turret view needs adjustment
+	-turret needs rvmat
+	-ammo for turret needs to be customized
+	-muzzle flash is being a thundercunt, i wanna punch it in its rotating face
+
 
 	/// Falcon
 	-needs textured
+	-needs everything
 
 	/// Wombat
 	-needs textured
