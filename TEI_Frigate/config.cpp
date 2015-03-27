@@ -675,6 +675,7 @@ class cfgWeapons
 	{
 		scope = 1;
 		displayName = "M910 Point Defense Gun";
+		//model = ?? fuck you github
 		minRange = 5;
 		minRangeProbab = 0.7;
 		midRange = 1200;
