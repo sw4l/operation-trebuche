@@ -664,7 +664,13 @@ class CfgVehicles
 
 class cfgWeapons
 {
+	class close;
+	class short;
+	class medium;
+	class far;
+	class player;
 	class autocannon_Base_F;
+	class Mode_FullAuto;
 	class TEI_Frig_PDG: autocannon_Base_F
 	{
 		scope = 1;
