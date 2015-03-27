@@ -20,3 +20,17 @@ corpseRemovalMaxTime = 600;
 wreckLimit = 5;
 wreckRemovalMinTime = 60;
 wreckRemovalMazTime = 600;
+
+class CfgFunctions
+{
+	class TEI_Magnet
+	{
+		class TEI_Magnet
+		{
+			file = "Magnet";
+			class Init{};
+			class Attach{};
+			class Detach{};
+		};
+	};
+};

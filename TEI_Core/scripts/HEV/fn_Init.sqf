@@ -2,14 +2,14 @@
 // this addaction [("<t color=""#81BEF7"">" + ("Request Orbital Insertion") +"</t>"), TEI_HEV_fnc_podCallSelf, "", 7, true, true, "", ""]; - set object to allow player to orbital drop
 // TEI_HEV_CanCallInAI_Check = this getVariable ["TEI_HEV_CanCallInAI", false]
 
-_podCallAI_preprocess = preprocessFileLineNumbers "\TEI_Core\scripts\HEV\fn_podCallAI.sqf";
-_podCallSelf_preprocess = preprocessFileLineNumbers "\TEI_Core\scripts\HEV\fn_podCallSelf.sqf";
-_podDoor_preprocess = preprocessFileLineNumbers "\TEI_Core\scripts\HEV\fn_podDoor.sqf";
-_podLand_preprocess = preprocessFileLineNumbers "\TEI_Core\scripts\HEV\fn_podLand.sqf";
-_podLaunch_preprocess = preprocessFileLineNumbers "\TEI_Core\scripts\HEV\fn_podLaunch.sqf";
-_podLaunchAI_preprocess = preprocessFileLineNumbers "\TEI_Core\scripts\HEV\fn_podLaunchAI.sqf";
-_podPrepare_preprocess = preprocessFileLineNumbers "\TEI_Core\scripts\HEV\fn_podPrepare.sqf";
-_podPrepareAI_preprocess = preprocessFileLineNumbers "\TEI_Core\scripts\HEV\fn_podPrepareAI.sqf";
+_podCallAI_preprocess = compile preprocessFileLineNumbers "\TEI_Core\scripts\HEV\fn_podCallAI.sqf";
+_podCallSelf_preprocess = compile preprocessFileLineNumbers "\TEI_Core\scripts\HEV\fn_podCallSelf.sqf";
+_podDoor_preprocess = compile preprocessFileLineNumbers "\TEI_Core\scripts\HEV\fn_podDoor.sqf";
+_podLand_preprocess = compile preprocessFileLineNumbers "\TEI_Core\scripts\HEV\fn_podLand.sqf";
+_podLaunch_preprocess = compile preprocessFileLineNumbers "\TEI_Core\scripts\HEV\fn_podLaunch.sqf";
+_podLaunchAI_preprocess = compile preprocessFileLineNumbers "\TEI_Core\scripts\HEV\fn_podLaunchAI.sqf";
+_podPrepare_preprocess = compile preprocessFileLineNumbers "\TEI_Core\scripts\HEV\fn_podPrepare.sqf";
+_podPrepareAI_preprocess = compile preprocessFileLineNumbers "\TEI_Core\scripts\HEV\fn_podPrepareAI.sqf";
 
 if (isMultiplayer) then
 {

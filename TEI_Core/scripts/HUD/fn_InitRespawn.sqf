@@ -1,12 +1,6 @@
-_getHelmet_preprocess = compile preprocessFileLineNumbers "\TEI_Core\scripts\HUD\fn_getHelmet.sqf";
-_setHelmet_preprocess = compile preprocessFileLineNumbers "\TEI_Core\scripts\HUD\fn_setHelmet.sqf";
-_LowLightToggle_preprocess = compile preprocessFileLineNumbers "\TEI_Core\scripts\HUD\fn_LowLightToggle.sqf";
-_VisorToggle_preprocess = compile preprocessFileLineNumbers "\TEI_Core\scripts\HUD\fn_VisorToggle.sqf";
-
 #include "\userconfig\TEI\TEI.hpp"
 if (!TEI_HUD_Enabled) exitWith {};
 if (isServer && isDedicated) exitWith {};
-if (isMultiplayer) then {player addMPEventHandler ["MPRespawn", {[] spawn TEI_HUD_fnc_InitRespawn}];} else {player addEventHandler ["Respawn", {[] spawn TEI_HUD_fnc_InitRespawn}];};
 TEI_HUD_NVOn = 0;
 TEI_HUD_Type = 0;
 TEI_HUD_DepCheck = false;

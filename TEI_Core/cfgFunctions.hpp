@@ -25,6 +25,7 @@ class CfgFunctions
 		{
 			file = "\TEI_Core\scripts\HUD";
 			class Init{};
+			class InitRespawn{};
 			class VisorToggle{};
 			class getHelmet{};
 			class setHelmet{};
@@ -184,7 +185,7 @@ class CfgSounds
 	class TEI_HUD_Helmet_Visor
 	{
 		name = "[TEI] Helmet Visor";
-		sound[] = {"\tei_core\scripts\sounds\ODST_Helmet_Visor.ogg", 1, 1};
+		sound[] = {"\tei_core\scripts\sounds\ODST_Helmet_Visor.ogg", db-5, 1};
 		titles[] = {};
 	};
 };
