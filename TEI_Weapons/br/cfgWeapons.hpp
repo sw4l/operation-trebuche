@@ -126,8 +126,8 @@ class CfgWeapons
 			};
 			reloadTime = 0.066;
 			dispersion = 0.00075;
-			recoil = "recoil_single_ebr";
-			recoilProne = "recoil_single_prone_ebr";
+			recoil = "recoil_single_mx";
+			recoilProne = "recoil_single_prone_mx";
 			minRange = 2;
 			minRangeProbab = 0.3;
 			midRange = 300;

@@ -2,12 +2,12 @@
 
 class CfgPatches
 {
-	class Test_plane_F
+	class Longsword
 	{
-		units[]				 = {"Test_Plane_01"};
+		units[]				 = {};
 		weapons[]			 = {};
 		requiredVersion		 = 0.1;
-		requiredAddons[]	 = {"A3_Air_F_Beta"};
+		requiredAddons[]	 = {"TEI_Core","A3_Air_F_Beta"};
 	};
 };
 
@@ -29,14 +29,14 @@ class CfgVehicles
 		};
 	};
 
-	class Test_Plane_01_base_F: Plane_Base_F
+	class TEI_Longsword_Base: Plane_Base_F
 	{
-		displayName = "Test plane";								/// how is the plane displayed in editor
-		model = "\Samples_F\Test_Plane_01\Test_Plane_01.p3d";	/// path to model of the plane
+		displayName = "Longsword Base";								/// how is the plane displayed in editor
+		model = "\TEI_Vehicles\Longsword.p3d";	/// path to model of the plane
 		accuracy = 0.2;											/// how hard it is to distinguish the type of the vehicle (bigger number means harder)
 
-		icon = "A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa"; 	/// icon in map/editor
-		picture = "A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Plane_Fighter_03_CA.paa";	/// small picture in command menu
+		//icon = "A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa"; 	/// icon in map/editor
+		//picture = "A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Plane_Fighter_03_CA.paa";	/// small picture in command menu
 
 		driverAction = Plane_Fighter_03_pilot;	/// what is the standard pose for the pilot, defined as animation state
 
@@ -47,6 +47,7 @@ class CfgVehicles
 
 		class TransportItems{};	/// planes are usually not used to transport items, there could possibly be a few FAKs	
 
+		/*
 		class WingVortices
 		{
 			class WingTipLeft
@@ -72,6 +73,7 @@ class CfgVehicles
 				position = "body_vapour_R_S";// name of the memory point in model
 			};
 		};
+		*/
 
 		#include "sounds.hpp" 	/// sounds are included in separate file to prevent cluttering
 
@@ -79,7 +81,7 @@ class CfgVehicles
 		acceleration = 300; 	/// used for AI to plan the waypoints and accelerating, doesn't affect plane performance
 		maxSpeed = 890;			/// maximal speed of the plane, affects even thrust and is base for both envelope and thrustCoef
 		
-		driveOnComponent[] = {"wheel_1","wheel_2","wheel_3"};  /// array of components to be assigned special low-friction material (usually wheels) 
+		driveOnComponent[] = {"wheel_1","wheel_2","wheel_3","wheel_4","wheel_5","wheel_6","wheel_7","wheel_8"};  /// array of components to be assigned special low-friction material (usually wheels) 
 		
 		rudderInfluence = 0.5;		/// coefficient of rudder affecting steering of the plane
 		aileronSensitivity = 1;		/// coefficient of ailerons affecting twisting the plane
@@ -120,11 +122,11 @@ class CfgVehicles
 		landingAoa = "rad 10"; 	/// what AoA is going the IA use to land the plane
 
 		laserScanner = 1;		/// if the vehicle is able to see targets marked by laser marker 
-		gunAimDown = 0.029000;	/// adjusts the aiming of gun relative to the axis of model
+		gunAimDown = 0.00001;	/// adjusts the aiming of gun relative to the axis of model
 		headAimDown = 0.0000;	/// adjusts the view of pilot to have crosshair centred
 
-		memoryPointLRocket = "Rocket_1"; /// use this for simulating different rocked pods in case you don't want to mess with "maverick weapon" simulation
-		memoryPointRRocket = "Rocket_2"; /// it is used to alternate two points/pods of fire the missiles
+		//memoryPointLRocket = "Rocket_1"; /// use this for simulating different rocked pods in case you don't want to mess with "maverick weapon" simulation
+		//memoryPointRRocket = "Rocket_2"; /// it is used to alternate two points/pods of fire the missiles
 
 		flapsFrictionCoef = 0.32;	/// sets the effectivity of using flaps to increase drag/lift
 		
@@ -132,6 +134,7 @@ class CfgVehicles
 
 		threat[] = {1, 1, 1};		/// multiplier of cost of the vehicle in eyes of soft, armoured and air enemies
 
+		/*
 		class Reflectors			/// landing lights of the plane, turned on by AI while in night and "careless" or "safe"
 		{
 			class Left
@@ -169,11 +172,13 @@ class CfgVehicles
 				selection = "Light_R";
 			};
 		};		
+		*/
 
 		armor = 60;					/// just some protection against missiles, collisions and explosions	
 		damageResistance = 0.004;	/// for AI if it is worth to be shoot at
 		destrType = DestructWreck;	/// how does the vehicle behave while destroyed, this one changes to the Wreck lod of the model
 
+		/*
 		class Damage 	/// damage changes material in specific places (visual in hitPoint)
 		{
 			tex[] = {};
@@ -184,11 +189,12 @@ class CfgVehicles
 				"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_destruct.rvmat"	/// changes to this one once damage of the part reaches 1
 			};
 		};
+		*/
 		hiddenSelections[] =	/// we want to allow changing of colours, this defines on what selection are the textures used
 		{
-			"camo1",
-			"camo2"
+			"camo1"
 		};
+	/*
 		class MFD				/// class for helmet mounted displays, is going to be documented separately
 		{
 			class AirplaneHUD
@@ -196,7 +202,7 @@ class CfgVehicles
 				#include "cfgHUD.hpp"
 			};
 		};
-
+	*/
 		class AnimationSources: AnimationSources	/// custom made animation sources to show/hide all the different parts for different loadout
 		{
 			class AddScalpel {source = user; animPeriod = 0.000001; initPhase = 0;};	/// corresponds with source used in model.cfg, hidden by default
@@ -208,16 +214,18 @@ class CfgVehicles
 			class AddDar {source = user; animPeriod = 0.000001; initPhase = 0;};
 			class Muzzle_flash {source = "ammorandom"; weapon = "gatling_20mm";};	/// used to rotate the muzzle flash, dependent on the weapon selected
 		};
+		
 	};
 
-	class I_Test_Plane_01_CAS_F: Test_Plane_01_base_F /// CAS version of the plane
+	class TEI_UNSC_Longsword_CAS: TEI_Longsword_Base /// CAS version of the plane
 	{
 		scope = public;	/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
-		displayName = "Test plane in CAS version"; /// how does the vehicle show itself in editor
+		displayName = "Longsword (CAS)"; /// how does the vehicle show itself in editor
 
-		side			 = 3;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
-		faction			 = CIV_F;					/// defines the faction inside of the side
-		crew			 = "Test_Soldier_F";		/// lets use the sample soldier we have as default captain of the boat
+		side			 = 2;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
+		faction	= "TEI_UNSC";				/// defines the faction inside of the side
+		vehicleClass = "TEI_UNSC_Air_class";
+		crew			 = "TEI_UNSC_Army_W_Pilot";		/// lets use the sample soldier we have as default captain of the boat
 
 		hiddenSelectionsTextures[] = /// changes of textures to distinguish variants in same order as hiddenSelections[]
 		{
@@ -252,9 +260,10 @@ class CfgVehicles
 		availableForSupportTypes[] = {"CAS_Bombing"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 		cost = 3000000;	/// we need some high cost for such vehicles to be prioritized by AA defences
 	};
-	class I_Test_Plane_01_AA_F: I_Test_Plane_01_CAS_F	/// the other version is pretty much obvious, just showing the possibilities
+	
+	class TEI_UNSC_Longsword_AA: TEI_UNSC_Longsword_CAS	/// the other version is pretty much obvious, just showing the possibilities
 	{
-		displayName = "Test plane in CAS version";
+		displayName = "Longsword (AA)";
 		hiddenSelectionsTextures[] =
 		{
 			"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_INDP_co.paa",
@@ -292,7 +301,7 @@ class CfgVehicles
 	class Test_Plane_01_wreck_F: PlaneWreck
 	{
 		scope = 1;
-		model = "A3\Air_F_Gamma\Test_Plane_01\Test_Plane_01_wreck_F.p3d";
+		model = "-";
 		typicalCargo[] = {};
 		irTarget = 0;
 		transportAmmo = 0;

@@ -217,8 +217,8 @@
                             };
                             reloadTime = 0.092; 			//was 0.065
                             dispersion = 0.00075;
-                            recoil = "recoil_single_ebr";
-                            recoilProne = "recoil_single_prone_ebr";
+                            recoil = "recoil_single_mx";
+							recoilProne = "recoil_single_prone_mx";
                             minRange = 2;
                             minRangeProbab = 0.3;
                             midRange = 300;
@@ -250,8 +250,8 @@
                             };
                             reloadTime = 0.092; 			//was 0.065
                             dispersion = 0.00085;
-                            recoil = "recoil_single_ebr";
-                            recoilProne = "recoil_single_prone_ebr";
+                            recoil = "recoil_single_mx";
+							recoilProne = "recoil_single_prone_mx";
                             minRange = 2;
                             minRangeProbab = 0.3;
                             midRange = 300;
@@ -325,7 +325,7 @@
                     //reloadAction                                                            = "GestureReloadTRG";
                     muzzles[]                                                           = {"this", "M309GL"}; // this was the missing
                     inertia                                                                 = 0.6;
-                    /*class GunParticles: GunParticles
+                    class GunParticles: GunParticles
                     {
                        class SecondEffect
                        {
@@ -347,10 +347,9 @@
                             };
                             class StandardSound: BaseSoundModeType
                             {
-                                    begin1[] = {"A3\sounds_f\weapons\EBR\EBR_st_4",1.0,1,2000};
-                                    begin2[] = {"A3\sounds_f\weapons\EBR\EBR_st_5",1.0,1,2000};
-                                    begin3[] = {"A3\sounds_f\weapons\EBR\EBR_st_6",1.0,1,2000};
-                                    soundBegin[] = {"begin1",0.34,"begin2",0.33,"begin3",0.33};
+                                    begin1[] = {"\TEI_Weapons\AR\Data\sounds\AssaultRifle_1.wss",1.0,1,2000};
+                                    begin2[] = {"\TEI_Weapons\AR\Data\sounds\AssaultRifle_2.wss",1.0,1,2000};
+                                    soundBegin[] = {"begin1",0.34,"begin2",0.33};
                             };
                             class SilencedSound: BaseSoundModeType
                             {
@@ -360,8 +359,8 @@
                             };
                             reloadTime = 0.065;
                             dispersion = 0.00075;
-                            recoil = "recoil_single_ebr";
-                            recoilProne = "recoil_single_prone_ebr";
+                            recoil = "recoil_single_mx";
+							recoilProne = "recoil_single_prone_mx";
                             minRange = 2;
                             minRangeProbab = 0.3;
                             midRange = 300;
@@ -381,10 +380,9 @@
                             };
                             class StandardSound: BaseSoundModeType
                             {
-                                    begin1[] = {"A3\sounds_f\weapons\EBR\EBR_st_4",1.0,1,2000};
-                                    begin2[] = {"A3\sounds_f\weapons\EBR\EBR_st_5",1.0,1,2000};
-                                    begin3[] = {"A3\sounds_f\weapons\EBR\EBR_st_6",1.0,1,2000};
-                                    soundBegin[] = {"begin1",0.34,"begin2",0.33,"begin3",0.33};
+                                    begin1[] = {"\TEI_Weapons\AR\Data\sounds\AssaultRifle_1.wss",1.0,1,2000};
+                                    begin2[] = {"\TEI_Weapons\AR\Data\sounds\AssaultRifle_2.wss",1.0,1,2000};
+                                    soundBegin[] = {"begin1",0.34,"begin2",0.33};
                             };
                             class SilencedSound: BaseSoundModeType
                             {
@@ -394,8 +392,8 @@
                             };
                             reloadTime = 0.065;
                             dispersion = 0.00085;
-                            recoil = "recoil_single_ebr";
-                            recoilProne = "recoil_single_prone_ebr";
+                            recoil = "recoil_single_mx";
+							recoilProne = "recoil_single_prone_mx";
                             minRange = 2;
                             minRangeProbab = 0.3;
                             midRange = 300;
@@ -404,7 +402,7 @@
                             maxRangeProbab = 0.05;
                             soundBurst = 0;
                             burst = 1;
-                    };*/
+                    };
                     class M309GL: UGL_F /// Some grenade launcher to have some more fun
                     {
                             displayName = "M309 Grenade Launcher";
