@@ -19,16 +19,18 @@ class CfgVehicles
 			class Turrets
 			{
 				class mainturret;
+				class newTurret;
+				class CopilotTurret;
 				class CargoTurret;
 			};
 			class HitPoints
 			{
-				class HitHull;
+				/*class HitHull;
 				class HitFuel;
 				class HitAvionics;
 				class HitEngine;
 				class HitHRotor;
-				class HitVRotor;
+				class HitVRotor;*/
 			};
 			class AnimationSources;
 			class Eventhandlers;
@@ -671,7 +673,7 @@ class CfgVehicles
 
 		
 ///hit points
-		class HitPoints:Hitpoints
+		/*class HitPoints:Hitpoints
 		{
 			class HitHull:HitHull
 			{
@@ -741,7 +743,7 @@ class CfgVehicles
 				minimalHit=0.05;
 				explosionShielding=6;
 			};
-		};
+		};*/
 /// hit points end
 ///transport items		
 		class TransportBackpacks	/// adds various backpacks to cargo hold of the heli
@@ -869,7 +871,7 @@ class CfgVehicles
 		
 		class Turrets: Turrets										/// just a copilot seat as a turret to enable taking the controls
 		{
-			class CopilotTurret: mainturret						/// taking controls is already defined in parent class
+			class CopilotTurret: NewTurret						/// taking controls is already defined in parent class
 			{
 				gunnerAction = pilot_Heli_Light_02;				/// what action does copilot switch to
 				gunnerInAction = pilot_Heli_Light_02;				/// what action does copilot switch to
@@ -1179,7 +1181,7 @@ class CfgVehicles
 	class TEI_Pelican_VTOL: TEI_Pelican_VTOL_base
 	{
 		displayName = "D77-TC Pelican (VTOL)";
-		scope 	= 2;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
+		scope 	= 0;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		vehicleClass = "TEI_UNSC_Air_class";
 		faction	= "TEI_UNSC";					/// defines the faction inside of the side

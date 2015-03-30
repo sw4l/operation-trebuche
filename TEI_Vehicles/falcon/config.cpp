@@ -63,7 +63,7 @@ class CfgVehicles
 		GetOutAction = pilot_Heli_Light_02_Exit;		/// what action uses the pilot to get out of heli
 		cargoGetInAction[] = {"GetInHelicopterCargo"};	/// actions for the cargo, the last one in array is used for the rest
 		cargoGetOutAction[] = {"GetOutHelicopterCargo"};/// that means every cargo position could use different action to get in
-		transportSoldier = 5;							/// how many cargo positions are available
+		transportSoldier = 7;							/// how many cargo positions are available
 		cargoAction[] = { 								/// the same array as getIn/getOut actions for actions to switch to for cargo while inside the heli
 			passenger_apc_narrow_generic03,
 			passenger_apc_generic02,
@@ -76,7 +76,7 @@ class CfgVehicles
 		memoryPointsGetInCargo = "pos cargo";		/// on what memory points should the cargo get in the heli
 		memoryPointsGetInCargoDir = "pos cargo dir";/// what is the direction of the cargo facing during get in animation (and opposite for get out)
 		hideWeaponsCargo = 1;						/// this makes the poses easier and adds some performance gain because the proxies don't need to be drawn
-		cargoProxyIndexes[] = {1,2,3,4,5,6,7};		/// what indexes does regular cargo sit on
+		cargoProxyIndexes[] = {1,2,3,4,5,6,7,8,9};		/// what indexes does regular cargo sit on
 		
 		class TransportBackpacks	/// adds various backpacks to cargo hold of the heli
 		{
@@ -325,7 +325,7 @@ class CfgVehicles
 		faction	= "TEI_UNSC";			/// defines the faction inside of the side
 		crew = "TEI_UNSC_Marine_Pilot";	/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 			/// harder to distinguish side than vehicle type
-		displayName = "test falcon bro";
+		displayName = "UH-144 Falcon";
 		icon = "\A3\Air_F\Heli_Light_02\Data\UI\Map_Heli_Light_02_rockets_CA.paa";	/// icon in map/editor
 		picture = "\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_rockets_CA.paa";	/// small picture in command menu
 		
