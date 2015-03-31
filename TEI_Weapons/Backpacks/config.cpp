@@ -15,7 +15,8 @@ class CfgPatches {
         };
 };
  
-class cfgVehicles {
+class cfgVehicles 
+	{
 		class ContainerSupply;
 		class Bag_Base;
 		class B_AssaultPack_rgr_Medic;
@@ -97,37 +98,25 @@ class cfgVehicles {
 				isbackpack = 1;
 				picture = "\TEI_weapons\backpacks\icons\como_pack.paa";
 				transportMaxWeapons = 1;
-				transportMaxMagazines = 4;
+				transportMaxMagazines = 10;
 				class DestructionEffects{};
-                		displayName = "[UNSC] Communications Pack";
-                		model = "\TEI_weapons\backpacks\como_ruck.p3d";
+                displayName = "UNSC/PRC-515O";
+				descriptionShort = "UNSC/PRC-515O ODST long range radio 20km";
+                model = "\TEI_weapons\backpacks\como_ruck.p3d";
+				maximumLoad = 120;
+				mass = 25;
 				vehicleClass = "TEI_UNSC_Backpack_class";
 				allowedSlots[] = {901};
+				tf_encryptionCode = "tf_west_radio_code";
+				tf_dialog = "rt1523g_radio_dialog";
+				tf_subtype = "digital_lr";
+				tf_range = 20000;
+				tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+				tf_hasLRradio = 1; 
 				hiddenSelections[] 								= {"camo1"};
 				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\como_pack_co.paa"};
         };
 		
-		class TEI_Como_pack_2 : TEI_ILCS_Rucksack_Black
-		{
-				scope = 2;
-				picture = "\TEI_weapons\backpacks\icons\como_pack.paa";
-				transportMaxWeapons = 1;
-				transportMaxMagazines = 10;
-                displayName = "[UNSC] LR91 CommPack";
-				descriptionShort = "LR91 TEI long range radio backpack 50km";
-                model = "\TEI_weapons\backpacks\como_ruck.p3d";
-				maximumLoad = 120;
-				mass = 25;
-				hiddenSelections[] 								= {"camo1"};
-				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\como_pack_co.paa"};
-				
-				tf_encryptionCode = "tf_west_radio_code";
-				tf_dialog = "rt1523g_radio_dialog";
-				tf_subtype = "digital_lr";
-				tf_range = 50000;
-				tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-				tf_hasLRradio = 1; 
-        };
 		
 		class TEI_Kitbag_cbr_Rockets: B_Kitbag_cbr
 		{
@@ -357,4 +346,30 @@ class cfgVehicles {
 				};
 			};
 		};
-};
+		class TEI_Radio_pack_521 : B_Bergen_Base
+		{
+				scope = 1;
+				class TransportMagazines{};
+				class TransportWeapons{};
+				isbackpack = 1;
+				//picture = "\TEI_weapons\backpacks\icons\como_pack.paa";
+				transportMaxWeapons = 1;
+				transportMaxMagazines = 10;
+				class DestructionEffects{};
+                displayName = "UNSC/PRC-521";
+				descriptionShort = "UNSC/PRC-521 long range radio 25km";
+                model = "\TEI_weapons\backpacks\radio_pack1.p3d";
+				maximumLoad = 120;
+				mass = 25;
+				vehicleClass = "TEI_UNSC_Backpack_class";
+				allowedSlots[] = {901};
+				tf_encryptionCode = "tf_west_radio_code";
+				tf_dialog = "rt1523g_radio_dialog";
+				tf_subtype = "digital_lr";
+				tf_range = 25000;
+				tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+				tf_hasLRradio = 1; 
+				hiddenSelections[] 								= {"camo1"};
+				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\RadioPack1_CO.paa"};
+        };
+	};
