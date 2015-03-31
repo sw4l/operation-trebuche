@@ -92,7 +92,7 @@ class cfgVehicles
         };
 		class TEI_Como_pack_1 : B_Bergen_Base 
 		{
-				scope = 1;
+				scope = 2;
 				class TransportMagazines{};
 				class TransportWeapons{};
 				isbackpack = 1;
@@ -348,11 +348,11 @@ class cfgVehicles
 		};
 		class TEI_Radio_pack_521 : B_Bergen_Base
 		{
-				scope = 1;
+				scope = 2;
 				class TransportMagazines{};
 				class TransportWeapons{};
 				isbackpack = 1;
-				//picture = "\TEI_weapons\backpacks\icons\como_pack.paa";
+				picture = "\TEI_weapons\backpacks\icons\como_pack.paa";
 				transportMaxWeapons = 1;
 				transportMaxMagazines = 10;
 				class DestructionEffects{};
