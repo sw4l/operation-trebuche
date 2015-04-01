@@ -637,8 +637,10 @@ class CfgVehicles
 				gunnerLeftHandAnimName="trigger";
 				gunnerRightHandAnimName="trigger";
 				memoryPointGun="machinegun";
-				weapons[]={"TEI_Frig_PDG"};
-				magazines[] = {"TEI_100rd_50mm","TEI_100rd_50mm""TEI_100rd_50mm","TEI_100rd_50mm","TEI_100rd_50mm"};
+				weapons[]={"autocannon_40mm_CTWS"};
+				//weapons[]={"TEI_Frig_PDG"};
+				magazines[] = {"60Rnd_40mm_GPR_Tracer_Red_shells","60Rnd_40mm_GPR_Tracer_Red_shells","60Rnd_40mm_GPR_Tracer_Red_shells","60Rnd_40mm_GPR_Tracer_Red_shells"};
+				//magazines[] = {"TEI_100rd_50mm","TEI_100rd_50mm""TEI_100rd_50mm","TEI_100rd_50mm","TEI_100rd_50mm"};
 				memoryPointGunnerOptics="gunnerview";
 				gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";
 				gunnerOpticsShowCursor=1;
@@ -662,7 +664,7 @@ class CfgVehicles
 	};
 };
 
-class cfgWeapons
+/*class cfgWeapons
 {
 	class close;
 	class short;
@@ -670,12 +672,13 @@ class cfgWeapons
 	class far;
 	class player;
 	class autocannon_Base_F;
+	class autocannon_40mm_CTWS;
 	class Mode_FullAuto;
-	class TEI_Frig_PDG: autocannon_Base_F
+	class TEI_Frig_PDG: autocannon_40mm_CTWS
 	{
-		scope = 1;
+		scope = 2;
 		displayName = "M910 Point Defense Gun";
-		//model = ?? fuck you github
+		model = "";
 		minRange = 5;
 		minRangeProbab = 0.7;
 		midRange = 1200;
@@ -766,6 +769,7 @@ class cfgMagazines
 	class TEI_100rd_50mm: 250Rnd_30mm_HE_shells
 	{
 		scope = 2;
+		model = "";
 		displayName = "100rd 50mm Shells";
 		displayNameShort = "50mm";
 		ammo = "TEI_50mm_PDG_ammo";
@@ -776,4 +780,4 @@ class cfgMagazines
 		tracersEvery = 1;
 		weight = 126;
 	};
-};
+};*/

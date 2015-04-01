@@ -86,4 +86,13 @@ class CfgAmmo
 		//trackOversteer = 1;
 		//weaponLockSystem = "2 + 16";
 	};
+	class TEI_Splaser_Ammo: M_Titan_AA
+	{
+		scope = 2;
+		thrust = 500000;
+		initSpeed = 500000;
+		maxSpeed = 500000;
+		model = "TEI_Weapons\data\Splaser_tracer.p3d";
+
+	};
 };
