@@ -40,7 +40,7 @@
                                             opticsZoomMin                                   = 0.375;
                                             opticsZoomMax                                   = 0.55;
                                             opticsZoomInit                                  = 0.55;
-                                            memoryPointCamera                               = "opticView2";
+                                            memoryPointCamera                               = "opticView";
                                             visionMode[]                                    = {};
                                             distanceZoomMin                                 = 300;
                                             distanceZoomMax                                 = 300;
@@ -53,7 +53,7 @@
                                             opticsZoomMin                                   = 0.075;
                                             opticsZoomMax                                   = 0.0523;
                                             opticsZoomInit                                  = 0.0523;
-                                            memoryPointCamera                               = "opticView";
+                                            memoryPointCamera                               = "opticView2";
                                             modelOptics[]                                   = {"\A3\Weapons_F\acc\reticle_HAMR"/*,"\A3\Weapons_F\acc\reticle_arco_F"*/};
                                             visionMode[]                                    = {};
                                     };

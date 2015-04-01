@@ -56,14 +56,14 @@ class CfgVehicles
 		icon = "\A3\Air_F\Heli_Light_02\Data\UI\Map_Heli_Light_02_CA.paa";	/// icon in map/editor
 		picture = "\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_CA.paa";	/// small picture in command menu
 
-		driverAction = pilot_Heli_Light_02;				/// what is the standard pose for the pilot, defined as animation state
-		driverInAction = pilot_Heli_Light_02;			/// what is the standard pose for the pilot, defined as animation state
+		driverAction = Plane_Fighter_03_pilot;				/// what is the standard pose for the pilot, defined as animation state
+		driverInAction = Plane_Fighter_03_pilot;			/// what is the standard pose for the pilot, defined as animation state
 		precisegetinout = 1;							/// describes what style of get in is used (0 - non-precise; 1 - precise on proxy; 2 - precise on model center)
 		GetInAction = pilot_Heli_Light_02_Enter;		/// what action uses the pilot to get in the heli, it uses "switchAction" script command on the proxy
 		GetOutAction = pilot_Heli_Light_02_Exit;		/// what action uses the pilot to get out of heli
 		cargoGetInAction[] = {"GetInHelicopterCargo"};	/// actions for the cargo, the last one in array is used for the rest
 		cargoGetOutAction[] = {"GetOutHelicopterCargo"};/// that means every cargo position could use different action to get in
-		transportSoldier = 7;							/// how many cargo positions are available
+		transportSoldier = 5;							/// how many cargo positions are available
 		cargoAction[] = { 								/// the same array as getIn/getOut actions for actions to switch to for cargo while inside the heli
 			passenger_apc_narrow_generic03,
 			passenger_apc_generic02,
@@ -76,7 +76,7 @@ class CfgVehicles
 		memoryPointsGetInCargo = "pos cargo";		/// on what memory points should the cargo get in the heli
 		memoryPointsGetInCargoDir = "pos cargo dir";/// what is the direction of the cargo facing during get in animation (and opposite for get out)
 		hideWeaponsCargo = 1;						/// this makes the poses easier and adds some performance gain because the proxies don't need to be drawn
-		cargoProxyIndexes[] = {1,2,3,4,5,6,7,8,9};		/// what indexes does regular cargo sit on
+		cargoProxyIndexes[] = {1,2,3,4,5,6,7};		/// what indexes does regular cargo sit on
 		
 		class TransportBackpacks	/// adds various backpacks to cargo hold of the heli
 		{
@@ -203,10 +203,10 @@ class CfgVehicles
 
 		class AnimationSources: AnimationSources	/// custom made animation sources
 		{
-			class cockpitdoor /// class name is later used in model.cfg
+			class cockpit /// class name is later used in model.cfg
 			{
-				source = "cockpitdoor";	/// door source means it is used by animateDoor script command
-				animPeriod = 1;		/// how long does it take to change value from 0 to 1 (or vice versa)
+				source = "user";	/// door source means it is used by animateDoor script command
+				animPeriod = 4;		/// how long does it take to change value from 0 to 1 (or vice versa)
 				initPhase = 0;		/// what value does it have while creating the vehicle
 			};
 			class HideWeapon
@@ -244,28 +244,30 @@ class CfgVehicles
 		
 		class UserActions /// actions available for player to interact with vehicle via action menu running scripts
 		{
-			class cockpitDoor_Open
+			class cockpit_Open
 			{
 				userActionID 		= 60;				/// ID for some scripts
 				displayName 		= "Open Cockpit";		/// what is displayed in action menu
 				displayNameDefault 	= "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />"; /// what is displayed under the cursor (icon in this case)
+				textToolTip 		= "Open Cockpit";
 				position 			= "";				/// start of radius where action is available
-				condition 			= "this doorPhase ""cockpitdoor"" < 0.5 AND Alive(this) AND (player in crew this)"; /// only openable from inside and when closed
-				statement 			= "this animateDoor ['cockpitdoor', 1]";	/// sets animation source Doors to 1 via interpolation
 				priority 			= 1.5;				/// higher priority means higher in the Action menu
 				radius 				= 1.5;				/// how far from position is the action available
-				showWindow 			= 0;				/// 0 means that it is not a default action when entering the vehicle
 				onlyForPlayer 		= 1;				/// AI doesn't use this one
-				shortcut 			= "";				/// there's no shortcut for this action
+				condition 			= "this doorPhase ""cockpitdoor"" < 0.5 AND Alive(this) AND (player in crew this)"; /// only openable from inside and when closed
+				statement 			= "this animateDoor ['cockpitdoor', 1]";	/// sets animation source Doors to 1 via interpolation
+				animPeriod = 4;				
 			};
 
-			class cockpitDoor_Close: cockpitDoor_Open
+			class cockpit_Close: cockpit_Open
 			{
 				userActionID 		= 61;
 				displayName 		= "Close Cockpit";
 				textToolTip 		= "Close Cockpit";
+				priority = 1.5;
 				condition	 		= "this doorPhase ""cockpitdoor"" > 0.5 AND Alive(this) AND (player in crew this)";
 				statement 			= "this animateDoor ['cockpitdoor', 0]";
+				animPeriod = 4;		
 			};
 		};		
 	
@@ -325,7 +327,7 @@ class CfgVehicles
 		faction	= "TEI_UNSC";			/// defines the faction inside of the side
 		crew = "TEI_UNSC_Marine_Pilot";	/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 			/// harder to distinguish side than vehicle type
-		displayName = "UH-144 Falcon";
+		displayName = "test falcon bro";
 		icon = "\A3\Air_F\Heli_Light_02\Data\UI\Map_Heli_Light_02_rockets_CA.paa";	/// icon in map/editor
 		picture = "\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_rockets_CA.paa";	/// small picture in command menu
 		
