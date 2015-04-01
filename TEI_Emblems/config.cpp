@@ -78,6 +78,20 @@ class CfgUnitInsignia //Unit Insignias to show on players' shoulders
 		texture = "\TEI_Emblems\data\unsc_1st.paa"; // Image path
 		textureVehicle = "\TEI_Emblems\data\unsc_1st.paa"; // Does nothing currently, reserved for future use
 	};
+	class TEI_Insignia_unsc_5th : TEI_Insignia_foxgaming
+	{
+		displayName = "[TEI] UNSC (5th Fleet)"; // Name displayed in Arsenal
+		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
+		texture = "\TEI_Emblems\data\unsc_5th.paa"; // Image path
+		textureVehicle = "\TEI_Emblems\data\unsc_5th.paa"; // Does nothing currently, reserved for future use
+	};
+	class TEI_Insignia_unsc_77th : TEI_Insignia_foxgaming
+	{
+		displayName = "[TEI] UNSC (77th MD)"; // Name displayed in Arsenal
+		author = "Eridanus Insurrection Team"; // Author displayed in Arsenal
+		texture = "\TEI_Emblems\data\unsc_77th.paa"; // Image path
+		textureVehicle = "\TEI_Emblems\data\unsc_77th.paa"; // Does nothing currently, reserved for future use
+	};
 	class TEI_Insignia_emblems_blackwidow
 	{
 		scope = 2;

@@ -250,8 +250,8 @@
 				// <Description>: These values describe the maximum compression and elongation in metres that the spring can support.
 				// <Type>: float
 				// <Default>: 0.15
-				maxCompression 						= 2.0; //0.5
-				mMaxDroop 							= 0.25; //0.1
+				maxCompression 						= 4.0; //0.5
+				mMaxDroop 							= 2.0; //0.1
 				
 				// <Description>: This is the mass in kg that is supported by the suspension spring.
 				// <Type>: float
@@ -310,7 +310,8 @@
 				suspForceAppPointOffset 		= "wheel_1_2_axis";
 				tireForceAppPointOffset 		= "wheel_1_2_axis";
 				maxHandBrakeTorque 				= 3500;
-				side 							= "left";					
+				side 							= "left";		
+				frictionVsSlipGraph[] 			= {{0, 1}, {0.25, 1}, {0.5,1}};
 			};
 			class RF : LF
 			{
@@ -331,6 +332,7 @@
 				suspForceAppPointOffset 		= "wheel_2_2_axis";
 				tireForceAppPointOffset 		= "wheel_2_2_axis";
 				maxHandBrakeTorque 				= 3500;
-				side 							= "right";					
+				side 							= "right";	
+				frictionVsSlipGraph[] 			= {{0, 1}, {0.25, 1}, {0.5,1}};				
 			};
 		};

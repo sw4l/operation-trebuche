@@ -16,7 +16,7 @@ enum
 }; 
 class CfgPatches
 {
-	class TEI_Weapons_BR
+	class TEI_Weapons_Rockets
 	{
 		units[] = {};
 		weapons[] = {};

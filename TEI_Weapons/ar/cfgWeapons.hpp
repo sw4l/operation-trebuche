@@ -1,11 +1,6 @@
-	
-
-    class Mode_SemiAuto;    // External class reference
-    class Mode_Burst;       // External class reference
-    class Mode_FullAuto;    // External class reference
-    class asdg_FrontSideRail;
-    class asdg_OpticRail1913;
-     
+class Mode_SemiAuto;
+class Mode_Burst;
+class Mode_FullAuto;
     class CfgWeapons
     {
             class WeaponSlotsInfo;
@@ -177,8 +172,8 @@
                     muzzleEnd                                                               = "konec hlavne";
                     reloadAction                                                            = "GestureReloadTRG";
                     inertia                                                                 = 0.6;
-					maxRecoilSway = 0.0125;
-					swayDecaySpeed = 1.25;
+					maxRecoilSway = 0.01;
+					swayDecaySpeed = 1;
                     class GunParticles: GunParticles
                     {
                        class SecondEffect
@@ -260,6 +255,17 @@
                             maxRangeProbab = 0.05;
                             soundBurst = 0;
                             burst = 1;
+							displayName = "$STR_DN_MODE_FULLAUTO";
+							textureType = "fullAuto";
+							multiplier = 1;
+							autoFire = 0;
+							aiRateOfFire = 1e-006;
+							aiRateOfFireDistance = 100;
+							showToPlayer = 1;
+							artilleryDispersion = 0;
+							artilleryCharge = 0;
+							useAction = "";
+							useActionTitle = "";
                     };
                     class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
                     {
@@ -402,6 +408,8 @@
                             maxRangeProbab = 0.05;
                             soundBurst = 0;
                             burst = 1;
+							displayName = "$STR_DN_MODE_FULLAUTO";
+							textureType = "fullAuto";
                     };
                     class M309GL: UGL_F /// Some grenade launcher to have some more fun
                     {
@@ -415,7 +423,7 @@
                             discreteDistanceCameraPoint[] = {"OP_eye", "OP_eye2", "OP_eye3", "OP_eye4"}; /// the angle of gun changes with zeroing
                             discreteDistanceInitIndex = 1; /// 200 is the default zero
                     };
-                    class TEI_WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
+                    class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
                     {
                             class MuzzleSlot: SlotInfo
                             {

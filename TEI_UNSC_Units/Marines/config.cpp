@@ -868,13 +868,13 @@ class cfgWeapons
         model = "\a3\characters_f\Common\cappatrol"; // Model
 		picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_H_MilCap_gry_ca.paa";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\TEI_UNSC_Units\Marines\jarhead_co.paa"}; // Path to your texture.
+        hiddenSelectionsTextures[] = {"\TEI_UNSC_Units\Marines\data\jarhead_co.paa"}; // Path to your texture.
         class ItemInfo: HeadgearItem
         {
             mass = 5; 
             uniformModel = "\a3\characters_f\Common\cappatrol";
 			hiddenSelections[] = {"camo"};
-			hiddenSelectionsTextures[] = {"\TEI_UNSC_Units\Marines\jarhead_co.paa"};
+			hiddenSelectionsTextures[] = {"\TEI_UNSC_Units\Marines\data\jarhead_co.paa"};
             modelSides[] = {6};
         };
 	};

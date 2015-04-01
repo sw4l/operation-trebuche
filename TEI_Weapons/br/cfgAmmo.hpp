@@ -3,7 +3,7 @@ class CfgAmmo
 	class B_762x51_Ball;
 	class TEI_B_95x40_Ball: B_762x51_Ball
 	{
-		hit = 11;
+		hit = 12;
 		caliber = 2;
 		typicalSpeed = 905;
 	};

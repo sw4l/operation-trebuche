@@ -676,7 +676,7 @@ class cfgWeapons
 	};
 	class TEI_UNSC_ODST_uniform_instructor: TEI_UNSC_ODST_uniform_base
 	{
-		scope																					= 1;
+		scope																					= 2;
 		picture   																				= "\TEI_UNSC_Units\ODST\icons\odst_instr.paa";
 		author																					= "Eridanus Insurrection Team";
 		displayName																				= "[UNSC] ODST Instructor Uniform";
@@ -691,7 +691,7 @@ class cfgWeapons
 	};
 		class TEI_UNSC_ODST_uniform_recruit: TEI_UNSC_ODST_uniform_base
 	{
-		scope																					= 1;
+		scope																					= 2;
 		picture   																				= "\TEI_UNSC_Units\ODST\icons\odst_recruit.paa";
 		author																					= "Eridanus Insurrection Team";
 		displayName																				= "[UNSC] ODST Recruit Uniform";

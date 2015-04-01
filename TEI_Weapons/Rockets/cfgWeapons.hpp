@@ -44,7 +44,7 @@ class CfgWeapons
 		//minRange = 10;
 		//midRange = 250;
 		//maxRange = 500;
-		modelOptics = "\A3\Weapons_F\acc\reticle_RPG_F";
+		modelOptics = "\A3\Weapons_F\acc\reticle_NLAW.p3d";
 		recoil = "recoil_single_law";
 		aiRateOfFire = 5.0;	// delay between shots at given distance
 		aiRateOfFireDistance = 250;
@@ -54,6 +54,10 @@ class CfgWeapons
 		//distanceZoomMax = 100;
 		reloadaction = "ReloadRPG";
 		reloadmagazinesound[] = {"A3\sounds_f\weapons\rockets\titan_reload_final", 0.562341, 1, 50};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 200;
+		};
 	};
 	class TEI_M41_SSR_G: launch_Titan_base 
 	{
@@ -78,20 +82,16 @@ class CfgWeapons
 		cmImmunity = 0.9;
 		lockAcquire = 0;
 		
+		shotPos = "muzzlePos";
+		shotEnd = "muzzleEnd";
+		
 		reloadaction = "ReloadRPG";
 		reloadmagazinesound[] = {"A3\sounds_f\weapons\rockets\titan_reload_final", 0.562341, 1, 50};
 		aiRateOfFire = 10.0;	// delay between shots at given distance
 		aiRateOfFireDistance = 2500;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 210;
+		};
 	};
 };
-
-/*class no_magazine //use for empty rocket tube
-			{
-				type = "hide";
-				source = "hasMagazine";
-				selection = "missile";
-				minValue = 0;
-				maxValue = 1;
-				hideValue = 0.5;
-				unhideValue = -1;
-			};*/

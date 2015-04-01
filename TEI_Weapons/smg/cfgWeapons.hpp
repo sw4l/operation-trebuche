@@ -1,8 +1,6 @@
 class Mode_SemiAuto;    // External class reference
 class Mode_Burst;       // External class reference
 class Mode_FullAuto;    // External class reference
-class asdg_FrontSideRail;
-class asdg_OpticRail1913;
      
 class CfgWeapons
 {
@@ -181,7 +179,6 @@ class CfgWeapons
 					maxRecoilSway = 0.0075;
 					swayDecaySpeed = 1;
 					maxZeroing = 300;
-					
 					modes[] = {"Single","FullAuto"};
                     class Single: Mode_SemiAuto
                     {
@@ -250,6 +247,8 @@ class CfgWeapons
                             maxRangeProbab = 0.05;
                             soundBurst = 0;
                             burst = 1;
+							displayName = "$STR_DN_MODE_FULLAUTO";
+							textureType = "fullAuto";
                     };
                     class GunParticles: GunParticles
                     {

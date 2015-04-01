@@ -1,8 +1,6 @@
     class Mode_SemiAuto;    // External class reference
     class Mode_Burst;       // External class reference
     class Mode_FullAuto;    // External class reference
-    class asdg_FrontSideRail;
-    class asdg_OpticRail1913;
      
     class CfgWeapons
     {
@@ -173,6 +171,8 @@
                             maxRangeProbab = 0.05;
                             soundBurst = 0;
                             burst = 1;
+							displayName = "$STR_DN_MODE_FULLAUTO";
+							textureType = "fullAuto";
                     };
                     class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
                     {
@@ -201,6 +201,26 @@
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\SIDE";
                                     scope                                                   = 2;
                             };
+                    };
+            };
+            class TEI_M73_CQC: TEI_M73
+            {
+                    model                                                                   = "\TEI_Weapons\MG\M73_rail.p3d";
+                    displayName                                                             = "M73 CQC Light Machine Gun";
+                    descriptionShort                                                        = "UNSC Light Machine Gun (CQC Variant)";
+                    inertia                                                                 = 0.75;
+					maxRecoilSway = 0.0115;
+					swayDecaySpeed = 1.15;
+                    class GunParticles: GunParticles {};
+                    modes[] = {"Single","FullAuto"};
+                    class Single: Single {};
+                    class FullAuto: FullAuto {};
+                    class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
+                    {
+							mass = 140;
+                            class MuzzleSlot: MuzzleSlot {};
+                            class CowsSlot: CowsSlot {};
+                            class PointerSlot: PointerSlot {};
                     };
             };
 			
@@ -316,10 +336,12 @@
                             maxRangeProbab = 0.05;
                             soundBurst = 0;
                             burst = 1;
+							displayName = "$STR_DN_MODE_FULLAUTO";
+							textureType = "fullAuto";
                     };
                     class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
                     {
-							mass = 160;
+							mass = 180;
                             class MuzzleSlot: SlotInfo
                             {
                                     access                                                  = 1;
