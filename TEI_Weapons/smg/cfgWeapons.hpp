@@ -168,7 +168,7 @@ class CfgWeapons
                     displayName                                                             = "M7/Caseless SMG";
                     descriptionShort                                                        = "UNSC M7 SMG";
                     picture = "\TEI_weapons\smg\icons\smg.paa";
-                    magazines[]                                                             = {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag_tracer","TEI_48Rnd_5x23mm_Mag","TEI_48Rnd_5x23mm_Mag_tracer"};
+                    magazines[]                                                             = {"TEI_60Rnd_5x23mm_Mag","TEI_60Rnd_5x23mm_Mag_tracer","TEI_48Rnd_5x23mm_Mag","TEI_48Rnd_5x23mm_Mag_tracer","TEI_48Rnd_5x23mm_JHP_Mag","TEI_48Rnd_5x23mm_FMJ_Mag"};
                     modelOptics                                                             = "-";
                     muzzlePos                                                               = "usti hlavne";
                     muzzleEnd                                                               = "konec hlavne";
@@ -280,7 +280,7 @@ class CfgWeapons
                             class PointerSlot: SlotInfo
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"TEI_M7_flashlight","TEI_M7_Laser"};\
+                                    compatibleitems[]                                       = {"TEI_M7_flashlight","TEI_M7_Laser"};
                                     displayname                                             = "Pointer Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\SIDE";
                                     scope                                                   = 2;
@@ -288,6 +288,15 @@ class CfgWeapons
 							mass = 35;
                     };
 					
+            };
+            class TEI_M7_Folded: SMG_01_F
+            {
+                    scope                                                                   = 2;
+                    handAnim[]                                                            	= {"OFP2_ManSkeleton"};
+					model                                                                   = "\TEI_Weapons\SMG\SMG_folded.p3d";
+                    displayName                                                             = "M7/Caseless SMG (Folded)";
+                    descriptionShort                                                        = "UNSC M7 SMG (Folded)";
+					type 																	= 2;
             };
 			class TEI_M7S: TEI_M7
 			{

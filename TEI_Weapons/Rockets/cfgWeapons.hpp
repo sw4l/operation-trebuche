@@ -82,8 +82,8 @@ class CfgWeapons
 		cmImmunity = 0.9;
 		lockAcquire = 0;
 		
-		shotPos = "muzzlePos";
-		shotEnd = "muzzleEnd";
+		muzzlePos = "usti hlavne";
+        muzzleEnd = "konec hlavne";
 		
 		reloadaction = "ReloadRPG";
 		reloadmagazinesound[] = {"A3\sounds_f\weapons\rockets\titan_reload_final", 0.562341, 1, 50};
