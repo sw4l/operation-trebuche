@@ -1,3 +1,52 @@
+v0.13
+ADDED
+	-UNSC Charon-class frigate "Final Dawn" with template mission (very WIP)
+	-UH-144 Falcon (no textures right now)
+	-M73 LMG
+	-M247 MMG
+	-Armed Pelican
+	-Folded SMG
+	-SMG FMJ/JHP ammo
+	-Milsim unit emblems
+	-AA Warthog
+	-AT Warthog
+	-Frag and smoke grenades
+	-UNSC/PRC-521
+	-TFAR support for radio packs
+	-Longsword/Scorpion (VEEEEEEEEERY WIP, shouldn't use them)
+	-chin straps for UNSC helmets
+	-MA5 flashlight attachment
+	-added Dev ODST armors
+	-custom scenry objects (kiosks, table)
+FIXED
+	-Rocket launcher firing very low
+	-Muzzle flashes on weapons
+	-Shotgun shadows
+	-BR55 model reversed
+	-ODST pods in MP
+	-ODST visors in MP
+	-SMG Red dot sight aimming wrong
+	-UNSC Monument error
+	-Added mass to weapons
+	-Loud sounds in Pelican
+	-Quiet sounds in Warthog
+	-hidden Pelican seat
+	-Gauss hog firing wrong
+	-ODST pod infinite doors
+TWEAKED
+	-Pelican flight model
+	-Empty rocket launcher shows no tubes
+	-Positions of medkit and biofoam
+	-Renamed commopack to UNSC/PRC-515O
+	-Lowered recoil on BR55 and MA5B
+	-Up'd the fire rate of the MA5
+	-Increased M6G and SMG sizes
+	-Warthog handling
+	-Increased armor values of UNSC stuff
+	-Armor on vehicles
+
+----------------------------
+
 v0.12
 ADDED
 	-Several Music tracks (Courtesy of Mcchaffee)
