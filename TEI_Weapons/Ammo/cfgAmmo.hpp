@@ -1,11 +1,94 @@
 class CfgAmmo
 {
-	class ShotgunBase; // External class reference
+	class ShotgunBase;
     class BulletBase;
+	class ShotDeployBase;
+	class B_762x51_Ball;
+	class B_9x21_Ball;
+	class B_127x99_Ball;
+	class B_35mm_AA;
+	class B_40mm_GPR;
+	class B_40mm_APFSDS;
+	class B_40mm_APFSDS_Tracer_Green;
+	class B_coil_20g_spike;
+	class GrenadeHand;
+	class SmokeShell;
+	class R_PG32V_F;
+	class R_TBG32V_F;
+	class M_Titan_AT;
+	class M_Titan_AA; 
+	class M_NLAW_AT_F;
+	class Sh_120mm_APFSDS;
 	
-	class TEI_8Gauge_Pellets : ShotgunBase   
+	//7.62x51mm (AR, M247)
+	class TEI_B_762x51_Ball: B_762x51_Ball
+	{
+		hit 							= 11;
+		typicalSpeed 					= 905;
+	};
+	class TEI_B_762x51_Tracer: TEI_B_762x51_Ball
+	{
+		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_red";
+	};
+	
+	//9.5x40mm (BR, M73)
+	class TEI_B_95x40_Ball: B_762x51_Ball
 	{
 		hit 							= 12;
+		caliber 						= 2;
+		typicalSpeed 					= 905;
+	};
+	class TEI_B_95x40_Tracer: TEI_B_95x40_Ball
+	{
+		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_red";
+	};
+	
+	//14.5x114mm (Sniper)
+	class TEI_B_145x114_APFSDS: B_127x99_Ball
+	{
+		hit 							= 80;
+		caliber 						= 4;
+		typicalSpeed 					= 1250;
+		airFriction 					= -0.00005;
+		timeToLive 						= 15;
+		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_white";
+		tracerScale 					= 1.75;
+	};
+	class TEI_B_145x114_HVAP: TEI_B_145x114_APFSDS
+	{
+		hit 							= 100;
+		caliber 						= 6;
+		typicalSpeed 					= 1500;
+		airFriction 					= -0.00045;
+	};
+	
+	//12.7x40mm (Pistol)
+	class TEI_B_127x40_Ball : B_762x51_Ball   
+	{
+		hit 							= 12;
+		indirectHit 					= 8;
+		indirectHitRange 				= 0.1;
+		explosive						= 0;
+		cartridge 						= "FxCartridge_small";
+		caliber 						= 0.75;
+		typicalSpeed					= 600;
+	};
+	class TEI_B_127x40_AP : TEI_B_127x40_Ball   
+	{
+		hit 							= 12;
+		indirectHit 					= 0;
+		indirectHitRange 				= 0;
+		caliber 						= 2.75;
+	};
+	class TEI_B_127x40_Tracer : TEI_B_127x40_Ball  
+	{
+		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_red";
+	};
+	
+	//8 Gauge (Shotgun)
+	class TEI_8Gauge_Pellets : ShotgunBase   
+	{
+		hit 							= 10;
 		indirectHit 					= 0;
 		indirectHitRange 				= 0;
 		visibleFire 					= 1;	// how much is visible when this weapon is fired
@@ -15,9 +98,9 @@ class CfgAmmo
 		tracerColor[] 					= {1, 0.05, 0.05, 1};
 		tracerColorR[] 					= {1, 0.05, 0.05, 1};
 		airFriction 					= -0.005;
-		caliber 						= 0.5;
+		caliber 						= 0.25;
 		cartridge 						= "FxCartridge_slug";
-		dispersion 						= 0.35;
+		dispersion 						= 0.025;//0.35
 		class HitEffects
 		{
 			Hit_Foliage_green = "ImpactLeavesGreen";
@@ -205,21 +288,243 @@ class CfgAmmo
 		bulletFly8[] = {"A3\sounds_f\weapons\hits\bullet_by_8",0.7943282,1,30};
 		bulletFly[] = {"bulletFly1",0.166,"bulletFly2",0.166,"bulletFly3",0.166,"bulletFly4",0.166,"bulletFly5",0.166,"bulletFly6",0.167,"bulletFly7",0.166,"bulletFly8",0.167};
 	};
-
-	class TEI_8Gauge_Slugs : BulletBase   
+	class TEI_8Gauge_Slugs : B_762x51_Ball   
 	{
-		hit 							= 16;
-		indirectHit 					= 0;
-		indirectHitRange 				= 0;
-		visibleFire 					= 1;	// how much is visible when this weapon is fired
-		audibleFire 					= 1;
-		visibleFireTime 				= 2;
+		hit 							= 15;
 		cartridge 						= "FxCartridge_slug";
-		cost 							= 1;
-		tracerColor[] 					= {1, 0.05, 0.05, 1};
-		tracerColorR[] 					= {1, 0.05, 0.05, 1};
-		airFriction 					= -0.005;
-		caliber 						= 0.5;
-		dispersion 						= 0.00005;
+		caliber 						= 2;
+	};
+	
+	//5x23mm (SMG)
+	class TEI_B_5x23_Caseless: B_9x21_Ball
+	{
+		hit = 9;
+		typicalSpeed = 500;
+		caliber = 0.75;
+		cartridge = "FxCartridge_65_caseless";
+	};
+	class TEI_B_5x23_Caseless_Tracer: TEI_B_5x23_Caseless
+	{
+		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+	};
+	class TEI_B_5x23_Caseless_JHP: TEI_B_5x23_Caseless
+	{
+		hit = 9.5;
+		caliber = 0.5;
+	};
+	class TEI_B_5x23_Caseless_FMJ: TEI_B_5x23_Caseless
+	{
+		hit = 9.25;
+		caliber = 1;
+	};
+	
+	//Vehicles
+	class TEI_25x130mm_Slug: B_40mm_APFSDS_Tracer_Green
+	{
+		scope = 2;
+		caliber = 100;
+		//typicalSpeed = 9000;
+		//maxSpeed = 9999;
+		cost = 1000;
+		explosive = 0.1;
+		hit = 500;
+		whistleOnFire = 1;
+		whistleDist = 14;
+		timeToLive = 1.5;
+		tracerScale = 3;
+		tracerStartTime = 0.05;
+		tracerEndTime = 1;
+		tracersEvery = 1;
+		//model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_white";
+		model = "\TEI_Weapons\Data\gauss_laser.p3d";
+		indirectHit = 50;
+		indirectHitRange = 0.25;
+		
+		CraterEffects = "HEShellCrater";
+		CraterWaterEffects = "ImpactEffectsWaterHE";
+		ExplosionEffects = "HEShellExplosion";
+		
+		allowAgainstInfantry = 1;
+		soundHit1[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_1",3.1622777,1,2000};
+		soundHit2[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_2",3.1622777,1,2000};
+		soundHit3[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_3",3.1622777,1,2000};
+		soundHit4[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_4",3.1622777,1,2000};
+		soundHit5[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_5",3.1622777,1,2000};
+		soundHit6[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_6",3.1622777,1,2000};
+		soundHit7[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_7",3.1622777,1,2000};
+		soundHit8[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_8",3.1622777,1,2000};
+		multiSoundHit[] = {"soundHit1",0.13,"soundHit2",0.13,"soundHit3",0.13,"soundHit4",0.13,"soundHit5",0.12,"soundHit6",0.12,"soundHit7",0.12,"soundHit8",0.12};
+		class HitEffects
+		{
+			hitMetal = "ImpactMetalSabotBig";
+			hitMetalPlate = "ImpactMetalSabotBig";
+			hitBuilding = "ImpactConcreteSabot";
+			hitConcrete = "ImpactConcreteSabot";
+			hitGroundSoft = "ImpactEffectsGroundSabot";
+			hitGroundHard = "ImpactEffectsGroundSabot";
+			default_mat = "ImpactEffectsGroundSabot";
+		};
+		class CamShakeExplode
+		{
+			power = "(180^0.5)";
+			duration = "((round (180^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = "((180^0.5)*3)";
+		};
+		class CamShakeHit
+		{
+			power = 180;
+			duration = "((round (180^0.25))*0.2 max 0.2)";
+			frequency = 20;
+			distance = 1;
+		};
+		class CamShakeFire
+		{
+			power = "(120^0.25)";
+			duration = "((round (120^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = "((120^0.5)*8)";
+		};
+		class CamShakePlayerFire
+		{
+			power = 0.02;
+			duration = 0.1;
+			frequency = 20;
+			distance = 1;
+		};
+	};
+	
+	//Rockets
+	class TEI_M41_Rocket_HEAT: R_PG32V_F
+	{
+		scope = 2;
+		model = "TEI_weapons\rockets\M41_rocket.p3d";
+		//sideairfriction=0.075;
+		//thrust=200;
+		//thrusttime=0.4;
+		//timetolive=10;
+		//maxspeed=200;
+		//canLock = 0;
+		/*
+		initSpeed=255;
+		hit = 600;
+		indirectHit = 8;
+		indirectHitRange = 4;
+		explosive = 0.8;
+		cost = 500;
+		airFriction = 0.075;
+		initTime = 0;
+		fuseDistance = 15;
+		CraterEffects = "ATMissileCrater";
+		explosionEffects = "ATMissileExplosion";
+		effectsMissileInit = "";
+		effectsMissile = "EmptyEffect";
+		simulationStep = 0.02;
+		airLock = 0;
+		irLock = 0;
+		maneuvrability = 0;
+		allowAgainstInfantry = 0;*/
+	};
+	class TEI_M41_Rocket_HEAT_Guided: M_Titan_AT
+	{
+		scope = 2;
+		model = "TEI_weapons\rockets\M41_rocket.p3d";
+		//canLock = 2;
+
+	};
+	class TEI_M41_Rocket_HEAP: R_TBG32V_F
+	{
+		scope = 2;
+		model = "TEI_weapons\rockets\M41_rocket.p3d";
+		//sideairfriction=0.075;
+		//thrust=255;
+		//thrusttime=0.4;
+		//canLock = 0;
+		//timetolive=10;
+		//maxspeed=255;
+	};
+	class TEI_M41_Rocket_HEAA: M_Titan_AA
+	{
+		scope = 2;
+		//thrust = 255;
+		//initSpeed = 350;
+		//maxSpeed = 350;
+		model = "TEI_weapons\rockets\M41_rocket.p3d";
+		//trackLead = 1;
+		//airLock = 2;
+		//irLock = 1;
+		//canLock = 2;
+		//trackOversteer = 1;
+		//weaponLockSystem = "2 + 16";
+	};
+	class TEI_Splaser_Ammo: R_PG32V_F
+	{
+		scope = 2;
+		thrust = 500000;
+		initSpeed = 500000;
+		maxSpeed = 500000;
+		model = "TEI_Weapons\data\Splaser_tracer.p3d";
+	};
+	
+	//Grenades
+	class TEI_G_M9_Frag: GrenadeHand
+	{
+		model 							= "\TEI_Weapons\explosives\m9_grenade.p3d";
+		hit 							= 10;
+		indirectHit 					= 10;
+		indirectHitRange 				= 8;
+		typicalspeed 					= 18;
+		visibleFire 					= 0.5;
+		audibleFire 					= 0.05;
+		visibleFireTime 				= 1;
+		fuseDistance 					= 0;
+	};
+	class TEI_G_M2_Smoke: SmokeShell
+	{
+		model 							= "\TEI_Weapons\explosives\m2_smk_grenade.p3d";
+		hit 							= 0;
+		indirectHit 					= 0;
+		indirectHitRange 				= 0.2;
+		typicalspeed 					= 22;
+		cost 							= 100;
+		simulation 						= "shotSmokeX";
+		explosive 						= 0;
+		deflecting 						= 60;
+		explosionTime 					= 2;
+		timeToLive  					= 60;
+		fuseDistance  					= 0;
+		smokeColor[]  					= {1,1,1,1};
+		effectsSmoke  					= "SmokeShellWhite";
+		whistleDist  					= 0;
+	};
+	class TEI_G_M2_RSmoke: TEI_G_M2_Smoke
+	{
+		model  							= "\TEI_Weapons\explosives\m2_smk_grenade_red.p3d";
+		smokeColor[]  					= {0.8438,0.1383,0.1353,1};
+	};
+	class TEI_G_M2_GSmoke: TEI_G_M2_Smoke
+	{
+		model  							= "\TEI_Weapons\explosives\m2_smk_grenade_green.p3d";
+		smokeColor[]  					= {0.2125,0.6258,0.4891,1};
+	};
+	class TEI_G_M2_BSmoke: TEI_G_M2_Smoke
+	{
+		model  							= "\TEI_Weapons\explosives\m2_smk_grenade_blue.p3d";
+		smokeColor[]  					= {0.1183,0.1867,1,1};
+	};
+	class TEI_G_M2_OSmoke: TEI_G_M2_Smoke
+	{
+		model  							= "\TEI_Weapons\explosives\m2_smk_grenade_orange.p3d";
+		smokeColor[]  					= {0.6697,0.2275,0.10053,1};
+	};
+	class TEI_G_M2_YSmoke: TEI_G_M2_Smoke
+	{
+		model  							= "\TEI_Weapons\explosives\m2_smk_grenade_yellow.p3d";
+		smokeColor[]  					= {0.9883,0.8606,0.0719,1};
+	};
+	class TEI_G_M2_PSmoke: TEI_G_M2_Smoke
+	{
+		model  							= "\TEI_Weapons\explosives\m2_smk_grenade_purple.p3d";
+		smokeColor[]  					= {0.4341,0.1388,0.4144,1};
 	};
 };

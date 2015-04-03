@@ -16,7 +16,7 @@ enum
 }; 
 class CfgPatches
 {
-	class TEI_Weapons_AR
+	class TEI_Weapons_Vehicle
 	{
 		units[] = {};
 		weapons[] = {};
@@ -24,6 +24,11 @@ class CfgPatches
 		requiredAddons[] = {"TEI_Core","A3_Weapons_F"};
 		author = "Eridanus Insurrection Team";
 	};
+};
+
+class cfgRecoils
+{
+	recoil_recoiless_weapon[] = {0.5,0,0.04};
 };
 
 #include "cfgWeapons.hpp"

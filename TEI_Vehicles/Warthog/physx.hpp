@@ -9,7 +9,7 @@
 		fuelCapacity								= 150;
 		wheelCircumference							= 3.924;
 		antiRollbarForceCoef						= 20; //12
-		antiRollbarForceLimit 						= 2; //10
+		antiRollbarForceLimit 						= 10; //2
 		antiRollbarSpeedMin							= 20;
 		antiRollbarSpeedMax							= 80; //50
 		idleRpm										= 800;
@@ -38,7 +38,7 @@
 		// only taken into account when calculating damper animation.
 		// <Type>: float
 		// <Default>: 0.0
-		dampersBumpCoef								= 6;
+		dampersBumpCoef								= 10; //6
 
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Differential parameters
@@ -48,7 +48,7 @@
 		// with open differential, front-wheel drive with limited slip, rear-wheel drive with open differential, rear-wheel drive with limited slip.
 		// <Type>: string; acceptable values: "all_open", "all_limited", "front_open", "front_limited", "rear_open", "rear_limited"
 		// <Default>: "all_limited"
-		differentialType							= "all_limited";
+		differentialType							= "all_open"; //all_limited
 		
 		// <Description>: Ratio of engine power that goes to front wheels out of total power for 4-wheel drive differentials. 
 		// Choosing a value greater than 0.5 delivers more torque to the front wheels, while choosing a value less than 0.5 
@@ -139,7 +139,7 @@
 		// or it would cause issues while trying to run aggressively (mainly during evading the enemies).
 		// <Type>: float
 		// <Default>: 0.01
-		switchTime								= 0.31;
+		switchTime								= 0.5; //0.31
 		
 		// <Description>: Set the latency time of the gearbox, specified in s.
 		// This is used to prevent instant shifting after changing gears - there is some power loss during gear change and it could seem that
@@ -199,13 +199,13 @@
 				// Some tweaking is needed after the computation, but it is still better than nothing.
 				// <Type>: float
 				// <Default>: 0.5 * WheelMass * WheelRadius * WheelRadius
-				MOI 						= 2.8;
+				MOI 						= 5.0; //2.8
 
 				// <Description>:The damping rate describes the rate at which a freely spinning wheel loses rotational speed. 
 				// Values in range (0.25, 2) seem like sensible values. Experimentation is always a good idea, even outside this range.
 				// <Type>: float
 				// <Default>: 0.1
-				dampingRate 					= 0.1;
+				dampingRate 					= 0.25; //0.1
 				
 				// <Description>: This is the value of the torque applied to the wheel when the brakes are maximally applied. Higher torques will lock the wheel 
 				// quicker when braking, while lower torques will take longer to lock the wheel.
@@ -220,7 +220,7 @@
 				// while a value of 0 is necessary for the front wheels to make sure they do not react to the handbrake.
 				// <Type>: float
 				// <Default>: 2*maxBrakeTorque
-				maxHandBrakeTorque 				= 0;
+				maxHandBrakeTorque 				= 0; //0
 
 				/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 				// Wheel simulation parameters
@@ -250,19 +250,19 @@
 				// <Description>: These values describe the maximum compression and elongation in metres that the spring can support.
 				// <Type>: float
 				// <Default>: 0.15
-				maxCompression 						= 4.0; //0.5
-				mMaxDroop 							= 2.0; //0.1
+				maxCompression 						= 2.0; //0.5
+				mMaxDroop 							= 1.0; //0.1
 				
 				// <Description>: This is the mass in kg that is supported by the suspension spring.
 				// <Type>: float
 				// <Default>: vehicleMass/numberOfWheels
-				sprungMass 							= 825;
+				sprungMass 							= 825; //825
 				
 				// <Description>: This is the strength of the suspension spring in Newtons per metre.
 				//   springStrength = naturalFrequency * naturalFrequency * sprungMass
 				// <Type>: float
 				// <Default>: sprungMass*5,0*5,0
-				springStrength 							= 51625;
+				springStrength 							= 51625; //51625
 
 				// <Description>: This describes the rate at which the spring dissipates the energy stored in the spring.
 				// Basic equiation for this is
@@ -270,7 +270,7 @@
 				// where dampingRatio = 1 mean critical damping (critically damped pendulum should get back to start point in every swing)
 				// <Type>: float
 				// <Default>: 0,4*2*sqrt(springStrength*sprungMass)
-				springDamperRate 						= 8920;
+				springDamperRate 						= 8920; //8920
 				
 				/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 				// Tire parameters
@@ -309,7 +309,7 @@
 				boundary 						= "wheel_1_2_bound";
 				suspForceAppPointOffset 		= "wheel_1_2_axis";
 				tireForceAppPointOffset 		= "wheel_1_2_axis";
-				maxHandBrakeTorque 				= 3500;
+				maxHandBrakeTorque 				= 4000;
 				side 							= "left";		
 				frictionVsSlipGraph[] 			= {{0, 1}, {0.25, 1}, {0.5,1}};
 			};
@@ -331,7 +331,7 @@
 				boundary						= "wheel_2_2_bound";
 				suspForceAppPointOffset 		= "wheel_2_2_axis";
 				tireForceAppPointOffset 		= "wheel_2_2_axis";
-				maxHandBrakeTorque 				= 3500;
+				maxHandBrakeTorque 				= 4000;
 				side 							= "right";	
 				frictionVsSlipGraph[] 			= {{0, 1}, {0.25, 1}, {0.5,1}};				
 			};

@@ -253,19 +253,6 @@ class Mode_FullAuto;
                             midRangeProbab = 0.7;
                             maxRange = 600;
                             maxRangeProbab = 0.05;
-                            soundBurst = 0;
-                            burst = 1;
-							displayName = "$STR_DN_MODE_FULLAUTO";
-							textureType = "fullAuto";
-							multiplier = 1;
-							autoFire = 0;
-							aiRateOfFire = 1e-006;
-							aiRateOfFireDistance = 100;
-							showToPlayer = 1;
-							artilleryDispersion = 0;
-							artilleryCharge = 0;
-							useAction = "";
-							useActionTitle = "";
                     };
                     class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
                     {

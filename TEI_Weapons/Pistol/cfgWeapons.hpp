@@ -123,7 +123,7 @@ class CfgWeapons
 		displayName 								= "M6G Magnum";
 		descriptionShort 							= "12.7x40mm Magnum Pistol";
 		picture = "\TEI_weapons\pistol\icons\pistol_a.paa";
-		magazines[] 								= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag_Tracer"};
+		magazines[] 								= {"TEI_8Rnd_127x40_Mag","TEI_8Rnd_127x40_Mag_Tracer","TEI_8Rnd_127x40_AP_Mag"};
 		modelOptics 								= "-";
 		modes[] 									= {"Single"};
 		dexterity 									= 1.5;
