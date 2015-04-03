@@ -16,7 +16,7 @@ enum
 }; 
 class CfgPatches
 {
-	class TEI_Weapons_AR
+	class TEI_Weapons_Ammo
 	{
 		units[] = {};
 		weapons[] = {};
@@ -26,5 +26,5 @@ class CfgPatches
 	};
 };
 
-#include "cfgWeapons.hpp"
-
+#include "cfgAmmo.hpp"
+#include "cfgMagazines.hpp"

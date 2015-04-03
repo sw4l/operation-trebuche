@@ -26,7 +26,5 @@ class CfgPatches
 	};
 };
 
-//#include "cfgAmmo.hpp"
-#include "cfgMagazines.hpp"
 #include "cfgWeapons.hpp"
 

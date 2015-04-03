@@ -163,7 +163,7 @@ class CfgWeapons
             class TEI_M7: SMG_01_F
             {
                     scope                                                                   = 2;
-                    handAnim[]                                                            = {"OFP2_ManSkeleton", "\TEI_Weapons\SMG\data\anim\smg_hand_anim.rtm"};
+                    handAnim[]                                                            	= {"OFP2_ManSkeleton", "\A3\Weapons_F\Rifles\MX\data\Anim\MX_cqc.rtm"/*"\TEI_Weapons\SMG\data\anim\smg_hand_anim.rtm"*/};
 					model                                                                   = "\TEI_Weapons\SMG\SMG.p3d";
                     displayName                                                             = "M7/Caseless SMG";
                     descriptionShort                                                        = "UNSC M7 SMG";
@@ -289,10 +289,10 @@ class CfgWeapons
                     };
 					
             };
-            class TEI_M7_Folded: SMG_01_F
+            class TEI_M7_Folded: TEI_M7
             {
-                    scope                                                                   = 2;
                     handAnim[]                                                            	= {"OFP2_ManSkeleton"};
+					reloadAction 															= "GestureReloadPistol";
 					model                                                                   = "\TEI_Weapons\SMG\SMG_folded.p3d";
                     displayName                                                             = "M7/Caseless SMG (Folded)";
                     descriptionShort                                                        = "UNSC M7 SMG (Folded)";

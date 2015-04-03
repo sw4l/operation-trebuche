@@ -369,7 +369,7 @@ class cfgVehicles
 				tf_range = 25000;
 				tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio = 1; 
-				hiddenSelections[] 								= {"camo1"};
-				hiddenSelectionsTextures[] 							= {"TEI_Weapons\Backpacks\data\RadioPack1_CO.paa"};
+				hiddenSelections[] 	= {"camo1"};
+				hiddenSelectionsTextures[] = {"TEI_Weapons\Backpacks\data\RadioPack1_CO.paa"};
         };
 	};

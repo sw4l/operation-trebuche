@@ -11,269 +11,6 @@ class CfgPatches
 	};
 };
 
-class CfgAmmo
-{
-	class B_35mm_AA;
-	class B_40mm_GPR;
-	class B_40mm_APFSDS;
-	class B_40mm_APFSDS_Tracer_Green;
-	class Sh_120mm_APFSDS;
-	class B_coil_20g_spike;
-	class TEI_25x130mm_Slug: B_40mm_APFSDS_Tracer_Green
-	{
-		
-		scope = 2;
-		caliber = 50;
-		//typicalSpeed = 9000;
-		//maxSpeed = 9999;
-		cost = 1000;
-		explosive = 0.25;
-		hit = 500;
-		whistleOnFire = 1;
-		whistleDist = 14;
-		timeToLive = 30;
-		tracerScale = 3;
-		tracerStartTime = 0.05;
-		tracerEndTime = 1;
-		tracersEvery = 1;
-		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_white";
-		indirectHit = 50;
-		indirectHitRange = 1;
-		
-		CraterEffects = "HEShellCrater";
-		CraterWaterEffects = "ImpactEffectsWaterHE";
-		ExplosionEffects = "HEShellExplosion";
-		
-		allowAgainstInfantry = 1;
-		soundHit1[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_1",3.1622777,1,2000};
-		soundHit2[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_2",3.1622777,1,2000};
-		soundHit3[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_3",3.1622777,1,2000};
-		soundHit4[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_4",3.1622777,1,2000};
-		soundHit5[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_5",3.1622777,1,2000};
-		soundHit6[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_6",3.1622777,1,2000};
-		soundHit7[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_7",3.1622777,1,2000};
-		soundHit8[] = {"A3\Sounds_F\weapons\Explosion\expl_shell_8",3.1622777,1,2000};
-		multiSoundHit[] = {"soundHit1",0.13,"soundHit2",0.13,"soundHit3",0.13,"soundHit4",0.13,"soundHit5",0.12,"soundHit6",0.12,"soundHit7",0.12,"soundHit8",0.12};
-		class HitEffects
-		{
-			hitMetal = "ImpactMetalSabotBig";
-			hitMetalPlate = "ImpactMetalSabotBig";
-			hitBuilding = "ImpactConcreteSabot";
-			hitConcrete = "ImpactConcreteSabot";
-			hitGroundSoft = "ImpactEffectsGroundSabot";
-			hitGroundHard = "ImpactEffectsGroundSabot";
-			default_mat = "ImpactEffectsGroundSabot";
-		};
-		class CamShakeExplode
-		{
-			power = "(180^0.5)";
-			duration = "((round (180^0.5))*0.2 max 0.2)";
-			frequency = 20;
-			distance = "((180^0.5)*3)";
-		};
-		class CamShakeHit
-		{
-			power = 180;
-			duration = "((round (180^0.25))*0.2 max 0.2)";
-			frequency = 20;
-			distance = 1;
-		};
-		class CamShakeFire
-		{
-			power = "(120^0.25)";
-			duration = "((round (120^0.5))*0.2 max 0.2)";
-			frequency = 20;
-			distance = "((120^0.5)*8)";
-		};
-		class CamShakePlayerFire
-		{
-			power = 0.02;
-			duration = 0.1;
-			frequency = 20;
-			distance = 1;
-		};
-	};
-};
-
-class CfgMagazines
-{
-	class Default;
-	class 30Rnd_120mm_APFSDS_shells;
-	class 5Rnd_GAT_missiles;
-	class 4Rnd_GAA_missiles;
-	
-	class TEI_20Rnd_ALIM_GAUSS_slugs: 30Rnd_120mm_APFSDS_shells
-	{
-		scope = 2;
-		displayName="20 Rnd ALIM Gauss Slugs";
-		displayNameShort="Gauss Slug";
-		ammo="TEI_25x130mm_Slug";
-		initSpeed = 13680;
-		count=20;
-	};
-	
-	class 3Rnd_102mm_rockets: 5Rnd_GAT_missiles
-	{
-		scope = 2;
-		displayName = "3Rnd 102mm Guided AT Rockets";
-		displayNameShort = "AT";
-		count = 3;
-		ammo = "M_Titan_AT";
-		initSpeed = 40;
-		maxLeadSpeed = 40;
-		sound[] = {"A3\Sounds_F\weapons\Rockets\titan_2",1.25893,1,1000};
-		weaponSoundEffect = "DefaultRifle";
-		soundFly[] = {"A3\Sounds_F\weapons\Rockets\rocket_fly_2",0.501187,1.3,400};
-		soundHit[] = {"",1.25893,1,1};
-		reloadSound[] = {"",0.000316228,1,20};
-		nameSound = "missiles";
-	};
-	class 6Rnd_65mm_rockets: 4Rnd_GAA_missiles
-	{
-		scope = 2;
-		displayName = "6Rnd 65mm Guided AA Rockets";
-		displayNameShort = "AA";
-		count = 6;
-		ammo = "M_Zephyr";
-		initSpeed = 40;
-		maxLeadSpeed = 320;
-		sound[] = {"A3\Sounds_F\weapons\Rockets\titan_2",1.25893,1,1000};
-		weaponSoundEffect = "DefaultRifle";
-		soundFly[] = {"A3\Sounds_F\weapons\Rockets\rocket_fly_2",0.501187,1.3,400};
-		soundHit[] = {"",1.25893,1,1};
-		reloadSound[] = {"",0.000316228,1,20};
-		nameSound = "missiles";
-	};
-};
-
-class CfgWeapons
-{
-	class HMG_127;
-	class MGun;
-	class autocannon_35mm;
-	class cannon_120mm;
-	class RCWSOptics;
-	class missiles_titan;
-	
-	class TEI_M41_LAAG: HMG_127
-	{
-		class GunParticles
-        {
-            class effect1
-        {
-			positionName = "konec hlavne";
-			directionName = "Usti hlavne";
-            effectName = "MachineGunCloud";
-            };
-            class effect2
-            {
-            positionName = "machinegun_eject_pos";
-            directionName = "machinegun_eject_dir";
-            effectName = "MachineGunEject";
-            };
-            class effect3
-            {
-            positionName = "machinegun_eject_pos";
-            directionName = "machinegun_eject_dir";
-            effectName = "MachineGunCartridge2";
-            };
-        };
-		selectionFireAnim = "muzzleFlash";						/// what selection is hidden when machinegun doesn't shoot
-		displayName="M41 Light Anti-Aircraft Gun";
-		aiDispersionCoefY = 15.0;
-        aiDispersionCoefX = 20.0;
-		class manual:MGun
-		{
-			displayName="M41 Light Anti-Aircraft Gun";
-			reloadTime=0.0667;
-			dispersion=0.00087;
-			sounds[]={"StandardSound"};
-		};
-	};
-	
-	class TEI_102R_Turret: missiles_titan
-	{
-		//selectionFireAnim = "muzzleFlash";						/// what selection is hidden when machinegun doesn't shoot
-		displayName="102mm SC-HE Turret";
-		magazines[] = {"3Rnd_102mm_rockets"};
-		aiDispersionCoefY = 15.0;
-        aiDispersionCoefX = 20.0;
-		class manual:MGun
-		{
-			displayName="102mm SC-HE Turret";
-			reloadTime=0.0667;
-			dispersion=0.00087;
-			sounds[]={"StandardSound"};
-		};
-	};
-	
-	class TEI_M79_MLRS: missiles_titan
-	{
-		//selectionFireAnim = "muzzleFlash";						/// what selection is hidden when machinegun doesn't shoot
-		displayName="M79 MLRS";
-		magazines[] = {"6Rnd_65mm_rockets"};
-		aiDispersionCoefY = 15.0;
-        aiDispersionCoefX = 20.0;
-		class manual:MGun
-		{
-			displayName="M79 MLRS";
-			reloadTime=0.0667;
-			dispersion=0.00087;
-			sounds[]={"StandardSound"};
-		};
-	};
-	
-	class TEI_M68_GAUSS: cannon_120mm
-	{
-		cursor = "EmptyCursor";
-		cursorAim = "cannon";
-		nameSound = "cannon";
-		reloadSound[] = {"A3\sounds_f\vehicles\armor\noises\reload_tank_cannon_2",31.622776,1,10};
-		minRange = 5;
-		minRangeProbab = 0.7;
-		midRange = 1200;
-		midRangeProbab = 0.7;
-		maxRange = 2500;
-		maxRangeProbab = 0.1;
-		reloadTime = 6;
-		magazineReloadTime = 6;
-		autoReload = 1;
-		ballisticsComputer = 1;
-		canLock = 0; //2
-		autoFire = 0;
-		selectionFireAnim = "muzzleFlash";						/// what selection is hidden when machinegun doesn't shoot
-		displayName = "M68 ALIM Gauss Cannon";
-		magazines[] = {"TEI_20Rnd_ALIM_GAUSS_slugs"};
-		class GunParticles
-		{
-			class effect1
-        {
-			positionName = "konec hlavne";
-			directionName = "Usti hlavne";
-            effectName = "MachineGunCloud";
-            };
-            class effect2
-            {
-            positionName = "machinegun_eject_pos";
-            directionName = "machinegun_eject_dir";
-            effectName = "MachineGunEject";
-            };
-            class effect3
-            {
-            positionName = "machinegun_eject_pos";
-            directionName = "machinegun_eject_dir";
-            effectName = "MachineGunCartridge2";
-            };
-		};
-		
-	};
-};
-
-class cfgRecoils
-{
-	recoil_recoiless_weapon[] = {0.5,0,0.04};
-};
-
 class CfgVehicles
 {
 	class LandVehicle;
@@ -498,7 +235,7 @@ class CfgVehicles
 			};
 			class HitBody:HitBody
 			{
-				armor=1;
+				armor=2;
 				name="karoserie";
 				visual="body";
 				passThrough=1;
@@ -1038,6 +775,19 @@ class CfgVehicles
 		class TransportWeapons
 		{
 		};
+		class UserActions
+		{
+			class Flip
+			{
+				displayNameDefault = "Press SPACEBAR to Flip Vehicle";
+				displayName = "Press SPACEBAR to Flip Warthog";
+				position = "";
+				radius = 4;
+				onlyForPlayer = 1;
+				condition = "(alive this) AND !(canmove this)";
+				statement = "this setVectorUp surfaceNormal getposATL this";
+			};
+		};
 	};
 	class TEI_M12_FAV:TEI_M12_base
 	{
@@ -1140,7 +890,7 @@ class CfgVehicles
 	
 	class TEI_M813_TT:TEI_M12_base
 	{
-		displayName="M831 TT Warthog (Transport)";
+		displayName= "M831 TT Warthog (Transport)";
 		scope=2;
 		model="TEI_Vehicles\Warthog\Warthog_TT.p3d";
 		author="Eridanus Insurrection Team";
@@ -1387,8 +1137,8 @@ class CfgVehicles
 				gunAxis="Osa Hlavne";
 				gunBeg="Usti hlavne";
 				gunEnd="konec hlavne";
-				minElev=-8;
-				maxElev=16;
+				minElev=-15;
+				maxElev=45;
 				minTurn=-360;
 				maxTurn=360;
 				initTurn=0;
@@ -1413,7 +1163,7 @@ class CfgVehicles
 				gunnerRightHandAnimName="trigger";
 				memoryPointGun="machinegun";
 				weapons[]={"TEI_M41_LAAG"};
-				magazines[]={"500Rnd_127x99_mag_Tracer_Yellow","500Rnd_127x99_mag_Tracer_Yellow","500Rnd_127x99_mag_Tracer_Yellow"};
+				magazines[]={"500Rnd_127x99_mag_Tracer_Yellow","500Rnd_127x99_mag_Tracer_Yellow","500Rnd_127x99_mag_Tracer_Yellow","500Rnd_127x99_mag_Tracer_Yellow"};
 				memoryPointGunnerOptics="gunnerview";
 				gunnerOpticsShowCursor=1;
 				castGunnerShadow=1;
@@ -1473,7 +1223,7 @@ class CfgVehicles
 
 	class TEI_M12G1_LRV:TEI_M12_LRV
 	{
-		model="TEI_Vehicles\Warthog\Warthog_G.p3d";
+		model="TEI_Vehicles\Warthog\Warthog_g.p3d";
 		displayName="M12G1 Warthog (Gauss)";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_CO.paa"};
@@ -1527,7 +1277,6 @@ class CfgVehicles
 					fov=0.7;
 				};
 			};
-			//class GunScreen
 			class Gunner_display
 			{
 				renderTarget="rendertarget4";
@@ -1571,8 +1320,8 @@ class CfgVehicles
 				gunAxis="Osa Hlavne";
 				gunBeg="Usti hlavne";
 				gunEnd="konec hlavne";
-				minElev=-8;
-				maxElev=16;
+				minElev=-15;
+				maxElev=45;
 				minTurn=-360;
 				maxTurn=360;
 				initTurn=0;
@@ -1599,11 +1348,8 @@ class CfgVehicles
 				magazines[] = {"TEI_20Rnd_ALIM_GAUSS_slugs","TEI_20Rnd_ALIM_GAUSS_slugs"};
 				memoryPointGunnerOptics="gunnerview";
 				gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";
-				//gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
-				//gunnerOpticsModel="a3\weapons_f\Reticle\optics_empty";
 				gunnerOpticsShowCursor=1;
 				turretInfoType="RscWeaponZeroing";
-				//turretInfoType="RscOptics_crows";
 				class Viewoptics: ViewOptics
 				{
 					/*initAngleX = 0;
@@ -1754,8 +1500,8 @@ class CfgVehicles
 				gunAxis="Osa Hlavne";
 				gunBeg="Usti hlavne";
 				gunEnd="konec hlavne";
-				minElev=-8;
-				maxElev=16;
+				minElev=-15;
+				maxElev=45;
 				minTurn=-360;
 				maxTurn=360;
 				initTurn=0;
@@ -1779,7 +1525,7 @@ class CfgVehicles
 				gunnerRightHandAnimName="trigger";
 				memoryPointGun="machinegun";
 				weapons[]={"TEI_102R_Turret"};
-				magazines[] = {"3Rnd_102mm_rockets","3Rnd_102mm_rockets"};
+				magazines[] = {"TEI_3Rnd_102mm_rockets","TEI_3Rnd_102mm_rockets","TEI_3Rnd_102mm_rockets","TEI_3Rnd_102mm_rockets"};
 				memoryPointGunnerOptics="gunnerview";
 				gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";
 				//gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
@@ -1926,8 +1672,8 @@ class CfgVehicles
 				gunAxis="Osa Hlavne";
 				
 				missileEnd= "konec rakety";
-				minElev=-8;
-				maxElev=18;
+				minElev=-15;
+				maxElev=45;
 				minTurn=-360;
 				maxTurn=360;
 				initTurn=0;
@@ -1955,7 +1701,7 @@ class CfgVehicles
 				gunnerRightHandAnimName="trigger";
 				
 				weapons[]={"TEI_M79_MLRS"};
-				magazines[] = {"6Rnd_65mm_rockets"};
+				magazines[] = {"TEI_6Rnd_65mm_rockets","TEI_6Rnd_65mm_rockets","TEI_6Rnd_65mm_rockets","TEI_6Rnd_65mm_rockets"};
 				memoryPointGunnerOptics="gunnerview";
 				memoryPointGunneroutOptics="gunneroutview";
 				memoryPointGun="machinegun";
