@@ -46,8 +46,8 @@ class CfgAmmo
 	//14.5x114mm (Sniper)
 	class TEI_B_145x114_APFSDS: B_127x99_Ball
 	{
-		hit 							= 80;
-		caliber 						= 4;
+		hit 							= 50;
+		caliber 						= 8;
 		typicalSpeed 					= 1250;
 		airFriction 					= -0.00005;
 		timeToLive 						= 15;
@@ -56,8 +56,8 @@ class CfgAmmo
 	};
 	class TEI_B_145x114_HVAP: TEI_B_145x114_APFSDS
 	{
-		hit 							= 100;
-		caliber 						= 6;
+		hit 							= 70;
+		caliber 						= 10;
 		typicalSpeed 					= 1500;
 		airFriction 					= -0.00045;
 	};

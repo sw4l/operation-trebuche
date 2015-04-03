@@ -18,7 +18,7 @@ class Mode_FullAuto;
                     scope                                                                   = 2;
                     displayName                                                             = "Oracle N-varint SRS99 Scope";
 					//picture = "\TEI_weapons\ar\icons\scope_a.paa";
-                    model                                                                   = "\TEI_Weapons\AR\AR_AmmoCount.p3d";
+                    model                                                                   = "\TEI_Weapons\Sniper\SRS99-Scope.p3d";
                     descriptionShort                                                        = "Oracle N-varint SRS99 Sniper Rifle 5-20x56 Scope";
                     weaponInfoType                                                          = "RscWeaponZeroing";
                     class ItemInfo: InventoryOpticsItem_Base_F
@@ -36,9 +36,25 @@ class Mode_FullAuto;
                                             opticsZoomMin                                   = 0.0078; //~20x
                                             opticsZoomMax                                   = 0.0503; //~5x
                                             opticsZoomInit                                  = 0.0523;
+											distanceZoomMin = 500;
+											distanceZoomMax = 1500;
                                             memoryPointCamera                               = "opticView";
-                                            modelOptics[]                                   = {"\A3\Weapons_F\acc\reticle_sniper_ca"};
+                                            modelOptics[]                                   = {"\A3\Weapons_F\acc\reticle_sniper_F"};
                                             visionMode[]                                    = {};
+											
+											/*opticsID = 1;
+											useModelOptics = 0;
+											opticsPPEffects[] = {""};
+											opticsFlare = 0;
+											opticsDisablePeripherialVision = 0;
+											opticsZoomMin = 0.375;
+											opticsZoomMax = 1.1;
+											opticsZoomInit = 0.75;
+											memoryPointCamera = "eye";
+											visionMode[] = {};
+											distanceZoomMin = 300;
+											distanceZoomMax = 300;
+											cameraDir = "";*/
                                     };
                             };
                     };
@@ -82,7 +98,7 @@ class Mode_FullAuto;
                     model                                                                   = "\TEI_Weapons\Sniper\SRS99D-S2.p3d";
                     displayName                                                             = "SRS99D-S2 Sniper Rifle";
                     descriptionShort                                                        = "UNSC Sniper Rifle";
-                    picture = "\TEI_weapons\ar\icons\ar_a.paa";
+                    //picture = "\TEI_weapons\ar\icons\ar_a.paa";
 					drySound[] = {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
                     magazines[]                                                             = {"TEI_4Rnd_145x114_APFSDS_Mag","TEI_4Rnd_145x114_HVAP_Mag"};
                     modelOptics                                                             = "-";
@@ -102,7 +118,7 @@ class Mode_FullAuto;
                             effectName                                                      = "CaselessAmmoCloud";
                        };
                     };
-                    modes[] = {"Single","FullAuto"};
+                    modes[] = {"Single"};
                     class Single: Mode_SemiAuto
                     {
                             sounds[] = {"StandardSound","SilencedSound"};
@@ -119,8 +135,8 @@ class Mode_FullAuto;
                                     begin2[] = {"A3\sounds_f\weapons\EBR\EBR_st_5",1.0,1,2000};
                                     begin3[] = {"A3\sounds_f\weapons\EBR\EBR_st_6",1.0,1,2000};*/
      
-                                    begin1[] = {"\TEI_Weapons\AR\Data\sounds\AssaultRifle_1.wss",1.0,1,2000};
-                                    begin2[] = {"\TEI_Weapons\AR\Data\sounds\AssaultRifle_2.wss",1.0,1,2000}; 
+                                    begin1[] = {"\TEI_Weapons\Sniper\Data\sounds\SRS99_1.wss",1.0,1,4000};
+                                    begin2[] = {"\TEI_Weapons\Sniper\Data\sounds\SRS99_2.wss",1.0,1,4000}; 
                                     soundBegin[] = {"begin1",0.34,"begin2",0.33};
                             };
                             class SilencedSound: BaseSoundModeType
@@ -131,8 +147,8 @@ class Mode_FullAuto;
                             };
                             reloadTime = 0.6; 			//was 0.065
                             dispersion = 0.00075;
-                            recoil = "recoil_single_mx";
-							recoilProne = "recoil_single_prone_mx";
+                            recoil = "recoil_single_gm6";
+							recoilProne = "recoil_single_gm6";
                             minRange = 2;
                             minRangeProbab = 0.3;
                             midRange = 300;
@@ -153,7 +169,7 @@ class Mode_FullAuto;
                             class CowsSlot: SlotInfo
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"TEI_MA5B_AmmoCounter", "TEI_MA5B_AmmoCounter_NoIS", "optic_Holosight", "optic_Hamr", "optic_Aco", "optic_Aco_grn", "optic_Arco", "optic_mrco", "optic_nightstalker", "optic_tws", "optic_mrd"};
+                                    compatibleitems[]                                       = {"TEI_SRS99_Scope", "optic_Holosight", "optic_Hamr", "optic_Aco", "optic_Aco_grn", "optic_Arco", "optic_mrco", "optic_nightstalker", "optic_tws", "optic_mrd"};
                                     displayname                                             = "Optics Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\TOP";
                                     scope                                                   = 2;
@@ -161,7 +177,7 @@ class Mode_FullAuto;
                             class PointerSlot: SlotInfo
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"acc_pointer_IR", "acc_flashlight", "TEI_MA5B_Flashlight"};
+                                    compatibleitems[]                                       = {"acc_pointer_IR", "acc_flashlight", "TEI_SRS99_Laser"};
                                     displayname                                             = "Pointer Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\SIDE";
                                     scope                                                   = 2;

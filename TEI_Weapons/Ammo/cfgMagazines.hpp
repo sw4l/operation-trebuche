@@ -274,7 +274,7 @@ class CfgMagazines
 		initspeed							= 1250;
 		picture 							= "\TEI_weapons\ar\icons\magazine.paa";
 		descriptionshort					= "4 Round Magazine<br>14.5x114mm<br>Armor Piercing Fin-Stabilized Disposable Shell";
-		mass								= 20;
+		mass								= 15;
 		tracersEvery 						= 1;
 		lastRoundsTracer 					= 4;
 	};
@@ -285,7 +285,7 @@ class CfgMagazines
 		ammo								= "TEI_B_145x114_HVAP";
 		initspeed							= 1500;
 		descriptionshort					= "4 Round Magazine<br>14.5x114mm<br>High Velocity Armor Piercing";
-		mass								= 24;
+		mass								= 19;
 	};
 	
 	//Vehicles
