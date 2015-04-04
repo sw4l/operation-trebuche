@@ -1361,19 +1361,21 @@ class CfgVehicles
 					initFov = 1;
 					minFov = 0.3;
 					maxFov = 1.2;*/
-					visionMode[] = {"Normal","Ti"};
-					thermalMode[] = {0,1};
+                    opticsZoomMin = 0.25;
+                    opticsZoomMax = 0.75;
+                    opticsZoomInit = 0.75;
+					visionMode[] = {"Normal","NVG","Ti"};
+					thermalMode[] = {5,6};
 				};
 				castGunnerShadow=1;
 				startEngine=0;
 				enableManualFire=0;
-
 				gunnerForceOptics=0;
 				class ViewGunner:ViewOptics
 				{
-					initFov=0.7;
-					minFov=0.002;
-					maxFov=1.1;
+					initFov = 0.75;
+					minFov 	= 0.375;
+					maxFov 	= 1.1;
 				};
 			};
 		};
@@ -1533,8 +1535,8 @@ class CfgVehicles
 				gunnerOpticsShowCursor=1;
 				turretInfoType="RscWeaponZeroing";
 				//turretInfoType="RscOptics_crows";
-				visionMode[] = {"Normal","Ti"};
-				thermalMode[] = {2};
+				visionMode[] = {"Normal","NVG","Ti"};
+				thermalMode[] = {0,1};
 				castGunnerShadow=1;
 				startEngine=0;
 				enableManualFire=0;
@@ -1542,9 +1544,9 @@ class CfgVehicles
 				gunnerForceOptics=0;
 				class ViewGunner:ViewOptics
 				{
-					initFov=0.7;
-					minFov=0.05;
-					maxFov=1.1;
+					initFov = 0.75;
+					minFov 	= 0.375;
+					maxFov 	= 1.1;
 				};
 			};
 		};
@@ -1570,6 +1572,17 @@ class CfgVehicles
 		author="Eridanus Insurrection Team";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_snow_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_snow_co.paa"};
+	};
+	class TEI_M12A1_LRV_ins:TEI_M12A1_LRV
+	{
+
+		displayName="M12A1 Warthog (Rocket) [Innie]";
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia"};
+		hiddenSelectionsTextures[]={"TEI_Vehicles\Warthog\data\warthog_ins_co.paa","TEI_Vehicles\Warthog\data\warthog_addons_ins_ca.paa"};
+		vehicleClass="TEI_Ins_Vehicle_class";
+		side=0;
+		crew="TEI_Ins_URF_Rifleman_AR";
+		faction="TEI_Ins";
 	};
 	class TEI_M12R_AA:TEI_M12_LRV
 	{
@@ -1708,22 +1721,33 @@ class CfgVehicles
 				gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";
 				
 				gunnerOpticsShowCursor=1;
-				visionMode[] = {"Normal","Ti"};
-				thermalMode[] = {2};
 				castGunnerShadow=1;
+				class Viewoptics: ViewOptics
+				{
+					/*initAngleX = 0;
+					minAngleX = 0;
+					maxAngleX = 0;
+					initAngleY = 0;
+					minAngleY = 0;
+					maxAngleY = 0;
+					initFov = 1;
+					minFov = 0.3;
+					maxFov = 1.2;*/
+                    opticsZoomMin = 0.25;
+                    opticsZoomMax = 0.75;
+                    opticsZoomInit = 0.75;
+					visionMode[] = {"Normal","NVG","Ti"};
+					thermalMode[] = {5,6};
+				};
 				
 				startEngine=0;
 				enableManualFire=0;
 				gunnerForceOptics=0;
 				class ViewGunner:ViewOptics
 				{
-					initAngleX=-15;
-					minAngleX=-45;
-					maxAngleX=45;
-					initFov=0.7;
-					minFov=0.05;
-					maxFov=1.1;
-					visionMode[] = {"Normal","Ti"};
+					initFov = 0.75;
+					minFov 	= 0.375;
+					maxFov 	= 1.1;
 				};
 			};
 		};

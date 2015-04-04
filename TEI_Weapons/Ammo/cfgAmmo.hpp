@@ -47,25 +47,42 @@ class CfgAmmo
 	class TEI_B_145x114_APFSDS: B_127x99_Ball
 	{
 		hit 							= 50;
+		cartridge 						= "FxCartridge_127";
 		caliber 						= 8;
 		typicalSpeed 					= 1250;
 		airFriction 					= -0.00005;
 		timeToLive 						= 15;
 		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_white";
-		tracerScale 					= 1.75;
+		tracerScale 					= 1.5;
+		tracerStartTime 				= 0.075;
+		tracerEndTime 					= 2;
+		class CamShakeExplode
+		{
+			power = "(20^0.5)";
+			duration = "((round (20^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = "((20^0.5)*3)";
+		};
+		class CamShakeHit
+		{
+			power = 20;
+			duration = "((round (20^0.25))*0.2 max 0.2)";
+			frequency = 20;
+			distance = 1;
+		};
 	};
 	class TEI_B_145x114_HVAP: TEI_B_145x114_APFSDS
 	{
 		hit 							= 70;
 		caliber 						= 10;
 		typicalSpeed 					= 1500;
-		airFriction 					= -0.00045;
+		airFriction 					= -0.00035;
 	};
 	
 	//12.7x40mm (Pistol)
 	class TEI_B_127x40_Ball : B_762x51_Ball   
 	{
-		hit 							= 12;
+		hit 							= 10;
 		indirectHit 					= 8;
 		indirectHitRange 				= 0.1;
 		explosive						= 0;
@@ -75,10 +92,10 @@ class CfgAmmo
 	};
 	class TEI_B_127x40_AP : TEI_B_127x40_Ball   
 	{
-		hit 							= 12;
+		hit 							= 11;
 		indirectHit 					= 0;
 		indirectHitRange 				= 0;
-		caliber 						= 2.75;
+		caliber 						= 2;
 	};
 	class TEI_B_127x40_Tracer : TEI_B_127x40_Ball  
 	{
@@ -290,7 +307,7 @@ class CfgAmmo
 	};
 	class TEI_8Gauge_Slugs : B_762x51_Ball   
 	{
-		hit 							= 15;
+		hit 							= 25;
 		cartridge 						= "FxCartridge_slug";
 		caliber 						= 2;
 	};
@@ -309,13 +326,13 @@ class CfgAmmo
 	};
 	class TEI_B_5x23_Caseless_JHP: TEI_B_5x23_Caseless
 	{
-		hit = 9.5;
-		caliber = 0.5;
+		hit = 10;
+		caliber = 0.15;
 	};
 	class TEI_B_5x23_Caseless_FMJ: TEI_B_5x23_Caseless
 	{
-		hit = 9.25;
-		caliber = 1;
+		hit = 9.5;
+		caliber = 1.5;
 	};
 	
 	//Vehicles
@@ -323,10 +340,8 @@ class CfgAmmo
 	{
 		scope = 2;
 		caliber = 100;
-		//typicalSpeed = 9000;
-		//maxSpeed = 9999;
 		cost = 1000;
-		explosive = 0.1;
+		explosive = 0;
 		hit = 500;
 		whistleOnFire = 1;
 		whistleDist = 14;
@@ -335,8 +350,7 @@ class CfgAmmo
 		tracerStartTime = 0.05;
 		tracerEndTime = 1;
 		tracersEvery = 1;
-		//model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_white";
-		model = "\TEI_Weapons\Data\gauss_laser.p3d";
+		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_white";
 		indirectHit = 50;
 		indirectHitRange = 0.25;
 		
@@ -393,69 +407,88 @@ class CfgAmmo
 			distance = 1;
 		};
 	};
+	class TEI_B_127x99_Ball: B_127x99_Ball
+	{
+		typicalSpeed = 1000;
+		model = "\A3\Weapons_f\Data\bullettracer\tracer_white";
+	};
+	class TEI_M41_Rocket_ATGM: M_Titan_AT
+	{
+		model = "\A3\Weapons_F_beta\Launchers\titan\titan_missile_at_fly";
+		hit = 700;
+		indirectHit = 10;
+		indirectHitRange = 2.5;
+		explosive = 0.8;
+		irLock = 0;
+		airLock = 0;
+		laserLock = 2;
+		canLock = 0;
+		manualControl = 1;
+		maxControlRange = 10000;
+		initTime = 0.1; //0.25
+		trackOversteer = 1;
+		trackLead = 0.85;
+		timeToLive = 30;
+		maneuvrability = 6;
+		simulationStep = 0.002;
+		airFriction = 0.084;
+		sideAirFriction = 0.05;
+		maxSpeed = 200;
+		thrustTime = 3;
+		thrust = 130;
+		fuseDistance = 50;
+		whistleDist = 4;
+	};
+	class TEI_M_65mm_AA: M_Titan_AA
+	{
+		model = "\A3\Weapons_F_beta\Launchers\titan\titan_missile_atl_fly.p3d";
+		hit = 500;
+		indirectHit = 50;
+		indirectHitRange = 5;
+		airLock = 2;
+		irLock = 0;
+	};
 	
 	//Rockets
 	class TEI_M41_Rocket_HEAT: R_PG32V_F
 	{
-		scope = 2;
 		model = "TEI_weapons\rockets\M41_rocket.p3d";
-		//sideairfriction=0.075;
-		//thrust=200;
-		//thrusttime=0.4;
-		//timetolive=10;
-		//maxspeed=200;
-		//canLock = 0;
-		/*
-		initSpeed=255;
-		hit = 600;
-		indirectHit = 8;
-		indirectHitRange = 4;
+		hit = 700;
+		indirectHit = 10;
+		indirectHitRange = 2.5;
 		explosive = 0.8;
 		cost = 500;
 		airFriction = 0.075;
+		sideAirFriction = 0.075;
+		maxSpeed = 150;
 		initTime = 0;
+		thrustTime = 0.1;
+		thrust = 0.1;
 		fuseDistance = 15;
-		CraterEffects = "ATMissileCrater";
-		explosionEffects = "ATMissileExplosion";
-		effectsMissileInit = "";
-		effectsMissile = "EmptyEffect";
 		simulationStep = 0.02;
 		airLock = 0;
 		irLock = 0;
+		laserLock = 0;
+		timeToLive = 30;
 		maneuvrability = 0;
-		allowAgainstInfantry = 0;*/
+		allowAgainstInfantry = 0;
 	};
-	class TEI_M41_Rocket_HEAT_Guided: M_Titan_AT
+	class TEI_M41_Rocket_HEAT_Guided: TEI_M41_Rocket_ATGM
 	{
-		scope = 2;
 		model = "TEI_weapons\rockets\M41_rocket.p3d";
-		//canLock = 2;
-
+		irLock = 2;
+		airLock = 2;
+		laserLock = 2;
+		canLock = 2;
 	};
-	class TEI_M41_Rocket_HEAP: R_TBG32V_F
+	class TEI_M41_Rocket_HEAP: TEI_M41_Rocket_HEAT
 	{
-		scope = 2;
 		model = "TEI_weapons\rockets\M41_rocket.p3d";
-		//sideairfriction=0.075;
-		//thrust=255;
-		//thrusttime=0.4;
-		//canLock = 0;
-		//timetolive=10;
-		//maxspeed=255;
-	};
-	class TEI_M41_Rocket_HEAA: M_Titan_AA
-	{
-		scope = 2;
-		//thrust = 255;
-		//initSpeed = 350;
-		//maxSpeed = 350;
-		model = "TEI_weapons\rockets\M41_rocket.p3d";
-		//trackLead = 1;
-		//airLock = 2;
-		//irLock = 1;
-		//canLock = 2;
-		//trackOversteer = 1;
-		//weaponLockSystem = "2 + 16";
+		hit = 300;
+		indirectHit = 100;
+		indirectHitRange = 15;
+		explosive = 1;
+		allowAgainstInfantry = 1;
 	};
 	class TEI_Splaser_Ammo: R_PG32V_F
 	{

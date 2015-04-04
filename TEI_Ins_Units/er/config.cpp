@@ -45,34 +45,6 @@ class CfgVehicles
 	
 	// SOLDIERS
 	
-	/*class TEI_: I_Soldier_base_F //WORKING SOLIDER USE FOR REFERENCE IF NEED BE BECAUSE YOU SUCK AT THIS APPARENTLY SPACENAVY
-	 {
-        modelSides[] 						= {0,1,2,3};
-        side                 	            = 0;
-        scope                               = 2;
-        faction                             = "";
-        author                              = "";
-        displayName                         = "";
-        vehicleClass                  	    = "";
-        uniformClass                  	    = "";
-	//identityTypes[] = {"LanguageGRE_F","Head_Greek","G_HAF_default"};
-	//faceType = "Man_A3";
-        model                               = "";
-        weapons[]                           = {"Throw","Put"};
-        respawnWeapons[]             	    = {"Throw","Put"};
-        Items[]                             = {"TEI_Biofoam"};
-        RespawnItems[]                      = {"TEI_Biofoam"};
-        magazines[]                         = {};
-        respawnMagazines[]                  = {};
-        linkedItems[]                 	    = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-        respawnLinkedItems[]           	    = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-        headgearProbability            	    = 0;
-        allowedHeadgear[]                   = {};
-        backpack                            = "";
-		hiddenSelections[] 					= {"camo"};
-		hiddenSelectionsTextures[] 			= {""};
-	 };*/
-	
 	class TEI_Ins_ER_soldier_base: I_Soldier_base_F //Unit Class name: Class getting info from
 	{
 		scope											= 0;
@@ -175,7 +147,6 @@ class CfgVehicles
 		hiddenSelections[] 					= {"camo1","camo2"};
 		hiddenSelectionsTextures[] 			= {"TEI_Ins_Units\Data\innie_garments_od_co.paa","TEI_Ins_Units\Data\inne_CombatUniformOD_co.paa"};
 	 };
-	 
 	 class TEI_Ins_ER_Insurgent_Grey: TEI_Ins_ER_Insurgent_OD
 	 {
 		scope 								= 1;
@@ -183,26 +154,6 @@ class CfgVehicles
 		uniformClass                  	    = "TEI_Ins_ER_uniform_GGod";
 		hiddenSelectionsTextures[] 			= {"TEI_Ins_Units\Data\innie_garments_grey_co.paa","TEI_Ins_Units\Data\inne_CombatUniformOD_co.paa"};
 	 };
-	 
-	 
-	 
-	 //H_Beret_blk
-	 //H_MilCap_gry
-	 //TEI_h_Ins_beret_od
-	 //TEI_v_Ins_vest
-	 //TEI_v_Ins_GAvest
-	 //TEI_h_MICH_OD
-	 //TEI_h_PatrolCap_Brown
-	 //TEI_h_PatrolCap_Green
-	 //TEI_h_Booniehat_Green
-	 //TEI_h_Booniehat_Grey
-	 //H_Watchcap_blk
-	 //H_Booniehat_oli
-	 
-	 //B_AssaultPack_khk
-	 //B_AssaultPack_rgr
-	 
-	 
 	 class TEI_Ins_ER_Surgeon: TEI_Ins_URF_officer_base //Configures the unit part of the Units Uniform
 	{
 		
@@ -288,8 +239,8 @@ class CfgVehicles
 		scope											= 2;
 		displayName										= "Deserter (GL)";
 		backpack 										= "B_AssaultPack_khk";
-		linkedItems[]                 	    = {"TEI_v_Ins_vest","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-        respawnLinkedItems[]           	    = {"TEI_v_Ins_vest","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+		linkedItems[]                 	    			= {"TEI_v_Ins_vest","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        respawnLinkedItems[]           	    			= {"TEI_v_Ins_vest","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
 		weapons[] 										= {"TEI_MA5BGL_AC","Throw","Put"};
 		respawnWeapons[] 								= {"TEI_MA5BGL_AC","Throw","Put"};
 		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
@@ -300,8 +251,8 @@ class CfgVehicles
 		scope											= 2;
 		displayName										= "Militia (MG)";
 		//backpack										= assistance AR backpack with ammo inside //B_AssaultPack_khk
-		linkedItems[]                 	    = {"TEI_v_Ins_vest","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-        respawnLinkedItems[]           	    = {"TEI_v_Ins_vest","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+		linkedItems[]                 	    			= {"TEI_v_Ins_vest","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        respawnLinkedItems[]           	    			= {"TEI_v_Ins_vest","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
 		weapons[] 										= {"LMG_Zafir_F","Throw","Put"};
 		respawnWeapons[] 								= {"LMG_Zafir_F","Throw","Put"};
 		magazines[] 									= {"150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
@@ -368,23 +319,6 @@ class cfgWeapons
 	class H_HelmetB;
 		
 	// UNIFORMS
-	
-	/*class TEI_: Uniform_Base //WORKING UNIFORM USE FOR REFERENCE IF NEED BE BECAUSE YOU SUCK AT THIS APPARENTLY SPACENAVY
-	{
-		scope = 2;
-		displayName 						= "";
-		picture 							= "";
-		model								= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		//hiddenSelections[]	   		    = {"-"};
-		//hiddenSelectionsTextures[] 		= {""};
-        class ItemInfo : UniformItem 
-		{
-            uniformModel 					= "-";
-            uniformClass 					= "";
-            containerClass 					= "Supply30";
-            mass 							= 30;
-        };
-	};*/
 	
 	    class TEI_Ins_ER_uniform_GAtan: Uniform_Base
     {
@@ -484,26 +418,6 @@ class cfgWeapons
 	
 	
 	// HELMETS AND HEADGEAR
-    
-	/*
-	class TEI_: ItemCore
-    {
-        scope 								= 2;
-		weaponPoolAvailable 				= 1;
-        displayName 						= ""; //In-Game name
-        model								= "";
-        hiddenSelections[] 					= {"camo"};
-        hiddenSelectionsTextures[] 			= {""}; // Path to your texture.
-        class ItemInfo: HeadgearItem
-        {
-            mass 							= 40; 
-            uniformModel					= "";
-			hiddenSelections[] 				= {"camo"};
-			hiddenSelectionsTextures[] 		= {""};
-            modelSides[] 					= {6};
-        };
-	};
-	*/
 	
     class TEI_h_Booniehat_Grey: ItemCore
     {
@@ -519,8 +433,6 @@ class cfgWeapons
             mass = 5; // Weight
             uniformModel = "\a3\characters_f\Common\booniehat";
             modelSides[] = {6};
-            //armor = "3*0.6";
-            //passThrough = 0.6;
             hiddenSelections[] = {"camo"};
         };
 	};
@@ -562,63 +474,4 @@ class cfgWeapons
 			hiddenSelectionsTextures[] = {"TEI_Ins_Units\data\innie_patrolcap_Brown_co.paa"};
         };
 	};
-	class TEI_h_MICH_OD: ItemCore
-    {
-        scope = 2;
-		weaponPoolAvailable = 1;
-        displayName = "[INS] MICH (OD)"; //In-Game name
-        model = "\A3\Characters_F_Beta\INDEP\headgear_helmet_canvas";
-		picture = "\A3\characters_F_Beta\Data\UI\icon_H_I_Helmet_canvas_ca.paa";
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"TEI_Ins_Units\data\inne_MICHOD_co.paa"}; // Path to your texture.
-        class ItemInfo: HeadgearItem
-        {
-            mass = 30; 
-            uniformModel = "\A3\Characters_F_Beta\INDEP\headgear_helmet_canvas";
-			hiddenSelections[] = {"camo"};
-			hiddenSelectionsTextures[] = {"TEI_Ins_Units\data\inne_MICHOD_co.paa"};
-            modelSides[] = {6};
-        };
-	};
-	class TEI_: ItemCore
-    {
-        scope = 2;
-		weaponPoolAvailable = 1;
-        displayName = ""; //In-Game name
-        model = "";
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {""}; // Path to your texture.
-        class ItemInfo: HeadgearItem
-        {
-            mass = 40; 
-            uniformModel = "";
-			hiddenSelections[] = {"camo"};
-			hiddenSelectionsTextures[] = {""};
-            modelSides[] = {6};
-        };
-	};
-	
-	
-	//VESTS
-	
-	/*class V_PlateCarrier3_rgr;
-	class ItemInfo;
-	
-		
-	class TEST_Vest: V_PlateCarrier3_rgr
-	{
-		picture = "\A3\Characters_F_EPA\Data\ui\Icon_V_plate_carrier_snake_ca.paa"; //Menu Picture
-		displayName = "Heavy Vest"; //In-Game name
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"TEST\Data\TEST_Vest_co.paa"}; //Vest texture path
-		class ItemInfo: ItemInfo
-		{
-			uniformModel = "\A3\Characters_F\BLUFOR\equip_b_vest01"; //Vest model you are using
-			containerClass = "Supply160"; //Carry Amount
-			mass = 50; // Weight
-			armor = "5*1.4";
-			passThrough = 0.4;
-			hiddenSelections[] = {"camo"};
-		};
-	};*/
 };

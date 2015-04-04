@@ -304,7 +304,7 @@ class CfgMagazines
 		displayName 						= "3Rnd 102mm Guided HEAT Rockets";
 		displayNameShort 					= "102mm Guided HEAT";
 		count 								= 3;
-		ammo 								= "M_Titan_AT";
+		ammo 								= "TEI_M41_Rocket_ATGM";
 		initSpeed 							= 40;
 		maxLeadSpeed 						= 40;
 		sound[] 							= {"A3\Sounds_F\weapons\Rockets\titan_2",1.25893,1,1000};
@@ -320,8 +320,8 @@ class CfgMagazines
 		displayName 						= "6Rnd 65mm Guided AA Rockets";
 		displayNameShort 					= "65mm Guided AA";
 		count 								= 6;
-		ammo 								= "M_Zephyr";
-		initSpeed 							= 40;
+		ammo 								= "TEI_M_65mm_AA";
+		initSpeed 							= 80; //40
 		maxLeadSpeed 						= 320;
 		sound[] 							= {"A3\Sounds_F\weapons\Rockets\titan_2",1.25893,1,1000};
 		weaponSoundEffect 					= "DefaultRifle";
@@ -343,7 +343,6 @@ class CfgMagazines
 		model							= "\TEI_Weapons\Rockets\M41_case.p3d";	
 		modelSpecial					= "\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
 		count							= 2;
-		scope							= 2;
 		mass 							= 80;
 		initSpeed 						= 255;
 	};
@@ -353,11 +352,10 @@ class CfgMagazines
 		displayname						= "M19 HEAT Guided Twin Rockets";
 		displaynameshort				= "HEAT (Guided)";
 		picture 						= "\TEI_weapons\rockets\icons\rocket.paa";
-		descriptionshort				= "Type: Guided surface-to-surface HEAT (High Explosive Anti Tank)<br/>Used in: M41 SSR MAV/AW";
+		descriptionshort				= "Type: Guided surface-to-surface/air HEAT (High Explosive Anti Tank)<br/>Used in: M41 SSR MAV/AW";
 		model							= "\TEI_Weapons\Rockets\M41_case.p3d";	
 		modelSpecial					= "\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
 		count							= 2;
-		scope 							= 2;
 		mass 							= 85;
 		initSpeed 						= 255;
 	};
@@ -370,23 +368,9 @@ class CfgMagazines
 		picture 						= "\TEI_weapons\rockets\icons\rocket.paa";
 		displaynameshort				= "HEAP";
 		modelSpecial					= "\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
-		scope							= 2;
 		mass 							= 80;
 		count 							= 2;
 		initSpeed						= 255;
-	};
-	class TEI_M41_Twin_HEAA: Titan_AA
-	{
-		scope 							= 2;
-		count							= 2;
-		displayname						= "M19 HEAA Twin Rockets";
-		displaynameshort				= "HEAA Twin";
-		picture 						= "\TEI_weapons\rockets\icons\rocket.paa";
-		descriptionshort				= "Type: Guided surface-to-air HEAA (High Explosive Anti Air)<br/>Used in: M41 SSR MAV/AW";
-		ammo							= "TEI_M41_Rocket_HEAA";
-		model							= "\TEI_Weapons\Rockets\M41_Case";	
-		modelSpecial					= "\TEI_Weapons\Rockets\M41_launcher_loaded.p3d";
-		mass 							= 80;
 	};
 	
 	//Grenades

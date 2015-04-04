@@ -420,8 +420,8 @@ class TEI_UNSC_Marine_medium: TEI_UNSC_Marine_Soldier_Base //Configures the unit
 		backpack 										= "TEI_Kitbag_rgr_Rockets";
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
-		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAA","TEI_M41_Twin_HEAA","SmokeShell","SmokeShellGreen"};
-		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAA","TEI_M41_Twin_HEAA","SmokeShell","SmokeShellGreen"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAT_G","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAT_G","SmokeShell","SmokeShellGreen"};
 		icon = "iconManAT";
 	};
 	class TEI_UNSC_Marine_Engineer: TEI_UNSC_Marine_vacuum_heavy
@@ -812,7 +812,7 @@ class cfgWeapons
 		class ItemInfo: HeadgearItem 
 		{
 			uniformModel   									= "\TEI_UNSC_Units\Army\helmet.p3d"; /// what model does the vest use
-			armor   									= 0; /// what protection does the vest provide
+			armor   									= 10; /// what protection does the vest provide
 			mass   										= 20;
 			modelSides[]   									= {6};
 			passThrough   									= 0; /// coef of damage passed to total damage
@@ -832,7 +832,7 @@ class cfgWeapons
 		class ItemInfo: HeadgearItem 
 		{
 			uniformModel   									= "\TEI_UNSC_Units\Army\helmet.p3d"; /// what model does the vest use
-			armor   									= 15; /// what protection does the vest provide
+			armor   									= 10; /// what protection does the vest provide
 			mass   										= 30;
 			modelSides[]   									= {6};
 			passThrough   									= 0.1; /// coef of damage passed to total damage
@@ -852,7 +852,7 @@ class cfgWeapons
 		class ItemInfo: HeadgearItem 
 		{
 			uniformModel   									= "\TEI_UNSC_Units\Army\helmet.p3d"; /// what model does the vest use
-			armor   									= 15; /// what protection does the vest provide
+			armor   									= 10; /// what protection does the vest provide
 			mass   										= 30;
 			modelSides[]   									= {6};
 			passThrough   									= 0.1; /// coef of damage passed to total damage

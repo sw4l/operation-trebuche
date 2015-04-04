@@ -320,7 +320,7 @@ class CfgVehicles
 
 	class TEI_falcon_unarmed: TEI_falcon_base
 	{
-		scope = 2;				/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
+		scope = 1;				/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		scopeCurator = 2;		// 2 means available from Zeus, whereas 0 means hidden
 		side = 1;					/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		vehicleClass = "TEI_UNSC_Air_class";

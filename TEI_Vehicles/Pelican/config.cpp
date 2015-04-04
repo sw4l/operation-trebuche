@@ -11,7 +11,7 @@
 
 class CfgVehicles
 {
-	class Helicopter;
+	/*class Helicopter;
 	class Plane;
 	
 	class Plane_Base_F: Plane
@@ -25,12 +25,12 @@ class CfgVehicles
 			};
 			class HitPoints
 			{
-				/*class HitHull;
+				class HitHull;
 				class HitFuel;
 				class HitAvionics;
 				class HitEngine;
 				class HitHRotor;
-				class HitVRotor;*/
+				class HitVRotor;
 			};
 			class AnimationSources;
 			class Eventhandlers;
@@ -66,9 +66,62 @@ class CfgVehicles
 		{
 			class Right;
 		};
+	};*/
+	
+	/*class Air;
+	class Plane: Air
+	{
+		class HitPoints;
+	};
+	class Plane_Base_F: Plane
+	{
+		class AnimationSources;
+		class HitPoints: HitPoints
+		{
+			class HitHull;
+		};
+	};*/
+	
+	class Helicopter;
+	class Helicopter_Base_F: Helicopter
+	{
+		class Turrets;
+		class HitPoints;
+		class ViewPilot;
+		class CargoTurret;
+		class Reflectors
+		{
+			class Right;
+		};
+	};
+	class Helicopter_Base_H: Helicopter_Base_F
+	{
+		class EventHandlers;
+		class Turrets: Turrets
+		{
+			class CopilotTurret;
+		};
+		class HitPoints: HitPoints
+		{
+			class HitHull;
+			class HitFuel;
+			class HitEngine;
+			class HitAvionics;
+			class HitVRotor;
+			class HitHRotor;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+		};
+		class AnimationSources;
+		class ViewOptics;
+		class RotorLibHelicopterProperties;
 	};
 
-	class TEI_Pelican_F: Helicopter_Base_F
+	class TEI_Pelican_F: Helicopter_Base_H
 	{		
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		vehicleClass = "TEI_UNSC_Air_class";
@@ -313,7 +366,7 @@ class CfgVehicles
 		
 		class Turrets: Turrets										/// just a copilot seat as a turret to enable taking the controls
 		{
-			class CopilotTurret: mainturret						/// taking controls is already defined in parent class
+			class CopilotTurret: CopilotTurret						/// taking controls is already defined in parent class
 			{
 				gunnerAction = pilot_Heli_Light_02;				/// what action does copilot switch to
 				gunnerInAction = pilot_Heli_Light_02;				/// what action does copilot switch to
@@ -333,7 +386,7 @@ class CfgVehicles
 				maxVerticalRotSpeed = 5;							/// how fast is the copilot able to look around (higher means faster)
 				proxyindex = 1;
 				isCopilot = 1;
-				gunnerName = "Co-Pilot/Gunner";
+				gunnerName = "Co-Pilot";
 				primaryGunner = 1;	
 				visionMode[]={"Normal","NVG","Ti"};
 				weapons[]={"Laserdesignator_mounted"};
@@ -354,9 +407,9 @@ class CfgVehicles
                     minAngleY = -360;
                     maxAngleY = 360;
                     initAngleY = 0;
-                    initFov = 0.7;
-                    minFov = 0.3;
-                    maxFov = 1.2;
+                    initFov = 0.75;
+                    minFov = 0.25;
+                    maxFov = 0.75;
 					visionMode[]={"Normal","NVG","Ti"};
 					};
 				soundServo[] = {"",0.01,1};
@@ -562,7 +615,7 @@ class CfgVehicles
 	};
 	
 	
-	class TEI_Pelican_VTOL_base: Plane_Base_F
+	/*class TEI_Pelican_VTOL_base: Plane_Base_F
 	{
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		vehicleClass = "TEI_UNSC_Air_class";
@@ -594,7 +647,7 @@ class CfgVehicles
 	///HANDLING
 		vtol = 10;
 		
-		/*		class VTOLSettings
+		class VTOLSettings
 		{
 			WeightRmpty = 5934;
 			WeightMaxVTOL = 10408;
@@ -602,7 +655,6 @@ class CfgVehicles
 			Thrust = 10793;
 			VTOLSpeed = 180;
 		};
-		*/
 		
         simulation = airplaneX;
 		
@@ -673,7 +725,7 @@ class CfgVehicles
 
 		
 ///hit points
-		/*class HitPoints:Hitpoints
+		class HitPoints:Hitpoints
 		{
 			class HitHull:HitHull
 			{
@@ -743,7 +795,7 @@ class CfgVehicles
 				minimalHit=0.05;
 				explosionShielding=6;
 			};
-		};*/
+		};
 /// hit points end
 ///transport items		
 		class TransportBackpacks	/// adds various backpacks to cargo hold of the heli
@@ -891,7 +943,7 @@ class CfgVehicles
 				maxVerticalRotSpeed = 5;							/// how fast is the copilot able to look around (higher means faster)
 				proxyindex = 1;
 				isCopilot = 1;
-				gunnerName = "Co-Pilot/Gunner";
+				gunnerName = "Co-Pilot";
 				primaryGunner = 1;	
 				visionMode[]={"Normal","NVG","Ti"};
 				weapons[]={"Laserdesignator_mounted"};
@@ -1119,7 +1171,7 @@ class CfgVehicles
 		};	
 		aggregateReflectors[] = {{"Left", "Right"}};	/// aggregates both sources into one to increase performance
 		#include "rtd.hpp" /// Advanced FM characteristics in separate file to make the config cleaner
-	};
+	};*/
 	
 	class TEI_Pelican_unarmed_green: TEI_Pelican_F
 	{
@@ -1178,7 +1230,7 @@ class CfgVehicles
 		hiddenSelections[]= {"camo1","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_innie_CO.paa"};
 	};
-	class TEI_Pelican_VTOL: TEI_Pelican_VTOL_base
+	/*class TEI_Pelican_VTOL: TEI_Pelican_VTOL_base
 	{
 		displayName = "D77-TC Pelican (VTOL)";
 		scope 	= 0;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
@@ -1192,7 +1244,7 @@ class CfgVehicles
 		
 		hiddenSelections[]= {"camo1","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_green_CO.paa"};
-	};
+	};*/
 	class TEI_Pelican_unarmed_marine: TEI_Pelican_F
 	{
 		displayName = "D77-TC Pelican (Marine)";
@@ -1208,20 +1260,20 @@ class CfgVehicles
 		hiddenSelections[]= {"camo1","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_Marine_CO.paa"};
 	};
-		class TEI_Pelican_armed_green: TEI_Pelican_F
+	class TEI_Pelican_armed_green: TEI_Pelican_F
 	{
-		displayName = "D77-TC Pelican MG (Green)";
+		displayName = "G77-TC Pelican (Green)";
 		scope 	= 2;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		vehicleClass = "TEI_UNSC_Air_class";
 		faction	= "TEI_UNSC";					/// defines the faction inside of the side
-		crew = "TEI_UNSC_Army_W_Pilot";					/// lets use the sample soldier we have as default captain of the boat
+		crew = "TEI_UNSC_Marine_Pilot";					/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 					/// harder to distinguish side than vehicle type
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
 		class Turrets: Turrets										/// just a copilot seat as a turret to enable taking the controls
 		{
-			class CopilotTurret: mainturret						/// taking controls is already defined in parent class
+			class CopilotTurret: CopilotTurret						/// taking controls is already defined in parent class
 			{
 				gunnerAction = pilot_Heli_Light_02;				/// what action does copilot switch to
 				gunnerInAction = pilot_Heli_Light_02;				/// what action does copilot switch to
@@ -1241,16 +1293,16 @@ class CfgVehicles
 				maxVerticalRotSpeed = 5;							/// how fast is the copilot able to look around (higher means faster)
 				proxyindex = 1;
 				isCopilot = 1;
-				gunnerName = "Co-Pilot/Gunner";
+				gunnerName = "Gunner";
 				primaryGunner = 1;	
 				visionMode[]={"Normal","NVG","Ti"};
-				weapons[] = {"gatling_30mm", "CMFlareLauncher","Laserdesignator_mounted"};	/// array of various vehicle weapons mounted on the heli
-				magazines[] = {"250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"}; /// array of corresponding magazines
+				weapons[] = {"gatling_30mm", "rockets_Skyfire", "CMFlareLauncher","Laserdesignator_mounted"};	/// array of various vehicle weapons mounted on the heli
+				magazines[] = {"250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","38Rnd_80mm_rockets","38Rnd_80mm_rockets","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"}; /// array of corresponding magazines
 				minElev = -80;
 				maxElev = 15;
 				initElev = 0;
-				minTurn = -80;
-				maxTurn = 80;
+				minTurn = -120;
+				maxTurn = 120;
 				initTurn = 0;
 				stabilizedInAxes = "StabilizedInAxesBoth";
 				startEngine = 0;
@@ -1262,9 +1314,9 @@ class CfgVehicles
                     minAngleY = -80;
                     maxAngleY = 15;
                     initAngleY = 0;
-                    initFov = 0.7;
-                    minFov = 0.6;
-                    maxFov = 3.0;
+                    initFov = 0.75;
+                    minFov = 0.25;
+                    maxFov = 0.75;
 					visionMode[]={"Normal","NVG","Ti"};
 					};
 				soundServo[] = {"",0.01,1};
@@ -1280,8 +1332,70 @@ class CfgVehicles
 				gunnerOpticsModel="A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
 				gunnerForceOptics = 0;
 			};
+			class CargoTurret_01: CargoTurret 						/// position for Firing from Vehicles
+			{
+				gunnerAction 				= "passenger_inside_2";	/// generic animation for sitting inside with rifle ready
+				gunnerCompartments 			= "Compartment2";		/// gunner is not able to switch seats
+				memoryPointsGetInGunner 	= "pos_cargo_l";		/// specific memory points to allow choice of position
+				memoryPointsGetInGunnerDir 	= "pos_cargo_l_dir";	/// direction of get in action
+				gunnerName 					= "Passenger (Left door)";	/// name of the position in the Action menu
+				proxyIndex 					= 1;					/// what cargo proxy is used according to index in the model
+				maxElev 					= 15;					/// what is the highest possible elevation of the turret
+				minElev 					= -25;					/// what is the lowest possible elevation of the turret
+				maxTurn 					= 10;					/// what is the left-most possible turn of the turret
+				minTurn 					= -50;					/// what is the right-most possible turn of the turret
+				isPersonTurret 				= 1;					/// enables firing from vehicle functionality
+				ejectDeadGunner 			= 0;					/// seatbelts included
+				enabledByAnimationSource 	= "cargoDoors";				/// doesn't work unless the said animation source is 1
+				memoryPointGunnerOptics= "";
+			};
+			class CargoTurret_02: CargoTurret_01						/// position for Firing from Vehicles
+			{
+				gunnerAction 				= "passenger_inside_2";	/// generic animation for sitting inside with rifle ready
+				gunnerCompartments 			= "Compartment2";		/// gunner is not able to switch seats
+				memoryPointsGetInGunner 	= "pos_cargo_r";		/// specific memory points to allow choice of position
+				memoryPointsGetInGunnerDir 	= "pos_cargo_r_dir";	/// direction of get in action
+				gunnerName 					= "Passenger (Right door)";	/// name of the position in the Action menu
+				proxyIndex 					= 2;					/// what cargo proxy is used according to index in the model
+				maxElev 					= 15;					/// what is the highest possible elevation of the turret
+				minElev 					= -25;					/// what is the lowest possible elevation of the turret
+				maxTurn 					= 50;					/// what is the left-most possible turn of the turret
+				minTurn 					= -10;					/// what is the right-most possible turn of the turret
+				isPersonTurret 				= 1;					/// enables firing from vehicle functionality
+				ejectDeadGunner 			= 0;					/// seatbelts included
+				enabledByAnimationSource 	= "cargoDoors";				/// doesn't work unless the said animation source is 1
+				memoryPointGunnerOptics= "";
+			};
 		};
 		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_green_CO.paa"};
+	};
+	class TEI_Pelican_armed_tan: TEI_Pelican_armed_green
+	{
+		displayName = "G77-TC Pelican (Tan)";
+		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_tan_CO.paa"};
+	};
+	class TEI_Pelican_armed_black: TEI_Pelican_armed_green
+	{
+		displayName = "G77-TC Pelican (Black)";
+		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_black_CO.paa"};
+	};
+	class TEI_Pelican_armed_marine: TEI_Pelican_armed_green
+	{
+		displayName = "G77-TC Pelican (Marine)";
+		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_marine_CO.paa"};
+	};
+	class TEI_Pelican_armed_ins: TEI_Pelican_armed_green
+	{
+		displayName = "G77-TC Pelican (Ins)";
+		side = 0;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
+		faction	= "TEI_Ins";					/// defines the faction inside of the side
+		crew = "TEI_Ins_ER_Rebel_tan";					/// lets use the sample soldier we have as default captain of the boat
+		vehicleClass = "TEI_Ins_Air_class";
+		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"TEI_Vehicles\Pelican\data\PelicanExterior_innie_CO.paa"};
 	};
 };

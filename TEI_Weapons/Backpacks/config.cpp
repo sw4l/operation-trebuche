@@ -100,8 +100,8 @@ class cfgVehicles
 				transportMaxWeapons = 1;
 				transportMaxMagazines = 10;
 				class DestructionEffects{};
-                displayName = "UNSC/PRC-515O";
-				descriptionShort = "UNSC/PRC-515O ODST long range radio 20km";
+                displayName = "[UNSC] AN/PRC-515";
+				descriptionShort = "UNSC/PRC-515 ODST long range radio 25km";
                 model = "\TEI_weapons\backpacks\como_ruck.p3d";
 				maximumLoad = 120;
 				mass = 25;
@@ -110,7 +110,7 @@ class cfgVehicles
 				tf_encryptionCode = "tf_west_radio_code";
 				tf_dialog = "rt1523g_radio_dialog";
 				tf_subtype = "digital_lr";
-				tf_range = 20000;
+				tf_range = 25000;
 				tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio = 1; 
 				hiddenSelections[] 								= {"camo1"};
@@ -356,8 +356,8 @@ class cfgVehicles
 				transportMaxWeapons = 1;
 				transportMaxMagazines = 10;
 				class DestructionEffects{};
-                displayName = "UNSC/PRC-521";
-				descriptionShort = "UNSC/PRC-521 long range radio 25km";
+                displayName = "[UNSC] AN/PRC-521";
+				descriptionShort = "AN/PRC-521 long range radio 50km";
                 model = "\TEI_weapons\backpacks\radio_pack1.p3d";
 				maximumLoad = 120;
 				mass = 25;
@@ -366,7 +366,7 @@ class cfgVehicles
 				tf_encryptionCode = "tf_west_radio_code";
 				tf_dialog = "rt1523g_radio_dialog";
 				tf_subtype = "digital_lr";
-				tf_range = 25000;
+				tf_range = 50000;
 				tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio = 1; 
 				hiddenSelections[] 	= {"camo1"};

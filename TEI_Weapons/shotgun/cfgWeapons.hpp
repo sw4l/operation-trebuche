@@ -12,10 +12,7 @@ class CfgWeapons
 	class InventoryFlashLightItem_Base_F;
 	class InventoryMuzzleItem_Base_F;
 	class GunParticles;
-	class Rifle_Base_F: Rifle
-	{
-		class WeaponSlotsInfo;
-	};
+	class Rifle_Base_F;
 	
 	//ATTACHMENTS
 	
@@ -109,8 +106,7 @@ class CfgWeapons
 		dexterity 									= 1.5;
 		muzzlePos									= "usti hlavne";
        	muzzleEnd									= "konec hlavne";
-		//reloadAction 									= "GestureReloadM4SSAS";
-		reloadAction 									= "ReloadGM6";
+		reloadAction 								= "GestureReloadSMG_01";
 		maxRecoilSway 									= 0.0120;
 		swayDecaySpeed 									= 1.20;
 		drySound[] 									= {"A3\Sounds_F\weapons\Other\dry6.wss",0.1,1};

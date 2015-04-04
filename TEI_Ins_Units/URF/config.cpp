@@ -37,34 +37,6 @@ class CfgVehicles
 	class B_RangeMaster_F;
 	class C_man_hunter_1_F;	
 	class I_G_Soldier_M_F;
-	
-	/*class TEI_: I_Soldier_base_F //WORKING SOLIDER USE FOR REFERENCE IF NEED BE BECAUSE YOU SUCK AT THIS APPARENTLY SPACENAVY
-	 {
-        modelSides[] 						= {0,1,2,3};
-        side                 	            = 0;
-        scope                               = 2;
-        faction                             = "";
-        author                              = "";
-        displayName                         = "";
-        vehicleClass                  	    = "";
-        uniformClass                  	    = "";
-	//identityTypes[] = {"LanguageGRE_F","Head_Greek","G_HAF_default"};
-	//faceType = "Man_A3";
-        model                               = "";
-        weapons[]                           = {"Throw","Put"};
-        respawnWeapons[]             	    = {"Throw","Put"};
-        Items[]                             = {"TEI_Biofoam"};
-        RespawnItems[]                      = {"TEI_Biofoam"};
-        magazines[]                         = {};
-        respawnMagazines[]                  = {};
-        linkedItems[]                 	    = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-        respawnLinkedItems[]           	    = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-        headgearProbability            	    = 0;
-        allowedHeadgear[]                   = {};
-        backpack                            = "";
-		hiddenSelections[] 					= {"camo"};
-		hiddenSelectionsTextures[] 			= {""};
-	 };*/
 	 
 	 class TEI_Ins_URF_Boarder_base: I_Soldier_base_F
 	 {
@@ -259,8 +231,8 @@ class CfgVehicles
 		backpack 										= "TEI_Kitbag_rgr_Rockets";
 		weapons[] 										= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
 		respawnWeapons[] 								= {"TEI_MA5B_AC","Throw","Put","TEI_M41_SSR"};
-		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAA","TEI_M41_Twin_HEAA","SmokeShell","SmokeShellGreen"};
-		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAA","TEI_M41_Twin_HEAA","SmokeShell","SmokeShellGreen"};
+		magazines[] 									= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAT_G","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag","TEI_M41_Twin_HEAT_G","TEI_M41_Twin_HEAT_G","SmokeShell","SmokeShellGreen"};
 		icon = "iconManAT";
 	};
 	class TEI_Ins_URF_Engineer: TEI_Ins_URF_soldierCmbtUni_OD_base
@@ -499,24 +471,6 @@ class cfgWeapons
 		
 	// UNIFORMS
 	
-	/*class TEI_: Uniform_Base //WORKING UNIFORM USE FOR REFERENCE IF NEED BE BECAUSE YOU SUCK AT THIS APPARENTLY SPACENAVY
-	{
-		scope 								= 2;
-		displayName 						= "";
-		author								= "Eridanus Insurrection Team";
-		picture 							= "";
-		model								= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-		//hiddenSelections[]	   		    = {"-"};
-		//hiddenSelectionsTextures[] 		= {""};
-        class ItemInfo : UniformItem 
-		{
-            uniformModel 					= "-";
-            uniformClass 					= "";
-            containerClass 					= "Supply30";
-            mass 							= 30;
-        };
-	};*/
-	
 	class TEI_Ins_URF_uniform_boarder: Uniform_Base
 	{
 		scope 								= 2;
@@ -528,8 +482,8 @@ class cfgWeapons
 		{
             uniformModel 					= "-";
             uniformClass 					= "TEI_Ins_URF_Boarder_base";
-            containerClass 					= "Supply30";
-            mass 							= 30;
+            containerClass 					= "Supply80";
+            mass 							= 20;
 			modelSides[] 					= {6};
         };
 	};
@@ -545,7 +499,7 @@ class cfgWeapons
 		{
             uniformModel 					= "-";
             uniformClass 					= "TEI_Ins_URF_soldierCmbtUni_OD_base";
-            containerClass 					= "Supply30";
+            containerClass 					= "Supply60";
             mass 							= 30;
 			modelSides[] 					= {6};
         };
@@ -564,30 +518,12 @@ class cfgWeapons
             uniformModel 					= "-";
             uniformClass 					= "TEI_Ins_URF_officer_base";
             containerClass 					= "Supply30";
-            mass 							= 30;
+            mass 							= 15;
 			modelSides[] 					= {6};
         };
 	};
 	
 	// HELMETS AND HEADGEAR
-    
-	/*class TEI_: ItemCore
-    {
-        scope 								= 2;
-		weaponPoolAvailable 				= 1;
-        displayName 						= ""; //In-Game name
-        model								= "";
-        hiddenSelections[] 					= {"camo"};
-        hiddenSelectionsTextures[] 			= {""}; // Path to your texture.
-        class ItemInfo: HeadgearItem
-        {
-            mass 							= 40; 
-            uniformModel					= "";
-			hiddenSelections[] 				= {"camo"};
-			hiddenSelectionsTextures[] 		= {""};
-            modelSides[] 					= {6};
-        };
-	};*/
 	
 	class TEI_h_Ins_beret_od: ItemCore
     {
@@ -607,6 +543,25 @@ class cfgWeapons
             modelSides[] 					= {6};
         };
 	};
+	class TEI_h_helmet_OD: ItemCore
+    {
+        scope = 2;
+		weaponPoolAvailable = 1;
+        displayName = "[INS] Helmet (OD)"; //In-Game name
+        model = "\A3\Characters_F_Beta\INDEP\headgear_helmet_canvas";
+		picture = "\A3\characters_F_Beta\Data\UI\icon_H_I_Helmet_canvas_ca.paa";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"TEI_Ins_Units\data\inne_MICHOD_co.paa"}; // Path to your texture.
+        class ItemInfo: HeadgearItem
+        {
+            mass = 30;
+			armor = 5; 
+            uniformModel = "\A3\Characters_F_Beta\INDEP\headgear_helmet_canvas";
+			hiddenSelections[] = {"camo"};
+			hiddenSelectionsTextures[] = {"TEI_Ins_Units\data\inne_MICHOD_co.paa"};
+            modelSides[] = {6};
+        };
+	};
 	
 	
 	//VESTS
@@ -622,9 +577,9 @@ class cfgWeapons
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\A3\Characters_F_EPC\Civil\equip_press_vest_01";
-			containerClass = "Supply160"; //Carry Amount
+			containerClass = "Supply120"; //Carry Amount
 			mass = 30; // Weight
-			armor = "30";
+			armor = 20;
 			passThrough = 0.4;
 			hiddenSelections[] = {"camo"};
 		};
@@ -642,7 +597,7 @@ class cfgWeapons
 			uniformModel = "A3\Characters_F_Beta\INDEP\equip_ia_vest02";
 			containerClass = "Supply160"; //Carry Amount
 			mass = 50; // Weight
-			armor = "30";
+			armor = 40;
 			passThrough = 0.4;
 			hiddenSelections[] = {"camo"};
 		};

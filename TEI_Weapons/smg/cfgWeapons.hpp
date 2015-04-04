@@ -65,7 +65,7 @@ class CfgWeapons
 		class acc_flashlight;
 		class TEI_M7_Flashlight: ItemCore
 		{
-			scope 										= 1;
+			scope 										= 2;
 			displayName 								= "M7 Illumination Torch";
 			picture 									= "\TEI_weapons\smg\icons\flashlight.paa";
 			descriptionShort 							= "Flashlight for the M7 SMG";
@@ -73,7 +73,7 @@ class CfgWeapons
 			class ItemInfo: InventoryFlashLightItem_Base_F
 			{
 			mass 									= 4;
-			class flashlight
+			class Flashlight
 			{
 				color[] 							= {180,156,120};
 				ambient[] 							= {0.9,0.78,0.6};

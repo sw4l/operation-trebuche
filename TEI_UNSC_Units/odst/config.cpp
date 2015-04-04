@@ -717,7 +717,7 @@ class cfgWeapons
 		class ItemInfo: VestItem 
 		{
 			uniformModel 																		= "\TEI_UNSC_Units\ODST\vest.p3d"; /// what model does the vest use
-			armor 																				= 55; /// what protection does the vest provide
+			armor 																				= 50; /// what protection does the vest provide
 			containerClass 																		= "Supply140";
 			mass 																				= 50;
 			passThrough 																		= 0; /// coef of damage passed to total damage
@@ -736,7 +736,7 @@ class cfgWeapons
 		class ItemInfo: VestItem 
 		{
 			uniformModel   																		= "\TEI_UNSC_Units\ODST\vest.p3d"; /// what model does the vest use
-			armor   																			= 55; /// what protection does the vest provide
+			armor   																			= 50; /// what protection does the vest provide
 			containerClass   																	= "Supply140";
 			mass   																				= 50;
 			passThrough   																		= 0.1; /// coef of damage passed to total damage
@@ -757,7 +757,7 @@ class cfgWeapons
 		class ItemInfo: VestItem 
 		{
 			uniformModel   																		= "\TEI_UNSC_Units\ODST\vest.p3d"; /// what model does the vest use
-			armor   																			= 55; /// what protection does the vest provide
+			armor   																			= 50; /// what protection does the vest provide
 			containerClass   																	= "Supply140";
 			mass   																				= 50;
 			passThrough   																		= 0.1; /// coef of damage passed to total damage
@@ -1174,7 +1174,7 @@ class cfgWeapons
 		class ItemInfo: HeadgearItem 
 		{
 			uniformModel   																		= "\TEI_UNSC_Units\ODST\recon_helmet.p3d"; /// what model does the vest use
-			armor   																			= 20; /// what protection does the vest provide
+			armor   																			= 15; /// what protection does the vest provide
 			mass   																				= 20;
 			modelSides[]   																		= {6};
 			passThrough   																		= 0.1; /// coef of damage passed to total damage
@@ -1194,7 +1194,7 @@ class cfgWeapons
 		class ItemInfo: HeadgearItem 
 		{
 			uniformModel   																		= "\TEI_UNSC_Units\ODST\recon_helmet.p3d"; /// what model does the vest use
-			armor   																			= 20; /// what protection does the vest provide
+			armor   																			= 15; /// what protection does the vest provide
 			mass   																				= 20;
 			modelSides[]   																		= {6};
 			passThrough   																		= 0.1; /// coef of damage passed to total damage

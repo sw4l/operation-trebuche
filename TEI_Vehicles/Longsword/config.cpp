@@ -219,7 +219,7 @@ class CfgVehicles
 
 	class TEI_UNSC_Longsword_CAS: TEI_Longsword_Base /// CAS version of the plane
 	{
-		scope = public;	/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
+		scope = 1;	/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		displayName = "Longsword (CAS)"; /// how does the vehicle show itself in editor
 
 		side			 = 2;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas

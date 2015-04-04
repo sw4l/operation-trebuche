@@ -421,7 +421,7 @@ class CfgVehicles {
 		accuracy = 0.5;
 
 		// Faction defines: side ID, faction class, crew, typical cargo
-		side = 2;
+		side = 1;
 		faction = "TEI_UNSC";
 		vehicleClass = "TEI_UNSC_Armored_class";
 		crew = "TEI_UNSC_Army_W_Crewman";
@@ -432,7 +432,7 @@ class CfgVehicles {
 	class TEI_UNSC_Scorpion: TEI_UNSC_Scorpion_base 
 	{
 		// Basic defines: public scope
-		scope = 2;
+		scope = 1;
 		// Editor displayname
 		faction = "TEI_UNSC";
 		vehicleClass = "TEI_UNSC_Armored_class";

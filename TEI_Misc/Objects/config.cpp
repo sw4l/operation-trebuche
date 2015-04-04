@@ -38,6 +38,7 @@ class CfgVehicles
 	class TEI_odst_grave: static
 	{
 		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "TEI_UNSC_Object_class";
 		displayName = "ODST Grave";
 		model = "\TEI_Misc\Objects\odst_grave.p3d";
@@ -47,6 +48,7 @@ class CfgVehicles
 	class TEI_soldier_grave: static
 	{
 		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "TEI_UNSC_Object_class";
 		displayName = "Soldier Grave";
 		model = "\TEI_Misc\Objects\soldier_grave.p3d";
@@ -56,6 +58,7 @@ class CfgVehicles
 	class TEI_monument: static
 	{
 		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "TEI_UNSC_Object_class";
 		displayName = "Monument";
 		model = "\TEI_Misc\Objects\monument.p3d";
@@ -65,6 +68,7 @@ class CfgVehicles
 	class TEI_kiosk_1: static
 	{
 		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "TEI_UNSC_Object_class";
 		displayName = "Kiosk 1";
 		model = "\TEI_Misc\Objects\kiosk_1.p3d";
@@ -76,6 +80,7 @@ class CfgVehicles
 	class TEI_kiosk_2: static
 	{
 		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "TEI_UNSC_Object_class";
 		displayName = "Kiosk 2";
 		model = "\TEI_Misc\Objects\kiosk_2.p3d";
@@ -87,6 +92,7 @@ class CfgVehicles
 	class TEI_kiosk_3: static
 	{
 		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "TEI_UNSC_Object_class";
 		displayName = "Kiosk 3";
 		model = "\TEI_Misc\Objects\kiosk_3.p3d";
@@ -98,6 +104,7 @@ class CfgVehicles
 	class TEI_holotable: static
 	{
 		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "TEI_UNSC_Object_class";
 		displayName = "Holo Table";
 		model = "\TEI_Misc\Objects\holotable.p3d";

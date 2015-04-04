@@ -63,15 +63,7 @@
      
             //WEAPONS
      
-            class Rifle_Long_Base_F;
-            class EBR_Base_F: Rifle_Long_Base_F
-            {
-                    class WeaponSlotsInfo
-                    {
-                            class SlotInfo;
-                    };
-                    class GunParticles;
-            };
+            class EBR_Base_F;
             class TEI_M73: EBR_Base_F
             {
                     scope                                                                   = 2;
@@ -81,15 +73,13 @@
                     descriptionShort                                                        = "UNSC Light Machine Gun";
                     picture 																= "";
                     magazines[]                                                             = {"TEI_100Rnd_95x40_Box","TEI_100Rnd_95x40_Box_Tracer","TEI_200Rnd_95x40_Box","TEI_200Rnd_95x40_Box_Tracer"};
-                    modelOptics                                                             = "-";
-                    dexterity                                                               = 3.25;
                     muzzlePos                                                               = "usti hlavne";
                     muzzleEnd                                                               = "konec hlavne";
                     reloadAction                                                            = "GestureReloadM200";
-					drySound[] = {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
+					drySound[] 																= {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
                     inertia                                                                 = 0.95;
-					maxRecoilSway = 0.0125;
-					swayDecaySpeed = 1.25;
+					maxRecoilSway 															= 0.0125;
+					swayDecaySpeed 															= 1.25;
                     class GunParticles: GunParticles
                     {
                        class SecondEffect
@@ -99,72 +89,68 @@
                             effectName                                                      = "CaselessAmmoCloud";
                        };
                     };
-                    modes[] = {"Single","FullAuto"};
+                    modes[] 																= {"Single","FullAuto"};
                     class Single: Mode_SemiAuto
                     {
-                            sounds[] = {"StandardSound","SilencedSound"};
+                            sounds[] 														= {"StandardSound","SilencedSound"};
                             class BaseSoundModeType
                             {
-                                    weaponSoundEffect = "DefaultRifle";
-                                    closure1[] = {};
-                                    closure2[] = {};
-                                    soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                                    weaponSoundEffect 										= "DefaultRifle";
+                                    closure1[] 												= {};
+                                    closure2[] 												= {};
+                                    soundClosure[] 											= {"closure1",0.5,"closure2",0.5};
                             };
                             class StandardSound: BaseSoundModeType
                             {
-                                    /*begin1[] = {"A3\sounds_f\weapons\EBR\EBR_st_4",1.0,1,2000};
-                                    begin2[] = {"A3\sounds_f\weapons\EBR\EBR_st_5",1.0,1,2000};
-                                    begin3[] = {"A3\sounds_f\weapons\EBR\EBR_st_6",1.0,1,2000};*/
-     
-                                    begin1[] = {"\TEI_Weapons\MG\data\sounds\M73_1.wss",1.0,1,2000};
-									begin2[] = {"\TEI_Weapons\MG\data\sounds\M73_2.wss",1.0,1,2000};
-									soundBegin[] = {"begin1",0.34,"begin2",0.33};
+                                    begin1[] 												= {"\TEI_Weapons\MG\data\sounds\M73_1.wss",1.0,1,2000};
+									begin2[] 												= {"\TEI_Weapons\MG\data\sounds\M73_2.wss",1.0,1,2000};
+									soundBegin[] 											= {"begin1",0.34,"begin2",0.33};
                             };
                             class SilencedSound: BaseSoundModeType
                             {
-                                    begin1[] = {"A3\sounds_f\weapons\silenced\silent-23",1.0,1,600};
-                                    begin2[] = {"A3\sounds_f\weapons\silenced\silent-24",1.0,1,600};
-                                    soundBegin[] = {"begin1",0.5,"begin2",0.5};
+                                    begin1[] 												= {"A3\sounds_f\weapons\silenced\silent-23",1.0,1,600};
+                                    begin2[] 												= {"A3\sounds_f\weapons\silenced\silent-24",1.0,1,600};
+                                    soundBegin[] 											= {"begin1",0.5,"begin2",0.5};
                             };
-                            reloadTime = 0.0789; 		
-                            dispersion = 0.00075;
-                            recoil = "recoil_single_mx";
-							recoilProne = "recoil_single_prone_mx";
-                            minRange = 2;
-                            minRangeProbab = 0.3;
-                            midRange = 300;
-                            midRangeProbab = 0.7;
-                            maxRange = 600;
-                            maxRangeProbab = 0.05;
+                            reloadTime 														= 0.0789; 		
+                            dispersion 														= 0.00075;
+                            recoil 															= "recoil_single_mx";
+							recoilProne 													= "recoil_single_prone_mx";
+                            minRange 														= 2;
+                            minRangeProbab 													= 0.3;
+                            midRange 														= 300;
+                            midRangeProbab 													= 0.7;
+                            maxRange 														= 600;
+                            maxRangeProbab 													= 0.05;
                     };
                     class FullAuto: Mode_FullAuto
                     {
-                            sounds[] = {"StandardSound","SilencedSound"};
+                            sounds[] 														= {"StandardSound","SilencedSound"};
                             class BaseSoundModeType
                             {
-                                    weaponSoundEffect = "DefaultRifle";
-                                    closure1[] = {};
-                                    closure2[] = {};
-                                    soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                                    weaponSoundEffect 										= "DefaultRifle";
+                                    closure1[] 												= {};
+                                    closure2[] 												= {};
+                                    soundClosure[] 											= {"closure1",0.5,"closure2",0.5};
                             };
                             class StandardSound: BaseSoundModeType
                             {
-                                    begin1[] = {"\TEI_Weapons\MG\data\sounds\M73_1.wss",1.0,1,2000};
-									begin2[] = {"\TEI_Weapons\MG\data\sounds\M73_2.wss",1.0,1,2000};
-									soundBegin[] = {"begin1",0.34,"begin2",0.33};
+                                    begin1[] 												= {"\TEI_Weapons\MG\data\sounds\M73_1.wss",1.0,1,2000};
+									begin2[] 												= {"\TEI_Weapons\MG\data\sounds\M73_2.wss",1.0,1,2000};
+									soundBegin[] 											= {"begin1",0.34,"begin2",0.33};
                             };
                             class SilencedSound: BaseSoundModeType
                             {
-                                    begin1[] = {"A3\sounds_f\weapons\silenced\silent-23",1.0,1,600};
-                                    begin2[] = {"A3\sounds_f\weapons\silenced\silent-24",1.0,1,600};
-                                    soundBegin[] = {"begin1",0.5,"begin2",0.5};
+                                    begin1[] 												= {"A3\sounds_f\weapons\silenced\silent-23",1.0,1,600};
+                                    begin2[] 												= {"A3\sounds_f\weapons\silenced\silent-24",1.0,1,600};
+                                    soundBegin[] 											= {"begin1",0.5,"begin2",0.5};
                             };
-                            reloadTime = 0.0789; 		
-                            dispersion = 0.00085;
-                            recoil = "recoil_single_mx";
-							recoilProne = "recoil_single_prone_mx";
-                            minRange = 2;
-                            minRangeProbab = 0.3;
+                            reloadTime 														= 0.0789; 		
+                            dispersion 														= 0.00075;
+                            recoil 															= "recoil_single_mx";
+							recoilProne  													= "recoil_single_prone_mx";
+                            minRange  														= 2;
+                            minRangeProbab  												= 0.3;
                             midRange = 300;
                             midRangeProbab = 0.7;
                             maxRange = 600;
@@ -209,18 +195,15 @@
                     displayName                                                             = "M73 CQC Light Machine Gun";
                     descriptionShort                                                        = "UNSC Light Machine Gun (CQC Variant)";
                     inertia                                                                 = 0.75;
-					maxRecoilSway = 0.0115;
-					swayDecaySpeed = 1.15;
-                    class GunParticles: GunParticles {};
-                    modes[] = {"Single","FullAuto"};
+					scope																	= 1;
+					maxRecoilSway 															= 0.0115;
+					swayDecaySpeed 															= 1.15;
+                    modes[] 																= {"Single","FullAuto"};
                     class Single: Single {};
                     class FullAuto: FullAuto {};
                     class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
                     {
 							mass = 140;
-                            class MuzzleSlot: MuzzleSlot {};
-                            class CowsSlot: CowsSlot {};
-                            class PointerSlot: PointerSlot {};
                     };
             };
 			
@@ -239,7 +222,7 @@
 		
 		class TEI_M247: EBR_Base_F
             {
-                    scope                                                                   = 2;
+                    scope                                                                   = 1;
                     handAnim[]                                                              = {"OFP2_ManSkeleton", "\A3\weapons_f\Machineguns\M200\data\Anim\M200.rtm"};
                     model                                                                   = "\TEI_Weapons\MG\M247.p3d";
                     displayName                                                             = "M247 Medium Machine Gun";

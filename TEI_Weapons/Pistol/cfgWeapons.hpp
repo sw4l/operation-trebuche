@@ -14,10 +14,7 @@ class CfgWeapons
 	class InventoryFlashLightItem_Base_F;
 	class InventoryMuzzleItem_Base_F;
 	class GunParticles;
-	class Pistol_Base_F: Pistol
-	{
-		class WeaponSlotsInfo;
-	};
+	class Pistol_Base_F;
 	
 	//ATTACHMENTS
 	

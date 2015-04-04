@@ -65,15 +65,7 @@ class CfgWeapons
 		
 	//WEAPONS
 	
-	class Rifle_Long_Base_F;
-	class EBR_Base_F: Rifle_Long_Base_F
-	{
-		class WeaponSlotsInfo
-		{
-			class SlotInfo;
-		};
-		class GunParticles;
-	};
+	class EBR_Base_F;
 	class TEI_BR55HB: EBR_Base_F
 	{
 		scope 										= 2;

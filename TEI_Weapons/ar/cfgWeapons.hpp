@@ -47,7 +47,7 @@ class Mode_FullAuto;
                                     };
                                     class MA5B_AC_IS_Scope: MA5B_BUIS
                                     {
-                                            opticsID                                                = 2;
+                                            opticsID                                        = 2;
                                             useModelOptics                                  = 1;
                                             opticsZoomMin                                   = 0.075;
                                             opticsZoomMax                                   = 0.0523;
@@ -146,15 +146,7 @@ class Mode_FullAuto;
      
             //WEAPONS
      
-            class Rifle_Long_Base_F;
-            class EBR_Base_F: Rifle_Long_Base_F
-            {
-                    class WeaponSlotsInfo
-                    {
-                            class SlotInfo;
-                    };
-                    class GunParticles;
-            };
+            class EBR_Base_F;
             class  UGL_F;
             class TEI_MA5B: EBR_Base_F
             {
@@ -163,8 +155,8 @@ class Mode_FullAuto;
                     model                                                                   = "\TEI_Weapons\AR\AR.p3d";
                     displayName                                                             = "MA5B ICWS Assault Rifle";
                     descriptionShort                                                        = "UNSC Assault Rifle";
-                    picture = "\TEI_weapons\ar\icons\ar_a.paa";
-					drySound[] = {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
+                    picture 																= "\TEI_weapons\ar\icons\ar_a.paa";
+					drySound[] 																= {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
                     magazines[]                                                             = {"TEI_60Rnd_762x51_Mag","TEI_60Rnd_762x51_Mag_Tracer","TEI_32Rnd_762x51_Mag","TEI_32Rnd_762x51_Mag_Tracer"};
                     modelOptics                                                             = "-";
                     dexterity                                                               = 3.25;
