@@ -63,7 +63,7 @@ class CfgVehicles //This configures units and backpacks
 	{
 			side 																		= 1;
 			scope 																		= 2;
-			author																		= "Eridanus Insurrection Team";
+			author																		= "Article 2 Studios";
 			model 																		= "OPTRE_Vehicles\HEV\hev_pod.p3d";
 			displayName 																= "SOEIV Human Entry Vehicle";
 			nameSound																	= "chopper";
@@ -135,7 +135,7 @@ class CfgVehicles //This configures units and backpacks
 	class OPTRE_HEV_Door: RoadCone_F
 	{
 			scope 																		= 1;
-			author																		= "Eridanus Insurrection Team";
+			author																		= "Article 2 Studios";
 			model 																		= "OPTRE_Vehicles\HEV\hev_door.p3d";
 			displayName 																= "HEV Door";
 			vehicleClass 																= "OPTRE_UNSC_HEV_class";
@@ -147,7 +147,7 @@ class CfgVehicles //This configures units and backpacks
 	class OPTRE_HEV_Chute: RoadCone_F
 	{
 			scope 																		= 1;
-			author																		= "Eridanus Insurrection Team";
+			author																		= "Article 2 Studios";
 			model 																		= "OPTRE_Vehicles\HEV\hev_chute.p3d";
 			displayName 																= "HEV Chute";
 			vehicleClass 																= "OPTRE_UNSC_HEV_class";

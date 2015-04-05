@@ -42,7 +42,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "ODST Grave";
 		model = "\OPTRE_Misc\Objects\odst_grave.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_soldier_grave: static
@@ -52,7 +52,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Soldier Grave";
 		model = "\OPTRE_Misc\Objects\soldier_grave.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_monument: static
@@ -62,7 +62,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Monument";
 		model = "\OPTRE_Misc\Objects\monument.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_kiosk_1: static
@@ -72,7 +72,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Kiosk 1";
 		model = "\OPTRE_Misc\Objects\kiosk_1.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 		hiddenSelections[]= {"camo1","camo2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Misc\Objects\data\kiosk1_poster.paa"};
@@ -84,7 +84,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Kiosk 2";
 		model = "\OPTRE_Misc\Objects\kiosk_2.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 		hiddenSelections[]= {"camo1","camo2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Misc\Objects\data\kiosk2_poster.paa"};
@@ -96,7 +96,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Kiosk 3";
 		model = "\OPTRE_Misc\Objects\kiosk_3.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 		hiddenSelections[]= {"camo1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Misc\Objects\data\kiosk3_poster.paa"};
@@ -108,7 +108,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Holo Table";
 		model = "\OPTRE_Misc\Objects\holotable.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 		hiddenSelections[]= {"map_stratis"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {};

@@ -36,7 +36,7 @@ class CfgVehicles //This configures units and backpacks
 	{
 		scope																					= 1;
 		faction																					= "OPTRE_UNSC";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName																				= "ODST [Heavy]";
 		vehicleClass																			= "OPTRE_UNSC_Man_ODST_class";
 		uniformAccessories[]																	= {};
@@ -105,7 +105,7 @@ class CfgVehicles //This configures units and backpacks
 	class OPTRE_UNSC_ODST_Soldier_light: OPTRE_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
 	{
 		scope																				= 1;
-		author																				= "Eridanus Insurrection Team";
+		author																				= "Article 2 Studios";
 		displayName																			= "ODST [Light]";
 		uniformAccessories[]																		= {};
 		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_light";
@@ -147,7 +147,7 @@ class CfgVehicles //This configures units and backpacks
 	{
 		scope																				= 1;
 		faction																				= "OPTRE_UNSC";
-		author																				= "Eridanus Insurrection Team";
+		author																				= "Article 2 Studios";
 		displayName																			= "ODST [Medium]";
 		vehicleClass																			= "OPTRE_UNSC_Man_ODST_class";
 		uniformAccessories[]																		= {};
@@ -192,7 +192,7 @@ class CfgVehicles //This configures units and backpacks
 	{
 		scope																				= 1;
 		faction																				= "OPTRE_UNSC";
-		author																				= "Eridanus Insurrection Team";
+		author																				= "Article 2 Studios";
 		displayName																			= "ODST [Sniper]";
 		vehicleClass																			= "OPTRE_UNSC_Man_ODST_class";
 		uniformAccessories[]																		= {};
@@ -237,7 +237,7 @@ class CfgVehicles //This configures units and backpacks
 	{
 		scope																				= 1;
 		faction																				= "OPTRE_UNSC";
-		author																				= "Eridanus Insurrection Team";
+		author																				= "Article 2 Studios";
 		displayName																			= "ODST [Medic]";
 		vehicleClass																			= "OPTRE_UNSC_Man_ODST_class";
 		uniformAccessories[]																		= {};
@@ -281,7 +281,7 @@ class CfgVehicles //This configures units and backpacks
 	class OPTRE_UNSC_ODST_Soldier_scorch: OPTRE_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
 	{
 		scope																					= 2;
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		attendant 																				= 1;
 		engineer 																				= 1;
 		canDeactivateMines 																		= 1;
@@ -304,7 +304,7 @@ class CfgVehicles //This configures units and backpacks
 		class OPTRE_UNSC_ODST_Soldier_zero: OPTRE_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
 	{
 		scope																					= 2;
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		attendant 																				= 1;
 		engineer 																				= 1;
 		canDeactivateMines 																		= 1;
@@ -327,7 +327,7 @@ class CfgVehicles //This configures units and backpacks
 		class OPTRE_UNSC_ODST_Soldier_thedog: OPTRE_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
 	{
 		scope																					= 2;
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		attendant 																				= 1;
 		engineer 																				= 1;
 		canDeactivateMines 																		= 1;
@@ -351,7 +351,7 @@ class CfgVehicles //This configures units and backpacks
 	{
 		scope																				= 2;
 		faction																				= "OPTRE_UNSC";
-		author																				= "Eridanus Insurrection Team";
+		author																				= "Article 2 Studios";
 		displayName																			= "ODST Instructor";
 		vehicleClass																			= "OPTRE_UNSC_Man_ODST_class";
 		uniformAccessories[]																		= {};
@@ -373,7 +373,7 @@ class CfgVehicles //This configures units and backpacks
 	{
 		scope																				= 2;
 		faction																				= "OPTRE_UNSC";
-		author																				= "Eridanus Insurrection Team";
+		author																				= "Article 2 Studios";
 		displayName																			= "ODST Recruit";
 		vehicleClass																			= "OPTRE_UNSC_Man_ODST_class";
 		uniformAccessories[]																		= {};
@@ -556,7 +556,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_uniform_base: U_B_CombatUniform_mcam //This is the other part of configuring the uniform, the actual uniform item
 	{
 		scope																					= 0;
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName																				= "-";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_uniform.paa";
 		model																					= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -572,7 +572,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_uniform: OPTRE_UNSC_ODST_uniform_base
 	{
 		scope																					= 2;
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName																				= "[UNSC] ODST Undersuit";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_uniform.paa";
 		class ItemInfo: UniformItem
@@ -587,7 +587,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_uniform_light: OPTRE_UNSC_ODST_uniform_base
 	{
 		scope																					= 2;
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName																				= "[UNSC] ODST Light Undersuit";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_uniform.paa";
 		class ItemInfo: UniformItem
@@ -602,7 +602,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_uniform_medium: OPTRE_UNSC_ODST_uniform_base
 	{
 		scope																					= 2;
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_uniform.paa";
 		displayName																				= "[UNSC] ODST Medium Undersuit";
 		class ItemInfo: UniformItem
@@ -617,7 +617,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_uniform_Sniper: OPTRE_UNSC_ODST_uniform_base
 	{
 		scope																					= 2;
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_uniform_left.paa";
 		displayName																				= "[UNSC] ODST Sniper Undersuit";
 		class ItemInfo: UniformItem
@@ -632,7 +632,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_uniform_Medic: OPTRE_UNSC_ODST_uniform_base
 	{
 		scope																					= 2;
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_uniform_med.paa";
 		displayName																				= "[UNSC] ODST Medic Undersuit";
 		class ItemInfo: UniformItem
@@ -647,7 +647,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_uniform_scorch: OPTRE_UNSC_ODST_uniform
 	{
 		scope																					= 2;
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName																				= "[UNSC] Scorch's ODST Undersuit";
 		class ItemInfo: ItemInfo
 		{
@@ -657,7 +657,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_uniform_thedog: OPTRE_UNSC_ODST_uniform
 	{
 		scope																					= 2;
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName																				= "[UNSC] TheDog's ODST Undersuit";
 		class ItemInfo: ItemInfo
 		{
@@ -667,7 +667,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_uniform_zero: OPTRE_UNSC_ODST_uniform
 	{
 		scope																					= 2;
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName																				= "[UNSC] Zero's ODST Undersuit";
 		class ItemInfo: ItemInfo
 		{
@@ -678,7 +678,7 @@ class cfgWeapons
 	{
 		scope																					= 2;
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_instr.paa";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName																				= "[UNSC] ODST Instructor Uniform";
 		class ItemInfo: UniformItem
 		{
@@ -693,7 +693,7 @@ class cfgWeapons
 	{
 		scope																					= 2;
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_recruit.paa";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName																				= "[UNSC] ODST Recruit Uniform";
 		class ItemInfo: UniformItem
 		{
@@ -710,7 +710,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_vest_base: V_PlateCarrier1_rgr //The vest base class
 	{	
 		scope 																					= 0; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName  																			= "-"; /// how would the stuff be displayed in inventory and on ground
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_vest.paa"; /// this icon fits the vest surprisingly well
 		model   																				= "\OPTRE_UNSC_Units\ODST\vest.p3d"; /// what model does the vest use
@@ -727,7 +727,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_vest: OPTRE_UNSC_ODST_vest_base
 	{	
 		scope 																					= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName  																			= "[UNSC] ODST M53 Body Armor"; /// how would the stuff be displayed in inventory and on ground
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_vest.paa"; /// this icon fits the vest surprisingly well
 		model     																				= "\OPTRE_UNSC_Units\ODST\vest.p3d"; /// what model does the vest use
@@ -748,7 +748,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_vest_medic: OPTRE_UNSC_ODST_vest_base
 	{	
 		scope 																					= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName  																			= "[UNSC] ODST M53 Body Armor (Medic)"; /// how would the stuff be displayed in inventory and on ground
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_vest_med.paa"; /// this icon fits the vest surprisingly well
 		model     																				= "\OPTRE_UNSC_Units\ODST\vest.p3d"; /// what model does the vest use
@@ -769,7 +769,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_vest_scorch: OPTRE_UNSC_ODST_vest
 	{	
 		scope 																					= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName  																			= "[UNSC] Scorch's ODST Armor"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_scorch_co.paa",""}; /// what texture is going to be used
@@ -782,7 +782,7 @@ class cfgWeapons
 		class OPTRE_UNSC_ODST_vest_thedog: OPTRE_UNSC_ODST_vest
 	{	
 		scope 																					= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName  																			= "[UNSC] TheDog's ODST Armor"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\odst_vest_thedog_co.paa",""}; /// what texture is going to be used
@@ -795,7 +795,7 @@ class cfgWeapons
 		class OPTRE_UNSC_ODST_vest_zero: OPTRE_UNSC_ODST_vest
 	{	
 		scope 																					= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName  																			= "[UNSC] Zero's ODST Armor"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_zero_co.paa",""}; /// what texture is going to be used
@@ -808,7 +808,7 @@ class cfgWeapons
 		class OPTRE_UNSC_ODST_vest_stirls: OPTRE_UNSC_ODST_vest
 	{	
 		scope 																					= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName  																			= "[UNSC] Stirl's ODST Armor"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_stirls_co.paa",""}; /// what texture is going to be used
@@ -824,7 +824,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_helmet_base: H_HelmetB
 	{	
 		scope   																				= 0; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName    																			= "-"; /// how would the stuff be displayed in inventory and on ground
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet.paa"; /// this icon fits the vest surprisingly well
 		model     																				= "\OPTRE_UNSC_Units\ODST\helmet.p3d"; /// what model does the vest use
@@ -845,7 +845,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_helmet: OPTRE_UNSC_ODST_helmet_base
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet.paa";
 		displayName    																			= "[UNSC] ODST CH253 Helmet"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
@@ -864,7 +864,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_helmet_recon: OPTRE_UNSC_ODST_helmet_base
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet_recon.paa";
 		displayName    																			= "[UNSC] ODST CH253 Helmet (Recon)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_communication","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
@@ -883,7 +883,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_helmet_sniper: OPTRE_UNSC_ODST_helmet_base
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet_sniper.paa";
 		displayName    																			= "[UNSC] ODST CH253 Helmet (Sniper)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather", "attach_laser"}; /// what selection in model could have different textures
@@ -902,7 +902,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_helmet_com: OPTRE_UNSC_ODST_helmet_base
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet_como.paa";
 		displayName    																			= "[UNSC] ODST CH253 Helmet (Comms)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_rebreather","attach_rangefinder","attach_laser"}; /// what selection in model could have different textures
@@ -921,7 +921,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_helmet_Medic: OPTRE_UNSC_ODST_helmet_base
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet_med.paa";
 		displayName    																			= "[UNSC] ODST CH253 Helmet (Medic)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather","attach_rangefinder", "attach_laser"}; /// what selection in model could have different textures
@@ -940,7 +940,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_helmet_scorch: OPTRE_UNSC_ODST_helmet
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName    																			= "[UNSC] Scorch's ODST Helmet"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_rangefinder"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa"}; /// what texture is going to be used
@@ -954,7 +954,7 @@ class cfgWeapons
 		class OPTRE_UNSC_ODST_helmet_thedog: OPTRE_UNSC_ODST_helmet_scorch
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName    																			= "[UNSC] TheDog's ODST Helmet"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa","OPTRE_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa"}; /// what texture is going to be used
@@ -968,7 +968,7 @@ class cfgWeapons
 		class OPTRE_UNSC_ODST_helmet_zero: OPTRE_UNSC_ODST_helmet_scorch
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName    																			= "[UNSC] Zero's ODST Helmet"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa"}; /// what texture is going to be used
@@ -982,7 +982,7 @@ class cfgWeapons
 		class OPTRE_UNSC_ODST_helmet_stirls: OPTRE_UNSC_ODST_helmet_scorch
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName    																			= "[UNSC] Stirl's ODST Helmet"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_stirls_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_stirls_co.paa"}; /// what texture is going to be used
@@ -996,7 +996,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_helmet_dp: OPTRE_UNSC_ODST_helmet_base
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet.paa";
 		displayName    																			= "[UNSC] ODST CH253 Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
@@ -1017,7 +1017,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_helmet_sniper_dp: OPTRE_UNSC_ODST_helmet_base
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet_sniper.paa";
 		displayName    																			= "[UNSC] ODST CH253 Helmet (Sniper) [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather", "attach_laser"}; /// what selection in model could have different textures
@@ -1038,7 +1038,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_helmet_com_dp: OPTRE_UNSC_ODST_helmet_base
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet_como.paa";
 		displayName    																			= "[UNSC] ODST CH253 Helmet (Comms) [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_rebreather","attach_rangefinder","attach_laser"}; /// what selection in model could have different textures
@@ -1059,7 +1059,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_helmet_recon_dp: OPTRE_UNSC_ODST_helmet_base
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet_recon.paa";
 		displayName    																			= "[UNSC] ODST CH253 Helmet (Recon) [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_rebreather","attach_rangefinder","attach_laser"}; /// what selection in model could have different textures
@@ -1080,7 +1080,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_helmet_Medic_dp: OPTRE_UNSC_ODST_helmet_base
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet_med.paa";
 		displayName    																			= "[UNSC] ODST CH253 Helmet (Medic) [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather","attach_rangefinder", "attach_laser"}; /// what selection in model could have different textures
@@ -1101,7 +1101,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_helmet_thedog_dp: OPTRE_UNSC_ODST_helmet_scorch
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName    																			= "[UNSC] TheDog's ODST Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa","OPTRE_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa"}; /// what texture is going to be used
@@ -1117,7 +1117,7 @@ class cfgWeapons
 		class OPTRE_UNSC_ODST_helmet_scorch_dp: OPTRE_UNSC_ODST_helmet_scorch
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName    																			= "[UNSC] Scorch's ODST Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_rangefinder"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_ca.paa"}; /// what texture is going to be used
@@ -1133,7 +1133,7 @@ class cfgWeapons
 			class OPTRE_UNSC_ODST_helmet_stirls_dp: OPTRE_UNSC_ODST_helmet_scorch
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName    																			= "[UNSC] Stirl's ODST Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_stirls_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_stirls_co.paa"}; /// what texture is going to be used
@@ -1149,7 +1149,7 @@ class cfgWeapons
 			class OPTRE_UNSC_ODST_helmet_zero_dp: OPTRE_UNSC_ODST_helmet_scorch
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		displayName    																			= "[UNSC] Zero's ODST Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa"}; /// what texture is going to be used
@@ -1165,7 +1165,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Recon_helmet: OPTRE_UNSC_ODST_helmet_base
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_recon.paa";
 		displayName    																			= "[UNSC] ONI Recon Helmet"; /// how would the stuff be displayed in inventory and on ground
 		model     																				= "\OPTRE_UNSC_Units\ODST\recon_helmet.p3d"; /// what model does the vest use
@@ -1185,7 +1185,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Recon_helmet_dp: OPTRE_UNSC_ODST_helmet_base
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_recon.paa";
 		displayName    																			= "[UNSC] ONI Recon Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
 		model     																				= "\OPTRE_UNSC_Units\ODST\recon_helmet.p3d"; /// what model does the vest use
@@ -1205,7 +1205,7 @@ class cfgWeapons
 	class OPTRE_UNSC_ODST_InstructorHat: OPTRE_UNSC_ODST_helmet_base
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_hat.paa";
 		displayName    																			= "[UNSC] ODST Instructor Cap"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   																	= {"camo1"}; /// what selection in model could have different textures

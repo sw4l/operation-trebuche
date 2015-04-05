@@ -75,7 +75,7 @@ class CfgVehicles
 				speechPlural[]={"veh_vehicle_MRAP_p"};
 			};
 		};
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		displayName="";
 		class Library
 		{
@@ -793,7 +793,7 @@ class CfgVehicles
 	{
 		displayName="M12 FAV Warthog (Unarmed)";
 		scope=2;
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		faction="OPTRE_UNSC";
 		side=1;
 		transportSoldier=0;
@@ -855,7 +855,7 @@ class CfgVehicles
 	class OPTRE_M12_FAV_black:OPTRE_M12_FAV
 	{
 		displayName="M12 FAV Warthog (Unarmed) [Black]";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_black_co.paa"};
 	};
@@ -863,21 +863,21 @@ class CfgVehicles
 	{
 		displayName="M12 FAV Warthog (Unarmed) [Tan]";
 		crew="OPTRE_UNSC_Army_D_Rifleman_AR";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_tan_co.paa"};
 	};
 	class OPTRE_M12_FAV_snow:OPTRE_M12_FAV
 	{
 		displayName="M12 FAV Warthog (Unarmed) [Snow]";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_snow_co.paa"};
 	};
 	class OPTRE_M12_FAV_ins:OPTRE_M12_FAV
 	{
 		displayName="M12 FAV Warthog (Unarmed) [Innie]";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_ins_co.paa"};
 		vehicleClass="OPTRE_Ins_Vehicle_class";
@@ -893,7 +893,7 @@ class CfgVehicles
 		displayName= "M831 TT Warthog (Transport)";
 		scope=2;
 		model="OPTRE_Vehicles\Warthog\Warthog_TT.p3d";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		faction="OPTRE_UNSC";
 		side=1;
 		transportSoldier=0;
@@ -1011,7 +1011,7 @@ class CfgVehicles
 	class OPTRE_M813_TT_black:OPTRE_M813_TT
 	{
 		displayName="M831 TT Warthog (Transport) [Black]";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_antenna"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_black_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_black_co.paa"};
 	};
@@ -1019,14 +1019,14 @@ class CfgVehicles
 	{
 		displayName="M831 TT Warthog (Transport) [Tan]";
 		crew="OPTRE_UNSC_Army_D_Rifleman_AR";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_antenna"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_tan_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_tan_co.paa"};
 	};
 	class OPTRE_M813_TT_snow:OPTRE_M813_TT
 	{
 		displayName="M831 TT Warthog (Transport) [Snow]";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_antenna"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_snow_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_snow_co.paa"};
 	};
@@ -1038,7 +1038,7 @@ class CfgVehicles
 	class OPTRE_M12_LRV:OPTRE_M12_FAV
 	{
 		displayName="M12 LRV Warthog (MG)";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		faction="OPTRE_UNSC";
 		model="OPTRE_Vehicles\Warthog\Warthog_MG.p3d";
 		transportSoldier=0;
@@ -1187,7 +1187,7 @@ class CfgVehicles
 	class OPTRE_M12_LRV_black:OPTRE_M12_LRV
 	{
 		displayName="M12 LRV Warthog (MG) [Black]";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_black_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_black_co.paa"};
 	};
@@ -1195,21 +1195,21 @@ class CfgVehicles
 	{
 		displayName="M12 LRV Warthog (MG) [Tan]";
 		crew="OPTRE_UNSC_Army_D_Rifleman_AR";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_tan_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_tan_co.paa"};
 	};
 	class OPTRE_M12_LRV_snow:OPTRE_M12_LRV
 	{
 		displayName="M12 LRV Warthog (MG) [Snow]";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_snow_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_snow_co.paa"};
 	};
 	class OPTRE_M12_LRV_ins:OPTRE_M12_LRV
 	{
 		displayName="M12 LRV Warthog (MG) [Innie]";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_ins_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_ins_CO.paa"};
 		vehicleClass="OPTRE_Ins_Vehicle_class";
@@ -1383,7 +1383,7 @@ class CfgVehicles
 	class OPTRE_M12G1_LRV_black:OPTRE_M12G1_LRV
 	{
 		displayName="M12G1 Warthog (Gauss) [Black]";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_black_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_black_co.paa"};
 	};
@@ -1391,14 +1391,14 @@ class CfgVehicles
 	{
 		displayName="M12G1 Warthog (Gauss) [Tan]";
 		crew="OPTRE_UNSC_Army_D_Rifleman_AR";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_tan_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_tan_co.paa"};
 	};
 	class OPTRE_M12G1_LRV_snow:OPTRE_M12G1_LRV
 	{
 		displayName="M12G1 Warthog (Gauss) [Snow]";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_snow_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_snow_co.paa"};
 	};
@@ -1554,7 +1554,7 @@ class CfgVehicles
 	class OPTRE_M12A1_LRV_black:OPTRE_M12A1_LRV
 	{
 		displayName="M12A1 Warthog (Rocket) [Black]";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_black_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_black_co.paa"};
 	};
@@ -1562,14 +1562,14 @@ class CfgVehicles
 	{
 		displayName="M12A1 Warthog (Rocket) [Tan]";
 		crew="OPTRE_UNSC_Army_D_Rifleman_AR";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_tan_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_tan_co.paa"};
 	};
 	class OPTRE_M12A1_LRV_snow:OPTRE_M12A1_LRV
 	{
 		displayName="M12A1 Warthog (Rocket) [Snow]";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_snow_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_snow_co.paa"};
 	};
@@ -1754,7 +1754,7 @@ class CfgVehicles
 	};
 	class OPTRE_M12R_AA_black:OPTRE_M12R_AA
 	{
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		displayName="M12R Warthog (AA) [Black]";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_black_co.paa","OPTRE_Vehicles\Warthog\data\warthog_aa_black_ca.paa"};
@@ -1790,7 +1790,7 @@ class CfgVehicles
 	class OPTRE_M12_FAV_APC:OPTRE_M12_FAV
 	{
 		displayName="M12 FAV Warthog (APC)";
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		model="OPTRE_Vehicles\Warthog\Warthog_APC.p3d";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_ins_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_ins_CO.paa"};

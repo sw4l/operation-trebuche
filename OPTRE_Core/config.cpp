@@ -7,7 +7,7 @@ class CfgPatches //This configures the identification of the pbo to the game
 		requiredVersion 																		= 0.1;
 		version																					= 0.1;
 		requiredAddons[] 																		= {"Extended_EventHandlers", "cba_main", "A3_Map_Stratis"};
-		author[] 																				= {"Eridanus Insurrection Team"};
+		author[] 																				= {"Article 2 Studios"};
 		fileName 																				= "OPTRE_Core.pbo";
 	};
 };
@@ -75,7 +75,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Backpack_class
 	{
 		displayName 																			= "Backpacks (UNSC)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -83,7 +83,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Vehicle_class
 	{
 		displayName 																			= "Cars (UNSC)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -91,7 +91,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Armored_class
 	{
 		displayName 																			= "Armored (UNSC)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -99,7 +99,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Air_class
 	{
 		displayName 																			= "Air (UNSC)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -107,7 +107,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Auto_class
 	{
 		displayName 																			= "Autonomous (UNSC)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -115,7 +115,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Man_Army_class
 	{
 		displayName 																			= "Men (Army)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -123,7 +123,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Woman_Army_class
 	{
 		displayName 																			= "Women (Army)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -131,7 +131,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Man_Army_W_class
 	{
 		displayName 																			= "Men (Army/Woodland)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -139,7 +139,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Man_Army_D_class
 	{
 		displayName 																			= "Men (Army/Desert)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -147,7 +147,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Man_Marines_class
 	{
 		displayName 																			= "Men (Marines)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -155,7 +155,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Man_ODST_class
 	{
 		displayName 																			= "Men (ODST)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -163,7 +163,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Man_Special_class
 	{
 		displayName																				= "Men (Special)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -171,7 +171,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Object_class
 	{
 		displayName 																			= "Objects (UNSC)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -179,7 +179,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Structure_class
 	{
 		displayName 																			= "Structures (UNSC)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -187,7 +187,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Fortification_class
 	{
 		displayName 																			= "Fortifications (UNSC)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -195,7 +195,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Ammo_class
 	{
 		displayName 																			= "Ammo (UNSC)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -203,7 +203,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_HEV_class 
 	{
 		displayName 																			= "HEVs (UNSC)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -211,7 +211,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Ins_Backpack_class
 	{
 		displayName 																			= "Backpacks (Insurrection)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -219,7 +219,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Ins_Vehicle_class
 	{
 		displayName 																			= "Cars (Insurrection)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -227,7 +227,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Ins_Armored_class
 	{
 		displayName 																			= "Armored (Insurrection)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -235,7 +235,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Ins_Air_class
 	{
 		displayName 																			= "Air (Insurrection)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -243,7 +243,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Ins_Auto_class
 	{
 		displayName 																			= "Autonomous (Insurrection)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -251,7 +251,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Ins_Man_ER_class
 	{
 		displayName 																			= "Men (Eridanus Rebels)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -259,7 +259,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Ins_Man_URF_class
 	{
 		displayName 																			= "Men (United Rebel Front)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -267,7 +267,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Ins_Man_Special_class
 	{
 		displayName																				= "Men (Special)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -275,7 +275,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Ins_Object_class
 	{
 		displayName 																			= "Objects (Insurrection)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -283,7 +283,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Ins_Structure_class
 	{
 		displayName 																			= "Structures (Insurrection)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -291,7 +291,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Ins_Fortification_class
 	{
 		displayName 																			= "Fortifications (Insurrection)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -299,7 +299,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Ins_Ammo_class
 	{
 		displayName 																			= "Ammo (Insurrection)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -307,7 +307,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_NMPD_Man_class
 	{
 		displayName 																			= "Men (NMPD)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -315,7 +315,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_civ_Man_class
 	{
 		displayName 																			= "Men";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -323,7 +323,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Object_class 
 	{
 		displayName 																			= "Objects (OPTRE)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -331,7 +331,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Structure_class 
 	{
 		displayName 																			= "Structures (OPTRE)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -339,7 +339,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Item_class 
 	{
 		displayName 																			= "Items (OPTRE)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -347,7 +347,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Weapon_class 
 	{
 		displayName 																			= "Weapons (OPTRE)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
@@ -355,7 +355,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Ammo_class 
 	{
 		displayName 																			= "Ammo (OPTRE)";
-		author																					= "Eridanus Insurrection Team";
+		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;

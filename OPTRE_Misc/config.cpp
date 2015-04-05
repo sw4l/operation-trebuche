@@ -22,7 +22,7 @@ class CfgPatches //This configures the identification of the pbo to the game
 		weapons[] 																				= {""};																								
 		requiredVersion 																		= 0.1;
 		requiredAddons[] 																		= {"OPTRE_Core"};
-		author[] 																				= {"Eridanus Insurrection Team"};
+		author[] 																				= {"Article 2 Studios"};
 		fileName 																				= "OPTRE_Misc.pbo";
 	};
 };

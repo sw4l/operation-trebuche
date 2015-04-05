@@ -50,7 +50,7 @@ class CfgVehicles
 		scope											= 0;
 		faction											= "OPTRE_Ins";
 		side 											= 0;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName										= "Innie Base";
 		vehicleClass									= "OPTRE_Ins_Man_ER_class";
 		uniformAccessories[]							= {};
@@ -97,7 +97,7 @@ class CfgVehicles
 		scope											= 1;
 		faction											= "OPTRE_Ins";
 		side 											= 0;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName										= "Terrorist [OD]";
 		vehicleClass									= "OPTRE_Ins_Man_ER_class";
 		uniformAccessories[]							= {};
@@ -128,7 +128,7 @@ class CfgVehicles
         side                 	            = 0;
         scope                               = 1;
         faction                             = "OPTRE_Ins";
-        author                              = "Eridanus Insurrection Team";
+        author                              = "Article 2 Studios";
         displayName                         = "Insurgent (OD)";
         vehicleClass                  	    = "OPTRE_Ins_Man_ER_class";
         uniformClass                  	    = "OPTRE_Ins_ER_uniform_GGod";
@@ -323,7 +323,7 @@ class cfgWeapons
 	    class OPTRE_Ins_ER_uniform_GAtan: Uniform_Base
     {
         scope 											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
         displayName 									= "[INS] Insurrectionist Apparel (Tan)"; //In-Game name
 		picture = "\A3\characters_f_bootcamp\data\ui\icon_U_G_guerrilla_6_1_ca.paa";									
 		model											= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -339,7 +339,7 @@ class cfgWeapons
 	    class OPTRE_Ins_ER_uniform_GAgreen: Uniform_Base
     {
         scope 											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
         displayName 									= "[INS] Insurrectionist Apparel (Green)"; //In-Game name
 		picture = "\A3\characters_f_bootcamp\data\ui\icon_U_G_guerrilla_6_1_ca.paa";
 		model											= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -355,7 +355,7 @@ class cfgWeapons
 	class OPTRE_Ins_ER_uniform_GGod: Uniform_Base
     {
         scope 											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
         displayName 									= "[INS] Insurrectionist Garments (OD)"; //In-Game name
 		picture = "\A3\characters_f_bootcamp\data\ui\icon_U_G_guerrilla1_1_ca.paa";
 		model											= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -371,7 +371,7 @@ class cfgWeapons
 	class OPTRE_Ins_ER_uniform_GGgrey: Uniform_Base
     {
         scope 											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
         displayName 									= "[INS] Insurrectionist Garments (Grey)"; //In-Game name
 		picture = "\A3\characters_f_bootcamp\data\ui\icon_U_G_guerrilla1_1_ca.paa";
 		model											= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -387,7 +387,7 @@ class cfgWeapons
 	class OPTRE_Ins_ER_uniform_GSbrown: Uniform_Base
     {
         scope 											= 1;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
         displayName 									= "[INS] Insurrectionist Smocks (Brown)"; //In-Game name
 		picture = "\A3\characters_f_gamma\Guerrilla\data\ui\icon_U_G_guerrilla3_1_ca.paa";
 		model											= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -402,7 +402,7 @@ class cfgWeapons
 	class OPTRE_Ins_ER_uniform_GSod: Uniform_Base
     {
         scope 											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
         displayName 									= "[INS] Insurrectionist Smocks (OD)"; //In-Game name
 		picture = "\A3\characters_f_gamma\Guerrilla\data\ui\icon_U_G_guerrilla3_1_ca.paa";
 		model											= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";

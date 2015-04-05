@@ -36,7 +36,7 @@ class CfgVehicles //This configures units and backpacks
 	{
 		scope															= 0;
 		faction															= "OPTRE_UNSC";
-		author															= "Eridanus Insurrection Team";
+		author															= "Article 2 Studios";
 		displayName														= "-";
 		vehicleClass													= "OPTRE_UNSC_Man_Marines_class";
 		uniformAccessories[]											= {};
@@ -108,7 +108,7 @@ class CfgVehicles //This configures units and backpacks
 	{
 		scope															= 1;
 		faction															= "OPTRE_UNSC";
-		author															= "Eridanus Insurrection Team";
+		author															= "Article 2 Studios";
 		displayName														= "Rifleman [Heavy]";
 		vehicleClass													= "OPTRE_UNSC_Man_Marines_class";
 		uniformAccessories[]											= {};
@@ -153,7 +153,7 @@ class CfgVehicles //This configures units and backpacks
 	{
 		scope															= 1;
 		faction															= "OPTRE_UNSC";
-		author															= "Eridanus Insurrection Team";
+		author															= "Article 2 Studios";
 		displayName														= "Rifleman [Heavy/Vacuum]";
 		vehicleClass													= "OPTRE_UNSC_Man_Marines_class";
 		uniformAccessories[]											= {};
@@ -199,7 +199,7 @@ class OPTRE_UNSC_Marine_medium: OPTRE_UNSC_Marine_Soldier_Base //Configures the 
 	{
 		scope															= 1;
 		faction															= "OPTRE_UNSC";
-		author															= "Eridanus Insurrection Team";
+		author															= "Article 2 Studios";
 		displayName														= "Rifleman [Medium]";
 		vehicleClass													= "OPTRE_UNSC_Man_Marines_class";
 		uniformAccessories[]											= {};
@@ -244,7 +244,7 @@ class OPTRE_UNSC_Marine_medium: OPTRE_UNSC_Marine_Soldier_Base //Configures the 
 	{
 		scope															= 1;
 		faction															= "OPTRE_UNSC";
-		author															= "Eridanus Insurrection Team";
+		author															= "Article 2 Studios";
 		displayName														= "Rifleman [Light]";
 		vehicleClass													= "OPTRE_UNSC_Man_Marines_class";
 		uniformAccessories[]											= {};
@@ -315,7 +315,7 @@ class OPTRE_UNSC_Marine_medium: OPTRE_UNSC_Marine_Soldier_Base //Configures the 
 	{
 		scope															= 2;
 		faction															= "OPTRE_UNSC";
-		author															= "Eridanus Insurrection Team";
+		author															= "Article 2 Studios";
 		displayName														= "Pilot";
 		vehicleClass													= "OPTRE_UNSC_Man_Marines_class";
 		uniformAccessories[]											= {};
@@ -660,7 +660,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Marine_uniform_base: U_B_CombatUniform_mcam //This is the other part of configuring the uniform, the actual uniform item
 	{
 		scope															= 0;
-		author															= "Eridanus Insurrection Team";
+		author															= "Article 2 Studios";
 		displayName														= "-";
 		picture   														= "\OPTRE_UNSC_Units\marines\icons\marine_uniform_des.paa";
 		model															= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -676,7 +676,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Marine_uniform_heavy: OPTRE_UNSC_Marine_uniform_base
 	{
 		scope															= 2;
-		author															= "Eridanus Insurrection Team";
+		author															= "Article 2 Studios";
 		picture   														= "\OPTRE_UNSC_Units\marines\icons\marine_uniform_hvy.paa";
 		displayName														= "[UNSC] Marine BDU (Heavy)";
 		class ItemInfo: UniformItem
@@ -691,7 +691,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Marine_uniform_pilot: OPTRE_UNSC_Marine_uniform_base
 	{
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_uniform.paa";
 		displayName										= "[UNSC] Pilot Uniform [Marine]";
 		class ItemInfo: UniformItem
@@ -706,7 +706,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Marine_uniform_medium: OPTRE_UNSC_Marine_uniform_base
 	{
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_uniform_hvy.paa";
 		displayName										= "[UNSC] Marine BDU (Medium)";
 		class ItemInfo: UniformItem
@@ -721,7 +721,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Marine_uniform_light: OPTRE_UNSC_Marine_uniform_base
 	{
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_uniform.paa";
 		displayName										= "[UNSC] Marine BDU (Light)";
 		class ItemInfo: UniformItem
@@ -740,7 +740,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Marine_vest_base: V_PlateCarrier1_rgr //The vest base class
 	{	
 		scope 											= 0; /// scope needs to be 2 to have a visible class
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName  										= "-"; /// how would the stuff be displayed in inventory and on ground
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_vest.paa";
 		model   										= "\OPTRE_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
@@ -757,7 +757,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Marine_vest: OPTRE_UNSC_Marine_vest_base
 	{	
 		scope 											= 2; /// scope needs to be 2 to have a visible class
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName  										= "[UNSC] M52 Body Armor (Marine)"; /// how would the stuff be displayed in inventory and on ground
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_vest.paa";
 		model     										= "\OPTRE_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
@@ -778,7 +778,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Marine_vest_vacuum: OPTRE_UNSC_Marine_vest_base
 	{	
 		scope 											= 2; /// scope needs to be 2 to have a visible class
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName  									= "[UNSC] M52[V] Body Armor (Marine)"; /// how would the stuff be displayed in inventory and on ground
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_vest_vac.paa";
 		model     										= "\OPTRE_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
@@ -803,7 +803,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Marine_helmet_base: H_HelmetB
 	{	
 		scope   										= 0; /// scope needs to be 2 to have a visible class
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName    										= "-"; /// how would the stuff be displayed in inventory and on ground
 		picture   										= ""; /// this icon fits the vest surprisingly well
 		model     										= "\OPTRE_UNSC_Units\Army\helmet.p3d"; /// what model does the vest use
@@ -823,7 +823,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Marine_helmet: OPTRE_UNSC_Marine_helmet_base
 	{	
 		scope   										= 2; /// scope needs to be 2 to have a visible class
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_helmet.paa";
 		displayName    										= "[UNSC] CH252 Helmet (Marine)"; /// how would the stuff be displayed in inventory and on ground
 		model     										= "\OPTRE_UNSC_Units\Army\helmet.p3d"; /// what model does the vest use
@@ -843,7 +843,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Marine_helmet_vacuum: OPTRE_UNSC_Marine_helmet_base
 	{	
 		scope   										= 2; /// scope needs to be 2 to have a visible class
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName    										= "[UNSC] CH252[V] Helmet (Marine)"; /// how would the stuff be displayed in inventory and on ground
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_helmet_vac.paa";
 		model     										= "\OPTRE_UNSC_Units\Army\helmet.p3d"; /// what model does the vest use

@@ -35,7 +35,7 @@ class CfgVehicles //This configures units and backpacks
 	{
 		scope											= 0;
 		faction											= "OPTRE_UNSC";
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName										= "-";
 		vehicleClass									= "OPTRE_UNSC_Man_Army_class";
 		uniformAccessories[]							= {};
@@ -109,7 +109,7 @@ class CfgVehicles //This configures units and backpacks
 	class OPTRE_UNSC_Army_Pilot_WDL: OPTRE_UNSC_Army_Soldier_Base //Configures the unit part of the Units Uniform
 	{
 		scope											= 1;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName										= "Pilot [Woodland]";
 		uniformClass									= "OPTRE_UNSC_Army_Pilot_BDU_WDL";
 		model											= "\OPTRE_UNSC_Units\Army\uniform.p3d";
@@ -144,7 +144,7 @@ class CfgVehicles //This configures units and backpacks
 	class OPTRE_UNSC_Army_Rifleman_L_WDL: OPTRE_UNSC_Army_Pilot_WDL //Configures the unit part of the Units Uniform
 	{
 		scope											= 1;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName										= "Rifleman (Light) [Woodland]";
 		uniformClass									= "OPTRE_UNSC_Army_BDU_L_WDL";
 		linkedItems[] 									= {"OPTRE_UNSC_M52_Vest_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
@@ -177,7 +177,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Rifleman_WDL: OPTRE_UNSC_Army_Rifleman_L_WDL //Configures the unit part of the Units Uniform
 	{
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName										= "Rifleman [Woodland]";
 		uniformClass									= "OPTRE_UNSC_Army_BDU_WDL";
 		linkedItems[] 									= {"OPTRE_UNSC_M52_Vest_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
@@ -210,7 +210,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Rifleman_H_WDL: OPTRE_UNSC_Army_Rifleman_L_WDL //Configures the unit part of the Units Uniform
 	{
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName										= "Rifleman (Heavy) [Woodland]";
 		uniformClass									= "OPTRE_UNSC_Army_BDU_H_WDL";
 		linkedItems[] 									= {"OPTRE_UNSC_M52_Vest_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
@@ -243,7 +243,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Medic: OPTRE_UNSC_Army_Rifleman_L_WDL //Configures the unit part of the Units Uniform
 	{
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		attendant 										= 1;
 		displayName										= "Medic";
 		cost 											= 300000;
@@ -286,7 +286,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Pilot_DES: OPTRE_UNSC_Army_Pilot_WDL //Configures the unit part of the Units Uniform
 	{
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName										= "Pilot [Desert]";
 		uniformClass									= "OPTRE_UNSC_Army_Pilot_BDU_DES";
 		linkedItems[] 									= {"OPTRE_UNSC_M52V_Vest_DES","OPTRE_UNSC_CH252V_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
@@ -296,7 +296,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Rifleman_L_DES: OPTRE_UNSC_Army_Rifleman_L_WDL //Configures the unit part of the Units Uniform
 	{
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName										= "Rifleman (Light) [Desert]";
 		uniformClass									= "OPTRE_UNSC_Army_BDU_L_DES";
 		linkedItems[] 									= {"OPTRE_UNSC_M52_Vest_DES","OPTRE_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
@@ -306,7 +306,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Rifleman_DES: OPTRE_UNSC_Army_Rifleman_L_WDL //Configures the unit part of the Units Uniform
 	{
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName										= "Rifleman [Desert]";
 		uniformClass									= "OPTRE_UNSC_Army_BDU_DES";
 		linkedItems[] 									= {"OPTRE_UNSC_M52_Vest_DES","OPTRE_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
@@ -316,7 +316,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Rifleman_H_DES: OPTRE_UNSC_Army_Rifleman_L_WDL //Configures the unit part of the Units Uniform
 	{
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName										= "Rifleman (Heavy) [Desert]";
 		uniformClass									= "OPTRE_UNSC_Army_BDU_H_DES";
 		linkedItems[] 									= {"OPTRE_UNSC_M52_Vest_DES","OPTRE_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
@@ -919,7 +919,7 @@ class cfgWeapons
 	
 	class OPTRE_NVG: NVGoggles
 	{
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Neural Implant Vision Enhancement";
 		modelOptics 									= "";
 		class ItemInfo
@@ -937,7 +937,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Army_BDU_Base: U_B_CombatUniform_mcam //This is the other part of configuring the uniform, the actual uniform item
 	{
 		scope											= 0;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName										= "-";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl.paa";
 		model											= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -953,7 +953,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Army_Pilot_BDU_WDL: OPTRE_UNSC_Army_BDU_Base
 	{
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl.paa";
 		displayName										= "[UNSC] Pilot Coveralls [Woodland]";
 		class ItemInfo: ItemInfo
@@ -968,7 +968,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Army_BDU_L_WDL: OPTRE_UNSC_Army_BDU_Base
 	{
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl.paa";
 		displayName										= "[UNSC] Army BDU (Light/Woodland)";
 		class ItemInfo: UniformItem
@@ -983,7 +983,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Army_BDU_WDL: OPTRE_UNSC_Army_BDU_Base
 	{
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
 		displayName										= "[UNSC] Army BDU (Medium/Woodland)";
 		class ItemInfo: UniformItem
@@ -998,7 +998,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Army_BDU_H_WDL: OPTRE_UNSC_Army_BDU_Base
 	{
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Army BDU (Heavy/Woodland)";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
 		class ItemInfo: UniformItem
@@ -1013,7 +1013,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Army_Pilot_BDU_DES: OPTRE_UNSC_Army_BDU_Base
 	{
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl.paa";
 		displayName										= "[UNSC] Pilot Coveralls [Desert]";
 		class ItemInfo: UniformItem
@@ -1028,7 +1028,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Army_BDU_L_DES: OPTRE_UNSC_Army_BDU_Base
 	{
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_des.paa";
 		displayName										= "[UNSC] Army BDU (Light/Desert)";
 		class ItemInfo: UniformItem
@@ -1043,7 +1043,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Army_BDU_DES: OPTRE_UNSC_Army_BDU_Base
 	{
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_des_hvy.paa";
 		displayName										= "[UNSC] Army BDU (Medium/Desert)";
 		class ItemInfo: UniformItem
@@ -1058,7 +1058,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Army_BDU_H_DES: OPTRE_UNSC_Army_BDU_Base
 	{
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_des_hvy.paa";
 		displayName										= "[UNSC] Army BDU (Heavy/Desert)";
 		class ItemInfo: UniformItem
@@ -1073,7 +1073,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Army_BDU_Medic: OPTRE_UNSC_Army_BDU_Base
 	{
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_med.paa";
 		displayName										= "[UNSC] Medic BDU";
 		class ItemInfo: UniformItem
@@ -1091,7 +1091,7 @@ class cfgWeapons
 	class OPTRE_UNSC_M52_Vest_base: V_PlateCarrier1_rgr //The vest base class
 	{	
 		scope 											= 0; /// scope needs to be 2 to have a visible class
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName  									= "-"; /// how would the stuff be displayed in inventory and on ground
 		picture 										= ""; /// this icon fits the vest surprisingly well
 		model   										= "\OPTRE_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
@@ -1110,7 +1110,7 @@ class cfgWeapons
 	class OPTRE_UNSC_M52_Vest_WDL: OPTRE_UNSC_M52_Vest_base
 	{	
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_wdl.paa";
 		displayName  									= "[UNSC] M52 Body Armor (Woodland)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
@@ -1123,7 +1123,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_M52V_Vest_WDL: OPTRE_UNSC_M52_Vest_WDL
 	{	
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_wdl_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor (Woodland)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_knife","attach_pack"}; /// what selection in model could have different textures
@@ -1136,7 +1136,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_M52_Vest_DES: OPTRE_UNSC_M52_Vest_WDL
 	{	
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_des.paa";
 		displayName  									= "[UNSC] M52 Body Armor (Desert)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
@@ -1149,7 +1149,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_M52_Vest_Medic: OPTRE_UNSC_M52_Vest_WDL
 	{	
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_med.paa";
 		displayName  									= "[UNSC] M52 Body Armor (Medic)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
@@ -1162,7 +1162,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_M52V_Vest_Medic: OPTRE_UNSC_M52_Vest_WDL
 	{	
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_med_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor (Medic)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_knife"}; /// what selection in model could have different textures
@@ -1175,7 +1175,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_M52V_Vest_DES: OPTRE_UNSC_M52_Vest_WDL
 	{	
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_des_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor (Desert)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_knife","attach_pack"}; /// what selection in model could have different textures
@@ -1189,7 +1189,7 @@ class cfgWeapons
 	class OPTRE_UNSC_M52_Vest2_base: V_PlateCarrier1_rgr //The vest base class
 	{	
 		scope 											= 0; /// scope needs to be 2 to have a visible class
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName  									= "-"; /// how would the stuff be displayed in inventory and on ground
 		picture 										= ""; /// this icon fits the vest surprisingly well
 		model   										= "\OPTRE_UNSC_Units\Army\vest2.p3d"; /// what model does the vest use
@@ -1208,7 +1208,7 @@ class cfgWeapons
 	class OPTRE_UNSC_M52_Vest2_WDL: OPTRE_UNSC_M52_Vest2_base
 	{	
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_wdl_gil.paa";
 		displayName  									= "[UNSC] M52 Body Armor (Woodland) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","camo3","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
@@ -1222,7 +1222,7 @@ class cfgWeapons
 	class OPTRE_UNSC_M52_Vest2b_WDL: OPTRE_UNSC_M52_Vest2_WDL
 	{	
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_wdl_gil_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor (Woodland) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","camo3","attach_knife","attach_pack"}; /// what selection in model could have different textures
@@ -1236,7 +1236,7 @@ class cfgWeapons
 	class OPTRE_UNSC_M52_Vest2_DES: OPTRE_UNSC_M52_Vest2_base
 	{	
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_des_gil.paa";
 		displayName  									= "[UNSC] M52 Body Armor (Desert) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","camo3","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
@@ -1250,7 +1250,7 @@ class cfgWeapons
 	class OPTRE_UNSC_M52_Vest2b_DES: OPTRE_UNSC_M52_Vest2_DES
 	{	
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_des_gil_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor (Desert) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","camo3","attach_knife","attach_pack"}; /// what selection in model could have different textures
@@ -1267,7 +1267,7 @@ class cfgWeapons
 	class OPTRE_UNSC_CH252_Helmet_Base: H_HelmetB
 	{	
 		scope   										= 0; /// scope needs to be 2 to have a visible class
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName    									= "-"; /// how would the stuff be displayed in inventory and on ground
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_helmet_wdl.paa";
 		allowedFacewear[] 								={"G_Tactical_Clear","G_Tactical_Black","G_Bandanna_beast","G_Bandanna_blk","G_Bandanna_khk","G_Bandanna_oli","G_Bandanna_tan","G_Combat"};
@@ -1288,7 +1288,7 @@ class cfgWeapons
 	class OPTRE_UNSC_CH252_Helmet_WDL: OPTRE_UNSC_CH252_Helmet_Base
 	{	
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_helmet_wdl.paa";
 		displayName    									= "[UNSC] CH252 Helmet (Woodland)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_face"}; /// what selection in model could have different textures
@@ -1301,7 +1301,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_CH252V_Helmet_WDL: OPTRE_UNSC_CH252_Helmet_WDL
 	{	
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_helmet_wdl_vac.paa";
 		displayName    									= "[UNSC] CH252[V] Helmet (Woodland)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan"}; /// what selection in model could have different textures
@@ -1314,7 +1314,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_CH252_Helmet_DES: OPTRE_UNSC_CH252_Helmet_WDL
 	{	
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_helmet_des.paa";
 		displayName    									= "[UNSC] CH252 Helmet (Desert)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_face"}; /// what selection in model could have different textures
@@ -1327,7 +1327,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_CH252V_Helmet_DES: OPTRE_UNSC_CH252_Helmet_WDL
 	{	
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_helmet_des_vac.paa";
 		displayName    									= "[UNSC] CH252[V] Helmet (Desert)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan"}; /// what selection in model could have different textures
@@ -1340,7 +1340,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_CH252_Helmet_Medic: OPTRE_UNSC_CH252_Helmet_WDL
 	{	
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_helmet_med.paa";
 		displayName    									= "[UNSC] CH252 Helmet (Medic)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_face"}; /// what selection in model could have different textures
@@ -1353,7 +1353,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_CH252V_Helmet_Medic: OPTRE_UNSC_CH252_Helmet_WDL
 	{	
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_helmet_med_vac.paa";
 		displayName    									= "[UNSC] CH252[V] Helmet (Medic)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_face"}; /// what selection in model could have different textures
@@ -1367,7 +1367,7 @@ class cfgWeapons
 	class OPTRE_UNSC_CH252_Helmet2_Base: H_HelmetB
 	{	
 		scope   										= 0; /// scope needs to be 2 to have a visible class
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		displayName    									= "-"; /// how would the stuff be displayed in inventory and on ground
 		picture   										= ""; /// this icon fits the vest surprisingly well
 		allowedFacewear[] 								={"G_Tactical_Clear","G_Tactical_Black","G_Bandanna_beast","G_Bandanna_blk","G_Bandanna_khk","G_Bandanna_oli","G_Bandanna_tan","G_Combat"};
@@ -1388,7 +1388,7 @@ class cfgWeapons
 		class OPTRE_UNSC_CH252_Helmet2_WDL: OPTRE_UNSC_CH252_Helmet2_Base
 	{	
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_helmet_wdl_gil.paa";
 		displayName    									= "[UNSC] CH252 Helmet (Woodland) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","camo3","attach_face"}; /// what selection in model could have different textures
@@ -1402,7 +1402,7 @@ class cfgWeapons
 		class OPTRE_UNSC_CH252_Helmet2b_WDL: OPTRE_UNSC_CH252_Helmet2_WDL
 	{	
 		scope = 1;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_helmet_wdl_gil_vac.paa";
 		displayName    									= "[UNSC] CH252[V] Helmet (Woodland) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","camo3"}; /// what selection in model could have different textures
@@ -1416,7 +1416,7 @@ class cfgWeapons
 	class OPTRE_UNSC_CH252_Helmet2_DES: OPTRE_UNSC_CH252_Helmet2_Base
 	{	
 		scope											= 2;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_helmet_des_gil.paa";
 		displayName    									= "[UNSC] CH252 Helmet (Desert) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","camo3","attach_face"}; /// what selection in model could have different textures
@@ -1430,7 +1430,7 @@ class cfgWeapons
 		class OPTRE_UNSC_CH252_Helmet2b_DES: OPTRE_UNSC_CH252_Helmet2_DES
 	{	
 		scope = 1;
-		author											= "Eridanus Insurrection Team";
+		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_helmet_des_gil_vac.paa";
 		displayName    									= "[UNSC] CH252[V] Helmet (Desert) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","camo3"}; /// what selection in model could have different textures

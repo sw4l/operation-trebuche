@@ -44,7 +44,7 @@ class CfgVehicles
         side                 	            = 0;
         scope                               = 1;
         faction                             = "OPTRE_Ins";
-        author                              = "Eridanus Insurrection Team";
+        author                              = "Article 2 Studios";
         displayName                         = "-";
         vehicleClass                  	    = "OPTRE_Ins_Man_URF_class";
         uniformClass                  	    = "OPTRE_Ins_URF_uniform_boarder";
@@ -70,7 +70,7 @@ class CfgVehicles
         side                 	            = 0;
         scope                               = 1;
         faction                             = "OPTRE_Ins";
-        author                              = "Eridanus Insurrection Team";
+        author                              = "Article 2 Studios";
         displayName                         = "Rifleman";
         vehicleClass                  	    = "OPTRE_Ins_Man_URF_class";
         uniformClass                  	    = "OPTRE_Ins_URF_uniform_combatuni_OD";
@@ -95,7 +95,7 @@ class CfgVehicles
         side                 	            = 0;
         scope                               = 1;
         faction                             = "OPTRE_Ins";
-        author                              = "Eridanus Insurrection Team";
+        author                              = "Article 2 Studios";
         displayName                         = "Officer";
         vehicleClass                  	    = "OPTRE_Ins_Man_URF_class";
         uniformClass                  	    = "OPTRE_Ins_URF_uniform_officer";
@@ -160,7 +160,7 @@ class CfgVehicles
 	class OPTRE_Ins_URF_Pilot: OPTRE_Ins_URF_officer_base
 	{
 		scope															= 2;
-		author															= "Eridanus Insurrection Team";
+		author															= "Article 2 Studios";
 		displayName														= "Pilot";
 		uniformAccessories[]											= {};
 		nakedUniform 													= "U_BasicBody";
@@ -475,7 +475,7 @@ class cfgWeapons
 	{
 		scope 								= 2;
 		displayName 						= "[INS] Boarding Coveralls";
-		author								= "Eridanus Insurrection Team";
+		author								= "Article 2 Studios";
 		picture = "\A3\characters_f_kart\data\ui\icon_u_driver_02_ca.paa";
 		model								= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         class ItemInfo : UniformItem 
@@ -492,7 +492,7 @@ class cfgWeapons
 	{
 		scope 								= 2;
 		displayName 						= "[INS] Combat Fatigues (OD)";
-		author								= "Eridanus Insurrection Team";
+		author								= "Article 2 Studios";
 		picture = "\A3\characters_f_beta\data\ui\icon_U_IR_CrewUniform_rucamo_ca.paa";
 		model								= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         class ItemInfo : UniformItem 
@@ -510,7 +510,7 @@ class cfgWeapons
 	{
 		scope 								= 2;
 		displayName 						= "[INS] Officer Fatigues [Ins]";
-		author								= "Eridanus Insurrection Team";
+		author								= "Article 2 Studios";
 		picture = "\A3\characters_f_beta\data\ui\icon_U_IR_CombatUniform_rucamo_ca.paa";
 		model								= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         class ItemInfo : UniformItem 

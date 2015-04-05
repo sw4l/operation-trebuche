@@ -45,7 +45,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_Ammo_class";
 		displayName = "OPTRE Magic Box";
 		model = "\A3\weapons_F\AmmoBoxes\Supplydrop";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 		transportMaxWeapons = 50000;
 		transportMaxMagazines = 5000000;
@@ -450,7 +450,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_Ammo_class";
 		displayName = "[UNSC] Weapons Rack";
 		model = "\OPTRE_misc\crates\weaponcrate.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 		transportMaxWeapons = 50;
 		transportMaxMagazines = 500;
@@ -567,7 +567,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_Ammo_class";
 		displayName = "[UNSC] Ammo Rack";
 		model = "\OPTRE_misc\crates\ammocrate.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 		transportMaxWeapons = 10;
 		transportMaxMagazines = 1000;
@@ -729,7 +729,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_Ammo_class";
 		displayName = "[UNSC] Item Rack";
 		model = "\OPTRE_misc\crates\weaponcrate.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 		transportMaxWeapons = 50;
 		transportMaxMagazines = 500;
@@ -993,7 +993,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_Ammo_class";
 		displayName = "[UNSC] Supply Pod";
 		model = "\OPTRE_misc\crates\Supply_pod.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 		transportMaxWeapons = 15;
 		transportMaxMagazines = 20;
@@ -1095,7 +1095,7 @@ class CfgVehicles
 		scope = 1;
 		vehicleClass = "OPTRE_Ammo_class";
 		displayName = "[UNSC] Ammo Box";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		hiddenSelections[] = {"Camo_Signs","Camo"};
 		hiddenSelectionsTextures[] = {"OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_signs_ca.paa","OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_ca.paa"};
 		//icon = "iconCrateWpns";
@@ -1107,7 +1107,7 @@ class CfgVehicles
 		scope = 1;
 		vehicleClass = "OPTRE_Ammo_class";
 		displayName = "[UNSC] Weapons Box";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		hiddenSelections[] = {"Camo_Signs","Camo"};
 		hiddenSelectionsTextures[] = {"OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_signs_ca.paa","OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_ca.paa"};
 		//transportMaxWeapons = 5;
@@ -1118,7 +1118,7 @@ class CfgVehicles
 		scope = 1;
 		vehicleClass = "OPTRE_Ammo_class";
 		displayName = "[UNSC] Special Weapons Box";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		hiddenSelections[] = {"Camo_Signs","Camo"};
 		hiddenSelectionsTextures[] = {"OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_signs_ca.paa","OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_ca.paa"};
 		//transportMaxWeapons = 5;
@@ -1129,7 +1129,7 @@ class CfgVehicles
 		scope = 1;
 		vehicleClass = "OPTRE_Ammo_class";
 		displayName = "[UNSC] Explosives Box";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		hiddenSelections[] = {"Camo_Signs","Camo"};
 		hiddenSelectionsTextures[] = {"OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_signs_ca.paa","OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_ca.paa"};
 		//transportMaxWeapons = 5;
@@ -1140,7 +1140,7 @@ class CfgVehicles
 		scope = 1;
 		vehicleClass = "OPTRE_Ammo_class";
 		displayName = "[UNSC] Grenades Box";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		hiddenSelections[] = {"Camo_Signs","Camo"};
 		hiddenSelectionsTextures[] = {"OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_signs_ca.paa","OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_ca.paa"};
 		//transportMaxWeapons = 5;
@@ -1151,7 +1151,7 @@ class CfgVehicles
 		scope = 1;
 		vehicleClass = "OPTRE_Ammo_class";
 		displayName = "[UNSC] Support Box";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		hiddenSelections[] = {"Camo_Signs","Camo"};
 		hiddenSelectionsTextures[] = {"OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_signs_ca.paa","OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_ca.paa"};
 		//transportMaxWeapons = 5;
@@ -1162,7 +1162,7 @@ class CfgVehicles
 		scope = 1;
 		vehicleClass = "OPTRE_Ammo_class";
 		displayName = "[UNSC] Item Box";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		hiddenSelections[] = {"Camo_Signs","Camo"};
 		hiddenSelectionsTextures[] = {"OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_signs_ca.paa","OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_ca.paa"};
 		//transportMaxWeapons = 5;
@@ -1173,7 +1173,7 @@ class CfgVehicles
 		scope = 1;
 		vehicleClass = "OPTRE_Ammo_class";
 		displayName = "[UNSC] Launchers Box";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		hiddenSelections[] = {"Camo_Signs","Camo"};
 		hiddenSelectionsTextures[] = {"OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_signs_ca.paa","OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_ca.paa"};
 		//transportMaxWeapons = 5;
@@ -1184,7 +1184,7 @@ class CfgVehicles
 		scope = 1;
 		vehicleClass = "OPTRE_Ammo_class";
 		displayName = "[UNSC] Vehicle Ammo Box";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		hiddenSelections[] = {"Camo_Signs","Camo"};
 		hiddenSelectionsTextures[] = {"OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_signs_ca.paa","A3\Weapons_F\Ammoboxes\data\AmmoVeh_CO.paa"};
 		//transportMaxWeapons = 5;

@@ -22,7 +22,7 @@ class CfgPatches
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"OPTRE_Core","A3_Weapons_F"};
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 	};
 };
 

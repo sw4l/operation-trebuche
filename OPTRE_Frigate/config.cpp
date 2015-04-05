@@ -277,7 +277,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "test box";
 		model = "\OPTRE_frigate\testbox.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_final_dawn: static
@@ -287,7 +287,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Final Dawn";
 		model = "\OPTRE_frigate\finaldawn_empty.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_1_box: static
@@ -297,7 +297,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "1_box";
 		model = "\OPTRE_frigate\1_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_2_box: static
@@ -307,7 +307,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "2_box";
 		model = "\OPTRE_frigate\2_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_3_box: static
@@ -317,7 +317,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "3_box";
 		model = "\OPTRE_frigate\3_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_4_box: static
@@ -327,7 +327,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "4_box";
 		model = "\OPTRE_frigate\4_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_5_box: static
@@ -337,7 +337,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "5_box";
 		model = "\OPTRE_frigate\5_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_6_box: static
@@ -347,7 +347,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "6_box";
 		model = "\OPTRE_frigate\6_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_7_box: static
@@ -357,7 +357,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "7_box";
 		model = "\OPTRE_frigate\7_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_8_box: static
@@ -367,7 +367,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "8_box";
 		model = "\OPTRE_frigate\8_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_9_box: static
@@ -377,7 +377,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "9_box";
 		model = "\OPTRE_frigate\9_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_10_box: static
@@ -387,7 +387,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "10_box";
 		model = "\OPTRE_frigate\10_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_11_box: static
@@ -397,7 +397,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "11_box";
 		model = "\OPTRE_frigate\11_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_12_box: static
@@ -407,7 +407,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "12_box";
 		model = "\OPTRE_frigate\12_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_13_box: static
@@ -417,7 +417,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "13_box";
 		model = "\OPTRE_frigate\13_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_14_box: static
@@ -427,7 +427,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "14_box";
 		model = "\OPTRE_frigate\14_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_15_box: static
@@ -437,7 +437,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "15_box";
 		model = "\OPTRE_frigate\15_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_16_box: static
@@ -447,7 +447,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "16_box";
 		model = "\OPTRE_frigate\16_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_17_box: static
@@ -457,7 +457,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "17_box";
 		model = "\OPTRE_frigate\17_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_19_box: static
@@ -467,7 +467,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "19_box";
 		model = "\OPTRE_frigate\19_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_20_box: static
@@ -477,7 +477,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "20_box";
 		model = "\OPTRE_frigate\20_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_21_box: static
@@ -487,7 +487,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "21_box";
 		model = "\OPTRE_frigate\21_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_22_box: static
@@ -497,7 +497,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "22_box";
 		model = "\OPTRE_frigate\22_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_23_box: static
@@ -507,7 +507,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "23_box";
 		model = "\OPTRE_frigate\23_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_24_box: static
@@ -517,7 +517,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "24_box";
 		model = "\OPTRE_frigate\24_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_25_box: static
@@ -527,7 +527,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "25_box";
 		model = "\OPTRE_frigate\25_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_26_box: static
@@ -537,7 +537,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "26_box";
 		model = "\OPTRE_frigate\26_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_27_box: static
@@ -547,7 +547,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "27_box";
 		model = "\OPTRE_frigate\27_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_28_box: static
@@ -557,7 +557,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "28_box";
 		model = "\OPTRE_frigate\28_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_29_box: static
@@ -567,7 +567,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "29_box";
 		model = "\OPTRE_frigate\29_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_30_box: static
@@ -577,7 +577,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "30_box";
 		model = "\OPTRE_frigate\30_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_31_box: static
@@ -587,7 +587,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "31_box";
 		model = "\OPTRE_frigate\31_box.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_interior: static
@@ -597,7 +597,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Interior";
 		model = "\OPTRE_frigate\interior.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_console: static
@@ -607,7 +607,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Console";
 		model = "\OPTRE_frigate\console.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_spawn_door: static
@@ -617,7 +617,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Spawn Door";
 		model = "\OPTRE_frigate\spawn_door.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_liftarm: static
@@ -627,7 +627,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Lift Arm";
 		model = "\OPTRE_frigate\liftarm.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_frigate_gun: StaticWeapon
@@ -638,7 +638,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Frigate Gun";
 		model = "\OPTRE_Frigate\turret2.p3d";
-		author = "Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 		class Turrets: Turrets
 		{

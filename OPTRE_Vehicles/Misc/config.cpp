@@ -32,7 +32,7 @@ class CfgVehicles
 	
 	class OPTRE_m1087_stallion_base: Truck_01_base_F
 	{
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		scope = 0;
 		crew = "B_Soldier_F";
 		typicalCargo[] = {"B_Soldier_F"};
@@ -47,7 +47,7 @@ class CfgVehicles
 	};
 	class OPTRE_m1015_mule_base: Truck_02_base_F
 	{
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		side = 0;
 		faction = "OPTRE_Ins";
 		crew = "O_soldier_F";
@@ -61,7 +61,7 @@ class CfgVehicles
 	};
 	class OPTRE_mako_drone_base: UAV_02_base_F
 	{
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		_generalMacro = "UAV_02_base_F";
 		displayName = "MAKO Drone";
 		icon = "\A3\Drones_F\Air_F_Gamma\UAV_02\Data\UI\Map_UAV_02_CA.paa";
@@ -84,7 +84,7 @@ class CfgVehicles
 	
 	class OPTRE_mako_drone_CAS_ins: OPTRE_mako_drone_CAS_base
 	{
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		displayName = "MAKO Drone";
 		vehicleClass = "OPTRE_Ins_Auto_class";
 		scope = 2;
@@ -101,7 +101,7 @@ class CfgVehicles
 	
 	class OPTRE_m1087_stallion_unsc: OPTRE_m1087_stallion_base
 	{
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		displayName = "M1087 Stallion";
 		vehicleClass = "OPTRE_UNSC_Vehicle_class";
 		scope = 2;
@@ -115,7 +115,7 @@ class CfgVehicles
 	
 	class OPTRE_m1015_mule_unsc: OPTRE_m1015_mule_base
 	{
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		displayName = "M1015 Mule";
 		vehicleClass = "OPTRE_UNSC_Vehicle_class";
 		scope = 2;
@@ -129,7 +129,7 @@ class CfgVehicles
 	
 	class OPTRE_m1015_mule_ins: OPTRE_m1015_mule_base
 	{
-		author="Eridanus Insurrection Team";
+		author="Article 2 Studios";
 		displayName = "M1015 Mule (Ins)";
 		vehicleClass = "OPTRE_Ins_Vehicle_class";
 		scope = 2;
