@@ -1,0 +1,7 @@
+TEI_Ins_Units 
+
+	-add the Zamak variants retextured "M1015 Mule" [SpaceNavy]
+	-add UNSC-style beaten up equipment
+	-add custom-made uniforms and equipment
+
+*Please put your name in brackets at the end of whatever issue(s) you are currently working on

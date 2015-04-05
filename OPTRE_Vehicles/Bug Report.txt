@@ -1,0 +1,54 @@
+TEI_Vehicles
+
+	-Vehicle groups for all factions [SpaceNavy]
+	-Thermal imaging RVmats? textures? how the fuck does thermal work
+
+	/// HEV
+	-remove option to "turn on" the vehicle
+	-cooldown timer for the dropping sequence?	
+	-include a readme/video? on how to use droppod scripts
+
+	/// Warthog
+	-sounds extremely quiet inside
+	-remove crosshairs for Gauss hog
+	-add crosshairs for MG hog
+	-AA hog only firing from one side
+	-AT hog scope view error
+
+	/// Pelican
+	-better lights for exterior
+	-lights for interior cargo area
+	-lower pelican sounds?
+	-VTOL pelican variant
+	-force out cargo action?
+	-add standing pelican animations
+	-add Pelican gunship
+	-add M247 MMG turret to rear
+	-AGM fast roping compat
+	-Marine Pelican variant retexture?
+	-cockpit gadgets not working, honestly wouldnt bother with it as the cockpit will be overhauled later
+	-turret view needs adjustment
+	-turret needs rvmat
+	-ammo for turret needs to be customized
+	-muzzle flash is being a thundercunt, i wanna punch it in its rotating face
+
+
+	/// Falcon
+	-needs textured
+	-needs everything
+
+	/// Wombat
+	-needs textured
+
+	/// Scorpion
+	-needs textured
+
+	/// Hornet 
+	-needs textured
+
+	/// Longsword
+	-needs O2'd [SpaceNavy]
+	-needs interior modelled and textured
+	-updated 4k textured [Zero]
+
+*Please put your name in brackets at the end of whatever issue(s) you are currently working on

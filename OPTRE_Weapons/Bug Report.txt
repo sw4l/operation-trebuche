@@ -1,0 +1,60 @@
+TEI_Weapons
+
+	-None of the weapons have a muzzle flash, just the puff of smoke from the barrel.
+	-Thermal imaging RVmats? textures? how the fuck does thermal work
+	-A3 style attachment icons
+
+	/// BR55HB Battle Rifle
+	-make ammo counter work
+	-model needs flipped (like the Hog turrets, things are reversed)
+
+	/// M6G Pistol
+
+	/// M45 Shotgun
+	-slide slideback on firing missing
+	-Reload animation wrong (loads 8 shells when we only have 6)
+
+	/// MA5B Assault Rifle
+	-make ammo counter work
+	-add perphiral custom AR scope view
+	-hand animation "breaks arm" when weapon is rested
+
+	/// MA5B (M309 GL)
+
+	/// M41 Rocket Launcher
+	-add custom scope reticule and zoom level
+	-Twin rocket ammo box disappears randomly when out of sight
+	-HEAA missiles can't hit aircraft
+
+	/// M7 Submachine Gun	
+
+	/// M73 Light Machine Gun
+	-update and improve textures
+	-rvmats
+	-opticView for SmartLink iron sights error
+
+	/// M247 Medium Machine Gun
+	-model/texture
+	-handheld
+	-tripod
+	-pelican/falcon floor mount
+	-turret
+	-deploying MG on tripod script [SpaceNavy]
+
+	/// M9 Frag
+
+	/// M2 Smoke
+	-add Stun/Napalm variants
+
+	/// biofoam
+	-AGM medical compat	
+
+	/// medi pack
+	-AGM medical compat
+
+	///ILCS Rucksacks
+
+	///Commo Rucksack
+	-custom TFAR radio HUD
+
+*Please put your name in brackets at the end of whatever issue(s) you are currently working on

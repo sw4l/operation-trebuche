@@ -1,0 +1,15 @@
+_unit = _this select 0;
+_Selfpod = "OPTRE_HEV" createVehicle [0,0,10000];
+_Selfpod setPos [getmarkerPos "SelfDrop" select 0, getmarkerPos "SelfDrop" select 1, 500];
+_Selfpod setdir (random 360);
+_unit moveindriver _Selfpod;
+_attach = createVehicle ["Sign_Sphere10cm_F", [0,0,10000], [], 0, ""];
+_attach hideObjectGlobal true;
+_attach attachto [_Selfpod,[0,0,0]];
+detach _attach;
+_attach setdir (getdir _Selfpod);
+_Selfpod attachto [_attach,[0,0,0]];
+_Selfpod setdir 180;
+_Selfpod setVectorUp [0,0,1];
+deletemarker "SelfDrop";
+_attach hideObjectGlobal true;
