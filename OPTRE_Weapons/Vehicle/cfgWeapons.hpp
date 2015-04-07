@@ -9,6 +9,7 @@ class CfgWeapons
 	class cannon_120mm;
 	class RCWSOptics;
 	class missiles_titan;
+	class missiles_DAGR;
 	
 	class OPTRE_M41_LAAG: HMG_127
 	{
@@ -45,7 +46,7 @@ class CfgWeapons
         modes[] = {"FullAuto"};
         class FullAuto: MGun
         {
-            reloadTime = 0.05;
+            reloadTime = 0.1;
             dispersion = 0.001;
             minRange = 2;
             minRangeProbab = 0.3;
@@ -70,26 +71,27 @@ class CfgWeapons
 		class manual:MGun
 		{
 			displayName						= "102mm ATGM Launcher";
-			reloadTime						= 0.75;
+			reloadTime						= 0.5;
 			dispersion						= 0;
 			sounds[]						= {"StandardSound"};
 		};
 	};
-	class OPTRE_M79_MLRS: missiles_titan
+	class OPTRE_M79_MLRS: missiles_DAGR
 	{
 		displayName							= "M79 MLRS";
 		magazines[] 						= {"OPTRE_6Rnd_65mm_rockets"};
 		aiDispersionCoefY 					= 15.0;
         aiDispersionCoefX 					= 20.0;
 		showAimCursorInternal 				= 1;
-		magazineReloadTime 					= 6;
+		magazineReloadTime 					= 5;
+		weaponLockDelay 					= 1.5;
 		initFov 							= 0.75;
 		minFov 								= 0.375;
 		maxFov 								= 1.1;
 		class manual:MGun
 		{
 			displayName						= "M79 MLRS";
-			reloadTime						= 0.025;
+			reloadTime						= 0.075;
 			dispersion						= 0;
 			sounds[]						= {"StandardSound"};
 		};

@@ -19,6 +19,7 @@ class CfgFactionClasses //This configures the in-game factions
 	class OPTRE_UNSC
 	{
 		displayName 																			= "UNSCDF";
+		author																					= "Article 2 Studios";
 		priority 																				= 1;
 		side 																					= 1;
 		icon 																					= "\OPTRE_Core\data\icon_UNSC_ca.paa";
@@ -33,6 +34,7 @@ class CfgFactionClasses //This configures the in-game factions
 	class OPTRE_Ins
 	{
 		displayName 																			= "Insurrectionists";
+		author																					= "Article 2 Studios";
 		priority 																				= 1;
 		side 																					= 0;
 		icon 																					= "\OPTRE_Core\data\icon_Ins_ca.paa";
@@ -43,25 +45,18 @@ class CfgFactionClasses //This configures the in-game factions
 	};
 	class OPTRE_CAA
 	{
-		displayName 																			= "Colonial Military Admin";
+		displayName 																			= "CAA";
+		author																					= "Article 2 Studios";
 		priority 																				= 1;
 		side 																					= 2;
 		//icon 																					= "\OPTRE_Core\data\icon_Caa_ca.paa";
 		//flag 																					= "\OPTRE_Core\Data\flag_Caa_ca.paa";
 		primaryLanguage 																		= "EN";
 	};
-	class OPTRE_NMPD
+	class OPTRE_UEG_Civ
 	{
-		displayName 																			= "New Mombasa PD";
-		priority 																				= 1;
-		side 																					= 2;
-		//icon 																					= "\OPTRE_Core\data\icon_UNSC_ca.paa";
-		//flag 																					= "\OPTRE_Core\Data\flag_UNSC_ca.paa";
-		primaryLanguage 																		= "EN";
-	};
-	class OPTRE_UNSC_Civ
-	{
-		displayName 																			= "Civilians (UNSC)";
+		displayName 																			= "Civilians (UEG)";
+		author																					= "Article 2 Studios";
 		priority 																				= 1;
 		side 																					= 3;
 		//icon 																					= "\OPTRE_Core\data\icon_UNSC_ca.paa";
@@ -378,6 +373,7 @@ class CfgMusicClasses
 	class OPTRE_OST
 	{
 		displayName = "OPTRE Soundtrack";
+		author																					= "Article 2 Studios";
 	};
 };
 class CfgMusic
