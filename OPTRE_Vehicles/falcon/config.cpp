@@ -327,7 +327,7 @@ class CfgVehicles
 		faction	= "OPTRE_UNSC";			/// defines the faction inside of the side
 		crew = "OPTRE_UNSC_Marine_Pilot";	/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 			/// harder to distinguish side than vehicle type
-		displayName = "test falcon bro";
+		displayName = "UH-144 Falcon";
 		icon = "\A3\Air_F\Heli_Light_02\Data\UI\Map_Heli_Light_02_rockets_CA.paa";	/// icon in map/editor
 		picture = "\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_rockets_CA.paa";	/// small picture in command menu
 		
