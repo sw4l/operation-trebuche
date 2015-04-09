@@ -114,9 +114,10 @@ class CfgVehicles
 		incomingMissileDetectionSystem = CM_Missile;			/// for example CM_Lock_Laser + CM_Lock_Radar, parser is able to evaluate that, or simply 12 in that case
 		selectionFireAnim = "muzzleFlash";						/// what selection is hidden when machinegun doesn't shoot
 
-		weapons[] = {LMG_Minigun_heli,missiles_DAGR, CMFlareLauncher};	/// array of various vehicle weapons mounted on the heli
-		magazines[] = {2000Rnd_65x39_Belt_Tracer_Green,12Rnd_PG_missiles, 168Rnd_CMFlare_Chaff_Magazine}; /// array of corresponding magazines
-
+		visionMode[]={"Normal","NVG","Ti"};
+		weapons[] = {"gatling_30mm", "rockets_Skyfire", "CMFlareLauncher","Laserdesignator_mounted"};	/// array of various vehicle weapons mounted on the heli
+		magazines[] = {"250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","38Rnd_80mm_rockets","38Rnd_80mm_rockets","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"}; /// array of corresponding magazines
+				
 		class ViewPilot: ViewPilot 	/// describes what does the pilot see using bare eyes
 		{
 			initFov = 0.75; 		/// this is the standard field of view angle for soldier, bit more narrow than a real-life one
