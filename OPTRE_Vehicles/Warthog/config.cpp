@@ -1654,6 +1654,8 @@ class CfgVehicles
 				};
 			};
 		};
+		memoryPointLMissile = "Rocket_1";
+		memoryPointRMissile = "Rocket_2";
 		class Turrets:Turrets
 		{
 			class CargoTurret_01:CargoTurret
@@ -1718,6 +1720,8 @@ class CfgVehicles
 				memoryPointGunnerOptics="gunnerview";
 				memoryPointGunneroutOptics="gunneroutview";
 				memoryPointGun="machinegun";
+				memoryPointLMissile = "Rocket_1";
+				memoryPointRMissile = "Rocket_2";
 				gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";
 				
 				gunnerOpticsShowCursor=1;
