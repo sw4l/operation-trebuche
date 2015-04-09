@@ -36,8 +36,8 @@ class CfgFunctions
 
 class Extended_PostInit_EventHandlers
 {
-	OPTRE_HEV_Fncs_Init 																			= [] spawn OPTRE_HEV_fnc_Init;
-	OPTRE_HUD_Fncs_Init 																			= [] spawn OPTRE_HUD_fnc_Init;
+	OPTRE_HEV_Fncs_Init 																		= [] spawn OPTRE_HEV_fnc_Init;
+	OPTRE_HUD_Fncs_Init 																		= [] spawn OPTRE_HUD_fnc_Init;
 };
 
 class RscStdText //More HUD Stuff
@@ -146,46 +146,5 @@ class RscTitles //Even More HUD Stuff
 		{
 			text																				= "\OPTRE_Core\scripts\Data\odst_hud_black_ca.paa";
 		};
-	};
-};
-
-class CfgSounds
-{
-	sounds[] = {};
-	class OPTRE_HEV_Wind1
-	{
-		name = "[OPTRE] HEV Wind 1";
-		sound[] = {"\OPTRE_core\scripts\sounds\HEV_Wind1.ogg", 1, 1};
-		titles[] = {};
-	};
-	class OPTRE_HEV_Wind2
-	{
-		name = "[OPTRE] HEV Wind 2";
-		sound[] = {"\OPTRE_core\scripts\sounds\HEV_Wind2.ogg", 1, 1};
-		titles[] = {};
-	};
-	class OPTRE_HEV_Pop
-	{
-		name = "[OPTRE] HEV Pop";
-		sound[] = {"\OPTRE_core\scripts\sounds\HEV_Pop.ogg", 1, 1};
-		titles[] = {};
-	};
-	class OPTRE_HEV_Door
-	{
-		name = "[OPTRE] HEV Door";
-		sound[] = {"\OPTRE_core\scripts\sounds\HEV_Door.ogg", 1, 1};
-		titles[] = {};
-	};
-	class OPTRE_HEV_Chute
-	{
-		name = "[OPTRE] HEV Chute";
-		sound[] = {"\OPTRE_core\scripts\sounds\HEV_Chute.ogg", 1, 1};
-		titles[] = {};
-	};
-	class OPTRE_HUD_Helmet_Visor
-	{
-		name = "[OPTRE] Helmet Visor";
-		sound[] = {"\OPTRE_core\scripts\sounds\ODST_Helmet_Visor.ogg", db-5, 1};
-		titles[] = {};
 	};
 };

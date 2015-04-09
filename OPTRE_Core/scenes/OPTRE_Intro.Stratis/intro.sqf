@@ -43,7 +43,7 @@ removeGoggles man10;
 
 setacctime .5;
 ShowCinemaborder false
-playMusic "OPTRE_Music_Prepare_to_Drop";
+playMusic "OPTRE_Music_PrepareToDrop";
 
 titleCut ["", "BLACK IN", 5];
 _camera = "camera" camcreate [6074.28,5604.57,1.23];

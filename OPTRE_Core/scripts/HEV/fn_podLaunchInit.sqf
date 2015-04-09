@@ -49,8 +49,8 @@ while {!(_landed)} do
 	_downvel = round (_vel select 2);
 	hintSilent format["ALTITUDE (ATL) = %1\nALTITUDE(ASL) = %2\nVELOCITY = %3", _height, _waterheight, _downvel];
 	
-	[_pod, "OPTRE_HEV_Wind1", 50] call CBA_fnc_globalSay3d;
-	[_pod, "OPTRE_HEV_Wind2", 50] call CBA_fnc_globalSay3d;
+	[_pod, "OPTRE_Sounds_HEV_Wind1", 50] call CBA_fnc_globalSay3d;
+	[_pod, "OPTRE_Sounds_HEV_Wind2", 50] call CBA_fnc_globalSay3d;
 	
 	if ((_height < 125) && (_height > 75) && !(_chutedeployed)) then
 	{

@@ -1290,6 +1290,10 @@ class CfgVehicles
 		faction	= "OPTRE_UNSC";					/// defines the faction inside of the side
 		crew = "OPTRE_UNSC_Marine_Pilot";					/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 					/// harder to distinguish side than vehicle type
+		memoryPointLMissile = "Rocket_1";
+		memoryPointRMissile = "Rocket_2";
+		weapons[] = {"rockets_Skyfire"};	/// array of various vehicle weapons mounted on the heli
+		magazines[] = {"38Rnd_80mm_rockets","38Rnd_80mm_rockets"}; /// array of corresponding magazines
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
 		class Turrets: Turrets										/// just a copilot seat as a turret to enable taking the controls

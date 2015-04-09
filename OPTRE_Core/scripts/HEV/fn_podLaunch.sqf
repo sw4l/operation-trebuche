@@ -8,9 +8,9 @@ _pod removeaction _action;
 
 OPTRE_HEV_fnc_WindSounds =
 {
-	[(_this select 0), "OPTRE_HEV_Wind1", 50] call CBA_fnc_globalSay3d;
+	[(_this select 0), "OPTRE_Sounds_HEV_Wind1", 50] call CBA_fnc_globalSay3d;
 	sleep 0.05;
-	[(_this select 0), "OPTRE_HEV_Wind2", 50] call CBA_fnc_globalSay3d;
+	[(_this select 0), "OPTRE_Sounds_HEV_Wind2", 50] call CBA_fnc_globalSay3d;
 	sleep 0.25;
 };
 

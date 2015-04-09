@@ -25,7 +25,6 @@ class CfgFactionClasses //This configures the in-game factions
 		icon 																					= "\OPTRE_Core\data\icon_UNSC_ca.paa";
 		flag 																					= "\OPTRE_Core\Data\flag_UNSC_ca.paa";
 		primaryLanguage 																		= "EN";
-		
 		backpack_tf_faction_radio_api = "OPTRE_Como_pack_2";
         /*personal_tf_faction_radio_api = "some_personal_radio_class";
         rifleman_tf_faction_radio_api = "some_rifleman_radio_class";
@@ -40,7 +39,6 @@ class CfgFactionClasses //This configures the in-game factions
 		icon 																					= "\OPTRE_Core\data\icon_Ins_ca.paa";
 		flag 																					= "\OPTRE_Core\Data\flag_Ins_ca.paa";
 		primaryLanguage 																		= "EN";
-		
 		backpack_tf_faction_radio_api = "OPTRE_Como_pack_2";
 	};
 	class OPTRE_CAA
@@ -373,223 +371,389 @@ class CfgMusicClasses
 	class OPTRE_OST
 	{
 		displayName = "OPTRE Soundtrack";
-		author																					= "Article 2 Studios";
-	};
-};
-class CfgMusic
-{
-	class OPTRE_Music_Innie_Dance
-	{
-		name	="[OPTRE] Innie Dance";
-		sound[]	={"\OPTRE_Core\Music\Innie_Dance.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Call_to_Arms
-	{
-		name="[OPTRE] Call to Arms";
-		sound[]={"\OPTRE_Core\Music\Call_to_Arms.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Engaged
-	{
-		name="[OPTRE] Engaged";
-		sound[]={"\OPTRE_Core\Music\Engaged.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Eve_of_Battle
-	{
-		name="[OPTRE] Eve of Battle";
-		sound[]={"\OPTRE_Core\Music\Eve_of_Battle.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Firefight
-	{
-		name="[OPTRE] Firefight";
-		sound[]={"\OPTRE_Core\Music\Firefight.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Going_Loud
-	{
-		name="[OPTRE] Going Loud";
-		sound[]={"\OPTRE_Core\Music\Going_Loud.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Prepare_to_Drop
-	{
-		name="[OPTRE] Prepare to Drop";
-		sound[]={"\OPTRE_Core\Music\Prepare_to_Drop.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Unforgotten
-	{
-		name="[OPTRE] Unforgotten";
-		sound[]={"\OPTRE_Core\Music\Unforgotten.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Warthogs
-	{
-		name="[OPTRE] Warthogs";
-		sound[]={"\OPTRE_Core\Music\Warthogs.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Shotgun
-	{
-		name="[OPTRE] Shotgun";
-		sound[]={"\OPTRE_Core\Music\shotgun.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Drum_Run
-	{
-		name="[OPTRE] Drum Run";
-		sound[]={"\OPTRE_Core\Music\drum_run.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Impend
-	{
-		name="[OPTRE] Impend";
-		sound[]={"\OPTRE_Core\Music\impend.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Amber_Clad
-	{
-		name="[OPTRE] Amber Clad";
-		sound[]={"\OPTRE_Core\Music\amber_clad.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Armor_Battle
-	{
-		name="[OPTRE] Armor Battle";
-		sound[]={"\OPTRE_Core\Music\armor_battle.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Axios
-	{
-		name="[OPTRE] Axios";
-		sound[]={"\OPTRE_Core\Music\axios.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Brave
-	{
-		name="[OPTRE] Brave";
-		sound[]={"\OPTRE_Core\Music\brave.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Choose_Wisely
-	{
-		name="[OPTRE] Choose Wisely";
-		sound[]={"\OPTRE_Core\Music\choose_wisely.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Covenant_Dance
-	{
-		name="[OPTRE] Covenant Dance";
-		sound[]={"\OPTRE_Core\Music\covenant_dance.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Creeping
-	{
-		name="[OPTRE] Creeping";
-		sound[]={"\OPTRE_Core\Music\creeping.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Creeping_2
-	{
-		name="[OPTRE] Creeping 2";
-		sound[]={"\OPTRE_Core\Music\creeping_2.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Desperate_Measures
-	{
-		name="[OPTRE] Desperate Measures";
-		sound[]={"\OPTRE_Core\Music\desperate_measures.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Follow_Our_Brothers
-	{
-		name="[OPTRE] Follow our Brothers";
-		sound[]={"\OPTRE_Core\Music\follow_our_brothers.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Lead_Redux
-	{
-		name="[OPTRE] Lead Redux";
-		sound[]={"\OPTRE_Core\Music\lead_redux.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Life
-	{
-		name="[OPTRE] Life";
-		sound[]={"\OPTRE_Core\Music\life.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Live_Action
-	{
-		name="[OPTRE] Live Action";
-		sound[]={"\OPTRE_Core\Music\live_action.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Mjolnir_Remastered
-	{
-		name="[OPTRE] Mjolnir Remastered";
-		sound[]={"\OPTRE_Core\Music\Mjolnir_Remastered.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Movement
-	{
-		name="[OPTRE] Movement";
-		sound[]={"\OPTRE_Core\Music\movement.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Movement_2
-	{
-		name="[OPTRE] Movement 2";
-		sound[]={"\OPTRE_Core\Music\movement_2.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Movement_3
-	{
-		name="[OPTRE] Movement 3";
-		sound[]={"\OPTRE_Core\Music\movement_3.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Night_Ops
-	{
-		name="[OPTRE] Night Ops";
-		sound[]={"\OPTRE_Core\Music\night_ops.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Our_Brothers
-	{
-		name="[OPTRE] Our Brothers";
-		sound[]={"\OPTRE_Core\Music\our_brothers.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Peril_and_Jeopardy
-	{
-		name="[OPTRE] Peril and Jeopardy";
-		sound[]={"\OPTRE_Core\Music\peril_and_jeopardy.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Rescue_Mission
-	{
-		name="[OPTRE] Rescue Mission";
-		sound[]={"\OPTRE_Core\Music\rescue_mission.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Scorpion_Mix
-	{
-		name="[OPTRE] Scorpion Mix";
-		sound[]={"\OPTRE_Core\Music\scorpion_mix.ogg",1,1};
-		musicClass = "OPTRE_OST";
-	};
-	class OPTRE_Music_Under_Cover_of_Moonlight
-	{
-		name="[OPTRE] Under cover of Moonlight";
-		sound[]={"\OPTRE_Core\Music\under_cover_of_moonlight.ogg",1,1};
-		musicClass = "OPTRE_OST";
+		author	= "Article 2 Studios";
 	};
 };
 
+class CfgSounds
+{
+	sounds[] = {"OPTRE_Sounds_HEV_Wind1","OPTRE_Sounds_HEV_Wind2","OPTRE_Sounds_HEV_Pop","OPTRE_Sounds_HEV_Door","OPTRE_Sounds_HEV_Chute","OPTRE_Sounds_HUD_Visor","OPTRE_Sounds_Alarm"};
+	class OPTRE_Sounds_HEV_Wind1
+	{
+		name = "[OPTRE] HEV Wind 1";
+		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_HEV_Wind1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class OPTRE_Sounds_HEV_Wind2
+	{
+		name = "[OPTRE] HEV Wind 2";
+		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_HEV_Wind2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class OPTRE_Sounds_HEV_Pop
+	{
+		name = "[OPTRE] HEV Pop";
+		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_HEV_Pop.ogg", 1, 1};
+		titles[] = {};
+	};
+	class OPTRE_Sounds_HEV_Door
+	{
+		name = "[OPTRE] HEV Door";
+		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_HEV_Door.ogg", 1, 1};
+		titles[] = {};
+	};
+	class OPTRE_Sounds_HEV_Chute
+	{
+		name = "[OPTRE] HEV Chute";
+		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_HEV_Chute.ogg", 1, 1};
+		titles[] = {};
+	};
+	class OPTRE_Sounds_HUD_Visor
+	{
+		name = "[OPTRE] HUD Visor";
+		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_HUD_Visor.ogg", 0.25, 1};
+		titles[] = {};
+	};
+	class OPTRE_Sounds_Alarm
+	{
+		name = "[OPTRE] Alarm";
+		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_Alarm.ogg", 1, 1};
+		titles[] = {};
+	};
+};
+
+class CfgMusic
+{
+	class OPTRE_Music_Axios
+	{
+		name	="[OPTRE] Axios";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Axios.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 162;
+	};
+	class OPTRE_Music_Bound
+	{
+		name	="[OPTRE] Bound";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Bound.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 36;
+	};
+	class OPTRE_Music_Brave
+	{
+		name	="[OPTRE] Brave";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Brave.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 90;
+	};
+	class OPTRE_Music_CallToArms
+	{
+		name	="[OPTRE] Call To Arms";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_CallToArms.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 83;
+	};
+	class OPTRE_Music_ChooseWisely
+	{
+		name	="[OPTRE] Choose Wisely";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_ChooseWisely.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 76;
+	};
+	class OPTRE_Music_CloseQuarters
+	{
+		name	="[OPTRE] Close Quarters";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_CloseQuarters.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 70;
+	};
+	class OPTRE_Music_LoopCloseQuarters
+	{
+		name	="[OPTRE] Close Quarters (Loop)";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_LoopCloseQuarters.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 42;
+	};
+	class OPTRE_Music_CovenantDance
+	{
+		name	="[OPTRE] Covenant Dance";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_CovenantDance.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 119;
+	};
+	class OPTRE_Music_LoopDefense
+	{
+		name	="[OPTRE] Defense (Loop)";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_LoopDefense.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 58;
+	};
+	class OPTRE_Music_DesperateMeasures
+	{
+		name	="[OPTRE] Desperate Measures";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_DesperateMeasures.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 147;
+	};
+	class OPTRE_Music_DrumRun
+	{
+		name	="[OPTRE] Drum Run";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_DrumRun.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 67;
+	};
+	class OPTRE_Music_Engaged
+	{
+		name	="[OPTRE] Engaged";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Engaged.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 92;
+	};
+	class OPTRE_Music_EveOfBattle
+	{
+		name	="[OPTRE] Eve Of Battle";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_EveOfBattle.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 68;
+	};
+	class OPTRE_Music_Firefight
+	{
+		name	="[OPTRE] Firefight";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Firefight.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 104;
+	};
+	class OPTRE_Music_GoingLoud
+	{
+		name	="[OPTRE] Going Loud";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_GoingLoud.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 191;
+	};
+	class OPTRE_Music_Guess
+	{
+		name	="[OPTRE] Guess";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Guess.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 177;
+	};
+	class OPTRE_Music_Impend
+	{
+		name	="[OPTRE] Impend";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Impend.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 30;
+	};
+	class OPTRE_Music_InAmberClad
+	{
+		name	="[OPTRE] In Amber Clad";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_InAmberClad.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 203;
+	};
+	class OPTRE_Music_InnieDance
+	{
+		name	="[OPTRE] Innie Dance";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_InnieDance.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 236;
+	};
+	class OPTRE_Music_Introductions
+	{
+		name	="[OPTRE] Introductions";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Introductions.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 210;
+	};
+	class OPTRE_Music_LeadTrackRedux
+	{
+		name	="[OPTRE] Lead Track Redux";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_LeadTrackRedux.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 163;
+	};
+	class OPTRE_Music_Life
+	{
+		name	="[OPTRE] Life";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Life.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 88;
+	};
+	class OPTRE_Music_LiveAction
+	{
+		name	="[OPTRE] Live Action";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_LiveAction.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 53;
+	};
+	class OPTRE_Music_MjolnirRemastered
+	{
+		name	="[OPTRE] Mjolnir Mix (Remastered)";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_MjolnirRemastered.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 251;
+	};
+	class OPTRE_Music_MoonsOverEridanus
+	{
+		name	="[OPTRE] Moons Over Eridanus";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_MoonsOverEridanus.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 68;
+	};
+	class OPTRE_Music_Movement
+	{
+		name	="[OPTRE] Movement";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Movement.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 27;
+	};
+	class OPTRE_Music_LoopNeverForget
+	{
+		name	="[OPTRE] Never Forget (Loop)";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_LoopNeverForget.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 59;
+	};
+	class OPTRE_Music_NightOps
+	{
+		name	="[OPTRE] Night Ops";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_NightOps.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 168;
+	};
+	class OPTRE_Music_LoopNightRun
+	{
+		name	="[OPTRE] Night Run (Loop)";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_NightOps.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 42;
+	};
+	class OPTRE_Music_OurBrothers
+	{
+		name	="[OPTRE] Our Brothers";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_OurBrothers.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 64;
+	};
+	class OPTRE_Music_PerilAndJeopardy
+	{
+		name	="[OPTRE] Peril And Jeopardy";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_PerilAndJeopardy.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 167;
+	};
+	class OPTRE_Music_PerilousJourney
+	{
+		name	="[OPTRE] Perilous Journey";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_PerilousJourney.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 146;
+	};
+	class OPTRE_Music_PrepareToDrop
+	{
+		name	="[OPTRE] Prepare To Drop";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_PrepareToDrop.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 216;
+	};
+	class OPTRE_Music_Recon
+	{
+		name	="[OPTRE] Recon";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Recon.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 60;
+	};
+	class OPTRE_Music_RescueMission
+	{
+		name	="[OPTRE] Rescue Mission";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_RescueMission.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 137;
+	};
+	class OPTRE_Music_RollingOut
+	{
+		name	="[OPTRE] Rolling Out";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_RollingOut.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 34;
+	};
+	class OPTRE_Music_Run
+	{
+		name	="[OPTRE] Run";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Run.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 34;
+	};
+	class OPTRE_Music_ScorpionMix
+	{
+		name	="[OPTRE] Scorpion Mix";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_ScorpionMix.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 188;
+	};
+	class OPTRE_Music_SignalLost
+	{
+		name	="[OPTRE] Signal Lost";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_SignalLost.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 16;
+	};
+	class OPTRE_Music_Shotgun
+	{
+		name	="[OPTRE] Shotgun";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Shotgun.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 132;
+	};
+	class OPTRE_Music_ThroughTheWoods
+	{
+		name	="[OPTRE] Through The Woods";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_ThroughTheWoods.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 89;
+	};
+	class OPTRE_Music_ToGalaxy
+	{
+		name	="[OPTRE] To Galaxy";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_ToGalaxy.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 239;
+	};
+	class OPTRE_Music_UnderCoverOfMoonlight
+	{
+		name	="[OPTRE] Under Cover Of Moonlight";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_UnderCoverOfMoonlight.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 68;
+	};
+	class OPTRE_Music_Unforgotten
+	{
+		name	="[OPTRE] Unforgotten";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Unforgotten.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 60;
+	};
+	class OPTRE_Music_Wandering
+	{
+		name	="[OPTRE] Wandering";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Wandering.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 46;
+	};
+	class OPTRE_Music_WarsTribute
+	{
+		name	="[OPTRE] Wars Tribute";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_WarsTribute.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 65;
+	};
+	class OPTRE_Music_Warthogs
+	{
+		name	="[OPTRE] Warthogs";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Wandering.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 130;
+	};
+};
 
 class CfgWorlds
 {
