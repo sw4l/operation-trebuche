@@ -73,12 +73,13 @@ class CfgVehicles //This configures units and backpacks
 			transportSoldier															= 0;
 			isBicycle																	= true;
 			vehicleClass 																= "OPTRE_UNSC_HEV_class";
-			icon 																		= "iconObject";
 			mapSize 																	= 2.5;
 			weapons[]																	={};
 			armor 																		= 10000;
 			explosionShielding 															= 1;
 			typicalCargo[] 																= {};
+			icon = "OPTRE_Vehicles\hev\Data\icon.paa";	/// icon in map/editor
+			picture = "OPTRE_Vehicles\hev\Data\icon2.paa";	/// small picture in command menu
 			driverAction 																= "OPTRE_Driver_HEV";
 			getInAction 																= "bench_Heli_Light_01_get_in";	
 			getinRadius																	= 2;
