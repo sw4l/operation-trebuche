@@ -53,8 +53,8 @@ class CfgVehicles
 		model = "\OPTRE_vehicles\falcon\falcon.p3d"; 	/// path to model of the heli
 		driveOnComponent[] = {"Wheels"};
 
-		icon = "\A3\Air_F\Heli_Light_02\Data\UI\Map_Heli_Light_02_CA.paa";	/// icon in map/editor
-		picture = "\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_CA.paa";	/// small picture in command menu
+		icon = "OPTRE_Vehicles\Falcon\Data\icon.paa";	/// icon in map/editor
+		picture = "OPTRE_Vehicles\Falcon\Data\icon2.paa";	/// small picture in command menu
 
 		driverAction = Plane_Fighter_03_pilot;				/// what is the standard pose for the pilot, defined as animation state
 		driverInAction = Plane_Fighter_03_pilot;			/// what is the standard pose for the pilot, defined as animation state
@@ -63,7 +63,7 @@ class CfgVehicles
 		GetOutAction = pilot_Heli_Light_02_Exit;		/// what action uses the pilot to get out of heli
 		cargoGetInAction[] = {"GetInHelicopterCargo"};	/// actions for the cargo, the last one in array is used for the rest
 		cargoGetOutAction[] = {"GetOutHelicopterCargo"};/// that means every cargo position could use different action to get in
-		transportSoldier = 5;							/// how many cargo positions are available
+		transportSoldier = 3;							/// how many cargo positions are available
 		cargoAction[] = { 								/// the same array as getIn/getOut actions for actions to switch to for cargo while inside the heli
 			passenger_apc_narrow_generic03,
 			passenger_apc_generic02,
@@ -75,8 +75,8 @@ class CfgVehicles
 		cargoIsCoDriver[] = {0, 0}; 				/// the cargo don't utilize some special memory points to get in
 		memoryPointsGetInCargo = "pos cargo";		/// on what memory points should the cargo get in the heli
 		memoryPointsGetInCargoDir = "pos cargo dir";/// what is the direction of the cargo facing during get in animation (and opposite for get out)
-		hideWeaponsCargo = 1;						/// this makes the poses easier and adds some performance gain because the proxies don't need to be drawn
-		cargoProxyIndexes[] = {1,2,3,4,5,6,7};		/// what indexes does regular cargo sit on
+		hideWeaponsCargo = 0;						/// this makes the poses easier and adds some performance gain because the proxies don't need to be drawn
+		cargoProxyIndexes[] = {2,3,5};		/// what indexes does regular cargo sit on
 		
 		class TransportBackpacks	/// adds various backpacks to cargo hold of the heli
 		{
@@ -115,8 +115,8 @@ class CfgVehicles
 		selectionFireAnim = "muzzleFlash";						/// what selection is hidden when machinegun doesn't shoot
 
 		visionMode[]={"Normal","NVG","Ti"};
-		weapons[] = {"gatling_30mm", "rockets_Skyfire", "CMFlareLauncher","Laserdesignator_mounted"};	/// array of various vehicle weapons mounted on the heli
-		magazines[] = {"250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","38Rnd_80mm_rockets","38Rnd_80mm_rockets","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"}; /// array of corresponding magazines
+		weapons[] = {"gatling_30mm",  "CMFlareLauncher","Laserdesignator_mounted"};	/// array of various vehicle weapons mounted on the heli
+		magazines[] = {"250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"}; /// array of corresponding magazines
 				
 		class ViewPilot: ViewPilot 	/// describes what does the pilot see using bare eyes
 		{
@@ -179,6 +179,40 @@ class CfgVehicles
 		
 		class Turrets: Turrets										/// just a copilot seat as a turret to enable taking the controls
 		{
+			class CargoTurret_01: CargoTurret 						/// position for Firing from Vehicles
+			{
+				gunnerAction 				= "passenger_inside_2";	/// generic animation for sitting inside with rifle ready
+				gunnerCompartments 			= "Compartment2";		/// gunner is not able to switch seats
+				memoryPointsGetInGunner 	= "pos_cargo_r";		/// specific memory points to allow choice of position
+				memoryPointsGetInGunnerDir 	= "pos_cargo_r_dir";	/// direction of get in action
+				gunnerName 					= "Passenger Gunner R";	/// name of the position in the Action menu
+				proxyIndex 					= 4;					/// what cargo proxy is used according to index in the model
+				maxElev 					= 15;					/// what is the highest possible elevation of the turret
+				minElev 					= -25;					/// what is the lowest possible elevation of the turret
+				maxTurn 					= 1;					/// what is the left-most possible turn of the turret
+				minTurn 					= -50;					/// what is the right-most possible turn of the turret
+				isPersonTurret 				= 1;					/// enables firing from vehicle functionality
+				ejectDeadGunner 			= 0;					/// seatbelts included
+				enabledByAnimationSource 	= "";				/// doesn't work unless the said animation source is 1
+				memoryPointGunnerOptics= "";
+			};
+			class CargoTurret_02: CargoTurret_01						/// position for Firing from Vehicles
+			{
+				gunnerAction 				= "passenger_inside_2";	/// generic animation for sitting inside with rifle ready
+				gunnerCompartments 			= "Compartment2";		/// gunner is not able to switch seats
+				memoryPointsGetInGunner 	= "pos_cargo_l";		/// specific memory points to allow choice of position
+				memoryPointsGetInGunnerDir 	= "pos_cargo_l_dir";	/// direction of get in action
+				gunnerName 					= "Passenger Gunner L";	/// name of the position in the Action menu
+				proxyIndex 					= 1;					/// what cargo proxy is used according to index in the model
+				maxElev 					= 15;					/// what is the highest possible elevation of the turret
+				minElev 					= -25;					/// what is the lowest possible elevation of the turret
+				maxTurn 					= 50;					/// what is the left-most possible turn of the turret
+				minTurn 					= -1;					/// what is the right-most possible turn of the turret
+				isPersonTurret 				= 1;					/// enables firing from vehicle functionality
+				ejectDeadGunner 			= 0;					/// seatbelts included
+				enabledByAnimationSource 	= "";				/// doesn't work unless the said animation source is 1
+				memoryPointGunnerOptics= "";
+			};
 		};
 
 		class Damage	/// damage changes material in specific places (visual in hitPoint)
@@ -245,31 +279,6 @@ class CfgVehicles
 		
 		class UserActions /// actions available for player to interact with vehicle via action menu running scripts
 		{
-			class cockpit_Open
-			{
-				userActionID 		= 60;				/// ID for some scripts
-				displayName 		= "Open Cockpit";		/// what is displayed in action menu
-				displayNameDefault 	= "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />"; /// what is displayed under the cursor (icon in this case)
-				textToolTip 		= "Open Cockpit";
-				position 			= "";				/// start of radius where action is available
-				priority 			= 1.5;				/// higher priority means higher in the Action menu
-				radius 				= 1.5;				/// how far from position is the action available
-				onlyForPlayer 		= 1;				/// AI doesn't use this one
-				condition 			= "this doorPhase ""cockpitdoor"" < 0.5 AND Alive(this) AND (player in crew this)"; /// only openable from inside and when closed
-				statement 			= "this animateDoor ['cockpitdoor', 1]";	/// sets animation source Doors to 1 via interpolation
-				animPeriod = 4;				
-			};
-
-			class cockpit_Close: cockpit_Open
-			{
-				userActionID 		= 61;
-				displayName 		= "Close Cockpit";
-				textToolTip 		= "Close Cockpit";
-				priority = 1.5;
-				condition	 		= "this doorPhase ""cockpitdoor"" > 0.5 AND Alive(this) AND (player in crew this)";
-				statement 			= "this animateDoor ['cockpitdoor', 0]";
-				animPeriod = 4;		
-			};
 		};		
 	
 		class Reflectors: Reflectors			/// landing lights of the heli, turned on by AI while in night and "careless" or "safe"
@@ -329,8 +338,6 @@ class CfgVehicles
 		crew = "OPTRE_UNSC_Marine_Pilot";	/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 			/// harder to distinguish side than vehicle type
 		displayName = "UH-144 Falcon";
-		icon = "\A3\Air_F\Heli_Light_02\Data\UI\Map_Heli_Light_02_rockets_CA.paa";	/// icon in map/editor
-		picture = "\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_rockets_CA.paa";	/// small picture in command menu
 		
 		hiddenSelectionsTextures[] = /// changes of textures to distinguish variants in same order as hiddenSelections[]
 		{
