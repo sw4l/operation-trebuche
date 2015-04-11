@@ -761,8 +761,8 @@ class cfgWeapons
 		displayName  										= "[UNSC] M52 Body Armor (Marine)"; /// how would the stuff be displayed in inventory and on ground
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_vest.paa";
 		model     										= "\OPTRE_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
-		hiddenSelections[]   									= {"camo1","camo2","attach_knife","attach_neck"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   								= {"OPTRE_UNSC_Units\Marines\data\vest_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_ca.paa"}; /// what texture is going to be used
+		hiddenSelections[]   									= {"camo1","camo2","camo3","attach_knife","attach_neck"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   								= {"OPTRE_UNSC_Units\Marines\data\vest_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_khaki_co.paa"}; /// what texture is going to be used
 		class ItemInfo: VestItem 
 		{
 			uniformModel   									= "\OPTRE_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
@@ -771,8 +771,8 @@ class cfgWeapons
 			mass   										= 40;
 			passThrough   									= 0.1; /// coef of damage passed to total damage
 			modelSides[]   									= {6};
-			hiddenSelections[]   								= {"camo1","camo2","attach_knife","attach_neck"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   							= {"OPTRE_UNSC_Units\Army\data\vest_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_ca.paa"}; /// what texture is going to be used
+			hiddenSelections[]   								= {"camo1","camo2","camo3","attach_knife","attach_neck"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   							= {"OPTRE_UNSC_Units\Army\data\vest_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_khaki_co.paa"}; /// what texture is going to be used
 		};
 	};
 	class OPTRE_UNSC_Marine_vest_vacuum: OPTRE_UNSC_Marine_vest_base
@@ -782,8 +782,8 @@ class cfgWeapons
 		displayName  									= "[UNSC] M52[V] Body Armor (Marine)"; /// how would the stuff be displayed in inventory and on ground
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_vest_vac.paa";
 		model     										= "\OPTRE_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
-		hiddenSelections[]   							= {"camo1","camo2","attach_knife"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Marines\data\vest_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_ca.paa"}; /// what texture is going to be used
+		hiddenSelections[]   							= {"camo1","camo2","camo3","attach_knife"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Marines\data\vest_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_khaki_co.paa"}; /// what texture is going to be used
 		class ItemInfo: VestItem 
 		{
 			uniformModel   								= "\OPTRE_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
@@ -792,8 +792,8 @@ class cfgWeapons
 			mass   										= 40;
 			passThrough   								= 0.1; /// coef of damage passed to total damage
 			modelSides[]   								= {6};
-			hiddenSelections[]   						= {"camo1","camo2","attach_knife"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_ca.paa"}; /// what texture is going to be used
+			hiddenSelections[]   						= {"camo1","camo2","camo3","attach_knife"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_khaki_co.paa"}; /// what texture is going to be used
 		};
 	};
 

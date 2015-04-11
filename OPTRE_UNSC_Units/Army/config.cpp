@@ -1103,7 +1103,7 @@ class cfgWeapons
 			mass 										= 80;
 			passThrough 								= 0; /// coef of damage passed to total damage
 			modelSides[] 								= {6};
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
+			hiddenSelections[]   						= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_neck","attach_pack""attach_pouches"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"}; /// what texture is going to be used
 		};
 	};
@@ -1113,12 +1113,12 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_wdl.paa";
 		displayName  									= "[UNSC] M52 Body Armor (Woodland)"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"}; /// what texture is going to be used
+		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa","OPTRE_UNSC_Units\Army\data\pouches_olive_co.paa"}; /// what texture is going to be used
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"}; /// what texture is going to be used
+			hiddenSelections[]   						= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa","OPTRE_UNSC_Units\Army\data\pouches_olive_co.paa"}; /// what texture is going to be used
 		};
 	};
 	class OPTRE_UNSC_M52V_Vest_WDL: OPTRE_UNSC_M52_Vest_WDL
@@ -1126,12 +1126,12 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_wdl_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor (Woodland)"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_knife","attach_pack"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"}; /// what texture is going to be used
+		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_pack"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa","OPTRE_UNSC_Units\Army\data\pouches_olive_co.paa"}; /// what texture is going to be used
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_knife","attach_pack"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"}; /// what texture is going to be used
+			hiddenSelections[]   						= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_pack"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa","OPTRE_UNSC_Units\Army\data\pouches_olive_co.paa"}; /// what texture is going to be used
 		};
 	};
 	class OPTRE_UNSC_M52_Vest_DES: OPTRE_UNSC_M52_Vest_WDL
@@ -1139,12 +1139,12 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_des.paa";
 		displayName  									= "[UNSC] M52 Body Armor (Desert)"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_cam2_co.paa","OPTRE_UNSC_Units\Army\data\addons_cam2_ca.paa"}; /// what texture is going to be used
+		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_cam2_co.paa","OPTRE_UNSC_Units\Army\data\addons_cam2_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_brown_co.paa"}; /// what texture is going to be used
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_cam2_co.paa","OPTRE_UNSC_Units\Army\data\addons_cam2_ca.paa"}; /// what texture is going to be used
+			hiddenSelections[]   						= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_cam2_co.paa","OPTRE_UNSC_Units\Army\data\addons_cam2_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_brown_co.paa"}; /// what texture is going to be used
 		};
 	};
 	class OPTRE_UNSC_M52_Vest_Medic: OPTRE_UNSC_M52_Vest_WDL
@@ -1152,12 +1152,12 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_med.paa";
 		displayName  									= "[UNSC] M52 Body Armor (Medic)"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_cam2_ca.paa"}; /// what texture is going to be used
+		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_cam2_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"}; /// what texture is going to be used
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_cam2_ca.paa"}; /// what texture is going to be used
+			hiddenSelections[]   						= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_cam2_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"}; /// what texture is going to be used
 		};
 	};
 	class OPTRE_UNSC_M52V_Vest_Medic: OPTRE_UNSC_M52_Vest_WDL
@@ -1165,12 +1165,12 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_med_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor (Medic)"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_knife"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa"}; /// what texture is going to be used
+		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","attach_knife"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"}; /// what texture is going to be used
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_knife"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa"}; /// what texture is going to be used
+			hiddenSelections[]   						= {"camo1","camo2","camo3","insignia","clan","attach_knife"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"}; /// what texture is going to be used
 		};
 	};
 	class OPTRE_UNSC_M52V_Vest_DES: OPTRE_UNSC_M52_Vest_WDL
@@ -1178,12 +1178,12 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_des_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor (Desert)"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_knife","attach_pack"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_cam2_co.paa","OPTRE_UNSC_Units\Army\data\addons_cam2_ca.paa"}; /// what texture is going to be used
+		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_pack"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_cam2_co.paa","OPTRE_UNSC_Units\Army\data\addons_cam2_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_brown_co.paa"}; /// what texture is going to be used
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_knife","attach_pack"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_cam2_co.paa","OPTRE_UNSC_Units\Army\data\addons_cam2_ca.paa"}; /// what texture is going to be used
+			hiddenSelections[]   						= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_pack"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_cam2_co.paa","OPTRE_UNSC_Units\Army\data\addons_cam2_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_brown_co.paa"}; /// what texture is going to be used
 		};
 	};
 	class OPTRE_UNSC_M52_Vest2_base: V_PlateCarrier1_rgr //The vest base class
@@ -1201,7 +1201,7 @@ class cfgWeapons
 			mass 										= 80;
 			passThrough 								= 0; /// coef of damage passed to total damage
 			modelSides[] 								= {6};
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","camo3","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
+			hiddenSelections[]   						= {"camo1","camo2","camo3","insignia","clan","camo3","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa","OPTRE_UNSC_Units\Army\data\ghillie_1_ca.paa"}; /// what texture is going to be used
 		};
 	};
@@ -1211,11 +1211,11 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_wdl_gil.paa";
 		displayName  									= "[UNSC] M52 Body Armor (Woodland) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","camo3","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
+		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","camo3","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa","OPTRE_UNSC_Units\Army\data\ghillie_1_ca.paa"}; /// what texture is going to be used
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","camo3","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
+			hiddenSelections[]   						= {"camo1","camo2","camo3","insignia","clan","camo3","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa","OPTRE_UNSC_Units\Army\data\ghillie_1_ca.paa"}; /// what texture is going to be used
 		};
 	};	
@@ -1225,11 +1225,11 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_wdl_gil_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor (Woodland) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","camo3","attach_knife","attach_pack"}; /// what selection in model could have different textures
+		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","camo3","attach_knife","attach_pack"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa","OPTRE_UNSC_Units\Army\data\ghillie_1_ca.paa"}; /// what texture is going to be used
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","camo3","attach_knife","attach_pack"}; /// what selection in model could have different textures
+			hiddenSelections[]   						= {"camo1","camo2","camo3","insignia","clan","camo3","attach_knife","attach_pack"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa","OPTRE_UNSC_Units\Army\data\ghillie_1_ca.paa"}; /// what texture is going to be used
 		};
 	};
@@ -1239,11 +1239,11 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_des_gil.paa";
 		displayName  									= "[UNSC] M52 Body Armor (Desert) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","camo3","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
+		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","camo3","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_cam2_co.paa","OPTRE_UNSC_Units\Army\data\addons_cam2_ca.paa","OPTRE_UNSC_Units\Army\data\ghillie_3_ca.paa"}; /// what texture is going to be used
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","camo3","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
+			hiddenSelections[]   						= {"camo1","camo2","camo3","insignia","clan","camo3","attach_knife","attach_neck","attach_pack"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_cam2_co.paa","OPTRE_UNSC_Units\Army\data\addons_cam2_ca.paa","OPTRE_UNSC_Units\Army\data\ghillie_3_ca.paa"}; /// what texture is going to be used
 		};
 	};	
@@ -1253,11 +1253,11 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_vest_des_gil_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor (Desert) (Ghillie)"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","camo3","attach_knife","attach_pack"}; /// what selection in model could have different textures
+		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","camo3","attach_knife","attach_pack"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_cam2_co.paa","OPTRE_UNSC_Units\Army\data\addons_cam2_ca.paa","OPTRE_UNSC_Units\Army\data\ghillie_3_ca.paa"}; /// what texture is going to be used
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","camo3","attach_knife","attach_pack"}; /// what selection in model could have different textures
+			hiddenSelections[]   						= {"camo1","camo2","camo3","insignia","clan","camo3","attach_knife","attach_pack"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_cam2_co.paa","OPTRE_UNSC_Units\Army\data\addons_cam2_ca.paa","OPTRE_UNSC_Units\Army\data\ghillie_3_ca.paa"}; /// what texture is going to be used
 		};
 	};
