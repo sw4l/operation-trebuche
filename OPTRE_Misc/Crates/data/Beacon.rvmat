@@ -8,7 +8,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "TEI_Misc\Crates\data\beacon_nohq.paa";
+	texture = "OPTRE_Misc\Crates\data\beacon_nohq.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture = "TEI_Vehicles\Window_dt.paa";
+	texture = "OPTRE_Vehicles\Window_dt.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture = "TEI_Misc\Crates\data\beacon_as.paa";
+	texture = "OPTRE_Misc\Crates\data\beacon_as.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "TEI_Misc\Crates\data\beacon_smdi.paa";
+	texture = "OPTRE_Misc\Crates\data\beacon_smdi.paa";
 	uvSource = "tex";
 	class uvTransform
 	{

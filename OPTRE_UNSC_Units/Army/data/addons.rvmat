@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture = "OPTRE_Vehicles\window_dt.paa";
+	texture="OPTRE_UNSC_Units\armor_dt.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
