@@ -163,7 +163,7 @@ class CfgWeapons
             class OPTRE_M7: SMG_01_F
             {
                     scope                                                                   = 2;
-                    handAnim[]                                                            	= {"OFP2_ManSkeleton", "\A3\Weapons_F\Rifles\MX\data\Anim\MX_cqc.rtm"/*"\OPTRE_Weapons\SMG\data\anim\smg_hand_anim.rtm"*/};
+                    handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_Weapons\smg\data\anim\smg_handanim2.rtm"};
 					model                                                                   = "\OPTRE_Weapons\SMG\SMG.p3d";
                     displayName                                                             = "M7/Caseless SMG";
                     descriptionShort                                                        = "UNSC M7 SMG";
