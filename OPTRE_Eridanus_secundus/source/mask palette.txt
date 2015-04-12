@@ -1,0 +1,5 @@
+R, G, B, Climate, Land type
+217, 0, 0, "Spring Mars (FA)", "Flatland",
+132, 0, 0, "Spring Mars (FA)", "Rocky ground",
+128, 128, 128, "Spring Mars (FA)", "Rock slope",
+0, 0, 0, "Spring Mars (FA)", "Cliff face",
