@@ -19,9 +19,9 @@ class TexGen3
 	uvSource="worldPos";
 	class uvTransform
 	{
-		aside[]={0.0001953125,0,0};
-		up[]={0,0,0.0001953125};
-		dir[]={0,-0.0001953125,0};
+		aside[]={0.001953125,0,0};
+		up[]={0,0,0.001953125};
+		dir[]={0,-0.001953125,0};
 		pos[]={-2.78125,0.53125,0};
 	};
 };
@@ -30,9 +30,9 @@ class TexGen4
 	uvSource="worldPos";
 	class uvTransform
 	{
-		aside[]={0.0001953125,0,0};
-		up[]={0,0,0.0001953125};
-		dir[]={0,-0.0001953125,0};
+		aside[]={0.001953125,0,0};
+		up[]={0,0,0.001953125};
+		dir[]={0,-0.001953125,0};
 		pos[]={-2.78125,0.53125,0};
 	};
 };
@@ -52,9 +52,9 @@ class TexGen1
 	uvSource="tex";
 	class uvTransform
 	{
-		aside[]={0,0,0};
-		up[]={0,0,0};
-		dir[]={0,0,0};
+		aside[]={10,0,0};
+		up[]={0,10,0};
+		dir[]={0,0,10};
 		pos[]={0,0,0};
 	};
 };
@@ -63,9 +63,9 @@ class TexGen2
 	uvSource="tex";
 	class uvTransform
 	{
-		aside[]={0,0,0};
-		up[]={0,0,0};
-		dir[]={0,0,0};
+		aside[]={10,0,0};
+		up[]={0,10,0};
+		dir[]={0,0,10};
 		pos[]={0,0,0};
 	};
 };
@@ -78,12 +78,12 @@ class Stage2
 };
 class Stage3
 {
-	texture="";
+	texture="\optre_Eridanus_secundus\data\optre_strdirt_nopx.paa";
 	texGen=1;
 };
 class Stage4
 {
-	texture="";
+	texture="\optre_Eridanus_secundus\data\optre_strdirt_co.paa";
 	texGen=2;
 };
 class Stage14

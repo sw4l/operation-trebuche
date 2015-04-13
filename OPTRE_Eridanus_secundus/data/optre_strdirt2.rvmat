@@ -8,7 +8,7 @@ PixelShaderID="NormalMapDiffuse";
 VertexShaderID="NormalMapDiffuseAlpha";
 class Stage1
 {
-	texture="OPTRE_Eridanus_secundus\data\OPTRE_strdirt_nopx.paa";
+	texture="\optre_Eridanus_secundus\data\optre_strdirt_nopx.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture="OPTRE_Eridanus_secundus\data\OPTRE_strdirt3_co.paa";
+	texture="\optre_Eridanus_secundus\data\optre_strdirt2_co.paa";
 	uvSource="tex";
 	class uvTransform
 	{

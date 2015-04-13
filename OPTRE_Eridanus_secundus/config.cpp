@@ -9,12 +9,12 @@
 //Class map_stratis : config.bin{
 class CfgPatches
 {
-	class OPTRE_Eridanus_secundus //Look it up here: https://sites.google.com/site/islandconfigs/home
+	class optre_Eridanus_secundus //Look it up here: https://sites.google.com/site/islandconfigs/home
 	{
-		units[] = {"OPTRE_Eridanus_secundus"}; //not sure if it must be filled, as Stratis didn't, but A2 Maps did...
+		units[] = {"optre_Eridanus_secundus"}; //not sure if it must be filled, as Stratis didn't, but A2 Maps did...
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Data_F","A3_Roads_F","A3_Structures_F","A3_Map_Data"};
+		requiredAddons[] = {"A3_Data_F","A3_Roads_F","A3_Structures_F","A3_Map_Data","A3_Rocks_F"};
 		author = "Article 2 studios"; //Author Name (this entry exists twice!)
 		mail = "";
 	};
@@ -52,7 +52,7 @@ class CfgWorlds
 	};
 	
 	class DefaultLighting;
-	class OPTRE_Eridanus_secundus: CAWorld
+	class optre_Eridanus_secundus: CAWorld
 	{
 		dynLightMinBrightnessAmbientCoef = 0.5;
 		dynLightMinBrightnessAbsolute = 0.05;
@@ -171,9 +171,9 @@ class CfgWorlds
 			{
 				class Weather1: Weather1
 				{
-					sky = "OPTRE_Eridanus_secundus\data\spacebox.paa";
-					skyR = "OPTRE_Eridanus_secundus\data\spacebox.paa";
-					horizon = "OPTRE_Eridanus_secundus\data\horizon.paa";
+					sky = "optre_Eridanus_secundus\data\spacebox.paa";
+					skyR = "optre_Eridanus_secundus\data\sky_space_lco.paa";
+					horizon = "optre_Eridanus_secundus\data\horizon.paa";
 					overcast=0;
 					alpha=0;
 					bright=0.05;
@@ -186,9 +186,9 @@ class CfgWorlds
 				};
 				class Weather7: Weather1
 				{
-					sky = "OPTRE_Eridanus_secundus\data\spacebox.paa";
-					skyR = "OPTRE_Eridanus_secundus\data\spacebox.paa";
-					horizon = "OPTRE_Eridanus_secundus\data\horizon.paa";
+					sky = "optre_Eridanus_secundus\data\spacebox.paa";
+					skyR = "optre_Eridanus_secundus\data\sky_space_lco.paa";
+					horizon = "optre_Eridanus_secundus\data\horizon.paa";
 					overcast=0;
 					alpha=0;
 					bright=0.05;
@@ -201,9 +201,9 @@ class CfgWorlds
 				};
 				class Weather2: Weather2
 				{
-					sky = "OPTRE_Eridanus_secundus\data\spacebox.paa";
-					skyR = "OPTRE_Eridanus_secundus\data\spacebox.paa";
-					horizon = "OPTRE_Eridanus_secundus\data\horizon.paa";
+					sky = "optre_Eridanus_secundus\data\spacebox.paa";
+					skyR = "optre_Eridanus_secundus\data\sky_space_lco.paa";
+					horizon = "optre_Eridanus_secundus\data\horizon.paa";
 					overcast=0;
 					alpha=0;
 					bright=0.05;
@@ -216,9 +216,9 @@ class CfgWorlds
 				};
 				class Weather3: Weather3
 				{
-					sky = "OPTRE_Eridanus_secundus\data\spacebox.paa";
-					skyR = "OPTRE_Eridanus_secundus\data\spacebox.paa";
-					horizon = "OPTRE_Eridanus_secundus\data\horizon.paa";
+					sky = "optre_Eridanus_secundus\data\spacebox.paa";
+					skyR = "optre_Eridanus_secundus\data\sky_space_lco.paa";
+					horizon = "optre_Eridanus_secundus\data\horizon.paa";
 					overcast=0;
 					alpha=0;
 					bright=0.05;
@@ -231,9 +231,9 @@ class CfgWorlds
 				};
 				class Weather4: Weather4
 				{
-					sky = "OPTRE_Eridanus_secundus\data\spacebox.paa";
-					skyR = "OPTRE_Eridanus_secundus\data\spacebox.paa";
-					horizon = "OPTRE_Eridanus_secundus\data\horizon.paa";
+					sky = "optre_Eridanus_secundus\data\spacebox.paa";
+					skyR = "optre_Eridanus_secundus\data\sky_space_lco.paa";
+					horizon = "optre_Eridanus_secundus\data\horizon.paa";
 					overcast=0;
 					alpha=0;
 					bright=0.05;
@@ -246,9 +246,9 @@ class CfgWorlds
 				};
 				class Weather5: Weather5
 				{
-					sky = "OPTRE_Eridanus_secundus\data\spacebox.paa";
-					skyR = "OPTRE_Eridanus_secundus\data\spacebox.paa";
-					horizon = "OPTRE_Eridanus_secundus\data\horizon.paa";
+					sky = "optre_Eridanus_secundus\data\spacebox.paa";
+					skyR = "optre_Eridanus_secundus\data\sky_space_lco.paa";
+					horizon = "optre_Eridanus_secundus\data\horizon.paa";
 					overcast=0;
 					alpha=0;
 					bright=0.05;
@@ -261,9 +261,9 @@ class CfgWorlds
 				};
 				class Weather6: Weather6
 				{
-					sky = "OPTRE_Eridanus_secundus\data\spacebox.paa";
-					skyR = "OPTRE_Eridanus_secundus\data\spacebox.paa";
-					horizon = "OPTRE_Eridanus_secundus\data\horizon.paa";
+					sky = "optre_Eridanus_secundus\data\spacebox.paa";
+					skyR = "optre_Eridanus_secundus\data\sky_space_lco.paa";
+					horizon = "optre_Eridanus_secundus\data\horizon.paa";
 					overcast=0;
 					alpha=0;
 					bright=0.05;
@@ -398,15 +398,15 @@ class CfgWorlds
 		satelliteNormalBlendEnd = 100; //?when satellite and HD texture blend?
 		skyObject = "A3\Map_Stratis\data\obloha.p3d"; //skybox object, don't touch
 		horizontObject = "A3\Map_Stratis\data\horizont.p3d"; //??
-		skyTexture = "OPTRE_Eridanus_secundus\data\spacebox.paa"; //Not sure, because ArmA uses Simulweather, which brings it's own, dynamic sky stuff...
-		skyTextureR = "OPTRE_Eridanus_secundus\data\spacebox.paa"; //~
+		skyTexture = "optre_Eridanus_secundus\data\spacebox.paa"; //Not sure, because ArmA uses Simulweather, which brings it's own, dynamic sky stuff...
+		skyTextureR = "optre_Eridanus_secundus\data\sky_space_lco.paa"; //~
 		access = 3; //unknown, leave 3 set
 		worldId = 1337; //unknown, change to any number you like
 		cutscenes[] = {""}; //plays in main menu
 		description = "Eridanus Secundus Asteroid"; //Shown as name when choosing Island
 		icon = ""; //Icon in front of Island Name
-		worldName = "\OPTRE_Eridanus_secundus\OPTRE_Eridanus_secundus.wrp"; //path to your WRP file
-		pictureMap = "\OPTRE_Eridanus_secundus\data\pictureMap_ca.paa"; //Editor Picture
+		worldName = "\optre_Eridanus_secundus\optre_Eridanus_secundus.wrp"; //path to your WRP file
+		pictureMap = "\optre_Eridanus_secundus\data\pictureMap_ca.paa"; //Editor Picture
 		pictureShot = "A3\map_Stratis\data\ui_Stratis_ca.paa"; //Loadingscreen Picture
 		plateFormat = "AS$-####"; //unknown
 		plateLetters = "ABCDEGHIKLMNOPRSTVXZ"; //unknown
@@ -426,8 +426,8 @@ class CfgWorlds
 			{
 				class Layer0
 				{
-					nopx = "\OPTRE_Eridanus_secundus\data\optre_strdirt_nopx.paa";
-					texture = "\OPTRE_Eridanus_secundus\data\optre_strdirt_co.paa";
+					nopx = "\optre_Eridanus_secundus\data\optre_strdirt_nopx.paa";
+					texture = "\optre_Eridanus_secundus\data\optre_strdirt_co.paa";
 				};
 			};
 			colorOutside[] = {0.294118,0.333333,0.372549,1};
@@ -655,12 +655,12 @@ class CfgWorlds
 		safePositionRadius = 1900; //??
 		loadingTexts[] = {"Eridanus Secundus became the stronghold for the insurrection", "Spartan II's visitied this place twice.","The Asteroid was presumed destroyed by Covenant afte the Gettysburg-Ascendant Justice jumped out of the system"}; //Loading Texts
 	};
-	initWorld = "OPTRE_Eridanus_secundus";//??
-	demoWorld = "OPTRE_Eridanus_secundus";//??
+	initWorld = "optre_Eridanus_secundus";//??
+	demoWorld = "optre_Eridanus_secundus";//??
 };
 class CfgWorldList//??
 {
-	class OPTRE_Eridanus_secundus{};
+	class optre_Eridanus_secundus{};
 };
 //};
 #include "cfgSurfaces.h"

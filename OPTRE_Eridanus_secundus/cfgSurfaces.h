@@ -1,9 +1,9 @@
 class CfgSurfaces 
 {
 	class Default {};
-	class OPTRE_strdirt_surface : Default
+	class optre_strdirt_surface : Default
 	{	
-		files = "OPTRE_strdirt";
+		files = "optre_strdirt_co";
 		character = "Empty";
 		soundEnviron = "concrete";
 		soundHit = "concrete";
@@ -14,9 +14,9 @@ class CfgSurfaces
 		grassCover = 0.0;
 		impact = "hitConcrete";
 	};
-		class OPTRE_strdirt2_surface : Default
+		class optre_strdirt2_surface : Default
 	{	
-		files = "OPTRE_strdirt2";
+		files = "optre_strdirt2_co";
 		character = "Empty";
 		soundEnviron = "concrete";
 		soundHit = "concrete";
@@ -27,9 +27,9 @@ class CfgSurfaces
 		grassCover = 0.0;
 		impact = "hitConcrete";
 	};
-		class OPTRE_strdirt3_surface : Default
+		class optre_strdirt3_surface : Default
 	{	
-		files = "OPTRE_strdirt3";
+		files = "optre_strdirt3_co";
 		character = "Empty";
 		soundEnviron = "concrete";
 		soundHit = "concrete";
@@ -44,17 +44,17 @@ class CfgSurfaces
 
 class CfgSurfaceCharacters
 {
-	class OPTRE_strdirt_Character
+	class optre_strdirt_Character
   	{
 			probability[]={0.9, 0.2};
 			names[]={};
   	};
-		class OPTRE_strdirt2_Character
+		class optre_strdirt2_Character
   	{
 			probability[]={0.9, 0.2};
 			names[]={};
   	};
-		class OPTRE_strdirt3_Character
+		class optre_strdirt3_Character
   	{
 			probability[]={0.9, 0.2};
 			names[]={};
