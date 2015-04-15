@@ -14,7 +14,7 @@ class CfgVehicles
 	class B_Helipilot_F;
 	class OPTRE_UNSC_Navy_Base_F : B_Helipilot_F {
         _generalMacro = "B_Soldier_F"; 
-        scope = 0;
+        scope = 1;
 		author	= "Article 2 Studios";
         displayName = "UNSC_Crewman_Base";
         uniformAccessories[] = {};
@@ -401,7 +401,7 @@ class CfgVehicles
 		respawnLinkedItems[] = {"OPTRE_H_Final_Dawn_Cap","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
     }; 
 	class OPTRE_UNSC_Navy_Ordinance_F: OPTRE_UNSC_Navy_Base_F {
-        scope = 0;
+        scope = 2;
 		author	= "Article 2 Studios";
         displayName = "Flight Loader";
         nakedUniform = "U_BasicBody"; 
