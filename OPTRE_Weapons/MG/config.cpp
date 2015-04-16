@@ -16,7 +16,7 @@ enum
 }; 
 class CfgPatches
 {
-	class OPTRE_Weapons_MG
+	class OPTRE_Weapons_SMG
 	{
 		units[] = {};
 		weapons[] = {};
