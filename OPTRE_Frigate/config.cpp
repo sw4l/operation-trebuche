@@ -272,7 +272,7 @@ class CfgVehicles
 	
 	class OPTRE_testbox: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "test box";
@@ -292,7 +292,7 @@ class CfgVehicles
 	};
 	class OPTRE_1_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "1_box";
@@ -302,7 +302,7 @@ class CfgVehicles
 	};
 	class OPTRE_2_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "2_box";
@@ -312,7 +312,7 @@ class CfgVehicles
 	};
 	class OPTRE_3_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "3_box";
@@ -322,7 +322,7 @@ class CfgVehicles
 	};
 	class OPTRE_4_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "4_box";
@@ -332,7 +332,7 @@ class CfgVehicles
 	};
 	class OPTRE_5_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "5_box";
@@ -342,7 +342,7 @@ class CfgVehicles
 	};
 	class OPTRE_6_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "6_box";
@@ -352,7 +352,7 @@ class CfgVehicles
 	};
 	class OPTRE_7_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "7_box";
@@ -362,7 +362,7 @@ class CfgVehicles
 	};
 	class OPTRE_8_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "8_box";
@@ -372,7 +372,7 @@ class CfgVehicles
 	};
 	class OPTRE_9_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "9_box";
@@ -382,7 +382,7 @@ class CfgVehicles
 	};
 	class OPTRE_10_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "10_box";
@@ -392,7 +392,7 @@ class CfgVehicles
 	};
 	class OPTRE_11_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "11_box";
@@ -402,7 +402,7 @@ class CfgVehicles
 	};
 	class OPTRE_12_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "12_box";
@@ -412,7 +412,7 @@ class CfgVehicles
 	};
 	class OPTRE_13_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "13_box";
@@ -422,7 +422,7 @@ class CfgVehicles
 	};
 	class OPTRE_14_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "14_box";
@@ -432,7 +432,7 @@ class CfgVehicles
 	};
 	class OPTRE_15_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "15_box";
@@ -442,7 +442,7 @@ class CfgVehicles
 	};
 	class OPTRE_16_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "16_box";
@@ -452,7 +452,7 @@ class CfgVehicles
 	};
 	class OPTRE_17_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "17_box";
@@ -462,7 +462,7 @@ class CfgVehicles
 	};
 	class OPTRE_19_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "19_box";
@@ -472,7 +472,7 @@ class CfgVehicles
 	};
 	class OPTRE_20_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "20_box";
@@ -482,7 +482,7 @@ class CfgVehicles
 	};
 	class OPTRE_21_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "21_box";
@@ -492,7 +492,7 @@ class CfgVehicles
 	};
 	class OPTRE_22_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "22_box";
@@ -502,7 +502,7 @@ class CfgVehicles
 	};
 	class OPTRE_23_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "23_box";
@@ -512,7 +512,7 @@ class CfgVehicles
 	};
 	class OPTRE_24_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "24_box";
@@ -522,7 +522,7 @@ class CfgVehicles
 	};
 	class OPTRE_25_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "25_box";
@@ -532,7 +532,7 @@ class CfgVehicles
 	};
 	class OPTRE_26_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "26_box";
@@ -542,7 +542,7 @@ class CfgVehicles
 	};
 	class OPTRE_27_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "27_box";
@@ -552,7 +552,7 @@ class CfgVehicles
 	};
 	class OPTRE_28_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "28_box";
@@ -562,7 +562,7 @@ class CfgVehicles
 	};
 	class OPTRE_29_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "29_box";
@@ -572,7 +572,7 @@ class CfgVehicles
 	};
 	class OPTRE_30_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "30_box";
@@ -582,7 +582,7 @@ class CfgVehicles
 	};
 	class OPTRE_31_box: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "31_box";
@@ -592,7 +592,7 @@ class CfgVehicles
 	};
 	class OPTRE_interior: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Interior";
@@ -602,7 +602,7 @@ class CfgVehicles
 	};
 	class OPTRE_console: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Console";
@@ -612,7 +612,7 @@ class CfgVehicles
 	};
 	class OPTRE_spawn_door: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Spawn Door";
@@ -622,7 +622,7 @@ class CfgVehicles
 	};
 	class OPTRE_liftarm: static
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Lift Arm";
@@ -632,7 +632,7 @@ class CfgVehicles
 	};
 	class OPTRE_frigate_gun: StaticWeapon
 	{
-		scope = 2;
+		scope = 1;
 		scopeCurator = 2;
 		armor = 450;
 		vehicleClass = "OPTRE_UNSC_Object_class";
@@ -713,7 +713,7 @@ class CfgVehicles
 	class Mode_FullAuto;
 	class OPTRE_Frig_PDG: autocannon_40mm_CTWS
 	{
-		scope = 2;
+		scope = 1;
 		displayName = "M910 Point Defense Gun";
 		model = "";
 		minRange = 5;
@@ -805,7 +805,7 @@ class cfgMagazines
 	class 250Rnd_30mm_HE_shells;
 	class OPTRE_100rd_50mm: 250Rnd_30mm_HE_shells
 	{
-		scope = 2;
+		scope = 1;
 		model = "";
 		displayName = "100rd 50mm Shells";
 		displayNameShort = "50mm";
