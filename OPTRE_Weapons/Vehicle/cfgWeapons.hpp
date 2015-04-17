@@ -10,6 +10,8 @@ class CfgWeapons
 	class RCWSOptics;
 	class missiles_titan;
 	class missiles_DAGR;
+	class gatling_20mm;
+	class gatling_30mm;
 	
 	class OPTRE_M41_LAAG: HMG_127
 	{
@@ -129,5 +131,41 @@ class CfgWeapons
 				effectName			 		= "MachineGunCloud";
             };
 		};
+	};
+	class OPTRE_M638: gatling_20mm
+	{
+
+		selectionFireAnim 					= "zasleh";
+		displayName							= "M638 Autocannon";
+        modes[] = {"FullAuto"};
+        class FullAuto: MGun
+        {
+            reloadTime = 0.1;
+            dispersion = 0.001;
+            minRange = 2;
+            minRangeProbab = 0.3;
+            midRange = 300;
+            midRangeProbab = 0.7;
+            maxRange = 800;
+            maxRangeProbab = 0.05;
+        };
+	};
+	class OPTRE_M370: gatling_30mm
+	{
+
+		selectionFireAnim 					= "zasleh";
+		displayName							= "M370 Autocannon";
+        modes[] = {"FullAuto"};
+        class FullAuto: MGun
+        {
+            reloadTime = 0.1;
+            dispersion = 0.001;
+            minRange = 2;
+            minRangeProbab = 0.3;
+            midRange = 300;
+            midRangeProbab = 0.7;
+            maxRange = 800;
+            maxRangeProbab = 0.05;
+        };
 	};
 };

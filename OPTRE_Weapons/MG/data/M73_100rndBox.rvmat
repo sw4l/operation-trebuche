@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="OPTRE_Weapons\mg\data\M73_100rndBox_nohq.paa";
+	texture="OPTRE_Weapons\mg\data\M73_100rnd_Box_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="OPTRE_Weapons\MG\data\M73_100rndBox_as.paa";
+	texture="OPTRE_Weapons\MG\data\M73_100rnd_Box_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="OPTRE_Weapons\MG\data\M73_100rndBox_smdi.paa";
+	texture="OPTRE_Weapons\MG\data\M73_100rnd_Box_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{

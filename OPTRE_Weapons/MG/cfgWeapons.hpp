@@ -21,6 +21,7 @@
                     model                                                                   = "\OPTRE_Weapons\MG\M73_SmartLink.p3d";
                     descriptionShort                                                        = "M73 Smart-Linked Neural Interface Scope";
                     weaponInfoType                                                          = "RscWeaponZeroing";
+                    inertia                                                                 = 0.1;
                     class ItemInfo: InventoryOpticsItem_Base_F
                     {
                             mass                                                            = 10;
@@ -58,21 +59,13 @@
                                     };
                             };
                     };
-                    inertia                                                                 = 0.1;
             };
-	};	
+		
 			
      
             //WEAPONS
-            class WeaponSlotsInfo;
-            class SlotInfo;
-            class ItemCore;
-            class InventoryOpticsItem_Base_F;
-            class GunParticles;
-			class UnderBarrelSlot;
-			class InventoryUnderItem_Base_F;
-            class EBR_Base_F;
-            class OPTRE_M73: EBR_Base_F
+            class MMG_01_base_F;
+            class OPTRE_M73: MMG_01_base_F
             {
                     scope                                                                   = 2;
 					scopeArsenal = 2;
@@ -80,7 +73,7 @@
                     model                                                                   = "\OPTRE_Weapons\MG\M73.p3d";
                     displayName                                                             = "M73 Light Machine Gun";
                     descriptionShort                                                        = "UNSC Light Machine Gun";
-                    picture 																= "";
+					picture = "\OPTRE_weapons\MG\icons\M73_1.paa";
                     magazines[]                                                             = {"OPTRE_100Rnd_95x40_Box","OPTRE_100Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box_Tracer"};
                     muzzlePos                                                               = "usti hlavne";
                     muzzleEnd                                                               = "konec hlavne";
@@ -227,8 +220,9 @@
 				};			
 			};
 		};
+	};
 		/*
-		class OPTRE_M247: OPTRE_M73
+		class OPTRE_M247: MMG_01_base_F
         {
 					scope                                                                   = 1;
                     handAnim[]                                                              = {"OFP2_ManSkeleton", "\A3\weapons_f\Machineguns\M200\data\Anim\M200.rtm"};

@@ -128,6 +128,7 @@ class CfgVehicles
 		faction	= "OPTRE_UNSC";					/// defines the faction inside of the side
 		crew = "OPTRE_UNSC_Army_W_Pilot";					/// lets use the sample soldier we have as default captain of the boat
 		scope 	= 0;
+		author="Article 2 Studios";
         armor = 120;//60					        /// just some protection against missiles, collisions and explosions
 		destrType = DestructWreck;
 		gearRetracting=1;	
@@ -1197,6 +1198,7 @@ class CfgVehicles
 	class OPTRE_Pelican_unarmed_green: OPTRE_Pelican_F
 	{
 		displayName = "D77-TC Pelican (Green)";
+			author="Article 2 Studios";
 		scope 	= 2;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		vehicleClass = "OPTRE_UNSC_Air_class";
@@ -1212,6 +1214,7 @@ class CfgVehicles
 		class OPTRE_Pelican_unarmed_tan: OPTRE_Pelican_unarmed_green
 	{
 		displayName = "D77-TC Pelican (Tan)";
+			author="Article 2 Studios";
 		scope 	= 2;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		faction	= "OPTRE_UNSC";					/// defines the faction inside of the side
@@ -1226,6 +1229,7 @@ class CfgVehicles
 		class OPTRE_Pelican_unarmed_black: OPTRE_Pelican_unarmed_green
 	{
 		displayName = "D77-TC Pelican (Black)";
+			author="Article 2 Studios";
 		scope 	= 2;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		faction	= "OPTRE_UNSC";					/// defines the faction inside of the side
@@ -1240,6 +1244,7 @@ class CfgVehicles
 	class OPTRE_Pelican_unarmed_ins: OPTRE_Pelican_unarmed_green
 	{
 		displayName = "D77-TC Pelican (Insurrection)";
+			author="Article 2 Studios";
 		scope 	= 2;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		side = 0;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		faction	= "OPTRE_Ins";					/// defines the faction inside of the side
@@ -1269,6 +1274,7 @@ class CfgVehicles
 	class OPTRE_Pelican_unarmed_marine: OPTRE_Pelican_F
 	{
 		displayName = "D77-TC Pelican (Marine)";
+			author="Article 2 Studios";
 		scope 	= 2;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		vehicleClass = "OPTRE_UNSC_Air_class";
@@ -1284,6 +1290,7 @@ class CfgVehicles
 	class OPTRE_Pelican_armed_green: OPTRE_Pelican_F
 	{
 		displayName = "G77-TC Pelican (Green)";
+			author="Article 2 Studios";
 		scope 	= 2;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		vehicleClass = "OPTRE_UNSC_Air_class";
@@ -1292,8 +1299,8 @@ class CfgVehicles
 		accuracy = 1.50; 					/// harder to distinguish side than vehicle type
 		memoryPointLMissile = "Rocket_1";
 		memoryPointRMissile = "Rocket_2";
-		weapons[] = {"rockets_Skyfire"};	/// array of various vehicle weapons mounted on the heli
-		magazines[] = {"38Rnd_80mm_rockets","38Rnd_80mm_rockets"}; /// array of corresponding magazines
+		weapons[] = {"CMFlareLauncher"};	/// array of various vehicle weapons mounted on the heli
+		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"}; /// array of corresponding magazines
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
 		class Turrets: Turrets										/// just a copilot seat as a turret to enable taking the controls
@@ -1321,8 +1328,8 @@ class CfgVehicles
 				gunnerName = "Gunner";
 				primaryGunner = 1;	
 				visionMode[]={"Normal","NVG","Ti"};
-				weapons[] = {"gatling_30mm", "rockets_Skyfire", "CMFlareLauncher","Laserdesignator_mounted"};	/// array of various vehicle weapons mounted on the heli
-				magazines[] = {"250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","38Rnd_80mm_rockets","38Rnd_80mm_rockets","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"}; /// array of corresponding magazines
+				weapons[] = {"OPTRE_M370","CMFlareLauncher","Laserdesignator_mounted"};	/// array of various vehicle weapons mounted on the heli
+				magazines[] = {"250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"}; /// array of corresponding magazines
 				minElev = -80;
 				maxElev = 15;
 				initElev = 0;
@@ -1397,24 +1404,28 @@ class CfgVehicles
 	};
 	class OPTRE_Pelican_armed_tan: OPTRE_Pelican_armed_green
 	{
+			author="Article 2 Studios";
 		displayName = "G77-TC Pelican (Tan)";
 		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_tan_CO.paa"};
 	};
 	class OPTRE_Pelican_armed_black: OPTRE_Pelican_armed_green
 	{
+			author="Article 2 Studios";
 		displayName = "G77-TC Pelican (Black)";
 		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_black_CO.paa"};
 	};
 	class OPTRE_Pelican_armed_marine: OPTRE_Pelican_armed_green
 	{
+			author="Article 2 Studios";
 		displayName = "G77-TC Pelican (Marine)";
 		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_marine_CO.paa"};
 	};
 	class OPTRE_Pelican_armed_ins: OPTRE_Pelican_armed_green
 	{
+			author="Article 2 Studios";
 		displayName = "G77-TC Pelican (Ins)";
 		side = 0;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		faction	= "OPTRE_Ins";					/// defines the faction inside of the side

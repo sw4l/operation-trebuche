@@ -1578,7 +1578,7 @@ class CfgVehicles
 
 		displayName="M12A1 Warthog (Rocket) [Innie]";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia"};
-		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_ins_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_ins_ca.paa"};
+		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_ins_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_ins_co.paa"};
 		vehicleClass="OPTRE_Ins_Vehicle_class";
 		side=0;
 		crew="OPTRE_Ins_URF_Rifleman_AR";

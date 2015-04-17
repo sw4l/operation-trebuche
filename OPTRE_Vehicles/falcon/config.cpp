@@ -52,7 +52,7 @@ class CfgVehicles
 		displayName = "Falcon Test"; 								/// how is the heli displayed in editor
 		model = "\OPTRE_vehicles\falcon\falcon.p3d"; 	/// path to model of the heli
 		driveOnComponent[] = {"Wheels"};
-
+		author="Article 2 Studios";
 		icon = "OPTRE_Vehicles\Falcon\Data\icon.paa";	/// icon in map/editor
 		picture = "OPTRE_Vehicles\Falcon\Data\icon2.paa";	/// small picture in command menu
 
@@ -334,6 +334,7 @@ class CfgVehicles
 		scopeCurator = 2;		// 2 means available from Zeus, whereas 0 means hidden
 		side = 1;					/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		vehicleClass = "OPTRE_UNSC_Air_class";
+		author="Article 2 Studios";
 		faction	= "OPTRE_UNSC";			/// defines the faction inside of the side
 		crew = "OPTRE_UNSC_Marine_Pilot";	/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 			/// harder to distinguish side than vehicle type
