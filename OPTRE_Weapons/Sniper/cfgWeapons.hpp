@@ -10,6 +10,8 @@ class Mode_FullAuto;
 			class InventoryFlashLightItem_Base_F;
 			class InventoryMuzzleItem_Base_F;
             class GunParticles;
+			class UnderBarrelSlot;
+			class InventoryUnderItem_Base_F; /// base class for #bipodz
      
             //ATTACHMENTS
      
@@ -74,7 +76,22 @@ class Mode_FullAuto;
 			};
 			inertia 																		= 0;
 		};
-     
+			class OPTRE_SRS99_Bipod: ItemCore
+		{
+		scope 				= 2;																	/// available in Arsenal
+		displayName			= "SRS-99 Bipod";													/// name of item in Inventory (and Arsenal)
+		picture				= "\A3\Weapons_F_Mark\Data\UI\gear_accu_bipod_01_snd_CA.paa";			/// icon in Inventory
+		model 				= "\OPTRE_Weapons\Sniper\SRS99-Bipod.p3d";						/// path to model
+		class ItemInfo: InventoryUnderItem_Base_F
+        {
+            deployedPivot	= "bipod";		/// what point should be used to be on surface while unfolded
+			hasBipod		= true;			/// bipod obviously has a bipod
+			mass			= 10;			/// what is the mass of the object
+			soundBipodDown[] 	= {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_BLU_down",db-3, 1, 20};	/// what sound should be played during unfolding
+			soundBipodUp[] 		= {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_BLU_up",db-3, 1, 20};		/// what sound should be played during folding			
+        };
+		inertia = 0.2;						/// how much does the bipod add to inertia of the weapon
+		};	
             //WEAPONS
 			
             class EBR_Base_F;
@@ -180,6 +197,13 @@ class Mode_FullAuto;
 							mass = 200;
 							inertia = 1.25;
 							dexterity = 1.25;
+							class UnderBarrelSlot: UnderBarrelSlot /// using test bipod
+							{
+								iconPosition[] = {0.2, 0.7};
+								iconScale = 0.2;
+								linkProxy = "\A3\Data_f_Mark\proxies\weapon_slots\UNDERBARREL" ;
+								compatibleItems[] = {"OPTRE_SRS99_Bipod"};		
+							};	
                     };
             };
 			
@@ -199,6 +223,11 @@ class Mode_FullAuto;
 				slot = "PointerSlot";
 				item = "OPTRE_SRS99_Laser";
 				};
+				class LinkedItemsMuzzle
+				{
+				slot = "UnderBarrelSlot";
+				item = "OPTRE_SRS99_Bipod";
+				};	
 			};
 		};
 };

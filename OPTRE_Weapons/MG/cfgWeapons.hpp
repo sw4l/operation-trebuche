@@ -17,7 +17,7 @@
             {
                     scope                                                                   = 2;
                     displayName                                                             = "M73 Smart-Link Scope";
-					picture = "\OPTRE_weapons\ar\icons\scope_a.paa";
+					picture = "\OPTRE_weapons\MG\icons\scope.paa";
                     model                                                                   = "\OPTRE_Weapons\MG\M73_SmartLink.p3d";
                     descriptionShort                                                        = "M73 Smart-Linked Neural Interface Scope";
                     weaponInfoType                                                          = "RscWeaponZeroing";

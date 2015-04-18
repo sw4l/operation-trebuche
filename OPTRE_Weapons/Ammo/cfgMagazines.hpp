@@ -60,7 +60,7 @@ class CfgMagazines
 		ammo								= "OPTRE_B_762x51_Ball";
 		count								= 100;
 		initspeed							= 860;
-		picture 							= "";
+				picture 							= "\OPTRE_Weapons\MG\icon\magazine.paa";
 		descriptionshort					= "100 Round Box Magazine<br>7.62x51mm";
 		mass								= 40;
 		tracersEvery 						= 0;
@@ -71,7 +71,7 @@ class CfgMagazines
 		displayname							= "100Rnd 7.62x51mm Box Magazine (Tracers)";
 		displaynameshort					= "7.62x51mm Tracer";
 		ammo								= "OPTRE_B_762x51_Tracer";
-		picture					 			= "";
+				picture 							= "\OPTRE_Weapons\MG\icon\magazine.paa";
 		descriptionshort					= "100 Round Box Magazine<br>7.62x51mm<br>Tracer";
 		tracersEvery 						= 1;
 		lastRoundsTracer 					= 100;
@@ -109,7 +109,7 @@ class CfgMagazines
 		ammo								= "OPTRE_B_95x40_Ball";
 		count								= 100;
 		initspeed							= 800;
-		picture 							= "";
+		picture 							= "\OPTRE_Weapons\MG\icon\magazine.paa";
 		descriptionshort					= "100 Round Box Magazine<br>9.5x40mm";
 		mass								= 35;
 		tracersEvery 						= 0;
@@ -120,7 +120,7 @@ class CfgMagazines
 		displayname							= "100Rnd 9.5x40mm Box Magazine (Tracers)";
 		displaynameshort					= "9.5x40mm Tracer";
 		ammo								= "OPTRE_B_95x40_Tracer";
-		picture 							= "";
+		picture 							= "\OPTRE_Weapons\MG\icon\magazine.paa";
 		descriptionshort					= "100 Round Box Magazine<br>9.5x40mm<br>Tracer";
 		tracersEvery 						= 1;
 		lastRoundsTracer 					= 100;
@@ -129,7 +129,7 @@ class CfgMagazines
 	{
 		displayname							= "200Rnd 9.5x40mm Box Magazine";
 		count								= 200;
-		picture 							= "";
+		picture 							= "\OPTRE_Weapons\MG\icon\magazine.paa";
 		descriptionshort					= "200 Round Box Magazine<br>9.5x40mm";
 		mass								= 70;
 	};
@@ -138,7 +138,7 @@ class CfgMagazines
 		displayname							= "200Rnd 9.5x40mm Box Magazine (Tracers)";
 		displaynameshort					= "9.5x40mm Tracer";
 		ammo								= "OPTRE_B_95x40_Tracer";
-		picture 							= "";
+		picture 							= "\OPTRE_Weapons\MG\icon\magazine.paa";
 		descriptionshort					= "200 Round Box Magazine<br>9.5x40mm<br>Tracer";
 		tracersEvery 						= 1;
 		lastRoundsTracer 					= 200;
