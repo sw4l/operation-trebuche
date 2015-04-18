@@ -65,9 +65,9 @@
      
             //WEAPONS
             class MMG_01_base_F;
-            class OPTRE_M73: MMG_01_base_F
+            class OPTRE_M73_base: MMG_01_base_F
             {
-                    scope                                                                   = 2;
+                    scope                                                                   = 1;
 					scopeArsenal = 2;
                     handAnim[]                                                              = {"OFP2_ManSkeleton", "\A3\weapons_f\Machineguns\M200\data\Anim\M200.rtm"};
                     model                                                                   = "\OPTRE_Weapons\MG\M73.p3d";
@@ -188,14 +188,44 @@
 							};	
                     };
             };
-           
+         class OPTRE_M73: OPTRE_M73_base
+            {
+                    model                                                                   = "\OPTRE_Weapons\MG\M73.p3d";
+                    displayName                                                             = "M73 CQC Light Machine Gun";
+                    descriptionShort                                                        = "UNSC Light Machine Gun";
+                    inertia                                                                 = 0.75;
+					scope																	= 2;
+					scopeArsenal = 2;
+					maxRecoilSway 															= 0.0115;
+					swayDecaySpeed 															= 1.15;
+                    modes[] 																= {"Single","FullAuto"};
+                    class Single: Single {};
+                    class FullAuto: FullAuto {};
+                    class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
+                    {
+							mass = 140;
+                    };
+									class LinkedItems
+					{
+					class LinkedItemsOptic
+					{
+					slot = "CowsSlot";
+					item = "OPTRE_M73_SmartLink";
+					};
+					class LinkedItemsMuzzle
+					{
+					slot = "UnderBarrelSlot";
+					item = "bipod_01_F_blk";
+					};	
+				};
+            };
 		class OPTRE_M73_CQC: OPTRE_M73
             {
                     model                                                                   = "\OPTRE_Weapons\MG\M73_rail.p3d";
                     displayName                                                             = "M73 CQC Light Machine Gun";
                     descriptionShort                                                        = "UNSC Light Machine Gun (CQC Variant)";
                     inertia                                                                 = 0.75;
-					scope																	= 2;
+					scope																	= 0;
 					scopeArsenal = 2;
 					maxRecoilSway 															= 0.0115;
 					swayDecaySpeed 															= 1.15;

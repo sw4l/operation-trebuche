@@ -1434,4 +1434,18 @@ class CfgVehicles
 		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_innie_CO.paa"};
 	};
+	class PlaneWreck;
+
+	class  OPTRE_Pelican_wreck: PlaneWreck
+	{
+		scope = 1;
+		model = "OPTRE_Vehicles\Pelican\pelican_wreck.p3d";
+		typicalCargo[] = {};
+		irTarget = 0;
+		transportAmmo = 0;
+		transportRepair = 0;
+		transportFuel = 0;
+		transportSoldier = 1;
+		class Eventhandlers{};
+	};
 };

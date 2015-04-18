@@ -137,6 +137,14 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
 	};
+	class OPTRE_UNSC_Man_Army_S_class
+	{
+		displayName 																			= "Men (Army/Snow)";
+		author																					= "Article 2 Studios";
+		scope																					= 2;
+		scopeArsenal																			= 2;
+		scopeCurator																			= 2;
+	};
 	class OPTRE_UNSC_Man_Marines_class
 	{
 		displayName 																			= "Men (Marines)";

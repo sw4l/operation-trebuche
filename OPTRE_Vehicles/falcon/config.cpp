@@ -55,7 +55,7 @@ class CfgVehicles
 		author="Article 2 Studios";
 		icon = "OPTRE_Vehicles\Falcon\Data\icon.paa";	/// icon in map/editor
 		picture = "OPTRE_Vehicles\Falcon\Data\icon2.paa";	/// small picture in command menu
-
+		destrType = DestructWreck;
 		driverAction = Plane_Fighter_03_pilot;				/// what is the standard pose for the pilot, defined as animation state
 		driverInAction = Plane_Fighter_03_pilot;			/// what is the standard pose for the pilot, defined as animation state
 		precisegetinout = 1;							/// describes what style of get in is used (0 - non-precise; 1 - precise on proxy; 2 - precise on model center)
@@ -77,6 +77,9 @@ class CfgVehicles
 		memoryPointsGetInCargoDir = "pos cargo dir";/// what is the direction of the cargo facing during get in animation (and opposite for get out)
 		hideWeaponsCargo = 0;						/// this makes the poses easier and adds some performance gain because the proxies don't need to be drawn
 		cargoProxyIndexes[] = {2,3,5};		/// what indexes does regular cargo sit on
+		
+		hiddenSelections[] = { }; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] = {};
 		
 		class TransportBackpacks	/// adds various backpacks to cargo hold of the heli
 		{
@@ -272,10 +275,6 @@ class CfgVehicles
 				initPhase	 = 0;
 			};					
 		};	
-		hiddenSelections[] = /// we want to allow changing of colours, this defines on what selection are the textures used
-		{
-			"camo1"
-		};
 		
 		class UserActions /// actions available for player to interact with vehicle via action menu running scripts
 		{
@@ -328,7 +327,43 @@ class CfgVehicles
 		#include "rtd.hpp" /// Advanced FM characteristics in separate file to make the config cleaner
 	};
 
-	class OPTRE_falcon_unarmed: OPTRE_falcon_base
+	class OPTRE_falcon_green: OPTRE_falcon_base
+	{
+		scope = 2;				/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
+		scopeCurator = 2;		// 2 means available from Zeus, whereas 0 means hidden
+		side = 1;					/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
+		vehicleClass = "OPTRE_UNSC_Air_class";
+		author="Article 2 Studios";
+		faction	= "OPTRE_UNSC";			/// defines the faction inside of the side
+		crew = "OPTRE_UNSC_Army_Pilot_WDL";	/// lets use the sample soldier we have as default captain of the boat
+		accuracy = 1.50; 			/// harder to distinguish side than vehicle type
+		displayName = "UH-144 Falcon (Green)";
+
+		hiddenSelections[]= {"camo1","camo2","camo3","camo4","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Falcon\data\falcon_hull_CO.paa","optre_vehicles\falcon\data\falcon_hullextra_co.paa","optre_vehicles\falcon\data\falcon_wingtips_co.paa","optre_vehicles\falcon\data\falcon_skid_co.paa"};
+		
+		availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
+		cost = 2000000;	/// we need some high cost for such vehicles to be prioritized by AA defences
+	};
+		class OPTRE_falcon_tan: OPTRE_falcon_base
+	{
+		scope = 2;				/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
+		scopeCurator = 2;		// 2 means available from Zeus, whereas 0 means hidden
+		side = 1;					/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
+		vehicleClass = "OPTRE_UNSC_Air_class";
+		author="Article 2 Studios";
+		faction	= "OPTRE_UNSC";			/// defines the faction inside of the side
+		crew = "OPTRE_UNSC_Army_Pilot_DES";	/// lets use the sample soldier we have as default captain of the boat
+		accuracy = 1.50; 			/// harder to distinguish side than vehicle type
+		displayName = "UH-144 Falcon (Tan)";
+
+		hiddenSelections[]= {"camo1","camo2","camo3","camo4","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Falcon\data\falcon_hull_tan_CO.paa","optre_vehicles\falcon\data\falcon_hullextra_tan_co.paa","optre_vehicles\falcon\data\falcon_wingtips_tan_co.paa","optre_vehicles\falcon\data\falcon_skid_tan_co.paa"};
+		
+		availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
+		cost = 2000000;	/// we need some high cost for such vehicles to be prioritized by AA defences
+	};
+		class OPTRE_falcon_black: OPTRE_falcon_base
 	{
 		scope = 2;				/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		scopeCurator = 2;		// 2 means available from Zeus, whereas 0 means hidden
@@ -338,12 +373,44 @@ class CfgVehicles
 		faction	= "OPTRE_UNSC";			/// defines the faction inside of the side
 		crew = "OPTRE_UNSC_Marine_Pilot";	/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 			/// harder to distinguish side than vehicle type
-		displayName = "UH-144 Falcon";
+		displayName = "UH-144 Falcon (Black)";
+
+		hiddenSelections[]= {"camo1","camo2","camo3","camo4","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Falcon\data\falcon_hull_night_CO.paa","optre_vehicles\falcon\data\falcon_hullextra_night_co.paa","optre_vehicles\falcon\data\falcon_wingtips_night_co.paa","optre_vehicles\falcon\data\falcon_skid_night_co.paa"};
 		
-		hiddenSelectionsTextures[] = /// changes of textures to distinguish variants in same order as hiddenSelections[]
-		{
-		};
 		availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 		cost = 2000000;	/// we need some high cost for such vehicles to be prioritized by AA defences
+	};
+		class OPTRE_falcon_snow: OPTRE_falcon_base
+	{
+		scope = 2;				/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
+		scopeCurator = 2;		// 2 means available from Zeus, whereas 0 means hidden
+		side = 1;					/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
+		vehicleClass = "OPTRE_UNSC_Air_class";
+		author="Article 2 Studios";
+		faction	= "OPTRE_UNSC";			/// defines the faction inside of the side
+		crew = "OPTRE_UNSC_Army_Pilot_SNO";	/// lets use the sample soldier we have as default captain of the boat
+		accuracy = 1.50; 			/// harder to distinguish side than vehicle type
+		displayName = "UH-144 Falcon (Snow)";
+
+		hiddenSelections[]= {"camo1","camo2","camo3","camo4","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Falcon\data\falcon_hull_snow_CO.paa","optre_vehicles\falcon\data\falcon_hullextra_snow_co.paa","optre_vehicles\falcon\data\falcon_wingtips_snow_co.paa","optre_vehicles\falcon\data\falcon_skid_snow_co.paa"};
+		
+		availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
+		cost = 2000000;	/// we need some high cost for such vehicles to be prioritized by AA defences
+	};
+	class PlaneWreck;
+
+	class  OPTRE_falcon_wreck: PlaneWreck
+	{
+		scope = 1;
+		model = "OPTRE_Vehicles\falcon\falcon_wreck.p3d";
+		typicalCargo[] = {};
+		irTarget = 0;
+		transportAmmo = 0;
+		transportRepair = 0;
+		transportFuel = 0;
+		transportSoldier = 1;
+		class Eventhandlers{};
 	};
 };

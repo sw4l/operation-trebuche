@@ -489,10 +489,10 @@ class OPTRE_UNSC_Marine_medium: OPTRE_UNSC_Marine_Soldier_Base //Configures the 
 		displayName										= "Autorifleman";
 		vehicleClass									= "OPTRE_UNSC_Man_Marines_class";
 		backpack 										= "B_Kitbag_rgr";
-		weapons[] 										= {"LMG_Zafir_F","Throw","Put"};
-		respawnWeapons[] 								= {"LMG_Zafir_F","Throw","Put"};
-		magazines[] 									= {"150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
-		respawnMagazines[] 								= {"150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		weapons[] 										= {"OPTRE_M73","Throw","Put"};
+		respawnWeapons[] 								= {"OPTRE_M73","Throw","Put"};
+		magazines[] 									= {"OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 		icon = "iconManMG";
 	};
 	class OPTRE_UNSC_Marine_Assist_Autorifleman: OPTRE_UNSC_Marine_vacuum_heavy

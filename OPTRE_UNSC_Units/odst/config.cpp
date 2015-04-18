@@ -457,8 +457,8 @@ class CfgVehicles //This configures units and backpacks
 		scope											= 2;
 		displayName										= "ODST Autorifleman";
 		backpack										= "OPTRE_ILCS_Rucksack_Black";
-		weapons[] 										= {"LMG_Zafir_F","OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 								= {"LMG_Zafir_F","OPTRE_M6G_SF","Throw","Put"};
+		weapons[] 										= {"OPTRE_M73","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"OPTRE_M73","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] 									= {"150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 		respawnMagazines[] 								= {"150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 		icon = "iconManMG";
@@ -731,8 +731,8 @@ class cfgWeapons
 		displayName  																			= "[UNSC] ODST M53 Body Armor"; /// how would the stuff be displayed in inventory and on ground
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_vest.paa"; /// this icon fits the vest surprisingly well
 		model     																				= "\OPTRE_UNSC_Units\ODST\vest.p3d"; /// what model does the vest use
-		hiddenSelections[]   																	= {"camo1","camo2"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_co.paa",""}; /// what texture is going to be used
+		hiddenSelections[]   																	= {"camo1","camo2","attach_knife","attach_nade"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   															= {"optre_unsc_units\odst\data\odst_vest_basic_co.tga",""}; /// what texture is going to be used
 		class ItemInfo: VestItem 
 		{
 			uniformModel   																		= "\OPTRE_UNSC_Units\ODST\vest.p3d"; /// what model does the vest use
@@ -741,8 +741,8 @@ class cfgWeapons
 			mass   																				= 50;
 			passThrough   																		= 0.1; /// coef of damage passed to total damage
 			modelSides[]   																		= {6};
-			hiddenSelections[]   																= {"camo1","camo2"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_co.paa",""}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2","attach_knife","attach_nade"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   														= {"optre_unsc_units\odst\data\odst_vest_basic_co.tga",""}; /// what texture is going to be used
 		};
 	};
 	class OPTRE_UNSC_ODST_vest_medic: OPTRE_UNSC_ODST_vest_base
@@ -752,7 +752,7 @@ class cfgWeapons
 		displayName  																			= "[UNSC] ODST M53 Body Armor (Medic)"; /// how would the stuff be displayed in inventory and on ground
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_vest_med.paa"; /// this icon fits the vest surprisingly well
 		model     																				= "\OPTRE_UNSC_Units\ODST\vest.p3d"; /// what model does the vest use
-		hiddenSelections[]   																	= {"camo1","camo2"}; /// what selection in model could have different textures
+		hiddenSelections[]   																	= {"camo1","camo2","attach_knife","attach_nade"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_medic_co.paa",""}; /// what texture is going to be used
 		class ItemInfo: VestItem 
 		{
@@ -762,7 +762,7 @@ class cfgWeapons
 			mass   																				= 50;
 			passThrough   																		= 0.1; /// coef of damage passed to total damage
 			modelSides[]   																		= {6};
-			hiddenSelections[]   																= {"camo1","camo2"}; /// what selection in model could have different textures
+			hiddenSelections[]   																= {"camo1","camo2","attach_knife","attach_nade"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_medic_co.paa",""}; /// what texture is going to be used
 		};
 	};
@@ -771,11 +771,11 @@ class cfgWeapons
 		scope 																					= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
 		displayName  																			= "[UNSC] Scorch's ODST Armor"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2"}; /// what selection in model could have different textures
+		hiddenSelections[]   																	= {"camo1","camo2","attach_knife"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_scorch_co.paa",""}; /// what texture is going to be used
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   																= {"camo1","camo2"}; /// what selection in model could have different textures
+			hiddenSelections[]   																= {"camo1","camo2","attach_knife"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_scorch_co.paa",""}; /// what texture is going to be used
 		};
 	};
@@ -784,11 +784,11 @@ class cfgWeapons
 		scope 																					= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
 		displayName  																			= "[UNSC] TheDog's ODST Armor"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2"}; /// what selection in model could have different textures
+		hiddenSelections[]   																	= {"camo1","camo2","attach_knife","attach_nade"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\odst_vest_thedog_co.paa",""}; /// what texture is going to be used
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   																= {"camo1","camo2"}; /// what selection in model could have different textures
+			hiddenSelections[]   																= {"camo1","camo2","attach_knife","attach_nade"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\odst_vest_thedog_co.paa",""}; /// what texture is going to be used
 		};
 	};
@@ -797,11 +797,11 @@ class cfgWeapons
 		scope 																					= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
 		displayName  																			= "[UNSC] Zero's ODST Armor"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2"}; /// what selection in model could have different textures
+		hiddenSelections[]   																	= {"camo1","camo2","attach_knife","attach_nade"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_zero_co.paa",""}; /// what texture is going to be used
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   																= {"camo1","camo2"}; /// what selection in model could have different textures
+			hiddenSelections[]   																= {"camo1","camo2","attach_knife","attach_nade"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_zero_co.paa",""}; /// what texture is going to be used
 		};
 	};
@@ -810,11 +810,11 @@ class cfgWeapons
 		scope 																					= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
 		displayName  																			= "[UNSC] Stirl's ODST Armor"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2"}; /// what selection in model could have different textures
+		hiddenSelections[]   																	= {"camo1","camo2","attach_nade"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_stirls_co.paa",""}; /// what texture is going to be used
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   																= {"camo1","camo2"}; /// what selection in model could have different textures
+			hiddenSelections[]   																= {"camo1","camo2","attach_nade"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_stirls_co.paa",""}; /// what texture is going to be used
 		};
 	};
