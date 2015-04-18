@@ -19,7 +19,7 @@ class Mode_FullAuto;
             {
                     scope                                                                   = 2;
                     displayName                                                             = "Oracle N-varint SRS99 Scope";
-					//picture = "\OPTRE_weapons\ar\icons\scope_a.paa";
+					picture = "\OPTRE_weapons\sniper\icons\scope.paa";
                     model                                                                   = "\OPTRE_Weapons\Sniper\SRS99-Scope.p3d";
                     descriptionShort                                                        = "Oracle N-varint SRS99 Sniper Rifle 5-20x56 Scope";
                     weaponInfoType                                                          = "RscWeaponZeroing";
@@ -101,7 +101,7 @@ class Mode_FullAuto;
                     model                                                                   = "\OPTRE_Weapons\Sniper\Sniper.p3d";
                     displayName                                                             = "SRS99D-S2 Sniper Rifle";
                     descriptionShort                                                        = "UNSC Sniper Rifle";
-                    //picture = "\OPTRE_weapons\ar\icons\ar_a.paa";
+                    picture = "\OPTRE_weapons\sniper\icons\sniper.paa";
                     magazines[]                                                             = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_HVAP_Mag"};
                     modelOptics                                                             = "-";
                     muzzlePos                                                               = "usti hlavne";
@@ -210,7 +210,6 @@ class Mode_FullAuto;
 		class OPTRE_SRS99D_SC_LS: OPTRE_SRS99D
 		{
 			scope = 1;
-			//picture = "\OPTRE_weapons\ar\icons\ar_b.paa";
 			class LinkedItems
 			{
 				class LinkedItemsOptic
