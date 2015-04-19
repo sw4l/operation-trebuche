@@ -80,8 +80,8 @@ class CfgVehicles
         RespawnItems[]                      = {"OPTRE_Biofoam"};
         magazines[]                         = {};
         respawnMagazines[]                  = {};
-        linkedItems[]                 	    = {"OPTRE_v_Ins_GAvest","OPTRE_h_MICH_OD","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-        respawnLinkedItems[]           	    = {"OPTRE_v_Ins_GAvest","OPTRE_h_MICH_OD","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        linkedItems[]                 	    = {"OPTRE_UNSC_M52_Vest_WDL","H_HelmetCrew_B","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[]           	    = {"OPTRE_UNSC_M52_Vest_WDL","H_HelmetCrew_B","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
         headgearProbability            	    = 0;
         allowedHeadgear[]                   = {};
         backpack 							= "B_Kitbag_rgr";
@@ -106,8 +106,8 @@ class CfgVehicles
         RespawnItems[]                      = {"OPTRE_Biofoam"};
         magazines[]                         = {};
         respawnMagazines[]                  = {};
-        linkedItems[]                 	    = {"OPTRE_v_Ins_vest","H_Beret_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-        respawnLinkedItems[]           	    = {"OPTRE_v_Ins_vest","H_Beret_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+        linkedItems[]                 	    = {"OPTRE_UNSC_M52_Vest_WDL","H_Beret_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+        respawnLinkedItems[]           	    = {"OPTRE_UNSC_M52_Vest_WDL","H_Beret_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
         headgearProbability            	    = 0;
         allowedHeadgear[]                   = {};
         backpack                            = "";
@@ -403,8 +403,8 @@ class CfgVehicles
 		scope											= 2;
 		displayName										= "Officer";
 		
-		linkedItems[] 									= {"OPTRE_Ins_URF_Vest","OPTRE_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles","OPTRE_Biofoam","OPTRE_NVG"};
-		respawnLinkedItems[] 							= {"OPTRE_Ins_URF_Vest","OPTRE_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles","OPTRE_Biofoam","OPTRE_NVG"};
+		linkedItems[] 									= {"OPTRE_UNSC_M52_Vest_WDL","OPTRE_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles","OPTRE_Biofoam","OPTRE_NVG"};
+		respawnLinkedItems[] 							= {"OPTRE_UNSC_M52_Vest_WDL","OPTRE_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles","OPTRE_Biofoam","OPTRE_NVG"};
 		weapons[] 										= {"OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"OPTRE_M6G_SF","Throw","Put"};
 		magazines[] 									= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
@@ -416,8 +416,8 @@ class CfgVehicles
 		scope											= 1;
 		displayName										= "Col. Robert Watts";
 		identityTypes[] 								= {"OPTRE_Col_Watts"};
-		linkedItems[] 									= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles","OPTRE_Biofoam","OPTRE_NVG"};
-		respawnLinkedItems[] 							= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles","OPTRE_Biofoam","OPTRE_NVG"};
+		linkedItems[] 									= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
+		respawnLinkedItems[] 							= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
 		weapons[] 										= {"OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"OPTRE_M6G_SF","Throw","Put"};
 		magazines[] 									= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};

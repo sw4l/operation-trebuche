@@ -75,7 +75,7 @@ class CfgVehicles
 		respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
     }; 
 	class OPTRE_UNSC_Navy_Bridge2_F: OPTRE_UNSC_Navy_Base_F {
-        scope = 2;
+        scope = 0;
 		author	= "Article 2 Studios";
         displayName = "Bridge Officer";
 		icon = "iconManOfficer";
@@ -104,7 +104,7 @@ class CfgVehicles
 		respawnLinkedItems[] = {"OPTRE_H_Final_Dawn_Cap","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
     }; 
 	class OPTRE_UNSC_Navy_Bridge2_Armed_F: OPTRE_UNSC_Navy_Bridge2_F { 
-        scope = 2;
+        scope = 0;
 		author	= "Article 2 Studios";
         displayName = "Bridge Officer (Armed)";
         nakedUniform = "U_BasicBody"; 
@@ -286,6 +286,32 @@ class CfgVehicles
 		linkedItems[] = {"OPTRE_H_Final_Dawn_Cap","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"OPTRE_H_Final_Dawn_Cap","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
     }; 
+	class OPTRE_UNSC_Navy_OpsFD_F: OPTRE_UNSC_Navy_Ops_F {
+        scope = 2;
+		author	= "Article 2 Studios";
+        displayName = "Flight Ops Crew";
+        nakedUniform = "U_BasicBody"; 
+        uniformClass = "OPTRE_UNSC_NWU_YLW";	
+		weapons[]={"Throw","Put"};
+		magazines[]={};
+		respawnweapons[]={"Throw","Put"};
+		respawnmagazines[]={};
+		linkedItems[] = {"OPTRE_H_Navy_Helmet_Ops","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"OPTRE_H_Navy_Helmet_Ops","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+    }; 
+	class OPTRE_UNSC_Navy_CATOff_F: OPTRE_UNSC_Navy_Ops_F {
+        scope = 2;
+		author	= "Article 2 Studios";
+        displayName = "Launch Officer";
+        nakedUniform = "U_BasicBody"; 
+        uniformClass = "OPTRE_UNSC_NWU_YLW";	
+		weapons[]={"Throw","Put"};
+		magazines[]={};
+		respawnweapons[]={"Throw","Put"};
+		respawnmagazines[]={};
+		linkedItems[] = {"OPTRE_H_Navy_Helmet_Cmd","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"OPTRE_H_Navy_Helmet_Cmd","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+    }; 
 	class OPTRE_UNSC_Navy_Ops_Armed_F: OPTRE_UNSC_Navy_Ops_F { 
         scope = 2;
 		author	= "Article 2 Studios";
@@ -370,13 +396,12 @@ class CfgVehicles
 		linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
     }; 
-	class OPTRE_UNSC_Navy_Mech_F: OPTRE_UNSC_Navy_Base_F {
+	class OPTRE_UNSC_Navy_Fuel_F: OPTRE_UNSC_Navy_Base_F {
         scope = 2;
 		author	= "Article 2 Studios";
-        displayName = "Flight Mechanic";
+        displayName = "Flight Fueler (Off Duty)";
         nakedUniform = "U_BasicBody"; 
         uniformClass = "OPTRE_UNSC_NWU_PRP";
-		engineer = 1;
 		icon = "iconManEngineer";
 		weapons[]={"Throw","Put"};
 		magazines[]={};
@@ -387,10 +412,24 @@ class CfgVehicles
 		linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
     }; 
-	class OPTRE_UNSC_Navy_Mech_Armed_F: OPTRE_UNSC_Navy_Mech_F { 
+	class OPTRE_UNSC_Navy_FuelFD_F: OPTRE_UNSC_Navy_Fuel_F {
         scope = 2;
 		author	= "Article 2 Studios";
-        displayName = "Flight Mechanic (Armed)";
+        displayName = "Flight Fueler";
+        nakedUniform = "U_BasicBody"; 
+        uniformClass = "OPTRE_UNSC_NWU_PRP";
+		icon = "iconManEngineer";
+		weapons[]={"Throw","Put"};
+		magazines[]={};
+		respawnweapons[]={"Throw","Put"};
+		respawnmagazines[]={};
+		linkedItems[] = {"OPTRE_H_Navy_Helmet_Fuel","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"OPTRE_H_Navy_Helmet_Fuel","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+    }; 
+	class OPTRE_UNSC_Navy_Fuel_Armed_F: OPTRE_UNSC_Navy_Fuel_F { 
+        scope = 2;
+		author	= "Article 2 Studios";
+        displayName = "Flight Fueler (Armed)";
         nakedUniform = "U_BasicBody"; 
         uniformClass = "OPTRE_UNSC_NWU_PRP";	
 		weapons[] = {"OPTRE_M6G_SF","Throw","Put"};
@@ -400,10 +439,12 @@ class CfgVehicles
 		linkedItems[] = {"OPTRE_H_Final_Dawn_Cap","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"OPTRE_H_Final_Dawn_Cap","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
     }; 
-	class OPTRE_UNSC_Navy_Ordinance_F: OPTRE_UNSC_Navy_Base_F {
+	class OPTRE_UNSC_Navy_Mech_F: OPTRE_UNSC_Navy_Base_F {
         scope = 2;
 		author	= "Article 2 Studios";
-        displayName = "Flight Loader";
+        displayName = "Flight Mechanic (Off Duty)";
+		engineer = 1;
+		icon = "iconManEngineer";
         nakedUniform = "U_BasicBody"; 
         uniformClass = "OPTRE_UNSC_NWU_BRN";
 		weapons[]={"Throw","Put"};
@@ -415,10 +456,70 @@ class CfgVehicles
 		linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
     }; 
-	class OPTRE_UNSC_Navy_Ordinance_Armed_F: OPTRE_UNSC_Navy_Ordinance_F { 
-        scope = 0;
+	class OPTRE_UNSC_Navy_MechFD_F: OPTRE_UNSC_Navy_Mech_F {
+        scope = 2;
 		author	= "Article 2 Studios";
-        displayName = "Flight Loader (Armed)";
+        displayName = "Flight Mechanic";
+		engineer = 1;
+		icon = "iconManEngineer";
+        nakedUniform = "U_BasicBody"; 
+        uniformClass = "OPTRE_UNSC_NWU_BRN";
+		weapons[]={"Throw","Put"};
+		magazines[]={};
+		respawnweapons[]={"Throw","Put"};
+		respawnmagazines[]={};
+		linkedItems[] = {"OPTRE_H_Navy_Helmet_Maint","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"OPTRE_H_Navy_Helmet_Maint","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+    }; 
+	class OPTRE_UNSC_Navy_Ordinance_F: OPTRE_UNSC_Navy_Mech_F {
+        scope = 2;
+		author	= "Article 2 Studios";
+        displayName = "Flight Loader (Ordinance)";
+		engineer = 1;
+		icon = "iconManEngineer";
+        nakedUniform = "U_BasicBody"; 
+        uniformClass = "OPTRE_UNSC_NWU_BRN";
+		weapons[]={"Throw","Put"};
+		magazines[]={};
+		respawnweapons[]={"Throw","Put"};
+		respawnmagazines[]={};
+		linkedItems[] = {"OPTRE_H_Navy_Helmet_Ord","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"OPTRE_H_Navy_Helmet_Ord","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+    }; 
+	class OPTRE_UNSC_Navy_Loader_F: OPTRE_UNSC_Navy_Mech_F {
+        scope = 2;
+		author	= "Article 2 Studios";
+        displayName = "Flight Loader (Payload)";
+		engineer = 1;
+		icon = "iconManEngineer";
+        nakedUniform = "U_BasicBody"; 
+        uniformClass = "OPTRE_UNSC_NWU_BRN";
+		weapons[]={"Throw","Put"};
+		magazines[]={};
+		respawnweapons[]={"Throw","Put"};
+		respawnmagazines[]={};
+		linkedItems[] = {"OPTRE_H_Navy_Helmet_Ops","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"OPTRE_H_Navy_Helmet_Ops","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+    }; 
+	class OPTRE_UNSC_Navy_CrewChief_F: OPTRE_UNSC_Navy_Mech_F {
+        scope = 2;
+		author	= "Article 2 Studios";
+        displayName = "Flt Maintenance Chief";
+		engineer = 1;
+		icon = "iconManEngineer";
+        nakedUniform = "U_BasicBody"; 
+        uniformClass = "OPTRE_UNSC_NWU_BRN";
+		weapons[]={"Throw","Put"};
+		magazines[]={};
+		respawnweapons[]={"Throw","Put"};
+		respawnmagazines[]={};
+		linkedItems[] = {"OPTRE_H_Navy_Helmet_Cmd","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"OPTRE_H_Navy_Helmet_Cmd","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+    }; 
+	class OPTRE_UNSC_Navy_Mech_Armed_F: OPTRE_UNSC_Navy_Mech_F { 
+        scope = 2;
+		author	= "Article 2 Studios";
+        displayName = "Flight Mechanic (Armed)";
         nakedUniform = "U_BasicBody"; 
         uniformClass = "OPTRE_UNSC_NWU_BRN";	
 		weapons[] = {"OPTRE_M6G_SF","Throw","Put"};
@@ -444,6 +545,21 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"OPTRE_UNSC_Units\Navy\data\UNSC_Navy_Coveralls_wht.paa"};
 		linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+    }; 
+	class OPTRE_UNSC_Navy_MedicalFD_F: OPTRE_UNSC_Navy_Medical_F {
+        scope = 2;
+		author	= "Article 2 Studios";
+        displayName = "Flight Corpsman";
+        nakedUniform = "U_BasicBody"; 
+        uniformClass = "OPTRE_UNSC_NWU_WHT";
+		attendant = 1;
+		icon = "iconManMedic";		
+		weapons[]={"Throw","Put"};
+		magazines[]={};
+		respawnweapons[]={"Throw","Put"};
+		respawnmagazines[]={};
+		linkedItems[] = {"OPTRE_H_Navy_Helmet_Med","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"OPTRE_H_Navy_Helmet_Med","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
     }; 
 	class OPTRE_UNSC_Navy_Medical_Armed_F: OPTRE_UNSC_Navy_Medical_F { 
         scope = 2;
@@ -564,6 +680,7 @@ class cfgWeapons
 	class HeadgearItem;
 	class H_MilCap_Blue;
 	class H_Cap_oli;
+	class H_HelmetCrew_B;
 	class OPTRE_UNSC_NWU_GEN : Uniform_Base {
         scope											= 2;
 		author											= "Article 2 Studios";
@@ -593,7 +710,7 @@ class cfgWeapons
 		};
     };
 	class OPTRE_UNSC_NWU_GRY2 : Uniform_Base {
-        scope											= 2;
+        scope											= 0;
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_uniform.paa"; //Need a picture
 		displayName										= "[UNSC] Naval Uniform [Bridge Officer]";
@@ -691,7 +808,7 @@ class cfgWeapons
 		};
     };
 	class OPTRE_UNSC_NWU_CYN : Uniform_Base {
-        scope											= 2;
+        scope											= 0;
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_uniform.paa"; //Need a picture
 		displayName										= "[UNSC] Naval Uniform [Automation]";
@@ -722,11 +839,11 @@ class cfgWeapons
         scope											= 2;
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_uniform.paa"; //Need a picture
-		displayName										= "[UNSC] Naval Uniform [Flight Mech]";
+		displayName										= "[UNSC] Naval Uniform [Flight Fueler]";
 		class ItemInfo: UniformItem
 		{
 			uniformModel									= "-";
-			uniformClass									= "OPTRE_UNSC_Navy_Mech_F";
+			uniformClass									= "OPTRE_UNSC_Navy_Fuel_F";
 			containerClass									= "Supply40";
 			mass											= 25;
 			modelSides[] 									= {6};
@@ -736,11 +853,11 @@ class cfgWeapons
         scope											= 2;
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_uniform.paa"; //Need a picture
-		displayName										= "[UNSC] Naval Uniform [Flight Ordinance]";
+		displayName										= "[UNSC] Naval Uniform [Flight Crew]";
 		class ItemInfo: UniformItem
 		{
 			uniformModel									= "-";
-			uniformClass									= "OPTRE_UNSC_Navy_Ordinance_F";
+			uniformClass									= "OPTRE_UNSC_Navy_Mech_F";
 			containerClass									= "Supply40";
 			mass											= 25;
 			modelSides[] 									= {6};
@@ -761,7 +878,7 @@ class cfgWeapons
 		};
     };
 	class OPTRE_UNSC_NWU_CB : Uniform_Base {
-        scope											= 2;
+        scope											= 0;
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_uniform.paa"; //Need a picture
 		displayName										= "[UNSC] Naval Uniform [CB]";
@@ -811,5 +928,35 @@ class cfgWeapons
 		scope = 2;
 		displayname = "[UNSC] Final Dawn Ballcap";
 		hiddenselectionstextures[] = {"OPTRE_UNSC_Units\Navy\data\UNSC_Final_Dawn_Cap.paa"};
+	};
+	class OPTRE_H_Navy_Helmet_Ops: H_HelmetCrew_B {
+		scope = 2;
+		displayname = "[UNSC] Navy Flight Ops Helmet";
+		hiddenselectionstextures[] = {"OPTRE_UNSC_Units\Navy\data\UNSC_Navy_HelmetCrew_Ops_co.paa"};
+	};
+	class OPTRE_H_Navy_Helmet_Cmd: OPTRE_H_Navy_Helmet_Ops {
+		scope = 2;
+		displayname = "[UNSC] Navy Deck Officer Helmet";
+		hiddenselectionstextures[] = {"OPTRE_UNSC_Units\Navy\data\UNSC_Navy_HelmetCrew_Cmd_co.paa"};
+	};
+	class OPTRE_H_Navy_Helmet_Maint: OPTRE_H_Navy_Helmet_Ops {
+		scope = 2;
+		displayname = "[UNSC] Navy Flight Maintenance Helmet";
+		hiddenselectionstextures[] = {"OPTRE_UNSC_Units\Navy\data\UNSC_Navy_HelmetCrew_Maint_co.paa"};
+	};
+	class OPTRE_H_Navy_Helmet_Ord: OPTRE_H_Navy_Helmet_Ops {
+		scope = 2;
+		displayname = "[UNSC] Navy Ordinance Loader Helmet";
+		hiddenselectionstextures[] = {"OPTRE_UNSC_Units\Navy\data\UNSC_Navy_HelmetCrew_Ord_co.paa"};
+	};
+	class OPTRE_H_Navy_Helmet_Med: OPTRE_H_Navy_Helmet_Ops {
+		scope = 2;
+		displayname = "[UNSC] Navy Deck Corpsman Helmet";
+		hiddenselectionstextures[] = {"OPTRE_UNSC_Units\Navy\data\UNSC_Navy_HelmetCrew_Med_co.paa"};
+	};
+	class OPTRE_H_Navy_Helmet_Fuel: OPTRE_H_Navy_Helmet_Ops {
+		scope = 2;
+		displayname = "[UNSC] Navy Flight Fueler Helmet";
+		hiddenselectionstextures[] = {"OPTRE_UNSC_Units\Navy\data\UNSC_Navy_HelmetCrew_Fuel_co.paa"};
 	};
 };
