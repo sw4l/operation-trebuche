@@ -54,13 +54,13 @@ class CfgMagazines
 	};
 	class OPTRE_100Rnd_762x51_Box: OPTRE_60Rnd_762x51_Mag
 	{
-		model								= "\OPTRE_Weapons\MG\M73_100rd_mag.p3d";
+		model								= "\OPTRE_Weapons\MG\magazine_1.p3d";
 		displayname							= "100Rnd 7.62x51mm Box Magazine";
 		displaynameshort					= "7.62x51mm";
 		ammo								= "OPTRE_B_762x51_Ball";
 		count								= 100;
 		initspeed							= 860;
-				picture 							= "\OPTRE_Weapons\MG\icon\magazine.paa";
+		picture 							= "\OPTRE_Weapons\MG\icon\magazine.paa";
 		descriptionshort					= "100 Round Box Magazine<br>7.62x51mm";
 		mass								= 40;
 		tracersEvery 						= 0;
@@ -103,13 +103,13 @@ class CfgMagazines
 	};
 	class OPTRE_100Rnd_95x40_Box: 150Rnd_762x51_Box
 	{
-		model								= "\OPTRE_Weapons\MG\M73_100rd_mag.p3d";
+		model								= "\OPTRE_Weapons\MG\magazine_1.p3d";
 		displayname							= "100Rnd 9.5x40mm Box Magazine";
 		displaynameshort					= "9.5x40mm";
 		ammo								= "OPTRE_B_95x40_Ball";
 		count								= 100;
 		initspeed							= 800;
-		picture 							= "\OPTRE_Weapons\MG\icon\magazine.paa";
+		picture 							= "\OPTRE_Weapons\MG\icons\magazine.paa";
 		descriptionshort					= "100 Round Box Magazine<br>9.5x40mm";
 		mass								= 35;
 		tracersEvery 						= 0;
@@ -120,7 +120,7 @@ class CfgMagazines
 		displayname							= "100Rnd 9.5x40mm Box Magazine (Tracers)";
 		displaynameshort					= "9.5x40mm Tracer";
 		ammo								= "OPTRE_B_95x40_Tracer";
-		picture 							= "\OPTRE_Weapons\MG\icon\magazine.paa";
+		picture 							= "\OPTRE_Weapons\MG\icons\magazine.paa";
 		descriptionshort					= "100 Round Box Magazine<br>9.5x40mm<br>Tracer";
 		tracersEvery 						= 1;
 		lastRoundsTracer 					= 100;
@@ -129,7 +129,7 @@ class CfgMagazines
 	{
 		displayname							= "200Rnd 9.5x40mm Box Magazine";
 		count								= 200;
-		picture 							= "\OPTRE_Weapons\MG\icon\magazine.paa";
+		picture 							= "\OPTRE_Weapons\MG\icons\magazine.paa";
 		descriptionshort					= "200 Round Box Magazine<br>9.5x40mm";
 		mass								= 70;
 	};
@@ -138,7 +138,7 @@ class CfgMagazines
 		displayname							= "200Rnd 9.5x40mm Box Magazine (Tracers)";
 		displaynameshort					= "9.5x40mm Tracer";
 		ammo								= "OPTRE_B_95x40_Tracer";
-		picture 							= "\OPTRE_Weapons\MG\icon\magazine.paa";
+		picture 							= "\OPTRE_Weapons\MG\icons\magazine.paa";
 		descriptionshort					= "200 Round Box Magazine<br>9.5x40mm<br>Tracer";
 		tracersEvery 						= 1;
 		lastRoundsTracer 					= 200;

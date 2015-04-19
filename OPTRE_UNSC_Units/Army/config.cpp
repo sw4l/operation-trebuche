@@ -1131,7 +1131,7 @@ class OPTRE_UNSC_Army_S_Medic: OPTRE_UNSC_Army_Medic //Configures the unit part 
 	class OPTRE_UNSC_Army_S_Marksman: OPTRE_UNSC_Army_Rifleman_H_SNO
 	{
 		scope											= 2;
-		displayName										= "SNOignated Marksman";
+		displayName										= "Designated Marksman";
 		vehicleClass									= "OPTRE_UNSC_Man_Army_S_class";
 		weapons[] 										= {"srifle_EBR_MRCO_pointer_F","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"srifle_EBR_MRCO_pointer_F","OPTRE_M6G_SF","Throw","Put"};
