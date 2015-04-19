@@ -1,7 +1,0 @@
-OPTRE_Ins_Units 
-
-	-add the Zamak variants retextured "M1015 Mule" [SpaceNavy]
-	-add UNSC-style beaten up equipment [HKUrban]
-	-add custom-made uniforms and equipment [HKUrban/Scorch052]
-
-*Please put your name in brackets at the end of whatever issue(s) you are currently working on 

@@ -350,7 +350,7 @@ class CfgVehicles
         allowedHeadgear[]                   = {};
         backpack                            = "";
 		hiddenSelections[] 					= {"camo"};
-		hiddenSelectionsTextures[] 			= {"OPTRE_Ins_Units\er\data\ins_uniform_jean_orca.paa"};
+		hiddenSelectionsTextures[] 			= {"OPTRE_Ins_Units\er\data\ins_uniform_OD_orca.paa"};
 	 };
 	 class OPTRE_Ins_ER_man_rolled_OD_crimson : OPTRE_Ins_ER_man_rolled_surplus_black
 	 {
