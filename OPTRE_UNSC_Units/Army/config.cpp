@@ -1158,8 +1158,8 @@ class OPTRE_UNSC_Army_S_Medic: OPTRE_UNSC_Army_Medic //Configures the unit part 
 		vehicleClass									= "OPTRE_UNSC_Man_Army_S_class";
 		linkedItems[] 									= {"OPTRE_UNSC_M52_Vest2_SNO","OPTRE_UNSC_CH252_Helmet2_SNO","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
 		respawnLinkedItems[] 							= {"OPTRE_UNSC_M52_Vest2_SNO","OPTRE_UNSC_CH252_Helmet2_SNO","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
-		Items[]											= {"FirstAidKit","Item_LaserSNOignator"};
-		RespawnItems[]									= {"FirstAidKit","Item_LaserSNOignator"};
+		Items[]											= {"FirstAidKit","Item_Laserdesignator"};
+		RespawnItems[]									= {"FirstAidKit","Item_Laserdesignator"};
 		weapons[] 										= {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] 									= {"OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Laserbatteries","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag"};
