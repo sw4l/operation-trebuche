@@ -529,10 +529,10 @@ class CfgVehicles
 		//backpack										= assistance AR backpack with ammo inside //B_AssaultPack_khk
 		linkedItems[]                 	    			= {"OPTRE_INS_UNSC_vest11","H_Bandanna_khk_hs","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
         respawnLinkedItems[]           	    			= {"OPTRE_INS_UNSC_vest11","H_Bandanna_khk_hs","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		weapons[] 										= {"OPTRE_M247","Throw","Put"};
-		respawnWeapons[] 								= {"OPTRE_M247","Throw","Put"};
-		magazines[] 									= {"OPTRE_100Rnd_762x51_Box_Tracer","OPTRE_100Rnd_762x51_Box_Tracer","OPTRE_100Rnd_762x51_Box_Tracer","OPTRE_100Rnd_762x51_Box_Tracer","OPTRE_100Rnd_762x51_Box_Tracer","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
-		respawnMagazines[] 								= {"OPTRE_100Rnd_762x51_Box_Tracer","OPTRE_100Rnd_762x51_Box_Tracer","OPTRE_100Rnd_762x51_Box_Tracer","OPTRE_100Rnd_762x51_Box_Tracer","OPTRE_100Rnd_762x51_Box_Tracer","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		weapons[] 										= {"OPTRE_M73","Throw","Put"};
+		respawnWeapons[] 								= {"OPTRE_M73","Throw","Put"};
+		magazines[] 									= {"OPTRE_100Rnd_95x40_Box_Tracer","OPTRE_100Rnd_95x40_Box_Tracer","OPTRE_100Rnd_95x40_Box_Tracer","OPTRE_100Rnd_95x40_Box_Tracer","OPTRE_100Rnd_95x40_Box_Tracer","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"OPTRE_100Rnd_95x40_Box_Tracer","OPTRE_100Rnd_95x40_Box_Tracer","OPTRE_100Rnd_95x40_Box_Tracer","OPTRE_100Rnd_95x40_Box_Tracer","OPTRE_100Rnd_95x40_Box_Tracer","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 		icon = "iconManMG";
 	};
 	class OPTRE_Ins_ER_Assassin: OPTRE_Ins_ER_soldier_base
