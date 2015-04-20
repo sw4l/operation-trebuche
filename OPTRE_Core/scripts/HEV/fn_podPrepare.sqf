@@ -13,3 +13,4 @@ _Selfpod setdir 180;
 _Selfpod setVectorUp [0,0,1];
 deletemarker "SelfDrop";
 _attach hideObjectGlobal true;
+_Selfpod addaction [("<t color=""#DF0101"">" + ("/// INITIATE DROP SEQUENCE ///") +"</t>"), OPTRE_HEV_fnc_podLaunch, "", 7, true, true, "", "_this == driver _target"];

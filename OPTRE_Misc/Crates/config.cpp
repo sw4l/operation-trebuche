@@ -116,11 +116,6 @@ class CfgVehicles
 				magazine = "OPTRE_M41_Twin_HEAP";
 				count = 99;
 			};
-			class xx_OPTRE_M41_Twin_HEAA
-			{
-				magazine = "OPTRE_M41_Twin_HEAA";
-				count = 99;
-			};
 			class xx_OPTRE_60Rnd_5x23mm_Mag
 			{
 				magazine = "OPTRE_60Rnd_5x23mm_Mag";
@@ -636,11 +631,6 @@ class CfgVehicles
 			class xx_OPTRE_M41_Twin_HEAP
 			{
 				magazine = "OPTRE_M41_Twin_HEAP";
-				count = 99;
-			};
-			class xx_OPTRE_M41_Twin_HEAA
-			{
-				magazine = "OPTRE_M41_Twin_HEAA";
 				count = 99;
 			};
 			class xx_OPTRE_60Rnd_5x23mm_Mag

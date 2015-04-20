@@ -1619,7 +1619,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa","OPTRE_UNSC_Units\Army\data\ghillie_1_ca.paa"}; /// what texture is going to be used
 		};
 	};
-	class OPTRE_UNSC_M52_Vest2_WDL: OPTRE_UNSC_M52_Vest2_base
+	/*class OPTRE_UNSC_M52_Vest2_WDL: OPTRE_UNSC_M52_Vest2_base
 	{	
 		scope											= 2;
 		author											= "Article 2 Studios";
@@ -1674,7 +1674,7 @@ class cfgWeapons
 			hiddenSelections[]   						= {"camo1","camo2","camo3","insignia","clan","camo3","attach_knife","attach_pack"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_cam2_co.paa","OPTRE_UNSC_Units\Army\data\addons_cam2_ca.paa","OPTRE_UNSC_Units\Army\data\ghillie_3_ca.paa"}; /// what texture is going to be used
 		};
-	};
+	};*/
 	
 	// HELMETS
 	
@@ -1804,7 +1804,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_snow_co.paa","OPTRE_UNSC_Units\Army\data\addons_snow_co.paa"}; /// what texture is going to be used
 		};
 	};
-	class OPTRE_UNSC_CH252_Helmet2_Base: H_HelmetB
+	/*class OPTRE_UNSC_CH252_Helmet2_Base: H_HelmetB
 	{	
 		scope   										= 0; /// scope needs to be 2 to have a visible class
 		author											= "Article 2 Studios";
@@ -1880,5 +1880,5 @@ class cfgWeapons
 			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","camo3"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_cam2_co.paa","OPTRE_UNSC_Units\Army\data\addons_cam2_ca.paa","OPTRE_UNSC_Units\Army\data\ghillie_3_ca.paa"}; /// what texture is going to be used
 		};
-	};
+	};*/
 };

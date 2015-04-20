@@ -884,7 +884,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_stirls_co.paa",""}; /// what texture is going to be used
 		};
 	};
-	class OPTRE_UNSC_ODST_vest_stirls: OPTRE_UNSC_ODST_vest
+	class OPTRE_UNSC_ODST_vest_urban: OPTRE_UNSC_ODST_vest
 	{	
 		scope 																					= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
@@ -1072,7 +1072,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_stirls_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_stirls_co.paa"}; /// what texture is going to be used
 		};
 	};
-	lass OPTRE_UNSC_ODST_helmet_urban: OPTRE_UNSC_ODST_helmet_scorch
+	class OPTRE_UNSC_ODST_helmet_urban: OPTRE_UNSC_ODST_helmet_scorch
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";

@@ -27,7 +27,7 @@ if (isMultiplayer) then
 	};
 };
 
-waitUntil {time > 0};
+/*waitUntil {time > 0};
 while {time > 0} do
 {	
 	{
@@ -39,4 +39,4 @@ while {time > 0} do
 		};
 	} forEach vehicles;
 	sleep 0.05;
-};
+};*/

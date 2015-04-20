@@ -219,7 +219,7 @@ class CfgVehicles
 
 	class OPTRE_UNSC_Longsword_CAS: OPTRE_Longsword_Base /// CAS version of the plane
 	{
-		scope = 1;	/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
+		scope = 0;	/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		displayName = "Longsword (CAS)"; /// how does the vehicle show itself in editor
 
 		side			 = 2;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
@@ -300,7 +300,7 @@ class CfgVehicles
 
 	class Test_Plane_01_wreck_F: PlaneWreck
 	{
-		scope = 1;
+		scope = 0;
 		model = "-";
 		typicalCargo[] = {};
 		irTarget = 0;

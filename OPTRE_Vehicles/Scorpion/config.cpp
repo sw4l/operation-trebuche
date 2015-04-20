@@ -432,7 +432,7 @@ class CfgVehicles {
 	class OPTRE_UNSC_Scorpion: OPTRE_UNSC_Scorpion_base 
 	{
 		// Basic defines: public scope
-		scope = 1;
+		scope = 0;
 		// Editor displayname
 		faction = "OPTRE_UNSC";
 		vehicleClass = "OPTRE_UNSC_Armored_class";

@@ -5,7 +5,7 @@ class CfgPatches //This configures the identification of the pbo to the game
 		units[] 																				= {};
 		weapons[] 																				= {};																								
 		requiredVersion 																		= 0.1;
-		version																					= 0.1;
+		version																					= 0.10;
 		requiredAddons[] 																		= {"Extended_EventHandlers", "cba_main", "A3_Map_Stratis"};
 		author[] 																				= {"Article 2 Studios"};
 		fileName 																				= "OPTRE_Core.pbo";
@@ -466,7 +466,7 @@ class CfgMusic
 		name	="[OPTRE] Call To Arms";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_CallToArms.ogg",1,1};
 		musicClass = "OPTRE_OST";
-		duration = 83;
+		duration = 68;
 	};
 	class OPTRE_Music_ChooseWisely
 	{

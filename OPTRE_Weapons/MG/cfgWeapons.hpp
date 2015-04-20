@@ -64,8 +64,8 @@
 			
      
             //WEAPONS
-            class MMG_01_base_F;
-            class OPTRE_M73_base: MMG_01_base_F
+            class LMG_Mk200_F;
+            class OPTRE_M73_base: LMG_Mk200_F
             {
                     scope                                                                   = 1;
 					scopeArsenal = 2;
@@ -191,7 +191,7 @@
          class OPTRE_M73: OPTRE_M73_base
             {
                     model                                                                   = "\OPTRE_Weapons\MG\M73.p3d";
-                    displayName                                                             = "M73 CQC Light Machine Gun";
+                    displayName                                                             = "M73 Light Machine Gun";
                     descriptionShort                                                        = "UNSC Light Machine Gun";
                     inertia                                                                 = 0.75;
 					scope																	= 2;
@@ -223,7 +223,7 @@
             {
                     model                                                                   = "\OPTRE_Weapons\MG\M73_rail.p3d";
                     displayName                                                             = "M73 CQC Light Machine Gun";
-			handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_Weapons\MG\data\anim\M73_2.rtm"};
+					handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_Weapons\MG\data\anim\M73_2.rtm"};
                     descriptionShort                                                        = "UNSC Light Machine Gun (CQC Variant)";
                     inertia                                                                 = 0.75;
 					scope																	= 2;
