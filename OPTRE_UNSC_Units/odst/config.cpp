@@ -347,6 +347,29 @@ class CfgVehicles //This configures units and backpacks
 		hiddenSelections[] 																		= {"camo1","insignia","clan"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\ODST\data\uniform_thedog_co.paa"};
 	};
+		class OPTRE_UNSC_ODST_Soldier_stirls: OPTRE_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
+	{
+		scope																					= 2;
+		author																					= "Article 2 Studios";
+		attendant 																				= 1;
+		engineer 																				= 1;
+		canDeactivateMines 																		= 1;
+		detectSkill 																			= 80;
+		displayName																				= "Stirls";
+		vehicleClass																			= "OPTRE_UNSC_Man_Special_class";
+		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_stirls";		
+		backpack 																				= "OPTRE_ILCS_Rucksack_Black";
+		weapons[] 										= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
+		magazines[] 									= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		respawnMagazines[] 								= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		Items[]																					= {"OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[]																			= {"OPTRE_Biofoam","OPTRE_Biofoam"};
+		linkedItems[] 																			= {"OPTRE_UNSC_ODST_vest_stirls","OPTRE_UNSC_ODST_Helmet_stirls","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
+		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_vest_stirls","OPTRE_UNSC_ODST_Helmet_stirls","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
+		hiddenSelections[] 																		= {"camo1","insignia","clan"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\ODST\data\uniform_co.paa"};
+	};
 	class OPTRE_UNSC_ODST_Soldier_instructor: B_Soldier_F //Configures the unit part of the ODST Uniform
 	{
 		scope																				= 2;
@@ -662,6 +685,16 @@ class cfgWeapons
 		class ItemInfo: ItemInfo
 		{
 			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_thedog";
+		};
+	};
+	class OPTRE_UNSC_ODST_uniform_stirls: OPTRE_UNSC_ODST_uniform
+	{
+		scope																					= 2;
+		author																					= "Article 2 Studios";
+		displayName																				= "[UNSC] Stirl's ODST Undersuit";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_stirls";
 		};
 	};
 	class OPTRE_UNSC_ODST_uniform_zero: OPTRE_UNSC_ODST_uniform
