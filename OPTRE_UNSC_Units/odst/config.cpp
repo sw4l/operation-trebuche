@@ -388,8 +388,8 @@ class CfgVehicles //This configures units and backpacks
 		respawnMagazines[] 								= {"OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 		Items[]																					= {"OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[]																			= {"OPTRE_Biofoam","OPTRE_Biofoam"};
-		linkedItems[] 																			= {"OPTRE_UNSC_ODST_vest_stirls","OPTRE_UNSC_ODST_Helmet_stirls","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
-		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_vest_stirls","OPTRE_UNSC_ODST_Helmet_stirls","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
+		linkedItems[] 																			= {"OPTRE_UNSC_ODST_vest_urban","OPTRE_UNSC_ODST_Helmet_urban","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
+		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_vest_urban","OPTRE_UNSC_ODST_Helmet_urban","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
 		hiddenSelections[] 																		= {"camo1","insignia","clan"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\ODST\data\uniform_Urban_co.paa"};
 	};
@@ -505,8 +505,8 @@ class CfgVehicles //This configures units and backpacks
 		backpack										= "OPTRE_ILCS_Rucksack_Black";
 		weapons[] 										= {"OPTRE_M73","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"OPTRE_M73","OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 									= {"150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
-		respawnMagazines[] 								= {"150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","150Rnd_762x51_Box","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		magazines[] 									= {"OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		respawnMagazines[] 								= {"OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
 		icon = "iconManMG";
 	};
 	class OPTRE_UNSC_ODST_Marksman: OPTRE_UNSC_ODST_Soldier_Sniper

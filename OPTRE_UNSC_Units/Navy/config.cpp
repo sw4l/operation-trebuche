@@ -627,6 +627,8 @@ class CfgVehicles
         uniformClass = "OPTRE_UNSC_NWU_PLT";	
 		weapons[] 										= {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		magazines[] 									= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		respawnMagazines[] 								= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
 		linkedItems[] = {"OPTRE_UNSC_Marine_helmet_vacuum","OPTRE_UNSC_Marine_Vest_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		respawnLinkedItems[] = {"OPTRE_UNSC_Marine_helmet_vacuum","OPTRE_UNSC_Marine_Vest_vacuum","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
     }; 
@@ -783,7 +785,7 @@ class cfgWeapons
         scope											= 2;
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_uniform.paa"; //Need a picture
-		displayName										= "[UNSC] Naval Uniform [Gunnery]";
+		displayName										= "[UNSC] Naval Uniform [Operations]";
 		class ItemInfo: UniformItem
 		{
 			uniformModel									= "-";
