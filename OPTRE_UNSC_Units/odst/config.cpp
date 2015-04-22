@@ -1239,6 +1239,22 @@ class cfgWeapons
 			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
 		};
 	};
+	class OPTRE_UNSC_ODST_helmet_urban_dp: OPTRE_UNSC_ODST_helmet_scorch
+	{	
+		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
+		author																					= "Article 2 Studios";
+		displayName    																			= "[UNSC] Urban's ODST Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_urban_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_urban_co.paa"}; /// what texture is going to be used
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
+		class ItemInfo: ItemInfo 
+		{
+			
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"}; /// what selection in model could have different textures
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_urban_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_urban_co.paa"}; /// what texture is going to be used
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
+		};
+	};
 			class OPTRE_UNSC_ODST_helmet_zero_dp: OPTRE_UNSC_ODST_helmet_scorch
 	{	
 		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
