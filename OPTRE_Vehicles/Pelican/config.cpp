@@ -364,7 +364,242 @@ class CfgVehicles
         memoryPointDriverOptics = "slingCamera";	/// what memory point is the origin of the camera
 		slingLoadMaxCargoMass 	= 500000;				/// maximum weight of cargo for this chopper
 		slingLoadMemoryPoint 	= "slingLoad0";		/// memory point for sling load to attach ropes to
-		
+		class MFD
+		{
+			class AirplaneHUD
+			{
+				topLeft = "HUD_top_left";
+				topRight = "HUD_top_right";
+				bottomLeft = "HUD_bottom_left";
+				borderLeft = 0;
+				borderRight = 0;
+				borderTop = 0;
+				borderBottom = 0;
+				color[] = {0.0,0.13,0.16,1.0};
+				helmetMountedDisplay = 1;
+				helmetPosition[] = {-0.025,0.025,0.1};
+				helmetRight[] = {0.05,0.0,0.0};
+				helmetDown[] = {0.0,-0.05,0.0};
+				class Bones
+				{
+					class HUDCenter
+					{
+						type = "fixed";
+						pos[] = {0.5,0.5};
+					};
+					class WeaponAim
+					{
+						type = "vector";
+						source = "weapon";
+						pos0[] = {0.5,0.5};
+						pos10[] = {0.847,0.845};
+					};
+					class VelocityVector
+					{
+						type = "vector";
+						source = "velocityToView";
+						pos0[] = {0.5,0.5};
+						pos10[] = {0.847,0.845};
+					};
+					class ForwardVector
+					{
+						type = "vector";
+						source = "forward";
+						pos0[] = {0,0};
+						pos10[] = {0.347,0.345};
+					};
+					class HorizonVector
+					{
+						type = "horizon";
+						pos0[] = {0.5,0.5};
+						pos10[] = {0.990727,0.987899};
+						angle = 0;
+					};
+					class GunnerAim
+					{
+						type = "vector";
+						source = "weapon";
+						pos0[] = {0,-0.0025};
+						pos10[] = {0.01,0.0025};
+					};
+					class VerticalSpeedBone
+					{
+						type = "linear";
+						source = "vspeed";
+						sourceScale = 1;
+						min = -15;
+						max = 15;
+						minPos[] = {0,-0.15};
+						maxPos[] = {0,0.15};
+					};
+				};
+				class Draw
+				{
+					alpha = 1.0;
+					color[] = {0.25,1.0,0.25};
+					condition = "on";
+					class Static
+					{
+						type = "line";
+						width = 4.0;
+						points[] = {{ { 0.48,0.14 },1 },{ { 0.5,0.12 },1 },{ { 0.52,0.14 },1 },{  },{ { 0.4,0.86 },1 },{ { 0.4,0.94 },1 },{ { 0.6,0.94 },1 },{ { 0.6,0.86 },1 },{ { 0.4,0.86 },1 },{  },{ { 0.4,0.9 },1 },{ { 0.408,0.9 },1 },{  },{ { 0.6,0.9 },1 },{ { 0.592,0.9 },1 },{  },{ { 0.5,0.86 },1 },{ { 0.5,0.868 },1 },{  },{ { 0.5,0.94 },1 },{ { 0.5,0.932 },1 }};
+					};
+					class VelocityLine
+					{
+						type = "line";
+						width = 4.0;
+						points[] = {{ "HUDCenter",1 },{ "VelocityVector",1 }};
+					};
+					class CollectiveGroup
+					{
+						condition = "simulRTD";
+						class CollectiveText
+						{
+							type = "text";
+							source = "static";
+							text = "%";
+							align = "right";
+							scale = 1;
+							pos[] = {{ 0.22,0.2 },1};
+							right[] = {{ 0.28,0.2 },1};
+							down[] = {{ 0.22,0.24 },1};
+						};
+						class CollectiveNumber
+						{
+							type = "text";
+							source = "rtdCollective";
+							sourceScale = 100;
+							align = "left";
+							scale = 1;
+							pos[] = {{ 0.22,0.2 },1};
+							right[] = {{ 0.28,0.2 },1};
+							down[] = {{ 0.22,0.24 },1};
+						};
+					};
+					class SpeedNumber
+					{
+						type = "text";
+						source = "speed";
+						sourceScale = 3.6;
+						align = "right";
+						scale = 1;
+						pos[] = {{ 0.16,0.48 },1};
+						right[] = {{ 0.22,0.48 },1};
+						down[] = {{ 0.16,0.52 },1};
+					};
+					class AltNumber
+					{
+						type = "text";
+						source = "altitudeAGL";
+						sourceScale = 1;
+						align = "left";
+						scale = 1;
+						pos[] = {{ 0.84,0.48 },1};
+						right[] = {{ 0.9,0.48 },1};
+						down[] = {{ 0.84,0.52 },1};
+					};
+					class Weapons
+					{
+						type = "text";
+						source = "weapon";
+						sourceScale = 1;
+						align = "right";
+						scale = 0.5;
+						pos[] = {{ 0.0,0.85 },1};
+						right[] = {{ 0.04,0.85 },1};
+						down[] = {{ 0.0,0.89 },1};
+					};
+					class Ammo
+					{
+						type = "text";
+						source = "ammo";
+						sourceScale = 1;
+						align = "right";
+						scale = 0.5;
+						pos[] = {{ 0.0,0.9 },1};
+						right[] = {{ 0.04,0.9 },1};
+						down[] = {{ 0.0,0.94 },1};
+					};
+					class VerticalSpeedScale
+					{
+						type = "line";
+						width = 4.0;
+						points[] = {{ "VerticalSpeedBone",{ 0.85,0.48 },1 },{ "VerticalSpeedBone",{ 0.87,0.5 },1 },{ "VerticalSpeedBone",{ 0.85,0.52 },1 },{  },{ { 0.875,0.35 },1 },{ { 0.885,0.35 },1 },{  },{ { 0.875,0.4 },1 },{ { 0.885,0.4 },1 },{  },{ { 0.875,0.45 },1 },{ { 0.885,0.45 },1 },{  },{ { 0.875,0.5 },1 },{ { 0.895,0.5 },1 },{  },{ { 0.875,0.55 },1 },{ { 0.885,0.55 },1 },{  },{ { 0.875,0.6 },1 },{ { 0.885,0.6 },1 },{  },{ { 0.875,0.65 },1 },{ { 0.885,0.65 },1 }};
+					};
+					class HeadingScale
+					{
+						type = "scale";
+						horizontal = 1;
+						source = "heading";
+						sourceScale = 1;
+						width = 4.0;
+						top = 0.2;
+						center = 0.5;
+						bottom = 0.8;
+						lineXleft = 0.11;
+						lineYright = 0.1;
+						lineXleftMajor = 0.11;
+						lineYrightMajor = 0.09;
+						majorLineEach = 2;
+						numberEach = 2;
+						step = 22.5;
+						stepSize = "(0.80 - 0.20) / 6";
+						align = "center";
+						scale = 1;
+						pos[] = {0.2,0.05};
+						right[] = {0.26,0.05};
+						down[] = {0.2,0.09};
+					};
+					class HorizonLine
+					{
+						clipTL[] = {0.2,0.145};
+						clipBR[] = {0.8,0.855};
+						class HorizonLineDraw
+						{
+							type = "line";
+							width = 4.0;
+							points[] = {{ "HorizonVector",{ "-6 * 0.0375",0.0 },1 },{ "HorizonVector",{ "-5 * 0.0375",0.0 },1 },{  },{ "HorizonVector",{ "-4 * 0.0375",0.0 },1 },{ "HorizonVector",{ "-3 * 0.0375",0.0 },1 },{  },{ "HorizonVector",{ "-2 * 0.0375",0.0 },1 },{ "HorizonVector",{ "-1 * 0.0375",0.0 },1 },{  },{ "HorizonVector",{ "1 * 0.0375",0.0 },1 },{ "HorizonVector",{ "2 * 0.0375",0.0 },1 },{  },{ "HorizonVector",{ "3 * 0.0375",0.0 },1 },{ "HorizonVector",{ "4 * 0.0375",0.0 },1 },{  },{ "HorizonVector",{ "5 * 0.0375",0.0 },1 },{ "HorizonVector",{ "6 * 0.0375",0.0 },1 }};
+						};
+					};
+					class Gunner
+					{
+						type = "line";
+						width = 4.0;
+						points[] = {{ "GunnerAim",{ "0.5 - 0.015","0.9 - 0.008" },1 },{ "GunnerAim",{ "0.5 - 0.015","0.9 + 0.008" },1 },{ "GunnerAim",{ "0.5 + 0.015","0.9 + 0.008" },1 },{ "GunnerAim",{ "0.5 + 0.015","0.9 - 0.008" },1 },{ "GunnerAim",{ "0.5 - 0.015","0.9 - 0.008" },1 }};
+					};
+					class MGun
+					{
+						condition = "mgun";
+						class Circle
+						{
+							type = "line";
+							width = 4.0;
+							points[] = {{ "ForwardVector",1,"WeaponAim",{ 0.025,0 },1 },{ "ForwardVector",1,"WeaponAim",{ 0.01,0 },1 },{  },{ "ForwardVector",1,"WeaponAim",{ 0,0.0248559 },1 },{ "ForwardVector",1,"WeaponAim",{ 0,0.00994236 },1 },{  },{ "ForwardVector",1,"WeaponAim",{ -0.025,0 },1 },{ "ForwardVector",1,"WeaponAim",{ -0.01,0 },1 },{  },{ "ForwardVector",1,"WeaponAim",{ 0,-0.0248559 },1 },{ "ForwardVector",1,"WeaponAim",{ 0,-0.00994236 },1 }};
+						};
+					};
+					class AAMissile
+					{
+						condition = "AAmissile";
+						class Circle
+						{
+							type = "line";
+							width = 4.0;
+							points[] = {{ "ForwardVector",1,"HUDCenter",{ 0,-0.248559 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.0434,-0.244781 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.0855,-0.233571 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.125,-0.215252 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.1607,-0.190396 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.1915,-0.159774 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.2165,-0.12428 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.234925,-0.0850072 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.2462,-0.0431499 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.25,0 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.2462,0.0431499 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.234925,0.0850072 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.2165,0.12428 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.1915,0.159774 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.1607,0.190396 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.125,0.215252 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.0855,0.233571 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.0434,0.244781 },1 },{ "ForwardVector",1,"HUDCenter",{ 0,0.248559 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.0434,0.244781 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.0855,0.233571 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.125,0.215252 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.1607,0.190396 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.1915,0.159774 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.2165,0.12428 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.234925,0.0850072 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.2462,0.0431499 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.25,0 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.2462,-0.0431499 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.234925,-0.0850072 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.2165,-0.12428 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.1915,-0.159774 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.1607,-0.190396 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.125,-0.215252 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.0855,-0.233571 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.0434,-0.244781 },1 },{ "ForwardVector",1,"HUDCenter",{ 0,-0.248559 },1 }};
+						};
+					};
+					class ATMissile
+					{
+						condition = "ATmissile";
+						class Circle
+						{
+							type = "line";
+							width = 4.0;
+							points[] = {{ "ForwardVector",1,"HUDCenter",{ -0.15,-0.149135 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.15,-0.129251 },1 },{  },{ "ForwardVector",1,"HUDCenter",{ -0.15,0.149135 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.15,0.129251 },1 },{  },{ "ForwardVector",1,"HUDCenter",{ 0.15,-0.149135 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.15,-0.129251 },1 },{  },{ "ForwardVector",1,"HUDCenter",{ 0.15,0.149135 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.15,0.129251 },1 },{  },{ "ForwardVector",1,"HUDCenter",{ -0.15,-0.149135 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.13,-0.149135 },1 },{  },{ "ForwardVector",1,"HUDCenter",{ -0.15,0.149135 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.13,0.149135 },1 },{  },{ "ForwardVector",1,"HUDCenter",{ 0.15,-0.149135 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.13,-0.149135 },1 },{  },{ "ForwardVector",1,"HUDCenter",{ 0.15,0.149135 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.13,0.149135 },1 }};
+						};
+					};
+				};
+			};
+		};
 		class Turrets: Turrets										/// just a copilot seat as a turret to enable taking the controls
 		{
 			class CopilotTurret: CopilotTurret						/// taking controls is already defined in parent class
