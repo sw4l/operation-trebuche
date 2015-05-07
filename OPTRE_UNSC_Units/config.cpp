@@ -1,19 +1,3 @@
-enum {
-DESTRUCTENGINE 																					= 2,
-DESTRUCTDEFAULT 																				= 6,
-DESTRUCTWRECK 																					= 7,
-DESTRUCTTREE 																					= 3,
-DESTRUCTTENT 																					= 4,
-STABILIZEDINAXISX 																				= 1,
-STABILIZEDINAXESXYZ 																			= 4,
-STABILIZEDINAXISY 																				= 2,
-STABILIZEDINAXESBOTH 																			= 3,
-DESTRUCTNO 																						= 0,
-STABILIZEDINAXESNONE 																			= 0,
-DESTRUCTMAN 																					= 5,
-DESTRUCTBUILDING 																				= 1,
-};
-
 class CfgPatches //This configures the identification of the pbo to the game
 {
 	class OPTRE_UNSC_Units
@@ -34,10 +18,9 @@ class CfgGroups
 		class OPTRE_UNSC //OPTRE_Ins
 		{
 			name = "UNSCDF";
-			class Infantry //Air, Mechanized, Motorized, Armored, SpecOps, Support
+			class Infantry_ArmyWoodland //Air, Mechanized, Motorized, Armored, SpecOps, Support
 			{
-				name = "Infantry";
-				
+				name = "Infantry (Army Woodland)";
 				class OPTRE_UNSC_Army_W_Inf_Sentry
 				{
 					name = "Army Sentry (W)";
@@ -310,9 +293,10 @@ class CfgGroups
 						position[] = {5,-5,0};
 					};
 				};
-				
-				
-				
+			};	
+			class Infantry_ArmyDesert //Air, Mechanized, Motorized, Armored, SpecOps, Support
+			{
+				name = "Infantry (Army Desert)";
 				class OPTRE_UNSC_Army_D_Inf_Sentry
 				{
 					name = "Army Sentry (D)";
@@ -585,10 +569,10 @@ class CfgGroups
 						position[] = {5,-5,0};
 					};
 				};
-			
-			
-			
-			
+			};
+			class Infantry_Marines //Air, Mechanized, Motorized, Armored, SpecOps, Support
+			{
+				name = "Infantry (Marines)";
 				class OPTRE_UNSC_Marine_Inf_Sentry
 				{
 					name = "Marine Sentry";
@@ -861,14 +845,10 @@ class CfgGroups
 						position[] = {5,-5,0};
 					};
 				};
-			
 			};
-			
-			
-			class SpecOps
+			class SpecOps_ODST //Air, Mechanized, Motorized, Armored, SpecOps, Support
 			{
-				name = "Special Forces";
-				
+				name = "Special Forces (ODST)";
 				class OPTRE_UNSC_ODST_Sentry
 				{
 					name = "ODST Sentry";

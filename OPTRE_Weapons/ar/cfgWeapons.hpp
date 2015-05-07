@@ -165,6 +165,8 @@ class Mode_FullAuto;
                     muzzleEnd                                                               = "konec hlavne";
                     reloadAction                                                            = "GestureReloadTRG";
                     inertia                                                                 = 0.6;
+					maxZeroing 																= 1000;
+					discreteDistance[] 														= {100,200,300,400,500,600,700,800,900,1000};
 					maxRecoilSway = 0.01;
 					swayDecaySpeed = 1;
                     class GunParticles: GunParticles

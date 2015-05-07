@@ -22,7 +22,7 @@ class CfgMagazines
 		displaynameshort					= "7.62x51mm";
 		ammo								= "OPTRE_B_762x51_Ball";
 		count								= 60;
-		initspeed							= 720;
+		initspeed							= 700;
 		picture 							= "\OPTRE_weapons\ar\icons\magazine.paa";
 		descriptionshort					= "60 Round Magazine<br>7.62x51mm";
 		mass								= 18;
@@ -42,6 +42,7 @@ class CfgMagazines
 	{
 		displayname							= "32Rnd 762x51mm Magazine";
 		count								= 32;
+		initspeed							= 800;
 		descriptionshort					= "32 Round Magazine<br>7.62x51mm";
 		mass								= 10;
 	};
@@ -59,7 +60,7 @@ class CfgMagazines
 		displaynameshort					= "7.62x51mm";
 		ammo								= "OPTRE_B_762x51_Ball";
 		count								= 100;
-		initspeed							= 860;
+		initspeed							= 850;
 		picture 							= "\OPTRE_Weapons\MG\icon\magazine.paa";
 		descriptionshort					= "100 Round Box Magazine<br>7.62x51mm";
 		mass								= 40;
@@ -85,7 +86,7 @@ class CfgMagazines
 		displaynameshort					= "9.5x40mm";
 		ammo								= "OPTRE_B_95x40_Ball";
 		count								= 36;
-		initspeed							= 840;
+		initspeed							= 900;
 		picture 							= "\OPTRE_weapons\br\icons\magazine.paa";
 		descriptionshort					= "36 Round Magazine<br>9.5x40mm";
 		mass								= 8;
@@ -108,7 +109,7 @@ class CfgMagazines
 		displaynameshort					= "9.5x40mm";
 		ammo								= "OPTRE_B_95x40_Ball";
 		count								= 100;
-		initspeed							= 800;
+		initspeed							= 900;
 		picture 							= "\OPTRE_Weapons\MG\icons\magazine.paa";
 		descriptionshort					= "100 Round Box Magazine<br>9.5x40mm";
 		mass								= 35;
@@ -188,7 +189,7 @@ class CfgMagazines
 		displaynameshort					= "8 Gauge Pellets";
 		ammo								= "OPTRE_8Gauge_Pellets";
 		count								= 6;
-		initspeed							= 396;
+		initspeed							= 400;
 		picture								= "\a3\weapons_F\data\ui\m_12gauge_ca.paa";
 		descriptionshort					= "6 Rounds of 8 Gauge Pellets";
 		mass								= 8;
@@ -199,7 +200,7 @@ class CfgMagazines
 		displayname							= "6Rnd 8 Gauge Slugs";
 		displaynameshort					= "8 Gauge Slugs";
 		ammo								= "OPTRE_8Gauge_Slugs";
-		initspeed							= 468;
+		initspeed							= 600;
 		picture								= "\a3\weapons_F\data\ui\m_12gauge_slugs_ca.paa";
 		descriptionshort					= "6 Rounds of 8 Gauge Slugs";
 		mass								= 9;
@@ -271,7 +272,7 @@ class CfgMagazines
 		displaynameshort					= "14.5x114mm APFSDS";
 		ammo								= "OPTRE_B_145x114_APFSDS";
 		count								= 4;
-		initspeed							= 1250;
+		initspeed							= 1750;
 		picture 							= "\OPTRE_weapons\ar\icons\magazine.paa";
 		descriptionshort					= "4 Round Magazine<br>14.5x114mm<br>Armor Piercing Fin-Stabilized Disposable Shell";
 		mass								= 15;
@@ -283,9 +284,9 @@ class CfgMagazines
 		displayname							= "4Rnd 14.5x114mm HVAP Magazine";
 		displaynameshort					= "14.5x114mm HVAP";
 		ammo								= "OPTRE_B_145x114_HVAP";
-		initspeed							= 1500;
+		initspeed							= 1750;
 		descriptionshort					= "4 Round Magazine<br>14.5x114mm<br>High Velocity Armor Piercing";
-		mass								= 19;
+		mass								= 20;
 	};
 	
 	//Vehicles

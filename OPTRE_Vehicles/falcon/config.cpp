@@ -1,5 +1,13 @@
-#include "basicdefines_A3.hpp"
-#include "CfgPatches.hpp"
+class CfgPatches
+{
+	class OPTRE_Vehicles_Falcon
+	{
+		units[] = {"OPTRE_Objects_Wreck_Falcon"};
+		weapons[] = {};
+		requiredVersion = 0.1;
+		requiredAddons[] = {"A3_Air_F","A3_Air_F_Beta","A3_Weapons_F","OPTRE_Core"};
+	};
+};
 
 class WeaponCloudsMGun;
 
@@ -35,7 +43,7 @@ class CfgVehicles
 		altFullForce = 4000;	/// in what height do the engines still have full thrust
 		altNoForce = 6000;		/// thrust of the engines interpolates to zero between altFullForce and altNoForce
 		maxSpeed = 300;			/// what is the maximum speed of the vehicle
-		maxFordingDepth = 0.55;	/// how deep could the vehicle be in water without getting some damage
+		maxFordingDepth = 0.75;	/// how deep could the vehicle be in water without getting some damage
 		mainBladeRadius = 3.0;	/// describes the radius of main rotor - used for collision detection
 		//multiplier of lift force
 		liftForceCoef = 1.1;	
@@ -47,9 +55,8 @@ class CfgVehicles
 		cyclicForwardForceCoef = 1.0;
 		//multiplier of back rotor force
 		backRotorForceCoef = 1.0;	
-		
 		accuracy = 0.5;											/// how hard it is to distinguish the type of the vehicle (bigger number means harder)
-		displayName = "Falcon Test"; 								/// how is the heli displayed in editor
+		displayName = "Falcon"; 								/// how is the heli displayed in editor
 		model = "\OPTRE_vehicles\falcon\falcon.p3d"; 	/// path to model of the heli
 		driveOnComponent[] = {"Wheels"};
 		author="Article 2 Studios";
@@ -71,28 +78,20 @@ class CfgVehicles
 			passenger_apc_generic04,
 			passenger_apc_narrow_generic02
 		};
-		
 		cargoIsCoDriver[] = {0, 0}; 				/// the cargo don't utilize some special memory points to get in
 		memoryPointsGetInCargo = "pos cargo";		/// on what memory points should the cargo get in the heli
 		memoryPointsGetInCargoDir = "pos cargo dir";/// what is the direction of the cargo facing during get in animation (and opposite for get out)
 		hideWeaponsCargo = 0;						/// this makes the poses easier and adds some performance gain because the proxies don't need to be drawn
 		cargoProxyIndexes[] = {2,3,5};		/// what indexes does regular cargo sit on
-		
 		hiddenSelections[] = { }; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] = {};
-		
 		class TransportBackpacks	/// adds various backpacks to cargo hold of the heli
-		{
-			bag_xx(B_Parachute,8);	/// this utilizes a macro from basicdefines_A3.hpp to create a class with backpack inside
-		};
+		{};
 		class TransportItems		/// adds various items to cargo hold of the heli
-		{
-			item_xx(FirstAidKit,10);/// this utilizes a macro from basicdefines_A3.hpp to create a class with FAK inside
-		};		
+		{};		
 		maximumLoad = 2000;			/// capacity of cargo inventory for backpacks and various other items
 		cargoCanEject = 1;			/// cargo should be able to grab a chute and drop out of the vehicle
 		driverCanEject = 0;			/// pilot shouldn't be able to do so as he doesn't have eject seat
-
 		class Exhausts								/// describes the particle effects fro exhausts
 		{
 			class Exhaust1							/// there may be as many exhausts as you wish, bear in mind the particle limitation and performance
@@ -108,7 +107,6 @@ class CfgVehicles
 				effect = "ExhaustsEffectHeliMed";
 			};
 		};
-
 		class MFD
 		{
 			class AirplaneHUD
@@ -345,26 +343,19 @@ class CfgVehicles
 				};
 			};
 		};
-		
-		memoryPointLMissile = "Rocket_1";	/// from what memory point should the even missiles start
-		memoryPointRMissile = "Rocket_1";	/// from what memory point should the odd missiles start
 		memoryPointGun = "machinegun_end";	/// from what memory point should the bullets start
-		
 		LockDetectionSystem = CM_Lock_Radar + CM_Lock_Laser;	/// this uses macros from basicDefines_A3, just add more to gain more systems for the vehicle
 		incomingMissileDetectionSystem = CM_Missile;			/// for example CM_Lock_Laser + CM_Lock_Radar, parser is able to evaluate that, or simply 12 in that case
 		selectionFireAnim = "muzzleFlash";						/// what selection is hidden when machinegun doesn't shoot
-
 		visionMode[]={"Normal","NVG","Ti"};
 		weapons[] = {"gatling_30mm",  "CMFlareLauncher","Laserdesignator_mounted"};	/// array of various vehicle weapons mounted on the heli
 		magazines[] = {"250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"}; /// array of corresponding magazines
-				
 		class ViewPilot: ViewPilot 	/// describes what does the pilot see using bare eyes
 		{
 			initFov = 0.75; 		/// this is the standard field of view angle for soldier, bit more narrow than a real-life one
 			minFov = 0.375; 		/// this is how much can people "zoom" their view via focusing on something
 			maxFov = 1.1;			/// this is how wide can the field of view be
 		};
-
 		class Viewoptics: Viewoptics 	/// pilot doesn't use optics in this vehicle
 		{
 			initAngleX = 0; 			/// initial horizontal angle of the optics view relative to proxy position of pilot
@@ -377,7 +368,6 @@ class CfgVehicles
 			minFov = 0.1;  				/// the same functionality as in ViewPilot
 			maxFov = 1.2; 				/// the same functionality as in ViewPilot
 		};
-		
 		class pilotCamera				/// camera for pilot to observe sling loading
         {
             class OpticsIn				/// what is seen if player switches to optics
@@ -416,7 +406,6 @@ class CfgVehicles
         memoryPointDriverOptics = "slingCamera";	/// what memory point is the origin of the camera
 		slingLoadMaxCargoMass 	= 500;				/// maximum weight of cargo for this chopper
 		slingLoadMemoryPoint 	= "slingLoad0";		/// memory point for sling load to attach ropes to
-		
 		class Turrets: Turrets										/// just a copilot seat as a turret to enable taking the controls
 		{
 			class CargoTurret_01: CargoTurret 						/// position for Firing from Vehicles
@@ -427,10 +416,10 @@ class CfgVehicles
 				memoryPointsGetInGunnerDir 	= "pos_cargo_r_dir";	/// direction of get in action
 				gunnerName 					= "Passenger Gunner R";	/// name of the position in the Action menu
 				proxyIndex 					= 4;					/// what cargo proxy is used according to index in the model
-				maxElev 					= 15;					/// what is the highest possible elevation of the turret
-				minElev 					= -25;					/// what is the lowest possible elevation of the turret
-				maxTurn 					= 1;					/// what is the left-most possible turn of the turret
-				minTurn 					= -50;					/// what is the right-most possible turn of the turret
+				maxElev 					= 30;//15					/// what is the highest possible elevation of the turret
+				minElev 					= -30;//-25					/// what is the lowest possible elevation of the turret
+				maxTurn 					= 45;//1					/// what is the left-most possible turn of the turret
+				minTurn 					= -45;//-50					/// what is the right-most possible turn of the turret
 				isPersonTurret 				= 1;					/// enables firing from vehicle functionality
 				ejectDeadGunner 			= 0;					/// seatbelts included
 				enabledByAnimationSource 	= "";				/// doesn't work unless the said animation source is 1
@@ -444,17 +433,16 @@ class CfgVehicles
 				memoryPointsGetInGunnerDir 	= "pos_cargo_l_dir";	/// direction of get in action
 				gunnerName 					= "Passenger Gunner L";	/// name of the position in the Action menu
 				proxyIndex 					= 1;					/// what cargo proxy is used according to index in the model
-				maxElev 					= 15;					/// what is the highest possible elevation of the turret
-				minElev 					= -25;					/// what is the lowest possible elevation of the turret
-				maxTurn 					= 50;					/// what is the left-most possible turn of the turret
-				minTurn 					= -1;					/// what is the right-most possible turn of the turret
+				maxElev 					= 30;//15					/// what is the highest possible elevation of the turret
+				minElev 					= -30;//-25					/// what is the lowest possible elevation of the turret
+				maxTurn 					= 45;//50					/// what is the left-most possible turn of the turret
+				minTurn 					= -45;//-1					/// what is the right-most possible turn of the turret
 				isPersonTurret 				= 1;					/// enables firing from vehicle functionality
 				ejectDeadGunner 			= 0;					/// seatbelts included
 				enabledByAnimationSource 	= "";				/// doesn't work unless the said animation source is 1
 				memoryPointGunnerOptics= "";
 			};
 		};
-
 		class Damage	/// damage changes material in specific places (visual in hitPoint)
 		{
 			tex[] = {};
@@ -473,9 +461,7 @@ class CfgVehicles
 				"A3\data_F\default_destruct.rvmat"
 			};
 		};
-
 		#include "sounds.hpp" /// sounds are included in separate file
-
 		class AnimationSources: AnimationSources	/// custom made animation sources
 		{
 			class cockpit /// class name is later used in model.cfg
@@ -512,11 +498,9 @@ class CfgVehicles
 				initPhase	 = 0;
 			};					
 		};	
-		
 		class UserActions /// actions available for player to interact with vehicle via action menu running scripts
 		{
 		};		
-	
 		class Reflectors: Reflectors			/// landing lights of the heli, turned on by AI while in night and "careless" or "safe"
 		{
 			class Right
@@ -564,7 +548,7 @@ class CfgVehicles
 		#include "rtd.hpp" /// Advanced FM characteristics in separate file to make the config cleaner
 	};
 
-	class OPTRE_falcon_green: OPTRE_falcon_base
+	class OPTRE_UNSC_falcon_green: OPTRE_falcon_base
 	{
 		scope = 2;				/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		scopeCurator = 2;		// 2 means available from Zeus, whereas 0 means hidden
@@ -575,14 +559,12 @@ class CfgVehicles
 		crew = "OPTRE_UNSC_Army_Pilot_WDL";	/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 			/// harder to distinguish side than vehicle type
 		displayName = "UH-144 Falcon (Green)";
-
 		hiddenSelections[]= {"camo1","camo2","camo3","camo4","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Falcon\data\falcon_hull_CO.paa","optre_vehicles\falcon\data\falcon_hullextra_co.paa","optre_vehicles\falcon\data\falcon_wingtips_co.paa","optre_vehicles\falcon\data\falcon_skid_co.paa"};
-		
 		availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 		cost = 2000000;	/// we need some high cost for such vehicles to be prioritized by AA defences
 	};
-		class OPTRE_falcon_tan: OPTRE_falcon_base
+	class OPTRE_UNSC_falcon_tan: OPTRE_falcon_base
 	{
 		scope = 2;				/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		scopeCurator = 2;		// 2 means available from Zeus, whereas 0 means hidden
@@ -593,14 +575,12 @@ class CfgVehicles
 		crew = "OPTRE_UNSC_Army_Pilot_DES";	/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 			/// harder to distinguish side than vehicle type
 		displayName = "UH-144 Falcon (Tan)";
-
 		hiddenSelections[]= {"camo1","camo2","camo3","camo4","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Falcon\data\falcon_hull_tan_CO.paa","optre_vehicles\falcon\data\falcon_hullextra_tan_co.paa","optre_vehicles\falcon\data\falcon_wingtips_tan_co.paa","optre_vehicles\falcon\data\falcon_skid_tan_co.paa"};
-		
 		availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 		cost = 2000000;	/// we need some high cost for such vehicles to be prioritized by AA defences
 	};
-		class OPTRE_falcon_black: OPTRE_falcon_base
+	class OPTRE_UNSC_falcon_black: OPTRE_falcon_base
 	{
 		scope = 2;				/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		scopeCurator = 2;		// 2 means available from Zeus, whereas 0 means hidden
@@ -611,14 +591,12 @@ class CfgVehicles
 		crew = "OPTRE_UNSC_Marine_Pilot";	/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 			/// harder to distinguish side than vehicle type
 		displayName = "UH-144 Falcon (Black)";
-
 		hiddenSelections[]= {"camo1","camo2","camo3","camo4","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Falcon\data\falcon_hull_night_CO.paa","optre_vehicles\falcon\data\falcon_hullextra_night_co.paa","optre_vehicles\falcon\data\falcon_wingtips_night_co.paa","optre_vehicles\falcon\data\falcon_skid_night_co.paa"};
-		
 		availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 		cost = 2000000;	/// we need some high cost for such vehicles to be prioritized by AA defences
 	};
-		class OPTRE_falcon_snow: OPTRE_falcon_base
+	class OPTRE_UNSC_falcon_snow: OPTRE_falcon_base
 	{
 		scope = 2;				/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		scopeCurator = 2;		// 2 means available from Zeus, whereas 0 means hidden
@@ -629,21 +607,22 @@ class CfgVehicles
 		crew = "OPTRE_UNSC_Army_Pilot_SNO";	/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 			/// harder to distinguish side than vehicle type
 		displayName = "UH-144 Falcon (Snow)";
-
 		hiddenSelections[]= {"camo1","camo2","camo3","camo4","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Falcon\data\falcon_hull_snow_CO.paa","optre_vehicles\falcon\data\falcon_hullextra_snow_co.paa","optre_vehicles\falcon\data\falcon_wingtips_snow_co.paa","optre_vehicles\falcon\data\falcon_skid_snow_co.paa"};
-		
 		availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 		cost = 2000000;	/// we need some high cost for such vehicles to be prioritized by AA defences
 	};
+	
 	class PlaneWreck;
-
-	class  OPTRE_falcon_wreck: PlaneWreck
+	class OPTRE_Objects_Wreck_Falcon: PlaneWreck
 	{
-		scope = 1;
+		scope = 2;
+		scopeCurator = 2;
 		model = "OPTRE_Vehicles\falcon\falcon_wreck.p3d";
+		displayname = "UH-144 Falcon Wreck";
 		typicalCargo[] = {};
 		irTarget = 0;
+		vehicleClass = "OPTRE_UNSC_Object_class";
 		transportAmmo = 0;
 		transportRepair = 0;
 		transportFuel = 0;

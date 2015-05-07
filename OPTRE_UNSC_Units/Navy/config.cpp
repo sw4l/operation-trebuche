@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class optre_UNSC_naval_units
+	class OPTRE_UNSC_Units_Navy
 	{
 		requiredaddons[] = {"OPTRE_Core","A3_Weapons_F"};
 		requiredversion = 0.1;
@@ -30,6 +30,54 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"OPTRE_UNSC_Units\Navy\data\UNSC_Navy_Coveralls_gen.paa"};
 		linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		class HitPoints
+		{
+			class HitHead
+			{
+				armor = 1;
+				material = -1;
+				name = "head";
+				passThrough = 1;
+				radius = 0.1;
+				explosionShielding = 0.5;
+				minimalHit = 0;
+			};
+			class HitBody
+			{
+				armor = 3;
+				material = -1;
+				name = "body";
+				passThrough = 1;
+				radius = 0.15;
+				explosionShielding = 5;
+				visual = "injury_body";
+				minimalHit = 0;
+			};
+			class HitHands
+			{
+				armor = 2;
+				material = -1;
+				name = "hands";
+				passThrough = 1;
+				radius = 0.08;
+				explosionShielding = 0.5;
+				visual = "injury_hands";
+				minimalHit = 0;
+			};
+			class HitLegs
+			{
+				armor = 2;
+				material = -1;
+				name = "legs";
+				passThrough = 1;
+				radius = 0.1;
+				explosionShielding = 0.5;
+				visual = "injury_legs";
+				minimalHit = 0;
+			};
+		};
+		armor = 2;
+		armorStructural = 5;
     }; 
 	class OPTRE_UNSC_Navy_Crew_F: OPTRE_UNSC_Navy_Base_F {
         scope = 2;

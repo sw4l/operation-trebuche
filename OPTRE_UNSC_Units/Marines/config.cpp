@@ -1,19 +1,3 @@
-enum {
-DESTRUCTENGINE 																					= 2,
-DESTRUCTDEFAULT 																				= 6,
-DESTRUCTWRECK 																					= 7,
-DESTRUCTTREE 																					= 3,
-DESTRUCTTENT 																					= 4,
-STABILIZEDINAXISX 																				= 1,
-STABILIZEDINAXESXYZ 																			= 4,
-STABILIZEDINAXISY 																				= 2,
-STABILIZEDINAXESBOTH 																			= 3,
-DESTRUCTNO 																						= 0,
-STABILIZEDINAXESNONE 																			= 0,
-DESTRUCTMAN 																					= 5,
-DESTRUCTBUILDING 																				= 1,
-};
-
 class CfgPatches //This configures the identification of the pbo to the game
 {
 	class OPTRE_UNSC_Units_Marines
@@ -54,13 +38,13 @@ class CfgVehicles //This configures units and backpacks
 		respawnLinkedItems[] 											= {"OPTRE_UNSC_Marine_Vest_vacuum","OPTRE_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder","attach_rightshoulder","attach_pant1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Marines\data\armor_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\uniform_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_Ca.paa"};
-		armor															= 4;
+		armor															= 2;
 		armorStructural													= 5;
 		class HitPoints
 		{
 			class HitHead
 			{
-				armor = 0.5;
+				armor = 1;
 				material = -1;
 				name = "head";
 				passThrough = 1;
@@ -70,7 +54,7 @@ class CfgVehicles //This configures units and backpacks
 			};
 			class HitBody
 			{
-				armor = 1.5;
+				armor = 4;
 				material = -1;
 				name = "body";
 				passThrough = 1;
@@ -81,7 +65,7 @@ class CfgVehicles //This configures units and backpacks
 			};
 			class HitHands
 			{
-				armor = 1.5;
+				armor = 3;
 				material = -1;
 				name = "hands";
 				passThrough = 1;
@@ -92,7 +76,7 @@ class CfgVehicles //This configures units and backpacks
 			};
 			class HitLegs
 			{
-				armor = 1.5;
+				armor = 3;
 				material = -1;
 				name = "legs";
 				passThrough = 1;
@@ -125,27 +109,23 @@ class CfgVehicles //This configures units and backpacks
 		respawnLinkedItems[] 											= {"OPTRE_UNSC_Marine_Vest","OPTRE_UNSC_Marine_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder","attach_rightshoulder","attach_pant1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Marines\data\armor_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\uniform_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_Ca.paa"};
-		class HitPoints : HitPoints
+		class HitPoints: HitPoints
 		{
-			class HitHead : HitHead 
-			{
-				armor = 0.5;
-				explosionShielding = 0.5;
-			};
-			class HitBody : HitBody
+			class HitHead: HitHead
 			{
 				armor = 1;
-				explosionShielding = 5;
 			};
-			class HitHands : HitHands
+			class HitBody: HitBody
 			{
-				armor = 1.25;
-				explosionShielding = 0.5;
+				armor = 4;
 			};
-			class HitLegs : HitLegs
+			class HitHands: HitHands
 			{
-				armor = 1.25;
-				explosionShielding = 0.5;
+				armor = 3;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 3;
 			};
 		};
 	};
@@ -171,27 +151,23 @@ class CfgVehicles //This configures units and backpacks
 		respawnLinkedItems[] 											= {"OPTRE_UNSC_Marine_Vest_vacuum","OPTRE_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder","attach_rightshoulder","attach_pant1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Marines\data\armor_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\uniform_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_Ca.paa"};
-		class HitPoints : HitPoints
+		class HitPoints: HitPoints
 		{
-			class HitHead : HitHead 
-			{
-				armor = 0.5;
-				explosionShielding = 0.5;
-			};
-			class HitBody : HitBody
+			class HitHead: HitHead
 			{
 				armor = 1;
-				explosionShielding = 8;
 			};
-			class HitHands : HitHands
+			class HitBody: HitBody
 			{
-				armor = 1.25;
-				explosionShielding = 0.8;
+				armor = 4;
 			};
-			class HitLegs : HitLegs
+			class HitHands: HitHands
 			{
-				armor = 1.25;
-				explosionShielding = 0.8;
+				armor = 3;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 3;
 			};
 		};
 	};
@@ -216,27 +192,23 @@ class OPTRE_UNSC_Marine_medium: OPTRE_UNSC_Marine_Soldier_Base //Configures the 
 		respawnLinkedItems[] 											= {"OPTRE_UNSC_Marine_Vest","OPTRE_UNSC_Marine_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_pant2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Marines\data\armor_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\uniform_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_Ca.paa"};
-		class HitPoints : HitPoints
+		class HitPoints: HitPoints
 		{
-			class HitHead : HitHead 
-			{
-				armor = 0.5;
-				explosionShielding = 0.5;
-			};
-			class HitBody : HitBody
+			class HitHead: HitHead
 			{
 				armor = 1;
-				explosionShielding = 7;
 			};
-			class HitHands : HitHands
+			class HitBody: HitBody
 			{
-				armor = 1.25;
-				explosionShielding = 0.7;
+				armor = 4;
 			};
-			class HitLegs : HitLegs
+			class HitHands: HitHands
 			{
-				armor = 1.15;
-				explosionShielding = 0.7;
+				armor = 3;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 2;
 			};
 		};
 	};
@@ -261,27 +233,23 @@ class OPTRE_UNSC_Marine_medium: OPTRE_UNSC_Marine_Soldier_Base //Configures the 
 		respawnLinkedItems[] 											= {"OPTRE_UNSC_Marine_Vest","OPTRE_UNSC_Marine_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_pant2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Marines\data\armor_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\uniform_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_Ca.paa"};
-		class HitPoints : HitPoints
+		class HitPoints: HitPoints
 		{
-			class HitHead : HitHead 
-			{
-				armor = 0.5;
-				explosionShielding = 0.5;
-			};
-			class HitBody : HitBody
+			class HitHead: HitHead
 			{
 				armor = 1;
-				explosionShielding = 6;
 			};
-			class HitHands : HitHands
+			class HitBody: HitBody
 			{
-				armor = 1;
-				explosionShielding = 0.6;
+				armor = 4;
 			};
-			class HitLegs : HitLegs
+			class HitHands: HitHands
 			{
-				armor = 1.15;
-				explosionShielding = 0.6;
+				armor = 2;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 2;
 			};
 		};
 	};
@@ -330,27 +298,23 @@ class OPTRE_UNSC_Marine_medium: OPTRE_UNSC_Marine_Soldier_Base //Configures the 
 		respawnLinkedItems[] 											= {"OPTRE_UNSC_Marine_Vest_vacuum","OPTRE_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftknee","attach_rightknee","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftthigh","attach_rightthigh","attach_rightknee2","attach_leftknee2","attach_pant2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Marines\data\armor_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\uniform_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_Ca.paa"};
-		class HitPoints : HitPoints
+		class HitPoints: HitPoints
 		{
-			class HitHead : HitHead 
-			{
-				armor = 0.5;
-				explosionShielding = 0.5;
-			};
-			class HitBody : HitBody
+			class HitHead: HitHead
 			{
 				armor = 1;
-				explosionShielding = 5;
 			};
-			class HitHands : HitHands
+			class HitBody: HitBody
 			{
-				armor = 1;
-				explosionShielding = 0.5;
+				armor = 4;
 			};
-			class HitLegs : HitLegs
+			class HitHands: HitHands
 			{
-				armor = 1;
-				explosionShielding = 0.5;
+				armor = 1.5;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 1.5;
 			};
 		};
 	};
@@ -600,50 +564,7 @@ class OPTRE_UNSC_Marine_medium: OPTRE_UNSC_Marine_Soldier_Base //Configures the 
 		respawnMagazines[]	 							= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
 		icon = "iconManOfficer";
 	};
-	class OPTRE_UNSC_Marine_Sgt_Johnson: OPTRE_UNSC_Marine_medium //make black and give military cap
-	{
-		scope											= 1;
-		displayName										= "Sgt. Avery Johnson";
-		vehicleClass									= "OPTRE_UNSC_Man_Marines_class";
-		identityTypes[] 								= {"OPTRE_Sgt_Johnson_ID"};
-		linkedItems[] 									= {"OPTRE_UNSC_Marine_Vest","OPTRE_h_Jarhead_cap_Marine","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
-		respawnLinkedItems[] 							= {"OPTRE_UNSC_Marine_Vest","OPTRE_h_Jarhead_cap_Marine","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
-		weapons[] 										= {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 								= {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 									= {"OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag_Tracer","OPTRE_36Rnd_95x40_Mag_Tracer","OPTRE_36Rnd_95x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","SmokeShell","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
-		respawnMagazines[] 								= {"OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag_Tracer","OPTRE_36Rnd_95x40_Mag_Tracer","OPTRE_36Rnd_95x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","SmokeShell","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
-		icon = "iconManLeader";
-	};
 };
-class CfgFaces
-{
-	class Default;
-	class Man_A3: Default
-	{
-		class Default;
-		class Avery_Johnson: Default
-		{
-			name = "Avery_Johnson";
-			displayname = "Avery Johnson";
-			//identityTypes[] = {"",""};
-			//head = "";
-		};
-	};
-};
-class CfgIdentities
-{
-	class OPTRE_Sgt_Johnson_ID
-	{
-		name = "Avery_Johnson";
-		glasses = "None";
-		speaker = "Male01ENG";
-		face="AfricanHead_03";
-		pitch=0.94971651;
-	};
-};
-
-
-
 
 class cfgWeapons
 {
@@ -747,10 +668,10 @@ class cfgWeapons
 		class ItemInfo: VestItem 
 		{
 			uniformModel 									= "\OPTRE_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
-			armor 										= 50; /// what protection does the vest provide
-			containerClass 									= "Supply140";
-			mass 										= 40;
-			passThrough 									= 0; /// coef of damage passed to total damage
+			armor 										= 40; /// what protection does the vest provide
+			containerClass 									= "Supply160";
+			mass 										= 80;
+			passThrough 									= 0.25; /// coef of damage passed to total damage
 			modelSides[] 									= {6};
 		};
 	};
@@ -763,14 +684,9 @@ class cfgWeapons
 		model     										= "\OPTRE_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
 		hiddenSelections[]   									= {"camo1","camo2","camo3","attach_knife","attach_neck"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   								= {"OPTRE_UNSC_Units\Marines\data\vest_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_khaki_co.paa"}; /// what texture is going to be used
-		class ItemInfo: VestItem 
+		class ItemInfo: ItemInfo
 		{
 			uniformModel   									= "\OPTRE_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
-			armor   									= 50; /// what protection does the vest provide
-			containerClass   								= "Supply140";
-			mass   										= 40;
-			passThrough   									= 0.1; /// coef of damage passed to total damage
-			modelSides[]   									= {6};
 			hiddenSelections[]   								= {"camo1","camo2","camo3","attach_knife","attach_neck"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   							= {"OPTRE_UNSC_Units\Army\data\vest_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_khaki_co.paa"}; /// what texture is going to be used
 		};
@@ -784,14 +700,9 @@ class cfgWeapons
 		model     										= "\OPTRE_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
 		hiddenSelections[]   							= {"camo1","camo2","camo3","attach_knife"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Marines\data\vest_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_khaki_co.paa"}; /// what texture is going to be used
-		class ItemInfo: VestItem 
+		class ItemInfo: ItemInfo
 		{
 			uniformModel   								= "\OPTRE_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
-			armor   									= 50; /// what protection does the vest provide
-			containerClass   							= "Supply140";
-			mass   										= 40;
-			passThrough   								= 0.1; /// coef of damage passed to total damage
-			modelSides[]   								= {6};
 			hiddenSelections[]   						= {"camo1","camo2","camo3","attach_knife"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_khaki_co.paa"}; /// what texture is going to be used
 		};
@@ -812,12 +723,12 @@ class cfgWeapons
 		class ItemInfo: HeadgearItem 
 		{
 			uniformModel   									= "\OPTRE_UNSC_Units\Army\helmet.p3d"; /// what model does the vest use
-			armor   									= 10; /// what protection does the vest provide
-			mass   										= 20;
+			armor   									= 8; /// what protection does the vest provide
+			mass   										= 40;
 			modelSides[]   									= {6};
-			passThrough   									= 0; /// coef of damage passed to total damage
+			passThrough   									= 0.25; /// coef of damage passed to total damage
 			hiddenSelections[]   								= {"camo1","camo2","attach_face"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   							= {"OPTRE_UNSC_Units\Marines\data\helmet_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_ca.paa"}; /// what texture is going to be used
+			hiddenSelectionsTextures[]   							= {"OPTRE_UNSC_Units\Army\data\helmet_cam3_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"}; /// what texture is going to be used
 		};
 	};
 	class OPTRE_UNSC_Marine_helmet: OPTRE_UNSC_Marine_helmet_base
@@ -829,13 +740,9 @@ class cfgWeapons
 		model     										= "\OPTRE_UNSC_Units\Army\helmet.p3d"; /// what model does the vest use
 		hiddenSelections[]   									= {"camo1","camo2","attach_face"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   								= {"OPTRE_UNSC_Units\Marines\data\helmet_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_ca.paa"}; /// what texture is going to be used
-		class ItemInfo: HeadgearItem 
+		class ItemInfo: ItemInfo
 		{
 			uniformModel   									= "\OPTRE_UNSC_Units\Army\helmet.p3d"; /// what model does the vest use
-			armor   									= 10; /// what protection does the vest provide
-			mass   										= 30;
-			modelSides[]   									= {6};
-			passThrough   									= 0.1; /// coef of damage passed to total damage
 			hiddenSelections[]   								= {"camo1","camo2","attach_face"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   							= {"OPTRE_UNSC_Units\Army\data\helmet_cam3_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"}; /// what texture is going to be used
 		};
@@ -849,18 +756,14 @@ class cfgWeapons
 		model     										= "\OPTRE_UNSC_Units\Army\helmet.p3d"; /// what model does the vest use
 		hiddenSelections[]   									= {"camo1","camo2"}; /// what selection in model could have different textures
 		hiddenSelectionsTextures[]   								= {"OPTRE_UNSC_Units\Marines\data\helmet_cam3_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_ca.paa"}; /// what texture is going to be used
-		class ItemInfo: HeadgearItem 
+		class ItemInfo: ItemInfo 
 		{
 			uniformModel   									= "\OPTRE_UNSC_Units\Army\helmet.p3d"; /// what model does the vest use
-			armor   									= 10; /// what protection does the vest provide
-			mass   										= 30;
-			modelSides[]   									= {6};
-			passThrough   									= 0.1; /// coef of damage passed to total damage
 			hiddenSelections[]   								= {"camo1","camo2"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   							= {"OPTRE_UNSC_Units\Army\data\helmet_cam3_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"}; /// what texture is going to be used
 		};
 	};
-	class OPTRE_h_Jarhead_cap_Marine: ItemCore
+	class OPTRE_UNSC_Marine_Cap_Marine: ItemCore
     {
         scope = 2;
 		weaponPoolAvailable = 1;

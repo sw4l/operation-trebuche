@@ -94,7 +94,8 @@ class CfgVehicles
 		attenuationEffectType = "OpenCarAttenuation";
 		crewCrashProtection=0;
 		crewExplosionProtection = 0.85;
-		fuelExplosionPower = 1;
+		fuelExplosionPower = 2;
+		epeImpulseDamageCoef = 10;
 		armor=100;
 		cost=500000;
 		canFloat=0;
@@ -318,6 +319,7 @@ class CfgVehicles
 		};
 		showNVGCargo[]={0,1};
 		soundAttenuationCargo[]={1,0};
+		maxFordingDepth = 1;
 		getInAction="GetInMRAP_01";
 		getOutAction="GetOutMRAP_01";
 		cargoGetInAction[]={"GetInMRAP_01_cargo"};
@@ -657,105 +659,6 @@ class CfgVehicles
 				volume="engineOn*(1-asphalt)*(1-camPos)*(latSlipDrive Factor[-0.15, -0.3])*(Speed Factor[0, 10])";
 			};
 		};
-		/*thrustDelay=0.25; //0.1
-		brakeIdleSpeed=1.78;
-		maxSpeed=125;
-		fuelCapacity=150;
-		wheelCircumference=3.924;
-		antiRollbarForceCoef=12;
-		antiRollbarForceLimit=10;
-		antiRollbarSpeedMin=20;
-		antiRollbarSpeedMax=50;
-		idleRpm=800;
-		redRpm=4500;
-		class complexGearbox
-		{
-			GearboxRatios[]={"R1",-3.182,"N",0,"D1",4.182,"D2",2.318,"D3",1.85,"D4",1.65,"D5",1.45};
-			TransmissionRatios[]={"High",5.539};
-			gearBoxMode="auto";
-			moveOffGear=1;
-			driveString="D";
-			neutralString="N";
-			reverseString="R";
-		};
-		simulation="carx";
-		dampersBumpCoef=6;
-		differentialType="all_limited";
-		frontRearSplit=0.5;
-		frontBias=1.3;
-		rearBias=1.3;
-		centreBias=1.3;
-		clutchStrength=20;
-		enginePower=276;
-		maxOmega=471;
-		peakTorque=1253;
-		dampingRateFullThrottle=0.08;
-		dampingRateZeroThrottleClutchEngaged=2;
-		dampingRateZeroThrottleClutchDisengaged=0.35;
-		torqueCurve[]={{0,0},{0.178,0.5},{0.25,0.85},{0.4,0.9},{0.5,1},{0.725,0.95},{0.85,0.6},{1,0.3}};
-		changeGearMinEffectivity[]={0.95,0.15,0.95,0.95,0.95,0.95,0.95};
-		switchTime=0.31;
-		latency=1;
-		class Wheels
-		{
-			class LF
-			{
-				boneName="wheel_1_1_damper";
-				steering=1;
-				side="left";
-				center="wheel_1_1_axis";
-				boundary="wheel_1_1_bound";
-				mass=30;
-				MOI=2.8;
-				dampingRate=0.1;
-				maxBrakeTorque=2000; //2500
-				maxHandBrakeTorque=0;
-				suspTravelDirection[]={0,-1,0};
-				suspForceAppPointOffset="wheel_1_1_axis";
-				tireForceAppPointOffset="wheel_1_1_axis";
-				maxCompression=0.5;
-				mMaxDroop=0.1;
-				sprungMass=825;
-				springStrength=51625;
-				springDamperRate=8920;
-				longitudinalStiffnessPerUnitGravity=10000;
-				latStiffX=25;
-				latStiffY=180;
-				frictionVsSlipGraph[]={{0,1},{0.5,1},{1,1}};
-			};
-			class LR:LF
-			{
-				boneName="wheel_1_2_damper";
-				steering=0;
-				center="wheel_1_2_axis";
-				boundary="wheel_1_2_bound";
-				suspForceAppPointOffset="wheel_1_2_axis";
-				tireForceAppPointOffset="wheel_1_2_axis";
-				maxHandBrakeTorque=2750; //3500
-				side="left";
-			};
-			class RF:LF
-			{
-				boneName="wheel_2_1_damper";
-				center="wheel_2_1_axis";
-				boundary="wheel_2_1_bound";
-				suspForceAppPointOffset="wheel_2_1_axis";
-				tireForceAppPointOffset="wheel_2_1_axis";
-				steering=1;
-				side="right";
-			};
-			class RR:RF
-			{
-				boneName="wheel_2_2_damper";
-				steering=0;
-				center="wheel_2_2_axis";
-				boundary="wheel_2_2_bound";
-				suspForceAppPointOffset="wheel_2_2_axis";
-				tireForceAppPointOffset="wheel_2_2_axis";
-				maxHandBrakeTorque=2750; //3500
-				side="right";
-			};
-		};*/
 		
 		#include "physx.hpp"
 		
@@ -877,7 +780,7 @@ class CfgVehicles
 	};
 	class OPTRE_M12_FAV_ins:OPTRE_M12_FAV
 	{
-		displayName="M12 FAV Warthog (Unarmed) [Innie]";
+		displayName="M12 FAV Warthog (Unarmed) [Ins]";
 		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_ins_co.paa"};
@@ -1211,7 +1114,7 @@ class CfgVehicles
 	};
 	class OPTRE_M12_LRV_ins:OPTRE_M12_LRV
 	{
-		displayName="M12 LRV Warthog (MG) [Innie]";
+		displayName="M12 LRV Warthog (MG) [Ins]";
 		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_ins_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_ins_CO.paa"};
@@ -1581,7 +1484,7 @@ class CfgVehicles
 	class OPTRE_M12A1_LRV_ins:OPTRE_M12A1_LRV
 	{
 
-		displayName="M12A1 Warthog (Rocket) [Innie]";
+		displayName="M12A1 Warthog (Rocket) [Ins]";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_ins_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_ins_co.paa"};
 		vehicleClass="OPTRE_Ins_Vehicle_class";
@@ -1688,30 +1591,26 @@ class CfgVehicles
 				gun="maingun";
 				animationsourcebody="mainturret";
 				animationSourceGun="maingun";
-				missileBeg= "spicerakety";
+				//missileBeg= "spicerakety"
+				//missileEnd= "konec rakety";
 				gunAxis="Osa Hlavne";
-				
-				missileEnd= "konec rakety";
 				minElev=-15;
 				maxElev=45;
 				minTurn=-360;
 				maxTurn=360;
 				initTurn=0;
-				
 				turretAxis="OsaVeze";
 				maxHorizontalRotSpeed=1.5;
 				maxVerticalRotSpeed=1.5;
 				gunnerAction="driver_boat01";
 				gunnerInAction="driver_boat01";
 				gunnerGetInAction="GetInMRAP_01";
-				
 				gunnerGetOutAction="GetOutMRAP_01";
 				gunnerName="Gunner";
 				hideWeaponsGunner=0;
 				soundServo[]={"",0.01,1};
 				outGunnerMayFire=1;
 				inGunnerMayFire=1;
-				
 				commanding=1;
 				primaryGunner=1;
 				turretInfoType="RscWeaponZeroing";
@@ -1719,7 +1618,6 @@ class CfgVehicles
 				memoryPointsGetInGunnerDir="Pos Gunner dir";
 				gunnerLeftHandAnimName="trigger";
 				gunnerRightHandAnimName="trigger";
-				
 				weapons[]={"OPTRE_M79_MLRS"};
 				magazines[] = {"OPTRE_6Rnd_65mm_rockets","OPTRE_6Rnd_65mm_rockets","OPTRE_6Rnd_65mm_rockets","OPTRE_6Rnd_65mm_rockets"};
 				memoryPointGunnerOptics="gunnerview";
@@ -1728,7 +1626,6 @@ class CfgVehicles
 				memoryPointLMissile = "Rocket_1";
 				memoryPointRMissile = "Rocket_2";
 				gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";
-				
 				gunnerOpticsShowCursor=1;
 				castGunnerShadow=1;
 				class Viewoptics: ViewOptics
@@ -1785,7 +1682,7 @@ class CfgVehicles
 	class OPTRE_M12R_AA_ins:OPTRE_M12R_AA
 	{
 
-		displayName="M12R Warthog (AA) [Innie]";
+		displayName="M12R Warthog (AA) [Ins]";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_ins_co.paa","OPTRE_Vehicles\Warthog\data\warthog_aa_ins_ca.paa"};
 		vehicleClass="OPTRE_Ins_Vehicle_class";
@@ -1798,7 +1695,7 @@ class CfgVehicles
 	
 	class OPTRE_M12_FAV_APC:OPTRE_M12_FAV
 	{
-		displayName="M12 FAV Warthog (APC)";
+		displayName="M12 FAV Warthog (APC) [Ins]";
 		author="Article 2 Studios";
 		model="OPTRE_Vehicles\Warthog\Warthog_APC.p3d";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_mg","attach_troop"};

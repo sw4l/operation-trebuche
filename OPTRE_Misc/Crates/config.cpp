@@ -1,24 +1,8 @@
-enum {
-DESTRUCTENGINE 																					= 2,
-DESTRUCTDEFAULT 																				= 6,
-DESTRUCTWRECK 																					= 7,
-DESTRUCTTREE 																					= 3,
-DESTRUCTTENT 																					= 4,
-STABILIZEDINAXISX 																				= 1,
-STABILIZEDINAXESXYZ 																			= 4,
-STABILIZEDINAXISY 																				= 2,
-STABILIZEDINAXESBOTH 																			= 3,
-DESTRUCTNO 																						= 0,
-STABILIZEDINAXESNONE 																			= 0,
-DESTRUCTMAN 																					= 5,
-DESTRUCTBUILDING 																				= 1,
-};
-
 class CfgPatches
 {
-	class OPTRE_Crates
+	class OPTRE_Misc_Crates
 	{
-		units[]										= {};
+		units[]										= {"OPTRE_Ammo_Magic_Box","OPTRE_Ammo_RackWeapons","OPTRE_Ammo_RackAmmo","OPTRE_Ammo_RackItems","OPTRE_Ammo_Pod"};
 		weapons[]									= {};
 		requiredVersion								= 0.1;
 		requiredAddons[]							= {"OPTRE_Core","OPTRE_Weapons","OPTRE_UNSC_Units","OPTRE_Ins_Units"};
@@ -27,19 +11,9 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class ReammoBox;
 	class NATO_Box_Base;
-	class Box_NATO_Wps_F;
-	class Box_NATO_Ammo_F;
-	class Box_NATO_WpsSpecial_F;
-	class Box_NATO_AmmoOrd_F;
-	class Box_NATO_Grenades_F;
-	class Box_NATO_Support_F;
-	class Box_NATO_WpsLaunch_F;
-	class Box_NATO_AmmoVeh_F;
 	
-	
-	class OPTRE_Magic_Box: NATO_Box_Base
+	class OPTRE_Ammo_Magic_Box: NATO_Box_Base
 	{
 		scope = 2;
 		vehicleClass = "OPTRE_Ammo_class";
@@ -439,7 +413,7 @@ class CfgVehicles
 			};*/	
 		};
 	};
-	class OPTRE_weapon_rack: NATO_Box_Base
+	class OPTRE_Ammo_RackWeapons: NATO_Box_Base
 	{
 		scope = 2;
 		vehicleClass = "OPTRE_Ammo_class";
@@ -556,7 +530,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class OPTRE_ammo_rack: NATO_Box_Base
+	class OPTRE_Ammo_RackAmmo: NATO_Box_Base
 	{
 		scope = 2;
 		vehicleClass = "OPTRE_Ammo_class";
@@ -713,7 +687,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class OPTRE_item_rack: NATO_Box_Base
+	class OPTRE_Ammo_RackItems: NATO_Box_Base
 	{
 		scope = 2;
 		vehicleClass = "OPTRE_Ammo_class";
@@ -977,7 +951,7 @@ class CfgVehicles
 			};*/	
 		};
 	};
-	class OPTRE_supply_pod: NATO_Box_Base
+	class OPTRE_Ammo_Pod: NATO_Box_Base
 	{
 		scope = 2;
 		vehicleClass = "OPTRE_Ammo_class";
@@ -1073,111 +1047,5 @@ class CfgVehicles
 				count = 10;
 			};
 		};
-	};
-	
-	
-	
-	
-	
-	
-	class OPTRE_UNSC_ammobox: Box_NATO_Ammo_F
-	{
-		scope = 1;
-		vehicleClass = "OPTRE_Ammo_class";
-		displayName = "[UNSC] Ammo Box";
-		author = "Article 2 Studios";
-		hiddenSelections[] = {"Camo_Signs","Camo"};
-		hiddenSelectionsTextures[] = {"OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_signs_ca.paa","OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_ca.paa"};
-		//icon = "iconCrateWpns";
-		//transportMaxWeapons = 5;
-		//transportMaxMagazines = 500;
-	};
-	class OPTRE_UNSC_weaponsbox: Box_NATO_Wps_F
-	{
-		scope = 1;
-		vehicleClass = "OPTRE_Ammo_class";
-		displayName = "[UNSC] Weapons Box";
-		author = "Article 2 Studios";
-		hiddenSelections[] = {"Camo_Signs","Camo"};
-		hiddenSelectionsTextures[] = {"OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_signs_ca.paa","OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_ca.paa"};
-		//transportMaxWeapons = 5;
-		//transportMaxMagazines = 500;
-	};
-	class OPTRE_UNSC_specialbox: Box_NATO_WpsSpecial_F
-	{
-		scope = 1;
-		vehicleClass = "OPTRE_Ammo_class";
-		displayName = "[UNSC] Special Weapons Box";
-		author = "Article 2 Studios";
-		hiddenSelections[] = {"Camo_Signs","Camo"};
-		hiddenSelectionsTextures[] = {"OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_signs_ca.paa","OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_ca.paa"};
-		//transportMaxWeapons = 5;
-		//transportMaxMagazines = 500;
-	};
-	class OPTRE_UNSC_ordbox: Box_NATO_AmmoOrd_F
-	{
-		scope = 1;
-		vehicleClass = "OPTRE_Ammo_class";
-		displayName = "[UNSC] Explosives Box";
-		author = "Article 2 Studios";
-		hiddenSelections[] = {"Camo_Signs","Camo"};
-		hiddenSelectionsTextures[] = {"OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_signs_ca.paa","OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_ca.paa"};
-		//transportMaxWeapons = 5;
-		//transportMaxMagazines = 500;
-	};
-	class OPTRE_UNSC_grenadebox: Box_NATO_Grenades_F
-	{
-		scope = 1;
-		vehicleClass = "OPTRE_Ammo_class";
-		displayName = "[UNSC] Grenades Box";
-		author = "Article 2 Studios";
-		hiddenSelections[] = {"Camo_Signs","Camo"};
-		hiddenSelectionsTextures[] = {"OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_signs_ca.paa","OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_ca.paa"};
-		//transportMaxWeapons = 5;
-		//transportMaxMagazines = 500;
-	};
-	class OPTRE_UNSC_supportbox: Box_NATO_Support_F
-	{
-		scope = 1;
-		vehicleClass = "OPTRE_Ammo_class";
-		displayName = "[UNSC] Support Box";
-		author = "Article 2 Studios";
-		hiddenSelections[] = {"Camo_Signs","Camo"};
-		hiddenSelectionsTextures[] = {"OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_signs_ca.paa","OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_ca.paa"};
-		//transportMaxWeapons = 5;
-		//transportMaxMagazines = 500;
-	};
-	class OPTRE_UNSC_itembox: Box_NATO_Support_F
-	{
-		scope = 1;
-		vehicleClass = "OPTRE_Ammo_class";
-		displayName = "[UNSC] Item Box";
-		author = "Article 2 Studios";
-		hiddenSelections[] = {"Camo_Signs","Camo"};
-		hiddenSelectionsTextures[] = {"OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_signs_ca.paa","OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_ca.paa"};
-		//transportMaxWeapons = 5;
-		//transportMaxMagazines = 500;
-	};
-	class OPTRE_UNSC_launcherbox: Box_NATO_WpsLaunch_F
-	{
-		scope = 1;
-		vehicleClass = "OPTRE_Ammo_class";
-		displayName = "[UNSC] Launchers Box";
-		author = "Article 2 Studios";
-		hiddenSelections[] = {"Camo_Signs","Camo"};
-		hiddenSelectionsTextures[] = {"OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_signs_ca.paa","OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_ca.paa"};
-		//transportMaxWeapons = 5;
-		//transportMaxMagazines = 500;
-	};
-	class OPTRE_UNSC_vehammobox: Box_NATO_AmmoVeh_F
-	{
-		scope = 1;
-		vehicleClass = "OPTRE_Ammo_class";
-		displayName = "[UNSC] Vehicle Ammo Box";
-		author = "Article 2 Studios";
-		hiddenSelections[] = {"Camo_Signs","Camo"};
-		hiddenSelectionsTextures[] = {"OPTRE_Misc\Crates\data\OPTRE_UNSC_ammobox_signs_ca.paa","A3\Weapons_F\Ammoboxes\data\AmmoVeh_CO.paa"};
-		//transportMaxWeapons = 5;
-		//transportMaxMagazines = 500;
 	};
 };

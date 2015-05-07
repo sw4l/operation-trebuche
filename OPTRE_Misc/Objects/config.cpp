@@ -1,24 +1,8 @@
-enum {
-DESTRUCTENGINE 																					= 2,
-DESTRUCTDEFAULT 																				= 6,
-DESTRUCTWRECK 																					= 7,
-DESTRUCTTREE 																					= 3,
-DESTRUCTTENT 																					= 4,
-STABILIZEDINAXISX 																				= 1,
-STABILIZEDINAXESXYZ 																			= 4,
-STABILIZEDINAXISY 																				= 2,
-STABILIZEDINAXESBOTH 																			= 3,
-DESTRUCTNO 																						= 0,
-STABILIZEDINAXESNONE 																			= 0,
-DESTRUCTMAN 																					= 5,
-DESTRUCTBUILDING 																				= 1,
-};
-
 class CfgPatches
 {
-	class OPTRE_Ins_Object_class
+	class OPTRE_Misc_Objects
 	{
-		units[]										= {};
+		units[]										= {"OPTRE_Objects_ODST_Grave","OPTRE_Objects_Soldier_Grave","OPTRE_Objects_Monument","OPTRE_Objects_Kiosk1","OPTRE_Objects_Kiosk2","OPTRE_Objects_Kiosk3","OPTRE_Objects_Holotable"};
 		weapons[]									= {};
 		requiredVersion								= 0.1;
 		requiredAddons[]							= {"OPTRE_Core","OPTRE_Weapons","OPTRE_UNSC_Units","OPTRE_Ins_Units"};
@@ -27,15 +11,9 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class All {};
-	class Static: All {};
-	class Building: Static {};
-	class NonStrategic: Building {};
-	class TargetTraining: NonStrategic {};
-	class TargetGrenade: TargetTraining {};
+	class Static;
 	
-	
-	class OPTRE_odst_grave: static
+	class OPTRE_Objects_ODST_Grave: Static
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -45,7 +23,7 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
-	class OPTRE_soldier_grave: static
+	class OPTRE_Objects_Soldier_Grave: Static
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -55,7 +33,7 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
-	class OPTRE_monument: static
+	class OPTRE_Objects_Monument: Static
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -65,7 +43,7 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
-	class OPTRE_kiosk_1: static
+	class OPTRE_Objects_Kiosk1: Static
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -77,7 +55,7 @@ class CfgVehicles
 		hiddenSelections[]= {"camo1","camo2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Misc\Objects\data\kiosk1_poster.paa"};
 	};
-	class OPTRE_kiosk_2: static
+	class OPTRE_Objects_Kiosk2: Static
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -89,7 +67,7 @@ class CfgVehicles
 		hiddenSelections[]= {"camo1","camo2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Misc\Objects\data\kiosk2_poster.paa"};
 	};
-	class OPTRE_kiosk_3: static
+	class OPTRE_Objects_Kiosk3: Static
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -101,7 +79,7 @@ class CfgVehicles
 		hiddenSelections[]= {"camo1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Misc\Objects\data\kiosk3_poster.paa"};
 	};
-	class OPTRE_holotable: static
+	class OPTRE_Objects_Holotable: Static
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -119,13 +97,13 @@ class CfgVehicles
 class CfgGlasses 
 { 
     class G_Balaclava_blk; 
-    class OPTRE_Cigarette: G_Balaclava_blk 
+    class OPTRE_Glasses_Cigarette: G_Balaclava_blk 
     { 
         displayName = "Cigarette"; 
         model = "\OPTRE_Misc\Objects\cigarette.p3d";
 		picture   										= "\OPTRE_misc\objects\icons\cigarette.paa";
     }; 
-    class OPTRE_Cigar: OPTRE_Cigarette
+    class OPTRE_Glasses_Cigar: OPTRE_Glasses_Cigarette
     { 
         displayName = "Cigar"; 
         model = "\OPTRE_Misc\Objects\cigar.p3d";

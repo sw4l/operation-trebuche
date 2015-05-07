@@ -82,6 +82,8 @@
                     inertia                                                                 = 0.95;
 					maxRecoilSway 															= 0.0125;
 					swayDecaySpeed 															= 1.25;
+					maxZeroing 																= 1000;
+					discreteDistance[] 														= {100,200,300,400,500,600,700,800,900,1000};
                     modes[] 																= {"Single","FullAuto"};
                     class Single: Mode_SemiAuto
                     {
@@ -260,6 +262,8 @@
 					swayDecaySpeed = 1.25;
                     reloadTime = 0.0789; 		
                     dispersion = 0.00085;
+					maxZeroing 																= 1000;
+					discreteDistance[] 														= {100,200,300,400,500,600,700,800,900,1000};
                     recoil = "recoil_single_ebr";
                     recoilProne = "recoil_single_prone_ebr";
                     minRange = 2;

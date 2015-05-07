@@ -1,9 +1,8 @@
-
 class CfgPatches
 {
-	class OPTRE_Ins_Object_class
+	class OPTRE_Frigate
 	{
-		units[]										= {};
+		units[]										= {"OPTRE_Frigate_Final_Dawn","OPTRE_Frigate_Interior","OPTRE_Frigate_Console","OPTRE_Frigate_Hangar_Door","OPTRE_Frigate_LiftArm","OPTRE_Frigate_M910_Turret"};
 		weapons[]									= {};
 		requiredVersion								= 0.1;
 		requiredAddons[]							= {"OPTRE_Core","A3_static_f"};
@@ -12,13 +11,7 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class All {};
-	class Static: All {};
-	class Building: Static {};
-	class NonStrategic: Building {};
-	class TargetTraining: NonStrategic {};
-	class TargetGrenade: TargetTraining {};
-	class Strategic;
+	class Static;
 	class Land;
 	class LandVehicle: Land
 	{
@@ -270,27 +263,17 @@ class CfgVehicles
 		numberPhysicalWheels = 0;
 	};
 	
-	class OPTRE_testbox: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "test box";
-		model = "\OPTRE_frigate\testbox.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_final_dawn: static
+	class OPTRE_Frigate_Final_Dawn: Static
 	{
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Final Dawn";
+		displayName = "FFG-437 Final Dawn";
 		model = "\OPTRE_frigate\finaldawn_empty.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
-	class OPTRE_1_box: static
+	/*class OPTRE_1_box: Static
 	{
 		scope = 1;
 		scopeCurator = 1;
@@ -299,350 +282,60 @@ class CfgVehicles
 		model = "\OPTRE_frigate\1_box.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
-	};
-	class OPTRE_2_box: static
+	};*/
+	class OPTRE_Frigate_Interior: Static
 	{
 		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "2_box";
-		model = "\OPTRE_frigate\2_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_3_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "3_box";
-		model = "\OPTRE_frigate\3_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_4_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "4_box";
-		model = "\OPTRE_frigate\4_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_5_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "5_box";
-		model = "\OPTRE_frigate\5_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_6_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "6_box";
-		model = "\OPTRE_frigate\6_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_7_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "7_box";
-		model = "\OPTRE_frigate\7_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_8_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "8_box";
-		model = "\OPTRE_frigate\8_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_9_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "9_box";
-		model = "\OPTRE_frigate\9_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_10_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "10_box";
-		model = "\OPTRE_frigate\10_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_11_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "11_box";
-		model = "\OPTRE_frigate\11_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_12_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "12_box";
-		model = "\OPTRE_frigate\12_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_13_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "13_box";
-		model = "\OPTRE_frigate\13_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_14_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "14_box";
-		model = "\OPTRE_frigate\14_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_15_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "15_box";
-		model = "\OPTRE_frigate\15_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_16_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "16_box";
-		model = "\OPTRE_frigate\16_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_17_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "17_box";
-		model = "\OPTRE_frigate\17_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_19_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "19_box";
-		model = "\OPTRE_frigate\19_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_20_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "20_box";
-		model = "\OPTRE_frigate\20_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_21_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "21_box";
-		model = "\OPTRE_frigate\21_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_22_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "22_box";
-		model = "\OPTRE_frigate\22_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_23_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "23_box";
-		model = "\OPTRE_frigate\23_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_24_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "24_box";
-		model = "\OPTRE_frigate\24_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_25_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "25_box";
-		model = "\OPTRE_frigate\25_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_26_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "26_box";
-		model = "\OPTRE_frigate\26_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_27_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "27_box";
-		model = "\OPTRE_frigate\27_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_28_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "28_box";
-		model = "\OPTRE_frigate\28_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_29_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "29_box";
-		model = "\OPTRE_frigate\29_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_30_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "30_box";
-		model = "\OPTRE_frigate\30_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_31_box: static
-	{
-		scope = 1;
-		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "31_box";
-		model = "\OPTRE_frigate\31_box.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_interior: static
-	{
-		scope = 1;
-		scopeCurator = 1;
+		scopeCurator = 0;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Interior";
 		model = "\OPTRE_frigate\interior.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
-	class OPTRE_console: static
+	class OPTRE_Frigate_Console: Static
 	{
-		scope = 1;
+		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Console";
+		displayName = "Console [Frigate]";
 		model = "\OPTRE_frigate\console.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
-	class OPTRE_spawn_door: static
+	class OPTRE_Frigate_Hangar_Door: Static
 	{
 		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Spawn Door";
+		displayName = "Hangar Door [Frigate]";
 		model = "\OPTRE_frigate\spawn_door.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
-	class OPTRE_liftarm: static
+	class OPTRE_Frigate_LiftArm: Static
 	{
 		scope = 1;
 		scopeCurator = 1;
 		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Lift Arm";
+		displayName = "Lift Arm [Frigate]";
 		model = "\OPTRE_frigate\liftarm.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
-	class OPTRE_frigate_gun: StaticWeapon
+	class OPTRE_Frigate_M910_Turret: StaticWeapon
 	{
-		scope = 1;
+		scope = 2;
 		scopeCurator = 2;
 		armor = 450;
 		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Frigate Gun";
+		displayName = "M910 Point Defense Turret";
 		model = "\OPTRE_Frigate\turret2.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 		class Turrets: Turrets
 		{
-			class MainTurret:MainTurret
+			class MainTurret: MainTurret
 			{
 				body="mainturret";
 				gun="maingun";
@@ -669,16 +362,14 @@ class CfgVehicles
 				commanding=1;
 				primaryGunner=1;
 				soundServo[] = { "", 0.01, 2.000000 };
-				memoryPointsGetInGunner="Pos Gunner";
-				memoryPointsGetInGunnerDir="Pos Gunner dir";
-				gunnerLeftHandAnimName="trigger";
-				gunnerRightHandAnimName="trigger";
-				memoryPointGun="machinegun";
-				weapons[]={"autocannon_40mm_CTWS"};
-				//weapons[]={"OPTRE_Frig_PDG"};
+				memoryPointsGetInGunner = "Pos Gunner";
+				memoryPointsGetInGunnerDir = "Pos Gunner dir";
+				gunnerLeftHandAnimName = "trigger";
+				gunnerRightHandAnimName = "trigger";
+				memoryPointGun = "machinegun";
+				weapons[] = {"autocannon_40mm_CTWS"};
 				magazines[] = {"60Rnd_40mm_GPR_Tracer_Red_shells","60Rnd_40mm_GPR_Tracer_Red_shells","60Rnd_40mm_GPR_Tracer_Red_shells","60Rnd_40mm_GPR_Tracer_Red_shells"};
-				//magazines[] = {"OPTRE_100rd_50mm","OPTRE_100rd_50mm""OPTRE_100rd_50mm","OPTRE_100rd_50mm","OPTRE_100rd_50mm"};
-				memoryPointGunnerOptics="gunnerview";
+				memoryPointGunnerOptics = "gunnerview";
 				gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";
 				gunnerOpticsShowCursor=1;
 				turretInfoType="RscWeaponZeroing";
@@ -700,121 +391,3 @@ class CfgVehicles
 		};
 	};
 };
-
-/*class cfgWeapons
-{
-	class close;
-	class short;
-	class medium;
-	class far;
-	class player;
-	class autocannon_Base_F;
-	class autocannon_40mm_CTWS;
-	class Mode_FullAuto;
-	class OPTRE_Frig_PDG: autocannon_40mm_CTWS
-	{
-		scope = 1;
-		displayName = "M910 Point Defense Gun";
-		model = "";
-		minRange = 5;
-		minRangeProbab = 0.7;
-		midRange = 1200;
-		midRangeProbab = 0.7;
-		maxRange = 2500;
-		maxRangeProbab = 0.1;
-		reloadTime = 0.12;
-		aiRateOfFire = 0.6;
-		aiRateOfFireDistance = 500;
-		magazineReloadTime = 2;
-		autoReload = 1;
-		ballisticsComputer = 1;
-		canLock = 2;
-		autoFire = 1;
-		modes[] = {"player","close","short","medium","far"};
-		shotFromTurret = 1;
-		showAimCursorInternal = 0;
-		
-		muzzles[] = {"HE"};
-		class player: Mode_FullAuto
-		{
-			sounds[] = {"StandardSound"};
-			class StandardSound
-			{
-				begin1[] = {"A3\Sounds_F\weapons\30mm\30mm_st_02",1.99526,1,1500};
-				soundBegin[] = {"begin1",1};
-				weaponSoundEffect = "DefaultRifle";
-			};
-			soundContinuous = 0;
-			reloadTime = 0.12;
-			dispersion = 0.00035;
-		};
-		class HE: autocannon_Base_F
-		{
-			displayName = "50mm Point Defense Gun";
-			magazines[] = {"OPTRE_100rd_50mm"};
-			class player: player
-			{
-				dispersion = 0.00055;
-			};
-			class close: close
-			{
-				dispersion = 0.00055;
-			};
-			class short: short
-			{
-				dispersion = 0.00055;
-			};
-			class medium: medium
-			{
-				dispersion = 0.00055;
-			};
-			class far: far
-			{
-				dispersion = 0.00055;
-			};
-		};
-	};
-};
-
-class cfgAmmo
-{
-	class B_30mm_AP;
-	class OPTRE_50mm_PDG_ammo: B_30mm_AP
-	{
-		hit = 80;
-		indirectHit = 8;
-		indirectHitRange = 0.2;
-		caliber = 4.2;
-		visibleFire = 32;
-		audibleFire = 32;
-		visibleFireTime = 3;
-		cost = 50;
-		model = "\A3\Weapons_f\Data\bullettracer\tracer_white";
-		tracerScale = 2.5;
-		tracerStartTime = 0.1;
-		tracerEndTime = 2;
-		muzzleEffect = "";
-		deflecting = 10;
-		typicalSpeed = 1651;
-		airlock = 1;
-	};
-};
-
-class cfgMagazines
-{
-	class 250Rnd_30mm_HE_shells;
-	class OPTRE_100rd_50mm: 250Rnd_30mm_HE_shells
-	{
-		scope = 1;
-		model = "";
-		displayName = "100rd 50mm Shells";
-		displayNameShort = "50mm";
-		ammo = "OPTRE_50mm_PDG_ammo";
-		count = 100;
-		initSpeed = 1651;
-		maxLeadSpeed = 300;
-		nameSound = "cannon";
-		tracersEvery = 1;
-		weight = 126;
-	};
-};*/

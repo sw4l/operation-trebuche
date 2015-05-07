@@ -93,7 +93,7 @@ class CfgWeapons
 		class manual:MGun
 		{
 			displayName						= "M79 MLRS";
-			reloadTime						= 0.075;
+			reloadTime						= 0.25;
 			dispersion						= 0;
 			sounds[]						= {"StandardSound"};
 		};
@@ -134,8 +134,6 @@ class CfgWeapons
 	};
 	class OPTRE_M638: gatling_20mm
 	{
-
-		selectionFireAnim 					= "zasleh";
 		displayName							= "M638 Autocannon";
         modes[] = {"FullAuto"};
         class FullAuto: MGun
@@ -152,8 +150,6 @@ class CfgWeapons
 	};
 	class OPTRE_M370: gatling_30mm
 	{
-
-		selectionFireAnim 					= "zasleh";
 		displayName							= "M370 Autocannon";
         modes[] = {"FullAuto"};
         class FullAuto: MGun

@@ -133,9 +133,9 @@ class CfgWeapons
 		reloadMagazineSound[] 						= {"\OPTRE_Weapons\Pistol\data\sounds\reload.ogg",1.3,1,30};
 		fireSpreadAngle								= 0.85;
 		dispersion 									= 0.00005;
-		discreteDistance[] 							= {50,100,200};
+		maxZeroing 																= 300;
+		discreteDistance[] 														= {100,200,300};
 		inertia										= 0.25;
-		maxZeroing = 500;
 		class GunParticles: GunParticles
 		{
 		   class SecondEffect

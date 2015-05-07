@@ -24,7 +24,7 @@ class CfgAmmo
 	class OPTRE_B_762x51_Ball: B_762x51_Ball
 	{
 		hit 							= 11;
-		typicalSpeed 					= 905;
+		typicalSpeed 					= 500;
 	};
 	class OPTRE_B_762x51_Tracer: OPTRE_B_762x51_Ball
 	{
@@ -36,7 +36,7 @@ class CfgAmmo
 	{
 		hit 							= 12;
 		caliber 						= 2;
-		typicalSpeed 					= 905;
+		typicalSpeed 					= 500;
 	};
 	class OPTRE_B_95x40_Tracer: OPTRE_B_95x40_Ball
 	{
@@ -49,8 +49,8 @@ class CfgAmmo
 		hit 							= 50;
 		cartridge 						= "FxCartridge_127";
 		caliber 						= 8;
-		typicalSpeed 					= 1250;
-		airFriction 					= -0.00005;
+		typicalSpeed 					= 800;
+		airFriction 					= 0;
 		timeToLive 						= 15;
 		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_white";
 		tracerScale 					= 1.5;
@@ -75,8 +75,8 @@ class CfgAmmo
 	{
 		hit 							= 70;
 		caliber 						= 10;
-		typicalSpeed 					= 1500;
-		airFriction 					= -0.00035;
+		typicalSpeed 					= 700;
+		airFriction 					= -0.00015;
 	};
 	
 	//12.7x40mm (Pistol)
@@ -88,7 +88,7 @@ class CfgAmmo
 		explosive						= 0;
 		cartridge 						= "FxCartridge_small";
 		caliber 						= 0.75;
-		typicalSpeed					= 600;
+		typicalSpeed					= 200;
 	};
 	class OPTRE_B_127x40_AP : OPTRE_B_127x40_Ball   
 	{
@@ -105,7 +105,8 @@ class CfgAmmo
 	//8 Gauge (Shotgun)
 	class OPTRE_8Gauge_Pellets : ShotgunBase   
 	{
-		hit 							= 10;
+		hit 							= 12;
+		typicalSpeed					= 100;
 		indirectHit 					= 0;
 		indirectHitRange 				= 0;
 		visibleFire 					= 1;	// how much is visible when this weapon is fired
@@ -307,16 +308,17 @@ class CfgAmmo
 	};
 	class OPTRE_8Gauge_Slugs : B_762x51_Ball   
 	{
-		hit 							= 25;
+		hit 							= 16;
 		cartridge 						= "FxCartridge_slug";
 		caliber 						= 2;
+		typicalSpeed					= 200;
 	};
 	
 	//5x23mm (SMG)
 	class OPTRE_B_5x23_Caseless: B_9x21_Ball
 	{
 		hit = 9;
-		typicalSpeed = 500;
+		typicalSpeed = 200;
 		caliber = 0.75;
 		cartridge = "FxCartridge_65_caseless";
 	};
@@ -409,7 +411,6 @@ class CfgAmmo
 	};
 	class OPTRE_B_127x99_Ball: B_127x99_Ball
 	{
-		typicalSpeed = 1000;
 		model = "\A3\Weapons_f\Data\bullettracer\tracer_white";
 	};
 	class OPTRE_M41_Rocket_ATGM: M_Titan_AT

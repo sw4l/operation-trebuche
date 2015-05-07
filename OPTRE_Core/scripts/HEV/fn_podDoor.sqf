@@ -8,7 +8,7 @@ _pod setobjecttextureglobal [1,""];
 _pod setobjecttextureglobal [2,""];
 _pod setobjecttextureglobal [3,""];
 
-_door = createVehicle ["OPTRE_HEV_Door", [0,0,10000], [], 0, ""];
+_door = createVehicle ["OPTRE_Sounds_HEV_Door", [0,0,10000], [], 0, ""];
 _door attachto [_pod,[0,3,0.5]];
 detach _door;
 _dir = getdir _pod;
