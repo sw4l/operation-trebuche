@@ -68,8 +68,8 @@ class CfgVehicles
 		precisegetinout = 1;							/// describes what style of get in is used (0 - non-precise; 1 - precise on proxy; 2 - precise on model center)
 		GetInAction = pilot_Heli_Light_02_Enter;		/// what action uses the pilot to get in the heli, it uses "switchAction" script command on the proxy
 		GetOutAction = pilot_Heli_Light_02_Exit;		/// what action uses the pilot to get out of heli
-		cargoGetInAction[] = {"GetInHelicopterCargo"};	/// actions for the cargo, the last one in array is used for the rest
-		cargoGetOutAction[] = {"GetOutHelicopterCargo"};/// that means every cargo position could use different action to get in
+		cargoGetInAction[] = {"GetInHeli_Transport_01Cargo"};	/// actions for the cargo, the last one in array is used for the rest
+		cargoGetOutAction[] = {"GetOutMantis"};/// that means every cargo position could use different action to get in
 		transportSoldier = 3;							/// how many cargo positions are available
 		cargoAction[] = { 								/// the same array as getIn/getOut actions for actions to switch to for cargo while inside the heli
 			passenger_apc_narrow_generic03,
@@ -83,7 +83,7 @@ class CfgVehicles
 		memoryPointsGetInCargoDir = "pos cargo dir";/// what is the direction of the cargo facing during get in animation (and opposite for get out)
 		hideWeaponsCargo = 0;						/// this makes the poses easier and adds some performance gain because the proxies don't need to be drawn
 		cargoProxyIndexes[] = {2,3,5};		/// what indexes does regular cargo sit on
-		hiddenSelections[] = { }; //Determines what hiddenselections are enabled
+		hiddenSelections[] = {}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] = {};
 		class TransportBackpacks	/// adds various backpacks to cargo hold of the heli
 		{};

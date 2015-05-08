@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class OPTRE_Frigate
 	{
-		units[]										= {"OPTRE_Frigate_Final_Dawn","OPTRE_Frigate_Interior","OPTRE_Frigate_Console","OPTRE_Frigate_Hangar_Door","OPTRE_Frigate_LiftArm","OPTRE_Frigate_M910_Turret"};
+		units[]										= {"OPTRE_Frigate_Final_Dawn","OPTRE_Frigate_Console","OPTRE_Frigate_Hangar_Door","OPTRE_Frigate_LiftArm","OPTRE_Frigate_M910_Turret"};
 		weapons[]									= {};
 		requiredVersion								= 0.1;
 		requiredAddons[]							= {"OPTRE_Core","A3_static_f"};
@@ -19,6 +19,42 @@ class CfgVehicles
 		class NewTurret;
 	};
 	class StaticWeapon: LandVehicle
+	{
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				class ViewOptics;
+				class HitPoints
+				{
+					class HitGun;
+					class HitTurret: HitGun
+					{
+						class DestructionEffects
+						{
+							class Smoke;
+						};
+					};
+				};
+			};
+		};
+		class Wounds;
+		class HitPoints
+		{
+			class HitEngine;
+			class HitHull;
+			class HitTurret;
+			class HitGun;
+			class HitLTrack;
+			class HitRTrack;
+			class HitBody;
+		};
+		class ViewPilot;
+		class CargoLight;
+		class Reflectors;
+		class UserActions;
+	};
+	/*class StaticWeapon: LandVehicle
 	{
 		epeImpulseDamageCoef = 8.0;
 		vehicleClass = "Static";
@@ -261,7 +297,7 @@ class CfgVehicles
 			};
 		};
 		numberPhysicalWheels = 0;
-	};
+	};*/
 	
 	class OPTRE_Frigate_Final_Dawn: Static
 	{
@@ -269,7 +305,14 @@ class CfgVehicles
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "FFG-437 Final Dawn";
-		model = "\OPTRE_frigate\finaldawn_empty.p3d";
+		model = "\OPTRE_frigate\finaldawn_complex.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+	};
+	class OPTRE_Frigate_Final_Dawn_Wreck: OPTRE_Frigate_Final_Dawn
+	{
+		displayName = "FFG-437 Final Dawn";
+		model = "\OPTRE_frigate\finaldawn_wreck.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
@@ -283,41 +326,26 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};*/
-	class OPTRE_Frigate_Interior: Static
+	class OPTRE_Frigate_Console: OPTRE_Frigate_Final_Dawn
 	{
-		scope = 1;
-		scopeCurator = 0;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Interior";
-		model = "\OPTRE_frigate\interior.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_Frigate_Console: Static
-	{
-		scope = 2;
-		scopeCurator = 2;
-		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Console [Frigate]";
 		model = "\OPTRE_frigate\console.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
-	class OPTRE_Frigate_Hangar_Door: Static
+	class OPTRE_Frigate_Hangar_Door: OPTRE_Frigate_Final_Dawn
 	{
 		scope = 1;
 		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Hangar Door [Frigate]";
 		model = "\OPTRE_frigate\spawn_door.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
-	class OPTRE_Frigate_LiftArm: Static
+	class OPTRE_Frigate_LiftArm: OPTRE_Frigate_Final_Dawn
 	{
 		scope = 1;
 		scopeCurator = 1;
-		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Lift Arm [Frigate]";
 		model = "\OPTRE_frigate\liftarm.p3d";
 		author = "Article 2 Studios";
@@ -330,7 +358,7 @@ class CfgVehicles
 		armor = 450;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "M910 Point Defense Turret";
-		model = "\OPTRE_Frigate\turret2.p3d";
+		model = "\OPTRE_Frigate\turret.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 		class Turrets: Turrets
