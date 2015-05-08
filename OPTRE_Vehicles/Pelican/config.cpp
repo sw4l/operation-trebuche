@@ -1029,6 +1029,7 @@ class CfgVehicles
 	class PlaneWreck;
 	class OPTRE_Objects_Wreck_Pelican: PlaneWreck
 	{
+		author="Article 2 Studios";
 		scope = 2;
 		scopeCurator = 2;
 		model = "OPTRE_Vehicles\Pelican\pelican_wreck.p3d";
@@ -1041,5 +1042,17 @@ class CfgVehicles
 		transportFuel = 0;
 		transportSoldier = 1;
 		class Eventhandlers{};
+	};
+	class Wreck_base_F;
+	class OPTRE_Objects_Wreck_Pelican_Static : Wreck_base_F
+	{
+	author = "Article 2 Studios";
+	displayname = "D77H-TCI Pelican Wreck (Tilted, Closed)";
+	icon = "OPTRE_Vehicles\Pelican\Data\icon.paa";			/// icon in map/editor
+	mapSize = 25; //size of icon in editor- square only in meters
+	model = "OPTRE_Vehicles\Pelican\pelican_wreck_static.p3d";
+	vehicleClass = "OPTRE_UNSC_Object_class";
+	scope = 2;
+	scopeCurator = 2;
 	};
 };

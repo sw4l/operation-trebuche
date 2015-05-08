@@ -72,7 +72,10 @@ class CfgVehicles
 		
 		class TransportItems /// some first aid kits in trunk according to safety regulations
 		{
-			item_xx(FirstAidKit,4);
+			class _xx_FirstAidKit {
+			count = 4;
+			name = "FirstAidKit";
+			};
 		};
 		
 		class Turrets{}; /// doesn't have any gunner nor commander
