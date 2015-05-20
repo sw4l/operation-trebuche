@@ -2,18 +2,20 @@
 		/// http://forums.bistudio.com/showthread.php?165390-Tutorial-Creating-Custom-Engine-Gearbox-and-Suspension-Vehicle-configuration
 		
 		terrainCoef									= 0.1;
-		turnCoef 									= 5.5; //2.5
-		thrustDelay									= 0.25; //0.1 to 0.25
-		brakeIdleSpeed								= 1.78;
+		turnCoef 									= 4; //5.5
+		thrustDelay									= 0.25; //0.25
+		brakeIdleSpeed								= 2.5; //1.78
 		maxSpeed									= 125;
 		fuelCapacity								= 150;
-		wheelCircumference							= 3.924;
-		antiRollbarForceCoef						= 20; //12
-		antiRollbarForceLimit 						= 10; //2
+		wheelCircumference							= 3.924; //radius 1.962
+		antiRollbarForceCoef						= 15; //20
+		antiRollbarForceLimit 						= 5; //10
 		antiRollbarSpeedMin							= 20;
 		antiRollbarSpeedMax							= 80; //50
 		idleRpm										= 800;
 		redRpm										= 4500;
+		slowSpeedForwardCoef						= 0.35;
+		normalSpeedForwardCoef						= 0.75;
 		class complexGearbox
 		{
 			GearboxRatios[]							= {"R1",-3.182,"N",0,"D1",4.182,"D2",2.318,"D3",1.85,"D4",1.65,"D5",1.45};
@@ -64,14 +66,14 @@
 		// A good starting value is around 1.3.
 		// <Type>: 
 		// <Default>: 
-		frontBias 								= 1.3;
+		frontBias 								= 1.3; //ignored with "all_open"
 	
 		// <Description>: This is similar to frontBias except that it refers to the rear wheels.
 		// This value is ignored except for rear-wheel drive or four wheel drive with limited slip.
 		// A good starting value is around 1.3.
 		// <Type>: float
 		// <Default>: 1.3
-		rearBias 								= 1.3;
+		rearBias 								= 1.3; //ignored with "all_open"
 	
 		// <Description>: This value is similar to the frontBias and rearBias, except that it refers to the sum of the front wheel rotation speeds and the sum 
 		// of the rear wheel rotation speeds.
@@ -79,13 +81,13 @@
 		// A good starting value is around 1.3.
 		// <Type>: float
 		// <Default>: 1.3
-		centreBias 								= 1.3;
+		centreBias 								= 1.3; //ignored with "all_open"
 	
 		// <Description>: How fast is engine power distributed to the wheels. Stronger values mean more aggressive drive performance inclining to
 		// slip a little while changing gears while weaker values are better for comfortable seamless ride.
 		// <Type>: float
 		// <Default>: 10.0
-		clutchStrength 								= 15; //20 to 15
+		clutchStrength 								= 10;
 	
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Engine parameters
@@ -146,7 +148,7 @@
 		// previous gear is better for a brief time after shifting.
 		// <Type>: float
 		// <Default>: 2.0
-		latency 								= 1.0;
+		latency 								= 3.0; //1
 	
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Wheels parameters
@@ -191,7 +193,7 @@
 				// <Description>: This is the weight in kg of wheel including both rim and tyre.
 				// <Type>: float
 				// <Default>: 10.0
-				mass 						= 30;
+				mass 						= 99.688; //30
 
 				// <Description>: This is the wheel's moment of inertia about the rolling axis. Smaller values result in more slips in aggresive driving
 				// while larger hamper the gain of speed. Good base to start with is this formula:
@@ -199,13 +201,13 @@
 				// Some tweaking is needed after the computation, but it is still better than nothing.
 				// <Type>: float
 				// <Default>: 0.5 * WheelMass * WheelRadius * WheelRadius
-				MOI 						= 5.0; //2.8
+				MOI 						= 191.871686736; //5
 
 				// <Description>:The damping rate describes the rate at which a freely spinning wheel loses rotational speed. 
 				// Values in range (0.25, 2) seem like sensible values. Experimentation is always a good idea, even outside this range.
 				// <Type>: float
 				// <Default>: 0.1
-				dampingRate 					= 0.25; //0.1
+				dampingRate 					= 1; //0.25
 				
 				// <Description>: This is the value of the torque applied to the wheel when the brakes are maximally applied. Higher torques will lock the wheel 
 				// quicker when braking, while lower torques will take longer to lock the wheel.
@@ -220,7 +222,7 @@
 				// while a value of 0 is necessary for the front wheels to make sure they do not react to the handbrake.
 				// <Type>: float
 				// <Default>: 2*maxBrakeTorque
-				maxHandBrakeTorque 				= 0; //0
+				maxHandBrakeTorque 				= 4000; //0
 
 				/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 				// Wheel simulation parameters
@@ -250,19 +252,19 @@
 				// <Description>: These values describe the maximum compression and elongation in metres that the spring can support.
 				// <Type>: float
 				// <Default>: 0.15
-				maxCompression 						= 2.0; //0.5
-				mMaxDroop 							= 1.0; //0.1
+				maxCompression 						= 5.0; //2.0
+				mMaxDroop 							= 5.0; //1.0
 				
 				// <Description>: This is the mass in kg that is supported by the suspension spring.
 				// <Type>: float
 				// <Default>: vehicleMass/numberOfWheels
-				sprungMass 							= 825; //825
+				sprungMass 							= 680.3875; //825
 				
 				// <Description>: This is the strength of the suspension spring in Newtons per metre.
 				//   springStrength = naturalFrequency * naturalFrequency * sprungMass
 				// <Type>: float
 				// <Default>: sprungMass*5,0*5,0
-				springStrength 							= 51625; //51625
+				springStrength 							= 17009.6875; //51625
 
 				// <Description>: This describes the rate at which the spring dissipates the energy stored in the spring.
 				// Basic equiation for this is
@@ -270,7 +272,7 @@
 				// where dampingRatio = 1 mean critical damping (critically damped pendulum should get back to start point in every swing)
 				// <Type>: float
 				// <Default>: 0,4*2*sqrt(springStrength*sprungMass)
-				springDamperRate 						= 8920; //8920
+				springDamperRate 						= 27215.5; //8920
 				
 				/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 				// Tire parameters
@@ -281,13 +283,13 @@
 				// load on the tire so be aware that increases in this value might have no effect or even come at the expense of reduced lateral force.
 				// <Type>: float 
 				// <Default>: 10000
-				longitudinalStiffnessPerUnitGravity 			= 10000;
+				longitudinalStiffnessPerUnitGravity 			= 5000; //10000
 
 				// <Description>: These values together describe the lateral stiffness per unit lateral slip (in radians) of the tire.
 				// <Type>: float, float
 				// <Default>: 25, 180
-				latStiffX 						= 25;
-				latStiffY 						= 180;
+				latStiffX 						= 10; //25
+				latStiffY 						= 90; //180
 
 				// <Description>: These six values describe a graph of friction as a function of longitudinal slip. 
 				// A good starting point for this is a flat graph of friction vs slip with these values:
@@ -304,14 +306,12 @@
 			class LR : LF
 			{
 				boneName		 				= "wheel_1_2_damper";
-				steering	 					= 0;
 				center   						= "wheel_1_2_axis";
 				boundary 						= "wheel_1_2_bound";
 				suspForceAppPointOffset 		= "wheel_1_2_axis";
 				tireForceAppPointOffset 		= "wheel_1_2_axis";
-				maxHandBrakeTorque 				= 4000;
-				side 							= "left";		
-				frictionVsSlipGraph[] 			= {{0, 1}, {0.25, 1}, {0.5,1}};
+				side 							= "left";
+				steering 						= 0;
 			};
 			class RF : LF
 			{
@@ -320,19 +320,16 @@
 				boundary 						= "wheel_2_1_bound";
 				suspForceAppPointOffset 		= "wheel_2_1_axis";
 				tireForceAppPointOffset 		= "wheel_2_1_axis";
-				steering 						= 1;
 				side 							= "right";
 			};
 			class RR : RF
 			{
 				boneName 						= "wheel_2_2_damper";
-				steering 						= 0;
 				center   						= "wheel_2_2_axis";
 				boundary						= "wheel_2_2_bound";
 				suspForceAppPointOffset 		= "wheel_2_2_axis";
 				tireForceAppPointOffset 		= "wheel_2_2_axis";
-				maxHandBrakeTorque 				= 4000;
-				side 							= "right";	
-				frictionVsSlipGraph[] 			= {{0, 1}, {0.25, 1}, {0.5,1}};				
+				side 							= "right";		
+				steering 						= 0;	
 			};
 		};

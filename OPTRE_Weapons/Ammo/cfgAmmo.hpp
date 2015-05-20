@@ -409,6 +409,78 @@ class CfgAmmo
 			distance = 1;
 		};
 	};
+	class OPTRE_MAC_Round: OPTRE_25x130mm_Slug
+	{
+		caliber = 1000;
+		hit = 10000;
+		airFriction = 0;
+		allowAgainstInfantry = 1;
+		audibleFire = 100.0;
+		canLock = 0;
+		cost = 10000;
+		deflecting = 0;
+		explosive = 0.5;
+		fuseDistance = 1;
+		indirectHit = 1000;
+		indirectHitRange = 100;
+		maxSpeed = 13680;
+		typicalSpeed = 10000;
+		sideAirFriction = 0;
+		simulation = "shotBullet";
+		suppressionRadiusBulletClose = 100;
+		suppressionRadiusHit = 100;
+		timeToLive = 10;
+		tracerStartTime = 0;
+		supersonicCrackNear[] = {"A3\sounds_f\weapons\hits\sscrack1",1.0/*0.35481337*/,1,40};
+		supersonicCrackFar[] = {"A3\sounds_f\weapons\hits\sscrack2",1.0/*0.2818383*/,1,100};
+		visibleFire = 100;
+		visibleFireTime = 300;
+		
+		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_white";
+		
+		CraterEffects = "HEShellCrater";
+		CraterWaterEffects = "ImpactEffectsWaterHE";
+		ExplosionEffects = "HEShellExplosion";
+		
+		class HitEffects
+		{
+			hitMetal = "ImpactMetalSabotBig";
+			hitMetalPlate = "ImpactMetalSabotBig";
+			hitBuilding = "ImpactConcreteSabot";
+			hitConcrete = "ImpactConcreteSabot";
+			hitGroundSoft = "ImpactEffectsGroundSabot";
+			hitGroundHard = "ImpactEffectsGroundSabot";
+			default_mat = "ImpactEffectsGroundSabot";
+		};
+		class CamShakeExplode
+		{
+			power = "(180^0.5)";
+			duration = "((round (180^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = 250;
+		};
+		class CamShakeHit
+		{
+			power = 180;
+			duration = "((round (180^0.25))*0.2 max 0.2)";
+			frequency = 20;
+			distance = 100;
+		};
+		class CamShakeFire
+		{
+			power = "(120^0.25)";
+			duration = "((round (120^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = 25;
+		};
+		class CamShakePlayerFire
+		{
+			power = 0;
+			duration = 0;
+			frequency = 0;
+			distance = 0;
+		};
+	};
 	class OPTRE_B_127x99_Ball: B_127x99_Ball
 	{
 		model = "\A3\Weapons_f\Data\bullettracer\tracer_white";

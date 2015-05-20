@@ -299,6 +299,15 @@ class CfgMagazines
 		initSpeed 							= 13680;
 		count								= 20;
 	};
+	class OPTRE_1Rnd_MAC_Rounds: OPTRE_20Rnd_ALIM_Gauss_Slugs
+	{
+		displayName							= "MAC Round";
+		displayNameShort					= "MAC Round";
+		ammo								= "OPTRE_MAC_Round";
+		initSpeed 							= 13680;
+		count								= 1;
+	};
+	
 	class OPTRE_3Rnd_102mm_rockets: 5Rnd_GAT_missiles
 	{
 		scope 								= 2;

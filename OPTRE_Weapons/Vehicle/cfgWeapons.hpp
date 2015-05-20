@@ -9,7 +9,7 @@ class CfgWeapons
 	class cannon_120mm;
 	class RCWSOptics;
 	class missiles_titan;
-	class missiles_DAGR;
+	class missiles_DAR;
 	class gatling_20mm;
 	class gatling_30mm;
 	
@@ -78,7 +78,7 @@ class CfgWeapons
 			sounds[]						= {"StandardSound"};
 		};
 	};
-	class OPTRE_M79_MLRS: missiles_DAGR
+	class OPTRE_M79_MLRS: missiles_DAR
 	{
 		displayName							= "M79 MLRS";
 		magazines[] 						= {"OPTRE_6Rnd_65mm_rockets"};
@@ -93,7 +93,7 @@ class CfgWeapons
 		class manual:MGun
 		{
 			displayName						= "M79 MLRS";
-			reloadTime						= 0.25;
+			reloadTime						= 0.33;
 			dispersion						= 0;
 			sounds[]						= {"StandardSound"};
 		};
@@ -131,6 +131,25 @@ class CfgWeapons
 				effectName			 		= "MachineGunCloud";
             };
 		};
+	};
+	class OPTRE_MAC_Cannon: OPTRE_M68_GAUSS
+	{
+		cursor 								= "EmptyCursor";
+		cursorAim 							= "cannon";
+		nameSound  							= "cannon";
+		reloadSound[] 						= {"A3\sounds_f\vehicles\armor\noises\reload_tank_cannon_2",30,1,10};
+		minRange 							= 250;
+		minRangeProbab 						= 0.25;
+		midRange 							= 800;
+		midRangeProbab 						= 0.75;
+		maxRange 							= 2400;
+		maxRangeProbab 						= 0.25;
+		reloadTime 							= 30;
+		magazineReloadTime 					= 30;
+		autoReload 							= 1;
+		showAimCursorInternal 				= 0;
+		displayName 						= "Magnetic Accelerator Cannon";
+		magazines[] 						= {"OPTRE_1Rnd_MAC_Rounds"};
 	};
 	class OPTRE_M638: gatling_20mm
 	{
