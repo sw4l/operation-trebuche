@@ -196,18 +196,4 @@ class CfgWeapons
 			mass = 75;
  		};
 	};
-	
-	class OPTRE_M45_tan : OPTRE_M45
-	{
-	model										= "\OPTRE_Weapons\Shotgun\shotgun_tan.p3d";
-	displayName 									= "M45 Tactical Shotgun [Tan]";
-	picture = "\OPTRE_weapons\shotgun\icons\shotgun_tan.paa";
-	};	
-	
-	class OPTRE_M45_olive : OPTRE_M45
-	{
-	model										= "\OPTRE_Weapons\Shotgun\shotgun_olive.p3d";
-	displayName 									= "M45 Tactical Shotgun [Olive]";
-	picture = "\OPTRE_weapons\shotgun\icons\shotgun_green.paa";
-	};
 };

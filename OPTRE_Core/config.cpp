@@ -5,7 +5,7 @@ class CfgPatches //This configures the identification of the pbo to the game
 		units[] 																				= {};
 		weapons[] 																				= {};																								
 		requiredVersion 																		= 0.1;
-		version																					= 0.10;
+		version																					= 0.11;
 		requiredAddons[] 																		= {"Extended_EventHandlers", "cba_main", "A3_Map_Stratis"};
 		author[] 																				= {"Article 2 Studios"};
 		fileName 																				= "OPTRE_Core.pbo";
@@ -25,7 +25,7 @@ class CfgFactionClasses //This configures the in-game factions
 		icon 																					= "\OPTRE_Core\data\icon_UNSC_ca.paa";
 		flag 																					= "\OPTRE_Core\Data\flag_UNSC_ca.paa";
 		primaryLanguage 																		= "EN";
-		backpack_tf_faction_radio_api = "OPTRE_Como_pack_2";
+		backpack_tf_faction_radio_api 															= "OPTRE_Como_pack_2";
         /*personal_tf_faction_radio_api = "some_personal_radio_class";
         rifleman_tf_faction_radio_api = "some_rifleman_radio_class";
         airborne_tf_faction_radio_api = "some_airborne_radio_class";*/
@@ -39,7 +39,7 @@ class CfgFactionClasses //This configures the in-game factions
 		icon 																					= "\OPTRE_Core\data\icon_Ins_ca.paa";
 		flag 																					= "\OPTRE_Core\Data\flag_Ins_ca.paa";
 		primaryLanguage 																		= "EN";
-		backpack_tf_faction_radio_api = "OPTRE_Como_pack_2";
+		backpack_tf_faction_radio_api 															= "OPTRE_Como_pack_2";
 	};
 	class OPTRE_CAA
 	{
@@ -47,8 +47,8 @@ class CfgFactionClasses //This configures the in-game factions
 		author																					= "Article 2 Studios";
 		priority 																				= 1;
 		side 																					= 2;
-		//icon 																					= "\OPTRE_Core\data\icon_Caa_ca.paa";
-		//flag 																					= "\OPTRE_Core\Data\flag_Caa_ca.paa";
+		icon 																					= "\OPTRE_Core\data\icon_caa_ca.paa";
+		flag 																					= "\OPTRE_Core\Data\flag_caa_ca.paa";
 		primaryLanguage 																		= "EN";
 	};
 	class OPTRE_UEG_Civ
@@ -105,25 +105,9 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
 	};
-	class OPTRE_UNSC_Man_Army_class
-	{
-		displayName 																			= "Men (Army)";
-		author																					= "Article 2 Studios";
-		scope																					= 2;
-		scopeArsenal																			= 2;
-		scopeCurator																			= 2;
-	};
-	class OPTRE_UNSC_Woman_Army_class
-	{
-		displayName 																			= "Women (Army)";
-		author																					= "Article 2 Studios";
-		scope																					= 2;
-		scopeArsenal																			= 2;
-		scopeCurator																			= 2;
-	};
 	class OPTRE_UNSC_Man_Army_W_class
 	{
-		displayName 																			= "Men (Army/Woodland)";
+		displayName 																			= "Men (Army Woodland)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -131,7 +115,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Man_Army_D_class
 	{
-		displayName 																			= "Men (Army/Desert)";
+		displayName 																			= "Men (Army Desert)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -139,7 +123,23 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Man_Army_S_class
 	{
-		displayName 																			= "Men (Army/Snow)";
+		displayName 																			= "Men (Army Snow)";
+		author																					= "Article 2 Studios";
+		scope																					= 2;
+		scopeArsenal																			= 2;
+		scopeCurator																			= 2;
+	};
+	class OPTRE_UNSC_Man_Army_T_class
+	{
+		displayName 																			= "Men (Army Tropical)";
+		author																					= "Article 2 Studios";
+		scope																					= 2;
+		scopeArsenal																			= 2;
+		scopeCurator																			= 2;
+	};
+	class OPTRE_UNSC_Man_Army_A_class
+	{
+		displayName 																			= "Men (Army Arid)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -161,6 +161,14 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
 	};
+	class OPTRE_UNSC_Man_SPECWARCOM_class
+	{
+		displayName 																			= "Men (SPECWARCOM)";
+		author																					= "Article 2 Studios";
+		scope																					= 2;
+		scopeArsenal																			= 2;
+		scopeCurator																			= 2;
+	};
 	class OPTRE_UNSC_Man_Special_class
 	{
 		displayName																				= "Men (Special)";
@@ -169,9 +177,25 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
 	};
+	class OPTRE_UNSC_Man_Training_class
+	{
+		displayName																				= "Men (Training)";
+		author																					= "Article 2 Studios";
+		scope																					= 2;
+		scopeArsenal																			= 2;
+		scopeCurator																			= 2;
+	};
 	class OPTRE_UNSC_Man_Navy_class
 	{
 		displayName																				= "Men (Navy)";
+		author																					= "Article 2 Studios";
+		scope																					= 2;
+		scopeArsenal																			= 2;
+		scopeCurator																			= 2;
+	};
+	class OPTRE_UNSC_Man_AirForce_class
+	{
+		displayName																				= "Men (Air Force)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -219,7 +243,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Backpack_class
 	{
-		displayName 																			= "Backpacks (Insurrection)";
+		displayName 																			= "Backpacks (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -227,7 +251,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Vehicle_class
 	{
-		displayName 																			= "Cars (Insurrection)";
+		displayName 																			= "Cars (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -235,7 +259,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Armored_class
 	{
-		displayName 																			= "Armored (Insurrection)";
+		displayName 																			= "Armored (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -243,7 +267,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Air_class
 	{
-		displayName 																			= "Air (Insurrection)";
+		displayName 																			= "Air (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -251,7 +275,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Auto_class
 	{
-		displayName 																			= "Autonomous (Insurrection)";
+		displayName 																			= "Autonomous (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -283,7 +307,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Object_class
 	{
-		displayName 																			= "Objects (Insurrection)";
+		displayName 																			= "Objects (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -291,7 +315,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Structure_class
 	{
-		displayName 																			= "Structures (Insurrection)";
+		displayName 																			= "Structures (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -299,7 +323,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Fortification_class
 	{
-		displayName 																			= "Fortifications (Insurrection)";
+		displayName 																			= "Fortifications (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -307,63 +331,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Ammo_class
 	{
-		displayName 																			= "Ammo (Insurrection)";
-		author																					= "Article 2 Studios";
-		scope																					= 2;
-		scopeArsenal																			= 2;
-		scopeCurator																			= 2;
-	};
-	class OPTRE_NMPD_Man_class
-	{
-		displayName 																			= "Men (NMPD)";
-		author																					= "Article 2 Studios";
-		scope																					= 2;
-		scopeArsenal																			= 2;
-		scopeCurator																			= 2;
-	};
-	class OPTRE_UNSC_civ_Man_class
-	{
-		displayName 																			= "Men";
-		author																					= "Article 2 Studios";
-		scope																					= 2;
-		scopeArsenal																			= 2;
-		scopeCurator																			= 2;
-	};
-	class OPTRE_Object_class 
-	{
-		displayName 																			= "Objects (OPTRE)";
-		author																					= "Article 2 Studios";
-		scope																					= 2;
-		scopeArsenal																			= 2;
-		scopeCurator																			= 2;
-	};
-	class OPTRE_Structure_class 
-	{
-		displayName 																			= "Structures (OPTRE)";
-		author																					= "Article 2 Studios";
-		scope																					= 2;
-		scopeArsenal																			= 2;
-		scopeCurator																			= 2;
-	};
-	class OPTRE_Item_class 
-	{
-		displayName 																			= "Items (OPTRE)";
-		author																					= "Article 2 Studios";
-		scope																					= 2;
-		scopeArsenal																			= 2;
-		scopeCurator																			= 2;
-	};
-	class OPTRE_Weapon_class 
-	{
-		displayName 																			= "Weapons (OPTRE)";
-		author																					= "Article 2 Studios";
-		scope																					= 2;
-		scopeArsenal																			= 2;
-		scopeCurator																			= 2;
-	};
-	class OPTRE_Ammo_class 
-	{
-		displayName 																			= "Ammo (OPTRE)";
+		displayName 																			= "Ammo (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -375,7 +343,7 @@ class CfgMissions
 {
 	class Cutscenes
 	{
-		class Stratis_intro1  //magic happens here
+		class Stratis_intro1
 		{
 			directory = "OPTRE_Core\scenes\OPTRE_Intro.Stratis";
 		};
@@ -398,42 +366,49 @@ class CfgSounds
 	{
 		name = "[OPTRE] HEV Wind 1";
 		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_HEV_Wind1.ogg", 1, 1};
+		author	= "Article 2 Studios";
 		titles[] = {};
 	};
 	class OPTRE_Sounds_HEV_Wind2
 	{
 		name = "[OPTRE] HEV Wind 2";
 		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_HEV_Wind2.ogg", 1, 1};
+		author	= "Article 2 Studios";
 		titles[] = {};
 	};
 	class OPTRE_Sounds_HEV_Pop
 	{
 		name = "[OPTRE] HEV Pop";
 		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_HEV_Pop.ogg", 1, 1};
+		author	= "Article 2 Studios";
 		titles[] = {};
 	};
 	class OPTRE_Sounds_HEV_Door
 	{
 		name = "[OPTRE] HEV Door";
 		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_HEV_Door.ogg", 1, 1};
+		author	= "Article 2 Studios";
 		titles[] = {};
 	};
 	class OPTRE_Sounds_HEV_Chute
 	{
 		name = "[OPTRE] HEV Chute";
 		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_HEV_Chute.ogg", 1, 1};
+		author	= "Article 2 Studios";
 		titles[] = {};
 	};
 	class OPTRE_Sounds_HUD_Visor
 	{
 		name = "[OPTRE] HUD Visor";
 		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_HUD_Visor.ogg", 0.25, 1};
+		author	= "Article 2 Studios";
 		titles[] = {};
 	};
 	class OPTRE_Sounds_Alarm
 	{
 		name = "[OPTRE] Alarm";
 		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_Alarm.ogg", 1, 1};
+		author	= "Article 2 Studios";
 		titles[] = {};
 	};
 };
@@ -444,6 +419,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Axios";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_Axios.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 162;
 	};
@@ -451,6 +427,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Bound";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_Bound.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 36;
 	};
@@ -458,6 +435,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Brave";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_Brave.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 90;
 	};
@@ -465,6 +443,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Call To Arms";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_CallToArms.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 68;
 	};
@@ -472,6 +451,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Choose Wisely";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_ChooseWisely.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 76;
 	};
@@ -479,6 +459,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Close Quarters";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_CloseQuarters.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 70;
 	};
@@ -486,6 +467,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Close Quarters (Loop)";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_LoopCloseQuarters.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 42;
 	};
@@ -493,6 +475,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Covenant Dance";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_CovenantDance.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 119;
 	};
@@ -500,6 +483,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Defense (Loop)";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_LoopDefense.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 58;
 	};
@@ -507,6 +491,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Desperate Measures";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_DesperateMeasures.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 147;
 	};
@@ -514,6 +499,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Drum Run";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_DrumRun.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 67;
 	};
@@ -521,6 +507,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Engaged";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_Engaged.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 92;
 	};
@@ -528,6 +515,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Eve Of Battle";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_EveOfBattle.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 68;
 	};
@@ -535,6 +523,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Firefight";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_Firefight.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 104;
 	};
@@ -542,6 +531,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Going Loud";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_GoingLoud.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 191;
 	};
@@ -549,6 +539,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Guess";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_Guess.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 177;
 	};
@@ -556,6 +547,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Impend";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_Impend.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 30;
 	};
@@ -563,6 +555,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] In Amber Clad";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_InAmberClad.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 203;
 	};
@@ -570,6 +563,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Innie Dance";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_InnieDance.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 236;
 	};
@@ -577,6 +571,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Introductions";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_Introductions.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 210;
 	};
@@ -584,6 +579,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Lead Track Redux";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_LeadTrackRedux.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 163;
 	};
@@ -591,6 +587,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Life";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_Life.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 88;
 	};
@@ -598,6 +595,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Live Action";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_LiveAction.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 53;
 	};
@@ -605,6 +603,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Mjolnir Mix (Remastered)";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_MjolnirRemastered.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 251;
 	};
@@ -612,6 +611,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Moons Over Eridanus";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_MoonsOverEridanus.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 68;
 	};
@@ -619,6 +619,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Movement";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_Movement.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 27;
 	};
@@ -626,6 +627,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Never Forget (Loop)";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_LoopNeverForget.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 59;
 	};
@@ -633,6 +635,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Night Ops";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_NightOps.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 168;
 	};
@@ -640,6 +643,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Night Run (Loop)";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_NightOps.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 42;
 	};
@@ -647,6 +651,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Our Brothers";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_OurBrothers.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 64;
 	};
@@ -654,6 +659,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Peril And Jeopardy";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_PerilAndJeopardy.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 167;
 	};
@@ -661,6 +667,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Perilous Journey";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_PerilousJourney.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 146;
 	};
@@ -668,6 +675,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Prepare To Drop";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_PrepareToDrop.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 216;
 	};
@@ -675,6 +683,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Recon";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_Recon.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 60;
 	};
@@ -682,6 +691,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Rescue Mission";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_RescueMission.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 137;
 	};
@@ -689,6 +699,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Rolling Out";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_RollingOut.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 34;
 	};
@@ -696,6 +707,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Run";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_Run.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 34;
 	};
@@ -703,6 +715,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Scorpion Mix";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_ScorpionMix.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 188;
 	};
@@ -710,6 +723,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Signal Lost";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_SignalLost.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 16;
 	};
@@ -717,6 +731,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Shotgun";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_Shotgun.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 132;
 	};
@@ -724,6 +739,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Through The Woods";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_ThroughTheWoods.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 89;
 	};
@@ -731,6 +747,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] To Galaxy";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_ToGalaxy.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 239;
 	};
@@ -738,6 +755,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Under Cover Of Moonlight";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_UnderCoverOfMoonlight.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 68;
 	};
@@ -745,6 +763,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Unforgotten";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_Unforgotten.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 60;
 	};
@@ -752,6 +771,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Wandering";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_Wandering.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 46;
 	};
@@ -759,6 +779,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Wars Tribute";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_WarsTribute.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 65;
 	};
@@ -766,6 +787,7 @@ class CfgMusic
 	{
 		name	="[OPTRE] Warthogs";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_Wandering.ogg",1,1};
+		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 130;
 	};

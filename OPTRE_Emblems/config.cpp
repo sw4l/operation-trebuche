@@ -64,13 +64,6 @@ class CfgUnitInsignia //Unit Insignias to show on players' shoulders
 		texture = "\OPTRE_Emblems\data\oni.paa"; // Image path
 		textureVehicle = "\OPTRE_Emblems\data\oni.paa"; // Does nothing currently, reserved for future use
 	};
-	class OPTRE_Insignia_unsc_9th : OPTRE_Insignia_foxgaming
-	{
-		displayName = "[OPTRE] UNSC (9th MEU)"; // Name displayed in Arsenal
-		author = "Article 2 Studios"; // Author displayed in Arsenal
-		texture = "\OPTRE_Emblems\data\unsc_9th.paa"; // Image path
-		textureVehicle = "\OPTRE_Emblems\data\unsc_9th.paa"; // Does nothing currently, reserved for future use
-	};
 	class OPTRE_Insignia_unsc_1st : OPTRE_Insignia_foxgaming
 	{
 		displayName = "[OPTRE] UNSC (1st Cav)"; // Name displayed in Arsenal

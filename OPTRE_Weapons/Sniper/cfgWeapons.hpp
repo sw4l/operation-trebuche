@@ -76,7 +76,7 @@ class Mode_FullAuto;
 			};
 			inertia 																		= 0;
 		};
-			class OPTRE_SRS99_Bipod: ItemCore
+		class OPTRE_SRS99_Bipod: ItemCore
 		{
 		scope 				= 2;																	/// available in Arsenal
 		displayName			= "SRS-99 Bipod";													/// name of item in Inventory (and Arsenal)
@@ -102,7 +102,7 @@ class Mode_FullAuto;
                     displayName                                                             = "SRS99D-S2 Sniper Rifle";
                     descriptionShort                                                        = "UNSC Sniper Rifle";
                     picture = "\OPTRE_weapons\sniper\icons\sniper.paa";
-                    magazines[]                                                             = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_HVAP_Mag"};
+                    magazines[]                                                             = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_HVAP_Mag","OPTRE_4Rnd_145x114_HEDP_Mag"};
                     modelOptics                                                             = "-";
                     muzzlePos                                                               = "usti hlavne";
                     muzzleEnd                                                               = "konec hlavne";

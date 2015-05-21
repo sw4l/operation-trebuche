@@ -1,53 +1,42 @@
-
-class CfgPatches {
-
-	class OPTRE_Trees {
-		units[] = {"OPTRE_Trees"};
+class CfgPatches 
+{
+	class OPTRE_Plants 
+	{
+		units[] = {"OPTRE_tree_Purp_1","OPTRE_tree_Purp_2"};
 		weapons[] = {};
 		worlds[] = {""};
-		requiredVersion = 0.100000;
-		requiredAddons[] = {"A3_data_f", "A3_plants_f"};
+		requiredVersion = 0.1;
+		requiredAddons[] = {"OPTRE_Core","A3_data_f"};
 	};
 };
 
 class cfgVehicleClasses {
 
-	class OPTRE_Trees {
-		displayName = "OPTRE Trees";
+	class OPTRE_Plants {
+		displayName = "Plants (OPTRE)";
 	};
 };
 
-class CfgVehicles {
-	/*extern*/ class Thing;
-	/*extern*/ class Building;
-	/*extern*/ class Strategic;
-
-	class NonStrategic: Building {
-		/*extern*/ class DestructionEffects;
+class CfgVehicles 
+{
+	class Fence;
+	class Fence_Ind: Fence 
+	{
+		class DestructionEffects;
 	};
-	/*extern*/ class Fence;
-	/*extern*/ class Land_VASICore;
-
-	class Fence_Ind: Fence {
-		/*extern*/ class DestructionEffects;
-	};
-
-	class OPTRE_tree_Purp_1: Fence_Ind {
+	class OPTRE_tree_Purp_1: Fence_Ind 
+	{
 		scope = 2;
 		model = "optre_plants\t_quercus2f.p3d";
-		icon = "";
-		displayName = "Purple Tree 1";
+		icon = "IconCrateWpns";
+		displayName = "Tree 1 (Purple)";
 		accuracy = 0.300000;
-		vehicleclass = "OPTRE_Trees";
+		vehicleclass = "OPTRE_Plants";
 	};
-
-	class OPTRE_tree_Purp_2: Fence_Ind {
-		scope = 2;
-		model = "optre_plants\t_quercus2s.p3d";
-		icon = "";
-		displayName = "Purple Tree 2";
-		accuracy = 0.300000;
-		vehicleclass = "OPTRE_Trees";
+	class OPTRE_tree_Purp_2: OPTRE_tree_Purp_1 
+	{
+		model = "optre_plants\t_quercus3s.p3d";
+		icon = "IconCrateWpns";
+		displayName = "Tree 2 (Purple)";
 	};
 };
-

@@ -224,12 +224,12 @@
 		class OPTRE_M73_CQC: OPTRE_M73
             {
                     model                                                                   = "\OPTRE_Weapons\MG\M73_rail.p3d";
-                    displayName                                                             = "M73 CQC Light Machine Gun";
+                    displayName                                                             = "M73 CQC Light Machine Gun (WIP)";
 					handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_Weapons\MG\data\anim\M73_2.rtm"};
                     descriptionShort                                                        = "UNSC Light Machine Gun (CQC Variant)";
                     inertia                                                                 = 0.75;
 					scope																	= 2;
-					scopeArsenal = 2;
+					scopeArsenal 															= 2;
 					maxRecoilSway 															= 0.0115;
 					swayDecaySpeed 															= 1.15;
                     modes[] 																= {"Single","FullAuto"};

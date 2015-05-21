@@ -49,13 +49,13 @@ class CfgAmmo
 		hit 							= 50;
 		cartridge 						= "FxCartridge_127";
 		caliber 						= 8;
-		typicalSpeed 					= 800;
+		typicalSpeed 					= 700;
 		airFriction 					= 0;
 		timeToLive 						= 15;
 		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_white";
 		tracerScale 					= 1.5;
-		tracerStartTime 				= 0.075;
-		tracerEndTime 					= 2;
+		tracerStartTime 				= 0;
+		tracerEndTime 					= 15;
 		class CamShakeExplode
 		{
 			power = "(20^0.5)";
@@ -73,10 +73,54 @@ class CfgAmmo
 	};
 	class OPTRE_B_145x114_HVAP: OPTRE_B_145x114_APFSDS
 	{
-		hit 							= 70;
-		caliber 						= 10;
+		hit 							= 75;
+		caliber 						= 15;
 		typicalSpeed 					= 700;
 		airFriction 					= -0.00015;
+	};
+	class OPTRE_B_145x114_HEDP: OPTRE_B_145x114_APFSDS
+	{
+		hit 							= 75;
+		indirectHit 					= 50;
+		explosive 						= 0.75;
+		indirectHitRange 				= 0.5;
+		caliber 						= 5;
+		typicalSpeed 					= 700;
+		airFriction 					= -0.00005;
+		timeToLive 						= 15;
+		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_red";
+		tracerScale 					= 2;		
+		CraterEffects 					= "HEShellCrater";
+		CraterWaterEffects 				= "ImpactEffectsWaterHE";
+		ExplosionEffects 				= "HEShellExplosion";
+		class CamShakeExplode
+		{
+			power = "(180^0.5)";
+			duration = "((round (180^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = "((180^0.5)*3)";
+		};
+		class CamShakeHit
+		{
+			power = 180;
+			duration = "((round (180^0.25))*0.2 max 0.2)";
+			frequency = 20;
+			distance = 1;
+		};
+		class CamShakeFire
+		{
+			power = "(120^0.25)";
+			duration = "((round (120^0.5))*0.2 max 0.2)";
+			frequency = 20;
+			distance = "((120^0.5)*8)";
+		};
+		class CamShakePlayerFire
+		{
+			power = 0.02;
+			duration = 0.1;
+			frequency = 20;
+			distance = 1;
+		};
 	};
 	
 	//12.7x40mm (Pistol)
@@ -579,7 +623,6 @@ class CfgAmmo
 		hit 							= 10;
 		indirectHit 					= 10;
 		indirectHitRange 				= 8;
-		typicalspeed 					= 18;
 		visibleFire 					= 0.5;
 		audibleFire 					= 0.05;
 		visibleFireTime 				= 1;

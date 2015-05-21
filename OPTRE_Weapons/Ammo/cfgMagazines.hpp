@@ -43,14 +43,14 @@ class CfgMagazines
 		displayname							= "32Rnd 762x51mm Magazine";
 		count								= 32;
 		initspeed							= 800;
-		descriptionshort					= "32 Round Magazine<br>7.62x51mm";
+		descriptionshort					= "32 Round Magazine<br>7.62x51mm<br>(Increased Muzzle Velocity)";
 		mass								= 10;
 	};
 	class OPTRE_32Rnd_762x51_Mag_Tracer: OPTRE_60Rnd_762x51_Mag_Tracer
 	{
 		displayname							= "32Rnd 762x51mm Magazine";
 		count								= 32;
-		descriptionshort					= "32 Round Magazine<br>7.62x51mm<br>Tracer";
+		descriptionshort					= "32 Round Magazine<br>7.62x51mm<br>(Increased Muzzle Velocity)<br>Tracer";
 		mass								= 10;
 	};
 	class OPTRE_100Rnd_762x51_Box: OPTRE_60Rnd_762x51_Mag
@@ -72,7 +72,7 @@ class CfgMagazines
 		displayname							= "100Rnd 7.62x51mm Box Magazine (Tracers)";
 		displaynameshort					= "7.62x51mm Tracer";
 		ammo								= "OPTRE_B_762x51_Tracer";
-				picture 							= "\OPTRE_Weapons\MG\icon\magazine.paa";
+				picture 					= "\OPTRE_Weapons\MG\icon\magazine.paa";
 		descriptionshort					= "100 Round Box Magazine<br>7.62x51mm<br>Tracer";
 		tracersEvery 						= 1;
 		lastRoundsTracer 					= 100;
@@ -269,7 +269,7 @@ class CfgMagazines
 	{
 		model								= "\OPTRE_Weapons\AR\AR_Magazine.p3d";
 		displayname							= "4Rnd 14.5x114mm APFSDS Magazine";
-		displaynameshort					= "14.5x114mm APFSDS";
+		displaynameshort					= "APFSDS";
 		ammo								= "OPTRE_B_145x114_APFSDS";
 		count								= 4;
 		initspeed							= 1750;
@@ -282,11 +282,20 @@ class CfgMagazines
 	class OPTRE_4Rnd_145x114_HVAP_Mag: OPTRE_4Rnd_145x114_APFSDS_Mag
 	{
 		displayname							= "4Rnd 14.5x114mm HVAP Magazine";
-		displaynameshort					= "14.5x114mm HVAP";
+		displaynameshort					= "HVAP";
 		ammo								= "OPTRE_B_145x114_HVAP";
 		initspeed							= 1750;
 		descriptionshort					= "4 Round Magazine<br>14.5x114mm<br>High Velocity Armor Piercing";
-		mass								= 20;
+		mass								= 15;
+	};
+	class OPTRE_4Rnd_145x114_HEDP_Mag: OPTRE_4Rnd_145x114_HVAP_Mag
+	{
+		displayname							= "4Rnd 14.5x114mm HEDP Magazine";
+		displaynameshort					= "HEDP";
+		ammo								= "OPTRE_B_145x114_HEDP";
+		initspeed							= 1500;
+		descriptionshort					= "4 Round Magazine<br>14.5x114mm<br>High Explosive Dual Purpose";
+		mass								= 25;
 	};
 	
 	//Vehicles
@@ -304,7 +313,6 @@ class CfgMagazines
 		displayName							= "MAC Round";
 		displayNameShort					= "MAC Round";
 		ammo								= "OPTRE_MAC_Round";
-		initSpeed 							= 13680;
 		count								= 1;
 	};
 	
@@ -347,7 +355,7 @@ class CfgMagazines
 	{
 		displayname						= "M19 HEAT Twin Rockets";
 		displaynameshort				= "HEAT";
-		descriptionshort				= "Type: Unguided surface-to-surface HEAT (High Explosive Anti Tank)<br/>Used in: M41 SSR MAV/AW";
+		descriptionshort				= "High Explosive Anti Tank<br/>Un-guided";
 		ammo							= "OPTRE_M41_Rocket_HEAT";
 		picture 						= "\OPTRE_weapons\rockets\icons\rocket.paa";
 		model							= "\OPTRE_Weapons\Rockets\M41_case.p3d";	
@@ -362,18 +370,18 @@ class CfgMagazines
 		displayname						= "M19 HEAT Guided Twin Rockets";
 		displaynameshort				= "HEAT (Guided)";
 		picture 						= "\OPTRE_weapons\rockets\icons\rocket.paa";
-		descriptionshort				= "Type: Guided surface-to-surface/air HEAT (High Explosive Anti Tank)<br/>Used in: M41 SSR MAV/AW";
+		descriptionshort				= "High Explosive Anti Tank<br/>Guided";
 		model							= "\OPTRE_Weapons\Rockets\M41_case.p3d";	
 		modelSpecial					= "\OPTRE_Weapons\Rockets\M41_launcher_loaded.p3d";
 		count							= 2;
-		mass 							= 85;
+		mass 							= 90;
 		initSpeed 						= 255;
 	};
 	class OPTRE_M41_Twin_HEAP: RPG32_HE_F
 	{
 		ammo							= "OPTRE_M41_Rocket_HEAP";
 		model							= "\OPTRE_Weapons\Rockets\M41_case.p3d";	
-		descriptionshort				= "Type: Surface-to-surface HEAP (High Explosive Anti Personnel)<br/>Used in: M41 SSR MAV/AW";
+		descriptionshort				= "High Explosive Anti Personnel<br/>Un-guided";
 		displayname						= "M19 HEAP Twin Rockets";
 		picture 						= "\OPTRE_weapons\rockets\icons\rocket.paa";
 		displaynameshort				= "HEAP";
@@ -387,19 +395,14 @@ class CfgMagazines
 	class OPTRE_M9_Frag: HandGrenade
 	{
 		ammo = "OPTRE_G_M9_Frag";
-		mass = 10;
-		value = 1;
+		mass = 8;
 		displayName = "M9 HE-DP Grenade";
-		descriptionShort = "Type: Defensive Grenade<br />Rounds: 1<br />Used in: Hand";
+		descriptionShort = "Hand Grenade";
 		displayNameShort = "M9 Frag";
 		model = "\OPTRE_Weapons\explosives\m9_grenade.p3d";
 		picture = "\OPTRE_Weapons\explosives\icons\m9.paa";
-		type = 256;
 		count = 1;
-		initSpeed = 18;
 		nameSound = "handgrenade";
-		maxLeadSpeed = 7;
-		sound[] = {"",0.000316228,1};
 	};
 	class OPTRE_M2_Smoke: SmokeShell
 	{
@@ -410,17 +413,16 @@ class CfgMagazines
 		ammo = "OPTRE_G_M2_Smoke";
 		nameSoundWeapon = "smokeshell";
 		nameSound = "smokeshell";
-		descriptionShort = "Type: Smoke Grenade - White<br />Rounds: 1<br />Used in: Hand";
+		descriptionShort = "Smoke Grenade<br>White";
 		displayNameShort = "White Smoke";
 		mass = 4;
-		initSpeed = 22;
 	};
 	class OPTRE_M2_Smoke_Blue: OPTRE_M2_Smoke
 	{
 		displayName = "M2 Smoke Grenade (Blue)";
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade_blue.p3d";
 		ammo = "OPTRE_G_M2_BSmoke";
-		descriptionShort = "Type: Smoke Grenade - Blue<br />Rounds: 1<br />Used in: Hand";
+		descriptionShort = "Smoke Grenade<br>Blue";
 		displayNameShort = "Blue Smoke";
 	};
 	class OPTRE_M2_Smoke_Yellow: OPTRE_M2_Smoke
@@ -428,7 +430,7 @@ class CfgMagazines
 		displayName = "M2 Smoke Grenade (Yellow)";
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade_yellow.p3d";
 		ammo = "OPTRE_G_M2_YSmoke";
-		descriptionShort = "Type: Smoke Grenade - Yellow<br />Rounds: 1<br />Used in: Hand";
+		descriptionShort = "Smoke Grenade<br>Yellow";
 		displayNameShort = "Yellow Smoke";
 	};
 	class OPTRE_M2_Smoke_Red: OPTRE_M2_Smoke
@@ -436,7 +438,7 @@ class CfgMagazines
 		displayName = "M2 Smoke Grenade (Red)";
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade_red.p3d";
 		ammo = "OPTRE_G_M2_RSmoke";
-		descriptionShort = "Type: Smoke Grenade - Red<br />Rounds: 1<br />Used in: Hand";
+		descriptionShort = "Smoke Grenade<br>Red";
 		displayNameShort = "Red Smoke";
 	};
 	class OPTRE_M2_Smoke_Green: OPTRE_M2_Smoke
@@ -444,7 +446,7 @@ class CfgMagazines
 		displayName = "M2 Smoke Grenade (Green)";
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade_green.p3d";
 		ammo = "OPTRE_G_M2_GSmoke";
-		descriptionShort = "Type: Smoke Grenade - Green<br />Rounds: 1<br />Used in: Hand";
+		descriptionShort = "Smoke Grenade<br>Green";
 		displayNameShort = "Green Smoke";
 	};
 	class OPTRE_M2_Smoke_Orange: OPTRE_M2_Smoke
@@ -452,7 +454,7 @@ class CfgMagazines
 		displayName = "M2 Smoke Grenade (Orange)";
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade_orange.p3d";
 		ammo = "OPTRE_G_M2_OSmoke";
-		descriptionShort = "Type: Smoke Grenade - Orange<br />Rounds: 1<br />Used in: Hand";
+		descriptionShort = "Smoke Grenade<br>Orange";
 		displayNameShort = "Orange Smoke";
 	};
 	class OPTRE_M2_Smoke_Purple: OPTRE_M2_Smoke
@@ -460,7 +462,7 @@ class CfgMagazines
 		displayName = "M2 Smoke Grenade (Purple)";
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade_purple.p3d";
 		ammo = "OPTRE_G_M2_PSmoke";
-		descriptionShort = "Type: Smoke Grenade - Purple<br />Rounds: 1<br />Used in: Hand";
+		descriptionShort = "Smoke Grenade<br>Purple";
 		displayNameShort = "Purple Smoke";
 	};
 };

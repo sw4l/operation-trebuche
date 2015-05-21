@@ -1,19 +1,3 @@
-enum {
-DESTRUCTENGINE 																					= 2,
-DESTRUCTDEFAULT 																				= 6,
-DESTRUCTWRECK 																					= 7,
-DESTRUCTTREE 																					= 3,
-DESTRUCTTENT 																					= 4,
-STABILIZEDINAXISX 																				= 1,
-STABILIZEDINAXESXYZ 																			= 4,
-STABILIZEDINAXISY 																				= 2,
-STABILIZEDINAXESBOTH 																			= 3,
-DESTRUCTNO 																						= 0,
-STABILIZEDINAXESNONE 																			= 0,
-DESTRUCTMAN 																					= 5,
-DESTRUCTBUILDING 																				= 1,
-};
-
 class CfgPatches //This configures the identification of the pbo to the game
 {
 	class OPTRE_Ins_Units
@@ -34,9 +18,9 @@ class CfgGroups
 		class OPTRE_Ins //OPTRE_Ins
 		{
 			name = "Insurrectionists";
-			class Infantry //Air, Mechanized, Motorized, Armored, SpecOps, Support
+			class Infantry_URF //Air, Mechanized, Motorized, Armored, SpecOps, Support
 			{
-				name = "Infantry";
+				name = "Infantry (URF)";
 				
 				class OPTRE_Ins_URF_Inf_Sentry
 				{
@@ -311,9 +295,11 @@ class CfgGroups
 					};
 				};
 				
-				
-				
-				
+			};	
+			
+			class Infantry_ER //Air, Mechanized, Motorized, Armored, SpecOps, Support
+			{
+				name = "Infantry (ER)";
 				
 				class OPTRE_Ins_ER_Inf_Patrol
 				{
@@ -443,7 +429,8 @@ class CfgGroups
 						position[] = {10,-5,0};
 					};
 				};
-			};		
+				
+			};
 		};
 	};
 };
