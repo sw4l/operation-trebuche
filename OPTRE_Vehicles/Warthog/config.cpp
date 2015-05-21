@@ -1745,4 +1745,48 @@ class CfgVehicles
 			};
 		};
 	};
+	class OPTRE_M12_CIV:OPTRE_M12_FAV
+	{
+		displayName="AMG Hog (Gold)";
+		scope=2;
+		author="Article 2 Studios";
+		faction="CIV_F";
+		side=3;
+		transportSoldier=0;
+		crew="C_man_1";
+		model="OPTRE_Vehicles\Warthog\Warthog_CIV.p3d";
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_troop"};
+		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_gold_CO.paa",""};
+		vehicleClass="Car";
+		class CargoTurret;
+		class Turrets:Turrets
+		{
+			class CargoTurret_01:CargoTurret
+			{
+				gunnerAction="passenger_inside_2";
+				gunnerCompartments="Compartment1";
+				memoryPointsGetInGunner="pos pas";
+				memoryPointsGetInGunnerDir="pos pas dir";
+				memoryPointGunnerOptics="";
+				gunnerName="Front Passenger";
+				proxyIndex=1;
+				maxElev=10;
+				minElev=-40;
+				maxTurn=95;
+				minTurn=-95;
+				isPersonTurret=1;
+				class dynamicViewLimits
+				{
+					CargoTurret_02[]={-65,95};
+				};
+			};
+		};
+	};
+	class OPTRE_M12_CIV2:OPTRE_M12_CIV
+	{
+		displayName="AMG Hog (Striped)";
+		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia"};
+		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_stripe_CO.paa",""};
+	};
 };
+
