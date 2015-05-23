@@ -684,7 +684,6 @@ class CfgVehicles
 					count = 1;
 				};
 			};
-		};
 	};
 	class OPTRE_Ammo_Rack_Ammo: OPTRE_Ammo_Rack_Weapons
 	{
