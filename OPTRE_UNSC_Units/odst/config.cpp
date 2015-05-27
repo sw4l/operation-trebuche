@@ -1,4 +1,4 @@
-class CfgPatches //This configures the identification of the pbo to the game
+class CfgPatches
 {
 	class OPTRE_UNSC_Units_ODST
 	{
@@ -9,18 +9,18 @@ class CfgPatches //This configures the identification of the pbo to the game
 	};
 };
 
-class CfgVehicles //This configures units and backpacks
+class CfgVehicles
 {
 	class B_Soldier_F;
 	
-	// SOLDIERS
-	
-	class OPTRE_UNSC_ODST_Soldier: B_Soldier_F //Configures the unit part of the ODST Uniform
+	// BASE UNITS START
+	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	class OPTRE_UNSC_ODST_Soldier: B_Soldier_F
 	{
 		scope																					= 1;
 		faction																					= "OPTRE_UNSC";
 		author																					= "Article 2 Studios";
-		displayName																				= "ODST [Heavy]";
+		displayName																				= "-";
 		vehicleClass																			= "OPTRE_UNSC_Man_ODST_class";
 		uniformAccessories[]																	= {};
 		nakedUniform 																			= "U_BasicBody";
@@ -32,9 +32,9 @@ class CfgVehicles //This configures units and backpacks
 		RespawnItems[]																			= {"OPTRE_Biofoam"};
 		magazines[]																				= {};
 		respawnMagazines[]																		= {};
-		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest","G_Balaclava_blk","OPTRE_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG","OPTRE_NVG"};
-		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_Vest","G_Balaclava_blk","OPTRE_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG","OPTRE_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia","clan"}; //Determines what hiddenselections are enabled
+		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+		hiddenSelections[] 																		= {"camo1","insignia","clan"};
 		hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\ODST\data\uniform_co.paa"};
 		class HitPoints
 		{
@@ -85,23 +85,12 @@ class CfgVehicles //This configures units and backpacks
 		armor = 2;
 		armorStructural = 5;
 	};
-	class OPTRE_UNSC_ODST_Soldier_light: OPTRE_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
+	class OPTRE_UNSC_ODST_Soldier_L: OPTRE_UNSC_ODST_Soldier
 	{
-		scope																				= 1;
 		author																				= "Article 2 Studios";
-		displayName																			= "ODST [Light]";
-		uniformAccessories[]																		= {};
-		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_light";
-		weapons[]																			= {"Throw","Put"};
-		respawnWeapons[]																		= {"Throw","Put"};
-		Items[]																				= {"OPTRE_Biofoam"};
-		RespawnItems[]																			= {"OPTRE_Biofoam"};
-		magazines[]																			= {};
-		respawnMagazines[]																		= {};
-		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest","G_Balaclava_blk","OPTRE_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-		respawnLinkedItems[] 																		= {"OPTRE_UNSC_ODST_Vest","G_Balaclava_blk","OPTRE_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia","clan","attach_leftforearm", "attach_leftshoulder", "attach_rightforearm", "attach_rightshoulder" }; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] 																	= {"OPTRE_UNSC_Units\ODST\data\uniform_co.paa"};
+		uniformClass																		= "OPTRE_UNSC_ODST_Uniform_L";
+		hiddenSelections[] 																	= {"camo1","insignia","clan","attach_leftforearm","attach_leftshoulder","attach_rightforearm","attach_rightshoulder"};
+		hiddenSelectionsTextures[] 															= {"OPTRE_UNSC_Units\ODST\data\uniform_co.paa"};
 		class HitPoints: HitPoints
 		{
 			class HitHead: HitHead
@@ -122,27 +111,12 @@ class CfgVehicles //This configures units and backpacks
 			};
 		};
 	};
-	class OPTRE_UNSC_ODST_Soldier_medium: OPTRE_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
+	class OPTRE_UNSC_ODST_Soldier_M: OPTRE_UNSC_ODST_Soldier
 	{
-		scope																				= 1;
-		faction																				= "OPTRE_UNSC";
 		author																				= "Article 2 Studios";
-		displayName																			= "ODST [Medium]";
-		vehicleClass																			= "OPTRE_UNSC_Man_ODST_class";
-		uniformAccessories[]																		= {};
-		nakedUniform 																			= "U_BasicBody";
-		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_medium";
-		model																				= "\OPTRE_UNSC_Units\ODST\uniform.p3d";
-		weapons[]																			= {"Throw","Put"};
-		respawnWeapons[]																		= {"Throw","Put"};
-		Items[]																				= {"OPTRE_Biofoam"};
-		RespawnItems[]																			= {"OPTRE_Biofoam"};
-		magazines[]																			= {};
-		respawnMagazines[]																		= {};
-		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest","G_Balaclava_blk","OPTRE_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-		respawnLinkedItems[] 																		= {"OPTRE_UNSC_ODST_Vest","G_Balaclava_blk","OPTRE_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia","clan", "attach_leftshoulder", "attach_rightshoulder" }; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] 																	= {"OPTRE_UNSC_Units\ODST\data\uniform_co.paa"};
+		uniformClass																		= "OPTRE_UNSC_ODST_Uniform_M";
+		hiddenSelections[] 																	= {"camo1","insignia","clan","attach_leftshoulder","attach_rightshoulder"};
+		hiddenSelectionsTextures[] 															= {"OPTRE_UNSC_Units\ODST\data\uniform_co.paa"};
 		class HitPoints: HitPoints
 		{
 			class HitHead: HitHead
@@ -163,27 +137,12 @@ class CfgVehicles //This configures units and backpacks
 			};
 		};
 	};
-	class OPTRE_UNSC_ODST_Soldier_Sniper: OPTRE_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
+	class OPTRE_UNSC_ODST_Soldier_Sniper: OPTRE_UNSC_ODST_Soldier
 	{
-		scope																				= 1;
-		faction																				= "OPTRE_UNSC";
 		author																				= "Article 2 Studios";
-		displayName																			= "ODST [Sniper]";
-		vehicleClass																			= "OPTRE_UNSC_Man_ODST_class";
-		uniformAccessories[]																		= {};
-		nakedUniform 																			= "U_BasicBody";
-		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_sniper";
-		model																				= "\OPTRE_UNSC_Units\ODST\uniform.p3d";
-		weapons[]																			= {"Throw","Put"};
-		respawnWeapons[]																		= {"Throw","Put"};
-		Items[]																				= {"OPTRE_Biofoam"};
-		RespawnItems[]																			= {"OPTRE_Biofoam"};
-		magazines[]																			= {};
-		respawnMagazines[]																		= {};
-		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest","G_Balaclava_blk","OPTRE_UNSC_ODST_Helmet_sniper","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-		respawnLinkedItems[] 																		= {"OPTRE_UNSC_ODST_Vest","G_Balaclava_blk","OPTRE_UNSC_ODST_Helmet_sniper","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia","clan", "attach_rightshoulder" }; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] 																	= {"OPTRE_UNSC_Units\ODST\data\uniform_co.paa"};
+		uniformClass																		= "OPTRE_UNSC_ODST_Uniform_Sniper";
+		hiddenSelections[] 																	= {"camo1","insignia","clan","attach_rightshoulder"};
+		hiddenSelectionsTextures[] 															= {"OPTRE_UNSC_Units\ODST\data\uniform_co.paa"};
 		class HitPoints: HitPoints
 		{
 			class HitHead: HitHead
@@ -204,27 +163,12 @@ class CfgVehicles //This configures units and backpacks
 			};
 		};
 	};
-	class OPTRE_UNSC_ODST_Soldier_medic: OPTRE_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
+	class OPTRE_UNSC_ODST_Soldier_Medic: OPTRE_UNSC_ODST_Soldier
 	{
-		scope																				= 1;
-		faction																				= "OPTRE_UNSC";
 		author																				= "Article 2 Studios";
-		displayName																			= "ODST [Medic]";
-		vehicleClass																			= "OPTRE_UNSC_Man_ODST_class";
-		uniformAccessories[]																		= {};
-		nakedUniform 																			= "U_BasicBody";
-		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_medic";
-		model																				= "\OPTRE_UNSC_Units\ODST\uniform.p3d";
-		weapons[]																			= {"Throw","Put"};
-		respawnWeapons[]																		= {"Throw","Put"};
-		Items[]											= {"OPTRE_Biofoam"};
-		RespawnItems[]									= {"OPTRE_Biofoam"};
-		magazines[]																			= {};
-		respawnMagazines[]																		= {};
-		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest_medic","OPTRE_UNSC_ODST_Helmet_medic","G_Balaclava_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-		respawnLinkedItems[] 																		= {"OPTRE_UNSC_ODST_Vest_medic","OPTRE_UNSC_ODST_Helmet_medic","G_Balaclava_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia","clan" }; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] 																	= {"OPTRE_UNSC_Units\ODST\data\uniform_medic_co.paa"};
+		uniformClass																		= "OPTRE_UNSC_ODST_Uniform_Medic";
+		hiddenSelections[] 																	= {"camo1","insignia","clan" };
+		hiddenSelectionsTextures[] 															= {"OPTRE_UNSC_Units\ODST\data\uniform_medic_co.paa"};
 		class HitPoints: HitPoints
 		{
 			class HitHead: HitHead
@@ -245,7 +189,12 @@ class CfgVehicles //This configures units and backpacks
 			};
 		};
 	};
-	class OPTRE_UNSC_ODST_Soldier_scorch: OPTRE_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
+	// BASE UNITS END
+	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	// UNITS START
+	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	class OPTRE_UNSC_ODST_Soldier_Scorch: OPTRE_UNSC_ODST_Soldier
 	{
 		scope																					= 2;
 		author																					= "Article 2 Studios";
@@ -255,302 +204,233 @@ class CfgVehicles //This configures units and backpacks
 		detectSkill 																			= 80;
 		displayName																				= "Scorch";
 		vehicleClass																			= "OPTRE_UNSC_Man_Special_class";
-		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_scorch";		
+		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_Scorch";		
 		backpack 																				= "OPTRE_ILCS_Rucksack_Black";
 		weapons[] 																				= {"OPTRE_MA5B_AC","OPTRE_M6G","Throw","Put"};
 		respawnWeapons[] 																		= {"OPTRE_MA5B_AC","OPTRE_M6G","Throw","Put"};
-		magazines[] 																			= {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShellGreen","SmokeShellRed"};
-		respawnMagazines[] 																		= {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShellGreen","SmokeShellRed"};
+		magazines[] 																			= {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M2_Smoke_Red"};
+		respawnMagazines[] 																		= {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green","OPTRE_M2_Smoke_Red"};
 		Items[]																					= {"OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[]																			= {"OPTRE_Biofoam","OPTRE_Biofoam"};
 		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest_scorch","OPTRE_UNSC_ODST_Helmet_scorch","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
 		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_Vest_scorch","OPTRE_UNSC_ODST_Helmet_scorch","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia","clan"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 																		= {"camo1","insignia","clan"};
 		hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\ODST\data\uniform_scorch_co.paa"};
 	};
-	class OPTRE_UNSC_ODST_Soldier_zero: OPTRE_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
+	class OPTRE_UNSC_ODST_Soldier_Zero: OPTRE_UNSC_ODST_Soldier_Scorch
 	{
-		scope																					= 2;
 		author																					= "Article 2 Studios";
-		attendant 																				= 1;
-		engineer 																				= 1;
-		canDeactivateMines 																		= 1;
-		detectSkill 																			= 80;
 		displayName																				= "Zero";
-		vehicleClass																			= "OPTRE_UNSC_Man_Special_class";
-		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_zero";		
-		backpack 																				= "OPTRE_ILCS_Rucksack_Black";
+		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_Zero";
 		weapons[] 																				= {"OPTRE_MA5B_AC","OPTRE_M6G","Throw","Put"};
 		respawnWeapons[] 																		= {"OPTRE_MA5B_AC","OPTRE_M6G","Throw","Put"};
-		magazines[] 																			= {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShellGreen","SmokeShellRed"};
-		respawnMagazines[] 																		= {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShellGreen","SmokeShellRed"};
-		Items[]																					= {"OPTRE_Biofoam","OPTRE_Biofoam"};
-		RespawnItems[]																			= {"OPTRE_Biofoam","OPTRE_Biofoam"};
-		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest_zero","OPTRE_UNSC_ODST_Helmet_zero","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
-		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_Vest_zero","OPTRE_UNSC_ODST_Helmet_zero","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia","clan"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\ODST\data\uniform_zero_co.paa"};
+		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest_Zero","OPTRE_UNSC_ODST_Helmet_Zero","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
+		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_Vest_Zero","OPTRE_UNSC_ODST_Helmet_Zero","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
+		hiddenSelections[] 																		= {"camo1","insignia","clan"};
+		hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\ODST\data\uniform_Zero_co.paa"};
 	};
-		class OPTRE_UNSC_ODST_Soldier_thedog: OPTRE_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
+	class OPTRE_UNSC_ODST_Soldier_TheDog: OPTRE_UNSC_ODST_Soldier_Scorch
 	{
-		scope																					= 2;
 		author																					= "Article 2 Studios";
-		attendant 																				= 1;
-		engineer 																				= 1;
-		canDeactivateMines 																		= 1;
-		detectSkill 																			= 80;
 		displayName																				= "The Dog";
-		vehicleClass																			= "OPTRE_UNSC_Man_Special_class";
-		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_thedog";		
-		backpack 																				= "OPTRE_ILCS_Rucksack_Black";
-		weapons[] 										= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 								= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 									= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
-		respawnMagazines[] 								= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_TheDog";	
+		weapons[] 																				= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] 																		= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
+		magazines[] 																			= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Orange","OPTRE_M2_Smoke_Green"};
+		respawnMagazines[] 																		= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Orange","OPTRE_M2_Smoke_Green"};
 		Items[]																					= {"OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[]																			= {"OPTRE_Biofoam","OPTRE_Biofoam"};
-		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest_thedog","OPTRE_UNSC_ODST_Helmet_thedog","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
-		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_Vest_thedog","OPTRE_UNSC_ODST_Helmet_thedog","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia","clan"}; //Determines what hiddenselections are enabled
+		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest_TheDog","OPTRE_UNSC_ODST_Helmet_TheDog","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
+		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_Vest_TheDog","OPTRE_UNSC_ODST_Helmet_TheDog","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
+		hiddenSelections[] 																		= {"camo1","insignia","clan"};
 		hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\ODST\data\uniform_thedog_co.paa"};
 	};
-		class OPTRE_UNSC_ODST_Soldier_stirls: OPTRE_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
+	class OPTRE_UNSC_ODST_Soldier_Stirls: OPTRE_UNSC_ODST_Soldier_TheDog
 	{
-		scope																					= 2;
 		author																					= "Article 2 Studios";
-		attendant 																				= 1;
-		engineer 																				= 1;
-		canDeactivateMines 																		= 1;
-		detectSkill 																			= 80;
 		displayName																				= "Stirls";
-		vehicleClass																			= "OPTRE_UNSC_Man_Special_class";
-		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_stirls";		
-		backpack 																				= "OPTRE_ILCS_Rucksack_Black";
-		weapons[] 										= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 								= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 									= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
-		respawnMagazines[] 								= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
-		Items[]																					= {"OPTRE_Biofoam","OPTRE_Biofoam"};
-		RespawnItems[]																			= {"OPTRE_Biofoam","OPTRE_Biofoam"};
-		linkedItems[] 																			= {"OPTRE_UNSC_ODST_vest_stirls","OPTRE_UNSC_ODST_Helmet_stirls","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
-		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_vest_stirls","OPTRE_UNSC_ODST_Helmet_stirls","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia","clan"}; //Determines what hiddenselections are enabled
+		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_Stirls";
+		linkedItems[] 																			= {"OPTRE_UNSC_ODST_vest_Stirls","OPTRE_UNSC_ODST_Helmet_Stirls","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
+		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_vest_Stirls","OPTRE_UNSC_ODST_Helmet_Stirls","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
+		hiddenSelections[] 																		= {"camo1","insignia","clan"};
 		hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\ODST\data\uniform_co.paa"};
 	};
-	class OPTRE_UNSC_ODST_Soldier_urban: OPTRE_UNSC_ODST_Soldier //Configures the unit part of the ODST Uniform
+	class OPTRE_UNSC_ODST_Soldier_Urban: OPTRE_UNSC_ODST_Soldier_Scorch
 	{
-		scope																					= 2;
 		author																					= "Article 2 Studios";
-		attendant 																				= 1;
-		engineer 																				= 1;
-		canDeactivateMines 																		= 1;
-		detectSkill 																			= 80;
 		displayName																				= "Urban";
-		vehicleClass																			= "OPTRE_UNSC_Man_Special_class";
-		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_Urban";		
-		backpack 																				= "OPTRE_ILCS_Rucksack_Black";
-		weapons[] 										= {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 								= {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 									= {"OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
-		respawnMagazines[] 								= {"OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_Urban";	
+		weapons[] 																				= {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] 																		= {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
+		magazines[] 																			= {"OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		respawnMagazines[] 																		= {"OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
 		Items[]																					= {"OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[]																			= {"OPTRE_Biofoam","OPTRE_Biofoam"};
-		linkedItems[] 																			= {"OPTRE_UNSC_ODST_vest_urban","OPTRE_UNSC_ODST_Helmet_urban","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
-		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_vest_urban","OPTRE_UNSC_ODST_Helmet_urban","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia","clan"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\ODST\data\uniform_Urban_co.paa"};
+		linkedItems[] 																			= {"OPTRE_UNSC_ODST_vest_Urban","OPTRE_UNSC_ODST_Helmet_Urban","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
+		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_vest_Urban","OPTRE_UNSC_ODST_Helmet_Urban","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
+		hiddenSelections[] 																		= {"camo1","insignia","clan"};
+		hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\ODST\data\uniform_urban_co.paa"};
 	};
-	class OPTRE_UNSC_ODST_Soldier_instructor: B_Soldier_F //Configures the unit part of the ODST Uniform
+	class OPTRE_UNSC_ODST_Soldier_Instructor: B_Soldier_F
 	{
 		scope																				= 2;
-		faction																				= "OPTRE_UNSC";
 		author																				= "Article 2 Studios";
 		displayName																			= "ODST Instructor";
-		vehicleClass																			= "OPTRE_UNSC_Man_ODST_class";
-		uniformAccessories[]																		= {};
-		nakedUniform 																			= "U_BasicBody";
-		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_instructor";
+		vehicleClass																		= "OPTRE_UNSC_Man_Training_class";
+		uniformClass																		= "OPTRE_UNSC_ODST_Uniform_Instructor";
 		model																				= "\OPTRE_UNSC_Units\ODST\training.p3d";
-		weapons[]																			= {"Throw","Put"};
-		respawnWeapons[]																		= {"Throw","Put"};
-		Items[]																				= {"OPTRE_Biofoam"};
-		RespawnItems[]																			= {"OPTRE_Biofoam"};
-		magazines[]																			= {};
-		respawnMagazines[]																		= {};
-		linkedItems[] 																			= {"OPTRE_UNSC_ODST_InstructorHat","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-		respawnLinkedItems[] 																		= {"OPTRE_UNSC_ODST_InstructorHat","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia","clan" }; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] 																	= {"OPTRE_UNSC_Units\ODST\data\odst_instr_co.paa"};
+		linkedItems[] 																		= {"OPTRE_UNSC_ODST_InstructorHat","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+		respawnLinkedItems[] 																= {"OPTRE_UNSC_ODST_InstructorHat","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+		hiddenSelections[] 																	= {"camo1","insignia","clan"};
+		hiddenSelectionsTextures[] 															= {"OPTRE_UNSC_Units\ODST\data\instructor_co.paa"};
 	};
-	class OPTRE_UNSC_ODST_Soldier_recruit: B_Soldier_F //Configures the unit part of the ODST Uniform
+	class OPTRE_UNSC_ODST_Soldier_Recruit: OPTRE_UNSC_ODST_Soldier_Instructor
 	{
-		scope																				= 2;
-		faction																				= "OPTRE_UNSC";
 		author																				= "Article 2 Studios";
 		displayName																			= "ODST Recruit";
-		vehicleClass																			= "OPTRE_UNSC_Man_ODST_class";
-		uniformAccessories[]																		= {};
-		nakedUniform 																			= "U_BasicBody";
-		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_recruit";
-		model																				= "\OPTRE_UNSC_Units\ODST\training.p3d";
-		weapons[]																			= {"Throw","Put"};
-		respawnWeapons[]																		= {"Throw","Put"};
-		Items[]																				= {"OPTRE_Biofoam"};
-		RespawnItems[]																			= {"OPTRE_Biofoam"};
-		magazines[]																			= {};
-		respawnMagazines[]																		= {};
-		linkedItems[] 																			= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-		respawnLinkedItems[] 																		= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-		hiddenSelections[] 																		= {"camo1","insignia","clan" }; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] 																	= {"OPTRE_UNSC_Units\ODST\data\basic_odst_co.paa"};
+		uniformClass																		= "OPTRE_UNSC_ODST_Uniform_Recruit";
+		hiddenSelections[] 																	= {"camo1","insignia","clan"};
+		hiddenSelectionsTextures[] 															= {"OPTRE_UNSC_Units\ODST\data\basic_odst_co.paa"};
 	};
-	
-	
-	
-	//SOLDIER CLASSES W/ WEAPONS
-
-		
-	class OPTRE_UNSC_ODST_Scout: OPTRE_UNSC_ODST_Soldier
+	class OPTRE_UNSC_ODST_Soldier_Scout: OPTRE_UNSC_ODST_Soldier
 	{
-		scope 											= 2;
-		displayName										= "ODST Scout";
-		backpack 										= "OPTRE_ILCS_Rucksack_Black";
-		weapons[] 										= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 								= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 									= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
-		respawnMagazines[] 								= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		scope 																				= 2;
+		displayName																			= "ODST Scout";
+		backpack 																			= "OPTRE_ILCS_Rucksack_Black";
+		weapons[] 																			= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] 																	= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
+		magazines[] 																		= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Orange","OPTRE_M2_Smoke_Green"};
+		respawnMagazines[] 																	= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Orange","OPTRE_M2_Smoke_Green"};
 	
 	};
-	class OPTRE_UNSC_ODST_Scout_AT: OPTRE_UNSC_ODST_Soldier
+	class OPTRE_UNSC_ODST_Soldier_Scout_AT: OPTRE_UNSC_ODST_Soldier
 	{
-		scope											= 2;
-		displayName										= "ODST Scout (AT)";
-		backpack 										= "OPTRE_ILCS_Black_Rockets"; //rockets inside?
-		weapons[] 										= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put","OPTRE_M41_SSR"};
-		respawnWeapons[] 								= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put","OPTRE_M41_SSR"};
-		magazines[] 									= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M41_Twin_HEAT","OPTRE_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
-		respawnMagazines[] 								= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M41_Twin_HEAT","OPTRE_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
-		icon = "iconManAT";
+		scope																				= 2;
+		displayName																			= "ODST Scout (AT)";
+		backpack 																			= "OPTRE_ILCS_Rucksack_Black";
+		weapons[] 																			= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] 																	= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put","OPTRE_M41_SSR"};
+		magazines[] 																		= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M41_Twin_HEAT","OPTRE_M41_Twin_HEAT","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		respawnMagazines[] 																	= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M41_Twin_HEAT","OPTRE_M41_Twin_HEAT","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		icon 																				= "iconManAT";
 	};
-	class OPTRE_UNSC_ODST_Rifleman_AR: OPTRE_UNSC_ODST_Soldier
+	class OPTRE_UNSC_ODST_Soldier_Rifleman_AR: OPTRE_UNSC_ODST_Soldier
 	{
-		scope											= 2;
-		displayName										= "ODST Rifleman (MA5)";
-		backpack 										= "OPTRE_ILCS_Rucksack_Black";
-		weapons[] 										= {"OPTRE_MA5B_AC","OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 								= {"OPTRE_MA5B_AC","OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 									= {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
-		respawnMagazines[] 								= {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		scope																				= 2;
+		displayName																			= "ODST Rifleman (MA5)";
+		backpack 																			= "OPTRE_ILCS_Rucksack_Black";
+		weapons[] 																			= {"OPTRE_MA5B_AC","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] 																	= {"OPTRE_MA5B_AC","OPTRE_M6G_SF","Throw","Put"};
+		magazines[] 																		= {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		respawnMagazines[] 																	= {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+	};
+	class OPTRE_UNSC_ODST_Soldier_Rifleman_BR: OPTRE_UNSC_ODST_Soldier
+	{
+		scope																				= 2;
+		displayName																			= "ODST Rifleman (BR55)";
+		backpack 																			= "OPTRE_ILCS_Rucksack_Black";
+		weapons[] 																			= {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] 																	= {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
+		magazines[] 																		= {"OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		respawnMagazines[] 																	= {"OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+	};
+	class OPTRE_UNSC_ODST_Soldier_Rifleman_AT: OPTRE_UNSC_ODST_Soldier
+	{
+		scope																				= 2;
+		displayName																			= "ODST Rifleman (AT)";
+		backpack 																			= "OPTRE_ILCS_Rucksack_Black";
+		weapons[] 																			= {"OPTRE_MA5B_AC","OPTRE_M6G_SF","Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] 																	= {"OPTRE_MA5B_AC","OPTRE_M6G_SF","Throw","Put","OPTRE_M41_SSR"};
+		magazines[] 																		= {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M41_Twin_HEAT","OPTRE_M41_Twin_HEAT","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		respawnMagazines[] 																	= {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M41_Twin_HEAT","OPTRE_M41_Twin_HEAT","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		icon 																				= "iconManAT";
+	};
+	class OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman: OPTRE_UNSC_ODST_Soldier
+	{
+		scope																				= 2;
+		displayName																			= "ODST Automatic Rifleman";
+		backpack																			= "OPTRE_ILCS_Rucksack_Black";
+		weapons[] 																			= {"OPTRE_M73","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] 																	= {"OPTRE_M73","OPTRE_M6G_SF","Throw","Put"};
+		magazines[] 																		= {"OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		respawnMagazines[] 																	= {"OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		icon 																				= "iconManMG";
+	};
+	class OPTRE_UNSC_ODST_Soldier_Marksman: OPTRE_UNSC_ODST_Soldier_Sniper
+	{
+		scope																				= 2;
+		displayName																			= "ODST Marksman";
+		backpack																			= "OPTRE_ILCS_Rucksack_Black";
+		weapons[] 																			= {"srifle_EBR_MRCO_pointer_F","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] 																	= {"srifle_EBR_MRCO_pointer_F","OPTRE_M6G_SF","Throw","Put"};
+		magazines[] 																		= {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		respawnMagazines[] 																	= {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
 	
 	};
-	class OPTRE_UNSC_ODST_Rifleman_BR: OPTRE_UNSC_ODST_Soldier
+	class OPTRE_UNSC_ODST_Soldier_Scout_Sniper: OPTRE_UNSC_ODST_Soldier_Sniper
 	{
-		scope											= 2;
-		displayName										= "ODST Rifleman (BR55)";
-		backpack 										= "OPTRE_ILCS_Rucksack_Black";
-		weapons[] 										= {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 								= {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 									= {"OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
-		respawnMagazines[] 								= {"OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
+		scope																				= 2;
+		displayName																			= "ODST Scout Sniper";
+		weapons[] 																			= {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] 																	= {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
+		magazines[] 																		= {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		respawnMagazines[] 																	= {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
 	
 	};
-	class OPTRE_UNSC_ODST_Rifleman_AT: OPTRE_UNSC_ODST_Soldier
+	class OPTRE_UNSC_ODST_Soldier_TeamLeader: OPTRE_UNSC_ODST_Soldier
 	{
-		scope											= 2;
-		displayName										= "ODST Rifleman (AT)";
-		backpack 										= "OPTRE_ILCS_Black_Rockets"; //rockets inside?
-		weapons[] 										= {"OPTRE_MA5B_AC","OPTRE_M6G_SF","Throw","Put","OPTRE_M41_SSR"};
-		respawnWeapons[] 								= {"OPTRE_MA5B_AC","OPTRE_M6G_SF","Throw","Put","OPTRE_M41_SSR"};
-		magazines[] 									= {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M41_Twin_HEAT","OPTRE_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
-		respawnMagazines[] 								= {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M41_Twin_HEAT","OPTRE_M41_Twin_HEAT","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
-		icon = "iconManAT";
+		scope																				= 2;
+		displayName																			= "ODST Team Leader";
+		backpack																			= "OPTRE_ILCS_Rucksack_Black";
+		linkedItems[] 																		= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_ODST_Helmet_Comms","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
+		respawnlinkedItems[] 																= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_ODST_Helmet_Comms","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG","OPTRE_Biofoam","OPTRE_NVG"};
+		weapons[] 																			= {"OPTRE_MA5BGL_AC","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] 																	= {"OPTRE_MA5BGL_AC","OPTRE_M6G_SF","Throw","Put"};
+		magazines[] 																		= {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag_Tracer","OPTRE_32Rnd_762x51_Mag_Tracer","OPTRE_32Rnd_762x51_Mag_Tracer","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Orange","OPTRE_M2_Smoke_Green"};
+		respawnMagazines[] 																	= {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag_Tracer","OPTRE_32Rnd_762x51_Mag_Tracer","OPTRE_32Rnd_762x51_Mag_Tracer","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Orange","OPTRE_M2_Smoke_Green"};
+		icon 																				= "iconManLeader";
 	};
-	class OPTRE_UNSC_ODST_Autorifleman: OPTRE_UNSC_ODST_Soldier
+	class OPTRE_UNSC_ODST_Soldier_Paramedic: OPTRE_UNSC_ODST_Soldier_Medic
 	{
-		scope											= 2;
-		displayName										= "ODST Autorifleman";
-		backpack										= "OPTRE_ILCS_Rucksack_Black";
-		weapons[] 										= {"OPTRE_M73","OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 								= {"OPTRE_M73","OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 									= {"OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
-		respawnMagazines[] 								= {"OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
-		icon = "iconManMG";
+		scope 																				= 2;
+		attendant 																			= 1;
+		displayName																			= "ODST Paramedic";
+		backpack 																			= "OPTRE_ILCS_Rucksack_Medical";
+		weapons[] 																			= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] 																	= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
+		magazines[] 																		= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
+		respawnMagazines[] 																	= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
+		icon 																				= "iconManMedic";
 	};
-	class OPTRE_UNSC_ODST_Marksman: OPTRE_UNSC_ODST_Soldier_Sniper
+	class OPTRE_UNSC_ODST_Soldier_DemolitionsExpert: OPTRE_UNSC_ODST_Soldier
 	{
-		scope											= 2;
-		displayName										= "ODST Marksman";
-		backpack										= "OPTRE_ILCS_Rucksack_Black";
-		weapons[] 										= {"srifle_EBR_MRCO_pointer_F","OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 								= {"srifle_EBR_MRCO_pointer_F","OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 									= {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
-		respawnMagazines[] 								= {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
-	
+		scope																				= 2;
+		displayName																			= "ODST Demolitions Expert";
+		backpack																			= "OPTRE_ILCS_Rucksack_Black";
+		linkedItems[] 																		= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_ODST_Helmet_Recon","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG","OPTRE_Biofoam","OPTRE_NVG"};
+		respawnlinkedItems[] 																= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_ODST_Helmet_Recon","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG","OPTRE_Biofoam","OPTRE_NVG"};
+		weapons[] 																			= {"OPTRE_MA5BGL_AC","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] 																	= {"OPTRE_MA5BGL_AC","OPTRE_M6G_SF","Throw","Put"};
+		magazines[] 																		= {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
+		respawnMagazines[] 																	= {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
+		icon 																				= "iconManExplosive";
 	};
-	class OPTRE_UNSC_ODST_Scout_Sniper: OPTRE_UNSC_ODST_Soldier_Sniper
+	class OPTRE_UNSC_ONI_Soldier_Operative: OPTRE_UNSC_ODST_Soldier_M
 	{
-		scope											= 2;
-		displayName										= "ODST Scout Sniper";
-		weapons[] 										= {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 								= {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 									= {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
-		respawnMagazines[] 								= {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellGreen"};
-	
+		scope																				= 2;
+		displayName																			= "ONI Field Operative";
+		vehicleClass																		= "OPTRE_UNSC_Man_ONI_class";
+		backpack																			= "OPTRE_ILCS_Rucksack_Black";
+		linkedItems[] 																		= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_Recon_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG","OPTRE_Biofoam","OPTRE_NVG"};
+		respawnLinkedItems[] 																= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_Recon_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG","OPTRE_Biofoam","OPTRE_NVG"};
+		weapons[] 																			= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] 																	= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
+		magazines[] 																		= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
+		respawnMagazines[] 																	= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
+		icon 																				= "iconManOfficer";
 	};
-	class OPTRE_UNSC_ODST_TeamLead: OPTRE_UNSC_ODST_Soldier
-	{
-		scope											= 2;
-		displayName										= "ODST Team Leader";
-		backpack										= "OPTRE_ILCS_Rucksack_Black";
-		linkedItems[] 									= {"OPTRE_UNSC_ODST_Vest","G_Balaclava_blk","OPTRE_UNSC_ODST_helmet_com","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG","OPTRE_Biofoam","OPTRE_NVG"};
-		respawnlinkedItems[] 							= {"OPTRE_UNSC_ODST_Vest","G_Balaclava_blk","OPTRE_UNSC_ODST_helmet_com","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG","OPTRE_Biofoam","OPTRE_NVG"};
-		weapons[] 										= {"OPTRE_MA5BGL_AC","OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 								= {"OPTRE_MA5BGL_AC","OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 									= {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag_Tracer","OPTRE_32Rnd_762x51_Mag_Tracer","OPTRE_32Rnd_762x51_Mag_Tracer","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
-		respawnMagazines[] 								= {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag_Tracer","OPTRE_32Rnd_762x51_Mag_Tracer","OPTRE_32Rnd_762x51_Mag_Tracer","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
-		icon = "iconManLeader";
-	};
-	class OPTRE_UNSC_ODST_Paramedic: OPTRE_UNSC_ODST_Soldier_medic
-	{
-		scope 											= 2;
-		attendant 										= 1;
-		displayName										= "ODST Paramedic";
-		cost 											= 300000;
-		backpack 										= "OPTRE_ILCS_Rucksack_Medical1";
-		vehicleClass									= "OPTRE_UNSC_Man_ODST_class";
-		weapons[] 										= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 								= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 									= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
-		respawnMagazines[] 								= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
-		hiddenSelections[] 								= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_rightknee2","attach_leftknee2","attach_pant1"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] 						= {"OPTRE_UNSC_Units\Army\data\armor_medic_co.paa","OPTRE_UNSC_Units\Army\data\uniform_cam3_co.paa"};
-		icon 											= "iconManMedic";
-	};
-	class OPTRE_UNSC_ODST_Demo: OPTRE_UNSC_ODST_Soldier
-	{
-		scope											= 2;
-		displayName										= "ODST Demolitions";
-		backpack										= "OPTRE_ILCS_Black_Exp";
-		linkedItems[] 									= {"OPTRE_UNSC_ODST_Vest","G_Balaclava_blk","OPTRE_UNSC_ODST_helmet_recon","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG","OPTRE_Biofoam","OPTRE_NVG"};
-		respawnlinkedItems[] 							= {"OPTRE_UNSC_ODST_Vest","G_Balaclava_blk","OPTRE_UNSC_ODST_helmet_recon","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG","OPTRE_Biofoam","OPTRE_NVG"};
-		weapons[] 										= {"OPTRE_MA5BGL_AC","OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 								= {"OPTRE_MA5BGL_AC","OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 									= {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
-		respawnMagazines[] 								= {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
-		icon = "iconManExplosive";
-	};
-	class OPTRE_UNSC_ODST_ONI_Op: OPTRE_UNSC_ODST_Soldier_light
-	{
-		scope											= 2;
-		displayName										= "ONI Operator";
-		linkedItems[] 									= {"OPTRE_UNSC_ODST_Vest","G_Balaclava_blk","OPTRE_UNSC_Recon_helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG","OPTRE_Biofoam","OPTRE_NVG"};
-		respawnLinkedItems[] 							= {"OPTRE_UNSC_ODST_Vest","G_Balaclava_blk","OPTRE_UNSC_Recon_helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG","OPTRE_Biofoam","OPTRE_NVG"};
-		weapons[] 										= {"OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 								= {"OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 									= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
-		respawnMagazines[]	 							= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","HandGrenade","HandGrenade","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
-		icon = "iconManOfficer";
-	};
+	// UNITS END
+	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 };
 
 class cfgWeapons
@@ -562,664 +442,541 @@ class cfgWeapons
 	class VestItem;
 	class HeadgearItem;
 	class H_HelmetB;
+	class H_Cap_oli;
 	class Binocular;
 	
-	// UNIFORMS
-	
-	class OPTRE_UNSC_ODST_uniform_base: U_B_CombatUniform_mcam //This is the other part of configuring the uniform, the actual uniform item
+	// UNIFORMS START
+	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	class OPTRE_UNSC_ODST_Uniform: U_B_CombatUniform_mcam
 	{
-		scope																					= 0;
+		scope																					= 2;
 		author																					= "Article 2 Studios";
-		displayName																				= "-";
+		displayName																				= "[UNSC] ODST BDU (Full)";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_uniform.paa";
 		model																					= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
 			uniformModel																		= "-";
 			uniformClass																		= "OPTRE_UNSC_ODST_Soldier";
-			containerClass																		= "Supply50";
-			mass																				= 45; //The weight and storage capacity of the uniform
-			modelSides[] 																		= {6};
-		};
-	};
-	class OPTRE_UNSC_ODST_uniform: OPTRE_UNSC_ODST_uniform_base
-	{
-		scope																					= 2;
-		author																					= "Article 2 Studios";
-		displayName																				= "[UNSC] ODST Undersuit";
-		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_uniform.paa";
-		class ItemInfo: UniformItem
-		{
-			uniformModel																		= "-";
-			uniformClass																		= "OPTRE_UNSC_ODST_Soldier";
 			containerClass																		= "Supply60";
-			mass																				= 40;
+			mass																				= 50;
 			modelSides[] 																		= {6};
 		};
 	};
-	class OPTRE_UNSC_ODST_uniform_light: OPTRE_UNSC_ODST_uniform_base
+	class OPTRE_UNSC_ODST_Uniform_L: OPTRE_UNSC_ODST_Uniform
 	{
-		scope																					= 2;
 		author																					= "Article 2 Studios";
-		displayName																				= "[UNSC] ODST Light Undersuit";
-		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_uniform.paa";
-		class ItemInfo: UniformItem
+		displayName																				= "[UNSC] ODST BDU (Light)";
+		class ItemInfo: ItemInfo
 		{
-			uniformModel																		= "-";
-			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_light";
-			containerClass																		= "Supply50";
+			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_L";
 			mass																				= 30;
-			modelSides[] 																		= {6};
 		};
 	};
-	class OPTRE_UNSC_ODST_uniform_medium: OPTRE_UNSC_ODST_uniform_base
+	class OPTRE_UNSC_ODST_Uniform_M: OPTRE_UNSC_ODST_Uniform
 	{
-		scope																					= 2;
 		author																					= "Article 2 Studios";
-		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_uniform.paa";
-		displayName																				= "[UNSC] ODST Medium Undersuit";
-		class ItemInfo: UniformItem
+		displayName																				= "[UNSC] ODST BDU (Medium)";
+		class ItemInfo: ItemInfo
 		{
-			uniformModel																		= "-";
-			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_medium";
-			containerClass																		= "Supply50";
-			mass																				= 35;
-			modelSides[] 																		= {6};
+			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_M";
+			mass																				= 40;
 		};
 	};
-	class OPTRE_UNSC_ODST_uniform_Sniper: OPTRE_UNSC_ODST_uniform_base
+	class OPTRE_UNSC_ODST_Uniform_Sniper: OPTRE_UNSC_ODST_Uniform
 	{
-		scope																					= 2;
 		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_uniform_left.paa";
-		displayName																				= "[UNSC] ODST Sniper Undersuit";
+		displayName																				= "[UNSC] ODST BDU (Sniper)";
 		class ItemInfo: UniformItem
 		{
-			uniformModel																		= "-";
-			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_sniper";
-			containerClass																		= "Supply50";
+			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_Sniper";
 			mass																				= 35;
-			modelSides[] 																		= {6};
 		};
 	};
-	class OPTRE_UNSC_ODST_uniform_Medic: OPTRE_UNSC_ODST_uniform_base
+	class OPTRE_UNSC_ODST_Uniform_Medic: OPTRE_UNSC_ODST_Uniform
 	{
-		scope																					= 2;
 		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_uniform_med.paa";
-		displayName																				= "[UNSC] ODST Medic Undersuit";
+		displayName																				= "[UNSC] ODST BDU (Full) [Medic]";
 		class ItemInfo: UniformItem
 		{
-			uniformModel																		= "-";
-			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_medic";
-			containerClass																		= "Supply60";
-			mass																				= 40;
-			modelSides[] 																		= {6};
+			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_Medic";
 		};
 	};
-	class OPTRE_UNSC_ODST_uniform_scorch: OPTRE_UNSC_ODST_uniform
+	class OPTRE_UNSC_ODST_Uniform_Scorch: OPTRE_UNSC_ODST_Uniform
 	{
-		scope																					= 2;
 		author																					= "Article 2 Studios";
-		displayName																				= "[UNSC] Scorch's ODST Undersuit";
+		displayName																				= "[UNSC] ODST BDU (Full) [Scorch]";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_scorch";
+			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_Scorch";
 		};
 	};
-	class OPTRE_UNSC_ODST_uniform_thedog: OPTRE_UNSC_ODST_uniform
+	class OPTRE_UNSC_ODST_Uniform_TheDog: OPTRE_UNSC_ODST_Uniform
 	{
-		scope																					= 2;
 		author																					= "Article 2 Studios";
-		displayName																				= "[UNSC] TheDog's ODST Undersuit";
+		displayName																				= "[UNSC] ODST BDU (Full) [The Dog]";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_thedog";
+			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_TheDog";
 		};
 	};
-	class OPTRE_UNSC_ODST_uniform_stirls: OPTRE_UNSC_ODST_uniform
+	class OPTRE_UNSC_ODST_Uniform_Stirls: OPTRE_UNSC_ODST_Uniform
 	{
-		scope																					= 2;
 		author																					= "Article 2 Studios";
-		displayName																				= "[UNSC] Stirl's ODST Undersuit";
+		displayName																				= "[UNSC] ODST BDU (Full) [Stirls]";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_stirls";
+			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_Stirls";
 		};
 	};
-	class OPTRE_UNSC_ODST_uniform_Urban: OPTRE_UNSC_ODST_uniform
+	class OPTRE_UNSC_ODST_Uniform_Urban: OPTRE_UNSC_ODST_Uniform
 	{
-		scope																					= 2;
 		author																					= "Article 2 Studios";
-		displayName																				= "[UNSC] Urban's ODST Undersuit";
+		displayName																				= "[UNSC] ODST BDU (Full) [Urban]";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_urban";
+			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_Urban";
 		};
 	};
-	class OPTRE_UNSC_ODST_uniform_zero: OPTRE_UNSC_ODST_uniform
+	class OPTRE_UNSC_ODST_Uniform_Zero: OPTRE_UNSC_ODST_Uniform
 	{
-		scope																					= 2;
 		author																					= "Article 2 Studios";
-		displayName																				= "[UNSC] Zero's ODST Undersuit";
+		displayName																				= "[UNSC] ODST BDU (Full) [Zero]";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_zero";
+			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_Zero";
 		};
 	};
-	class OPTRE_UNSC_ODST_uniform_instructor: OPTRE_UNSC_ODST_uniform_base
+	class OPTRE_UNSC_ODST_Uniform_Instructor: OPTRE_UNSC_ODST_Uniform
 	{
-		scope																					= 2;
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_instr.paa";
 		author																					= "Article 2 Studios";
-		displayName																				= "[UNSC] ODST Instructor Uniform";
+		displayName																				= "[UNSC] ODST Fatigues [Instructor]";
 		class ItemInfo: UniformItem
 		{
 			uniformModel																		= "-";
-			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_instructor";
-			containerClass																		= "Supply20";
-			mass																				= 30;
+			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_Instructor";
+			containerClass																		= "Supply30";
+			mass																				= 20;
 			modelSides[] 																		= {6};
 		};
 	};
-		class OPTRE_UNSC_ODST_uniform_recruit: OPTRE_UNSC_ODST_uniform_base
+		class OPTRE_UNSC_ODST_uniform_recruit: OPTRE_UNSC_ODST_Uniform
 	{
-		scope																					= 2;
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_recruit.paa";
 		author																					= "Article 2 Studios";
-		displayName																				= "[UNSC] ODST Recruit Uniform";
-		class ItemInfo: UniformItem
+		displayName																				= "[UNSC] ODST Fatigues [Recruit]";
+		class ItemInfo: ItemInfo
 		{
-			uniformModel																		= "-";
-			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_recruit";
-			containerClass																		= "Supply20";
-			mass																				= 30;
-			modelSides[] 																		= {6};
+			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_Recruit";
 		};
 	};
-	
-	// VESTS
-	
-	class OPTRE_UNSC_ODST_vest_base: V_PlateCarrier1_rgr //The vest base class
+	// UNIFORMS END
+	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	// VESTS START
+	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	class OPTRE_UNSC_ODST_Vest_Base: V_PlateCarrier1_rgr
 	{	
-		scope 																					= 0; /// scope needs to be 2 to have a visible class
+		scope 																					= 0;
 		author																					= "Article 2 Studios";
-		displayName  																			= "-"; /// how would the stuff be displayed in inventory and on ground
-		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_vest.paa"; /// this icon fits the vest surprisingly well
-		model   																				= "\OPTRE_UNSC_Units\ODST\vest.p3d"; /// what model does the vest use
+		displayName  																			= "-";
+		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_vest.paa";
+		model   																				= "\OPTRE_UNSC_Units\ODST\vest.p3d";
 		class ItemInfo: VestItem 
 		{
 			uniformModel 																		= "\OPTRE_UNSC_Units\ODST\vest.p3d";
-			armor 																				= 40; /// what protection does the vest provide
+			armor 																				= 40;
 			containerClass 																		= "Supply180";
 			mass 																				= 80;
-			passThrough 																		= 0.1; /// coef of damage passed to total damage
+			passThrough 																		= 0.1;
 			modelSides[] 																		= {6};
 		};
 	};
-	class OPTRE_UNSC_ODST_vest: OPTRE_UNSC_ODST_vest_base
+	class OPTRE_UNSC_ODST_Vest: OPTRE_UNSC_ODST_Vest_Base
 	{	
-		scope 																					= 2; /// scope needs to be 2 to have a visible class
+		scope 																					= 2;
 		author																					= "Article 2 Studios";
-		displayName  																			= "[UNSC] ODST M53 Body Armor"; /// how would the stuff be displayed in inventory and on ground
-		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_vest.paa"; /// this icon fits the vest surprisingly well
-		model     																				= "\OPTRE_UNSC_Units\ODST\vest.p3d"; /// what model does the vest use
-		hiddenSelections[]   																	= {"camo1","camo2","attach_knife","attach_nade"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"optre_unsc_units\odst\data\odst_vest_basic_co.tga",""}; /// what texture is going to be used
+		displayName  																			= "[UNSC] M53 Body Armor [ODST]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_knife","attach_nade"};
+		hiddenSelectionsTextures[]   															= {"optre_unsc_units\odst\data\vest_basic_co.paa",""};
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   																= {"camo1","camo2","attach_knife","attach_nade"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"optre_unsc_units\odst\data\odst_vest_basic_co.tga",""}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2","attach_knife","attach_nade"};
+			hiddenSelectionsTextures[]   														= {"optre_unsc_units\odst\data\vest_basic_co.paa",""};
 		};
 	};
-	class OPTRE_UNSC_ODST_vest_medic: OPTRE_UNSC_ODST_vest_base
+	class OPTRE_UNSC_ODST_Vest_Medic: OPTRE_UNSC_ODST_Vest
 	{	
-		scope 																					= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
-		displayName  																			= "[UNSC] ODST M53 Body Armor (Medic)"; /// how would the stuff be displayed in inventory and on ground
-		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_vest_med.paa"; /// this icon fits the vest surprisingly well
-		model     																				= "\OPTRE_UNSC_Units\ODST\vest.p3d"; /// what model does the vest use
-		hiddenSelections[]   																	= {"camo1","camo2","attach_knife","attach_nade"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_medic_co.paa",""}; /// what texture is going to be used
+		displayName  																			= "[UNSC] M53 Body Armor [Medic]";
+		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_vest_med.paa";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_knife","attach_nade"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_medic_co.paa",""};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelections[]   																= {"camo1","camo2","attach_knife","attach_nade"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_medic_co.paa",""}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2","attach_knife","attach_nade"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_medic_co.paa",""};
 		};
 	};
-	class OPTRE_UNSC_ODST_vest_scorch: OPTRE_UNSC_ODST_vest
+	class OPTRE_UNSC_ODST_Vest_Scorch: OPTRE_UNSC_ODST_Vest
 	{	
-		scope 																					= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
-		displayName  																			= "[UNSC] Scorch's ODST Armor"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_knife"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_scorch_co.paa",""}; /// what texture is going to be used
+		displayName  																			= "[UNSC] M53 Body Armor [Scorch]";
+		hiddenSelections[]   																	= {"camo1","camo2"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_scorch_co.paa",""};
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   																= {"camo1","camo2","attach_knife"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_scorch_co.paa",""}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2","attach_knife"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_scorch_co.paa",""};
 		};
 	};
-		class OPTRE_UNSC_ODST_vest_thedog: OPTRE_UNSC_ODST_vest
+	class OPTRE_UNSC_ODST_vest_TheDog: OPTRE_UNSC_ODST_Vest
 	{	
-		scope 																					= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
-		displayName  																			= "[UNSC] TheDog's ODST Armor"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_knife","attach_nade"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\odst_vest_thedog_co.paa",""}; /// what texture is going to be used
+		displayName  																			= "[UNSC] M53 Body Armor [The Dog]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_knife","attach_nade"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\odst_vest_thedog_co.paa",""};
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   																= {"camo1","camo2","attach_knife","attach_nade"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\odst_vest_thedog_co.paa",""}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2","attach_knife","attach_nade"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\odst_vest_thedog_co.paa",""};
 		};
 	};
-		class OPTRE_UNSC_ODST_vest_zero: OPTRE_UNSC_ODST_vest
+	class OPTRE_UNSC_ODST_Vest_Zero: OPTRE_UNSC_ODST_Vest
 	{	
-		scope 																					= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
-		displayName  																			= "[UNSC] Zero's ODST Armor"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_knife","attach_nade"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_zero_co.paa",""}; /// what texture is going to be used
+		displayName  																			= "[UNSC] M53 Body Armor [Zero]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_knife","attach_nade"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_zero_co.paa",""};
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   																= {"camo1","camo2","attach_knife","attach_nade"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_zero_co.paa",""}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2","attach_knife","attach_nade"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_zero_co.paa",""};
 		};
 	};
-		class OPTRE_UNSC_ODST_vest_stirls: OPTRE_UNSC_ODST_vest
+	class OPTRE_UNSC_ODST_Vest_Stirls: OPTRE_UNSC_ODST_Vest
 	{	
-		scope 																					= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
-		displayName  																			= "[UNSC] Stirl's ODST Armor"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_nade"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_stirls_co.paa",""}; /// what texture is going to be used
+		displayName  																			= "[UNSC] M53 Body Armor [Stirls]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_nade"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_stirls_co.paa",""};
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   																= {"camo1","camo2","attach_nade"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_stirls_co.paa",""}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2","attach_nade"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_stirls_co.paa",""};
 		};
 	};
-	class OPTRE_UNSC_ODST_vest_urban: OPTRE_UNSC_ODST_vest
+	class OPTRE_UNSC_ODST_Vest_Urban: OPTRE_UNSC_ODST_Vest
 	{	
-		scope 																					= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
-		displayName  																			= "[UNSC] Urban's ODST Armor"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_nade"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_Urban_co.paa",""}; /// what texture is going to be used
+		displayName  																			= "[UNSC] M53 Body Armor [Urban]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_nade"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_Urban_co.paa",""};
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   																= {"camo1","camo2","attach_nade"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_Urban_co.paa",""}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2","attach_nade"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_urban_co.paa",""};
 		};
 	};
+	// VESTS END
+	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	
-	// HELMETS
-	
-	class OPTRE_UNSC_ODST_helmet_base: H_HelmetB
+	// HELMETS START
+	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	class OPTRE_UNSC_ODST_Helmet_Base: H_HelmetB
 	{	
-		scope   																				= 0; /// scope needs to be 2 to have a visible class
+		scope   																				= 0;
 		author																					= "Article 2 Studios";
-		displayName    																			= "-"; /// how would the stuff be displayed in inventory and on ground
-		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet.paa"; /// this icon fits the vest surprisingly well
-		model     																				= "\OPTRE_UNSC_Units\ODST\helmet.p3d"; /// what model does the vest use
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_co.paa"}; /// what texture is going to be used
-		allowedFacewear[] 																		= {""};
+		displayName    																			= "-";
+		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet.paa";
+		model     																				= "\OPTRE_UNSC_Units\ODST\helmet.p3d";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_co.paa"};
 		class ItemInfo: HeadgearItem 
 		{
-			uniformModel   																		= "\OPTRE_UNSC_Units\ODST\helmet.p3d"; /// what model does the vest use
-			armor   																			= 8; /// what protection does the vest provide
+			uniformModel   																		= "\OPTRE_UNSC_Units\ODST\helmet.p3d";
+			armor   																			= 10;
 			mass   																				= 40;
 			modelSides[]   																		= {6};
-			passThrough   																		= 0.1; /// coef of damage passed to total damage
-			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_co.paa"}; /// what texture is going to be used
+			passThrough   																		= 0.1;
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_co.paa"};
 		};
 	};
-	class OPTRE_UNSC_ODST_helmet: OPTRE_UNSC_ODST_helmet_base
+	class OPTRE_UNSC_ODST_Helmet: OPTRE_UNSC_ODST_Helmet_Base
 	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
+		scope   																			  	= 2;
 		author																					= "Article 2 Studios";
-		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet.paa";
-		displayName    																			= "[UNSC] ODST CH253 Helmet"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_co.paa"}; /// what texture is going to be used
+		displayName    																			= "[UNSC] CH253 Helmet [ODST]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_co.paa"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_co.paa"}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_co.paa"};
 		};
 	};
-	class OPTRE_UNSC_ODST_helmet_recon: OPTRE_UNSC_ODST_helmet_base
+	class OPTRE_UNSC_ODST_Helmet_Recon: OPTRE_UNSC_ODST_Helmet
 	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet_recon.paa";
-		displayName    																			= "[UNSC] ODST CH253 Helmet (Recon)"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_communication","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet2_co.paa","OPTRE_UNSC_Units\ODST\data\helmet2_co.paa"}; /// what texture is going to be used
+		displayName    																			= "[UNSC] CH253 Helmet (Recon) [ODST]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_communication","attach_rangefinder","attach_rebreather"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet2_co.paa","OPTRE_UNSC_Units\ODST\data\helmet2_co.paa"};
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   																= {"camo1","camo2","attach_communication","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet2_co.paa","OPTRE_UNSC_Units\ODST\data\helmet2_co.paa"}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2","attach_communication","attach_rangefinder","attach_rebreather"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet2_co.paa","OPTRE_UNSC_Units\ODST\data\helmet2_co.paa"};
 		};
 	};
-	class OPTRE_UNSC_ODST_helmet_sniper: OPTRE_UNSC_ODST_helmet_base
+	class OPTRE_UNSC_ODST_Helmet_Sniper: OPTRE_UNSC_ODST_Helmet
 	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet_sniper.paa";
-		displayName    																			= "[UNSC] ODST CH253 Helmet (Sniper)"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather", "attach_laser"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet1_co.paa","OPTRE_UNSC_Units\ODST\data\helmet1_co.paa"}; /// what texture is going to be used
+		displayName    																			= "[UNSC] CH253 Helmet (Sniper) [ODST]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather", "attach_laser"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet1_co.paa","OPTRE_UNSC_Units\ODST\data\helmet1_co.paa"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather", "attach_laser"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet1_co.paa","OPTRE_UNSC_Units\ODST\data\helmet1_co.paa"}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather", "attach_laser"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet1_co.paa","OPTRE_UNSC_Units\ODST\data\helmet1_co.paa"};
 		};
 	};
-	class OPTRE_UNSC_ODST_helmet_com: OPTRE_UNSC_ODST_helmet_base
+	class OPTRE_UNSC_ODST_Helmet_Comms: OPTRE_UNSC_ODST_Helmet
 	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet_como.paa";
-		displayName    																			= "[UNSC] ODST CH253 Helmet (Comms)"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_rebreather","attach_rangefinder","attach_laser"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet3_co.paa","OPTRE_UNSC_Units\ODST\data\helmet3_co.paa"}; /// what texture is going to be used
+		displayName    																			= "[UNSC] CH253 Helmet (Comms) [ODST]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_rebreather","attach_rangefinder","attach_laser"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet3_co.paa","OPTRE_UNSC_Units\ODST\data\helmet3_co.paa"};
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   																= {"camo1","camo2","attach_flashlight","attach_rebreather","attach_rangefinder","attach_laser"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet3_co.paa","OPTRE_UNSC_Units\ODST\data\helmet3_co.paa"}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2","attach_flashlight","attach_rebreather","attach_rangefinder","attach_laser"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet3_co.paa","OPTRE_UNSC_Units\ODST\data\helmet3_co.paa"};
 		};
 	};
-	class OPTRE_UNSC_ODST_helmet_Medic: OPTRE_UNSC_ODST_helmet_base
+	class OPTRE_UNSC_ODST_Helmet_Medic: OPTRE_UNSC_ODST_Helmet
 	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet_med.paa";
-		displayName    																			= "[UNSC] ODST CH253 Helmet (Medic)"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather","attach_rangefinder", "attach_laser"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_medic_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_medic_co.paa"}; /// what texture is going to be used
+		displayName    																			= "[UNSC] CH253 Helmet [Medic]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather","attach_rangefinder", "attach_laser"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_medic_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_medic_co.paa"};
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather","attach_rangefinder", "attach_laser"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_medic_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_medic_co.paa"}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather","attach_rangefinder", "attach_laser"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_medic_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_medic_co.paa"};
 		};
 	};
-	class OPTRE_UNSC_ODST_helmet_scorch: OPTRE_UNSC_ODST_helmet
+	class OPTRE_UNSC_ODST_Helmet_Scorch: OPTRE_UNSC_ODST_Helmet
 	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
-		displayName    																			= "[UNSC] Scorch's ODST Helmet"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_rangefinder"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa"}; /// what texture is going to be used
+		displayName    																			= "[UNSC] CH253 Helmet [Scorch]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_rangefinder"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_rangefinder"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa"}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_flashlight","attach_rangefinder"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa"};
 		};
 	};
-		class OPTRE_UNSC_ODST_helmet_thedog: OPTRE_UNSC_ODST_helmet_scorch
+	class OPTRE_UNSC_ODST_Helmet_TheDog: OPTRE_UNSC_ODST_Helmet
 	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
-		displayName    																			= "[UNSC] TheDog's ODST Helmet"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa","OPTRE_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa"}; /// what texture is going to be used
+		displayName    																			= "[UNSC] CH253 Helmet [The Dog]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa","OPTRE_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa","OPTRE_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa"}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa","OPTRE_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa"};
 		};
 	};
-		class OPTRE_UNSC_ODST_helmet_zero: OPTRE_UNSC_ODST_helmet_scorch
+	class OPTRE_UNSC_ODST_Helmet_Zero: OPTRE_UNSC_ODST_Helmet
 	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
-		displayName    																			= "[UNSC] Zero's ODST Helmet"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa"}; /// what texture is going to be used
+		displayName    																			= "[UNSC] CH253 Helmet [Zero]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa"}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa"};
 		};
 	};
-		class OPTRE_UNSC_ODST_helmet_stirls: OPTRE_UNSC_ODST_helmet_scorch
+		class OPTRE_UNSC_ODST_Helmet_Stirls: OPTRE_UNSC_ODST_Helmet
 	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
-		displayName    																			= "[UNSC] Stirl's ODST Helmet"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_stirls_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_stirls_co.paa"}; /// what texture is going to be used
+		displayName    																			= "[UNSC] CH253 Helmet [Stirls]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_stirls_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_stirls_co.paa"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_stirls_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_stirls_co.paa"}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_stirls_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_stirls_co.paa"};
 		};
 	};
-	class OPTRE_UNSC_ODST_helmet_urban: OPTRE_UNSC_ODST_helmet_scorch
+	class OPTRE_UNSC_ODST_Helmet_Urban: OPTRE_UNSC_ODST_Helmet
 	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
-		displayName    																			= "[UNSC] Urban's ODST Helmet"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_Urban_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_Urban_co.paa"}; /// what texture is going to be used
+		displayName    																			= "[UNSC] CH253 Helmet [Urban]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_Urban_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_urban_co.paa"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_Urban_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_Urban_co.paa"}; /// what texture is going to be used
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_Urban_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_urban_co.paa"};
 		};
 	};
-	class OPTRE_UNSC_ODST_helmet_dp: OPTRE_UNSC_ODST_helmet_base
+	class OPTRE_UNSC_ODST_Helmet_dp: OPTRE_UNSC_ODST_Helmet
 	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
-		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet.paa";
-		displayName    																			= "[UNSC] ODST CH253 Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_ca.paa"}; /// what texture is going to be used
-		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_ca.paa"}; /// what texture is going to be used
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
 		};
 	};
-	class OPTRE_UNSC_ODST_helmet_sniper_dp: OPTRE_UNSC_ODST_helmet_base
+	class OPTRE_UNSC_ODST_Helmet_Recon_dp: OPTRE_UNSC_ODST_Helmet_Recon
 	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
-		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet_sniper.paa";
-		displayName    																			= "[UNSC] ODST CH253 Helmet (Sniper) [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather", "attach_laser"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet1_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_ca.paa"}; /// what texture is going to be used
-		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather", "attach_laser"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet1_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_ca.paa"}; /// what texture is going to be used
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
-		};
-	};
-	class OPTRE_UNSC_ODST_helmet_com_dp: OPTRE_UNSC_ODST_helmet_base
-	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Article 2 Studios";
-		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet_como.paa";
-		displayName    																			= "[UNSC] ODST CH253 Helmet (Comms) [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_rebreather","attach_rangefinder","attach_laser"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet3_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_ca.paa"}; /// what texture is going to be used
-		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelections[]   																= {"camo1","camo2","attach_flashlight","attach_rebreather","attach_rangefinder","attach_laser"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet3_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_ca.paa"}; /// what texture is going to be used
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
-		};
-	};
-	class OPTRE_UNSC_ODST_helmet_recon_dp: OPTRE_UNSC_ODST_helmet_base
-	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Article 2 Studios";
-		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet_recon.paa";
-		displayName    																			= "[UNSC] ODST CH253 Helmet (Recon) [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_rebreather","attach_rangefinder","attach_laser"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_ca.paa"}; /// what texture is going to be used
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet3_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_ca.paa"}; /// what texture is going to be used
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
-		};
-	};
-	class OPTRE_UNSC_ODST_helmet_Medic_dp: OPTRE_UNSC_ODST_helmet_base
-	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Article 2 Studios";
-		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet_med.paa";
-		displayName    																			= "[UNSC] ODST CH253 Helmet (Medic) [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather","attach_rangefinder", "attach_laser"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_medic_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_ca.paa"}; /// what texture is going to be used
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_rebreather","attach_rangefinder", "attach_laser"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_medic_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_ca.paa"}; /// what texture is going to be used
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
-		};
-	};
-	class OPTRE_UNSC_ODST_helmet_thedog_dp: OPTRE_UNSC_ODST_helmet_scorch
-	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
-		author																					= "Article 2 Studios";
-		displayName    																			= "[UNSC] TheDog's ODST Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa","OPTRE_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa"}; /// what texture is going to be used
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
 		class ItemInfo: ItemInfo 
 		{
-			
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa","OPTRE_UNSC_Units\ODST\data\odst_helmet_thedog_co.paa"}; /// what texture is going to be used
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
 		};
 	};
-		class OPTRE_UNSC_ODST_helmet_scorch_dp: OPTRE_UNSC_ODST_helmet_scorch
+	class OPTRE_UNSC_ODST_Helmet_Sniper_dp: OPTRE_UNSC_ODST_Helmet_Sniper
 	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
-		displayName    																			= "[UNSC] Scorch's ODST Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_rangefinder"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_ca.paa"}; /// what texture is going to be used
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
 		class ItemInfo: ItemInfo 
 		{
-			
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_rangefinder"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa"}; /// what texture is going to be used
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
 		};
 	};
-			class OPTRE_UNSC_ODST_helmet_stirls_dp: OPTRE_UNSC_ODST_helmet_scorch
+	class OPTRE_UNSC_ODST_Helmet_Comms_dp: OPTRE_UNSC_ODST_Helmet_Comms
 	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
-		displayName    																			= "[UNSC] Stirl's ODST Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_stirls_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_stirls_co.paa"}; /// what texture is going to be used
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
 		class ItemInfo: ItemInfo 
 		{
-			
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_stirls_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_stirls_co.paa"}; /// what texture is going to be used
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
 		};
 	};
-	class OPTRE_UNSC_ODST_helmet_urban_dp: OPTRE_UNSC_ODST_helmet_scorch
+	class OPTRE_UNSC_ODST_Helmet_Medic_dp: OPTRE_UNSC_ODST_Helmet_Medic
 	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
-		displayName    																			= "[UNSC] Urban's ODST Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_urban_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_urban_co.paa"}; /// what texture is going to be used
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
 		class ItemInfo: ItemInfo 
 		{
-			
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_urban_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_urban_co.paa"}; /// what texture is going to be used
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
 		};
 	};
-			class OPTRE_UNSC_ODST_helmet_zero_dp: OPTRE_UNSC_ODST_helmet_scorch
+	class OPTRE_UNSC_ODST_Helmet_Scorch_dp: OPTRE_UNSC_ODST_Helmet_Scorch
 	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
-		displayName    																			= "[UNSC] Zero's ODST Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa"}; /// what texture is going to be used
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
 		class ItemInfo: ItemInfo 
 		{
-			
-		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa"}; /// what texture is going to be used
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","OPTRE_UNSC_Units\ODST\data\helmet_visor2.rvmat"}; /// what texture is going to be used
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
 		};
 	};
-	class OPTRE_UNSC_Recon_helmet: OPTRE_UNSC_ODST_helmet_base
+	class OPTRE_UNSC_ODST_Helmet_TheDog_dp: OPTRE_UNSC_ODST_Helmet_TheDog
 	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
+		author																					= "Article 2 Studios";
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_Zero_dp: OPTRE_UNSC_ODST_Helmet_Zero
+	{	
+		author																					= "Article 2 Studios";
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_Stirls_dp: OPTRE_UNSC_ODST_Helmet_Stirls
+	{	
+		author																					= "Article 2 Studios";
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_Urban_dp: OPTRE_UNSC_ODST_Helmet_Urban
+	{	
+		author																					= "Article 2 Studios";
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		};
+	};
+	class OPTRE_UNSC_Recon_Helmet: OPTRE_UNSC_ODST_Helmet
+	{	
 		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_recon.paa";
-		displayName    																			= "[UNSC] ONI Recon Helmet"; /// how would the stuff be displayed in inventory and on ground
-		model     																				= "\OPTRE_UNSC_Units\ODST\recon_helmet.p3d"; /// what model does the vest use
-		hiddenSelections[]   																	= {"camo1","camo2"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\recon_helmet_co.paa","OPTRE_UNSC_Units\ODST\data\recon_helmet_co.paa"}; /// what texture is going to be used
+		displayName    																			= "[UNSC] R/B5 Helmet";
+		model     																				= "\OPTRE_UNSC_Units\ODST\recon_helmet.p3d";
+		hiddenSelections[]   																	= {"camo1","camo2"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\recon_helmet_co.paa","OPTRE_UNSC_Units\ODST\data\recon_helmet_co.paa"};
 		class ItemInfo: ItemInfo
 		{
-			uniformModel   																		= "\OPTRE_UNSC_Units\ODST\recon_helmet.p3d"; /// what model does the vest use
-			armor   																			= 10; /// what protection does the vest provide
+			uniformModel   																		= "\OPTRE_UNSC_Units\ODST\recon_helmet.p3d";
+			armor   																			= 10;
 			mass   																				= 20;
-			passThrough   																		= 0.1; /// coef of damage passed to total damage
-			hiddenSelections[]   																= {"camo1","camo2"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\recon_helmet_co.paa","OPTRE_UNSC_Units\ODST\data\recon_helmet_co.paa"}; /// what texture is going to be used
+			passThrough   																		= 0.1;
+			hiddenSelections[]   																= {"camo1","camo2"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\recon_helmet_co.paa","OPTRE_UNSC_Units\ODST\data\recon_helmet_co.paa"};
 		};
 	};
 	class OPTRE_UNSC_Recon_helmet_dp: OPTRE_UNSC_Recon_helmet
 	{	
 		author																					= "Article 2 Studios";
-		displayName    																			= "[UNSC] ONI Recon Helmet [Depolarized]"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1","camo2"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\recon_helmet_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_ca.paa"}; /// what texture is going to be used
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
 		class ItemInfo: ItemInfo 
 		{
-			uniformModel   																		= "\OPTRE_UNSC_Units\ODST\recon_helmet.p3d"; /// what model does the vest use
-			hiddenSelections[]   																= {"camo1","camo2"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\recon_helmet_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_ca.paa"}; /// what texture is going to be used
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
 		};
 	};
-	class OPTRE_UNSC_ODST_InstructorHat: OPTRE_UNSC_ODST_helmet_base
+	class OPTRE_Cap_ODST: H_Cap_oli
 	{	
-		scope   																			  	= 2; /// scope needs to be 2 to have a visible class
 		author																					= "Article 2 Studios";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_hat.paa";
-		displayName    																			= "[UNSC] ODST Instructor Cap"; /// how would the stuff be displayed in inventory and on ground
-		hiddenSelections[]   																	= {"camo1"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   																= {"OPTRE_UNSC_Units\ODST\data\instructor_hat_co.paa"}; /// what texture is going to be used
-		class ItemInfo: HeadgearItem 
-		{
-			uniformModel   																		= "\OPTRE_UNSC_Units\ODST\instructor_hat.p3d"; /// what model does the vest use
-			armor   																			= 0; /// what protection does the vest provide
-			mass   																				= 5;
-			modelSides[]   																		= {6};
-			passThrough   																		= 1; /// coef of damage passed to total damage
-		hiddenSelections[]   																	= {"camo1"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   																= {"OPTRE_UNSC_Units\ODST\data\instructor_hat_co.paa"}; /// what texture is going to be used
-		};
+		displayName    																			= "[UNSC] Cap [ODST]";
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\instructor_hat_co.paa"};
 	};
+	// HELMETS END
+	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 };

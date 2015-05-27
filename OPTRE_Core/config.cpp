@@ -105,6 +105,14 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
 	};
+	class OPTRE_UNSC_Man_Army_class
+	{
+		displayName 																			= "Men (Army)";
+		author																					= "Article 2 Studios";
+		scope																					= 2;
+		scopeArsenal																			= 2;
+		scopeCurator																			= 2;
+	};
 	class OPTRE_UNSC_Man_Army_W_class
 	{
 		displayName 																			= "Men (Army Woodland)";
@@ -131,7 +139,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Man_Army_T_class
 	{
-		displayName 																			= "Men (Army Tropical)";
+		displayName 																			= "Men (Army Tropic)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -156,14 +164,6 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Man_ODST_class
 	{
 		displayName 																			= "Men (ODST)";
-		author																					= "Article 2 Studios";
-		scope																					= 2;
-		scopeArsenal																			= 2;
-		scopeCurator																			= 2;
-	};
-	class OPTRE_UNSC_Man_SPECWARCOM_class
-	{
-		displayName 																			= "Men (SPECWARCOM)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -196,6 +196,14 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Man_AirForce_class
 	{
 		displayName																				= "Men (Air Force)";
+		author																					= "Article 2 Studios";
+		scope																					= 2;
+		scopeArsenal																			= 2;
+		scopeCurator																			= 2;
+	};
+	class OPTRE_UNSC_Man_ONI_class
+	{
+		displayName																				= "Men (ONI)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
