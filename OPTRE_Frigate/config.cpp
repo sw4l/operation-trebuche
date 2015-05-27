@@ -309,13 +309,6 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
-	class OPTRE_Frigate_Final_Dawn_Wreck: OPTRE_Frigate_Final_Dawn
-	{
-		displayName = "FFG-437 Final Dawn";
-		model = "\OPTRE_frigate\finaldawn_wreck.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
 	/*class OPTRE_1_box: Static
 	{
 		scope = 1;
@@ -398,7 +391,7 @@ class CfgVehicles
 				weapons[] = {"autocannon_40mm_CTWS"};
 				magazines[] = {"60Rnd_40mm_GPR_Tracer_Red_shells","60Rnd_40mm_GPR_Tracer_Red_shells","60Rnd_40mm_GPR_Tracer_Red_shells","60Rnd_40mm_GPR_Tracer_Red_shells"};
 				memoryPointGunnerOptics = "gunnerview";
-				gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";
+				gunnerOpticsModel="A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
 				gunnerOpticsShowCursor=1;
 				turretInfoType="RscWeaponZeroing";
 				visionMode[] = {"Normal","Ti"};

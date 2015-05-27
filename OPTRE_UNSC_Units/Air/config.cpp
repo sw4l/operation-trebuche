@@ -148,7 +148,7 @@ class cfgWeapons
 		scope															= 0;
 		author															= "Article 2 Studios";
 		displayName														= "-";
-		picture   														= "\OPTRE_UNSC_Units\marines\icons\marine_uniform_des.paa";
+		picture   														= "\OPTRE_UNSC_Units\marines\icons\marine_uniform_hvy.paa";
 		model															= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
@@ -203,12 +203,12 @@ class cfgWeapons
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_vest_vac.paa";
 		model     										= "\OPTRE_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
 		hiddenSelections[]   							= {"camo1","camo2","camo3","attach_knife"}; /// what selection in model could have different textures
-		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_airforce_co.paa","OPTRE_UNSC_Units\Airforce\data\addons_cam3_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"}; /// what texture is going to be used
+		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Air\data\vest_airforce_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"}; /// what texture is going to be used
 		class ItemInfo: ItemInfo
 		{
 			uniformModel   								= "\OPTRE_UNSC_Units\Army\vest.p3d"; /// what model does the vest use
 			hiddenSelections[]   						= {"camo1","camo2","camo3","attach_knife"}; /// what selection in model could have different textures
-			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_airforce_co.paa","OPTRE_UNSC_Units\Airforce\data\addons_cam3_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"}; /// what texture is going to be used
+			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_airforce_co.paa","OPTRE_UNSC_Units\Marines\data\addons_cam3_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"}; /// what texture is going to be used
 			passThrough 								= 0.15; /// coef of damage passed to total damage
 		};
 	};

@@ -16,7 +16,7 @@ class CfgVehicles
 	class OPTRE_Ammo_Magic_Box: NATO_Box_Base
 	{
 		scope = 2;
-		vehicleClass = "OPTRE_Ammo_class";
+		vehicleClass = "OPTRE_UNSC_Ammo_class";
 		displayName = "[OPTRE] Magic Box";
 		model = "\A3\weapons_F\AmmoBoxes\Supplydrop";
 		author = "Article 2 Studios";

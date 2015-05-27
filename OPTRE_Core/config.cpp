@@ -400,7 +400,7 @@ class CfgSounds
 	class OPTRE_Sounds_HUD_Visor
 	{
 		name = "[OPTRE] HUD Visor";
-		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_HUD_Visor.ogg", 0.25, 1};
+		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_Visor.ogg", 0.25, 1};
 		author	= "Article 2 Studios";
 		titles[] = {};
 	};

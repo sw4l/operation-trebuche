@@ -61,7 +61,7 @@ class CfgMagazines
 		ammo								= "OPTRE_B_762x51_Ball";
 		count								= 100;
 		initspeed							= 850;
-		picture 							= "\OPTRE_Weapons\MG\icon\magazine.paa";
+		picture 							= "\OPTRE_Weapons\MG\icons\magazine.paa";
 		descriptionshort					= "100 Round Box Magazine<br>7.62x51mm";
 		mass								= 40;
 		tracersEvery 						= 0;
@@ -72,7 +72,7 @@ class CfgMagazines
 		displayname							= "100Rnd 7.62x51mm Box Magazine (Tracers)";
 		displaynameshort					= "7.62x51mm Tracer";
 		ammo								= "OPTRE_B_762x51_Tracer";
-				picture 					= "\OPTRE_Weapons\MG\icon\magazine.paa";
+				picture 					= "\OPTRE_Weapons\MG\icons\magazine.paa";
 		descriptionshort					= "100 Round Box Magazine<br>7.62x51mm<br>Tracer";
 		tracersEvery 						= 1;
 		lastRoundsTracer 					= 100;
