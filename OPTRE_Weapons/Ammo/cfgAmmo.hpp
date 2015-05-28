@@ -648,32 +648,26 @@ class CfgAmmo
 	};
 	class OPTRE_G_M2_RSmoke: OPTRE_G_M2_Smoke
 	{
-		model  							= "\OPTRE_Weapons\explosives\m2_smk_grenade_red.p3d";
 		smokeColor[]  					= {0.8438,0.1383,0.1353,1};
 	};
 	class OPTRE_G_M2_GSmoke: OPTRE_G_M2_Smoke
 	{
-		model  							= "\OPTRE_Weapons\explosives\m2_smk_grenade_green.p3d";
 		smokeColor[]  					= {0.2125,0.6258,0.4891,1};
 	};
 	class OPTRE_G_M2_BSmoke: OPTRE_G_M2_Smoke
 	{
-		model  							= "\OPTRE_Weapons\explosives\m2_smk_grenade_blue.p3d";
 		smokeColor[]  					= {0.1183,0.1867,1,1};
 	};
 	class OPTRE_G_M2_OSmoke: OPTRE_G_M2_Smoke
 	{
-		model  							= "\OPTRE_Weapons\explosives\m2_smk_grenade_orange.p3d";
 		smokeColor[]  					= {0.6697,0.2275,0.10053,1};
 	};
 	class OPTRE_G_M2_YSmoke: OPTRE_G_M2_Smoke
 	{
-		model  							= "\OPTRE_Weapons\explosives\m2_smk_grenade_yellow.p3d";
 		smokeColor[]  					= {0.9883,0.8606,0.0719,1};
 	};
 	class OPTRE_G_M2_PSmoke: OPTRE_G_M2_Smoke
 	{
-		model  							= "\OPTRE_Weapons\explosives\m2_smk_grenade_purple.p3d";
 		smokeColor[]  					= {0.4341,0.1388,0.4144,1};
 	};
 };

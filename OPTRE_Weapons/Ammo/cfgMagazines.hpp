@@ -77,6 +77,29 @@ class CfgMagazines
 		tracersEvery 						= 1;
 		lastRoundsTracer 					= 100;
 	};
+	class OPTRE_15Rnd_762x51_Mag: OPTRE_60Rnd_762x51_Mag
+	{
+		model								= "\OPTRE_Weapons\AR\AR_Magazine.p3d";
+		displayname							= "15Rnd 7.62x51mm Magazine";
+		displaynameshort					= "7.62x51mm";
+		ammo								= "OPTRE_B_762x51_Ball";
+		count								= 15;
+		initspeed							= 900;
+		picture 							= "\OPTRE_weapons\ar\icons\magazine.paa";
+		descriptionshort					= "15 Round Magazine<br>7.62x51mm";
+		mass								= 10;
+		tracersEvery 						= 0;
+		lastRoundsTracer 					= 3;
+	};
+	class OPTRE_15Rnd_762x51_Mag_Tracer: OPTRE_15Rnd_762x51_Mag
+	{
+		displayname							= "15Rnd 7.62x51mm Magazine (Tracers)";
+		displaynameshort					= "7.62x51mm Tracer";
+		ammo								= "OPTRE_B_762x51_Tracer";
+		descriptionshort					= "15 Round Magazine<br>7.62x51mm<br>Tracer";
+		tracersEvery 						= 1;
+		lastRoundsTracer 					= 15;
+	};
 	
 	//9.5x40mm (BR, M73)
 	class OPTRE_36Rnd_95x40_Mag: 20Rnd_762x51_Mag
@@ -86,7 +109,7 @@ class CfgMagazines
 		displaynameshort					= "9.5x40mm";
 		ammo								= "OPTRE_B_95x40_Ball";
 		count								= 36;
-		initspeed							= 900;
+		initspeed							= 800;
 		picture 							= "\OPTRE_weapons\br\icons\magazine.paa";
 		descriptionshort					= "36 Round Magazine<br>9.5x40mm";
 		mass								= 8;
@@ -420,7 +443,7 @@ class CfgMagazines
 	class OPTRE_M2_Smoke_Blue: OPTRE_M2_Smoke
 	{
 		displayName = "M2 Smoke Grenade (Blue)";
-		model = "\OPTRE_Weapons\explosives\m2_smk_grenade_blue.p3d";
+		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
 		ammo = "OPTRE_G_M2_BSmoke";
 		descriptionShort = "Smoke Grenade<br>Blue";
 		displayNameShort = "Blue Smoke";
@@ -428,7 +451,7 @@ class CfgMagazines
 	class OPTRE_M2_Smoke_Yellow: OPTRE_M2_Smoke
 	{
 		displayName = "M2 Smoke Grenade (Yellow)";
-		model = "\OPTRE_Weapons\explosives\m2_smk_grenade_yellow.p3d";
+		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
 		ammo = "OPTRE_G_M2_YSmoke";
 		descriptionShort = "Smoke Grenade<br>Yellow";
 		displayNameShort = "Yellow Smoke";
@@ -436,7 +459,7 @@ class CfgMagazines
 	class OPTRE_M2_Smoke_Red: OPTRE_M2_Smoke
 	{
 		displayName = "M2 Smoke Grenade (Red)";
-		model = "\OPTRE_Weapons\explosives\m2_smk_grenade_red.p3d";
+		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
 		ammo = "OPTRE_G_M2_RSmoke";
 		descriptionShort = "Smoke Grenade<br>Red";
 		displayNameShort = "Red Smoke";
@@ -444,7 +467,7 @@ class CfgMagazines
 	class OPTRE_M2_Smoke_Green: OPTRE_M2_Smoke
 	{
 		displayName = "M2 Smoke Grenade (Green)";
-		model = "\OPTRE_Weapons\explosives\m2_smk_grenade_green.p3d";
+		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
 		ammo = "OPTRE_G_M2_GSmoke";
 		descriptionShort = "Smoke Grenade<br>Green";
 		displayNameShort = "Green Smoke";
@@ -452,7 +475,7 @@ class CfgMagazines
 	class OPTRE_M2_Smoke_Orange: OPTRE_M2_Smoke
 	{
 		displayName = "M2 Smoke Grenade (Orange)";
-		model = "\OPTRE_Weapons\explosives\m2_smk_grenade_orange.p3d";
+		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
 		ammo = "OPTRE_G_M2_OSmoke";
 		descriptionShort = "Smoke Grenade<br>Orange";
 		displayNameShort = "Orange Smoke";
@@ -460,7 +483,7 @@ class CfgMagazines
 	class OPTRE_M2_Smoke_Purple: OPTRE_M2_Smoke
 	{
 		displayName = "M2 Smoke Grenade (Purple)";
-		model = "\OPTRE_Weapons\explosives\m2_smk_grenade_purple.p3d";
+		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
 		ammo = "OPTRE_G_M2_PSmoke";
 		descriptionShort = "Smoke Grenade<br>Purple";
 		displayNameShort = "Purple Smoke";

@@ -58,9 +58,18 @@ class CfgVehicles
         scope 																					= 2;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Crewman [Red]";
-        uniformClass 																			= "OPTRE_UNSC_Navy_Uniform_Orange";
+        uniformClass 																			= "OPTRE_UNSC_Navy_Uniform_Red";
         hiddenSelections[] 																		= {"Camo"};
-        hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\Navy\data\coveralls_ORANGE_co.paa"};
+        hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\Navy\data\coveralls_RED_co.paa"};
+    };
+	class OPTRE_UNSC_Navy_Soldier_Blue: OPTRE_UNSC_Navy_Soldier 
+	{
+        scope 																					= 2;
+		author																					= "Article 2 Studios";
+        displayName																				= "Naval Crewman [Blue]";
+        uniformClass 																			= "OPTRE_UNSC_Navy_Uniform_Blue";
+        hiddenSelections[] 																		= {"Camo"};
+        hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\Navy\data\coveralls_BLUE_co.paa"};
     };
 	class OPTRE_UNSC_Navy_Soldier_Gray: OPTRE_UNSC_Navy_Soldier 
 	{
@@ -84,7 +93,7 @@ class CfgVehicles
 	{
         scope 																					= 2;
 		author																					= "Article 2 Studios";
-        displayName																				= "Naval Pilot";
+        displayName																				= "Naval Aviator";
         uniformClass 																			= "OPTRE_UNSC_Navy_Uniform_Olive";
         hiddenSelections[] 																		= {"Camo"};
         hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\Navy\data\coveralls_OLIVE_co.paa"};

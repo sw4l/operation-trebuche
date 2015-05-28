@@ -8,7 +8,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "OPTRE_Weapons\Rocket\data\M41_Rocket_nohq.paa";
+	texture = "OPTRE_Weapons\Rockets\data\M41_Rocket_nohq.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture = "OPTRE_Weapons\Rocket\data\M41_Rocket_as.paa";
+	texture = "OPTRE_Weapons\Rockets\data\M41_Rocket_as.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "OPTRE_Weapons\Rocket\data\M41_Rocket_smdi.paa";
+	texture = "OPTRE_Weapons\Rockets\data\M41_Rocket_smdi.paa";
 	uvSource = "tex";
 	class uvTransform
 	{

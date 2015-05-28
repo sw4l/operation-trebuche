@@ -25,55 +25,55 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Structure_class";
-		displayName = "Container Small (Green)";
+		displayName = "Container Small [Green]";
 	};
 	class OPTRE_Building_Container_Large_Green: Land_Cargo_HQ_V1_F
 	{
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Structure_class";
-		displayName = "Container Large (Green)";
+		displayName = "Container Large [Green]";
 	};
 	class OPTRE_Building_Container_Tower_Green: Land_Cargo_Patrol_V1_F
 	{
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Structure_class";
-		displayName = "Container Tower (Green)";
+		displayName = "Container Tower [Green]";
 	};
 	class OPTRE_Building_Container_Small_Tan: Land_Cargo_House_V3_F
 	{
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Structure_class";
-		displayName = "Container Small (Tan)";
+		displayName = "Container Small [Tan]";
 	};
 	class OPTRE_Building_Container_Large_Tan: Land_Cargo_HQ_V3_F
 	{
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Structure_class";
-		displayName = "Container Large (Tan)";
+		displayName = "Container Large [Tan]";
 	};
 	class OPTRE_Building_Container_Tower_Tan: Land_Cargo_Patrol_V3_F
 	{
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Structure_class";
-		displayName = "Guard Tower (Tan)";
+		displayName = "Guard Tower [Tan]";
 	};
 	class OPTRE_Building_Container_Small_Medical: Land_Medevac_house_V1_F
 	{
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Structure_class";
-		displayName = "Container Small (Medical)";
+		displayName = "Container Small [Medical]";
 	};
 	class OPTRE_Building_Container_Large_Medical: Land_Medevac_HQ_V1_F
 	{
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Structure_class";
-		displayName = "Container Large (Medical)";
+		displayName = "Container Large [Medical]";
 	};
 };

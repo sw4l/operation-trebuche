@@ -80,15 +80,12 @@ class Mode_FullAuto;
 		{
 		scope 				= 2;																	/// available in Arsenal
 		displayName			= "SRS-99 Bipod";													/// name of item in Inventory (and Arsenal)
-		picture				= "\A3\Weapons_F_Mark\Data\UI\gear_accu_bipod_01_snd_CA.paa";			/// icon in Inventory
 		model 				= "\OPTRE_Weapons\Sniper\SRS99-Bipod.p3d";						/// path to model
 		class ItemInfo: InventoryUnderItem_Base_F
         {
             deployedPivot	= "bipod";		/// what point should be used to be on surface while unfolded
 			hasBipod		= true;			/// bipod obviously has a bipod
-			mass			= 10;			/// what is the mass of the object
-			soundBipodDown[] 	= {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_BLU_down",db-3, 1, 20};	/// what sound should be played during unfolding
-			soundBipodUp[] 		= {"A3\Sounds_F_Mark\arsenal\sfx\bipods\Bipod_BLU_up",db-3, 1, 20};		/// what sound should be played during folding			
+			mass			= 10;			/// what is the mass of the object	
         };
 		inertia = 0.2;						/// how much does the bipod add to inertia of the weapon
 		};	
@@ -101,7 +98,7 @@ class Mode_FullAuto;
                     model                                                                   = "\OPTRE_Weapons\Sniper\Sniper.p3d";
                     displayName                                                             = "SRS99D-S2 Sniper Rifle";
                     descriptionShort                                                        = "UNSC Sniper Rifle";
-                    picture = "\OPTRE_weapons\sniper\icons\sniper.paa";
+                    picture 																= "\OPTRE_weapons\sniper\icons\sniper.paa";
                     magazines[]                                                             = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_HVAP_Mag","OPTRE_4Rnd_145x114_HEDP_Mag"};
                     modelOptics                                                             = "-";
                     muzzlePos                                                               = "usti hlavne";
@@ -118,8 +115,8 @@ class Mode_FullAuto;
                     dexterity                                                               = 1.25;
 					maxRecoilSway 															= 0.01;
 					swayDecaySpeed 															= 1;
-					drySound[] 																= {"A3\Sounds_F\arsenal\weapons\LongRange\M320\dry_M320",0.5011872,1,20};
-					reloadMagazineSound[] 													= {"A3\Sounds_F\arsenal\weapons\LongRange\M320\reload_M320",1.0,1,10};
+					drySound[] 																= {"A3\Sounds_F\weapons\LongRange\M320\dry_M320",0.5011872,1,20};
+					reloadMagazineSound[] 													= {"A3\Sounds_F\weapons\LongRange\M320\reload_M320",1.0,1,10};
 					class GunParticles: GunParticles
                     {
 						class FirstEffect
