@@ -35,7 +35,7 @@ class CfgVehicles //This configures units and backpacks
 		linkedItems[] 													= {"OPTRE_UNSC_M52_Helmet_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		respawnLinkedItems[] 											= {"OPTRE_UNSC_M52_Helmet_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_co.paa","OPTRE_UNSC_Units\Army\data\uniform_co.paa"};
+		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_co.paa","OPTRE_UNSC_Units\Army\data\uniform_woodland_co.paa"};
 		armor															= 2;
 		armorStructural													= 5;
 		class HitPoints
@@ -90,7 +90,7 @@ class CfgVehicles //This configures units and backpacks
 		scope															= 1;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_M_WDL";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_pant2"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder2","attach_rightshoulder2","attach_pant2","attach_leftknee2","attach_rightknee2"};
 		class HitPoints: HitPoints
 		{
 			class HitHead: HitHead
@@ -116,7 +116,7 @@ class CfgVehicles //This configures units and backpacks
 		scope															= 1;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_L_WDL";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_pant2"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_pant2","attach_leftknee2","attach_rightknee2"};
 		class HitPoints: HitPoints
 		{
 			class HitHead: HitHead
@@ -137,7 +137,6 @@ class CfgVehicles //This configures units and backpacks
 			};
 		};
 	};
-	
 	class OPTRE_UNSC_Army_Soldier_DES: OPTRE_UNSC_Army_Soldier_WDL
 	{
 		scope															= 1;
@@ -147,20 +146,21 @@ class CfgVehicles //This configures units and backpacks
 		linkedItems[] 													= {"OPTRE_UNSC_M52_Helmet_DES","OPTRE_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		respawnLinkedItems[] 											= {"OPTRE_UNSC_M52_Helmet_DES","OPTRE_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_desert_co.paa","OPTRE_UNSC_Units\Army\data\uniform_desert_co.paa"};
 	};
 	class OPTRE_UNSC_Army_Soldier_M_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
 		scope															= 1;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_M_DES";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_pant2"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2"};
 	};
 	class OPTRE_UNSC_Army_Soldier_L_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
 		scope															= 1;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_L_DES";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_pant2"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2"};
 	};
 	
 	class OPTRE_UNSC_Army_Soldier_TRO: OPTRE_UNSC_Army_Soldier_WDL
@@ -170,20 +170,21 @@ class CfgVehicles //This configures units and backpacks
 		vehicleClass													= "OPTRE_UNSC_Man_Army_T_class";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_TRO";
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_co.paa","OPTRE_UNSC_Units\Army\data\uniform_tropic_co.paa"};
 	};
 	class OPTRE_UNSC_Army_Soldier_M_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
 		scope															= 1;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_M_TRO";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_pant2"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_leftshin","attach_rightshin"};
 	};
 	class OPTRE_UNSC_Army_Soldier_L_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
 		scope															= 1;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_L_TRO";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_pant2"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2"};
 	};
 	
 	class OPTRE_UNSC_Army_Soldier_ARI: OPTRE_UNSC_Army_Soldier_DES
@@ -193,20 +194,21 @@ class CfgVehicles //This configures units and backpacks
 		vehicleClass													= "OPTRE_UNSC_Man_Army_A_class";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_ARI";
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_desert_co.paa","OPTRE_UNSC_Units\Army\data\uniform_arid_co.paa"};
 	};
 	class OPTRE_UNSC_Army_Soldier_M_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
 		scope															= 1;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_M_ARI";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_pant2"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_leftshin","attach_rightshin"};
 	};
 	class OPTRE_UNSC_Army_Soldier_L_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
 		scope															= 1;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_L_ARI";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_pant2"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2"};
 	};
 	
 	class OPTRE_UNSC_Army_Soldier_SNO: OPTRE_UNSC_Army_Soldier_WDL
@@ -218,20 +220,21 @@ class CfgVehicles //This configures units and backpacks
 		linkedItems[] 													= {"OPTRE_UNSC_M52_Helmet_SNO","OPTRE_UNSC_CH252_Helmet_SNO","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		respawnLinkedItems[] 											= {"OPTRE_UNSC_M52_Helmet_SNO","OPTRE_UNSC_CH252_Helmet_SNO","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_snow_co.paa","OPTRE_UNSC_Units\Army\data\uniform_snow_co.paa"};
 	};
 	class OPTRE_UNSC_Army_Soldier_M_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
 		scope															= 1;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_M_SNO";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_pant2"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_leftshin","attach_rightshin"};
 	};
 	class OPTRE_UNSC_Army_Soldier_L_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
 		scope															= 1;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_L_SNO";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_pant2"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2"};
 	};
 	// BASE UNITS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -244,6 +247,7 @@ class CfgVehicles //This configures units and backpacks
 		displayName														= "Medic";
 		attendant 														= 1;
 		vehicleClass													= "OPTRE_UNSC_Man_Army_class";
+		uniformClass													= "OPTRE_UNSC_Army_Uniform_Medic";
 		linkedItems[] 													= {"OPTRE_UNSC_M52_Vest_MED","OPTRE_UNSC_CH252_Helmet_MED","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
 		respawnLinkedItems[] 											= {"OPTRE_UNSC_M52_Vest_MED","OPTRE_UNSC_CH252_Helmet_MED","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
 		backpack 														= "OPTRE_ILCS_Rucksack_Medical";
@@ -253,6 +257,7 @@ class CfgVehicles //This configures units and backpacks
 		RespawnItems[]													= {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_MedKit"};
 		magazines[] 													= {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke"};
 		respawnMagazines[] 												= {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke"};
+		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_medic_co.paa","OPTRE_UNSC_Units\Army\data\uniform_medic_co.paa"};
 	};
 	// UNITS(MISC) END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1488,6 +1493,7 @@ class CfgVehicles //This configures units and backpacks
 class cfgWeapons
 {
 	class ItemCore;
+	class ItemInfo;
 	class U_B_CombatUniform_mcam;
 	class UniformItem;
 	class V_PlateCarrier1_rgr;
@@ -1559,8 +1565,11 @@ class cfgWeapons
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_des_hvy.paa";
 		class ItemInfo: UniformItem
 		{
+			uniformModel								= "-";
 			uniformClass								= "OPTRE_UNSC_Army_Soldier_DES";
+			containerClass								= "Supply40";
 			mass										= 50;
+			modelSides[] 								= {6};
 		};
 	};
 	class OPTRE_UNSC_Army_Uniform_M_DES: OPTRE_UNSC_Army_Uniform_DES
@@ -1593,8 +1602,11 @@ class cfgWeapons
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
 		class ItemInfo: UniformItem
 		{
+			uniformModel								= "-";
 			uniformClass								= "OPTRE_UNSC_Army_Soldier_TRO";
+			containerClass								= "Supply40";
 			mass										= 50;
+			modelSides[] 								= {6};
 		};
 	};
 	class OPTRE_UNSC_Army_Uniform_M_TRO: OPTRE_UNSC_Army_Uniform_TRO
@@ -1627,8 +1639,11 @@ class cfgWeapons
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_des_hvy.paa";
 		class ItemInfo: UniformItem
 		{
+			uniformModel								= "-";
 			uniformClass								= "OPTRE_UNSC_Army_Soldier_ARI";
+			containerClass								= "Supply40";
 			mass										= 50;
+			modelSides[] 								= {6};
 		};
 	};
 	class OPTRE_UNSC_Army_Uniform_M_ARI: OPTRE_UNSC_Army_Uniform_ARI
@@ -1661,8 +1676,11 @@ class cfgWeapons
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_sno_hvy.paa";
 		class ItemInfo: UniformItem
 		{
+			uniformModel								= "-";
 			uniformClass								= "OPTRE_UNSC_Army_Soldier_SNO";
+			containerClass								= "Supply40";
 			mass										= 50;
+			modelSides[] 								= {6};
 		};
 	};
 	class OPTRE_UNSC_Army_Uniform_M_SNO: OPTRE_UNSC_Army_Uniform_SNO
@@ -1685,6 +1703,22 @@ class cfgWeapons
 		{
 			uniformClass								= "OPTRE_UNSC_Army_Soldier_L_SNO";
 			mass										= 30;
+		};
+	};
+	class OPTRE_UNSC_Army_Uniform_Medic: U_B_CombatUniform_mcam
+	{
+		scope											= 2;
+		author											= "Article 2 Studios";
+		displayName										= "[UNSC] Medical BDU";
+		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_med.paa";
+		model											= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel								= "-";
+			uniformClass								= "OPTRE_UNSC_Army_Soldier_Medic";
+			containerClass								= "Supply40";
+			mass										= 50;
+			modelSides[] 								= {6};
 		};
 	};
 	// UNIFORMS END
@@ -1713,7 +1747,7 @@ class cfgWeapons
 	{	
 		scope											= 2;
 		author											= "Article 2 Studios";
-		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl.paa";
+		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		displayName  									= "[UNSC] M52 Body Armor [Woodland]";
 		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_neck","attach_pack","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa","OPTRE_UNSC_Units\Army\data\pouches_olive_co.paa"};
@@ -1726,7 +1760,7 @@ class cfgWeapons
 	class OPTRE_UNSC_M52_Vest_Vacuum_WDL: OPTRE_UNSC_M52_Vest_WDL
 	{	
 		author											= "Article 2 Studios";
-		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl_vac.paa";
+		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor [Woodland]";
 		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_neck","attach_pack","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa","OPTRE_UNSC_Units\Army\data\pouches_olive_co.paa"};
@@ -1740,7 +1774,7 @@ class cfgWeapons
 	class OPTRE_UNSC_M52_Vest_Sniper_WDL: OPTRE_UNSC_M52_Vest_WDL
 	{	
 		author											= "Article 2 Studios";
-		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl_gil.paa";
+		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl_gil.paa";
 		displayName  									= "[UNSC] M52[S] Body Armor [Woodland]";
 		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","attach_neck"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa","OPTRE_UNSC_Units\Army\data\pouches_olive_co.paa"};
@@ -1754,7 +1788,7 @@ class cfgWeapons
 	class OPTRE_UNSC_M52_Vest_DES: OPTRE_UNSC_M52_Vest_WDL
 	{	
 		author											= "Article 2 Studios";
-		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_des.paa";
+		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_des.paa";
 		displayName  									= "[UNSC] M52 Body Armor [Desert]";
 		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_neck","attach_pack","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_desert_co.paa","OPTRE_UNSC_Units\Army\data\addons_desert_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_brown_co.paa"};
@@ -1767,7 +1801,7 @@ class cfgWeapons
 	class OPTRE_UNSC_M52_Vest_Vacuum_DES: OPTRE_UNSC_M52_Vest_DES
 	{	
 		author											= "Article 2 Studios";
-		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_des_vac.paa";
+		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_des_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor [Desert]";
 		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_neck","attach_pack","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_desert_co.paa","OPTRE_UNSC_Units\Army\data\addons_desert_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_brown_co.paa"};
@@ -1781,7 +1815,7 @@ class cfgWeapons
 	class OPTRE_UNSC_M52_Vest_Sniper_DES: OPTRE_UNSC_M52_Vest_DES
 	{	
 		author											= "Article 2 Studios";
-		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_des_gil.paa";
+		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_des_gil.paa";
 		displayName  									= "[UNSC] M52[S] Body Armor [Desert]";
 		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","attach_neck"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_desert_co.paa","OPTRE_UNSC_Units\Army\data\addons_desert_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_brown_co.paa"};
@@ -1795,7 +1829,7 @@ class cfgWeapons
 	class OPTRE_UNSC_M52_Vest_SNO: OPTRE_UNSC_M52_Vest_WDL
 	{	
 		author											= "Article 2 Studios";
-		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_sno.paa";
+		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_sno.paa";
 		displayName  									= "[UNSC] M52 Body Armor [Snow]";
 		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_neck","attach_pack","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_snow_co.paa","OPTRE_UNSC_Units\Army\data\addons_snow_co.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"};
@@ -1808,7 +1842,7 @@ class cfgWeapons
 	class OPTRE_UNSC_M52_Vest_Vacuum_SNO: OPTRE_UNSC_M52_Vest_SNO
 	{	
 		author											= "Article 2 Studios";
-		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_sno_vac.paa";
+		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_sno_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor [Snow]";
 		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_neck","attach_pack","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_snow_co.paa","OPTRE_UNSC_Units\Army\data\addons_snow_co.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"};
@@ -1823,7 +1857,7 @@ class cfgWeapons
 	class OPTRE_UNSC_M52_Vest_MED: OPTRE_UNSC_M52_Vest_WDL
 	{	
 		author											= "Article 2 Studios";
-		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_med.paa";
+		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_med.paa";
 		displayName  									= "[UNSC] M52 Body Armor [Medic]";
 		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_neck","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"};
@@ -1836,7 +1870,7 @@ class cfgWeapons
 	class OPTRE_UNSC_M52_Vest_Vacuum_MED: OPTRE_UNSC_M52_Vest_MED
 	{	
 		author											= "Article 2 Studios";
-		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_med_vac.paa";
+		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_med_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor [Medic]";
 		hiddenSelections[]   							= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_neck","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\vest_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"};
@@ -1859,7 +1893,7 @@ class cfgWeapons
 		displayName    									= "-";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl.paa";
 		model     										= "\OPTRE_UNSC_Units\Army\helmet.p3d";
-		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_face"};
+		hiddenSelections[]   							= {"camo1","camo2","attach_face"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"};
 		class ItemInfo: HeadgearItem 
 		{
@@ -1868,7 +1902,7 @@ class cfgWeapons
 			mass   										= 40;
 			modelSides[]   								= {6};
 			passThrough   								= 0.25;
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_face"};
+			hiddenSelections[]   						= {"camo1","camo2","attach_face"};
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"};
 		};
 	};		
@@ -1878,11 +1912,11 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252 Helmet [Woodland]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl.paa";
-		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_face","attach_rangefinder","attach_ghillie"};
+		hiddenSelections[]   							= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"};
-		class ItemInfo: HeadgearItem 
+		class ItemInfo: ItemInfo 
 		{
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_face","attach_rangefinder","attach_ghillie"}; /// what selection in model could have different textures
+			hiddenSelections[]   						= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"}; /// what texture is going to be used
 		};
 	};		
@@ -1893,7 +1927,7 @@ class cfgWeapons
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl_vac.paa";
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"};
-		class ItemInfo: HeadgearItem 
+		class ItemInfo: ItemInfo 
 		{
 			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"}; /// what texture is going to be used
@@ -1906,7 +1940,7 @@ class cfgWeapons
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl_gil.paa";
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_face"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"};
-		class ItemInfo: HeadgearItem 
+		class ItemInfo: ItemInfo 
 		{
 			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_face"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"}; /// what texture is going to be used
@@ -1920,7 +1954,7 @@ class cfgWeapons
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_des.paa";
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_face","attach_rangefinder","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_desert_co.paa","OPTRE_UNSC_Units\Army\data\addons_desert_ca.paa"};
-		class ItemInfo: HeadgearItem 
+		class ItemInfo: ItemInfo 
 		{
 			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_face","attach_rangefinder","attach_ghillie"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_desert_co.paa","OPTRE_UNSC_Units\Army\data\addons_desert_ca.paa"}; /// what texture is going to be used
@@ -1933,7 +1967,7 @@ class cfgWeapons
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_DES_vac.paa";
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_desert_co.paa","OPTRE_UNSC_Units\Army\data\addons_desert_ca.paa"};
-		class ItemInfo: HeadgearItem 
+		class ItemInfo: ItemInfo 
 		{
 			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_desert_co.paa","OPTRE_UNSC_Units\Army\data\addons_desert_ca.paa"}; /// what texture is going to be used
@@ -1946,7 +1980,7 @@ class cfgWeapons
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_DES_gil.paa";
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_face"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_desert_co.paa","OPTRE_UNSC_Units\Army\data\addons_desert_ca.paa"};
-		class ItemInfo: HeadgearItem 
+		class ItemInfo: ItemInfo 
 		{
 			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_face"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_desert_co.paa","OPTRE_UNSC_Units\Army\data\addons_desert_ca.paa"}; /// what texture is going to be used
@@ -1960,7 +1994,7 @@ class cfgWeapons
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_sno.paa";
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_face","attach_rangefinder","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_snow_co.paa","OPTRE_UNSC_Units\Army\data\addons_snow_co.paa"};
-		class ItemInfo: HeadgearItem 
+		class ItemInfo: ItemInfo 
 		{
 			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_face","attach_rangefinder","attach_ghillie"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_snow_co.paa","OPTRE_UNSC_Units\Army\data\addons_snow_co.paa"}; /// what texture is going to be used
@@ -1973,7 +2007,7 @@ class cfgWeapons
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_sno_vac.paa";
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_snow_co.paa","OPTRE_UNSC_Units\Army\data\addons_snow_co.paa"};
-		class ItemInfo: HeadgearItem 
+		class ItemInfo: ItemInfo 
 		{
 			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_snow_co.paa","OPTRE_UNSC_Units\Army\data\addons_snow_co.paa"}; /// what texture is going to be used
@@ -1987,7 +2021,7 @@ class cfgWeapons
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_med.paa";
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_face","attach_rangefinder","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa"};
-		class ItemInfo: HeadgearItem 
+		class ItemInfo: ItemInfo 
 		{
 			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_face","attach_rangefinder","attach_ghillie"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa"}; /// what texture is going to be used
@@ -2000,7 +2034,7 @@ class cfgWeapons
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_med_vac.paa";
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa"};
-		class ItemInfo: HeadgearItem 
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa"}; /// what texture is going to be used

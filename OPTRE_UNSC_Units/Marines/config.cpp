@@ -397,6 +397,40 @@ class CfgVehicles
 		respawnMagazines[]	 											= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Orange","OPTRE_M2_Smoke_Green"};
 		icon 															= "iconManOfficer";
 	};
+	class OPTRE_UNSC_Marine_Pilot: OPTRE_UNSC_Marine_Soldier_Vacuum
+	{
+		scope															= 2;
+		displayName														= "Pilot";
+		uniformClass													= "OPTRE_UNSC_Marine_Uniform_pilot";
+		model															= "\OPTRE_UNSC_Units\Army\uniform.p3d";
+		weapons[] 										= {"OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"OPTRE_M6G_SF","Throw","Put"};
+		magazines[] 									= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		respawnMagazines[]	 							= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
+		linkedItems[] 													= {"OPTRE_UNSC_Marine_Vest_vacuum","OPTRE_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+		respawnLinkedItems[] 											= {"OPTRE_UNSC_Marine_Vest_vacuum","OPTRE_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftknee","attach_rightknee","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftthigh","attach_rightthigh","attach_rightknee2","attach_leftknee2","attach_pant2"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Marines\data\armor_marines_co.paa","OPTRE_UNSC_Units\Marines\data\uniform_marines_co.paa"};
+		class HitPoints: HitPoints
+		{
+			class HitHead: HitHead
+			{
+				armor = 1;
+			};
+			class HitBody: HitBody
+			{
+				armor = 4;
+			};
+			class HitHands: HitHands
+			{
+				armor = 1.5;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 1.5;
+			};
+		};
+	};
 	// UNITS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 };
@@ -456,7 +490,7 @@ class cfgWeapons
 		displayName														= "[UNSC] Marine BDU (Pilot)";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass												= "OPTRE_UNSC_Marine_Soldier_Pilot";
+			uniformClass												= "OPTRE_UNSC_Marine_Pilot";
 			mass														= 20;
 		};
 	};
