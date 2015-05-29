@@ -15,7 +15,7 @@ class CfgVehicles
 	
 	class OPTRE_Objects_Base: Static
 	{
-		scope = 2;
+		scope = 0;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		author = "Article 2 Studios";

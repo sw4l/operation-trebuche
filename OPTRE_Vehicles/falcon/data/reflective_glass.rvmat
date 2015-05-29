@@ -24,7 +24,7 @@ class Stage1 {
 };
 
 class Stage2 {
-	texture = "TEI_Vehicles\window_dt.paa";
+	texture = "OPTRE_Vehicles\window_dt.paa";
 	uvSource = "tex";
 
 	class uvTransform {

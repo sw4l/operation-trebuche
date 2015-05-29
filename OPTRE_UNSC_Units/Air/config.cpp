@@ -36,7 +36,7 @@ class CfgVehicles //This configures units and backpacks
 		linkedItems[] 													= {"OPTRE_UNSC_Airforce_Vest","OPTRE_UNSC_Marine_Helmet_Vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		respawnLinkedItems[] 											= {"OPTRE_UNSC_Airforce_Vest","OPTRE_UNSC_Marine_Helmet_Vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftknee2","attach_leftshin","attach_leftshoulder","attach_leftshoulder2","attach_pant2","attach_rightknee2","attach_rightshin","attach_rightshoulder","attach_rightshoulder2","attach_rightthigh"};
-		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Marines\data\armor_marines_co.paa","OPTRE_UNSC_Units\Air\data\uniform_airforce_co.paa"};
+		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_snow_co.paa","OPTRE_UNSC_Units\Air\data\uniform_airforce_co.paa"};
 		armor															= 2;
 		armorStructural													= 5;
 		class HitPoints

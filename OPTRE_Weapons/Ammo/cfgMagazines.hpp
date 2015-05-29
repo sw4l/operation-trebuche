@@ -387,7 +387,7 @@ class CfgMagazines
 		mass 							= 80;
 		initSpeed 						= 255;
 	};
-	class OPTRE_M41_Twin_HEAT_G: Titan_AT
+	class OPTRE_M41_Twin_HEAT_G: OPTRE_M41_Twin_HEAT
 	{
 		ammo							= "OPTRE_M41_Rocket_HEAT_Guided";
 		displayname						= "M19 HEAT Guided Twin Rockets";
@@ -399,6 +399,7 @@ class CfgMagazines
 		count							= 2;
 		mass 							= 90;
 		initSpeed 						= 255;
+		maxLeadSpeed = 320;
 	};
 	class OPTRE_M41_Twin_HEAP: RPG32_HE_F
 	{

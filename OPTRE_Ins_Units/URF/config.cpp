@@ -38,32 +38,6 @@ class CfgVehicles
 	class C_man_hunter_1_F;	
 	class I_G_Soldier_M_F;
 	 
-	 class OPTRE_Ins_URF_Boarder_base: I_Soldier_base_F
-	 {
-        modelSides[] 						= {0,1,2,3};
-        side                 	            = 0;
-        scope                               = 1;
-        faction                             = "OPTRE_Ins";
-        author                              = "Article 2 Studios";
-        displayName                         = "-";
-        vehicleClass                  	    = "OPTRE_Ins_Man_URF_class";
-        uniformClass                  	    = "OPTRE_Ins_URF_uniform_boarder";
-        model                               = "\A3\Characters_F\Common\coveralls.p3d";
-        weapons[]                           = {"Throw","Put"};
-        respawnWeapons[]             	    = {"Throw","Put"};
-        Items[]                             = {"OPTRE_Biofoam"};
-        RespawnItems[]                      = {"OPTRE_Biofoam"};
-        magazines[]                         = {};
-        respawnMagazines[]                  = {};
-        linkedItems[]                 	    = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-        respawnLinkedItems[]           	    = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-        headgearProbability            	    = 0;
-        allowedHeadgear[]                   = {};
-        backpack                            = "";
-		hiddenSelections[] 					= {"camo"};
-		hiddenSelectionsTextures[] 			= {"OPTRE_Ins_Units\Data\inne_BoardingUniformBlue3_co.paa"};
-	 };
-	 
 	 class OPTRE_Ins_URF_soldierCmbtUni_OD_base: I_Soldier_base_F
 	 {
         modelSides[] 						= {0,1,2,3};
@@ -119,19 +93,6 @@ class CfgVehicles
 	 
 	 
 	 //CLASSES WITH WEAPONS
-	 
-	 
-	class OPTRE_Ins_URF_Boarder: OPTRE_Ins_URF_Boarder_base //Configures the unit part of the Units Uniform
-	{
-		scope 											= 2;
-		displayName										= "Boarder";
-		weapons[] 										= {"OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 								= {"OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 									= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
-		respawnMagazines[] 								= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
-		linkedItems[] 									= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-		respawnLinkedItems[] 							= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-	};
 	
 	
 	class OPTRE_Ins_URF_Medic: OPTRE_Ins_URF_soldierCmbtUni_OD_base //Configures the unit part of the Units Uniform
@@ -411,50 +372,6 @@ class CfgVehicles
 		respawnMagazines[]	 							= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","SmokeShell","SmokeShellOrange","SmokeShellGreen"};
 		icon = "iconManOfficer";
 	};
-	class OPTRE_Ins_URF_Col_Watts: OPTRE_Ins_URF_officer_base //make black and give military cap
-	{
-		scope											= 1;
-		displayName										= "Col. Robert Watts";
-		identityTypes[] 								= {"OPTRE_Col_Watts"};
-		linkedItems[] 									= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
-		respawnLinkedItems[] 							= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
-		weapons[] 										= {"OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 								= {"OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 									= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
-		respawnMagazines[] 								= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
-		icon = "iconManLeader";
-	};
-};
-
-
-
-
-
-class CfgFaces
-{
-	class Default;
-	class Man_A3: Default
-	{
-		class Default;
-		class Col_Watts: Default
-		{
-			name = "Col_Watts";
-			displayname = "Robert Watts";
-			//identityTypes[] = {"",""};
-			//head = "";
-		};
-	};
-};
-class CfgIdentities
-{
-	class OPTRE_Col_Watts
-	{
-		name = "Robert Watts";
-		glasses = "None";
-		speaker = "Male01ENG";
-		//face="AfricanHead_03";
-		pitch=0.94971651;
-	};
 };
 
 class cfgWeapons
@@ -470,23 +387,6 @@ class cfgWeapons
 	class Vest_Camo_Base;
 		
 	// UNIFORMS
-	
-	class OPTRE_Ins_URF_uniform_boarder: Uniform_Base
-	{
-		scope 								= 2;
-		displayName 						= "[INS] Boarding Coveralls";
-		author								= "Article 2 Studios";
-		picture = "\A3\characters_f_kart\data\ui\icon_u_driver_02_ca.paa";
-		model								= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-        class ItemInfo : UniformItem 
-		{
-            uniformModel 					= "-";
-            uniformClass 					= "OPTRE_Ins_URF_Boarder_base";
-            containerClass 					= "Supply80";
-            mass 							= 20;
-			modelSides[] 					= {6};
-        };
-	};
 	
 	class OPTRE_Ins_URF_uniform_combatuni_OD: Uniform_Base
 	{

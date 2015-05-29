@@ -8,7 +8,7 @@ PixelShaderID="Tree";
 VertexShaderID="Tree";
 class Stage1
 {
-	texture="optre_plants\data\t_quercus3s_5_NON.tga";
+	texture="optre_plants\data\t_quercus3s_1_NON.tga";
 	uvSource="tex";
 	class uvTransform
 	{

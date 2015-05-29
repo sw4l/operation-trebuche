@@ -662,7 +662,7 @@ class cfgWeapons
 	class UniformItem;
 	class V_PlateCarrier1_rgr;
 	class VestItem;
-	class OPTRE_UNSC_Marine_vest;	
+	class OPTRE_UNSC_Marine_Vest;	
 	class HeadgearItem;
 	class H_HelmetB;
 	class OPTRE_UNSC_Marine_Helmet;
@@ -939,17 +939,17 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		displayName  									= "[INS] M52 Body Armor (v1)"; 
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_vest.paa"; //Needs new inventory icon.  
-		hiddenSelections[]   							= {"camo1","camo2","attach_knife","attach_neck"};
+		hiddenSelections[]   							= {"camo1","camo2","camo3","attach_knife","attach_neck","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_Ins_Units\er\data\vest_innie_1-1_co.paa"}; 
 		class ItemInfo: VestItem 
 		{
 			uniformModel   								= "\OPTRE_UNSC_Units\Army\vest.p3d"; 
-			armor   									= 50; 
+			armor   									= 30; 
 			containerClass   							= "Supply140";
 			mass   										= 40;
 			passThrough   								= 0.1; 
 			modelSides[]   								= {6};
-			hiddenSelections[]   						= {"camo1","camo2","camo3","attach_knife","attach_neck"}; 
+			hiddenSelections[]   						= {"camo1","camo2","camo3","attach_knife","attach_neck","attach_ghillie"}; 
 			hiddenSelectionsTextures[]   				= {"OPTRE_Ins_Units\er\data\vest_innie_1-1_co.paa"}; 
 		};
 	};
@@ -959,17 +959,17 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		displayName  									= "[INS] M52 Body Armor (v2)"; 
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_vest.paa"; //Needs new inventory icon.  
-		hiddenSelections[]   							= {"camo1","camo2","attach_knife","attach_neck"};
+		hiddenSelections[]   							= {"camo1","camo2","camo3","attach_knife","attach_neck","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_Ins_Units\er\data\vest_innie_1-2_co.paa"}; 
 		class ItemInfo: VestItem 
 		{
 			uniformModel   								= "\OPTRE_UNSC_Units\Army\vest.p3d"; 
-			armor   									= 50; 
+			armor   									= 30; 
 			containerClass   							= "Supply140";
 			mass   										= 40;
 			passThrough   								= 0.1; 
 			modelSides[]   								= {6};
-			hiddenSelections[]   						= {"camo1","camo2","camo3","attach_knife","attach_neck"}; 
+			hiddenSelections[]   						= {"camo1","camo2","camo3","attach_knife","attach_neck","attach_ghillie"}; 
 			hiddenSelectionsTextures[]   				= {"OPTRE_Ins_Units\er\data\vest_innie_1-2_co.paa"}; 
 		};
 	};
@@ -979,17 +979,17 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		displayName  									= "[INS] M52 Body Armor (v3)"; 
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_vest.paa"; //Needs new inventory icon.  
-		hiddenSelections[]   							= {"camo1","camo2","attach_knife","attach_neck"};
+		hiddenSelections[]   							= {"camo1","camo2","camo3","attach_knife","attach_neck","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_Ins_Units\er\data\vest_innie_1-1_co.paa"}; 
 		class ItemInfo: VestItem 
 		{
 			uniformModel   								= "\OPTRE_UNSC_Units\Army\vest.p3d"; 
-			armor   									= 50; 
+			armor   									= 30; 
 			containerClass   							= "Supply140";
 			mass   										= 40;
 			passThrough   								= 0.1; 
 			modelSides[]   								= {6};
-			hiddenSelections[]   						= {"camo1","camo2","camo3","attach_knife","attach_neck"}; 
+			hiddenSelections[]   						= {"camo1","camo2","camo3","attach_knife","attach_neck","attach_ghillie"}; 
 			hiddenSelectionsTextures[]   				= {"OPTRE_Ins_Units\er\data\vest_innie_1-1_co.paa"}; 
 		};
 	};
@@ -1002,7 +1002,7 @@ class cfgWeapons
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_helmet.paa"; //needs new Icon.  
 		displayName    									= "[INS] CH252 Helmet (Repainted)"; 
 		model     										= "\OPTRE_UNSC_Units\Army\helmet.p3d"; 
-		hiddenSelections[]   							= {"camo1","camo2","attach_face"}; 
+		hiddenSelections[]   							= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie"}; 
 		hiddenSelectionsTextures[]   					= {"OPTRE_Ins_Units\er\data\helmet_innie_1_co.paa"}; 
 		class ItemInfo: HeadgearItem 
 		{
@@ -1011,7 +1011,7 @@ class cfgWeapons
 			mass   										= 30;
 			modelSides[]   								= {6};
 			passThrough   								= 0.1; 
-			hiddenSelections[]   						= {"camo1","camo2","attach_face"};
+			hiddenSelections[]   						= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie"};
 			hiddenSelectionsTextures[]   				= {"OPTRE_Ins_Units\er\data\helmet_innie_1_co.paa"}; 
 		};
 	};
@@ -1021,7 +1021,7 @@ class cfgWeapons
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_helmet.paa"; //needs new Icon.  
 		displayName    									= "[INS] CH252 Helmet (Joker)"; 
 		model     										= "\OPTRE_UNSC_Units\Army\helmet.p3d"; 
-		hiddenSelections[]   							= {"camo1","camo2","attach_face"}; 
+		hiddenSelections[]   							= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie"}; 
 		hiddenSelectionsTextures[]   					= {"OPTRE_Ins_Units\er\data\helmet_innie_killunsc_co.paa"}; 
 		class ItemInfo: HeadgearItem 
 		{
@@ -1030,7 +1030,7 @@ class cfgWeapons
 			mass   										= 30;
 			modelSides[]   								= {6};
 			passThrough   								= 0.1; 
-			hiddenSelections[]   						= {"camo1","camo2","attach_face"};
+			hiddenSelections[]   						= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie"};
 			hiddenSelectionsTextures[]   				= {"OPTRE_Ins_Units\er\data\helmet_innie_killunsc_co.paa"}; 
 		};
 	};
@@ -1040,7 +1040,7 @@ class cfgWeapons
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_helmet.paa"; //needs new Icon.  
 		displayName    									= "[INS] CH252 Helmet (Paine)"; 
 		model     										= "\OPTRE_UNSC_Units\Army\helmet.p3d"; 
-		hiddenSelections[]   							= {"camo1","camo2","attach_face"}; 
+		hiddenSelections[]   							= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie"}; 
 		hiddenSelectionsTextures[]   					= {"OPTRE_Ins_Units\er\data\helmet_innie_liberty_co.paa"}; 
 		class ItemInfo: HeadgearItem 
 		{
@@ -1049,7 +1049,7 @@ class cfgWeapons
 			mass   										= 30;
 			modelSides[]   								= {6};
 			passThrough   								= 0.1; 
-			hiddenSelections[]   						= {"camo1","camo2","attach_face"};
+			hiddenSelections[]   						= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie"};
 			hiddenSelectionsTextures[]   				= {"OPTRE_Ins_Units\er\data\helmet_innie_liberty_co.paa"}; 
 		};
 	};
@@ -1059,7 +1059,7 @@ class cfgWeapons
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_helmet.paa"; //needs new Icon.  
 		displayName    									= "[INS] CH252 Helmet (Veteran)"; 
 		model     										= "\OPTRE_UNSC_Units\Army\helmet.p3d"; 
-		hiddenSelections[]   							= {"camo1","camo2","attach_face"}; 
+		hiddenSelections[]   							= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie"}; 
 		hiddenSelectionsTextures[]   					= {"OPTRE_Ins_Units\er\data\helmet_innie_veteran_co.paa"}; 
 		class ItemInfo: HeadgearItem 
 		{
@@ -1068,7 +1068,7 @@ class cfgWeapons
 			mass   										= 30;
 			modelSides[]   								= {6};
 			passThrough   								= 0.1; 
-			hiddenSelections[]   						= {"camo1","camo2","attach_face"};
+			hiddenSelections[]   						= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie"};
 			hiddenSelectionsTextures[]   				= {"OPTRE_Ins_Units\er\data\helmet_innie_veteran_co.paa"}; 
 		};
 	};

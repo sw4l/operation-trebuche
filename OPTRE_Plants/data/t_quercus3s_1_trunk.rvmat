@@ -8,7 +8,7 @@ PixelShaderID="Tree";
 VertexShaderID="TreeNoFade";
 class Stage1
 {
-	texture="optre_plants\t_quercus_bark_NO.tga";
+	texture="optre_plants\data\t_quercus_bark_NO.tga";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-	texture="optre_plants\t_quercus3s_1_trunk_MC.tga";
+	texture="optre_plants\data\t_quercus3s_1_MC.tga";
 	uvSource="tex1";
 	class uvTransform
 	{

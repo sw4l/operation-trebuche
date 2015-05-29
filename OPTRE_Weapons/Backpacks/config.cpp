@@ -128,11 +128,6 @@ class cfgVehicles
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1; 
         };
-		class OPTRE_ANPRC_521_Tan : OPTRE_ANPRC_521_Green
-		{
-                displayName 										= "[UNSC] AN/PRC-521 [Tan]";
-				hiddenSelectionsTextures[] 							= {"OPTRE_Weapons\Backpacks\data\RadioPack1_tan_CO.paa"};
-        };
 		class OPTRE_ANPRC_521_Black : OPTRE_ANPRC_521_Green
 		{
                 displayName 										= "[UNSC] AN/PRC-521 [Black]";

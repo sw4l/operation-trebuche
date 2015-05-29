@@ -1,6 +1,6 @@
 ﻿		class RotorLibHelicopterProperties: RotorLibHelicopterProperties
 		{
-			RTDconfig = "Samples_F\Test_Heli_01\RTD_Test_Heli_01.xml";
+			RTDconfig = "OPTRE_Vehicles\RTD_Test_Heli_01.xml";
 			defaultCollective 				= 0.545;
 			autoHoverCorrection[] 			= {4.8,-3.2,0};	// pitch, roll, no
 			retreatBladeStallWarningSpeed 	= 83.333 ; 		// m/s

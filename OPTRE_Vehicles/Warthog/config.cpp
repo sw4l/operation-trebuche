@@ -93,9 +93,9 @@ class CfgVehicles
 		nameSound = car;
 		attenuationEffectType = "OpenCarAttenuation";
 		crewCrashProtection=0;
-		crewExplosionProtection = 0.85;
+		crewExplosionProtection = 0.5;
 		fuelExplosionPower = 2;
-		epeImpulseDamageCoef = 10;
+		epeImpulseDamageCoef = 25;
 		armor=100;
 		cost=500000;
 		canFloat=0;
@@ -700,7 +700,7 @@ class CfgVehicles
 		faction="OPTRE_UNSC";
 		side=1;
 		transportSoldier=0;
-		crew="OPTRE_UNSC_Army_W_Rifleman_AR";
+		crew="OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_co.paa"};
 		vehicleClass="OPTRE_UNSC_Vehicle_class";
@@ -758,6 +758,7 @@ class CfgVehicles
 	class OPTRE_M12_FAV_black:OPTRE_M12_FAV
 	{
 		displayName="M12 FAV Warthog (Unarmed) [Black]";
+		crew="OPTRE_UNSC_ODST_Soldier_Rifleman_AR";
 		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_black_co.paa"};
@@ -765,7 +766,7 @@ class CfgVehicles
 	class OPTRE_M12_FAV_tan:OPTRE_M12_FAV
 	{
 		displayName="M12 FAV Warthog (Unarmed) [Tan]";
-		crew="OPTRE_UNSC_Army_D_Rifleman_AR";
+		crew="OPTRE_UNSC_Army_Soldier_Rifleman_AR_DES";
 		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_tan_co.paa"};
@@ -774,7 +775,7 @@ class CfgVehicles
 	{
 		displayName="M12 FAV Warthog (Unarmed) [Snow]";
 		author="Article 2 Studios";
-		crew="OPTRE_UNSC_Army_S_Rifleman_AR";
+		crew="OPTRE_UNSC_Army_Soldier_Rifleman_AR_SNO";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_snow_co.paa"};
 	};
@@ -801,7 +802,7 @@ class CfgVehicles
 		faction="OPTRE_UNSC";
 		side=1;
 		transportSoldier=0;
-		crew="OPTRE_UNSC_Army_W_Rifleman_AR";
+		crew="OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_antenna"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_co.paa"};
 		vehicleClass="OPTRE_UNSC_Vehicle_class";
@@ -916,13 +917,14 @@ class CfgVehicles
 	{
 		displayName="M831 TT Warthog (Transport) [Black]";
 		author="Article 2 Studios";
+		crew="OPTRE_UNSC_ODST_Soldier_Rifleman_AR";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_antenna"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_black_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_black_co.paa"};
 	};
 	class OPTRE_M813_TT_tan:OPTRE_M813_TT
 	{
 		displayName="M831 TT Warthog (Transport) [Tan]";
-		crew="OPTRE_UNSC_Army_D_Rifleman_AR";
+		crew="OPTRE_UNSC_Army_Soldier_Rifleman_AR_DES";
 		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_antenna"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_tan_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_tan_co.paa"};
@@ -931,7 +933,7 @@ class CfgVehicles
 	{
 		displayName="M831 TT Warthog (Transport) [Snow]";
 		author="Article 2 Studios";
-				crew="OPTRE_UNSC_Army_S_Rifleman_AR";
+		crew="OPTRE_UNSC_Army_Soldier_Rifleman_AR_SNO";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_antenna"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_snow_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_snow_co.paa"};
 	};
@@ -1092,6 +1094,7 @@ class CfgVehicles
 	class OPTRE_M12_LRV_black:OPTRE_M12_LRV
 	{
 		displayName="M12 LRV Warthog (MG) [Black]";
+		crew="OPTRE_UNSC_ODST_Soldier_Rifleman_AR";
 		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_black_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_black_co.paa"};
@@ -1099,7 +1102,7 @@ class CfgVehicles
 	class OPTRE_M12_LRV_tan:OPTRE_M12_LRV
 	{
 		displayName="M12 LRV Warthog (MG) [Tan]";
-		crew="OPTRE_UNSC_Army_D_Rifleman_AR";
+		crew="OPTRE_UNSC_Army_Soldier_Rifleman_AR_DES";
 		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_tan_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_tan_co.paa"};
@@ -1108,7 +1111,7 @@ class CfgVehicles
 	{
 		displayName="M12 LRV Warthog (MG) [Snow]";
 		author="Article 2 Studios";
-				crew="OPTRE_UNSC_Army_S_Rifleman_AR";
+		crew="OPTRE_UNSC_Army_Soldier_Rifleman_AR_SNO";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_snow_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_snow_co.paa"};
 	};
@@ -1289,6 +1292,7 @@ class CfgVehicles
 	class OPTRE_M12G1_LRV_black:OPTRE_M12G1_LRV
 	{
 		displayName="M12G1 Warthog (Gauss) [Black]";
+		crew="OPTRE_UNSC_ODST_Soldier_Rifleman_AR";
 		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_black_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_black_co.paa"};
@@ -1296,7 +1300,7 @@ class CfgVehicles
 	class OPTRE_M12G1_LRV_tan:OPTRE_M12G1_LRV
 	{
 		displayName="M12G1 Warthog (Gauss) [Tan]";
-		crew="OPTRE_UNSC_Army_D_Rifleman_AR";
+		crew="OPTRE_UNSC_Army_Soldier_Rifleman_AR_DES";
 		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_tan_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_tan_co.paa"};
@@ -1305,7 +1309,7 @@ class CfgVehicles
 	{
 		displayName="M12G1 Warthog (Gauss) [Snow]";
 		author="Article 2 Studios";
-		crew="OPTRE_UNSC_Army_S_Rifleman_AR";
+		crew="OPTRE_UNSC_Army_Soldier_Rifleman_AR_SNO";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_snow_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_snow_co.paa"};
 	};
@@ -1461,6 +1465,7 @@ class CfgVehicles
 	class OPTRE_M12A1_LRV_black:OPTRE_M12A1_LRV
 	{
 		displayName="M12A1 Warthog (Rocket) [Black]";
+		crew="OPTRE_UNSC_ODST_Soldier_Rifleman_AR";
 		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_black_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_black_co.paa"};
@@ -1468,7 +1473,7 @@ class CfgVehicles
 	class OPTRE_M12A1_LRV_tan:OPTRE_M12A1_LRV
 	{
 		displayName="M12A1 Warthog (Rocket) [Tan]";
-		crew="OPTRE_UNSC_Army_D_Rifleman_AR";
+		crew="OPTRE_UNSC_Army_Soldier_Rifleman_AR_DES";
 		author="Article 2 Studios";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_tan_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_tan_co.paa"};
@@ -1477,7 +1482,7 @@ class CfgVehicles
 	{
 		displayName="M12A1 Warthog (Rocket) [Snow]";
 		author="Article 2 Studios";
-		crew="OPTRE_UNSC_Army_S_Rifleman_AR";
+		crew="OPTRE_UNSC_Army_Soldier_Rifleman_AR_SNO";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_troop"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_snow_co.paa","OPTRE_Vehicles\Warthog\data\warthog_addons_snow_co.paa"};
 	};
@@ -1662,19 +1667,20 @@ class CfgVehicles
 	{
 		author="Article 2 Studios";
 		displayName="M12R Warthog (AA) [Black]";
+		crew="OPTRE_UNSC_ODST_Soldier_Rifleman_AR";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_black_co.paa","OPTRE_Vehicles\Warthog\data\warthog_aa_black_ca.paa"};
 	};
 	class OPTRE_M12R_AA_tan:OPTRE_M12R_AA
 	{
-		crew="OPTRE_UNSC_Army_D_Rifleman_AR";
+		crew="OPTRE_UNSC_Army_Soldier_Rifleman_AR_DES";
 		displayName="M12R Warthog (AA) [Tan]";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_tan_co.paa","OPTRE_Vehicles\Warthog\data\warthog_aa_tan_ca.paa"};
 	};
 	class OPTRE_M12R_AA_snow:OPTRE_M12R_AA
 	{
-		crew="OPTRE_UNSC_Army_S_Rifleman_AR";
+		crew="OPTRE_UNSC_Army_Soldier_Rifleman_AR_SNO";
 		displayName="M12R Warthog (AA) [Snow]";
 		hiddenSelections[]={"camo1","camo2","clan","clan_text","insignia"};
 		hiddenSelectionsTextures[]={"OPTRE_Vehicles\Warthog\data\warthog_snow_co.paa","OPTRE_Vehicles\Warthog\data\warthog_aa_snow_ca.paa"};

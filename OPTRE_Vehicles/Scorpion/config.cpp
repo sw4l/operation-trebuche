@@ -49,16 +49,11 @@ class CfgVehicles {
 	
 	class OPTRE_Scorpion_base: Tank_F 
 	{
-		// Basic defines: vehicle class in editor, name displayed, knowledge required to recognize this type of target
 		vehicleClass = "Armored";
 		displayName = "M808 Scorpion Base";
 		accuracy = 0.3;
 		scope = 0;
-
-		// Model and look defines: paths to model, squad picture and map icon
 		model = "OPTRE_Vehicles\Scorpion\Scorpion.p3d";
-		picture =	"\A3\armor_f_gamma\MBT_02\Data\UI\MBT_02_Base_ca.paa";
-		icon =	"\A3\armor_f_gamma\MBT_02\Data\UI\map_MBT_02_ca.paa";
 
 	//	#include "sounds.hpp"	// not covered by this tutorial
 		//#include "physx.hpp"
@@ -326,32 +321,6 @@ class CfgVehicles {
 			class muzzle_rot_coax {source = "ammorandom"; weapon = "LMG_M200";};
 			class muzzle_rot_HMG {source = "ammorandom"; weapon = "HMG_NSVT";};
 			class recoil_source {source = "reload"; weapon = "cannon_120mm";};
-		};
-
-		// Damage textures - for sections: zbytek, vez, zbran, vezVelitele, zbranVelitele,
-		class Damage {
-			tex[] = {};
-			mat[] = {
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02.rvmat",
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_damage.rvmat",
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_destruct.rvmat",
-
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_body.rvmat",
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_body_damage.rvmat",
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_body_destruct.rvmat",
-
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_tracks.rvmat",
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_tracks_damage.rvmat",
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_tracks_destruct.rvmat",
-
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_turret.rvmat",
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_turret_damage.rvmat",
-				"A3\Armor_F_Gamma\MBT_02\Data\MBT_02_turret_destruct.rvmat",
-
-				"A3\Armor_F_Gamma\MBT_01\Data\MBT_01_scorcher.rvmat",
-				"A3\Armor_F_Gamma\MBT_01\Data\MBT_01_scorcher_damage.rvmat",
-				"A3\Armor_F_Gamma\MBT_01\Data\MBT_01_scorcher_destruct.rvmat"
-			};
 		};
 
 		smokeLauncherGrenadeCount = 8; //Number of smoke shells launched at once

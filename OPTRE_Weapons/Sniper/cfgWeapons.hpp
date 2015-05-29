@@ -18,18 +18,18 @@ class Mode_FullAuto;
             class OPTRE_SRS99_Scope: ItemCore
             {
                     scope                                                                   = 2;
-                    displayName                                                             = "Oracle N-varint SRS99 Scope";
+                    displayName                                                             = "Oracle N-variant SRS99 Scope";
 					picture = "\OPTRE_weapons\sniper\icons\scope.paa";
-                    model                                                                   = "\OPTRE_Weapons\Sniper\SRS99-Scope.p3d";
-                    descriptionShort                                                        = "Oracle N-varint SRS99 Sniper Rifle 5-20x56 Scope";
+                    model                                                                   = "\OPTRE_Weapons\Sniper\SRS99_Scope.p3d";
+                    descriptionShort                                                        = "Oracle N-variant SRS99 Sniper Rifle 5-10x56 Scope";
                     weaponInfoType                                                          = "RscWeaponZeroing";
-                    modelOptics                                                     		= "\OPTRE_Weapons\Sniper\SRS99-Scope.p3d";
+                    modelOptics                                                     		= "\OPTRE_Weapons\Sniper\SRS99_Scope.p3d";
                     class ItemInfo: InventoryOpticsItem_Base_F
                     {
                             mass                                                            = 10;
                             opticType                                                       = 1;
                             optics                                                          = 1;
-                            modelOptics                                                     = "\OPTRE_Weapons\Sniper\SRS99-Scope.p3d";
+                            modelOptics                                                     = "\OPTRE_Weapons\Sniper\SRS99_Scope.p3d";
                             class OpticsModes
                             {
                                     class SRS99_Scope_View
@@ -39,14 +39,14 @@ class Mode_FullAuto;
                                             opticsZoomMin                                   = 0.005;
                                             opticsZoomMax                                   = 0.05;
                                             opticsZoomInit                                  = 0.05;
-											discretefov[] 									= {0.05,0.025,0.01,0.0075,0.005};
-											discreteinitIndex 							= 0;
+											discretefov[] 									= {0.05,0.025,0.005};
+											discreteinitIndex 								= 0;
 											discreteDistance[] 								= {100,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
 											discreteDistanceInitIndex 						= 1;
 											distanceZoomMin 								= 100;
 											distanceZoomMax 								= 2000;
                                             memoryPointCamera                               = "opticView";
-                                            modelOptics[]                                   = {"\A3\Weapons_F\acc\reticle_sniper_F"};
+                                            modelOptics[]                                   = {"\OPTRE_Weapons\Sniper\Sniper_Oracle5_Optic","\OPTRE_Weapons\Sniper\Sniper_Oracle10_Optic","\OPTRE_Weapons\Sniper\Sniper_Oracle20_Optic"};
 											opticsPPEffects[] 								= {"OpticsCHAbera1","OpticsBlur1"};
                                             visionMode[]                                    = {"Normal","NVG","TI"};
 											thermalMode[] 									= {5,6};
@@ -63,7 +63,7 @@ class Mode_FullAuto;
 			displayName 																	= "SRS99 IR Laser";
 			picture																			="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
 			descriptionShort 																= "SRS99 Sniper IR Laser Pointer";
-			model 																			= "\OPTRE_Weapons\Sniper\SRS99-Laser.p3d";
+			model 																			= "\OPTRE_Weapons\Sniper\SRS99_Laser.p3d";
 			class ItemInfo: InventoryFlashLightItem_Base_F
 			{
 				mass 																		= 4;
@@ -80,7 +80,7 @@ class Mode_FullAuto;
 		{
 		scope 				= 2;																	/// available in Arsenal
 		displayName			= "SRS-99 Bipod";													/// name of item in Inventory (and Arsenal)
-		model 				= "\OPTRE_Weapons\Sniper\SRS99-Bipod.p3d";						/// path to model
+		model 				= "\OPTRE_Weapons\Sniper\SRS99_Bipod.p3d";						/// path to model
 		class ItemInfo: InventoryUnderItem_Base_F
         {
             deployedPivot	= "bipod";		/// what point should be used to be on surface while unfolded
@@ -115,8 +115,8 @@ class Mode_FullAuto;
                     dexterity                                                               = 1.25;
 					maxRecoilSway 															= 0.01;
 					swayDecaySpeed 															= 1;
-					drySound[] 																= {"A3\Sounds_F\weapons\LongRange\M320\dry_M320",0.5011872,1,20};
-					reloadMagazineSound[] 													= {"A3\Sounds_F\weapons\LongRange\M320\reload_M320",1.0,1,10};
+					drySound[] 																= {"A3\Sounds_F\weapons\Other\dry6.wss",1.0,1,20};
+					reloadMagazineSound[] 													= {"A3\Sounds_F\weapons\M320\M320_reload.wss",1.0,1,10};
 					class GunParticles: GunParticles
                     {
 						class FirstEffect
@@ -199,7 +199,6 @@ class Mode_FullAuto;
 							{
 								iconPosition[] = {0.2, 0.7};
 								iconScale = 0.2;
-								linkProxy = "\A3\Data_f_Mark\proxies\weapon_slots\UNDERBARREL" ;
 								compatibleItems[] = {"OPTRE_SRS99_Bipod"};		
 							};	
                     };
