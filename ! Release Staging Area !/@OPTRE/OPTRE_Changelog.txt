@@ -1,12 +1,42 @@
 v0.11
 	Added
-		-
+		-Tropic and Arid Army Units
+		-Ammocounter functionality to BR and AR 
+		-HuCiv Genet (WIP)
+		-Civilian Warthogs
+		-Plants (WIP)
+		-Air Force Units
+		-Patrol Caps and Boonie Hats to match UNSC forces
+		-HEDP Rounds for the SRS99
+		-Mongoose (RETEXTURE)
+		-Blank and Stratis variants of Holotable
+		-Ghillie Helmets and Vests
+		-Thruster and Magnet(WIP) Functions for Pelicans
+		-Static Wreck Models for Falcon and Pelican (Pelican Wreck Model WIP)
+		-Custom 2D Optics for AR(WIP) and SRS99
+		-Added preliminary content for addition of DMR and M247 in the future
 	Fixed
-		-
+		-Could not spawn OPTRE objects in Zeus
+		-Game-Breaking incompatibility with CBA
+		-Pelican muzzle flash and shooting issues
+		-Shadow LODs of most weapons, uniforms, and equipment
+		-Various other small things
 	Tweaked
-		-
+		-Warthog Handling and Physics (Better watch those turns now)
+		-Ballistics of all small arms
+		-Armor values of Falcon
+		-Redid UNSC groups
+		-Armor values
+		-Redid Classname Naming Conventions (Sorry Missionmakers)
+		-Various other small things
 	Removed
-		-
-
+		-Color variants of shotgun
+		-Army and Marine Pilots (replaced by Airmen and Naval Aviators)
+	Known Bugs
+		-Unarmed Warthog is front-heavy
+		-Sniper Bipod still is not animated
+		-Frigate has no Geometry or Shadow LODs
+		-Magnet Function is very finicky and inconsistent
+		
 v0.10
 Release
