@@ -158,7 +158,7 @@ class Mode_FullAuto;
                     descriptionShort                                                        = "UNSC Assault Rifle";
                     picture 																= "\OPTRE_weapons\ar\icons\ar_a.paa";
 					drySound[] 																= {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
-                    magazines[]                                                             = {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag_Tracer","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag_Tracer"};
+                    magazines[]                                                             = {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag_Tracer"};
                     modelOptics                                                             = "-";
                     dexterity                                                               = 3.25;
                     muzzlePos                                                               = "usti hlavne";
@@ -262,7 +262,7 @@ class Mode_FullAuto;
                             class CowsSlot: SlotInfo
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"OPTRE_MA5B_AmmoCounter", "OPTRE_MA5B_AmmoCounter_NoIS", "optic_Holosight", "optic_Hamr", "optic_Aco", "optic_Aco_grn", "optic_Arco", "optic_mrco", "optic_nightstalker", "optic_tws", "optic_mrd"};
+                                    compatibleitems[]                                       = {"OPTRE_MA5B_AmmoCounter", "OPTRE_MA5B_AmmoCounter_NoIS"};
                                     displayname                                             = "Optics Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\TOP";
                                     scope                                                   = 2;
@@ -395,8 +395,8 @@ class Mode_FullAuto;
                     };
                     class M309GL: UGL_F /// Some grenade launcher to have some more fun
                     {
-                            displayName = "M309 Grenade Launcher";
-                            descriptionShort = "M309 GL";
+                            displayName = "M301 Grenade Launcher";
+                            descriptionShort = "M301 GL";
                             useModelOptics = false;
                             useExternalOptic = false; /// Doesn't use optics from the attachment, has it's own
                             magazines[] = {"1Rnd_HE_Grenade_shell", "UGL_FlareWhite_F", "UGL_FlareGreen_F", "UGL_FlareRed_F", "UGL_FlareYellow_F", "UGL_FlareCIR_F", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell"};
@@ -418,7 +418,7 @@ class Mode_FullAuto;
                             class CowsSlot: SlotInfo
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"OPTRE_MA5B_AmmoCounter", "OPTRE_MA5B_AmmoCounter_NoIS", "optic_Holosight", "optic_Hamr", "optic_Aco", "optic_Aco_grn", "optic_Arco", "optic_mrco", "optic_nightstalker", "optic_tws", "optic_mrd"};
+                                    compatibleitems[]                                       = {"OPTRE_MA5B_AmmoCounter", "OPTRE_MA5B_AmmoCounter_NoIS"};
                                     displayname                                             = "Optics Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\TOP";
                                     scope                                                   = 2;
