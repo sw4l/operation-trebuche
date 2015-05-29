@@ -302,7 +302,7 @@ class Mode_FullAuto;
                     scope                                                                   = 2;
                     handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_Weapons\AR\data\anim\hand_anim_ma5c.rtm"};
                     model                                                                   = "\OPTRE_Weapons\AR\ARGL.p3d";
-                    displayName                                                             = "MA5B + M309 Assault Rifle";
+                    displayName                                                             = "MA5B + M301 Assault Rifle";
                     descriptionShort                                                        = "UNSC Assault Rifle + GL";
                     picture = "\OPTRE_weapons\ar\icons\argl_a.paa";
                     //magazines[]                                                             = {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag_Tracer","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag_Tracer"};

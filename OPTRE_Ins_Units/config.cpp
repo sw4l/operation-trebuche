@@ -388,7 +388,7 @@ class CfgGroups
 					class Unit8
 					{
 						side = 0;
-						vehicle = "OPTRE_Ins_URF_TeamLead";
+						vehicle = "OPTRE_Ins_ER_Guerilla_AR";
 						rank = "CORPORAL";
 						position[] = {-20,-5,0};
 					};

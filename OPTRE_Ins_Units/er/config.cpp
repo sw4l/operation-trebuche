@@ -436,7 +436,7 @@ class CfgVehicles
 		vehicleClass									= "OPTRE_Ins_Man_ER_class";
 		icon 											= "iconManMedic";
 		uniformClass                  	    			= "OPTRE_Ins_ER_jacket_surgeon2";
-		backpack 										= "OPTRE_ILCS_Rucksack_Medical1";
+		backpack 										= "OPTRE_ILCS_Rucksack_Medical";
 		weapons[] 										= {"OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"OPTRE_M6G_SF","Throw","Put"};
 		linkedItems[]                 	  				= {"OPTRE_INS_UNSC_vest12","H_MilCap_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
@@ -491,8 +491,8 @@ class CfgVehicles
 		uniformClass                  	    			= "OPTRE_Ins_ER_jacket_brown_surplus";
 		linkedItems[]                 	    			= {"V_BandollierB_blk","H_cap_red","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
         respawnLinkedItems[]           	    			= {"V_BandollierB_blk","H_cap_red","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		weapons[] 										= {"OPTRE_M45_olive","Throw","Put","OPTRE_M6G_SF"};
-		respawnWeapons[] 								= {"OPTRE_M45_olive","Throw","Put","OPTRE_M6G_SF"};
+		weapons[] 										= {"OPTRE_m45","Throw","Put","OPTRE_M6G_SF"};
+		respawnWeapons[] 								= {"OPTRE_m45","Throw","Put","OPTRE_M6G_SF"};
 		magazines[] 									= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs"};
 		respawnMagazines[] 								= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs"};
 	};
@@ -556,8 +556,8 @@ class CfgVehicles
 		linkedItems[]                 	   				= {"OPTRE_INS_UNSC_vest2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
         respawnLinkedItems[]           	    			= {"OPTRE_INS_UNSC_vest2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		engineer 										= 1;
-		weapons[] 										= {"OPTRE_M45_olive","Throw","Put","OPTRE_M6G_SF"};
-		respawnWeapons[] 								= {"OPTRE_M45_olive","Throw","Put","OPTRE_M6G_SF"};
+		weapons[] 										= {"OPTRE_m45","Throw","Put","OPTRE_M6G_SF"};
+		respawnWeapons[] 								= {"OPTRE_m45","Throw","Put","OPTRE_M6G_SF"};
 		magazines[] 									= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","HandGrenade","HandGrenade","SmokeShell","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag"};
 		respawnMagazines[] 								= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","HandGrenade","HandGrenade","SmokeShell","APERSMine_Range_Mag","APERSMine_Range_Mag","APERSMine_Range_Mag"};
 		icon = "iconManExplosive";
@@ -566,7 +566,7 @@ class CfgVehicles
 	{
 		scope											= 2;
 		displayName										= "Hacker";
-		backpack 										= "OPTRE_Como_pack_1";
+		backpack 										= "OPTRE_ANPRC_515";
 		uniformClass                  	    			= "OPTRE_Ins_ER_rolled_jean_orca";
 		linkedItems[]                 	   				= {"V_BandollierB_blk","OPTRE_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
         respawnLinkedItems[]           	    			= {"V_BandollierB_blk","OPTRE_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
@@ -603,7 +603,7 @@ class CfgVehicles
 	// BACKPACKS
 	
 	class OPTRE_ins_backpack_AT : B_fieldpack_blk {
-		displayname = "Insurgent Rocket Pack";
+		displayname = "[INS] AT Rocket Pack";
 		class TransportMagazines
 			{
 				class OPTRE_M41_Twin_HEAT
@@ -614,7 +614,7 @@ class CfgVehicles
 			};
 	};
 	class OPTRE_ins_backpack_exp : B_fieldpack_blk {
-		displayname = "Insurgent Explosive Pack";
+		displayname = "[INS] Explosives Pack";
 		class TransportMagazines
 			{
 				class _xx_APERSBoundingMine_Range_Mag

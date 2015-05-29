@@ -58,6 +58,19 @@ class cfgVehicles
                 displayName 										= "[UNSC] ILCS Backpack [Medic]";
 				hiddenSelections[] 									= {"camo1"};
 				hiddenSelectionsTextures[] 							= {"OPTRE_Weapons\Backpacks\data\ruck_med_CO.paa"};
+				class TransportItems
+				{
+					class _xx_OPTRE_MedKit
+					{
+					name = "OPTRE_Medkit";
+					count = 1;
+					};
+					class _xx_OPTRE_Biofoam
+					{
+					name = "OPTRE_Biofoam";
+					count = 10;
+					};
+				};
         };
 				
 		class OPTRE_ILCS_Rucksack_green : OPTRE_ILCS_Rucksack_Black
@@ -133,4 +146,143 @@ class cfgVehicles
                 displayName 										= "[UNSC] AN/PRC-521 [Black]";
 				hiddenSelectionsTextures[] 							= {"OPTRE_Weapons\Backpacks\data\RadioPack1_Black_CO.paa"};
         };
+		class OPTRE_ILCS_Rucksack_Black_AT : OPTRE_ILCS_Rucksack_Black_Pouches
+		{
+				picture 											= "\OPTRE_weapons\backpacks\icons\rucksack_black_po.paa";
+                displayName 										= "[UNSC] ILCS Rucksack+ [Black + AT Rockets]";
+				maximumLoad 										= 350;
+				mass 												= 45;
+				hiddenSelections[] 									= {"camo1","biofoam"};
+				hiddenSelectionsTextures[] 							= {"OPTRE_Weapons\Backpacks\data\ruck_black_CO.paa"};
+				class TransportMagazines
+					{
+						class OPTRE_M41_Twin_HEAT
+						{
+						magazine = "OPTRE_M41_Twin_HEAT";
+						count = 2;
+						};
+					};
+        };
+		class OPTRE_ILCS_Rucksack_Black_EXP : OPTRE_ILCS_Rucksack_Black_Pouches
+		{
+				picture 											= "\OPTRE_weapons\backpacks\icons\rucksack_black_po.paa";
+                displayName 										= "[UNSC] ILCS Rucksack+ [Black + Explosives]";
+				maximumLoad 										= 350;
+				mass 												= 45;
+				hiddenSelections[] 									= {"camo1","biofoam"};
+				hiddenSelectionsTextures[] 							= {"OPTRE_Weapons\Backpacks\data\ruck_black_CO.paa"};
+				class TransportMagazines
+				{
+					class _xx_APERSBoundingMine_Range_Mag
+					{
+					magazine = "APERSBoundingMine_Range_Mag";
+					count = 2;
+					};
+					class _xx_ClaymoreDirectionalMine_Remote_Mag
+					{
+					magazine = "ClaymoreDirectionalMine_Remote_Mag";
+					count = 2;
+					};
+					class _xx_SLAMDirectionalMine_Wire_Mag
+					{
+					magazine = "SLAMDirectionalMine_Wire_Mag";
+					count = 2;
+					};
+					class _xx_DemoCharge_Remote_Mag
+					{
+					magazine = "DemoCharge_Remote_Mag";
+					count = 3;
+					};
+				};
+				class TransportItems
+				{
+					class _xx_ToolKit
+					{
+						name = "ToolKit";
+						count = 1;
+					};
+					class _xx_MineDetector
+					{
+						name = "MineDetector";
+						count = 1;
+					};
+				};
+        };
+		class OPTRE_kitbag_rgr_AT : B_Kitbag_rgr {
+		displayname = "[UNSC] AT Rocket Pack";
+		class TransportMagazines
+			{
+				class OPTRE_M41_Twin_HEAT
+				{
+				magazine = "OPTRE_M41_Twin_HEAT";
+				count = 2;
+				};
+			};
+		};
+		class OPTRE_kitbag_rgr_AA : B_Kitbag_rgr {
+		displayname = "[UNSC] AA Rocket Pack";
+		class TransportMagazines
+			{
+				class OPTRE_M41_Twin_HEAT
+				{
+				magazine = "OPTRE_M41_Twin_HEAT_G";
+				count = 2;
+				};
+			};
+		};
+		class OPTRE_kitbag_rgr_EXP : B_Kitbag_rgr {
+		displayname = "[UNSC] Demolitions Pack";
+		class TransportMagazines
+			{
+				class _xx_APERSBoundingMine_Range_Mag
+				{
+				magazine = "APERSBoundingMine_Range_Mag";
+				count = 3;
+				};
+				class _xx_ClaymoreDirectionalMine_Remote_Mag
+				{
+				magazine = "ClaymoreDirectionalMine_Remote_Mag";
+				count = 2;
+				};
+				class _xx_SLAMDirectionalMine_Wire_Mag
+				{
+				magazine = "SLAMDirectionalMine_Wire_Mag";
+				count = 2;
+				};
+				class _xx_DemoCharge_Remote_Mag
+				{
+				magazine = "DemoCharge_Remote_Mag";
+				count = 1;
+				};
+			};
+			class TransportItems
+			{
+				class _xx_ToolKit
+				{
+					name = "ToolKit";
+					count = 1;
+				};
+				class _xx_MineDetector
+				{
+					name = "MineDetector";
+					count = 1;
+				};
+			};
+		};
+		class OPTRE_kitbag_rgr_ENG : B_Kitbag_rgr {
+		displayname = "[UNSC] Engineer Pack";
+		class TransportItems
+			{
+				class _xx_ToolKit
+				{
+					name = "ToolKit";
+					count = 1;
+				};
+				class _xx_MineDetector
+				{
+					name = "MineDetector";
+					count = 1;
+				};
+			};
+		};
 	};
