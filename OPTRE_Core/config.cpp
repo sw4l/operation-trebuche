@@ -819,3 +819,14 @@ class CfgWorlds
 		};
 	};
 };
+
+class CfgVehicles
+{
+	class ModuleOrdnanceRocket_F;
+	class ModuleOrdnanceMACRound: ModuleOrdnanceRocket_F
+	{
+		author = "Article 2 Studios";
+		displayName = "MAC Round";
+		ammo = "OPTRE_MAC_Round";
+	};
+};

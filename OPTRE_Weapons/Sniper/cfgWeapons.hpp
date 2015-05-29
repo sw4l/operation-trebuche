@@ -19,7 +19,7 @@ class Mode_FullAuto;
             {
                     scope                                                                   = 2;
                     displayName                                                             = "Oracle N-variant SRS99 Scope";
-					picture = "\OPTRE_weapons\sniper\icons\scope.paa";
+					picture 																= "\OPTRE_weapons\sniper\icons\scope.paa";
                     model                                                                   = "\OPTRE_Weapons\Sniper\SRS99_Scope.p3d";
                     descriptionShort                                                        = "Oracle N-variant SRS99 Sniper Rifle 5-10x56 Scope";
                     weaponInfoType                                                          = "RscWeaponZeroing";
@@ -81,11 +81,13 @@ class Mode_FullAuto;
 		scope 				= 2;																	/// available in Arsenal
 		displayName			= "SRS-99 Bipod";													/// name of item in Inventory (and Arsenal)
 		model 				= "\OPTRE_Weapons\Sniper\SRS99_Bipod.p3d";						/// path to model
+		picture				="\A3\Weapons_F\Data\placeholder_co.paa";
 		class ItemInfo: InventoryUnderItem_Base_F
         {
             deployedPivot	= "bipod";		/// what point should be used to be on surface while unfolded
 			hasBipod		= true;			/// bipod obviously has a bipod
 			mass			= 10;			/// what is the mass of the object	
+			model 			= "\OPTRE_Weapons\Sniper\SRS99_Bipod.p3d";						/// path to model
         };
 		inertia = 0.2;						/// how much does the bipod add to inertia of the weapon
 		};	

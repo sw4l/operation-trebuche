@@ -2044,6 +2044,58 @@ class cfgWeapons
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa"}; /// what texture is going to be used
 		};
 	};	
+	class H_MilCap_Blue;
+	class H_Booniehat_khk;
+	class OPTRE_PatrolCap_Army_WDL: H_MilCap_blue 
+	{
+		displayname 									= "[UNSC] Patrol Cap [Woodland]";
+		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\cappatrol_woodland_co.paa"};
+	};
+	class OPTRE_BoonieHat_Army_WDL: H_Booniehat_khk 
+	{
+		displayname 									= "[UNSC] Boonie Hat [Woodland]";
+		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\booniehat_woodland_co.paa"};
+	};	
+	class OPTRE_PatrolCap_Army_DES: H_MilCap_blue 
+	{
+		displayname 									= "[UNSC] Patrol Cap [Desert]";
+		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\cappatrol_Desert_co.paa"};
+	};
+	class OPTRE_BoonieHat_Army_DES: H_Booniehat_khk 
+	{
+		displayname 									= "[UNSC] Boonie Hat [Desert]";
+		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\booniehat_Desert_co.paa"};
+	};
+		class OPTRE_PatrolCap_Army_TRO: H_MilCap_blue 
+	{
+		displayname 									= "[UNSC] Patrol Cap [Tropic]";
+		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\cappatrol_Tropic_co.paa"};
+	};
+	class OPTRE_BoonieHat_Army_TRO: H_Booniehat_khk 
+	{
+		displayname 									= "[UNSC] Boonie Hat [Tropic]";
+		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\booniehat_Tropic_co.paa"};
+	};
+	class OPTRE_PatrolCap_Army_ARI: H_MilCap_blue 
+	{
+		displayname 									= "[UNSC] Patrol Cap [Arid]";
+		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\cappatrol_Arid_co.paa"};
+	};
+	class OPTRE_BoonieHat_Army_ARI: H_Booniehat_khk 
+	{
+		displayname 									= "[UNSC] Boonie Hat [Arid]";
+		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\booniehat_Arid_co.paa"};
+	};
+		class OPTRE_PatrolCap_Army_SNO: H_MilCap_blue 
+	{
+		displayname 									= "[UNSC] Patrol Cap [Snow]";
+		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\cappatrol_Snow_co.paa"};
+	};
+	class OPTRE_BoonieHat_Army_SNO: H_Booniehat_khk 
+	{
+		displayname 									= "[UNSC] Boonie Hat [Snow]";
+		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\booniehat_Snow_co.paa"};
+	};
 	// HELMETS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 };

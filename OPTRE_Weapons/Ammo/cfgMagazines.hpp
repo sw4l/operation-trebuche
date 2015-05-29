@@ -427,6 +427,7 @@ class CfgMagazines
 		picture = "\OPTRE_Weapons\explosives\icons\m9.paa";
 		count = 1;
 		nameSound = "handgrenade";
+		initSpeed = 20;
 	};
 	class OPTRE_M2_Smoke: SmokeShell
 	{

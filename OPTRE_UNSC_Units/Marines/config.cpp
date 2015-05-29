@@ -411,6 +411,7 @@ class cfgWeapons
 	class HeadgearItem;
 	class H_HelmetB;
 	class H_MilCap_Blue;
+	class H_Booniehat_khk;
 	
 	// UNIFORMS START
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -580,7 +581,12 @@ class cfgWeapons
 	class OPTRE_PatrolCap_Marine: H_MilCap_blue 
 	{
 		displayname 									= "[UNSC] Patrol Cap [Marines]";
-		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Marines\data\patrolcap_marines_co.paa"};
+		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Marines\data\cappatrol_marine_co.paa"};
+	};
+	class OPTRE_BoonieHat_Marine: H_Booniehat_khk 
+	{
+		displayname 									= "[UNSC] Boonie Hat [Marines]";
+		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Marines\data\booniehat_marine_co.paa"};
 	};
 	// HELMETS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

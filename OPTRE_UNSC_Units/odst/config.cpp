@@ -999,6 +999,12 @@ class cfgWeapons
 		displayName    																			= "[UNSC] Cap [ODST]";
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\instructor_hat_co.paa"};
 	};
+	class H_Booniehat_khk;
+	class OPTRE_BoonieHat_ODST: H_Booniehat_khk 
+	{
+		displayname 									= "[UNSC] Boonie Hat [ODST]";
+		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\ODST\data\booniehat_odst_co.paa"};
+	};	
 	// HELMETS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 };

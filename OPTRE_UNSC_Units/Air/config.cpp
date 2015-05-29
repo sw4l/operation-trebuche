@@ -169,4 +169,21 @@ class cfgWeapons
 	};
 	// VESTS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	// HELMETS START
+	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	class H_MilCap_Blue;
+	class H_Booniehat_khk;
+	class OPTRE_PatrolCap_Airforce: H_MilCap_blue 
+	{
+		displayname 									= "[UNSC] Patrol Cap [Air Force]";
+		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Air\data\cappatrol_airforce_co.paa"};
+	};
+	class OPTRE_BoonieHat_Airforce: H_Booniehat_khk 
+	{
+		displayname 									= "[UNSC] Boonie Hat [Air Force]";
+		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Air\data\booniehat_airforce_co.paa"};
+	};
+	// HELMETS END
+	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 };

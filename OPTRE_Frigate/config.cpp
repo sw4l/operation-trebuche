@@ -65,6 +65,19 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
+	/*class OPTRE_Frigate_Experimental: Static
+	{
+		scope = 2;
+		scopeCurator = 2;
+		vehicleClass = "OPTRE_UNSC_Object_class";
+		displayName = "Experimental Frigate";
+		model = "\OPTRE_frigate\finaldawn_0.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+		class Eventhandlers {
+			init = "_scr = _this execVM ""\OPTRE_Frigate\build.sqf"";";
+		};
+	};*/
 	class OPTRE_Frigate_Console: OPTRE_Frigate_Final_Dawn
 	{
 		displayName = "Console [Frigate]";

@@ -16,13 +16,15 @@ class CfgVehicles
 	class OPTRE_Objects_Base: Static
 	{
 		scope = 0;
-		scopeCurator = 2;
+		scopeCurator = 0;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
 	class OPTRE_Objects_ODST_Grave: OPTRE_Objects_Base
 	{
+		scope = 2;
+		scopeCurator = 2;
 		displayName = "ODST Grave";
 		model = "\OPTRE_Misc\Objects\odst_grave.p3d";
 		author = "Article 2 Studios";
@@ -30,6 +32,8 @@ class CfgVehicles
 	};
 	class OPTRE_Objects_Soldier_Grave: OPTRE_Objects_Base
 	{
+		scope = 2;
+		scopeCurator = 2;
 		displayName = "Soldier Grave";
 		model = "\OPTRE_Misc\Objects\soldier_grave.p3d";
 		author = "Article 2 Studios";
@@ -37,6 +41,8 @@ class CfgVehicles
 	};
 	class OPTRE_Objects_Monument: OPTRE_Objects_Base
 	{
+		scope = 2;
+		scopeCurator = 2;
 		displayName = "Monument";
 		model = "\OPTRE_Misc\Objects\monument.p3d";
 		author = "Article 2 Studios";
@@ -44,6 +50,8 @@ class CfgVehicles
 	};
 	class OPTRE_Objects_Kiosk1: OPTRE_Objects_Base
 	{
+		scope = 2;
+		scopeCurator = 2;
 		displayName = "Recruiting Kiosk 1";
 		model = "\OPTRE_Misc\Objects\kiosk_1.p3d";
 		author = "Article 2 Studios";
@@ -53,6 +61,8 @@ class CfgVehicles
 	};
 	class OPTRE_Objects_Kiosk2: OPTRE_Objects_Kiosk1
 	{
+		scope = 2;
+		scopeCurator = 2;
 		displayName = "Recruiting Kiosk 2";
 		model = "\OPTRE_Misc\Objects\kiosk_2.p3d";
 		author = "Article 2 Studios";
@@ -62,6 +72,8 @@ class CfgVehicles
 	};
 	class OPTRE_Objects_Kiosk3: OPTRE_Objects_Kiosk1
 	{
+		scope = 2;
+		scopeCurator = 2;
 		displayName = "Recruiting Kiosk 3";
 		model = "\OPTRE_Misc\Objects\kiosk_3.p3d";
 		author = "Article 2 Studios";
@@ -71,6 +83,8 @@ class CfgVehicles
 	};
 	class OPTRE_Objects_Holotable_Blank: OPTRE_Objects_Base
 	{
+		scope = 2;
+		scopeCurator = 2;
 		displayName = "Holo Table (Blank)";
 		model = "\OPTRE_Misc\Objects\holotable.p3d";
 		author = "Article 2 Studios";
@@ -80,6 +94,8 @@ class CfgVehicles
 	};
 	class OPTRE_Objects_Holotable_Stratis: OPTRE_Objects_Holotable_Blank
 	{
+		scope = 2;
+		scopeCurator = 2;
 		displayName = "Holo Table (Stratis)";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
@@ -88,6 +104,8 @@ class CfgVehicles
 	};
 	class OPTRE_Objects_Holotable_Altis: OPTRE_Objects_Holotable_Blank
 	{
+		scope = 2;
+		scopeCurator = 2;
 		displayName = "Holo Table (Altis)";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
