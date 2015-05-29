@@ -19,7 +19,7 @@ class CfgVehicles
 		class Turrets;
 	};
 
-	class Heli_Light_01_unarmed_base_F: Helicopter_Base_F
+	class Helicopter_Base_H: Helicopter_Base_F
 	{
 		class Turrets: Turrets
 		{
@@ -37,7 +37,7 @@ class CfgVehicles
 		};
 	};
 
-	class OPTRE_falcon_base: Heli_Light_01_unarmed_base_F
+	class OPTRE_falcon_base: Helicopter_Base_H
 	{
 		armor = 100;				/// just some protection against missiles, collisions and explosions
 		altFullForce = 4000;	/// in what height do the engines still have full thrust
@@ -556,7 +556,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Air_class";
 		author="Article 2 Studios";
 		faction	= "OPTRE_UNSC";			/// defines the faction inside of the side
-		crew = "OPTRE_UNSC_Army_Pilot_WDL";	/// lets use the sample soldier we have as default captain of the boat
+		crew = "OPTRE_UNSC_Airforce_Soldier_Airman";	/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 			/// harder to distinguish side than vehicle type
 		displayName = "UH-144 Falcon (Green)";
 		hiddenSelections[]= {"camo1","camo2","camo3","camo4","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
@@ -572,7 +572,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Air_class";
 		author="Article 2 Studios";
 		faction	= "OPTRE_UNSC";			/// defines the faction inside of the side
-		crew = "OPTRE_UNSC_Army_Pilot_DES";	/// lets use the sample soldier we have as default captain of the boat
+		crew = "OPTRE_UNSC_Airforce_Soldier_Airman";	/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 			/// harder to distinguish side than vehicle type
 		displayName = "UH-144 Falcon (Tan)";
 		hiddenSelections[]= {"camo1","camo2","camo3","camo4","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
@@ -588,7 +588,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Air_class";
 		author="Article 2 Studios";
 		faction	= "OPTRE_UNSC";			/// defines the faction inside of the side
-		crew = "OPTRE_UNSC_Marine_Pilot";	/// lets use the sample soldier we have as default captain of the boat
+		crew = "OPTRE_UNSC_Airforce_Soldier_Airman";	/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 			/// harder to distinguish side than vehicle type
 		displayName = "UH-144 Falcon (Black)";
 		hiddenSelections[]= {"camo1","camo2","camo3","camo4","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
@@ -604,7 +604,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_UNSC_Air_class";
 		author="Article 2 Studios";
 		faction	= "OPTRE_UNSC";			/// defines the faction inside of the side
-		crew = "OPTRE_UNSC_Army_Pilot_SNO";	/// lets use the sample soldier we have as default captain of the boat
+		crew = "OPTRE_UNSC_Airforce_Soldier_Airman";	/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 			/// harder to distinguish side than vehicle type
 		displayName = "UH-144 Falcon (Snow)";
 		hiddenSelections[]= {"camo1","camo2","camo3","camo4","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled

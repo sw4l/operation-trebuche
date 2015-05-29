@@ -8,10 +8,10 @@
 		maxSpeed									= 125;
 		fuelCapacity								= 150;
 		wheelCircumference							= 3.924; //radius 1.962
-		antiRollbarForceCoef						= 15; //20
-		antiRollbarForceLimit 						= 5; //10
-		antiRollbarSpeedMin							= 20;
-		antiRollbarSpeedMax							= 80; //50
+		antiRollbarForceCoef						= 20; //20
+		antiRollbarForceLimit 						= 10; //10
+		antiRollbarSpeedMin							= 10;
+		antiRollbarSpeedMax							= 75; //50
 		idleRpm										= 800;
 		redRpm										= 4500;
 		slowSpeedForwardCoef						= 0.35;
@@ -193,7 +193,7 @@
 				// <Description>: This is the weight in kg of wheel including both rim and tyre.
 				// <Type>: float
 				// <Default>: 10.0
-				mass 						= 99.688; //30
+				mass 						= 170.696; //30
 
 				// <Description>: This is the wheel's moment of inertia about the rolling axis. Smaller values result in more slips in aggresive driving
 				// while larger hamper the gain of speed. Good base to start with is this formula:
@@ -201,7 +201,7 @@
 				// Some tweaking is needed after the computation, but it is still better than nothing.
 				// <Type>: float
 				// <Default>: 0.5 * WheelMass * WheelRadius * WheelRadius
-				MOI 						= 191.871686736; //5
+				MOI 						= 328.542346512; //5
 
 				// <Description>:The damping rate describes the rate at which a freely spinning wheel loses rotational speed. 
 				// Values in range (0.25, 2) seem like sensible values. Experimentation is always a good idea, even outside this range.
@@ -258,13 +258,13 @@
 				// <Description>: This is the mass in kg that is supported by the suspension spring.
 				// <Type>: float
 				// <Default>: vehicleMass/numberOfWheels
-				sprungMass 							= 680.3875; //825
+				sprungMass 							= 750; //825
 				
 				// <Description>: This is the strength of the suspension spring in Newtons per metre.
 				//   springStrength = naturalFrequency * naturalFrequency * sprungMass
 				// <Type>: float
 				// <Default>: sprungMass*5,0*5,0
-				springStrength 							= 17009.6875; //51625
+				springStrength 							= 18750; //51625
 
 				// <Description>: This describes the rate at which the spring dissipates the energy stored in the spring.
 				// Basic equiation for this is
@@ -272,7 +272,7 @@
 				// where dampingRatio = 1 mean critical damping (critically damped pendulum should get back to start point in every swing)
 				// <Type>: float
 				// <Default>: 0,4*2*sqrt(springStrength*sprungMass)
-				springDamperRate 						= 27215.5; //8920
+				springDamperRate 						= 30000; //8920
 				
 				/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 				// Tire parameters

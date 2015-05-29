@@ -32,12 +32,9 @@ class CfgVehicles
 	class OPTRE_Longsword_Base: Plane_Base_F
 	{
 		displayName = "Longsword Base";								/// how is the plane displayed in editor
-		model = "\OPTRE_Vehicles\Longsword.p3d";	/// path to model of the plane
+		model = "\OPTRE_Vehicles\Longsword\Longsword.p3d";	/// path to model of the plane
 		accuracy = 0.2;											/// how hard it is to distinguish the type of the vehicle (bigger number means harder)
-
-		//icon = "A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Map_Plane_Fighter_03_CA.paa"; 	/// icon in map/editor
-		//picture = "A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Plane_Fighter_03_CA.paa";	/// small picture in command menu
-
+		crew = "OPTRE_UNSC_Airforce_Soldier_Airman";	/// lets use the sample soldier we have as default captain of the boat
 		driverAction = Plane_Fighter_03_pilot;	/// what is the standard pose for the pilot, defined as animation state
 
 		LockDetectionSystem = CM_Lock_Radar;			/// this uses macros from basicDefines_A3, just add more to gain more systems for the vehicle
@@ -225,14 +222,6 @@ class CfgVehicles
 		side			 = 2;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		faction	= "OPTRE_UNSC";				/// defines the faction inside of the side
 		vehicleClass = "OPTRE_UNSC_Air_class";
-		crew			 = "OPTRE_UNSC_Army_W_Pilot";		/// lets use the sample soldier we have as default captain of the boat
-
-		hiddenSelectionsTextures[] = /// changes of textures to distinguish variants in same order as hiddenSelections[]
-		{
-			"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_INDP_co.paa",
-			"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_2_INDP_co.paa"
-		};
-
 		weapons[] =	/// lets use the weapons from Buzzard
 		{
 			gatling_20mm,
@@ -264,11 +253,6 @@ class CfgVehicles
 	class OPTRE_UNSC_Longsword_AA: OPTRE_UNSC_Longsword_CAS	/// the other version is pretty much obvious, just showing the possibilities
 	{
 		displayName = "Longsword (AA)";
-		hiddenSelectionsTextures[] =
-		{
-			"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_INDP_co.paa",
-			"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_2_INDP_co.paa"
-		};
 
 		weapons[] =
 		{
@@ -294,20 +278,5 @@ class CfgVehicles
 			class AddAsraam_out: AddAsraam_out {initPhase = 1;};
 			class AddAsraam_mid: AddAsraam_mid {initPhase = 1;};			
 		};
-	};
-
-	class PlaneWreck;
-
-	class Test_Plane_01_wreck_F: PlaneWreck
-	{
-		scope = 0;
-		model = "-";
-		typicalCargo[] = {};
-		irTarget = 0;
-		transportAmmo = 0;
-		transportRepair = 0;
-		transportFuel = 0;
-		transportSoldier = 1;
-		class Eventhandlers{};
 	};
 };

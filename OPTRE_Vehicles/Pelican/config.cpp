@@ -55,7 +55,7 @@ class CfgVehicles
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		vehicleClass = "OPTRE_UNSC_Air_class";
 		faction	= "OPTRE_UNSC";					/// defines the faction inside of the side
-		crew = "OPTRE_UNSC_Army_W_Pilot";					/// lets use the sample soldier we have as default captain of the boat
+		crew = "OPTRE_UNSC_Airforce_Soldier_Airman";					/// lets use the sample soldier we have as default captain of the boat
 		scope 	= 0;
 		author="Article 2 Studios";
         armor = 120;//60					        /// just some protection against missiles, collisions and explosions
@@ -75,6 +75,8 @@ class CfgVehicles
 		fuelConsumptionRate = 0.03845;
 		insideSoundCoef = 0.0116228;
 		noseDownCoef = 0; //?
+		crewCrashProtection=0;
+		crewExplosionProtection = 0.15;
 		
 	///AI HANDLING
 	
@@ -810,7 +812,7 @@ class CfgVehicles
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		vehicleClass = "OPTRE_UNSC_Air_class";
 		faction	= "OPTRE_UNSC";					/// defines the faction inside of the side
-		crew = "OPTRE_UNSC_Army_W_Pilot";					/// lets use the sample soldier we have as default captain of the boat
+		crew = "OPTRE_UNSC_Airforce_Soldier_Airman";					/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 					/// harder to distinguish side than vehicle type
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
@@ -824,7 +826,7 @@ class CfgVehicles
 		scope 	= 2;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		faction	= "OPTRE_UNSC";					/// defines the faction inside of the side
-		crew = "OPTRE_UNSC_Army_D_Pilot";					/// lets use the sample soldier we have as default captain of the boat
+		crew = "OPTRE_UNSC_Airforce_Soldier_Airman";					/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 					/// harder to distinguish side than vehicle type
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
@@ -839,7 +841,7 @@ class CfgVehicles
 		scope 	= 2;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		faction	= "OPTRE_UNSC";					/// defines the faction inside of the side
-		crew = "OPTRE_UNSC_Army_W_Pilot";					/// lets use the sample soldier we have as default captain of the boat
+		crew = "OPTRE_UNSC_Airforce_Soldier_Airman";					/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 					/// harder to distinguish side than vehicle type
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
@@ -849,7 +851,7 @@ class CfgVehicles
 	};
 	class OPTRE_Pelican_unarmed_ins: OPTRE_Pelican_unarmed_green
 	{
-		displayName = "D77H-TCI Pelican (Insurrection)";
+		displayName = "D77H-TCI Pelican (Ins)";
 		author="Article 2 Studios";
 		scope 	= 2;						/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
 		side = 0;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
@@ -870,7 +872,7 @@ class CfgVehicles
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		vehicleClass = "OPTRE_UNSC_Air_class";
 		faction	= "OPTRE_UNSC";					/// defines the faction inside of the side
-		crew = "OPTRE_UNSC_Marine_Pilot";					/// lets use the sample soldier we have as default captain of the boat
+		crew = "OPTRE_UNSC_Navy_Soldier_Olive";					/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 					/// harder to distinguish side than vehicle type
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
@@ -885,7 +887,7 @@ class CfgVehicles
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		vehicleClass = "OPTRE_UNSC_Air_class";
 		faction	= "OPTRE_UNSC";					/// defines the faction inside of the side
-		crew = "OPTRE_UNSC_Marine_Pilot";					/// lets use the sample soldier we have as default captain of the boat
+		crew = "OPTRE_UNSC_Airforce_Soldier_Airman";					/// lets use the sample soldier we have as default captain of the boat
 		accuracy = 1.50; 					/// harder to distinguish side than vehicle type
 		memoryPointLMissile = "Rocket_1";
 		memoryPointRMissile = "Rocket_2";
@@ -1011,6 +1013,7 @@ class CfgVehicles
 	{
 		author="Article 2 Studios";
 		displayName = "D77H-TCI/AV Pelican (Marine)";
+		crew = "OPTRE_UNSC_Navy_Soldier_Olive";					/// lets use the sample soldier we have as default captain of the boat
 		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_marine_CO.paa"};
 	};

@@ -450,16 +450,6 @@ class cfgWeapons
 			mass														= 30;
 		};
 	};
-	class OPTRE_UNSC_Marine_Uniform_Pilot: OPTRE_UNSC_Marine_Uniform
-	{
-		author															= "Article 2 Studios";
-		displayName														= "[UNSC] Marine BDU (Pilot)";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass												= "OPTRE_UNSC_Marine_Pilot";
-			mass														= 20;
-		};
-	};
 	// UNIFORMS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

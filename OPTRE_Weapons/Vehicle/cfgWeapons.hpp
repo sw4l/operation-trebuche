@@ -9,7 +9,7 @@ class CfgWeapons
 	class cannon_120mm;
 	class RCWSOptics;
 	class missiles_titan;
-	class missiles_DAR;
+	class missiles_DAGR;
 	class gatling_20mm;
 	class gatling_30mm;
 	
@@ -78,7 +78,7 @@ class CfgWeapons
 			sounds[]						= {"StandardSound"};
 		};
 	};
-	class OPTRE_M79_MLRS: missiles_DAR
+	class OPTRE_M79_MLRS: missiles_DAGR
 	{
 		displayName							= "M79 MLRS";
 		magazines[] 						= {"OPTRE_6Rnd_65mm_rockets"};

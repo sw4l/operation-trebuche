@@ -60,7 +60,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Structure_class";
-		displayName = "Guard Tower [Tan]";
+		displayName = "Container Tower [Tan]";
 	};
 	class OPTRE_Building_Container_Small_Medical: Land_Medevac_house_V1_F
 	{

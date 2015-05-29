@@ -53,7 +53,7 @@ class CfgVehicles //This configures units and backpacks
 			nameSound																	= "chopper";
 			hasgunner																	= 0;
 			faction																		= "OPTRE_UNSC";
-			crew 																		= "OPTRE_UNSC_ODST_Scout";
+			crew 																		= "OPTRE_UNSC_ODST_Soldier_Scout";
 			transportSoldier															= 0;
 			isBicycle																	= true;
 			vehicleClass 																= "OPTRE_UNSC_HEV_class";

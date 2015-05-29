@@ -26,7 +26,7 @@ class CfgWeapons
 	class OPTRE_M41_SSR : launch_RPG32_F
 	{
 		scope = 2;
-		author = "The Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		displayname = "M41 SSR MAV/AW";
 		descriptionshort = "Surface-to-Surface Rocket Medium Anti-Vehicle/Assault Weapon";
 
@@ -58,10 +58,36 @@ class CfgWeapons
 			mass = 200;
 		};
 	};
-	class OPTRE_M41_SSR_G: launch_Titan_base 
+	class OPTRE_M41_SSR_G: OPTRE_M41_SSR
+	{
+		author = "Article 2 Studios";
+		displayname = "M41 SSR MAV/AW (Guided)";
+		descriptionshort = "Surface-to-Surface Rocket Medium Anti-Vehicle/Assault Weapon (Guided)";
+		magazines[] = {"OPTRE_M41_Twin_HEAT_G"};
+		lockingTargetSound[] = {"\A3\Sounds_F\weapons\Rockets\locked_1",0.316228,1};
+		lockedTargetSound[] = {"\A3\Sounds_F\weapons\Rockets\locked_3",0.316228,2.5};
+		canLock = 2;
+		weaponLockDelay = 3;
+		weaponLockSystem = 1;
+		cmImmunity = 0.9;
+		lockAcquire = 0;
+		cursor = "missile";
+		muzzlePos = "usti hlavne";
+        muzzleEnd = "konec hlavne";
+		
+		reloadaction = "ReloadRPG";
+		reloadmagazinesound[] = {"A3\sounds_f\weapons\rockets\titan_reload_final", 0.562341, 1, 50};
+		aiRateOfFire = 10.0;	// delay between shots at given distance
+		aiRateOfFireDistance = 2500;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 210;
+		};
+	};
+	/*class OPTRE_M41_SSR_G: launch_Titan_base 
 	{
 		scope = 2;
-		author = "The Eridanus Insurrection Team";
+		author = "Article 2 Studios";
 		displayname = "M41 SSR MAV/AW (Guided)";
 		descriptionshort = "Surface-to-Surface Rocket Medium Anti-Vehicle/Assault Weapon (Guided)";
 		class Library
@@ -92,5 +118,5 @@ class CfgWeapons
 		{
 			mass = 210;
 		};
-	};
+	};*/
 };

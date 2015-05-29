@@ -46,7 +46,7 @@ class CfgAmmo
 	//14.5x114mm (Sniper)
 	class OPTRE_B_145x114_APFSDS: B_127x99_Ball
 	{
-		hit 							= 50;
+		hit 							= 60;
 		cartridge 						= "FxCartridge_127";
 		caliber 						= 8;
 		typicalSpeed 					= 700;
@@ -76,23 +76,24 @@ class CfgAmmo
 		hit 							= 75;
 		caliber 						= 15;
 		typicalSpeed 					= 700;
-		airFriction 					= -0.00015;
+		airFriction 					= -0.00005;
 	};
 	class OPTRE_B_145x114_HEDP: OPTRE_B_145x114_APFSDS
 	{
-		hit 							= 75;
-		indirectHit 					= 50;
+		hit 							= 50;
+		indirectHit 					= 20;
 		explosive 						= 0.75;
-		indirectHitRange 				= 0.5;
-		caliber 						= 5;
+		indirectHitRange 				= 1;
+		caliber 						= 0.1;
 		typicalSpeed 					= 700;
-		airFriction 					= -0.00005;
+		airFriction 					= -0.00015;
 		timeToLive 						= 15;
 		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_red";
 		tracerScale 					= 2;		
-		CraterEffects 					= "HEShellCrater";
-		CraterWaterEffects 				= "ImpactEffectsWaterHE";
-		ExplosionEffects 				= "HEShellExplosion";
+		deflecting 						= 5;
+		explosionEffects 				= "ExploAmmoExplosion";
+		craterEffects 					= "ExploAmmoCrater";
+		explosionSoundEffect 			= "DefaultExplosion";
 		class CamShakeExplode
 		{
 			power = "(180^0.5)";
@@ -590,13 +591,20 @@ class CfgAmmo
 		maneuvrability = 0;
 		allowAgainstInfantry = 0;
 	};
-	class OPTRE_M41_Rocket_HEAT_Guided: OPTRE_M41_Rocket_ATGM
+	class OPTRE_M41_Rocket_HEAT_Guided: OPTRE_M41_Rocket_HEAT
 	{
 		model = "OPTRE_weapons\rockets\M41_rocket.p3d";
 		irLock = 2;
 		airLock = 2;
 		laserLock = 2;
 		canLock = 2;
+		maneuvrability = 10;
+		simulationStep = 0.002;
+		trackOversteer = 1;
+		trackLead = 1;
+		initTime = 0.25;
+		thrustTime = 2.5;
+		thrust = 385;
 	};
 	class OPTRE_M41_Rocket_HEAP: OPTRE_M41_Rocket_HEAT
 	{
