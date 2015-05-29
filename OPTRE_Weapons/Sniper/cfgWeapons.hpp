@@ -93,8 +93,8 @@ class Mode_FullAuto;
 		};	
             //WEAPONS
 			
-            class EBR_Base_F;
-            class OPTRE_SRS99D: EBR_Base_F
+            class LMG_Mk200_F;
+            class OPTRE_SRS99D: LMG_Mk200_F
             {
                     scope                                                                   = 2;
                     model                                                                   = "\OPTRE_Weapons\Sniper\Sniper.p3d";
@@ -194,15 +194,15 @@ class Mode_FullAuto;
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\SIDE";
                                     scope                                                   = 2;
                             };
-							mass = 200;
-							inertia = 1.25;
-							dexterity = 1.25;
 							class UnderBarrelSlot: UnderBarrelSlot /// using test bipod
 							{
 								iconPosition[] = {0.2, 0.7};
 								iconScale = 0.2;
 								compatibleItems[] = {"OPTRE_SRS99_Bipod"};		
 							};	
+							mass = 200;
+							inertia = 1.25;
+							dexterity = 1.25;
                     };
             };
 			

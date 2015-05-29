@@ -17,6 +17,13 @@ class CfgVehicles
 	class Helicopter_Base_F: Helicopter
 	{
 		class Turrets;
+		class HitPoints;
+		class ViewPilot;
+		class CargoTurret;
+		class Reflectors
+		{
+			class Right;
+		};
 	};
 
 	class Helicopter_Base_H: Helicopter_Base_F
@@ -24,6 +31,21 @@ class CfgVehicles
 		class Turrets: Turrets
 		{
 			class CopilotTurret;
+		};
+		class HitPoints: HitPoints
+		{
+			class HitHull;
+			class HitFuel;
+			class HitEngine;
+			class HitAvionics;
+			class HitVRotor;
+			class HitHRotor;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
 		};
 		class AnimationSources;
 		class Eventhandlers;
@@ -39,7 +61,7 @@ class CfgVehicles
 
 	class OPTRE_falcon_base: Helicopter_Base_H
 	{
-		armor = 100;				/// just some protection against missiles, collisions and explosions
+		armor = 60;				/// just some protection against missiles, collisions and explosions
 		altFullForce = 4000;	/// in what height do the engines still have full thrust
 		altNoForce = 6000;		/// thrust of the engines interpolates to zero between altFullForce and altNoForce
 		maxSpeed = 300;			/// what is the maximum speed of the vehicle
@@ -546,6 +568,45 @@ class CfgVehicles
 		};	
 		aggregateReflectors[] = {{"Left", "Right"}};	/// aggregates both sources into one to increase performance
 		#include "rtd.hpp" /// Advanced FM characteristics in separate file to make the config cleaner
+		class HitPoints:HitPoints
+		{
+			class HitHull:HitHull
+			{
+				armor=0.1;
+				visual="Hull";
+				minimalHit = 0.05;
+				depends = "Total";
+				radius = 0.01;
+			};
+			class HitFuel:HitFuel
+			{
+				armor = 0.7;
+				radius = 0.25;
+				minimalHit = 0.05;
+				explosionShielding = 2;
+			};
+			class HitAvionics:HitAvionics
+			{
+				armor = 1.3;
+				radius = 0.4;
+				minimalHit = 0.05;
+				explosionShielding = 1.5;
+			};
+			class HitHRotor:HitHRotor
+			{
+				armor = 2.6;
+				radius = 0.4;
+				minimalHit = 0.09;
+				explosionShielding = 2.5;
+			};
+			class HitVRotor:HitVRotor
+			{
+				armor = 1.3;
+				radius = 0.06;
+				minimalHit = 0.05;
+				explosionShielding = 6;
+			};
+		};
 	};
 
 	class OPTRE_UNSC_falcon_green: OPTRE_falcon_base
