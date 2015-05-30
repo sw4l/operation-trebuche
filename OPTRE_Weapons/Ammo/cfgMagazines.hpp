@@ -295,7 +295,7 @@ class CfgMagazines
 		displaynameshort					= "APFSDS";
 		ammo								= "OPTRE_B_145x114_APFSDS";
 		count								= 4;
-		initspeed							= 1750;
+		initspeed							= 2000;
 		picture 							= "\OPTRE_weapons\ar\icons\magazine.paa";
 		descriptionshort					= "4 Round Magazine<br>14.5x114mm<br>Armor Piercing Fin-Stabilized Disposable Shell";
 		mass								= 15;
