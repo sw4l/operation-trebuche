@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class OPTRE_Frigate
 	{
-		units[]										= {"OPTRE_Frigate_Final_Dawn","OPTRE_Frigate_Console","OPTRE_Frigate_Hangar_Door","OPTRE_Frigate_LiftArm","OPTRE_Frigate_M910_Turret"};
+		units[]										= {"OPTRE_Frigate_Final_Dawn","OPTRE_Frigate_Console","OPTRE_Frigate_M910_Turret"};
 		weapons[]									= {};
 		requiredVersion								= 0.1;
 		requiredAddons[]							= {"OPTRE_Core","A3_static_f"};
@@ -11,7 +11,7 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class Static;
+	class OPTRE_Objects_Base;
 	class Land;
 	class LandVehicle: Land
 	{
@@ -55,7 +55,7 @@ class CfgVehicles
 		class UserActions;
 	};
 	
-	class OPTRE_Frigate_Final_Dawn: Static
+	class OPTRE_Frigate_Final_Dawn: OPTRE_Objects_Base
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -63,7 +63,6 @@ class CfgVehicles
 		displayName = "FFG-437 Final Dawn";
 		model = "\OPTRE_frigate\finaldawn_complex.p3d";
 		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
 	};
 	/*class OPTRE_Frigate_Experimental: Static
 	{

@@ -801,7 +801,7 @@ class CfgVehicles
 			};			
 		};	
 		aggregateReflectors[] = {{"Left", "Right"}};	/// aggregates both sources into one to increase performance
-		#include "rtd.hpp" /// Advanced FM characteristics in separate file to make the config cleaner
+		//#include "rtd.hpp" /// Advanced FM characteristics in separate file to make the config cleaner
 	};
 	
 	class OPTRE_Pelican_unarmed_green: OPTRE_Pelican_F
@@ -1036,6 +1036,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		model = "OPTRE_Vehicles\Pelican\pelican_wreck.p3d";
+		icon = "OPTRE_Vehicles\Pelican\Data\icon.paa";
 		displayname = "D77H-TCI Pelican Wreck";
 		typicalCargo[] = {};
 		vehicleClass = "OPTRE_UNSC_Object_class";
@@ -1049,13 +1050,19 @@ class CfgVehicles
 	class Wreck_base_F;
 	class OPTRE_Objects_Wreck_Pelican_Static1 : Wreck_base_F
 	{
-	author = "Article 2 Studios";
-	displayname = "D77H-TCI Pelican Wreck (Static 1)";
-	icon = "OPTRE_Vehicles\Pelican\Data\icon.paa";
-	mapSize = 25; //size of icon in editor- square only in meters
-	model = "OPTRE_Vehicles\Pelican\pelican_wreck_static1.p3d";
-	vehicleClass = "OPTRE_UNSC_Object_class";
-	scope = 2;
-	scopeCurator = 2;
+		author = "Article 2 Studios";
+		displayname = "D77H-TCI Pelican Wreck (Static 1)";
+		icon = "OPTRE_Vehicles\Pelican\Data\icon.paa";
+		mapSize = 25; //size of icon in editor- square only in meters
+		model = "OPTRE_Vehicles\Pelican\pelican_wreck_static1.p3d";
+		vehicleClass = "OPTRE_UNSC_Object_class";
+		scope = 2;
+		scopeCurator = 2;
+	};
+	class OPTRE_Objects_Wreck_Pelican_Static2 : OPTRE_Objects_Wreck_Pelican_Static1
+	{
+		author = "Article 2 Studios";
+		displayname = "D77H-TCI Pelican Wreck (Static 2)";
+		model = "OPTRE_Vehicles\Pelican\pelican_wreck_static2.p3d";
 	};
 };

@@ -46,7 +46,7 @@ class Mode_FullAuto;
 											distanceZoomMin 								= 100;
 											distanceZoomMax 								= 2000;
                                             memoryPointCamera                               = "opticView";
-                                            modelOptics[]                                   = {"\OPTRE_Weapons\Sniper\Sniper_Oracle5_Optic","\OPTRE_Weapons\Sniper\Sniper_Oracle10_Optic","\OPTRE_Weapons\Sniper\Sniper_Oracle20_Optic"};
+                                            modelOptics[]                                   = {"\OPTRE_Weapons\Sniper\Sniper_Oracle5_Optic","\OPTRE_Weapons\Sniper\Sniper_Oracle10_Optic"};
 											opticsPPEffects[] 								= {"OpticsCHAbera1","OpticsBlur1"};
                                             visionMode[]                                    = {"Normal","NVG","TI"};
 											thermalMode[] 									= {5,6};
@@ -106,7 +106,7 @@ class Mode_FullAuto;
                     muzzlePos                                                               = "usti hlavne";
                     muzzleEnd                                                               = "konec hlavne";
 					reloadAction 															= "GestureReloadLRR";
-					maxZeroing 																= 1;
+					maxZeroing 																= 2000;
 					discreteDistance[] 														= {1};
 					cursor 																	= "srifle";
 					handAnim[] 																= {"OFP2_ManSkeleton","\OPTRE_Weapons\Sniper\data\anim\sniper_handanim.rtm"};
@@ -181,7 +181,7 @@ class Mode_FullAuto;
                             class CowsSlot: SlotInfo
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"OPTRE_SRS99_Scope"};
+                                    compatibleitems[]                                       = {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope"};
                                     displayname                                             = "Optics Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\TOP";
                                     scope                                                   = 2;

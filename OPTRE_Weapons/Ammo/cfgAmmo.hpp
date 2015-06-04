@@ -150,7 +150,7 @@ class CfgAmmo
 	//8 Gauge (Shotgun)
 	class OPTRE_8Gauge_Pellets : ShotgunBase   
 	{
-		hit 							= 12;
+		hit 							= 10;
 		typicalSpeed					= 100;
 		indirectHit 					= 0;
 		indirectHitRange 				= 0;
@@ -353,7 +353,7 @@ class CfgAmmo
 	};
 	class OPTRE_8Gauge_Slugs : B_762x51_Ball   
 	{
-		hit 							= 16;
+		hit 							= 14;
 		cartridge 						= "FxCartridge_slug";
 		caliber 						= 2;
 		typicalSpeed					= 200;
@@ -468,8 +468,8 @@ class CfgAmmo
 		fuseDistance = 1;
 		indirectHit = 1000;
 		indirectHitRange = 100;
-		maxSpeed = 13680;
-		typicalSpeed = 10000;
+		maxSpeed = 1000;
+		typicalSpeed = 1000;
 		sideAirFriction = 0;
 		simulation = "shotBullet";
 		suppressionRadiusBulletClose = 100;
@@ -614,14 +614,8 @@ class CfgAmmo
 		indirectHitRange = 15;
 		explosive = 1;
 		allowAgainstInfantry = 1;
-	};
-	class OPTRE_Splaser_Ammo: R_PG32V_F
-	{
-		scope = 2;
-		thrust = 500000;
-		initSpeed = 500000;
-		maxSpeed = 500000;
-		model = "OPTRE_Weapons\data\Splaser_tracer.p3d";
+		coefGravity = 0;
+		airFriction = 0;
 	};
 	
 	//Grenades

@@ -15,8 +15,8 @@ class CfgWeapons
 	
 	class OPTRE_M392_Scope: ItemCore
 	{
-		scope 										= 1;
-		scopeArsenal 								= 0;
+		scope 										= 2;
+		scopeArsenal 								= 2;
 		displayName 								= "M392 Scope";
 		picture 									= "\OPTRE_weapons\br\icons\scope.paa";
 		model 										= "\OPTRE_Weapons\DMR\DMR_Scope.p3d";
@@ -58,8 +58,8 @@ class CfgWeapons
 	class LMG_Mk200_F;
 	class OPTRE_M392_DMR: LMG_Mk200_F
 	{
-		scope 										= 1;
-		scopeArsenal 								= 0;
+		scope 										= 2;
+		scopeArsenal 								= 2;
 		handAnim[] 									= {"OFP2_ManSkeleton", "\OPTRE_Weapons\BR\data\anim\BR.rtm"};
 		model										= "\OPTRE_Weapons\DMR\DMR.p3d";
 		displayName 								= "M392 DMR";
@@ -133,7 +133,7 @@ class CfgWeapons
 			class CowsSlot: SlotInfo
 			{
 				access 								= 1;
-				compatibleitems[] 					= {"OPTRE_M392_Scope", "optic_Hamr", "optic_Aco", "optic_mrd"};
+				compatibleitems[] 					= {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope"};
 				displayname 						= "Optics Slot";
 				linkproxy 							= "\A3\data_f\proxies\weapon_slots\TOP";
 				scope 								= 2;

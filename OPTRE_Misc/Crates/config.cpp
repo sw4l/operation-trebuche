@@ -39,7 +39,7 @@ class CfgVehicles
 			};
 			class xx_OPTRE_60Rnd_762x51_Mag_Tracer
 			{
-				magazine = "";
+				magazine = "OPTRE_60Rnd_762x51_Mag_Tracer";
 				count = 999;
 			};
 			class xx_OPTRE_32Rnd_762x51_Mag
@@ -399,7 +399,7 @@ class CfgVehicles
 				};
 				class xx_OPTRE_60Rnd_762x51_Mag_Tracer
 				{
-					magazine = "";
+					magazine = "OPTRE_60Rnd_762x51_Mag_Tracer";
 					count = 25;
 				};
 				class xx_OPTRE_32Rnd_762x51_Mag
@@ -702,7 +702,7 @@ class CfgVehicles
 				};
 				class xx_OPTRE_60Rnd_762x51_Mag_Tracer
 				{
-					magazine = "";
+					magazine = "OPTRE_60Rnd_762x51_Mag_Tracer";
 					count = 50;
 				};
 				class xx_OPTRE_32Rnd_762x51_Mag

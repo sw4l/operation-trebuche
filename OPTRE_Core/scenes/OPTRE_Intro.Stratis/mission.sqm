@@ -7,15 +7,15 @@ class Mission
 		"a3_map_stratis",
 		"OPTRE_UNSC_Units_ODST",
 		"A3_Modules_F_Effects",
-		"A3_Structures_F_Furniture",
-		"OPTRE_Ins_Object_class"
+		"OPTRE_Misc_Objects",
+		"A3_Structures_F_Furniture"
 	};
 	addOnsAuto[]=
 	{
 		"OPTRE_UNSC_Units_ODST",
 		"A3_Modules_F_Effects",
 		"A3_Structures_F_Furniture",
-		"OPTRE_Ins_Object_class",
+		"OPTRE_Misc_Objects",
 		"a3_map_stratis"
 	};
 	randomSeed=2139224;
@@ -52,7 +52,7 @@ class Mission
 					azimut=393.10501;
 					id=0;
 					side="WEST";
-					vehicle="OPTRE_UNSC_ODST_Scout";
+					vehicle="OPTRE_UNSC_ODST_Soldier_Scout";
 					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
@@ -72,7 +72,7 @@ class Mission
 					azimut=175.535;
 					id=1;
 					side="WEST";
-					vehicle="OPTRE_UNSC_ODST_Scout";
+					vehicle="OPTRE_UNSC_ODST_Soldier_Scout";
 					leader=1;
 					skill=0.60000002;
 					text="man3";
@@ -91,7 +91,7 @@ class Mission
 					azimut=269.896;
 					id=2;
 					side="WEST";
-					vehicle="OPTRE_UNSC_ODST_Scout";
+					vehicle="OPTRE_UNSC_ODST_Soldier_Scout";
 					leader=1;
 					skill=0.60000002;
 					text="man5";
@@ -1151,7 +1151,7 @@ class Mission
 					offsetY=0.69999999;
 					id=14;
 					side="WEST";
-					vehicle="OPTRE_UNSC_ODST_Scout";
+					vehicle="OPTRE_UNSC_ODST_Soldier_Scout";
 					leader=1;
 					skill=0.60000002;
 					text="man6";
@@ -1170,7 +1170,7 @@ class Mission
 					azimut=273.65601;
 					id=15;
 					side="WEST";
-					vehicle="OPTRE_UNSC_ODST_Scout";
+					vehicle="OPTRE_UNSC_ODST_Soldier_Scout";
 					leader=1;
 					skill=0.60000002;
 					text="man1";
@@ -1190,7 +1190,7 @@ class Mission
 					azimut=122.029;
 					id=16;
 					side="WEST";
-					vehicle="OPTRE_UNSC_ODST_Rifleman_AR";
+					vehicle="OPTRE_UNSC_ODST_Soldier_Rifleman_AR";
 					leader=1;
 					skill=0.60000002;
 					text="man7";
@@ -1209,7 +1209,7 @@ class Mission
 					azimut=84.833397;
 					id=17;
 					side="WEST";
-					vehicle="OPTRE_UNSC_ODST_Autorifleman";
+					vehicle="OPTRE_UNSC_ODST_Soldier_Autorifleman";
 					leader=1;
 					skill=0.60000002;
 					text="man2";
@@ -1228,7 +1228,7 @@ class Mission
 					azimut=141.57201;
 					id=18;
 					side="WEST";
-					vehicle="OPTRE_UNSC_ODST_Rifleman_BR";
+					vehicle="OPTRE_UNSC_ODST_Soldier_Rifleman_BR";
 					leader=1;
 					skill=0.60000002;
 					text="man4";
@@ -1247,7 +1247,7 @@ class Mission
 					azimut=230.595;
 					id=19;
 					side="WEST";
-					vehicle="OPTRE_UNSC_ODST_TeamLead";
+					vehicle="OPTRE_UNSC_ODST_Soldier_TeamLead";
 					leader=1;
 					skill=0.60000002;
 					text="man8";
@@ -1267,7 +1267,7 @@ class Mission
 					azimut=66.187202;
 					id=20;
 					side="WEST";
-					vehicle="OPTRE_UNSC_ODST_Rifleman_AR";
+					vehicle="OPTRE_UNSC_ODST_Soldier_Rifleman_AR";
 					leader=1;
 					skill=0.60000002;
 					text="man9";
@@ -1375,7 +1375,7 @@ class Mission
 					offsetY=0.25;
 					id=22;
 					side="WEST";
-					vehicle="OPTRE_UNSC_ODST_Rifleman_AR";
+					vehicle="OPTRE_UNSC_ODST_Soldier_Rifleman_AR";
 					leader=1;
 					skill=0.60000002;
 					text="man10";
@@ -1406,7 +1406,7 @@ class Mission
 			offsetY=0.5;
 			id=24;
 			side="EMPTY";
-			vehicle="OPTRE_odst_grave";
+			vehicle="OPTRE_Objects_ODST_Grave";
 			leader=1;
 			skill=0.60000002;
 			text="grv";
@@ -1476,14 +1476,14 @@ class Intro
 		"OPTRE_UNSC_Units_ODST",
 		"A3_Modules_F_Effects",
 		"A3_Structures_F_Furniture",
-		"OPTRE_Ins_Object_class"
+		"OPTRE_Misc_Objects"
 	};
 	addOnsAuto[]=
 	{
 		"OPTRE_UNSC_Units_ODST",
 		"A3_Modules_F_Effects",
 		"A3_Structures_F_Furniture",
-		"OPTRE_Ins_Object_class",
+		"OPTRE_Misc_Objects",
 		"a3_map_stratis"
 	};
 	randomSeed=1436945;

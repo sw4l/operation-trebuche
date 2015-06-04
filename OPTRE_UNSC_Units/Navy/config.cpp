@@ -17,6 +17,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier : B_Helipilot_F 
 	{
         scope 																					= 1;
+		scopeCurator													= 0;
 		author																					= "Article 2 Studios";
         displayName																				= "-";
         uniformAccessories[] 																	= {};
@@ -38,6 +39,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_Yellow: OPTRE_UNSC_Navy_Soldier 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Crewman [Flight Deck]";
         uniformClass 																			= "OPTRE_UNSC_Navy_Uniform_Yellow";
@@ -49,6 +51,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_Orange: OPTRE_UNSC_Navy_Soldier 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		engineer 														= 1;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Crewman [Engineering]";
@@ -61,6 +64,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_Red: OPTRE_UNSC_Navy_Soldier 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Crewman [Security]";
         uniformClass 																			= "OPTRE_UNSC_Navy_Uniform_Red";
@@ -72,6 +76,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_Blue: OPTRE_UNSC_Navy_Soldier 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Crewman";
         uniformClass 																			= "OPTRE_UNSC_Navy_Uniform_Blue";
@@ -83,6 +88,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_Gray: OPTRE_UNSC_Navy_Soldier 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Crewman [Bridge]";
         uniformClass 																			= "OPTRE_UNSC_Navy_Uniform_Gray";
@@ -92,6 +98,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_White: OPTRE_UNSC_Navy_Soldier 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		attendant 																				= 1;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Crewman [Medical]";
@@ -104,6 +111,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_Olive: OPTRE_UNSC_Navy_Soldier 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Aviator";
         uniformClass 																			= "OPTRE_UNSC_Navy_Uniform_Olive";
@@ -115,6 +123,7 @@ class CfgVehicles
 	class OPTRE_UNSC_ONI_Soldier_Naval: OPTRE_UNSC_Navy_Soldier 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		author																					= "Article 2 Studios";
         displayName																				= "ONI Officer";
 		vehicleClass																			= "OPTRE_UNSC_Man_ONI_class";
@@ -128,6 +137,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_Yellow_unarmed: OPTRE_UNSC_Navy_Soldier_Yellow 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Crewman [Flight Deck] (Unarmed)";
         uniformClass 																			= "OPTRE_UNSC_Navy_Uniform_Yellow";
@@ -143,6 +153,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_Orange_Unarmed: OPTRE_UNSC_Navy_Soldier_Orange 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		engineer 														= 1;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Crewman [Engineering] (Unarmed)";
@@ -160,6 +171,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_Red_Unarmed: OPTRE_UNSC_Navy_Soldier_Red 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Crewman [Security] (Unarmed)";
         uniformClass 																			= "OPTRE_UNSC_Navy_Uniform_Red";
@@ -175,6 +187,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_Blue_Unarmed: OPTRE_UNSC_Navy_Soldier_Blue 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Crewman  (Unarmed)";
         uniformClass 																			= "OPTRE_UNSC_Navy_Uniform_Blue";
@@ -188,6 +201,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_Gray_Unarmed: OPTRE_UNSC_Navy_Soldier_Gray 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Crewman [Bridge] (Unarmed)";
         uniformClass 																			= "OPTRE_UNSC_Navy_Uniform_Gray";
@@ -204,6 +218,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_White_Unarmed: OPTRE_UNSC_Navy_Soldier_White 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		attendant 																				= 1;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Crewman [Medical]  (Unarmed)";
@@ -219,6 +234,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_Olive_Unarmed: OPTRE_UNSC_Navy_Soldier_Olive 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Aviator  (Unarmed)";
         uniformClass 																			= "OPTRE_UNSC_Navy_Uniform_Olive";
@@ -235,6 +251,7 @@ class CfgVehicles
 	class OPTRE_UNSC_ONI_Soldier_Naval_Unarmed: OPTRE_UNSC_ONI_Soldier_Naval 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		author																					= "Article 2 Studios";
         displayName																				= "ONI Officer";
 		vehicleClass																			= "OPTRE_UNSC_Man_ONI_class";
@@ -255,6 +272,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_Red_LT: OPTRE_UNSC_Navy_Soldier_Red 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Crewman [Security] (Light)";
         uniformClass 																			= "OPTRE_UNSC_Navy_Uniform_Red";
@@ -270,6 +288,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_Red_HVY: OPTRE_UNSC_Navy_Soldier_Red 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Crewman [Security] (Heavy)";
         uniformClass 																			= "OPTRE_UNSC_Navy_Uniform_Red";
@@ -285,6 +304,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_Red_SMG: OPTRE_UNSC_Navy_Soldier_Red 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Crewman [Security] (SMG)";
         uniformClass 																			= "OPTRE_UNSC_Navy_Uniform_Red";
@@ -300,6 +320,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_Red_SG: OPTRE_UNSC_Navy_Soldier_Red 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		author																					= "Article 2 Studios";
         displayName																				= "Naval Crewman [Security] (Shotgun)";
         uniformClass 																			= "OPTRE_UNSC_Navy_Uniform_Red";
@@ -315,6 +336,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Navy_Soldier_SCPO: OPTRE_UNSC_Navy_Soldier_Gray 
 	{
         scope 																					= 2;
+		scopeCurator													= 2;
 		author																					= "Article 2 Studios";
         displayName																				= "Senior Chief Petty Officer";
 		icon = "iconManOfficer";	

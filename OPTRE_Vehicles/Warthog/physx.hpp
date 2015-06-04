@@ -3,7 +3,7 @@
 		
 		terrainCoef									= 0.1;
 		turnCoef 									= 4; //5.5
-		thrustDelay									= 0.25; //0.25
+		thrustDelay									= 0.35; //0.25
 		brakeIdleSpeed								= 2.5; //1.78
 		maxSpeed									= 125;
 		fuelCapacity								= 150;
@@ -11,11 +11,11 @@
 		antiRollbarForceCoef						= 20; //20
 		antiRollbarForceLimit 						= 10; //10
 		antiRollbarSpeedMin							= 10;
-		antiRollbarSpeedMax							= 75; //50
+		antiRollbarSpeedMax							= 80; //50
 		idleRpm										= 800;
 		redRpm										= 4500;
 		slowSpeedForwardCoef						= 0.35;
-		normalSpeedForwardCoef						= 0.75;
+		normalSpeedForwardCoef						= 0.65;
 		class complexGearbox
 		{
 			GearboxRatios[]							= {"R1",-3.182,"N",0,"D1",4.182,"D2",2.318,"D3",1.85,"D4",1.65,"D5",1.45};
@@ -141,14 +141,14 @@
 		// or it would cause issues while trying to run aggressively (mainly during evading the enemies).
 		// <Type>: float
 		// <Default>: 0.01
-		switchTime								= 0.5; //0.31
+		switchTime								= 0.25; //0.5
 		
 		// <Description>: Set the latency time of the gearbox, specified in s.
 		// This is used to prevent instant shifting after changing gears - there is some power loss during gear change and it could seem that
 		// previous gear is better for a brief time after shifting.
 		// <Type>: float
 		// <Default>: 2.0
-		latency 								= 3.0; //1
+		latency 								= 2; //3
 	
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Wheels parameters
@@ -193,7 +193,7 @@
 				// <Description>: This is the weight in kg of wheel including both rim and tyre.
 				// <Type>: float
 				// <Default>: 10.0
-				mass 						= 170.696; //30
+				mass 						= 29.521; //30
 
 				// <Description>: This is the wheel's moment of inertia about the rolling axis. Smaller values result in more slips in aggresive driving
 				// while larger hamper the gain of speed. Good base to start with is this formula:
@@ -201,13 +201,13 @@
 				// Some tweaking is needed after the computation, but it is still better than nothing.
 				// <Type>: float
 				// <Default>: 0.5 * WheelMass * WheelRadius * WheelRadius
-				MOI 						= 328.542346512; //5
+				MOI 						= 56.820; //5
 
 				// <Description>:The damping rate describes the rate at which a freely spinning wheel loses rotational speed. 
 				// Values in range (0.25, 2) seem like sensible values. Experimentation is always a good idea, even outside this range.
 				// <Type>: float
 				// <Default>: 0.1
-				dampingRate 					= 1; //0.25
+				dampingRate 					= 3; //1
 				
 				// <Description>: This is the value of the torque applied to the wheel when the brakes are maximally applied. Higher torques will lock the wheel 
 				// quicker when braking, while lower torques will take longer to lock the wheel.
@@ -222,7 +222,7 @@
 				// while a value of 0 is necessary for the front wheels to make sure they do not react to the handbrake.
 				// <Type>: float
 				// <Default>: 2*maxBrakeTorque
-				maxHandBrakeTorque 				= 4000; //0
+				maxHandBrakeTorque 				= 6000; //0
 
 				/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 				// Wheel simulation parameters
@@ -252,8 +252,8 @@
 				// <Description>: These values describe the maximum compression and elongation in metres that the spring can support.
 				// <Type>: float
 				// <Default>: 0.15
-				maxCompression 						= 5.0; //2.0
-				mMaxDroop 							= 5.0; //1.0
+				maxCompression 						= 2.0; //5.0
+				mMaxDroop 							= 2.0; //5.0
 				
 				// <Description>: This is the mass in kg that is supported by the suspension spring.
 				// <Type>: float

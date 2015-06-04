@@ -18,6 +18,7 @@ class CfgVehicles
 	class OPTRE_UNSC_ODST_Soldier: B_Soldier_F
 	{
 		scope																					= 1;
+		scopeCurator													= 0;
 		faction																					= "OPTRE_UNSC";
 		author																					= "Article 2 Studios";
 		displayName																				= "-";
@@ -88,6 +89,7 @@ class CfgVehicles
 	class OPTRE_UNSC_ODST_Soldier_L: OPTRE_UNSC_ODST_Soldier
 	{
 		author																				= "Article 2 Studios";
+		scopeCurator													= 0;
 		uniformClass																		= "OPTRE_UNSC_ODST_Uniform_L";
 		hiddenSelections[] 																	= {"camo1","insignia","clan","attach_leftforearm","attach_leftshoulder","attach_rightforearm","attach_rightshoulder"};
 		hiddenSelectionsTextures[] 															= {"OPTRE_UNSC_Units\ODST\data\armor_co.paa"};
@@ -140,6 +142,7 @@ class CfgVehicles
 	class OPTRE_UNSC_ODST_Soldier_Sniper: OPTRE_UNSC_ODST_Soldier
 	{
 		author																				= "Article 2 Studios";
+		scopeCurator													= 0;
 		uniformClass																		= "OPTRE_UNSC_ODST_Uniform_Sniper";
 		hiddenSelections[] 																	= {"camo1","insignia","clan","attach_rightshoulder"};
 		hiddenSelectionsTextures[] 															= {"OPTRE_UNSC_Units\ODST\data\armor_co.paa"};
@@ -166,6 +169,7 @@ class CfgVehicles
 	class OPTRE_UNSC_ODST_Soldier_Medic: OPTRE_UNSC_ODST_Soldier
 	{
 		author																				= "Article 2 Studios";
+		scopeCurator													= 0;
 		uniformClass																		= "OPTRE_UNSC_ODST_Uniform_Medic";
 		hiddenSelections[] 																	= {"camo1","insignia","clan" };
 		hiddenSelectionsTextures[] 															= {"OPTRE_UNSC_Units\ODST\data\armor_medic_co.paa"};
@@ -197,6 +201,7 @@ class CfgVehicles
 	class OPTRE_UNSC_ODST_Soldier_Scorch: OPTRE_UNSC_ODST_Soldier
 	{
 		scope																					= 2;
+		scopeCurator													= 2;
 		author																					= "Article 2 Studios";
 		attendant 																				= 1;
 		engineer 																				= 1;
@@ -274,6 +279,7 @@ class CfgVehicles
 	class OPTRE_UNSC_ODST_Soldier_Instructor: B_Soldier_F
 	{
 		scope																				= 2;
+		scopeCurator													= 2;
 		author																				= "Article 2 Studios";
 		displayName																			= "ODST Instructor";
 		vehicleClass																		= "OPTRE_UNSC_Man_Training_class";
@@ -295,6 +301,7 @@ class CfgVehicles
 	class OPTRE_UNSC_ODST_Soldier_Scout: OPTRE_UNSC_ODST_Soldier
 	{
 		scope 																				= 2;
+		scopeCurator													= 2;
 		displayName																			= "ODST Scout";
 		backpack 																			= "OPTRE_ILCS_Rucksack_Black";
 		weapons[] 																			= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
@@ -306,6 +313,7 @@ class CfgVehicles
 	class OPTRE_UNSC_ODST_Soldier_Scout_AT: OPTRE_UNSC_ODST_Soldier
 	{
 		scope																				= 2;
+		scopeCurator													= 2;
 		displayName																			= "ODST Scout (AT)";
 		backpack 																			= "OPTRE_ILCS_Rucksack_Black_AT";
 		weapons[] 																			= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put","OPTRE_M41_SSR"};
@@ -317,6 +325,7 @@ class CfgVehicles
 	class OPTRE_UNSC_ODST_Soldier_Rifleman_AR: OPTRE_UNSC_ODST_Soldier
 	{
 		scope																				= 2;
+		scopeCurator													= 2;
 		displayName																			= "ODST Rifleman (MA5)";
 		backpack 																			= "OPTRE_ILCS_Rucksack_Black";
 		weapons[] 																			= {"OPTRE_MA5B_AC","OPTRE_M6G_SF","Throw","Put"};
@@ -327,6 +336,7 @@ class CfgVehicles
 	class OPTRE_UNSC_ODST_Soldier_Rifleman_BR: OPTRE_UNSC_ODST_Soldier
 	{
 		scope																				= 2;
+		scopeCurator													= 2;
 		displayName																			= "ODST Rifleman (BR55)";
 		backpack 																			= "OPTRE_ILCS_Rucksack_Black";
 		weapons[] 																			= {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
@@ -337,6 +347,7 @@ class CfgVehicles
 	class OPTRE_UNSC_ODST_Soldier_Rifleman_AT: OPTRE_UNSC_ODST_Soldier
 	{
 		scope																				= 2;
+		scopeCurator													= 2;
 		displayName																			= "ODST Rifleman (AT)";
 		backpack 																			= "OPTRE_ILCS_Rucksack_Black_AT";
 		weapons[] 																			= {"OPTRE_MA5B_AC","OPTRE_M6G_SF","Throw","Put","OPTRE_M41_SSR"};
@@ -348,6 +359,7 @@ class CfgVehicles
 	class OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman: OPTRE_UNSC_ODST_Soldier
 	{
 		scope																				= 2;
+		scopeCurator													= 2;
 		displayName																			= "ODST Automatic Rifleman";
 		backpack																			= "OPTRE_ILCS_Rucksack_Black";
 		weapons[] 																			= {"OPTRE_M73","OPTRE_M6G_SF","Throw","Put"};
@@ -359,17 +371,19 @@ class CfgVehicles
 	class OPTRE_UNSC_ODST_Soldier_Marksman: OPTRE_UNSC_ODST_Soldier_Sniper
 	{
 		scope																				= 2;
+		scopeCurator													= 2;
 		displayName																			= "ODST Marksman";
 		backpack																			= "OPTRE_ILCS_Rucksack_Black";
-		weapons[] 																			= {"srifle_EBR_MRCO_pointer_F","OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 																	= {"srifle_EBR_MRCO_pointer_F","OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 																		= {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
-		respawnMagazines[] 																	= {"20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		weapons[] 																			= {"OPTRE_M392_DMR_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] 																	= {"OPTRE_M392_DMR_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
+		magazines[] 																		= {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		respawnMagazines[] 																	= {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
 	
 	};
 	class OPTRE_UNSC_ODST_Soldier_Scout_Sniper: OPTRE_UNSC_ODST_Soldier_Sniper
 	{
 		scope																				= 2;
+		scopeCurator													= 2;
 		displayName																			= "ODST Scout Sniper";
 		weapons[] 																			= {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] 																	= {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
@@ -380,10 +394,11 @@ class CfgVehicles
 	class OPTRE_UNSC_ODST_Soldier_TeamLeader: OPTRE_UNSC_ODST_Soldier
 	{
 		scope																				= 2;
+		scopeCurator													= 2;
 		displayName																			= "ODST Team Leader";
 		backpack																			= "OPTRE_ILCS_Rucksack_Black";
 		linkedItems[] 																		= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_ODST_Helmet_Comms","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
-		respawnlinkedItems[] 																= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_ODST_Helmet_Comms","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG","OPTRE_Biofoam","OPTRE_NVG"};
+		respawnlinkedItems[] 																= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_ODST_Helmet_Comms","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
 		weapons[] 																			= {"OPTRE_MA5BGL_AC","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] 																	= {"OPTRE_MA5BGL_AC","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] 																		= {"OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag_Tracer","OPTRE_60rnd_762x51_Mag_Tracer","OPTRE_60rnd_762x51_Mag_Tracer","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Orange","OPTRE_M2_Smoke_Green"};
@@ -393,11 +408,14 @@ class CfgVehicles
 	class OPTRE_UNSC_ODST_Soldier_Paramedic: OPTRE_UNSC_ODST_Soldier_Medic
 	{
 		scope 																				= 2;
+		scopeCurator													= 2;
 		attendant 																			= 1;
 		displayName																			= "ODST Paramedic";
 		backpack 																			= "OPTRE_ILCS_Rucksack_Medical";
 		weapons[] 																			= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] 																	= {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
+		linkedItems[] 																		= {"OPTRE_UNSC_ODST_Vest_Medic","OPTRE_UNSC_ODST_Helmet_Medic","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
+		respawnlinkedItems[] 																= {"OPTRE_UNSC_ODST_Vest_Medic","OPTRE_UNSC_ODST_Helmet_Medic","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
 		magazines[] 																		= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
 		respawnMagazines[] 																	= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag"};
 		icon 																				= "iconManMedic";
@@ -405,6 +423,7 @@ class CfgVehicles
 	class OPTRE_UNSC_ODST_Soldier_DemolitionsExpert: OPTRE_UNSC_ODST_Soldier
 	{
 		scope																				= 2;
+		scopeCurator													= 2;
 		displayName																			= "ODST Demolitions Expert";
 		backpack																			= "OPTRE_ILCS_Rucksack_Black_EXP";
 		linkedItems[] 																		= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_ODST_Helmet_Recon","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG","OPTRE_Biofoam","OPTRE_NVG"};
@@ -418,6 +437,7 @@ class CfgVehicles
 	class OPTRE_UNSC_ONI_Soldier_Operative: OPTRE_UNSC_ODST_Soldier_M
 	{
 		scope																				= 2;
+		scopeCurator													= 2;
 		displayName																			= "ONI Field Operative";
 		vehicleClass																		= "OPTRE_UNSC_Man_ONI_class";
 		backpack																			= "OPTRE_ILCS_Rucksack_Black";

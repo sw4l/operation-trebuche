@@ -169,7 +169,7 @@
                             class CowsSlot: SlotInfo
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"OPTRE_M73_SmartLink", "optic_Hamr", "optic_Aco", "optic_Aco_grn", "optic_Arco", "optic_mrco", "optic_nightstalker", "optic_tws", "optic_mrd"};
+                                    compatibleitems[]                                       = {"OPTRE_M73_SmartLink", "OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope"};
                                     displayname                                             = "Optics Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\TOP";
                                     scope                                                   = 2;

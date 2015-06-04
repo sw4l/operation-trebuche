@@ -42,6 +42,24 @@ class CfgFunctions
 			class Disengage{};
 		};
 	};
+	class OPTRE_Magnet
+	{
+		class OPTRE_Magnet
+		{
+			file = "\OPTRE_Core\scripts\Magnet";
+			class Init{};
+			class Attach{};
+			class Detach{};
+		};
+	};
+	class OPTRE
+	{
+		class OPTRE
+		{
+			file = "\OPTRE_Core\scripts";
+			class FireSupport_MAC{};
+		};
+	};
 };
 
 class Extended_PostInit_EventHandlers
@@ -49,6 +67,7 @@ class Extended_PostInit_EventHandlers
 	OPTRE_HEV_Fncs_Init 																		= [] spawn OPTRE_HEV_fnc_Init;
 	OPTRE_HUD_Fncs_Init 																		= [] spawn OPTRE_HUD_fnc_Init;
 	OPTRE_Thruster_Fncs_Init 																	= [] spawn OPTRE_Thruster_fnc_Init;
+	OPTRE_Magnet_Fncs_Init 																		= [] spawn OPTRE_Magnet_fnc_Init;
 };
 
 class RscStdText //More HUD Stuff

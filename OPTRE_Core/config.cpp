@@ -420,9 +420,20 @@ class CfgSounds
 		titles[] = {};
 	};
 };
-
+/*Tracks to add
+Rock Anthem To Save The World
+Through The Woods
+*/
 class CfgMusic
 {
+	class OPTRE_Music_Amber
+	{
+		name	="[OPTRE] Amber";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Amber.ogg",1,1};
+		author	= "Article 2 Studios";
+		musicClass = "OPTRE_OST";
+		duration = 157;
+	};
 	class OPTRE_Music_Axios
 	{
 		name	="[OPTRE] Axios";
@@ -503,6 +514,14 @@ class CfgMusic
 		musicClass = "OPTRE_OST";
 		duration = 147;
 	};
+	class OPTRE_Music_DesperateDefense
+	{
+		name	="[OPTRE] Desperate Defense";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_DesperateDefense.ogg",1,1};
+		author	= "Article 2 Studios";
+		musicClass = "OPTRE_OST";
+		duration = 120;
+	};
 	class OPTRE_Music_DrumRun
 	{
 		name	="[OPTRE] Drum Run";
@@ -526,6 +545,30 @@ class CfgMusic
 		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 68;
+	};	
+	class OPTRE_Music_FalconMix
+	{
+		name	="[OPTRE] Falcon Mix";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_FalconMix.ogg",1,1};
+		author	= "Article 2 Studios";
+		musicClass = "OPTRE_OST";
+		duration = 149;
+	};
+	class OPTRE_Music_Farthest
+	{
+		name	="[OPTRE] Farthest";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Farthest.ogg",1,1};
+		author	= "Article 2 Studios";
+		musicClass = "OPTRE_OST";
+		duration = 81;
+	};
+	class OPTRE_Music_FinalDawn
+	{
+		name	="[OPTRE] Final Dawn";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_FinalDawn.ogg",1,1};
+		author	= "Article 2 Studios";
+		musicClass = "OPTRE_OST";
+		duration = 111;
 	};
 	class OPTRE_Music_Firefight
 	{
@@ -534,6 +577,14 @@ class CfgMusic
 		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 104;
+	};
+	class OPTRE_Music_FleetOps
+	{
+		name	="[OPTRE] Fleet Ops";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_FleetOps.ogg",1,1};
+		author	= "Article 2 Studios";
+		musicClass = "OPTRE_OST";
+		duration = 213;
 	};
 	class OPTRE_Music_GoingLoud
 	{
@@ -559,6 +610,14 @@ class CfgMusic
 		musicClass = "OPTRE_OST";
 		duration = 30;
 	};
+	class OPTRE_Music_ImpendThis
+	{
+		name	="[OPTRE] Impend This";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_ImpendThis.ogg",1,1};
+		author	= "Article 2 Studios";
+		musicClass = "OPTRE_OST";
+		duration = 203;
+	};
 	class OPTRE_Music_InAmberClad
 	{
 		name	="[OPTRE] In Amber Clad";
@@ -583,6 +642,22 @@ class CfgMusic
 		musicClass = "OPTRE_OST";
 		duration = 210;
 	};
+	class OPTRE_Music_Jeopardy
+	{
+		name	="[OPTRE] Jeopardy";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Jeopardy.ogg",1,1};
+		author	= "Article 2 Studios";
+		musicClass = "OPTRE_OST";
+		duration = 187;
+	};
+	class OPTRE_Music_JeopardyDrums
+	{
+		name	="[OPTRE] Jeopardy";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_JeopardyDrums.ogg",1,1};
+		author	= "Article 2 Studios";
+		musicClass = "OPTRE_OST";
+		duration = 187;
+	};
 	class OPTRE_Music_LeadTrackRedux
 	{
 		name	="[OPTRE] Lead Track Redux";
@@ -606,6 +681,14 @@ class CfgMusic
 		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 53;
+	};
+	class OPTRE_Music_Luck
+	{
+		name	="[OPTRE] Luck";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Luck.ogg",1,1};
+		author	= "Article 2 Studios";
+		musicClass = "OPTRE_OST";
+		duration = 42;
 	};
 	class OPTRE_Music_MjolnirRemastered
 	{
@@ -663,6 +746,22 @@ class CfgMusic
 		musicClass = "OPTRE_OST";
 		duration = 64;
 	};
+	class OPTRE_Music_Outpost
+	{
+		name	="[OPTRE] Outpost";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_Outpost.ogg",1,1};
+		author	= "Article 2 Studios";
+		musicClass = "OPTRE_OST";
+		duration = 152;
+	};
+	class OPTRE_Music_OverTheHills
+	{
+		name	="[OPTRE] Over The Hills";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_OverTheHills.ogg",1,1};
+		author	= "Article 2 Studios";
+		musicClass = "OPTRE_OST";
+		duration = 115;
+	};
 	class OPTRE_Music_PerilAndJeopardy
 	{
 		name	="[OPTRE] Peril And Jeopardy";
@@ -710,6 +809,14 @@ class CfgMusic
 		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";
 		duration = 34;
+	};
+	class OPTRE_Music_RockAnthemToSaveTheWorld
+	{
+		name	="[OPTRE] Rock Anthem To Save The World";
+		sound[]	={"\OPTRE_Core\Music\OPTRE_RockAnthemToSaveTheWorld.ogg",1,1};
+		author	= "Article 2 Studios";
+		musicClass = "OPTRE_OST";
+		duration = 187;
 	};
 	class OPTRE_Music_Run
 	{
@@ -822,11 +929,47 @@ class CfgWorlds
 
 class CfgVehicles
 {
-	class ModuleOrdnanceRocket_F;
-	class ModuleOrdnanceMACRound: ModuleOrdnanceRocket_F
+	class Logic;
+	class Module_F: Logic
 	{
+		class ModuleDescription
+		{
+			class AnyPlayer;
+			class AnyBrain;
+			class EmptyDetector;
+		};
+	};
+
+	class OPTRE_Module_Base : Module_F
+	{
+		mapSize = 1;
 		author = "Article 2 Studios";
-		displayName = "MAC Round";
-		ammo = "OPTRE_MAC_Round";
+		vehicleClass = "Modules";
+		category = "OPTRE";
+		subCategory = "Fire Support";
+		side = 7;
+		scope = 1;
+		scopeCurator = 1;
+		displayName = "OPTRE Module Base";
+		function = "";		
+		functionPriority = 1;
+		isGlobal = 2;	
+		isTriggerActivated = 0;
+		isDisposable = 0;
+		class Arguments {};
+		class ModuleDescription: ModuleDescription
+		{
+			description = "OPTRE Module Base";
+		};
+	};
+	
+	class OPTRE_Module_FireSupport_MAC : OPTRE_Module_Base
+	{
+		scopeCurator = 2;
+		author = "Article 2 Studios";
+		category = "OPTRE";
+		subCategory = "Fire Support";
+		displayName = "MAC Strike";
+		function = "OPTRE_fnc_FireSupport_MAC";
 	};
 };

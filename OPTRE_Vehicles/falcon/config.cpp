@@ -440,8 +440,8 @@ class CfgVehicles
 				proxyIndex 					= 4;					/// what cargo proxy is used according to index in the model
 				maxElev 					= 30;//15					/// what is the highest possible elevation of the turret
 				minElev 					= -30;//-25					/// what is the lowest possible elevation of the turret
-				maxTurn 					= 45;//1					/// what is the left-most possible turn of the turret
-				minTurn 					= -45;//-50					/// what is the right-most possible turn of the turret
+				maxTurn 					= 90;//1					/// what is the left-most possible turn of the turret
+				minTurn 					= -90;//-50					/// what is the right-most possible turn of the turret
 				isPersonTurret 				= 1;					/// enables firing from vehicle functionality
 				ejectDeadGunner 			= 0;					/// seatbelts included
 				enabledByAnimationSource 	= "";				/// doesn't work unless the said animation source is 1
@@ -457,8 +457,8 @@ class CfgVehicles
 				proxyIndex 					= 1;					/// what cargo proxy is used according to index in the model
 				maxElev 					= 30;//15					/// what is the highest possible elevation of the turret
 				minElev 					= -30;//-25					/// what is the lowest possible elevation of the turret
-				maxTurn 					= 45;//50					/// what is the left-most possible turn of the turret
-				minTurn 					= -45;//-1					/// what is the right-most possible turn of the turret
+				maxTurn 					= 90;//50					/// what is the left-most possible turn of the turret
+				minTurn 					= -90;//-1					/// what is the right-most possible turn of the turret
 				isPersonTurret 				= 1;					/// enables firing from vehicle functionality
 				ejectDeadGunner 			= 0;					/// seatbelts included
 				enabledByAnimationSource 	= "";				/// doesn't work unless the said animation source is 1
@@ -567,7 +567,7 @@ class CfgVehicles
 			};			
 		};	
 		aggregateReflectors[] = {{"Left", "Right"}};	/// aggregates both sources into one to increase performance
-		#include "rtd.hpp" /// Advanced FM characteristics in separate file to make the config cleaner
+		//#include "rtd.hpp" /// Advanced FM characteristics in separate file to make the config cleaner
 		class HitPoints:HitPoints
 		{
 			class HitHull:HitHull
@@ -681,6 +681,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		model = "OPTRE_Vehicles\falcon\falcon_wreck.p3d";
 		displayname = "UH-144 Falcon Wreck";
+		icon = "OPTRE_Vehicles\Falcon\Data\icon.paa";	/// icon in map/editor
 		typicalCargo[] = {};
 		irTarget = 0;
 		vehicleClass = "OPTRE_UNSC_Object_class";

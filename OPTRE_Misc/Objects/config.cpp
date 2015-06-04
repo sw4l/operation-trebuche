@@ -11,15 +11,19 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class Static;
+	class House_F;
 	
-	class OPTRE_Objects_Base: Static
+	class OPTRE_Objects_Base: House_F
 	{
 		scope = 0;
 		scopeCurator = 0;
+		armor = 999999;
+		armorStructural = 999;
 		vehicleClass = "OPTRE_UNSC_Object_class";
+		model = "\A3\Weapons_F\empty.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		class DestructionEffects {};
 	};
 	class OPTRE_Objects_ODST_Grave: OPTRE_Objects_Base
 	{
@@ -28,7 +32,6 @@ class CfgVehicles
 		displayName = "ODST Grave";
 		model = "\OPTRE_Misc\Objects\odst_grave.p3d";
 		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
 	};
 	class OPTRE_Objects_Soldier_Grave: OPTRE_Objects_Base
 	{
@@ -37,7 +40,6 @@ class CfgVehicles
 		displayName = "Soldier Grave";
 		model = "\OPTRE_Misc\Objects\soldier_grave.p3d";
 		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
 	};
 	class OPTRE_Objects_Monument: OPTRE_Objects_Base
 	{
@@ -46,7 +48,6 @@ class CfgVehicles
 		displayName = "Monument";
 		model = "\OPTRE_Misc\Objects\monument.p3d";
 		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
 	};
 	class OPTRE_Objects_Kiosk1: OPTRE_Objects_Base
 	{
@@ -55,7 +56,6 @@ class CfgVehicles
 		displayName = "Recruiting Kiosk 1";
 		model = "\OPTRE_Misc\Objects\kiosk_1.p3d";
 		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
 		hiddenSelections[]= {"camo1","camo2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Misc\Objects\data\kiosk1_poster.paa"};
 	};
@@ -66,7 +66,6 @@ class CfgVehicles
 		displayName = "Recruiting Kiosk 2";
 		model = "\OPTRE_Misc\Objects\kiosk_2.p3d";
 		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
 		hiddenSelections[]= {"camo1","camo2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Misc\Objects\data\kiosk2_poster.paa"};
 	};
@@ -77,7 +76,6 @@ class CfgVehicles
 		displayName = "Recruiting Kiosk 3";
 		model = "\OPTRE_Misc\Objects\kiosk_3.p3d";
 		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
 		hiddenSelections[]= {"camo1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Misc\Objects\data\kiosk3_poster.paa"};
 	};
@@ -88,7 +86,6 @@ class CfgVehicles
 		displayName = "Holo Table (Blank)";
 		model = "\OPTRE_Misc\Objects\holotable.p3d";
 		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
 		hiddenSelections[]= {"map_stratis","map_altis"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {};
 	};
@@ -98,7 +95,6 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayName = "Holo Table (Stratis)";
 		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
 		hiddenSelections[]= {"map_altis"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {};
 	};
@@ -108,7 +104,6 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayName = "Holo Table (Altis)";
 		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
 		hiddenSelections[]= {"map_stratis"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {};
 	};

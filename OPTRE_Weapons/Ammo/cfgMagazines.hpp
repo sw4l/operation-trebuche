@@ -336,6 +336,7 @@ class CfgMagazines
 		displayName							= "MAC Round";
 		displayNameShort					= "MAC Round";
 		ammo								= "OPTRE_MAC_Round";
+		initSpeed 							= 1000;
 		count								= 1;
 	};
 	
@@ -412,7 +413,7 @@ class CfgMagazines
 		modelSpecial					= "\OPTRE_Weapons\Rockets\M41_launcher_loaded.p3d";
 		mass 							= 80;
 		count 							= 2;
-		initSpeed						= 255;
+		initSpeed						= 100;
 	};
 	
 	//Grenades

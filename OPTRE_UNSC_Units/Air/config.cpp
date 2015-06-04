@@ -18,6 +18,7 @@ class CfgVehicles //This configures units and backpacks
 	class OPTRE_UNSC_Airforce_Soldier: B_Soldier_F
 	{
 		scope															= 1;
+		scopeCurator													= 0;
 		faction															= "OPTRE_UNSC";
 		author															= "Article 2 Studios";
 		displayName														= "-";
@@ -94,6 +95,7 @@ class CfgVehicles //This configures units and backpacks
 	class OPTRE_UNSC_Airforce_Soldier_Airman: OPTRE_UNSC_Airforce_Soldier
 	{
 		scope															= 2;
+		scopeCurator													= 2;
 		author															= "Article 2 Studios";
 		displayName														= "Airman";
 	};
