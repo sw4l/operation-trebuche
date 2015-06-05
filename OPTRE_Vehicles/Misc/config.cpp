@@ -29,6 +29,8 @@ class CfgVehicles
 	class O_Truck_02_transport_F;
 	class UAV_02_base_F;
 	class O_UAV_02_F;
+	class B_Quadbike_01_F;
+	class O_Quadbike_01_F;
 	
 	class OPTRE_m1087_stallion_base: Truck_01_base_F
 	{
@@ -107,8 +109,8 @@ class CfgVehicles
 		scope = 2;
 		side = 1;
 		faction = "OPTRE_UNSC";
-		crew = "OPTRE_UNSC_Army_W_Rifleman_AR";
-		typicalCargo[] = {"OPTRE_UNSC_Army_W_Rifleman_AR"};
+		crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
+		typicalCargo[] = {"OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL"};
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\HEMTT_UNSC_01_CO.paa","\a3\soft_f_beta\truck_01\data\truck_01_ext_02_co.paa"};
 	};
@@ -121,10 +123,10 @@ class CfgVehicles
 		scope = 2;
 		side = 1;
 		faction = "OPTRE_UNSC";
-		crew = "OPTRE_UNSC_Army_W_Rifleman_AR";
-		typicalCargo[] = {"OPTRE_UNSC_Army_W_Rifleman_AR"};
+		crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
+		typicalCargo[] = {"OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL"};
 		hiddenSelections[] = {"Camo1","Camo2"};
-		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\KAMAZ_UNSC_01_CO.paa","\OPTRE_Vehicles\Misc\data\KAMAZ_UNSC_02_CO.paa"};
+		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data","\OPTRE_Vehicles\Misc\data\KAMAZ_UNSC_02_CO.paa"};
 	};
 	
 	class OPTRE_m1015_mule_ins: OPTRE_m1015_mule_base
@@ -141,4 +143,71 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\KAMAZ_INS_01_CO.paa","\OPTRE_Vehicles\Misc\data\KAMAZ_INS_02_CO.paa"};
 	};
 	
+	class OPTRE_Mongoose_Green_F: B_Quadbike_01_F
+	{
+		author = "Article 2 Studios";
+		_generalMacro = "B_Quadbike_01_F";
+		displayName = "M274 Mongoose ULATV (Green)";
+		vehicleClass = "OPTRE_UNSC_Vehicle_class";
+		scope = 2;
+		side = 1;
+		faction = "OPTRE_UNSC";
+		crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
+		typicalCargo[] = {"OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL"};
+		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\OPTRE_Quadbike01_green_CO.paa","\A3\soft_f_beta\Quadbike_01\data\Quadbike_01_wheel_civblack_co.paa"};
+	};
+
+	class OPTRE_Mongoose_Tan_F: OPTRE_Mongoose_Green_F
+	{
+		author = "Article 2 Studios";
+		displayName = "M274 Mongoose ULATV (Tan)";
+		scope = 2;
+		crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_DES";
+		typicalCargo[] = {"OPTRE_UNSC_Army_Soldier_Rifleman_AR_DES"};
+		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\OPTRE_Quadbike01_tan_CO.paa","\A3\soft_f_beta\Quadbike_01\data\Quadbike_01_wheel_civblack_co.paa"};
+	};
+	
+	class OPTRE_Mongoose_Black_F: OPTRE_Mongoose_Green_F
+	{
+		author = "Article 2 Studios";
+		displayName = "M274 Mongoose ULATV (Black)";
+		scope = 2;
+		crew = "OPTRE_UNSC_ODST_Soldier_Scout";
+		typicalCargo[] = {"OPTRE_UNSC_ODST_Soldier_Scout"};
+		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\OPTRE_Quadbike01_black_CO.paa","\A3\soft_f_beta\Quadbike_01\data\Quadbike_01_wheel_civblack_co.paa"};
+	};
+	
+	class OPTRE_Mongoose_Snow_F: OPTRE_Mongoose_Green_F
+	{
+		author = "Article 2 Studios";
+		displayName = "M274 Mongoose ULATV (Snow)";
+		scope = 2;
+		crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_SNO";
+		typicalCargo[] = {"OPTRE_UNSC_Army_Soldier_Rifleman_AR_SNO"};
+		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\OPTRE_Quadbike01_white_CO.paa","\A3\soft_f_beta\Quadbike_01\data\Quadbike_01_wheel_civwhite_co.paa"};
+	};
+	
+	class OPTRE_Mongoose_Marine_F: OPTRE_Mongoose_Green_F
+	{
+		author = "Article 2 Studios";
+		displayName = "M274 Mongoose ULATV (Marine)";
+		scope = 2;
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
+		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
+	};
+	
+	class OPTRE_Mongoose_Ins_F: O_Quadbike_01_F
+	{
+		author = "Article 2 Studios";
+		_generalMacro = "O_Quadbike_01_F";
+		displayName = "M274 Mongoose ULATV (Ins)";
+		vehicleClass = "OPTRE_Ins_Vehicle_class";
+		scope = 2;
+		side = 0;
+		faction = "OPTRE_Ins";
+		crew = "OPTRE_Ins_URF_Rifleman_AR";
+		typicalCargo[] = {"OPTRE_Ins_URF_Rifleman_AR"};
+		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\OPTRE_Quadbike01_ins_CO.paa","\A3\soft_f_beta\Quadbike_01\data\Quadbike_01_wheel_civblack_co.paa"};
+	};
+
 };
