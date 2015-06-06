@@ -27,6 +27,8 @@ class CfgVehicles
 		nakedUniform 																			= "U_BasicBody";
 		uniformClass																			= "OPTRE_UNSC_ODST_Uniform";
 		model																					= "\OPTRE_UNSC_Units\ODST\uniform.p3d";
+		identityTypes[] 												= {"LanguageENG_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","LanguageGRE_F","Head_Greek","Head_African","Head_Euro","Head_Asian","Head_NATO", "G_IRAN_default"}; //G_IRAN_Default removes those pesky wacky glasses.  Everything else here serves to keep the UNSC diverse.  
+		genericNames 													= "NATOMen";
 		weapons[]																				= {"Throw","Put"};
 		respawnWeapons[]																		= {"Throw","Put"};
 		Items[]																					= {"OPTRE_Biofoam"};

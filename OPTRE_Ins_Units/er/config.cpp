@@ -54,8 +54,8 @@ class CfgVehicles
 		author											= "Article 2 Studios";
 		displayName										= "Innie_Base";
 		vehicleClass									= "OPTRE_Ins_Man_ER_class";
-		genericnames 									= "NATOMen";
-		identitytypes[] 								= {"LanguageENG_F", "Head_NATO", "G_IRAN_default"};
+		identityTypes[] 												= {"LanguageENG_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","LanguageGRE_F","Head_Greek","Head_African","Head_Euro","Head_Asian","Head_NATO", "G_IRAN_default"}; //G_IRAN_Default removes those pesky wacky glasses.  Everything else here serves to keep the UNSC diverse.  
+		genericNames 													= "NATOMen";
 		uniformAccessories[]							= {};
 		nakedUniform 									= "U_BasicBody";
 		weapons[]										= {"Throw","Put"};
@@ -97,6 +97,8 @@ class CfgVehicles
         displayName                         = "Insurgent (OD)";
         vehicleClass                  	    = "OPTRE_Ins_Man_ER_class";
         uniformClass                  	    = "OPTRE_Ins_ER_uniform_GGod";
+		identityTypes[] 												= {"LanguageENG_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","LanguageGRE_F","Head_Greek","Head_African","Head_Euro","Head_Asian","Head_NATO", "G_IRAN_default"}; //G_IRAN_Default removes those pesky wacky glasses.  Everything else here serves to keep the UNSC diverse.  
+		genericNames 													= "NATOMen";
         linkedItems[]                 	    = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
         respawnLinkedItems[]           	    = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
         headgearProbability            	    = 0;
@@ -122,6 +124,8 @@ class CfgVehicles
         displayName                         = "Insurgent (Surplus Jacket 1)";
         vehicleClass                  	    = "OPTRE_Ins_Man_ER_class";
         uniformClass                  	    = "OPTRE_Ins_ER_jacket_surplus_OD";
+		identityTypes[] 												= {"LanguageENG_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","LanguageGRE_F","Head_Greek","Head_African","Head_Euro","Head_Asian","Head_NATO", "G_IRAN_default"}; //G_IRAN_Default removes those pesky wacky glasses.  Everything else here serves to keep the UNSC diverse.  
+		genericNames 													= "NATOMen";
         weapons[]                           = {"Throw","Put"};
         respawnWeapons[]             	    = {"Throw","Put"};
         Items[]                             = {"OPTRE_Biofoam"};
@@ -290,6 +294,8 @@ class CfgVehicles
         displayName                         = "Rebel (Surplus/Black)";
         vehicleClass                  	    = "OPTRE_Ins_Man_ER_class";
         uniformClass                  	    = "OPTRE_Ins_ER_rolled_surplus_black";
+		identityTypes[] 												= {"LanguageENG_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","LanguageGRE_F","Head_Greek","Head_African","Head_Euro","Head_Asian","Head_NATO", "G_IRAN_default"}; //G_IRAN_Default removes those pesky wacky glasses.  Everything else here serves to keep the UNSC diverse.  
+		genericNames 													= "NATOMen";
         weapons[]                           = {"Throw","Put"};
         respawnWeapons[]             	    = {"Throw","Put"};
         Items[]                             = {"OPTRE_Biofoam"};
