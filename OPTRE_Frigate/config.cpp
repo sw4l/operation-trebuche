@@ -87,7 +87,7 @@ class CfgVehicles
 	class OPTRE_Frigate_Hangar_Door: OPTRE_Frigate_Final_Dawn
 	{
 		scope = 1;
-		scopeCurator = 1;
+		scopeCurator = 0;
 		displayName = "Hangar Door [Frigate]";
 		model = "\OPTRE_frigate\spawn_door.p3d";
 		author = "Article 2 Studios";
@@ -96,7 +96,7 @@ class CfgVehicles
 	class OPTRE_Frigate_LiftArm: OPTRE_Frigate_Final_Dawn
 	{
 		scope = 1;
-		scopeCurator = 1;
+		scopeCurator = 0;
 		displayName = "Lift Arm [Frigate]";
 		model = "\OPTRE_frigate\liftarm.p3d";
 		author = "Article 2 Studios";
@@ -105,7 +105,7 @@ class CfgVehicles
 	class OPTRE_Frigate_M910_Turret: StaticWeapon
 	{
 		scope = 2;
-		scopeCurator = 2;
+		scopeCurator = 0;
 		armor = 450;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "M910 Point Defense Turret";

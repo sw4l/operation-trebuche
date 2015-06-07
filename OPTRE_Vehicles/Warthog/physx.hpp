@@ -2,16 +2,16 @@
 		/// http://forums.bistudio.com/showthread.php?165390-Tutorial-Creating-Custom-Engine-Gearbox-and-Suspension-Vehicle-configuration
 		
 		terrainCoef									= 0.1;
-		turnCoef 									= 4; //5.5
+		turnCoef 									= 3; //4
 		thrustDelay									= 0.35; //0.25
 		brakeIdleSpeed								= 2.5; //1.78
 		maxSpeed									= 125;
 		fuelCapacity								= 150;
 		wheelCircumference							= 3.924; //radius 1.962
-		antiRollbarForceCoef						= 20; //20
-		antiRollbarForceLimit 						= 10; //10
-		antiRollbarSpeedMin							= 10;
-		antiRollbarSpeedMax							= 80; //50
+		antiRollbarForceCoef						= 100;
+		antiRollbarForceLimit 						= 100;
+		antiRollbarSpeedMin							= 20;
+		antiRollbarSpeedMax							= 80;
 		idleRpm										= 800;
 		redRpm										= 4500;
 		slowSpeedForwardCoef						= 0.35;
