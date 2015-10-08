@@ -196,4 +196,40 @@ class CfgWeapons
 			mass = 75;
  		};
 	};
+	class OPTRE_M45E : OPTRE_M45
+	{
+		model										= "\OPTRE_Weapons\Shotgun\shotgun_e.p3d";
+		displayName 								= "M45E Combat Shotgun";
+		magazines[] 								= {"OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_12Rnd_8Gauge_Pellets","OPTRE_12Rnd_8Gauge_Slugs"};
+		inertia										= 0.85;
+		class Single : Single
+		{
+			reloadTime 								= 1.11;
+		};
+		class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
+ 		{
+			mass 									= 85;
+ 		};
+	};
+	class OPTRE_M45A : OPTRE_M45E
+	{
+		displayName 								= "M45A Semi Automatic Shotgun";
+		class Single : Single
+		{
+			sounds[] 								= {"StandardSound"}; //Defines weapon sounds
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "DefaultRifle";
+				closure1[] 							= {"",1.0,1,200};
+				closure2[] 							= {"",1.0,1,200};
+				soundClosure[] 						= {"closure1",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] 							= {"\OPTRE_Weapons\Shotgun\data\sounds\fire2.ogg",1.3,1,200};
+				soundBegin[] 						= {"begin1",1};
+			};
+			reloadTime 								= 0.25;
+		};
+	};
 };

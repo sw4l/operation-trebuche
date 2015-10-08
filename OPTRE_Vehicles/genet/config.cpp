@@ -44,7 +44,7 @@ class CfgVehicles
 		picture	= "\A3\Weapons_F\Data\placeholder_co.paa"; /// just some icon in command bar
 		Icon	= "\A3\Weapons_F\Data\placeholder_co.paa"; /// icon in map	
 		
-		displayName = "Genet"; /// displayed in Editor
+		displayName = "HuCiv Genet [Red]"; /// displayed in Editor
 		
 		hiddenSelections[] = {"camo1"}; ///we want to allow changing the color of this selection
 		

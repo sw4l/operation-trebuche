@@ -36,10 +36,10 @@ class Mode_FullAuto;
                                     {
 											opticsID = 1;
 											useModelOptics = 1;
-                                            opticsZoomMin                                   = 0.005;
+                                            opticsZoomMin                                   = 0.025;
                                             opticsZoomMax                                   = 0.05;
                                             opticsZoomInit                                  = 0.05;
-											discretefov[] 									= {0.05,0.025,0.005};
+											discretefov[] 									= {0.05,0.025};
 											discreteinitIndex 								= 0;
 											discreteDistance[] 								= {100,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
 											discreteDistanceInitIndex 						= 1;
@@ -78,19 +78,19 @@ class Mode_FullAuto;
 		};
 		class OPTRE_SRS99_Bipod: ItemCore
 		{
-		scope 				= 2;																	/// available in Arsenal
-		displayName			= "SRS-99 Bipod";													/// name of item in Inventory (and Arsenal)
-		model 				= "\OPTRE_Weapons\Sniper\SRS99_Bipod.p3d";						/// path to model
-		picture				="\A3\Weapons_F\Data\placeholder_co.paa";
-		class ItemInfo: InventoryUnderItem_Base_F
-        {
-            deployedPivot	= "bipod";		/// what point should be used to be on surface while unfolded
-			hasBipod		= true;			/// bipod obviously has a bipod
-			mass			= 10;			/// what is the mass of the object	
-			model 			= "\OPTRE_Weapons\Sniper\SRS99_Bipod.p3d";						/// path to model
-        };
-		inertia = 0.2;						/// how much does the bipod add to inertia of the weapon
-		};	
+			scope 																			= 2;
+			displayName																		= "SRS-99 Bipod";
+			model 																			= "\OPTRE_Weapons\Sniper\SRS99_Bipod.p3d";
+			picture																			= "\A3\Weapons_F\Data\placeholder_co.paa";
+			class ItemInfo: InventoryUnderItem_Base_F
+			{
+				deployedPivot																= "bipod";
+				hasBipod																	= true;	
+				mass																		= 10;
+				model 																		= "\OPTRE_Weapons\Sniper\SRS99_Bipod.p3d";	
+			};
+			inertia = 0.2;
+		};
             //WEAPONS
 			
             class LMG_Mk200_F;

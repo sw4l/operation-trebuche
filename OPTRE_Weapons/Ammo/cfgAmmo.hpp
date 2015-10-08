@@ -25,6 +25,7 @@ class CfgAmmo
 	{
 		hit 							= 11;
 		typicalSpeed 					= 500;
+		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_762x51_Tracer: OPTRE_B_762x51_Ball
 	{
@@ -37,6 +38,7 @@ class CfgAmmo
 		hit 							= 12;
 		caliber 						= 2;
 		typicalSpeed 					= 500;
+		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_95x40_Tracer: OPTRE_B_95x40_Ball
 	{
@@ -94,34 +96,6 @@ class CfgAmmo
 		explosionEffects 				= "ExploAmmoExplosion";
 		craterEffects 					= "ExploAmmoCrater";
 		explosionSoundEffect 			= "DefaultExplosion";
-		class CamShakeExplode
-		{
-			power = "(180^0.5)";
-			duration = "((round (180^0.5))*0.2 max 0.2)";
-			frequency = 20;
-			distance = "((180^0.5)*3)";
-		};
-		class CamShakeHit
-		{
-			power = 180;
-			duration = "((round (180^0.25))*0.2 max 0.2)";
-			frequency = 20;
-			distance = 1;
-		};
-		class CamShakeFire
-		{
-			power = "(120^0.25)";
-			duration = "((round (120^0.5))*0.2 max 0.2)";
-			frequency = 20;
-			distance = "((120^0.5)*8)";
-		};
-		class CamShakePlayerFire
-		{
-			power = 0.02;
-			duration = 0.1;
-			frequency = 20;
-			distance = 1;
-		};
 	};
 	
 	//12.7x40mm (Pistol)
@@ -134,6 +108,7 @@ class CfgAmmo
 		cartridge 						= "FxCartridge_small";
 		caliber 						= 0.75;
 		typicalSpeed					= 200;
+		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_127x40_AP : OPTRE_B_127x40_Ball   
 	{
@@ -235,8 +210,8 @@ class CfgAmmo
 		soundMetal4[] = {"A3\sounds_f\weapons\hits\metal_4",1.9952624,1,150};
 		soundMetal5[] = {"A3\sounds_f\weapons\hits\metal_5",1.9952624,1,150};
 		soundMetal6[] = {"A3\sounds_f\weapons\hits\metal_6",1.9952624,1,150};
-		soundMetal7[] = {"A3\sounds_f\weapons\hits\metal_7",1.9952624,1,150};
-		soundMetal8[] = {"A3\sounds_f\weapons\hits\metal_8",1.9952624,1,150};
+		soundMetal7[] = {"A3\sounds_f\weapons\hits\metal_5",1.9952624,1,150};
+		soundMetal8[] = {"A3\sounds_f\weapons\hits\metal_6",1.9952624,1,150};
 		soundGlass1[] = {"A3\sounds_f\weapons\hits\glass_1",1.4125376,1,100};
 		soundGlass2[] = {"A3\sounds_f\weapons\hits\glass_2",1.4125376,1,100};
 		soundGlass3[] = {"A3\sounds_f\weapons\hits\glass_3",1.4125376,1,100};
@@ -362,24 +337,27 @@ class CfgAmmo
 	//5x23mm (SMG)
 	class OPTRE_B_5x23_Caseless: B_9x21_Ball
 	{
-		hit = 9;
-		typicalSpeed = 200;
-		caliber = 0.75;
-		cartridge = "FxCartridge_65_caseless";
+		hit 							= 9;
+		typicalSpeed 					= 200;
+		caliber 						= 0.75;
+		cartridge 						= "FxCartridge_65_caseless";
+		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_5x23_Caseless_Tracer: OPTRE_B_5x23_Caseless
 	{
-		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_5x23_Caseless_JHP: OPTRE_B_5x23_Caseless
 	{
-		hit = 10;
-		caliber = 0.15;
+		hit 							= 10;
+		caliber 						= 0.15;
+		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_5x23_Caseless_FMJ: OPTRE_B_5x23_Caseless
 	{
-		hit = 9.5;
-		caliber = 1.5;
+		hit 							= 9.5;
+		caliber 						= 1.5;
+		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	
 	//Vehicles
@@ -486,45 +464,6 @@ class CfgAmmo
 		CraterEffects = "HEShellCrater";
 		CraterWaterEffects = "ImpactEffectsWaterHE";
 		ExplosionEffects = "HEShellExplosion";
-		
-		class HitEffects
-		{
-			hitMetal = "ImpactMetalSabotBig";
-			hitMetalPlate = "ImpactMetalSabotBig";
-			hitBuilding = "ImpactConcreteSabot";
-			hitConcrete = "ImpactConcreteSabot";
-			hitGroundSoft = "ImpactEffectsGroundSabot";
-			hitGroundHard = "ImpactEffectsGroundSabot";
-			default_mat = "ImpactEffectsGroundSabot";
-		};
-		class CamShakeExplode
-		{
-			power = "(180^0.5)";
-			duration = "((round (180^0.5))*0.2 max 0.2)";
-			frequency = 20;
-			distance = 250;
-		};
-		class CamShakeHit
-		{
-			power = 180;
-			duration = "((round (180^0.25))*0.2 max 0.2)";
-			frequency = 20;
-			distance = 100;
-		};
-		class CamShakeFire
-		{
-			power = "(120^0.25)";
-			duration = "((round (120^0.5))*0.2 max 0.2)";
-			frequency = 20;
-			distance = 25;
-		};
-		class CamShakePlayerFire
-		{
-			power = 0;
-			duration = 0;
-			frequency = 0;
-			distance = 0;
-		};
 	};
 	class OPTRE_B_127x99_Ball: B_127x99_Ball
 	{
@@ -633,20 +572,7 @@ class CfgAmmo
 	class OPTRE_G_M2_Smoke: SmokeShell
 	{
 		model 							= "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
-		hit 							= 0;
-		indirectHit 					= 0;
-		indirectHitRange 				= 0.2;
-		typicalspeed 					= 22;
-		cost 							= 100;
-		simulation 						= "shotSmokeX";
-		explosive 						= 0;
-		deflecting 						= 60;
-		explosionTime 					= 2;
-		timeToLive  					= 60;
-		fuseDistance  					= 0;
 		smokeColor[]  					= {1,1,1,1};
-		effectsSmoke  					= "SmokeShellWhite";
-		whistleDist  					= 0;
 	};
 	class OPTRE_G_M2_RSmoke: OPTRE_G_M2_Smoke
 	{
@@ -671,5 +597,9 @@ class CfgAmmo
 	class OPTRE_G_M2_PSmoke: OPTRE_G_M2_Smoke
 	{
 		smokeColor[]  					= {0.4341,0.1388,0.4144,1};
+	};
+	class OPTRE_G_M8_Flare: OPTRE_G_M2_Smoke
+	{
+		model 							= "\OPTRE_Weapons\explosives\m8_flare.p3d";
 	};
 };

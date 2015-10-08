@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class OPTRE_Misc_Crates
 	{
-		units[]										= {"OPTRE_Ammo_Magic_Box","OPTRE_Ammo_Rack_Weapons","OPTRE_Ammo_Rack_Ammo","OPTRE_Ammo_RackItems","OPTRE_Ammo_SupplyPod_Empty","OPTRE_Ammo_SupplyPod_AR","OPTRE_Ammo_SupplyPod_BR","OPTRE_Ammo_SupplyPod_Launcher","OPTRE_Ammo_SupplyPod_LMG","OPTRE_Ammo_SupplyPod_Medical","OPTRE_Ammo_SupplyPod_Pistol","OPTRE_Ammo_SupplyPod_Shotgun","OPTRE_Ammo_SupplyPod_SMG","OPTRE_Ammo_SupplyPod_Sniper"};
+		units[]										= {"OPTRE_Ammo_Box_Base","OPTRE_Ammo_Rack_Weapons","OPTRE_Ammo_Rack_Ammo","OPTRE_Ammo_RackItems","OPTRE_Ammo_SupplyPod_Empty","OPTRE_Ammo_SupplyPod_AR","OPTRE_Ammo_SupplyPod_BR","OPTRE_Ammo_SupplyPod_Launcher","OPTRE_Ammo_SupplyPod_LMG","OPTRE_Ammo_SupplyPod_Medical","OPTRE_Ammo_SupplyPod_Pistol","OPTRE_Ammo_SupplyPod_Shotgun","OPTRE_Ammo_SupplyPod_SMG","OPTRE_Ammo_SupplyPod_Sniper"};
 		weapons[]									= {};
 		requiredVersion								= 0.1;
 		requiredAddons[]							= {"OPTRE_Core","OPTRE_Weapons","OPTRE_UNSC_Units","OPTRE_Ins_Units"};
@@ -13,380 +13,33 @@ class CfgVehicles
 {
 	class NATO_Box_Base;
 	
-	class OPTRE_Ammo_Magic_Box: NATO_Box_Base
+	class OPTRE_Ammo_Box_Base: NATO_Box_Base
 	{
-		scope = 2;
+		scope = 1;
 		vehicleClass = "OPTRE_UNSC_Ammo_class";
-		displayName = "[OPTRE] Magic Box";
+		displayName = "-";
 		model = "\A3\weapons_F\AmmoBoxes\Supplydrop";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
-		transportMaxWeapons = 999999999999;
-		transportMaxMagazines = 999999999999;
-		maximumLoad = 999999999999;
-		transportMaxBackpacks = 999999999999;
+		transportMaxWeapons = 1000;
+		transportMaxMagazines = 5000;
+		maximumLoad = 50000;
+		transportMaxBackpacks = 100;
 		transportAmmo = 1;
 		transportRepair = 1;
 		transportFuel = 1;
 		supplyRadius = 2.5;
-		armor = 99999;
+		armor = 1000;
 		class TransportMagazines
-		{
-			class xx_OPTRE_60Rnd_762x51_Mag
-			{
-				magazine = "OPTRE_60Rnd_762x51_Mag";
-				count = 999;
-			};
-			class xx_OPTRE_60Rnd_762x51_Mag_Tracer
-			{
-				magazine = "OPTRE_60Rnd_762x51_Mag_Tracer";
-				count = 999;
-			};
-			class xx_OPTRE_32Rnd_762x51_Mag
-			{
-				magazine = "OPTRE_32Rnd_762x51_Mag";
-				count = 999;
-			};
-			class xx_OPTRE_32Rnd_762x51_Mag_Tracer
-			{
-				magazine = "OPTRE_32Rnd_762x51_Mag_Tracer";
-				count = 999;
-			};
-			class xx_OPTRE_100Rnd_762x51_Box
-			{
-				magazine = "OPTRE_100Rnd_762x51_Box";
-				count = 999;
-			};
-			class xx_OPTRE_100Rnd_762x51_Box_Tracer
-			{
-				magazine = "OPTRE_100Rnd_762x51_Box_Tracer";
-				count = 999;
-			};
-			class xx_OPTRE_36Rnd_95x40_Mag
-			{
-				magazine = "OPTRE_36Rnd_95x40_Mag";
-				count = 999;
-			};
-			class xx_OPTRE_36Rnd_95x40_Mag_Tracer
-			{
-				magazine = "OPTRE_36Rnd_95x40_Mag_Tracer";
-				count = 999;
-			};
-			class xx_OPTRE_15Rnd_762x51_Mag
-			{
-				magazine = "OPTRE_15Rnd_762x51_Mag";
-				count = 999;
-			};
-			class xx_OPTRE_100Rnd_95x40_Box
-			{
-				magazine = "OPTRE_100Rnd_95x40_Box";
-				count = 999;
-			};
-			class xx_OPTRE_100Rnd_95x40_Box_Tracer
-			{
-				magazine = "OPTRE_100Rnd_95x40_Box_Tracer";
-				count = 999;
-			};
-			class xx_OPTRE_200Rnd_95x40_Box
-			{
-				magazine = "OPTRE_200Rnd_95x40_Box";
-				count = 999;
-			};
-			class xx_OPTRE_200Rnd_95x40_Box_Tracer
-			{
-				magazine = "OPTRE_200Rnd_95x40_Box_Tracer";
-				count = 999;
-			};
-			class xx_OPTRE_8Rnd_127x40_Mag
-			{
-				magazine = "OPTRE_8Rnd_127x40_Mag";
-				count = 999;
-			};
-			class xx_OPTRE_8Rnd_127x40_AP_Mag
-			{
-				magazine = "OPTRE_8Rnd_127x40_AP_Mag";
-				count = 999;
-			};
-			class xx_OPTRE_8Rnd_127x40_Mag_Tracer
-			{
-				magazine = "OPTRE_8Rnd_127x40_Mag_Tracer";
-				count = 999;
-			};
-			class xx_OPTRE_6Rnd_8Gauge_Pellets
-			{
-				magazine = "OPTRE_6Rnd_8Gauge_Pellets";
-				count = 999;
-			};
-			class xx_OPTRE_6Rnd_8Gauge_Slugs
-			{
-				magazine = "OPTRE_6Rnd_8Gauge_Slugs";
-				count = 999;
-			};
-			class xx_OPTRE_60Rnd_5x23mm_Mag
-			{
-				magazine = "OPTRE_60Rnd_5x23mm_Mag";
-				count = 999;
-			};
-			class xx_OPTRE_60Rnd_5x23mm_Mag_tracer
-			{
-				magazine = "OPTRE_60Rnd_5x23mm_Mag_tracer";
-				count = 999;
-			};
-			class xx_OPTRE_48Rnd_5x23mm_Mag
-			{
-				magazine = "OPTRE_48Rnd_5x23mm_Mag";
-				count = 999;
-			};
-			class xx_OPTRE_48Rnd_5x23mm_JHP_Mag
-			{
-				magazine = "OPTRE_48Rnd_5x23mm_JHP_Mag";
-				count = 999;
-			};
-			class xx_OPTRE_48Rnd_5x23mm_FMJ_Mag
-			{
-				magazine = "OPTRE_48Rnd_5x23mm_FMJ_Mag";
-				count = 999;
-			};
-			class xx_OPTRE_48Rnd_5x23mm_Mag_tracer
-			{
-				magazine = "OPTRE_48Rnd_5x23mm_Mag_tracer";
-				count = 999;
-			};
-			class xx_OPTRE_4Rnd_145x114_APFSDS_Mag
-			{
-				magazine = "OPTRE_4Rnd_145x114_APFSDS_Mag";
-				count = 999;
-			};
-			class xx_OPTRE_4Rnd_145x114_HVAP_Mag
-			{
-				magazine = "OPTRE_4Rnd_145x114_HVAP_Mag";
-				count = 999;
-			};
-			class xx_OPTRE_4Rnd_145x114_HEDP_Mag
-			{
-				magazine = "OPTRE_4Rnd_145x114_HEDP_Mag";
-				count = 999;
-			};
-			class xx_OPTRE_M41_Twin_HEAT
-			{
-				magazine = "OPTRE_M41_Twin_HEAT";
-				count = 999;
-			};
-			class xx_OPTRE_M41_Twin_HEAT_G
-			{
-				magazine = "OPTRE_M41_Twin_HEAT_G";
-				count = 999;
-			};
-			class xx_OPTRE_M41_Twin_HEAP
-			{
-				magazine = "OPTRE_M41_Twin_HEAP";
-				count = 999;
-			};
-			class xx_OPTRE_M9_Frag
-			{
-				magazine = "OPTRE_M9_Frag";
-				count = 999;
-			};
-			class xx_OPTRE_M2_Smoke
-			{
-				magazine = "OPTRE_M2_Smoke";
-				count = 999;
-			};
-			class xx_OPTRE_M2_Smoke_Blue
-			{
-				magazine = "OPTRE_M2_Smoke_Blue";
-				count = 999;
-			};
-			class xx_OPTRE_M2_Smoke_Yellow
-			{
-				magazine = "OPTRE_M2_Smoke_Yellow";
-				count = 999;
-			};
-			class xx_OPTRE_M2_Smoke_Red
-			{
-				magazine = "OPTRE_M2_Smoke_Red";
-				count = 999;
-			};
-			class xx_OPTRE_M2_Smoke_Green
-			{
-				magazine = "OPTRE_M2_Smoke_Green";
-				count = 999;
-			};
-			class xx_OPTRE_M2_Smoke_Orange
-			{
-				magazine = "OPTRE_M2_Smoke_Orange";
-				count = 999;
-			};
-			class xx_OPTRE_M2_Smoke_Purple
-			{
-				magazine = "OPTRE_M2_Smoke_Purple";
-				count = 999;
-			};
-		};
+		{};
 		class TransportWeapons
-		{
-			class xx_OPTRE_MA5B
-			{
-				weapon = "OPTRE_MA5B";
-				count = 999;
-			};
-			class xx_OPTRE_MA5BGL
-			{
-				weapon = "OPTRE_MA5BGL";
-				count = 999;
-			};
-			class xx_OPTRE_BR55HB
-			{
-				weapon = "OPTRE_BR55HB";
-				count = 999;
-			};
-			class xx_OPTRE_M392_DMR_ScopedRifle
-			{
-				weapon = "OPTRE_M392_DMR_ScopedRifle";
-				count = 999;
-			};
-			class xx_OPTRE_M73
-			{
-				weapon = "OPTRE_M73";
-				count = 999;
-			};
-			class xx_OPTRE_M73_CQC
-			{
-				weapon = "OPTRE_M73_CQC";
-				count = 999;
-			};
-			class xx_OPTRE_M6G
-			{
-				weapon = "OPTRE_M6G";
-				count = 999;
-			};
-			class xx_OPTRE_M41_SSR
-			{
-				weapon = "OPTRE_M41_SSR";
-				count = 999;
-			};
-			class xx_OPTRE_M41_SSR_G
-			{
-				weapon = "OPTRE_M41_SSR_G";
-				count = 999;
-			};
-			class xx_OPTRE_M45
-			{
-				weapon = "OPTRE_M45";
-				count = 999;
-			};
-			class xx_OPTRE_M7
-			{
-				weapon = "OPTRE_M7";
-				count = 999;
-			};
-			class xx_OPTRE_M7_Folded
-			{
-				weapon = "OPTRE_M7_Folded";
-				count = 999;
-			};
-			class xx_OPTRE_SRS99D
-			{
-				weapon = "OPTRE_SRS99D";
-				count = 999;
-			};
-		};
+		{};
 		class TransportItems
-		{
-			class xx_OPTRE_Biofoam
-			{
-				name = "OPTRE_Biofoam";
-				count = 999;
-			};
-			class xx_OPTRE_MedKit
-			{
-				name = "OPTRE_MedKit";
-				count = 999;
-			};
-			class xx_OPTRE_MA5B_AmmoCounter
-			{
-				name = "OPTRE_MA5B_AmmoCounter";
-				count = 999;
-			};
-			class xx_OPTRE_MA5B_AmmoCounter_NoIS
-			{
-				name = "OPTRE_MA5B_AmmoCounter_NoIS";
-				count = 999;
-			};
-			class xx_OPTRE_MA5B_Flashlight
-			{
-				name = "OPTRE_MA5B_Flashlight";
-				count = 999;
-			};
-			class xx_OPTRE_BR55HB_Scope
-			{
-				name = "OPTRE_BR55HB_Scope";
-				count = 999;
-			};
-			class xx_OPTRE_M73_SmartLink
-			{
-				name = "OPTRE_M73_SmartLink";
-				count = 999;
-			};
-			class xx_OPTRE_M6G_Flashlight
-			{
-				name = "OPTRE_M6G_Flashlight";
-				count = 999;
-			};
-			class xx_OPTRE_M6G_Scope
-			{
-				name = "OPTRE_M6G_Scope";
-				count = 999;
-			};
-			class xx_OPTRE_M45_Flashlight
-			{
-				name = "OPTRE_M45_Flashlight";
-				count = 999;
-			};
-			class xx_OPTRE_M45_Flashlight_red
-			{
-				name = "OPTRE_M45_Flashlight_red";
-				count = 999;
-			};
-			class xx_OPTRE_M7_silencer
-			{
-				name = "OPTRE_M7_silencer";
-				count = 999;
-			};
-			class xx_OPTRE_M7_Flashlight
-			{
-				name = "OPTRE_M7_Flashlight";
-				count = 999;
-			};
-			class xx_OPTRE_M7_Sight
-			{
-				name = "";
-				count = 999;
-			};
-			class xx_OPTRE_M7_Laser
-			{
-				name = "OPTRE_M7_Laser";
-				count = 999;
-			};
-			class xx_OPTRE_SRS99_Scope
-			{
-				name = "OPTRE_SRS99_Scope";
-				count = 999;
-			};
-			class xx_OPTRE_SRS99_Laser
-			{
-				name = "OPTRE_SRS99_Laser";
-				count = 999;
-			};
-			class xx_OPTRE_SRS99_Bipod
-			{
-				name = "OPTRE_SRS99_Bipod";
-				count = 999;
-			};
-		};
+		{};
 	};
-	class OPTRE_Ammo_Rack_Weapons: OPTRE_Ammo_Magic_Box
+	class OPTRE_Ammo_Rack_Weapons: OPTRE_Ammo_Box_Base
 	{
+		scope = 2;
 		displayName = "[UNSC] Weapons Rack";
 		hiddenSelections[] = {"attach_Cover"};
 		model = "\OPTRE_misc\crates\weaponcrate.p3d";
@@ -394,7 +47,7 @@ class CfgVehicles
 		transportMaxWeapons = 50;
 		transportMaxMagazines = 1000;
 		maximumLoad = 500000;
-		transportMaxBackpacks = 5;
+		transportMaxBackpacks = 10;
 		transportAmmo = 1;
 		transportRepair = 0;
 		transportFuel = 0;

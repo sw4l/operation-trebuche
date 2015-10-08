@@ -215,6 +215,71 @@ class CfgWeapons
 			mass = 25;
  		};
 	};
+	class OPTRE_M6C : OPTRE_M6G
+	{
+		model										= "\OPTRE_Weapons\Pistol\m6c.p3d";
+		displayName 								= "M6C Handgun";
+		descriptionShort 							= "12.7x40mm Handgun";
+		picture 									= "\OPTRE_weapons\pistol\icons\pistol_a.paa";
+		magazines[] 								= {"OPTRE_12Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag"};
+		class Single : Mode_SemiAuto
+		{
+			sounds[] 								= {"StandardSound"}; //Defines weapon sounds
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "DefaultRifle";
+				closure1[] 							= {"",1.0,1,200};
+				closure2[] 							= {"",1.0,1,200};
+				soundClosure[] 						= {"closure1",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] 							= {"\OPTRE_Weapons\Pistol\data\sounds\Magnum_1.wss",1.3,1,200};
+				soundBegin[] 						= {"begin1",1};
+			};
+			reloadTime 								= 0.1;
+			dispersion 								= 0.00005;
+			minRange 								= 2;
+			minRangeProbab 							= 0.20;
+			midRange 								= 75;
+			midRangeProbab 							= 0.35;
+			maxRange 								= 200;
+			maxRangeProbab 							= 0.45;
+			distanceZoomMin 						= 60;
+			distanceZoomMax 						= 60;
+			recoil 									= "recoil_pistol_light";
+			recoilProne 							= "recoil_prone_pistol_light";
+			
+		};
+		class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
+ 		{
+ 			class MuzzleSlot: SlotInfo
+			{
+				access 								= 1;
+				compatibleitems[] 					= {};
+				displayname 						= "Muzzle Slot";
+				linkproxy 							= "\A3\data_f\proxies\weapon_slots\MUZZLE";
+				scope 								= 2;
+			};
+			class CowsSlot: SlotInfo
+			{
+				access 								= 1;
+				compatibleitems[] 					= {};
+				displayname 						= "Optics Slot";
+				linkproxy 							= "\A3\data_f\proxies\weapon_slots\TOP";
+				scope 								= 2;
+			};
+			class PointerSlot: SlotInfo
+			{
+				access 								= 1;
+				compatibleitems[] 					= {};
+				displayname 						= "Pointer Slot";
+				linkproxy 							= "\A3\data_f\proxies\weapon_slots\SIDE";
+				scope 								= 2;
+			};
+			mass = 15;
+ 		};
+	};
 	class OPTRE_M6G_SF: OPTRE_M6G /// standard issue variant with holo optics and laser pointer
 	{
 		picture = "\OPTRE_weapons\pistol\icons\pistol_b.paa";

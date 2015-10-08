@@ -23,7 +23,7 @@ class cfgWeapons
 	class Throw: GrenadeLauncher
 	{
 		class ThrowMuzzle;
-		 muzzles[] += {"OPTRE_M9FragMuzzle","OPTRE_M2_SmokeMuzzle", "OPTRE_M2_BSmokeMuzzle", "OPTRE_M2_YSmokeMuzzle", "OPTRE_M2_RSmokeMuzzle", "OPTRE_M2_GSmokeMuzzle", "OPTRE_M2_OSmokeMuzzle", "OPTRE_M2_PSmokeMuzzle"};	
+		 muzzles[] += {"OPTRE_M9FragMuzzle","OPTRE_M2_SmokeMuzzle", "OPTRE_M2_BSmokeMuzzle", "OPTRE_M2_YSmokeMuzzle", "OPTRE_M2_RSmokeMuzzle", "OPTRE_M2_GSmokeMuzzle", "OPTRE_M2_OSmokeMuzzle", "OPTRE_M2_PSmokeMuzzle", "OPTRE_M8_FlareMuzzle"};	
 			
 		class OPTRE_M9FragMuzzle: ThrowMuzzle
 		{
@@ -56,6 +56,10 @@ class cfgWeapons
 		class OPTRE_M2_PSmokeMuzzle: ThrowMuzzle
 		{
 			magazines[] = {"OPTRE_M2_Smoke_Purple"};
+		};
+		class OPTRE_M8_FlareMuzzle: ThrowMuzzle
+		{
+			magazines[] = {"OPTRE_M8_Flare"};
 		};
 	};
 };

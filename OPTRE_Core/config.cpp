@@ -652,7 +652,7 @@ class CfgMusic
 	};
 	class OPTRE_Music_JeopardyDrums
 	{
-		name	="[OPTRE] Jeopardy";
+		name	="[OPTRE] Jeopardy (Drums)";
 		sound[]	={"\OPTRE_Core\Music\OPTRE_JeopardyDrums.ogg",1,1};
 		author	= "Article 2 Studios";
 		musicClass = "OPTRE_OST";

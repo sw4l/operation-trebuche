@@ -6,10 +6,13 @@ class CfgWeapons
 {
 	class WeaponSlotsInfo;
 	class SlotInfo;
+	class MuzzleSlot;
+	class CowsSlot;
+	class PointerSlot;
+	class UnderBarrelSlot;
 	class ItemCore;
 	class InventoryOpticsItem_Base_F;
 	class GunParticles;
-	class UnderBarrelSlot;
 	
 	//ATTACHMENTS
 	
@@ -55,8 +58,8 @@ class CfgWeapons
 		
 	//WEAPONS
 	
-	class LMG_Mk200_F;
-	class OPTRE_M392_DMR: LMG_Mk200_F
+	class EBR_Base_F;
+	class OPTRE_M392_DMR: EBR_Base_F
 	{
 		scope 										= 2;
 		scopeArsenal 								= 2;
@@ -99,9 +102,8 @@ class CfgWeapons
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				begin1[] = {"\OPTRE_Weapons\BR\Data\sounds\BattleRifle_1.wss",1.0,1,2000};
-                begin2[] = {"\OPTRE_Weapons\BR\Data\sounds\BattleRifle_2.wss",1.0,1,2000};
-				soundBegin[] = {"begin1",0.34,"begin2",0.33};
+				begin1[] = {"\OPTRE_Weapons\DMR\Data\sounds\DMR_1.ogg",2.5,1,1500};
+				soundBegin[] = {"begin1",1};
 			};
 			class SilencedSound: BaseSoundModeType
 			{
@@ -122,33 +124,21 @@ class CfgWeapons
 		};
 		class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
  		{
- 			class MuzzleSlot: SlotInfo
+ 			class MuzzleSlot: MuzzleSlot
 			{
-				access 								= 1;
 				compatibleitems[] 					= {"muzzle_snds_B"};
-				displayname 						= "Muzzle Slot";
-				linkproxy 							= "\A3\data_f\proxies\weapon_slots\MUZZLE";
-				scope 								= 2;
 			};
-			class CowsSlot: SlotInfo
+			class CowsSlot: CowsSlot
 			{
-				access 								= 1;
 				compatibleitems[] 					= {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope"};
-				displayname 						= "Optics Slot";
-				linkproxy 							= "\A3\data_f\proxies\weapon_slots\TOP";
-				scope 								= 2;
 			};
-			class PointerSlot: SlotInfo
+			class PointerSlot: PointerSlot
 			{
-				access 								= 1;
 				compatibleitems[] 					= {"acc_pointer_IR", "acc_flashlight"};
-				displayname 						= "Pointer Slot";
-				linkproxy 							= "\A3\data_f\proxies\weapon_slots\SIDE";
-				scope 								= 2;
 			};
 			class UnderBarrelSlot: UnderBarrelSlot /// using test bipod
 			{
-				compatibleItems[] 					= {"bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk"};		
+				compatibleItems[] 					= {"bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk"};	
 			};	
 			mass = 75;
  		};

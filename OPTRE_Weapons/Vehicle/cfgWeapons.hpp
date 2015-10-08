@@ -48,6 +48,12 @@ class CfgWeapons
         modes[] = {"FullAuto"};
         class FullAuto: MGun
         {
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"OPTRE_Weapons\Vehicle\data\sounds\M41LAAG_1.wss",1,1,1500};
+				soundBegin[] = {"begin1",1};
+			};
             reloadTime = 0.1;
             dispersion = 0.001;
             minRange = 2;
@@ -72,10 +78,15 @@ class CfgWeapons
 		maxFov 								= 1.1;
 		class manual:MGun
 		{
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"OPTRE_Weapons\Rockets\data\sounds\rocket_1.wss",1,1,1500};
+				soundBegin[] = {"begin1",1};
+			};
 			displayName						= "102mm ATGM Launcher";
 			reloadTime						= 0.5;
 			dispersion						= 0;
-			sounds[]						= {"StandardSound"};
 		};
 	};
 	class OPTRE_M79_MLRS: missiles_DAGR
@@ -113,7 +124,7 @@ class CfgWeapons
 		initFov 							= 0.75;
 		minFov 								= 0.375;
 		maxFov 								= 1.1;
-		reloadTime 							= 6;
+		reloadTime 							= 3;
 		magazineReloadTime 					= 6;
 		autoReload 							= 1;
 		ballisticsComputer					= 1;
@@ -122,6 +133,23 @@ class CfgWeapons
 		showAimCursorInternal 				= 0;
 		displayName 						= "M68 ALIM";
 		magazines[] 						= {"OPTRE_20Rnd_ALIM_Gauss_slugs"};
+		class player: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"OPTRE_Weapons\Vehicle\data\sounds\Gauss_1.wss",2.5,1,1500};
+				soundBegin[] = {"begin1",1};
+			};
+			soundContinuous = 0;
+			reloadTime = 3;
+			magazineReloadTime = 6;
+			autoReload = 0;
+			ballisticsComputer = 0;
+			canLock = 0;
+			autoFire = 0;
+			dispersion = 0;
+		};
 		class GunParticles
 		{
 			class effect1

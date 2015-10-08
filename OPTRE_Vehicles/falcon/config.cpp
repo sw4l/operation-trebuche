@@ -370,8 +370,8 @@ class CfgVehicles
 		incomingMissileDetectionSystem = CM_Missile;			/// for example CM_Lock_Laser + CM_Lock_Radar, parser is able to evaluate that, or simply 12 in that case
 		selectionFireAnim = "muzzleFlash";						/// what selection is hidden when machinegun doesn't shoot
 		visionMode[]={"Normal","NVG","Ti"};
-		weapons[] = {"gatling_30mm",  "CMFlareLauncher","Laserdesignator_mounted"};	/// array of various vehicle weapons mounted on the heli
-		magazines[] = {"250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"}; /// array of corresponding magazines
+		weapons[] = {"OPTRE_M638",  "CMFlareLauncher","Laserdesignator_mounted"};	/// array of various vehicle weapons mounted on the heli
+		magazines[] = {"2000Rnd_20mm_shells","2000Rnd_20mm_shells","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"}; /// array of corresponding magazines
 		class ViewPilot: ViewPilot 	/// describes what does the pilot see using bare eyes
 		{
 			initFov = 0.75; 		/// this is the standard field of view angle for soldier, bit more narrow than a real-life one
@@ -531,8 +531,8 @@ class CfgVehicles
 				ambient[] = {70,75,100};		/// the same definition format for colouring the environment around
 				intensity = 50;					/// how much does the light shine (in some strange units, just tweak until it is satisfying), rough approximation is intensity = (brightness * 50) ^ 2
 				size = 1;						/// defines the visible size of light, has not much of an effect now
-				innerAngle = 15;				/// angle from light direction vector where the light is at full strength
-				outerAngle = 65;				/// angle from light direction vector where the light is completely faded out
+				innerAngle = 50;
+				outerAngle = 80;
 				coneFadeCoef = 10;				/// coefficient of fading the light between inner and outer cone angles
 
 				position = "Light_R_pos";		/// name of memory point in model to take the origin of the light

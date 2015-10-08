@@ -177,15 +177,13 @@
                             class PointerSlot: SlotInfo
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"acc_pointer_IR", "acc_flashlight"};
+                                    compatibleitems[]                                       = {};
                                     displayname                                             = "Pointer Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\SIDE";
                                     scope                                                   = 2;
                             };
 							class UnderBarrelSlot: UnderBarrelSlot /// using test bipod
 							{
-								iconPosition[] = {0.2, 0.7};
-								iconScale = 0.2;
 								compatibleItems[] = {"bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk"};		
 							};	
                     };

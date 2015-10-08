@@ -35,7 +35,7 @@ class CfgMagazines
 		displaynameshort					= "7.62x51mm Tracer";
 		ammo								= "OPTRE_B_762x51_Tracer";
 		descriptionshort					= "60 Round Magazine<br>7.62x51mm<br>Tracer";
-		tracersEvery 						= 18;
+		tracersEvery 						= 1;
 		lastRoundsTracer 					= 60;
 	};
 	class OPTRE_32Rnd_762x51_Mag: OPTRE_60Rnd_762x51_Mag
@@ -202,6 +202,25 @@ class CfgMagazines
 		tracersEvery 					= 1;
 		lastRoundsTracer 				= 8;
 	};
+	class OPTRE_12Rnd_127x40_Mag : OPTRE_8Rnd_127x40_Mag
+	{
+		displayname						= "12Rnd 12.7x40mm Magazine";
+		count							= 12;
+		initspeed						= 300;
+		descriptionshort				= "12 Round Magazine<br>12.7x40mm<br>Semi-Armor Piercing High Explosive";
+		mass							= 8;
+		tracersEvery 					= 0;
+		lastRoundsTracer 				= 2;
+	};
+	class OPTRE_16Rnd_127x40_Mag : OPTRE_12Rnd_127x40_Mag
+	{
+		displayname						= "16Rnd 12.7x40mm Magazine";
+		count							= 16;
+		descriptionshort				= "16 Round Magazine<br>12.7x40mm<br>Semi-Armor Piercing High Explosive";
+		mass							= 9;
+		tracersEvery 					= 0;
+		lastRoundsTracer 				= 2;
+	};
 	
 	//8 Gauge (Shotgun)
 	class OPTRE_6Rnd_8Gauge_Pellets : 20Rnd_762x51_Mag
@@ -215,7 +234,7 @@ class CfgMagazines
 		initspeed							= 400;
 		picture								= "\a3\weapons_F\data\ui\m_12gauge_ca.paa";
 		descriptionshort					= "6 Rounds of 8 Gauge Pellets";
-		mass								= 8;
+		mass								= 10;
 	};
 	class OPTRE_6Rnd_8Gauge_Slugs : OPTRE_6Rnd_8Gauge_Pellets
 	{
@@ -226,7 +245,21 @@ class CfgMagazines
 		initspeed							= 600;
 		picture								= "\a3\weapons_F\data\ui\m_12gauge_slugs_ca.paa";
 		descriptionshort					= "6 Rounds of 8 Gauge Slugs";
-		mass								= 9;
+		mass								= 10;
+	};
+	class OPTRE_12Rnd_8Gauge_Pellets : OPTRE_6Rnd_8Gauge_Pellets
+	{
+		displayname							= "12Rnd 8 Gauge Pellets";
+		count								= 12;
+		descriptionshort					= "12 Rounds of 8 Gauge Pellets";
+		mass								= 16;
+	};
+	class OPTRE_12Rnd_8Gauge_Slugs : OPTRE_6Rnd_8Gauge_Slugs
+	{
+		displayname							= "12Rnd 8 Gauge Slugs";
+		count								= 12;
+		descriptionshort					= "12 Rounds of 8 Gauge Slugs";
+		mass								= 16;
 	};
 	
 	//5x23mm (SMG)
@@ -382,8 +415,8 @@ class CfgMagazines
 		descriptionshort				= "High Explosive Anti Tank<br/>Un-guided";
 		ammo							= "OPTRE_M41_Rocket_HEAT";
 		picture 						= "\OPTRE_weapons\rockets\icons\rocket.paa";
-		model							= "\OPTRE_Weapons\Rockets\M41_case.p3d";	
-		modelSpecial					= "\OPTRE_Weapons\Rockets\M41_launcher_loaded.p3d";
+		model							= "\OPTRE_Weapons\Rockets\M41_tube.p3d";	
+		modelSpecial 					= "\OPTRE_Weapons\Rockets\M41_launcher_loaded.p3d";
 		count							= 2;
 		mass 							= 80;
 		initSpeed 						= 255;
@@ -395,8 +428,7 @@ class CfgMagazines
 		displaynameshort				= "HEAT (Guided)";
 		picture 						= "\OPTRE_weapons\rockets\icons\rocket.paa";
 		descriptionshort				= "High Explosive Anti Tank<br/>Guided";
-		model							= "\OPTRE_Weapons\Rockets\M41_case.p3d";	
-		modelSpecial					= "\OPTRE_Weapons\Rockets\M41_launcher_loaded.p3d";
+		model							= "\OPTRE_Weapons\Rockets\M41_tube.p3d";	
 		count							= 2;
 		mass 							= 90;
 		initSpeed 						= 255;
@@ -409,8 +441,8 @@ class CfgMagazines
 		descriptionshort				= "High Explosive Anti Personnel<br/>Un-guided";
 		displayname						= "M19 HEAP Twin Rockets";
 		picture 						= "\OPTRE_weapons\rockets\icons\rocket.paa";
+		modelSpecial 					= "\OPTRE_Weapons\Rockets\M41_launcher_loaded.p3d";
 		displaynameshort				= "HEAP";
-		modelSpecial					= "\OPTRE_Weapons\Rockets\M41_launcher_loaded.p3d";
 		mass 							= 80;
 		count 							= 2;
 		initSpeed						= 100;
@@ -435,10 +467,7 @@ class CfgMagazines
 		displayName = "M2 Smoke Grenade (White)";
 		picture = "\A3\Weapons_f\data\ui\gear_smokegrenade_white_ca.paa";
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
-		value = 2;
 		ammo = "OPTRE_G_M2_Smoke";
-		nameSoundWeapon = "smokeshell";
-		nameSound = "smokeshell";
 		descriptionShort = "Smoke Grenade<br>White";
 		displayNameShort = "White Smoke";
 		mass = 4;
@@ -490,5 +519,13 @@ class CfgMagazines
 		ammo = "OPTRE_G_M2_PSmoke";
 		descriptionShort = "Smoke Grenade<br>Purple";
 		displayNameShort = "Purple Smoke";
+	};
+	class OPTRE_M8_Flare: OPTRE_M2_Smoke
+	{
+		displayName = "M8 Flare";
+		model = "\OPTRE_Weapons\explosives\m8_flare.p3d";
+		ammo = "OPTRE_G_M8_Flare";
+		descriptionShort = "Emergency Flare";
+		displayNameShort = "Flare";
 	};
 };

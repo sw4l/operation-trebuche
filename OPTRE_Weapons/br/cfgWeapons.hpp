@@ -36,8 +36,8 @@ class CfgWeapons
 					opticsFlare  					= 0;
 					opticsDisablePeripherialVision 	= 0;
 					opticsZoomMin  					= 0.375;
-					opticsZoomMax  					= 0.375;
-					opticsZoomInit  				= 0.375;
+					opticsZoomMax  					= 1.1;
+					opticsZoomInit  				= 0.75;
 					memoryPointCamera  				= "opticView2";
 					visionMode[]  					= {};
 					distanceZoomMin  				= 300;
@@ -107,8 +107,7 @@ class CfgWeapons
 			class StandardSound: BaseSoundModeType
 			{
 				begin1[] = {"\OPTRE_Weapons\BR\Data\sounds\BattleRifle_1.wss",1.0,1,2000};
-                begin2[] = {"\OPTRE_Weapons\BR\Data\sounds\BattleRifle_2.wss",1.0,1,2000};
-				soundBegin[] = {"begin1",0.34,"begin2",0.33};
+				soundBegin[] = {"begin1",1};
 			};
 			class SilencedSound: BaseSoundModeType
 			{
@@ -116,7 +115,7 @@ class CfgWeapons
 				begin2[] = {"A3\sounds_f\weapons\silenced\silent-24",1.0,1,600};
 				soundBegin[] = {"begin1",0.5,"begin2",0.5};
 			};
-			reloadTime = 0.066;
+			reloadTime = 0.075;
 			dispersion = 0.00075;
 			recoil = "recoil_single_mx";
 			recoilProne = "recoil_single_prone_mx";
@@ -140,8 +139,7 @@ class CfgWeapons
 			class StandardSound: BaseSoundModeType
 			{
 				begin1[] = {"\OPTRE_Weapons\BR\Data\sounds\BattleRifle_1.wss",1.0,1,2000};
-                begin2[] = {"\OPTRE_Weapons\BR\Data\sounds\BattleRifle_2.wss",1.0,1,2000};
-				soundBegin[] = {"begin1",0.34,"begin2",0.33};
+				soundBegin[] = {"begin1",0.34};
 			};
 			class SilencedSound: BaseSoundModeType
 			{
@@ -149,7 +147,7 @@ class CfgWeapons
 				begin2[] = {"A3\sounds_f\weapons\silenced\silent-24",1.0,1,600};
 				soundBegin[] = {"begin1",0.5,"begin2",0.5};
 			};
-			reloadTime = 0.06;
+			reloadTime = 0.075;
 			dispersion = 0.00085;
 			recoil = "recoil_single_mx";
 			recoilProne = "recoil_single_prone_mx";

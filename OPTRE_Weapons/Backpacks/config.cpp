@@ -58,19 +58,6 @@ class cfgVehicles
                 displayName 										= "[UNSC] ILCS Backpack [Medic]";
 				hiddenSelections[] 									= {"camo1"};
 				hiddenSelectionsTextures[] 							= {"OPTRE_Weapons\Backpacks\data\ruck_med_CO.paa"};
-				class TransportItems
-				{
-					class _xx_OPTRE_MedKit
-					{
-					name = "OPTRE_Medkit";
-					count = 1;
-					};
-					class _xx_OPTRE_Biofoam
-					{
-					name = "OPTRE_Biofoam";
-					count = 10;
-					};
-				};
         };
 				
 		class OPTRE_ILCS_Rucksack_green : OPTRE_ILCS_Rucksack_Black

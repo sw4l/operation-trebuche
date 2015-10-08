@@ -193,9 +193,8 @@ class CfgWeapons
                             };
                             class StandardSound: BaseSoundModeType
                             {
-                                    begin1[] = {"\OPTRE_Weapons\SMG\Data\sounds\SMG_1.wss",1.0,1,2000};
-                                    begin2[] = {"\OPTRE_Weapons\SMG\Data\sounds\SMG_2.wss",1.0,1,2000}; 
-                                    soundBegin[] = {"begin1",0.34,"begin2",0.33};
+                                    begin1[] = {"\OPTRE_Weapons\SMG\Data\sounds\SMG_1.ogg",1.5,1,2000};
+                                    soundBegin[] = {"begin1",1};
                             };
                             class SilencedSound: BaseSoundModeType
                             {
@@ -226,9 +225,8 @@ class CfgWeapons
                             };
                             class StandardSound: BaseSoundModeType
                             {
-                                    begin1[] = {"\OPTRE_Weapons\SMG\Data\sounds\SMG_1.wss",1.0,1,2000};
-                                    begin2[] = {"\OPTRE_Weapons\SMG\Data\sounds\SMG_2.wss",1.0,1,2000}; 
-                                    soundBegin[] = {"begin1",0.34,"begin2",0.33};
+                                    begin1[] = {"\OPTRE_Weapons\SMG\Data\sounds\SMG_1.ogg",1.0,1,2000};
+                                    soundBegin[] = {"begin1",1};
                             };
                             class SilencedSound: BaseSoundModeType
                             {
@@ -236,7 +234,7 @@ class CfgWeapons
                                     begin2[] = {"\OPTRE_Weapons\SMG\Data\sounds\Silenced_1.wss",1.0,1,600};
                                     soundBegin[] = {"begin1",0.5,"begin2",0.5};
                             };
-                            reloadTime = 0.066; 
+                            reloadTime = 0.05; 
                             dispersion = 0.0013;
                             recoil = "recoil_auto_smg_01";
 							recoilProne = "recoil_auto_prone_smg_01";
