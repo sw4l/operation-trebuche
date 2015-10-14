@@ -1,5 +1,0 @@
-Changelog:
-
-05 FEB 15
-
-Added UNSC textures for HEMTT and Zamak trucks.

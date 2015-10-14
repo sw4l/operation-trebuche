@@ -55,7 +55,7 @@ class CfgWeapons
 		};
 		inertia 									= 0.1;
  	};
-		class OPTRE_M6G_Scope: ItemCore
+	class OPTRE_M6G_Scope: ItemCore
 	{
 		scope 										= 2;
 		displayName 								= "M6G KFA-2 SmartLink Scope";
@@ -131,6 +131,7 @@ class CfgWeapons
 		reloadMagazineSound[] 						= {"\OPTRE_Weapons\Pistol\data\sounds\reload.ogg",1.3,1,30};
 		fireSpreadAngle								= 0.85;
 		dispersion 									= 0.00005;
+		deployedPivot    							= "bipod";
 		maxZeroing 																= 300;
 		discreteDistance[] 														= {100,200,300};
 		inertia										= 0.25;

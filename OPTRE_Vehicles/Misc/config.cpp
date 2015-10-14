@@ -126,7 +126,7 @@ class CfgVehicles
 		crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
 		typicalCargo[] = {"OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL"};
 		hiddenSelections[] = {"Camo1","Camo2"};
-		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data","\OPTRE_Vehicles\Misc\data\KAMAZ_UNSC_02_CO.paa"};
+		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\KAMAZ_UNSC_01_CO.paa","\OPTRE_Vehicles\Misc\data\KAMAZ_UNSC_02_CO.paa"};
 	};
 	
 	class OPTRE_m1015_mule_ins: OPTRE_m1015_mule_base

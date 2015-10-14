@@ -166,6 +166,7 @@ class Mode_FullAuto;
                     reloadAction                                                            = "GestureReloadTRG";
                     inertia                                                                 = 0.6;
 					maxZeroing 																= 1000;
+					deployedPivot    														= "bipod";
 					discreteDistance[] 														= {100,200,300,400,500,600,700,800,900,1000};
 					maxRecoilSway = 0.01;
 					swayDecaySpeed = 1;

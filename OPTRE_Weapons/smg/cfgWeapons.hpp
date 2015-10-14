@@ -178,6 +178,7 @@ class CfgWeapons
 					drySound[] = {"A3\sounds_f\weapons\other\dry1",0.1,1,20};
 					maxRecoilSway = 0.0075;
 					swayDecaySpeed = 1;
+					deployedPivot    														= "bipod";
 					maxZeroing 																= 300;
 					discreteDistance[] 														= {100,200,300};
 					modes[] = {"Single","FullAuto"};

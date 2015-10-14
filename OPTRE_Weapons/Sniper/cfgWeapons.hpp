@@ -117,6 +117,7 @@ class Mode_FullAuto;
                     dexterity                                                               = 1.25;
 					maxRecoilSway 															= 0.01;
 					swayDecaySpeed 															= 1;
+					deployedPivot    														= "bipod";
 					drySound[] 																= {"A3\Sounds_F\weapons\Other\dry6.wss",1.0,1,20};
 					reloadMagazineSound[] 													= {"A3\Sounds_F\weapons\M320\M320_reload.wss",1.0,1,10};
 					class GunParticles: GunParticles

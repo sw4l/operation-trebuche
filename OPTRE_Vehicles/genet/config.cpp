@@ -59,7 +59,7 @@ class CfgVehicles
 		cost			= 50000; /// how likely is the enemy going to target this vehicle
 		
 		transportMaxBackpacks 	= 3; /// just some backpacks fit the trunk by default
-		transportSoldier 		= 3; /// number of cargo except driver
+		transportSoldier 		= 1; /// number of cargo except driver
 		
 		/// some values from parent class to show how to set them up
 		wheelDamageRadiusCoef 	= 0.9; 			/// for precision tweaking of damaged wheel size

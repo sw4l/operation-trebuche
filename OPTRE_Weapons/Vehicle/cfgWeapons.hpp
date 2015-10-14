@@ -54,7 +54,7 @@ class CfgWeapons
 				begin1[] = {"OPTRE_Weapons\Vehicle\data\sounds\M41LAAG_1.wss",1,1,1500};
 				soundBegin[] = {"begin1",1};
 			};
-            reloadTime = 0.1;
+            reloadTime = 0.075;
             dispersion = 0.001;
             minRange = 2;
             minRangeProbab = 0.3;
@@ -76,17 +76,11 @@ class CfgWeapons
 		initFov 							= 0.75;
 		minFov 								= 0.375;
 		maxFov 								= 1.1;
-		class manual:MGun
+		sounds[] = {"StandardSound"};
+		class StandardSound
 		{
-			sounds[] = {"StandardSound"};
-			class StandardSound
-			{
-				begin1[] = {"OPTRE_Weapons\Rockets\data\sounds\rocket_1.wss",1,1,1500};
-				soundBegin[] = {"begin1",1};
-			};
-			displayName						= "102mm ATGM Launcher";
-			reloadTime						= 0.5;
-			dispersion						= 0;
+			begin1[] = {"OPTRE_Weapons\Rockets\data\sounds\rocket_1.wss",1,1,1500};
+			soundBegin[] = {"begin1",1};
 		};
 	};
 	class OPTRE_M79_MLRS: missiles_DAGR
@@ -201,7 +195,7 @@ class CfgWeapons
         modes[] = {"FullAuto"};
         class FullAuto: MGun
         {
-            reloadTime = 0.1;
+            reloadTime = 0.125;
             dispersion = 0.001;
             minRange = 2;
             minRangeProbab = 0.3;

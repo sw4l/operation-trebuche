@@ -380,8 +380,8 @@ class CfgMagazines
 		displayNameShort 					= "102mm Guided HEAT";
 		count 								= 3;
 		ammo 								= "OPTRE_M41_Rocket_ATGM";
-		initSpeed 							= 40;
-		maxLeadSpeed 						= 40;
+		initSpeed 							= 60;
+		maxLeadSpeed 						= 60;
 		sound[] 							= {"A3\Sounds_F\weapons\Rockets\titan_2",1.25893,1,1000};
 		weaponSoundEffect 					= "DefaultRifle";
 		soundFly[] 							= {"A3\Sounds_F\weapons\Rockets\rocket_fly_2",0.501187,1.3,400};
@@ -423,7 +423,6 @@ class CfgMagazines
 	};
 	class OPTRE_M41_Twin_HEAT_G: OPTRE_M41_Twin_HEAT
 	{
-		ammo							= "OPTRE_M41_Rocket_HEAT_Guided";
 		displayname						= "M19 HEAT Guided Twin Rockets";
 		displaynameshort				= "HEAT (Guided)";
 		picture 						= "\OPTRE_weapons\rockets\icons\rocket.paa";
@@ -431,8 +430,15 @@ class CfgMagazines
 		model							= "\OPTRE_Weapons\Rockets\M41_tube.p3d";	
 		count							= 2;
 		mass 							= 90;
-		initSpeed 						= 255;
-		maxLeadSpeed = 320;
+		ammo 							= "OPTRE_M41_Rocket_ATGM";
+		initSpeed 						= 60;
+		maxLeadSpeed 					= 60;
+		sound[] 						= {"A3\Sounds_F\weapons\Rockets\titan_2",1.25893,1,1000};
+		weaponSoundEffect 				= "DefaultRifle";
+		soundFly[] 						= {"A3\Sounds_F\weapons\Rockets\rocket_fly_2",0.501187,1.3,400};
+		soundHit[] 						= {"",1.25893,1,1};
+		reloadSound[] 					= {"",0.000316228,1,20};
+		nameSound 						= "missiles";
 	};
 	class OPTRE_M41_Twin_HEAP: RPG32_HE_F
 	{

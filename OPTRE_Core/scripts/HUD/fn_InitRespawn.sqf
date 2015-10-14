@@ -1,5 +1,3 @@
-#include "\userconfig\OPTRE\OPTRE.hpp"
-if (!OPTRE_HUD_Enabled) exitWith {};
 if (isServer && isDedicated) exitWith {};
 OPTRE_HUD_NVOn = 0;
 OPTRE_HUD_Type = 0;
@@ -13,7 +11,7 @@ waitUntil {time > 0};
 while {time > 0} do {
 	 _getHelmet_fnc = [] spawn OPTRE_HUD_fnc_getHelmet;
 	if ((OPTRE_HUD_Type == 1) && (cameraView != "EXTERNAL") && (cameraOn == player)) then {
-		117 cutRsc [OPTRE_HUD_Color, "PLAIN", 0, true];
+		117 cutRsc ["OPTRE_ODST_HUD_blue", "PLAIN", 0, true];
 	} else {
 		117 cutText ["", "PLAIN"];
 	};

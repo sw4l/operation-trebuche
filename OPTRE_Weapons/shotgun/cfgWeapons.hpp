@@ -109,6 +109,7 @@ class CfgWeapons
 		reloadAction 								= "GestureReloadSMG_01";
 		maxRecoilSway 									= 0.0120;
 		swayDecaySpeed 									= 1.20;
+		deployedPivot    								= "bipod";
 		drySound[] 									= {"A3\Sounds_F\weapons\Other\dry6.wss",0.1,1};
 		reloadMagazineSound[] 								= {"\OPTRE_Weapons\Shotgun\data\sounds\reload.ogg",1.3,1,30};
 		fireSpreadAngle									= 0.85;

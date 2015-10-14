@@ -3,8 +3,6 @@ _setHelmet_preprocess = compile preprocessFileLineNumbers "\OPTRE_Core\scripts\H
 _LowLightToggle_preprocess = compile preprocessFileLineNumbers "\OPTRE_Core\scripts\HUD\fn_LowLightToggle.sqf";
 _VisorToggle_preprocess = compile preprocessFileLineNumbers "\OPTRE_Core\scripts\HUD\fn_VisorToggle.sqf";
 
-#include "\userconfig\OPTRE\OPTRE.hpp"
-if (!OPTRE_HUD_Enabled) exitWith {};
 if (isServer && isDedicated) exitWith {};
 if (isMultiplayer) then {player addMPEventHandler ["MPRespawn", {[] spawn OPTRE_HUD_fnc_InitRespawn}];} else {player addEventHandler ["Respawn", {[] spawn OPTRE_HUD_fnc_InitRespawn}];};
 OPTRE_HUD_NVOn = 0;
@@ -19,7 +17,7 @@ waitUntil {time > 0};
 while {time > 0} do {
 	 _getHelmet_fnc = [] spawn OPTRE_HUD_fnc_getHelmet;
 	if ((OPTRE_HUD_Type == 1) && (cameraView != "EXTERNAL") && (cameraOn == player)) then {
-		117 cutRsc [OPTRE_HUD_Color, "PLAIN", 0, true];
+		117 cutRsc ["OPTRE_ODST_HUD_blue", "PLAIN", 0, true];
 	} else {
 		117 cutText ["", "PLAIN"];
 	};

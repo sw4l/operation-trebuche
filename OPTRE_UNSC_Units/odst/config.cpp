@@ -114,6 +114,8 @@ class CfgVehicles
 				armor = 3;
 			};
 		};
+		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_ODST_Helmet_Recon","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_ODST_Helmet_Recon","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 	};
 	class OPTRE_UNSC_ODST_Soldier_M: OPTRE_UNSC_ODST_Soldier
 	{
@@ -140,6 +142,8 @@ class CfgVehicles
 				armor = 3;
 			};
 		};
+		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_ODST_Helmet_Comms","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_ODST_Helmet_Comms","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 	};
 	class OPTRE_UNSC_ODST_Soldier_Sniper: OPTRE_UNSC_ODST_Soldier
 	{
@@ -167,14 +171,18 @@ class CfgVehicles
 				armor = 3;
 			};
 		};
+		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_ODST_Helmet_Sniper","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_ODST_Helmet_Sniper","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 	};
 	class OPTRE_UNSC_ODST_Soldier_Medic: OPTRE_UNSC_ODST_Soldier
 	{
 		author																				= "Article 2 Studios";
-		scopeCurator													= 0;
+		scopeCurator																		= 0;
 		uniformClass																		= "OPTRE_UNSC_ODST_Uniform_Medic";
 		hiddenSelections[] 																	= {"camo1","insignia","clan" };
 		hiddenSelectionsTextures[] 															= {"OPTRE_UNSC_Units\ODST\data\armor_medic_co.paa"};
+		icon 																				= "iconManMedic";
+		attendant 																			= 1;
 		class HitPoints: HitPoints
 		{
 			class HitHead: HitHead
@@ -194,6 +202,8 @@ class CfgVehicles
 				armor = 3;
 			};
 		};
+		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest_Medic","OPTRE_UNSC_ODST_Helmet_Medic","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_Vest_Medic","OPTRE_UNSC_ODST_Helmet_Medic","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 	};
 	// BASE UNITS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -858,12 +868,12 @@ class cfgWeapons
 		author																					= "Article 2 Studios";
 		scopeArsenal																			= 1;
 		scopeCurator																			= 1;
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
-		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa",""};
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		};
 	};
 	class OPTRE_UNSC_ODST_Helmet_Recon_dp: OPTRE_UNSC_ODST_Helmet_Recon
@@ -871,12 +881,12 @@ class cfgWeapons
 		author																					= "Article 2 Studios";
 		scopeArsenal																			= 1;
 		scopeCurator																			= 1;
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet2_co.paa",""};
-		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet2_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet2_co.paa",""};
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet2_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		};
 	};
 	class OPTRE_UNSC_ODST_Helmet_Sniper_dp: OPTRE_UNSC_ODST_Helmet_Sniper
@@ -884,12 +894,12 @@ class cfgWeapons
 		author																					= "Article 2 Studios";
 		scopeArsenal																			= 1;
 		scopeCurator																			= 1;
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet1_co.paa",""};
-		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet1_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet1_co.paa",""};
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet1_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		};
 	};
 	class OPTRE_UNSC_ODST_Helmet_Comms_dp: OPTRE_UNSC_ODST_Helmet_Comms
@@ -897,12 +907,12 @@ class cfgWeapons
 		author																					= "Article 2 Studios";
 		scopeArsenal																			= 1;
 		scopeCurator																			= 1;
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet3_co.paa",""};
-		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet3_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet3_co.paa",""};
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet3_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		};
 	};
 	class OPTRE_UNSC_ODST_Helmet_Medic_dp: OPTRE_UNSC_ODST_Helmet_Medic
@@ -910,12 +920,12 @@ class cfgWeapons
 		author																					= "Article 2 Studios";
 		scopeArsenal																			= 1;
 		scopeCurator																			= 1;
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_medic_co.paa",""};
-		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_medic_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_medic_co.paa",""};
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_medic_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		};
 	};
 	class OPTRE_UNSC_ODST_Helmet_Scorch_dp: OPTRE_UNSC_ODST_Helmet_Scorch
@@ -923,12 +933,12 @@ class cfgWeapons
 		author																					= "Article 2 Studios";
 		scopeArsenal																			= 1;
 		scopeCurator																			= 1;
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa",""};
-		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa",""};
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		};
 	};
 	class OPTRE_UNSC_ODST_Helmet_TheDog_dp: OPTRE_UNSC_ODST_Helmet_TheDog
@@ -936,12 +946,12 @@ class cfgWeapons
 		author																					= "Article 2 Studios";
 		scopeArsenal																			= 1;
 		scopeCurator																			= 1;
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_thedog_co.paa",""};
-		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_thedog_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_thedog_co.paa",""};
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_thedog_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		};
 	};
 	class OPTRE_UNSC_ODST_Helmet_Zero_dp: OPTRE_UNSC_ODST_Helmet_Zero
@@ -949,12 +959,12 @@ class cfgWeapons
 		author																					= "Article 2 Studios";
 		scopeArsenal																			= 1;
 		scopeCurator																			= 1;
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa",""};
-		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa",""};
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		};
 	};
 	class OPTRE_UNSC_ODST_Helmet_Stirls_dp: OPTRE_UNSC_ODST_Helmet_Stirls
@@ -962,12 +972,12 @@ class cfgWeapons
 		author																					= "Article 2 Studios";
 		scopeArsenal																			= 1;
 		scopeCurator																			= 1;
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa",""};
-		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa",""};
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		};
 	};
 	class OPTRE_UNSC_ODST_Helmet_Urban_dp: OPTRE_UNSC_ODST_Helmet_Urban
@@ -975,12 +985,12 @@ class cfgWeapons
 		author																					= "Article 2 Studios";
 		scopeArsenal																			= 1;
 		scopeCurator																			= 1;
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_urban_co.paa",""};
-		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_urban_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_urban_co.paa",""};
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_urban_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		};
 	};
 	class OPTRE_UNSC_Recon_Helmet: OPTRE_UNSC_ODST_Helmet
@@ -1006,12 +1016,12 @@ class cfgWeapons
 		author																					= "Article 2 Studios";
 		scopeArsenal																			= 1;
 		scopeCurator																			= 1;
-		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\recon_helmet_co.paa",""};
-		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\recon_helmet.rvmat",""};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\recon_helmet_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\recon_helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\recon_helmet_co.paa",""};
-			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\recon_helmet.rvmat",""};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\recon_helmet_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\recon_helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		};
 	};
 	class OPTRE_Cap_ODST: H_Cap_oli

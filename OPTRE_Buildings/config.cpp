@@ -10,168 +10,6 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] = {"A3_structures_f","OPTRE_Core"};
     };
-	
-	class Elevator_Base
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};
-	
-	class Elevator_Piece
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};
-	class Tower1
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};
-
-	class Tower2
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};
-
-	class Tower3
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};
-
-	class Apartment8A
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};	
-	
-	class Apartment4A
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};	
-	
-	
-	class RazorTower
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};	
-	
-	class SailTower
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};
-	
-	class GenTower
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};
-	
-	class BaseTower
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};
-	
-	class SmallPlaza
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};
-
-	class PedBridgeEnd
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};
-
-	class PedBridgeMid
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};
-	
-	class CityBlockArea
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};
-	
-	class CityBlockPiece
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};
-		
-	class CityBlockCorner
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};
-
-	class RectangularPlantBox
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};
-		
-	class OPTRE_City_Door
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};
-	
-	class InformationBoard
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};
-
-	class Light_Column
-	{
-		units[] = {orbital};
-		weapons[] = {};
-		requiredVersion = 1.0;
-	};
-
-	class Light_Street
-	{
-		units[] = {"Light_Street_01_off", "Light_Street_01"};
-		weapons[] = {};
-		requiredAddons[] = {"A3_Structures_F_Civ_Lamps"};
-		requiredVersion = 0.1;
-	};
-
-	class CornerBuilding
-	{
-		units[] = {"orbital"};
-		weapons[] = {};
-		requiredVersion = 0.1;
-	};
 };
 class CfgVehicles
 {
@@ -190,6 +28,7 @@ class CfgVehicles
 	class Land_Cargo_Patrol_V3_F;
 	class Land_Medevac_house_V1_F;
 	class Land_Medevac_HQ_V1_F;
+	class Lamps_base_F;
 	
 	class OPTRE_Building_Container_Small_Green: Land_Cargo_House_V1_F
 	{
@@ -258,190 +97,142 @@ class CfgVehicles
 	class Elevator_Base: TargetGrenade
 	{
 		model="\OPTRE_Buildings\Elevator\Elevator_Base";
-		armor=20000;
-		scope=2;
-		featureSize = 10;
-		displayName="Elevator Base";
+		displayName="Elevator Base [WIP]";
+		vehicleClass = "OPTRE_UNSC_Structure_class";
 	};
 		
-	class Elevator_Piece: TargetGrenade
+	class Elevator_Piece: Elevator_Base
 	{
 		model="\OPTRE_Buildings\Elevator\Elevator_Piece";
-		armor=20000;
-		scope=2;
-		featureSize = 10;
-		displayName="Elevator Piece";
+		displayName="Elevator Piece [WIP]";
 	};
 
-	class Tower1: TargetGrenade
+	class Tower1: Elevator_Base
 	{
 		model="\OPTRE_Buildings\Towers\Tower1";
-		armor=20000;
-		scope=2;
-		displayName="Tower 1";
+		displayName="Tower 1 [WIP]";
 	};
 
-	class Tower2: TargetGrenade
+	class Tower2: Elevator_Base
 	{
 		model="\OPTRE_Buildings\Towers\Tower2";
-		armor=20000;
-		scope=2;
-		displayName="Tower 2";
+		displayName="Tower 2 [WIP]";
 	};
 
-	class Tower3: TargetGrenade
+	class Tower3: Elevator_Base
 	{
 		model="\OPTRE_Buildings\Towers\Tower3";
-		armor=20000;
-		scope=2;
-		displayName="Tower 3";
+		displayName="Tower 3 [WIP]";
 	};
 
-	class Apartment8A: TargetGrenade
+	class Apartment8A: Elevator_Base
 	{
 		model="\OPTRE_Buildings\Buildings\Apartment8A";
-		armor=20000;
-		scope=2;
-		displayName="Apartment 1 Closed";
+		displayName="Apartment 1 Closed [WIP]";
 	};
 	
-	class Apartment4A: TargetGrenade
+	class Apartment4A: Elevator_Base
 	{
 		model="\OPTRE_Buildings\Buildings\Apartment4A";
-		armor=20000;
-		scope=2;
-		displayName="Apartment 2 Closed";
+		displayName="Apartment 2 Closed [WIP]";
 	};
 	
-	class RazorTower: TargetGrenade
+	class RazorTower: Elevator_Base
 	{
 		model="\OPTRE_Buildings\Towers\Razor_Tower";
-		armor=20000;
-		scope=2;
-		displayName="Razor Tower";
+		displayName="Razor Tower [WIP]";
 	};
 	
-	class SailTower: TargetGrenade
+	class SailTower: Elevator_Base
 	{
 		model="\OPTRE_Buildings\Towers\Sail_Tower";
-		armor=20000;
-		scope=2;
-		displayName="Sail Tower";
+		displayName="Sail Tower [WIP]";
 	};
 	
-	class GenTower: TargetGrenade
+	class GenTower: Elevator_Base
 	{
 		model="\OPTRE_Buildings\Towers\Gen_Tower";
-		armor=20000;
-		scope=2;
-		displayName="Gen Tower";
+		displayName="Gen Tower [WIP]";
 	};
 	
-	class BaseTower: TargetGrenade
+	class BaseTower: Elevator_Base
 	{
 		model="\OPTRE_Buildings\Towers\Base_Tower";
-		armor=20000;
-		scope=2;
-		displayName="Base Tower";
+		displayName="Base Tower [WIP]";
 	};
 	
-	class SmallPlaza: TargetGrenade
+	class SmallPlaza: Elevator_Base
 	{
 		model="\OPTRE_Buildings\CityObjects\Small_Plaza";
-		armor=20000;
-		scope=2;
-		displayName="Small Plaza";
+		displayName="Small Plaza [WIP]";
 	};
 
-	class PedBridgeMid: TargetGrenade
+	class PedBridgeMid: Elevator_Base
 	{
 		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_Mid";
-		armor=20000;
-		scope=2;
-		displayName="Pedestrian Bridge Middle Piece";
+		displayName="Pedestrian Bridge Middle Piece [WIP]";
 	};
 
-	class PedBridgeEnd: TargetGrenade
+	class PedBridgeEnd: Elevator_Base
 	{
 		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_End";
-		armor=20000;
-		scope=2;
-		displayName="Pedestrian Bridge End Piece";
+		displayName="Pedestrian Bridge End Piece [WIP]";
 	};
 	
-	class CityBlockArea: TargetGrenade
+	class CityBlockArea: Elevator_Base
 	{
 		model="\OPTRE_Buildings\Buildings\City_Block_Area";
-		armor=20000;
-		scope=2;
-		displayName="City Block Area";
+		displayName="City Block Area [WIP]";
 	};
 	
-	class CityBlockPiece: TargetGrenade
+	class CityBlockPiece: Elevator_Base
 	{
 		model="\OPTRE_Buildings\Buildings\City_Block_Piece";
-		armor=20000;
-		scope=2;
-		displayName="City Block Piece";
+		displayName="City Block Piece [WIP]";
 	};
 		
-	class CityBlockCorner: TargetGrenade
+	class CityBlockCorner: Elevator_Base
 	{
 		model="\OPTRE_Buildings\Buildings\City_Block_Corner";
-		armor=20000;
-		scope=2;
-		displayName="City Block Corner";
+		displayName="City Block Corner [WIP]";
 	};
 		
-	class RectangularPlantBox: TargetGrenade
+	class RectangularPlantBox: Elevator_Base
 	{
 		model="\OPTRE_Buildings\CityObjects\Rectangular_Plant_Box";
-		armor=20000;
-		scope=2;
-		displayName="Rectangular Plant Box";
+		displayName="Rectangular Plant Box [WIP]";
 	};
 	
-	class OPTRE_City_Door: TargetGrenade
+	class OPTRE_City_Door: Elevator_Base
 	{
 		model="\OPTRE_Buildings\CityObjects\Door_Locked";
-		armor=20000;
-		scope=2;
-		displayName="Locked Door";
+		displayName="Locked Door [WIP]";
 	};
 		
-	class InformationBoard: TargetGrenade
+	class InformationBoard: Elevator_Base
 	{
 		model="\OPTRE_Buildings\CityObjects\Information_Board";
-		armor=20000;
-		scope=2;
 		displayName="Information Board";
 	};
 
-	class Light_Column: TargetGrenade
+	class Light_Column: Elevator_Base
 	{
 		model="\OPTRE_Buildings\Citylights\Light_Column";
-		armor=20000;
-		scope=2;
-		displayName="Column Light";
+		displayName="Column Light [WIP]";
 	};
 
 	class CornerBuilding: TargetGrenade
 	{
 		model="\OPTRE_Buildings\buildings\building01";
-		armor=20000;
-		scope=2;
-		displayName="Column Light";
+		displayName="Corner Building [WIP]";
 	};
-	
-	
-	class Lamps_base_F;
 
 	class Light_Street_01_off: Lamps_base_F
 	{
 		scope				= public;										/// makes the lamp visible in editor
 		scopeCurator		= public;											/// makes the lamp visible in Zeus
-		VehicleClass		= "City Lights";
-		displayName			= "Street Lamp (off)";									/// displayed in Editor
+		VehicleClass		= "OPTRE_UNSC_Structure_class";
+		displayName			= "Street Lamp (Off)";									/// displayed in Editor
 		model				= \OPTRE_Buildings\Citylights\Light_Street_off.p3d;	/// simple path to model
 
 		armor				= 5000;	/// just some protection against missiles, collisions and explosions
@@ -490,7 +281,7 @@ class CfgVehicles
 	{
 		scope				= public;
 		scopeCurator		= public;
-		displayName			= "Street Light (on)";
+		displayName			= "Street Light (On) [WIP]";
 		model				= \OPTRE_Buildings\Citylights\Light_Street.p3d;
 
 		aggregateReflectors[] =

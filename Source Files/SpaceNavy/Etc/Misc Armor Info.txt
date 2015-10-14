@@ -1,8 +1,0 @@
-CH252 Helmet:
-Weight = 1.8kg (4lb)
-
-M52B Body Armor:
-Weight = 6.58kg (14.5lb)
-
-VZG7 Armored Boots:
-Weight = 1.59kg (3.5lb)

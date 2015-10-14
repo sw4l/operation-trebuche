@@ -161,7 +161,6 @@ class CfgVehicles
 		scope 															= 2;
 		scopeCurator													= 2;
 		displayName														= "Corpsman";
-		attendant 														= 1;
 		vehicleClass													= "OPTRE_UNSC_Man_Marines_class";
 		linkedItems[] 													= {"OPTRE_UNSC_M52_Vest_Vacuum_MED","OPTRE_UNSC_CH252_Helmet_Vacuum_MED","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
 		respawnLinkedItems[] 											= {"OPTRE_UNSC_M52_Vest_Vacuum_MED","OPTRE_UNSC_CH252_Helmet_Vacuum_MED","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};

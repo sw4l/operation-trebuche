@@ -262,6 +262,7 @@ class CfgVehicles //This configures units and backpacks
 		scope 															= 2;
 		scopeCurator													= 2;
 		displayName														= "Medic";
+		icon 															= "iconManMedic";
 		attendant 														= 1;
 		vehicleClass													= "OPTRE_UNSC_Man_Army_class";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_Medic";

@@ -1,82 +1,21 @@
 Weapons
-
-	v	DMR has no shadow
-	v	DMR has belt links coming out with bullet casings
 	All weapons besides Magnum use only one muzzle flash
-	v	DMR + scope too black, should be more grey (to differ more from the BR)
-	v	Rocket Launcher rate of fire too high
-	v	With the Assault Rifle, switching to and from the iron sights zooms the camera in and then out just a little bit
-	All weapons sounds are missing vanilla tails
-	DMR, Sniper Rifle and Magnum go invisible when someone holding them is killed
-	Bad physics for DMR and BR when someone holding them is killed
-	v	Rocket Launcher loses it's rockets (visually) when dropped on the ground
-	v	SMG tracer mags doesn't actually have tracers
-	v	The DMR's fire selector has an 'auto' option, but does not actually have that function
-	v	The DMR's ammo counter goes completely black when it's facing away from light sources
-	v	Rocket Launcher has no shadow
-	All M2 smoke grenades do not work
-	v	Specialized backpacks tend to overfill with the default supplies when loading saved loadouts (4 mine detectors, 40 biofoam, etc etc).
-	v	32rnd magazines don't work
 	Illumination torch doesn't work on the folded SMG
-	v	Magnification reads x10 for two magnifications.
-	Marksman DLC weapon deployment points
-	v	AR optic is bad
-	v	Recoil needs to be tweaked
-	v	Little belt on M73
-	v	MA5 no gl fire rate
-	v	HEDP rounds on sniper cause extreme cam shake
-	v	Sniper bipod is not animated
 
 Units
-
-	Marine and ODST AI are given random BLUFOR facewear which clips through their helmet visors
-	All UNSC AI speak with American accents
-	Asian, Iranian and Greek faces are not used for UNSC AI
-	Eridanus Rebel AI have only American accents and faces
-	URF AI have only Greek accents and faces
-	Corpsmen and medics do not have medical icons (for UI)
-	Standing more than 10 metres away from someone who is wearing the sniper ODST helmet will make the helmet attachment disappear
-	If you stand about 10 metres away from someone wearing M52 body armour, a big 'spike' will appear protruding upwards from their armour
-	ODST scout sniper (placed in the editor) does not wear the sniper helmet
-	v	AA specialists are equipped with non-guided rocket launchers and guided rockets (which are not compatible with each other), making them useless against air
 	UNSC BDUs do not have wounded skins
-	Militia adviser, surgeon and warlord units are equipped with non-OPTRE orange smoke grenades
-	Helmets have no interior textures, very noticeable on ODST helmets without visors.
-	Marine Shoulders and hiddenselections
-	v	All memory LODS (https://github.com/acemod/ACE3/issues/1346)
 
 Vehicles
-
-	v	Warthog turret isn't stablised, meaning the turret rotates with the Warthog when it turns (unlike in the games)
-	v	Warthog MG tracers are yellow
-	v	Headlights on Warthog glare the windshield making it hard to drive in first person
-	Genet has two extra invisible passenger seats
 	Warthog and Genet brake lights do not work
-	v	All Warthogs float off the ground by about 1cm
 	Attack Pelican is missing visible rocket pods
-	v	Falcon's light is useless; just blinds the pilot. Lights are actually located on the front of each wing
-	v	When disembarking a Falcon as a pilot, units will get out the right side, but then will teleport to the left side
-	v	The warthog's physics are too fun
+	Falcon's light is useless; just blinds the pilot. Lights are actually located on the front of each wing
 	The pelican scripts need admin intervention to work, and then said attach script is a pain in the ass to get working, I think it has something to do with looking/aiming at the hog.
-	UNSC Mule has missing textures outside the cabin.
-	v	Window is missing on the pelican's left
-	Destroyed pelican models don't show dead occupants
 	Add flames to pelican thrusters
-	v	Hog suspension damping too much
-	v	Genet shadow fucked upwards
 	AA hog fire point should revolve (model.cfg)
 	^ Same for M910 PDN
-	v	Fix PDN Shadow
 
 Objects
-
-	v	Shooting the monument spawns dirt
-	v	Magic box cannot be opened
-	v	You get an error message when you start a mission that has the object 'Console [Frigate]' in it
 	Final Dawn has no collision (Just do it! Yes you can!!!!)
 
 Core
-
-	There are two music tracks with the same name (Jeopardy)
 	Calendar/date should be expanded to allow for 26th century years
-	v	Fix Intro

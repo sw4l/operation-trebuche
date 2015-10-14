@@ -80,6 +80,7 @@ class CfgWeapons
 		discreteDistance[] 							= {100,200,300,400,500,600,700,800,900,1000};
 		maxRecoilSway 								= 0.0125;
 		swayDecaySpeed 								= 1.25;
+		deployedPivot    							= "bipod";
 		class GunParticles: GunParticles
 		{
 		   class SecondEffect

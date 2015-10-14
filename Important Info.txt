@@ -2,10 +2,10 @@ Latest Released Version
 	0.12
 
 Planned Release Version
-	0.15
+	0.13
 
 Planned Release Date
-	~10/31/15
+	10/16/15
 
 Official OPTRE Email/YT Info
 	Email: optremod@gmail.com
