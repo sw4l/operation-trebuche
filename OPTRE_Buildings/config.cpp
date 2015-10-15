@@ -96,6 +96,8 @@ class CfgVehicles
 	
 	class Elevator_Base: TargetGrenade
 	{
+		scope = 2;
+		scopeCurator = 2;
 		model="\OPTRE_Buildings\Elevator\Elevator_Base";
 		displayName="Elevator Base [WIP]";
 		vehicleClass = "OPTRE_UNSC_Structure_class";
@@ -229,10 +231,10 @@ class CfgVehicles
 
 	class Light_Street_01_off: Lamps_base_F
 	{
-		scope				= public;										/// makes the lamp visible in editor
-		scopeCurator		= public;											/// makes the lamp visible in Zeus
+		scope = 2;
+		scopeCurator = 2;
 		VehicleClass		= "OPTRE_UNSC_Structure_class";
-		displayName			= "Street Lamp (Off)";									/// displayed in Editor
+		displayName			= "Street Lamp (Off) [WIP]";									/// displayed in Editor
 		model				= \OPTRE_Buildings\Citylights\Light_Street_off.p3d;	/// simple path to model
 
 		armor				= 5000;	/// just some protection against missiles, collisions and explosions
@@ -279,8 +281,8 @@ class CfgVehicles
 
 	class Light_Street_01: Light_Street_01_off
 	{
-		scope				= public;
-		scopeCurator		= public;
+		scope = 2;
+		scopeCurator = 2;
 		displayName			= "Street Light (On) [WIP]";
 		model				= \OPTRE_Buildings\Citylights\Light_Street.p3d;
 

@@ -1,6 +1,6 @@
 Weapons
-	All weapons besides Magnum use only one muzzle flash
-	Illumination torch doesn't work on the folded SMG
+	Illumination torch doesn't work on the SMG
+	SMG Tracers dont work
 
 Units
 	UNSC BDUs do not have wounded skins
@@ -15,7 +15,7 @@ Vehicles
 	^ Same for M910 PDN
 
 Objects
-	Final Dawn has no collision (Just do it! Yes you can!!!!)
+	Final Dawn has no collision
 
 Core
 	Calendar/date should be expanded to allow for 26th century years

@@ -61,6 +61,12 @@ class CfgFactionClasses //This configures the in-game factions
 		//flag 																					= "\OPTRE_Core\Data\flag_UNSC_ca.paa";
 		primaryLanguage 																		= "EN";
 	};
+	class OPTRE_Modules
+	{
+		displayName = "OPTRE Modules";
+		priority = 1;
+		side = 7;
+	};
 };
 
 class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor", etc.
@@ -420,10 +426,7 @@ class CfgSounds
 		titles[] = {};
 	};
 };
-/*Tracks to add
-Rock Anthem To Save The World
-Through The Woods
-*/
+
 class CfgMusic
 {
 	class OPTRE_Music_Amber
@@ -908,25 +911,6 @@ class CfgMusic
 	};
 };
 
-class CfgWorlds
-{
-	class GenericNames
-	{
-		class OPTRE_Names_UNSC
-		{
-			class FirstNames
-			{
-				FName = "FName";
-			};
-			
-			class LastNames
-			{
-				LName = "LName";
-			};
-		};
-	};
-};
-
 class CfgVehicles
 {
 	class Logic;
@@ -940,36 +924,71 @@ class CfgVehicles
 		};
 	};
 
-	class OPTRE_Module_Base : Module_F
+	class ModuleOrdnance_F: Module_F
 	{
-		mapSize = 1;
-		author = "Article 2 Studios";
-		vehicleClass = "Modules";
-		category = "OPTRE";
-		subCategory = "Fire Support";
-		side = 7;
-		scope = 1;
-		scopeCurator = 1;
-		displayName = "OPTRE Module Base";
-		function = "";		
-		functionPriority = 1;
-		isGlobal = 2;	
-		isTriggerActivated = 0;
-		isDisposable = 0;
-		class Arguments {};
+		author = "$STR_A3_Bohemia_Interactive";
+		_generalMacro = "ModuleOrdnance_F";
+		scope = 2;
+		category = "Effects";
+		function = "BIS_fnc_moduleProjectile";
+		isGlobal = 0;
+		isTriggerActivated = 1;
+		displayName = "$STR_A3_CfgVehicles_ModuleOrdnance_F";
+		icon = "\a3\Modules_F_Curator\Data\iconOrdnance_ca.paa";
+		portrait = "\a3\Modules_F_Curator\Data\portraitOrdnance_ca.paa";
+		class Arguments
+		{
+			class Type
+			{
+				displayName = "$STR_A3_CfgVehicles_ModuleOrdnance_F_Arguments_Type";
+				description = "";
+				class values
+				{
+					class Mortar
+					{
+						name = "$STR_A3_CfgVehicles_ModuleOrdnanceMortar_F";
+						value = "ModuleOrdnanceMortar_F_Ammo";
+						default = 1;
+					};
+					class Howitzer
+					{
+						name = "$STR_A3_CfgVehicles_ModuleOrdnanceHowitzer_F";
+						value = "ModuleOrdnanceHowitzer_F_Ammo";
+					};
+					class Rocket
+					{
+						name = "$STR_A3_CfgVehicles_ModuleOrdnanceRocket_F";
+						value = "ModuleOrdnanceRocket_F_Ammo";
+					};
+					class MAC
+					{
+						name = "MAC Strike";
+						value = "OPTRE_MAC_Round";
+					};
+				};
+			};
+		};
 		class ModuleDescription: ModuleDescription
 		{
-			description = "OPTRE Module Base";
+			description = "$STR_A3_CfgVehicles_ModuleOrdnance_F_ModuleDescription";
+			position = 1;
 		};
 	};
 	
-	class OPTRE_Module_FireSupport_MAC : OPTRE_Module_Base
+	class ModuleOrdnanceMAC_F: ModuleOrdnance_F
 	{
-		scopeCurator = 2;
 		author = "Article 2 Studios";
-		category = "OPTRE";
-		subCategory = "Fire Support";
+		_generalMacro = "ModuleOrdnanceMAC_F";
+		scope = 1;
+		scopeCurator = 2;
+		isGlobal = 1;
+		category = "Ordnance";
 		displayName = "MAC Strike";
-		function = "OPTRE_fnc_FireSupport_MAC";
+		portrait = "\a3\Modules_F_Curator\Data\portraitOrdnanceRocket_ca.paa";
+		ammo = "OPTRE_MAC_Round";
+		delete Arguments;
+		simulation = "house";
+		model = "\a3\Modules_F_Curator\Ordnance\surfaceRocket.p3d";
+		curatorCost = 10;
 	};
 };

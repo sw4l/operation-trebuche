@@ -383,6 +383,7 @@ class CfgVehicles
 				minElev					= -40;
 				maxTurn					= 95;
 				minTurn					= -95;
+				hasGunner				= true;
 				isPersonTurret			= 1;
 				class dynamicViewLimits
 				{
@@ -492,6 +493,7 @@ class CfgVehicles
 				maxTurn					= 95;
 				minTurn					= -95;
 				isPersonTurret			= 1;
+				hasGunner				= true;
 				class dynamicViewLimits
 				{
 					CargoTurret_02[]	= {-65,95};
@@ -703,6 +705,7 @@ class CfgVehicles
 				maxTurn					= 95;
 				minTurn					= -95;
 				isPersonTurret			= 1;
+				hasGunner				= true;
 				class dynamicViewLimits
 				{
 					CargoTurret_02[]	= {-65,95};
@@ -723,8 +726,8 @@ class CfgVehicles
 				maxTurn					= 360;
 				initTurn				= 0;
 				turretAxis				= "OsaVeze";
-				maxHorizontalRotSpeed	= 1.2;
-				maxVerticalRotSpeed		= 1.2;
+				maxHorizontalRotSpeed	= 1.5;
+				maxVerticalRotSpeed		= 1.5;
 				gunnerAction			= "driver_boat01";
 				gunnerInAction			= "driver_boat01";
 				gunnerGetInAction		= "GetInMRAP_01";
@@ -752,6 +755,7 @@ class CfgVehicles
 				enableManualFire		= 0;
 				gunnerOpticsModel		= "a3\weapons_f\Reticle\optics_empty";
 				gunnerForceOptics		= 0;
+				hasGunner				= true;
 				class ViewGunner:ViewOptics
 				{
 					initAngleX			= -15;
@@ -894,6 +898,7 @@ class CfgVehicles
 				maxTurn					= 95;
 				minTurn					= -95;
 				isPersonTurret			= 1;
+				hasGunner				= true;
 				class dynamicViewLimits
 				{
 					CargoTurret_02[]	= {-65,95};
@@ -914,8 +919,8 @@ class CfgVehicles
 				maxTurn					= 360;
 				initTurn 				= 0;
 				turretAxis				= "OsaVeze";
-				maxHorizontalRotSpeed	= 1.2;
-				maxVerticalRotSpeed		= 1.2;
+				maxHorizontalRotSpeed	= 1.5;
+				maxVerticalRotSpeed		= 1.5;
 				gunnerAction			= "driver_boat01";
 				gunnerInAction			= "driver_boat01";
 				gunnerGetInAction		= "GetInMRAP_01";
@@ -1087,6 +1092,7 @@ class CfgVehicles
 				maxTurn					= 95;
 				minTurn					= -95;
 				isPersonTurret			= 1;
+				hasGunner				= true;
 				class dynamicViewLimits
 				{
 					CargoTurret_02[]	= {-65,95};
@@ -1107,8 +1113,8 @@ class CfgVehicles
 				maxTurn					= 360;
 				initTurn				= 0;
 				turretAxis				= "OsaVeze";
-				maxHorizontalRotSpeed	= 1.2;
-				maxVerticalRotSpeed		= 1.2;
+				maxHorizontalRotSpeed	= 1.5;
+				maxVerticalRotSpeed		= 1.5;
 				gunnerAction			= "driver_boat01";
 				gunnerInAction			= "driver_boat01";
 				gunnerGetInAction		= "GetInMRAP_01";
@@ -1138,6 +1144,7 @@ class CfgVehicles
 				startEngine				= 0;
 				enableManualFire		= 0;
 				gunnerForceOptics		= 0;
+				hasGunner				= true;
 				class ViewGunner:ViewOptics
 				{
 					initFov 			= 0.75;
@@ -1278,6 +1285,7 @@ class CfgVehicles
 				maxTurn					= 95;
 				minTurn					= -95;
 				isPersonTurret			= 1;
+				hasGunner				= true;
 				class dynamicViewLimits
 				{
 					CargoTurret_02[]	= {-65,95};
@@ -1327,6 +1335,7 @@ class CfgVehicles
 				gunnerOpticsModel 		= "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";
 				gunnerOpticsShowCursor	= 1;
 				castGunnerShadow		= 1;
+				hasGunner				= true;
 				class Viewoptics: ViewOptics
 				{
 					/*initAngleX 		= 0;
@@ -1431,6 +1440,7 @@ class CfgVehicles
 				minElev					= -20;
 				maxTurn					= 65;
 				minTurn					= -65;
+				hasGunner				= true;
 				isPersonTurret			= 1;
 			};
 			class CargoTurret_02:CargoTurret
@@ -1447,6 +1457,7 @@ class CfgVehicles
 				maxTurn					= -15;
 				minTurn					= -55;
 				isPersonTurret			= 1;
+				hasGunner				= true;
 			};
 		};
 	};

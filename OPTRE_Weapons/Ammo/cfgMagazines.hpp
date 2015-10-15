@@ -283,7 +283,6 @@ class CfgMagazines
 		displaynameshort					= "5x23mm Tracer";
 		ammo								= "OPTRE_B_5x23_Caseless_Tracer";
 		descriptionshort					= "60 Round Magazine<br>5x23mm<br>Tracer";
-		tracersEvery 						= 1;
 		lastRoundsTracer 					= 60;
 	};
 	class OPTRE_48Rnd_5x23mm_Mag: OPTRE_60Rnd_5x23mm_Mag
@@ -316,7 +315,6 @@ class CfgMagazines
 		displaynameshort					= "5x23mm Tracer";
 		ammo								= "OPTRE_B_5x23_Caseless_Tracer";
 		descriptionshort					= "48 Round Magazine<br>5x23mm<br>Tracer";
-		tracersEvery 						= 1;
 		lastRoundsTracer 					= 48;
 	};
 	

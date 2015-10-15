@@ -709,51 +709,51 @@ class CfgVehicles
 		{
 			class RampOpen
 			{
-			userActionID = 60;	
-            displayName = "Open Ramp";
-            displayNameDefault = "Open Ramp";
-			textToolTip = "Open Ramp";
-            position = cargo_door_handle;
-            radius = 6;
-			priority = 2;
-            onlyForPlayer = 1;
-			condition = "((this animationPhase ""cargoDoor_1"" < 0.5) AND (this animationPhase ""cargoDoor_2"" < 0.5) AND (alive this))"; /// only openable from inside and when closed
-            statement = "this animate [""cargoDoor_1"",1]; this animate [""cargoDoor_2"",1]";
-			animPeriod = 10;
+				userActionID = 60;	
+				displayName = "Open Ramp";
+				displayNameDefault = "Open Ramp";
+				textToolTip = "Open Ramp";
+				position = cargo_door_handle;
+				radius = 6;
+				priority = 2;
+				onlyForPlayer = 1;
+				condition = "((this animationPhase ""cargoDoor_1"" < 0.5) AND (this animationPhase ""cargoDoor_2"" < 0.5) AND (alive this) AND (player in [gunner this, driver this]))"; /// only openable from inside and when closed
+				statement = "this animate [""cargoDoor_1"",1]; this animate [""cargoDoor_2"",1]";
+				animPeriod = 10;
             };
             class RampClose: RampOpen
             {
-			userActionID = 61;
-            displayName = "Close Ramp";
-            displayNameDefault = "Close Ramp";
-			textToolTip = "Close Ramp";
-			priority = 2;
-			condition = "((this animationPhase ""cargoDoor_1"" > 0.5) AND (this animationPhase ""cargoDoor_2"" > 0.5) AND (alive this))"; /// only openable from inside and when closed
-            statement = "this animate [""cargoDoor_1"",0]; this animate [""cargoDoor_2"",0]";
-			animPeriod = 10;
+				userActionID = 61;
+				displayName = "Close Ramp";
+				displayNameDefault = "Close Ramp";
+				textToolTip = "Close Ramp";
+				priority = 2;
+				condition = "((this animationPhase ""cargoDoor_1"" > 0.5) AND (this animationPhase ""cargoDoor_2"" > 0.5) AND (alive this) AND (player in [gunner this, driver this]))"; /// only openable from inside and when closed
+				statement = "this animate [""cargoDoor_1"",0]; this animate [""cargoDoor_2"",0]";
+				animPeriod = 10;
             };
 			class LightOn
 			{
-			userActionID = 62;	
-            displayName = "Interior Light On";
-            displayNameDefault = "Interior Light On";
-			textToolTip = "Interior Light On";
-            position = cargo_door_handle;
-            radius = 5;
-			priority = 3;
-            onlyForPlayer = 1;
-			condition = "(!(this getvariable [""OPTRE_Pelican_isLightOn"",false]) AND (player == driver this) AND (alive this))";
-            statement = "_light = ""#lightpoint"" createVehicle getpos this; _light setLightBrightness 0.4; _light setLightAmbient [0, 0, 0]; _light setLightColor [1, 0, 0]; _light attachTo [this, [0,5,-0.5]]; this setVariable [""OPTRE_Pelican_AttachedLight"",_light,true]; this setvariable [""OPTRE_Pelican_isLightOn"",true,true];";
+				userActionID = 62;	
+				displayName = "Interior Light On";
+				displayNameDefault = "Interior Light On";
+				textToolTip = "Interior Light On";
+				position = cargo_door_handle;
+				radius = 5;
+				priority = 3;
+				onlyForPlayer = 1;
+				condition = "(!(this getvariable [""OPTRE_Pelican_isLightOn"",false]) AND (player == driver this) AND (alive this) AND (player in [gunner this, driver this]))";
+				statement = "_light = ""#lightpoint"" createVehicle getpos this; _light setLightBrightness 0.4; _light setLightAmbient [0, 0, 0]; _light setLightColor [1, 0, 0]; _light attachTo [this, [0,5,-0.5]]; this setVariable [""OPTRE_Pelican_AttachedLight"",_light,true]; this setvariable [""OPTRE_Pelican_isLightOn"",true,true];";
             };
 			class LightOff: LightOn
 			{
-			userActionID = 63;	
-            displayName = "Interior Light Off";
-            displayNameDefault = "Interior Light Off";
-			textToolTip = "Interior Light Off";
-            position = cargo_door_handle;
-			condition = "((this getvariable [""OPTRE_Pelican_isLightOn"",false]) AND (player == driver this) AND (alive this))";
-            statement = "_light = this getVariable ""OPTRE_Pelican_AttachedLight""; deletevehicle _light; this setvariable [""OPTRE_Pelican_isLightOn"",false,true];";
+				userActionID = 63;	
+				displayName = "Interior Light Off";
+				displayNameDefault = "Interior Light Off";
+				textToolTip = "Interior Light Off";
+				position = cargo_door_handle;
+				condition = "((this getvariable [""OPTRE_Pelican_isLightOn"",false]) AND (player == driver this) AND (alive this) AND (player in [gunner this, driver this]))";
+				statement = "_light = this getVariable ""OPTRE_Pelican_AttachedLight""; deletevehicle _light; this setvariable [""OPTRE_Pelican_isLightOn"",false,true];";
             };
 		};
 		hiddenSelections[] = {"attach_gun" }; //Determines what hiddenselections are enabled
@@ -802,6 +802,11 @@ class CfgVehicles
 		};	
 		aggregateReflectors[] = {{"Left", "Right"}};	/// aggregates both sources into one to increase performance
 		//#include "rtd.hpp" /// Advanced FM characteristics in separate file to make the config cleaner
+
+		class Eventhandlers {	
+			OPTRE_Thruster_Fncs_Init = "_this execVM OPTRE_Thruster_fnc_Init";
+			OPTRE_Magnet_Fncs_Init = "_this execVM OPTRE_Magnet_fnc_Init";
+		};
 	};
 	
 	class OPTRE_Pelican_unarmed_green: OPTRE_Pelican_F

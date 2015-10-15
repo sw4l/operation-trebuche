@@ -4,10 +4,10 @@ v0.13
 			-M45E Combat Shotgun and M45A Semi-Auto Shotgun
 			-Innie Weapons Caches
 			-WIP M6C
+			-Neck covering to ODST and Recon Helmets
+			-Very WIP Structures from Elysium City Terrain
 	Fixed
 			-DMR has no shadow
-			-DMR has belt links coming out with bullet casings
-			-DMR + scope too black, should be more grey (to differ more from the BR)
 			-Rocket Launcher rate of fire too high
 			-With the Assault Rifle, switching to and from the iron sights zooms the camera in and then out just a little bit
 			-DMR, Sniper Rifle and Magnum go invisible when someone holding them is killed
@@ -53,6 +53,7 @@ v0.13
 			-There are two music tracks with the same name (Jeopardy)
 			-Intro
 			-All M2 smoke grenades do not work
+			-All guns but pistols were missing muzzle flash rotations
 	Tweaked
 			-AR optic
 			-Guided Rocket Launcher now behaves like Rocket Launcher from Rocket Hog
@@ -61,8 +62,12 @@ v0.13
 	Removed
 			-Magic Box
 			-userconfig
+			-Pelican Magnet and Thruster scripts until they can be better implemented (sry)
 	Known Bugs
 			-Issues with z-fighting and normals on m6c
+			-Body still sinks when resting weapons prone
+			-SMG Tracers and Illumination Torch still dont work (not sure why)
+			-PIP Screens need to be re-added
 
 v0.12
 	Added

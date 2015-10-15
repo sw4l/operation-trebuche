@@ -58,8 +58,8 @@ class CfgWeapons
 		
 	//WEAPONS
 	
-	class EBR_Base_F;
-	class OPTRE_M392_DMR: EBR_Base_F
+	class LMG_Mk200_F;
+	class OPTRE_M392_DMR: LMG_Mk200_F
 	{
 		scope 										= 2;
 		scopeArsenal 								= 2;

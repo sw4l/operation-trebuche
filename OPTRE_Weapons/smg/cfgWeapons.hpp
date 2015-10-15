@@ -66,40 +66,41 @@ class CfgWeapons
 		class OPTRE_M7_Flashlight: ItemCore
 		{
 			scope 										= 2;
-			displayName 								= "M7 Illumination Torch";
-			picture 									= "\OPTRE_weapons\smg\icons\flashlight.paa";
-			descriptionShort 							= "Flashlight for the M7 SMG";
+			displayName 								= "M7 Flashlight";
+			picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
+			descriptionShort 								= "Flashlight for the M7 SMG";
 			model 										= "\OPTRE_Weapons\SMG\m7_flashlight.p3d";
 			class ItemInfo: InventoryFlashLightItem_Base_F
 			{
-			mass 									= 4;
-			class Flashlight
-			{
-				color[] 							= {180,156,120};
-				ambient[] 							= {0.9,0.78,0.6};
-				intensity 							= 5;
-				size 								= 1;
-				innerAngle 							= 20;
-				outerAngle 							= 80;
-				coneFadeCoef 						= 5;
-				position 							= "flash dir";
-				direction 							= "flash";
-				useFlare 							= 1;
-				flareSize 							= 1.4;
-				flareMaxDistance 					= "100.0f";
-				dayLight 							= 0;
-				class Attenuation
+				mass 									= 4;
+				class FlashLight
 				{
-					start 							= 0.5;
-					constant 						= 0;
-					linear 							= 0;
-					quadratic 						= 1.1;
-					hardLimitStart 					= 20;
-					hardLimitEnd 					= 30;
+					color[] 							= {180,156,120};
+					ambient[] 							= {0.9,0.78,0.6};
+					intensity 							= 5;
+					size 								= 1;
+					innerAngle 							= 20;
+					outerAngle 							= 80;
+					coneFadeCoef 							= 5;
+					position 							= "flash dir";
+					direction 							= "flash";
+					useFlare 							= 1;
+					flareSize 							= 1.4;
+					flareMaxDistance 						= "100.0f";
+					dayLight 							= 0;
+					class Attenuation
+					{
+						start 							= 0.5;
+						constant 						= 0;
+						linear 							= 0;
+						quadratic 						= 1.1;
+						hardLimitStart 						= 20;
+						hardLimitEnd 						= 30;
+					};
+					scale[] 							= {0};
 				};
-				scale[] 							= {0};
 			};
-		};
+			inertia 									= 0.1;
 		};
 		class optic_Aco;
 		class OPTRE_M7_Sight: optic_Aco

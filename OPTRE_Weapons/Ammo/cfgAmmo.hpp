@@ -449,10 +449,10 @@ class CfgAmmo
 		maxSpeed = 1000;
 		typicalSpeed = 1000;
 		sideAirFriction = 0;
-		simulation = "shotBullet";
+		simulation = "shotRocket";
 		suppressionRadiusBulletClose = 100;
 		suppressionRadiusHit = 100;
-		timeToLive = 10;
+		timeToLive = 60;
 		tracerStartTime = 0;
 		supersonicCrackNear[] = {"A3\sounds_f\weapons\hits\sscrack1",1.0/*0.35481337*/,1,40};
 		supersonicCrackFar[] = {"A3\sounds_f\weapons\hits\sscrack2",1.0/*0.2818383*/,1,100};

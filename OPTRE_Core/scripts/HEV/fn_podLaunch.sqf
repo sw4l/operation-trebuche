@@ -9,9 +9,8 @@ _pod removeaction _action;
 OPTRE_HEV_fnc_WindSounds =
 {
 	[(_this select 0), "OPTRE_Sounds_HEV_Wind1", 50] call CBA_fnc_globalSay3d;
-	sleep 0.05;
 	[(_this select 0), "OPTRE_Sounds_HEV_Wind2", 50] call CBA_fnc_globalSay3d;
-	sleep 0.25;
+	sleep 0.4;
 };
 
 while {_launchloading == 1} do
@@ -82,7 +81,7 @@ while {!(_landed)} do
 	
 	if ((_height < 125) && (_height > 75) && !(_chutedeployed)) then
 	{
-		[_pod, "OPTRE_HEV_Chute",100] call CBA_fnc_globalSay3d;
+		[_pod, "OPTRE_Sounds_HEV_Chute",100] call CBA_fnc_globalSay3d;
 		_chute attachto [_pod,[0,0,0.6],"chute_attach"];
 		_chutedeployed = true;
 		detach _fire;

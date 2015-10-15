@@ -66,8 +66,6 @@ class Extended_PostInit_EventHandlers
 {
 	OPTRE_HEV_Fncs_Init 																		= [] spawn OPTRE_HEV_fnc_Init;
 	OPTRE_HUD_Fncs_Init 																		= [] spawn OPTRE_HUD_fnc_Init;
-	OPTRE_Thruster_Fncs_Init 																	= [] spawn OPTRE_Thruster_fnc_Init;
-	OPTRE_Magnet_Fncs_Init 																		= [] spawn OPTRE_Magnet_fnc_Init;
 };
 
 class RscStdText //More HUD Stuff
