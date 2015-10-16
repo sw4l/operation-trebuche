@@ -15,6 +15,7 @@ class CfgUnitInsignia //Unit Insignias to show on players' shoulders
 {
 	class OPTRE_Insignia_foxgaming
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[OPTRE] Fox Gaming"; // Name displayed in Arsenal

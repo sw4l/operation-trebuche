@@ -1,8 +1,0 @@
-- Finish MA5B LODs
-- M41 Rockets, Rocket Ammo Box, Rocket Projectile
-- F99 Wombat
-
-Below, leave assets you would like me to start/finish before I get the next gun model from Didact.
-
--Ammo crate
--IndoorBradster's buildings

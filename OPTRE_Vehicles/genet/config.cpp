@@ -40,13 +40,15 @@ class CfgVehicles
 
 	class OPTRE_Genet_base: Car_F
 	{
+		dlc = "OPTRE";
 		model 	= "OPTRE_Vehicles\genet\genet.p3d";  /// simple path to model
 		picture	= "\A3\Weapons_F\Data\placeholder_co.paa"; /// just some icon in command bar
 		Icon	= "\A3\Weapons_F\Data\placeholder_co.paa"; /// icon in map	
 		
-		displayName = "HuCiv Genet [Red]"; /// displayed in Editor
+		displayName = "HuCiv Genet"; /// displayed in Editor
 		
-		hiddenSelections[] = {"camo1"}; ///we want to allow changing the color of this selection
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[]={"\OPTRE_Vehicles\genet\Data\genet_co.paa"};
 		
 		terrainCoef 	= 6.5; 	/// different surface affects this car more, stick to tarmac
 		turnCoef 		= 2.5; 	/// should match the wheel turn radius
@@ -224,35 +226,7 @@ class CfgVehicles
 		};
 
 		// Must be kept as fail-safe in case of issue with the function 
-		hiddenSelectionsTextures[]={"\A3\Weapons_F\Data\placeholder_co.paa"};	 /// we could use any texture to cover the car
-
-		// Definition of texture sources (skins), used for the VhC (Vehicle customization)
-		// Also, because the Garage uses the VhC, it will make them available from the garage
-		class textureSources
-		{
-			class red // Source class
-			{
-				displayName="Red"; // name displayed, among other, from the garage
-				author=$STR_A3_Bohemia_Interactive; // Author of the skin
-				textures[]=// List of textures, in the same order as the hiddenSelections definition
-				{
-					"optre_vehicles\genet\data\genet_co.paa" // This is procedural texture, can be useful to set placeholder
-				};
-				factions[]=// This source should be available only for these factions
-				{
-					"OPF_F", "OPF_G_F" // Side Opfor
-				};
-			};
-		};
-		// [_textureSourceClass1, _probability1, _textureSourceClass2, _probability2, ...]
-		// Default behavior of the VhC is to select one of these sources, with a weighted random
-		textureList[]=
-		{
-			"red", 1
-			// You can noticed that the white source is missing, therefore, it won't be part of the random
-		};
 	};
-	
 	// Derivate from the base class
 	class OPTRE_Genet: OPTRE_Genet_base /// some class that is going to be visible in editor
 	{	
@@ -260,7 +234,50 @@ class CfgVehicles
 		scopeCurator=2;			// scope 2 means it's available in Zeus mode (0 means hidden)
 		crew 	= "C_man_1"; 	/// we need someone to fit into the car
 		side	= 3; 			/// civilian car should be on civilian side
-		faction	= CIV_F;		/// and with civilian faction
+		faction							= "OPTRE_UEG_Civ";
+		displayname = "HuCiv Genet [Red]";
+	};
+	class OPTRE_Genet_Blue: OPTRE_Genet
+	{	
+		displayname = "HuCiv Genet [Blue]";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[]={"\OPTRE_Vehicles\genet\Data\genet_blue_co.paa"};
+	};
+	class OPTRE_Genet_Green: OPTRE_Genet
+	{	
+		displayname = "HuCiv Genet [Green]";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[]={"\OPTRE_Vehicles\genet\Data\genet_green_co.paa"};
+	};
+	class OPTRE_Genet_Black: OPTRE_Genet
+	{	
+		displayname = "HuCiv Genet [Black]";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[]={"\OPTRE_Vehicles\genet\Data\genet_black_co.paa"};
+	};
+	class OPTRE_Genet_Cyan: OPTRE_Genet
+	{	
+		displayname = "HuCiv Genet [Cyan]";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[]={"\OPTRE_Vehicles\genet\Data\genet_cyan_co.paa"};
+	};
+	class OPTRE_Genet_Orange: OPTRE_Genet
+	{	
+		displayname = "HuCiv Genet [Orange]";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[]={"\OPTRE_Vehicles\genet\Data\genet_orange_co.paa"};
+	};
+	class OPTRE_Genet_Purple: OPTRE_Genet
+	{	
+		displayname = "HuCiv Genet [Purple]";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[]={"\OPTRE_Vehicles\genet\Data\genet_purple_co.paa"};
+	};
+	class OPTRE_Genet_Yellow: OPTRE_Genet
+	{	
+		displayname = "HuCiv Genet [Yellow]";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[]={"\OPTRE_Vehicles\genet\Data\genet_yellow_co.paa"};
 	};
 	// Derivate from the base class
 };

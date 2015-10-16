@@ -34,6 +34,7 @@ class CfgVehicles
 	
 	class OPTRE_m1087_stallion_base: Truck_01_base_F
 	{
+		dlc = "OPTRE";
 		author="Article 2 Studios";
 		scope = 0;
 		crew = "B_Soldier_F";
@@ -49,6 +50,7 @@ class CfgVehicles
 	};
 	class OPTRE_m1015_mule_base: Truck_02_base_F
 	{
+		dlc = "OPTRE";
 		author="Article 2 Studios";
 		side = 0;
 		faction = "OPTRE_Ins";
@@ -63,6 +65,7 @@ class CfgVehicles
 	};
 	class OPTRE_mako_drone_base: UAV_02_base_F
 	{
+		dlc = "OPTRE";
 		author="Article 2 Studios";
 		_generalMacro = "UAV_02_base_F";
 		displayName = "MAKO Drone";
@@ -145,6 +148,7 @@ class CfgVehicles
 	
 	class OPTRE_Mongoose_Green_F: B_Quadbike_01_F
 	{
+		dlc = "OPTRE";
 		author = "Article 2 Studios";
 		_generalMacro = "B_Quadbike_01_F";
 		displayName = "M274 Mongoose ULATV (Green)";

@@ -67,6 +67,7 @@ class CfgVehicles
 	};
 	class OPTRE_M12_base: Car_F
 	{
+		dlc = "OPTRE";
 		author							= "Article 2 Studios";
 		displayName						= "";
 		class Library
@@ -1468,7 +1469,7 @@ class CfgVehicles
 	{
 		displayName						= "AMG Hog (Gold)";
 		author							= "Article 2 Studios";
-		faction							= "CIV_F";
+		faction							= "OPTRE_UEG_Civ";
 		side							= 3;
 		crew 	= "C_man_1";
 		hiddenSelections[]				= {"camo1","camo2","clan","clan_text","insignia","attach_apc","attach_mg","attach_troop"};

@@ -16,6 +16,7 @@ class CfgWeapons
 		class muzzle_snds_acp;
         class OPTRE_M7_silencer: muzzle_snds_acp
        {
+		dlc = "OPTRE";
            scope                                                                   = 2;
            displayName                                                             = "M7 SS-M 49 Suppressor";
            picture = "\OPTRE_weapons\smg\icons\silencer.paa";
@@ -65,6 +66,7 @@ class CfgWeapons
 		class acc_flashlight;
 		class OPTRE_M7_Flashlight: ItemCore
 		{
+		dlc = "OPTRE";
 			scope 										= 2;
 			displayName 								= "M7 Flashlight";
 			picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
@@ -105,6 +107,7 @@ class CfgWeapons
 		class optic_Aco;
 		class OPTRE_M7_Sight: optic_Aco
 		{
+		dlc = "OPTRE";
 			scope 										= 2;
 			displayName 								= "M7 SLS/V 5B Reflex";
 			picture = "\OPTRE_weapons\smg\icons\scope.paa";
@@ -140,6 +143,7 @@ class CfgWeapons
 		class acc_pointer_IR;
 		class OPTRE_M7_Laser: acc_pointer_IR
 		{
+		dlc = "OPTRE";
 			scope 										= 2;
 			displayName 								= "M7 Laser Aiming Module";
 			picture = "\OPTRE_weapons\smg\icons\laser.paa";
@@ -163,6 +167,7 @@ class CfgWeapons
             class SMG_01_F;
             class OPTRE_M7: SMG_01_F
             {
+		dlc = "OPTRE";
                     scope                                                                   = 2;
                     handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_Weapons\smg\data\anim\smg_handanim2.rtm"};
 					model                                                                   = "\OPTRE_Weapons\SMG\SMG.p3d";
@@ -174,6 +179,7 @@ class CfgWeapons
                     muzzlePos                                                               = "usti hlavne";
                     muzzleEnd                                                               = "konec hlavne";
                     reloadAction                                                            = "GestureReloadSMG_03";
+					changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\firemode_Mx",0.17782794,1,5};
 					inertia = 0.25;
 					dexterity = 1.8;
 					drySound[] = {"A3\sounds_f\weapons\other\dry1",0.1,1,20};
@@ -197,12 +203,78 @@ class CfgWeapons
                             {
                                     begin1[] = {"\OPTRE_Weapons\SMG\Data\sounds\SMG_1.ogg",1.5,1,2000};
                                     soundBegin[] = {"begin1",1};
+									class SoundTails
+									{
+										class TailInterior
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_interior",1.5848932,1,1200};
+											frequency = 1;
+											volume = "interior";
+										};
+										class TailTrees
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_trees",1.0,1,1200};
+											frequency = 1;
+											volume = "(1-interior/1.4)*trees";
+										};
+										class TailForest
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_forest",1.0,1,1200};
+											frequency = 1;
+											volume = "(1-interior/1.4)*forest";
+										};
+										class TailMeadows
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_meadows",1.0,1,1200};
+											frequency = 1;
+											volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+										};
+										class TailHouses
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_houses",1.0,1,1200};
+											frequency = 1;
+											volume = "(1-interior/1.4)*houses";
+										};
+									};
                             };
                             class SilencedSound: BaseSoundModeType
                             {
                                     begin1[] = {"\OPTRE_Weapons\SMG\Data\sounds\Silenced_1.wss",1.0,1,600};
                                     begin2[] = {"\OPTRE_Weapons\SMG\Data\sounds\Silenced_1.wss",1.0,1,600};
                                     soundBegin[] = {"begin1",0.5,"begin2",0.5};
+									class SoundTails
+									{
+										class TailInterior
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_tail_interior",1.0,1,400};
+											frequency = 1;
+											volume = "interior";
+										};
+										class TailTrees
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_Tail_trees",1.0,1,400};
+											frequency = 1;
+											volume = "(1-interior/1.4)*trees";
+										};
+										class TailForest
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\silencer_Vermin_tail_forest",1.0,1,400};
+											frequency = 1;
+											volume = "(1-interior/1.4)*forest";
+										};
+										class TailMeadows
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_Tail_meadows",1.0,1,400};
+											frequency = 1;
+											volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+										};
+										class TailHouses
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_Tail_houses",1.0,1,400};
+											frequency = 1;
+											volume = "(1-interior/1.4)*houses";
+										};
+									};
                             };
                             reloadTime = 0.066; 		
                             dispersion = 0.0013;
@@ -229,12 +301,78 @@ class CfgWeapons
                             {
                                     begin1[] = {"\OPTRE_Weapons\SMG\Data\sounds\SMG_1.ogg",1.0,1,2000};
                                     soundBegin[] = {"begin1",1};
+									class SoundTails
+									{
+										class TailInterior
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_interior",1.5848932,1,1200};
+											frequency = 1;
+											volume = "interior";
+										};
+										class TailTrees
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_trees",1.0,1,1200};
+											frequency = 1;
+											volume = "(1-interior/1.4)*trees";
+										};
+										class TailForest
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_forest",1.0,1,1200};
+											frequency = 1;
+											volume = "(1-interior/1.4)*forest";
+										};
+										class TailMeadows
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_meadows",1.0,1,1200};
+											frequency = 1;
+											volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+										};
+										class TailHouses
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_houses",1.0,1,1200};
+											frequency = 1;
+											volume = "(1-interior/1.4)*houses";
+										};
+									};
                             };
                             class SilencedSound: BaseSoundModeType
                             {
                                     begin1[] = {"\OPTRE_Weapons\SMG\Data\sounds\Silenced_1.wss",1.0,1,600};
                                     begin2[] = {"\OPTRE_Weapons\SMG\Data\sounds\Silenced_1.wss",1.0,1,600};
                                     soundBegin[] = {"begin1",0.5,"begin2",0.5};
+									class SoundTails
+									{
+										class TailInterior
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_tail_interior",1.0,1,400};
+											frequency = 1;
+											volume = "interior";
+										};
+										class TailTrees
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_Tail_trees",1.0,1,400};
+											frequency = 1;
+											volume = "(1-interior/1.4)*trees";
+										};
+										class TailForest
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\silencer_Vermin_tail_forest",1.0,1,400};
+											frequency = 1;
+											volume = "(1-interior/1.4)*forest";
+										};
+										class TailMeadows
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_Tail_meadows",1.0,1,400};
+											frequency = 1;
+											volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+										};
+										class TailHouses
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_Tail_houses",1.0,1,400};
+											frequency = 1;
+											volume = "(1-interior/1.4)*houses";
+										};
+									};
                             };
                             reloadTime = 0.05; 
                             dispersion = 0.0013;
@@ -273,7 +411,7 @@ class CfgWeapons
                             class CowsSlot: SlotInfo
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope"};
+                                    compatibleitems[]                                       = {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope", "OPTRE_M6C_RDS"};
 									displayname                                             = "Optics Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\TOP";
                                     scope                                                   = 2;
@@ -292,6 +430,7 @@ class CfgWeapons
             };
             class OPTRE_M7_Folded: OPTRE_M7
             {
+		dlc = "OPTRE";
                     handAnim[]                                                            	= {"OFP2_ManSkeleton"};
 					reloadAction 															= "GestureReloadPistol";
 					model                                                                   = "\OPTRE_Weapons\SMG\SMG_folded.p3d";
@@ -301,6 +440,7 @@ class CfgWeapons
             };
 			class OPTRE_M7S: OPTRE_M7
 			{
+		dlc = "OPTRE";
 				class LinkedItems
 				{
 					class LinkedItemsOptic

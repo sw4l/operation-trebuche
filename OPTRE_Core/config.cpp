@@ -12,6 +12,28 @@ class CfgPatches //This configures the identification of the pbo to the game
 	};
 };
 
+class CfgMods
+{
+	class Mod_Base;
+	class OPTRE: Mod_Base
+	{
+		author = "Article 2 Studios";
+		picture = "\OPTRE_Core\Data\logo_large_ca.paa";
+		logo = "\OPTRE_Core\Data\logo_ca.paa";
+		logoOver = "\OPTRE_Core\Data\icon_unsc_ca.paa";
+		logoSmall = "\OPTRE_Core\Data\logo_ca.paa";
+		dlcColor[] = {0,0,0,1};
+		hideName = 0;
+		hidePicture = 0;
+		tooltip = "OPTRE";
+		tooltipOwned = "OPTRE";
+		name = "Operation: TREBUCHET";
+		overview = "Operation: TREBUCHET is a mod for ArmA 3 that seeks to combine the realistic warfare and sandbox freedoms of ArmA with the assets, characters, and weapons from the popular video game series Halo.";
+		action = "https://www.reddit.com/r/OperationTrebuchet/";
+		dir = "OPTRE";
+	};
+};
+
 #include "cfgFunctions.hpp"
 
 class CfgFactionClasses //This configures the in-game factions
@@ -359,7 +381,11 @@ class CfgMissions
 	{
 		class Stratis_intro1
 		{
-			directory = "OPTRE_Core\scenes\OPTRE_Intro.Stratis";
+			directory = "OPTRE_Core\scenes\OPTRE_Intro1.Stratis";
+		};
+		class Altis_intro1
+		{
+			directory = "OPTRE_Core\scenes\OPTRE_Intro1.Altis";
 		};
 	};
 };

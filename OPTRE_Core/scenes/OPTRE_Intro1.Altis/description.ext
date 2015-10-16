@@ -1,0 +1,22 @@
+class CfgSounds
+{
+	sounds[] = {"radio1","radio2","radio3"};
+	class radio1
+	{
+		name = "radio1";
+		sound[] = {"radio1.ogg", 1, 1};
+		titles[] = {};
+	};
+	class radio2
+	{
+		name = "radio2";
+		sound[] = {"radio2.ogg", 1, 1};
+		titles[] = {};
+	};
+	class radio3
+	{
+		name = "radio3";
+		sound[] = {"radio3.ogg", 1, 1};
+		titles[] = {};
+	};
+};

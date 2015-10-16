@@ -6,6 +6,12 @@ v0.13
 			-WIP M6C
 			-Neck covering to ODST and Recon Helmets
 			-Very WIP Structures from Elysium City Terrain
+			-More Colored Variants of ODST Armor
+			-Firemode Selector Sounds
+			-Tails to all weapons sounds
+			-More color variants of the Genet
+			-Altis Intro
+			-DLC Tags
 	Fixed
 			-DMR has no shadow
 			-Rocket Launcher rate of fire too high
@@ -51,7 +57,7 @@ v0.13
 			-Shooting the monument glass spawns dirt
 			-error message when a mission that has the object 'Console [Frigate]' in it
 			-There are two music tracks with the same name (Jeopardy)
-			-Intro
+			-Stratis Intro throwing errors
 			-All M2 smoke grenades do not work
 			-All guns but pistols were missing muzzle flash rotations
 	Tweaked
@@ -59,6 +65,7 @@ v0.13
 			-Guided Rocket Launcher now behaves like Rocket Launcher from Rocket Hog
 			-Shrunk Marine Shoulder pads slightly
 			-DMR, SMG, Rocket Launcher, Warthog MG, and BR given new sounds to sound a little more "Halo"
+			-Changed suppressed sounds to better, newer ones from Marksman DLC
 	Removed
 			-Magic Box
 			-userconfig
@@ -68,6 +75,7 @@ v0.13
 			-Body still sinks when resting weapons prone
 			-SMG Tracers and Illumination Torch still dont work (not sure why)
 			-PIP Screens need to be re-added
+			-M6C RDS is broken
 
 v0.12
 	Added

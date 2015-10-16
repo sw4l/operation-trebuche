@@ -61,6 +61,7 @@ class CfgVehicles
 
 	class OPTRE_falcon_base: Helicopter_Base_H
 	{
+		dlc = "OPTRE";
 		armor = 60;				/// just some protection against missiles, collisions and explosions
 		altFullForce = 4000;	/// in what height do the engines still have full thrust
 		altNoForce = 6000;		/// thrust of the engines interpolates to zero between altFullForce and altNoForce

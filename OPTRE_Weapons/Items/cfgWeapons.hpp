@@ -16,6 +16,7 @@ class CfgWeapons
 
 	class OPTRE_Biofoam: FirstAidKit
 	{
+		dlc = "OPTRE";
 		scope 										= 2;
 		displayName 								= "Medical Biofoam";
 		picture 									= "\OPTRE_weapons\items\icons\biofoam.paa";
@@ -27,8 +28,9 @@ class CfgWeapons
 			mass=6;
 		};
 	};
-		class OPTRE_MedKit: Medikit
+	class OPTRE_MedKit: Medikit
 	{
+		dlc = "OPTRE";
 		scope 										= 2;
 		displayName 								= "Medical Pack";
 		picture 									= "\OPTRE_weapons\items\icons\medkit.paa";

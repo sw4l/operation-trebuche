@@ -18,6 +18,7 @@ class CfgWeapons
 	
 	class OPTRE_M45_Flashlight: ItemCore
 	{
+		dlc = "OPTRE";
  		scope 										= 2;
  		displayName 									= "M45 Flashlight";
  		picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
@@ -57,6 +58,7 @@ class CfgWeapons
  	};
 	class OPTRE_M45_Flashlight_red: OPTRE_M45_Flashlight
 	{
+		dlc = "OPTRE";
  		scope 										= 2;
  		displayName 								= "M45 Flashlight [Red]";
 		class ItemInfo: InventoryFlashLightItem_Base_F
@@ -94,6 +96,7 @@ class CfgWeapons
 	
 	class OPTRE_M45 : Rifle_Base_F
 	{
+		dlc = "OPTRE";
 		scope 										= 2;
 		handAnim[] 									= {"OFP2_ManSkeleton", "\OPTRE_Weapons\Shotgun\data\anim\benelli.rtm"};
 		model										= "\OPTRE_Weapons\Shotgun\shotgun.p3d";
@@ -153,6 +156,39 @@ class CfgWeapons
 			{
 				begin1[] 							= {"\OPTRE_Weapons\Shotgun\data\sounds\fire1.ogg",1.3,1,200};
 				soundBegin[] 						= {"begin1",1};
+				class SoundTails
+				{
+					class TailForest
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_tail_forest",1.0,1,2200};
+						frequency = 1;
+						volume = "(1-interior/1.4)*forest";
+					};
+					class TailHouses
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_tail_houses",1.0,1,2200};
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
+					};
+					class TailInterior
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_tail_interior",1.9952624,1,2200};
+						frequency = 1;
+						volume = "interior";
+					};
+					class TailMeadows
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_tail_meadows",1.0,1,2200};
+						frequency = 1;
+						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailTrees
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_tail_trees",1.0,1,2200};
+						frequency = 1;
+						volume = "(1-interior/1.4)*trees";
+					};
+				};
 			};
 			reloadTime 								= 1.11; //0.75
 			dispersion 								= 0.00005;
@@ -181,7 +217,7 @@ class CfgWeapons
 			class CowsSlot: SlotInfo
 			{
 				access 								= 1;
-				compatibleitems[] 					= {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope"};
+				compatibleitems[] 					= {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope", "OPTRE_M6C_RDS"};
 				displayname 						= "Optics Slot";
 				linkproxy 							= "\A3\data_f\proxies\weapon_slots\TOP";
 				scope 								= 2;
@@ -199,9 +235,10 @@ class CfgWeapons
 	};
 	class OPTRE_M45E : OPTRE_M45
 	{
+		dlc = "OPTRE";
 		model										= "\OPTRE_Weapons\Shotgun\shotgun_e.p3d";
 		displayName 								= "M45E Combat Shotgun";
-		magazines[] 								= {"OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs","OPTRE_12Rnd_8Gauge_Pellets","OPTRE_12Rnd_8Gauge_Slugs"};
+		magazines[] 								= {"OPTRE_12Rnd_8Gauge_Pellets","OPTRE_12Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs"};
 		inertia										= 0.85;
 		class Single : Single
 		{
@@ -214,6 +251,7 @@ class CfgWeapons
 	};
 	class OPTRE_M45A : OPTRE_M45E
 	{
+		dlc = "OPTRE";
 		displayName 								= "M45A Semi Automatic Shotgun";
 		class Single : Single
 		{
@@ -229,6 +267,39 @@ class CfgWeapons
 			{
 				begin1[] 							= {"\OPTRE_Weapons\Shotgun\data\sounds\fire2.ogg",1.3,1,200};
 				soundBegin[] 						= {"begin1",1};
+				class SoundTails
+				{
+					class TailForest
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_tail_forest",1.0,1,2200};
+						frequency = 1;
+						volume = "(1-interior/1.4)*forest";
+					};
+					class TailHouses
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_tail_houses",1.0,1,2200};
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
+					};
+					class TailInterior
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_tail_interior",1.9952624,1,2200};
+						frequency = 1;
+						volume = "interior";
+					};
+					class TailMeadows
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_tail_meadows",1.0,1,2200};
+						frequency = 1;
+						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailTrees
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\M320\M320_tail_trees",1.0,1,2200};
+						frequency = 1;
+						volume = "(1-interior/1.4)*trees";
+					};
+				};
 			};
 			reloadTime 								= 0.25;
 		};

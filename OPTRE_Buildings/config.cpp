@@ -32,6 +32,7 @@ class CfgVehicles
 	
 	class OPTRE_Building_Container_Small_Green: Land_Cargo_House_V1_F
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Structure_class";
@@ -40,6 +41,7 @@ class CfgVehicles
 	
 	class OPTRE_Building_Container_Large_Green: Land_Cargo_HQ_V1_F
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Structure_class";
@@ -48,6 +50,7 @@ class CfgVehicles
 	
 	class OPTRE_Building_Container_Tower_Green: Land_Cargo_Patrol_V1_F
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Structure_class";
@@ -56,6 +59,7 @@ class CfgVehicles
 	
 	class OPTRE_Building_Container_Small_Tan: Land_Cargo_House_V3_F
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Structure_class";
@@ -64,6 +68,7 @@ class CfgVehicles
 	
 	class OPTRE_Building_Container_Large_Tan: Land_Cargo_HQ_V3_F
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Structure_class";
@@ -72,6 +77,7 @@ class CfgVehicles
 	
 	class OPTRE_Building_Container_Tower_Tan: Land_Cargo_Patrol_V3_F
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Structure_class";
@@ -80,6 +86,7 @@ class CfgVehicles
 	
 	class OPTRE_Building_Container_Small_Medical: Land_Medevac_house_V1_F
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Structure_class";
@@ -88,6 +95,7 @@ class CfgVehicles
 	
 	class OPTRE_Building_Container_Large_Medical: Land_Medevac_HQ_V1_F
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Structure_class";
@@ -96,6 +104,7 @@ class CfgVehicles
 	
 	class Elevator_Base: TargetGrenade
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		model="\OPTRE_Buildings\Elevator\Elevator_Base";
@@ -105,132 +114,154 @@ class CfgVehicles
 		
 	class Elevator_Piece: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Elevator\Elevator_Piece";
 		displayName="Elevator Piece [WIP]";
 	};
 
 	class Tower1: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Towers\Tower1";
 		displayName="Tower 1 [WIP]";
 	};
 
 	class Tower2: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Towers\Tower2";
 		displayName="Tower 2 [WIP]";
 	};
 
 	class Tower3: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Towers\Tower3";
 		displayName="Tower 3 [WIP]";
 	};
 
 	class Apartment8A: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Buildings\Apartment8A";
 		displayName="Apartment 1 Closed [WIP]";
 	};
 	
 	class Apartment4A: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Buildings\Apartment4A";
 		displayName="Apartment 2 Closed [WIP]";
 	};
 	
 	class RazorTower: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Towers\Razor_Tower";
 		displayName="Razor Tower [WIP]";
 	};
 	
 	class SailTower: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Towers\Sail_Tower";
 		displayName="Sail Tower [WIP]";
 	};
 	
 	class GenTower: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Towers\Gen_Tower";
 		displayName="Gen Tower [WIP]";
 	};
 	
 	class BaseTower: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Towers\Base_Tower";
 		displayName="Base Tower [WIP]";
 	};
 	
 	class SmallPlaza: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Small_Plaza";
 		displayName="Small Plaza [WIP]";
 	};
 
 	class PedBridgeMid: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_Mid";
 		displayName="Pedestrian Bridge Middle Piece [WIP]";
 	};
 
 	class PedBridgeEnd: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_End";
 		displayName="Pedestrian Bridge End Piece [WIP]";
 	};
 	
 	class CityBlockArea: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Buildings\City_Block_Area";
 		displayName="City Block Area [WIP]";
 	};
 	
 	class CityBlockPiece: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Buildings\City_Block_Piece";
 		displayName="City Block Piece [WIP]";
 	};
 		
 	class CityBlockCorner: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Buildings\City_Block_Corner";
 		displayName="City Block Corner [WIP]";
 	};
 		
 	class RectangularPlantBox: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Rectangular_Plant_Box";
 		displayName="Rectangular Plant Box [WIP]";
 	};
 	
 	class OPTRE_City_Door: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Door_Locked";
 		displayName="Locked Door [WIP]";
 	};
 		
 	class InformationBoard: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Information_Board";
 		displayName="Information Board";
 	};
 
 	class Light_Column: Elevator_Base
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Citylights\Light_Column";
 		displayName="Column Light [WIP]";
 	};
 
 	class CornerBuilding: TargetGrenade
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\buildings\building01";
 		displayName="Corner Building [WIP]";
 	};
 
 	class Light_Street_01_off: Lamps_base_F
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		VehicleClass		= "OPTRE_UNSC_Structure_class";
@@ -281,6 +312,7 @@ class CfgVehicles
 
 	class Light_Street_01: Light_Street_01_off
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		displayName			= "Street Light (On) [WIP]";

@@ -52,6 +52,7 @@ class CfgVehicles
 
 	class OPTRE_Pelican_F: Helicopter_Base_H
 	{		
+		dlc = "OPTRE";
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		vehicleClass = "OPTRE_UNSC_Air_class";
 		faction	= "OPTRE_UNSC";					/// defines the faction inside of the side
@@ -76,7 +77,7 @@ class CfgVehicles
 		insideSoundCoef = 0.0116228;
 		noseDownCoef = 0; //?
 		crewCrashProtection=0;
-		crewExplosionProtection = 0.15;
+		crewExplosionProtection = 0;
 		
 	///AI HANDLING
 	

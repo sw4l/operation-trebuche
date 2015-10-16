@@ -26,6 +26,7 @@ class CfgVehicles
 	};
 	class OPTRE_tree_Purp_1: Fence_Ind 
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		model = "optre_plants\t_quercus2f.p3d";
 		icon = "IconCrateWpns";
@@ -35,6 +36,7 @@ class CfgVehicles
 	};
 	class OPTRE_tree_Purp_2: OPTRE_tree_Purp_1 
 	{
+		dlc = "OPTRE";
 		model = "optre_plants\t_quercus3s.p3d";
 		icon = "IconCrateWpns";
 		displayName = "Tree 2 (Purple)";

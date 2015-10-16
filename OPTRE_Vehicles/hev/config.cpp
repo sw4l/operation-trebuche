@@ -45,6 +45,7 @@ class CfgVehicles //This configures units and backpacks
 	
 	class OPTRE_HEV: Car_F
 	{
+		dlc = "OPTRE";
 			side 																		= 1;
 			scope 																		= 2;
 			author																		= "Article 2 Studios";
@@ -123,6 +124,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_HEV_Door: RoadCone_F
 	{
+		dlc = "OPTRE";
 			scope 																		= 1;
 			author																		= "Article 2 Studios";
 			model 																		= "OPTRE_Vehicles\HEV\hev_door.p3d";
@@ -135,6 +137,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_HEV_Chute: RoadCone_F
 	{
+		dlc = "OPTRE";
 			scope 																		= 1;
 			author																		= "Article 2 Studios";
 			model 																		= "OPTRE_Vehicles\HEV\hev_chute.p3d";

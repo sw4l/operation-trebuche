@@ -10,7 +10,6 @@ Vehicles
 	Attack Pelican is missing visible rocket pods
 	Falcon's light is useless; just blinds the pilot. Lights are actually located on the front of each wing
 	The pelican scripts need admin intervention to work, and then said attach script is a pain in the ass to get working, I think it has something to do with looking/aiming at the hog.
-	Add flames to pelican thrusters
 	AA hog fire point should revolve (model.cfg)
 	^ Same for M910 PDN
 

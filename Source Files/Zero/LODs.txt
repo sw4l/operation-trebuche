@@ -1,9 +1,0 @@
-Included in every .rar this point forward will be various LODs.
-
-If there are specific poly counts for each LOD, let me know. Right now I have LOD1 75% base mesh, LOD2 50%, LOD3 25% and LOD4 (if applicable) as low as it can go before the model is mush.
-
-Also included are Geo LODs, they are no more than 100 polies (avg 20-40).
-
-Please use LOD3 for shadows and fire LODs, they should be sufficient.
-
-Notes (in case anyone leaves them):

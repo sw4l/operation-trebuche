@@ -15,6 +15,7 @@ class CfgVehicles
 	
 	class OPTRE_Ammo_Box_Base: NATO_Box_Base
 	{
+		dlc = "OPTRE";
 		scope = 1;
 		vehicleClass = "OPTRE_UNSC_Ammo_class";
 		displayName = "-";

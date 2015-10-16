@@ -15,6 +15,7 @@ class CfgVehicles
 	
 	class OPTRE_Objects_Base: House_F
 	{
+		dlc = "OPTRE";
 		scope = 0;
 		scopeCurator = 0;
 		armor = 999999;
@@ -27,6 +28,7 @@ class CfgVehicles
 	};
 	class OPTRE_Objects_ODST_Grave: OPTRE_Objects_Base
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "ODST Grave";
@@ -35,6 +37,7 @@ class CfgVehicles
 	};
 	class OPTRE_Objects_Soldier_Grave: OPTRE_Objects_Base
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Soldier Grave";
@@ -43,6 +46,7 @@ class CfgVehicles
 	};
 	class OPTRE_Objects_Monument: OPTRE_Objects_Base
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Monument";
@@ -51,6 +55,7 @@ class CfgVehicles
 	};
 	class OPTRE_Objects_Kiosk1: OPTRE_Objects_Base
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Recruiting Kiosk 1";
@@ -61,6 +66,7 @@ class CfgVehicles
 	};
 	class OPTRE_Objects_Kiosk2: OPTRE_Objects_Kiosk1
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Recruiting Kiosk 2";
@@ -71,6 +77,7 @@ class CfgVehicles
 	};
 	class OPTRE_Objects_Kiosk3: OPTRE_Objects_Kiosk1
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Recruiting Kiosk 3";
@@ -81,6 +88,7 @@ class CfgVehicles
 	};
 	class OPTRE_Objects_Holotable_Blank: OPTRE_Objects_Base
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Holo Table (Blank)";
@@ -91,6 +99,7 @@ class CfgVehicles
 	};
 	class OPTRE_Objects_Holotable_Stratis: OPTRE_Objects_Holotable_Blank
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Holo Table (Stratis)";
@@ -100,6 +109,7 @@ class CfgVehicles
 	};
 	class OPTRE_Objects_Holotable_Altis: OPTRE_Objects_Holotable_Blank
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Holo Table (Altis)";
@@ -114,12 +124,14 @@ class CfgGlasses
     class G_Balaclava_blk; 
     class OPTRE_Glasses_Cigarette: G_Balaclava_blk 
     { 
+		dlc = "OPTRE";
         displayName = "Cigarette"; 
         model = "\OPTRE_Misc\Objects\cigarette.p3d";
 		picture = "\OPTRE_misc\objects\icons\cigarette.paa";
     }; 
     class OPTRE_Glasses_Cigar: OPTRE_Glasses_Cigarette
     { 
+		dlc = "OPTRE";
         displayName = "Cigar"; 
         model = "\OPTRE_Misc\Objects\cigar.p3d";
 		picture = "\OPTRE_misc\objects\icons\cigar.paa";

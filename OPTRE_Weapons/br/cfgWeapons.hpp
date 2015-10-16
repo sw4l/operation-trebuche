@@ -14,6 +14,7 @@ class CfgWeapons
 	
 	class OPTRE_BR55HB_Scope: ItemCore
 	{
+		dlc = "OPTRE";
 		scope 										= 2;
 		displayName 								= "BR55 A2 Scope";
 		picture 									= "\OPTRE_weapons\br\icons\scope.paa";
@@ -66,6 +67,7 @@ class CfgWeapons
 	class EBR_Base_F;
 	class OPTRE_BR55HB: EBR_Base_F
 	{
+		dlc = "OPTRE";
 		scope 										= 2;
 		handAnim[] 									= {"OFP2_ManSkeleton", "\OPTRE_Weapons\BR\data\anim\BR.rtm"};
 		model										= "\OPTRE_Weapons\BR\BR.p3d";
@@ -79,6 +81,7 @@ class CfgWeapons
 		muzzlePos									= "usti hlavne";
        	muzzleEnd									= "konec hlavne";
 		reloadAction 								= "GestureReloadTRG";
+		changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\firemode_Mx",0.17782794,1,5};
 		inertia										= 0.6;
 		maxZeroing 																= 1000;
 		discreteDistance[] 														= {100,200,300,400,500,600,700,800,900,1000};
@@ -109,12 +112,79 @@ class CfgWeapons
 			{
 				begin1[] = {"\OPTRE_Weapons\BR\Data\sounds\BattleRifle_1.wss",1.0,1,2000};
 				soundBegin[] = {"begin1",1};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\mx_tail_interior",2.2387211,1,1800};
+						frequency = 1;
+						volume = "interior";
+					};
+					class TailTrees
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\mx_tail_trees",1.0,1,1800};
+						frequency = 1;
+						volume = "(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\mx_tail_forest",1.0,1,1800};
+						frequency = 1;
+						volume = "(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\mx_tail_meadows",1.0,1,1800};
+						frequency = 1;
+						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\mx_tail_houses",1.0,1,1800};
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
+					};
+				};
 			};
 			class SilencedSound: BaseSoundModeType
 			{
-				begin1[] = {"A3\sounds_f\weapons\silenced\silent-23",1.0,1,600};
-				begin2[] = {"A3\sounds_f\weapons\silenced\silent-24",1.0,1,600};
-				soundBegin[] = {"begin1",0.5,"begin2",0.5};
+				begin1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Silencer_Mx_short_01",0.7943282,1,400};
+				begin2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Silencer_Mx_short_02",0.7943282,1,400};
+				begin3[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Silencer_Mx_short_03",0.7943282,1,400};
+				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin1",0.34};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Silencer_Mx_tail_interior",1.0,1,400};
+						frequency = 1;
+						volume = "interior";
+					};
+					class TailTrees
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Silencer_mx_tail_trees",1.0,1,400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Silencer_mx_tail_forest",1.0,1,400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Silencer_mx_tail_meadows",1.0,1,400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Silencer_mx_tail_houses",1.0,1,400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
+					};
+				};
 			};
 			reloadTime = 0.075;
 			dispersion = 0.00075;
@@ -140,13 +210,80 @@ class CfgWeapons
 			class StandardSound: BaseSoundModeType
 			{
 				begin1[] = {"\OPTRE_Weapons\BR\Data\sounds\BattleRifle_1.wss",1.0,1,2000};
-				soundBegin[] = {"begin1",0.34};
+				soundBegin[] = {"begin1",0.5};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\mx_tail_interior",2.2387211,1,1800};
+						frequency = 1;
+						volume = "interior";
+					};
+					class TailTrees
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\mx_tail_trees",1.0,1,1800};
+						frequency = 1;
+						volume = "(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\mx_tail_forest",1.0,1,1800};
+						frequency = 1;
+						volume = "(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\mx_tail_meadows",1.0,1,1800};
+						frequency = 1;
+						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\mx_tail_houses",1.0,1,1800};
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
+					};
+				};
 			};
 			class SilencedSound: BaseSoundModeType
 			{
-				begin1[] = {"A3\sounds_f\weapons\silenced\silent-23",1.0,1,600};
-				begin2[] = {"A3\sounds_f\weapons\silenced\silent-24",1.0,1,600};
-				soundBegin[] = {"begin1",0.5,"begin2",0.5};
+				begin1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Silencer_Mx_short_01",0.7943282,1,400};
+				begin2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Silencer_Mx_short_02",0.7943282,1,400};
+				begin3[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Silencer_Mx_short_03",0.7943282,1,400};
+				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin1",0.34};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Silencer_Mx_tail_interior",1.0,1,400};
+						frequency = 1;
+						volume = "interior";
+					};
+					class TailTrees
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Silencer_mx_tail_trees",1.0,1,400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Silencer_mx_tail_forest",1.0,1,400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Silencer_mx_tail_meadows",1.0,1,400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Silencer_mx_tail_houses",1.0,1,400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
+					};
+				};
 			};
 			reloadTime = 0.075;
 			dispersion = 0.00085;
@@ -174,7 +311,7 @@ class CfgWeapons
 			class CowsSlot: SlotInfo
 			{
 				access 								= 1;
-				compatibleitems[] 					= {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope"};
+				compatibleitems[] 					= {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope", "OPTRE_M6C_RDS"};
 				displayname 						= "Optics Slot";
 				linkproxy 							= "\A3\data_f\proxies\weapon_slots\TOP";
 				scope 								= 2;
@@ -192,6 +329,7 @@ class CfgWeapons
 	};
 	class OPTRE_BR55HB_ScopedRifle: OPTRE_BR55HB /// standard issue variant with holo optics and laser pointer
 	{
+		dlc = "OPTRE";
 		class LinkedItems
 		{
 			class LinkedItemsOptic

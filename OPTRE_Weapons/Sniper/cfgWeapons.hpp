@@ -17,6 +17,7 @@ class Mode_FullAuto;
      
             class OPTRE_SRS99_Scope: ItemCore
             {
+		dlc = "OPTRE";
                     scope                                                                   = 2;
                     displayName                                                             = "Oracle N-variant SRS99 Scope";
 					picture 																= "\OPTRE_weapons\sniper\icons\scope.paa";
@@ -59,6 +60,7 @@ class Mode_FullAuto;
             };
 			class OPTRE_SRS99_Laser: ItemCore
 			{
+		dlc = "OPTRE";
 			scope 																			= 2;
 			displayName 																	= "SRS99 IR Laser";
 			picture																			="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
@@ -78,6 +80,7 @@ class Mode_FullAuto;
 		};
 		class OPTRE_SRS99_Bipod: ItemCore
 		{
+		dlc = "OPTRE";
 			scope 																			= 2;
 			displayName																		= "SRS-99 Bipod";
 			model 																			= "\OPTRE_Weapons\Sniper\SRS99_Bipod.p3d";
@@ -96,6 +99,7 @@ class Mode_FullAuto;
             class LMG_Mk200_F;
             class OPTRE_SRS99D: LMG_Mk200_F
             {
+		dlc = "OPTRE";
                     scope                                                                   = 2;
                     model                                                                   = "\OPTRE_Weapons\Sniper\Sniper.p3d";
                     displayName                                                             = "SRS99D-S2 Sniper Rifle";
@@ -138,7 +142,7 @@ class Mode_FullAuto;
                     modes[] = {"Single"};
                     class Single: Mode_SemiAuto
                     {
-                            sounds[] = {"StandardSound","SilencedSound"};
+                            sounds[] = {"StandardSound"};
                             class BaseSoundModeType
                             {
                                     weaponSoundEffect = "DefaultRifle";
@@ -151,12 +155,39 @@ class Mode_FullAuto;
                                     begin1[] = {"\OPTRE_Weapons\Sniper\Data\sounds\SRS99_1.wss",5.0,1,3000};
                                     begin2[] = {"\OPTRE_Weapons\Sniper\Data\sounds\SRS99_2.wss",5.0,1,3000}; 
                                     soundBegin[] = {"begin1",0.34,"begin2",0.33};
-                            };
-                            class SilencedSound: BaseSoundModeType
-                            {
-                                    begin1[] = {"A3\sounds_f\weapons\silenced\silent-23",1.0,1,600};
-                                    begin2[] = {"A3\sounds_f\weapons\silenced\silent-24",1.0,1,600};
-                                    soundBegin[] = {"begin1",0.5,"begin2",0.5};
+									class SoundTails
+									{
+										class TailForest
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_forest",1.0,1,2200};
+											frequency = 1;
+											volume = "(1-interior/1.4)*forest";
+										};
+										class TailHouses
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_houses",1.0,1,2200};
+											frequency = 1;
+											volume = "(1-interior/1.4)*houses";
+										};
+										class TailInterior
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_interior",1.9952624,1,2200};
+											frequency = 1;
+											volume = "interior";
+										};
+										class TailMeadows
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_meadows",1.0,1,2200};
+											frequency = 1;
+											volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+										};
+										class TailTrees
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_trees",1.0,1,2200};
+											frequency = 1;
+											volume = "(1-interior/1.4)*trees";
+										};
+									};
                             };
                             reloadTime = 0.4; 			//0.6
                             dispersion = 0.00015;
@@ -182,7 +213,7 @@ class Mode_FullAuto;
                             class CowsSlot: SlotInfo
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope"};
+                                    compatibleitems[]                                       = {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope", "OPTRE_M6C_RDS"};
                                     displayname                                             = "Optics Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\TOP";
                                     scope                                                   = 2;
@@ -209,6 +240,7 @@ class Mode_FullAuto;
 			
 		class OPTRE_SRS99D_SC_LS: OPTRE_SRS99D
 		{
+		dlc = "OPTRE";
 			scope = 1;
 			class LinkedItems
 			{

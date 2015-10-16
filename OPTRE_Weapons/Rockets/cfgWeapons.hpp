@@ -12,6 +12,7 @@ class CfgWeapons
 
 	class OPTRE_M41_SSR : launch_RPG32_F
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		author = "Article 2 Studios";
 		displayname = "M41 SSR MAV/AW";
@@ -60,6 +61,7 @@ class CfgWeapons
 	};
 	class OPTRE_M41_SSR_G: OPTRE_M41_SSR
 	{
+		dlc = "OPTRE";
 		author = "Article 2 Studios";
 		displayname = "M41 SSR MAV/AW (Guided)";
 		descriptionshort = "Surface-to-Surface Rocket Medium Anti-Vehicle/Assault Weapon (Guided)";

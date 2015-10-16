@@ -15,6 +15,7 @@ class Mode_FullAuto;
      
             class OPTRE_MA5B_AmmoCounter: ItemCore
             {
+					dlc = "OPTRE";
                     scope                                                                   = 2;
                     displayName                                                             = "MA5B Ammo Counter";
 					picture = "\OPTRE_weapons\ar\icons\scope_a.paa";
@@ -62,6 +63,7 @@ class Mode_FullAuto;
             };
 			class OPTRE_MA5B_AmmoCounter_NoIS: ItemCore
 			{
+					dlc = "OPTRE";
 				scope = 2;
 				displayName                                                             = "MA5B Ammo Counter (No IS)";
 				picture = "\OPTRE_weapons\ar\icons\scope_b.paa";
@@ -107,6 +109,7 @@ class Mode_FullAuto;
 			};
 			class OPTRE_MA5B_Flashlight: ItemCore
 			{
+					dlc = "OPTRE";
 			scope 										= 2;
 			displayName 									= "MA5B Flashlight";
 			picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
@@ -148,9 +151,10 @@ class Mode_FullAuto;
             //WEAPONS
      
             class EBR_Base_F;
-            class  UGL_F;
+            class UGL_F;
             class OPTRE_MA5B: EBR_Base_F
             {
+					dlc = "OPTRE";
                     scope                                                                   = 2;
                     handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_Weapons\AR\data\anim\hand_anim_ma5c.rtm"};
                     model                                                                   = "\OPTRE_Weapons\AR\AR.p3d";
@@ -168,6 +172,7 @@ class Mode_FullAuto;
 					maxZeroing 																= 1000;
 					deployedPivot    														= "bipod";
 					discreteDistance[] 														= {100,200,300,400,500,600,700,800,900,1000};
+					changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\firemode_Mx",0.17782794,1,5};
 					maxRecoilSway = 0.01;
 					swayDecaySpeed = 1;
                     class GunParticles: GunParticles
@@ -192,21 +197,84 @@ class Mode_FullAuto;
                             };
                             class StandardSound: BaseSoundModeType
                             {
-                                    /*begin1[] = {"A3\sounds_f\weapons\EBR\EBR_st_4",1.0,1,2000};
-                                    begin2[] = {"A3\sounds_f\weapons\EBR\EBR_st_5",1.0,1,2000};
-                                    begin3[] = {"A3\sounds_f\weapons\EBR\EBR_st_6",1.0,1,2000};*/
-     
                                     begin1[] = {"\OPTRE_Weapons\AR\Data\sounds\AssaultRifle_1.wss",1.0,1,2000};
                                     begin2[] = {"\OPTRE_Weapons\AR\Data\sounds\AssaultRifle_2.wss",1.0,1,2000}; 
                                     soundBegin[] = {"begin1",0.34,"begin2",0.33};
+									class SoundTails
+									{
+										class TailTrees
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_trees",1.0,1,1400};
+											frequency = 1;
+											volume = "(1-interior/1.4)*trees";
+										};
+										class TailForest
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_forest",1.0,1,1400};
+											frequency = 1;
+											volume = "(1-interior/1.4)*forest";
+										};
+										class TailInterior
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_interior",1.5848932,1,1400};
+											frequency = 1;
+											volume = "interior";
+										};
+										class TailMeadows
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_meadows",1.0,1,1400};
+											frequency = 1;
+											volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+										};
+										class TailHouses
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_houses",1.0,1,1400};
+											frequency = 1;
+											volume = "(1-interior/1.4)*houses";
+										};
+									};
                             };
                             class SilencedSound: BaseSoundModeType
                             {
-                                    begin1[] = {"A3\sounds_f\weapons\silenced\silent-23",1.0,1,600};
-                                    begin2[] = {"A3\sounds_f\weapons\silenced\silent-24",1.0,1,600};
-                                    soundBegin[] = {"begin1",0.5,"begin2",0.5};
+								begin1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_01",1.0,1,400};
+								begin2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_02",1.0,1,400};
+								begin3[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_03",1.0,1,400};
+								soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
+								class SoundTails
+								{
+									class TailTrees
+									{
+										sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_trees",1.0,1,400};
+										frequency = 1;
+										volume = "(1-interior/1.4)*trees";
+									};
+									class TailForest
+									{
+										sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_forest",1.0,1,400};
+										frequency = 1;
+										volume = "(1-interior/1.4)*forest";
+									};
+									class TailInterior
+									{
+										sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_tail_interior",1.0,1,400};
+										frequency = 1;
+										volume = "interior";
+									};
+									class TailMeadows
+									{
+										sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_meadows",1.0,1,400};
+										frequency = 1;
+										volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+									};
+									class TailHouses
+									{
+										sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_houses",1.0,1,400};
+										frequency = 1;
+										volume = "(1-interior/1.4)*houses";
+									};
+								};
                             };
-                            reloadTime = 0.092; 			//was 0.065
+                            reloadTime = 0.065; 			//was 0.065
                             dispersion = 0.00075;
                             recoil = "recoil_single_mx";
 							recoilProne = "recoil_single_prone_mx";
@@ -232,12 +300,79 @@ class Mode_FullAuto;
                                     begin1[] = {"\OPTRE_Weapons\AR\Data\sounds\AssaultRifle_1.wss",1.0,1,2000};
                                     begin2[] = {"\OPTRE_Weapons\AR\Data\sounds\AssaultRifle_2.wss",1.0,1,2000};
                                     soundBegin[] = {"begin1",0.34,"begin2",0.33};
+									class SoundTails
+									{
+										class TailTrees
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_trees",1.0,1,1400};
+											frequency = 1;
+											volume = "(1-interior/1.4)*trees";
+										};
+										class TailForest
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_forest",1.0,1,1400};
+											frequency = 1;
+											volume = "(1-interior/1.4)*forest";
+										};
+										class TailInterior
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_interior",1.5848932,1,1400};
+											frequency = 1;
+											volume = "interior";
+										};
+										class TailMeadows
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_meadows",1.0,1,1400};
+											frequency = 1;
+											volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+										};
+										class TailHouses
+										{
+											sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\TRG20_tail_houses",1.0,1,1400};
+											frequency = 1;
+											volume = "(1-interior/1.4)*houses";
+										};
+									};
                             };
                             class SilencedSound: BaseSoundModeType
                             {
-                                    begin1[] = {"A3\sounds_f\weapons\silenced\silent-23",1.0,1,600};
-                                    begin2[] = {"A3\sounds_f\weapons\silenced\silent-24",1.0,1,600};
-                                    soundBegin[] = {"begin1",0.5,"begin2",0.5};
+								begin1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_01",1.0,1,400};
+								begin2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_02",1.0,1,400};
+								begin3[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_03",1.0,1,400};
+								soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
+								class SoundTails
+								{
+									class TailTrees
+									{
+										sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_trees",1.0,1,400};
+										frequency = 1;
+										volume = "(1-interior/1.4)*trees";
+									};
+									class TailForest
+									{
+										sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_forest",1.0,1,400};
+										frequency = 1;
+										volume = "(1-interior/1.4)*forest";
+									};
+									class TailInterior
+									{
+										sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_tail_interior",1.0,1,400};
+										frequency = 1;
+										volume = "interior";
+									};
+									class TailMeadows
+									{
+										sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_meadows",1.0,1,400};
+										frequency = 1;
+										volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+									};
+									class TailHouses
+									{
+										sound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_Tail_houses",1.0,1,400};
+										frequency = 1;
+										volume = "(1-interior/1.4)*houses";
+									};
+								};
                             };
                             reloadTime = 0.065; 			//was 0.092
                             dispersion = 0.00085;
@@ -282,6 +417,7 @@ class Mode_FullAuto;
 			
 		class OPTRE_MA5B_AC: OPTRE_MA5B
 		{
+					dlc = "OPTRE";
 			picture = "\OPTRE_weapons\ar\icons\ar_b.paa";
 			class LinkedItems
 			{
@@ -300,6 +436,7 @@ class Mode_FullAuto;
 			
         class OPTRE_MA5BGL: OPTRE_MA5B
         {
+					dlc = "OPTRE";
                     scope                                                                   = 2;
                     handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_Weapons\AR\data\anim\hand_anim_ma5c.rtm"};
                     model                                                                   = "\OPTRE_Weapons\AR\ARGL.p3d";
@@ -324,75 +461,13 @@ class Mode_FullAuto;
                        };
                     };
                     modes[] = {"Single","FullAuto"};
-                    class Single: Mode_SemiAuto
+                    class Single: Single
                     {
-                            sounds[] = {"StandardSound","SilencedSound"};
-                            class BaseSoundModeType
-                            {
-                                    weaponSoundEffect = "DefaultRifle";
-                                    closure1[] = {};
-                                    closure2[] = {};
-                                    soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                            };
-                            class StandardSound: BaseSoundModeType
-                            {
-                                    begin1[] = {"\OPTRE_Weapons\AR\Data\sounds\AssaultRifle_1.wss",1.0,1,2000};
-                                    begin2[] = {"\OPTRE_Weapons\AR\Data\sounds\AssaultRifle_2.wss",1.0,1,2000};
-                                    soundBegin[] = {"begin1",0.34,"begin2",0.33};
-                            };
-                            class SilencedSound: BaseSoundModeType
-                            {
-                                    begin1[] = {"A3\sounds_f\weapons\silenced\silent-23",1.0,1,600};
-                                    begin2[] = {"A3\sounds_f\weapons\silenced\silent-24",1.0,1,600};
-                                    soundBegin[] = {"begin1",0.5,"begin2",0.5};
-                            };
-                            reloadTime = 0.065;
-                            dispersion = 0.00075;
-                            recoil = "recoil_single_mx";
-							recoilProne = "recoil_single_prone_mx";
                             minRange = 2;
-                            minRangeProbab = 0.3;
-                            midRange = 300;
-                            midRangeProbab = 0.7;
-                            maxRange = 600;
-                            maxRangeProbab = 0.05;
                     };
-                    class FullAuto: Mode_FullAuto
+                    class FullAuto: FullAuto
                     {
-                            sounds[] = {"StandardSound","SilencedSound"};
-                            class BaseSoundModeType
-                            {
-                                    weaponSoundEffect = "DefaultRifle";
-                                    closure1[] = {};
-                                    closure2[] = {};
-                                    soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                            };
-                            class StandardSound: BaseSoundModeType
-                            {
-                                    begin1[] = {"\OPTRE_Weapons\AR\Data\sounds\AssaultRifle_1.wss",1.0,1,2000};
-                                    begin2[] = {"\OPTRE_Weapons\AR\Data\sounds\AssaultRifle_2.wss",1.0,1,2000};
-                                    soundBegin[] = {"begin1",0.34,"begin2",0.33};
-                            };
-                            class SilencedSound: BaseSoundModeType
-                            {
-                                    begin1[] = {"A3\sounds_f\weapons\silenced\silent-23",1.0,1,600};
-                                    begin2[] = {"A3\sounds_f\weapons\silenced\silent-24",1.0,1,600};
-                                    soundBegin[] = {"begin1",0.5,"begin2",0.5};
-                            };
-                            reloadTime = 0.065;
-                            dispersion = 0.00085;
-                            recoil = "recoil_single_mx";
-							recoilProne = "recoil_single_prone_mx";
                             minRange = 2;
-                            minRangeProbab = 0.3;
-                            midRange = 300;
-                            midRangeProbab = 0.7;
-                            maxRange = 600;
-                            maxRangeProbab = 0.05;
-                            soundBurst = 0;
-                            burst = 1;
-							displayName = "$STR_DN_MODE_FULLAUTO";
-							textureType = "fullAuto";
                     };
                     class M309GL: UGL_F /// Some grenade launcher to have some more fun
                     {
@@ -437,6 +512,7 @@ class Mode_FullAuto;
 			
 	class OPTRE_MA5BGL_AC: OPTRE_MA5BGL
 	{
+					dlc = "OPTRE";
 		picture = "\OPTRE_weapons\ar\icons\argl_b.paa";
 		class LinkedItems
 		{

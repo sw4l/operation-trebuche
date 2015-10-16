@@ -449,7 +449,7 @@ class CfgAmmo
 		maxSpeed = 1000;
 		typicalSpeed = 1000;
 		sideAirFriction = 0;
-		simulation = "shotRocket";
+		simulation = "shotSubmunitions";
 		suppressionRadiusBulletClose = 100;
 		suppressionRadiusHit = 100;
 		timeToLive = 60;
@@ -476,10 +476,9 @@ class CfgAmmo
 		indirectHit = 10;
 		indirectHitRange = 2.5;
 		explosive = 0.8;
-		irLock = 0;
-		airLock = 0;
-		laserLock = 2;
-		canLock = 0;
+		irLock = 1;
+		airLock = 1;
+		laserLock = 1;
 		manualControl = 1;
 		maxControlRange = 10000;
 		initTime = 0.1; //0.25

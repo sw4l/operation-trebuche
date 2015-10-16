@@ -17,6 +17,7 @@ class CfgMagazines
 	//7.62x51mm (AR, M247)
 	class OPTRE_60Rnd_762x51_Mag: 20Rnd_762x51_Mag
 	{
+		dlc = "OPTRE";
 		model								= "\OPTRE_Weapons\AR\AR_Magazine.p3d";
 		displayname							= "60Rnd 7.62x51mm Magazine";
 		displaynameshort					= "7.62x51mm";
@@ -31,6 +32,7 @@ class CfgMagazines
 	};
 	class OPTRE_60Rnd_762x51_Mag_Tracer: OPTRE_60Rnd_762x51_Mag
 	{
+		dlc = "OPTRE";
 		displayname							= "60Rnd 7.62x51mm Magazine (Tracers)";
 		displaynameshort					= "7.62x51mm Tracer";
 		ammo								= "OPTRE_B_762x51_Tracer";
@@ -40,6 +42,7 @@ class CfgMagazines
 	};
 	class OPTRE_32Rnd_762x51_Mag: OPTRE_60Rnd_762x51_Mag
 	{
+		dlc = "OPTRE";
 		displayname							= "32Rnd 762x51mm Magazine";
 		count								= 32;
 		initspeed							= 800;
@@ -48,6 +51,7 @@ class CfgMagazines
 	};
 	class OPTRE_32Rnd_762x51_Mag_Tracer: OPTRE_60Rnd_762x51_Mag_Tracer
 	{
+		dlc = "OPTRE";
 		displayname							= "32Rnd 762x51mm Magazine";
 		count								= 32;
 		descriptionshort					= "32 Round Magazine<br>7.62x51mm<br>(Increased Muzzle Velocity)<br>Tracer";
@@ -55,6 +59,7 @@ class CfgMagazines
 	};
 	class OPTRE_100Rnd_762x51_Box: OPTRE_60Rnd_762x51_Mag
 	{
+		dlc = "OPTRE";
 		model								= "\OPTRE_Weapons\MG\magazine_1.p3d";
 		displayname							= "100Rnd 7.62x51mm Box Magazine";
 		displaynameshort					= "7.62x51mm";
@@ -69,16 +74,18 @@ class CfgMagazines
 	};
 	class OPTRE_100Rnd_762x51_Box_Tracer: OPTRE_100Rnd_762x51_Box
 	{
+		dlc = "OPTRE";
 		displayname							= "100Rnd 7.62x51mm Box Magazine (Tracers)";
 		displaynameshort					= "7.62x51mm Tracer";
 		ammo								= "OPTRE_B_762x51_Tracer";
-				picture 					= "\OPTRE_Weapons\MG\icons\magazine.paa";
+		picture 							= "\OPTRE_Weapons\MG\icons\magazine.paa";
 		descriptionshort					= "100 Round Box Magazine<br>7.62x51mm<br>Tracer";
 		tracersEvery 						= 1;
 		lastRoundsTracer 					= 100;
 	};
 	class OPTRE_15Rnd_762x51_Mag: OPTRE_60Rnd_762x51_Mag
 	{
+		dlc = "OPTRE";
 		model								= "\OPTRE_Weapons\AR\AR_Magazine.p3d";
 		displayname							= "15Rnd 7.62x51mm Magazine";
 		displaynameshort					= "7.62x51mm";
@@ -93,6 +100,7 @@ class CfgMagazines
 	};
 	class OPTRE_15Rnd_762x51_Mag_Tracer: OPTRE_15Rnd_762x51_Mag
 	{
+		dlc = "OPTRE";
 		displayname							= "15Rnd 7.62x51mm Magazine (Tracers)";
 		displaynameshort					= "7.62x51mm Tracer";
 		ammo								= "OPTRE_B_762x51_Tracer";
@@ -104,6 +112,7 @@ class CfgMagazines
 	//9.5x40mm (BR, M73)
 	class OPTRE_36Rnd_95x40_Mag: 20Rnd_762x51_Mag
 	{
+		dlc = "OPTRE";
 		model								= "\OPTRE_Weapons\BR\BR_Magazine.p3d";
 		displayname							= "36Rnd 9.5x40mm Magazine";
 		displaynameshort					= "9.5x40mm";
@@ -118,6 +127,7 @@ class CfgMagazines
 	};
 	class OPTRE_36Rnd_95x40_Mag_Tracer: OPTRE_36Rnd_95x40_Mag
 	{
+		dlc = "OPTRE";
 		displayname							= "36Rnd 9.5x40mm Magazine (Tracers)";
 		displaynameshort					= "9.5x40mm Tracer";
 		ammo								= "OPTRE_B_95x40_Tracer";
@@ -127,6 +137,7 @@ class CfgMagazines
 	};
 	class OPTRE_100Rnd_95x40_Box: 150Rnd_762x51_Box
 	{
+		dlc = "OPTRE";
 		model								= "\OPTRE_Weapons\MG\magazine_1.p3d";
 		displayname							= "100Rnd 9.5x40mm Box Magazine";
 		displaynameshort					= "9.5x40mm";
@@ -141,6 +152,7 @@ class CfgMagazines
 	};
 	class OPTRE_100Rnd_95x40_Box_Tracer: OPTRE_100Rnd_95x40_Box
 	{
+		dlc = "OPTRE";
 		displayname							= "100Rnd 9.5x40mm Box Magazine (Tracers)";
 		displaynameshort					= "9.5x40mm Tracer";
 		ammo								= "OPTRE_B_95x40_Tracer";
@@ -151,6 +163,7 @@ class CfgMagazines
 	};
 	class OPTRE_200Rnd_95x40_Box: OPTRE_100Rnd_95x40_Box
 	{
+		dlc = "OPTRE";
 		displayname							= "200Rnd 9.5x40mm Box Magazine";
 		count								= 200;
 		picture 							= "\OPTRE_Weapons\MG\icons\magazine.paa";
@@ -159,6 +172,7 @@ class CfgMagazines
 	};
 	class OPTRE_200Rnd_95x40_Box_Tracer: OPTRE_200Rnd_95x40_Box
 	{
+		dlc = "OPTRE";
 		displayname							= "200Rnd 9.5x40mm Box Magazine (Tracers)";
 		displaynameshort					= "9.5x40mm Tracer";
 		ammo								= "OPTRE_B_95x40_Tracer";
@@ -171,6 +185,7 @@ class CfgMagazines
 	//12.7x40mm (Pistol)
 	class OPTRE_8Rnd_127x40_Mag : 20Rnd_762x51_Mag
 	{
+		dlc = "OPTRE";
 		model							= "\OPTRE_Weapons\pistol\m6_Magazine.p3d";
 		displayname						= "8Rnd 12.7x40mm Magazine";
 		displaynameshort				= "12.7x40mm";
@@ -185,6 +200,7 @@ class CfgMagazines
 	};
 	class OPTRE_8Rnd_127x40_AP_Mag : OPTRE_8Rnd_127x40_Mag
 	{
+		dlc = "OPTRE";
 		displayname						= "8Rnd 12.7x40mm AP Magazine";
 		displaynameshort				= "12.7x40mm AP";
 		ammo							= "OPTRE_B_127x40_AP";
@@ -194,6 +210,7 @@ class CfgMagazines
 	};
 	class OPTRE_8Rnd_127x40_Mag_Tracer : OPTRE_8Rnd_127x40_Mag
 	{
+		dlc = "OPTRE";
 		displayname						= "8Rnd 12.7x40mm Magazine (Tracers)";
 		displaynameshort				= "12.7x40mm Tracer";
 		picture 						= "\OPTRE_weapons\pistol\icons\magazine.paa";
@@ -204,6 +221,7 @@ class CfgMagazines
 	};
 	class OPTRE_12Rnd_127x40_Mag : OPTRE_8Rnd_127x40_Mag
 	{
+		dlc = "OPTRE";
 		displayname						= "12Rnd 12.7x40mm Magazine";
 		count							= 12;
 		initspeed						= 300;
@@ -214,6 +232,7 @@ class CfgMagazines
 	};
 	class OPTRE_16Rnd_127x40_Mag : OPTRE_12Rnd_127x40_Mag
 	{
+		dlc = "OPTRE";
 		displayname						= "16Rnd 12.7x40mm Magazine";
 		count							= 16;
 		descriptionshort				= "16 Round Magazine<br>12.7x40mm<br>Semi-Armor Piercing High Explosive";
@@ -225,6 +244,7 @@ class CfgMagazines
 	//8 Gauge (Shotgun)
 	class OPTRE_6Rnd_8Gauge_Pellets : 20Rnd_762x51_Mag
 	{
+		dlc = "OPTRE";
 		model								= "\OPTRE_Weapons\Shotgun\Shell_mag_S.p3d";
 		scope 								= 2;
 		displayname							= "6Rnd 8 Gauge Pellets";
@@ -238,6 +258,7 @@ class CfgMagazines
 	};
 	class OPTRE_6Rnd_8Gauge_Slugs : OPTRE_6Rnd_8Gauge_Pellets
 	{
+		dlc = "OPTRE";
 		model								= "\OPTRE_Weapons\Shotgun\Shell_mag_P.p3d";
 		displayname							= "6Rnd 8 Gauge Slugs";
 		displaynameshort					= "8 Gauge Slugs";
@@ -249,6 +270,7 @@ class CfgMagazines
 	};
 	class OPTRE_12Rnd_8Gauge_Pellets : OPTRE_6Rnd_8Gauge_Pellets
 	{
+		dlc = "OPTRE";
 		displayname							= "12Rnd 8 Gauge Pellets";
 		count								= 12;
 		descriptionshort					= "12 Rounds of 8 Gauge Pellets";
@@ -256,6 +278,7 @@ class CfgMagazines
 	};
 	class OPTRE_12Rnd_8Gauge_Slugs : OPTRE_6Rnd_8Gauge_Slugs
 	{
+		dlc = "OPTRE";
 		displayname							= "12Rnd 8 Gauge Slugs";
 		count								= 12;
 		descriptionshort					= "12 Rounds of 8 Gauge Slugs";
@@ -265,6 +288,7 @@ class CfgMagazines
 	//5x23mm (SMG)
 	class OPTRE_60Rnd_5x23mm_Mag: 30Rnd_45ACP_Mag_SMG_01
 	{
+		dlc = "OPTRE";
 		model								= "\OPTRE_Weapons\smg\m7_Magazine.p3d";
 		displayname							= "60Rnd 5x23mm Magazine";
 		displaynameshort					= "5x23mm";
@@ -279,6 +303,7 @@ class CfgMagazines
 	};
 	class OPTRE_60Rnd_5x23mm_Mag_tracer: OPTRE_60Rnd_5x23mm_Mag
 	{
+		dlc = "OPTRE";
 		displayname							= "60Rnd 5x23mm Magazine (Tracers)";
 		displaynameshort					= "5x23mm Tracer";
 		ammo								= "OPTRE_B_5x23_Caseless_Tracer";
@@ -287,6 +312,7 @@ class CfgMagazines
 	};
 	class OPTRE_48Rnd_5x23mm_Mag: OPTRE_60Rnd_5x23mm_Mag
 	{
+		dlc = "OPTRE";
 		displayname							= "48Rnd 5x23mm Magazine";
 		count								= 48;
 		descriptionshort					= "48 Round Magazine<br>5x23mm";
@@ -296,6 +322,7 @@ class CfgMagazines
 	};
 	class OPTRE_48Rnd_5x23mm_JHP_Mag: OPTRE_48Rnd_5x23mm_Mag
 	{
+		dlc = "OPTRE";
 		displayname							= "48Rnd 5x23mm (JHP) Magazine";
 		displaynameshort					= "5x23mm JHP";
 		ammo								= "OPTRE_B_5x23_Caseless_JHP";
@@ -303,6 +330,7 @@ class CfgMagazines
 	};
 	class OPTRE_48Rnd_5x23mm_FMJ_Mag: OPTRE_48Rnd_5x23mm_Mag
 	{
+		dlc = "OPTRE";
 		displayname							= "48Rnd 5x23mm (FMJ) Magazine";
 		displaynameshort					= "5x23mm FMJ";
 		initspeed							= 600;
@@ -311,6 +339,7 @@ class CfgMagazines
 	};
 	class OPTRE_48Rnd_5x23mm_Mag_tracer: OPTRE_48Rnd_5x23mm_Mag
 	{
+		dlc = "OPTRE";
 		displayname							= "48Rnd 5x23mm Magazine (Tracers)";
 		displaynameshort					= "5x23mm Tracer";
 		ammo								= "OPTRE_B_5x23_Caseless_Tracer";
@@ -321,6 +350,7 @@ class CfgMagazines
 	//14.5x114mm (Sniper)
 	class OPTRE_4Rnd_145x114_APFSDS_Mag: 20Rnd_762x51_Mag
 	{
+		dlc = "OPTRE";
 		model								= "\OPTRE_Weapons\AR\AR_Magazine.p3d";
 		displayname							= "4Rnd 14.5x114mm APFSDS Magazine";
 		displaynameshort					= "APFSDS";
@@ -335,6 +365,7 @@ class CfgMagazines
 	};
 	class OPTRE_4Rnd_145x114_HVAP_Mag: OPTRE_4Rnd_145x114_APFSDS_Mag
 	{
+		dlc = "OPTRE";
 		displayname							= "4Rnd 14.5x114mm HVAP Magazine";
 		displaynameshort					= "HVAP";
 		ammo								= "OPTRE_B_145x114_HVAP";
@@ -344,6 +375,7 @@ class CfgMagazines
 	};
 	class OPTRE_4Rnd_145x114_HEDP_Mag: OPTRE_4Rnd_145x114_HVAP_Mag
 	{
+		dlc = "OPTRE";
 		displayname							= "4Rnd 14.5x114mm HEDP Magazine";
 		displaynameshort					= "HEDP";
 		ammo								= "OPTRE_B_145x114_HEDP";
@@ -355,6 +387,7 @@ class CfgMagazines
 	//Vehicles
 	class OPTRE_20Rnd_ALIM_Gauss_Slugs: 30Rnd_120mm_APFSDS_shells
 	{
+		dlc = "OPTRE";
 		scope 								= 2;
 		displayName							= "20Rnd ALIM Gauss Slugs";
 		displayNameShort					= "25x130mm Slug";
@@ -364,6 +397,7 @@ class CfgMagazines
 	};
 	class OPTRE_1Rnd_MAC_Rounds: OPTRE_20Rnd_ALIM_Gauss_Slugs
 	{
+		dlc = "OPTRE";
 		displayName							= "MAC Round";
 		displayNameShort					= "MAC Round";
 		ammo								= "OPTRE_MAC_Round";
@@ -373,6 +407,7 @@ class CfgMagazines
 	
 	class OPTRE_3Rnd_102mm_rockets: 5Rnd_GAT_missiles
 	{
+		dlc = "OPTRE";
 		scope 								= 2;
 		displayName 						= "3Rnd 102mm Guided HEAT Rockets";
 		displayNameShort 					= "102mm Guided HEAT";
@@ -389,6 +424,7 @@ class CfgMagazines
 	};
 	class OPTRE_6Rnd_65mm_rockets: 4Rnd_GAA_missiles
 	{
+		dlc = "OPTRE";
 		scope 								= 2;
 		displayName 						= "6Rnd 65mm Guided AA Rockets";
 		displayNameShort 					= "65mm Guided AA";
@@ -408,6 +444,7 @@ class CfgMagazines
 	//Rockets
 	class OPTRE_M41_Twin_HEAT: RPG32_HE_F
 	{
+		dlc = "OPTRE";
 		displayname						= "M19 HEAT Twin Rockets";
 		displaynameshort				= "HEAT";
 		descriptionshort				= "High Explosive Anti Tank<br/>Un-guided";
@@ -417,10 +454,11 @@ class CfgMagazines
 		modelSpecial 					= "\OPTRE_Weapons\Rockets\M41_launcher_loaded.p3d";
 		count							= 2;
 		mass 							= 80;
-		initSpeed 						= 255;
+		initSpeed 						= 350;
 	};
 	class OPTRE_M41_Twin_HEAT_G: OPTRE_M41_Twin_HEAT
 	{
+		dlc = "OPTRE";
 		displayname						= "M19 HEAT Guided Twin Rockets";
 		displaynameshort				= "HEAT (Guided)";
 		picture 						= "\OPTRE_weapons\rockets\icons\rocket.paa";
@@ -440,6 +478,7 @@ class CfgMagazines
 	};
 	class OPTRE_M41_Twin_HEAP: RPG32_HE_F
 	{
+		dlc = "OPTRE";
 		ammo							= "OPTRE_M41_Rocket_HEAP";
 		model							= "\OPTRE_Weapons\Rockets\M41_case.p3d";	
 		descriptionshort				= "High Explosive Anti Personnel<br/>Un-guided";
@@ -449,12 +488,13 @@ class CfgMagazines
 		displaynameshort				= "HEAP";
 		mass 							= 80;
 		count 							= 2;
-		initSpeed						= 100;
+		initSpeed						= 350;
 	};
 	
 	//Grenades
 	class OPTRE_M9_Frag: HandGrenade
 	{
+		dlc = "OPTRE";
 		ammo = "OPTRE_G_M9_Frag";
 		mass = 8;
 		displayName = "M9 HE-DP Grenade";
@@ -468,6 +508,7 @@ class CfgMagazines
 	};
 	class OPTRE_M2_Smoke: SmokeShell
 	{
+		dlc = "OPTRE";
 		displayName = "M2 Smoke Grenade (White)";
 		picture = "\A3\Weapons_f\data\ui\gear_smokegrenade_white_ca.paa";
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
@@ -478,6 +519,7 @@ class CfgMagazines
 	};
 	class OPTRE_M2_Smoke_Blue: OPTRE_M2_Smoke
 	{
+		dlc = "OPTRE";
 		displayName = "M2 Smoke Grenade (Blue)";
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
 		ammo = "OPTRE_G_M2_BSmoke";
@@ -486,6 +528,7 @@ class CfgMagazines
 	};
 	class OPTRE_M2_Smoke_Yellow: OPTRE_M2_Smoke
 	{
+		dlc = "OPTRE";
 		displayName = "M2 Smoke Grenade (Yellow)";
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
 		ammo = "OPTRE_G_M2_YSmoke";
@@ -494,6 +537,7 @@ class CfgMagazines
 	};
 	class OPTRE_M2_Smoke_Red: OPTRE_M2_Smoke
 	{
+		dlc = "OPTRE";
 		displayName = "M2 Smoke Grenade (Red)";
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
 		ammo = "OPTRE_G_M2_RSmoke";
@@ -502,6 +546,7 @@ class CfgMagazines
 	};
 	class OPTRE_M2_Smoke_Green: OPTRE_M2_Smoke
 	{
+		dlc = "OPTRE";
 		displayName = "M2 Smoke Grenade (Green)";
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
 		ammo = "OPTRE_G_M2_GSmoke";
@@ -510,6 +555,7 @@ class CfgMagazines
 	};
 	class OPTRE_M2_Smoke_Orange: OPTRE_M2_Smoke
 	{
+		dlc = "OPTRE";
 		displayName = "M2 Smoke Grenade (Orange)";
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
 		ammo = "OPTRE_G_M2_OSmoke";
@@ -518,6 +564,7 @@ class CfgMagazines
 	};
 	class OPTRE_M2_Smoke_Purple: OPTRE_M2_Smoke
 	{
+		dlc = "OPTRE";
 		displayName = "M2 Smoke Grenade (Purple)";
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
 		ammo = "OPTRE_G_M2_PSmoke";
@@ -526,6 +573,7 @@ class CfgMagazines
 	};
 	class OPTRE_M8_Flare: OPTRE_M2_Smoke
 	{
+		dlc = "OPTRE";
 		displayName = "M8 Flare";
 		model = "\OPTRE_Weapons\explosives\m8_flare.p3d";
 		ammo = "OPTRE_G_M8_Flare";

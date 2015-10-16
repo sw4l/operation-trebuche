@@ -26,6 +26,7 @@ class cfgVehicles
 
         class OPTRE_ILCS_Rucksack_Black : B_Bergen_Base 
 		{
+					dlc = "OPTRE";
 				scope 												= 2;
 				class TransportMagazines{};
 				class TransportWeapons{};
@@ -45,6 +46,7 @@ class cfgVehicles
         };
 		class OPTRE_ILCS_Rucksack_Black_Pouches : OPTRE_ILCS_Rucksack_Black
 		{
+					dlc = "OPTRE";
 				picture 											= "\OPTRE_weapons\backpacks\icons\rucksack_black_po.paa";
                 displayName 										= "[UNSC] ILCS Rucksack+ [Black]";
 				maximumLoad 										= 350;
@@ -54,6 +56,7 @@ class cfgVehicles
         };
 		class OPTRE_ILCS_Rucksack_Medical : OPTRE_ILCS_Rucksack_Black_Pouches
 		{
+					dlc = "OPTRE";
 				picture 											= "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
                 displayName 										= "[UNSC] ILCS Backpack [Medic]";
 				hiddenSelections[] 									= {"camo1"};
@@ -62,6 +65,7 @@ class cfgVehicles
 				
 		class OPTRE_ILCS_Rucksack_green : OPTRE_ILCS_Rucksack_Black
 		{
+					dlc = "OPTRE";
 				picture 											= "\OPTRE_weapons\backpacks\icons\rucksack_green.paa";
                 displayName 										= "[UNSC] ILCS Rucksack [Green]";
 				hiddenSelections[] 									= {"camo1","pouches","biofoam"};
@@ -76,6 +80,7 @@ class cfgVehicles
         };
 		class OPTRE_ILCS_Rucksack_tan : OPTRE_ILCS_Rucksack_Black
 		{
+					dlc = "OPTRE";
 				picture 											= "\OPTRE_weapons\backpacks\icons\rucksack_tan.paa";
                 displayName 										= "[UNSC] ILCS Rucksack [Tan]";
 				hiddenSelections[] 									= {"camo1","pouches","biofoam"};
@@ -83,6 +88,7 @@ class cfgVehicles
         };
 		class OPTRE_ILCS_Rucksack_tan_Pouches : OPTRE_ILCS_Rucksack_Black_Pouches
 		{
+					dlc = "OPTRE";
 				picture 											= "\OPTRE_weapons\backpacks\icons\rucksack_tan_po.paa";
                 displayName 										= "[UNSC] ILCS Rucksack+ [Tan]";
 				hiddenSelections[] 									= {"camo1","biofoam"};
@@ -90,6 +96,7 @@ class cfgVehicles
         };
 		class OPTRE_ANPRC_515 : OPTRE_ILCS_Rucksack_Black
 		{
+					dlc = "OPTRE";
 				picture 											= "\OPTRE_weapons\backpacks\icons\como_pack.paa";
 				transportMaxWeapons 								= 1;
 				transportMaxMagazines 								= 10;
@@ -110,6 +117,7 @@ class cfgVehicles
         };
 		class OPTRE_ANPRC_521_Green : OPTRE_ANPRC_515
 		{
+					dlc = "OPTRE";
 				picture 											= "\OPTRE_weapons\backpacks\icons\como_pack.paa";
 				transportMaxWeapons 								= 2;
 				transportMaxMagazines 								= 25;
@@ -130,11 +138,13 @@ class cfgVehicles
         };
 		class OPTRE_ANPRC_521_Black : OPTRE_ANPRC_521_Green
 		{
+					dlc = "OPTRE";
                 displayName 										= "[UNSC] AN/PRC-521 [Black]";
 				hiddenSelectionsTextures[] 							= {"OPTRE_Weapons\Backpacks\data\RadioPack1_Black_CO.paa"};
         };
 		class OPTRE_ILCS_Rucksack_Black_AT : OPTRE_ILCS_Rucksack_Black_Pouches
 		{
+					dlc = "OPTRE";
 				picture 											= "\OPTRE_weapons\backpacks\icons\rucksack_black_po.paa";
                 displayName 										= "[UNSC] ILCS Rucksack+ [Black + AT Rockets]";
 				maximumLoad 										= 350;
@@ -152,6 +162,7 @@ class cfgVehicles
         };
 		class OPTRE_ILCS_Rucksack_Black_EXP : OPTRE_ILCS_Rucksack_Black_Pouches
 		{
+					dlc = "OPTRE";
 				picture 											= "\OPTRE_weapons\backpacks\icons\rucksack_black_po.paa";
                 displayName 										= "[UNSC] ILCS Rucksack+ [Black + Explosives]";
 				maximumLoad 										= 350;

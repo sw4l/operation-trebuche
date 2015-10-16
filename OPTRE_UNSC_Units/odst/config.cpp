@@ -595,7 +595,7 @@ class cfgWeapons
 			modelSides[] 																		= {6};
 		};
 	};
-		class OPTRE_UNSC_ODST_uniform_recruit: OPTRE_UNSC_ODST_Uniform
+	class OPTRE_UNSC_ODST_uniform_recruit: OPTRE_UNSC_ODST_Uniform
 	{
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_recruit.paa";
 		author																					= "Article 2 Studios";
@@ -713,6 +713,78 @@ class cfgWeapons
 			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_urban_co.paa",""};
 		};
 	};
+	class OPTRE_UNSC_ODST_Vest_Red: OPTRE_UNSC_ODST_Vest
+	{	
+		author																					= "Article 2 Studios";
+		displayName  																			= "[UNSC] M53 Body Armor [Red]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_nade","attach_knife"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_red_co.paa",""};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]   																= {"camo1","camo2","attach_nade","attach_knife"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_red_co.paa",""};
+		};
+	};
+	class OPTRE_UNSC_ODST_Vest_Blue: OPTRE_UNSC_ODST_Vest
+	{	
+		author																					= "Article 2 Studios";
+		displayName  																			= "[UNSC] M53 Body Armor [Blue]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_nade","attach_knife"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_blue_co.paa",""};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]   																= {"camo1","camo2","attach_nade","attach_knife"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_blue_co.paa",""};
+		};
+	};
+	class OPTRE_UNSC_ODST_Vest_Yellow: OPTRE_UNSC_ODST_Vest
+	{	
+		author																					= "Article 2 Studios";
+		displayName  																			= "[UNSC] M53 Body Armor [Yellow]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_nade","attach_knife"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_yellow_co.paa",""};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]   																= {"camo1","camo2","attach_nade","attach_knife"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_yellow_co.paa",""};
+		};
+	};
+	class OPTRE_UNSC_ODST_Vest_Orange: OPTRE_UNSC_ODST_Vest
+	{	
+		author																					= "Article 2 Studios";
+		displayName  																			= "[UNSC] M53 Body Armor [Orange]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_nade","attach_knife"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_orange_co.paa",""};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]   																= {"camo1","camo2","attach_nade","attach_knife"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_orange_co.paa",""};
+		};
+	};
+	class OPTRE_UNSC_ODST_Vest_Purple: OPTRE_UNSC_ODST_Vest
+	{	
+		author																					= "Article 2 Studios";
+		displayName  																			= "[UNSC] M53 Body Armor [Purple]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_nade","attach_knife"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_purple_co.paa",""};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]   																= {"camo1","camo2","attach_nade","attach_knife"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_purple_co.paa",""};
+		};
+	};
+	class OPTRE_UNSC_ODST_Vest_Green: OPTRE_UNSC_ODST_Vest
+	{	
+		author																					= "Article 2 Studios";
+		displayName  																			= "[UNSC] M53 Body Armor [Green]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_nade","attach_knife"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_green_co.paa",""};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]   																= {"camo1","camo2","attach_nade","attach_knife"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_green_co.paa",""};
+		};
+	};
 	// VESTS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	
@@ -790,6 +862,19 @@ class cfgWeapons
 			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet3_co.paa","OPTRE_UNSC_Units\ODST\data\helmet3_co.paa"};
 		};
 	};
+	class OPTRE_UNSC_ODST_Helmet_CBRN: OPTRE_UNSC_ODST_Helmet
+	{	
+		author																					= "Article 2 Studios";
+		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_helmet_como.paa";
+		displayName    																			= "[UNSC] CH253 Helmet (CBRN) [ODST]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_rangefinder","attach_laser"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet3_co.paa","OPTRE_UNSC_Units\ODST\data\helmet3_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_rangefinder","attach_laser"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet3_co.paa","OPTRE_UNSC_Units\ODST\data\helmet3_co.paa"};
+		};
+	};
 	class OPTRE_UNSC_ODST_Helmet_Medic: OPTRE_UNSC_ODST_Helmet
 	{	
 		author																					= "Article 2 Studios";
@@ -839,7 +924,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_zero_co.paa"};
 		};
 	};
-		class OPTRE_UNSC_ODST_Helmet_Stirls: OPTRE_UNSC_ODST_Helmet
+	class OPTRE_UNSC_ODST_Helmet_Stirls: OPTRE_UNSC_ODST_Helmet
 	{	
 		author																					= "Article 2 Studios";
 		displayName    																			= "[UNSC] CH253 Helmet [Stirls]";
@@ -861,6 +946,78 @@ class cfgWeapons
 		{
 			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather","attach_communication"};
 			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_Urban_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_urban_co.paa"};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_Red: OPTRE_UNSC_ODST_Helmet
+	{	
+		author																					= "Article 2 Studios";
+		displayName    																			= "[UNSC] CH253 Helmet [Red]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_red_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_red_co.paa"};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_red_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_red_co.paa"};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_Blue: OPTRE_UNSC_ODST_Helmet
+	{	
+		author																					= "Article 2 Studios";
+		displayName    																			= "[UNSC] CH253 Helmet [Blue]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_blue_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_blue_co.paa"};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_blue_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_blue_co.paa"};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_Yellow: OPTRE_UNSC_ODST_Helmet
+	{	
+		author																					= "Article 2 Studios";
+		displayName    																			= "[UNSC] CH253 Helmet [Yellow]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_yellow_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_yellow_co.paa"};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_yellow_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_yellow_co.paa"};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_Orange: OPTRE_UNSC_ODST_Helmet
+	{	
+		author																					= "Article 2 Studios";
+		displayName    																			= "[UNSC] CH253 Helmet [Orange]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_orange_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_orange_co.paa"};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_orange_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_orange_co.paa"};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_Purple: OPTRE_UNSC_ODST_Helmet
+	{	
+		author																					= "Article 2 Studios";
+		displayName    																			= "[UNSC] CH253 Helmet [Purple]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_purple_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_purple_co.paa"};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_purple_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_purple_co.paa"};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_Green: OPTRE_UNSC_ODST_Helmet
+	{	
+		author																					= "Article 2 Studios";
+		displayName    																			= "[UNSC] CH253 Helmet [Green]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_green_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_green_co.paa"};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_communication","attach_flashlight","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_green_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_green_co.paa"};
 		};
 	};
 	class OPTRE_UNSC_ODST_Helmet_dp: OPTRE_UNSC_ODST_Helmet
@@ -910,6 +1067,19 @@ class cfgWeapons
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet3_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
 		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		class ItemInfo: ItemInfo 
+		{
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet3_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_CBRN_dp: OPTRE_UNSC_ODST_Helmet_CBRN
+	{	
+		author																					= "Article 2 Studios";
+		scopeArsenal																			= 1;
+		scopeCurator																			= 1;
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet3_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet3_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
 			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
@@ -990,6 +1160,84 @@ class cfgWeapons
 		class ItemInfo: ItemInfo 
 		{
 			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_urban_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_Red_dp: OPTRE_UNSC_ODST_Helmet_Red
+	{	
+		author																					= "Article 2 Studios";
+		scopeArsenal																			= 1;
+		scopeCurator																			= 1;
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_red_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_red_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_Blue_dp: OPTRE_UNSC_ODST_Helmet_Blue
+	{	
+		author																					= "Article 2 Studios";
+		scopeArsenal																			= 1;
+		scopeCurator																			= 1;
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_blue_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_blue_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_Yellow_dp: OPTRE_UNSC_ODST_Helmet_Yellow
+	{	
+		author																					= "Article 2 Studios";
+		scopeArsenal																			= 1;
+		scopeCurator																			= 1;
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_yellow_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_yellow_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_Orange_dp: OPTRE_UNSC_ODST_Helmet_Orange
+	{	
+		author																					= "Article 2 Studios";
+		scopeArsenal																			= 1;
+		scopeCurator																			= 1;
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_orange_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_orange_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_Purple_dp: OPTRE_UNSC_ODST_Helmet_Purple
+	{	
+		author																					= "Article 2 Studios";
+		scopeArsenal																			= 1;
+		scopeCurator																			= 1;
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_purple_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_purple_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_Green_dp: OPTRE_UNSC_ODST_Helmet_Green
+	{	
+		author																					= "Article 2 Studios";
+		scopeArsenal																			= 1;
+		scopeCurator																			= 1;
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_green_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_green_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
 			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat","optre_vehicles\pelican\data\reflective_glass.rvmat"};
 		};
 	};
