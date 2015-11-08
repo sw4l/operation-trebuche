@@ -106,6 +106,26 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
+	class OPTRE_Frigate_hangar_test_a: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Hangar Test A [Frigate]";
+		model = "\OPTRE_frigate\hangar_test_a.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+	};
+	class OPTRE_Frigate_hangar_test_b: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Hangar Test B [Frigate]";
+		model = "\OPTRE_frigate\hangar_test_b.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+	};
 	class OPTRE_Frigate_M910_Turret: StaticWeapon
 	{
 		dlc = "OPTRE";
@@ -173,5 +193,15 @@ class CfgVehicles
 				};
 			};
 		};
+	};
+	class OPTRE_Frigate_part_1: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 1 [Frigate]";
+		model = "\OPTRE_frigate\frigate_part_1.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
 	};
 };
