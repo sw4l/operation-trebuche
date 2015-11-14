@@ -64,6 +64,7 @@ class CfgVehicles
 		displayName = "FFG-437 Final Dawn";
 		model = "\OPTRE_frigate\finaldawn_complex.p3d";
 		author = "Article 2 Studios";
+		mapSize = 450;
 	};
 	/*class OPTRE_Frigate_Experimental: Static
 	{
@@ -73,7 +74,7 @@ class CfgVehicles
 		displayName = "Experimental Frigate";
 		model = "\OPTRE_frigate\finaldawn_0.p3d";
 		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
 		class Eventhandlers {
 			init = "_scr = _this execVM ""\OPTRE_Frigate\build.sqf"";";
 		};
@@ -85,46 +86,18 @@ class CfgVehicles
 		model = "\OPTRE_frigate\console.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
-	};
-	class OPTRE_Frigate_Hangar_Door: OPTRE_Frigate_Final_Dawn
-	{
-		dlc = "OPTRE";
-		scope = 1;
-		scopeCurator = 0;
-		displayName = "Hangar Door [Frigate]";
-		model = "\OPTRE_frigate\spawn_door.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
+		mapSize = .4;
 	};
 	class OPTRE_Frigate_LiftArm: OPTRE_Frigate_Final_Dawn
 	{
 		dlc = "OPTRE";
-		scope = 1;
+		scope = 2;
 		scopeCurator = 0;
 		displayName = "Lift Arm [Frigate]";
 		model = "\OPTRE_frigate\liftarm.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
-	};
-	class OPTRE_Frigate_hangar_test_a: OPTRE_Frigate_Final_Dawn
-	{
-		dlc = "OPTRE";
-		scope = 2;
-		scopeCurator = 0;
-		displayName = "Hangar Test A [Frigate]";
-		model = "\OPTRE_frigate\hangar_test_a.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
-	};
-	class OPTRE_Frigate_hangar_test_b: OPTRE_Frigate_Final_Dawn
-	{
-		dlc = "OPTRE";
-		scope = 2;
-		scopeCurator = 0;
-		displayName = "Hangar Test B [Frigate]";
-		model = "\OPTRE_frigate\hangar_test_b.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
+		mapSize = .4;
 	};
 	class OPTRE_Frigate_M910_Turret: StaticWeapon
 	{
@@ -137,6 +110,7 @@ class CfgVehicles
 		model = "\OPTRE_Frigate\turret.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		mapSize = .4;
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -202,6 +176,356 @@ class CfgVehicles
 		displayName = "Part 1 [Frigate]";
 		model = "\OPTRE_frigate\frigate_part_1.p3d";
 		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_2_a: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 2 A[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_2_a.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_2_b: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 2 B[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_2_B.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_2_c: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 2 C[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_2_c.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_3_a: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 3 A[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_3_a.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_3_B: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 3 B[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_3_B.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_3_C: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 3 C[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_3_C.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_4_a: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 4 A[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_4_a.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_4_B: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 4 B[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_4_B.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_4_C: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 4 C[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_4_C.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_5_a: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 5 A[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_5_a.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_5_B: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 5 B[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_5_B.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_5_C: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 5 C[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_5_C.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_6_a: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 6 A[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_6_a.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_6_B: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 6 B[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_6_B.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_6_C: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 6 C[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_6_C.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_7_a: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 7 A[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_7_a.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_7_B1: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 7 B1[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_7_B1.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_7_B2: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 7 B2[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_7_B2.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_7_C: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 7 C[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_7_C.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_8_a: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 8 A[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_8_a.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_8_B: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 8 B[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_8_B.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_part_8_C: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Part 8 C[Frigate]";
+		model = "\OPTRE_frigate\frigate_part_8_C.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_vehicle_lift: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Vehicle Lift[Frigate]";
+		model = "\OPTRE_frigate\vehicle_lift_PH.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_hangar_ground_doors: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Hangar Ground Doors[Frigate]";
+		model = "\OPTRE_frigate\hangar_ground_doors.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_hangar_A: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Hangar A[Frigate]";
+		model = "\OPTRE_frigate\frigate_hangar_A.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_hangar_B1: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Hangar B1[Frigate]";
+		model = "\OPTRE_frigate\frigate_hangar_B1.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_hangar_B2: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Hangar B2[Frigate]";
+		model = "\OPTRE_frigate\frigate_hangar_B2.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_hangar_C: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Hangar C[Frigate]";
+		model = "\OPTRE_frigate\frigate_hangar_C.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_hangar_D: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Hangar D[Frigate]";
+		model = "\OPTRE_frigate\frigate_hangar_D.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_hangar_D2: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Hangar D2[Frigate]";
+		model = "\OPTRE_frigate\frigate_hangar_D2.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_hangar_door: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Hangar Door[Frigate]";
+		model = "\OPTRE_frigate\hangar_door.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		numberOfDoors = 2;
+		/*class AnimationSources
+		{
+				class HangarDoors				/// the class name is later used in model.cfg
+			{
+				source = "user";	/// user source means it is waiting on some scripting input
+				animPeriod = 5;		/// how long does it take to change value from 0 to 1 (or vice versa)
+				initPhase = 0;		/// what value does it have while creating the vehicle
+				sound = "ServoRampSound_2";
+			};
+		};
+		// This section defined custom actions for action menu. Each class defined here represent one action. Here we have Open+Close pairs of action for each door (1-5)
+		class UserActions
+		{
+			class RampOpen
+			{
+				userActionID = 60;	
+				displayName = "Open Ramp";
+				displayNameDefault = "Open Ramp";
+				textToolTip = "Open Ramp";
+				position = switches;
+				radius = 6;
+				priority = 2;
+				onlyForPlayer = 1;
+				condition = "((this animationPhase ""door_1"" < 0.5) AND (this animationPhase ""door_2"" < 0.5))";
+				statement = "this animate [""Door_1"",1]; this animate [""Door_2"",1]";
+				animPeriod = 10;
+            };
+            class RampClose: RampOpen
+            {
+				userActionID = 61;
+				displayName = "Close Ramp";
+				displayNameDefault = "Close Ramp";
+				textToolTip = "Close Ramp";
+				priority = 2;
+				condition = "((this animationPhase ""door_1"" > 0.5) AND (this animationPhase ""door_2"" > 0.5))";
+				statement = "this animate [""Door_1"",0]; this animate [""Door_2"",0]";
+				animPeriod = 10;
+            };
+		};*/
 	};
 };
