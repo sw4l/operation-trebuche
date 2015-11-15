@@ -407,6 +407,45 @@ class CfgVehicles
 		model = "\OPTRE_frigate\vehicle_lift_PH.p3d";
 		author = "Article 2 Studios";
 		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		class AnimationSources
+		{
+			class Lift_1				/// the class name is later used in model.cfg
+			{
+				source = "user";	/// user source means it is waiting on some scripting input
+				animPeriod = 6;		/// how long does it take to change value from 0 to 1 (or vice versa)
+				initPhase = 0;		/// what value does it have while creating the vehicle
+				sound = "ServoRampSound_2";
+			};
+		};
+		//This section defined custom actions for action menu. Each class defined here represent one action. Here we have Open+Close pairs of action for each door (1-5)
+		class UserActions
+		{
+			class RampOpen
+			{
+				userActionID = 64;	
+				displayName = "Raise Lift";
+				displayNameDefault = "Raise Lift";
+				textToolTip = "Raise Lift";
+				position = "switches";
+				radius = 2;
+				priority = 2;
+				onlyForPlayer = 1;
+				condition = "((this animationPhase ""Door_1_rot"" < 0.5) )";
+				statement = "this animate [""Door_1_rot"",1];";
+				animPeriod = 1;
+            };
+            class RampClose: RampOpen
+            {
+				userActionID = 65;
+				displayName = "Lower Lift";
+				displayNameDefault = "Lower Lift";
+				textToolTip = "Lower Lift";
+				priority = 2;
+				condition = "((this animationPhase ""Door_1_rot"" > 0.5))";
+				statement = "this animate [""Door_1_rot"",0]; this animate [""Door_2_rot"",0]";
+				animPeriod = 1;
+            };
+		};
 	};
 	class OPTRE_Frigate_hangar_ground_doors: OPTRE_Frigate_Final_Dawn
 	{
@@ -488,44 +527,108 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		icon = "\OPTRE_frigate\data\frigate_icon.paa";
 		numberOfDoors = 2;
-		/*class AnimationSources
+		class AnimationSources
 		{
-				class HangarDoors				/// the class name is later used in model.cfg
+			class HangarDoor_1				/// the class name is later used in model.cfg
 			{
 				source = "user";	/// user source means it is waiting on some scripting input
-				animPeriod = 5;		/// how long does it take to change value from 0 to 1 (or vice versa)
+				animPeriod = 8;		/// how long does it take to change value from 0 to 1 (or vice versa)
+				initPhase = 0;		/// what value does it have while creating the vehicle
+				sound = "ServoRampSound_2";
+			};
+			class HangarDoor_2				/// the class name is later used in model.cfg
+			{
+				source = "user";	/// user source means it is waiting on some scripting input
+				animPeriod = 8;		/// how long does it take to change value from 0 to 1 (or vice versa)
 				initPhase = 0;		/// what value does it have while creating the vehicle
 				sound = "ServoRampSound_2";
 			};
 		};
-		// This section defined custom actions for action menu. Each class defined here represent one action. Here we have Open+Close pairs of action for each door (1-5)
+		//This section defined custom actions for action menu. Each class defined here represent one action. Here we have Open+Close pairs of action for each door (1-5)
 		class UserActions
 		{
 			class RampOpen
 			{
 				userActionID = 60;	
-				displayName = "Open Ramp";
-				displayNameDefault = "Open Ramp";
-				textToolTip = "Open Ramp";
-				position = switches;
-				radius = 6;
+				displayName = "Open Bay";
+				displayNameDefault = "Open Bay";
+				textToolTip = "Open Bay";
+				position = "switches";
+				radius = 2;
 				priority = 2;
 				onlyForPlayer = 1;
-				condition = "((this animationPhase ""door_1"" < 0.5) AND (this animationPhase ""door_2"" < 0.5))";
-				statement = "this animate [""Door_1"",1]; this animate [""Door_2"",1]";
-				animPeriod = 10;
+				condition = "((this animationPhase ""Door_1_rot"" < 0.5) AND (this animationPhase ""Door_2_rot"" < 0.5))";
+				statement = "this animate [""Door_1_rot"",1]; this animate [""Door_2_rot"",1]";
+				animPeriod = 1;
             };
             class RampClose: RampOpen
             {
 				userActionID = 61;
-				displayName = "Close Ramp";
-				displayNameDefault = "Close Ramp";
-				textToolTip = "Close Ramp";
+				displayName = "Close Bay";
+				displayNameDefault = "Close Bay";
+				textToolTip = "Close Bay";
 				priority = 2;
-				condition = "((this animationPhase ""door_1"" > 0.5) AND (this animationPhase ""door_2"" > 0.5))";
-				statement = "this animate [""Door_1"",0]; this animate [""Door_2"",0]";
-				animPeriod = 10;
+				condition = "((this animationPhase ""Door_1_rot"" > 0.5) AND (this animationPhase ""Door_2_rot"" > 0.5))";
+				statement = "this animate [""Door_1_rot"",0]; this animate [""Door_2_rot"",0]";
+				animPeriod = 1;
             };
-		};*/
+		};
+	};
+class OPTRE_Frigate_hangar_lift_door: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Hangar Lift Door[Frigate]";
+		model = "\OPTRE_frigate\frigate_hangar_lift_doors.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		numberOfDoors = 2;
+		class AnimationSources
+		{
+			class LiftDoor_1				/// the class name is later used in model.cfg
+			{
+				source = "user";	/// user source means it is waiting on some scripting input
+				animPeriod = 6;		/// how long does it take to change value from 0 to 1 (or vice versa)
+				initPhase = 0;		/// what value does it have while creating the vehicle
+				sound = "ServoRampSound_2";
+			};
+			class LiftDoor_2				/// the class name is later used in model.cfg
+			{
+				source = "user";	/// user source means it is waiting on some scripting input
+				animPeriod = 6;		/// how long does it take to change value from 0 to 1 (or vice versa)
+				initPhase = 0;		/// what value does it have while creating the vehicle
+				sound = "ServoRampSound_2";
+			};
+		};
+		//This section defined custom actions for action menu. Each class defined here represent one action. Here we have Open+Close pairs of action for each door (1-5)
+		class UserActions
+		{
+			class RampOpen
+			{
+				userActionID = 62;	
+				displayName = "Open Lift";
+				displayNameDefault = "Open Lift";
+				textToolTip = "Open Lift";
+				position = "switches";
+				radius = 2;
+				priority = 2;
+				onlyForPlayer = 1;
+				condition = "((this animationPhase ""Door_1_rot"" < 0.5) AND (this animationPhase ""Door_2_rot"" < 0.5))";
+				statement = "this animate [""Door_1_rot"",1]; this animate [""Door_2_rot"",1]";
+				animPeriod = 1;
+            };
+            class RampClose: RampOpen
+            {
+				userActionID = 63;
+				displayName = "Close Lift";
+				displayNameDefault = "Close Lift";
+				textToolTip = "Close Lift";
+				priority = 2;
+				condition = "((this animationPhase ""Door_1_rot"" > 0.5) AND (this animationPhase ""Door_2_rot"" > 0.5))";
+				statement = "this animate [""Door_1_rot"",0]; this animate [""Door_2_rot"",0]";
+				animPeriod = 1;
+            };
+		};
 	};
 };
