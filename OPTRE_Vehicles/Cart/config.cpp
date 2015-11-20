@@ -267,17 +267,17 @@ class CfgVehicles
 		{
 			class CargoTurret_01: CargoTurret
 			{
-				gunnerAction			= "passenger_boat_3_Idle";
+				gunnerAction			= "passenger_boat_3";
 				gunnerCompartments  	= "Compartment1";
-				memoryPointsGetInGunner	= "pos pas";
-				memoryPointsGetInGunnerDir = "pos pas dir";
+				memoryPointsGetInGunner	= "pos gunner";
+				memoryPointsGetInGunnerDir = "pos gunner dir";
 				memoryPointGunnerOptics	= "";
 				gunnerName				= "Front Passenger";
-				proxyIndex				= 1;
-				maxElev					= 10;
-				minElev					= -40;
-				maxTurn					= 95;
-				minTurn					= -95;
+				proxyIndex				= 2;
+				maxElev					= 25;
+				minElev					= -10;
+				maxTurn					= 45;
+				minTurn					= -45;
 				hasGunner				= true;
 				isPersonTurret			= 1;
 				class dynamicViewLimits
@@ -285,9 +285,29 @@ class CfgVehicles
 					CargoTurret_02[]	= {-65,95};
 				};
 			};
+			class CargoTurret_02: CargoTurret
+			{
+				gunnerAction			= "passenger_inside_2";
+				gunnerCompartments  	= "Compartment1";
+				memoryPointsGetInGunner	= "pos pas";
+				memoryPointsGetInGunnerDir = "pos pas dir";
+				memoryPointGunnerOptics	= "";
+				gunnerName				= "Side Passenger";
+				proxyIndex				= 3;
+				maxElev					= 20;
+				minElev					= -20;
+				maxTurn					= 45;
+				minTurn					= -45;
+				hasGunner				= true;
+				isPersonTurret			= 1;
+				class dynamicViewLimits
+				{
+					CargoTurret_02[]	= {-40,95};
+				};
+			};
 		};
 	};
-	class OPTRE_cart_grey: OPTRE_cart_base
+	class OPTRE_cart_grey: OPTRE_cart_yellow
 	{
 		scope 							= 2;
 		displayName						= "Maintenance/Tow Cart (Grey)";
@@ -297,32 +317,8 @@ class CfgVehicles
 		crew							= "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
 		hiddenSelections[]				= {"camo1","clan","insignia"};
 		hiddenSelectionsTextures[]		= {"OPTRE_Vehicles\cart\data\truck_01_ext_023_co.paa"};
-		class CargoTurret;
-		class Turrets:Turrets
-		{
-			class CargoTurret_01: CargoTurret
-			{
-				gunnerAction			= "passenger_boat_3_Idle";
-				gunnerCompartments  	= "Compartment1";
-				memoryPointsGetInGunner	= "pos pas";
-				memoryPointsGetInGunnerDir = "pos pas dir";
-				memoryPointGunnerOptics	= "";
-				gunnerName				= "Front Passenger";
-				proxyIndex				= 1;
-				maxElev					= 10;
-				minElev					= -40;
-				maxTurn					= 95;
-				minTurn					= -95;
-				hasGunner				= true;
-				isPersonTurret			= 1;
-				class dynamicViewLimits
-				{
-					CargoTurret_02[]	= {-65,95};
-				};
-			};
-		};
 	};
-	class OPTRE_cart_green: OPTRE_cart_base
+	class OPTRE_cart_green: OPTRE_cart_yellow
 	{
 		scope 							= 2;
 		displayName						= "Maintenance/Tow Cart (Green)";
@@ -332,29 +328,5 @@ class CfgVehicles
 		crew							= "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
 		hiddenSelections[]				= {"camo1","clan","insignia"};
 		hiddenSelectionsTextures[]		= {"OPTRE_Vehicles\cart\data\truck_01_ext_024_co.paa"};
-		class CargoTurret;
-		class Turrets:Turrets
-		{
-			class CargoTurret_01: CargoTurret
-			{
-				gunnerAction			= "passenger_boat_3_Idle";
-				gunnerCompartments  	= "Compartment1";
-				memoryPointsGetInGunner	= "pos pas";
-				memoryPointsGetInGunnerDir = "pos pas dir";
-				memoryPointGunnerOptics	= "";
-				gunnerName				= "Front Passenger";
-				proxyIndex				= 1;
-				maxElev					= 10;
-				minElev					= -40;
-				maxTurn					= 95;
-				minTurn					= -95;
-				hasGunner				= true;
-				isPersonTurret			= 1;
-				class dynamicViewLimits
-				{
-					CargoTurret_02[]	= {-65,95};
-				};
-			};
-		};
 	};
 };
