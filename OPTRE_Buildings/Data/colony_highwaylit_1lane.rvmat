@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="The-Eridanus-Insurrection\OPTRE_Buildings\Data\colony_highwaylit_1lane_nohq.paa";
+	texture="OPTRE_Buildings\Data\colony_highwaylit_1lane_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="The-Eridanus-Insurrection\OPTRE_Buildings\Data\colony_highwaylit_1lane_as.paa";
+	texture="OPTRE_Buildings\Data\colony_highwaylit_1lane_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="The-Eridanus-Insurrection\OPTRE_Buildings\Data\colony_highwaylit_1lane_smdi.paa";
+	texture="OPTRE_Buildings\Data\colony_highwaylit_1lane_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
