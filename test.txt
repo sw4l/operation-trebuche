@@ -1,1 +1,0 @@
-lets say this is a config file located on my p drive
