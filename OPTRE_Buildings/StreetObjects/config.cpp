@@ -33,15 +33,26 @@ class CfgVehicles
 	class NonStrategic: Building {};
 	class TargetTraining: NonStrategic {};
 	class TargetGrenade: TargetTraining {};
+	class Land_Castle_01_step_F;
 	
 	
-	class OPTRE_sidewalk_narrow_short_: static
+	class OPTRE_sidewalk_narrow_short_: Land_Castle_01_step_F
 	{
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "Sidewalk Narrow Straight";
 		model = "\OPTRE_buildings\streetobjects\sidewalk_narrow_short.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+	};
+	class OPTRE_sidewalk_wide_short_: Land_Castle_01_step_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		vehicleClass = "OPTRE_UNSC_Object_class";
+		displayName = "Sidewalk Wide Straight";
+		model = "\OPTRE_buildings\streetobjects\sidewalk_wide_short.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
