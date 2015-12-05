@@ -19,7 +19,7 @@ class CfgFunctions
 			class podCallSelf{};
 		};
 	};
-	class OPTRE_HUD
+	/*class OPTRE_HUD
 	{
 		class OPTRE_HUD
 		{
@@ -31,7 +31,7 @@ class CfgFunctions
 			class setHelmet{};
 			class LowLightToggle{};
 		};
-	};
+	};*/
 	class OPTRE_Thruster
 	{
 		class OPTRE_Thruster
@@ -65,10 +65,10 @@ class CfgFunctions
 class Extended_PostInit_EventHandlers
 {
 	OPTRE_HEV_Fncs_Init 																		= [] spawn OPTRE_HEV_fnc_Init;
-	OPTRE_HUD_Fncs_Init 																		= [] spawn OPTRE_HUD_fnc_Init;
+	//OPTRE_HUD_Fncs_Init 																		= [] spawn OPTRE_HUD_fnc_Init;
 };
 
-class RscStdText //More HUD Stuff
+/*class RscStdText //More HUD Stuff
 {
 	type																						= 0;
 	idc																							= -1;
@@ -103,4 +103,4 @@ class RscTitles //Even More HUD Stuff
 			sizeEx 																				= 1;
 		};
 	};
-};
+};*/
