@@ -620,11 +620,49 @@ class cfgWeapons
 		class ItemInfo: VestItem 
 		{
 			uniformModel 																		= "\OPTRE_UNSC_Units\ODST\vest.p3d";
-			armor 																				= 40;
+			//armor 																				= 40;
 			containerClass 																		= "Supply180";
 			mass 																				= 80;
 			passThrough 																		= 0.1;
 			modelSides[] 																		= {6};
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName	= "HitNeck"; // Defined in the man base class
+					armor		= 8; // Armor value of this hitpoint
+					passThrough	= 0.5; // Penetration resistance of the hitpoint
+				};
+				class Arms
+				{
+					hitpointName	= "HitArms";
+					armor		= 8;
+					passThrough	= 0.5;
+				};
+				class Chest 
+				{
+					hitpointName	= "HitChest"; 
+					armor		= 24; 
+					passThrough	= 0.1; 
+				};
+				class Diaphragm
+				{
+					hitpointName	= "HitDiaphragm";
+					armor		= 24;
+					passThrough	= 0.1;
+				};
+				class Abdomen
+				{
+					hitpointName	= "HitAbdomen"; 
+					armor		= 24;
+					passThrough	= 0.1;
+				};
+				class Body
+				{
+					hitpointName	= "HitBody";
+					passThrough	= 0.1;
+				};
+			};
 		};
 	};
 	class OPTRE_UNSC_ODST_Vest: OPTRE_UNSC_ODST_Vest_Base

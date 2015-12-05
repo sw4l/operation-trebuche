@@ -1869,11 +1869,37 @@ class cfgWeapons
 		class ItemInfo: VestItem 
 		{
 			uniformModel 								= "\OPTRE_UNSC_Units\Army\vest.p3d";
-			armor 										= 40;
+			//armor 										= 40;
 			containerClass 								= "Supply160";
 			mass 										= 80;
 			passThrough 								= 0.15;
 			modelSides[] 								= {6};
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 24;
+					passThrough = 0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 24;
+					passThrough = 0.1;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 24;
+					passThrough = 0.1;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.1;
+				};
+			};
 		};
 	};
 	class OPTRE_UNSC_M52_Vest_WDL: OPTRE_UNSC_M52_Vest_base
@@ -1901,7 +1927,44 @@ class cfgWeapons
 		{
 			hiddenSelections[]   						= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_pack","attach_ghillie"};
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa","OPTRE_UNSC_Units\Army\data\pouches_olive_co.paa"};
-			passThrough 								= 0.1;
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName	= "HitNeck"; // Defined in the man base class
+					armor		= 8; // Armor value of this hitpoint
+					passThrough	= 0.5; // Penetration resistance of the hitpoint
+				};
+				class Arms
+				{
+					hitpointName	= "HitArms";
+					armor		= 8;
+					passThrough	= 0.5;
+				};
+				class Chest 
+				{
+					hitpointName	= "HitChest"; 
+					armor		= 24; 
+					passThrough	= 0.1; 
+				};
+				class Diaphragm
+				{
+					hitpointName	= "HitDiaphragm";
+					armor		= 24;
+					passThrough	= 0.1;
+				};
+				class Abdomen
+				{
+					hitpointName	= "HitAbdomen"; 
+					armor		= 24;
+					passThrough	= 0.1;
+				};
+				class Body
+				{
+					hitpointName	= "HitBody";
+					passThrough	= 0.1;
+				};
+			};
 		};
 	};	
 	class OPTRE_UNSC_M52_Vest_Sniper_WDL: OPTRE_UNSC_M52_Vest_WDL
@@ -1931,7 +1994,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_desert_co.paa","OPTRE_UNSC_Units\Army\data\addons_desert_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_brown_co.paa"};
 		};
 	};		
-	class OPTRE_UNSC_M52_Vest_Vacuum_DES: OPTRE_UNSC_M52_Vest_DES
+	class OPTRE_UNSC_M52_Vest_Vacuum_DES: OPTRE_UNSC_M52_Vest_Vacuum_WDL
 	{	
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_des_vac.paa";
@@ -1942,7 +2005,6 @@ class cfgWeapons
 		{
 			hiddenSelections[]   						= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_pack","attach_ghillie"};
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_desert_co.paa","OPTRE_UNSC_Units\Army\data\addons_desert_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_brown_co.paa"};
-			passThrough 								= 0.1;
 		};
 	};	
 	class OPTRE_UNSC_M52_Vest_Sniper_DES: OPTRE_UNSC_M52_Vest_DES
@@ -1972,7 +2034,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_snow_co.paa","OPTRE_UNSC_Units\Army\data\addons_snow_co.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"};
 		};
 	};		
-	class OPTRE_UNSC_M52_Vest_Vacuum_SNO: OPTRE_UNSC_M52_Vest_SNO
+	class OPTRE_UNSC_M52_Vest_Vacuum_SNO: OPTRE_UNSC_M52_Vest_Vacuum_WDL
 	{	
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_sno_vac.paa";
@@ -1983,7 +2045,6 @@ class cfgWeapons
 		{
 			hiddenSelections[]   						= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_pack","attach_ghillie"};
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_snow_co.paa","OPTRE_UNSC_Units\Army\data\addons_snow_co.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"};
-			passThrough 								= 0.1;
 		};
 	};	
 	
@@ -2000,7 +2061,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"};
 		};
 	};		
-	class OPTRE_UNSC_M52_Vest_Vacuum_MED: OPTRE_UNSC_M52_Vest_MED
+	class OPTRE_UNSC_M52_Vest_Vacuum_MED: OPTRE_UNSC_M52_Vest_Vacuum_WDL
 	{	
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_med_vac.paa";
@@ -2011,7 +2072,6 @@ class cfgWeapons
 		{
 			hiddenSelections[]   						= {"camo1","camo2","camo3","insignia","clan","attach_knife","attach_ghillie"};
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\vest_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"};
-			passThrough 								= 0.1;
 		};
 	};	
 	// VESTS END
@@ -2031,12 +2091,21 @@ class cfgWeapons
 		class ItemInfo: HeadgearItem 
 		{
 			uniformModel   								= "\OPTRE_UNSC_Units\Army\helmet.p3d";
-			armor   									= 8;
+			//armor   									= 8;
 			mass   										= 40;
 			modelSides[]   								= {6};
 			passThrough   								= 0.25;
 			hiddenSelections[]   						= {"camo1","camo2","attach_face"};
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 8;
+					passThrough = 0.5;
+				};
+			};
 		};
 	};		
 	class OPTRE_UNSC_CH252_Helmet_WDL: OPTRE_UNSC_CH252_Helmet_Base
@@ -2062,9 +2131,18 @@ class cfgWeapons
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"};
 		class ItemInfo: ItemInfo 
 		{
-			armor   									= 10;
+			//armor   									= 10;
 			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"}; /// what texture is going to be used
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 8;
+					passThrough = 0.5;
+				};
+			};
 		};
 	};	
 	class OPTRE_UNSC_CH252_Helmet_Sniper_WDL: OPTRE_UNSC_CH252_Helmet_WDL
@@ -2103,7 +2181,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_desert_co.paa","OPTRE_UNSC_Units\Army\data\addons_desert_ca.paa"};
 		class ItemInfo: ItemInfo 
 		{
-			armor   									= 10;
+			//armor   									= 10;
 			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_desert_co.paa","OPTRE_UNSC_Units\Army\data\addons_desert_ca.paa"}; /// what texture is going to be used
 		};
@@ -2144,7 +2222,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_snow_co.paa","OPTRE_UNSC_Units\Army\data\addons_snow_co.paa"};
 		class ItemInfo: ItemInfo 
 		{
-			armor   									= 10;
+			//armor   									= 10;
 			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_snow_co.paa","OPTRE_UNSC_Units\Army\data\addons_snow_co.paa"}; /// what texture is going to be used
 		};
@@ -2172,7 +2250,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa"};
 		class ItemInfo: ItemInfo
 		{
-			armor   									= 10;
+			//armor   									= 10;
 			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa"}; /// what texture is going to be used
 		};

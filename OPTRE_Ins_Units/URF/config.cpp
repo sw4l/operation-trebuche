@@ -480,9 +480,41 @@ class cfgWeapons
 			uniformModel = "\A3\Characters_F_EPC\Civil\equip_press_vest_01";
 			containerClass = "Supply120"; //Carry Amount
 			mass = 30; // Weight
-			armor = 20;
+			//armor = 20;
 			passThrough = 0.4;
 			hiddenSelections[] = {"camo"};
+			class HitpointsProtectionInfo
+			{
+				class Arms
+				{
+					hitpointName	= "HitArms";
+					armor		= 8;
+					passThrough	= 0.5;
+				};
+				class Chest 
+				{
+					hitpointName	= "HitChest"; 
+					armor		= 24; 
+					passThrough	= 0.1; 
+				};
+				class Diaphragm
+				{
+					hitpointName	= "HitDiaphragm";
+					armor		= 24;
+					passThrough	= 0.1;
+				};
+				class Abdomen
+				{
+					hitpointName	= "HitAbdomen"; 
+					armor		= 24;
+					passThrough	= 0.1;
+				};
+				class Body
+				{
+					hitpointName	= "HitBody";
+					passThrough	= 0.1;
+				};
+			};
 		};
 	};
 	class OPTRE_v_Ins_GAvest: Vest_Camo_Base
@@ -498,9 +530,47 @@ class cfgWeapons
 			uniformModel = "A3\Characters_F_Beta\INDEP\equip_ia_vest02";
 			containerClass = "Supply160"; //Carry Amount
 			mass = 50; // Weight
-			armor = 40;
+			//armor = 40;
 			passThrough = 0.4;
 			hiddenSelections[] = {"camo"};
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName	= "HitNeck"; // Defined in the man base class
+					armor		= 8; // Armor value of this hitpoint
+					passThrough	= 0.5; // Penetration resistance of the hitpoint
+				};
+				class Arms
+				{
+					hitpointName	= "HitArms";
+					armor		= 8;
+					passThrough	= 0.5;
+				};
+				class Chest 
+				{
+					hitpointName	= "HitChest"; 
+					armor		= 24; 
+					passThrough	= 0.1; 
+				};
+				class Diaphragm
+				{
+					hitpointName	= "HitDiaphragm";
+					armor		= 24;
+					passThrough	= 0.1;
+				};
+				class Abdomen
+				{
+					hitpointName	= "HitAbdomen"; 
+					armor		= 24;
+					passThrough	= 0.1;
+				};
+				class Body
+				{
+					hitpointName	= "HitBody";
+					passThrough	= 0.1;
+				};
+			};
 		};
 	};
 	

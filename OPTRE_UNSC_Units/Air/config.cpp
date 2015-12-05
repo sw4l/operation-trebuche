@@ -149,11 +149,49 @@ class cfgWeapons
 		class ItemInfo: VestItem 
 		{
 			uniformModel 												= "\OPTRE_UNSC_Units\Army\vest.p3d";
-			armor 														= 40;
+			//armor 														= 40;
 			containerClass 												= "Supply160";
 			mass 														= 80;
 			passThrough 												= 0.15;
 			modelSides[] 												= {6};
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName	= "HitNeck"; // Defined in the man base class
+					armor		= 8; // Armor value of this hitpoint
+					passThrough	= 0.5; // Penetration resistance of the hitpoint
+				};
+				class Arms
+				{
+					hitpointName	= "HitArms";
+					armor		= 8;
+					passThrough	= 0.5;
+				};
+				class Chest 
+				{
+					hitpointName	= "HitChest"; 
+					armor		= 24; 
+					passThrough	= 0.1; 
+				};
+				class Diaphragm
+				{
+					hitpointName	= "HitDiaphragm";
+					armor		= 24;
+					passThrough	= 0.1;
+				};
+				class Abdomen
+				{
+					hitpointName	= "HitAbdomen"; 
+					armor		= 24;
+					passThrough	= 0.1;
+				};
+				class Body
+				{
+					hitpointName	= "HitBody";
+					passThrough	= 0.1;
+				};
+			};
 		};
 	};
 	class OPTRE_UNSC_Airforce_Vest: OPTRE_UNSC_Airforce_Vest_Base
@@ -168,7 +206,6 @@ class cfgWeapons
 		{
 			hiddenSelections[]   										= {"camo1","camo2","camo3","attach_knife","attach_pouches","attach_ghillie"};
 			hiddenSelectionsTextures[]   								= {"OPTRE_UNSC_Units\Air\data\vest_airforce_co.paa","OPTRE_UNSC_Units\Marines\data\addons_marines_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"};
-			passThrough 												= 0.1;
 		};
 	};
 	// VESTS END

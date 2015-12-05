@@ -950,13 +950,45 @@ class cfgWeapons
 		class ItemInfo: VestItem 
 		{
 			uniformModel   								= "\OPTRE_UNSC_Units\Army\vest.p3d"; 
-			armor   									= 30; 
+			//armor   									= 30; 
 			containerClass   							= "Supply140";
 			mass   										= 40;
 			passThrough   								= 0.1; 
 			modelSides[]   								= {6};
 			hiddenSelections[]   						= {"camo1","camo2","camo3","attach_knife","attach_neck","attach_ghillie"}; 
 			hiddenSelectionsTextures[]   				= {"OPTRE_Ins_Units\er\data\vest_innie_1-1_co.paa"}; 
+			class HitpointsProtectionInfo
+			{
+				class Arms
+				{
+					hitpointName	= "HitArms";
+					armor		= 8;
+					passThrough	= 0.5;
+				};
+				class Chest 
+				{
+					hitpointName	= "HitChest"; 
+					armor		= 24; 
+					passThrough	= 0.1; 
+				};
+				class Diaphragm
+				{
+					hitpointName	= "HitDiaphragm";
+					armor		= 24;
+					passThrough	= 0.1;
+				};
+				class Abdomen
+				{
+					hitpointName	= "HitAbdomen"; 
+					armor		= 24;
+					passThrough	= 0.1;
+				};
+				class Body
+				{
+					hitpointName	= "HitBody";
+					passThrough	= 0.1;
+				};
+			};
 		};
 	};
 	class OPTRE_INS_UNSC_vest12: OPTRE_INS_UNSC_vest11
@@ -970,7 +1002,7 @@ class cfgWeapons
 		class ItemInfo: VestItem 
 		{
 			uniformModel   								= "\OPTRE_UNSC_Units\Army\vest.p3d"; 
-			armor   									= 30; 
+			//armor   									= 30; 
 			containerClass   							= "Supply140";
 			mass   										= 40;
 			passThrough   								= 0.1; 
@@ -990,7 +1022,7 @@ class cfgWeapons
 		class ItemInfo: VestItem 
 		{
 			uniformModel   								= "\OPTRE_UNSC_Units\Army\vest.p3d"; 
-			armor   									= 30; 
+			//armor   									= 30; 
 			containerClass   							= "Supply140";
 			mass   										= 40;
 			passThrough   								= 0.1; 
