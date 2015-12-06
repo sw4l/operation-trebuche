@@ -142,5 +142,7 @@ class CfgGlasses
         displayName = "HUD Glasses (Green)]]"; 
         model = "\OPTRE_Misc\Objects\tacticalglasses.p3d";
 		picture = "\A3\characters_f\Data\UI\icon_g_tactical_ca.paa";
+		optreVarietys[] = {"","",""};
+        optreHUDStyle = "Glasses";
     }; 
 };  
