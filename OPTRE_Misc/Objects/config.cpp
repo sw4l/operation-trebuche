@@ -136,4 +136,11 @@ class CfgGlasses
         model = "\OPTRE_Misc\Objects\cigar.p3d";
 		picture = "\OPTRE_misc\objects\icons\cigar.paa";
     }; 
+    class OPTRE_HUD_Glasses_green: G_Balaclava_blk
+    { 
+		dlc = "OPTRE";
+        displayName = "HUD Glasses (Green)]]"; 
+        model = "\OPTRE_Misc\Objects\tacticalglasses.p3d";
+		picture = "\A3\characters_f\Data\UI\icon_g_tactical_ca.paa";
+    }; 
 };  
