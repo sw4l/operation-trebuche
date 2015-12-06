@@ -1,3 +1,8 @@
+v0.13.1
+	Fixed
+			-Hitpoints changes post-v1.54
+			-Marine shoulders had no camo selections
+			-Army, Marines, and ODSTs can now take 2 shots to Legs and Arms if they are full health (Subject to tweakage)
 v0.13
 	Added
 			-Marksman DLC weapon deployment points

@@ -29,6 +29,19 @@ class CfgVehicles //This configures units and backpacks
 	{
 		scope															= 1;
 		scopeCurator													= 0;
+		side 															= 1;
+		portrait 														= "";
+		picture 														= "";
+		icon 															= "iconMan";
+		accuracy 														= 2.3;
+		sensitivity 													= 3;
+		threat[] 														= {1,0.1,0.1};
+		camouflage 														= 1.4;
+		minFireTime 													= 7;
+		cost 															= 100000;
+		canCarryBackPack 												= 1;
+		oxygenCapacity 													= 80;
+		class EventHandlers;
 		faction															= "OPTRE_UNSC";
 		author															= "Article 2 Studios";
 		displayName														= "-";
@@ -149,7 +162,7 @@ class CfgVehicles //This configures units and backpacks
 				armor               = 1;
 				material            = -1;
 				name                = "arms";
-				passThrough         = 1;
+				passThrough         = 0.85;
 				radius              = 0.1;
 				explosionShielding  = 1;
 				visual              = "injury_hands";
@@ -160,7 +173,7 @@ class CfgVehicles //This configures units and backpacks
 				armor               = 1;
 				material            = -1;
 				name                = "hands";
-				passThrough         = 1;
+				passThrough         = 0.85;
 				radius              = 0.1;
 				explosionShielding  = 1;
 				visual              = "injury_hands";
@@ -172,7 +185,7 @@ class CfgVehicles //This configures units and backpacks
 				armor               = 1;
 				material            = -1;
 				name                = "legs";
-				passThrough         = 1;
+				passThrough         = 0.7;
 				radius              = 0.12;
 				explosionShielding  = 1;
 				visual              = "injury_legs";

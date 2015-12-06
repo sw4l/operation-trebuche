@@ -28,7 +28,20 @@ class CfgVehicles
 	class OPTRE_UNSC_ODST_Soldier: CAManBase
 	{
 		scope																					= 1;
-		scopeCurator													= 0;
+		scopeCurator																			= 0;
+		side 																					= 1;
+		portrait 																				= "";
+		picture 																				= "";
+		icon 																					= "iconMan";
+		accuracy 																				= 2.3;
+		sensitivity 																			= 3;
+		threat[] 																				= {1,0.1,0.1};
+		camouflage 																				= 1.4;
+		minFireTime 																			= 7;
+		cost 																					= 100000;
+		canCarryBackPack 																		= 1;
+		oxygenCapacity 																			= 80;
+		class EventHandlers;
 		faction																					= "OPTRE_UNSC";
 		author																					= "Article 2 Studios";
 		displayName																				= "-";
@@ -37,8 +50,8 @@ class CfgVehicles
 		nakedUniform 																			= "U_BasicBody";
 		uniformClass																			= "OPTRE_UNSC_ODST_Uniform";
 		model																					= "\OPTRE_UNSC_Units\ODST\uniform.p3d";
-		identityTypes[] 												= {"LanguageENG_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","LanguageGRE_F","Head_Greek","Head_African","Head_Euro","Head_Asian","Head_NATO", "G_IRAN_default"}; //G_IRAN_Default removes those pesky wacky glasses.  Everything else here serves to keep the UNSC diverse.  
-		genericNames 													= "NATOMen";
+		identityTypes[] 																		= {"LanguageENG_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","LanguageGRE_F","Head_Greek","Head_African","Head_Euro","Head_Asian","Head_NATO", "G_IRAN_default"}; //G_IRAN_Default removes those pesky wacky glasses.  Everything else here serves to keep the UNSC diverse.  
+		genericNames 																			= "NATOMen";
 		weapons[]																				= {"Throw","Put"};
 		respawnWeapons[]																		= {"Throw","Put"};
 		Items[]																					= {"OPTRE_Biofoam"};
@@ -148,7 +161,7 @@ class CfgVehicles
 				armor               = 1;
 				material            = -1;
 				name                = "arms";
-				passThrough         = 1;
+				passThrough         = 0.25;
 				radius              = 0.1;
 				explosionShielding  = 1;
 				visual              = "injury_hands";
@@ -159,7 +172,7 @@ class CfgVehicles
 				armor               = 1;
 				material            = -1;
 				name                = "hands";
-				passThrough         = 1;
+				passThrough         = 0.25;
 				radius              = 0.1;
 				explosionShielding  = 1;
 				visual              = "injury_hands";
@@ -171,7 +184,7 @@ class CfgVehicles
 				armor               = 1;
 				material            = -1;
 				name                = "legs";
-				passThrough         = 1;
+				passThrough         = 0.25;
 				radius              = 0.12;
 				explosionShielding  = 1;
 				visual              = "injury_legs";
@@ -285,7 +298,7 @@ class CfgVehicles
 				armor               = 1;
 				material            = -1;
 				name                = "arms";
-				passThrough         = 1;
+				passThrough         = 0.85;
 				radius              = 0.1;
 				explosionShielding  = 1;
 				visual              = "injury_hands";
@@ -296,7 +309,7 @@ class CfgVehicles
 				armor               = 1;
 				material            = -1;
 				name                = "hands";
-				passThrough         = 1;
+				passThrough         = 0.85;
 				radius              = 0.1;
 				explosionShielding  = 1;
 				visual              = "injury_hands";
@@ -308,7 +321,7 @@ class CfgVehicles
 				armor               = 1;
 				material            = -1;
 				name                = "legs";
-				passThrough         = 1;
+				passThrough         = 0.25;
 				radius              = 0.12;
 				explosionShielding  = 1;
 				visual              = "injury_legs";
@@ -423,7 +436,7 @@ class CfgVehicles
 				armor               = 1;
 				material            = -1;
 				name                = "arms";
-				passThrough         = 1;
+				passThrough         = 0.85;
 				radius              = 0.1;
 				explosionShielding  = 1;
 				visual              = "injury_hands";
@@ -434,7 +447,7 @@ class CfgVehicles
 				armor               = 1;
 				material            = -1;
 				name                = "hands";
-				passThrough         = 1;
+				passThrough         = 0.25;
 				radius              = 0.1;
 				explosionShielding  = 1;
 				visual              = "injury_hands";
@@ -446,7 +459,7 @@ class CfgVehicles
 				armor               = 1;
 				material            = -1;
 				name                = "legs";
-				passThrough         = 1;
+				passThrough         = 0.25;
 				radius              = 0.12;
 				explosionShielding  = 1;
 				visual              = "injury_legs";
@@ -562,7 +575,7 @@ class CfgVehicles
 				armor               = 1;
 				material            = -1;
 				name                = "arms";
-				passThrough         = 1;
+				passThrough         = 0.5;
 				radius              = 0.1;
 				explosionShielding  = 1;
 				visual              = "injury_hands";
@@ -573,7 +586,7 @@ class CfgVehicles
 				armor               = 1;
 				material            = -1;
 				name                = "hands";
-				passThrough         = 1;
+				passThrough         = 0.25;
 				radius              = 0.1;
 				explosionShielding  = 1;
 				visual              = "injury_hands";
@@ -585,7 +598,7 @@ class CfgVehicles
 				armor               = 1;
 				material            = -1;
 				name                = "legs";
-				passThrough         = 1;
+				passThrough         = 0.25;
 				radius              = 0.12;
 				explosionShielding  = 1;
 				visual              = "injury_legs";
@@ -701,7 +714,7 @@ class CfgVehicles
 				armor               = 1;
 				material            = -1;
 				name                = "arms";
-				passThrough         = 1;
+				passThrough         = 0.25;
 				radius              = 0.1;
 				explosionShielding  = 1;
 				visual              = "injury_hands";
@@ -712,7 +725,7 @@ class CfgVehicles
 				armor               = 1;
 				material            = -1;
 				name                = "hands";
-				passThrough         = 1;
+				passThrough         = 0.25;
 				radius              = 0.1;
 				explosionShielding  = 1;
 				visual              = "injury_hands";
@@ -724,7 +737,7 @@ class CfgVehicles
 				armor               = 1;
 				material            = -1;
 				name                = "legs";
-				passThrough         = 1;
+				passThrough         = 0.25;
 				radius              = 0.12;
 				explosionShielding  = 1;
 				visual              = "injury_legs";
@@ -747,7 +760,7 @@ class CfgVehicles
 	class OPTRE_UNSC_ODST_Soldier_Scorch: OPTRE_UNSC_ODST_Soldier
 	{
 		scope																					= 2;
-		scopeCurator													= 2;
+		scopeCurator																			= 2;
 		author																					= "Article 2 Studios";
 		attendant 																				= 1;
 		engineer 																				= 1;
@@ -822,10 +835,10 @@ class CfgVehicles
 		hiddenSelections[] 																		= {"camo1","insignia","clan"};
 		hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\ODST\data\armor_urban_co.paa"};
 	};
-	class OPTRE_UNSC_ODST_Soldier_Instructor: CAManBase
+	/*class OPTRE_UNSC_ODST_Soldier_Instructor: CAManBase
 	{
 		scope																				= 2;
-		scopeCurator													= 2;
+		scopeCurator																		= 2;
 		author																				= "Article 2 Studios";
 		displayName																			= "ODST Instructor";
 		vehicleClass																		= "OPTRE_UNSC_Man_Training_class";
@@ -843,7 +856,7 @@ class CfgVehicles
 		uniformClass																		= "OPTRE_UNSC_ODST_Uniform_Recruit";
 		hiddenSelections[] 																	= {"camo1","insignia","clan"};
 		hiddenSelectionsTextures[] 															= {"OPTRE_UNSC_Units\ODST\data\basic_odst_co.paa"};
-	};
+	};*/
 	class OPTRE_UNSC_ODST_Soldier_Scout: OPTRE_UNSC_ODST_Soldier
 	{
 		scope 																				= 2;
