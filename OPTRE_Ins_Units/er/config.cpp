@@ -1045,12 +1045,20 @@ class cfgWeapons
 		class ItemInfo: HeadgearItem 
 		{
 			uniformModel   								= "\OPTRE_UNSC_Units\Army\helmet.p3d"; 
-			armor   									= 10; 
 			mass   										= 30;
 			modelSides[]   								= {6};
 			passThrough   								= 0.1; 
 			hiddenSelections[]   						= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie"};
 			hiddenSelectionsTextures[]   				= {"OPTRE_Ins_Units\er\data\helmet_innie_1_co.paa"}; 
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 8;
+					passThrough = 0.5;
+				};
+			};
 		};
 	};
 	class OPTRE_INS_Helmet_killunsc : OPTRE_INS_Helmet_1 {
@@ -1083,7 +1091,6 @@ class cfgWeapons
 		class ItemInfo: HeadgearItem 
 		{
 			uniformModel   								= "\OPTRE_UNSC_Units\Army\helmet.p3d"; 
-			armor   									= 10; 
 			mass   										= 30;
 			modelSides[]   								= {6};
 			passThrough   								= 0.1; 
@@ -1102,7 +1109,6 @@ class cfgWeapons
 		class ItemInfo: HeadgearItem 
 		{
 			uniformModel   								= "\OPTRE_UNSC_Units\Army\helmet.p3d"; 
-			armor   									= 10; 
 			mass   										= 30;
 			modelSides[]   								= {6};
 			passThrough   								= 0.1; 

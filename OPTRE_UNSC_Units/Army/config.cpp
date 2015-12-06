@@ -11,11 +11,21 @@ class CfgPatches //This configures the identification of the pbo to the game
 
 class CfgVehicles //This configures units and backpacks
 {
-	class B_Soldier_F;
+	class Man;
+	class CAManBase: Man
+	{
+		class HitPoints
+		{
+			class HitHead;
+			class HitBody;
+			class HitHands;
+			class HitLegs;
+		};
+	};
 	
 	// BASE UNITS START
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	class OPTRE_UNSC_Army_Soldier_WDL: B_Soldier_F
+	class OPTRE_UNSC_Army_Soldier_WDL: CAManBase
 	{
 		scope															= 1;
 		scopeCurator													= 0;
@@ -39,54 +49,137 @@ class CfgVehicles //This configures units and backpacks
 		respawnLinkedItems[] 											= {"OPTRE_UNSC_M52_Vest_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_co.paa","OPTRE_UNSC_Units\Army\data\uniform_woodland_co.paa"};
-		armor															= 2;
-		armorStructural													= 5;
-		class HitPoints
+		class HitPoints: HitPoints
 		{
-			class HitHead
+			class HitFace: HitHead
 			{
-				armor = 1;
-				material = -1;
-				name = "head";
-				passThrough = 1;
-				radius = 0.1;
-				explosionShielding = 0.5;
-				minimalHit = 0;
+				armor               = 1; // Keep constant so that the hit point armor remains on the same scale
+				material            = -1;
+				name                = "face_hub"; // Selection name
+				passThrough         = 0.1; // Damage resistance
+				radius              = 0.08;
+				explosionShielding  = 0.1; // Protection against explosive damage
+				minimalHit          = 0.01; // Minimal damage value that can be applied
 			};
-			class HitBody
+			class HitNeck: HitFace
 			{
-				armor = 4;
-				material = -1;
-				name = "body";
-				passThrough = 1;
-				radius = 0.15;
-				explosionShielding = 5;
-				visual = "injury_body";
-				minimalHit = 0;
+				armor               = 1;
+				material            = -1;
+				name                = "neck";
+				passThrough         = 0.1;
+				radius              = 0.1;
+				explosionShielding  = 0.5;
+				minimalHit          = 0.01;
 			};
-			class HitHands
+			class HitHead: HitNeck
 			{
-				armor = 3;
-				material = -1;
-				name = "hands";
-				passThrough = 1;
-				radius = 0.08;
-				explosionShielding = 0.5;
-				visual = "injury_hands";
-				minimalHit = 0;
+				armor               = 1;
+				material            = -1;
+				name                = "head";
+				passThrough         = 0.1;
+				radius              = 0.2;
+				explosionShielding  = 0.5;
+				minimalHit          = 0.01;
+				depends             = "HitFace max HitNeck"; // Returns the greater of HitFace and HitNeck.
 			};
-			class HitLegs
+			class HitPelvis: HitBody
 			{
-				armor = 3;
-				material = -1;
-				name = "legs";
-				passThrough = 1;
-				radius = 0.1;
-				explosionShielding = 0.5;
-				visual = "injury_legs";
-				minimalHit = 0;
+				armor               = 1;
+				material            = -1;
+				name                = "pelvis";
+				passThrough         = 0.1;
+				radius              = 0.2;
+				explosionShielding  = 1;
+				visual              = "injury_body";
+				minimalHit          = 0.01;
+			};
+			class HitAbdomen: HitPelvis
+			{
+				armor               = 1;
+				material            = -1;
+				name                = "spine1";
+				passThrough         = 0.1;
+				radius              = 0.15;
+				explosionShielding  = 1;
+				visual              = "injury_body";
+				minimalHit          = 0.01;
+			};
+			class HitDiaphragm: HitAbdomen
+			{
+				armor               = 1;
+				material            = -1;
+				name                = "spine2";
+				passThrough         = 0.1;
+				radius              = 0.15;
+				explosionShielding  = 6;
+				visual              = "injury_body";
+				minimalHit          = 0.01;
+			};
+			class HitChest: HitDiaphragm
+			{
+				armor               = 1;
+				material            = -1;
+				name                = "spine3";
+				passThrough         = 0.1;
+				radius              = 0.15;
+				explosionShielding  = 6;
+				visual              = "injury_body";
+				minimalHit          = 0.01;
+			};
+			class HitBody: HitChest
+			{
+				armor               = 1000; //not supposed to take damage directly
+				material            = -1;
+				name                = "body";
+				passThrough         = 0.1;
+				radius              = 0.16;
+				explosionShielding  = 6;
+				visual              = "injury_body";
+				minimalHit          = 0.01;
+				depends             = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+			};
+			class HitArms: HitHands
+			{
+				armor               = 1;
+				material            = -1;
+				name                = "arms";
+				passThrough         = 1;
+				radius              = 0.1;
+				explosionShielding  = 1;
+				visual              = "injury_hands";
+				minimalHit          = 0.01;
+			};
+			class HitHands: HitArms
+			{
+				armor               = 1;
+				material            = -1;
+				name                = "hands";
+				passThrough         = 1;
+				radius              = 0.1;
+				explosionShielding  = 1;
+				visual              = "injury_hands";
+				minimalHit          = 0.01;
+				depends             = "HitArms";
+			};
+			class HitLegs: HitLegs
+			{
+				armor               = 1;
+				material            = -1;
+				name                = "legs";
+				passThrough         = 1;
+				radius              = 0.12;
+				explosionShielding  = 1;
+				visual              = "injury_legs";
+				minimalHit          = 0.01;
 			};
 		};
+ 
+		armor= 2;//keep constant so that the hit point armor remains on the same scale
+		armorStructural= 0.4;// [*] must be adjusted for each model to achieve consistent total damage results
+		explosionShielding = 0.04;// [*] for consistent explosive damage after adjusting = ( armorStructural / 10 )
+		minTotalDamageThreshold = 0.001;//minimalHit for total damage
+		impactDamageMultiplier= 0.5;//multiplier for falling damage
+		// * adjusted for each model
 	};
 	class OPTRE_UNSC_Army_Soldier_M_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
@@ -97,23 +190,134 @@ class CfgVehicles //This configures units and backpacks
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder2","attach_rightshoulder2","attach_pant2","attach_leftknee2","attach_rightknee2"};
 		class HitPoints: HitPoints
 		{
-			class HitHead: HitHead
+			class HitFace: HitHead
 			{
-				armor = 1;
+				armor               = 1; // Keep constant so that the hit point armor remains on the same scale
+				material            = -1;
+				name                = "face_hub"; // Selection name
+				passThrough         = 0.1; // Damage resistance
+				radius              = 0.08;
+				explosionShielding  = 0.1; // Protection against explosive damage
+				minimalHit          = 0.01; // Minimal damage value that can be applied
 			};
-			class HitBody: HitBody
+			class HitNeck: HitFace
 			{
-				armor = 4;
+				armor               = 1;
+				material            = -1;
+				name                = "neck";
+				passThrough         = 0.1;
+				radius              = 0.1;
+				explosionShielding  = 0.5;
+				minimalHit          = 0.01;
 			};
-			class HitHands: HitHands
+			class HitHead: HitNeck
 			{
-				armor = 3;
+				armor               = 1;
+				material            = -1;
+				name                = "head";
+				passThrough         = 0.1;
+				radius              = 0.2;
+				explosionShielding  = 0.5;
+				minimalHit          = 0.01;
+				depends             = "HitFace max HitNeck"; // Returns the greater of HitFace and HitNeck.
+			};
+			class HitPelvis: HitBody
+			{
+				armor               = 1;
+				material            = -1;
+				name                = "pelvis";
+				passThrough         = 0.1;
+				radius              = 0.2;
+				explosionShielding  = 1;
+				visual              = "injury_body";
+				minimalHit          = 0.01;
+			};
+			class HitAbdomen: HitPelvis
+			{
+				armor               = 1;
+				material            = -1;
+				name                = "spine1";
+				passThrough         = 0.1;
+				radius              = 0.15;
+				explosionShielding  = 1;
+				visual              = "injury_body";
+				minimalHit          = 0.01;
+			};
+			class HitDiaphragm: HitAbdomen
+			{
+				armor               = 1;
+				material            = -1;
+				name                = "spine2";
+				passThrough         = 0.1;
+				radius              = 0.15;
+				explosionShielding  = 6;
+				visual              = "injury_body";
+				minimalHit          = 0.01;
+			};
+			class HitChest: HitDiaphragm
+			{
+				armor               = 1;
+				material            = -1;
+				name                = "spine3";
+				passThrough         = 0.1;
+				radius              = 0.15;
+				explosionShielding  = 6;
+				visual              = "injury_body";
+				minimalHit          = 0.01;
+			};
+			class HitBody: HitChest
+			{
+				armor               = 1000; //not supposed to take damage directly
+				material            = -1;
+				name                = "body";
+				passThrough         = 0.1;
+				radius              = 0.16;
+				explosionShielding  = 6;
+				visual              = "injury_body";
+				minimalHit          = 0.01;
+				depends             = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+			};
+			class HitArms: HitHands
+			{
+				armor               = 1;
+				material            = -1;
+				name                = "arms";
+				passThrough         = 1;
+				radius              = 0.1;
+				explosionShielding  = 1;
+				visual              = "injury_hands";
+				minimalHit          = 0.01;
+			};
+			class HitHands: HitArms
+			{
+				armor               = 1;
+				material            = -1;
+				name                = "hands";
+				passThrough         = 1;
+				radius              = 0.1;
+				explosionShielding  = 1;
+				visual              = "injury_hands";
+				minimalHit          = 0.01;
+				depends             = "HitArms";
 			};
 			class HitLegs: HitLegs
 			{
-				armor = 3;
+				armor               = 1;
+				material            = -1;
+				name                = "legs";
+				passThrough         = 1;
+				radius              = 0.12;
+				explosionShielding  = 1;
+				visual              = "injury_legs";
+				minimalHit          = 0.01;
 			};
 		};
+		armor= 2;//keep constant so that the hit point armor remains on the same scale
+		armorStructural= 0.4;// [*] must be adjusted for each model to achieve consistent total damage results
+		explosionShielding = 0.04;// [*] for consistent explosive damage after adjusting = ( armorStructural / 10 )
+		minTotalDamageThreshold = 0.001;//minimalHit for total damage
+		impactDamageMultiplier= 0.5;//multiplier for falling damage
+		// * adjusted for each model
 	};
 	class OPTRE_UNSC_Army_Soldier_L_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
@@ -124,23 +328,135 @@ class CfgVehicles //This configures units and backpacks
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_pant2","attach_leftknee2","attach_rightknee2"};
 		class HitPoints: HitPoints
 		{
-			class HitHead: HitHead
+			class HitFace: HitHead
 			{
-				armor = 1;
+				armor               = 1; // Keep constant so that the hit point armor remains on the same scale
+				material            = -1;
+				name                = "face_hub"; // Selection name
+				passThrough         = 0.1; // Damage resistance
+				radius              = 0.08;
+				explosionShielding  = 0.1; // Protection against explosive damage
+				minimalHit          = 0.01; // Minimal damage value that can be applied
 			};
-			class HitBody: HitBody
+			class HitNeck: HitFace
 			{
-				armor = 4;
+				armor               = 1;
+				material            = -1;
+				name                = "neck";
+				passThrough         = 0.1;
+				radius              = 0.1;
+				explosionShielding  = 0.5;
+				minimalHit          = 0.01;
 			};
-			class HitHands: HitHands
+			class HitHead: HitNeck
 			{
-				armor = 3;
+				armor               = 1;
+				material            = -1;
+				name                = "head";
+				passThrough         = 0.1;
+				radius              = 0.2;
+				explosionShielding  = 0.5;
+				minimalHit          = 0.01;
+				depends             = "HitFace max HitNeck"; // Returns the greater of HitFace and HitNeck.
+			};
+			class HitPelvis: HitBody
+			{
+				armor               = 1;
+				material            = -1;
+				name                = "pelvis";
+				passThrough         = 0.1;
+				radius              = 0.2;
+				explosionShielding  = 1;
+				visual              = "injury_body";
+				minimalHit          = 0.01;
+			};
+			class HitAbdomen: HitPelvis
+			{
+				armor               = 1;
+				material            = -1;
+				name                = "spine1";
+				passThrough         = 0.1;
+				radius              = 0.15;
+				explosionShielding  = 1;
+				visual              = "injury_body";
+				minimalHit          = 0.01;
+			};
+			class HitDiaphragm: HitAbdomen
+			{
+				armor               = 1;
+				material            = -1;
+				name                = "spine2";
+				passThrough         = 0.1;
+				radius              = 0.15;
+				explosionShielding  = 6;
+				visual              = "injury_body";
+				minimalHit          = 0.01;
+			};
+			class HitChest: HitDiaphragm
+			{
+				armor               = 1;
+				material            = -1;
+				name                = "spine3";
+				passThrough         = 0.1;
+				radius              = 0.15;
+				explosionShielding  = 6;
+				visual              = "injury_body";
+				minimalHit          = 0.01;
+			};
+			class HitBody: HitChest
+			{
+				armor               = 1000; //not supposed to take damage directly
+				material            = -1;
+				name                = "body";
+				passThrough         = 0.1;
+				radius              = 0.16;
+				explosionShielding  = 6;
+				visual              = "injury_body";
+				minimalHit          = 0.01;
+				depends             = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+			};
+			class HitArms: HitHands
+			{
+				armor               = 1;
+				material            = -1;
+				name                = "arms";
+				passThrough         = 1;
+				radius              = 0.1;
+				explosionShielding  = 1;
+				visual              = "injury_hands";
+				minimalHit          = 0.01;
+			};
+			class HitHands: HitArms
+			{
+				armor               = 1;
+				material            = -1;
+				name                = "hands";
+				passThrough         = 1;
+				radius              = 0.1;
+				explosionShielding  = 1;
+				visual              = "injury_hands";
+				minimalHit          = 0.01;
+				depends             = "HitArms";
 			};
 			class HitLegs: HitLegs
 			{
-				armor = 2;
+				armor               = 1;
+				material            = -1;
+				name                = "legs";
+				passThrough         = 1;
+				radius              = 0.12;
+				explosionShielding  = 1;
+				visual              = "injury_legs";
+				minimalHit          = 0.01;
 			};
 		};
+ 
+		armor= 2;//keep constant so that the hit point armor remains on the same scale
+		armorStructural= 0.4;// [*] must be adjusted for each model to achieve consistent total damage results
+		explosionShielding = 0.04;// [*] for consistent explosive damage after adjusting = ( armorStructural / 10 )
+		minTotalDamageThreshold = 0.001;//minimalHit for total damage
+		impactDamageMultiplier= 0.5;//multiplier for falling damage
+		// * adjusted for each model
 	};
 	class OPTRE_UNSC_Army_Soldier_DES: OPTRE_UNSC_Army_Soldier_WDL
 	{

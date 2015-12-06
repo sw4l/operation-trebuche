@@ -456,11 +456,19 @@ class cfgWeapons
         class ItemInfo: HeadgearItem
         {
             mass = 30;
-			armor = 5; 
             uniformModel = "\A3\Characters_F_Beta\INDEP\headgear_helmet_canvas";
 			hiddenSelections[] = {"camo"};
 			hiddenSelectionsTextures[] = {"OPTRE_Ins_Units\data\inne_MICHOD_co.paa"};
             modelSides[] = {6};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 8;
+					passThrough = 0.5;
+				};
+			};
         };
 	};
 	
