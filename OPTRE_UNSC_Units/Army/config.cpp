@@ -47,6 +47,11 @@ class CfgVehicles //This configures units and backpacks
 		respawnMagazines[]												= {};
 		linkedItems[] 													= {"OPTRE_UNSC_M52_Vest_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		respawnLinkedItems[] 											= {"OPTRE_UNSC_M52_Vest_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {};
+		};
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_co.paa","OPTRE_UNSC_Units\Army\data\uniform_woodland_co.paa"};
 		class HitPoints: HitPoints

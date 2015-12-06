@@ -48,6 +48,11 @@ class CfgVehicles
 		respawnMagazines[]												= {};
 		linkedItems[] 													= {"OPTRE_UNSC_Marine_Vest","OPTRE_UNSC_Marine_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		respawnLinkedItems[] 											= {"OPTRE_UNSC_Marine_Vest","OPTRE_UNSC_Marine_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {};
+		};
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder","attach_rightshoulder","attach_pant1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Marines\data\armor_marines_co.paa","OPTRE_UNSC_Units\Marines\data\uniform_marines_co.paa"};
 		class HitPoints: HitPoints

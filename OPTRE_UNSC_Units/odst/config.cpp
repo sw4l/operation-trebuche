@@ -47,6 +47,11 @@ class CfgVehicles
 		respawnMagazines[]																		= {};
 		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_Vest","OPTRE_UNSC_ODST_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {};
+		};
 		hiddenSelections[] 																		= {"camo1","insignia","clan"};
 		hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\ODST\data\armor_co.paa"};
 		class HitPoints: HitPoints
