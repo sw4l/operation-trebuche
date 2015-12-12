@@ -200,6 +200,41 @@ class CfgPatches
 		weapons[] = {};
 		requiredVersion = 0.1;
 	};
+
+	class ParkingGarage_Open
+	{
+		units[] = {"orbital"};
+		weapons[] = {};
+		requiredVersion = 0.1;
+	};
+		
+	class ParkingGarage_closed
+	{
+		units[] = {"orbital"};
+		weapons[] = {};
+		requiredVersion = 0.1;
+	};
+
+	class Urban_Building_01
+	{
+		units[] = {"orbital"};
+		weapons[] = {};
+		requiredVersion = 0.1;
+	};
+
+	class Urban_Building_02
+	{
+		units[] = {"orbital"};
+		weapons[] = {};
+		requiredVersion = 0.1;
+	};
+	
+	class Urban_Building_03
+	{
+		units[] = {"orbital"};
+		weapons[] = {};
+		requiredVersion = 0.1;
+	};
 };
 class CfgVehicles
 {
@@ -492,7 +527,38 @@ class CfgVehicles
 		scope=2;
 		displayName="Large Tower";
 	};
+
+	class ParkingGarage_Open: TargetGrenade
+	{
+		model="\OPTRE_Buildings\buildings\Garage_UnCovered";
+		armor=20000;
+		scope=2;
+		displayName="Parking Garage Open";
+	};
 	
+	class Urban_Building_01: TargetGrenade
+	{
+		model="\OPTRE_Buildings\buildings\Urban_Building_01";
+		armor=20000;
+		scope=2;
+		displayName="Urban Building 01";
+	};
+
+	class Urban_Building_02: TargetGrenade
+	{
+		model="\OPTRE_Buildings\buildings\Urban_Building_02";
+		armor=20000;
+		scope=2;
+		displayName="Urban Building 02";
+	};
+	
+	class Urban_Building_03: TargetGrenade
+	{
+		model="\OPTRE_Buildings\buildings\Urban_Building_03";
+		armor=20000;
+		scope=2;
+		displayName="Urban Building 03";
+	};
 	
 	class Lamps_base_F;
 

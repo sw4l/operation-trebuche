@@ -1,5 +1,5 @@
 class StageTI {
-	texture = "a3\data_f\default_ti_ca.paa";
+	texture = "OPTRE_Buildings\Data\glass_co.paa";
 };
 ambient[] = {1, 1, 1, 1};
 diffuse[] = {1, 1, 1, 1};
@@ -7,7 +7,6 @@ forcedDiffuse[] = {0, 0, 0, 0};
 emmisive[] = {0, 0, 0, 0};
 specular[] = {1, 1, 1, 1};
 specularPower = 500;
-renderFlags[] = {};
 PixelShaderID = "Super";
 VertexShaderID = "Super";
 
@@ -24,7 +23,7 @@ class Stage1 {
 };
 
 class Stage2 {
-	texture = "OPTRE_Vehicles\window_dt.paa";
+	texture = "OPTRE_Buildings\Data\glass_co.paa";
 	uvSource = "tex";
 
 	class uvTransform {
