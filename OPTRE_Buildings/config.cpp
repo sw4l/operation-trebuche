@@ -157,15 +157,7 @@ class CfgPatches
 		weapons[] = {};
 		requiredVersion = 1.0;
 	};
-
-	class Light_Street
-	{
-		units[] = {"Light_Street_01_off", "Light_Street_01"};
-		weapons[] = {};
-		requiredAddons[] = {"A3_Structures_F_Civ_Lamps"};
-		requiredVersion = 0.1;
-	};
-
+	
 	class CornerBuilding
 	{
 		units[] = {"orbital"};
@@ -244,7 +236,8 @@ class CfgVehicles
 	class NonStrategic: Building {};
 	class TargetTraining: NonStrategic {};
 	class TargetGrenade: TargetTraining {};
-	
+	class House_Small_F;
+	class Lamps_base_F;	
 	class Land_Cargo_House_V1_F;
 	class Land_Cargo_HQ_V1_F;
 	class Land_Cargo_Patrol_V1_F;
@@ -558,104 +551,5 @@ class CfgVehicles
 		armor=20000;
 		scope=2;
 		displayName="Urban Building 03";
-	};
-	
-	class Lamps_base_F;
-
-	class Light_Street_01_off: Lamps_base_F
-	{
-		scope				= public;										/// makes the lamp visible in editor
-		scopeCurator		= public;											/// makes the lamp visible in Zeus
-		VehicleClass		= "City Lights";
-		displayName			= "Street Lamp (off)";									/// displayed in Editor
-		model				= \OPTRE_Buildings\Citylights\Light_Street_off.p3d;	/// simple path to model
-
-		armor				= 5000;	/// just some protection against missiles, collisions and explosions
-
-		class Hitpoints {};
-		class AnimationSources {};
-		class MarkerLights
-		{
-			class Light_4
-			{
-				color[]				= {1.0, 0.0, 0.0};		/// approximate colour of standard lights
-				ambient[]			= {0.01, 0.0, 0.0};		/// nearly a white one
-				intensity			= 800;					/// strength of the light
-				name				= "Light_4_pos";		/// name of 
-				
-				blinking			= true;					/// lets make it blinking to show how patterns work
-				blinkingPattern[]	= {0.25, 1.0};			// 0.25 s flash, 1.25 s period
-				blinkingStartsOn	= true;					/// pattern starts with length of the first flash
-				blinkingPatternGuarantee	= true;			/// use this to guarantee all blinks of the patter to be done
-															/// doesn't guarantee the length of pattern if true 
-															/// (e.g. because of blinks shorter than a frame would take a frame to be seen)
-
-				useFlare			= true;					/// does the light use flare?
-				flareSize			= 1.5;					/// how big is the flare
-				flareMaxDistance	= 1000;					/// how far can you see the flare
-
-				activeLight			= true;					/// engine counts this one as an active light into limit of lights
-				dayLight			= false;				/// it doesn't shine during the day
-				drawLight			= false;				/// doesn't create a specific face for flare
-
-				class Attenuation
-				{
-					start			= 0;
-					constant		= 2;
-					linear			= 10;
-					quadratic		= 20;
-
-					hardLimitStart	= 5;					/// it is good to have some limit otherwise the light would shine to infinite distance
-					hardLimitEnd	= 6;					/// this allows adding more lights into scene
-				};
-			};
-		};
-	};
-
-	class Light_Street_01: Light_Street_01_off
-	{
-		scope				= public;
-		scopeCurator		= public;
-		displayName			= "Street Light (on)";
-		model				= \OPTRE_Buildings\Citylights\Light_Street.p3d;
-
-		aggregateReflectors[] =
-		{
-			{"Light_1"}
-		};
-
-		class Reflectors
-		{
-			class Light_1
-			{
-				color[]				= {2500,4000,6000};
-				ambient[]			= {2.5,4,6};
-				intensity			= 2;
-				size				= 1;					/// size of the light point seen from distance
-				innerAngle			= 100;					/// angle of full light
-				outerAngle			= 165;					/// angle of some light
-				coneFadeCoef		= 4;					/// attenuation of light between the above angles
-
-				position			= "Light_1_pos";		/// memory point for start of the light and flare
-				direction			= "Light_1_dir";		/// memory point for the light direction
-				hitpoint			= "Light_1_hitpoint";	/// point(s) in hitpoint lod for the light (hitPoints are created by engine)
-				selection			= "Light_1_hide";		/// selection for artificial glow around the bulb, not much used any more
-
-				useFlare			= true;
-				flareSize			= 2;
-				flareMaxDistance	= 130;
-
-				class Attenuation
-				{
-					start			= 0;
-					constant		= 0;
-					linear			= 0;
-					quadratic		= 0.3;
-
-					hardLimitStart	= 50;
-					hardLimitEnd	= 65;
-				};
-			};
-		};
 	};
 };
