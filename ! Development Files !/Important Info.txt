@@ -1,0 +1,15 @@
+Latest Released Version
+	0.13.1
+
+Planned Release Version
+	0.14
+
+Planned Release Date
+	01/01/16
+
+Official OPTRE Email/YT Info
+	Email: optremod@gmail.com
+	Pass: OPTRE_2513
+
+Bugs
+	https://www.reddit.com/r/OperationTrebuchet/comments/3ozpko/v013_bugs_issues_and_complaints/

@@ -54,6 +54,13 @@ class CfgMusic
 		musicClass = "OPTRE_OST";
 		duration = 108;
 	};
+	class OPTRE_Music_BattleTanks
+	{
+		name	="[OPTRE OST] Battle Tanks";
+		sound[]	={"\OPTRE_Music\OST\OPTRE_OriginalSoundtrackMusic_battletanks.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 78;
+	};
 	class OPTRE_Music_CallToArms
 	{
 		name	="[OPTRE OST] Call To Arms";
