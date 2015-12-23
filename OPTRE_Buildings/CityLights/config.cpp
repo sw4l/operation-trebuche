@@ -30,41 +30,26 @@ class CfgPatches
 };
 class CfgVehicles
 {
-	class House_Small_F;
-	class Lamps_base_F: House_Small_F
-	{
-		mapSize = 2.4;
-		scope = 0;
-		scopeCurator = 0;
-		displayName = "";
-		model = "\A3\Weapons_F\empty.p3d";
-		icon = "iconObject";
-		vehicleClass = "Lamps";
-		destrType = "DestructTree";
-		armor = 500;
-		cost = 1000;
-		accuracy = 0.2;
-		armorLights = 0.001;
-		isLockingDisabled = 1;
-	};
-	class Land_Light_Street_off: Lamps_base_F
+	
+	class Lamps_base_F;
+	class Land_Colony_Light_Street_off: Lamps_base_F
 	{
 		mapSize = 3.77;
 		author = "Article 2 Studios";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "OPTRE Street Light (off)";
-		model = "\OPTRE_Buildings\Citylights\Light_Street_off.p3d";
+		model = "\OPTRE_Buildings\Citylights\Colony_Light_Street_off.p3d";
 		armor = 500;
 	};
-	class Land_Light_Street: Lamps_base_F
+	class Land_Colony_Light_Street: Lamps_base_F
 	{
 		mapSize = 3.78;
 		author = "Article 2 Studios";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "OPTRE Street Light (on)";
-		model = "\OPTRE_Buildings\Citylights\Light_Street.p3d";
+		model = "\OPTRE_Buildings\Citylights\Colony_Light_Street.p3d";
 		armor = 500;
 		class Reflectors
 		{
@@ -90,6 +75,42 @@ class CfgVehicles
 					constant = 0;
 					linear = 0;
 					quadratic = 0.3;
+					hardLimitStart = 40;
+					hardLimitEnd = 60;
+				};
+			};
+		};
+	};
+	class Land_Small_Light_Column: Lamps_base_F
+	{
+		model="\OPTRE_Buildings\Citylights\Small_Light_Column.p3d";
+		armor=20000;
+		scope=2;
+		displayName="Column Light";
+		class Reflectors
+		{
+			class Light_1
+			{
+				color[]				= {1000,650,400};
+				ambient[]			= {10,6.5,4};
+				intensity			= 2;
+				size				= 1;					/// size of the light point seen from distance
+				innerAngle			= 90;					/// angle of full light
+				outerAngle			= 360;					/// angle of some light
+				coneFadeCoef		= 1;
+				position = "Light_1_pos";
+				direction = "Light_1_dir";
+				hitpoint = "Light_1_hitpoint";
+				selection = "Light_1_hide";
+				useFlare = 1;
+				flareSize = 0.8;
+				flareMaxDistance = 220;
+				class Attenuation
+				{
+					start = 0;
+					constant = 20;
+					linear = 0;
+					quadratic = 0.5;
 					hardLimitStart = 40;
 					hardLimitEnd = 60;
 				};

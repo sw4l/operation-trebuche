@@ -16,12 +16,12 @@ DESTRUCTBUILDING 																				= 1,
 
 class CfgPatches
 {
-	class OPTRE_Ins_Object_class
+	class OPTRE_Buildings_Misc
 	{
 		units[]										= {};
 		weapons[]									= {};
 		requiredVersion								= 0.1;
-		requiredAddons[]							= {"OPTRE_Core","OPTRE_Weapons","OPTRE_UNSC_Units","OPTRE_Ins_Units"};
+		requiredAddons[]							= {"OPTRE_Core"};
 	};
 };
 

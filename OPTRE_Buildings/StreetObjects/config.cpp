@@ -16,27 +16,22 @@ DESTRUCTBUILDING 																				= 1,
 
 class CfgPatches
 {
-	class OPTRE_Ins_Object_class
+	class OPTRE_Buildings_Street_Objects
 	{
 		units[]										= {};
 		weapons[]									= {};
 		requiredVersion								= 0.1;
-		requiredAddons[]							= {"OPTRE_Core","OPTRE_Weapons","OPTRE_UNSC_Units","OPTRE_Ins_Units"};
+		requiredAddons[]							= {"OPTRE_Core"};
 	};
 };
 
 class CfgVehicles
 {
-	class All {};
-	class Static: All {};
-	class Building: Static {};
-	class NonStrategic: Building {};
-	class TargetTraining: NonStrategic {};
-	class TargetGrenade: TargetTraining {};
+	
 	class Land_Castle_01_step_F;
 	
 	
-	class OPTRE_sidewalk_narrow_short_: Land_Castle_01_step_F
+	class Land_sidewalk_narrow_short: Land_Castle_01_step_F
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -45,8 +40,9 @@ class CfgVehicles
 		model = "\OPTRE_buildings\streetobjects\sidewalk_narrow_short.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		destrType = "DestructNo"; //All structures should have this setting until appropriate destruct models can be made.  Complex multipart models should probably stay this way permanently.  
 	};
-	class OPTRE_sidewalk_wide_short_: Land_Castle_01_step_F
+	class Land_sidewalk_wide_short: Land_Castle_01_step_F
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -55,6 +51,31 @@ class CfgVehicles
 		model = "\OPTRE_buildings\streetobjects\sidewalk_wide_short.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		keepInEPESceneAfterDeath = 1;
+		destrType = "DestructNo"; //All structures should have this setting until appropriate destruct models can be made.  Complex multipart models should probably stay this way permanently.  
+		class DestructionEffects;
+	};
+	class Land_sidewalk_wide_curve: Land_sidewalk_wide_short
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Sidewalk Wide Short Curve";
+		vehicleClass = "OPTRE_UNSC_Object_class";
+		model = "\OPTRE_buildings\streetobjects\sidewalk_wide_curve.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+		destrType = "DestructNo"; //All structures should have this setting until appropriate destruct models can be made.  Complex multipart models should probably stay this way permanently.  
+	};
+	class Land_sidewalk_wide_curve3: Land_sidewalk_wide_short
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Sidewalk Wide Long Curve";
+		vehicleClass = "OPTRE_UNSC_Object_class";
+		model = "\OPTRE_buildings\streetobjects\sidewalk_wide_curve3.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+		destrType = "DestructNo"; //All structures should have this setting until appropriate destruct models can be made.  Complex multipart models should probably stay this way permanently.  
 	};
 };
 
