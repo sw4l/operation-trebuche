@@ -63,7 +63,7 @@ class Mode_FullAuto;
             };
 			class OPTRE_MA5B_AmmoCounter_NoIS: ItemCore
 			{
-					dlc = "OPTRE";
+				dlc = "OPTRE";
 				scope = 2;
 				displayName                                                             = "MA5B Ammo Counter (No IS)";
 				picture = "\OPTRE_weapons\ar\icons\scope_b.paa";
@@ -109,7 +109,7 @@ class Mode_FullAuto;
 			};
 			class OPTRE_MA5B_Flashlight: ItemCore
 			{
-					dlc = "OPTRE";
+			dlc = "OPTRE";
 			scope 										= 2;
 			displayName 									= "MA5B Flashlight";
 			picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
@@ -512,7 +512,7 @@ class Mode_FullAuto;
 			
 	class OPTRE_MA5BGL_AC: OPTRE_MA5BGL
 	{
-					dlc = "OPTRE";
+		dlc = "OPTRE";
 		picture = "\OPTRE_weapons\ar\icons\argl_b.paa";
 		class LinkedItems
 		{

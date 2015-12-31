@@ -40,6 +40,7 @@ class CfgFactionClasses //This configures the in-game factions
 {
 	class OPTRE_UNSC
 	{
+		dlc = "OPTRE";
 		displayName 																			= "UNSCDF";
 		author																					= "Article 2 Studios";
 		priority 																				= 1;
@@ -54,6 +55,7 @@ class CfgFactionClasses //This configures the in-game factions
 	};
 	class OPTRE_Ins
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Insurrectionists";
 		author																					= "Article 2 Studios";
 		priority 																				= 1;
@@ -65,6 +67,7 @@ class CfgFactionClasses //This configures the in-game factions
 	};
 	class OPTRE_CAA
 	{
+		dlc = "OPTRE";
 		displayName 																			= "CAA";
 		author																					= "Article 2 Studios";
 		priority 																				= 1;
@@ -75,6 +78,7 @@ class CfgFactionClasses //This configures the in-game factions
 	};
 	class OPTRE_UEG_Civ
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Civilians (UEG)";
 		author																					= "Article 2 Studios";
 		priority 																				= 1;
@@ -85,6 +89,7 @@ class CfgFactionClasses //This configures the in-game factions
 	};
 	class OPTRE_Modules
 	{
+		dlc = "OPTRE";
 		displayName = "OPTRE Modules";
 		priority = 1;
 		side = 7;
@@ -95,6 +100,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 {
 	class OPTRE_UNSC_Backpack_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Backpacks (UNSC)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -103,6 +109,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Vehicle_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Cars (UNSC)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -111,6 +118,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Armored_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Armored (UNSC)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -119,6 +127,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Air_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Air (UNSC)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -127,6 +136,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Auto_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Autonomous (UNSC)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -135,6 +145,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Man_Army_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Men (Army)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -143,6 +154,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Man_Army_W_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Men (Army Woodland)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -151,6 +163,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Man_Army_D_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Men (Army Desert)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -159,6 +172,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Man_Army_S_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Men (Army Snow)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -167,6 +181,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Man_Army_T_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Men (Army Tropic)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -175,6 +190,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Man_Army_A_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Men (Army Arid)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -183,6 +199,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Man_Marines_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Men (Marines)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -191,6 +208,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Man_ODST_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Men (ODST)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -199,6 +217,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Man_Special_class
 	{
+		dlc = "OPTRE";
 		displayName																				= "Men (Special)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -207,6 +226,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Man_Training_class
 	{
+		dlc = "OPTRE";
 		displayName																				= "Men (Training)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -215,6 +235,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Man_Navy_class
 	{
+		dlc = "OPTRE";
 		displayName																				= "Men (Navy)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -223,6 +244,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Man_Airforce_class
 	{
+		dlc = "OPTRE";
 		displayName																				= "Men (Air Force)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -231,6 +253,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Man_ONI_class
 	{
+		dlc = "OPTRE";
 		displayName																				= "Men (ONI)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -239,6 +262,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Object_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Objects (UNSC)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -247,6 +271,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Structure_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Structures (UNSC)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -255,6 +280,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Fortification_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Fortifications (UNSC)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -263,6 +289,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_Ammo_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Ammo (UNSC)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -271,6 +298,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_UNSC_HEV_class 
 	{
+		dlc = "OPTRE";
 		displayName 																			= "HEVs (UNSC)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -279,6 +307,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Backpack_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Backpacks (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -287,6 +316,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Vehicle_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Cars (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -295,6 +325,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Armored_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Armored (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -303,6 +334,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Air_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Air (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -311,6 +343,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Auto_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Autonomous (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -319,6 +352,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Man_ER_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Men (Eridanus Rebels)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -327,6 +361,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Man_URF_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Men (United Rebel Front)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -335,6 +370,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Man_Special_class
 	{
+		dlc = "OPTRE";
 		displayName																				= "Men (Special)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -343,6 +379,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Object_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Objects (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -351,6 +388,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Structure_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Structures (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -359,6 +397,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Fortification_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Fortifications (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -367,6 +406,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Ins_Ammo_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "Ammo (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -395,6 +435,7 @@ class CfgSounds
 	sounds[] = {"OPTRE_Sounds_HEV_Wind1","OPTRE_Sounds_HEV_Wind2","OPTRE_Sounds_HEV_Pop","OPTRE_Sounds_HEV_Door","OPTRE_Sounds_HEV_Chute","OPTRE_Sounds_HUD_Visor","OPTRE_Sounds_Alarm"};
 	class OPTRE_Sounds_HEV_Wind1
 	{
+		dlc = "OPTRE";
 		name = "[OPTRE] HEV Wind 1";
 		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_HEV_Wind1.ogg", 1, 1};
 		author	= "Article 2 Studios";
@@ -402,6 +443,7 @@ class CfgSounds
 	};
 	class OPTRE_Sounds_HEV_Wind2
 	{
+		dlc = "OPTRE";
 		name = "[OPTRE] HEV Wind 2";
 		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_HEV_Wind2.ogg", 1, 1};
 		author	= "Article 2 Studios";
@@ -409,6 +451,7 @@ class CfgSounds
 	};
 	class OPTRE_Sounds_HEV_Pop
 	{
+		dlc = "OPTRE";
 		name = "[OPTRE] HEV Pop";
 		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_HEV_Pop.ogg", 1, 1};
 		author	= "Article 2 Studios";
@@ -423,6 +466,7 @@ class CfgSounds
 	};
 	class OPTRE_Sounds_HEV_Chute
 	{
+		dlc = "OPTRE";
 		name = "[OPTRE] HEV Chute";
 		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_HEV_Chute.ogg", 1, 1};
 		author	= "Article 2 Studios";
@@ -430,6 +474,7 @@ class CfgSounds
 	};
 	class OPTRE_Sounds_HUD_Visor
 	{
+		dlc = "OPTRE";
 		name = "[OPTRE] HUD Visor";
 		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_Visor.ogg", 0.25, 1};
 		author	= "Article 2 Studios";
@@ -437,6 +482,7 @@ class CfgSounds
 	};
 	class OPTRE_Sounds_Alarm
 	{
+		dlc = "OPTRE";
 		name = "[OPTRE] Alarm";
 		sound[] = {"\OPTRE_core\data\sounds\OPTRE_Sounds_Alarm.ogg", 1, 1};
 		author	= "Article 2 Studios";
@@ -510,6 +556,7 @@ class CfgVehicles
 	
 	class ModuleOrdnanceMAC_F: ModuleOrdnance_F
 	{
+		dlc = "OPTRE";
 		author = "Article 2 Studios";
 		_generalMacro = "ModuleOrdnanceMAC_F";
 		scope = 1;
