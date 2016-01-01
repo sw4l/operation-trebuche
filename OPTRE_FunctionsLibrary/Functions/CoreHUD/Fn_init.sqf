@@ -29,10 +29,13 @@ if isDedicated exitWith {};
 OPTRE_HUD_PATH = "OPTRE_Hud\";
 
 OPTRE_Hud_On = false;
+OPTRE_Hud_LowLight_On = false; 
 OPTRE_Hud_UnFullyLoaded = true; 
 OPTRE_Hud_On_Helmet = ""; 
 OPTRE_HUD_CompassWanted = true; 
 OPTRE_LHD_Function = 1;
+setAperture -1;
+OPTRE_HUD_PIP_NVGTI = 0;
 
 OPTRE_LHD_PIPSel = 0;
 OPTRE_LHD_PIPMode = 0; 
@@ -62,6 +65,9 @@ player addEventHandler ["Fired",{
 player addEventHandler ["Killed",{
 	OPTRE_Hud_On = false;
 }];
+player addEventHandler ["Respawn",{
+	setAperture -1;
+}];
 
 // Weapon Rest 
 player addEventHandler ["WeaponDeployed",{
@@ -75,7 +81,10 @@ player addEventHandler ["WeaponRested",{
 {
 	player addEventHandler [_x,{
 		if OPTRE_Hud_On then {OPTRE_HUD_UPDATEALL_Main = true;};
-		if (OPTREB_HUD_HelmetOnClass != (headgear player) AND OPTREB_HUD_HelmetOnClass != (goggles player)) then {OPTRE_Hud_On = false;}; 
+		if (OPTREB_HUD_HelmetOnClass != (headgear player) AND OPTREB_HUD_HelmetOnClass != (goggles player)) then {
+			OPTRE_Hud_On = false;
+			setAperture -1;
+		}; 
 	}];
 } forEach ["put","take","InventoryClosed"];
 

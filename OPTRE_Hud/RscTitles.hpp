@@ -27,6 +27,7 @@ class RscTitles {
 	#include "z_HUD_ODST\ODST_HealthBar.hpp"
 	#include "z_HUD_ODST\ODST_Main_1.hpp" // Updated Graphics Version
 	#include "z_HUD_ODST\ODST_Main_2.hpp" // Traditional Version
+	#include "z_HUD_ODST\ODST_Main_3.hpp" // Traditional Version
 	#include "z_HUD_ODST\ODST_Main_1_Broken.hpp"
 	
 	// ONI

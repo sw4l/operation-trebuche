@@ -10,3 +10,24 @@ waitUntil {time > 0};
 ["Operation Trebuchet & First Contact", "OPTRE_Hud_TN", ["HUD Toggle Function Next", "Toggles the current Left Hand Displays functionality for example in radar mode zooms in"], {true call OPTRE_fnc_ToggleLHDFnc;}, { }, [DIK_H, [true, false, false]], false, -1, false] call cba_fnc_addKeybind;
 // 4
 ["Operation Trebuchet & First Contact", "OPTRE_Hud_TP", ["HUD Toggle Function Previous", "Toggles the current Left Hand Displays functionality for example in radar mode zooms out"], {false call OPTRE_fnc_ToggleLHDFnc;}, { }, [DIK_Y, [true, false, false]], false, -1, false] call cba_fnc_addKeybind;
+// 5
+["Operation Trebuchet & First Contact", "OPTRE_Hud_LowLight", ["HUD ODST Low Light Toggle", "Toggles the low light vision mode of ODST helmets."], { [] call OPTRE_Fnc_ToggleLowLight }, { }, [DIK_L, [true, false, false]], false, -1, false] call cba_fnc_addKeybind;
+
+_helmet = (headgear player);
+_hudStyle = ( getText (configfile >> "CfgWeapons" >> _helmet >> "optreHUDStyle") ); 
+
+if (_hudStyle == "ODST_1") then {
+
+	_varHelmetArray = ( getArray (configfile >> "CfgWeapons" >> _helmet >> "optreVarietys") ); 
+	
+	_helmet = [_helmet, (_varHelmetArray select 1), ""] call CBA_fnc_replace; 
+	_helmet = [_helmet, (_varHelmetArray select 2), ""] call CBA_fnc_replace; 
+	_helmet = (_helmet + (_varHelmetArray select 0));
+	
+	removeHeadgear player;
+	
+	player addHeadgear _helmet;
+	
+};
+
+0 = false call OPTRE_fnc_ToggleVisor;

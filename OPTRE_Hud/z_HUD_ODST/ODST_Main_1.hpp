@@ -11,10 +11,11 @@ class OPTRE_ODST_Main_1 {
 					class Compass { 
 					//-0.45 // bar, heli quad
 					//ONLOAD = "BW_Zone = [0.5,1.2,-0.1]; (_this select 0) spawn {_c = _this; while {true} do { _c ctrlSetPosition BW_Zone;  _c ctrlCommit 0; _c ctrlSetModelDirAndUp [(vectorDir player),[0,0,1]]; sleep 0.01; };};"; // [[ 0,-0.35, ( direction player  * (1 / 360) )],[0, 0.65, -0.35]]
+					//colorText[] = {"(profilenamespace getvariable ['IGUI_BCG_RGB_R',0])","(profilenamespace getvariable ['IGUI_BCG_RGB_G',1])","(profilenamespace getvariable ['IGUI_BCG_RGB_B',1])","(profilenamespace getvariable ['IGUI_BCG_RGB_A',0.8])"};		
 					
 					idc = 880; 
 					type = 82; 
-					model = "\OPTRE_Hud\compass_mark.p3d";
+					model = "\OPTRE_Hud\compass_mark_org.p3d";
 					//model = "\OPTRE_Hud\compass_mark_1.p3d";
 					scale = 3; // 3 is good to fit centre of health bar. 
 					
@@ -42,7 +43,7 @@ class OPTRE_ODST_Main_1 {
 					
 					idc = 881; 
 					type = 82; 
-					model = "\OPTRE_Hud\compass_mark_1.p3d";// model = "\OPTRE_Hud\compass_mark_1_org.p3d";
+					model = "\OPTRE_Hud\compass_mark_1_org.p3d";// model = "\OPTRE_Hud\compass_mark_1_org.p3d"; 
 					//model = "\OPTRE_Hud\compass_mark_1.p3d";
 					scale = 3; // 3 is good to fit centre of health bar. 
 					
@@ -70,7 +71,7 @@ class OPTRE_ODST_Main_1 {
 					
 					idc = 882; 
 					type = 82; 
-					model = "\OPTRE_Hud\compass_mark_2.p3d";
+					model = "\OPTRE_Hud\compass_mark_2_org.p3d";
 					//model = "\OPTRE_Hud\compass_mark_1.p3d";
 					scale = 3; // 3 is good to fit centre of health bar. 
 					
@@ -98,7 +99,7 @@ class OPTRE_ODST_Main_1 {
 					
 					idc = 883; 
 					type = 82; 
-					model = "\OPTRE_Hud\compass_mark_3.p3d";
+					model = "\OPTRE_Hud\compass_mark_3_org.p3d"; 
 					//model = "\OPTRE_Hud\compass_mark_1.p3d";
 					scale = 3; // 3 is good to fit centre of health bar. 
 					
@@ -132,13 +133,14 @@ class OPTRE_ODST_Main_1 {
 			{
 				idc = 1;
 
-				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_hex.paa"; //--- ToDo: Localize;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_hex.paa"; //--- ToDo: Localize; 
 				x = -0.000156274 * safezoneW + safezoneX;
 				y = -0.00599999 * safezoneH + safezoneY;
 				w = 1.00031 * safezoneW;
 				h = 1.012 * safezoneH;
-				//colorText[] = {1,1,1,1};
-				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame; if !OPTRE_Hud_On then {(_this select 0) ctrlSetFade .5; (_this select 0) ctrlCommit 0; _this spawn { (_this select 0) ctrlSetFade 0.5; (_this select 0) ctrlCommit 1;  (_this select 0) ctrlSetFade 1; (_this select 0) ctrlCommit 1; };} else { (_this select 0) ctrlSetFade 1; (_this select 0) ctrlCommit 0; };";
+				colorText[] = {1,0.5,0,1};
+				//onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame; if !OPTRE_Hud_On then {(_this select 0) ctrlSetFade .5; (_this select 0) ctrlCommit 0; _this spawn { (_this select 0) ctrlSetFade 0.5; (_this select 0) ctrlCommit 1;  (_this select 0) ctrlSetFade 1; (_this select 0) ctrlCommit 1; };} else { (_this select 0) ctrlSetFade 1; (_this select 0) ctrlCommit 0; };";
+				onLoad = "if !OPTRE_Hud_On then {(_this select 0) ctrlSetFade .5; (_this select 0) ctrlCommit 0; _this spawn { (_this select 0) ctrlSetFade 0.5; (_this select 0) ctrlCommit 1;  (_this select 0) ctrlSetFade 1; (_this select 0) ctrlCommit 1; };} else { (_this select 0) ctrlSetFade 1; (_this select 0) ctrlCommit 0; };";
 			};
 			class RscPicture_121: OPTRE_HUD_RscPicture
 			{
@@ -149,8 +151,9 @@ class OPTRE_ODST_Main_1 {
 				y = -0.00599999 * safezoneH + safezoneY;
 				w = 1.00031 * safezoneW;
 				h = 1.012 * safezoneH;
-				//colorText[] = {1,0.5,0,0.5};
-				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame; if !OPTRE_Hud_On then {_ctrl = (_this select 0); _pos = ctrlPosition _ctrl; _ctrl ctrlSetPosition [(_pos select 0), -2.3, (_pos select 2), -2]; _ctrl ctrlCommit 0; _ctrl ctrlSetPosition [(_pos select 0), 2, (_pos select 2), 2];; _ctrl ctrlCommit 1;} else {_ctrl = (_this select 0); _ctrl ctrlSetFade 1; _ctrl ctrlCommit 0; };";
+				colorText[] = {1,0.5,0,1};
+				//onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame; if !OPTRE_Hud_On then {_ctrl = (_this select 0); _pos = ctrlPosition _ctrl; _ctrl ctrlSetPosition [(_pos select 0), -2.3, (_pos select 2), -2]; _ctrl ctrlCommit 0; _ctrl ctrlSetPosition [(_pos select 0), 2, (_pos select 2), 2];; _ctrl ctrlCommit 1;} else {_ctrl = (_this select 0); _ctrl ctrlSetFade 1; _ctrl ctrlCommit 0; };";
+				onLoad = "if !OPTRE_Hud_On then {_ctrl = (_this select 0); _pos = ctrlPosition _ctrl; _ctrl ctrlSetPosition [(_pos select 0), -2.3, (_pos select 2), -2]; _ctrl ctrlCommit 0; _ctrl ctrlSetPosition [(_pos select 0), 2, (_pos select 2), 2];; _ctrl ctrlCommit 1;} else {_ctrl = (_this select 0); _ctrl ctrlSetFade 1; _ctrl ctrlCommit 0; };";
 			};
 			// Load Annim Only //
 			
@@ -165,7 +168,7 @@ class OPTRE_ODST_Main_1 {
 				y = -0.00599999 * safezoneH + safezoneY;
 				w = 1.00031 * safezoneW;
 				h = 1.012 * safezoneH;
-				colorText[] = {1,0.5,0,0.5};
+				colorText[] = {1,0.5,0,1};
 				onLoad = "(_this select 0) ctrlSetFade 0.5; (_this select 0) ctrlCommit 5;";
 			};*/
 			class RscPicture_123: OPTRE_HUD_RscPicture
@@ -177,10 +180,44 @@ class OPTRE_ODST_Main_1 {
 				y = -0.00599999 * safezoneH + safezoneY;
 				w = 1.00031 * safezoneW;
 				h = 1.012 * safezoneH;
-				//colorText[] = {1,0.5,0,0.7};
-				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame; if !OPTRE_Hud_On then {(_this select 0) ctrlSetFade 0.5; (_this select 0) ctrlCommit 5;} else { (_this select 0) ctrlSetFade 0.5; (_this select 0) ctrlCommit 0;};";
+				colorText[] = {1,0.5,0,1};
+				onLoad = "if !OPTRE_Hud_On then {(_this select 0) ctrlSetFade 0.5; (_this select 0) ctrlCommit 5;} else { (_this select 0) ctrlSetFade 0.5; (_this select 0) ctrlCommit 0;};";
 			};
 			
+			////////////////////////////////////////////////////////
+			// GUI EDITOR OUTPUT START (by big_wilk, v1.063, #Kaxaju)
+			////////////////////////////////////////////////////////
+
+			class RscText_1000: OPTRE_HUD_RscPicture
+			{
+				idc = 10001;
+				text = ""; //--- ToDo: Localize;
+				x = 0.484531 * safezoneW + safezoneX;
+				y = 0.112 * safezoneH + safezoneY;
+				w = 0.0103125 * safezoneW;
+				h = 0.022 * safezoneH;
+			};
+			class RscText_10002: OPTRE_HUD_RscPicture
+			{
+				idc = 10002;
+				text = ""; //--- ToDo: Localize;
+				x = 0.494844 * safezoneW + safezoneX;
+				y = 0.112 * safezoneH + safezoneY;
+				w = 0.0103125 * safezoneW;
+				h = 0.022 * safezoneH;
+			};
+			class RscText_10003: OPTRE_HUD_RscPicture
+			{
+				idc = 10003;
+				text = ""; //--- ToDo: Localize;
+				x = 0.505156 * safezoneW + safezoneX;
+				y = 0.112 * safezoneH + safezoneY;
+				w = 0.0103125 * safezoneW;
+				h = 0.022 * safezoneH;
+			};
+			////////////////////////////////////////////////////////
+			// GUI EDITOR OUTPUT END
+			////////////////////////////////////////////////////////
 
 					
 			// Icon Displays

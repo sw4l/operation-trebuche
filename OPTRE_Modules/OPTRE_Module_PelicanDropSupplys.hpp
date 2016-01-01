@@ -11,6 +11,7 @@
 		isTriggerActivated = 1;// 1 for module waiting until all synced triggers are activated
 		//isDisposable = 1;// 1 if modules is to be disabled once it's activated (i.e., repeated trigger activation won't work) // CAUSEING ERROR?? // 
 		//curatorInfoType = "RscDisplayAttributeModuleNuke";// Menu displayed when the module is placed or double-clicked on by Zeus
+		author = "Article 2 Studios";
 		
 		// Module arguments
 		class Arguments
@@ -275,7 +276,7 @@
   			{
 				displayName = "Custom Box Code"; // Argument label
 				description = "A script that will be run on any pod assigned as CUSTOM. _This refers to the pod that is spawned.";// Tooltip description
-				defaultValue = "_this addMagazineCargoGlobal ['Laserbatteries',2]; _this addWeaponCargoGlobal ['Laserdesignator',1];"; // Default text filled in the input box
+				defaultValue = "_this addMagazineCargoGlobal ['OPTRE_60Rnd_5x23mm_Mag',4]; _this addWeaponCargoGlobal ['OPTRE_M7',1];";
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 			};
 					   
@@ -284,8 +285,17 @@
 		
 		class ModuleDescription
 		{
-			description[] = {
-				"Synchronising this module to a frigate will set up the frigates computer system.";
+			description[] = {"This module will spawn a Pelican drop ship that can deliver supply pods or vehicles to troops on ground. Place the module where you would like the supplies to be dropped on the map. Note that if a Landing Pad is nearby the pelican will always try to land on that position when delivering vehicles as this module uses the LAND command, this may cause a problem if more than one Pelican try to land on a pad at once (This apply s to Landing Pads native to the map as well a spawned / placed pads.).";};
+			sync[] = {"EmptyDetector"};
+			position = 1;
+			direction = 0;
+						
+			class EmptyDetector {
+				duplicate = 1;
+				position = 0;
+				direction = 0;
+				optional = 1;
 			};
+			
 		};
 	};

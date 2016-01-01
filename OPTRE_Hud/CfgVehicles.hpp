@@ -16,6 +16,7 @@ DESTRUCTBUILDING 																				= 1,
 
 class CfgVehicles
 {
+
 	class All {};
 	class Static: All {};
 	class Building: Static {};
@@ -64,5 +65,84 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
+		class OPTRE_compass_mark_blu: static
+	{
+		scope = 2;
+		scopeCurator = 2;
+		vehicleClass = "OPTRE_UNSC_Object_class";
+		displayName = "compass mark Blue";
+		model = "\OPTRE_Hud\compass_mark_blu.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+	};
+		class OPTRE_compass_mark_1_blu: static
+	{
+		scope = 2;
+		scopeCurator = 2;
+		vehicleClass = "OPTRE_UNSC_Object_class";
+		displayName = "compass mark 1 Blue";
+		model = "\OPTRE_Hud\compass_mark_1_blu.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+	};
+		class OPTRE_compass_mark_2_blu: static
+	{
+		scope = 2;
+		scopeCurator = 2;
+		vehicleClass = "OPTRE_UNSC_Object_class";
+		displayName = "compass mark 2 Blue";
+		model = "\OPTRE_Hud\compass_mark_2_blu.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+	};
+		class OPTRE_compass_mark_3_blu: static
+	{
+		scope = 2;
+		scopeCurator = 2;
+		vehicleClass = "OPTRE_UNSC_Object_class";
+		displayName = "compass mark 3 Blue";
+		model = "\OPTRE_Hud\compass_mark_3_blu.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+	};
+		class OPTRE_compass_mark_org: static
+	{
+		scope = 2;
+		scopeCurator = 2;
+		vehicleClass = "OPTRE_UNSC_Object_class";
+		displayName = "compass mark Orange";
+		model = "\OPTRE_Hud\compass_mark_org.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+	};
+		class OPTRE_compass_mark_1_org: static
+	{
+		scope = 2;
+		scopeCurator = 2;
+		vehicleClass = "OPTRE_UNSC_Object_class";
+		displayName = "compass mark 1 Orange";
+		model = "\OPTRE_Hud\compass_mark_1_org.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+	};
+		class OPTRE_compass_mark_2_org: static
+	{
+		scope = 2;
+		scopeCurator = 2;
+		vehicleClass = "OPTRE_UNSC_Object_class";
+		displayName = "compass mark 2 Orange";
+		model = "\OPTRE_Hud\compass_mark_2_org.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+	};
+		class OPTRE_compass_mark_3_org: static
+	{
+		scope = 2;
+		scopeCurator = 2;
+		vehicleClass = "OPTRE_UNSC_Object_class";
+		displayName = "compass mark 3 Orange";
+		model = "\OPTRE_Hud\compass_mark_3_org.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+	};
 };
-

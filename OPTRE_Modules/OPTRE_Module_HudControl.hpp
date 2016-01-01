@@ -12,6 +12,7 @@
 		isTriggerActivated = 1;// 1 for module waiting until all synced triggers are activated
 		//isDisposable = 1;// 1 if modules is to be disabled once it's activated (i.e., repeated trigger activation won't work) // CAUSEING ERROR?? // 
 		//curatorInfoType = "RscDisplayAttributeModuleNuke";// Menu displayed when the module is placed or double-clicked on by Zeus
+		author = "Article 2 Studios";
 		
 		// Module arguments
 		class Arguments
@@ -47,7 +48,17 @@
 		class ModuleDescription
 		{
 			description[] = {
-				"Placing this module will allow you to control some aspects of all players HUDs. This module can be synchronised to a trigger an deployed at any time in a mission to limit or expand a players HUD options.";
+				"Placing this module will allow you to control some aspects of all players HUDs. This module can be synchronised to a trigger and deployed at any time in a mission to limit or expand a players HUD options.";
+			};
+			sync[] = {"EmptyDetector"};
+			position = 1;
+			direction = 0;
+						
+			class EmptyDetector {
+				duplicate = 1;
+				position = 0;
+				direction = 0;
+				optional = 1;
 			};
 		};
 	};	

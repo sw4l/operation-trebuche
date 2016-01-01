@@ -7,4 +7,3 @@
 #include "Menus\ODST_Menu.hpp"
 
 #include "CfgVehicles.hpp"
-#include "CfgGlasses.hpp"

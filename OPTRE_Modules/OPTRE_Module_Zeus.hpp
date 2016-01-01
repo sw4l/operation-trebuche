@@ -6,4 +6,5 @@ class OPTRE_PelicanSupplyDrop : ModuleCASMissile_F {
 	curatorInfoType = "OPTRE_ZeusDisplay_ResupplyPelican"; 
 	function = "OPTRE_fnc_ModulePelicanDropSupplys";
 	portrait = "OPTRE_Vehicles\Pelican\Data\icon2.paa";
+	author = "Article 2 Studios";
 };

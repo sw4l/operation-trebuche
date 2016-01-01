@@ -35,8 +35,10 @@ class CfgVehicles
 	{
 		scope = 2;
 		scopeCurator = 2;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Sidewalk Narrow Straight";
+		vehicleClass = "OPTRE_City_Objects_class";
+		armor = 999999;
+		armorStructural = 999;
+		displayName = "Sidewalk (Narrow Straight)";
 		model = "\OPTRE_buildings\streetobjects\sidewalk_narrow_short.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
@@ -46,8 +48,10 @@ class CfgVehicles
 	{
 		scope = 2;
 		scopeCurator = 2;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Sidewalk Wide Straight";
+		vehicleClass = "OPTRE_City_Objects_class";
+		armor = 999999;
+		armorStructural = 999;
+		displayName = "Sidewalk (Wide Straight)";
 		model = "\OPTRE_buildings\streetobjects\sidewalk_wide_short.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
@@ -59,8 +63,10 @@ class CfgVehicles
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Sidewalk Wide Short Curve";
-		vehicleClass = "OPTRE_UNSC_Object_class";
+		displayName = "Sidewalk (Wide Short Curve)";
+		vehicleClass = "OPTRE_City_Objects_class";
+		armor = 999999;
+		armorStructural = 999;
 		model = "\OPTRE_buildings\streetobjects\sidewalk_wide_curve.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
@@ -70,8 +76,10 @@ class CfgVehicles
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Sidewalk Wide Long Curve";
-		vehicleClass = "OPTRE_UNSC_Object_class";
+		displayName = "Sidewalk (Wide Long Curve)";
+		vehicleClass = "OPTRE_City_Objects_class";
+		armor = 999999;
+		armorStructural = 999;
 		model = "\OPTRE_buildings\streetobjects\sidewalk_wide_curve3.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";

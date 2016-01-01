@@ -236,6 +236,7 @@ class OPTRE_HUD_SructuredText {
   h = 0.1; 
   size = 0.030;
   text = "";
+  font = "Zeppelin33";
   
   class Attributes {
   

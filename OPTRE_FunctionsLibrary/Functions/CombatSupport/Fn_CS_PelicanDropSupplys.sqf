@@ -122,27 +122,63 @@ _gunner = false;
 _podArray = [];
 
 _className = switch _style do {
-	case "marine": { "OPTRE_Pelican_armed_marine" };
-	case "tan": { "OPTRE_Pelican_armed_tan" };
-	case "green": { "OPTRE_Pelican_armed_green" };
-	case "black": { "OPTRE_Pelican_armed_black" };
-	case "insurrection": {"OPTRE_Pelican_unarmed_ins"};
-	default { "OPTRE_Pelican_armed_marine" };
+	case "marine": 		 { "OPTRE_Pelican_armed_marine" };
+	case "tan": 		 { "OPTRE_Pelican_armed_tan" };
+	case "green": 		 { "OPTRE_Pelican_armed_green" };
+	case "black": 		 { "OPTRE_Pelican_armed_black" };
+	case "insurrection": { "OPTRE_Pelican_unarmed_ins" };
+	default	 			 { "OPTRE_Pelican_armed_marine" };
 };
 
 _SpawnPos = [[(_pos select 0), (_pos select 1), _flyInHeight], _dis, _dir] call OPTRE_fnc_MathsTriangulatePos;
 _pelicanArray = [_SpawnPos, (_dir - 180), _className, _side] call bis_fnc_spawnvehicle;
-
 _pelican = _pelicanArray select 0;
 //_pelicanCrewArray = _pelicanArray select 1;
 _pelicanGroup = _pelicanArray select 2;
-
+_everyThingSpawned = units _pelicanGroup + [_pelican]; 
+{_x setVariable ["OPTRE_AllSpawned",_everyThingSpawned,false]} forEach [_pelican, driver _pelican];
 _pelican flyInHeight _flyInHeight;
+_pelican setVehicleLock "LOCKEDPLAYER";
+
+_pelican addEventHandler ["HandleDamage",{
+	if isServer then {
+		if ((_this select 2) == 1) then {
+			{detach _x;} forEach ( (_this select 0) getVariable "OPTRE_CS_SupPods" ); 
+			//deleteVehicle ( (_this select 0) getVariable ["OPTRE_LANDPAD",objNull] );
+			{_x addCuratorEditableObjects [( (_this select 0) getVariable ["OPTRE_AllSpawned",[]] ), true];} forEach allCurators;
+			{
+				(_this select 0) removeAllEventHandlers _x;
+			} forEach ["GetOut","HandleDamage","killed"];
+		};
+	};
+}];
+driver _pelican addEventHandler ["killed",{
+	if isServer then {
+		{detach _x;} forEach ( vehicle (_this select 0) getVariable "OPTRE_CS_SupPods" ); 
+		//deleteVehicle ( (_this select 0) getVariable ["OPTRE_LANDPAD",objNull] );
+		{_x addCuratorEditableObjects [( (_this select 0) getVariable ["OPTRE_AllSpawned",[]] ), true];} forEach allCurators;
+		{
+			(_this select 0) removeAllEventHandlers _x;
+		} forEach ["GetOut","HandleDamage","killed"];
+	};
+}];
+_pelican addEventHandler ["GetOut",{
+	if isServer then { 
+		if ( (_this select 1) == "driver" ) then {
+			{detach _x;} forEach ( (_this select 0) getVariable "OPTRE_CS_SupPods" ); 
+			//deleteVehicle ( (_this select 0) getVariable ["OPTRE_LANDPAD",objNull] );
+			{_x addCuratorEditableObjects [( (_this select 0) getVariable ["OPTRE_AllSpawned",[]] ), true];} forEach allCurators;
+			{
+				(_this select 0) removeAllEventHandlers _x;
+			} forEach ["GetOut","HandleDamage","killed"];
+		};	
+	};
+}];
 
 if (typeName _podArrayString == "ARRAY") then {
 
 	_wpDrop = _pelicanGroup addWaypoint [_pos , 0];
-	_wpDrop setWaypointStatements ["true", "if isServer then {_count = 0; { _time = (_count * 0.25); [_x,_time] spawn OPTRE_fnc_CS_MonitorSupplyPodDrop; _count = _count + 1; } forEach (vehicle this getVariable ""OPTRE_CS_SupPods""); };"];
+	_wpDrop setWaypointStatements ["true", "if isServer then {_count = 0; { _time = (_count * 0.25); [_x,_time] spawn OPTRE_fnc_CS_MonitorSupplyPodDrop; _count = _count + 1; } forEach (vehicle this getVariable ""OPTRE_CS_SupPods""); vehicle this setVariable [""OPTRE_CS_SupPods"",[],false];};"];
 	_wpDrop setWaypointType "MOVE";
 	_wpDrop setWaypointBehaviour "CARELESS";
 	_wpDrop setWaypointCombatMode "RED";
@@ -169,6 +205,7 @@ if (typeName _podArrayString == "ARRAY") then {
 				})
 			};
 			_pod = _podClass createVehicle [0,0,0];
+			_pod disableCollisionWith _pelican;
 			_pod attachTo [_pelican, (switch _count do {
 					case 0: 	 { [-1.1,-5.7,-.2] };
 					case 1: 	 { [ 1.1,-5.7,-.2] };
@@ -177,91 +214,49 @@ if (typeName _podArrayString == "ARRAY") then {
 					case 4: 	 { [-1.1,-3.7,-.2] };
 					case 5: 	 { [ 1.1,-3.7,-.2] };
 			})]; 
-			if (typeName _x == "STRING") then { if (_x == "Empty") then { _pod call _code; }; };
+			if (typeName _x == "STRING") then { if (_x == "Empty") then { 0 = _pod call _code; }; };
 			_podArray pushBack _pod;
 			_count = _count + 1; 
 		};
 	} forEach _podArrayString; 
+	
 } else {
 
-	_Aproach = [[(_pos select 0), (_pos select 1), _flyInHeight], 500, _dir] call OPTRE_fnc_MathsTriangulatePos;
+	//_pad = "Land_HelipadEmpty_F" createVehicle _pos;
+	//_pelican setVariable ["OPTRE_LANDPAD",_pad,false];
+	
+	_Aproach = [[(_pos select 0), (_pos select 1), _flyInHeight], 1000, _dir] call OPTRE_fnc_MathsTriangulatePos;
 	_wpDropAproach = _pelicanGroup addWaypoint [_Aproach , 0];
 	_wpDropAproach setWaypointStatements ["true", "(vehicle this) flyInHeight 12;"];
 	_wpDropAproach setWaypointType "MOVE";
 	_wpDropAproach setWaypointBehaviour "CARELESS";
 	_wpDropAproach setWaypointCombatMode "RED";
-	
+		
 	_wpDrop = _pelicanGroup addWaypoint [_pos , 0];
-	_wpDrop setWaypointStatements ["true", "if isServer then {_count = 0; { _time = (_count * 0.25); [_x,_time] spawn OPTRE_fnc_CS_MonitorSupplyPodDrop; _count = _count + 1; } forEach (vehicle this getVariable ""OPTRE_CS_SupPods""); }; (vehicle this) flyInHeight 60;"];
-	_wpDrop setWaypointType "UNHOOK";
+	_wpDrop setWaypointStatements ["_pelican = vehicle this; _pelican land 'GET OUT'; (((getPos _pelican) select 2) < 8);", "if isServer then {_pelican = vehicle this; {_pod = _x; detach _pod; 0 = {_x addCuratorEditableObjects [[_pod], true];} forEach allCurators;} forEach (_pelican getVariable ""OPTRE_CS_SupPods""); _pelican setVariable [""OPTRE_CS_SupPods"",objNull,false]; _pelican flyInHeight 60; _pelican land 'none';};"];
+	_wpDrop setWaypointType "MOVE";
 	_wpDrop setWaypointBehaviour "CARELESS";
 	_wpDrop setWaypointCombatMode "RED";
+	_wpDrop setWaypointSpeed "LIMITED";
+	//_wpDrop waypointAttachVehicle _pad;
 	//_wpDrop setWaypointTimeout [20, 20, 20];
-	
-	//_pad = "Land_HelipadEmpty_F" createVehicle [_pos select 0, _pos select 1, 12];
-	
-	_veh = _podArrayString createVehicle [0,0,0];
-	_podArray pushBack _veh;
-	_veh call _code;
-	_veh attachTo [_pelican, (switch _podArrayString do {
-					// Supply Vehicles
-					case "OPTRE_m1087_stallion_unsc": 	 { [0,-6,0.4] };
-					case "OPTRE_m1015_mule_unsc": 	 	 { [0,-4.9,0.4] };
-					// Warthog
-					case "OPTRE_M12_FAV": 				 { [0,-4.9,0.1] };
-					case "OPTRE_M12_FAV_black": 		 { [0,-4.9,0.1] };
-					case "OPTRE_M12_FAV_Marine": 		 { [0,-4.9,0.1] };
-					case "OPTRE_M12_FAV_snow": 	 	     { [0,-4.9,0.1] };
-					case "OPTRE_M12_FAV_tan": 	 	     { [0,-4.9,0.1] };
-					
-					case "OPTRE_M12_LRV": 	 			 { [0,-4.9,0.1] };
-					case "OPTRE_M12_LRV_black": 		 { [0,-4.9,0.1] };
-					case "OPTRE_M12_LRV_Marine": 		 { [0,-4.9,0.1] };
-					case "OPTRE_M12_LRV_snow": 	 		 { [0,-4.9,0.1] };
-					case "OPTRE_M12_LRV_tan": 	 		 { [0,-4.9,0.1] };
-					
-					case "OPTRE_M12A1_LRV": 	 		 { [0,-4.9,0.1] };
-					case "OPTRE_M12A1_LRV_black": 		 { [0,-4.9,0.1] };
-					case "OPTRE_M12A1_LRV_Marine": 		 { [0,-4.9,0.1] };		
-					case "OPTRE_M12A1_LRV_snow": 		 { [0,-4.9,0.1] };
-					case "OPTRE_M12A1_LRV_tan": 		 { [0,-4.9,0.1] };
-					
-					case "OPTRE_M12G1_LRV": 	 		 { [0,-4.9,0.1] };			
-					case "OPTRE_M12G1_LRV_black": 		 { [0,-4.9,0.1] };
-					case "OPTRE_M12G1_LRV_Marine": 		 { [0,-4.9,0.1] };
-					case "OPTRE_M12G1_LRV_snow": 		 { [0,-4.9,0.1] };		
-					case "OPTRE_M12G1_LRV_tan": 		 { [0,-4.9,0.1] };
-					
-					case "OPTRE_M12R_AA": 				 { [0,-4.9,0.1] };
-					case "OPTRE_M12R_AA_black": 		 { [0,-4.9,0.1] };	
-					case "OPTRE_M12R_AA_Marine":	 	 { [0,-4.9,0.1] };
-					case "OPTRE_M12R_AA_snow": 			 { [0,-4.9,0.1] };
-					case "OPTRE_M12R_AA_tan": 			 { [0,-4.9,0.1] };		
-					
-					case "OPTRE_M813_TT": 	 		     { [0,-4.9,0.1] };
-					case "OPTRE_M813_TT_black": 		 { [0,-4.9,0.1] };
-					case "OPTRE_M813_TT_Marine": 		 { [0,-4.9,0.1] };		
-					case "OPTRE_M813_TT_snow": 			 { [0,-4.9,0.1] };
-					case "OPTRE_M813_TT_tan": 			 { [0,-4.9,0.1] };		
 
-					case "OPTRE_UNSC_falcon_black": 	 { [0,-6,-0.1] };
-					case "OPTRE_UNSC_falcon_green":		 { [0,-6,-0.1] };
-					case "OPTRE_UNSC_falcon_snow": 		 { [0,-6,-0.1] };
-					case "OPTRE_UNSC_falcon_tan": 		 { [0,-6,-0.1] };
-					
-					default  							 { [0,-4.9,0.1] }; 
-	})]; 	
-	
+	_veh = createVehicle [_podArrayString, [_pos select 0, _pos select 1, 10000], [], 0, "FLY"];
+	_podArray pushBack _veh;
+	0 = _veh call _code;
+	_veh attachTo [_pelican, ([_podArrayString] call OPTRE_Fnc_PelicanAttachToPoints)]; 	
+
 };
 
-_endPos = [_pos, _dis, _exitDir] call OPTRE_fnc_MathsTriangulatePos;
+_endPos = [_pos, (2 * _dis), _exitDir] call OPTRE_fnc_MathsTriangulatePos;
 
 _wpFinal = _pelicanGroup addWaypoint [_endPos , 0];
-_wpFinal setWaypointStatements ["true", "if isServer then {_veh = vehicle this; {deleteVehicle _x;} forEach [_veh] + thisList;};"];
+_wpFinal setWaypointStatements ["true", "if isServer then {_veh = vehicle this; {_veh removeAllEventHandlers _x;} forEach ['GetOut','HandleDamage','killed']; {deleteVehicle _x;} forEach [_veh] + thisList;};"];
 _wpFinal setWaypointType "MOVE"; 
 _wpFinal setWaypointBehaviour "CARELESS";
 _wpFinal setWaypointCombatMode "RED";
+_wpFinal setWaypointSpeed "FULL";
 
 _pelican setVariable ["OPTRE_CS_SupPods",_podArray,false];
 
-_podArray
+_podArray;

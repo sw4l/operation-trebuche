@@ -39,8 +39,10 @@ class CfgVehicles
 	{
 		scope = 2;
 		scopeCurator = 2;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "King of the Hill";
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_City_Objects_class";
+		displayName = "King of the Hill Playset";
 		model = "\OPTRE_buildings\Misc\KOTH_Playset.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";

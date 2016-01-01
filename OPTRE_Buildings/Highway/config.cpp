@@ -33,88 +33,114 @@ class CfgVehicles
 	{
 		scope = 2;
 		scopeCurator = 2;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Highway Straight";
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_Trans_Building_class";
+		displayName = "Highway (Straight)";
 		model = "\OPTRE_buildings\Highway\Highway_straight.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
+	
 	class Land_Highway_bridge: House_F
 	{
 		scope = 2;
 		scopeCurator = 2;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Highway Bridge";
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_Trans_Building_class";
+		displayName = "Highway (Bridge)";
 		model = "\OPTRE_buildings\Highway\Highway_bridge.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
+	
 	class Land_Highway_ramp_a: House_F
 	{
 		scope = 2;
 		scopeCurator = 2;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Highway Ramp A";
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_Trans_Building_class";
+		displayName = "Highway Ramp (A)";
 		model = "\OPTRE_buildings\Highway\Highway_ramp_a.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
+	
 	class Land_Highway_turnlane_a: House_F
 	{
 		scope = 2;
 		scopeCurator = 2;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Highway Turnlane A";
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_Trans_Building_class";
+		displayName = "Highway Turn Lane (A)";
 		model = "\OPTRE_buildings\Highway\Highway_turnlane_a.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
-		class Land_Highway_ramp_b: House_F
+	
+	class Land_Highway_ramp_b: House_F
 	{
 		scope = 2;
 		scopeCurator = 2;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Highway Ramp B";
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_Trans_Building_class";
+		displayName = "Highway Ramp (B)";
 		model = "\OPTRE_buildings\Highway\Highway_ramp_b.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
+	
 	class Land_Highway_turnlane_b: House_F
 	{
 		scope = 2;
 		scopeCurator = 2;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Highway Turnlane B";
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_Trans_Building_class";
+		displayName = "Highway Turn Lane B";
 		model = "\OPTRE_buildings\Highway\Highway_turnlane_b.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
+	
 	class Land_Highway_turn_left: House_F
 	{
 		scope = 2;
 		scopeCurator = 2;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Highway Turn Left";
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_Trans_Building_class";
+		displayName = "Highway Turn (Left)";
 		model = "\OPTRE_buildings\Highway\Highway_turn_left.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
-		class Land_Highway_turn_right: House_F
+	
+	class Land_Highway_turn_right: House_F
 	{
 		scope = 2;
 		scopeCurator = 2;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Highway Turn Right";
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_Trans_Building_class";
+		displayName = "Highway Turn (Right)";
 		model = "\OPTRE_buildings\Highway\Highway_turn_Right.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
+	
 	class Land_Highway_gate_A: House_F
 	{
 		scope = 2;
 		scopeCurator = 2;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Highway Gate A";
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_Trans_Building_class";
+		displayName = "Highway Gate (A)";
 		model = "\OPTRE_buildings\Highway\Highway_gate_a.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
@@ -165,12 +191,15 @@ class CfgVehicles
             };
 		};
 	};
-		class Land_Highway_gate_house_a: House_F
+	
+	class Land_Highway_gate_house_a: House_F
 	{
 		scope = 2;
 		scopeCurator = 2;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Highway Gate House A";
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_Trans_Building_class";
+		displayName = "Highway Gate House (A)";
 		model = "\OPTRE_buildings\Highway\Highway_gate_house_a.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
@@ -179,8 +208,10 @@ class CfgVehicles
 	{
 		scope = 2;
 		scopeCurator = 2;
-		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "Highway Gate House B";
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_Trans_Building_class";
+		displayName = "Highway Gate House (B)";
 		model = "\OPTRE_buildings\Highway\gate_house.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";

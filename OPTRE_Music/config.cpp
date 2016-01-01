@@ -106,24 +106,24 @@ class CfgMusic
 	class OPTRE_Music_GreatPeril
 	{
 		name	="[OPTRE OST] Great Peril";
-		sound[]	={"\OPTRE_Music\OPTRE_OriginalSoundtrackMusic_greatperil.ogg",1,1};
+		sound[]	={"\OPTRE_Music\OST\OPTRE_OriginalSoundtrackMusic_greatperil.ogg",1,1};
 		musicClass = "OPTRE_OST";
 		duration = 144;
 	};
 	class OPTRE_Music_Theme
 	{
 		name	="[OPTRE OST] Theme";
-		sound[]	={"\OPTRE_Music\OPTRE_OriginalSoundtrackMusic_halotheme.ogg",1,1};
+		sound[]	={"\OPTRE_Music\OST\OPTRE_OriginalSoundtrackMusic_halotheme.ogg",1,1};
 		musicClass = "OPTRE_OST";
 		duration = 146;
 	};
-	class OPTRE_Music_Impend
+	/*class OPTRE_Music_Impend
 	{
 		name	="[OPTRE OST] Impend";
-		sound[]	={"\OPTRE_Music\OPTRE_OriginalSoundtrackMusic_impend.ogg",1,1};
+		sound[]	={"\OPTRE_Music\OST\OPTRE_OriginalSoundtrackMusic_impend.ogg",1,1};
 		musicClass = "OPTRE_OST";
 		duration = 30;
-	};
+	};*/
 	class OPTRE_Music_InnieDance
 	{
 		name	="[OPTRE OST] Innie Dance";
@@ -131,13 +131,13 @@ class CfgMusic
 		musicClass = "OPTRE_OST";
 		duration = 236;
 	};
-	class OPTRE_Music_Jeopardy
+	/*class OPTRE_Music_Jeopardy
 	{
 		name	="[OPTRE OST] Jeopardy";
 		sound[]	={"\OPTRE_Music\OST\OPTRE_OriginalSoundtrackMusic_Jeopardy.ogg",1,1};
 		musicClass = "OPTRE_OST";
 		duration = 186;
-	};
+	};*/
 	class OPTRE_Music_Life
 	{
 		name	="[OPTRE OST] Life";
@@ -290,13 +290,13 @@ class CfgMusic
 		musicClass = "OPTRE_Remixes";
 		duration = 210;
 	};
-	class OPTRE_Music_JeopardyRedux
+	/*class OPTRE_Music_JeopardyRedux
 	{
 		name	="[OPTRE Remixes] Jeopardy Redux";
 		sound[]	={"\OPTRE_Music\Remixes\OPTRE_MusicRemix_jeopardyredux.ogg",1,1};
 		musicClass = "OPTRE_Remixes";
 		duration = 187;
-	};
+	};*/
 	class OPTRE_Music_LeadTrackRedux
 	{
 		name	="[OPTRE Remixes] Lead Track Redux";

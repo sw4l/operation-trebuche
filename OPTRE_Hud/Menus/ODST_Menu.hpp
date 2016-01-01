@@ -52,7 +52,7 @@ class RscText_991: OPTRE_HUD_SructuredText
 	y = 0.489 * safezoneH + safezoneY;
 	w = 0.4125 * safezoneW;
 	h = 0.396 * safezoneH;
-	OnLoad = "(_this select 0) ctrlSetText format ['WARNING JUST LIKE THE HUD SYSTEM, THIS MENU IS A W.I.P. AS SUCH SOME FEATURES WONT WORK OR ARE MISSING INCLUDEING THE ARTWORK.\n\n  FUTURE PLANS INCLUDE:\n\n* Custom Models for Marines / Army EYE PEICE and GLASSES.\n* Unique ONI HUD (Currently Uses ODST).\n* Personal Medical Scanner Function for all HUDs.\n* Team Medical Scanner Function for all HUDs.\n* Weapon Resting / Deployment Indicators.\n* Support Menu, (Missiles / Arty, Resupply, CAS, Transport).\n* Give players the ability to customise HUD Icons, Pictures and Text Colour Schemes (We need to make a new set of pictures for all weapons first).\n* Custom (more stylised) font for HUD / OPTRE.\n* Unique Sniper ODST HUD.\n\n  '];";
+	OnLoad = "(_this select 0) ctrlSetText format ['WARNING JUST LIKE THE HUD SYSTEM, THIS MENU IS A W.I.P. AS SUCH SOME FEATURES WONT WORK OR ARE MISSING INCLUDEING THE ARTWORK.\n\nFUTURE PLANS INCLUDE:\n\n* We will replace the weapon icons with custom icons, for now we d recommend using the colour black with pictures and text icons. (Anything but black will look crap for now, the options are just there for testing purposes.. though you can use them if you wish.).\n* A custom, more stylised text font.\n* More custom models for Marines / Army GLASSES.\n* A Custom Model for Marines / Army Eye Piece.\n* Custom ONI hud.\n* Custom ODST Sniper hud.\n* Custom Pilot hud.  '];";   
 	class Attributes {
 		align = "left";
 		color = "#771800"; 	
@@ -77,6 +77,7 @@ class OPTRE_RscCombo_1500: OPTRE_HUD_RscCombo
 	y = 0.258 * safezoneH + safezoneY;
 	w = 0.195937 * safezoneW;
 	h = 0.022 * safezoneH;
+	onLBSelChanged = "_c = ((_this select 0) lbData (lbCurSel (_this select 0))); profileNamespace setVariable [""OPTRE_ODST_HUDColourPict"", _c];";
 };
 class OPTRE_RscCombo_1501: OPTRE_HUD_RscCombo
 {
@@ -85,6 +86,7 @@ class OPTRE_RscCombo_1501: OPTRE_HUD_RscCombo
 	y = 0.291 * safezoneH + safezoneY;
 	w = 0.195937 * safezoneW;
 	h = 0.022 * safezoneH;
+	onLBSelChanged = "_c = ((_this select 0) lbData (lbCurSel (_this select 0))); profileNamespace setVariable [""OPTRE_ODST_HUDColourText"", _c];";
 };
 class OPTRE_RscCombo_1502: OPTRE_HUD_RscCombo
 {
@@ -93,6 +95,7 @@ class OPTRE_RscCombo_1502: OPTRE_HUD_RscCombo
 	y = 0.324 * safezoneH + safezoneY;
 	w = 0.195937 * safezoneW;
 	h = 0.022 * safezoneH;
+	onLBSelChanged = "_c = ((_this select 0) lbData (lbCurSel (_this select 0))); profileNamespace setVariable [""OPTRE_ODST_HUDColourMain"", _c];";
 };
 class RscCheckbox_2800: OPTRE_HUD_RscCheckbox
 {
@@ -182,6 +185,16 @@ class OPTRE_RscCombo_1505: OPTRE_HUD_RscCombo
 	h = 0.022 * safezoneH;
 	//tooltip = "WARNING! Setting This Value Over 1 is for BEAST COMPUTERS ONLY!!"; //--- ToDo: Localize;
 	onLBSelChanged = "OPTRE_LHD_PIPSel = (lbCurSel ((findDisplay 11000) displayCtrl 1505));";
+};
+class OPTRE_RscCombo_1506: OPTRE_HUD_RscCombo
+{
+	idc = 1506;
+	onLBSelChanged = "OPTRE_HUD_PIP_NVGTI = lbCurSel (_this select 0);";
+
+	x = 0.510312 * safezoneW + safezoneX;
+	y = 0.401 * safezoneH + safezoneY;
+	w = 0.195937 * safezoneW;
+	h = 0.022 * safezoneH;
 };
 
 	};

@@ -1,7 +1,7 @@
 /*
 This scirpt is a crap temp solution and should be changed in the future. 
 */
-private ["_primeWeaponPic","_seconWeaponPic","_throwWeaponPic","_AT___WeaponPic","_1","_2","_3","_4","_5"];
+private ["_primeWeaponPic","_seconWeaponPic","_throwWeaponPic","_AT___WeaponPic","_1","_2","_3","_4","_5","_Da","_Db","_Dc"];
 
 disableSerialization;
 _display = _this select 0; 
@@ -9,6 +9,11 @@ _display = _this select 0;
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////// List of All Controls /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Dir Compass Controls 
+_Da = _display displayCtrl 10001;
+_Db = _display displayCtrl 10002;
+_Dc = _display displayCtrl 10003;
 
 // Picture Controls
 _primeWeaponPic = _display displayCtrl 120;
@@ -43,9 +48,9 @@ _5 = _display displayCtrl 105;
 // Text + Number Pic Color's
 {
 	_x ctrlSetTextColor OPTRE_Hud_ColorScheme_Text;
-} forEach [_text_100,_text_101,_text_102,_1,_2,_3,_4,_5,(_display displayCtrl 200)];
+} forEach [_text_100,_text_101,_text_102,_text_103,_1,_2,_3,_4,_5,(_display displayCtrl 200),_Da,_Db,_Dc];
 
-_text_103 ctrlSetTextColor [0,0,0,0.3];
+//_text_103 ctrlSetTextColor [0,0,0,0.3];
 
 // If hud on first time and not refresh from menu do animations: 
 if !OPTRE_Hud_On then {
@@ -115,7 +120,26 @@ While {OPTRE_Hud_On AND cameraView != "EXTERNAL"} do {
 
 	// Compass 
 	if OPTRE_HUD_CompassWanted then {
-		_dirString = str (round _dirPlayer); _text_103 ctrlSetText ((switch (count (toArray _dirString)) do {case 1: {"00"}; case 2: {"0"}; default {""};}) + _dirString); 
+		//_dirString = str (round _dirPlayer); 
+		//_text_103 ctrlSetText ((switch (count (toArray _dirString)) do {case 1: {"00"}; case 2: {"0"}; default {""};}) + _dirString); 
+		_stringNumbsDir =  str (round _dirPlayer) splitString '';
+		0 = switch ((count _stringNumbsDir)) do {
+			case 1: { 
+						_Dc ctrlSetText (format ["OPTRE_Hud\Data\Numbers\%1.paa",_stringNumbsDir select 0]);
+						_Db ctrlSetText "OPTRE_Hud\Data\Numbers\0.paa"; 								   
+						_Da ctrlSetText "OPTRE_Hud\Data\Numbers\0.paa";										
+					};
+			case 2: { 
+						_Dc ctrlSetText (format ["OPTRE_Hud\Data\Numbers\%1.paa",_stringNumbsDir select 1]);
+						_Db ctrlSetText (format ["OPTRE_Hud\Data\Numbers\%1.paa",_stringNumbsDir select 0]);									
+						_Da ctrlSetText "OPTRE_Hud\Data\Numbers\0.paa";	
+					};
+			case 3: { 
+						_Dc ctrlSetText (format ["OPTRE_Hud\Data\Numbers\%1.paa",_stringNumbsDir select 2]);
+						_Db ctrlSetText (format ["OPTRE_Hud\Data\Numbers\%1.paa",_stringNumbsDir select 1]);
+						_Da ctrlSetText (format ["OPTRE_Hud\Data\Numbers\%1.paa",_stringNumbsDir select 0]); 
+					};
+		};
 		_vD = vectorDir player; _c ctrlSetModelDirAndUp [[(_vD select 0),(_vD select 1),0],[0,0,1]];
 		_currTask = [player] call BIS_fnc_taskCurrent;
 		//(([player, ([_currTask] call BIS_fnc_taskDestination)] call BIS_fnc_dirTo) - getDir player)

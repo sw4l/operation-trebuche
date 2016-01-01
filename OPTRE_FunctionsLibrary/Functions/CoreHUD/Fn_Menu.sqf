@@ -30,31 +30,53 @@ _1900_RadarScale_Slider sliderSetPosition OPTRE_Hud_RadarScale;
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+
+
+				
 // Set Icon Colour
+_hudPict = profileNamespace getVariable ["OPTRE_ODST_HUDColourPict","black"];
 {
-	 _index = ((findDisplay 11000) displayCtrl 1500) lbAdd (format ["Icon Colour: %1",(_x select 0)]) ;
+	 _index = ((findDisplay 11000) displayCtrl 1500) lbAdd (format ["ODST Icon Colour: %1", _x]);
+	 ((findDisplay 11000) displayCtrl 1500) lbSetData [_index, _x];
+	 if (_x == _hudPict) then { ((findDisplay 11000) displayCtrl 1500) lbSetCurSel _index };
 } forEach [
-	["Black",""],
-	["Black",""]
+	"black"/*,
+	"orange",
+	"blue",
+	"white",
+	"red",
+	"green"*/
 ];	
 
 // Set Text Colour
+_hudText = profileNamespace getVariable ["OPTRE_ODST_HUDColourText","black"];
 {
-    _index = ((findDisplay 11000) displayCtrl 1501) lbAdd (format ["Text Colour: %1",(_x select 0)]) ;
+    _index = ((findDisplay 11000) displayCtrl 1501) lbAdd (format ["ODST Text Colour: %1", _x]);
+	((findDisplay 11000) displayCtrl 1501) lbSetData [_index, _x];
+	 if (_x == _hudText) then { ((findDisplay 11000) displayCtrl 1501) lbSetCurSel _index };
 } forEach [
-	["Black",""],
-	["Black",""]
+	"black"/*,
+	"orange",
+	"blue",
+	"white",
+	"red",
+	"green"*/
 ];		
 
 // Set Outline Colour
+_hudMain = profileNamespace getVariable ["OPTRE_ODST_HUDColourMain","orange"];
 {
-	 _index = ((findDisplay 11000) displayCtrl 1502) lbAdd (format ["Outline Colour: %1",(_x select 0)]) ;
+	 _index = ((findDisplay 11000) displayCtrl 1502) lbAdd (format ["ODST Outline Colour: %1", _x]);
+	 ((findDisplay 11000) displayCtrl 1502) lbSetData [_index, _x];
+	 if (_x == _hudMain) then { ((findDisplay 11000) displayCtrl 1502) lbSetCurSel _index };
 } forEach [
-	["Orange",""],
-	["Orange",""]
+	"orange",
+	"blue",
+	"white"
 ];	
 
-{((findDisplay 11000) displayCtrl _x) lbSetCurSel 0;} forEach [1500,1501,1502];
+//{((findDisplay 11000) displayCtrl _x) lbSetCurSel 0;} forEach [1500,1501,1502];
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -74,7 +96,7 @@ _1900_RadarScale_Slider sliderSetPosition OPTRE_Hud_RadarScale;
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 {
-	_index = ((findDisplay 11000) displayCtrl 1505) lbAdd (format ["Should Camera Veiw: %1 %2",rank _x, name _x]) ;
+	_index = ((findDisplay 11000) displayCtrl 1505) lbAdd (format ["Should Camera Vein: %1 %2",rank _x, name _x]) ;
 } forEach units group player - [player];
 ((findDisplay 11000) displayCtrl 1505) lbSetCurSel OPTRE_LHD_PIPSel;
 
@@ -82,9 +104,10 @@ _1900_RadarScale_Slider sliderSetPosition OPTRE_Hud_RadarScale;
 	_index = ((findDisplay 11000) displayCtrl 1506) lbAdd (format ["Shoulder Camera Mode: %1",(_x select 0)]) ;
 } forEach [
 	["Normal",0],
-	["Night Vision",1]
+	["Night Vision",1],
+	["Thermal Vision",2]
 ];	
-((findDisplay 11000) displayCtrl 1506) lbSetCurSel OPTRE_LHD_PIPMode;
+((findDisplay 11000) displayCtrl 1506) lbSetCurSel OPTRE_HUD_PIP_NVGTI;
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -22,7 +22,36 @@ if !OPTRE_Hud_On then {
 	if !_brokenBool then { // Not Broken 
 		switch _hudStyle do { // Not Broken
 			case "ODST_1": {
-				OPTRE_Hud_MainCurrent = "OPTRE_ODST_Main_1";
+				_hudMain = profileNamespace getVariable ["OPTRE_ODST_HUDColourMain","orange"];
+				_hudText = profileNamespace getVariable ["OPTRE_ODST_HUDColourText","black"];
+				_hudPict = profileNamespace getVariable ["OPTRE_ODST_HUDColourPict","black"];
+				OPTRE_Hud_MainCurrent = switch _hudMain do {
+					case "orange": { "OPTRE_ODST_Main_1" };
+					case "blue": { "OPTRE_ODST_Main_1_blue" };
+					case "white": { "OPTRE_ODST_Main_1_white" };
+				};
+				OPTRE_Hud_ColorScheme_Pictures = switch _hudPict do {
+					case "black": { [0,0,0,.5] };
+					case "orange": { [1,0.5,0,.5] };
+					case "blue": { [0,0,1,.5] };
+					case "white": { [1,1,1,1] };
+					case "red": { [1,0,0,.5] };
+					case "green": { [0,1,0,.5] };
+					
+				};
+				OPTRE_Hud_ColorScheme_Text = switch _hudText do {
+					case "black": { [0,0,0,.5] };
+					case "orange": { [1,0.5,0,.5] };
+					case "blue": { [0,0,1,.5] };
+					case "white": { [1,1,1,1] };
+					case "red": { [1,0,0,.5] };
+					case "green": { [0,1,0,.5] };
+				};
+				OPTRE_Hud_ColorScheme_Frame = switch _hudMain do {
+					case "orange": { [1,0.5,0,1] };
+					case "blue": { [0.1,0.1,1,0.5] };
+					case "white": { [1,1,1,1] };
+				};
 				OPTRE_Hud_HealthCurrent = "OPTRE_ODST_HealthBar";
 				OPTRE_Hud_AmmoCurrent = "OPTRE_ODST_WeaponProgress"; 
 				OPTRE_Hud_LHDCurrent = switch OPTRE_LHD_Function do {
@@ -33,6 +62,10 @@ if !OPTRE_Hud_On then {
 				_loadAll = true; 
 			};
 			case "EYE": {
+				OPTRE_Hud_ColorScheme_Pictures = [0,0,0,.5];
+				OPTRE_Hud_ColorScheme_Text = [0,0,0,.5];
+				OPTRE_Hud_ColorScheme_Frame = [1,0.5,0,1];	
+			
 				OPTRE_Hud_MainCurrent = "OPTRE_Marine_Main_1";
 				OPTRE_Hud_HealthCurrent = "OPTRE_Marine_Main_1_Health";
 				OPTRE_Hud_AmmoCurrent = "OPTRE_Marrine_1_WeaponProgress";
@@ -44,6 +77,10 @@ if !OPTRE_Hud_On then {
 				_loadAll = true; 
 			};
 			case "Glasses": {
+				OPTRE_Hud_ColorScheme_Pictures = [0,0,0,.5];
+				OPTRE_Hud_ColorScheme_Text = [0,0,0,.5];
+				OPTRE_Hud_ColorScheme_Frame = [1,0.5,0,1];
+
 				OPTRE_Hud_MainCurrent = "OPTRE_MarrineGlasses_Main";
 				OPTRE_Hud_HealthCurrent = "OPTRE_Marine_Main_1_Health";
 				OPTRE_Hud_AmmoCurrent = "OPTRE_Marrine_2_AmmoCount";
@@ -127,6 +164,7 @@ if !OPTRE_Hud_On then {
 	
 	// Switch off 
 	OPTRE_Hud_On = false; 
+	setAperture -1;
 	
 	if _hel then {
 		if !_brokenBool then {

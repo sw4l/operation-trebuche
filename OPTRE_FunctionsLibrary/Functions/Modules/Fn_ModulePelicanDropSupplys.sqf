@@ -61,9 +61,12 @@ _podArray = [];
 	};
 } forEach [_box1,_box2,_box3,_box4,_box5,_box6];
 
-_podsDroped = [
+_typeOfSpawn = ( if ( _veh == "none" ) then { _podArray } else { _veh } );
+deleteVehicle _logic; 
+
+0 = [
 	_pos,
-	( if (_veh == "none") then { _podArray } else { _veh } ),
+	_typeOfSpawn,
 	_dir,
 	_distance,
 	_colour,
@@ -71,8 +74,6 @@ _podsDroped = [
 	_side,
 	_exitDir,
 	_code
-] call OPTRE_fnc_CS_PelicanDropSupplys;
+] call (missionNamespace getVariable "OPTRE_fnc_CS_PelicanDropSupplys");
 
-deleteVehicle _logic; 
-
-true
+[];

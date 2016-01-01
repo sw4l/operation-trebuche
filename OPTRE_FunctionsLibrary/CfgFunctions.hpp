@@ -11,6 +11,7 @@ class CfgFunctions
 			class Init {postInit = 1;}; 
 			class ToggleVisor {};
 			class ToggleLHDFnc {};
+			class ToggleLowLight {};
 			class Menu {};
 			
 		};
@@ -42,6 +43,7 @@ class CfgFunctions
 			class ModuleHUD {};
 			class ModuleHEVStart {};
 			class ModulePelicanDropSupplys {};
+			class ModulePelicanAirAssault {};
 			
 		};
 		
@@ -71,7 +73,16 @@ class CfgFunctions
 			
 			class CS_PelicanDropSupplys {};
 			class CS_MonitorSupplyPodDrop {};
+			class CS_PelicanAirAssault {};
+			class PelicanAttachToPoints {};
 			
+		};
+		
+		class Arrays
+		{
+			file = "OPTRE_FunctionsLibrary\Functions\Arrays";
+			
+			class StringToArrayOfString {}; 
 		};
 		
 	}; 

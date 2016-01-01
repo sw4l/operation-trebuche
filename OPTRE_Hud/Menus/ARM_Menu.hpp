@@ -25,7 +25,7 @@ class OPTRE_HUD_ARM_Menu
 			{
 				idc = 1;
 
-				text = "Data\Hud_ODST_1\hud_hex.paa"; //--- ToDo: Localize;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_hex.paa"; //--- ToDo: Localize;
 				x = -0.000156274 * safezoneW + safezoneX;
 				y = -0.00599999 * safezoneH + safezoneY;
 				w = 1.00031 * safezoneW;
@@ -37,17 +37,13 @@ class OPTRE_HUD_ARM_Menu
 			{
 				idc = 2;
 
-				text = "Data\Hud_ODST_1\hud_edges_hex.paa"; //--- ToDo: Localize;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_edges_hex.paa"; //--- ToDo: Localize;
 				x = -0.000156274 * safezoneW + safezoneX;
 				y = -0.00599999 * safezoneH + safezoneY;
 				w = 1.00031 * safezoneW;
 				h = 1.012 * safezoneH;
 				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame; (_this select 0) ctrlSetFade 0.5; (_this select 0) ctrlCommit 0; ";
-			};
-			*/
-	////////////////////////////////////////////////////////
-// GUI EDITOR OUTPUT START (by big_wilk, v1.063, #Wevizu)
-////////////////////////////////////////////////////////
+			};*/
 
 class RscText_991: OPTRE_HUD_SructuredText
 {
@@ -56,7 +52,7 @@ class RscText_991: OPTRE_HUD_SructuredText
 	y = 0.489 * safezoneH + safezoneY;
 	w = 0.4125 * safezoneW;
 	h = 0.396 * safezoneH;
-	OnLoad = "(_this select 0) ctrlSetText format ['WARNING JUST LIKE THE HUD SYSTEM, THIS MENU IS A W.I.P. AS SUCH SOME FEATURES WONT WORK OR ARE MISSING INCLUDEING THE ARTWORK.\n\n  FUTURE PLANS INCLUDE:\n\n* Custom Models for Marines / Army EYE PEICE and GLASSES.\n* Unique ONI HUD (Currently Uses ODST).\n* Personal Medical Scanner Function for all HUDs.\n* Team Medical Scanner Function for all HUDs.\n* Weapon Resting / Deployment Indicators.\n* Support Menu, (Missiles / Arty, Resupply, CAS, Transport).\n* Give players the ability to customise HUD Icons, Pictures and Text Colour Schemes (We need to make a new set of pictures for all weapons first).\n* Custom (more stylised) font for HUD / OPTRE.\n* Unique Sniper ODST HUD.\n\n  '];";
+	OnLoad = "(_this select 0) ctrlSetText format ['WARNING JUST LIKE THE HUD SYSTEM, THIS MENU IS A W.I.P. AS SUCH SOME FEATURES WONT WORK OR ARE MISSING INCLUDEING THE ARTWORK.\n\nFUTURE PLANS INCLUDE:\n\n* We will replace the weapon icons with custom icons, for now we d recommend using the colour black with pictures and text icons. (Anything but black will look crap for now, the options are just there for testing purposes.. though you can use them if you wish.).\n* A custom, more stylised text font.\n* More custom models for Marines / Army GLASSES.\n* A Custom Model for Marines / Army Eye Piece.\n* Custom ONI hud.\n* Custom ODST Sniper hud.\n* Custom Pilot hud.  '];";   
 	class Attributes {
 		align = "left";
 		color = "#771800"; 	
@@ -64,9 +60,6 @@ class RscText_991: OPTRE_HUD_SructuredText
 	 size = 0.040;
 	  colorBackground[] = { 0,0,0,0.9 }; 
 };
-////////////////////////////////////////////////////////
-// GUI EDITOR OUTPUT END
-////////////////////////////////////////////////////////
 
 class BW_RscText_1000: OPTRE_HUD_RscText
 {
@@ -84,6 +77,7 @@ class OPTRE_RscCombo_1500: OPTRE_HUD_RscCombo
 	y = 0.258 * safezoneH + safezoneY;
 	w = 0.195937 * safezoneW;
 	h = 0.022 * safezoneH;
+	onLBSelChanged = "_c = ((_this select 0) lbData (lbCurSel (_this select 0))); profileNamespace setVariable [""OPTRE_ODST_HUDColourPict"", _c];";
 };
 class OPTRE_RscCombo_1501: OPTRE_HUD_RscCombo
 {
@@ -92,6 +86,7 @@ class OPTRE_RscCombo_1501: OPTRE_HUD_RscCombo
 	y = 0.291 * safezoneH + safezoneY;
 	w = 0.195937 * safezoneW;
 	h = 0.022 * safezoneH;
+	onLBSelChanged = "_c = ((_this select 0) lbData (lbCurSel (_this select 0))); profileNamespace setVariable [""OPTRE_ODST_HUDColourText"", _c];";
 };
 class OPTRE_RscCombo_1502: OPTRE_HUD_RscCombo
 {
@@ -100,6 +95,7 @@ class OPTRE_RscCombo_1502: OPTRE_HUD_RscCombo
 	y = 0.324 * safezoneH + safezoneY;
 	w = 0.195937 * safezoneW;
 	h = 0.022 * safezoneH;
+	onLBSelChanged = "_c = ((_this select 0) lbData (lbCurSel (_this select 0))); profileNamespace setVariable [""OPTRE_ODST_HUDColourMain"", _c];";
 };
 class RscCheckbox_2800: OPTRE_HUD_RscCheckbox
 {
@@ -162,10 +158,6 @@ class RscSlider_1900: OPTRE_HUD_RscSlider
 	onSliderPosChanged = "OPTRE_Hud_RadarScale = sliderPosition ( ( findDisplay 11000 ) displayCtrl 1900 ); ( ( findDisplay 11000 ) displayCtrl 1003 ) ctrlSetText (format ['Radar Zoom: %1m',round ((OPTRE_Hud_RadarScale / 0.01) * 50)]);"; 
 };
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 class OPTRE_RscCombo_1504: OPTRE_HUD_RscCombo
 {
 	idc = 1504;
@@ -194,55 +186,17 @@ class OPTRE_RscCombo_1505: OPTRE_HUD_RscCombo
 	//tooltip = "WARNING! Setting This Value Over 1 is for BEAST COMPUTERS ONLY!!"; //--- ToDo: Localize;
 	onLBSelChanged = "OPTRE_LHD_PIPSel = (lbCurSel ((findDisplay 11000) displayCtrl 1505));";
 };
-/*
 class OPTRE_RscCombo_1506: OPTRE_HUD_RscCombo
 {
 	idc = 1506;
+	onLBSelChanged = "OPTRE_HUD_PIP_NVGTI = lbCurSel (_this select 0);";
+
 	x = 0.510312 * safezoneW + safezoneX;
 	y = 0.401 * safezoneH + safezoneY;
 	w = 0.195937 * safezoneW;
 	h = 0.022 * safezoneH;
 };
-class OPTRE_RscCombo_1507: OPTRE_HUD_RscCombo
-{
-	idc = 1507;
-	x = 0.510312 * safezoneW + safezoneX;
-	y = 0.434 * safezoneH + safezoneY;
-	w = 0.195937 * safezoneW;
-	h = 0.022 * safezoneH;
-};
-class OPTRE_RscCombo_1508: OPTRE_HUD_RscCombo
-{
-	idc = 1508;
-	x = 0.510312 * safezoneW + safezoneX;
-	y = 0.467 * safezoneH + safezoneY;
-	w = 0.195937 * safezoneW;
-	h = 0.022 * safezoneH;
-};
-class OPTRE_RscCombo_1509: OPTRE_HUD_RscCombo
-{
-	idc = 1509;
-	x = 0.510312 * safezoneW + safezoneX;
-	y = 0.5 * safezoneH + safezoneY;
-	w = 0.195937 * safezoneW;
-	h = 0.022 * safezoneH;
-};
-////////////////////////////////////////////////////////
-// GUI EDITOR OUTPUT END
-////////////////////////////////////////////////////////
 
-		/*
-		class RscSlider_1900: OPTRE_HUD_RscSlider
-		{
-			idc = 1900;
-			x = 0.396875 * safezoneW + safezoneX;
-			y = 0.533 * safezoneH + safezoneY;
-			w = 0.195937 * safezoneW;
-			h = 0.022 * safezoneH;
-			onSliderPosChanged = "OPTRE_Hud_RadarScale = (sliderPosition 1900); 303 cutRsc ['LHD_LeftBottom_Radar','PLAIN',-1, false]; hint str ((OPTRE_Hud_RadarScale / 0.01) * 50)" 
-			onLoad = "(_this select 0) sliderSetRange [0.01, 1]; sliderSetSpeed [1900, 0.01, 0.01]; sliderSetPosition [1900, OPTRE_Hud_RadarScale];";
-		};
-		*/
 	};
 	
 };
