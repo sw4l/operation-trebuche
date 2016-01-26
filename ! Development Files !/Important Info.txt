@@ -10,6 +10,9 @@ Planned Release Date
 Official OPTRE Email/YT Info
 	Email: optremod@gmail.com
 	Pass: OPTRE_2513
+	Twitter
+	User: @operationtrebuchet.
+	Pass: ArticlE2.
 
 Bugs
 	https://www.reddit.com/r/OperationTrebuchet/comments/3ozpko/v013_bugs_issues_and_complaints/
