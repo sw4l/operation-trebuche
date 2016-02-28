@@ -133,7 +133,7 @@ class CfgVehicles
 				position				= "LightCarHeadL03";
 				direction 				= "LightCarHeadL03_end";
 				innerAngle				= 50;
-				outerAngle				= 80;
+				outerAngle				= 179;
 			};
 			class LightCarHeadR01:LightCarHeadL01
 			{
@@ -153,7 +153,7 @@ class CfgVehicles
 				position				= "LightCarHeadR03";
 				direction				= "LightCarHeadR03_end";
 				innerAngle				= 50;
-				outerAngle				= 80;
+				outerAngle				= 179;
 			};
 		};
 		aggregateReflectors[]			= {{"LightCarHeadL01","LightCarHeadL02"},{"LightCarHeadR01","LightCarHeadR02"}};
