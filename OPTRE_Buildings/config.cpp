@@ -460,4 +460,26 @@ class CfgVehicles
 		scope=2;
 		displayName="Urban Building 03";
 	};
+
+	class Land_Urban_Building_04: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\buildings\Urban_Building_04";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Urban Building 04";
+	};
+
+	class Land_Urban_Building_05: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\buildings\Urban_Building_05";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Urban Building 05";
+	};
 };
