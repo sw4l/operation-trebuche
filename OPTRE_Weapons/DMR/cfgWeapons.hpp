@@ -23,7 +23,7 @@ class CfgWeapons
 		scopeArsenal 								= 2;
 		displayName 								= "M392 Scope";
 		picture 									= "\OPTRE_weapons\br\icons\scope.paa";
-		model 										= "\OPTRE_Weapons\DMR\DMR_Scope.p3d";
+		model 										= "\OPTRE_Weapons\DMR\scope.p3d";
 		descriptionShort 							= "4x Scope for M392 Marksman Rifle";
 		weaponInfoType 								= "RscWeaponZeroing";
 		class ItemInfo: InventoryOpticsItem_Base_F
@@ -31,7 +31,7 @@ class CfgWeapons
 			mass 									= 5;
 			opticType		 						= 1;
 			optics 									= 1;
-			modelOptics 							= "\OPTRE_Weapons\DMR\DMR_Scope.p3d";
+			modelOptics 							= "\OPTRE_Weapons\DMR\scope.p3d";
 			class OpticsModes
 			{
 				class DMR_Scope

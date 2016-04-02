@@ -17,20 +17,20 @@ class Mode_FullAuto;
      
             class OPTRE_SRS99_Scope: ItemCore
             {
-		dlc = "OPTRE";
+					dlc = "OPTRE";
                     scope                                                                   = 2;
                     displayName                                                             = "Oracle N-variant SRS99 Scope";
 					picture 																= "\OPTRE_weapons\sniper\icons\scope.paa";
-                    model                                                                   = "\OPTRE_Weapons\Sniper\SRS99_Scope.p3d";
+                    model                                                                   = "\OPTRE_Weapons\Sniper\scope.p3d";
                     descriptionShort                                                        = "Oracle N-variant SRS99 Sniper Rifle 5-10x56 Scope";
                     weaponInfoType                                                          = "RscWeaponZeroing";
-                    modelOptics                                                     		= "\OPTRE_Weapons\Sniper\SRS99_Scope.p3d";
+                    modelOptics                                                     		= "\OPTRE_Weapons\Sniper\scope.p3d";
                     class ItemInfo: InventoryOpticsItem_Base_F
                     {
                             mass                                                            = 10;
                             opticType                                                       = 1;
                             optics                                                          = 1;
-                            modelOptics                                                     = "\OPTRE_Weapons\Sniper\SRS99_Scope.p3d";
+                            modelOptics                                                     = "\OPTRE_Weapons\Sniper\scope.p3d";
                             class OpticsModes
                             {
                                     class SRS99_Scope_View
@@ -58,50 +58,30 @@ class Mode_FullAuto;
                     };
                     inertia                                                                 = 0;
             };
-			class OPTRE_SRS99_Laser: ItemCore
-			{
-		dlc = "OPTRE";
-			scope 																			= 2;
-			displayName 																	= "SRS99 IR Laser";
-			picture																			="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
-			descriptionShort 																= "SRS99 Sniper IR Laser Pointer";
-			model 																			= "\OPTRE_Weapons\Sniper\SRS99_Laser.p3d";
-			class ItemInfo: InventoryFlashLightItem_Base_F
-			{
-				mass 																		= 4;
-				class Pointer
-				{
-					irLaserPos 																= "laser dir";
-					irLaserEnd 																= "laser";
-					irDistance 																= 5;
-				};
-			};
-			inertia 																		= 0;
-		};
 		class OPTRE_SRS99_Bipod: ItemCore
 		{
-		dlc = "OPTRE";
+			dlc = "OPTRE";
 			scope 																			= 2;
 			displayName																		= "SRS-99 Bipod";
-			model 																			= "\OPTRE_Weapons\Sniper\SRS99_Bipod.p3d";
+			model 																			= "\OPTRE_Weapons\Sniper\bipod.p3d";
 			picture																			= "\A3\Weapons_F\Data\placeholder_co.paa";
 			class ItemInfo: InventoryUnderItem_Base_F
 			{
 				deployedPivot																= "bipod";
 				hasBipod																	= true;	
 				mass																		= 10;
-				model 																		= "\OPTRE_Weapons\Sniper\SRS99_Bipod.p3d";	
+				model 																		= "\OPTRE_Weapons\Sniper\bipod.p3d";	
 			};
 			inertia = 0.2;
 		};
             //WEAPONS
 			
-            class LMG_Mk200_F;
-            class OPTRE_SRS99D: LMG_Mk200_F
-            {
-		dlc = "OPTRE";
+        class LMG_Mk200_F;
+        class OPTRE_SRS99D: LMG_Mk200_F
+        {
+					dlc = "OPTRE";
                     scope                                                                   = 2;
-                    model                                                                   = "\OPTRE_Weapons\Sniper\Sniper.p3d";
+                    model                                                                   = "\OPTRE_Weapons\Sniper\sniper.p3d";
                     displayName                                                             = "SRS99D-S2 Sniper Rifle";
                     descriptionShort                                                        = "UNSC Sniper Rifle";
                     picture 																= "\OPTRE_weapons\sniper\icons\sniper.paa";
@@ -216,14 +196,6 @@ class Mode_FullAuto;
                                     compatibleitems[]                                       = {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope", "OPTRE_M6C_RDS"};
                                     displayname                                             = "Optics Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\TOP";
-                                    scope                                                   = 2;
-                            };
-                            class PointerSlot: SlotInfo
-                            {
-                                    access                                                  = 1;
-                                    compatibleitems[]                                       = {"OPTRE_SRS99_Laser"};
-                                    displayname                                             = "Pointer Slot";
-                                    linkproxy                                               = "\A3\data_f\proxies\weapon_slots\SIDE";
                                     scope                                                   = 2;
                             };
 							class UnderBarrelSlot: UnderBarrelSlot /// using test bipod
