@@ -55,8 +55,8 @@
 #define ST_PICTURE        0x30
 #define ST_FRAME          0x40
 #define ST_BACKGROUND     0x50
-#define ST_GROUP_BOX      0x60
-#define ST_GROUP_BOX2     0x70
+//#define ST_GROUP_BOX      0x60
+//#define ST_GROUP_BOX2     0x70
 #define ST_HUD_BACKGROUND 0x80
 #define ST_TILE_PICTURE   0x90
 #define ST_WITH_RECT      0xA0
@@ -417,7 +417,7 @@ class OPTRE_ZEUS_RscListBox {
 	shadow = 0;
 	colorShadow[] = {0,0,0,0};
     rowHeight = 0.03;
-	//colorDisabled[] = {1, 1, 1, 1};
+	colorDisabled[] = {1, 1, 1, 1};
 	color[] = {1, 1, 1, 1};
 	colorText[] = {1, 1, 1, 0.75};
 	colorScrollbar[] = {0.95, 0.95, 0.95, 1};

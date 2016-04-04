@@ -35,11 +35,11 @@ _ctrl ctrlMapAnimAdd [0, OPTRE_Hud_RadarScale, [0,0,0] ]; // 0.01m on ~50m
 ctrlMapAnimCommit _ctrl; 
 
 // Icon Size Of Units on map based on mapscale. 
-OPTRE_Hud_UnitSize = (4 * 0.15) * 10^(abs log (ctrlMapScale _ctrl)); 
+OPTRE_Hud_UnitSize = (4 * 0.15) * 8 ^(abs log (ctrlMapScale _ctrl)); 
 
 // Determine the map Scale Values 
 OPTRE_Hud_ScaleMeters = (round (OPTRE_Hud_RadarScale / 0.01) * 50);
-OPTRE_Hud_ScaleMetersString = (str OPTRE_Hud_ScaleMeters + "m"); 
+//OPTRE_Hud_ScaleMetersString = ( OPTRE_Hud_ScaleMeters + "m" ); 
 
 // Check the modes limits have been applyed correclty and are not nil. 
 if (isNil "OPTRE_Hud_RadarMode2Allowed") then {OPTRE_Hud_RadarMode2Allowed = 2;};
@@ -52,19 +52,21 @@ if (OPTRE_HUd_RadarMode > 0) then {
 	//OPRE_HUD_SideColorWest = 
 	
 	_ctrl ctrlAddEventHandler ["Draw", "
+	
+		private ['_colour','_unitIcon'];
 
 		_ctrl = _this select 0; 
 		_dirPlayer = direction player; 
 		_sidePlayer = side player;
 		
 		_ctrl drawIcon [
-			'iconMan',
+			'OPTRE_UnitIcon_Freindly',
 			OPTRE_Hud_ColorScheme_Pictures,
 			[0,0,0],
-			15,
-			15,
+			12,
+			12,
 			0,
-			OPTRE_Hud_ScaleMetersString,
+			'',
 			1,
 			0.04,
 			'TahomaB',
@@ -83,10 +85,17 @@ if (OPTRE_HUd_RadarMode > 0) then {
 
 			
 				_pos = [[0,0,0], _distance, (([player, _blipPos] call BIS_fnc_dirTo) - _dirPlayer)] call OPTRE_fnc_MathsTriangulatePos;
-
+				if ( _blipSide == _sidePlayer ) then {
+					_colour = [0,0,1,1];
+					_unitIcon = if (_blip isKindOf 'man') then { 'OPTRE_UnitIcon_Freindly' } else { (getText (configfile >> 'CfgVehicles' >> (typeOf vehicle _blip) >> 'icon')) };
+				} else {
+					_colour = OPRE_HUD_SideColorEast;
+					_unitIcon = if (_blip isKindOf 'man') then { 'OPTRE_UnitIcon_Unknown' } else { (getText (configfile >> 'CfgVehicles' >> (typeOf vehicle _blip) >> 'icon')) };
+				};
+				
 				_ctrl drawIcon [
-					(getText (configFile/'CfgVehicles'/typeOf _blip/'Icon')),
-					(if ( _blipSide == _sidePlayer ) then { [0,0,1,1] } else { OPRE_HUD_SideColorEast }),
+					_unitIcon,
+					_colour,
 					_pos,
 					OPTRE_Hud_UnitSize,
 					OPTRE_Hud_UnitSize,
@@ -115,13 +124,13 @@ if (OPTRE_HUd_RadarMode > 0) then {
 		_sidePlayer = side player;
 		
 		_ctrl drawIcon [
-			'iconMan',
+			'OPTRE_UnitIcon_Freindly',
 			OPTRE_Hud_ColorScheme_Pictures,
 			[0,0,0],
-			15,
-			15,
+			12,
+			12,
 			0,
-			OPTRE_Hud_ScaleMetersString,
+			'',
 			1,
 			0.04,
 			'TahomaB',
@@ -130,15 +139,17 @@ if (OPTRE_HUd_RadarMode > 0) then {
 
 		{
 		
+			private ['_colour','_unitIcon'];
+			
 			_blip = _x; 
 			_blipSide = side _x;
 			_blipPos = getPos _blip;
 			
 			_pos = [[0,0,0], (player distance _blip), (([player, _blipPos] call BIS_fnc_dirTo) - _dirPlayer)] call OPTRE_fnc_MathsTriangulatePos;
-
+						
 			_ctrl drawIcon [
-				(getText (configFile/'CfgVehicles'/typeOf _blip/'Icon')),
-				(if ( _blipSide == _sidePlayer ) then { [0,0,1,1] } else { [0.7,0.5,0,0.5] }),
+				( if (_blip isKindOf 'man') then { 'OPTRE_UnitIcon_Freindly' } else { (getText (configfile >> 'CfgVehicles' >> (typeOf vehicle _blip) >> 'icon')) } ),
+				[0,0,1,1],
 				_pos,
 				OPTRE_Hud_UnitSize,
 				OPTRE_Hud_UnitSize,

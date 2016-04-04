@@ -12,6 +12,7 @@
 		//isDisposable = 1;// 1 if modules is to be disabled once it's activated (i.e., repeated trigger activation won't work) // CAUSEING ERROR?? // 
 		//curatorInfoType = "RscDisplayAttributeModuleNuke";// Menu displayed when the module is placed or double-clicked on by Zeus
 		author = "Article 2 Studios";
+		is3DEN = 1;
 		
 		// Module arguments
 		class Arguments
@@ -268,15 +269,13 @@
 		
 		class ModuleDescription
 		{
-			description[] = {
-				"Synchronising this module to a frigate will set up a frigates. Internal sections of the ship will be spawned and the frigates computer system will be initialized. This module also determines a ships virtual stock.";
-			};
+			description = "Synchronising this module to a frigate will set up a frigates. Internal sections of the ship will be spawned and the frigates computer system will be initialized. This module also determines a ships virtual stock.";
 			sync[] = {"OPTRE_Frigate_Final_Dawn","OPTRE_Frigate_Final_Dawn"};
 			position = 0;
 			direction = 0;
 						
 			class OPTRE_Frigate_Final_Dawn {
-				description[] = {"The Final Dawn is a UNSC Charon Class Light Frigate. The Frigate when synchronised to a Module_OPTRE_UNSCFrigateSetUp module contains hundreds of meters of walk-able corridors as well as dozens of accessible rooms. The ships computer system requires in game security cards items to assess many of the doors and systems. The Frigates is currently still a W.I.P. when complete the computer systems will allow players to deploy HEV, Order Vehicles, Fire Missiles and much more.";};
+				description = "The Final Dawn is a UNSC Charon Class Light Frigate. The Frigate when synchronised to a Module_OPTRE_UNSCFrigateSetUp module contains hundreds of meters of walk-able corridors as well as dozens of accessible rooms. The ships computer system requires in game security cards items to assess many of the doors and systems. The Frigates is currently still a W.I.P. when complete the computer systems will allow players to deploy HEV, Order Vehicles, Fire Missiles and much more.";
 				duplicate = 1;
 				position = 1;
 				direction = 1;

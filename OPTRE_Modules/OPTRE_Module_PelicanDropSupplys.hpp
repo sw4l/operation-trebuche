@@ -28,7 +28,7 @@
 					class n1	{name = "Paint Scheme: Black"; value = "black"; }; 
 					class n2	{name = "Paint Scheme: Green"; value = "green";}; 
 					class n3	{name = "Paint Scheme: Green Marine"; value = "marine"; default = 1;}; 
-					class n4	{name = "Paint Scheme: Black"; value = "tan";}; 
+					class n4	{name = "Paint Scheme: Tan"; value = "tan";}; 
 					class n5 	{name = "Paint Scheme: Insurrection"; value = "insurrection";};
 				};
 			};	
@@ -86,12 +86,20 @@
 				{
 					class n1	{name = "Drop Supply Pods Not Vehicles"; value = "none"; default = 1;}; 
 					
+					class a	{name = "Insurrectionist Warthog APC"; value = "OPTRE_M12_FAV_APC";}; 
+					class b	{name = "Insurrectionist Warthog Unarmed"; value = "PTRE_M12_FAV_ins";}; 
+					class c	{name = "Insurrectionist Warthog MG"; value = "OPTRE_M12_LRV_ins";}; 
+					class d	{name = "Insurrectionist Warthog Rocket"; value = "OPTRE_M12A1_LRV_ins";}; 
+					class e	{name = "Insurrectionist Warthog AA"; value = "PTRE_M12R_AA_ins";}; 
+					class f	{name = "Insurrectionist Mongoose"; value = "OPTRE_Mongoose_Ins_F";}; 
+					class g	{name = "Insurrectionist Mule"; value = "OPTRE_m1015_mule_ins";}; 	
+					
 					class n2	{name = "Warthog Unarmed Green"; value = "OPTRE_M12_FAV";}; 
 					class n3	{name = "Warthog Unarmed Black"; value = "OPTRE_M12_FAV_black";}; 
 					class n4	{name = "Warthog Unarmed Marine"; value = "OPTRE_M12_FAV_marine";}; 
 					class n5	{name = "Warthog Unarmed Snow"; value = "OPTRE_M12_FAV_snow";}; 
 					class n6	{name = "Warthog Unarmed Tan"; value = "OPTRE_M12_FAV_tan";}; 
-					
+				
 					class n7	{name = "Warthog HMG Green"; value = "OPTRE_M12_LRV";}; 
 					class n8	{name = "Warthog HMG Black"; value = "OPTRE_M12_LRV_black";}; 
 					class n9	{name = "Warthog HMG Marine"; value = "OPTRE_M12_LRV_marine";}; 
@@ -285,7 +293,7 @@
 		
 		class ModuleDescription
 		{
-			description[] = {"This module will spawn a Pelican drop ship that can deliver supply pods or vehicles to troops on ground. Place the module where you would like the supplies to be dropped on the map. Note that if a Landing Pad is nearby the pelican will always try to land on that position when delivering vehicles as this module uses the LAND command, this may cause a problem if more than one Pelican try to land on a pad at once (This apply s to Landing Pads native to the map as well a spawned / placed pads.).";};
+			description = "This module will spawn a Pelican drop ship that can deliver supply pods or vehicles to troops on ground. Place the module where you would like the supplies to be dropped on the map. Note that if a Landing Pad is nearby the pelican will always try to land on that position when delivering vehicles as this module uses the LAND command, this may cause a problem if more than one Pelican try to land on a pad at once (This apply s to Landing Pads native to the map as well a spawned / placed pads.).";
 			sync[] = {"EmptyDetector"};
 			position = 1;
 			direction = 0;

@@ -3,6 +3,7 @@ _return = switch (_this select 0) do {
 	// Supply Vehicles
 	case "OPTRE_m1087_stallion_unsc": 	 { [0,-6,0.4] };
 	case "OPTRE_m1015_mule_unsc": 	 	 { [0,-4.9,0.4] };
+	case "OPTRE_M12_FAV_APC": 			 { [0,-3.2,0.4] };
 	
 	// Warthog
 	case "OPTRE_M12_FAV": 				 { [0,-4.9,0.1] };

@@ -36,14 +36,14 @@ While {OPTRE_Hud_On AND cameraView != "EXTERNAL"} do {
 	_grenDetail = currentThrowable player;
 	_magazinesPlayer = magazines player;
 	
-	//_picPrimeWeapon ctrlSetText (getText (configFile >> 'CfgWeapons' >> _currentWeapon >> 'picture'));
-	//_picSecondWeapon ctrlSetText (getText (configFile >> 'CfgWeapons' >> _secondaryWeapon >> 'picture'));
-	//_picThirdWeapon ctrlSetText (getText (configFile >> 'CfgWeapons' >> _currentWeapon >> 'picture'));	
+	//_picPrimeWeapon ctrlSetText (getText (configFile >> 'CfgWeapons' >> _currentWeapon >> 'pictureWire'));
+	//_picSecondWeapon ctrlSetText (getText (configFile >> 'CfgWeapons' >> _secondaryWeapon >> 'pictureWire'));
+	//_picThirdWeapon ctrlSetText (getText (configFile >> 'CfgWeapons' >> _currentWeapon >> 'pictureWire'));	
 	
 	if (count _grenDetail > 0) then {
 		_gren = _grenDetail select 0;
 		if (OPTRE_HUD_CurrentThrowCheck != _gren OR OPTRE_HUD_UPDATEALL_Throw) then { // Only Update if Needed. 
-			_picThrowWeapon ctrlSetText (getText (configFile >> 'CfgMagazines' >> _gren >> 'picture')); 
+			_picThrowWeapon ctrlSetText ([(configFile >> 'CfgMagazines' >> _gren),'pictureWire',"\OPTRE_Hud\data\UknownWireWeapons\UnknownWeapon.paa"] call BIS_fnc_returnConfigEntry);
 			_text_1005 ctrlSetText (getText (configFile >> "CfgMagazines" >> _gren >> "displayName"));
 			_text_1006 ctrlSetText str ({_x == _gren} count _magazinesPlayer);
 			OPTRE_HUD_CurrentThrowCheck = _gren;
@@ -64,19 +64,22 @@ While {OPTRE_Hud_On AND cameraView != "EXTERNAL"} do {
 	_text_1004 ctrlSetText str ({_x == (currentMagazine player)} count _magazinesPlayer);
 
 	if (OPTRE_HUD_UPDATEALL_Main OR OPTRE_HUD_WepCurrent != _currentWeapon) then {
-		_picPrimeWeapon ctrlSetText (getText (configFile >> 'CfgWeapons' >> _currentWeapon >> 'picture'));
+		_picPrimeWeapon ctrlSetText ([(configFile >> 'CfgWeapons' >> _currentWeapon),'pictureWire',"\OPTRE_Hud\data\UknownWireWeapons\UnknownWeapon.paa"] call BIS_fnc_returnConfigEntry);
 		_picSecondWeapon ctrlSetText (
-			if (_currentWeapon == _primearyWeapon) then { (getText (configFile >> 'CfgWeapons' >> (handgunWeapon player) >> 'picture')) 
-		} else { 
-			(getText (configFile >> 'CfgWeapons' >> _primearyWeapon >> 'picture')) 
-		});
-		if (_currentWeapon != _secondaryWeapon) then { 
-			_picThirdWeapon ctrlSetText (getText (configFile >> 'CfgWeapons' >> _secondaryWeapon >> 'picture')); 
-		} else { 
+			if (_currentWeapon == _primearyWeapon) then { 
+				([(configFile >> 'CfgWeapons' >> (handgunWeapon player)),'pictureWire',"\OPTRE_Hud\data\UknownWireWeapons\UnknownWeapon.paa"] call BIS_fnc_returnConfigEntry) 
+			} else { 
+				([(configFile >> 'CfgWeapons' >> _primearyWeapon),'pictureWire',"\OPTRE_Hud\data\UknownWireWeapons\UnknownWeapon.paa"] call BIS_fnc_returnConfigEntry)
+			}
+		);
+		if (_currentWeapon != _secondaryWeapon) then {
+			_picThirdWeapon ctrlSetText ([(configFile >> 'CfgWeapons' >> _secondaryWeapon),'pictureWire',"\OPTRE_Hud\data\UknownWireWeapons\UnknownWeapon.paa"] call BIS_fnc_returnConfigEntry);
+		} else {
 			_picThirdWeapon ctrlSetText ""; 
 		};
 		if OPTRE_HUD_UPDATEALL_Main then {OPTRE_HUD_UPDATEALL_Main = false;}; 
-		302 cutRsc [OPTRE_Hud_AmmoCurrent,"PLAIN",-1, false];
+		//302 cutRsc [OPTRE_Hud_AmmoCurrent,"PLAIN",-1, false];
+		0 = [true] call OPTRE_Fnc_SetAmmoCounterState;
 		OPTRE_HUD_WepCurrent = _currentWeapon;
 	};
 	
@@ -96,7 +99,8 @@ if OPTRE_Hud_On then {
 		
 		300 cutRsc [OPTRE_Hud_MainCurrent,"PLAIN",-1, false];
 		301 cutRsc [OPTRE_Hud_HealthCurrent,"PLAIN",-1, false]; 
-		302 cutRsc [OPTRE_Hud_AmmoCurrent,"PLAIN",-1, false];
+		//302 cutRsc [OPTRE_Hud_AmmoCurrent,"PLAIN",-1, false];
+		0 = [true] call OPTRE_Fnc_SetAmmoCounterState;
 		
 		showHUD [true, false, true, false, true, true, false, true]; 
 

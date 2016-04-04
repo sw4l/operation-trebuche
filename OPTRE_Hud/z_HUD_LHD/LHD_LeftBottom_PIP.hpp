@@ -10,25 +10,57 @@ class OPTRE_LHD_LeftBottom_PIP {
 		}; 
 		
 		class controls {
-
-			class RscPicture_1200: OPTRE_HUD_RscPicture
+			
+			class RscFrame_1200: OPTRE_HUD_RscPicture
 			{
 				idc = 1200;
-				text = "#(argb,256,256,1)r2t(OPTRE_HUD_REND1,1.0)"; 
-				x = 0.00499997 * safezoneW + safezoneX;
-				y = 0.797 * safezoneH + safezoneY;
-				w = 0.185625 * safezoneW;
-				h = 0.198 * safezoneH;
+				text = "#(argb,256,256,1)r2t(OPTRE_HUD_REND1,1.0)";
+				x = 0.0307812 * safezoneW + safezoneX;
+				y = 0.819 * safezoneH + safezoneY;
+				w = 0.134062 * safezoneW;
+				h = 0.149 * safezoneH;
 			};
-			class RscText_1000: OPTRE_HUD_RscText
+			class RscPicture_1201: OPTRE_HUD_RscPicture
+			{
+				idc = 1201;
+				text = "\OPTRE_Hud\data\PIP\hemetCam_frame.paa";
+				x = -0.03625 * safezoneW + safezoneX;
+				y = 0.744 * safezoneH + safezoneY;
+				w = 0.268125 * safezoneW;
+				h = 0.299 * safezoneH;
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Pictures;";
+			};
+			class RscText_1000: OPTRE_HUD_SructuredText
 			{
 				idc = 1000;
-				text = "PVT: Shame Bobman The 3rd Of Lenister"; //--- ToDo: Localize;
-				x = 0.00499997 * safezoneW + safezoneX;
-				y = 0.775 * safezoneH + safezoneY;
-				w = 0.448594 * safezoneW;
+				//text = "RANK GIVENNAME FAMNAME"; //--- ToDo: Localize;
+				x = 0.005 * safezoneW + safezoneX;
+				y = 0.780 * safezoneH + safezoneY;
+				w = 0.134062 * safezoneW;
 				h = 0.022 * safezoneH;
+				size = 0.035;
+				class Attributes {
+				  align = "left";
+				};	
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Pictures;";
 			};
+			class RscText_1001: OPTRE_HUD_SructuredText
+			{
+				idc = 1001;
+				//text = "Group Name"; //--- ToDo: Localize;
+				x = 0.0565625 * safezoneW + safezoneX;
+				y = 0.973 * safezoneH + safezoneY;
+				w = 0.134062 * safezoneW;
+				h = 0.022 * safezoneH;
+				size = 0.035;
+				class Attributes {
+				  align = "right";
+				};	
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Pictures;";
+			};
+			////////////////////////////////////////////////////////
+			// GUI EDITOR OUTPUT END
+			////////////////////////////////////////////////////////
 
 		};
 	

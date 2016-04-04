@@ -27,7 +27,7 @@
 					class n1	{name = "Paint Scheme: Black"; value = "black"; }; 
 					class n2	{name = "Paint Scheme: Green"; value = "green";}; 
 					class n3	{name = "Paint Scheme: Green Marine"; value = "marine"; default = 1;}; 
-					class n4	{name = "Paint Scheme: Black"; value = "tan";}; 
+					class n4	{name = "Paint Scheme: Tan"; value = "tan";}; 
 					class n5 	{name = "Paint Scheme: Insurrection"; value = "insurrection";};
 				};
 			};	
@@ -84,6 +84,14 @@
 				class values
 				{
 					class n1	{name = "Don't Drop A Vehicles"; value = "";}; 
+
+					class a	{name = "Insurrectionist Warthog APC"; value = "OPTRE_M12_FAV_APC";}; 
+					class b	{name = "Insurrectionist Warthog Unarmed"; value = "PTRE_M12_FAV_ins";}; 
+					class c	{name = "Insurrectionist Warthog MG"; value = "OPTRE_M12_LRV_ins";}; 
+					class d	{name = "Insurrectionist Warthog Rocket"; value = "OPTRE_M12A1_LRV_ins";}; 
+					class e	{name = "Insurrectionist Warthog AA"; value = "PTRE_M12R_AA_ins";}; 
+					class f	{name = "Insurrectionist Mongoose"; value = "OPTRE_Mongoose_Ins_F";}; 
+					class g	{name = "Insurrectionist Mule"; value = "OPTRE_m1015_mule_ins";}; 
 					
 					class n2	{name = "Warthog Unarmed Green"; value = "OPTRE_M12_FAV";}; 
 					class n3	{name = "Warthog Unarmed Black"; value = "OPTRE_M12_FAV_black";}; 
@@ -175,6 +183,21 @@
 				defaultValue = "MapMarkerName1,MapMarkerName2,Map_Marker_Name_Three";
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 			};
+
+			class finalWaypoint 
+  			{
+				displayName = "Final Waypoint Task";
+				description = "Side Of Pelican, WEST or EAST";
+				defaultValue = "NONE"; // Default text filled in the input box
+				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
+				class values
+				{
+					class n1	{name = "Cycle Back To First Waypoint"; value = "cycle"; default = 1; }; 
+					class n2	{name = "Garrison Near Final Waypoint"; value = "garrison";}; 
+					class n3    {name = "Patrol Around Final Waypoint"; value = "patrol ";};						
+				};
+			};
+			
 			class code
   			{
 				displayName = "Custom Box Code"; // Argument label
@@ -188,7 +211,7 @@
 		
 		class ModuleDescription
 		{
-			description[] = {"This module will spawn a Pelican drop ship that can deliver 2 squads and / or a vehicle the spawned groups can be controlled by zeus. Place the module where you would like the supplies to be dropped on the map. Note that if a Landing Pad is nearby the pelican will always try to land on that position when delivering vehicles as this module uses the LAND command, this may cause a problem if more than one Pelican try to land on a pad at once (This apply s to Landing Pads native to the map as well a spawned / placed pads.).";};
+			description = "This module will spawn a Pelican drop ship that can deliver 2 squads and / or a vehicle the spawned groups can be controlled by zeus. Place the module where you would like the supplies to be dropped on the map. Note that if a Landing Pad is nearby the pelican will always try to land on that position when delivering vehicles as this module uses the LAND command, this may cause a problem if more than one Pelican try to land on a pad at once (This apply s to Landing Pads native to the map as well a spawned / placed pads.).";
 			sync[] = {"EmptyDetector"};
 			position = 1;
 			direction = 0;

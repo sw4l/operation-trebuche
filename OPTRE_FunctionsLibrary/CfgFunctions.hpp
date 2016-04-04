@@ -12,7 +12,8 @@ class CfgFunctions
 			class ToggleVisor {};
 			class ToggleLHDFnc {};
 			class ToggleLowLight {};
-			class Menu {};
+			class GetHudTypeString {};
+			class SetAmmoCounterState {};
 			
 		};
 		
@@ -24,6 +25,7 @@ class CfgFunctions
 			class SquadPIP {};			
 			class HealCheck {};
 			class AmmoCountSetProgress {};
+			class HudMap {};
 
 		};
 		
@@ -41,9 +43,12 @@ class CfgFunctions
 			file = "OPTRE_FunctionsLibrary\Functions\Modules";
 			
 			class ModuleHUD {};
-			class ModuleHEVStart {};
+			//class ModuleHEVStart {};
 			class ModulePelicanDropSupplys {};
 			class ModulePelicanAirAssault {};
+			class ModuleODSTHEV {};
+			class ModuleCAS {};
+			class ModuleZeus {};
 			
 		};
 		
@@ -74,6 +79,7 @@ class CfgFunctions
 			class CS_PelicanDropSupplys {};
 			class CS_MonitorSupplyPodDrop {};
 			class CS_PelicanAirAssault {};
+			class CS_ODSTHEV {};
 			class PelicanAttachToPoints {};
 			
 		};
@@ -85,6 +91,34 @@ class CfgFunctions
 			class StringToArrayOfString {}; 
 		};
 		
+		class FrigateSystem 
+		{
+			file = "OPTRE_FunctionsLibrary\Functions\UNSCFrigate";
+			
+			class Frigate_OpensConsole {};
+			
+			class FrigateComputerSystemInit {};
+			class FrigateAddVirtualStock {};
+			class FrigateRemoveVirtualStock {};
+			class FrigateFilterInventory {};
+			class FrigateOnLiftDeal {};
+			class FrigateHangerLiftBusy {};
+			
+			class Frigate_System_Access {};
+			class FrigateSwitchFunction {};
+			class Frigate_Dialog_Time {};
+			
+			class Frigate_WikiPopulate {};
+			
+			class Frigate_LogAdd {};
+			
+			class FrigateSpawnRoomDeliver {};
+			class FrigateUpDownLift {};
+			
+			class AddActionGlobal {};
+			
+		};
+
 	}; 
-	
+
 };

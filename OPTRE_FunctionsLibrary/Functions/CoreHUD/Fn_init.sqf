@@ -48,6 +48,13 @@ OPTRE_Hud_ColorScheme_Pictures = [0,0,0,.5];
 OPTRE_Hud_ColorScheme_Text = [0,0,0,.5];
 OPTRE_Hud_ColorScheme_Frame = [1,0.5,0,1];
 
+OPTRE_HUD_PersonalWaypoints = [];
+OPTRE_HUD_PersonalBecon = [0,0,0];
+
+OPTRE_HUD_CurrentObjective_Wanted = true; 
+OPTRE_HUD_PersonalBecons_Wanted = true;
+OPTRE_HUD_GroupWaypointsWanted = true;
+
 // Health Bar
 player addEventHandler ["HandleDamage",{
 	if (OPTRE_Hud_On AND cameraView != "EXTERNAL") then {301 cutRsc [OPTRE_Hud_HealthCurrent,"PLAIN",-1, false];};
@@ -58,7 +65,8 @@ player addEventHandler ["HandleHeal",{
 
 // Ammo + Main 
 player addEventHandler ["Fired",{
-	if (OPTRE_Hud_On AND cameraView != "EXTERNAL") then {OPTRE_HUD_UPDATEALL_Throw = true; 302 cutRsc [OPTRE_Hud_AmmoCurrent,"PLAIN",0, false];};
+	//if (OPTRE_Hud_On AND cameraView != "EXTERNAL") then {OPTRE_HUD_UPDATEALL_Throw = true; 302 cutRsc [OPTRE_Hud_AmmoCurrent,"PLAIN",0, false];};
+	0 = [false] call OPTRE_Fnc_SetAmmoCounterState;
 }];
 
 // Killed

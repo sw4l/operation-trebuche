@@ -9,8 +9,8 @@ class OPTRE_ODST_HealthBar {
 		class RscPicture_1200: OPTRE_HUD_RscProgress
 		{
 			idc = 1200;
-			onLoad = "(_this select 0) progressSetPosition (1 - damage player); (_this select 0) ctrlSetTextColor (switch (profileNamespace getVariable [""OPTRE_ODST_HUDColourMain"",'blue']) do { case 'blue': { [0.1,0.1,1,0.28] }; case 'white': { [1,1,1,0.28] }; case 'orange': { [1,0.32,0,0.28] }; } );";
-		
+			onLoad = "(_this select 0) progressSetPosition (1 - damage player);   _string = ((getArray (configfile >> 'CfgOptreHudSchemes' >> 'ODST_1' >> 'MainDialogs' >> (profileNamespace getVariable ['OPTRE_ODST_HUDColourMain','orange']) >> 'value')) select 2);  _array = _string call OPTRE_fnc_StringToArrayOfString;  (_this select 0) ctrlSetTextColor [(parseNumber (_array select 0)),(parseNumber (_array select 1)),(parseNumber (_array select 2)),(parseNumber (_array select 3))];";
+			
 			x = 0.262813 * safezoneW + safezoneX;
 			y = 0.093 * safezoneH + safezoneY;
 			w = 0.474375 * safezoneW;

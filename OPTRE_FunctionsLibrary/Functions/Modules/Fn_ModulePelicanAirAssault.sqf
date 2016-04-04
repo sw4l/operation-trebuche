@@ -1,9 +1,9 @@
 /*
-OPTRE_fnc_ModulePelicanDropSupplys
+OPTRE_fnc_
 
 Author: Big_Wilk
 
-Description: Used by Zeus pelican resupply module and editor Zeus resupply module. 
+Description: 
 
 Command: spawn
 Return: true 
@@ -46,7 +46,7 @@ _side = switch (_logic getVariable "side") do {
 
 _box1 = _logic getVariable "box1";
 _box2 = _logic getVariable "box2";
-_posMarkerArrays = ( _logic getVariable "box3" ) call OPTRE_fnc_StringToArrayOfString;
+_posMarkerArrays = ( _logic getVariable ["box3",""] ) call OPTRE_fnc_StringToArrayOfString;
 
 _code = _logic getVariable "code";
 _veh =  _logic getVariable "vehicle";

@@ -24,7 +24,6 @@ class CfgVehicles
 	class TargetTraining: NonStrategic {};
 	class TargetGrenade: TargetTraining {};
 	
-	
 	class OPTRE_compass_mark: static
 	{
 		scope = 2;

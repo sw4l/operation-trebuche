@@ -222,8 +222,8 @@ if (typeName _podArrayString == "ARRAY") then {
 	
 } else {
 
-	//_pad = "Land_HelipadEmpty_F" createVehicle _pos;
-	//_pelican setVariable ["OPTRE_LANDPAD",_pad,false];
+	_pad = "Land_HelipadEmpty_F" createVehicle _pos;
+	_pelican setVariable ["OPTRE_LANDPAD",_pad,false];
 	
 	_Aproach = [[(_pos select 0), (_pos select 1), _flyInHeight], 1000, _dir] call OPTRE_fnc_MathsTriangulatePos;
 	_wpDropAproach = _pelicanGroup addWaypoint [_Aproach , 0];
@@ -233,7 +233,7 @@ if (typeName _podArrayString == "ARRAY") then {
 	_wpDropAproach setWaypointCombatMode "RED";
 		
 	_wpDrop = _pelicanGroup addWaypoint [_pos , 0];
-	_wpDrop setWaypointStatements ["_pelican = vehicle this; _pelican land 'GET OUT'; (((getPos _pelican) select 2) < 8);", "if isServer then {_pelican = vehicle this; {_pod = _x; detach _pod; 0 = {_x addCuratorEditableObjects [[_pod], true];} forEach allCurators;} forEach (_pelican getVariable ""OPTRE_CS_SupPods""); _pelican setVariable [""OPTRE_CS_SupPods"",objNull,false]; _pelican flyInHeight 60; _pelican land 'none';};"];
+	_wpDrop setWaypointStatements ["_pelican = vehicle this; _pelican land 'LAND'; (((getPos _pelican) select 2) < 8);", "if isServer then {_pelican = vehicle this; {_pod = _x; detach _pod; 0 = {_x addCuratorEditableObjects [[_pod], true];} forEach allCurators;} forEach (_pelican getVariable ""OPTRE_CS_SupPods""); _pelican setVariable [""OPTRE_CS_SupPods"",objNull,false]; _pelican flyInHeight 60; _pelican land 'none';};"];
 	_wpDrop setWaypointType "MOVE";
 	_wpDrop setWaypointBehaviour "CARELESS";
 	_wpDrop setWaypointCombatMode "RED";
@@ -251,7 +251,7 @@ if (typeName _podArrayString == "ARRAY") then {
 _endPos = [_pos, (2 * _dis), _exitDir] call OPTRE_fnc_MathsTriangulatePos;
 
 _wpFinal = _pelicanGroup addWaypoint [_endPos , 0];
-_wpFinal setWaypointStatements ["true", "if isServer then {_veh = vehicle this; {_veh removeAllEventHandlers _x;} forEach ['GetOut','HandleDamage','killed']; {deleteVehicle _x;} forEach [_veh] + thisList;};"];
+_wpFinal setWaypointStatements ["true", "if isServer then {_veh = vehicle this; {_veh removeAllEventHandlers _x;} forEach ['GetOut','HandleDamage','killed']; {deleteVehicle _x;} forEach [_veh] + thisList + [_veh getVariable [""OPTRE_LANDPAD"",objNull]];};"];
 _wpFinal setWaypointType "MOVE"; 
 _wpFinal setWaypointBehaviour "CARELESS";
 _wpFinal setWaypointCombatMode "RED";

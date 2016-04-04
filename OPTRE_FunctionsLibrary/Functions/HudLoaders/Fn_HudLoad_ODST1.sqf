@@ -40,6 +40,8 @@ _5 = _display displayCtrl 105;
 ////////////////////////////////////////////////////////////////////// Set Initial Colours And Animations ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+sleep 0.1; 
+
 // Set Picture Controls Colour
 {
 	_x ctrlSetTextColor OPTRE_Hud_ColorScheme_Pictures;
@@ -110,18 +112,11 @@ OPTRE_HUD_UPDATEALL_Main = true;
 
 While {OPTRE_Hud_On AND cameraView != "EXTERNAL"} do {
 
-	// Common Variables: 
-	_grpPlayer = group player;
-	_dirPlayer = getDir player; 
-	_currentWeapon = currentWeapon player; 
-	_secondaryWeapon = secondaryWeapon player; 
-	_grenDetail = currentThrowable player;
-	_magazinesPlayer = magazines player;
-
 	// Compass 
-	if OPTRE_HUD_CompassWanted then {
-		//_dirString = str (round _dirPlayer); 
-		//_text_103 ctrlSetText ((switch (count (toArray _dirString)) do {case 1: {"00"}; case 2: {"0"}; default {""};}) + _dirString); 
+	if OPTRE_HUD_CompassWanted then {	
+		_grpPlayer = group player;
+		_dirPlayer = getDir player; 
+		/*_dirString = str (round _dirPlayer); // Will be used when font is created. // _text_103 ctrlSetText ((switch (count (toArray _dirString)) do {case 1: {"00"}; case 2: {"0"}; default {""};}) + _dirString); */
 		_stringNumbsDir =  str (round _dirPlayer) splitString '';
 		0 = switch ((count _stringNumbsDir)) do {
 			case 1: { 
@@ -148,30 +143,42 @@ While {OPTRE_Hud_On AND cameraView != "EXTERNAL"} do {
 		_currentWaypointPos = (waypointPosition [_grpPlayer, (currentWaypoint _grpPlayer)]); if (str _currentWaypointPos != "[0,0,0]") then { _W3 ctrlSetModelDirAndUp ([player,(waypointPosition [_grpPlayer, (currentWaypoint _grpPlayer)]), -_dirPlayer] call OPTRE_fnc_ModelToWorldCalcPitchBankYaw);} else {_W3 ctrlSetModelDirAndUp ([[0,0,0],[0,0,0], 180] call OPTRE_fnc_ModelToWorldCalcPitchBankYaw);};
 	};
 
-	// Monitor Weapons
+	// Monitor Weapons Function
 	_text_100 ctrlSetText (format ["%1  %2m",(currentWeaponMode player),(currentZeroing  player)]);  // ,(getText (configFile >> "CfgMagazines" >> _curMag >> "displayName"))
-	_stringNumbs = str ({_x == (currentMagazine player)} count _magazinesPlayer) splitString '';		
 	
+	
+	// Common Weapon Variable 
+	_magazinesPlayer = magazines player;
+	_stringNumbs = str ({_x == (currentMagazine player)} count _magazinesPlayer) splitString '';		
+	_currentWeapon = currentWeapon player; 
+	
+	// Monitor Weapons
 	if (OPTRE_HUD_UPDATEALL_Main OR OPTRE_HUD_stringNumbs != str _stringNumbs OR OPTRE_HUD_WepCurrent != _currentWeapon) then {
+		_secondaryWeapon = secondaryWeapon player; 
 		OPTRE_HUD_stringNumbs = str _stringNumbs;
-		_primeWeaponPic ctrlSetText (getText (configFile >> 'CfgWeapons' >> _currentWeapon >> 'picture'));
+		_primeWeaponPic ctrlSetText (getText (configFile >> 'CfgWeapons' >> _currentWeapon >> 'pictureWire'));
+		if (_currentWeapon != "" AND ctrlText _primeWeaponPic == "") then {_primeWeaponPic ctrlSetText "\OPTRE_Hud\data\UknownWireWeapons\UnknownWeapon.paa";};
 		0 = switch ((count _stringNumbs)) do {
 			case 1: { _1 ctrlSetText (format ["OPTRE_Hud\Data\Numbers\%1.paa",_stringNumbs select 0]);_2 ctrlSetText ""; _3 ctrlSetText "";};
 			case 2: { _1 ctrlSetText (format ["OPTRE_Hud\Data\Numbers\%1.paa",_stringNumbs select 1]);_2 ctrlSetText (format ["OPTRE_Hud\Data\Numbers\%1.paa",_stringNumbs select 0]);_3 ctrlSetText ""; };
 			case 3: { _1 ctrlSetText (format ["OPTRE_Hud\Data\Numbers\%1.paa",_stringNumbs select 2]);_2 ctrlSetText (format ["OPTRE_Hud\Data\Numbers\%1.paa",_stringNumbs select 1]);_3 ctrlSetText (format ["OPTRE_Hud\Data\Numbers\%1.paa",_stringNumbs select 0]);};
 			default { _1 ctrlSetText "OPTRE_Hud\Data\Numbers\0.paa"; _2 ctrlSetText ""; _3 ctrlSetText ""; };
 		};
-		_seconWeaponPic ctrlSetText (if (_currentWeapon == primaryWeapon player) then { (getText (configFile >> 'CfgWeapons' >> (handgunWeapon player) >> 'picture')) } else { (getText (configFile >> 'CfgWeapons' >> (primaryWeapon player) >> 'picture')) });
-		if (_currentWeapon != _secondaryWeapon) then { _AT___WeaponPic ctrlSetText (getText (configFile >> 'CfgWeapons' >> _secondaryWeapon >> 'picture')); } else { _AT___WeaponPic ctrlSetText ""; };
+		_seconWeaponPic ctrlSetText (if (_currentWeapon == primaryWeapon player) then { (getText (configFile >> 'CfgWeapons' >> (handgunWeapon player) >> 'pictureWire')) } else { (getText (configFile >> 'CfgWeapons' >> (primaryWeapon player) >> 'pictureWire')) });
+		if (( (handgunWeapon player != "") AND (_currentWeapon != handgunWeapon player) AND (ctrlText _seconWeaponPic == "") ) OR ( (primaryWeapon player != "") AND (_currentWeapon != primaryWeapon player) AND (ctrlText _seconWeaponPic == "") )) then {_seconWeaponPic ctrlSetText "\OPTRE_Hud\data\UknownWireWeapons\UnknownWeapon.paa";};
+		if (_currentWeapon != _secondaryWeapon) then { _AT___WeaponPic ctrlSetText (getText (configFile >> 'CfgWeapons' >> _secondaryWeapon >> 'pictureWire')); if (_secondaryWeapon != "" AND ctrlText _AT___WeaponPic == "") then {_AT___WeaponPic ctrlSetText "\OPTRE_Hud\data\UknownWireWeapons\UnknownWeapon.paa";}; } else { _AT___WeaponPic ctrlSetText ""; };
 		if OPTRE_HUD_UPDATEALL_Main then {OPTRE_HUD_UPDATEALL_Main = false;}; 
-		302 cutRsc [OPTRE_Hud_AmmoCurrent,"PLAIN",-1, false];
+		//302 cutRsc [OPTRE_Hud_AmmoCurrent,"PLAIN",-1, false];
+		0 = [true] call OPTRE_Fnc_SetAmmoCounterState;
 	};
 	
-	// Monitor Throw
+	// Monitor Throws
+	_grenDetail = currentThrowable player;
 	 if (count _grenDetail > 0) then { 
 		_gren = _grenDetail select 0;
 		if (OPTRE_HUD_CurrentThrowCheck != _gren OR OPTRE_HUD_UPDATEALL_Throw) then { // Only Update if Needed. 
-			_throwWeaponPic ctrlSetText (getText (configFile >> 'CfgMagazines' >> _gren >> 'picture')); 
+			_throwWeaponPic ctrlSetText (getText (configFile >> 'CfgMagazines' >> _gren >> 'pictureWire')); 
+			if (_gren != "" AND ctrlText _throwWeaponPic == "") then {_throwWeaponPic ctrlSetText "\OPTRE_Hud\data\UknownWireWeapons\UnknownThrow.paa";};
 			_text_101 ctrlSetText ( format ["%1",(getText (configFile >> "CfgMagazines" >> _gren >> "displayName"))] );
 			_stringNumbs = ( format ["%1 |", ({_x == _gren} count _magazinesPlayer) ] ) splitString '';	
 			_4 ctrlSetText (format ["OPTRE_Hud\Data\Numbers\%1.paa",_stringNumbs select 0]);
@@ -184,7 +191,7 @@ While {OPTRE_Hud_On AND cameraView != "EXTERNAL"} do {
 	OPTRE_HUD_WepCurrent = _currentWeapon;
 	 
 	// Pause Time 
-	sleep 0.05; 
+	sleep 0.06; 
 
 };
 
@@ -200,7 +207,8 @@ if OPTRE_Hud_On then {
 		
 		300 cutRsc [OPTRE_Hud_MainCurrent,"PLAIN",-1, false];
 		301 cutRsc [OPTRE_Hud_HealthCurrent,"PLAIN",-1, false]; 
-		302 cutRsc [OPTRE_Hud_AmmoCurrent,"PLAIN",-1, false];
+		//302 cutRsc [OPTRE_Hud_AmmoCurrent,"PLAIN",-1, false];
+		0 = [true] call OPTRE_Fnc_SetAmmoCounterState;
 		
 		showHUD [true, false, true, false, true, true, false, true]; 
 

@@ -7,9 +7,9 @@
 		icon = "\OPTRE_Modules\data\picture\Icon_OPTRE.paa"; // Map icon. Delete this entry to use the default icon
 		category = "OPTRE_HUD";
 		function = "OPTRE_fnc_ModuleHUD";// Name of function triggered once conditions are met
-		functionPriority = 1;// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
+		functionPriority = 100;// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
 		isGlobal = 0;// 0 for server only execution, 1 for remote execution on all clients upon mission start, 2 for persistent execution
-		isTriggerActivated = 1;// 1 for module waiting until all synced triggers are activated
+		isTriggerActivated = 0;// 1 for module waiting until all synced triggers are activated
 		//isDisposable = 1;// 1 if modules is to be disabled once it's activated (i.e., repeated trigger activation won't work) // CAUSEING ERROR?? // 
 		//curatorInfoType = "RscDisplayAttributeModuleNuke";// Menu displayed when the module is placed or double-clicked on by Zeus
 		author = "Article 2 Studios";
@@ -47,18 +47,9 @@
 		
 		class ModuleDescription
 		{
-			description[] = {
-				"Placing this module will allow you to control some aspects of all players HUDs. This module can be synchronised to a trigger and deployed at any time in a mission to limit or expand a players HUD options.";
-			};
+			description = "Changes the way OPTRE's HUD system works, this module also allows for certain features of the HUD system to be turn off or on.";
 			sync[] = {"EmptyDetector"};
-			position = 1;
+			position = 0;
 			direction = 0;
-						
-			class EmptyDetector {
-				duplicate = 1;
-				position = 0;
-				direction = 0;
-				optional = 1;
-			};
 		};
 	};	

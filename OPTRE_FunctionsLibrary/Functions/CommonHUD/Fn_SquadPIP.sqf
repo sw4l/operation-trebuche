@@ -29,4 +29,7 @@ OPTRE_HUD_CAM1 camCommitPrepared 0;
 "OPTRE_HUD_REND1" setPiPEffect [OPTRE_HUD_PIP_NVGTI];
 
 ((_this select 0) displayCtrl 1000) ctrlSetTextColor OPTRE_Hud_ColorScheme_Text;
-((_this select 0) displayCtrl 1000) ctrlSetText ( format ["%1: %2",rank _unit, name _unit] );
+((_this select 0) displayCtrl 1000) ctrlSetText format ["%1: %2",rank _unit, name _unit];
+
+((_this select 0) displayCtrl 1001) ctrlSetTextColor OPTRE_Hud_ColorScheme_Text;
+((_this select 0) displayCtrl 1001) ctrlSetText (groupID group _unit);

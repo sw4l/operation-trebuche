@@ -114,6 +114,8 @@ _flyInHeight = [_this,5,100] call BIS_fnc_param;
 _side = [_this,6,WEST] call BIS_fnc_param;
 _exitDir = [_this,7,(_dir - 180)] call BIS_fnc_param;
 _code = compile ([_this,8,""] call BIS_fnc_param);
+_endWaypoint = compile ([_this,9,"patrol"] call BIS_fnc_param);
+
 _VehWPPosArray = [];
 
 // Spawn Pelican. 
@@ -245,6 +247,28 @@ _exitRightWP1 setWaypointTimeout [0, 0, 0];*/
 	};
 } forEach _waypointsMapMarkers;
 
+	switch (_endWaypoint) do {
+		case "cycle": {
+			{
+				_wpX = _x addWaypoint [_pos, 0];
+				_wpX setWaypointType "CYCLE";
+			} forEach [_group1,_group2];
+		};
+		case "garrison": {
+			{
+				_wpX = _x addWaypoint [(getMarkerPos (_wayPoints select (count _wayPoints - 1))), 0];
+				_wpX setWaypointType "MOVE";	
+				_wpX setWaypointStatements ["true", "0 = [(group this), (getPos this), 100, 2, true] call CBA_fnc_taskDefend"];
+			} forEach [_group1,_group2];
+		}; 
+		case "patrol": {
+			{
+				_wpX = _x addWaypoint [(getMarkerPos (_wayPoints select (count _wayPoints - 1))), 0];
+				_wpX setWaypointType "MOVE";	
+				_wpX setWaypointStatements ["true", "[(group this), (getPos this), 300, 7, 'MOVE', 'AWARE', 'YELLOW', 'LIMITED', 'STAG COLUMN', 'this spawn CBA_fnc_searchNearby', [3,6,9]] call CBA_fnc_taskPatrol;"];
+			} forEach [_group1,_group2];
+		};
+	};
 
 // Add all groups to curator 
 _allUnits = if _isVehicleDrop then {[_veh] + _crew + units _group1 + units _group2} else {units _group1 + units _group2};

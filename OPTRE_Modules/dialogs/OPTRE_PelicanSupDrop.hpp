@@ -40,6 +40,7 @@ class OPTRE_ZeusDisplay_ResupplyPelican {
 					class RscButtonMenuOK_2600: OPTRE_ZEUS_RscButton
 					{
 						text = "Ok";
+						idc = 22100;
 						x = 0.587656 * safezoneW + safezoneX;
 						y = 0.6355 * safezoneH + safezoneY;
 						w = 0.0567187 * safezoneW;
@@ -49,6 +50,7 @@ class OPTRE_ZeusDisplay_ResupplyPelican {
 					class RscButtonMenuCancel_2700: OPTRE_ZEUS_RscButton
 					{
 						text = "Close";
+						idc = 22101;
 						x = 0.525781 * safezoneW + safezoneX;
 						y = 0.6355 * safezoneH + safezoneY;
 						w = 0.0567187 * safezoneW;
@@ -139,7 +141,9 @@ class OPTRE_ZeusDisplay_ResupplyPelican {
 						y = 0.467 * safezoneH + safezoneY;
 						w = 0.0670312 * safezoneW;
 						h = 0.022 * safezoneH;
-						OnLoad = "{_i = (_this select 0) lbAdd _x; _i = (_this select 0) lbSetData  [_i, _x];} forEach ['Marine','Tan','Green','Black','Insurrection']; (_this select 0) lbSetCurSel ((profileNamespace getVariable ['OPTRE_Zeus_PelicanReSup',[0,3,5,0,5,0,0,0,0,0,1,1,0,0,0,0] ]) select 3);";
+						//OnLoad = "{_i = (_this select 0) lbAdd _x; _i = (_this select 0) lbSetData  [_i, _x];} forEach ['Marine','Tan','Green','Black','Insurrection']; (_this select 0) lbSetCurSel ((profileNamespace getVariable ['OPTRE_Zeus_PelicanReSup',[0,3,5,0,5,0,0,0,0,0,1,1,0,0,0,0] ]) select 3);";
+						OnLoad = "{_i = (_this select 0) lbAdd (_x select 0); _i = (_this select 0) lbSetData	[_i, (_x select 1)];} forEach [['Black','black'],['Tan','tan'],['Green','green'],['Green Marine','marine'],['Insurrection','insurrection']]; (_this select 0) lbSetCurSel ((profileNamespace getVariable ['OPTRE_Zeus_PelicanAirAssault',[0,3,5,0,5,0,0,0,0,0,1,1,0,0,0,0] ]) select 3);";
+
 					};
 					
 					
@@ -182,8 +186,9 @@ class OPTRE_ZeusDisplay_ResupplyPelican {
 						y = 0.533 * safezoneH + safezoneY;
 						w = 0.0670312 * safezoneW;
 						h = 0.022 * safezoneH;
-						OnLoad = "{_i = (_this select 0) lbAdd _x; _i = (_this select 0) lbSetData [_i, _x];} forEach ['WEST','EAST','INDEPENDENT','CIVILIAN']; (_this select 0) lbSetCurSel ((profileNamespace getVariable ['OPTRE_Zeus_PelicanReSup',[0,3,5,0,5,0,0,0,0,0,1,1,0,0,0,0] ]) select 5);";
-					};
+						OnLoad = "{_i = (_this select 0) lbAdd _x; _i = (_this select 0) lbSetData [_i, _x];} forEach ['WEST','EAST','INDEPENDENT','CIVILIAN']; (_this select 0) lbSetCurSel ((profileNamespace getVariable ['OPTRE_Zeus_PelicanReSup',[0,3,5,0,5,0,0,0,0,0,1,1,0,0,0,0] ]) select 5); 0 = [] spawn { {((findDisplay 27000) displayCtrl _x) ctrlSetTextColor (switch ( lbCurSel ((findDisplay 27000) displayCtrl 2105) ) do {case 0: {[0,0,1,1]}; case 1: {[1,1,1,1]}; case 2: {[0,1,0,1]}; case 3: {[0,0.5,1,1]};});} forEach [1000,22100,22101]; };";
+						onLBSelChanged = "0 = [] spawn { {((findDisplay 27000) displayCtrl _x) ctrlSetTextColor (switch ( lbCurSel ((findDisplay 27000) displayCtrl 2105) ) do {case 0: {[0,0,1,1]}; case 1: {[1,1,1,1]}; case 2: {[0,1,0,1]}; case 3: {[0,0.5,1,1]};});} forEach [1000,22100,22101]; }; ";
+					}; 
 					
 					
 					

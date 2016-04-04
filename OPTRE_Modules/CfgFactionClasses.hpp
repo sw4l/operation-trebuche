@@ -1,5 +1,11 @@
 class CfgFactionClasses
 {
+	class OPTRE_Zeus
+	{
+		displayName = "OPTRE ZEUS"; 
+		priority = 8;
+		side = 7;
+	};
 	class OPTRE_HUD
 	{
 		displayName = "OPTRE HUD"; 

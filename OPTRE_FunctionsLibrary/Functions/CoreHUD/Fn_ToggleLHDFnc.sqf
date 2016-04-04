@@ -21,7 +21,11 @@ if OPTRE_Hud_On then {
 				};		
 		}; //"OPTRE_LHD_LeftBottom_PIP"	
 		case 3: {
-		
+				if _this then {
+					if (OPTRE_Hud_MapScale < 1) then {OPTRE_Hud_MapScale = OPTRE_Hud_MapScale + 0.01;} else {OPTRE_Hud_MapScale = 0.01;};
+				} else {
+					if (OPTRE_Hud_MapScale > 0.02) then {OPTRE_Hud_MapScale = OPTRE_Hud_MapScale - 0.01;} else {OPTRE_Hud_MapScale = 1;};
+				};		
 		};
 		case 4: {
 		

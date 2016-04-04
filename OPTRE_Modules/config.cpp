@@ -4,3 +4,6 @@
 
 #include "Dialogs\Common.hpp"
 #include "Dialogs\OPTRE_PelicanSupDrop.hpp"
+#include "Dialogs\OPTRE_PelicanAirAssault.hpp"
+#include "Dialogs\OPTRE_ODST_Drop.hpp"
+#include "Dialogs\OPTRE_CAS.hpp"
