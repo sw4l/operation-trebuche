@@ -63,14 +63,14 @@ class Mode_FullAuto;
 			dlc = "OPTRE";
 			scope 																			= 2;
 			displayName																		= "SRS-99 Bipod";
-			model 																			= "\OPTRE_Weapons\Sniper\bipod.p3d";
+			model 																			= "OPTRE_Weapons\Sniper\bipod.p3d";
 			picture																			= "\A3\Weapons_F\Data\placeholder_co.paa";
 			class ItemInfo: InventoryUnderItem_Base_F
 			{
 				deployedPivot																= "bipod";
 				hasBipod																	= true;	
 				mass																		= 10;
-				model 																		= "\OPTRE_Weapons\Sniper\bipod.p3d";	
+				model 																		= "OPTRE_Weapons\Sniper\bipod.p3d";	
 			};
 			inertia = 0.2;
 		};
@@ -221,11 +221,6 @@ class Mode_FullAuto;
 				slot = "CowsSlot";
 				item = "OPTRE_SRS99_Scope";
 				};			
-				class LinkedItemsAcc
-				{
-				slot = "PointerSlot";
-				item = "OPTRE_SRS99_Laser";
-				};
 				class LinkedItemsMuzzle
 				{
 				slot = "UnderBarrelSlot";

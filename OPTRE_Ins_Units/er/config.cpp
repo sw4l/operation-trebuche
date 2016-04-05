@@ -48,14 +48,15 @@ class CfgVehicles
 	
 	class OPTRE_Ins_ER_soldier_base: I_Soldier_base_F //Unit Class name: Class getting info from
 	{
+		dlc = "OPTRE";
 		scope											= 0;
 		faction											= "OPTRE_Ins";
 		side 											= 0;
 		author											= "Article 2 Studios";
 		displayName										= "Innie_Base";
 		vehicleClass									= "OPTRE_Ins_Man_ER_class";
-		identityTypes[] 												= {"LanguageENG_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","LanguageGRE_F","Head_Greek","Head_African","Head_Euro","Head_Asian","Head_NATO", "G_IRAN_default"}; //G_IRAN_Default removes those pesky wacky glasses.  Everything else here serves to keep the UNSC diverse.  
-		genericNames 													= "NATOMen";
+		identityTypes[] 								= {"LanguageENG_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","LanguageGRE_F","Head_Greek","Head_African","Head_Euro","Head_Asian","Head_NATO", "G_IRAN_default"}; //G_IRAN_Default removes those pesky wacky glasses.  Everything else here serves to keep the UNSC diverse.  
+		genericNames 									= "NATOMen";
 		uniformAccessories[]							= {};
 		nakedUniform 									= "U_BasicBody";
 		weapons[]										= {"Throw","Put"};
@@ -71,6 +72,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_ER_Rebel_tan: OPTRE_Ins_ER_soldier_base //Unit Class name: Class getting info from
 	{
+		dlc = "OPTRE";
 		scope											= 1;
 		displayName										= "Ins_Base [Sweater Tan]";
 		uniformAccessories[]							= {};
@@ -81,6 +83,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_ER_Rebel_green: OPTRE_Ins_ER_Rebel_tan
 	{
+		dlc = "OPTRE";
 		scope											= 1;
 		displayName										= "Ins_Base [Sweater Green]";
 		uniformClass									= "OPTRE_INS_ER_uniform_GAgreen";
@@ -89,6 +92,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_ER_Insurgent_OD: I_G_Soldier_A_F
 	 {
+		dlc = "OPTRE";
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
         scope                               = 1;
@@ -109,6 +113,7 @@ class CfgVehicles
 	 }; //Update later with better pants
 	class OPTRE_Ins_ER_Insurgent_Grey: OPTRE_Ins_ER_Insurgent_OD
 	 {
+		dlc = "OPTRE";
 		scope 								= 1;
 		displayName                         = "Insurgent (Grey)";
 		uniformClass                  	    = "OPTRE_Ins_ER_uniform_GGod";
@@ -116,6 +121,7 @@ class CfgVehicles
 	 }; //Update later with better pants
 	class OPTRE_Ins_ER_man_jacket_surplus_OD : I_G_Soldier_M_F
 	 {
+		dlc = "OPTRE";
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
         scope                               = 1;
@@ -142,6 +148,7 @@ class CfgVehicles
 	 };
 	class OPTRE_Ins_ER_man_jacket_surplus_redshirt : OPTRE_Ins_ER_man_jacket_surplus_OD
 	 {
+		dlc = "OPTRE";
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
         scope                               = 1;
@@ -166,6 +173,7 @@ class CfgVehicles
 	 };
 	class OPTRE_Ins_ER_man_jacket_surplus_brown : OPTRE_Ins_ER_man_jacket_surplus_OD
 	 {
+		dlc = "OPTRE";
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
         scope                               = 1;
@@ -190,6 +198,7 @@ class CfgVehicles
 	 };
 	 class OPTRE_Ins_ER_man_jacket_brown_surplus : OPTRE_Ins_ER_man_jacket_surplus_OD
 	 {
+		dlc = "OPTRE";
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
         scope                               = 1;
@@ -214,6 +223,7 @@ class CfgVehicles
 	 };
 	 class OPTRE_Ins_ER_man_jacket_od_surplus : OPTRE_Ins_ER_man_jacket_surplus_OD
 	 {
+		dlc = "OPTRE";
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
         scope                               = 1;
@@ -238,6 +248,7 @@ class CfgVehicles
 	 };
 	 class OPTRE_Ins_ER_man_jacket_surgeon1 : OPTRE_Ins_ER_man_jacket_surplus_OD
 	 {
+		dlc = "OPTRE";
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
         scope                               = 1;
@@ -262,6 +273,7 @@ class CfgVehicles
 	 };
 	 class OPTRE_Ins_ER_man_jacket_surgeon2 : OPTRE_Ins_ER_man_jacket_surplus_OD
 	 {
+		dlc = "OPTRE";
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
         scope                               = 1;
@@ -286,6 +298,7 @@ class CfgVehicles
 	 };
 	class OPTRE_Ins_ER_man_rolled_surplus_black : I_G_Soldier_AR_F
 	 {
+		dlc = "OPTRE";
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
         scope                               = 1;
@@ -312,6 +325,7 @@ class CfgVehicles
 	 };
 	 class OPTRE_Ins_ER_man_rolled_surplus_crimson : OPTRE_Ins_ER_man_rolled_surplus_black
 	 {
+		dlc = "OPTRE";
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
         scope                               = 1;
@@ -336,6 +350,7 @@ class CfgVehicles
 	 };
 	 class OPTRE_Ins_ER_man_rolled_jean_orca : OPTRE_Ins_ER_man_rolled_surplus_black
 	 {
+		dlc = "OPTRE";
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
         scope                               = 1;
@@ -360,6 +375,7 @@ class CfgVehicles
 	 };
 	 class OPTRE_Ins_ER_man_rolled_OD_crimson : OPTRE_Ins_ER_man_rolled_surplus_black
 	 {
+		dlc = "OPTRE";
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
         scope                               = 1;
@@ -384,6 +400,7 @@ class CfgVehicles
 	 };
 	 class OPTRE_Ins_ER_man_rolled_OD_blknblu : OPTRE_Ins_ER_man_rolled_surplus_black
 	 {
+		dlc = "OPTRE";
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
         scope                               = 1;
@@ -408,6 +425,7 @@ class CfgVehicles
 	 };
 	 class OPTRE_Ins_ER_man_rolled_OD_blknred : OPTRE_Ins_ER_man_rolled_surplus_black
 	 {
+		dlc = "OPTRE";
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
         scope                               = 1;
@@ -435,7 +453,7 @@ class CfgVehicles
 	
 	 class OPTRE_Ins_ER_Surgeon: OPTRE_Ins_ER_soldier_base 
 	{
-		
+		dlc = "OPTRE";
 		scope 											= 2;
 		attendant 										= 1;
 		displayName										= "Surgeon";
@@ -450,10 +468,10 @@ class CfgVehicles
 		magazines[] 									= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Orange","OPTRE_M2_Smoke_Green"};
 		respawnMagazines[]	 							= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Orange","OPTRE_M2_Smoke_Green"};
 		//Changed to UNSC vest.  Gave pistol instead of rifle.  
-		
 	};
 	class OPTRE_Ins_ER_Guerilla_AR: OPTRE_Ins_ER_soldier_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Guerilla (MA5)";
 		uniformClass                  	    			= "OPTRE_Ins_ER_jacket_surplus_redshirt";
@@ -466,24 +484,26 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_ER_Insurgent_BR: OPTRE_Ins_ER_soldier_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Hunter";
 		uniformClass                  	    			= "OPTRE_Ins_ER_uniform_GGgrey";
 		linkedItems[]                 	    			= {"OPTRE_INS_UNSC_vest11","H_Booniehat_oli","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
         respawnLinkedItems[]           	    			= {"OPTRE_INS_UNSC_vest11","H_Booniehat_oli","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		weapons[] 														= {"OPTRE_M392_DMR_ScopedRifle","Throw","Put"};
-		respawnWeapons[] 												= {"OPTRE_M392_DMR_ScopedRifle","Throw","Put"};
-		magazines[] 													= {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
-		respawnMagazines[] 												= {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		weapons[] 										= {"OPTRE_M392_DMR_ScopedRifle","Throw","Put"};
+		respawnWeapons[] 								= {"OPTRE_M392_DMR_ScopedRifle","Throw","Put"};
+		magazines[] 									= {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		respawnMagazines[] 								= {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
 	};
 	class OPTRE_Ins_ER_Rebel_AT: OPTRE_Ins_ER_soldier_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Rebel (AT)";
 		uniformClass                  	    			= "OPTRE_Ins_ER_jacket_surplus_OD";
 		backpack 										= "OPTRE_ins_backpack_AT"; //"OPTRE_Kitbag_rgr_Rockets"; //rockets inside?
-		linkedItems[]                 	    = {"OPTRE_INS_UNSC_vest2","H_Bandanna_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-        respawnLinkedItems[]           	    = {"OPTRE_INS_UNSC_vest2","H_Bandanna_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[]                 	   				= {"OPTRE_INS_UNSC_vest2","H_Bandanna_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        respawnLinkedItems[]           	    			= {"OPTRE_INS_UNSC_vest2","H_Bandanna_gry","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		weapons[] 										= {"OPTRE_M7","Throw","Put","OPTRE_M41_SSR"};
 		respawnWeapons[] 								= {"OPTRE_M7","Throw","Put","OPTRE_M41_SSR"};
 		magazines[] 									= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_M41_Twin_HEAT","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
@@ -492,6 +512,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_ER_Farmer: OPTRE_Ins_ER_soldier_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Farmer (M45)";
 		uniformClass                  	    			= "OPTRE_Ins_ER_jacket_brown_surplus";
@@ -504,6 +525,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_ER_MAdvisor: OPTRE_Ins_URF_soldierCmbtUni_OD_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Militia Advisor";
 		vehicleClass									= "OPTRE_Ins_Man_ER_class";
@@ -517,6 +539,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_ER_Deserter_GL: OPTRE_Ins_ER_soldier_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Deserter (GL)";
 		uniformClass                  	    			= "OPTRE_Ins_ER_rolled_surplus_crimson";
@@ -529,6 +552,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_ER_Militia_MG: OPTRE_Ins_ER_soldier_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Militia (MG)";
 		uniformClass                  	    			= "OPTRE_Ins_ER_rolled_OD_blknblu";
@@ -543,6 +567,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_ER_Assassin: OPTRE_Ins_ER_soldier_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Assassin";
 		uniformClass                  	    			= "OPTRE_Ins_ER_rolled_surplus_black";
@@ -555,6 +580,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_ER_Terrorist: OPTRE_Ins_ER_soldier_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Terrorist";
 		backpack 										= "OPTRE_ins_backpack_exp";
@@ -570,6 +596,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_ER_Hacker: OPTRE_Ins_ER_soldier_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Hacker";
 		backpack 										= "OPTRE_ANPRC_515";
@@ -584,6 +611,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_ER_Unarmed: OPTRE_Ins_ER_soldier_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Unarmed";
 		uniformClass                  	    			= "OPTRE_Ins_ER_jacket_surplus_OD";
@@ -594,6 +622,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_ER_Warlord: OPTRE_Ins_URF_officer_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Warlord";
 		vehicleClass									= "OPTRE_Ins_Man_ER_class";
@@ -608,55 +637,59 @@ class CfgVehicles
 	};
 	// BACKPACKS
 	
-	class OPTRE_ins_backpack_AT : B_fieldpack_blk {
+	class OPTRE_ins_backpack_AT : B_fieldpack_blk 
+	{
+		dlc = "OPTRE";
 		displayname = "[INS] AT Rocket Pack";
 		class TransportMagazines
+		{
+			class OPTRE_M41_Twin_HEAT
 			{
-				class OPTRE_M41_Twin_HEAT
-				{
 				magazine = "OPTRE_M41_Twin_HEAT";
 				count = 2;
-				};
 			};
+		};
 	};
-	class OPTRE_ins_backpack_exp : B_fieldpack_blk {
+	class OPTRE_ins_backpack_exp : B_fieldpack_blk 
+	{
+		dlc = "OPTRE";
 		displayname = "[INS] Explosives Pack";
 		class TransportMagazines
+		{
+			class _xx_APERSBoundingMine_Range_Mag
 			{
-				class _xx_APERSBoundingMine_Range_Mag
-				{
 				magazine = "APERSBoundingMine_Range_Mag";
 				count = 3;
-				};
-				class _xx_ClaymoreDirectionalMine_Remote_Mag
-				{
+			};
+			class _xx_ClaymoreDirectionalMine_Remote_Mag
+			{
 				magazine = "ClaymoreDirectionalMine_Remote_Mag";
 				count = 2;
-				};
-				class _xx_SLAMDirectionalMine_Wire_Mag
-				{
+			};
+			class _xx_SLAMDirectionalMine_Wire_Mag
+			{
 				magazine = "SLAMDirectionalMine_Wire_Mag";
 				count = 2;
-				};
-				class _xx_DemoCharge_Remote_Mag
-				{
+			};
+			class _xx_DemoCharge_Remote_Mag
+			{
 				magazine = "DemoCharge_Remote_Mag";
 				count = 1;
-				};
 			};
-			class TransportItems
+		};
+		class TransportItems
+		{
+			class _xx_ToolKit
 			{
-				class _xx_ToolKit
-				{
-					name = "ToolKit";
-					count = 1;
-				};
-				class _xx_MineDetector
-				{
-					name = "MineDetector";
-					count = 1;
-				};
+				name = "ToolKit";
+				count = 1;
 			};
+			class _xx_MineDetector
+			{
+				name = "MineDetector";
+				count = 1;
+			};
+		};
 	};
 };
  
@@ -678,6 +711,7 @@ class cfgWeapons
 	
 	class OPTRE_Ins_ER_uniform_GAtan: Uniform_Base
     {
+		dlc = "OPTRE";
         scope 											= 2;
 		author											= "Article 2 Studios";
         displayName 									= "[INS] Insurrectionist Apparel (Tan)"; //In-Game name
@@ -694,6 +728,7 @@ class cfgWeapons
 	};
 	class OPTRE_Ins_ER_uniform_GAgreen: Uniform_Base
     {
+		dlc = "OPTRE";
         scope 											= 2;
 		author											= "Article 2 Studios";
         displayName 									= "[INS] Insurrectionist Apparel (Green)"; //In-Game name
@@ -710,6 +745,7 @@ class cfgWeapons
 	};
 	class OPTRE_Ins_ER_uniform_GGod: Uniform_Base
     {
+		dlc = "OPTRE";
         scope 											= 2;
 		author											= "Article 2 Studios";
         displayName 									= "[INS] Insurrectionist Garments (OD)"; //In-Game name
@@ -726,6 +762,7 @@ class cfgWeapons
 	};
 	class OPTRE_Ins_ER_uniform_GGgrey: Uniform_Base
     {
+		dlc = "OPTRE";
         scope 											= 2;
 		author											= "Article 2 Studios";
         displayName 									= "[INS] Insurrectionist Garments (Grey)"; //In-Game name
@@ -742,6 +779,7 @@ class cfgWeapons
 	};
 	class OPTRE_Ins_ER_jacket_surplus_OD: Uniform_Base
     {
+		dlc = "OPTRE";
         scope 											= 2;
 		author											= "Article 2 Studios";
         displayName 									= "[INS] Surplus Jacket (OD)"; //In-Game name
@@ -757,6 +795,7 @@ class cfgWeapons
 	};
 	class OPTRE_Ins_ER_jacket_surplus_redshirt: Uniform_Base
     {
+		dlc = "OPTRE";
         scope 											= 2;
 		author											= "Article 2 Studios";
         displayName 									= "[INS] Surplus Jacket (Redshirt)"; //In-Game name
@@ -772,6 +811,7 @@ class cfgWeapons
 	};
 	class OPTRE_Ins_ER_jacket_surplus_brown: Uniform_Base
     {
+		dlc = "OPTRE";
         scope 											= 2;
 		author											= "Article 2 Studios";
         displayName 									= "[INS] Surplus Jacket (Brown)"; //In-Game name
@@ -787,6 +827,7 @@ class cfgWeapons
 	};
 	class OPTRE_Ins_ER_jacket_brown_surplus: Uniform_Base
     {
+		dlc = "OPTRE";
         scope 											= 2;
 		author											= "Article 2 Studios";
         displayName 									= "[INS] Brown Jacket (Surplus)"; //In-Game name
@@ -803,6 +844,7 @@ class cfgWeapons
 
 	class OPTRE_Ins_ER_jacket_od_surplus: Uniform_Base
     {
+		dlc = "OPTRE";
         scope 											= 2;
 		author											= "Article 2 Studios";
         displayName 									= "[INS] OD Jacket (Surplus)"; //In-Game name
@@ -818,6 +860,7 @@ class cfgWeapons
 	};
 	class OPTRE_Ins_ER_jacket_surgeon1: Uniform_Base
     {
+		dlc = "OPTRE";
         scope 											= 2;
 		author											= "Article 2 Studios";
         displayName 									= "[INS] Surgeon's Jacket (1)"; //In-Game name
@@ -833,6 +876,7 @@ class cfgWeapons
 	};
 	class OPTRE_Ins_ER_jacket_surgeon2: Uniform_Base
     {
+		dlc = "OPTRE";
         scope 											= 2;
 		author											= "Article 2 Studios";
         displayName 									= "[INS] Surgeon's Jacket (2)"; //In-Game name
@@ -848,6 +892,7 @@ class cfgWeapons
 	};
 	class OPTRE_Ins_ER_rolled_surplus_black: Uniform_Base
     {
+		dlc = "OPTRE";
         scope 											= 2;
 		author											= "Article 2 Studios";
         displayName 									= "[INS] Rolled Sleeves (Surplus/Black)"; //In-Game name
@@ -863,6 +908,7 @@ class cfgWeapons
 	};
 	class OPTRE_Ins_ER_rolled_surplus_crimson: Uniform_Base
     {
+		dlc = "OPTRE";
         scope 											= 2;
 		author											= "Article 2 Studios";
         displayName 									= "[INS] Rolled Sleeves (Surplus/Crimson)"; //In-Game name
@@ -878,6 +924,7 @@ class cfgWeapons
 	};
 	class OPTRE_Ins_ER_rolled_jean_orca: Uniform_Base
     {
+		dlc = "OPTRE";
         scope 											= 2;
 		author											= "Article 2 Studios";
         displayName 									= "[INS] Rolled Sleeves (Jeans/'Orca')"; //In-Game name
@@ -893,6 +940,7 @@ class cfgWeapons
 	};
 	class OPTRE_Ins_ER_rolled_OD_crimson: Uniform_Base
     {
+		dlc = "OPTRE";
         scope 											= 2;
 		author											= "Article 2 Studios";
         displayName 									= "[INS] Rolled Sleeves (OD/Crimson)"; //In-Game name
@@ -908,6 +956,7 @@ class cfgWeapons
 	};
 	class OPTRE_Ins_ER_rolled_OD_blknblu: Uniform_Base
     {
+		dlc = "OPTRE";
         scope 											= 2;
 		author											= "Article 2 Studios";
         displayName 									= "[INS] Rolled Sleeves (OD/'Black & Blue')"; //In-Game name
@@ -923,6 +972,7 @@ class cfgWeapons
 	};
 	class OPTRE_Ins_ER_rolled_OD_blknred: Uniform_Base
     {
+		dlc = "OPTRE";
         scope 											= 2;
 		author											= "Article 2 Studios";
         displayName 									= "[INS] Rolled Sleeves (OD/'Smoke & Fire')"; //In-Game name
@@ -941,6 +991,7 @@ class cfgWeapons
 	
 	class OPTRE_INS_UNSC_vest11: OPTRE_UNSC_Marine_vest
 	{	
+		dlc = "OPTRE";
 		scope 											= 2; 
 		author											= "Article 2 Studios";
 		displayName  									= "[INS] M52 Body Armor (v1)"; 
@@ -993,13 +1044,14 @@ class cfgWeapons
 	};
 	class OPTRE_INS_UNSC_vest12: OPTRE_INS_UNSC_vest11
 	{	
+		dlc = "OPTRE";
 		scope 											= 2; 
 		author											= "Article 2 Studios";
 		displayName  									= "[INS] M52 Body Armor (v2)"; 
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_vest.paa"; //Needs new inventory icon.  
 		hiddenSelections[]   							= {"camo1","camo2","camo3","attach_knife","attach_neck","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_Ins_Units\er\data\vest_innie_1-2_co.paa"}; 
-		class ItemInfo: VestItem 
+		class ItemInfo: ItemInfo 
 		{
 			uniformModel   								= "\OPTRE_UNSC_Units\Army\vest.p3d"; 
 			//armor   									= 30; 
@@ -1013,13 +1065,14 @@ class cfgWeapons
 	};
 	class OPTRE_INS_UNSC_vest2: OPTRE_INS_UNSC_vest11
 	{	
+		dlc = "OPTRE";
 		scope 											= 2; 
 		author											= "Article 2 Studios";
 		displayName  									= "[INS] M52 Body Armor (v3)"; 
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_vest.paa"; //Needs new inventory icon.  
 		hiddenSelections[]   							= {"camo1","camo2","camo3","attach_knife","attach_neck","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_Ins_Units\er\data\vest_innie_1-1_co.paa"}; 
-		class ItemInfo: VestItem 
+		class ItemInfo: ItemInfo 
 		{
 			uniformModel   								= "\OPTRE_UNSC_Units\Army\vest.p3d"; 
 			//armor   									= 30; 
@@ -1034,7 +1087,9 @@ class cfgWeapons
 	
 	// HELMETS
 	
-	class OPTRE_INS_Helmet_1 : OPTRE_UNSC_Marine_Helmet {
+	class OPTRE_INS_Helmet_1 : OPTRE_UNSC_Marine_Helmet 
+	{
+		dlc = "OPTRE";
 		scope   										= 2; 
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_helmet.paa"; //needs new Icon.  
@@ -1061,7 +1116,9 @@ class cfgWeapons
 			};
 		};
 	};
-	class OPTRE_INS_Helmet_killunsc : OPTRE_INS_Helmet_1 {
+	class OPTRE_INS_Helmet_killunsc : OPTRE_INS_Helmet_1 
+	{
+		dlc = "OPTRE";
 		scope   										= 2; 
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_helmet.paa"; //needs new Icon.  
@@ -1069,7 +1126,7 @@ class cfgWeapons
 		model     										= "\OPTRE_UNSC_Units\Army\helmet.p3d"; 
 		hiddenSelections[]   							= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie"}; 
 		hiddenSelectionsTextures[]   					= {"OPTRE_Ins_Units\er\data\helmet_innie_killunsc_co.paa"}; 
-		class ItemInfo: HeadgearItem 
+		class ItemInfo: ItemInfo
 		{
 			uniformModel   								= "\OPTRE_UNSC_Units\Army\helmet.p3d"; 
 			armor   									= 10; 
@@ -1080,7 +1137,9 @@ class cfgWeapons
 			hiddenSelectionsTextures[]   				= {"OPTRE_Ins_Units\er\data\helmet_innie_killunsc_co.paa"}; 
 		};
 	};
-	class OPTRE_INS_Helmet_liberty : OPTRE_INS_Helmet_1 {
+	class OPTRE_INS_Helmet_liberty : OPTRE_INS_Helmet_1 
+	{
+		dlc = "OPTRE";
 		scope   										= 2; 
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_helmet.paa"; //needs new Icon.  
@@ -1088,7 +1147,7 @@ class cfgWeapons
 		model     										= "\OPTRE_UNSC_Units\Army\helmet.p3d"; 
 		hiddenSelections[]   							= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie"}; 
 		hiddenSelectionsTextures[]   					= {"OPTRE_Ins_Units\er\data\helmet_innie_liberty_co.paa"}; 
-		class ItemInfo: HeadgearItem 
+		class ItemInfo: ItemInfo
 		{
 			uniformModel   								= "\OPTRE_UNSC_Units\Army\helmet.p3d"; 
 			mass   										= 30;
@@ -1098,7 +1157,9 @@ class cfgWeapons
 			hiddenSelectionsTextures[]   				= {"OPTRE_Ins_Units\er\data\helmet_innie_liberty_co.paa"}; 
 		};
 	};
-	class OPTRE_INS_Helmet_vet : OPTRE_INS_Helmet_1 {
+	class OPTRE_INS_Helmet_vet : OPTRE_INS_Helmet_1 
+	{
+		dlc = "OPTRE";
 		scope   										= 2; 
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_helmet.paa"; //needs new Icon.  
@@ -1106,7 +1167,7 @@ class cfgWeapons
 		model     										= "\OPTRE_UNSC_Units\Army\helmet.p3d"; 
 		hiddenSelections[]   							= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie"}; 
 		hiddenSelectionsTextures[]   					= {"OPTRE_Ins_Units\er\data\helmet_innie_veteran_co.paa"}; 
-		class ItemInfo: HeadgearItem 
+		class ItemInfo: ItemInfo
 		{
 			uniformModel   								= "\OPTRE_UNSC_Units\Army\helmet.p3d"; 
 			mass   										= 30;
@@ -1118,6 +1179,7 @@ class cfgWeapons
 	};
     class OPTRE_h_Booniehat_Grey: ItemCore
     {
+		dlc = "OPTRE";
         scope = 2;
         weaponPoolAvailable = 1;
         displayName = "[INS] Booniehat (Grey)"; //In-Game name
@@ -1135,6 +1197,7 @@ class cfgWeapons
 	};
 	class OPTRE_h_Booniehat_Green: OPTRE_h_Booniehat_Grey
 	{
+		dlc = "OPTRE";
 		scope = 1;
 		displayName = "[INS] Booniehat (Green)";
 		picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_H_Booniehat_oli_ca.paa";
@@ -1142,6 +1205,7 @@ class cfgWeapons
 	};
 	class OPTRE_h_PatrolCap_Green: ItemCore
     {
+		dlc = "OPTRE";
         scope = 2;
 		weaponPoolAvailable = 1;
         displayName = "[INS] Military Cap (Green)"; //In-Game name
@@ -1160,6 +1224,7 @@ class cfgWeapons
 	};
 	class OPTRE_h_PatrolCap_Brown: OPTRE_h_PatrolCap_Green
 	{
+		dlc = "OPTRE";
         displayName = "[INS] Military Cap (Brown)"; //In-Game name
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"OPTRE_Ins_Units\data\innie_patrolcap_Brown_co.paa"};

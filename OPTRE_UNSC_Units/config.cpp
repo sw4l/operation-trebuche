@@ -17,12 +17,14 @@ class CfgGroups
 	{
 		class OPTRE_UNSC
 		{
+			dlc = "OPTRE";
 			name = "UNSCDF";
 			class Infantry_Army_WDL
 			{
 				name = "Infantry (Army Woodland)";
 				class OPTRE_Groups_UNSC_Sentry_Army_WDL
 				{
+					dlc = "OPTRE";
 					name = "Sentry";
 					side = 1;
 					faction = "OPTRE_UNSC";
@@ -44,6 +46,7 @@ class CfgGroups
 				};
 				class OPTRE_Groups_UNSC_Fireteam_Army_WDL
 				{
+					dlc = "OPTRE";
 					name = "Fireteam";
 					side = 1;
 					faction = "OPTRE_UNSC";
@@ -79,6 +82,7 @@ class CfgGroups
 				};
 				class OPTRE_Groups_UNSC_Squad_Army_WDL
 				{
+					dlc = "OPTRE";
 					name = "Squad";
 					side = 1;
 					faction = "OPTRE_UNSC";
@@ -184,6 +188,7 @@ class CfgGroups
 				};
 				class OPTRE_Groups_UNSC_Weapons_Squad_Army_WDL
 				{
+					dlc = "OPTRE";
 					name = "Weapons Squad";
 					side = 1;
 					faction = "OPTRE_UNSC";
@@ -289,6 +294,7 @@ class CfgGroups
 				};
 				class OPTRE_Groups_UNSC_Sniper_Team_Army_WDL
 				{
+					dlc = "OPTRE";
 					name = "Sniper Team";
 					side = 1;
 					faction = "OPTRE_UNSC";
@@ -310,6 +316,7 @@ class CfgGroups
 				};
 				class OPTRE_Groups_UNSC_Command_Team_Army_WDL
 				{
+					dlc = "OPTRE";
 					name = "Command Team";
 					side = 1;
 					faction = "OPTRE_UNSC";
@@ -346,6 +353,7 @@ class CfgGroups
 			};
 			class Infantry_Army_DES
 			{
+				dlc = "OPTRE";
 				name = "Infantry (Army Desert)";
 				class OPTRE_Groups_UNSC_Sentry_Army_DES
 				{
@@ -672,6 +680,7 @@ class CfgGroups
 			};
 			class Infantry_Army_ARI
 			{
+				dlc = "OPTRE";
 				name = "Infantry (Army Arid)";
 				class OPTRE_Groups_UNSC_Sentry_Army_ARI
 				{
@@ -998,6 +1007,7 @@ class CfgGroups
 			};
 			class Infantry_Army_TRO
 			{
+				dlc = "OPTRE";
 				name = "Infantry (Army Tropic)";
 				class OPTRE_Groups_UNSC_Sentry_Army_TRO
 				{
@@ -1324,6 +1334,7 @@ class CfgGroups
 			};
 			class Infantry_Army_SNO
 			{
+				dlc = "OPTRE";
 				name = "Infantry (Army Snow)";
 				class OPTRE_Groups_UNSC_Sentry_Army_SNO
 				{
@@ -1650,6 +1661,7 @@ class CfgGroups
 			};
 			class Infantry_Marine
 			{
+				dlc = "OPTRE";
 				name = "Infantry (Marines)";
 				class OPTRE_Groups_UNSC_Sentry_Marine
 				{
@@ -1976,6 +1988,7 @@ class CfgGroups
 			};
 			class Infantry_Airforce
 			{
+				dlc = "OPTRE";
 				name = "Infantry (Air Force)";
 				class OPTRE_Groups_UNSC_Flight_Crew_Airforce
 				{
@@ -2001,6 +2014,7 @@ class CfgGroups
 			};
 			class SF_ODST
 			{
+				dlc = "OPTRE";
 				name = "Special Forces (ODST)";
 				class OPTRE_Groups_UNSC_Team_ODST
 				{
@@ -2150,7 +2164,6 @@ class CfgGroups
 					};
 				};
 			};
-
 		};
 	};
 };

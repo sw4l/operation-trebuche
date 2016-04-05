@@ -18,6 +18,7 @@ class CfgWeapons
 	{
 		dlc = "OPTRE";
 		scope 										= 2;
+		scopeArsenal 								= 2;
 		displayName 								= "Medical Biofoam";
 		picture 									= "\OPTRE_weapons\items\icons\biofoam.paa";
 		model 										= "\OPTRE_Weapons\items\Biofoam.p3d";
@@ -32,6 +33,7 @@ class CfgWeapons
 	{
 		dlc = "OPTRE";
 		scope 										= 2;
+		scopeArsenal 								= 2;
 		displayName 								= "Medical Pack";
 		picture 									= "\OPTRE_weapons\items\icons\medkit.paa";
 		model 										= "\OPTRE_Weapons\items\MedKit.p3d";

@@ -16,6 +16,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 {
 	class OPTRE_City_Building_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "OPTRE Structures (Civil)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -24,6 +25,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_City_Skyscrapers_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "OPTRE Structures (Towers)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -32,6 +34,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Industrial_Building_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "OPTRE Structures (Industrial)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -40,6 +43,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_Trans_Building_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "OPTRE Structures (Transportation)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
@@ -48,6 +52,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	};
 	class OPTRE_City_Objects_class
 	{
+		dlc = "OPTRE";
 		displayName 																			= "OPTRE Objects (City)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;

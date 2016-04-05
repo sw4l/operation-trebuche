@@ -32,6 +32,10 @@ class CfgVehicles
 		scope = 1;
 		scopeCurator = 1;
 		displayName = "GA-TL1 Base";
+		class Library
+		{
+			libTextDesc					= "The GA-TL1/A is the atmospheric variant of the UNSC's mainstay starfighter. Whilst the aircraft's primary role is that of an interceptor, it is more than capable of serving in a ground support role.";
+		};
 		dlc = "OPTRE";
 		side = 1;
 		vehicleClass = "OPTRE_UNSC_Air_class";
@@ -190,6 +194,72 @@ class CfgVehicles
 				#include "cfgHUD.hpp"
 			};
 		};*/
+		
+		class AnimationSources: AnimationSources	/// custom made animation sources
+		{
+			class rampDoor				/// the class name is later used in model.cfg
+			{
+				source = "user";	/// user source means it is waiting on some scripting input
+				animPeriod = 5;		/// how long does it take to change value from 0 to 1 (or vice versa)
+				initPhase = 0;		/// what value does it have while creating the vehicle
+				sound = "ServoRampSound_2";
+			};		
+			class bayDoor				/// the class name is later used in model.cfg
+			{
+				source = "user";	/// user source means it is waiting on some scripting input
+				animPeriod = 5;		/// how long does it take to change value from 0 to 1 (or vice versa)
+				initPhase = 0;		/// what value does it have while creating the vehicle
+				sound = "ServoRampSound_2";
+			};			
+		};
+		
+		class UserActions
+		{
+			class RampOpen
+			{
+				userActionID = 60;	
+				displayName = "Open Ramp";
+				displayNameDefault = "Open Ramp";
+				textToolTip = "Open Ramp";
+				position = pos driver;
+				radius = 6;
+				priority = 2;
+				onlyForPlayer = 1;
+				condition = "((this animationPhase ""ramp_anim"" < 0.5) AND (alive this))"; /// only openable from inside and when closed
+				statement = "this animate [""ramp_anim"",1];";
+				animPeriod = 5;
+            };
+            class RampClose: RampOpen
+            {
+				userActionID = 61;
+				displayName = "Close Ramp";
+				displayNameDefault = "Close Ramp";
+				textToolTip = "Close Ramp";
+				priority = 2;
+				condition = "((this animationPhase ""ramp_anim"" > 0.5) AND (alive this))"; /// only openable from inside and when closed
+				statement = "this animate [""ramp_anim"",0];";
+            };
+            /*class BayOpen: RampOpen
+            {
+				userActionID = 62;
+				displayName = "Open Weapons Bay";
+				displayNameDefault = "Open Weapons Bay";
+				textToolTip = "Open Weapons Bay";
+				priority = 2;
+				condition = "((this animationPhase ""leftbay_anim"" > 0.5) AND (this animationPhase ""rightbay_anim"" > 0.5) AND (alive this))"; /// only openable from inside and when closed
+				statement = "this animate [""leftbay_anim"",0]; this animate [""rightbay_anim"",0];";
+            };
+            class BayClose: RampOpen
+            {
+				userActionID = 63;
+				displayName = "Close Weapons Bay";
+				displayNameDefault = "Close Weapons Bay";
+				textToolTip = "Close Weapons Bay";
+				priority = 2;
+				condition = "((this animationPhase ""leftbay_anim"" < 0.5) AND (this animationPhase ""rightbay_anim"" < 0.5) AND (alive this))"; /// only openable from inside and when closed
+				statement = "this animate [""leftbay_anim"",1]; this animate [""rightbay_anim"",1];";
+            };*/
+		};
 	};
 
 	class OPTRE_Longsword_CAS_F: OPTRE_Longsword_Base_F
@@ -202,7 +272,7 @@ class CfgVehicles
 		
 		weapons[] =	/// lets use the weapons from Buzzard
 		{
-			Gatling_30mm_Plane_CAS_01_F,
+			OPTRE_M91909,
 			missiles_SCALPEL,
 			missiles_ASRAAM,
 			missiles_DAR,
@@ -211,9 +281,7 @@ class CfgVehicles
 		};
 		magazines[] = /// and their respective magazines
 		{
-			1000Rnd_Gatling_30mm_Plane_CAS_01_F,
-			1000Rnd_Gatling_30mm_Plane_CAS_01_F,
-			1000Rnd_Gatling_30mm_Plane_CAS_01_F,
+			OPTRE_M91909_2500Rnd_50mm,
 			24Rnd_missiles,
 			24Rnd_missiles,
 			24Rnd_missiles,
@@ -229,6 +297,39 @@ class CfgVehicles
 		};
 	};
 
+	class OPTRE_Longsword_BOMB_F: OPTRE_Longsword_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "GA-TL1/A Bomber";								/// how is the plane displayed in editor
+		dlc = "OPTRE";
+		author="Article 2 Studios";
+		
+		weapons[] =	/// lets use the weapons from Buzzard
+		{
+			OPTRE_M91909,
+			missiles_SCALPEL,
+			missiles_ASRAAM,
+			GBU12BombLauncher,
+			CMFlareLauncher
+		};
+		magazines[] = /// and their respective magazines
+		{
+			OPTRE_M91909_2500Rnd_50mm,
+			2Rnd_LG_scalpel,
+			2Rnd_AAA_missiles,
+			2Rnd_GBU12_LGB_MI10,
+			2Rnd_GBU12_LGB_MI10,
+			2Rnd_GBU12_LGB_MI10,
+			2Rnd_GBU12_LGB_MI10,
+			2Rnd_GBU12_LGB_MI10,
+			2Rnd_GBU12_LGB_MI10,
+			2Rnd_GBU12_LGB_MI10,
+			2Rnd_GBU12_LGB_MI10,
+			120Rnd_CMFlare_Chaff_Magazine
+		};
+	};
+	
 	class OPTRE_Longsword_AA_F: OPTRE_Longsword_Base_F
 	{
 		scope = 2;
@@ -239,21 +340,45 @@ class CfgVehicles
 		
 		weapons[] =
 		{
-			Gatling_30mm_Plane_CAS_01_F,
+			OPTRE_M91909,
 			missiles_Zephyr,
 			missiles_ASRAAM,
 			CMFlareLauncher
 		};
 		magazines[] =
 		{
-			1000Rnd_Gatling_30mm_Plane_CAS_01_F,
-			1000Rnd_Gatling_30mm_Plane_CAS_01_F,
-			1000Rnd_Gatling_30mm_Plane_CAS_01_F,
+			OPTRE_M91909_2500Rnd_50mm,
 			2Rnd_AAA_missiles,
 			2Rnd_AAA_missiles,
 			4Rnd_GAA_missiles,
 			4Rnd_GAA_missiles,
 			4Rnd_GAA_missiles,
+			120Rnd_CMFlare_Chaff_Magazine
+		};
+	};
+	
+	class OPTRE_Longsword_CANNON_F: OPTRE_Longsword_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "GA-TL1/A Fighter";								/// how is the plane displayed in editor
+		dlc = "OPTRE";
+		author="Article 2 Studios";
+		
+		weapons[] =
+		{
+			OPTRE_M919110,
+			missiles_ASRAAM,
+			missiles_SCALPEL,
+			CMFlareLauncher
+		};
+		magazines[] =
+		{
+			OPTRE_M919110_1000Rnd_110mm,
+			2Rnd_AAA_missiles,
+			2Rnd_AAA_missiles,
+			2Rnd_LG_scalpel,
+			2Rnd_LG_scalpel,
 			120Rnd_CMFlare_Chaff_Magazine
 		};
 	};

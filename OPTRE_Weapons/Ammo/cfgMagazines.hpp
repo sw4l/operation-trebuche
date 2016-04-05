@@ -13,6 +13,7 @@ class CfgMagazines
 	class NLAW_F;
 	class Titan_AA;
 	class Titan_AT;
+	class 500Rnd_Cannon_30mm_Plane_CAS_02_F;
 	
 	//7.62x51mm (AR, M247)
 	class OPTRE_60Rnd_762x51_Mag: 20Rnd_762x51_Mag
@@ -438,6 +439,20 @@ class CfgMagazines
 		soundHit[] 							= {"",1.25893,1,1};
 		reloadSound[] 						= {"",0.000316228,1,20};
 		nameSound		 					= "missiles";
+	};
+	class OPTRE_M91909_2500Rnd_50mm: 500Rnd_Cannon_30mm_Plane_CAS_02_F
+	{
+		author = "Article 2 Studios";
+		displayNameShort = "50mm";
+		ammo = "OPTRE_M91909_50mm";
+		count = 2500;
+	};
+	class OPTRE_M919110_1000Rnd_110mm: OPTRE_M91909_2500Rnd_50mm
+	{
+		author = "Article 2 Studios";
+		displayNameShort = "110mm";
+		ammo = "OPTRE_M919110_110mm";
+		count = 1000;
 	};
 	
 	

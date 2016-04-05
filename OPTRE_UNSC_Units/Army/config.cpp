@@ -27,6 +27,7 @@ class CfgVehicles //This configures units and backpacks
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_Army_Soldier_WDL: CAManBase
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		side 															= 1;
@@ -65,7 +66,7 @@ class CfgVehicles //This configures units and backpacks
 			tex[] = {};
 			mat[] = {};
 		};
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_shirt2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_co.paa","OPTRE_UNSC_Units\Army\data\uniform_woodland_co.paa"};
 		class HitPoints: HitPoints
 		{
@@ -201,11 +202,12 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_M_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_M_WDL";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder2","attach_rightshoulder2","attach_pant2","attach_leftknee2","attach_rightknee2"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder2","attach_rightshoulder2","attach_pant2","attach_leftknee2","attach_rightknee2","attach_shirt2"};
 		class HitPoints: HitPoints
 		{
 			class HitFace: HitHead
@@ -339,11 +341,12 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_L_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_L_WDL";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_pant2","attach_leftknee2","attach_rightknee2"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_pant2","attach_leftknee2","attach_rightknee2","attach_shirt1"};
 		class HitPoints: HitPoints
 		{
 			class HitFace: HitHead
@@ -478,6 +481,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_DES: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		author															= "Article 2 Studios";
@@ -485,81 +489,90 @@ class CfgVehicles //This configures units and backpacks
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_DES";
 		linkedItems[] 													= {"OPTRE_UNSC_M52_Vest_DES","OPTRE_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		respawnLinkedItems[] 											= {"OPTRE_UNSC_M52_Vest_DES","OPTRE_UNSC_CH252_Helmet_DES","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_shirt2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_desert_co.paa","OPTRE_UNSC_Units\Army\data\uniform_desert_co.paa"};
 	};
 	class OPTRE_UNSC_Army_Soldier_M_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_M_DES";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2","attach_shirt2"};
 	};
 	class OPTRE_UNSC_Army_Soldier_L_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_L_DES";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2","attach_shirt1"};
 	};
 	
 	class OPTRE_UNSC_Army_Soldier_TRO: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		author															= "Article 2 Studios";
 		vehicleClass													= "OPTRE_UNSC_Man_Army_T_class";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_TRO";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_shirt2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_co.paa","OPTRE_UNSC_Units\Army\data\uniform_tropic_co.paa"};
 	};
 	class OPTRE_UNSC_Army_Soldier_M_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_M_TRO";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_leftshin","attach_rightshin"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_leftshin","attach_rightshin","attach_shirt2"};
 	};
 	class OPTRE_UNSC_Army_Soldier_L_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_L_TRO";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2","attach_shirt1"};
 	};
 	
 	class OPTRE_UNSC_Army_Soldier_ARI: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		author															= "Article 2 Studios";
 		vehicleClass													= "OPTRE_UNSC_Man_Army_A_class";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_ARI";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_shirt2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_desert_co.paa","OPTRE_UNSC_Units\Army\data\uniform_arid_co.paa"};
 	};
 	class OPTRE_UNSC_Army_Soldier_M_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_M_ARI";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_leftshin","attach_rightshin"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_leftshin","attach_rightshin","attach_shirt2"};
 	};
 	class OPTRE_UNSC_Army_Soldier_L_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_L_ARI";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2","attach_shirt1"};
 	};
 	
 	class OPTRE_UNSC_Army_Soldier_SNO: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		author															= "Article 2 Studios";
@@ -567,24 +580,26 @@ class CfgVehicles //This configures units and backpacks
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_SNO";
 		linkedItems[] 													= {"OPTRE_UNSC_M52_Vest_SNO","OPTRE_UNSC_CH252_Helmet_SNO","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		respawnLinkedItems[] 											= {"OPTRE_UNSC_M52_Vest_SNO","OPTRE_UNSC_CH252_Helmet_SNO","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_shirt2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_snow_co.paa","OPTRE_UNSC_Units\Army\data\uniform_snow_co.paa"};
 	};
 	class OPTRE_UNSC_Army_Soldier_M_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_M_SNO";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_leftshin","attach_rightshin"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_leftshin","attach_rightshin","attach_shirt2"};
 	};
 	class OPTRE_UNSC_Army_Soldier_L_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_L_SNO";
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2","attach_shirt1"};
 	};
 	// BASE UNITS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -593,6 +608,7 @@ class CfgVehicles //This configures units and backpacks
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_Army_Soldier_Medic: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope 															= 2;
 		scopeCurator													= 2;
 		displayName														= "Medic";
@@ -618,6 +634,7 @@ class CfgVehicles //This configures units and backpacks
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_Army_Soldier_Radioman_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope 															= 2;
 		scopeCurator													= 2;
 		displayName														= "Radio Operator";
@@ -629,6 +646,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (MA5)";
@@ -640,6 +658,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_BR_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (BR55)";
@@ -651,6 +670,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_AT_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (AT)";
@@ -663,6 +683,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_Light_WDL: OPTRE_UNSC_Army_Soldier_L_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (Light)";
@@ -675,6 +696,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_AT_Specialist_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "AT Specialist";
@@ -687,6 +709,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_AA_Specialist_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "AA Specialist";
@@ -699,6 +722,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Engineer_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Engineer";
@@ -712,6 +736,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Breacher_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Breacher";
@@ -723,6 +748,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_TeamLead_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Team Leader";
@@ -735,6 +761,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_SquadLead_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Squad Leader";
@@ -747,6 +774,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Grenadier_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Grenadier";
@@ -758,6 +786,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Autorifleman_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Autorifleman";
@@ -770,6 +799,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Assist_Autorifleman_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Assistant Autorifleman";
@@ -781,6 +811,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Marksman_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Designated Marksman";
@@ -792,6 +823,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Sniper_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Sniper";
@@ -802,6 +834,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_ForwardObserver_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Forward Observer";
@@ -815,6 +848,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Crewman_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Crewman";
@@ -827,6 +861,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Demolitions_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Demolitions Expert";
@@ -840,6 +875,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_UAV_Op_WDL: OPTRE_UNSC_Army_Soldier_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "UAV Operator";
@@ -854,6 +890,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Unarmed_WDL: OPTRE_UNSC_Army_Soldier_M_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Unarmed";
@@ -868,6 +905,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Officer_WDL: OPTRE_UNSC_Army_Soldier_L_WDL
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Officer";
@@ -886,6 +924,7 @@ class CfgVehicles //This configures units and backpacks
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_Army_Soldier_Radioman_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope 															= 2;
 		scopeCurator													= 2;
 		displayName														= "Radio Operator";
@@ -897,6 +936,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_AR_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (MA5)";
@@ -908,6 +948,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_BR_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (BR55)";
@@ -919,6 +960,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_AT_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (AT)";
@@ -931,6 +973,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_Light_DES: OPTRE_UNSC_Army_Soldier_L_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (Light)";
@@ -943,6 +986,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_AT_Specialist_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "AT Specialist";
@@ -955,6 +999,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_AA_Specialist_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "AA Specialist";
@@ -967,6 +1012,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Engineer_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Engineer";
@@ -980,6 +1026,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Breacher_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Breacher";
@@ -991,6 +1038,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_TeamLead_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Team Leader";
@@ -1003,6 +1051,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_SquadLead_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Squad Leader";
@@ -1015,6 +1064,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Grenadier_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Grenadier";
@@ -1026,6 +1076,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Autorifleman_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Autorifleman";
@@ -1038,6 +1089,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Assist_Autorifleman_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Assistant Autorifleman";
@@ -1049,6 +1101,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Marksman_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Designated Marksman";
@@ -1060,6 +1113,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Sniper_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Sniper";
@@ -1070,6 +1124,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_ForwardObserver_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Forward Observer";
@@ -1083,6 +1138,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Crewman_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Crewman";
@@ -1095,6 +1151,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Demolitions_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Demolitions Expert";
@@ -1108,6 +1165,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_UAV_Op_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "UAV Operator";
@@ -1122,6 +1180,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Unarmed_DES: OPTRE_UNSC_Army_Soldier_M_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Unarmed";
@@ -1136,6 +1195,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Officer_DES: OPTRE_UNSC_Army_Soldier_L_DES
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Officer";
@@ -1154,6 +1214,7 @@ class CfgVehicles //This configures units and backpacks
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_Army_Soldier_Radioman_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope 															= 2;
 		scopeCurator													= 2;
 		displayName														= "Radio Operator";
@@ -1165,6 +1226,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_AR_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (MA5)";
@@ -1176,6 +1238,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_BR_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (BR55)";
@@ -1187,6 +1250,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_AT_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (AT)";
@@ -1199,6 +1263,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_Light_TRO: OPTRE_UNSC_Army_Soldier_L_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (Light)";
@@ -1211,6 +1276,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_AT_Specialist_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "AT Specialist";
@@ -1223,6 +1289,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_AA_Specialist_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "AA Specialist";
@@ -1235,6 +1302,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Engineer_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Engineer";
@@ -1248,6 +1316,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Breacher_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Breacher";
@@ -1259,6 +1328,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_TeamLead_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Team Leader";
@@ -1271,6 +1341,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_SquadLead_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Squad Leader";
@@ -1283,6 +1354,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Grenadier_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Grenadier";
@@ -1294,6 +1366,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Autorifleman_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Autorifleman";
@@ -1306,6 +1379,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Assist_Autorifleman_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Assistant Autorifleman";
@@ -1317,6 +1391,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Marksman_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Designated Marksman";
@@ -1328,6 +1403,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Sniper_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Sniper";
@@ -1338,6 +1414,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_ForwardObserver_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Forward Observer";
@@ -1351,6 +1428,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Crewman_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Crewman";
@@ -1363,6 +1441,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Demolitions_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Demolitions Expert";
@@ -1376,6 +1455,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_UAV_Op_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "UAV Operator";
@@ -1390,6 +1470,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Unarmed_TRO: OPTRE_UNSC_Army_Soldier_M_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Unarmed";
@@ -1404,6 +1485,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Officer_TRO: OPTRE_UNSC_Army_Soldier_L_TRO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Officer";
@@ -1422,6 +1504,7 @@ class CfgVehicles //This configures units and backpacks
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_Army_Soldier_Radioman_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope 															= 2;
 		scopeCurator													= 2;
 		displayName														= "Radio Operator";
@@ -1433,6 +1516,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_AR_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (MA5)";
@@ -1444,6 +1528,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_BR_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (BR55)";
@@ -1455,6 +1540,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_AT_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (AT)";
@@ -1467,6 +1553,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_Light_ARI: OPTRE_UNSC_Army_Soldier_L_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (Light)";
@@ -1479,6 +1566,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_AT_Specialist_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "AT Specialist";
@@ -1491,6 +1579,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_AA_Specialist_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "AA Specialist";
@@ -1503,6 +1592,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Engineer_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Engineer";
@@ -1516,6 +1606,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Breacher_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Breacher";
@@ -1527,6 +1618,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_TeamLead_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Team Leader";
@@ -1539,6 +1631,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_SquadLead_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Squad Leader";
@@ -1551,6 +1644,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Grenadier_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Grenadier";
@@ -1562,6 +1656,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Autorifleman_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Autorifleman";
@@ -1574,6 +1669,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Assist_Autorifleman_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Assistant Autorifleman";
@@ -1585,6 +1681,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Marksman_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Designated Marksman";
@@ -1596,6 +1693,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Sniper_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Sniper";
@@ -1606,6 +1704,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_ForwardObserver_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Forward Observer";
@@ -1619,6 +1718,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Crewman_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Crewman";
@@ -1631,6 +1731,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Demolitions_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Demolitions Expert";
@@ -1644,6 +1745,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_UAV_Op_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "UAV Operator";
@@ -1658,6 +1760,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Unarmed_ARI: OPTRE_UNSC_Army_Soldier_M_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Unarmed";
@@ -1672,6 +1775,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Officer_ARI: OPTRE_UNSC_Army_Soldier_L_ARI
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Officer";
@@ -1690,6 +1794,7 @@ class CfgVehicles //This configures units and backpacks
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_Army_Soldier_Radioman_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope 															= 2;
 		scopeCurator													= 2;
 		displayName														= "Radio Operator";
@@ -1701,6 +1806,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_AR_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (MA5)";
@@ -1712,6 +1818,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_BR_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (BR55)";
@@ -1723,6 +1830,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_AT_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (AT)";
@@ -1735,6 +1843,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Rifleman_Light_SNO: OPTRE_UNSC_Army_Soldier_L_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (Light)";
@@ -1747,6 +1856,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_AT_Specialist_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "AT Specialist";
@@ -1759,6 +1869,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_AA_Specialist_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "AA Specialist";
@@ -1771,6 +1882,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Engineer_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Engineer";
@@ -1784,6 +1896,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Breacher_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Breacher";
@@ -1795,6 +1908,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_TeamLead_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Team Leader";
@@ -1807,6 +1921,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_SquadLead_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Squad Leader";
@@ -1819,6 +1934,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Grenadier_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Grenadier";
@@ -1830,6 +1946,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Autorifleman_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Autorifleman";
@@ -1842,6 +1959,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Assist_Autorifleman_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Assistant Autorifleman";
@@ -1853,6 +1971,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Marksman_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Designated Marksman";
@@ -1864,6 +1983,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Sniper_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Sniper";
@@ -1874,6 +1994,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_ForwardObserver_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Forward Observer";
@@ -1887,6 +2008,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Crewman_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Crewman";
@@ -1899,6 +2021,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Demolitions_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Demolitions Expert";
@@ -1912,6 +2035,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_UAV_Op_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "UAV Operator";
@@ -1926,6 +2050,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Unarmed_SNO: OPTRE_UNSC_Army_Soldier_M_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Unarmed";
@@ -1940,6 +2065,7 @@ class CfgVehicles //This configures units and backpacks
 	};
 	class OPTRE_UNSC_Army_Soldier_Officer_SNO: OPTRE_UNSC_Army_Soldier_L_SNO
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Officer";
@@ -1971,6 +2097,7 @@ class cfgWeapons
 	
 	class OPTRE_NVG: NVGoggles
 	{
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Neural Implant Vision Enhancement";
 		modelOptics 									= "";
@@ -1988,6 +2115,7 @@ class cfgWeapons
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_Army_Uniform_WDL: U_B_CombatUniform_mcam
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Army BDU [Woodland]";
@@ -2004,6 +2132,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Army_Uniform_M_WDL: OPTRE_UNSC_Army_Uniform_WDL
 	{
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Army BDU (Medium) [Woodland]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
@@ -2015,6 +2144,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Army_Uniform_L_WDL: OPTRE_UNSC_Army_Uniform_WDL
 	{
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Army BDU (Light) [Woodland]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl.paa";
@@ -2027,6 +2157,7 @@ class cfgWeapons
 	
 	class OPTRE_UNSC_Army_Uniform_DES: OPTRE_UNSC_Army_Uniform_WDL
 	{
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Army BDU [Desert]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_des_hvy.paa";
@@ -2041,6 +2172,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Army_Uniform_M_DES: OPTRE_UNSC_Army_Uniform_DES
 	{
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Army BDU (Medium) [Desert]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_des_hvy.paa";
@@ -2052,6 +2184,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Army_Uniform_L_DES: OPTRE_UNSC_Army_Uniform_DES
 	{
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Army BDU (Light) [Desert]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_des.paa";
@@ -2064,6 +2197,7 @@ class cfgWeapons
 	
 	class OPTRE_UNSC_Army_Uniform_TRO: OPTRE_UNSC_Army_Uniform_WDL
 	{
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Army BDU [Tropic]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
@@ -2078,6 +2212,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Army_Uniform_M_TRO: OPTRE_UNSC_Army_Uniform_TRO
 	{
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Army BDU (Medium) [Tropic]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
@@ -2089,6 +2224,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Army_Uniform_L_TRO: OPTRE_UNSC_Army_Uniform_TRO
 	{
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Army BDU (Light) [Tropic]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl.paa";
@@ -2101,6 +2237,7 @@ class cfgWeapons
 	
 	class OPTRE_UNSC_Army_Uniform_ARI: OPTRE_UNSC_Army_Uniform_WDL
 	{
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Army BDU [Arid]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_des_hvy.paa";
@@ -2115,6 +2252,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Army_Uniform_M_ARI: OPTRE_UNSC_Army_Uniform_ARI
 	{
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Army BDU (Medium) [Arid]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_des_hvy.paa";
@@ -2126,6 +2264,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Army_Uniform_L_ARI: OPTRE_UNSC_Army_Uniform_ARI
 	{
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Army BDU (Light) [Arid]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_des.paa";
@@ -2138,6 +2277,7 @@ class cfgWeapons
 	
 	class OPTRE_UNSC_Army_Uniform_SNO: OPTRE_UNSC_Army_Uniform_WDL
 	{
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Army BDU [Snow]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_sno_hvy.paa";
@@ -2152,6 +2292,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Army_Uniform_M_SNO: OPTRE_UNSC_Army_Uniform_SNO
 	{
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Army BDU (Medium) [Snow]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_sno_hvy.paa";
@@ -2163,6 +2304,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Army_Uniform_L_SNO: OPTRE_UNSC_Army_Uniform_SNO
 	{
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Army BDU (Light) [Snow]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\army_uniform_sno.paa";
@@ -2174,6 +2316,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Army_Uniform_Medic: U_B_CombatUniform_mcam
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		author											= "Article 2 Studios";
 		displayName										= "[UNSC] Medical BDU";
@@ -2195,6 +2338,7 @@ class cfgWeapons
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_M52_Vest_Base: V_PlateCarrier1_rgr //The vest base class
 	{	
+		dlc = "OPTRE";
 		scope 											= 0;
 		author											= "Article 2 Studios";
 		displayName  									= "-";
@@ -2238,6 +2382,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_M52_Vest_WDL: OPTRE_UNSC_M52_Vest_base
 	{	
+		dlc = "OPTRE";
 		scope											= 2;
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
@@ -2252,6 +2397,7 @@ class cfgWeapons
 	};		
 	class OPTRE_UNSC_M52_Vest_Vacuum_WDL: OPTRE_UNSC_M52_Vest_WDL
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor [Woodland]";
@@ -2303,6 +2449,7 @@ class cfgWeapons
 	};	
 	class OPTRE_UNSC_M52_Vest_Sniper_WDL: OPTRE_UNSC_M52_Vest_WDL
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl_gil.paa";
 		displayName  									= "[UNSC] M52[S] Body Armor [Woodland]";
@@ -2317,6 +2464,7 @@ class cfgWeapons
 	
 	class OPTRE_UNSC_M52_Vest_DES: OPTRE_UNSC_M52_Vest_WDL
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_des.paa";
 		displayName  									= "[UNSC] M52 Body Armor [Desert]";
@@ -2330,6 +2478,7 @@ class cfgWeapons
 	};		
 	class OPTRE_UNSC_M52_Vest_Vacuum_DES: OPTRE_UNSC_M52_Vest_Vacuum_WDL
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_des_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor [Desert]";
@@ -2343,6 +2492,7 @@ class cfgWeapons
 	};	
 	class OPTRE_UNSC_M52_Vest_Sniper_DES: OPTRE_UNSC_M52_Vest_DES
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_des_gil.paa";
 		displayName  									= "[UNSC] M52[S] Body Armor [Desert]";
@@ -2357,6 +2507,7 @@ class cfgWeapons
 	
 	class OPTRE_UNSC_M52_Vest_SNO: OPTRE_UNSC_M52_Vest_WDL
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_sno.paa";
 		displayName  									= "[UNSC] M52 Body Armor [Snow]";
@@ -2370,6 +2521,7 @@ class cfgWeapons
 	};		
 	class OPTRE_UNSC_M52_Vest_Vacuum_SNO: OPTRE_UNSC_M52_Vest_Vacuum_WDL
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_sno_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor [Snow]";
@@ -2384,6 +2536,7 @@ class cfgWeapons
 	
 	class OPTRE_UNSC_M52_Vest_MED: OPTRE_UNSC_M52_Vest_WDL
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_med.paa";
 		displayName  									= "[UNSC] M52 Body Armor [Medic]";
@@ -2397,6 +2550,7 @@ class cfgWeapons
 	};		
 	class OPTRE_UNSC_M52_Vest_Vacuum_MED: OPTRE_UNSC_M52_Vest_Vacuum_WDL
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_vest_med_vac.paa";
 		displayName  									= "[UNSC] M52[V] Body Armor [Medic]";
@@ -2415,6 +2569,7 @@ class cfgWeapons
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_CH252_Helmet_Base: H_HelmetB
 	{	
+		dlc = "OPTRE";
 		scope   										= 0;
 		author											= "Article 2 Studios";
 		displayName    									= "-";
@@ -2444,6 +2599,7 @@ class cfgWeapons
 	};		
 	class OPTRE_UNSC_CH252_Helmet_WDL: OPTRE_UNSC_CH252_Helmet_Base
 	{	
+		dlc = "OPTRE";
 		scope   										= 2;
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252 Helmet [Woodland]";
@@ -2458,6 +2614,7 @@ class cfgWeapons
 	};		
 	class OPTRE_UNSC_CH252_Helmet_Vacuum_WDL: OPTRE_UNSC_CH252_Helmet_WDL
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252[V] Helmet [Woodland]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl_vac.paa";
@@ -2481,6 +2638,7 @@ class cfgWeapons
 	};	
 	class OPTRE_UNSC_CH252_Helmet_Sniper_WDL: OPTRE_UNSC_CH252_Helmet_WDL
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252[S] Helmet [Woodland]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl_gil.paa";
@@ -2495,6 +2653,7 @@ class cfgWeapons
 	
 	class OPTRE_UNSC_CH252_Helmet_DES: OPTRE_UNSC_CH252_Helmet_WDL
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252 Helmet [Desert]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_des.paa";
@@ -2508,6 +2667,7 @@ class cfgWeapons
 	};		
 	class OPTRE_UNSC_CH252_Helmet_Vacuum_DES: OPTRE_UNSC_CH252_Helmet_DES
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252[V] Helmet [Desert]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_DES_vac.paa";
@@ -2522,6 +2682,7 @@ class cfgWeapons
 	};	
 	class OPTRE_UNSC_CH252_Helmet_Sniper_DES: OPTRE_UNSC_CH252_Helmet_DES
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252[S] Helmet [Desert]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_DES_gil.paa";
@@ -2536,6 +2697,7 @@ class cfgWeapons
 	
 	class OPTRE_UNSC_CH252_Helmet_SNO: OPTRE_UNSC_CH252_Helmet_WDL
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252 Helmet [Snow]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_sno.paa";
@@ -2549,6 +2711,7 @@ class cfgWeapons
 	};		
 	class OPTRE_UNSC_CH252_Helmet_Vacuum_SNO: OPTRE_UNSC_CH252_Helmet_SNO
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252[V] Helmet [Snow]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_sno_vac.paa";
@@ -2564,6 +2727,7 @@ class cfgWeapons
 	
 	class OPTRE_UNSC_CH252_Helmet_MED: OPTRE_UNSC_CH252_Helmet_WDL
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252 Helmet [Medic]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_med.paa";
@@ -2577,6 +2741,7 @@ class cfgWeapons
 	};		
 	class OPTRE_UNSC_CH252_Helmet_Vacuum_MED: OPTRE_UNSC_CH252_Helmet_MED
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252[V] Helmet [Medic]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_med_vac.paa";
@@ -2593,51 +2758,61 @@ class cfgWeapons
 	class H_Booniehat_khk;
 	class OPTRE_PatrolCap_Army_WDL: H_MilCap_blue 
 	{
+		dlc = "OPTRE";
 		displayname 									= "[UNSC] Patrol Cap [Woodland]";
 		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\cappatrol_woodland_co.paa"};
 	};
 	class OPTRE_BoonieHat_Army_WDL: H_Booniehat_khk 
 	{
+		dlc = "OPTRE";
 		displayname 									= "[UNSC] Boonie Hat [Woodland]";
 		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\booniehat_woodland_co.paa"};
 	};	
 	class OPTRE_PatrolCap_Army_DES: H_MilCap_blue 
 	{
+		dlc = "OPTRE";
 		displayname 									= "[UNSC] Patrol Cap [Desert]";
 		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\cappatrol_Desert_co.paa"};
 	};
 	class OPTRE_BoonieHat_Army_DES: H_Booniehat_khk 
 	{
+		dlc = "OPTRE";
 		displayname 									= "[UNSC] Boonie Hat [Desert]";
 		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\booniehat_Desert_co.paa"};
 	};
-		class OPTRE_PatrolCap_Army_TRO: H_MilCap_blue 
+	class OPTRE_PatrolCap_Army_TRO: H_MilCap_blue 
 	{
+		dlc = "OPTRE";
 		displayname 									= "[UNSC] Patrol Cap [Tropic]";
 		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\cappatrol_Tropic_co.paa"};
 	};
 	class OPTRE_BoonieHat_Army_TRO: H_Booniehat_khk 
 	{
+		dlc = "OPTRE";
 		displayname 									= "[UNSC] Boonie Hat [Tropic]";
 		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\booniehat_Tropic_co.paa"};
 	};
 	class OPTRE_PatrolCap_Army_ARI: H_MilCap_blue 
 	{
+		dlc = "OPTRE";
 		displayname 									= "[UNSC] Patrol Cap [Arid]";
 		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\cappatrol_Arid_co.paa"};
 	};
 	class OPTRE_BoonieHat_Army_ARI: H_Booniehat_khk 
 	{
+		dlc = "OPTRE";
 		displayname 									= "[UNSC] Boonie Hat [Arid]";
 		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\booniehat_Arid_co.paa"};
 	};
-		class OPTRE_PatrolCap_Army_SNO: H_MilCap_blue 
+	class OPTRE_PatrolCap_Army_SNO: H_MilCap_blue 
 	{
+		dlc = "OPTRE";
 		displayname 									= "[UNSC] Patrol Cap [Snow]";
 		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\cappatrol_Snow_co.paa"};
 	};
 	class OPTRE_BoonieHat_Army_SNO: H_Booniehat_khk 
 	{
+		dlc = "OPTRE";
 		displayname 									= "[UNSC] Boonie Hat [Snow]";
 		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Army\data\booniehat_Snow_co.paa"};
 	};

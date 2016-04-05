@@ -19,6 +19,7 @@ class CfgAmmo
 	class M_Titan_AA; 
 	class M_NLAW_AT_F;
 	class Sh_120mm_APFSDS;
+	class Cannon_30mm_HE_Plane_CAS_02_F;
 	
 	//7.62x51mm (AR, M247)
 	class OPTRE_B_762x51_Ball: B_762x51_Ball
@@ -503,6 +504,23 @@ class CfgAmmo
 		indirectHitRange = 5;
 		airLock = 2;
 		irLock = 0;
+	};
+	class OPTRE_M91909_50mm: Cannon_30mm_HE_Plane_CAS_02_F
+	{
+		model = "\A3\Weapons_f\Data\bullettracer\tracer_white.p3d";
+		hit = 220;
+		indirectHit = 5;
+		indirectHitRange = 5;
+		caliber = 5;
+		explosive = 0.5;
+	};
+	class OPTRE_M919110_1100mm: OPTRE_M91909_50mm
+	{
+		hit = 440;
+		indirectHit = 20;
+		indirectHitRange = 5;
+		caliber = 10;
+		explosive = 0.5;
 	};
 	
 	//Rockets

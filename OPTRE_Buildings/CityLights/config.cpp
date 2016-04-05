@@ -34,6 +34,7 @@ class CfgVehicles
 	class Lamps_base_F;
 	class Land_Colony_Light_Street_off: Lamps_base_F
 	{
+		dlc = "OPTRE";
 		mapSize = 3.77;
 		author = "Article 2 Studios";
 		scope = 2;
@@ -44,6 +45,7 @@ class CfgVehicles
 	};
 	class Land_Colony_Light_Street: Lamps_base_F
 	{
+		dlc = "OPTRE";
 		mapSize = 3.78;
 		author = "Article 2 Studios";
 		scope = 2;
@@ -83,6 +85,7 @@ class CfgVehicles
 	};
 	class Land_Small_Light_Column: Lamps_base_F
 	{
+		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Citylights\Small_Light_Column.p3d";
 		armor=20000;
 		scope=2;

@@ -40,6 +40,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_Rack_Weapons: OPTRE_Ammo_Box_Base
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		displayName = "[UNSC] Weapons Rack";
 		hiddenSelections[] = {"attach_Cover"};
@@ -361,6 +362,7 @@ class CfgVehicles
 	};
 	class OPTRE_INS_Cache_Open: OPTRE_Ammo_Rack_Weapons
 	{
+		dlc = "OPTRE";
 		vehicleClass = "OPTRE_INS_Ammo_class";
 		displayName = "[INS] Weapons Cache (Ground)";
 		model = "\OPTRE_misc\crates\ins_cache.p3d";
@@ -726,6 +728,7 @@ class CfgVehicles
 	};
 	class OPTRE_INS_Cache_Empty: OPTRE_INS_Cache_Open
 	{
+		dlc = "OPTRE";
 		vehicleClass = "OPTRE_INS_Ammo_class";
 		displayName = "[INS] Weapons Cache (Empty)";
 		model = "\OPTRE_misc\crates\ins_cache.p3d";
@@ -748,6 +751,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_Rack_Ammo: OPTRE_Ammo_Rack_Weapons
 	{
+		dlc = "OPTRE";
 		displayName = "[UNSC] Ammunition Rack";
 		hiddenSelections[] = {};
 		model = "\OPTRE_misc\crates\ammocrate.p3d";
@@ -956,6 +960,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SupplyPod_Empty: OPTRE_Ammo_Rack_Weapons
 	{
+		dlc = "OPTRE";
 		displayName = "[UNSC] Supply Pod (Empty)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_BRs","attach_Launcher","attach_Meds","attach_Pistols","attach_Shotguns","attach_SMGs","attach_Snipers"};
 		hiddenSelectionsTextures[] = {"optre_misc\crates\data\resupplypod_co.paa","optre_misc\crates\data\resupplypod_co.paa"};
@@ -980,6 +985,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SupplyPod_AR: OPTRE_Ammo_SupplyPod_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[UNSC] Supply Pod (MA5B)";
 		hiddenSelections[] = {"camo1","camo2","attach_BRs","attach_LMGs","attach_Launcher","attach_Meds","attach_Pistols","attach_Shotguns","attach_SMGs","attach_Snipers"};
 		hiddenSelectionsTextures[] = {"optre_misc\crates\data\resupplypod_co.paa","optre_misc\crates\data\resupplypod_co.paa"};
@@ -1015,6 +1021,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SupplyPod_BR: OPTRE_Ammo_SupplyPod_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[UNSC] Supply Pod (BR55)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_Launcher","attach_Meds","attach_Pistols","attach_Shotguns","attach_SMGs","attach_Snipers"};
 		hiddenSelectionsTextures[] = {"optre_misc\crates\data\resupplypod_co.paa","optre_misc\crates\data\resupplypod_co.paa"};
@@ -1046,6 +1053,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SupplyPod_DMR: OPTRE_Ammo_SupplyPod_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[UNSC] Supply Pod (M392)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_Launcher","attach_Meds","attach_Pistols","attach_Shotguns","attach_SMGs","attach_Snipers"};
 		hiddenSelectionsTextures[] = {"optre_misc\crates\data\resupplypod_co.paa","optre_misc\crates\data\resupplypod_co.paa"};
@@ -1072,6 +1080,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SupplyPod_Launcher: OPTRE_Ammo_SupplyPod_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[UNSC] Supply Pod (M41)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_BRs","attach_Meds","attach_Pistols","attach_Shotguns","attach_SMGs","attach_Snipers"};
 		hiddenSelectionsTextures[] = {"optre_misc\crates\data\resupplypod_co.paa","optre_misc\crates\data\resupplypod_co.paa"};
@@ -1103,6 +1112,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SupplyPod_LMG: OPTRE_Ammo_SupplyPod_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[UNSC] Supply Pod (M73)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_Launcher","attach_BRs","attach_Meds","attach_Pistols","attach_Shotguns","attach_SMGs","attach_Snipers"};
 		hiddenSelectionsTextures[] = {"optre_misc\crates\data\resupplypod_co.paa","optre_misc\crates\data\resupplypod_co.paa"};
@@ -1134,6 +1144,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SupplyPod_Medical: OPTRE_Ammo_SupplyPod_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[UNSC] Supply Pod (Medical)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_BRs","attach_Launcher","attach_Pistols","attach_Shotguns","attach_SMGs","attach_Snipers"};
 		hiddenSelectionsTextures[] = {"optre_misc\crates\data\resupplypod_co.paa","optre_misc\crates\data\resupplypod_co.paa"};
@@ -1159,6 +1170,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SupplyPod_Pistol: OPTRE_Ammo_SupplyPod_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[UNSC] Supply Pod (M6G)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_BRs","attach_Launcher","attach_Meds","attach_Shotguns","attach_SMGs","attach_Snipers"};
 		hiddenSelectionsTextures[] = {"optre_misc\crates\data\resupplypod_co.paa","optre_misc\crates\data\resupplypod_co.paa"};
@@ -1190,6 +1202,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SupplyPod_Shotgun: OPTRE_Ammo_SupplyPod_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[UNSC] Supply Pod (M45)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_BRs","attach_Launcher","attach_Meds","attach_Pistols","attach_SMGs","attach_Snipers"};
 		hiddenSelectionsTextures[] = {"optre_misc\crates\data\resupplypod_co.paa","optre_misc\crates\data\resupplypod_co.paa"};
@@ -1221,6 +1234,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SupplyPod_SMG: OPTRE_Ammo_SupplyPod_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[UNSC] Supply Pod (M7)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_BRs","attach_Launcher","attach_Meds","attach_Pistols","attach_Shotguns","attach_Snipers"};
 		hiddenSelectionsTextures[] = {"optre_misc\crates\data\resupplypod_co.paa","optre_misc\crates\data\resupplypod_co.paa"};
@@ -1252,6 +1266,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SupplyPod_Sniper: OPTRE_Ammo_SupplyPod_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[UNSC] Supply Pod (SRS99D)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_BRs","attach_Launcher","attach_Meds","attach_Pistols","attach_Shotguns","attach_SMGs"};
 		hiddenSelectionsTextures[] = {"optre_misc\crates\data\resupplypod_co.paa","optre_misc\crates\data\resupplypod_co.paa"};
@@ -1288,6 +1303,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SmallCache_Empty: OPTRE_Ammo_SupplyPod_Empty
 	{
+		dlc = "OPTRE";
 		vehicleClass = "OPTRE_INS_Ammo_class";
 		displayName = "[INS] Small Buried Cache (Empty)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_BRs","attach_Launcher","attach_Meds","attach_Pistols","attach_Shotguns","attach_SMGs","attach_Snipers"};
@@ -1312,6 +1328,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SmallCache_AR: OPTRE_Ammo_SmallCache_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[INS] Small Buried Cache (Rifles)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_BRs","attach_Launcher","attach_Meds","attach_Pistols","attach_Shotguns","attach_SMGs","attach_Snipers"};
 		author = "Article 2 Studios";
@@ -1348,6 +1365,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SmallCache_CQB: OPTRE_Ammo_SmallCache_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[INS] Small Buried Cache (CQB)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_BRs","attach_Launcher","attach_Meds","attach_Pistols","attach_Shotguns","attach_SMGs","attach_Snipers"};
 		author = "Article 2 Studios";
@@ -1414,6 +1432,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SmallCache_Ammo: OPTRE_Ammo_SmallCache_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[INS] Small Buried Cache (Ammo)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_BRs","attach_Launcher","attach_Meds","attach_Pistols","attach_Shotguns","attach_SMGs","attach_Snipers"};
 		author = "Article 2 Studios";
@@ -1484,6 +1503,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SmallCache_Exp: OPTRE_Ammo_SmallCache_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[INS] Small Buried Cache (Explosives)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_BRs","attach_Launcher","attach_Meds","attach_Pistols","attach_Shotguns","attach_SMGs","attach_Snipers"};
 		author = "Article 2 Studios";
@@ -1518,6 +1538,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SmallCache_IED: OPTRE_Ammo_SmallCache_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[INS] Small Buried Cache (IEDs)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_BRs","attach_Launcher","attach_Meds","attach_Pistols","attach_Shotguns","attach_SMGs","attach_Snipers"};
 		author = "Article 2 Studios";
@@ -1592,6 +1613,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SmallCache_AT: OPTRE_Ammo_SmallCache_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[INS] Small Buried Cache (AT)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_BRs","attach_Launcher","attach_Meds","attach_Pistols","attach_Shotguns","attach_SMGs","attach_Snipers"};
 		author = "Article 2 Studios";
@@ -1632,6 +1654,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SmallCache_AA: OPTRE_Ammo_SmallCache_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[INS] Small Buried Cache (AA)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_BRs","attach_Launcher","attach_Meds","attach_Pistols","attach_Shotguns","attach_SMGs","attach_Snipers"};
 		author = "Article 2 Studios";
@@ -1657,6 +1680,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SmallCache_Sniper: OPTRE_Ammo_SmallCache_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[INS] Small Buried Cache (Sniper)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_BRs","attach_Launcher","attach_Meds","attach_Pistols","attach_Shotguns","attach_SMGs","attach_Snipers"};
 		author = "Article 2 Studios";
@@ -1697,6 +1721,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ammo_SmallCache_Medical: OPTRE_Ammo_SmallCache_Empty
 	{
+		dlc = "OPTRE";
 		displayName = "[INS] Small Buried Cache (Medical)";
 		hiddenSelections[] = {"camo1","camo2","attach_ARs","attach_LMGs","attach_BRs","attach_Launcher","attach_Meds","attach_Pistols","attach_Shotguns","attach_SMGs","attach_Snipers"};
 		author = "Article 2 Studios";

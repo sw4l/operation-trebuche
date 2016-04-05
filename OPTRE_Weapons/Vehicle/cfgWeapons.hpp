@@ -12,6 +12,7 @@ class CfgWeapons
 	class missiles_DAGR;
 	class gatling_20mm;
 	class gatling_30mm;
+	class Cannon_30mm_Plane_CAS_02_F;
 	
 	class OPTRE_M41_LAAG: HMG_127
 	{
@@ -204,5 +205,95 @@ class CfgWeapons
             maxRange = 800;
             maxRangeProbab = 0.05;
         };
+	};
+	class OPTRE_M91909: Cannon_30mm_Plane_CAS_02_F
+	{
+		displayName = "M9109 ASW/AC 50mm";
+		magazines[] = {"OPTRE_M91909_2500Rnd_50mm"};
+		holdsterAnimValue = 1;
+		ballisticsComputer = 2;
+		canLock = 1;
+		cursor = "EmptyCursor";
+		cursorAim = "mg";
+		nameSound = "cannon";
+		shotFromTurret = 0;
+		muzzlePos = "Cannon_muzzleflash";
+		muzzleEnd = "Cannon_barrel_end";
+		selectionFireAnim = "Cannon_muzzleflash";
+		autoFire = 1;
+		burst = 10;
+		reloadTime = 0.02;
+		class GunParticles
+		{
+			class Effect
+			{
+				effectName = "MachineGun2";
+				positionName = "Cannon_barrel_start";
+				directionName = "Cannon_barrel_end";
+			};
+		};
+		class LowROF: Mode_FullAuto
+		{
+			displayName = "$STR_A3_CFGWEAPONS_CANNON_30MM";
+			reloadTime = 0.02;
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"A3\Sounds_F_epc\weapons\cas_02_cannon",1.7782794,1,3800};
+				soundBegin[] = {"begin1",1};
+			};
+			soundContinuous = 0;
+			flash = "gunfire";
+			flashSize = 0.1;
+			recoil = "Empty";
+			aiDispersionCoefX = 8;
+			aiDispersionCoefY = 8;
+			ffMagnitude = 0.5;
+			ffFrequency = 11;
+			ffCount = 6;
+			minRange = 1;
+			minRangeProbab = 0.06;
+			midRange = 2;
+			midRangeProbab = 0.06;
+			maxRange = 3;
+			maxRangeProbab = 0.004;
+			dispersion = 0.006;
+			burst = 10;
+			showToPlayer = 1;
+		};
+	};
+	class OPTRE_M919110: OPTRE_M91909
+	{
+		displayName = "M91110 Ventral Cannon";
+		magazines[] = {"OPTRE_M919110_1000Rnd_110mm"};
+		reloadTime = 0.15;
+		class LowROF: Mode_FullAuto
+		{
+			displayName = "$STR_A3_CFGWEAPONS_CANNON_30MM";
+			reloadTime = 0.15;
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"A3\Sounds_F_epc\weapons\cas_02_cannon",1.7782794,1,3800};
+				soundBegin[] = {"begin1",1};
+			};
+			soundContinuous = 0;
+			flash = "gunfire";
+			flashSize = 0.1;
+			recoil = "Empty";
+			aiDispersionCoefX = 8;
+			aiDispersionCoefY = 8;
+			ffMagnitude = 0.5;
+			ffFrequency = 11;
+			ffCount = 6;
+			minRange = 1;
+			minRangeProbab = 0.06;
+			midRange = 2;
+			midRangeProbab = 0.06;
+			maxRange = 3;
+			maxRangeProbab = 0.004;
+			dispersion = 0.006;
+			showToPlayer = 1;
+		};
 	};
 };

@@ -33,6 +33,7 @@ class CfgVehicles
 	
 	class Land_sidewalk_narrow_short: Land_Castle_01_step_F
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_City_Objects_class";
@@ -46,6 +47,7 @@ class CfgVehicles
 	};
 	class Land_sidewalk_wide_short: Land_Castle_01_step_F
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_City_Objects_class";
@@ -61,6 +63,7 @@ class CfgVehicles
 	};
 	class Land_sidewalk_wide_curve: Land_sidewalk_wide_short
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Sidewalk (Wide Short Curve)";
@@ -74,6 +77,7 @@ class CfgVehicles
 	};
 	class Land_sidewalk_wide_curve3: Land_sidewalk_wide_short
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Sidewalk (Wide Long Curve)";

@@ -27,6 +27,7 @@ class CfgVehicles //This configures units and backpacks
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_Airforce_Soldier: CAManBase
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		side 															= 1;
@@ -66,7 +67,7 @@ class CfgVehicles //This configures units and backpacks
 			tex[] = {};
 			mat[] = {};
 		};
-		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftknee2","attach_leftshin","attach_leftshoulder","attach_leftshoulder2","attach_pant2","attach_rightknee2","attach_rightshin","attach_rightshoulder","attach_rightshoulder2","attach_rightthigh"};
+		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftknee2","attach_leftshin","attach_leftshoulder","attach_leftshoulder2","attach_pant2","attach_rightknee2","attach_rightshin","attach_rightshoulder","attach_rightshoulder2","attach_rightthigh","attach_shirt2"};
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_snow_co.paa","OPTRE_UNSC_Units\Air\data\uniform_airforce_co.paa"};
 		class HitPoints: HitPoints
 		{
@@ -205,6 +206,7 @@ class CfgVehicles //This configures units and backpacks
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_Airforce_Soldier_Airman: OPTRE_UNSC_Airforce_Soldier
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		author															= "Article 2 Studios";
@@ -229,6 +231,7 @@ class cfgWeapons
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_Airforce_Uniform: U_B_CombatUniform_mcam
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		author															= "Article 2 Studios";
 		displayName														= "[UNSC] Air Force BDU";
@@ -250,6 +253,7 @@ class cfgWeapons
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_Airforce_Vest_Base: V_PlateCarrier1_rgr
 	{	
+		dlc = "OPTRE";
 		scope 															= 0;
 		author															= "Article 2 Studios";
 		displayName  													= "-";
@@ -305,6 +309,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Airforce_Vest: OPTRE_UNSC_Airforce_Vest_Base
 	{	
+		dlc = "OPTRE";
 		scope 															= 2;
 		author															= "Article 2 Studios";
 		displayName  													= "[UNSC] M52[V] Body Armor [Air Force]";
@@ -326,11 +331,13 @@ class cfgWeapons
 	class H_Booniehat_khk;
 	class OPTRE_PatrolCap_Airforce: H_MilCap_blue 
 	{
+		dlc = "OPTRE";
 		displayname 									= "[UNSC] Patrol Cap [Air Force]";
 		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Air\data\cappatrol_airforce_co.paa"};
 	};
 	class OPTRE_BoonieHat_Airforce: H_Booniehat_khk 
 	{
+		dlc = "OPTRE";
 		displayname 									= "[UNSC] Boonie Hat [Air Force]";
 		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Air\data\booniehat_airforce_co.paa"};
 	};

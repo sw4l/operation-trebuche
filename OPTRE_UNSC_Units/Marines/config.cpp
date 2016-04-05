@@ -28,6 +28,7 @@ class CfgVehicles
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_Marine_Soldier: CAManBase
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		side 															= 1;
@@ -66,7 +67,7 @@ class CfgVehicles
 			tex[] = {};
 			mat[] = {};
 		};
-		hiddenSelections[] 												= {"camo1","camo2","camo3","insignia","clan","attach_leftshoulder","attach_rightshoulder","attach_pant1"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 												= {"camo1","camo2","camo3","insignia","clan","attach_leftshoulder","attach_rightshoulder","attach_pant1","attach_shirt2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Marines\data\armor_marines_co.paa","OPTRE_UNSC_Units\Marines\data\uniform_marines_co.paa","OPTRE_UNSC_Units\Marines\data\addons_marines_ca.paa"};
 		class HitPoints: HitPoints
 		{
@@ -200,6 +201,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_Vacuum: OPTRE_UNSC_Marine_Soldier
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		author															= "Article 2 Studios";
@@ -208,11 +210,12 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_M: OPTRE_UNSC_Marine_Soldier
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Marine_Uniform_M";
-		hiddenSelections[] 												= {"camo1","camo2","camo3","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_pant2"};
+		hiddenSelections[] 												= {"camo1","camo2","camo3","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_pant2","attach_shirt2"};
 		class HitPoints: HitPoints
 		{
 			class HitFace: HitHead
@@ -340,11 +343,12 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_L: OPTRE_UNSC_Marine_Soldier
 	{
+		dlc = "OPTRE";
 		scope															= 1;
 		scopeCurator													= 0;
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Marine_Uniform_L";
-		hiddenSelections[] 												= {"camo1","camo2","camo3","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_pant2"};
+		hiddenSelections[] 												= {"camo1","camo2","camo3","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_pant2","attach_shirt1"};
 		class HitPoints: HitPoints
 		{
 			class HitFace: HitHead
@@ -477,6 +481,7 @@ class CfgVehicles
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_Marine_Soldier_Corpsman: OPTRE_UNSC_Army_Soldier_Medic
 	{
+		dlc = "OPTRE";
 		scope 															= 2;
 		scopeCurator													= 2;
 		displayName														= "Corpsman";
@@ -486,6 +491,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_Radioman: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope 															= 2;
 		scopeCurator													= 2;
 		displayName														= "Radio Operator";
@@ -497,6 +503,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_Rifleman_AR: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (MA5)";
@@ -509,6 +516,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_Rifleman_BR: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (BR55)";
@@ -520,6 +528,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_Rifleman_AT: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (AT)";
@@ -532,6 +541,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_Rifleman_Light: OPTRE_UNSC_Marine_Soldier_L
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (Light)";
@@ -544,6 +554,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_AT_Specialist: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "AT Specialist";
@@ -556,6 +567,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_AA_Specialist: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "AA Specialist";
@@ -568,6 +580,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_Engineer: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Engineer";
@@ -581,6 +594,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_Breacher: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Breacher";
@@ -593,6 +607,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_TeamLead: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Team Leader";
@@ -605,6 +620,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_SquadLead: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Squad Leader";
@@ -617,6 +633,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_Grenadier: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Grenadier";
@@ -628,6 +645,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_Autorifleman: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Autorifleman";
@@ -640,6 +658,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_Assist_Autorifleman: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Assistant Autorifleman";
@@ -651,6 +670,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_Marksman: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Designated Marksman";
@@ -662,6 +682,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_Sniper: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Sniper";
@@ -672,6 +693,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_ForwardObserver: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Forward Observer";
@@ -685,6 +707,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_Crewman: OPTRE_UNSC_Marine_Soldier
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Crewman";
@@ -697,6 +720,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_Demolitions: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Demolitions Expert";
@@ -710,6 +734,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_UAV_Op: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "UAV Operator";
@@ -724,6 +749,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_Unarmed: OPTRE_UNSC_Marine_Soldier_M
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Unarmed";
@@ -734,6 +760,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Soldier_Officer: OPTRE_UNSC_Marine_Soldier_L
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Officer";
@@ -747,6 +774,7 @@ class CfgVehicles
 	};
 	class OPTRE_UNSC_Marine_Pilot: OPTRE_UNSC_Marine_Soldier_Vacuum
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Marine Pilot";
@@ -758,7 +786,7 @@ class CfgVehicles
 		respawnMagazines[]	 							= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Orange","OPTRE_M2_Smoke_Green"};
 		linkedItems[] 													= {"OPTRE_UNSC_Marine_Vest_vacuum","OPTRE_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		respawnLinkedItems[] 											= {"OPTRE_UNSC_Marine_Vest_vacuum","OPTRE_UNSC_Marine_Helmet_vacuum","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-		hiddenSelections[] 												= {"camo1","camo2","camo3","insignia","clan","attach_leftknee","attach_rightknee","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftthigh","attach_rightthigh","attach_rightknee2","attach_leftknee2","attach_pant2"}; //Determines what hiddenselections are enabled
+		hiddenSelections[] 												= {"camo1","camo2","camo3","insignia","clan","attach_leftknee","attach_rightknee","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftthigh","attach_rightthigh","attach_rightknee2","attach_leftknee2","attach_pant2","attach_shirt2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Marines\data\armor_marines_co.paa","OPTRE_UNSC_Units\Marines\data\uniform_marines_co.paa","OPTRE_UNSC_Units\Marines\data\addons_marines_ca.paa"};
 		class HitPoints: HitPoints
 		{
@@ -905,6 +933,7 @@ class cfgWeapons
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_Marine_Uniform: U_B_CombatUniform_mcam
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		author															= "Article 2 Studios";
 		displayName														= "[UNSC] Marine BDU";
@@ -921,6 +950,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Marine_Uniform_M: OPTRE_UNSC_Marine_Uniform
 	{
+		dlc = "OPTRE";
 		author															= "Article 2 Studios";
 		displayName														= "[UNSC] Marine BDU (Medium)";
 		class ItemInfo: ItemInfo
@@ -931,6 +961,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Marine_Uniform_L: OPTRE_UNSC_Marine_Uniform
 	{
+		dlc = "OPTRE";
 		author															= "Article 2 Studios";
 		displayName														= "[UNSC] Marine BDU (Light)";
 		class ItemInfo: ItemInfo
@@ -941,6 +972,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Marine_Uniform_Pilot: OPTRE_UNSC_Marine_Uniform
 	{
+		dlc = "OPTRE";
 		author															= "Article 2 Studios";
 		displayName														= "[UNSC] Marine BDU (Pilot)";
 		class ItemInfo: ItemInfo
@@ -955,7 +987,8 @@ class cfgWeapons
 	// VESTS START
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_Marine_Vest_Base: V_PlateCarrier1_rgr
-	{	
+	{
+		dlc = "OPTRE";	
 		scope 															= 0;
 		author															= "Article 2 Studios";
 		displayName  													= "-";
@@ -998,7 +1031,8 @@ class cfgWeapons
 		};
 	};
 	class OPTRE_UNSC_Marine_Vest: OPTRE_UNSC_Marine_Vest_Base
-	{	
+	{
+		dlc = "OPTRE";	
 		scope 															= 2;
 		author															= "Article 2 Studios";
 		displayName  													= "[UNSC] M52 Body Armor [Marine]";
@@ -1011,7 +1045,8 @@ class cfgWeapons
 		};
 	};
 	class OPTRE_UNSC_Marine_Vest_Vacuum: OPTRE_UNSC_Marine_Vest
-	{	
+	{
+		dlc = "OPTRE";	
 		author															= "Article 2 Studios";
 		displayName  													= "[UNSC] M52[V] Body Armor [Marine]";
 		picture   														= "\OPTRE_UNSC_Units\marines\icons\marine_vest_vac.paa";
@@ -1063,6 +1098,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Marine_Vest_Sniper: OPTRE_UNSC_Marine_Vest
 	{	
+		dlc = "OPTRE";
 		author															= "Article 2 Studios";
 		displayName  													= "[UNSC] M52[S] Body Armor [Marine]";
 		picture   														= "\OPTRE_UNSC_Units\marines\icons\marine_vest_vac.paa";
@@ -1081,6 +1117,7 @@ class cfgWeapons
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_UNSC_Marine_Helmet_Base: H_HelmetB
 	{	
+		dlc = "OPTRE";
 		scope   														= 0;
 		author											= "Article 2 Studios";
 		displayName    									= "-";
@@ -1110,6 +1147,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Marine_Helmet: OPTRE_UNSC_Marine_Helmet_Base
 	{	
+		dlc = "OPTRE";
 		scope   										= 2;
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252 Helmet [Marine]";
@@ -1123,6 +1161,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Marine_Helmet_Vacuum: OPTRE_UNSC_Marine_Helmet
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252[V] Helmet [Marine]";
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_helmet_vac.paa";
@@ -1136,6 +1175,7 @@ class cfgWeapons
 	};
 	class OPTRE_UNSC_Marine_Helmet_Sniper: OPTRE_UNSC_Marine_Helmet
 	{	
+		dlc = "OPTRE";
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252[S] Helmet [Marine]";
 		picture   										= "\OPTRE_UNSC_Units\army\icons\army_helmet_des_gil.paa";
@@ -1149,11 +1189,13 @@ class cfgWeapons
 	};
 	class OPTRE_PatrolCap_Marine: H_MilCap_blue 
 	{
+		dlc = "OPTRE";
 		displayname 									= "[UNSC] Patrol Cap [Marines]";
 		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Marines\data\cappatrol_marine_co.paa"};
 	};
 	class OPTRE_BoonieHat_Marine: H_Booniehat_khk 
 	{
+		dlc = "OPTRE";
 		displayname 									= "[UNSC] Boonie Hat [Marines]";
 		hiddenselectionstextures[] 						= {"OPTRE_UNSC_Units\Marines\data\booniehat_marine_co.paa"};
 	};

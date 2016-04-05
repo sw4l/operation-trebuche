@@ -37,6 +37,7 @@ class CfgVehicles
 	
 	class OPTRE_KOTH_Playset: static
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
 		armor = 999999;

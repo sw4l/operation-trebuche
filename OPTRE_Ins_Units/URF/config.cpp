@@ -40,6 +40,7 @@ class CfgVehicles
 	 
 	 class OPTRE_Ins_URF_soldierCmbtUni_OD_base: I_Soldier_base_F
 	 {
+		dlc = "OPTRE";
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
         scope                               = 1;
@@ -67,6 +68,7 @@ class CfgVehicles
 	 
 	 class OPTRE_Ins_URF_officer_base: I_Soldier_base_F
 	 {
+		dlc = "OPTRE";
         modelSides[] 						= {0,1,2,3};
         side                 	            = 0;
         scope                               = 1;
@@ -99,6 +101,7 @@ class CfgVehicles
 	
 	class OPTRE_Ins_URF_Medic: OPTRE_Ins_URF_soldierCmbtUni_OD_base //Configures the unit part of the Units Uniform
 	{
+		dlc = "OPTRE";
 		scope 											= 2;
 		displayName										= "Medic";
 		attendant 										= 1;
@@ -112,6 +115,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_Radioman: OPTRE_Ins_URF_soldierCmbtUni_OD_base //Configures the unit part of the Units Uniform
 	{
+		dlc = "OPTRE";
 		scope 											= 2;
 		displayName										= "Radio Operator";
 		backpack 										= "OPTRE_ANPRC_521_Green";
@@ -122,6 +126,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_Pilot: OPTRE_Ins_URF_officer_base
 	{
+		dlc = "OPTRE";
 		scope															= 2;
 		author															= "Article 2 Studios";
 		displayName														= "Pilot";
@@ -134,6 +139,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_Rifleman_AR: OPTRE_Ins_URF_soldierCmbtUni_OD_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Rifleman (MA5)";
 		backpack 										= "B_Kitbag_rgr";
@@ -144,6 +150,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_Rifleman_BR: OPTRE_Ins_URF_soldierCmbtUni_OD_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Rifleman (BR55)";
 		backpack 										= "B_Kitbag_rgr";
@@ -154,6 +161,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_Rifleman_AT: OPTRE_Ins_URF_soldierCmbtUni_OD_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Rifleman (AT)";
 		backpack 										= "OPTRE_kitbag_rgr_AT";
@@ -165,6 +173,7 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_Rifleman_Light: OPTRE_Ins_URF_soldierCmbtUni_OD_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Rifleman (Light)";
 		linkedItems[] 									= {"OPTRE_v_Ins_GAvest","H_Booniehat_khk","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
@@ -176,9 +185,9 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_AT_Specialist: OPTRE_Ins_URF_soldierCmbtUni_OD_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "AT Specialist";
-		
 		backpack 										= "OPTRE_kitbag_rgr_AT";
 		weapons[] 										= {"OPTRE_MA5B_AC","Throw","Put","OPTRE_M41_SSR"};
 		respawnWeapons[] 								= {"OPTRE_MA5B_AC","Throw","Put","OPTRE_M41_SSR"};
@@ -188,9 +197,9 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_AA_Specialist: OPTRE_Ins_URF_soldierCmbtUni_OD_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "AA Specialist";
-		
 		backpack 										= "OPTRE_kitbag_rgr_AA";
 		weapons[] 										= {"OPTRE_MA5B_AC","Throw","Put","OPTRE_M41_SSR_G"};
 		respawnWeapons[] 								= {"OPTRE_MA5B_AC","Throw","Put","OPTRE_M41_SSR_G"};
@@ -200,10 +209,10 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_Engineer: OPTRE_Ins_URF_soldierCmbtUni_OD_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Engineer";
 		engineer 										= 1;
-		
 		backpack 										= "OPTRE_Kitbag_rgr_ENG";
 		weapons[] 										= {"OPTRE_m45","Throw","Put","OPTRE_M6G_SF"};
 		respawnWeapons[] 								= {"OPTRE_m45","Throw","Put","OPTRE_M6G_SF"};
@@ -213,9 +222,9 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_Breacher: OPTRE_Ins_URF_soldierCmbtUni_OD_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Breacher";
-		
 		backpack 										= "B_Kitbag_rgr";
 		weapons[] 										= {"OPTRE_m45","Throw","Put","OPTRE_M6G_SF"};
 		respawnWeapons[] 								= {"OPTRE_m45","Throw","Put","OPTRE_M6G_SF"};
@@ -224,10 +233,10 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_TeamLead: OPTRE_Ins_URF_soldierCmbtUni_OD_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Team Leader";
 		backpack 										= "B_Kitbag_rgr";
-		
 		weapons[] 										= {"OPTRE_MA5BGL_AC","Throw","Put"};
 		respawnWeapons[] 								= {"OPTRE_MA5BGL_AC","Throw","Put"};
 		magazines[] 									= {"OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag_Tracer","OPTRE_60rnd_762x51_Mag_Tracer","OPTRE_60rnd_762x51_Mag_Tracer","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_orange","OPTRE_M2_Smoke_green"};
@@ -236,10 +245,10 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_SquadLead: OPTRE_Ins_URF_officer_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Squad Leader";
 		backpack 										= "B_Kitbag_rgr";
-		
 		weapons[] 										= {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] 									= {"OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag_Tracer","OPTRE_36Rnd_95x40_Mag_Tracer","OPTRE_36Rnd_95x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke_orange","OPTRE_M2_Smoke_green"};
@@ -248,10 +257,10 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_Grenadier: OPTRE_Ins_URF_soldierCmbtUni_OD_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Grenadier";
 		backpack 										= "B_Kitbag_rgr";
-		
 		weapons[] 										= {"OPTRE_MA5BGL_AC","Throw","Put"};
 		respawnWeapons[] 								= {"OPTRE_MA5BGL_AC","Throw","Put"};
 		magazines[] 									= {"OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
@@ -259,9 +268,9 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_Autorifleman: OPTRE_Ins_URF_soldierCmbtUni_OD_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Autorifleman";
-		
 		backpack 										= "B_Kitbag_rgr";
 		weapons[] 										= {"OPTRE_M73","Throw","Put"};
 		respawnWeapons[] 								= {"OPTRE_M73","Throw","Put"};
@@ -271,10 +280,10 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_Assist_Autorifleman: OPTRE_Ins_URF_soldierCmbtUni_OD_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Assistant Autorifleman";
 		backpack 										= "B_Kitbag_rgr";
-		
 		weapons[] 										= {"OPTRE_MA5B_AC","Throw","Put"};
 		respawnWeapons[] 								= {"OPTRE_MA5B_AC","Throw","Put"};
 		magazines[] 									= {"OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag","OPTRE_60rnd_762x51_Mag"};
@@ -282,19 +291,20 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_Marksman: OPTRE_Ins_URF_soldierCmbtUni_OD_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Designated Marksman";
 		backpack 										= "B_Kitbag_rgr";
-		weapons[] 														= {"OPTRE_M392_DMR_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
-		respawnWeapons[] 												= {"OPTRE_M392_DMR_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
-		magazines[] 													= {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
-		respawnMagazines[] 												= {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		weapons[] 										= {"OPTRE_M392_DMR_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] 								= {"OPTRE_M392_DMR_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
+		magazines[] 									= {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		respawnMagazines[] 								= {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
 	};
 	class OPTRE_Ins_URF_Sniper: OPTRE_Ins_URF_soldierCmbtUni_OD_base //change to sniper uniform
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Sniper";
-		
 		weapons[] 										= {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] 									= {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_green"};
@@ -302,10 +312,10 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_Observer: OPTRE_Ins_URF_soldierCmbtUni_OD_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Observer";
 		backpack 										= "B_Kitbag_rgr";
-		
 		Items[]											= {"OPTRE_Biofoam","Item_Laserdesignator"};
 		RespawnItems[]									= {"OPTRE_Biofoam","Item_Laserdesignator"};
 		weapons[] 										= {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
@@ -315,6 +325,8 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_Crewman: OPTRE_Ins_URF_officer_base
 	{
+		dlc = "OPTRE";
+		scope											= 2;
 		displayName										= "Crewman";
 		weapons[] 										= {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] 								= {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
@@ -325,9 +337,9 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_Demolitions: OPTRE_Ins_URF_soldierCmbtUni_OD_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Demolitions";
-		
 		engineer 										= 1;
 		backpack										= "OPTRE_Kitbag_rgr_Exp";
 		weapons[] 										= {"OPTRE_m45","Throw","Put","OPTRE_M6G_SF"};
@@ -338,9 +350,9 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_UAV_Op: OPTRE_Ins_URF_soldierCmbtUni_OD_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "UAV Operator";
-		
 		backpack 										= "O_UAV_01_backpack_F";
 		uavHacker 										= 1;
 		weapons[] 										= {"OPTRE_m45","Throw","Put","OPTRE_M6G_SF"};
@@ -352,9 +364,9 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_Unarmed: OPTRE_Ins_URF_officer_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Unarmed";
-		
 		weapons[] 										= {"Throw","Put"};
 		respawnWeapons[] 								= {"Throw","Put"};
 		magazines[] 									= {};
@@ -362,9 +374,9 @@ class CfgVehicles
 	};
 	class OPTRE_Ins_URF_Officer: OPTRE_Ins_URF_officer_base
 	{
+		dlc = "OPTRE";
 		scope											= 2;
 		displayName										= "Officer";
-		
 		linkedItems[] 									= {"OPTRE_UNSC_M52_Vest_WDL","OPTRE_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles","OPTRE_Biofoam","OPTRE_NVG"};
 		respawnLinkedItems[] 							= {"OPTRE_UNSC_M52_Vest_WDL","OPTRE_h_PatrolCap_Green","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles","OPTRE_Biofoam","OPTRE_NVG"};
 		weapons[] 										= {"OPTRE_M6G_SF","Throw","Put"};
@@ -391,6 +403,7 @@ class cfgWeapons
 	
 	class OPTRE_Ins_URF_uniform_combatuni_OD: Uniform_Base
 	{
+		dlc = "OPTRE";
 		scope 								= 2;
 		displayName 						= "[INS] Combat Fatigues (OD)";
 		author								= "Article 2 Studios";
@@ -409,6 +422,7 @@ class cfgWeapons
 	
 	class OPTRE_Ins_URF_uniform_officer: Uniform_Base
 	{
+		dlc = "OPTRE";
 		scope 								= 2;
 		displayName 						= "[INS] Officer Fatigues [Ins]";
 		author								= "Article 2 Studios";
@@ -428,6 +442,7 @@ class cfgWeapons
 	
 	class OPTRE_h_Ins_beret_od: ItemCore
     {
+		dlc = "OPTRE";
         scope 								= 2;
 		weaponPoolAvailable 				= 1;
         displayName 						= "[INS] Beret (OD)"; //In-Game name
@@ -446,6 +461,7 @@ class cfgWeapons
 	};
 	class OPTRE_h_helmet_OD: ItemCore
     {
+		dlc = "OPTRE";
         scope = 2;
 		weaponPoolAvailable = 1;
         displayName = "[INS] Helmet (OD)"; //In-Game name
@@ -477,6 +493,7 @@ class cfgWeapons
 		
 	class OPTRE_v_Ins_vest: Vest_Camo_Base
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		displayName = "[INS] Bulletproof Vest"; //In-Game name
 		model = "\A3\Characters_F_EPC\Civil\equip_press_vest_01";
@@ -527,6 +544,7 @@ class cfgWeapons
 	};
 	class OPTRE_v_Ins_GAvest: Vest_Camo_Base
 	{
+		dlc = "OPTRE";
 		scope = 2;
 		displayName = "[INS] Plate Carrier"; //In-Game name
 		model = "A3\Characters_F_Beta\INDEP\equip_ia_vest02";

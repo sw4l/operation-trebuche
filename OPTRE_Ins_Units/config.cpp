@@ -17,17 +17,19 @@ class CfgGroups
 	{
 		class OPTRE_Ins //OPTRE_Ins
 		{
+			dlc = "OPTRE";
 			name = "Insurrectionists";
 			class Infantry_URF //Air, Mechanized, Motorized, Armored, SpecOps, Support
 			{
 				name = "Infantry (URF)";
-				
+				dlc = "OPTRE";
 				class OPTRE_Ins_URF_Inf_Sentry
 				{
 					name = "Sentry";
 					side = 0;
 					faction = "OPTRE_Ins";
 					rarityGroup = 0.3;
+					dlc = "OPTRE";
 					class Unit0
 					{
 						side = 0;
@@ -50,6 +52,7 @@ class CfgGroups
 					side = 0;
 					faction = "OPTRE_Ins";
 					rarityGroup = 0.3;
+					dlc = "OPTRE";
 					class Unit0
 					{
 						side = 0;
@@ -121,6 +124,7 @@ class CfgGroups
 					side = 0;
 					faction = "OPTRE_Ins";
 					rarityGroup = 0.3;
+					dlc = "OPTRE";
 					class Unit0
 					{
 						side = 0;
@@ -157,6 +161,7 @@ class CfgGroups
 					side = 0;
 					faction = "OPTRE_Ins";
 					rarityGroup = 0.3;
+					dlc = "OPTRE";
 					class Unit0
 					{
 						side = 0;
@@ -207,6 +212,7 @@ class CfgGroups
 					side = 0;
 					faction = "OPTRE_Ins";
 					rarityGroup = 0.3;
+					dlc = "OPTRE";
 					class Unit0
 					{
 						side = 0;
@@ -243,6 +249,7 @@ class CfgGroups
 					side = 0;
 					faction = "OPTRE_Ins";
 					rarityGroup = 0.3;
+					dlc = "OPTRE";
 					class Unit0
 					{
 						side = 0;
@@ -279,6 +286,7 @@ class CfgGroups
 					side = 0;
 					faction = "OPTRE_Ins";
 					rarityGroup = 0.3;
+					dlc = "OPTRE";
 					class Unit0
 					{
 						side = 0;
@@ -300,13 +308,14 @@ class CfgGroups
 			class Infantry_ER //Air, Mechanized, Motorized, Armored, SpecOps, Support
 			{
 				name = "Infantry (ER)";
-				
+				dlc = "OPTRE";
 				class OPTRE_Ins_ER_Inf_Patrol
 				{
 					name = "Militia Patrol";
 					side = 0;
 					faction = "OPTRE_Ins";
 					rarityGroup = 0.3;
+					dlc = "OPTRE";
 					class Unit0
 					{
 						side = 0;
@@ -329,6 +338,7 @@ class CfgGroups
 					side = 0;
 					faction = "OPTRE_Ins";
 					rarityGroup = 0.3;
+					dlc = "OPTRE";
 					class Unit0
 					{
 						side = 0;
@@ -400,6 +410,7 @@ class CfgGroups
 					side = 0;
 					faction = "OPTRE_Ins";
 					rarityGroup = 0.3;
+					dlc = "OPTRE";
 					class Unit0
 					{
 						side = 0;
