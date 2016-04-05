@@ -24,6 +24,12 @@ class CfgWeapons
 		};
 		magazines[] = {"OPTRE_M41_Twin_HEAT","OPTRE_M41_Twin_HEAP"};
 		picture = "\OPTRE_weapons\rockets\icons\launcher.paa";
+		pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Launchers\Double.paa";
+		ODST_1																	= "OPTRE_ODST_HUD_AmmoCount_RL";
+		Glasses																	= "OPTRE_GLASS_HUD_AmmoCount_RL";
+		Eye																		= "OPTRE_EYE_HUD_AmmoCount_RL";
+		HUD_BulletInARows														= 2;
+		HUD_TotalPosibleBullet													= 2;			
 		model = "\OPTRE_Weapons\Rockets\M41_launcher_loaded.p3d";
 		handAnim[]={"OFP2_ManSkeleton","\OPTRE_Weapons\Rockets\Data\Anim\m41_hand_anim.rtm"};
 		drysound[] = {"A3\sounds_f\weapons\other\dry6", 0.0316228, 1, 10};

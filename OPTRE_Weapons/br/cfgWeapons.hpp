@@ -74,6 +74,12 @@ class CfgWeapons
 		displayName 								= "BR55HB Battle Rifle";
 		descriptionShort 							= "UNSC Battle Rifle";
 		picture = "\OPTRE_weapons\br\icons\br.paa";
+		pictureWire 								= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\BattleRifle\BR_SCOPE.paa";
+		ODST_1																	= "OPTRE_ODST_HUD_AmmoCount_BR";
+		Glasses																	= "OPTRE_GLASS_HUD_AmmoCount_BR";
+		Eye																		= "OPTRE_EYE_HUD_AmmoCount_BR";
+		HUD_BulletInARows														= 2;
+		HUD_TotalPosibleBullet													= 36;			
 		magazines[] 								= {"OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag_Tracer"};
 		drySound[] = {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
 		modelOptics 								= "-";
@@ -330,6 +336,7 @@ class CfgWeapons
 	class OPTRE_BR55HB_ScopedRifle: OPTRE_BR55HB /// standard issue variant with holo optics and laser pointer
 	{
 		dlc = "OPTRE";
+		pictureWire 								= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\BattleRifle\BR_SCOPE.paa";
 		class LinkedItems
 		{
 			class LinkedItemsOptic

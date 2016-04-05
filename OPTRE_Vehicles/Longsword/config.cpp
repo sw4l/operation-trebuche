@@ -42,7 +42,7 @@ class CfgVehicles
 		faction	= "OPTRE_UNSC";
 		crew = "OPTRE_UNSC_Airforce_Soldier_Airman";
 		author="Article 2 Studios";
-        armor = 150;
+        armor = 180;
 		accuracy = 0.2;
 		destrType = DestructWreck;
 		damageResistance = 0.004;
@@ -104,12 +104,12 @@ class CfgVehicles
 		#include "sounds.hpp"
 
 		landingSpeed = 200;
-		acceleration = 843;
-		maxSpeed = 2500;
+		acceleration = 500;
+		maxSpeed = 1750;
 
 		driveOnComponent[] = {"wheel_1","wheel_2","wheel_3"};
 
-		rudderInfluence = 10;
+		rudderInfluence = 0.5;
 		aileronSensitivity = 5;
 		elevatorSensitivity = 5;
 
@@ -126,13 +126,13 @@ class CfgVehicles
 		thrustCoef[]= {1.5, 1.2, 1.1, 1.0, 1.0, 1.0, 1.0, 0.9, 0.7, 0.5, 0.3, 0.1, 0.0, 0.0, 0.0, 0.0};
 		elevatorCoef[]= {};
 		aileronCoef[]= {};
-		rudderCoef[]= {};
+		//rudderCoef[]= {};
 		elevatorControlsSensitivityCoef = 4;
 		aileronControlsSensitivityCoef = 4;
-		rudderControlsSensitivityCoef = 4;
+		//rudderControlsSensitivityCoef = 50;
 		landingAoa = "rad 10";
 		laserScanner = 1;
-		gunAimDown = 0.029000;
+		gunAimDown = 0.0000;
 		headAimDown = 0.0000;
 		memoryPointLRocket = "Rocket_1";
 		memoryPointRRocket = "Rocket_2";
@@ -200,14 +200,14 @@ class CfgVehicles
 			class rampDoor				/// the class name is later used in model.cfg
 			{
 				source = "user";	/// user source means it is waiting on some scripting input
-				animPeriod = 5;		/// how long does it take to change value from 0 to 1 (or vice versa)
+				animPeriod = 3;		/// how long does it take to change value from 0 to 1 (or vice versa)
 				initPhase = 0;		/// what value does it have while creating the vehicle
 				sound = "ServoRampSound_2";
 			};		
 			class bayDoor				/// the class name is later used in model.cfg
 			{
 				source = "user";	/// user source means it is waiting on some scripting input
-				animPeriod = 5;		/// how long does it take to change value from 0 to 1 (or vice versa)
+				animPeriod = 3;		/// how long does it take to change value from 0 to 1 (or vice versa)
 				initPhase = 0;		/// what value does it have while creating the vehicle
 				sound = "ServoRampSound_2";
 			};			
@@ -227,7 +227,7 @@ class CfgVehicles
 				onlyForPlayer = 1;
 				condition = "((this animationPhase ""ramp_anim"" < 0.5) AND (alive this))"; /// only openable from inside and when closed
 				statement = "this animate [""ramp_anim"",1];";
-				animPeriod = 5;
+				animPeriod = 3;
             };
             class RampClose: RampOpen
             {
@@ -272,16 +272,16 @@ class CfgVehicles
 		
 		weapons[] =	/// lets use the weapons from Buzzard
 		{
-			OPTRE_M91909,
+			OPTRE_M9109,
+			missiles_DAR,
 			missiles_SCALPEL,
 			missiles_ASRAAM,
-			missiles_DAR,
 			GBU12BombLauncher,
 			CMFlareLauncher
 		};
 		magazines[] = /// and their respective magazines
 		{
-			OPTRE_M91909_2500Rnd_50mm,
+			OPTRE_M9109_2500Rnd_50mm,
 			24Rnd_missiles,
 			24Rnd_missiles,
 			24Rnd_missiles,
@@ -307,7 +307,7 @@ class CfgVehicles
 		
 		weapons[] =	/// lets use the weapons from Buzzard
 		{
-			OPTRE_M91909,
+			OPTRE_M9109,
 			missiles_SCALPEL,
 			missiles_ASRAAM,
 			GBU12BombLauncher,
@@ -315,7 +315,7 @@ class CfgVehicles
 		};
 		magazines[] = /// and their respective magazines
 		{
-			OPTRE_M91909_2500Rnd_50mm,
+			OPTRE_M9109_2500Rnd_50mm,
 			2Rnd_LG_scalpel,
 			2Rnd_AAA_missiles,
 			2Rnd_GBU12_LGB_MI10,
@@ -340,14 +340,14 @@ class CfgVehicles
 		
 		weapons[] =
 		{
-			OPTRE_M91909,
-			missiles_Zephyr,
+			OPTRE_M9109,
 			missiles_ASRAAM,
+			missiles_Zephyr,
 			CMFlareLauncher
 		};
 		magazines[] =
 		{
-			OPTRE_M91909_2500Rnd_50mm,
+			OPTRE_M9109_2500Rnd_50mm,
 			2Rnd_AAA_missiles,
 			2Rnd_AAA_missiles,
 			4Rnd_GAA_missiles,
@@ -367,14 +367,14 @@ class CfgVehicles
 		
 		weapons[] =
 		{
-			OPTRE_M919110,
+			OPTRE_M91091,
 			missiles_ASRAAM,
 			missiles_SCALPEL,
 			CMFlareLauncher
 		};
 		magazines[] =
 		{
-			OPTRE_M919110_1000Rnd_110mm,
+			OPTRE_M91091_1000Rnd_110mm,
 			2Rnd_AAA_missiles,
 			2Rnd_AAA_missiles,
 			2Rnd_LG_scalpel,

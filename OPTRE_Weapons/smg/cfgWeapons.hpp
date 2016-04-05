@@ -174,6 +174,12 @@ class CfgWeapons
                     displayName                                                             = "M7/Caseless SMG";
                     descriptionShort                                                        = "UNSC M7 SMG";
                     picture = "\OPTRE_weapons\smg\icons\smg.paa";
+                   	pictureWire 															= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\SMG\SMG_IRON.paa";
+					ODST_1																	= "OPTRE_ODST_HUD_AmmoCount_SMG";
+					Glasses																	= "OPTRE_GLASS_HUD_AmmoCount_SMG";
+					Eye																		= "OPTRE_EYE_HUD_AmmoCount_SMG";
+					HUD_BulletInARows														= 3;
+					HUD_TotalPosibleBullet													= 60;
                     magazines[]                                                             = {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_48Rnd_5x23mm_Mag","OPTRE_48Rnd_5x23mm_Mag_tracer","OPTRE_48Rnd_5x23mm_JHP_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag"};
                     modelOptics                                                             = "-";
                     muzzlePos                                                               = "usti hlavne";

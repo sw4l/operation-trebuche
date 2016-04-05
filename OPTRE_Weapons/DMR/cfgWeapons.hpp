@@ -70,6 +70,12 @@ class CfgWeapons
 		displayName 								= "M392 DMR";
 		descriptionShort 							= "UNSC Marksman Rifle";
 		picture 									= "\OPTRE_weapons\br\icons\br.paa";
+		pictureWire 								= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\BattleRifle\BR_SCOPE.paa";
+		ODST_1																	= "OPTRE_ODST_HUD_AmmoCount_DMR";
+		Glasses																	= "OPTRE_GLASS_HUD_AmmoCount_DMR";
+		Eye																		= "OPTRE_EYE_HUD_AmmoCount_DMR";
+		HUD_BulletInARows														= 1;
+		HUD_TotalPosibleBullet													= 15;	
 		magazines[] 								= {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag_Tracer"};
 		drySound[] 									= {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
 		modelOptics 								= "-";
@@ -216,6 +222,7 @@ class CfgWeapons
 	class OPTRE_M392_DMR_ScopedRifle: OPTRE_M392_DMR /// standard issue variant with holo optics and laser pointer
 	{
 		dlc = "OPTRE";
+		pictureWire 								= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\BattleRifle\BR_SCOPE.paa";
 		class LinkedItems
 		{
 			class LinkedItemsOptic

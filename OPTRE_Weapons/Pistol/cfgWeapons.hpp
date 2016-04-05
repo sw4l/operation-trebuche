@@ -275,6 +275,12 @@ class CfgWeapons
 		displayName 								= "M6G Magnum";
 		descriptionShort 							= "12.7x40mm Magnum Pistol";
 		picture = "\OPTRE_weapons\pistol\icons\pistol_a.paa";
+		pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Pistols\M6F_IRON.paa";
+		ODST_1																	= "OPTRE_ODST_HUD_AmmoCount_PistolSmart";
+		Glasses																	= "OPTRE_GLASS_HUD_AmmoCount_PistolSmart";
+		Eye																		= "OPTRE_EYE_HUD_AmmoCount_PistolSmart";
+		HUD_BulletInARows														= 1;
+		HUD_TotalPosibleBullet													= 8;	
 		magazines[] 								= {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_AP_Mag"};
 		modelOptics 								= "-";
 		modes[] 									= {"Single"};
@@ -453,6 +459,12 @@ class CfgWeapons
 		displayName 								= "M6C Handgun";
 		descriptionShort 							= "12.7x40mm Handgun";
 		picture 									= "\OPTRE_weapons\pistol\icons\pistol_a.paa";
+		pictureWire 								= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Pistols\M6F_IRON.paa";
+		ODST_1																	= "OPTRE_ODST_HUD_AmmoCount_PistolODST";
+		Glasses																	= "OPTRE_GLASS_HUD_AmmoCount_PistolODST";
+		Eye																		= "OPTRE_EYE_HUD_AmmoCount_PistolSmart";
+		HUD_BulletInARows														= 1;
+		HUD_TotalPosibleBullet													= 16;
 		magazines[] 								= {"OPTRE_12Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag"};
 		class Single : Mode_SemiAuto
 		{
@@ -629,6 +641,7 @@ class CfgWeapons
 	{
 		dlc = "OPTRE";
 		picture = "\OPTRE_weapons\pistol\icons\pistol_b.paa";
+		pictureWire 								= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Pistols\M6G_SMART.paa";
 		class LinkedItems
 		{
 			class LinkedItemsOptic

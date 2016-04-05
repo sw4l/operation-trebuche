@@ -10,6 +10,9 @@ class Mode_FullAuto;
 			class InventoryFlashLightItem_Base_F;
 			class InventoryMuzzleItem_Base_F;
             class GunParticles;
+			class MuzzleSlot;
+			class CowsSlot;
+			class PointerSlot;
 			class UnderBarrelSlot;
 			class InventoryUnderItem_Base_F; /// base class for #bipodz
      
@@ -37,17 +40,17 @@ class Mode_FullAuto;
                                     {
 											opticsID = 1;
 											useModelOptics = 1;
-                                            opticsZoomMin                                   = 0.025;
-                                            opticsZoomMax                                   = 0.05;
-                                            opticsZoomInit                                  = 0.05;
-											discretefov[] 									= {0.05,0.025};
+                                            opticsZoomMin                                   = 0.01;
+                                            opticsZoomMax                                   = 0.25;
+                                            opticsZoomInit                                  = 0.25;
+											discretefov[] 									= {0.25,0.05,0.025,0.01};
 											discreteinitIndex 								= 0;
 											discreteDistance[] 								= {100,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
 											discreteDistanceInitIndex 						= 1;
 											distanceZoomMin 								= 100;
 											distanceZoomMax 								= 2000;
                                             memoryPointCamera                               = "opticView";
-                                            modelOptics[]                                   = {"\OPTRE_Weapons\Sniper\Sniper_Oracle5_Optic","\OPTRE_Weapons\Sniper\Sniper_Oracle10_Optic"};
+                                            modelOptics[]                                   = {"\OPTRE_Weapons\Sniper\Sniper_Oracle10_Optic"};
 											opticsPPEffects[] 								= {"OpticsCHAbera1","OpticsBlur1"};
                                             visionMode[]                                    = {"Normal","NVG","TI"};
 											thermalMode[] 									= {5,6};
@@ -58,22 +61,6 @@ class Mode_FullAuto;
                     };
                     inertia                                                                 = 0;
             };
-		class OPTRE_SRS99_Bipod: ItemCore
-		{
-			dlc = "OPTRE";
-			scope 																			= 2;
-			displayName																		= "SRS-99 Bipod";
-			model 																			= "OPTRE_Weapons\Sniper\bipod.p3d";
-			picture																			= "\A3\Weapons_F\Data\placeholder_co.paa";
-			class ItemInfo: InventoryUnderItem_Base_F
-			{
-				deployedPivot																= "bipod";
-				hasBipod																	= true;	
-				mass																		= 10;
-				model 																		= "OPTRE_Weapons\Sniper\bipod.p3d";	
-			};
-			inertia = 0.2;
-		};
             //WEAPONS
 			
         class LMG_Mk200_F;
@@ -85,6 +72,12 @@ class Mode_FullAuto;
                     displayName                                                             = "SRS99D-S2 Sniper Rifle";
                     descriptionShort                                                        = "UNSC Sniper Rifle";
                     picture 																= "\OPTRE_weapons\sniper\icons\sniper.paa";
+					pictureWire 															= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\Sniper\SNIPER.paa";
+					ODST_1																	= "OPTRE_ODST_HUD_AmmoCount_Snipor";
+					Glasses																	= "OPTRE_GLASS_HUD_AmmoCount_Snipor"; 
+					Eye																		= "OPTRE_ODST_EYE_AmmoCount_Snipor";
+					HUD_BulletInARows														= 4;
+					HUD_TotalPosibleBullet													= 4;
                     magazines[]                                                             = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_HVAP_Mag","OPTRE_4Rnd_145x114_HEDP_Mag"};
                     modelOptics                                                             = "-";
                     muzzlePos                                                               = "usti hlavne";
@@ -101,7 +94,8 @@ class Mode_FullAuto;
                     dexterity                                                               = 1.25;
 					maxRecoilSway 															= 0.01;
 					swayDecaySpeed 															= 1;
-					deployedPivot    														= "bipod";
+					deployedPivot															= "bipod";
+					hasBipod																= true;	
 					drySound[] 																= {"A3\Sounds_F\weapons\Other\dry6.wss",1.0,1,20};
 					reloadMagazineSound[] 													= {"A3\Sounds_F\weapons\M320\M320_reload.wss",1.0,1,10};
 					class GunParticles: GunParticles
@@ -182,27 +176,21 @@ class Mode_FullAuto;
                     };
                     class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
                     {
-                            class MuzzleSlot: SlotInfo
+                            class MuzzleSlot: MuzzleSlot
                             {
-                                    access                                                  = 1;
-                                    compatibleitems[]                                       = {};
-                                    displayname                                             = "Muzzle Slot";
-                                    linkproxy                                               = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-                                    scope                                                   = 2;
+                                compatibleitems[]        	                               = {};
                             };
-                            class CowsSlot: SlotInfo
+							class PointerSlot: PointerSlot
+							{
+								compatibleitems[] 											= {};
+							};
+                            class CowsSlot: CowsSlot
                             {
-                                    access                                                  = 1;
-                                    compatibleitems[]                                       = {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope", "OPTRE_M6C_RDS"};
-                                    displayname                                             = "Optics Slot";
-                                    linkproxy                                               = "\A3\data_f\proxies\weapon_slots\TOP";
-                                    scope                                                   = 2;
+                                compatibleitems[]        	                               = {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope", "OPTRE_M6C_RDS"};
                             };
 							class UnderBarrelSlot: UnderBarrelSlot /// using test bipod
 							{
-								iconPosition[] = {0.2, 0.7};
-								iconScale = 0.2;
-								compatibleItems[] = {"OPTRE_SRS99_Bipod"};		
+								compatibleItems[] 											= {};		
 							};	
 							mass = 200;
 							inertia = 1.25;
@@ -220,12 +208,7 @@ class Mode_FullAuto;
 				{
 				slot = "CowsSlot";
 				item = "OPTRE_SRS99_Scope";
-				};			
-				class LinkedItemsMuzzle
-				{
-				slot = "UnderBarrelSlot";
-				item = "OPTRE_SRS99_Bipod";
-				};	
+				};		
 			};
 		};
 };

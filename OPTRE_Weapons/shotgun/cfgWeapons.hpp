@@ -103,7 +103,13 @@ class CfgWeapons
 		displayName 									= "M45 Tactical Shotgun";
 		descriptionShort 								= "8 Gauge Shotgun";
 		picture = "\OPTRE_weapons\shotgun\icons\shotgun_black.paa";
-		magazines[] 									= {"OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs"};
+		pictureWire 								= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\Shotgun\Shotgun.paa";
+		magazines[] 								= {"OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs"};
+		ODST_1																	= "OPTRE_ODST_HUD_AmmoCount_Shotgun";
+		Glasses																	= "OPTRE_GLASS_HUD_AmmoCount_Shotgun";
+		Eye																		= "OPTRE_EYE_HUD_AmmoCount_Shotgun";
+		HUD_BulletInARows														= 1;
+		HUD_TotalPosibleBullet													= 12;		
 		modelOptics 									= "-";
 		modes[] 									= {"Single"};
 		dexterity 									= 1.5;

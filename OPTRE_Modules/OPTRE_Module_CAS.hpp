@@ -33,6 +33,7 @@
 					class n7	{name = "UNSC UH-144 Falcon [Green]"; 	value = "OPTRE_UNSC_falcon_green";					}; 
 					class n8	{name = "UNSC UH-144 Falcon [Snow]"; 	value = "OPTRE_UNSC_falcon_snow";					}; 
 					class n9	{name = "UNSC UH-144 Falcon [Tan]"; 	value = "OPTRE_UNSC_falcon_tan";					}; 
+					class n10	{name = "UNSC GA-TL1/A Longsword"; 	value = "OPTRE_Longsword_CAS_F";					}; 
 				};
 			};	
 			class flyOutHeight

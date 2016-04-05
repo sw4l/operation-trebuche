@@ -76,6 +76,12 @@
                     displayName                                                             = "M73 Light Machine Gun";
                     descriptionShort                                                        = "UNSC Light Machine Gun";
 					picture = "\OPTRE_weapons\MG\icons\M73_1.paa";
+					pictureWire 															= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\MachineGun\MG_IRON.paa";
+					ODST_1																	= "OPTRE_ODST_HUD_AmmoCount_LMG";
+					Glasses																	= "OPTRE_GLASS_HUD_AmmoCount_LMG";
+					Eye																		= "OPTRE_EYE_HUD_AmmoCount_LMG";
+					HUD_BulletInARows														= 4;
+					HUD_TotalPosibleBullet													= 200;	
                     magazines[]                                                             = {"OPTRE_100Rnd_95x40_Box","OPTRE_100Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box","OPTRE_200Rnd_95x40_Box_Tracer"};
                     muzzlePos                                                               = "usti hlavne";
                     muzzleEnd                                                               = "konec hlavne";

@@ -161,6 +161,12 @@ class Mode_FullAuto;
                     displayName                                                             = "MA5B ICWS Assault Rifle";
                     descriptionShort                                                        = "UNSC Assault Rifle";
                     picture 																= "\OPTRE_weapons\ar\icons\ar_a.paa";
+					pictureWire 															= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\AssaultRifle\AR.paa";
+					ODST_1																	= "OPTRE_ODST_HUD_AmmoCount_AR";
+					Glasses																	= "OPTRE_GLASS_HUD_AmmoCount_AR";
+					Eye																		= "OPTRE_EYE_HUD_AmmoCount_AR";
+					HUD_BulletInARows														= 2;
+					HUD_TotalPosibleBullet													= 60;	
 					drySound[] 																= {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
                     magazines[]                                                             = {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag_Tracer"};
                     modelOptics                                                             = "-";
@@ -443,6 +449,7 @@ class Mode_FullAuto;
                     displayName                                                             = "MA5B + M301 Assault Rifle";
                     descriptionShort                                                        = "UNSC Assault Rifle + GL";
                     picture = "\OPTRE_weapons\ar\icons\argl_a.paa";
+					pictureWire 															= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\AssaultRifle\AR_UGL.paa";
                     muzzles[]                                                           = {"this", "M309GL"}; // this was the missing
                     inertia                                                                 = 0.6;
                     class GunParticles: GunParticles
@@ -508,6 +515,7 @@ class Mode_FullAuto;
 	{
 		dlc = "OPTRE";
 		picture = "\OPTRE_weapons\ar\icons\argl_b.paa";
+		pictureWire 															= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\AssaultRifle\AR_UGL.paa";
 		class LinkedItems
 		{
 			class LinkedItemsOptic

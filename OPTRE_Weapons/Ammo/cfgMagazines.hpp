@@ -440,18 +440,18 @@ class CfgMagazines
 		reloadSound[] 						= {"",0.000316228,1,20};
 		nameSound		 					= "missiles";
 	};
-	class OPTRE_M91909_2500Rnd_50mm: 500Rnd_Cannon_30mm_Plane_CAS_02_F
+	class OPTRE_M9109_2500Rnd_50mm: 500Rnd_Cannon_30mm_Plane_CAS_02_F
 	{
 		author = "Article 2 Studios";
 		displayNameShort = "50mm";
-		ammo = "OPTRE_M91909_50mm";
+		ammo = "OPTRE_M9109_50mm";
 		count = 2500;
 	};
-	class OPTRE_M919110_1000Rnd_110mm: OPTRE_M91909_2500Rnd_50mm
+	class OPTRE_M91091_1000Rnd_110mm: OPTRE_M9109_2500Rnd_50mm
 	{
 		author = "Article 2 Studios";
 		displayNameShort = "110mm";
-		ammo = "OPTRE_M919110_110mm";
+		ammo = "OPTRE_M91091_110mm";
 		count = 1000;
 	};
 	
@@ -517,6 +517,7 @@ class CfgMagazines
 		displayNameShort = "M9 Frag";
 		model = "\OPTRE_Weapons\explosives\m9_grenade.p3d";
 		picture = "\OPTRE_Weapons\explosives\icons\m9.paa";
+		pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Throw\FRAG.paa";
 		count = 1;
 		nameSound = "handgrenade";
 		initSpeed = 20;
@@ -526,6 +527,7 @@ class CfgMagazines
 		dlc = "OPTRE";
 		displayName = "M2 Smoke Grenade (White)";
 		picture = "\A3\Weapons_f\data\ui\gear_smokegrenade_white_ca.paa";
+		pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Throw\M2_SMOKE.paa";
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
 		ammo = "OPTRE_G_M2_Smoke";
 		descriptionShort = "Smoke Grenade<br>White";
