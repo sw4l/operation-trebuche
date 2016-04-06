@@ -89,7 +89,8 @@ class CfgWeapons
 		maxRecoilSway 								= 0.0125;
 		swayDecaySpeed 								= 1.25;
 		deployedPivot    							= "bipod";
-		class GunParticles: GunParticles
+		recoil = "recoil_mx";
+		class GunParticles
 		{
 		   class SecondEffect
 		   {

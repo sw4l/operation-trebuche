@@ -481,6 +481,7 @@ class CfgAmmo
 		airLock = 1;
 		laserLock = 1;
 		manualControl = 1;
+		allowAgainstInfantry = 1;
 		maxControlRange = 10000;
 		initTime = 0.1; //0.25
 		trackOversteer = 1;
@@ -502,29 +503,34 @@ class CfgAmmo
 		hit = 500;
 		indirectHit = 50;
 		indirectHitRange = 5;
+		allowAgainstInfantry = 1;
 		airLock = 2;
 		irLock = 0;
 	};
 	class OPTRE_M9109_50mm: Cannon_30mm_HE_Plane_CAS_02_F
 	{
-		model = "\A3\Weapons_f\Data\bullettracer\tracer_white.p3d";
-		hit = 220;
+		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_red.p3d";
+		hit = 225;
 		indirectHit = 5;
 		indirectHitRange = 5;
 		caliber = 5;
 		explosive = 0.5;
-		tracerScale = 3;
+		tracerScale = 1;
 		tracerStartTime = 0.005;
 		tracerEndTime = 5;
+		allowAgainstInfantry = 1;
 	};
 	class OPTRE_M91091_110mm: OPTRE_M9109_50mm
 	{
-		hit = 440;
-		indirectHit = 20;
+		hit = 500;
+		indirectHit = 25;
 		indirectHitRange = 5;
 		caliber = 10;
 		explosive = 0.5;
-		tracerScale = 4;
+		tracerScale = 3;
+		CraterEffects = "HEShellCrater";
+		CraterWaterEffects = "ImpactEffectsWaterHE";
+		ExplosionEffects = "HEShellExplosion";
 	};
 	
 	//Rockets

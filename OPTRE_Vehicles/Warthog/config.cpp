@@ -248,7 +248,7 @@ class CfgVehicles
 		};
 		class Damage
 		{
-			tex[]						= {"OPTRE_Core\data\base\glass_ca.paa","OPTRE_Core\data\base\transparent.paa","OPTRE_Core\data\base\transparent.paa"};
+			tex[]						= {"OPTRE_Core\data\base\glass_ca.paa","OPTRE_Vehicles\shattered_dt.paa","OPTRE_Core\data\base\transparent.paa"};
 			mat[]						= {"OPTRE_Vehicles\Warthog\data\warthog.rvmat","OPTRE_Vehicles\Warthog\data\warthog_damage.rvmat","OPTRE_Vehicles\Warthog\data\warthog_destruct.rvmat","OPTRE_Vehicles\Warthog\data\warthog_addons.rvmat","OPTRE_Vehicles\Warthog\data\warthog_addons_damage.rvmat","OPTRE_Vehicles\Warthog\data\warthog_addons_destruct.rvmat","OPTRE_Core\data\base\reflective_glass.rvmat","OPTRE_Core\data\base\null.rvmat","OPTRE_Core\data\base\null.rvmat"};
 		};
 		wheelDamageThreshold			= 1;
@@ -1204,7 +1204,7 @@ class CfgVehicles
 		model							= "OPTRE_Vehicles\Warthog\warthog_AA.p3d";
 		displayName 					= "M12R Warthog (AA)";
 		hiddenSelections[]				= {"camo1","camo2","clan","clan_text","insignia"};
-		hiddenSelectionsTextures[]		= {"OPTRE_Vehicles\Warthog\data\warthog_co.paa","OPTRE_Vehicles\Warthog\data\warthog_aa_ca.paa"};
+		hiddenSelectionsTextures[]		= {"OPTRE_Vehicles\Warthog\data\warthog_co.paa","OPTRE_Vehicles\Warthog\data\warthog_aa_co.paa"};
 		class RenderTargets
 		{
 			class FrontView
@@ -1268,8 +1268,10 @@ class CfgVehicles
 				};
 			};
 		};
-		memoryPointLMissile 			= "Rocket_1";
-		memoryPointRMissile 			= "Rocket_2";
+		memoryPointLMissile = "Rocket_1";
+		memoryPointRMissile = "Rocket_2";
+		memoryPointLRocket = "Rocket_1";
+		memoryPointRRocket = "Rocket_2";
 		class Turrets:Turrets
 		{
 			class CargoTurret_01: CargoTurret
@@ -1372,21 +1374,21 @@ class CfgVehicles
 		displayName						= "M12R Warthog (AA) [Black]";
 		crew							= "OPTRE_UNSC_ODST_Soldier_Rifleman_AR";
 		hiddenSelections[]				= {"camo1","camo2","clan","clan_text","insignia"};
-		hiddenSelectionsTextures[]		= {"OPTRE_Vehicles\Warthog\data\warthog_black_co.paa","OPTRE_Vehicles\Warthog\data\warthog_aa_black_ca.paa"};
+		hiddenSelectionsTextures[]		= {"OPTRE_Vehicles\Warthog\data\warthog_black_co.paa","OPTRE_Vehicles\Warthog\data\warthog_aa_black_co.paa"};
 	};
 	class OPTRE_M12R_AA_tan: OPTRE_M12R_AA
 	{
 		crew							= "OPTRE_UNSC_Army_Soldier_Rifleman_AR_DES";
 		displayName						= "M12R Warthog (AA) [Tan]";
 		hiddenSelections[]				= {"camo1","camo2","clan","clan_text","insignia"};
-		hiddenSelectionsTextures[]		= {"OPTRE_Vehicles\Warthog\data\warthog_tan_co.paa","OPTRE_Vehicles\Warthog\data\warthog_aa_tan_ca.paa"};
+		hiddenSelectionsTextures[]		= {"OPTRE_Vehicles\Warthog\data\warthog_tan_co.paa","OPTRE_Vehicles\Warthog\data\warthog_aa_tan_co.paa"};
 	};
 	class OPTRE_M12R_AA_snow: OPTRE_M12R_AA
 	{
 		crew							= "OPTRE_UNSC_Army_Soldier_Rifleman_AR_SNO";
 		displayName						= "M12R Warthog (AA) [Snow]";
 		hiddenSelections[]				= {"camo1","camo2","clan","clan_text","insignia"};
-		hiddenSelectionsTextures[]		= {"OPTRE_Vehicles\Warthog\data\warthog_snow_co.paa","OPTRE_Vehicles\Warthog\data\warthog_aa_snow_ca.paa"};
+		hiddenSelectionsTextures[]		= {"OPTRE_Vehicles\Warthog\data\warthog_snow_co.paa","OPTRE_Vehicles\Warthog\data\warthog_aa_snow_co.paa"};
 	};
 	class OPTRE_M12R_AA_Marine: OPTRE_M12R_AA
 	{
@@ -1399,7 +1401,7 @@ class CfgVehicles
 
 		displayName						= "M12R Warthog (AA) [Ins]";
 		hiddenSelections[]				= {"camo1","camo2","clan","clan_text","insignia"};
-		hiddenSelectionsTextures[]		= {"OPTRE_Vehicles\Warthog\data\warthog_ins_co.paa","OPTRE_Vehicles\Warthog\data\warthog_aa_ins_ca.paa"};
+		hiddenSelectionsTextures[]		= {"OPTRE_Vehicles\Warthog\data\warthog_ins_co.paa","OPTRE_Vehicles\Warthog\data\warthog_aa_ins_co.paa"};
 		vehicleClass					= "OPTRE_Ins_Vehicle_class";
 		side							= 0;
 		crew							= "OPTRE_Ins_URF_Rifleman_AR";

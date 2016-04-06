@@ -845,6 +845,30 @@ class CfgVehicles
 		hiddenSelections[] 																		= {"camo1","insignia","clan"};
 		hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\ODST\data\armor_urban_co.paa"};
 	};
+	class OPTRE_UNSC_ODST_Soldier_Convader: OPTRE_UNSC_ODST_Soldier_Scorch
+	{
+		dlc = "OPTRE";
+		author																					= "Article 2 Studios";
+		displayName																				= "Convader";
+		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_Convader";		
+		backpack 																				= "OPTRE_ILCS_Rucksack_Black";
+		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest_Convader","OPTRE_UNSC_ODST_Helmet_Convader","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
+		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_Vest_Convader","OPTRE_UNSC_ODST_Helmet_Convader","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
+		hiddenSelections[] 																		= {"camo1","insignia","clan"};
+		hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\ODST\data\armor_convader_co.paa"};
+	};
+	class OPTRE_UNSC_ODST_Soldier_EvilFlea: OPTRE_UNSC_ODST_Soldier_Scorch
+	{
+		dlc = "OPTRE";
+		author																					= "Article 2 Studios";
+		displayName																				= "Evil Flea";
+		uniformClass																			= "OPTRE_UNSC_ODST_Uniform_EvilFlea";		
+		backpack 																				= "OPTRE_ILCS_Rucksack_Black";
+		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest_EvilFlea","OPTRE_UNSC_ODST_Helmet_EvilFlea","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
+		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_Vest_EvilFlea","OPTRE_UNSC_ODST_Helmet_EvilFlea","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
+		hiddenSelections[] 																		= {"camo1","insignia","clan"};
+		hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\ODST\data\armor_evilflea_co.paa"};
+	};
 	/*class OPTRE_UNSC_ODST_Soldier_Instructor: CAManBase
 	{
 		scope																				= 2;
@@ -1160,7 +1184,27 @@ class cfgWeapons
 			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_Zero";
 		};
 	};
-	class OPTRE_UNSC_ODST_Uniform_Instructor: OPTRE_UNSC_ODST_Uniform
+	class OPTRE_UNSC_ODST_Uniform_Convader: OPTRE_UNSC_ODST_Uniform
+	{
+		dlc = "OPTRE";
+		author																					= "Article 2 Studios";
+		displayName																				= "[UNSC] ODST BDU (Full) [Convader]";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_Convader";
+		};
+	};
+	class OPTRE_UNSC_ODST_Uniform_EvilFlea: OPTRE_UNSC_ODST_Uniform
+	{
+		dlc = "OPTRE";
+		author																					= "Article 2 Studios";
+		displayName																				= "[UNSC] ODST BDU (Full) [Evil Flea]";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_EvilFlea";
+		};
+	};
+	/*class OPTRE_UNSC_ODST_Uniform_Instructor: OPTRE_UNSC_ODST_Uniform
 	{
 		dlc = "OPTRE";
 		picture   																				= "\OPTRE_UNSC_Units\ODST\icons\odst_instr.paa";
@@ -1185,7 +1229,7 @@ class cfgWeapons
 		{
 			uniformClass																		= "OPTRE_UNSC_ODST_Soldier_Recruit";
 		};
-	};
+	};*/
 	// UNIFORMS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -1338,6 +1382,32 @@ class cfgWeapons
 		{
 			hiddenSelections[]   																= {"camo1","camo2","attach_nade"};
 			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_urban_co.paa",""};
+		};
+	};
+	class OPTRE_UNSC_ODST_Vest_Convader: OPTRE_UNSC_ODST_Vest
+	{	
+		dlc = "OPTRE";
+		author																					= "Article 2 Studios";
+		displayName  																			= "[UNSC] M53 Body Armor [Convader]";
+		hiddenSelections[]   																	= {"camo1","camo2"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_convader_co.paa",""};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]   																= {"camo1","camo2"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_convader_co.paa",""};
+		};
+	};
+	class OPTRE_UNSC_ODST_Vest_EvilFlea: OPTRE_UNSC_ODST_Vest
+	{	
+		dlc = "OPTRE";
+		author																					= "Article 2 Studios";
+		displayName  																			= "[UNSC] M53 Body Armor [Evil Flea]";
+		hiddenSelections[]   																	= {"camo1","camo2"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_evilflea_co.paa",""};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]   																= {"camo1","camo2"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_evilflea_co.paa",""};
 		};
 	};
 	class OPTRE_UNSC_ODST_Vest_Red: OPTRE_UNSC_ODST_Vest
@@ -1603,6 +1673,32 @@ class cfgWeapons
 			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_Urban_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_urban_co.paa"};
 		};
 	};
+	class OPTRE_UNSC_ODST_Helmet_Convader: OPTRE_UNSC_ODST_Helmet
+	{	
+		dlc = "OPTRE";
+		author																					= "Article 2 Studios";
+		displayName    																			= "[UNSC] CH253 Helmet [Convader]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_cam","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_convader_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_convader_co.paa"};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelections[]   																= {"camo1","camo2","attach_cam","attach_laser","attach_mount","attach_rangefinder","attach_rebreather"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_convader_co.paa","OPTRE_UNSC_Units\ODST\data\helmet_convader_co.paa"};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_EvilFlea: OPTRE_UNSC_ODST_Helmet
+	{	
+		dlc = "OPTRE";
+		author																					= "Article 2 Studios";
+		displayName    																			= "[UNSC] CH253 Helmet [Evil Flea]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_communication","attach_rangefinder","attach_rebreather"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_evilflea_co.paa","OPTRE_UNSC_Units\ODST\data\helmet2_co.paa"};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelections[]   																= {"camo1","camo2","attach_communication","attach_rangefinder","attach_rebreather"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_evilflea_co.paa","OPTRE_UNSC_Units\ODST\data\helmet2_co.paa"};
+		};
+	};
 	class OPTRE_UNSC_ODST_Helmet_Red: OPTRE_UNSC_ODST_Helmet
 	{	
 		dlc = "OPTRE";
@@ -1776,6 +1872,34 @@ class cfgWeapons
 		class ItemInfo: ItemInfo 
 		{
 			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_scorch_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_Convader_dp: OPTRE_UNSC_ODST_Helmet_Convader
+	{	
+		dlc = "OPTRE";
+		author																					= "Article 2 Studios";
+		scopeArsenal																			= 1;
+		scopeCurator																			= 1;
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_convader_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_convader_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		};
+	};
+	class OPTRE_UNSC_ODST_Helmet_EvilFlea_dp: OPTRE_UNSC_ODST_Helmet_EvilFlea
+	{	
+		dlc = "OPTRE";
+		author																					= "Article 2 Studios";
+		scopeArsenal																			= 1;
+		scopeCurator																			= 1;
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet_evilflea_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
+		hiddenSelectionsMaterials[]   															= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet_evilflea_co.paa","optre_vehicles\pelican\data\glass_ca.paa"};
 			hiddenSelectionsMaterials[]   														= {"OPTRE_UNSC_Units\ODST\data\helmet.rvmat",""};
 		};
 	};

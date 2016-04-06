@@ -315,11 +315,11 @@ class cfgWeapons
 		displayName  													= "[UNSC] M52[V] Body Armor [Air Force]";
 		picture   														= "\OPTRE_UNSC_Units\marines\icons\marine_vest_vac.paa";
 		hiddenSelections[]   											= {"camo1","camo2","camo3","attach_knife","attach_pouches","attach_ghillie"};
-		hiddenSelectionsTextures[]   									= {"OPTRE_UNSC_Units\Air\data\vest_airforce_co.paa","OPTRE_UNSC_Units\Marines\data\addons_marines_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"};
+		hiddenSelectionsTextures[]   									= {"OPTRE_UNSC_Units\Air\data\vest_airforce_co.paa","OPTRE_UNSC_Units\Marines\data\addons_marines_co.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]   										= {"camo1","camo2","camo3","attach_knife","attach_pouches","attach_ghillie"};
-			hiddenSelectionsTextures[]   								= {"OPTRE_UNSC_Units\Air\data\vest_airforce_co.paa","OPTRE_UNSC_Units\Marines\data\addons_marines_ca.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"};
+			hiddenSelectionsTextures[]   								= {"OPTRE_UNSC_Units\Air\data\vest_airforce_co.paa","OPTRE_UNSC_Units\Marines\data\addons_marines_co.paa","OPTRE_UNSC_Units\Army\data\pouches_black_co.paa"};
 		};
 	};
 	// VESTS END

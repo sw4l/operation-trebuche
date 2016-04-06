@@ -5,6 +5,7 @@ class CfgWeapons
 {
 	class HMG_127;
 	class MGun;
+	class RocketPods;
 	class autocannon_35mm;
 	class cannon_120mm;
 	class RCWSOptics;
@@ -96,7 +97,9 @@ class CfgWeapons
 		initFov 							= 0.75;
 		minFov 								= 0.375;
 		maxFov 								= 1.1;
-		class manual:MGun
+		cursor 								= "EmptyCursor";
+		cursorAim 							= "rocket";
+		class manual:RocketPods
 		{
 			displayName						= "M79 MLRS";
 			reloadTime						= 0.33;
@@ -221,8 +224,7 @@ class CfgWeapons
 		muzzleEnd = "Cannon_barrel_end";
 		selectionFireAnim = "Cannon_muzzleflash";
 		autoFire = 1;
-		burst = 20;
-		reloadTime = 0.02;
+		reloadTime = 0.035;
 		class GunParticles
 		{
 			class Effect
@@ -235,14 +237,14 @@ class CfgWeapons
 		class LowROF: Mode_FullAuto
 		{
 			displayName = "$STR_A3_CFGWEAPONS_CANNON_30MM";
-			reloadTime = 0.02;
+			reloadTime = 0.035;
 			sounds[] = {"StandardSound"};
 			class StandardSound
 			{
-				begin1[] = {"A3\Sounds_F_EPC\Weapons\gau_03_burst",2.5118864,1,4500,{ 25704,32159 }};
+				begin1[] = {"A3\Sounds_F\weapons\gatling\gatling3",1.5,1,2000};
 				soundBegin[] = {"begin1",1};
 			};
-			soundContinuous = 1;
+			soundContinuous = 0;
 			flash = "gunfire";
 			flashSize = 0.1;
 			recoil = "Empty";
@@ -258,7 +260,6 @@ class CfgWeapons
 			maxRange = 3;
 			maxRangeProbab = 0.004;
 			dispersion = 0.005;
-			burst = 20;
 			showToPlayer = 1;
 		};
 	};
@@ -277,7 +278,7 @@ class CfgWeapons
 		muzzleEnd = "Cannon_barrel_end";
 		selectionFireAnim = "Cannon_muzzleflash";
 		autoFire = 1;
-		reloadTime = 0.1;
+		reloadTime = 0.085;
 		class GunParticles
 		{
 			class Effect
@@ -292,10 +293,10 @@ class CfgWeapons
 			sounds[] = {"StandardSound"};
 			class StandardSound
 			{
-				begin1[] = {"A3\Sounds_F\weapons\30mm\30mm_st_02",1.9952624,1,1500};
+				begin1[] = {"A3\Sounds_F\weapons\gatling\gatling5",1.75,1,2500};
 				soundBegin[] = {"begin1",1};
 			};
-			reloadTime = 0.1;
+			reloadTime = 0.085;
 			soundContinuous = 0;
 			flash = "gunfire";
 			flashSize = 0.1;

@@ -1,6 +1,5 @@
 _pelican = _this select 0;
 OPTRE_Thruster_EngagedStatus = true;
-_pelican animate ["flame_hide", 1, true];
 hint "ENGAGING FORWARD THRUSTERS";
 while {(OPTRE_Thruster_EngagedStatus) AND (alive _pelican)} do
 {
@@ -16,4 +15,3 @@ while {(OPTRE_Thruster_EngagedStatus) AND (alive _pelican)} do
 	};
 	sleep 0.5;
 };
-_pelican animate ["flame_hide", 0, true];

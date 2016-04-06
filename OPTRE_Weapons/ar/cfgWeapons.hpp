@@ -54,7 +54,7 @@ class Mode_FullAuto;
                                             opticsZoomMax                                   = 0.075;
                                             opticsZoomInit                                  = 0.075;
                                             memoryPointCamera                               = "opticView2";
-                                            modelOptics[]                                   = {"\OPTRE_Weapons\AR\AR_AmmoCount_Optic"};
+											modelOptics[] 									= {"\A3\Weapons_F\acc\reticle_HAMR"};
                                             visionMode[]                                    = {};
                                     };
                             };
@@ -101,7 +101,7 @@ class Mode_FullAuto;
                                             opticsZoomInit                                  = 0.075;
                                             memoryPointCamera                               = "opticView2";
                                             //modelOptics[]                                 = {"\A3\Weapons_F\acc\reticle_HAMR"/*,"\A3\Weapons_F\acc\reticle_arco_F"*/};
-                                            modelOptics[]                                   = {"\OPTRE_Weapons\AR\AR_AmmoCount_Optic"};
+                                            modelOptics[]                                   = {"\A3\Weapons_F\acc\reticle_HAMR"};
                                             visionMode[]                                    = {};
                                     };
                             };
@@ -179,6 +179,7 @@ class Mode_FullAuto;
 					deployedPivot    														= "bipod";
 					discreteDistance[] 														= {100,200,300,400,500,600,700,800,900,1000};
 					changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\firemode_Mx",0.17782794,1,5};
+					recoil = "recoil_trg20";
 					maxRecoilSway = 0.01;
 					swayDecaySpeed = 1;
                     class GunParticles: GunParticles
@@ -190,7 +191,7 @@ class Mode_FullAuto;
                             effectName                                                      = "CaselessAmmoCloud";
                        };
                     };
-                    modes[] = {"Single","FullAuto"};
+                    modes[] = {"Single","FullAuto","single_medium_optics1","single_medium_optics2","fullauto_medium"};
                     class Single: Mode_SemiAuto
                     {
                             sounds[] = {"StandardSound","SilencedSound"};
@@ -282,8 +283,8 @@ class Mode_FullAuto;
                             };
                             reloadTime = 0.065; 			//was 0.065
                             dispersion = 0.00075;
-                            recoil = "recoil_single_mx";
-							recoilProne = "recoil_single_prone_mx";
+							recoil = "recoil_single_trg";
+							recoilProne = "recoil_single_prone_trg";
                             minRange = 2;
                             minRangeProbab = 0.3;
                             midRange = 300;
@@ -382,8 +383,8 @@ class Mode_FullAuto;
                             };
                             reloadTime = 0.065; 			//was 0.092
                             dispersion = 0.00085;
-                            recoil = "recoil_single_mx";
-							recoilProne = "recoil_single_prone_mx";
+							recoil = "recoil_auto_trg";
+							recoilProne = "recoil_auto_prone_trg";
                             minRange = 2;
                             minRangeProbab = 0.3;
                             midRange = 300;
@@ -391,6 +392,43 @@ class Mode_FullAuto;
                             maxRange = 600;
                             maxRangeProbab = 0.05;
                     };
+					class fullauto_medium: FullAuto
+					{
+						showToPlayer = 0;
+						burst = 3;
+						minRange = 2;
+						minRangeProbab = 0.5;
+						midRange = 75;
+						midRangeProbab = 0.7;
+						maxRange = 100;
+						maxRangeProbab = 0.05;
+						aiRateOfFire = 2.0;
+					};
+					class single_medium_optics1: Single
+					{
+						requiredOpticType = 1;
+						showToPlayer = 0;
+						minRange = 5;
+						minRangeProbab = 0.2;
+						midRange = 300;
+						midRangeProbab = 0.7;
+						maxRange = 450;
+						maxRangeProbab = 0.3;
+						aiRateOfFire = 5;
+						aiRateOfFireDistance = 500;
+					};
+					class single_medium_optics2: single_medium_optics1
+					{
+						requiredOpticType = 2;
+						minRange = 100;
+						minRangeProbab = 0.1;
+						midRange = 400;
+						midRangeProbab = 0.7;
+						maxRange = 600;
+						maxRangeProbab = 0.05;
+						aiRateOfFire = 6;
+						aiRateOfFireDistance = 600;
+					};
                     class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
                     {
                             class MuzzleSlot: SlotInfo
@@ -461,7 +499,7 @@ class Mode_FullAuto;
                             effectName                                                      = "CaselessAmmoCloud";
                        };
                     };
-                    modes[] = {"Single","FullAuto"};
+                    modes[] = {"Single","FullAuto","single_medium_optics1","single_medium_optics2","fullauto_medium"};
                     class Single: Single
                     {
                             minRange = 2;
@@ -482,6 +520,43 @@ class Mode_FullAuto;
                             discreteDistanceCameraPoint[] = {"OP_eye", "OP_eye2", "OP_eye3", "OP_eye4"}; /// the angle of gun changes with zeroing
                             discreteDistanceInitIndex = 1; /// 200 is the default zero
                     };
+					class fullauto_medium: FullAuto
+					{
+						showToPlayer = 0;
+						burst = 3;
+						minRange = 2;
+						minRangeProbab = 0.5;
+						midRange = 75;
+						midRangeProbab = 0.7;
+						maxRange = 100;
+						maxRangeProbab = 0.05;
+						aiRateOfFire = 2.0;
+					};
+					class single_medium_optics1: Single
+					{
+						requiredOpticType = 1;
+						showToPlayer = 0;
+						minRange = 5;
+						minRangeProbab = 0.2;
+						midRange = 300;
+						midRangeProbab = 0.7;
+						maxRange = 450;
+						maxRangeProbab = 0.3;
+						aiRateOfFire = 5;
+						aiRateOfFireDistance = 500;
+					};
+					class single_medium_optics2: single_medium_optics1
+					{
+						requiredOpticType = 2;
+						minRange = 100;
+						minRangeProbab = 0.1;
+						midRange = 400;
+						midRangeProbab = 0.7;
+						maxRange = 600;
+						maxRangeProbab = 0.05;
+						aiRateOfFire = 6;
+						aiRateOfFireDistance = 600;
+					};
                     class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
                     {
                             class MuzzleSlot: SlotInfo

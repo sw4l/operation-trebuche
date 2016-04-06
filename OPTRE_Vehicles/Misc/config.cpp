@@ -117,19 +117,127 @@ class CfgVehicles
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\HEMTT_UNSC_01_CO.paa","\a3\soft_f_beta\truck_01\data\truck_01_ext_02_co.paa"};
 	};
-	
-	class OPTRE_m1015_mule_unsc: OPTRE_m1015_mule_base
+	class OPTRE_m1087_stallion_unsc_mover: OPTRE_m1087_stallion_base
 	{
 		author="Article 2 Studios";
-		displayName = "M1015 Mule";
+		displayName = "M1087 Stallion (Empty)";
+		transportSoldier = 1;
 		vehicleClass = "OPTRE_UNSC_Vehicle_class";
+		model = "\A3\soft_f_gamma\Truck_01\Truck_01_mover_F.p3d";
+		picture = "\a3\soft_f_gamma\Truck_01\Data\UI\Truck_01_mover_F_CA.paa";
+		Icon = "\a3\soft_f_gamma\Truck_01\Data\UI\map_Truck_01_mover_F_CA.paa";
 		scope = 2;
 		side = 1;
 		faction = "OPTRE_UNSC";
 		crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
 		typicalCargo[] = {"OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL"};
-		hiddenSelections[] = {"Camo1","Camo2"};
-		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\KAMAZ_UNSC_01_CO.paa","\OPTRE_Vehicles\Misc\data\KAMAZ_UNSC_02_CO.paa"};
+		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
+		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\HEMTT_UNSC_01_CO.paa","\a3\soft_f_beta\truck_01\data\truck_01_ext_02_co.paa","\A3\Soft_F_Gamma\Truck_01\Data\truck_01_mprimer_CO.paa"};
+	};
+	class OPTRE_m1087_stallion_unsc_box: OPTRE_m1087_stallion_base
+	{
+		author="Article 2 Studios";
+		displayName = "M1087 Stallion (Box)";
+		vehicleClass = "OPTRE_UNSC_Vehicle_class";
+		transportSoldier = 1;
+		scope = 2;
+		side = 1;
+		faction = "OPTRE_UNSC";
+		crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
+		typicalCargo[] = {"OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL"};
+		model = "\A3\soft_f_gamma\Truck_01\Truck_01_box_F.p3d";
+		picture = "\a3\soft_f_gamma\Truck_01\Data\UI\Truck_01_box_F_CA.paa";
+		Icon = "\a3\soft_f_gamma\Truck_01\Data\UI\map_Truck_01_box_F_CA.paa";
+		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
+		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\HEMTT_UNSC_01_CO.paa","\a3\soft_f_beta\truck_01\data\truck_01_ext_02_co.paa","\A3\Soft_F_Gamma\Truck_01\Data\truck_01_ammo_CO.paa"};
+	};
+	class OPTRE_m1087_stallion_unsc_repair: OPTRE_m1087_stallion_base
+	{
+		author="Article 2 Studios";
+		displayName = "M1087 Stallion (Repair)";
+		vehicleClass = "OPTRE_UNSC_Vehicle_class";
+		transportSoldier = 1;
+		scope = 2;
+		side = 1;
+		faction = "OPTRE_UNSC";
+		crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
+		typicalCargo[] = {"OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL"};
+		model = "\A3\soft_f_gamma\Truck_01\Truck_01_box_F.p3d";
+		picture = "\a3\soft_f_gamma\Truck_01\Data\UI\Truck_01_box_F_CA.paa";
+		Icon = "\a3\soft_f_gamma\Truck_01\Data\UI\map_Truck_01_box_F_CA.paa";
+		transportRepair = 200000000;
+		supplyRadius = 10;
+		forceInGarage = 1;
+		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
+		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\HEMTT_UNSC_01_CO.paa","\a3\soft_f_beta\truck_01\data\truck_01_ext_02_co.paa","\A3\Soft_F_Gamma\Truck_01\Data\truck_01_ammo_CO.paa"};
+	};
+	class OPTRE_m1087_stallion_unsc_resupply: OPTRE_m1087_stallion_base
+	{
+		author="Article 2 Studios";
+		displayName = "M1087 Stallion (Resupply)";
+		vehicleClass = "OPTRE_UNSC_Vehicle_class";
+		transportSoldier = 1;
+		scope = 2;
+		side = 1;
+		faction = "OPTRE_UNSC";
+		crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
+		typicalCargo[] = {"OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL"};
+		model = "\A3\soft_f_gamma\Truck_01\Truck_01_ammo_F.p3d";
+		picture = "\a3\soft_f_gamma\Truck_01\Data\UI\Truck_01_Ammo_CA.paa";
+		Icon = "\a3\soft_f_gamma\Truck_01\Data\UI\map_truck_01_ammo_CA.paa";
+		supplyRadius = 10;
+		transportAmmo = 30000;
+		fuelExplosionPower = 1;
+		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
+		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\HEMTT_UNSC_01_CO.paa","\a3\soft_f_beta\truck_01\data\truck_01_ext_02_co.paa","\A3\Soft_F_Gamma\Truck_01\Data\truck_01_ammo_CO.paa"};
+	};
+	class OPTRE_m1087_stallion_unsc_refuel: OPTRE_m1087_stallion_base
+	{
+		author="Article 2 Studios";
+		displayName = "M1087 Stallion (Refuel)";
+		vehicleClass = "OPTRE_UNSC_Vehicle_class";
+		transportSoldier = 1;
+		scope = 2;
+		side = 1;
+		faction = "OPTRE_UNSC";
+		crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
+		typicalCargo[] = {"OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL"};
+		model = "\A3\soft_f_gamma\Truck_01\Truck_01_fuel_F.p3d";
+		picture = "\a3\soft_f_gamma\Truck_01\Data\UI\Truck_01_Fuel_CA.paa";
+		Icon = "\a3\soft_f_gamma\Truck_01\Data\UI\map_truck_01_fuel_CA.paa";
+		supplyRadius = 10;
+		transportFuel = 3000;
+		fuelExplosionPower = 10;
+		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
+		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\HEMTT_UNSC_01_CO.paa","\a3\soft_f_beta\truck_01\data\truck_01_ext_02_co.paa","\A3\Soft_F_Gamma\Truck_01\Data\truck_01_Fuel_CO.paa"};
+	};
+	class OPTRE_m1087_stallion_unsc_medical: OPTRE_m1087_stallion_base
+	{
+		author="Article 2 Studios";
+		displayName = "M1087 Stallion (Medical)";
+		vehicleClass = "OPTRE_UNSC_Vehicle_class";
+		transportSoldier = 16;
+		scope = 2;
+		side = 1;
+		faction = "OPTRE_UNSC";
+		crew = "OPTRE_UNSC_Army_Soldier_Medic";
+		typicalCargo[] = {"OPTRE_UNSC_Army_Soldier_Medic"};
+		model = "\A3\soft_f_gamma\Truck_01\Truck_01_medevac_F.p3d";
+		picture = "\a3\soft_f_gamma\Truck_01\Data\UI\Truck_01_box_F_CA.paa";
+		Icon = "\a3\soft_f_gamma\Truck_01\Data\UI\map_Truck_01_box_F_CA.paa";
+		attendant = 1;
+		cargoProxyIndexes[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17};
+		cargoAction[] = {"passenger_generic01_foldhands","passenger_injured_medevac_truck01","passenger_injured_medevac_truck02","passenger_injured_medevac_truck01","passenger_injured_medevac_truck02","passenger_injured_medevac_truck03","passenger_injured_medevac_truck01","passenger_injured_medevac_truck02","passenger_generic01_leanleft","passenger_apc_generic04","passenger_apc_narrow_generic01","passenger_apc_generic03","passenger_apc_narrow_generic03","passenger_generic01_foldhands","passenger_apc_generic02","passenger_apc_generic01"};
+		class TransportItems
+		{
+			class _xx_FirstAidKit
+			{
+				name = "FirstAidKit";
+				count = 10;
+			};
+		};
+		threat[] = {0.0,0.0,0.0};
+		class Turrets{};
 	};
 	
 	class OPTRE_m1015_mule_ins: OPTRE_m1015_mule_base

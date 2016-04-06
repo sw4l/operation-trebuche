@@ -2,9 +2,9 @@ OPTRE_Magnet_HasTarget = false;
 OPTRE_Magnet_TargetAttached = false;
 OPTRE_Magnet_AttachTarget = objNull;
 OPTRE_Magnet_DetachTarget = objNull;
-(_this select 0) addaction [("<t color=""#DF0101"">" + ("/// ATTACH VEHICLE ///") +"</t>"), OPTRE_Magnet_fnc_Attach, "", 0, true, true, "", "(_this == driver _target) AND (OPTRE_Magnet_HasTarget) AND !(OPTRE_Magnet_TargetAttached)"];
-(_this select 0) addaction [("<t color=""#DF0101"">" + ("/// DETACH VEHICLE ///") +"</t>"), OPTRE_Magnet_fnc_Detach, "", 0, true, true, "", "(_this == driver _target) AND (OPTRE_Magnet_TargetAttached)"];
-(_this select 0) setVariable ["OPTRE_Magnet_HasAction", true, true];
+_this addaction [("<t color=""#DF0101"">" + ("/// ATTACH VEHICLE ///") +"</t>"), OPTRE_Magnet_fnc_Attach, "", 0, true, true, "", "(_this == driver _target) AND (OPTRE_Magnet_HasTarget) AND !(OPTRE_Magnet_TargetAttached)"];
+_this addaction [("<t color=""#DF0101"">" + ("/// DETACH VEHICLE ///") +"</t>"), OPTRE_Magnet_fnc_Detach, "", 0, true, true, "", "(_this == driver _target) AND (OPTRE_Magnet_TargetAttached)"];
+_this setVariable ["OPTRE_Magnet_HasAction", true, true];
 
 OPTRE_Magnet_VehicleSweep =
 {

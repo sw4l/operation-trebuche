@@ -90,6 +90,7 @@ class Mode_FullAuto;
 					opticsPPEffects[] 														= {};
 					opticsDisablePeripherialVision 											= 1;
 					opticsFlare 															= 1;
+					recoil = "recoil_gm6";
                     inertia                                                                 = 1.25;
                     dexterity                                                               = 1.25;
 					maxRecoilSway 															= 0.01;
@@ -163,7 +164,7 @@ class Mode_FullAuto;
 										};
 									};
                             };
-                            reloadTime = 0.4; 			//0.6
+                            reloadTime = 0.35; 			//0.6
                             dispersion = 0.00015;
                             recoil = "recoil_single_gm6";
 							recoilProne = "recoil_single_gm6";

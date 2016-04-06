@@ -104,6 +104,9 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 0;
+		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
+		faction	= "OPTRE_UNSC";					/// defines the faction inside of the side
+		crew = "OPTRE_UNSC_Navy_Soldier_Red_LT";					/// lets use the sample soldier we have as default captain of the boat
 		armor = 450;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "M910 Point Defense Turret";
@@ -167,6 +170,26 @@ class CfgVehicles
 				};
 			};
 		};
+	};
+	class OPTRE_Frigate_doorbuild: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Side Doors [Frigate]";
+		model = "\OPTRE_frigate\doorbuild.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+	};
+	class OPTRE_Frigate_interiorbuild: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Interior [Frigate]";
+		model = "\OPTRE_frigate\interior_build.p3d";
+		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
 	};
 	class OPTRE_Frigate_part_1: OPTRE_Frigate_Final_Dawn
 	{

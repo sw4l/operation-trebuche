@@ -75,6 +75,7 @@
                     model                                                                   = "\OPTRE_Weapons\MG\M73.p3d";
                     displayName                                                             = "M73 Light Machine Gun";
                     descriptionShort                                                        = "UNSC Light Machine Gun";
+					recoil = "recoil_mk200";
 					picture = "\OPTRE_weapons\MG\icons\M73_1.paa";
 					pictureWire 															= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\MachineGun\MG_IRON.paa";
 					ODST_1																	= "OPTRE_ODST_HUD_AmmoCount_LMG";
@@ -94,7 +95,7 @@
 					maxZeroing 																= 1000;
 					changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\firemode_Mx",0.17782794,1,5};
 					discreteDistance[] 														= {100,200,300,400,500,600,700,800,900,1000};
-                    modes[] 																= {"FullAuto","Single"};
+                    modes[] 																= {"FullAuto","Single","close","short","medium","far_optic1","far_optic2"};
                     class Single: Mode_SemiAuto
                     {
                             sounds[] 														= {"StandardSound","SilencedSound"};
@@ -185,8 +186,8 @@
                             };
                             reloadTime 														= 0.0789; 		
                             dispersion 														= 0.00075;
-                            recoil 															= "recoil_single_mx";
-							recoilProne 													= "recoil_single_prone_mx";
+							recoil = "recoil_auto_mk200";
+							recoilProne = "recoil_auto_prone_mk200";
                             minRange 														= 2;
                             minRangeProbab 													= 0.3;
                             midRange 														= 300;
@@ -286,8 +287,8 @@
                             };
                             reloadTime 														= 0.0789; 		
                             dispersion 														= 0.00075;
-                            recoil 															= "recoil_single_mx";
-							recoilProne  													= "recoil_single_prone_mx";
+							recoil = "recoil_auto_mk200";
+							recoilProne = "recoil_auto_prone_mk200";
                             minRange  														= 2;
                             minRangeProbab  												= 0.3;
                             midRange = 300;
@@ -299,6 +300,70 @@
 							displayName = "$STR_DN_MODE_FULLAUTO";
 							textureType = "fullAuto";
                     };
+					class close: FullAuto
+					{
+						burst = 10;
+						aiRateOfFire = 0.5;
+						aiRateOfFireDistance = 50;
+						minRange = 10;
+						minRangeProbab = 0.05;
+						midRange = 20;
+						midRangeProbab = 0.7;
+						maxRange = 50;
+						maxRangeProbab = 0.04;
+						showToPlayer = 0;
+					};
+					class short: close
+					{
+						burst = 8;
+						aiRateOfFire = 2;
+						aiRateOfFireDistance = 300;
+						minRange = 50;
+						minRangeProbab = 0.05;
+						midRange = 150;
+						midRangeProbab = 0.7;
+						maxRange = 300;
+						maxRangeProbab = 0.04;
+					};
+					class medium: close
+					{
+						burst = 7;
+						aiRateOfFire = 4;
+						aiRateOfFireDistance = 600;
+						minRange = 200;
+						minRangeProbab = 0.05;
+						midRange = 300;
+						midRangeProbab = 0.7;
+						maxRange = 500;
+						maxRangeProbab = 0.1;
+					};
+					class far_optic1: medium
+					{
+						requiredOpticType = 1;
+						showToPlayer = 0;
+						burst = 3;
+						aiRateOfFire = 10;
+						aiRateOfFireDistance = 1000;
+						minRange = 300;
+						minRangeProbab = 0.05;
+						midRange = 500;
+						midRangeProbab = 0.4;
+						maxRange = 650;
+						maxRangeProbab = 0.01;
+					};
+					class far_optic2: far_optic1
+					{
+						burst = 3;
+						requiredOpticType = 2;
+						minRange = 400;
+						minRangeProbab = 0.05;
+						midRange = 750;
+						midRangeProbab = 0.7;
+						maxRange = 900;
+						maxRangeProbab = 0.01;
+						aiRateOfFire = 10;
+						aiRateOfFireDistance = 900;
+					};
                     class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
                     {
 							mass = 160;
@@ -332,7 +397,7 @@
 							};	
                     };
             };
-         class OPTRE_M73: OPTRE_M73_base
+			class OPTRE_M73: OPTRE_M73_base
             {
 					dlc = "OPTRE";
                     model                                                                   = "\OPTRE_Weapons\MG\M73.p3d";
@@ -364,29 +429,7 @@
 					};	
 				};
             };
-		class OPTRE_M73_CQC: OPTRE_M73
-            {
-					dlc = "OPTRE";
-                    model                                                                   = "\OPTRE_Weapons\MG\M73_rail.p3d";
-                    displayName                                                             = "M73 CQC Light Machine Gun (WIP)";
-					handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_Weapons\MG\data\anim\M73_2.rtm"};
-                    descriptionShort                                                        = "UNSC Light Machine Gun (CQC Variant)";
-                    inertia                                                                 = 0.75;
-					scope																	= 1;
-					scopeArsenal 															= 1;
-					maxRecoilSway 															= 0.0115;
-					swayDecaySpeed 															= 1.15;
-                    modes[] 																= {"Single","FullAuto"};
-                    class Single: Single {};
-                    class FullAuto: FullAuto {};
-                    class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
-                    {
-							mass = 140;
-                    };
-            };
-	};
-		/*
-		class OPTRE_M247: MMG_01_base_F
+		/*class OPTRE_M247: MMG_01_base_F
         {
 					scope                                                                   = 1;
                     handAnim[]                                                              = {"OFP2_ManSkeleton", "\A3\weapons_f\Machineguns\M200\data\Anim\M200.rtm"};
@@ -442,7 +485,5 @@
 								iconScale = 0.2;
 								compatibleItems[] = {"bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk"};		
 							};	
-		};
-			
-*/
-
+		};*/
+	};

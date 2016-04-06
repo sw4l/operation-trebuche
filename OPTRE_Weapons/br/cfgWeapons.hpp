@@ -94,6 +94,7 @@ class CfgWeapons
 		maxRecoilSway = 0.0125;
 		deployedPivot    							= "bipod";
 		swayDecaySpeed = 1.25;
+		recoil = "recoil_mx";
 		class GunParticles: GunParticles
 		{
 		   class SecondEffect
@@ -293,8 +294,8 @@ class CfgWeapons
 			};
 			reloadTime = 0.075;
 			dispersion = 0.00085;
-			recoil = "recoil_single_mx";
-			recoilProne = "recoil_single_prone_mx";
+			recoil = "recoil_auto_mx";
+			recoilProne = "recoil_auto_prone_mx";
 			minRange = 2;
 			minRangeProbab = 0.3;
 			midRange = 300;

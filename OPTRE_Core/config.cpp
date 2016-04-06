@@ -403,6 +403,42 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
 	};
+	class OPTRE_CMA_Vehicle_class
+	{
+		dlc = "OPTRE";
+		displayName 																			= "Cars (CMA)";
+		author																					= "Article 2 Studios";
+		scope																					= 2;
+		scopeArsenal																			= 2;
+		scopeCurator																			= 2;
+	};
+	class OPTRE_CMA_Armored_class
+	{
+		dlc = "OPTRE";
+		displayName 																			= "Armored (CMA)";
+		author																					= "Article 2 Studios";
+		scope																					= 2;
+		scopeArsenal																			= 2;
+		scopeCurator																			= 2;
+	};
+	class OPTRE_CMA_Air_class
+	{
+		dlc = "OPTRE";
+		displayName 																			= "Air (CMA)";
+		author																					= "Article 2 Studios";
+		scope																					= 2;
+		scopeArsenal																			= 2;
+		scopeCurator																			= 2;
+	};
+	class OPTRE_CMA_Man_class
+	{
+		dlc = "OPTRE";
+		displayName 																			= "Men (CMA)";
+		author																					= "Article 2 Studios";
+		scope																					= 2;
+		scopeArsenal																			= 2;
+		scopeCurator																			= 2;
+	};
 };
 
 class CfgMissions

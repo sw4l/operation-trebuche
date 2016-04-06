@@ -167,7 +167,7 @@ class CfgWeapons
             class SMG_01_F;
             class OPTRE_M7: SMG_01_F
             {
-		dlc = "OPTRE";
+					dlc = "OPTRE";
                     scope                                                                   = 2;
                     handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_Weapons\smg\data\anim\smg_handanim2.rtm"};
 					model                                                                   = "\OPTRE_Weapons\SMG\SMG.p3d";
@@ -184,6 +184,7 @@ class CfgWeapons
                     modelOptics                                                             = "-";
                     muzzlePos                                                               = "usti hlavne";
                     muzzleEnd                                                               = "konec hlavne";
+					recoil = "recoil_smg_01";
                     reloadAction                                                            = "GestureReloadSMG_03";
 					changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\firemode_Mx",0.17782794,1,5};
 					inertia = 0.25;
@@ -284,8 +285,8 @@ class CfgWeapons
                             };
                             reloadTime = 0.066; 		
                             dispersion = 0.0013;
-                            recoil = "recoil_auto_smg_01";
-							recoilProne = "recoil_auto_prone_smg_01";
+							recoil = "recoil_single_SMG_01";
+							recoilProne = "recoil_single_prone_SMG_01";
                             minRange = 2;
                             minRangeProbab = 0.3;
                             midRange = 50;
@@ -436,13 +437,24 @@ class CfgWeapons
             };
             class OPTRE_M7_Folded: OPTRE_M7
             {
-		dlc = "OPTRE";
+					dlc = "OPTRE";
                     handAnim[]                                                            	= {"OFP2_ManSkeleton"};
 					reloadAction 															= "GestureReloadPistol";
 					model                                                                   = "\OPTRE_Weapons\SMG\SMG_folded.p3d";
                     displayName                                                             = "M7/Caseless SMG (Folded)";
                     descriptionShort                                                        = "UNSC M7 SMG (Folded)";
 					type 																	= 2;
+					recoil = "recoil_mx";
+                    class Single: Single
+                    {
+						recoil = "recoil_single_mx";
+						recoilProne = "recoil_single_prone_mx";
+                    };
+                    class FullAuto: FullAuto
+                    {
+						recoil = "recoil_single_mx";
+						recoilProne = "recoil_single_prone_mx";
+                    };
             };
 			class OPTRE_M7S: OPTRE_M7
 			{

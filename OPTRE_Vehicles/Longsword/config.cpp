@@ -266,7 +266,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "GA-TL1/A Strike Fighter";								/// how is the plane displayed in editor
+		displayName = "GA-TL1/A Longsword (CAS)";								/// how is the plane displayed in editor
 		dlc = "OPTRE";
 		author="Article 2 Studios";
 		
@@ -282,7 +282,6 @@ class CfgVehicles
 		magazines[] = /// and their respective magazines
 		{
 			OPTRE_M9109_2500Rnd_50mm,
-			24Rnd_missiles,
 			24Rnd_missiles,
 			24Rnd_missiles,
 			2Rnd_LG_scalpel,
@@ -301,7 +300,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "GA-TL1/A Bomber";								/// how is the plane displayed in editor
+		displayName = "GA-TL1/A Longsword (Bomber)";								/// how is the plane displayed in editor
 		dlc = "OPTRE";
 		author="Article 2 Studios";
 		
@@ -334,7 +333,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "GA-TL1/A Interceptor";								/// how is the plane displayed in editor
+		displayName = "GA-TL1/A Longsword (CAP)";								/// how is the plane displayed in editor
 		dlc = "OPTRE";
 		author="Article 2 Studios";
 		
@@ -350,6 +349,8 @@ class CfgVehicles
 			OPTRE_M9109_2500Rnd_50mm,
 			2Rnd_AAA_missiles,
 			2Rnd_AAA_missiles,
+			2Rnd_AAA_missiles,
+			2Rnd_AAA_missiles,
 			4Rnd_GAA_missiles,
 			4Rnd_GAA_missiles,
 			4Rnd_GAA_missiles,
@@ -361,7 +362,7 @@ class CfgVehicles
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "GA-TL1/A Fighter";								/// how is the plane displayed in editor
+		displayName = "GA-TL1/A  Longsword (Cannon)";								/// how is the plane displayed in editor
 		dlc = "OPTRE";
 		author="Article 2 Studios";
 		
@@ -379,6 +380,34 @@ class CfgVehicles
 			2Rnd_AAA_missiles,
 			2Rnd_LG_scalpel,
 			2Rnd_LG_scalpel,
+			120Rnd_CMFlare_Chaff_Magazine
+		};
+	};
+	
+	class OPTRE_Longsword_SUPPRESS_F: OPTRE_Longsword_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "GA-TL1/A  Longsword (Suppression)";								/// how is the plane displayed in editor
+		dlc = "OPTRE";
+		author="Article 2 Studios";
+		
+		weapons[] =
+		{
+			OPTRE_M9109,
+			missiles_DAR,
+			missiles_ASRAAM,
+			CMFlareLauncher
+		};
+		magazines[] =
+		{
+			OPTRE_M9109_2500Rnd_50mm,
+			OPTRE_M9109_2500Rnd_50mm,
+			2Rnd_AAA_missiles,
+			24Rnd_missiles,
+			24Rnd_missiles,
+			24Rnd_missiles,
+			24Rnd_missiles,
 			120Rnd_CMFlare_Chaff_Magazine
 		};
 	};

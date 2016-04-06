@@ -117,6 +117,15 @@ class CfgVehicles
 		hiddenSelections[]= {"map_stratis"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {};
 	};
+	class OPTRE_Objects_Generator: OPTRE_Objects_Base
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Portable Generator";
+		model = "\OPTRE_Misc\Objects\generator.p3d";
+		author = "Article 2 Studios";
+	};
 };
 
 class CfgGlasses 
@@ -136,13 +145,43 @@ class CfgGlasses
         model = "\OPTRE_Misc\Objects\cigar.p3d";
 		picture = "\OPTRE_misc\objects\icons\cigar.paa";
     }; 
-    class OPTRE_HUD_Glasses_green: G_Balaclava_blk
+    class OPTRE_HUD_Glasses: G_Balaclava_blk
     { 
 		dlc = "OPTRE";
-        displayName = "HUD Glasses (Green)]]"; 
-        model = "\OPTRE_Misc\Objects\tacticalglasses.p3d";
+        displayName = "HUD Glasses (Orange)"; 
+        model = "\OPTRE_Misc\Objects\tacGlass_o.p3d";
 		picture = "\A3\characters_f\Data\UI\icon_g_tactical_ca.paa";
 		optreVarietys[] = {"","",""};
         optreHUDStyle = "Glasses";
-    }; 
+    };
+    class OPTRE_HUD_g_Glasses: OPTRE_HUD_Glasses
+    { 
+		dlc = "OPTRE";
+        displayName = "HUD Glasses (Green)"; 
+        model = "\OPTRE_Misc\Objects\tacGlass_g.p3d";
+    };  
+    class OPTRE_HUD_r_Glasses: OPTRE_HUD_Glasses
+    { 
+		dlc = "OPTRE";
+        displayName = "HUD Glasses (Red)"; 
+        model = "\OPTRE_Misc\Objects\tacGlass_r.p3d";
+    };  
+    class OPTRE_HUD_b_Glasses: OPTRE_HUD_Glasses
+    { 
+		dlc = "OPTRE";
+        displayName = "HUD Glasses (Blue)"; 
+        model = "\OPTRE_Misc\Objects\tacGlass_b.p3d";
+    };  
+    class OPTRE_HUD_p_Glasses: OPTRE_HUD_Glasses
+    { 
+		dlc = "OPTRE";
+        displayName = "HUD Glasses (Pink)"; 
+        model = "\OPTRE_Misc\Objects\tacGlass_p.p3d";
+    };  
+    class OPTRE_HUD_w_Glasses: OPTRE_HUD_Glasses
+    { 
+		dlc = "OPTRE";
+        displayName = "HUD Glasses (White)"; 
+        model = "\OPTRE_Misc\Objects\tacGlass_w.p3d";
+    };  
 };  

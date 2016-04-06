@@ -107,7 +107,7 @@ class CfgVehicles //This configures units and backpacks
 					displayName																= "Open HEV Doors";
 					position																= "";
 					radius																	= 4;
-					condition																= "((this animationPhase ""main_door_rotation"" == 0) && (this animationPhase ""left_door_rotation"" == 0) && (this animationPhase ""right_door_rotation"" == 0))";
+					condition																= "((this animationPhase ""main_door_rotation"" == 0) && (this animationPhase ""left_door_rotation"" == 0) && (this animationPhase ""right_door_rotation"" == 0) && (((velocity this) select 2) < 10) && (((velocity this) select 2) > -10))";
 					statement																= "this animate [""main_door_rotation"",1]; this animate [""left_door_rotation"",1]; this animate [""right_door_rotation"",1];";
 					onlyforplayer															= 1;
 				};
@@ -116,7 +116,7 @@ class CfgVehicles //This configures units and backpacks
 					displayName																= "Close HEV Doors";
 					position																= "";
 					radius																	= 4;
-					condition																= "((this animationPhase ""main_door_rotation"" == 1) && (this animationPhase ""left_door_rotation"" == 1) && (this animationPhase ""right_door_rotation"" == 1))";
+					condition																= "((this animationPhase ""main_door_rotation"" == 1) && (this animationPhase ""left_door_rotation"" == 1) && (this animationPhase ""right_door_rotation"" == 1) && (((velocity this) select 2) < 10) && (((velocity this) select 2) > -10))";
 					statement																= "this animate [""main_door_rotation"",0]; this animate [""left_door_rotation"",0]; this animate [""right_door_rotation"",0];";
 					onlyforplayer															= 1;
 				};

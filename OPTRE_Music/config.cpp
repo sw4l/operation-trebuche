@@ -42,6 +42,15 @@ class CfgMusicClasses
 
 class CfgMusic
 {
+	class OPTRE_Music_OPTRETheme
+	{
+		dlc = "OPTRE";
+		name	="[OPTRE OST] Operation: TREBUCHET Theme";
+		sound[]	={"\OPTRE_Music\OPTRE_Music_OPTRETheme.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 162;
+	};
+	
 	// Original Soundtrack START
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	class OPTRE_Music_ABattleBegins
@@ -59,6 +68,14 @@ class CfgMusic
 		sound[]	={"\OPTRE_Music\OST\OPTRE_OriginalSoundtrackMusic_amarchthroughthewoods.ogg",1,1};
 		musicClass = "OPTRE_OST";
 		duration = 108;
+	};
+	class OPTRE_Music_BandofBravery
+	{
+		dlc = "OPTRE";
+		name	="[OPTRE OST] Band of Bravery";
+		sound[]	={"\OPTRE_Music\OST\OPTRE_OriginalSoundtrackMusic_bandofbravery.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 113;
 	};
 	class OPTRE_Music_BattleTanks
 	{
@@ -124,10 +141,18 @@ class CfgMusic
 		musicClass = "OPTRE_OST";
 		duration = 144;
 	};
-	class OPTRE_Music_Theme
+	class OPTRE_Music_GroundGame
 	{
 		dlc = "OPTRE";
-		name	="[OPTRE OST] Theme";
+		name	="[OPTRE OST] Ground Game";
+		sound[]	={"\OPTRE_Music\OST\OPTRE_OriginalSoundtrackMusic_groundgame.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 144;
+	};
+	class OPTRE_Music_Halo
+	{
+		dlc = "OPTRE";
+		name	="[OPTRE OST] Halo";
 		sound[]	={"\OPTRE_Music\OST\OPTRE_OriginalSoundtrackMusic_halotheme.ogg",1,1};
 		musicClass = "OPTRE_OST";
 		duration = 146;
@@ -337,14 +362,14 @@ class CfgMusic
 		musicClass = "OPTRE_Remixes";
 		duration = 187;
 	};*/
-	class OPTRE_Music_LeadTrackRedux
+	/*class OPTRE_Music_LeadTrackRedux
 	{
 		dlc = "OPTRE";
 		name	="[OPTRE Remixes] Lead Track Redux";
 		sound[]	={"\OPTRE_Music\Remixes\OPTRE_MusicRemix_leadtrackredux.ogg",1,1};
 		musicClass = "OPTRE_Remixes";
 		duration = 162;
-	};
+	};*/
 	class OPTRE_Music_LiveAction
 	{
 		dlc = "OPTRE";
