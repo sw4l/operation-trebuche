@@ -34,7 +34,6 @@ class CfgVehicles
 	class TargetTraining: NonStrategic {};
 	class TargetGrenade: TargetTraining {};
 	
-	
 	class OPTRE_rail_Station: static
 	{
 		dlc = "OPTRE";

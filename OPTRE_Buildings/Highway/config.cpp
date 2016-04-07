@@ -27,9 +27,14 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class House_F;
-	class Ruins_F;
-	class Land_Highway_Straight: House_F
+	class All {};
+	class Static: All {};
+	class Building: Static {};
+	class NonStrategic: Building {};
+	class TargetTraining: NonStrategic {};
+	class TargetGrenade: TargetTraining {};
+	
+	class Land_Highway_Straight: static
 	{
 		dlc = "OPTRE";
 		scope = 2;
@@ -43,7 +48,7 @@ class CfgVehicles
 		icon = "iconCrateWpns";
 	};
 	
-	class Land_Highway_bridge: House_F
+	class Land_Highway_bridge: static
 	{
 		dlc = "OPTRE";
 		scope = 2;
@@ -57,7 +62,7 @@ class CfgVehicles
 		icon = "iconCrateWpns";
 	};
 	
-	class Land_Highway_ramp_a: House_F
+	class Land_Highway_ramp_a: static
 	{
 		dlc = "OPTRE";
 		scope = 2;
@@ -71,7 +76,7 @@ class CfgVehicles
 		icon = "iconCrateWpns";
 	};
 	
-	class Land_Highway_turnlane_a: House_F
+	class Land_Highway_turnlane_a: static
 	{
 		dlc = "OPTRE";
 		scope = 2;
@@ -85,7 +90,7 @@ class CfgVehicles
 		icon = "iconCrateWpns";
 	};
 	
-	class Land_Highway_ramp_b: House_F
+	class Land_Highway_ramp_b: static
 	{
 		dlc = "OPTRE";
 		scope = 2;
@@ -99,7 +104,7 @@ class CfgVehicles
 		icon = "iconCrateWpns";
 	};
 	
-	class Land_Highway_turnlane_b: House_F
+	class Land_Highway_turnlane_b: static
 	{
 		dlc = "OPTRE";
 		scope = 2;
@@ -113,7 +118,7 @@ class CfgVehicles
 		icon = "iconCrateWpns";
 	};
 	
-	class Land_Highway_turn_left: House_F
+	class Land_Highway_turn_left: static
 	{
 		dlc = "OPTRE";
 		scope = 2;
@@ -127,7 +132,7 @@ class CfgVehicles
 		icon = "iconCrateWpns";
 	};
 	
-	class Land_Highway_turn_right: House_F
+	class Land_Highway_turn_right: static
 	{
 		dlc = "OPTRE";
 		scope = 2;
@@ -141,7 +146,7 @@ class CfgVehicles
 		icon = "iconCrateWpns";
 	};
 	
-	class Land_Highway_gate_A: House_F
+	class Land_Highway_gate_A: static
 	{
 		dlc = "OPTRE";
 		scope = 2;
@@ -201,7 +206,7 @@ class CfgVehicles
 		};
 	};
 	
-	class Land_Highway_gate_house_a: House_F
+	class Land_Highway_gate_house_a: static
 	{
 		dlc = "OPTRE";
 		scope = 2;
@@ -214,7 +219,7 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 	};
-	class Land_gate_house: House_F
+	class Land_gate_house: static
 	{
 		dlc = "OPTRE";
 		scope = 2;

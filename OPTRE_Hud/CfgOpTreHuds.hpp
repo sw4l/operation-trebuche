@@ -33,11 +33,11 @@ class CfgOptreHudSchemes
 		class MainDialogs {
 		
 			OPTRE_HUD_Glasses 			= "OPTRE_MarrineGlasses_Main";
-			OPTRE_HUD_g_Glasses 		= "OPTRE_MarrineGlasses_Main_Yellow";
-			OPTRE_HUD_r_Glasses 		= "OPTRE_MarrineGlasses_Main_Red";
-			OPTRE_HUD_w_Glasses 		= "OPTRE_MarrineGlasses_Main_White";
-			OPTRE_HUD_b_Glasses 		= "OPTRE_MarrineGlasses_Main_Blue";
-			OPTRE_HUD_p_Glasses 		= "OPTRE_MarrineGlasses_Main_Red";
+			OPTRE_HUD_g_Glasses 		= "OPTRE_MarrineGlasses_Main";
+			OPTRE_HUD_r_Glasses 		= "OPTRE_MarrineGlasses_Main";
+			OPTRE_HUD_w_Glasses 		= "OPTRE_MarrineGlasses_Main";
+			OPTRE_HUD_b_Glasses 		= "OPTRE_MarrineGlasses_Main";
+			OPTRE_HUD_p_Glasses 		= "OPTRE_MarrineGlasses_Main";
 		
 		};
 		

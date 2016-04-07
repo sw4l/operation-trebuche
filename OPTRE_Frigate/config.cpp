@@ -61,9 +61,10 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
-		displayName = "FFG-437 Final Dawn";
+		displayName = "FFG-437 Final Dawn (Decoration)";
 		model = "\OPTRE_frigate\finaldawn_complex.p3d";
 		author = "Article 2 Studios";
+		icon = "\OPTRE_frigate\data\frigate_icon.paa";
 		mapSize = 450;
 	};
 	/*class OPTRE_Frigate_Experimental: Static
@@ -816,5 +817,11 @@ class CfgVehicles
 				animPeriod = 1;
             };
 		};
+	};
+	class OPTRE_Frigate_cargo_door_p: OPTRE_Frigate_cargo_door
+	{
+		dlc = "OPTRE";
+		displayName = "Cargo Door(Proxy)[Frigate]";
+		model = "\OPTRE_frigate\cargo_door_p.p3d";
 	};
 };

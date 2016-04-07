@@ -253,7 +253,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Object_class
 	{
 		dlc = "OPTRE";
-		displayName 																			= "Objects (UNSC)";
+		displayName 																			= "OPTRE Objects (UNSC)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -262,7 +262,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Structure_class
 	{
 		dlc = "OPTRE";
-		displayName 																			= "Structures (UNSC)";
+		displayName 																			= "OPTRE Structures (UNSC)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -271,7 +271,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Fortification_class
 	{
 		dlc = "OPTRE";
-		displayName 																			= "Fortifications (UNSC)";
+		displayName 																			= "OPTRE Fortifications (UNSC)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -280,7 +280,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_UNSC_Ammo_class
 	{
 		dlc = "OPTRE";
-		displayName 																			= "Ammo (UNSC)";
+		displayName 																			= "OPTRE Ammo (UNSC)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -370,7 +370,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Ins_Object_class
 	{
 		dlc = "OPTRE";
-		displayName 																			= "Objects (Ins)";
+		displayName 																			= "OPTRE Objects (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -379,7 +379,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Ins_Structure_class
 	{
 		dlc = "OPTRE";
-		displayName 																			= "Structures (Ins)";
+		displayName 																			= "OPTRE Structures (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -388,7 +388,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Ins_Fortification_class
 	{
 		dlc = "OPTRE";
-		displayName 																			= "Fortifications (Ins)";
+		displayName 																			= "OPTRE Fortifications (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;
@@ -397,7 +397,7 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	class OPTRE_Ins_Ammo_class
 	{
 		dlc = "OPTRE";
-		displayName 																			= "Ammo (Ins)";
+		displayName 																			= "OPTRE Ammo (Ins)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;

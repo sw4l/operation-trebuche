@@ -11,9 +11,14 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class House_F;
+	class All {};
+	class Static: All {};
+	class Building: Static {};
+	class NonStrategic: Building {};
+	class TargetTraining: NonStrategic {};
+	class TargetGrenade: TargetTraining {};
 	
-	class OPTRE_Objects_Base: House_F
+	class OPTRE_Objects_Base: static
 	{
 		dlc = "OPTRE";
 		scope = 0;
@@ -159,29 +164,39 @@ class CfgGlasses
 		dlc = "OPTRE";
         displayName = "HUD Glasses (Green)"; 
         model = "\OPTRE_Misc\Objects\tacGlass_g.p3d";
+		optreVarietys[] = {"","",""};
+        optreHUDStyle = "Glasses";
     };  
     class OPTRE_HUD_r_Glasses: OPTRE_HUD_Glasses
     { 
 		dlc = "OPTRE";
         displayName = "HUD Glasses (Red)"; 
         model = "\OPTRE_Misc\Objects\tacGlass_r.p3d";
+		optreVarietys[] = {"","",""};
+        optreHUDStyle = "Glasses";
     };  
     class OPTRE_HUD_b_Glasses: OPTRE_HUD_Glasses
     { 
 		dlc = "OPTRE";
         displayName = "HUD Glasses (Blue)"; 
         model = "\OPTRE_Misc\Objects\tacGlass_b.p3d";
+		optreVarietys[] = {"","",""};
+        optreHUDStyle = "Glasses";
     };  
     class OPTRE_HUD_p_Glasses: OPTRE_HUD_Glasses
     { 
 		dlc = "OPTRE";
         displayName = "HUD Glasses (Pink)"; 
         model = "\OPTRE_Misc\Objects\tacGlass_p.p3d";
+		optreVarietys[] = {"","",""};
+        optreHUDStyle = "Glasses";
     };  
     class OPTRE_HUD_w_Glasses: OPTRE_HUD_Glasses
     { 
 		dlc = "OPTRE";
         displayName = "HUD Glasses (White)"; 
         model = "\OPTRE_Misc\Objects\tacGlass_w.p3d";
+		optreVarietys[] = {"","",""};
+        optreHUDStyle = "Glasses";
     };  
 };  

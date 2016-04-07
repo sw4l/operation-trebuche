@@ -19,20 +19,25 @@ class cfgVehicleClasses {
 
 class CfgVehicles 
 {
-	class Fence;
-	class Fence_Ind: Fence 
-	{
-		class DestructionEffects;
-	};
-	class OPTRE_tree_Purp_1: Fence_Ind 
+	class All {};
+	class Static: All {};
+	class Building: Static {};
+	class NonStrategic: Building {};
+	class TargetTraining: NonStrategic {};
+	class TargetGrenade: TargetTraining {};
+	
+	class OPTRE_tree_Purp_1: static 
 	{
 		dlc = "OPTRE";
 		scope = 2;
 		model = "optre_plants\t_quercus2f.p3d";
 		icon = "IconCrateWpns";
 		displayName = "Tree 1 (Purple)";
-		accuracy = 0.300000;
 		vehicleclass = "OPTRE_Plants";
+		destrType = "DestructWall";
+		accuracy = 1000;
+		cost = 1000;
+		class DestructionEffects{};
 	};
 	class OPTRE_tree_Purp_2: OPTRE_tree_Purp_1 
 	{

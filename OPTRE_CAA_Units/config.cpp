@@ -13,7 +13,7 @@ class CfgPatches //This configures the identification of the pbo to the game
 
 class CfgGroups
 {
-	class Resistance
+	/*class Resistance
 	{
 		class OPTRE_CAA
 		{
@@ -206,5 +206,5 @@ class CfgGroups
 				};
 			};
 		};
-	};
+	};*/
 };
