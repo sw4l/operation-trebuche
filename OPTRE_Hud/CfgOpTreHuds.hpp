@@ -5,7 +5,7 @@ class CfgOptreHudSchemes
 	{
 		class MainDialogs {
 		
-			OPTRE_Tactical_EyeDummy = "OPTRE_Marine_Main_1";
+			OPTRE_EyePiece = "OPTRE_Marine_Main_1";
 		
 		};
 	

@@ -24,8 +24,6 @@ class CfgMods
 	};
 };
 
-#include "cfgFunctions.hpp"
-
 class CfgFactionClasses //This configures the in-game factions
 {
 	class OPTRE_UNSC
@@ -577,6 +575,85 @@ class CfgVehicles
 		{
 			description = "$STR_A3_CfgVehicles_ModuleOrdnance_F_ModuleDescription";
 			position = 1;
+		};
+	};
+	
+		class ModuleCAS_F: Module_F
+	{
+		author = "$STR_A3_Bohemia_Interactive";
+		_generalMacro = "ModuleCAS_F";
+		scope = 2;
+		scopeCurator = 0;
+		isGlobal = 1;
+		isTriggerActivated = 1;
+		category = "Effects";
+		displayName = "$STR_A3_CfgVehicles_ModuleCAS_F";
+		icon = "\a3\Modules_F_Curator\Data\iconCAS_ca.paa";
+		portrait = "\a3\Modules_F_Curator\Data\portraitCAS_ca.paa";
+		function = "BIS_fnc_moduleCAS";
+		curatorCost = 5;
+		class Arguments
+		{
+			class Type
+			{
+				displayName = "$STR_A3_CfgVehicles_ModuleOrdnance_F_Arguments_Type";
+				description = "";
+				typeName = "NUMBER";
+				class values
+				{
+					class Gun
+					{
+						name = "$STR_A3_CfgVehicles_ModuleCAS_F_Arguments_Type_values_Gun";
+						value = 0;
+						default = 1;
+					};
+					class Missiles
+					{
+						name = "$STR_A3_CfgVehicles_ModuleCAS_F_Arguments_Type_values_Missiles";
+						value = 1;
+					};
+					class GunMissiles
+					{
+						name = "$STR_A3_CfgVehicles_ModuleCAS_F_Arguments_Type_values_GunMissiles";
+						value = 2;
+					};
+				};
+			};
+			class Vehicle
+			{
+				displayName = "$STR_DN_Plane";
+				description = "";
+				class values
+				{
+					class B_Plane_CAS_01_F
+					{
+						name = "$STR_A3_CfgVehicles_B_Plane_CAS_01_F0";
+						value = "B_Plane_CAS_01_F";
+						default = 1;
+					};
+					class O_Plane_CAS_02_F
+					{
+						name = "$STR_A3_CfgVehicles_O_Plane_CAS_02_F0";
+						value = "O_Plane_CAS_02_F";
+					};
+					class I_Plane_Fighter_03_CAS_F
+					{
+						name = "$STR_A3_CfgVehicles_O_Plane_Fighter_03_CAS0";
+						value = "I_Plane_Fighter_03_CAS_F";
+					};
+					class OPTRE_Longsword_SUPPRESS_F
+					{
+						name = "GA-TL1/A  Longsword";
+						value = "OPTRE_Longsword_SUPPRESS_F";
+					};
+				};
+			};
+		};
+		class ModuleDescription: ModuleDescription
+		{
+			description = "$STR_A3_CfgVehicles_ModuleCAS_F_ModuleDescription";
+			position = 1;
+			direction = 1;
 		};
 	};
 	

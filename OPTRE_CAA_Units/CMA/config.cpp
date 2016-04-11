@@ -227,8 +227,8 @@ class CfgVehicles
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_CMA_Uniform_WDL_L";
 		hiddenSelections[] 												= {"camo1","camo2","camo3","insignia","clan","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_leftthigh","attach_rightthigh","attach_leftshin","attach_rightshin","attach_pant2","attach_shirt1"};
-		linkedItems[] 													= {"V_TacVestIR_blk","OPTRE_PatrolCap_CMA_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-		respawnLinkedItems[] 											= {"V_TacVestIR_blk","OPTRE_PatrolCap_CMA_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+		linkedItems[] 													= {"V_TacVestIR_blk","OPTRE_PatrolCap_CMA_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_INDEP"};
+		respawnLinkedItems[] 											= {"V_TacVestIR_blk","OPTRE_PatrolCap_CMA_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_INDEP"};
 	};
 	class OPTRE_CMA_Soldier_DES: OPTRE_CMA_Soldier_WDL
 	{
@@ -275,8 +275,8 @@ class CfgVehicles
 		uniformClass													= "OPTRE_CMA_Uniform_SNO_L";
 		hiddenSelections[] 												= {"camo1","camo2","camo3","insignia","clan","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_leftthigh","attach_rightthigh","attach_leftshin","attach_rightshin","attach_pant2","attach_shirt1"};
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_snow_co.paa","OPTRE_CAA_Units\CMA\data\uniform_cma_snow_co.paa",""};
-		linkedItems[] 													= {"V_TacVestIR_blk","OPTRE_PatrolCap_CMA_SNO","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
-		respawnLinkedItems[] 											= {"V_TacVestIR_blk","OPTRE_PatrolCap_CMA_SNO","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+		linkedItems[] 													= {"V_TacVestIR_blk","OPTRE_PatrolCap_CMA_SNO","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_OPFOR"};
+		respawnLinkedItems[] 											= {"V_TacVestIR_blk","OPTRE_PatrolCap_CMA_SNO","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_OPFOR"};
 	};
 	// BASE UNITS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -382,7 +382,20 @@ class CfgVehicles
 		magazines[] 													= {};
 		respawnMagazines[] 												= {};
 	};
-	class OPTRE_CMA_Pilot: OPTRE_CMA_Soldier_SNO
+	class OPTRE_CMA_Pilot_WDL: OPTRE_CMA_Soldier_WDL
+	{
+		dlc = "OPTRE";
+		scope															= 2;
+		scopeCurator													= 2;
+		displayName														= "Pilot";
+		weapons[] 														= {"OPTRE_M6G","Throw","Put"};
+		respawnWeapons[] 												= {"OPTRE_M6G","Throw","Put"};
+		magazines[] 													= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		respawnMagazines[]	 											= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		linkedItems[] 													= {"V_Chestrig_blk","H_CrewHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_INDEP"};
+		respawnLinkedItems[] 											= {"V_Chestrig_blk","H_CrewHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_INDEP"};
+	};
+	class OPTRE_CMA_Pilot_DES: OPTRE_CMA_Soldier_DES
 	{
 		dlc = "OPTRE";
 		scope															= 2;
@@ -394,6 +407,19 @@ class CfgVehicles
 		respawnMagazines[]	 											= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
 		linkedItems[] 													= {"V_Chestrig_blk","H_CrewHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
 		respawnLinkedItems[] 											= {"V_Chestrig_blk","H_CrewHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
+	};
+	class OPTRE_CMA_Pilot_SNO: OPTRE_CMA_Soldier_SNO
+	{
+		dlc = "OPTRE";
+		scope															= 2;
+		scopeCurator													= 2;
+		displayName														= "Pilot";
+		weapons[] 														= {"OPTRE_M6G","Throw","Put"};
+		respawnWeapons[] 												= {"OPTRE_M6G","Throw","Put"};
+		magazines[] 													= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		respawnMagazines[]	 											= {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+		linkedItems[] 													= {"V_Chestrig_blk","H_CrewHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_OPFOR"};
+		respawnLinkedItems[] 											= {"V_Chestrig_blk","H_CrewHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_OPFOR"};
 	};
 	// UNITS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

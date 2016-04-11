@@ -55,30 +55,16 @@ class CfgVehicles
 		class Reflectors;
 		class UserActions;
 	};
-	class OPTRE_Static_M41_LAAG: StaticWeapon
+	class OPTRE_Static_Base: StaticWeapon
 	{
 		scope 							= 0;
 		scopeCurator 					= 0;
 		vehicleClass 					= "OPTRE_UNSC_Fortification_class";
-		displayName 					= "M41 LAAG Rotary Turret";
-		model 							= "\OPTRE_Vehicles\Static\m41_laag.p3d";
+		displayName 					= "-";
 		author 							= "Article 2 Studios";
 		faction							= "OPTRE_UNSC";
 		side							= 1;
 		crew							= "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
-		class AnimationSources
-		{
-			class Gatling
-			{
-				source					= "revolving";
-				weapon					= "OPTRE_M41_LAAG";
-			};
-			class Gatling_flash
-			{
-				source					= "reload";
-				weapon					= "OPTRE_M41_LAAG";
-			};
-		};
 		class Turrets:Turrets
 		{
 			class MainTurret:MainTurret
@@ -136,6 +122,26 @@ class CfgVehicles
 					maxFov				= 0.9;
 					visionMode[]		= {};
 				};
+			};
+		};
+	};
+	class OPTRE_Static_M41_LAAG: OPTRE_Static_Base
+	{
+		scope 							= 2;
+		scopeCurator 					= 2;
+		vehicleClass 					= "OPTRE_UNSC_Fortification_class";
+		displayName 					= "M41 LAAG Emplacement";
+		author 							= "Article 2 Studios";
+		model							= "OPTRE_Vehicles\Static\m41_laag.p3d";
+		class Turrets:Turrets
+		{
+			class MainTurret:MainTurret
+			{
+				weapons[]				= {"OPTRE_M41_LAAG"};
+				magazines[]				= {"500Rnd_127x99_mag_Tracer_Yellow","500Rnd_127x99_mag_Tracer_Yellow","500Rnd_127x99_mag_Tracer_Yellow","500Rnd_127x99_mag_Tracer_Yellow"};
+				memoryPointGunnerOptics	= "gunnerview";
+				gunnerOpticsShowCursor	= 1;
+				gunnerOpticsModel		= "a3\weapons_f\Reticle\optics_empty";
 			};
 		};
 	};

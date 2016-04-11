@@ -2601,7 +2601,7 @@ class cfgWeapons
 		displayName    									= "-";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl.paa";
 		model     										= "\OPTRE_UNSC_Units\Army\helmet.p3d";
-		hiddenSelections[]   							= {"camo1","camo2","attach_face"};
+		hiddenSelections[]   							= {"camo1","camo2"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"};
 		class ItemInfo: HeadgearItem 
 		{
@@ -2610,7 +2610,7 @@ class cfgWeapons
 			mass   										= 40;
 			modelSides[]   								= {6};
 			passThrough   								= 0.25;
-			hiddenSelections[]   						= {"camo1","camo2","attach_face"};
+			hiddenSelections[]   						= {"camo1","camo2"};
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"};
 			class HitpointsProtectionInfo
 			{
@@ -2630,6 +2630,21 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252 Helmet [Woodland]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl.paa";
+		hiddenSelections[]   							= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie","attach_balaclava"};
+		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelections[]   						= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie","attach_balaclava"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"}; /// what texture is going to be used
+		};
+	};		
+	class OPTRE_UNSC_CH252_Helmet_Balaclava_WDL: OPTRE_UNSC_CH252_Helmet_WDL
+	{	
+		dlc = "OPTRE";
+		scope   										= 2;
+		author											= "Article 2 Studios";
+		displayName    									= "[UNSC] CH252 Helmet (Balaclava) [Woodland]";
+		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl.paa";
 		hiddenSelections[]   							= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"};
 		class ItemInfo: ItemInfo 
@@ -2644,12 +2659,12 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252[V] Helmet [Woodland]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl_vac.paa";
-		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"};
+		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie","attach_balaclava"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"};
 		class ItemInfo: ItemInfo 
 		{
 			//armor   									= 10;
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"}; /// what selection in model could have different textures
+			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie","attach_balaclava"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_co.paa","OPTRE_UNSC_Units\Army\data\addons_co.paa"}; /// what texture is going to be used
 			class HitpointsProtectionInfo
 			{
@@ -2683,6 +2698,20 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252 Helmet [Desert]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_des.paa";
+		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_face","attach_rangefinder","attach_ghillie","attach_balaclava"};
+		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_desert_co.paa","OPTRE_UNSC_Units\Army\data\addons_desert_co.paa"};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_face","attach_rangefinder","attach_ghillie","attach_balaclava"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_desert_co.paa","OPTRE_UNSC_Units\Army\data\addons_desert_co.paa"}; /// what texture is going to be used
+		};
+	};		
+	class OPTRE_UNSC_CH252_Helmet_Balaclava_DES: OPTRE_UNSC_CH252_Helmet_DES
+	{	
+		dlc = "OPTRE";
+		author											= "Article 2 Studios";
+		displayName    									= "[UNSC] CH252 Helmet (Balaclava) [Desert]";
+		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_des.paa";
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_face","attach_rangefinder","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_desert_co.paa","OPTRE_UNSC_Units\Army\data\addons_desert_co.paa"};
 		class ItemInfo: ItemInfo 
@@ -2697,12 +2726,12 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252[V] Helmet [Desert]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_DES_vac.paa";
-		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"};
+		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie","attach_balaclava"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_desert_co.paa","OPTRE_UNSC_Units\Army\data\addons_desert_co.paa"};
 		class ItemInfo: ItemInfo 
 		{
 			//armor   									= 10;
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"}; /// what selection in model could have different textures
+			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie","attach_balaclava"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_desert_co.paa","OPTRE_UNSC_Units\Army\data\addons_desert_co.paa"}; /// what texture is going to be used
 		};
 	};	
@@ -2727,6 +2756,20 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252 Helmet [Snow]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_sno.paa";
+		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_face","attach_rangefinder","attach_ghillie","attach_balaclava"};
+		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_snow_co.paa","OPTRE_UNSC_Units\Army\data\addons_snow_co.paa"};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_face","attach_rangefinder","attach_ghillie","attach_balaclava"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_snow_co.paa","OPTRE_UNSC_Units\Army\data\addons_snow_co.paa"}; /// what texture is going to be used
+		};
+	};	
+	class OPTRE_UNSC_CH252_Helmet_Balaclava_SNO: OPTRE_UNSC_CH252_Helmet_SNO
+	{	
+		dlc = "OPTRE";
+		author											= "Article 2 Studios";
+		displayName    									= "[UNSC] CH252 Helmet (Balaclava) [Snow]";
+		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_sno.paa";
 		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_face","attach_rangefinder","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_snow_co.paa","OPTRE_UNSC_Units\Army\data\addons_snow_co.paa"};
 		class ItemInfo: ItemInfo 
@@ -2741,12 +2784,12 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252[V] Helmet [Snow]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_sno_vac.paa";
-		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"};
+		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie","attach_balaclava"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_snow_co.paa","OPTRE_UNSC_Units\Army\data\addons_snow_co.paa"};
 		class ItemInfo: ItemInfo 
 		{
 			//armor   									= 10;
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"}; /// what selection in model could have different textures
+			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie","attach_balaclava"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_snow_co.paa","OPTRE_UNSC_Units\Army\data\addons_snow_co.paa"}; /// what texture is going to be used
 		};
 	};	
@@ -2757,11 +2800,26 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252 Helmet [Medic]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_med.paa";
-		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_face","attach_rangefinder","attach_ghillie"};
+		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_face","attach_rangefinder","attach_ghillie","attach_balaclava"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_face","attach_rangefinder","attach_ghillie"}; /// what selection in model could have different textures
+			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_face","attach_rangefinder","attach_ghillie","attach_balaclava"}; /// what selection in model could have different textures
+			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa"}; /// what texture is going to be used
+		};
+	};	
+	class OPTRE_UNSC_CH252_Helmet_Balaclava_MED: OPTRE_UNSC_CH252_Helmet_MED
+	{	
+		dlc = "OPTRE";
+		author											= "Article 2 Studios";
+		displayName    									= "[UNSC] CH252 Helmet (Balaclava) [Medic]";
+		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_med_vac.paa";
+		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie","attach_face","attach_chin"};
+		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			//armor   									= 10;
+			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie","attach_face","attach_chin"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa"}; /// what texture is going to be used
 		};
 	};		
@@ -2771,12 +2829,12 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252[V] Helmet [Medic]";
 		picture   										= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_med_vac.paa";
-		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"};
+		hiddenSelections[]   							= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie","attach_balaclava"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Army\data\helmet_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa"};
 		class ItemInfo: ItemInfo
 		{
 			//armor   									= 10;
-			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie"}; /// what selection in model could have different textures
+			hiddenSelections[]   						= {"camo1","camo2","insignia","clan","attach_rangefinder","attach_ghillie","attach_balaclava"}; /// what selection in model could have different textures
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Army\data\helmet_medic_co.paa","OPTRE_UNSC_Units\Army\data\addons_medic_co.paa"}; /// what texture is going to be used
 		};
 	};	

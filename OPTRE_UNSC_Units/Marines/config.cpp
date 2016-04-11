@@ -1143,7 +1143,7 @@ class cfgWeapons
 		displayName    									= "-";
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_helmet.paa";
 		model     										= "\OPTRE_UNSC_Units\Army\helmet.p3d";
-		hiddenSelections[]   							= {"camo1","camo2","attach_face"};
+		hiddenSelections[]   							= {"camo1","camo2","attach_face","attach_balaclava"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Marines\data\helmet_marines_co.paa","OPTRE_UNSC_Units\Marines\data\addons_marines_co.paa"};
 		class ItemInfo: HeadgearItem 
 		{
@@ -1152,7 +1152,7 @@ class cfgWeapons
 			mass   										= 40;
 			modelSides[]   								= {6};
 			passThrough   								= 0.15;
-			hiddenSelections[]   						= {"camo1","camo2","attach_face"};
+			hiddenSelections[]   						= {"camo1","camo2","attach_face","attach_balaclava"};
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Marines\data\helmet_marines_co.paa","OPTRE_UNSC_Units\Marines\data\addons_marines_co.paa"};
 			class HitpointsProtectionInfo
 			{
@@ -1171,6 +1171,20 @@ class cfgWeapons
 		scope   										= 2;
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252 Helmet [Marine]";
+		hiddenSelections[]   							= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie","attach_balaclava"};
+		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Marines\data\helmet_marines_co.paa","OPTRE_UNSC_Units\Marines\data\addons_marines_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]   						= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie","attach_balaclava"};
+			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Marines\data\helmet_marines_co.paa","OPTRE_UNSC_Units\Marines\data\addons_marines_co.paa"};
+		};
+	};
+	class OPTRE_UNSC_Marine_Helmet_Balaclava: OPTRE_UNSC_Marine_Helmet_Base
+	{	
+		dlc = "OPTRE";
+		scope   										= 2;
+		author											= "Article 2 Studios";
+		displayName    									= "[UNSC] CH252 Helmet (Balaclava) [Marine]";
 		hiddenSelections[]   							= {"camo1","camo2","attach_face","attach_rangefinder","attach_ghillie"};
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Marines\data\helmet_marines_co.paa","OPTRE_UNSC_Units\Marines\data\addons_marines_co.paa"};
 		class ItemInfo: ItemInfo
@@ -1185,11 +1199,11 @@ class cfgWeapons
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH252[V] Helmet [Marine]";
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_helmet_vac.paa";
-		hiddenSelections[]   							= {"camo1","camo2","attach_rangefinder","attach_ghillie"}; 
+		hiddenSelections[]   							= {"camo1","camo2","attach_rangefinder","attach_ghillie","attach_balaclava"}; 
 		hiddenSelectionsTextures[]   					= {"OPTRE_UNSC_Units\Marines\data\helmet_marines_co.paa","OPTRE_UNSC_Units\Marines\data\addons_marines_co.paa"};
 		class ItemInfo: ItemInfo 
 		{
-			hiddenSelections[]   						= {"camo1","camo2","attach_rangefinder","attach_ghillie"};
+			hiddenSelections[]   						= {"camo1","camo2","attach_rangefinder","attach_ghillie","attach_balaclava"};
 			hiddenSelectionsTextures[]   				= {"OPTRE_UNSC_Units\Marines\data\helmet_marines_co.paa","OPTRE_UNSC_Units\Marines\data\addons_marines_co.paa"};
 		};
 	};

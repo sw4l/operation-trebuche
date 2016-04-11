@@ -13,7 +13,7 @@ class CfgPatches //This configures the identification of the pbo to the game
 
 class CfgGroups
 {
-	/*class Resistance
+	class Indep
 	{
 		class OPTRE_CAA
 		{
@@ -83,7 +83,7 @@ class CfgGroups
 			};
 			class Infantry_DES
 			{
-				name = "Infantry (Woodland)";
+				name = "Infantry (Desert)";
 				class OPTRE_Groups_CAA_Sentry_DES
 				{
 					dlc = "OPTRE";
@@ -145,7 +145,7 @@ class CfgGroups
 			};
 			class Infantry_SNO
 			{
-				name = "Infantry (Woodland)";
+				name = "Infantry (Snow)";
 				class OPTRE_Groups_CAA_Sentry_SNO
 				{
 					dlc = "OPTRE";
@@ -206,5 +206,5 @@ class CfgGroups
 				};
 			};
 		};
-	};*/
+	};
 };

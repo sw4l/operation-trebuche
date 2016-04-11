@@ -7,26 +7,29 @@ v0.14
 			-Convader and TheEvilFlea's Custom ODST Units (Unit)
 			-Portable Generator (Object)
 			-Several new buildings and Frigate-related assets (Object)
-			-Placeholder quick-n-dirty CAA Units
+			-Placeholder CAA Units
 			-"Ground Game", "Band of Bravery", and "Battle Tanks" (Music)
 			-Thruster function back to Pelican (Script)
-			-Tactical Glasses
+			-Tactical Glasses and Eye Piece
 			-WIP HUD, CAS, Resupply, and HEV functions (Script)
 			-Support variants of M1087 Stallion (Vehicle)
 			-proxy for holstered pistol on vests (Misc)
+			-Balaclava variants of M52 Helmets (Misc)
+			-SRS99D Suppressor (Weapon)
 	Fixed
 			-Fixed strange semi-transparency on Warthog and Marine Kneepads/Shoulders
 			-Floating glitchy backpacks
 			-Tiny belt on M73 when reloading
 			-shadow error on ODST helmet
 			-warthog headlights too bright
-			-
+			-M6C Alpha layering errors
+			-DMR ejecting machinegun belt links
 	Tweaked
 			-Recoils of all weapons
 			-Armor of innie vests decreased slightly
 			-Overall damage of weapons more in line with vanilla content
 			-Changed Innie warthog texture to be more distinguishable
-			-Improved Sniper and M73 textures and normalmaps
+			-Improved Sniper and M73 textures
 			-Sniper bipod is now built into weapon
 			-Moved all music to new separate pbo (OPTRE_Music)
 	Removed

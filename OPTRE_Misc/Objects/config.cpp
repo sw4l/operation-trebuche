@@ -136,6 +136,7 @@ class CfgVehicles
 class CfgGlasses 
 { 
     class G_Balaclava_blk; 
+	class G_Tactical_Clear;
     class OPTRE_Glasses_Cigarette: G_Balaclava_blk 
     { 
 		dlc = "OPTRE";
@@ -199,4 +200,12 @@ class CfgGlasses
 		optreVarietys[] = {"","",""};
         optreHUDStyle = "Glasses";
     };  
+    class OPTRE_EyePiece: G_Tactical_Clear
+    { 
+		dlc = "OPTRE";
+        displayName = "HUD Eye Piece"; 
+        model = "\OPTRE_Misc\Objects\eyePiece.p3d";
+		optreVarietys[] = {"","",""};
+		optreHUDStyle = "EYE";
+    }; 
 };  

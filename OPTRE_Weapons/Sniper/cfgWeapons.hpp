@@ -18,6 +18,56 @@ class Mode_FullAuto;
      
             //ATTACHMENTS
      
+			class muzzle_snds_acp;
+			class OPTRE_SRS99D_Suppressor: muzzle_snds_acp
+			{
+				dlc = "OPTRE";
+			   scope                                                                   = 2;
+			   displayName                                                             = "SRS99D Suppressor";
+			   picture = "\OPTRE_weapons\smg\icons\silencer.paa";
+			   model                                                                   = "\OPTRE_Weapons\Sniper\suppressor.p3d";
+			   descriptionShort                                                        = "SRS99D Suppressor";
+			   inertia                                                                 = 0.1;
+				class ItemInfo: InventoryMuzzleItem_Base_F
+				{
+					mass = 5;
+					class MagazineCoef
+					{
+						initSpeed 		= 0.65;
+					};
+					class AmmoCoef
+					{
+						// bullet ballistic modifiers
+						hit				= 1;
+						typicalSpeed	= 1;
+						airFriction		= 1;
+					
+						// AI modifiers
+						visibleFire		= 0.5;
+						audibleFire		= 0.3;
+						visibleFireTime	= 0.5;
+						audibleFireTime	= 0.5;
+						cost			= 1;
+					}; 
+					muzzleEnd 			= "zaslehPoint"; // memory point in muzzle supressor's model
+					alternativeFire 	= "Zasleh2";  // class in cfgWeapons with model of muzzle flash	
+					soundTypeIndex		= 1; /// defines the position in sound[] array in the rifle
+					class MuzzleCoef
+					{
+						dispersionCoef			= 1;
+						artilleryDispersionCoef	= 1;
+		
+						fireLightCoef			= 0.1f;
+
+						recoilCoef				= 0.8f;
+						recoilProneCoef			= 0.8f;
+
+						minRangeCoef = 1.0f; minRangeProbabCoef = 1.0f;
+						midRangeCoef = 1.0f; midRangeProbabCoef = 1.0f;
+						maxRangeCoef = 1.0f; maxRangeProbabCoef = 1.0f;
+					};			
+				};
+			};
             class OPTRE_SRS99_Scope: ItemCore
             {
 					dlc = "OPTRE";
@@ -117,7 +167,7 @@ class Mode_FullAuto;
                     modes[] = {"Single"};
                     class Single: Mode_SemiAuto
                     {
-                            sounds[] = {"StandardSound"};
+                            sounds[] = {"StandardSound","SilencedSound"};
                             class BaseSoundModeType
                             {
                                     weaponSoundEffect = "DefaultRifle";
@@ -164,6 +214,46 @@ class Mode_FullAuto;
 										};
 									};
                             };
+							class SilencedSound: BaseSoundModeType
+							{
+								begin1[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_01",1.0,1,300};
+								begin2[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_02",1.0,1,300};
+								begin3[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_03",1.0,1,300};
+								soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
+								class SoundTails
+								{
+									class TailInterior
+									{
+										sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_interior",1.0,1,300};
+										frequency = 1;
+										volume = "interior";
+									};
+									class TailTrees
+									{
+										sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_trees",1.0,1,300};
+										frequency = 1;
+										volume = "(1-interior/1.4)*trees";
+									};
+									class TailForest
+									{
+										sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_forest",1.0,1,300};
+										frequency = 1;
+										volume = "(1-interior/1.4)*forest";
+									};
+									class TailMeadows
+									{
+										sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_meadows",1.0,1,300};
+										frequency = 1;
+										volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+									};
+									class TailHouses
+									{
+										sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_houses",1.0,1,300};
+										frequency = 1;
+										volume = "(1-interior/1.4)*houses";
+									};
+								};
+							};
                             reloadTime = 0.35; 			//0.6
                             dispersion = 0.00015;
                             recoil = "recoil_single_gm6";
@@ -179,7 +269,7 @@ class Mode_FullAuto;
                     {
                             class MuzzleSlot: MuzzleSlot
                             {
-                                compatibleitems[]        	                               = {};
+                                compatibleitems[]        	                               = {"OPTRE_SRS99D_Suppressor"};
                             };
 							class PointerSlot: PointerSlot
 							{
