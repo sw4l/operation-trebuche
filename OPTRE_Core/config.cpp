@@ -64,6 +64,17 @@ class CfgFactionClasses //This configures the in-game factions
 		flag 																					= "\OPTRE_Core\Data\flag_caa_ca.paa";
 		primaryLanguage 																		= "EN";
 	};
+	class OPTRE_PD
+	{
+		dlc = "OPTRE";
+		displayName 																			= "Colonial Police";
+		author																					= "Article 2 Studios";
+		priority 																				= 1;
+		side 																					= 2;
+		icon 																					= "\OPTRE_Core\data\icon_caa_ca.paa";
+		flag 																					= "\OPTRE_Core\Data\flag_caa_ca.paa";
+		primaryLanguage 																		= "EN";
+	};
 	class OPTRE_UEG_Civ
 	{
 		dlc = "OPTRE";
@@ -437,6 +448,33 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 		scopeArsenal																			= 2;
 		scopeCurator																			= 2;
 	};
+	class OPTRE_PD_Man_class
+	{
+		dlc = "OPTRE";
+		displayName 																			= "Men (PD)";
+		author																					= "Article 2 Studios";
+		scope																					= 2;
+		scopeArsenal																			= 2;
+		scopeCurator																			= 2;
+	};
+	class OPTRE_PD_Vehicle_class
+	{
+		dlc = "OPTRE";
+		displayName 																			= "Cars (PD)";
+		author																					= "Article 2 Studios";
+		scope																					= 2;
+		scopeArsenal																			= 2;
+		scopeCurator																			= 2;
+	};
+	class OPTRE_PD_Air_class
+	{
+		dlc = "OPTRE";
+		displayName 																			= "Air (PD)";
+		author																					= "Article 2 Studios";
+		scope																					= 2;
+		scopeArsenal																			= 2;
+		scopeCurator																			= 2;
+	};
 };
 
 class CfgMissions
@@ -645,6 +683,11 @@ class CfgVehicles
 					{
 						name = "GA-TL1/A  Longsword";
 						value = "OPTRE_Longsword_SUPPRESS_F";
+					};
+					class OPTRE_Longsword_CANNON_F
+					{
+						name = "GA-TL1/A  Longsword (Cannon)";
+						value = "OPTRE_Longsword_CANNON_F";
 					};
 				};
 			};

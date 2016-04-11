@@ -668,6 +668,51 @@ class CfgVehicles
 		availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 		cost = 2000000;	/// we need some high cost for such vehicles to be prioritized by AA defences
 	};
+	class OPTRE_UNSC_falcon_PD: OPTRE_falcon_base
+	{
+		scope = 2;				/// scope 2 means it is available in editor, this is one of the macros in basicdefines_a3.hpp
+		scopeCurator = 2;		// 2 means available from Zeus, whereas 0 means hidden
+		side = 2;					/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
+		vehicleClass = "OPTRE_PD_Air_class";
+		author="Article 2 Studios";
+		faction	= "OPTRE_PD";			/// defines the faction inside of the side
+		crew = "OPTRE_PD_Soldier_Pilot";	/// lets use the sample soldier we have as default captain of the boat
+		accuracy = 1.50; 			/// harder to distinguish side than vehicle type
+		displayName = "UH-144 Falcon (Police)";
+		hiddenSelections[]= {"camo1","camo2","camo3","camo4","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Falcon\data\falcon_hull_police_CO.paa","optre_vehicles\falcon\data\falcon_hullextra_night_co.paa","optre_vehicles\falcon\data\falcon_wingtips_night_co.paa","optre_vehicles\falcon\data\falcon_skid_night_co.paa"};
+		availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
+		cost = 2000000;	/// we need some high cost for such vehicles to be prioritized by AA defences
+		weapons[] = {"CMFlareLauncher","Laserdesignator_mounted"};	/// array of various vehicle weapons mounted on the heli
+		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"}; /// array of corresponding magazines
+	};
+	class OPTRE_UNSC_falcon_CMA: OPTRE_UNSC_falcon_green
+	{
+		side = 2;					/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
+		vehicleClass = "OPTRE_CMA_Air_class";
+		author="Article 2 Studios";
+		faction	= "OPTRE_CAA";			/// defines the faction inside of the side
+		crew = "OPTRE_CMA_Pilot_WDL";	/// lets use the sample soldier we have as default captain of the boat
+		displayName = "UH-144 Falcon (CMA)";
+	};
+	class OPTRE_UNSC_falcon_CMADES: OPTRE_UNSC_falcon_tan
+	{
+		side = 2;					/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
+		vehicleClass = "OPTRE_CMA_Air_class";
+		author="Article 2 Studios";
+		faction	= "OPTRE_CAA";			/// defines the faction inside of the side
+		crew = "OPTRE_CMA_Pilot_DES";	/// lets use the sample soldier we have as default captain of the boat
+		displayName = "UH-144 Falcon (CMA / Tan)";
+	};
+	class OPTRE_UNSC_falcon_CMASNO: OPTRE_UNSC_falcon_snow
+	{
+		side = 2;					/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
+		vehicleClass = "OPTRE_CMA_Air_class";
+		author="Article 2 Studios";
+		faction	= "OPTRE_CAA";			/// defines the faction inside of the side
+		crew = "OPTRE_CMA_Pilot_SNO";	/// lets use the sample soldier we have as default captain of the boat
+		displayName = "UH-144 Falcon (CMA / Snow)";
+	};
 	
 	class PlaneWreck;
 	class OPTRE_Objects_Wreck_Falcon: PlaneWreck

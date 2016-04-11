@@ -16,6 +16,7 @@ v0.14
 			-proxy for holstered pistol on vests (Misc)
 			-Balaclava variants of M52 Helmets (Misc)
 			-SRS99D Suppressor (Weapon)
+			-Placeholder Police Units
 	Fixed
 			-Fixed strange semi-transparency on Warthog and Marine Kneepads/Shoulders
 			-Floating glitchy backpacks

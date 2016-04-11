@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class OPTRE_UNSC_Units_Marines
+	class OPTRE_CAA_Units_CMA
 	{
 		units[]										= {};
 		weapons[]									= {};

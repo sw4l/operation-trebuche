@@ -137,11 +137,59 @@ class CfgVehicles
 		{
 			class MainTurret:MainTurret
 			{
+				body					= "mainturret";
+				gun						= "maingun";
+				animationsourcebody		= "mainturret";
+				animationSourceGun		= "maingun";
+				gunAxis					= "Osa Hlavne";
+				gunBeg					= "Usti hlavne";
+				gunEnd					= "konec hlavne";
+				minElev					= -15;
+				maxElev					= 45;
+				minTurn					= -360;
+				maxTurn					= 360;
+				initTurn				= 0;
+				turretAxis				= "OsaVeze";
+				maxHorizontalRotSpeed	= 1.5;
+				maxVerticalRotSpeed		= 1.5;
+				gunnerAction			= "driver_boat01";
+				gunnerInAction			= "driver_boat01";
+				gunnerGetInAction		= "GetInMRAP_01";
+				gunnerGetOutAction		= "GetOutMRAP_01";
+				gunnerName				= "Gunner";
+				hideWeaponsGunner		= 0;
+				soundServo[]			= {"",0.01,1};
+				stabilizedInAxes 		= 3;
+				outGunnerMayFire		= 1;
+				inGunnerMayFire			= 1;
+				commanding				= 1;
+				primaryGunner			= 1;
+				turretInfoType			= "RscWeaponZeroing";
+				memoryPointsGetInGunner	= "Pos Gunner";
+				memoryPointsGetInGunnerDir = "Pos Gunner dir";
+				gunnerLeftHandAnimName	= "trigger";
+				gunnerRightHandAnimName	= "trigger";
+				memoryPointGun			= "machinegun";
 				weapons[]				= {"OPTRE_M41_LAAG"};
 				magazines[]				= {"500Rnd_127x99_mag_Tracer_Yellow","500Rnd_127x99_mag_Tracer_Yellow","500Rnd_127x99_mag_Tracer_Yellow","500Rnd_127x99_mag_Tracer_Yellow"};
 				memoryPointGunnerOptics	= "gunnerview";
 				gunnerOpticsShowCursor	= 1;
+				castGunnerShadow		= 1;
+				startEngine 			= 0;
+				enableManualFire		= 0;
 				gunnerOpticsModel		= "a3\weapons_f\Reticle\optics_empty";
+				gunnerForceOptics		= 0;
+				hasGunner				= true;
+				class ViewGunner:ViewOptics
+				{
+					initAngleX			= -15;
+					minAngleX			= -45;
+					maxAngleX			= 45;
+					initFov				= 0.9;
+					minFov				= 0.42;
+					maxFov				= 0.9;
+					visionMode[]		= {};
+				};
 			};
 		};
 	};
