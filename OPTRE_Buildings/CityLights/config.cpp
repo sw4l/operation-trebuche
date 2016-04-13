@@ -87,7 +87,7 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Citylights\Small_Light_Column.p3d";
-		armor=20000;
+		armor=200;
 		scope=2;
 		displayName="Column Light";
 		class Reflectors
