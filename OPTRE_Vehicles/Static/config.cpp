@@ -127,8 +127,8 @@ class CfgVehicles
 	};
 	class OPTRE_Static_M41_LAAG: OPTRE_Static_Base
 	{
-		scope 							= 2;
-		scopeCurator 					= 2;
+		scope 							= 1;
+		scopeCurator 					= 1;
 		vehicleClass 					= "OPTRE_UNSC_Fortification_class";
 		displayName 					= "M41 LAAG Emplacement";
 		author 							= "Article 2 Studios";
