@@ -76,7 +76,7 @@ class Mode_FullAuto;
 					picture 																= "\OPTRE_weapons\sniper\icons\scope.paa";
                     model                                                                   = "\OPTRE_Weapons\Sniper\scope.p3d";
                     descriptionShort                                                        = "Oracle N-variant SRS99 Sniper Rifle 5-10x56 Scope";
-                    weaponInfoType                                                          = "RscWeaponZeroing";
+                    weaponInfoType                                                          = "RscOptics_nightstalker";
                     modelOptics                                                     		= "\OPTRE_Weapons\Sniper\scope.p3d";
                     class ItemInfo: InventoryOpticsItem_Base_F
                     {

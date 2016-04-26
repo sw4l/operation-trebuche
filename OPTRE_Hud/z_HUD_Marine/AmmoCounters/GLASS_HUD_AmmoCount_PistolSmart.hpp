@@ -27,7 +27,7 @@ class OPTRE_GLASS_HUD_AmmoCount_PistolSmart
 	w = 0.0360937 * safezoneW;
 	h = 0.022 * safezoneH;
 			colorText[] = {1,1,1,1};
-			onLoad = "OPTRE_HUD_AmmoCountCurrent_1 = (_this select 0); (_this select 0) ctrlSetTextColor (profileNamespace getVariable [""OPTRE_GLASS_HUDColourPictNEW"",[1,0.5,0,.8]]);";
+			onLoad = "uinamespace setvariable ['OPTRE_HUD_AmmoCountCurrent_1',(_this select 0)]; (_this select 0) ctrlSetTextColor (profileNamespace getVariable [""OPTRE_GLASS_HUDColourPictNEW"",[1,0.5,0,.8]]);";
 			colorBar[] = {1,1,1,1};
 		};
 		
@@ -47,4 +47,7 @@ class RscPicture_1200: RscPicture
 	y = 0.082 * safezoneH + safezoneY;
 	w = 0.0360937 * safezoneW;
 	h = 0.022 * safezoneH;
-};*/
+};
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT END
+////////////////////////////////////////////////////////

@@ -40,6 +40,65 @@ class CfgVehicles //This configures units and backpacks
 {
 	class Car_F;
 	class RoadCone_F;
+	class Helicopter;
+	class Helicopter_Base_F: Helicopter
+	{
+		class Turrets;
+		class HitPoints;
+		class ViewPilot;
+		class CargoTurret;
+		class Reflectors
+		{
+			class Right;
+		};
+	};
+
+	class Helicopter_Base_H: Helicopter_Base_F
+	{
+		class Turrets: Turrets
+		{
+			class CopilotTurret;
+		};
+		class HitPoints: HitPoints
+		{
+			class HitHull;
+			class HitFuel;
+			class HitEngine;
+			class HitAvionics;
+			class HitVRotor;
+			class HitHRotor;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+		};
+		class AnimationSources;
+		class Eventhandlers;
+		class Viewoptics;
+		class ViewPilot;
+		class RotorLibHelicopterProperties;
+		class CargoTurret;
+		class Reflectors
+		{
+			class Right;
+		};
+	};
+	class Air;
+	class Plane: Air
+	{
+		class HitPoints;
+	};
+
+	class Plane_Base_F: Plane
+	{
+		class AnimationSources;
+		class HitPoints: HitPoints
+		{
+			class HitHull;
+		};
+	};
 
 	// HUMAN ENTRY VEHICLES
 	
@@ -119,6 +178,140 @@ class CfgVehicles //This configures units and backpacks
 					condition																= "((this animationPhase ""main_door_rotation"" == 1) && (this animationPhase ""left_door_rotation"" == 1) && (this animationPhase ""right_door_rotation"" == 1) && (((velocity this) select 2) < 10) && (((velocity this) select 2) > -10))";
 					statement																= "this animate [""main_door_rotation"",0]; this animate [""left_door_rotation"",0]; this animate [""right_door_rotation"",0];";
 					onlyforplayer															= 1;
+				};
+			};
+	};
+	
+	class OPTRE_HEV_H: Helicopter_Base_H
+	{
+		dlc = "OPTRE";
+			side 																		= 1;
+			scope 																		= 2;
+			author																		= "Article 2 Studios";
+			model 																		= "OPTRE_Vehicles\HEV\hev_pod.p3d";
+			displayName 																= "SOEIV Human Entry Vehicle H";
+			faction																		= "OPTRE_UNSC";
+			crew 																		= "OPTRE_UNSC_ODST_Soldier_Scout";
+			transportSoldier															= 0;
+			isBicycle																	= true;
+			vehicleClass 																= "OPTRE_UNSC_HEV_class";
+			attenuationEffectType 														= "TankAttenuation";
+			mapSize 																	= 2.5;
+			weapons[]																	={};
+			armor 																		= 9999999;
+			epeImpulseDamageCoef 														= 0;
+			altFullForce = 300;	/// in what height do the engines still have full thrust
+			altNoForce = 0;		/// thrust of the engines interpolates to zero between altFullForce and altNoForce
+			maxSpeed = 10;			/// what is the maximum speed of the vehicle
+			maxFordingDepth = 1;	/// how deep could the vehicle be in water without getting some damage
+			mainBladeRadius = 0.1;	/// describes the radius of main rotor - used for collision detection
+			driverCanEject = 0;			/// pilot shouldn't be able to do so as he doesn't have eject seat
+			liftForceCoef = 0.5;	///multiplier of lift force
+			bodyFrictionCoef = 2.0;		///multiplier of body friction
+			cyclicAsideForceCoef = 2.0;	///multiplier of bank force
+			cyclicForwardForceCoef = 2.0;	///multiplier of dive force
+			backRotorForceCoef = 2.0;	///multiplier of back rotor force
+			explosionShielding 															= 1;
+			typicalCargo[] 																= {};
+			icon 																		= "OPTRE_Vehicles\hev\Data\icon.paa";	/// icon in map/editor
+			picture 																	= "OPTRE_Vehicles\hev\Data\icon2.paa";	/// small picture in command menu
+			driverAction 																= "OPTRE_Driver_HEV";
+			getInAction 																= "bench_Heli_Light_01_get_in";	
+			getinRadius																	= 2;
+			getOutAction 																= "bench_Heli_Light_01_get_out";
+			memoryPointsGetIndriver 													= "pos driver";		/// on what memory points should the cargo get in the heli
+			memoryPointsGetIndriverDir 													= "pos driver dir";/// what is the direction of the cargo facing during get in animation (and opposite for get out)
+			usePreciseGetInAction 														= 0;
+			driverIsCommander															= true;
+			canFloat 																	= true;
+			fuelCapacity 																= 100;
+			fuelConsumptionRate 														= 1;
+			fuelExplosionPower 															= 0;
+			occludeSoundsWhenIn 														= 1;
+			obstructSoundsWhenIn 														= 1;
+			crewCrashProtection 														= 0;
+			crewExplosionProtection 													= 0;
+			hideWeaponsDriver 															= 0;
+			hiddenSelections[]															= {"camo1","camo2","camo3","camo4"};
+			hiddenSelectionsTextures[]													= {"OPTRE_Vehicles\hev\data\pod_CO.paa","#(argb,256,512,1)r2t(rendertarget0,1.0)","#(argb,256,512,1)r2t(rendertarget1,1.0)","OPTRE_core\data\base\glass_ca.paa"};
+			ejectDeadDriver 															= 0;
+			maximumLoad 																= 0;
+			extCameraPosition[] 														= {0,2.5,-10};
+			class Sounds{};
+			class Turrets{};
+			class Reflectors{};
+			class TextureSources{};		
+			class Eventhandlers {	
+				init = "_this select 0 allowDamage false";
+			};
+			#include "pip.hpp"
+			class AnimationSources	/// custom made animation sources
+			{
+				class Doors				/// the class name is later used in model.cfg
+				{
+					source 																	= "user";	/// user source means it is waiting on some scripting input
+					animPeriod																= 1.5;		/// how long does it take to change value from 0 to 1 (or vice versa)
+					initPhase 																= 0;		/// what value does it have while creating the vehicle
+				};
+			};	
+			class userActions 
+			{
+				class door_open
+				{
+					displayName																= "Open HEV Doors";
+					position																= "";
+					radius																	= 4;
+					condition																= "((this animationPhase ""main_door_rotation"" == 0) && (this animationPhase ""left_door_rotation"" == 0) && (this animationPhase ""right_door_rotation"" == 0) && (((velocity this) select 2) < 10) && (((velocity this) select 2) > -10))";
+					statement																= "this animate [""main_door_rotation"",1]; this animate [""left_door_rotation"",1]; this animate [""right_door_rotation"",1];";
+					onlyforplayer															= 1;
+				};
+				class door_close
+				{
+					displayName																= "Close HEV Doors";
+					position																= "";
+					radius																	= 4;
+					condition																= "((this animationPhase ""main_door_rotation"" == 1) && (this animationPhase ""left_door_rotation"" == 1) && (this animationPhase ""right_door_rotation"" == 1) && (((velocity this) select 2) < 10) && (((velocity this) select 2) > -10))";
+					statement																= "this animate [""main_door_rotation"",0]; this animate [""left_door_rotation"",0]; this animate [""right_door_rotation"",0];";
+					onlyforplayer															= 1;
+				};
+			};
+			class HitPoints:HitPoints
+			{
+				class HitHull:HitHull
+				{
+					armor=999;
+					visual="Hull";
+					minimalHit = 0.05;
+					depends = "Total";
+					radius = 0.01;
+				};
+				class HitFuel:HitFuel
+				{
+					armor = 999;
+					radius = 0.25;
+					minimalHit = 0.05;
+					explosionShielding = 2;
+				};
+				class HitAvionics:HitAvionics
+				{
+					armor = 999;
+					radius = 0.4;
+					minimalHit = 0.05;
+					explosionShielding = 1.5;
+				};
+				class HitHRotor:HitHRotor
+				{
+					armor = 999;
+					radius = 0.4;
+					minimalHit = 0.09;
+					explosionShielding = 2.5;
+				};
+				class HitVRotor:HitVRotor
+				{
+					armor = 999;
+					radius = 0.06;
+					minimalHit = 0.05;
+					explosionShielding = 6;
 				};
 			};
 	};

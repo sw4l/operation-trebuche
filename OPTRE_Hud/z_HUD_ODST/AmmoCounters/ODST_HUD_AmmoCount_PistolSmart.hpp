@@ -27,7 +27,7 @@ class OPTRE_ODST_HUD_AmmoCount_PistolSmart
 	w = 0.04125 * safezoneW;
 	h = 0.0219914 * safezoneH;
 			colorText[] = {1,1,1,1};
-			onLoad = "OPTRE_HUD_AmmoCountCurrent_1 = (_this select 0); (_this select 0) ctrlSetTextColor (profileNamespace getVariable [""OPTRE_ODST_HUDColourTextNEW"",[1,0.5,0,.8]]);";
+			onLoad = "uinamespace setvariable ['OPTRE_HUD_AmmoCountCurrent_1',(_this select 0)]; (_this select 0) ctrlSetTextColor (profileNamespace getVariable [""OPTRE_ODST_HUDColourTextNEW"",[1,0.5,0,.8]]);";
 			colorBar[] = {1,1,1,1};
 		};
 		

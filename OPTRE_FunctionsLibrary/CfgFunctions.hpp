@@ -91,7 +91,7 @@ class CfgFunctions
 			class StringToArrayOfString {}; 
 		};
 		
-		class FrigateSystem 
+		/*class FrigateSystem 
 		{
 			file = "OPTRE_FunctionsLibrary\Functions\UNSCFrigate";
 			
@@ -117,7 +117,7 @@ class CfgFunctions
 			
 			class AddActionGlobal {};
 			
-		};
+		};*/
 
 	}; 
 

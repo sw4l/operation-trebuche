@@ -526,7 +526,7 @@ class CfgVehicles
 		};		
 		class Reflectors: Reflectors			/// landing lights of the heli, turned on by AI while in night and "careless" or "safe"
 		{
-			class Left
+			class Right
 			{
 				position = "Light_L_pos";		/// name of memory point in model to take the origin of the light
 				direction = "Light_L_dir";		/// name of memory point in the model to make a vector of direction of light from it's position
@@ -561,7 +561,7 @@ class CfgVehicles
 				selection = "Light_L";
 			};	*/		
 		};	
-		aggregateReflectors[] = {{"Left", "Right"}};	/// aggregates both sources into one to increase performance
+		//aggregateReflectors[] = {{"Left", "Right"}};	/// aggregates both sources into one to increase performance
 		//#include "rtd.hpp" /// Advanced FM characteristics in separate file to make the config cleaner
 		class HitPoints:HitPoints
 		{

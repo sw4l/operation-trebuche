@@ -47,7 +47,9 @@
 		
 		class ModuleDescription
 		{
-			description = "Changes the way OPTRE's HUD system works, this module also allows for certain features of the HUD system to be turn off or on.";
+			description[] = {
+				"Changes the way OPTRE's HUD system works, this module also allows for certain features of the HUD system to be turn off or on.";
+			};
 			sync[] = {"EmptyDetector"};
 			position = 0;
 			direction = 0;

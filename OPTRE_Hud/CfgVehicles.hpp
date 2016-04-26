@@ -26,8 +26,8 @@ class CfgVehicles
 	
 	class OPTRE_compass_mark: static
 	{
-		scope = 1;
-		scopeCurator = 1;
+		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "compass mark";
 		model = "\OPTRE_Hud\compass_mark.p3d";
@@ -36,8 +36,8 @@ class CfgVehicles
 	};
 		class OPTRE_compass_mark_1: static
 	{
-		scope = 1;
-		scopeCurator = 1;
+		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "compass mark 1";
 		model = "\OPTRE_Hud\compass_mark_1.p3d";
@@ -46,8 +46,8 @@ class CfgVehicles
 	};
 		class OPTRE_compass_mark_2: static
 	{
-		scope = 1;
-		scopeCurator = 1;
+		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "compass mark 2";
 		model = "\OPTRE_Hud\compass_mark_2.p3d";
@@ -56,8 +56,8 @@ class CfgVehicles
 	};
 		class OPTRE_compass_mark_3: static
 	{
-		scope = 1;
-		scopeCurator = 1;
+		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "compass mark 3";
 		model = "\OPTRE_Hud\compass_mark_3.p3d";
@@ -66,8 +66,8 @@ class CfgVehicles
 	};
 		class OPTRE_compass_mark_blu: static
 	{
-		scope = 1;
-		scopeCurator = 1;
+		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "compass mark Blue";
 		model = "\OPTRE_Hud\compass_mark_blu.p3d";
@@ -76,8 +76,8 @@ class CfgVehicles
 	};
 		class OPTRE_compass_mark_1_blu: static
 	{
-		scope = 1;
-		scopeCurator = 1;
+		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "compass mark 1 Blue";
 		model = "\OPTRE_Hud\compass_mark_1_blu.p3d";
@@ -86,8 +86,8 @@ class CfgVehicles
 	};
 		class OPTRE_compass_mark_2_blu: static
 	{
-		scope = 1;
-		scopeCurator = 1;
+		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "compass mark 2 Blue";
 		model = "\OPTRE_Hud\compass_mark_2_blu.p3d";
@@ -96,8 +96,8 @@ class CfgVehicles
 	};
 		class OPTRE_compass_mark_3_blu: static
 	{
-		scope = 1;
-		scopeCurator = 1;
+		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "compass mark 3 Blue";
 		model = "\OPTRE_Hud\compass_mark_3_blu.p3d";
@@ -106,8 +106,8 @@ class CfgVehicles
 	};
 		class OPTRE_compass_mark_org: static
 	{
-		scope = 1;
-		scopeCurator = 1;
+		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "compass mark Orange";
 		model = "\OPTRE_Hud\compass_mark_org.p3d";
@@ -116,8 +116,8 @@ class CfgVehicles
 	};
 		class OPTRE_compass_mark_1_org: static
 	{
-		scope = 1;
-		scopeCurator = 1;
+		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "compass mark 1 Orange";
 		model = "\OPTRE_Hud\compass_mark_1_org.p3d";
@@ -126,8 +126,8 @@ class CfgVehicles
 	};
 		class OPTRE_compass_mark_2_org: static
 	{
-		scope = 1;
-		scopeCurator = 1;
+		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "compass mark 2 Orange";
 		model = "\OPTRE_Hud\compass_mark_2_org.p3d";
@@ -136,8 +136,8 @@ class CfgVehicles
 	};
 		class OPTRE_compass_mark_3_org: static
 	{
-		scope = 1;
-		scopeCurator = 1;
+		scope = 2;
+		scopeCurator = 2;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "compass mark 3 Orange";
 		model = "\OPTRE_Hud\compass_mark_3_org.p3d";

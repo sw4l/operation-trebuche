@@ -1,3 +1,4 @@
+
 // Control types
 #define CT_STATIC           0
 #define CT_BUTTON           1
@@ -54,8 +55,8 @@
 #define ST_PICTURE        0x30
 #define ST_FRAME          0x40
 #define ST_BACKGROUND     0x50
-//#define ST_GROUP_BOX      0x60
-//#define ST_GROUP_BOX2     0x70
+#define ST_GROUP_BOX      0x60
+#define ST_GROUP_BOX2     0x70
 #define ST_HUD_BACKGROUND 0x80
 #define ST_TILE_PICTURE   0x90
 #define ST_WITH_RECT      0xA0
@@ -95,8 +96,8 @@
 //Base Classes//
 ////////////////
 
-class OPTRE_HUD_RscCombo
-{
+class OPTRE_HUD_RscCombo {
+
 idc = -1;
 type = 4;
 style = 0 + 0x10;
@@ -115,7 +116,7 @@ arrowEmpty = "\ca\ui\data\ui_arrow_combo_ca.paa";
 arrowFull = "\ca\ui\data\ui_arrow_combo_active_ca.paa";
 wholeHeight = 0.45;
 colorDisabled[] = {};
-font = "puristaMedium";
+font = "EtelkaNarrowMediumPro";// "TahomaB";//"puristaMedium";
 sizeEx = 0.031;
 soundSelect[] = {"\ca\ui\data\sound\new1", 0.09, 1};
 soundExpand[] = {"\ca\ui\data\sound\new1", 0.09, 1};
@@ -141,8 +142,8 @@ maxHistoryDelay = 1.0;
 	};
 };
 
-class OPTRE_HUD_RscCheckBox
-{
+class OPTRE_HUD_RscCheckBox {
+
 checked = 0;
 color[] = {1,1,1,0.7};
 colorBackground[] = {0,0,0,0};
@@ -203,9 +204,9 @@ class OPTRE_HUD_SructuredText {
   y = 0.1; 
   w = 0.3; 
   h = 0.1; 
-  size = 0.030;
+  size = 0.029;// 0.030;
   text = "";
-  font = "Zeppelin33";
+  font = "EtelkaNarrowMediumPro";// "TahomaB";//"Zeppelin33";
   
   class Attributes {
     align = "right";
@@ -226,9 +227,9 @@ class OPTRE_HUD_RscEdit
 	colorDisabled[] = {1, 1, 1, 0.6};
 	autocomplete = "";
 	text = "";
-	size = 0.2;
+	size = 0.029;// 0.2;
 	style = "0x00 + 0x40";
-	font = "Zeppelin32";
+	font = "EtelkaNarrowMediumPro";// "TahomaB";//"Zeppelin32";
 	shadow = 2;
 	sizeEx = 0.03921;
 };
@@ -263,7 +264,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 	colorText[] = {0,0,0,0};
 	colorTracks[] = {0,0,0,0};
 	colorTracksFill[] = {0,0,0,0};
-	font = "TahomaB";
+	font = "EtelkaNarrowMediumPro";// "TahomaB";//"TahomaB";
 	fontGrid = "TahomaB";
 	fontInfo = "PuristaMedium";
 	fontLabel = "PuristaMedium";
@@ -299,14 +300,14 @@ class OPTRE_HUD_rscMapControl_HUD_1
 	style = 0;
 	text = "";
 	type = 100;
-	w = 0;
-	x = 0;
-	y = 0;
+	w = 0
+	x = 0
+	y = 0
 
 	class ActiveMarker
 	{
 		color[] = {0,0,0,0};
-		size = 0;
+		size = 0.029;// 0;
 	};
 	class Bunker
 	{
@@ -315,7 +316,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\bunker_ca.paa";
 		importance = "1.5 * 14 * 0.05";
-		size = 14;
+		size = 0.029;// 14;
 	};
 	class Bush
 	{
@@ -324,7 +325,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
 		importance = "0.2 * 14 * 0.05 * 0.05";
-		size = "14/2";
+		size = 0.029;// "14/2";
 	};
 	class BusStop
 	{
@@ -333,7 +334,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\busstop_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Chapel
 	{
@@ -342,7 +343,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\Chapel_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Church
 	{
@@ -351,7 +352,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\church_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Command
 	{
@@ -360,7 +361,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\waypoint_ca.paa";
 		importance =1;
-		size = 18;
+		size = 0.029;// 18;
 	};
 	class Cross
 	{
@@ -369,7 +370,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\Cross_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class CustomMark
 	{
@@ -378,7 +379,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\custommark_ca.paa";
 		importance = 1;
-		size = 0;
+		size = 0.029;// 0;
 	};
 	class Fortress
 	{
@@ -387,7 +388,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\bunker_ca.paa";
 		importance = "2 * 16 * 0.05";
-		size = 16;
+		size = 0.029;// 16;
 	};
 	class Fountain
 	{
@@ -396,7 +397,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\fountain_ca.paa";
 		importance = "1 * 12 * 0.05";
-		size = 11;
+		size = 0.029;// 11;
 	};
 	class Fuelstation
 	{
@@ -405,7 +406,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\fuelstation_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Hospital
 	{
@@ -414,13 +415,13 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\hospital_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Legend
 	{
 		color[] = {0,0,0,0};
 		colorBackground[] = {0,0,0,0};
-		font = "PuristaMedium";
+		font = "EtelkaNarrowMediumPro";// "TahomaB";//"PuristaMedium";
 		h = "0";//"3.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		sizeEx = "0";// "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 		w = "0";// "10 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
@@ -434,7 +435,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\lighthouse_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class power
 	{
@@ -443,7 +444,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\power_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class powersolar
 	{
@@ -452,7 +453,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\powersolar_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class powerwind
 	{
@@ -461,7 +462,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\powerwind_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class powerwave
 	{
@@ -470,7 +471,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\powerwave_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Quay
 	{
@@ -479,7 +480,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\quay_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Rock
 	{
@@ -488,7 +489,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\rock_ca.paa";
 		importance = "0.5 * 12 * 0.05";
-		size = 12;
+		size = 0.029;// 12;
 	};
 	class Ruin
 	{
@@ -497,7 +498,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\ruin_ca.paa";
 		importance = "1.2 * 16 * 0.05";
-		size = 16;
+		size = 0.029;// 16;
 	};
 	class shipwreck
 	{
@@ -506,7 +507,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\shipwreck_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class SmallTree
 	{
@@ -515,7 +516,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
 		importance = "0.6 * 12 * 0.05";
-		size = 12;
+		size = 0.029;// 12;
 	};
 	class Stack
 	{
@@ -524,7 +525,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\stack_ca.paa";
 		importance = "2 * 16 * 0.05";
-		size = 20;
+		size = 0.029;// 20;
 	};
 	class Task
 	{
@@ -541,7 +542,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		iconDone = "\A3\ui_f\data\map\mapcontrol\taskIconDone_CA.paa";
 		iconFailed = "\A3\ui_f\data\map\mapcontrol\taskIconFailed_CA.paa";
 		importance = 1;
-		size = 27;
+		size = 0.029;// 27;
 	};
 	class Tourism
 	{
@@ -550,7 +551,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\tourism_ca.paa";
 		importance = "1 * 16 * 0.05";
-		size = 16;
+		size = 0.029;// 16;
 	};
 	class Transmitter
 	{
@@ -559,7 +560,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\transmitter_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Tree
 	{
@@ -568,7 +569,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
 		importance = "0.9 * 16 * 0.05";
-		size = 12;
+		size = 0.029;// 12;
 	};
 	class ViewTower
 	{
@@ -577,7 +578,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\viewtower_ca.paa";
 		importance = "2.5 * 16 * 0.05";
-		size = 16;
+		size = 0.029;// 16;
 	};
 	class Watertower
 	{
@@ -586,7 +587,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\watertower_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Waypoint
 	{
@@ -595,7 +596,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\waypoint_ca.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class WaypointCompleted
 	{
@@ -604,7 +605,7 @@ class OPTRE_HUD_rscMapControl_HUD_1
 		color[] = {0,0,0,0};
 		icon = "\A3\ui_f\data\map\mapcontrol\waypointCompleted_ca.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 };
 
@@ -638,7 +639,7 @@ class OPTRE_HUD_MapNormal
 	colorText[] = {0,0,0,1};
 	colorTracks[] = {0.84,0.76,0.65,0.15};
 	colorTracksFill[] = {0.84,0.76,0.65,1};
-	font = "TahomaB";
+	font = "EtelkaNarrowMediumPro";// "TahomaB";//"TahomaB";
 	fontGrid = "TahomaB";
 	fontInfo = "PuristaMedium";
 	fontLabel = "PuristaMedium";
@@ -680,7 +681,7 @@ class OPTRE_HUD_MapNormal
 	class ActiveMarker
 	{
 		color[] = {0.3,0.1,0.9,1};
-		size = 50;
+		size = 0.029;// 50;
 	};
 	class Bunker
 	{
@@ -689,7 +690,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\bunker_ca.paa";
 		importance = "1.5 * 14 * 0.05";
-		size = 14;
+		size = 0.029;// 14;
 	};
 	class Bush
 	{
@@ -698,7 +699,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {0.45,0.64,0.33,0.4};
 		icon = "\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
 		importance = "0.2 * 14 * 0.05 * 0.05";
-		size = "14/2";
+		size = 0.029;// "14/2";
 	};
 	class BusStop
 	{
@@ -707,7 +708,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {1,1,1,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\busstop_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Chapel
 	{
@@ -716,7 +717,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\Chapel_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Church
 	{
@@ -725,7 +726,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {1,1,1,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\church_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Command
 	{
@@ -734,7 +735,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {1,1,1,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\waypoint_ca.paa";
 		importance =1;
-		size = 18;
+		size = 0.029;// 18;
 	};
 	class Cross
 	{
@@ -743,7 +744,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\Cross_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class CustomMark
 	{
@@ -752,7 +753,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\custommark_ca.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Fortress
 	{
@@ -761,7 +762,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\bunker_ca.paa";
 		importance = "2 * 16 * 0.05";
-		size = 16;
+		size = 0.029;// 16;
 	};
 	class Fountain
 	{
@@ -770,7 +771,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\fountain_ca.paa";
 		importance = "1 * 12 * 0.05";
-		size = 11;
+		size = 0.029;// 11;
 	};
 	class Fuelstation
 	{
@@ -779,7 +780,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {1,1,1,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\fuelstation_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Hospital
 	{
@@ -788,13 +789,13 @@ class OPTRE_HUD_MapNormal
 		color[] = {1,1,1,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\hospital_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Legend
 	{
 		color[] = {0,0,0,1};
 		colorBackground[] = {1,1,1,0.5};
-		font = "PuristaMedium";
+		font = "EtelkaNarrowMediumPro";// "TahomaB";//"PuristaMedium";
 		h = "3.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 		w = "10 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
@@ -808,7 +809,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {1,1,1,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\lighthouse_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class power
 	{
@@ -817,7 +818,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {1,1,1,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\power_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class powersolar
 	{
@@ -826,7 +827,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {1,1,1,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\powersolar_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class powerwind
 	{
@@ -835,7 +836,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {1,1,1,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\powerwind_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class powerwave
 	{
@@ -844,7 +845,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {1,1,1,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\powerwave_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Quay
 	{
@@ -853,7 +854,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {1,1,1,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\quay_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Rock
 	{
@@ -862,7 +863,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {0.1,0.1,0.1,0.8};
 		icon = "\A3\ui_f\data\map\mapcontrol\rock_ca.paa";
 		importance = "0.5 * 12 * 0.05";
-		size = 12;
+		size = 0.029;// 12;
 	};
 	class Ruin
 	{
@@ -871,7 +872,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\ruin_ca.paa";
 		importance = "1.2 * 16 * 0.05";
-		size = 16;
+		size = 0.029;// 16;
 	};
 	class shipwreck
 	{
@@ -880,7 +881,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {1,1,1,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\shipwreck_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class SmallTree
 	{
@@ -889,7 +890,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {0.45,0.64,0.33,0.4};
 		icon = "\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
 		importance = "0.6 * 12 * 0.05";
-		size = 12;
+		size = 0.029;// 12;
 	};
 	class Stack
 	{
@@ -898,7 +899,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\stack_ca.paa";
 		importance = "2 * 16 * 0.05";
-		size = 20;
+		size = 0.029;// 20;
 	};
 	class Task
 	{
@@ -915,7 +916,7 @@ class OPTRE_HUD_MapNormal
 		iconDone = "\A3\ui_f\data\map\mapcontrol\taskIconDone_CA.paa";
 		iconFailed = "\A3\ui_f\data\map\mapcontrol\taskIconFailed_CA.paa";
 		importance = 1;
-		size = 27;
+		size = 0.029;// 27;
 	};
 	class Tourism
 	{
@@ -924,7 +925,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\tourism_ca.paa";
 		importance = "1 * 16 * 0.05";
-		size = 16;
+		size = 0.029;// 16;
 	};
 	class Transmitter
 	{
@@ -933,7 +934,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {1,1,1,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\transmitter_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Tree
 	{
@@ -942,7 +943,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {0.45,0.64,0.33,0.4};
 		icon = "\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
 		importance = "0.9 * 16 * 0.05";
-		size = 12;
+		size = 0.029;// 12;
 	};
 	class ViewTower
 	{
@@ -951,7 +952,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\viewtower_ca.paa";
 		importance = "2.5 * 16 * 0.05";
-		size = 16;
+		size = 0.029;// 16;
 	};
 	class Watertower
 	{
@@ -960,7 +961,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {1,1,1,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\watertower_CA.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class Waypoint
 	{
@@ -969,7 +970,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\waypoint_ca.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 	class WaypointCompleted
 	{
@@ -978,7 +979,7 @@ class OPTRE_HUD_MapNormal
 		color[] = {0,0,0,1};
 		icon = "\A3\ui_f\data\map\mapcontrol\waypointCompleted_ca.paa";
 		importance = 1;
-		size = 24;
+		size = 0.029;// 24;
 	};
 };
 
@@ -993,7 +994,7 @@ class OPTRE_HUD_RscText
     colorText[] = {1,1,1,0.9};
     text = "";
     shadow = 2;
-    font = "PuristaMedium";
+    font = "EtelkaNarrowMediumPro";// "TahomaB";//"PuristaMedium";
     SizeEx = 0.04000;
     fixedWidth = 0;
     x = 0;
@@ -1014,7 +1015,7 @@ class OPTRE_HUD_RscText1
     colorText[] = {0,0,0,0.2};
     text = "";
     shadow = 0;
-    font = "PuristaSemiBold";
+    font = "EtelkaNarrowMediumPro";// "TahomaB";//"PuristaSemiBold";
     SizeEx = 0.04000;
     fixedWidth = 0;
     x = 0;
@@ -1052,7 +1053,7 @@ class OPTRE_HUD_RscPicture
     style = ST_PICTURE;
     colorBackground[] = {0,0,0,0};
     colorText[] = {1,1,1,0.9};
-    font = "PuristaMedium";
+    font = "EtelkaNarrowMediumPro";// "TahomaB";//"PuristaMedium";
     sizeEx = 0;
     lineSpacing = 0;
     text = "";
@@ -1089,13 +1090,13 @@ class OPTRE_HUD_RscButton
     w = 0.055589;
     h = 0.039216;
     shadow = 2;
-    font = "PuristaMedium";
+    font = "EtelkaNarrowMediumPro";// "TahomaB";//"PuristaMedium";
     sizeEx = 0.02921;
     offsetX = 0.003;
     offsetY = 0.003;
     offsetPressedX = 0.002;
     offsetPressedY = 0.002;
-    borderSize = 0;
+    bordersize = 0;
 };
 
 class OPTRE_HUD_RscButton_Invisible
@@ -1123,20 +1124,20 @@ class OPTRE_HUD_RscButton_Invisible
     w = 0.055589;
     h = 0.039216;
     shadow = 2;
-    font = "PuristaMedium";
+    font = "EtelkaNarrowMediumPro";// "TahomaB";//"PuristaMedium";
     sizeEx = 0.02921;
     offsetX = 0.003;
     offsetY = 0.003;
     offsetPressedX = 0.002;
     offsetPressedY = 0.002;
-    borderSize = 0;
+    bordersize = 0.029;// 0;
 };
 
 class OPTRE_HUD_RscListBox {
 	idc = -1;
 	type = 5;
 	style = 0 + 0x10;
-	font = "PuristaMedium";
+	font = "EtelkaNarrowMediumPro";// "TahomaB";//"PuristaMedium";
 	sizeEx = 0.03221; //0.04221;
 	shadow = 0;
 	colorShadow[] = {0,0,0,0};

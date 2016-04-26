@@ -62,7 +62,7 @@ class OPTRE_ODST_HUD_AmmoCount_LMG
 	w = 0.128906 * safezoneW;
 	h = 0.0055 * safezoneH;
 			colorText[] = {1,1,1,1};
-			onLoad = "OPTRE_HUD_AmmoCountCurrent_1 = (_this select 0); (_this select 0) ctrlSetTextColor (profileNamespace getVariable [""OPTRE_ODST_HUDColourTextNEW"",[1,0.5,0,.95]]);";
+			onLoad = "uinamespace setvariable ['OPTRE_HUD_AmmoCountCurrent_1',(_this select 0)]; (_this select 0) ctrlSetTextColor (profileNamespace getVariable [""OPTRE_ODST_HUDColourTextNEW"",[1,0.5,0,.95]]);";
 			colorBar[] = {1,1,1,1};
 		};
 		class RscPicture_121: OPTRE_HUD_RscProgress
@@ -75,7 +75,7 @@ class OPTRE_ODST_HUD_AmmoCount_LMG
 	w = 0.128906 * safezoneW;
 	h = 0.0055 * safezoneH;
 			colorText[] = {1,1,1,1};
-			onLoad = "OPTRE_HUD_AmmoCountCurrent_2 = (_this select 0); (_this select 0) ctrlSetTextColor (profileNamespace getVariable [""OPTRE_ODST_HUDColourTextNEW"",[1,0.5,0,.95]]);";
+			onLoad = "uinamespace setvariable ['OPTRE_HUD_AmmoCountCurrent_2',(_this select 0)]; (_this select 0) ctrlSetTextColor (profileNamespace getVariable [""OPTRE_ODST_HUDColourTextNEW"",[1,0.5,0,.95]]);";
 			colorBar[] = {1,1,1,1};
 		};
 		class RscPicture_122: OPTRE_HUD_RscProgress
@@ -88,7 +88,7 @@ class OPTRE_ODST_HUD_AmmoCount_LMG
 	w = 0.128906 * safezoneW;
 	h = 0.0055 * safezoneH;
 			colorText[] = {1,1,1,1};
-			onLoad = "OPTRE_HUD_AmmoCountCurrent_3 = (_this select 0); (_this select 0) ctrlSetTextColor (profileNamespace getVariable [""OPTRE_ODST_HUDColourTextNEW"",[1,0.5,0,.95]]);";
+			onLoad = "uinamespace setvariable ['OPTRE_HUD_AmmoCountCurrent_3',(_this select 0)]; (_this select 0) ctrlSetTextColor (profileNamespace getVariable [""OPTRE_ODST_HUDColourTextNEW"",[1,0.5,0,.95]]);";
 			colorBar[] = {1,1,1,1};
 		};
 		class RscPicture_123: OPTRE_HUD_RscProgress
@@ -101,7 +101,7 @@ class OPTRE_ODST_HUD_AmmoCount_LMG
 	w = 0.128906 * safezoneW;
 	h = 0.0055 * safezoneH;
 			colorText[] = {1,1,1,1};
-			onLoad = "OPTRE_HUD_AmmoCountCurrent_4 = (_this select 0); (_this select 0) ctrlSetTextColor (profileNamespace getVariable [""OPTRE_ODST_HUDColourTextNEW"",[1,0.5,0,.95]]);";
+			onLoad = "uinamespace setvariable ['OPTRE_HUD_AmmoCountCurrent_4',(_this select 0)]; (_this select 0) ctrlSetTextColor (profileNamespace getVariable [""OPTRE_ODST_HUDColourTextNEW"",[1,0.5,0,.95]]);";
 			colorBar[] = {1,1,1,1};
 		};
 
@@ -148,4 +148,7 @@ class RscPicture_1203: RscPicture
 	y = 0.885 * safezoneH + safezoneY;
 	w = 0.128906 * safezoneW;
 	h = 0.0055 * safezoneH;
-};*/
+};
+////////////////////////////////////////////////////////
+// GUI EDITOR OUTPUT END
+////////////////////////////////////////////////////////

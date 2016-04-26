@@ -35,6 +35,7 @@ v0.14
 			-Moved all music to new separate pbo (OPTRE_Music)
 	Removed
 			-Artifacting Resolution LODs
+			-Inaccurate MA5 optic reticle (Reverted to standard reticle)
 v0.13.1
 	Fixed
 			-Hitpoints changes post-v1.54

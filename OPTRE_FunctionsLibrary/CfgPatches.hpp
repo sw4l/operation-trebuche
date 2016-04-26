@@ -1,6 +1,6 @@
 class CfgPatches //This configures the identification of the pbo to the game
 {
-	class OPTRE_FunctionsLibrary
+	class OPTRE
 	{
 		units[] 																				= {};
 		weapons[] 																				= {};																								

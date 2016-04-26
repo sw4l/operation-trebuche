@@ -46,7 +46,8 @@ if (OPTRE_Hud_On AND cameraView != "EXTERNAL") then {
 		_progressPerBullet = 1 / _totalNumberOfBulletsInARows;
 		_numberOfBulletsInMag = (parseNumber (str (player ammo _currentWeapon)));
 		for "_i" from 1 to _rows do {
-			( missionNamespace getVariable ( format ["OPTRE_HUD_AmmoCountCurrent_%1", _i] ) ) progressSetPosition ( (_numberOfBulletsInMag - ( (_rows - _i) * _totalNumberOfBulletsInARows) ) * _progressPerBullet );		
+			disableSerialization;
+			(uiNamespace getVariable ( format ["OPTRE_HUD_AmmoCountCurrent_%1", _i] ) ) progressSetPosition ( (_numberOfBulletsInMag - ( (_rows - _i) * _totalNumberOfBulletsInARows) ) * _progressPerBullet );		
 		};	
 	};
 };

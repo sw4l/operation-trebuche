@@ -38,7 +38,6 @@ class CfgOptreHudSchemes
 			OPTRE_HUD_w_Glasses 		= "OPTRE_MarrineGlasses_Main";
 			OPTRE_HUD_b_Glasses 		= "OPTRE_MarrineGlasses_Main";
 			OPTRE_HUD_p_Glasses 		= "OPTRE_MarrineGlasses_Main";
-		
 		};
 		
 		class LHDs {
