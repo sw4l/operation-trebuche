@@ -102,7 +102,7 @@ class CfgVehicles //This configures units and backpacks
 
 	// HUMAN ENTRY VEHICLES
 	
-	class OPTRE_HEV: Car_F
+	/*class OPTRE_HEV: Car_F
 	{
 		dlc = "OPTRE";
 			side 																		= 1;
@@ -180,16 +180,16 @@ class CfgVehicles //This configures units and backpacks
 					onlyforplayer															= 1;
 				};
 			};
-	};
+	};*/
 	
-	class OPTRE_HEV_H: Helicopter_Base_H
+	class OPTRE_HEV: Helicopter_Base_H
 	{
 		dlc = "OPTRE";
 			side 																		= 1;
 			scope 																		= 2;
 			author																		= "Article 2 Studios";
 			model 																		= "OPTRE_Vehicles\HEV\hev_pod.p3d";
-			displayName 																= "SOEIV Human Entry Vehicle H";
+			displayName 																= "SOEIV Human Entry Vehicle";
 			faction																		= "OPTRE_UNSC";
 			crew 																		= "OPTRE_UNSC_ODST_Soldier_Scout";
 			transportSoldier															= 0;
@@ -200,17 +200,17 @@ class CfgVehicles //This configures units and backpacks
 			weapons[]																	={};
 			armor 																		= 9999999;
 			epeImpulseDamageCoef 														= 0;
-			altFullForce = 300;	/// in what height do the engines still have full thrust
+			altFullForce = 5000;	/// in what height do the engines still have full thrust
 			altNoForce = 0;		/// thrust of the engines interpolates to zero between altFullForce and altNoForce
-			maxSpeed = 10;			/// what is the maximum speed of the vehicle
-			maxFordingDepth = 1;	/// how deep could the vehicle be in water without getting some damage
+			maxSpeed = 1;			/// what is the maximum speed of the vehicle
+			maxFordingDepth = 5000;	/// how deep could the vehicle be in water without getting some damage
 			mainBladeRadius = 0.1;	/// describes the radius of main rotor - used for collision detection
 			driverCanEject = 0;			/// pilot shouldn't be able to do so as he doesn't have eject seat
-			liftForceCoef = 0.5;	///multiplier of lift force
-			bodyFrictionCoef = 2.0;		///multiplier of body friction
-			cyclicAsideForceCoef = 2.0;	///multiplier of bank force
-			cyclicForwardForceCoef = 2.0;	///multiplier of dive force
-			backRotorForceCoef = 2.0;	///multiplier of back rotor force
+			liftForceCoef = 0;	///multiplier of lift force
+			bodyFrictionCoef = 0.0;		///multiplier of body friction
+			cyclicAsideForceCoef = 0.0;	///multiplier of bank force
+			cyclicForwardForceCoef = 0.0;	///multiplier of dive force
+			backRotorForceCoef = 0.0;	///multiplier of back rotor force
 			explosionShielding 															= 1;
 			typicalCargo[] 																= {};
 			icon 																		= "OPTRE_Vehicles\hev\Data\icon.paa";	/// icon in map/editor
@@ -224,7 +224,7 @@ class CfgVehicles //This configures units and backpacks
 			usePreciseGetInAction 														= 0;
 			driverIsCommander															= true;
 			canFloat 																	= true;
-			fuelCapacity 																= 100;
+			fuelCapacity 																= 0;
 			fuelConsumptionRate 														= 1;
 			fuelExplosionPower 															= 0;
 			occludeSoundsWhenIn 														= 1;
