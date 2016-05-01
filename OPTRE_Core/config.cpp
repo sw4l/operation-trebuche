@@ -24,6 +24,74 @@ class CfgMods
 	};
 };
 
+class CfgEditorCategories
+{
+	class OPTRE_EditorCategory_Objects // Category class, you point to it in editorCategory property
+	{
+		displayName = "OPTRE Objects"; // Name visible in the list
+	};
+	class OPTRE_EditorCategory_Frigate // Category class, you point to it in editorCategory property
+	{
+		displayName = "OPTRE Frigate Objects"; // Name visible in the list
+	};
+	class OPTRE_EditorCategory_Buildings // Category class, you point to it in editorCategory property
+	{
+		displayName = "OPTRE Buildings"; // Name visible in the list
+	};
+};
+
+class CfgEditorSubcategories
+{
+	class OPTRE_EditorSubcategory_Objects_Military // Category class, you point to it in editorSubcategory property
+	{
+		displayName = "Military"; // Name visible in the list
+	};
+	class OPTRE_EditorSubcategory_Objects_Civilian // Category class, you point to it in editorSubcategory property
+	{
+		displayName = "Civil"; // Name visible in the list
+	};
+	class OPTRE_EditorSubcategory_Objects_Light // Category class, you point to it in editorSubcategory property
+	{
+		displayName = "Lights"; // Name visible in the list
+	};
+	class OPTRE_EditorSubcategory_Objects_Plants // Category class, you point to it in editorSubcategory property
+	{
+		displayName = "Plants"; // Name visible in the list
+	};
+	class OPTRE_EditorSubcategory_Objects_Transport // Category class, you point to it in editorSubcategory property
+	{
+		displayName = "Transportation"; // Name visible in the list
+	};
+	class OPTRE_EditorCategory_Frigate_Pieces // Category class, you point to it in editorSubcategory property
+	{
+		displayName = "Pieces"; // Name visible in the list
+	};
+	class OPTRE_EditorCategory_Frigate_Deco // Category class, you point to it in editorSubcategory property
+	{
+		displayName = "Decoration"; // Name visible in the list
+	};
+	class OPTRE_EditorCategory_Frigate_Objects // Category class, you point to it in editorSubcategory property
+	{
+		displayName = "Objects"; // Name visible in the list
+	};
+	class OPTRE_EditorCategory_Buildings_Civilian // Category class, you point to it in editorCategory property
+	{
+		displayName = "Civil"; // Name visible in the list
+	};
+	class OPTRE_EditorCategory_Buildings_Military // Category class, you point to it in editorCategory property
+	{
+		displayName = "Military"; // Name visible in the list
+	};
+	class OPTRE_EditorCategory_Buildings_Skyscraper // Category class, you point to it in editorCategory property
+	{
+		displayName = "Skyscrapers"; // Name visible in the list
+	};
+	class OPTRE_EditorCategory_Buildings_Highway // Category class, you point to it in editorCategory property
+	{
+		displayName = "Highway"; // Name visible in the list
+	};
+};
+
 class CfgFactionClasses //This configures the in-game factions
 {
 	class OPTRE_UNSC

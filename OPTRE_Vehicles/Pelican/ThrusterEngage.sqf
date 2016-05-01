@@ -1,5 +1,6 @@
 _pelican = _this;
 _pelican setvariable ["OPTRE_Thruster_EngagedStatus",true,true];
+_pelican setobjecttextureglobal [1,"optre_vehicles\pelican\data\bolt_blue_ca.paa"];
 hint "ENGAGING FORWARD THRUSTERS";
 while {((_pelican getvariable ["OPTRE_Thruster_EngagedStatus",false]) AND (alive _pelican))} do
 {

@@ -17,6 +17,7 @@ v0.14
 			-Balaclava variants of M52 Helmets (Misc)
 			-SRS99D Suppressor (Weapon)
 			-Placeholder Police Units
+			-3DEN Editor Categories and Subcategories
 	Fixed
 			-Fixed strange semi-transparency on Warthog and Marine Kneepads/Shoulders
 			-Floating glitchy backpacks
@@ -33,6 +34,7 @@ v0.14
 			-Improved Sniper and M73 textures
 			-Sniper bipod is now built into weapon
 			-Moved all music to new separate pbo (OPTRE_Music)
+			-Adjusted Falcon and Pelican flight models
 	Removed
 			-Artifacting Resolution LODs
 			-Inaccurate MA5 optic reticle (Reverted to standard reticle)

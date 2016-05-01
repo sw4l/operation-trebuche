@@ -11,6 +11,8 @@
 
 class CfgVehicles
 {
+	class All {};
+	class Static: All {};
 	class Helicopter;
 	class Helicopter_Base_F: Helicopter
 	{
@@ -79,21 +81,16 @@ class CfgVehicles
 		crewCrashProtection=0;
 		crewExplosionProtection = 0;
 		
-	///AI HANDLING
-	
-		landingSpeed = 20;        /// used for AI to approach the runawy, the plane should be stable at this speed
-		acceleration = 150;     /// used for AI to plan the waypoints and accelerating, doesn't affect plane performance
-		
 	///HANDLING
-		altFullForce = 50000;					 	/// in what height do the engines still have full thrust
-		altNoForce = 12000;					 	/// thrust of the engines interpolates to zero between altFullForce and altNoForce
+		//altFullForce = 50000;					 	/// in what height do the engines still have full thrust
+		//altNoForce = 12000;					 	/// thrust of the engines interpolates to zero between altFullForce and altNoForce
 		maxSpeed = 500;//400						 	/// what is the maximum speed of the vehicle
 		maxFordingDepth = 0.75;	//0.55	   			 	/// how deep could the vehicle be in water without getting some damage
 		mainBladeRadius = 0.1;						/// describes the radius of main rotor - used for collision detection
 		liftForceCoef = 2; //20				///multiplier of lift force	
 		bodyFrictionCoef = 0.6777;				///multiplier of body friction
-		cyclicAsideForceCoef = 3;	   			///multiplier of bank force
-        cyclicForwardForceCoef = 1.2;  				///multiplier of dive force
+		cyclicAsideForceCoef = 4;	   			///multiplier of bank force
+        cyclicForwardForceCoef = 2;  				///multiplier of dive force
 		//simulation = helicopterX;
 		//frontRotorForceCoef = 10000;  //30       				///front rotor(strenth of lift)
 		backRotorForceCoef = 1.377;   //30       				///tailrotor(strength of horzontal movement=)
@@ -844,8 +841,8 @@ class CfgVehicles
 		accuracy = 1.50; 					/// harder to distinguish side than vehicle type
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
-		hiddenSelections[]= {"camo1","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_green_CO.paa"};
+		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_green_CO.paa",""};
 	};
 	class OPTRE_Pelican_unarmed_tan: OPTRE_Pelican_unarmed_green
 	{
@@ -859,8 +856,8 @@ class CfgVehicles
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
 		vehicleClass = "OPTRE_UNSC_Air_class";
-		hiddenSelections[]= {"camo1","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] = {"OPTRE_Vehicles\Pelican\data\PelicanExterior_Tan_CO.paa"};
+		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] = {"OPTRE_Vehicles\Pelican\data\PelicanExterior_Tan_CO.paa",""};
 	};
 	class OPTRE_Pelican_unarmed_black: OPTRE_Pelican_unarmed_green
 	{
@@ -874,8 +871,8 @@ class CfgVehicles
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
 		vehicleClass = "OPTRE_UNSC_Air_class";
-		hiddenSelections[]= {"camo1","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_black_CO.paa"};
+		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_black_CO.paa",""};
 	};
 	class OPTRE_Pelican_unarmed_ins: OPTRE_Pelican_unarmed_green
 	{
@@ -889,8 +886,8 @@ class CfgVehicles
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
 		vehicleClass = "OPTRE_Ins_Air_class";
-		hiddenSelections[]= {"camo1","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_innie_CO.paa"};
+		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_innie_CO.paa",""};
 	};
 	class OPTRE_Pelican_unarmed_marine: OPTRE_Pelican_F
 	{
@@ -904,8 +901,8 @@ class CfgVehicles
 		accuracy = 1.50; 					/// harder to distinguish side than vehicle type
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
-		hiddenSelections[]= {"camo1","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_Marine_CO.paa"};
+		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_Marine_CO.paa",""};
 	};
 	class OPTRE_Pelican_armed_green: OPTRE_Pelican_F
 	{
@@ -1020,30 +1017,30 @@ class CfgVehicles
 				memoryPointGunnerOptics= "";
 			};
 		};
-		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_green_CO.paa"};
+		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_green_CO.paa",""};
 	};
 	class OPTRE_Pelican_armed_tan: OPTRE_Pelican_armed_green
 	{
 		author="Article 2 Studios";
 		displayName = "D77H-TCI/AV Pelican (Tan)";
-		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_tan_CO.paa"};
+		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_tan_CO.paa",""};
 	};
 	class OPTRE_Pelican_armed_black: OPTRE_Pelican_armed_green
 	{
 		author="Article 2 Studios";
 		displayName = "D77H-TCI/AV Pelican (Black)";
-		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_black_CO.paa"};
+		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_black_CO.paa",""};
 	};
 	class OPTRE_Pelican_armed_marine: OPTRE_Pelican_armed_green
 	{
 		author="Article 2 Studios";
 		displayName = "D77H-TCI/AV Pelican (Marine)";
 		crew = "OPTRE_UNSC_Marine_Pilot";					/// lets use the sample soldier we have as default captain of the boat
-		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_marine_CO.paa"};
+		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_marine_CO.paa",""};
 	};
 	class OPTRE_Pelican_armed_ins: OPTRE_Pelican_armed_green
 	{
@@ -1053,8 +1050,8 @@ class CfgVehicles
 		faction	= "OPTRE_Ins";					/// defines the faction inside of the side
 		crew = "OPTRE_Ins_ER_Rebel_tan";					/// lets use the sample soldier we have as default captain of the boat
 		vehicleClass = "OPTRE_Ins_Air_class";
-		hiddenSelections[]= {"camo1","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_innie_CO.paa"};
+		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_innie_CO.paa",""};
 	};
 	
 	class PlaneWreck;
@@ -1092,5 +1089,5 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		displayname = "D77H-TCI Pelican Wreck (Static 2)";
 		model = "OPTRE_Vehicles\Pelican\pelican_wreck_static2.p3d";
-	};
+	};	
 };

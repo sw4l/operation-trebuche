@@ -41,6 +41,8 @@ class CfgVehicles
 		model = "\OPTRE_buildings\Highway\Highway_straight.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Highway";
 	};
 	
 	class Land_Highway_bridge: House_F
@@ -55,6 +57,8 @@ class CfgVehicles
 		model = "\OPTRE_buildings\Highway\Highway_bridge.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Highway";
 	};
 	
 	class Land_Highway_ramp_a: House_F
@@ -69,6 +73,8 @@ class CfgVehicles
 		model = "\OPTRE_buildings\Highway\Highway_ramp_a.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Highway";
 	};
 	
 	class Land_Highway_turnlane_a: House_F
@@ -83,6 +89,8 @@ class CfgVehicles
 		model = "\OPTRE_buildings\Highway\Highway_turnlane_a.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Highway";
 	};
 	
 	class Land_Highway_ramp_b: House_F
@@ -97,6 +105,8 @@ class CfgVehicles
 		model = "\OPTRE_buildings\Highway\Highway_ramp_b.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Highway";
 	};
 	
 	class Land_Highway_turnlane_b: House_F
@@ -111,6 +121,8 @@ class CfgVehicles
 		model = "\OPTRE_buildings\Highway\Highway_turnlane_b.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Highway";
 	};
 	
 	class Land_Highway_turn_left: House_F
@@ -125,6 +137,8 @@ class CfgVehicles
 		model = "\OPTRE_buildings\Highway\Highway_turn_left.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Highway";
 	};
 	
 	class Land_Highway_turn_right: House_F
@@ -139,6 +153,8 @@ class CfgVehicles
 		model = "\OPTRE_buildings\Highway\Highway_turn_Right.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Highway";
 	};
 	
 	class Land_Highway_gate_A: House_F
@@ -153,6 +169,8 @@ class CfgVehicles
 		model = "\OPTRE_buildings\Highway\Highway_gate_a.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Highway";
 		class AnimationSources
 		{
 			class gate_door_1				/// the class name is later used in model.cfg
@@ -213,6 +231,8 @@ class CfgVehicles
 		model = "\OPTRE_buildings\Highway\Highway_gate_house_a.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Highway";
 	};
 	class Land_gate_house: House_F
 	{
@@ -226,6 +246,8 @@ class CfgVehicles
 		model = "\OPTRE_buildings\Highway\gate_house.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Highway";
 		ladders[] =
 
 		{

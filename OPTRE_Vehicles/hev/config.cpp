@@ -99,6 +99,7 @@ class CfgVehicles //This configures units and backpacks
 			class HitHull;
 		};
 	};
+	class Steerable_Parachute_F;
 
 	// HUMAN ENTRY VEHICLES
 	
@@ -200,13 +201,13 @@ class CfgVehicles //This configures units and backpacks
 			weapons[]																	={};
 			armor 																		= 9999999;
 			epeImpulseDamageCoef 														= 0;
-			altFullForce = 5000;	/// in what height do the engines still have full thrust
-			altNoForce = 0;		/// thrust of the engines interpolates to zero between altFullForce and altNoForce
+			altFullForce = 500;	/// in what height do the engines still have full thrust
+			altNoForce = 100;		/// thrust of the engines interpolates to zero between altFullForce and altNoForce
 			maxSpeed = 1;			/// what is the maximum speed of the vehicle
 			maxFordingDepth = 5000;	/// how deep could the vehicle be in water without getting some damage
 			mainBladeRadius = 0.1;	/// describes the radius of main rotor - used for collision detection
 			driverCanEject = 0;			/// pilot shouldn't be able to do so as he doesn't have eject seat
-			liftForceCoef = 0;	///multiplier of lift force
+			liftForceCoef = 0.25;	///multiplier of lift force
 			bodyFrictionCoef = 0.0;		///multiplier of body friction
 			cyclicAsideForceCoef = 0.0;	///multiplier of bank force
 			cyclicForwardForceCoef = 0.0;	///multiplier of dive force
@@ -328,7 +329,7 @@ class CfgVehicles //This configures units and backpacks
 			armor 																		= 10000;
 			canFloat 																	= true;
 	};
-	class OPTRE_HEV_Chute: RoadCone_F
+	class OPTRE_HEV_Chute: Steerable_Parachute_F
 	{
 		dlc = "OPTRE";
 			scope 																		= 1;
@@ -340,5 +341,37 @@ class CfgVehicles //This configures units and backpacks
 			mapSize 																	= 0.7;
 			armor 																		= 10000;
 			canFloat 																	= true;
+			animated 																	= 0;
+			animationOpen 																= "";
+			animationDrop 																= "";
+			crew 																		= "B_UAV_AI";
+			simulation 																	= "parachute";
+			thrustDeccel = 0.0;
+			thrustNormal = 0.0;
+			thrustAccel = 0.0;
+			minRotationZ = 0.0;
+			maxRotationZ = 0.1;
+			minRotationX = 0.0;
+			maxRotationX = 0.1;
+			maxSensitivityHorizontal = 0.0;
+			maxSensitivityVertical = 0.0;
+			deltaValueVertical = 0.0;
+			deltaValueHorizontal = 0.0;
+			turnForceScale = 0.0;
+			minGravity = -1.0;
+			normalGravity = -1.0;
+			maxGravity = -1.0;
+			distanceLevel1 = 20.0;
+			distanceLevel2 = 40.0;
+			minLiftThrust = -10.0;
+			maxLiftThrust = -10.0;
+			minLiftDuration = 1.0;
+			maxLiftDuration = 1.0;
+			liftThreshold = 0.0;
+			airInfluence = 0.0;
+			liftGravity = -10.0;
+			openingTime = 0.0;
+			duration = 10.0;
+			unitInfoType = "RscUnitInfoParachute";
 	};
 };

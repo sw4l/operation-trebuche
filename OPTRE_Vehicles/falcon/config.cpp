@@ -63,21 +63,23 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		armor = 60;				/// just some protection against missiles, collisions and explosions
-		altFullForce = 4000;	/// in what height do the engines still have full thrust
-		altNoForce = 6000;		/// thrust of the engines interpolates to zero between altFullForce and altNoForce
+		altFullForce = 10000;
+		altNoForce = 20000;
 		maxSpeed = 300;			/// what is the maximum speed of the vehicle
 		maxFordingDepth = 0.75;	/// how deep could the vehicle be in water without getting some damage
 		mainBladeRadius = 3.0;	/// describes the radius of main rotor - used for collision detection
+		maxXRotSpeed = 1.5;
+		maxYRotSpeed = 1.5;
 		//multiplier of lift force
-		liftForceCoef = 1.1;	
+		liftForceCoef = 2;
 		//multiplier of body friction
 		bodyFrictionCoef = 0.7;	
 		//multiplier of bank force
-		cyclicAsideForceCoef = 1.0;
+		cyclicAsideForceCoef = 2;
 		//multiplier of dive force
-		cyclicForwardForceCoef = 1.0;
+		cyclicForwardForceCoef = 1.5;
 		//multiplier of back rotor force
-		backRotorForceCoef = 1.0;	
+		backRotorForceCoef = 1.25;	
 		accuracy = 0.5;											/// how hard it is to distinguish the type of the vehicle (bigger number means harder)
 		displayName = "Falcon"; 								/// how is the heli displayed in editor
 		model = "\OPTRE_vehicles\falcon\falcon.p3d"; 	/// path to model of the heli

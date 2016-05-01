@@ -39,6 +39,8 @@ class CfgVehicles
 		displayName = "ODST Grave";
 		model = "\OPTRE_Misc\Objects\odst_grave.p3d";
 		author = "Article 2 Studios";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 	class OPTRE_Objects_Soldier_Grave: OPTRE_Objects_Base
 	{
@@ -48,6 +50,8 @@ class CfgVehicles
 		displayName = "Soldier Grave";
 		model = "\OPTRE_Misc\Objects\soldier_grave.p3d";
 		author = "Article 2 Studios";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 	class OPTRE_Objects_Monument: OPTRE_Objects_Base
 	{
@@ -57,6 +61,8 @@ class CfgVehicles
 		displayName = "Monument";
 		model = "\OPTRE_Misc\Objects\monument.p3d";
 		author = "Article 2 Studios";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 	class OPTRE_Objects_Kiosk1: OPTRE_Objects_Base
 	{
@@ -68,6 +74,8 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		hiddenSelections[]= {"camo1","camo2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Misc\Objects\data\kiosk1_poster.paa"};
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 	class OPTRE_Objects_Kiosk2: OPTRE_Objects_Kiosk1
 	{
@@ -79,6 +87,8 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		hiddenSelections[]= {"camo1","camo2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Misc\Objects\data\kiosk2_poster.paa"};
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 	class OPTRE_Objects_Kiosk3: OPTRE_Objects_Kiosk1
 	{
@@ -90,6 +100,8 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		hiddenSelections[]= {"camo1"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Misc\Objects\data\kiosk3_poster.paa"};
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 	class OPTRE_Objects_Holotable_Blank: OPTRE_Objects_Base
 	{
@@ -101,6 +113,8 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		hiddenSelections[]= {"map_stratis","map_altis"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {};
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 	class OPTRE_Objects_Holotable_Stratis: OPTRE_Objects_Holotable_Blank
 	{
@@ -111,6 +125,8 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		hiddenSelections[]= {"map_altis"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {};
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 	class OPTRE_Objects_Holotable_Altis: OPTRE_Objects_Holotable_Blank
 	{
@@ -121,6 +137,8 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		hiddenSelections[]= {"map_stratis"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {};
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 	class OPTRE_Objects_Generator: OPTRE_Objects_Base
 	{
@@ -130,6 +148,8 @@ class CfgVehicles
 		displayName = "Portable Generator";
 		model = "\OPTRE_Misc\Objects\generator.p3d";
 		author = "Article 2 Studios";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 };
 

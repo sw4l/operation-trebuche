@@ -75,6 +75,8 @@ class CfgVehicles
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_City_Building_class";
 		displayName = "Container Small [Green]";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Military";
 	};
 	
 	class OPTRE_Building_Container_Large_Green: Land_Cargo_HQ_V1_F
@@ -84,6 +86,8 @@ class CfgVehicles
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_City_Building_class";
 		displayName = "Container Large [Green]";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Military";
 	};
 	
 	class OPTRE_Building_Container_Tower_Green: Land_Cargo_Patrol_V1_F
@@ -93,6 +97,8 @@ class CfgVehicles
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_City_Building_class";
 		displayName = "Container Tower [Green]";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Military";
 	};
 	
 	class OPTRE_Building_Container_Small_Tan: Land_Cargo_House_V3_F
@@ -102,6 +108,8 @@ class CfgVehicles
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_City_Building_class";
 		displayName = "Container Small [Tan]";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Military";
 	};
 	
 	class OPTRE_Building_Container_Large_Tan: Land_Cargo_HQ_V3_F
@@ -111,6 +119,8 @@ class CfgVehicles
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_City_Building_class";
 		displayName = "Container Large [Tan]";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Military";
 	};
 	
 	class OPTRE_Building_Container_Tower_Tan: Land_Cargo_Patrol_V3_F
@@ -120,6 +130,8 @@ class CfgVehicles
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_City_Building_class";
 		displayName = "Container Tower [Tan]";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Military";
 	};
 	
 	class OPTRE_Building_Container_Small_Medical: Land_Medevac_house_V1_F
@@ -129,6 +141,8 @@ class CfgVehicles
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_City_Building_class";
 		displayName = "Container Small [Medical]";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Military";
 	};
 	
 	class OPTRE_Building_Container_Large_Medical: Land_Medevac_HQ_V1_F
@@ -138,6 +152,8 @@ class CfgVehicles
 		scopeCurator = 2;
 		vehicleClass = "OPTRE_City_Building_class";
 		displayName = "Container Large [Medical]";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Military";
 	};
 	
 	class Land_Elevator_Base: House_F
@@ -150,6 +166,8 @@ class CfgVehicles
 		scope=2;
 		featureSize = 10;
 		displayName="Space Elevator (Base)";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Skyscraper";
 	};
 		
 	class Land_Elevator_Piece: House_F
@@ -162,6 +180,8 @@ class CfgVehicles
 		scope=2;
 		featureSize = 10;
 		displayName="Space Elevator (Piece)";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Skyscraper";
 	};
 
 	class Land_Tower1: House_F
@@ -173,6 +193,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Tower 1";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Skyscraper";
 	};
 
 	class Land_Tower2: House_F
@@ -184,6 +206,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Tower 2";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Skyscraper";
 	};
 
 	class Land_Tower3: House_F
@@ -195,6 +219,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Tower 3";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Skyscraper";
 	};
 
 	class Land_Apartment8A: House_F
@@ -206,6 +232,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Apartment 1 Closed";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Civilian";
 	};
 	
 	class Land_Apartment4A: House_F
@@ -217,6 +245,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Apartment 2 Closed";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Civilian";
 	};
 	
 	class Land_Razor_Tower: House_F
@@ -228,6 +258,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Razor Tower";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Skyscraper";
 	};
 	
 	class Land_Sail_Tower: House_F
@@ -239,6 +271,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Sail Tower";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Skyscraper";
 	};
 	
 	class Land_Gen_Tower: House_F
@@ -250,6 +284,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Gen Tower";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Skyscraper";
 	};
 	
 	class Land_Base_Tower: House_F
@@ -261,6 +297,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Base Tower";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Skyscraper";
 	};
 	
 	class Land_Small_Plaza: House_F
@@ -272,6 +310,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Small Plaza";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
 	class Land_Ped_Bridge_Mid: House_F
@@ -283,6 +323,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Pedestrian Bridge (Middle)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
 	class Land_Ped_Bridge_End: House_F
@@ -294,6 +336,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Pedestrian Bridge (End)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 	
 	class Land_City_Block_Area: House_F
@@ -305,6 +349,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="City Block (Area)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 	
 	class Land_City_Block_Piece: House_F
@@ -316,6 +362,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="City Block (Piece)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 		
 	class Land_City_Block_Corner: House_F
@@ -327,6 +375,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="City Block (Corner)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 		
 	class Land_Rectangular_Plant_Box: House_F
@@ -338,6 +388,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Rectangular Plant Box";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 	
 	class Land_Door_Locked: House_F
@@ -349,6 +401,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Locked Door";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 		
 	class Land_Information_Board: House_F
@@ -360,6 +414,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Information Board";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
 	class Land_building01: House_F
@@ -371,6 +427,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Corner Building";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Civilian";
 	};
 
 	class Land_Panel_Tower: House_F
@@ -382,6 +440,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Panel Tower";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Skyscraper";
 	};
 
 	class Land_Building_sApartment: House_F
@@ -393,6 +453,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Small Apartment";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Civilian";
 	};
 
 	class Land_Building_LApartment: House_F
@@ -404,6 +466,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Large Apartment";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Civilian";
 	};
 
 	class Land_Dgnl_Tower: House_F
@@ -415,6 +479,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Large Tower";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Skyscraper";
 	};
 
 	class Land_Garage_UnCovered: House_F
@@ -426,6 +492,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Parking Garage (Open)";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Civilian";
 	};
 	
 	class Land_Urban_Building_01: House_F
@@ -437,6 +505,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Urban Building 01";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Civilian";
 	};
 
 	class Land_Urban_Building_02: House_F
@@ -448,6 +518,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Urban Building 02";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Civilian";
 	};
 	
 	class Land_Urban_Building_03: House_F
@@ -459,6 +531,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Urban Building 03";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Civilian";
 	};
 	class Land_Urban_Building_04: House_F
 	{
@@ -469,6 +543,8 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Urban Building 04";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Civilian";
 	};
 
 	class Land_Urban_Building_05: House_F
@@ -480,5 +556,7 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Urban Building 05";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorCategory_Buildings_Civilian";
 	};
 };

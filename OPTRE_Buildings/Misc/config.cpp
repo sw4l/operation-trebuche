@@ -46,6 +46,8 @@ class CfgVehicles
 		model = "\OPTRE_buildings\Misc\KOTH_Playset.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 };
 

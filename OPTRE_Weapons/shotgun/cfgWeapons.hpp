@@ -160,7 +160,7 @@ class CfgWeapons
 			};
 			class StandardSound: BaseSoundModeType
 			{
-				begin1[] 							= {"\OPTRE_Weapons\Shotgun\data\sounds\fire1.ogg",1.3,1,200};
+				begin1[] 							= {"\OPTRE_Weapons\Shotgun\data\sounds\fire1.ogg",1.3,1,1500};
 				soundBegin[] 						= {"begin1",1};
 				class SoundTails
 				{

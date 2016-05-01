@@ -39,9 +39,11 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "OPTRE Street Light (off)";
+		displayName = "Street Light (Off)";
 		model = "\OPTRE_Buildings\Citylights\Colony_Light_Street_off.p3d";
 		armor = 500;
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Light";
 	};
 	class Land_Colony_Light_Street: Lamps_base_F
 	{
@@ -50,9 +52,11 @@ class CfgVehicles
 		author = "Article 2 Studios";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "OPTRE Street Light (on)";
+		displayName = "Street Light (On)";
 		model = "\OPTRE_Buildings\Citylights\Colony_Light_Street.p3d";
 		armor = 500;
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Light";
 		class Reflectors
 		{
 			class Light_1
@@ -90,6 +94,8 @@ class CfgVehicles
 		armor=200;
 		scope=2;
 		displayName="Column Light";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Light";
 		class Reflectors
 		{
 			class Light_1
