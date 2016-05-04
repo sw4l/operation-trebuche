@@ -207,16 +207,20 @@ class CfgWeapons
 			};
 			class CowsSlot: CowsSlot
 			{
-				compatibleitems[] 					= {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope", "OPTRE_M6C_RDS"};
+				compatibleitems[] 					= {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope"};
 			};
 			class PointerSlot: PointerSlot
 			{
 				compatibleitems[] 					= {"acc_pointer_IR", "acc_flashlight"};
 			};
-			class UnderBarrelSlot: UnderBarrelSlot /// using test bipod
+			/*class UnderBarrelSlot: SlotInfo /// using test bipod
 			{
-				compatibleItems[] 					= {"bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk"};	
-			};	
+                access                                                  = 1;
+				compatibleItems[] = {"bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk"};	
+                displayname                                             = "Underbarrel Slot";
+                linkproxy                                               = "\A3\data_f\proxies\weapon_slots\UNDERBARREL";
+                scope                                                   = 2;	
+			};*/
 			mass = 75;
  		};
 	};

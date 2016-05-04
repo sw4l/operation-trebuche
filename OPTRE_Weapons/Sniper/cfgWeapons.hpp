@@ -277,7 +277,7 @@ class Mode_FullAuto;
 							};
                             class CowsSlot: CowsSlot
                             {
-                                compatibleitems[]        	                               = {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope", "OPTRE_M6C_RDS"};
+                                compatibleitems[]        	                               = {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope"};
                             };
 							class UnderBarrelSlot: UnderBarrelSlot /// using test bipod
 							{

@@ -378,7 +378,7 @@
                             class CowsSlot: SlotInfo
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"OPTRE_M73_SmartLink", "OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope", "OPTRE_M6C_RDS"};
+                                    compatibleitems[]                                       = {"OPTRE_M73_SmartLink", "OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope"};
                                     displayname                                             = "Optics Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\TOP";
                                     scope                                                   = 2;
@@ -391,10 +391,14 @@
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\SIDE";
                                     scope                                                   = 2;
                             };
-							class UnderBarrelSlot: UnderBarrelSlot /// using test bipod
+							/*class UnderBarrelSlot: SlotInfo /// using test bipod
 							{
-								compatibleItems[] = {"bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk"};		
-							};	
+                                access                                                  = 1;
+								compatibleItems[] 										= {"bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk"};	
+                                displayname                                             = "Underbarrel Slot";
+                                linkproxy                                               = "\A3\data_f\proxies\weapon_slots\UNDERBARREL";
+                                scope                                                   = 2;	
+							};	*/
                     };
             };
 			class OPTRE_M73: OPTRE_M73_base
@@ -415,14 +419,14 @@
                     {
 							mass = 140;
                     };
-									class LinkedItems
+					class LinkedItems
 					{
 					class LinkedItemsOptic
 					{
 					slot = "CowsSlot";
 					item = "OPTRE_M73_SmartLink";
 					};
-					class LinkedItemsMuzzle
+					class LinkedItemsUnderbarrel
 					{
 					slot = "UnderBarrelSlot";
 					item = "bipod_01_F_blk";

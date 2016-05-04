@@ -792,7 +792,7 @@ class CfgVehicles
 				maxTurn					= 360;
 				initTurn				= 0;
 				turretAxis				= "OsaVeze";
-				maxHorizontalRotSpeed	= 1.5;
+				maxHorizontalRotSpeed	= 1.75;
 				maxVerticalRotSpeed		= 1.5;
 				gunnerAction			= "driver_boat01";
 				gunnerInAction			= "driver_boat01";
@@ -1012,7 +1012,7 @@ class CfgVehicles
 				maxTurn					= 360;
 				initTurn 				= 0;
 				turretAxis				= "OsaVeze";
-				maxHorizontalRotSpeed	= 1.5;
+				maxHorizontalRotSpeed	= 1.75;
 				maxVerticalRotSpeed		= 1.5;
 				gunnerAction			= "driver_boat01";
 				gunnerInAction			= "driver_boat01";
@@ -1233,7 +1233,7 @@ class CfgVehicles
 				maxTurn					= 360;
 				initTurn				= 0;
 				turretAxis				= "OsaVeze";
-				maxHorizontalRotSpeed	= 1.5;
+				maxHorizontalRotSpeed	= 1.75;
 				maxVerticalRotSpeed		= 1.5;
 				gunnerAction			= "driver_boat01";
 				gunnerInAction			= "driver_boat01";
@@ -1455,7 +1455,7 @@ class CfgVehicles
 				maxTurn					= 360;
 				initTurn				= 0;
 				turretAxis				= "OsaVeze";
-				maxHorizontalRotSpeed	= 1.5;
+				maxHorizontalRotSpeed	= 1.75;
 				maxVerticalRotSpeed		= 1.5;
 				gunnerAction			= "driver_boat01";
 				gunnerInAction			= "driver_boat01";

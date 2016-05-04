@@ -69,6 +69,7 @@ class CfgVehicles
 		respawnLinkedItems[] 							= {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		hiddenSelections[] 								= {"camo"}; //Determines what hiddenselections are enabled
 		//hiddenSelectionsTextures[] 						= {"OPTRE_Ins_Units\Data\innie_uniform_ _CO.paa"};
+		editorSubcategory = "OPTRE_EditorSubcategory_MenINS";
 	};
 	class OPTRE_Ins_ER_Rebel_tan: OPTRE_Ins_ER_soldier_base //Unit Class name: Class getting info from
 	{
@@ -110,6 +111,7 @@ class CfgVehicles
         backpack                            = "";
 		hiddenSelections[] 					= {"camo1","camo2"};
 		hiddenSelectionsTextures[] 			= {"OPTRE_Ins_Units\Data\innie_garments_od_co.paa","OPTRE_Ins_Units\Data\inne_CombatUniformOD_co.paa"};
+		editorSubcategory = "OPTRE_EditorSubcategory_MenINS";
 	 }; //Update later with better pants
 	class OPTRE_Ins_ER_Insurgent_Grey: OPTRE_Ins_ER_Insurgent_OD
 	 {
@@ -145,6 +147,7 @@ class CfgVehicles
         backpack                            = "";
 		hiddenSelections[] 					= {"camo"};
 		hiddenSelectionsTextures[] 			= {"OPTRE_Ins_Units\er\data\ins_uniform_jacket_surplus_OD2.paa"};
+		editorSubcategory = "OPTRE_EditorSubcategory_MenINS";
 	 };
 	class OPTRE_Ins_ER_man_jacket_surplus_redshirt : OPTRE_Ins_ER_man_jacket_surplus_OD
 	 {
@@ -322,6 +325,7 @@ class CfgVehicles
         backpack                            = "";
 		hiddenSelections[] 					= {"camo"};
 		hiddenSelectionsTextures[] 			= {"OPTRE_Ins_Units\er\data\ins_uniform_surplus_black.paa"};
+		editorSubcategory = "OPTRE_EditorSubcategory_MenINS";
 	 };
 	 class OPTRE_Ins_ER_man_rolled_surplus_crimson : OPTRE_Ins_ER_man_rolled_surplus_black
 	 {

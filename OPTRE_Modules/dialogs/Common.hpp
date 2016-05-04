@@ -409,6 +409,7 @@ class OPTRE_ZEUS_RscButton_Invisible
 };
 
 class OPTRE_ZEUS_RscListBox {
+
 	idc = -1;
 	type = 5;
 	style = 0 + 0x10;
@@ -432,15 +433,26 @@ class OPTRE_ZEUS_RscListBox {
 	autoScrollSpeed = -1;
 	autoScrollDelay = 5;
 	autoScrollRewind = 0;
-	soundSelect[] = {"\ca\ui\data\sound\new1", 0.09, 1};
+	soundCollapse[] = {"\A3\ui_f\data\sound\RscCombo\soundCollapse",0.1,1};
+	soundExpand[] = {"\A3\ui_f\data\sound\RscCombo\soundExpand",0.1,1};
+	soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect",0.1,1};
 	
 	class ListScrollBar  {
-		color[] = {1, 1, 1, 0.6};
-		colorActive[] = {1, 1, 1, 1};
-		colorDisabled[] = {1, 1, 1, 0.3};
-		thumb = "\ca\ui\data\igui_scrollbar_thumb_ca.paa";
-		arrowFull = "\ca\ui\data\igui_arrow_top_active_ca.paa";
-		arrowEmpty = "\ca\ui\data\igui_arrow_top_ca.paa";
-		border = "\ca\ui\data\igui_border_scroll_ca.paa";
+		arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
+		arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
+		autoScrollDelay = 5;
+		autoScrollEnabled = 1;
+		autoScrollRewind = 0;
+		autoScrollSpeed = -1;
+		border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
+		color[] = {1,0.5,1,0.5};
+		colorActive[] = {1,0.5,1,0.5};
+		colorDisabled[] = {1,0.5,1,0.5};
+		colorBackground[] = {1,0.5,1,0.5};
+		height = 0;
+		scrollSpeed = 0.06;
+		shadow = 0;
+		thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
+		width = 0;
 	};
 };

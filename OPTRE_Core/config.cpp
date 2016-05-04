@@ -62,33 +62,81 @@ class CfgEditorSubcategories
 	{
 		displayName = "Transportation"; // Name visible in the list
 	};
-	class OPTRE_EditorCategory_Frigate_Pieces // Category class, you point to it in editorSubcategory property
+	class OPTRE_EditorSubcategory_Frigate_Pieces // Category class, you point to it in editorSubcategory property
 	{
 		displayName = "Pieces"; // Name visible in the list
 	};
-	class OPTRE_EditorCategory_Frigate_Deco // Category class, you point to it in editorSubcategory property
+	class OPTRE_EditorSubcategory_Frigate_Deco // Category class, you point to it in editorSubcategory property
 	{
 		displayName = "Decoration"; // Name visible in the list
 	};
-	class OPTRE_EditorCategory_Frigate_Objects // Category class, you point to it in editorSubcategory property
+	class OPTRE_EditorSubcategory_Frigate_Objects // Category class, you point to it in editorSubcategory property
 	{
 		displayName = "Objects"; // Name visible in the list
 	};
-	class OPTRE_EditorCategory_Buildings_Civilian // Category class, you point to it in editorCategory property
+	class OPTRE_EditorSubcategory_Buildings_Civilian // Category class, you point to it in editorCategory property
 	{
 		displayName = "Civil"; // Name visible in the list
 	};
-	class OPTRE_EditorCategory_Buildings_Military // Category class, you point to it in editorCategory property
+	class OPTRE_EditorSubcategory_Buildings_Military // Category class, you point to it in editorCategory property
 	{
 		displayName = "Military"; // Name visible in the list
 	};
-	class OPTRE_EditorCategory_Buildings_Skyscraper // Category class, you point to it in editorCategory property
+	class OPTRE_EditorSubcategory_Buildings_Skyscraper // Category class, you point to it in editorCategory property
 	{
 		displayName = "Skyscrapers"; // Name visible in the list
 	};
-	class OPTRE_EditorCategory_Buildings_Highway // Category class, you point to it in editorCategory property
+	class OPTRE_EditorSubcategory_Buildings_Highway // Category class, you point to it in editorCategory property
 	{
 		displayName = "Highway"; // Name visible in the list
+	};
+	class OPTRE_EditorSubcategory_MenWDL // Category class, you point to it in editorCategory property
+	{
+		displayName = "Men (Woodland)"; // Name visible in the list
+	};
+	class OPTRE_EditorSubcategory_MenDES // Category class, you point to it in editorCategory property
+	{
+		displayName = "Men (Desert)"; // Name visible in the list
+	};
+	class OPTRE_EditorSubcategory_MenTRO // Category class, you point to it in editorCategory property
+	{
+		displayName = "Men (Tropic)"; // Name visible in the list
+	};
+	class OPTRE_EditorSubcategory_MenARI // Category class, you point to it in editorCategory property
+	{
+		displayName = "Men (Arid)"; // Name visible in the list
+	};
+	class OPTRE_EditorSubcategory_MenSNO // Category class, you point to it in editorCategory property
+	{
+		displayName = "Men (Snow)"; // Name visible in the list
+	};
+	class OPTRE_EditorSubcategory_MenMAR // Category class, you point to it in editorCategory property
+	{
+		displayName = "Men (Marines)"; // Name visible in the list
+	};
+	class OPTRE_EditorSubcategory_MenODST // Category class, you point to it in editorCategory property
+	{
+		displayName = "Men (ODST)"; // Name visible in the list
+	};
+	class OPTRE_EditorSubcategory_MenNavy // Category class, you point to it in editorCategory property
+	{
+		displayName = "Men (Navy)"; // Name visible in the list
+	};
+	class OPTRE_EditorSubcategory_MenAF // Category class, you point to it in editorCategory property
+	{
+		displayName = "Men (Air Force)"; // Name visible in the list
+	};
+	class OPTRE_EditorSubcategory_MenS // Category class, you point to it in editorCategory property
+	{
+		displayName = "Men (Special)"; // Name visible in the list
+	};
+	class OPTRE_EditorSubcategory_MenURF // Category class, you point to it in editorCategory property
+	{
+		displayName = "Men (URF)"; // Name visible in the list
+	};
+	class OPTRE_EditorSubcategory_MenINS // Category class, you point to it in editorCategory property
+	{
+		displayName = "Men (Insurgents)"; // Name visible in the list
 	};
 };
 
@@ -684,7 +732,7 @@ class CfgVehicles
 		};
 	};
 	
-		class ModuleCAS_F: Module_F
+	class ModuleCAS_F: Module_F
 	{
 		author = "$STR_A3_Bohemia_Interactive";
 		_generalMacro = "ModuleCAS_F";

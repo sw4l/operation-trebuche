@@ -38,6 +38,7 @@ class CfgVehicles
 		respawnLinkedItems[] 											= {"ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
         hiddenSelections[]												= {"Camo"};
         hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Navy\data\coveralls_GRAY_co.paa"};
+		editorSubcategory = "OPTRE_EditorSubcategory_MenNavy";
 	};
 	class OPTRE_UNSC_Navy_Soldier_Yellow: OPTRE_UNSC_Navy_Soldier 
 	{

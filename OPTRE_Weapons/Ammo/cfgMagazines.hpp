@@ -454,6 +454,13 @@ class CfgMagazines
 		ammo = "OPTRE_M91091_110mm";
 		count = 1000;
 	};
+	class OPTRE_M910_5000Rnd_50mm: OPTRE_M9109_2500Rnd_50mm
+	{
+		author = "Article 2 Studios";
+		displayNameShort = "50mm";
+		ammo = "OPTRE_M9109_50mm";
+		count = 5000;
+	};
 	
 	
 	//Rockets

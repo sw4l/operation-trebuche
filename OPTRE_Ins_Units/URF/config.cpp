@@ -64,6 +64,7 @@ class CfgVehicles
         backpack 							= "B_Kitbag_rgr";
 		hiddenSelections[] 					= {"camo"};
 		hiddenSelectionsTextures[] 			= {"OPTRE_Ins_Units\Data\inne_CombatUniformOD_co.paa"};
+		editorSubcategory = "OPTRE_EditorSubcategory_MenURF";
 	 };
 	 
 	 class OPTRE_Ins_URF_officer_base: I_Soldier_base_F
@@ -91,6 +92,7 @@ class CfgVehicles
         backpack                            = "";
 		hiddenSelections[] 					= {"camo1","camo2"};
 		hiddenSelectionsTextures[] 			= {"OPTRE_Ins_Units\Data\inne_OfficerUniformOD_co.paa",""};
+		editorSubcategory = "OPTRE_EditorSubcategory_MenURF";
 	 };
 	 
 	 

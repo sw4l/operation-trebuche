@@ -180,9 +180,12 @@ While {OPTRE_Hud_On AND cameraView != "EXTERNAL"} do {
 			_throwWeaponPic ctrlSetText (getText (configFile >> 'CfgMagazines' >> _gren >> 'pictureWire')); 
 			if (_gren != "" AND ctrlText _throwWeaponPic == "") then {_throwWeaponPic ctrlSetText "\OPTRE_Hud\data\UknownWireWeapons\UnknownThrow.paa";};
 			_text_101 ctrlSetText ( format ["%1",(getText (configFile >> "CfgMagazines" >> _gren >> "displayName"))] );
-			_stringNumbs = ( format ["%1 |", ({_x == _gren} count _magazinesPlayer) ] ) splitString '';	
-			_4 ctrlSetText (format ["OPTRE_Hud\Data\Numbers\%1.paa",_stringNumbs select 0]);
-			_5 ctrlSetText (format ["OPTRE_Hud\Data\Numbers\%1.paa",_stringNumbs select 1]);
+			_stringNumbs1 = ( format ["%1 |", ({_x == _gren} count _magazinesPlayer) ] ) splitString '';	
+			0 = switch (count _stringNumbs1) do {
+				case 3: { _4 ctrlSetText (format ["\OPTRE_Hud\Data\Numbers\%1.paa",_stringNumbs1 select 0]); _5 ctrlSetText ""; };
+				case 4: { _4 ctrlSetText (format ["\OPTRE_Hud\Data\Numbers\%1.paa",_stringNumbs1 select 0]); _5 ctrlSetText (format ["\OPTRE_Hud\Data\Numbers\%1.paa",_stringNumbs1 select 1]); };
+				default { _4 ctrlSetText ""; _5 ctrlSetText ""; };
+			};
 			OPTRE_HUD_CurrentThrowCheck = _gren;
 			if OPTRE_HUD_UPDATEALL_Throw then {OPTRE_HUD_UPDATEALL_Throw = false;}; 
 		};

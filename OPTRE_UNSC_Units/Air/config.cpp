@@ -198,6 +198,7 @@ class CfgVehicles //This configures units and backpacks
 		explosionShielding = 0.04;// [*] for consistent explosive damage after adjusting = ( armorStructural / 10 )
 		minTotalDamageThreshold = 0.001;//minimalHit for total damage
 		impactDamageMultiplier= 0.5;//multiplier for falling damage
+		editorSubcategory = "OPTRE_EditorSubcategory_MenAF";
 	};
 	// BASE UNITS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -714,7 +714,7 @@ class CfgVehicles
 				position = cargo_door_handle;
 				radius = 6;
 				priority = 2;
-				onlyForPlayer = 1;
+				onlyForPlayer = 0;
 				condition = "((this animationPhase ""cargoDoor_1"" < 0.5) AND (this animationPhase ""cargoDoor_2"" < 0.5) AND (alive this) AND (player in [gunner this, driver this]))"; /// only openable from inside and when closed
 				statement = "this animate [""cargoDoor_1"",1]; this animate [""cargoDoor_2"",1]";
 				animPeriod = 5;
@@ -739,7 +739,7 @@ class CfgVehicles
 				position = cargo_door_handle;
 				radius = 5;
 				priority = 3;
-				onlyForPlayer = 1;
+				onlyForPlayer = 0;
 				condition = "(!(this getvariable [""OPTRE_Pelican_isLightOn"",false]) AND (player == driver this) AND (alive this))";
 				statement = "this execVM ""\OPTRE_Vehicles\Pelican\InteriorLightOn.sqf""";
             };
@@ -762,7 +762,7 @@ class CfgVehicles
 				position = cargo_door_handle;
 				radius = 5;
 				priority = 10;
-				onlyForPlayer = 1;
+				onlyForPlayer = 0;
 				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this))";
 				statement = "this execVM ""\OPTRE_Vehicles\Pelican\ThrusterEngage.sqf""";
             };
@@ -1017,21 +1017,21 @@ class CfgVehicles
 				memoryPointGunnerOptics= "";
 			};
 		};
-		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
+		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_green_CO.paa",""};
 	};
 	class OPTRE_Pelican_armed_tan: OPTRE_Pelican_armed_green
 	{
 		author="Article 2 Studios";
 		displayName = "D77H-TCI/AV Pelican (Tan)";
-		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
+		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_tan_CO.paa",""};
 	};
 	class OPTRE_Pelican_armed_black: OPTRE_Pelican_armed_green
 	{
 		author="Article 2 Studios";
 		displayName = "D77H-TCI/AV Pelican (Black)";
-		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
+		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_black_CO.paa",""};
 	};
 	class OPTRE_Pelican_armed_marine: OPTRE_Pelican_armed_green
@@ -1039,7 +1039,7 @@ class CfgVehicles
 		author="Article 2 Studios";
 		displayName = "D77H-TCI/AV Pelican (Marine)";
 		crew = "OPTRE_UNSC_Marine_Pilot";					/// lets use the sample soldier we have as default captain of the boat
-		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
+		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_marine_CO.paa",""};
 	};
 	class OPTRE_Pelican_armed_ins: OPTRE_Pelican_armed_green
@@ -1050,7 +1050,7 @@ class CfgVehicles
 		faction	= "OPTRE_Ins";					/// defines the faction inside of the side
 		crew = "OPTRE_Ins_ER_Rebel_tan";					/// lets use the sample soldier we have as default captain of the boat
 		vehicleClass = "OPTRE_Ins_Air_class";
-		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia","attach_gun"}; //Determines what hiddenselections are enabled
+		hiddenSelections[]= {"camo1","camo3","clan","clan_text","insignia"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Pelican\data\PelicanExterior_innie_CO.paa",""};
 	};
 	

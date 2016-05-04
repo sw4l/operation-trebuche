@@ -218,6 +218,7 @@ class CfgVehicles
 		explosionShielding = 0.04;// [*] for consistent explosive damage after adjusting = ( armorStructural / 10 )
 		minTotalDamageThreshold = 0.001;//minimalHit for total damage
 		impactDamageMultiplier= 0.5;//multiplier for falling damage
+		editorSubcategory = "OPTRE_EditorSubcategory_MenMAR";
 	};
 	class OPTRE_UNSC_Marine_Soldier_Vacuum: OPTRE_UNSC_Marine_Soldier
 	{

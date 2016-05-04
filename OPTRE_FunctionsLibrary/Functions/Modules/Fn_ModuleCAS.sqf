@@ -30,6 +30,7 @@ _logic hideobject false;
 _logic setpos position _logic;
 };
 if !(isserver) exitwith {};
+if !(alive _logic) exitWith {};
 
 _planeClass = _logic getvariable ["vehicle","OPTRE_Pelican_armed_black"];
 _planeCfg = configfile >> "cfgvehicles" >> _planeClass;

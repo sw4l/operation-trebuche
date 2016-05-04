@@ -210,7 +210,7 @@ class CfgWeapons
 			};
 	   };
 		class optic_Aco;
-		class OPTRE_M6C_RDS: optic_Aco
+		/*class OPTRE_M6C_RDS: optic_Aco
 		{
 			dlc = "OPTRE";
 			scope 										= 2;
@@ -243,7 +243,7 @@ class CfgWeapons
 					};
 				};
 			};
-		};
+		};*/
 		class acc_pointer_IR;
 		class OPTRE_M6C_Laser: acc_pointer_IR
 		{
@@ -621,7 +621,7 @@ class CfgWeapons
 			class CowsSlot: SlotInfo
 			{
 				access 								= 1;
-				compatibleitems[] 					= {"OPTRE_M6C_RDS"};
+				compatibleitems[] 					= {};
 				displayname 						= "Optics Slot";
 				linkproxy 							= "\A3\data_f\proxies\weapon_slots\TOP";
 				scope 								= 2;

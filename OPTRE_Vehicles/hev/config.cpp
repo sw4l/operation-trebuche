@@ -100,88 +100,6 @@ class CfgVehicles //This configures units and backpacks
 		};
 	};
 	class Steerable_Parachute_F;
-
-	// HUMAN ENTRY VEHICLES
-	
-	/*class OPTRE_HEV: Car_F
-	{
-		dlc = "OPTRE";
-			side 																		= 1;
-			scope 																		= 2;
-			author																		= "Article 2 Studios";
-			model 																		= "OPTRE_Vehicles\HEV\hev_pod.p3d";
-			displayName 																= "SOEIV Human Entry Vehicle";
-			faction																		= "OPTRE_UNSC";
-			crew 																		= "OPTRE_UNSC_ODST_Soldier_Scout";
-			transportSoldier															= 0;
-			isBicycle																	= true;
-			vehicleClass 																= "OPTRE_UNSC_HEV_class";
-			attenuationEffectType 														= "CarAttenuation";
-			mapSize 																	= 2.5;
-			weapons[]																	={};
-			armor 																		= 10000;
-			explosionShielding 															= 1;
-			typicalCargo[] 																= {};
-			icon 																		= "OPTRE_Vehicles\hev\Data\icon.paa";	/// icon in map/editor
-			picture 																	= "OPTRE_Vehicles\hev\Data\icon2.paa";	/// small picture in command menu
-			driverAction 																= "OPTRE_Driver_HEV";
-			getInAction 																= "bench_Heli_Light_01_get_in";	
-			getinRadius																	= 2;
-			getOutAction 																= "bench_Heli_Light_01_get_out";
-			memoryPointsGetIndriver 													= "pos driver";		/// on what memory points should the cargo get in the heli
-			memoryPointsGetIndriverDir 													= "pos driver dir";/// what is the direction of the cargo facing during get in animation (and opposite for get out)
-			usePreciseGetInAction 														= 0;
-			driverIsCommander															= true;
-			canFloat 																	= true;
-			fuelCapacity 																= 0;
-			fuelConsumptionRate 														= 0;
-			fuelExplosionPower 															= 0;
-			occludeSoundsWhenIn 														= 1;
-			obstructSoundsWhenIn 														= 1;
-			crewCrashProtection 														= 0;
-			crewExplosionProtection 													= 0;
-			hideWeaponsDriver 															= 0;
-			hiddenSelections[]															= {"camo1","camo2","camo3","camo4"};
-			hiddenSelectionsTextures[]													= {"OPTRE_Vehicles\hev\data\pod_CO.paa","#(argb,256,512,1)r2t(rendertarget0,1.0)","#(argb,256,512,1)r2t(rendertarget1,1.0)","OPTRE_core\data\base\glass_ca.paa"};
-			ejectDeadDriver 															= 0;
-			maximumLoad 																= 2000;
-			extCameraPosition[] 														= {0,2.5,-10};
-			class Sounds{};
-			class Turrets{};
-			class Reflectors{};
-			class TextureSources{};
-			#include "pip.hpp"
-			class AnimationSources	/// custom made animation sources
-			{
-				class Doors				/// the class name is later used in model.cfg
-				{
-					source 																	= "user";	/// user source means it is waiting on some scripting input
-					animPeriod																= 1.5;		/// how long does it take to change value from 0 to 1 (or vice versa)
-					initPhase 																= 0;		/// what value does it have while creating the vehicle
-				};
-			};	
-			class userActions 
-			{
-				class door_open
-				{
-					displayName																= "Open HEV Doors";
-					position																= "";
-					radius																	= 4;
-					condition																= "((this animationPhase ""main_door_rotation"" == 0) && (this animationPhase ""left_door_rotation"" == 0) && (this animationPhase ""right_door_rotation"" == 0) && (((velocity this) select 2) < 10) && (((velocity this) select 2) > -10))";
-					statement																= "this animate [""main_door_rotation"",1]; this animate [""left_door_rotation"",1]; this animate [""right_door_rotation"",1];";
-					onlyforplayer															= 1;
-				};
-				class door_close
-				{
-					displayName																= "Close HEV Doors";
-					position																= "";
-					radius																	= 4;
-					condition																= "((this animationPhase ""main_door_rotation"" == 1) && (this animationPhase ""left_door_rotation"" == 1) && (this animationPhase ""right_door_rotation"" == 1) && (((velocity this) select 2) < 10) && (((velocity this) select 2) > -10))";
-					statement																= "this animate [""main_door_rotation"",0]; this animate [""left_door_rotation"",0]; this animate [""right_door_rotation"",0];";
-					onlyforplayer															= 1;
-				};
-			};
-	};*/
 	
 	class OPTRE_HEV: Helicopter_Base_H
 	{
@@ -238,7 +156,15 @@ class CfgVehicles //This configures units and backpacks
 			ejectDeadDriver 															= 0;
 			maximumLoad 																= 0;
 			extCameraPosition[] 														= {0,2.5,-10};
-			class Sounds{};
+			class Sounds
+			{
+				class WindNoiseIn
+				{
+					sound[] =  {"A3\Sounds_F\air\UAV_02\noise", db+10, 1.0};
+					frequency ="1";
+					volume = "0.25*(1-camPos)*(speed factor[1, 150])";
+				};
+			};
 			class Turrets{};
 			class Reflectors{};
 			class TextureSources{};		
@@ -262,7 +188,7 @@ class CfgVehicles //This configures units and backpacks
 					displayName																= "Open HEV Doors";
 					position																= "";
 					radius																	= 4;
-					condition																= "((this animationPhase ""main_door_rotation"" == 0) && (this animationPhase ""left_door_rotation"" == 0) && (this animationPhase ""right_door_rotation"" == 0) && (((velocity this) select 2) < 10) && (((velocity this) select 2) > -10))";
+					condition																= "((this animationPhase ""main_door_rotation"" == 0) && (this animationPhase ""left_door_rotation"" == 0) && (this animationPhase ""right_door_rotation"" == 0) && (((velocity this) select 2) < 10) && (((velocity this) select 2) > -10) && (this getVariable ['OPTRE_PlayerControled',false]))";
 					statement																= "this animate [""main_door_rotation"",1]; this animate [""left_door_rotation"",1]; this animate [""right_door_rotation"",1];";
 					onlyforplayer															= 1;
 				};
@@ -271,7 +197,7 @@ class CfgVehicles //This configures units and backpacks
 					displayName																= "Close HEV Doors";
 					position																= "";
 					radius																	= 4;
-					condition																= "((this animationPhase ""main_door_rotation"" == 1) && (this animationPhase ""left_door_rotation"" == 1) && (this animationPhase ""right_door_rotation"" == 1) && (((velocity this) select 2) < 10) && (((velocity this) select 2) > -10))";
+					condition																= "((this animationPhase ""main_door_rotation"" == 1) && (this animationPhase ""left_door_rotation"" == 1) && (this animationPhase ""right_door_rotation"" == 1) && (((velocity this) select 2) < 10) && (((velocity this) select 2) > -10) && (this getVariable ['OPTRE_PlayerControled',false]))";
 					statement																= "this animate [""main_door_rotation"",0]; this animate [""left_door_rotation"",0]; this animate [""right_door_rotation"",0];";
 					onlyforplayer															= 1;
 				};
@@ -329,7 +255,7 @@ class CfgVehicles //This configures units and backpacks
 			armor 																		= 10000;
 			canFloat 																	= true;
 	};
-	class OPTRE_HEV_Chute: Steerable_Parachute_F
+	class OPTRE_HEV_Chute: RoadCone_F
 	{
 		dlc = "OPTRE";
 			scope 																		= 1;
@@ -341,37 +267,14 @@ class CfgVehicles //This configures units and backpacks
 			mapSize 																	= 0.7;
 			armor 																		= 10000;
 			canFloat 																	= true;
-			animated 																	= 0;
-			animationOpen 																= "";
-			animationDrop 																= "";
-			crew 																		= "B_UAV_AI";
-			simulation 																	= "parachute";
-			thrustDeccel = 0.0;
-			thrustNormal = 0.0;
-			thrustAccel = 0.0;
-			minRotationZ = 0.0;
-			maxRotationZ = 0.1;
-			minRotationX = 0.0;
-			maxRotationX = 0.1;
-			maxSensitivityHorizontal = 0.0;
-			maxSensitivityVertical = 0.0;
-			deltaValueVertical = 0.0;
-			deltaValueHorizontal = 0.0;
-			turnForceScale = 0.0;
-			minGravity = -1.0;
-			normalGravity = -1.0;
-			maxGravity = -1.0;
-			distanceLevel1 = 20.0;
-			distanceLevel2 = 40.0;
-			minLiftThrust = -10.0;
-			maxLiftThrust = -10.0;
-			minLiftDuration = 1.0;
-			maxLiftDuration = 1.0;
-			liftThreshold = 0.0;
-			airInfluence = 0.0;
-			liftGravity = -10.0;
-			openingTime = 0.0;
-			duration = 10.0;
-			unitInfoType = "RscUnitInfoParachute";
+			class AnimationSources	/// custom made animation sources
+			{
+				class Wings				/// the class name is later used in model.cfg
+				{
+					source 																	= "user";	/// user source means it is waiting on some scripting input
+					animPeriod																= 0.1;		/// how long does it take to change value from 0 to 1 (or vice versa)
+					initPhase 																= 0;		/// what value does it have while creating the vehicle
+				};
+			};	
 	};
 };

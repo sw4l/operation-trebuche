@@ -197,6 +197,7 @@ class CfgVehicles
 		explosionShielding = 0.04;// [*] for consistent explosive damage after adjusting = ( armorStructural / 10 )
 		minTotalDamageThreshold = 0.001;//minimalHit for total damage
 		impactDamageMultiplier= 0.5;//multiplier for falling damage
+		editorSubcategory = "OPTRE_EditorSubcategory_MenODST";
 	};
 	class OPTRE_UNSC_ODST_Soldier_L: OPTRE_UNSC_ODST_Soldier
 	{
@@ -786,6 +787,7 @@ class CfgVehicles
 		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_Vest_scorch","OPTRE_UNSC_ODST_Helmet_scorch","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
 		hiddenSelections[] 																		= {"camo1","insignia","clan"};
 		hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\ODST\data\armor_scorch_co.paa"};
+		editorSubcategory = "OPTRE_EditorSubcategory_MenS";
 	};
 	class OPTRE_UNSC_ODST_Soldier_Zero: OPTRE_UNSC_ODST_Soldier_Scorch
 	{
@@ -868,6 +870,16 @@ class CfgVehicles
 		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_Vest_EvilFlea","OPTRE_UNSC_ODST_Helmet_EvilFlea","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
 		hiddenSelections[] 																		= {"camo1","insignia","clan"};
 		hiddenSelectionsTextures[] 																= {"OPTRE_UNSC_Units\ODST\data\armor_evilflea_co.paa"};
+	};
+	class OPTRE_UNSC_ODST_Soldier_BW: OPTRE_UNSC_ODST_Soldier_Scorch
+	{
+		dlc = "OPTRE";
+		author																					= "Article 2 Studios";
+		displayName																				= "Bourbon Warrior";
+		uniformClass																			= "OPTRE_UNSC_ODST_Uniform";		
+		backpack 																				= "OPTRE_ILCS_Rucksack_Black";
+		linkedItems[] 																			= {"OPTRE_UNSC_ODST_Vest_BW","OPTRE_UNSC_ODST_Helmet_CBRN","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
+		respawnLinkedItems[] 																	= {"OPTRE_UNSC_ODST_Vest_BW","OPTRE_UNSC_ODST_Helmet_CBRN","ItemMap","ItemCompass","ItemWatch","ItemRadio","ItemGPS","OPTRE_NVG"};
 	};
 	/*class OPTRE_UNSC_ODST_Soldier_Instructor: CAManBase
 	{
@@ -1389,11 +1401,11 @@ class cfgWeapons
 		dlc = "OPTRE";
 		author																					= "Article 2 Studios";
 		displayName  																			= "[UNSC] M53 Body Armor [Convader]";
-		hiddenSelections[]   																	= {"camo1","camo2"};
+		hiddenSelections[]   																	= {"camo1","camo2","attach_nade","attach_knife"};
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_convader_co.paa",""};
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   																= {"camo1","camo2"};
+			hiddenSelections[]   																= {"camo1","camo2","attach_nade","attach_knife"};
 			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_convader_co.paa",""};
 		};
 	};
@@ -1402,11 +1414,11 @@ class cfgWeapons
 		dlc = "OPTRE";
 		author																					= "Article 2 Studios";
 		displayName  																			= "[UNSC] M53 Body Armor [Evil Flea]";
-		hiddenSelections[]   																	= {"camo1","camo2"};
+		hiddenSelections[]   																	= {"camo1","camo2","attach_nade","attach_knife"};
 		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_evilflea_co.paa",""};
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[]   																= {"camo1","camo2"};
+			hiddenSelections[]   																= {"camo1","camo2","attach_nade","attach_knife"};
 			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_evilflea_co.paa",""};
 		};
 	};
@@ -1486,6 +1498,19 @@ class cfgWeapons
 		{
 			hiddenSelections[]   																= {"camo1","camo2","attach_nade","attach_knife"};
 			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_green_co.paa",""};
+		};
+	};
+	class OPTRE_UNSC_ODST_Vest_BW: OPTRE_UNSC_ODST_Vest
+	{	
+		dlc = "OPTRE";
+		author																					= "Article 2 Studios";
+		displayName  																			= "[UNSC] M53 Body Armor [BW]";
+		hiddenSelections[]   																	= {"camo1","camo2","attach_nade"};
+		hiddenSelectionsTextures[]   															= {"OPTRE_UNSC_Units\ODST\data\vest_bw_co.paa",""};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]   																= {"camo1","camo2","attach_nade"};
+			hiddenSelectionsTextures[]   														= {"OPTRE_UNSC_Units\ODST\data\vest_bw_co.paa",""};
 		};
 	};
 	// VESTS END

@@ -22,8 +22,15 @@ class RscTitles {
 	#include "z_HUD_Marine\Marine_1_Health.hpp"
 	
 	// Marrine Goggles 
-	#include "z_HUD_Marine\Marrine_2.hpp"
+	#include "z_HUD_Marine\Marrine_2_orange.hpp"
+	#include "z_HUD_Marine\Marrine_2_green.hpp"
+	#include "z_HUD_Marine\Marrine_2_red.hpp"
+	#include "z_HUD_Marine\Marrine_2_white.hpp"
+	#include "z_HUD_Marine\Marrine_2_blue.hpp"
+	#include "z_HUD_Marine\Marrine_2_pink.hpp"
+	
 	#include "z_HUD_Marine\Marrine_2_AmmoCount.hpp"
+	
 	// Ammo Counters
 	#include "z_HUD_Marine\AmmoCounters\GLASS_HUD_AmmoCount_SMG.hpp"
 	#include "z_HUD_Marine\AmmoCounters\GLASS_HUD_AmmoCount_Shotgun.hpp"

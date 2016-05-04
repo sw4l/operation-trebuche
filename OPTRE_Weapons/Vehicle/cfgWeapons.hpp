@@ -316,4 +316,39 @@ class CfgWeapons
 			showToPlayer = 1;
 		};
 	};
+	class OPTRE_M910_cannon: OPTRE_M9109
+	{
+		displayName = "M910 Cannon";
+		magazines[] = {"OPTRE_M910_5000Rnd_50mm"};
+		autoFire = 1;
+		reloadTime = 0.025;
+		class LowROF: Mode_FullAuto
+		{
+			displayName = "$STR_A3_CFGWEAPONS_CANNON_30MM";
+			reloadTime = 0.025;
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"A3\Sounds_F\weapons\gatling\gatling3",1.5,1,2000};
+				soundBegin[] = {"begin1",1};
+			};
+			soundContinuous = 0;
+			flash = "gunfire";
+			flashSize = 0.1;
+			recoil = "Empty";
+			aiDispersionCoefX = 8;
+			aiDispersionCoefY = 8;
+			ffMagnitude = 0.5;
+			ffFrequency = 11;
+			ffCount = 6;
+			minRange = 1;
+			minRangeProbab = 0.33;
+			midRange = 500;
+			midRangeProbab = 0.33;
+			maxRange = 2000;
+			maxRangeProbab = 0.33;
+			dispersion = 0.035;
+			showToPlayer = 1;
+		};
+	};
 };

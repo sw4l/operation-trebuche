@@ -2,7 +2,7 @@ private ["_hudStyle","_varHelmetArray","_loadAll"];
 
 _helmet = (headgear player);
 _googles = goggles player;
-if (_helmet == "" AND _googles == "") exitWith {};
+if (_helmet == "" AND _googles == "") exitWith {OPTRE_Hud_On = false;};
 
 _varHelmetArray = ( getArray (configfile >> "CfgWeapons" >> _helmet >> "optreVarietys") ); // optreVarietys[] = {"_dp","","_broken"};
 _hudStyle = (getText (configfile >> "CfgWeapons" >> _helmet >> "optreHUDStyle") ); // "ODST_1"
@@ -15,7 +15,7 @@ if (_hudStyle == "") then {
 	OPTREB_HUD_HelmetOnClass = _googles;
 };
 
-if (str _varHelmetArray == "[]" OR _hudStyle == "") exitWith {};
+if (str _varHelmetArray == "[]" OR _hudStyle == "") exitWith {OPTRE_Hud_On = false;};
 _brokenBool = if _hel then {[(_varHelmetArray select 2), _helmet, true] call BIS_fnc_inString} else {false};// has the visor been broken 
 
 if !OPTRE_Hud_On then {
