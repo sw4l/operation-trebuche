@@ -64,7 +64,7 @@ class CfgVehicles
 		displayName = "FFG-437 Final Dawn (Decoration)";
 		model = "\OPTRE_frigate\finaldawn_complex.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		mapSize = 450;
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Deco";
@@ -77,7 +77,7 @@ class CfgVehicles
 		displayName = "Experimental Frigate";
 		model = "\OPTRE_frigate\finaldawn_0.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		class Eventhandlers {
 			init = "_scr = _this execVM ""\OPTRE_Frigate\build.sqf"";";
 		};
@@ -89,7 +89,7 @@ class CfgVehicles
 		model = "\OPTRE_frigate\console.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
-		mapSize = .4;
+		mapSize = 2;
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Objects";
 	};
@@ -102,7 +102,7 @@ class CfgVehicles
 		model = "\OPTRE_frigate\liftarm.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
-		mapSize = .4;
+		mapSize = 2;
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Objects";
 	};
@@ -120,7 +120,7 @@ class CfgVehicles
 		model = "\OPTRE_Frigate\turret.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
-		mapSize = .4;
+		mapSize = 2;
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Objects";
 		memoryPointGun[] = {"muzzle_1","muzzle_2"};
@@ -188,10 +188,10 @@ class CfgVehicles
 		displayName = "Side Doors [Frigate]";
 		model = "\OPTRE_frigate\doorbuild.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
-	};*/
+	};
 	class OPTRE_Frigate_interiorbuild: OPTRE_Frigate_Final_Dawn
 	{
 		dlc = "OPTRE";
@@ -200,10 +200,85 @@ class CfgVehicles
 		displayName = "Interior [Frigate]";
 		model = "\OPTRE_frigate\interior_build.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
+	class OPTRE_Frigate_interior1: OPTRE_Frigate_Final_Dawn
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 0;
+		displayName = "Interior 1 [Frigate]";
+		model = "\OPTRE_frigate\interior1.p3d";
+		author = "Article 2 Studios";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
+		editorCategory = "OPTRE_EditorCategory_Frigate";
+		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
+	};
+	class OPTRE_Frigate_interior2: OPTRE_Frigate_interior1
+	{
+		dlc = "OPTRE";
+		displayName = "Interior 2 [Frigate]";
+		model = "\OPTRE_frigate\interior2.p3d";
+		author = "Article 2 Studios";
+	};
+	class OPTRE_Frigate_interior3: OPTRE_Frigate_interior1
+	{
+		dlc = "OPTRE";
+		displayName = "Interior 3 [Frigate]";
+		model = "\OPTRE_frigate\interior3.p3d";
+		author = "Article 2 Studios";
+	};
+	class OPTRE_Frigate_interior4: OPTRE_Frigate_interior1
+	{
+		dlc = "OPTRE";
+		displayName = "Interior 4 [Frigate]";
+		model = "\OPTRE_frigate\interior4.p3d";
+		author = "Article 2 Studios";
+	};
+	class OPTRE_Frigate_interior5: OPTRE_Frigate_interior1
+	{
+		dlc = "OPTRE";
+		displayName = "Interior 5 [Frigate]";
+		model = "\OPTRE_frigate\interior5.p3d";
+		author = "Article 2 Studios";
+	};
+	class OPTRE_Frigate_interior6: OPTRE_Frigate_interior1
+	{
+		dlc = "OPTRE";
+		displayName = "Interior 6 [Frigate]";
+		model = "\OPTRE_frigate\interior6.p3d";
+		author = "Article 2 Studios";
+	};
+	class OPTRE_Frigate_interior7: OPTRE_Frigate_interior1
+	{
+		dlc = "OPTRE";
+		displayName = "Interior 7 [Frigate]";
+		model = "\OPTRE_frigate\interior7.p3d";
+		author = "Article 2 Studios";
+	};
+	class OPTRE_Frigate_interior8: OPTRE_Frigate_interior1
+	{
+		dlc = "OPTRE";
+		displayName = "Interior 8 [Frigate]";
+		model = "\OPTRE_frigate\interior8.p3d";
+		author = "Article 2 Studios";
+	};
+	class OPTRE_Frigate_interior9: OPTRE_Frigate_interior1
+	{
+		dlc = "OPTRE";
+		displayName = "Interior 9 [Frigate]";
+		model = "\OPTRE_frigate\interior9.p3d";
+		author = "Article 2 Studios";
+	};
+	class OPTRE_Frigate_interior10: OPTRE_Frigate_interior1
+	{
+		dlc = "OPTRE";
+		displayName = "Interior 10 [Frigate]";
+		model = "\OPTRE_frigate\interior10.p3d";
+		author = "Article 2 Studios";
+	};*/
 	class OPTRE_Frigate_part_1: OPTRE_Frigate_Final_Dawn
 	{
 		dlc = "OPTRE";
@@ -212,7 +287,7 @@ class CfgVehicles
 		displayName = "Part 1 [Frigate]";
 		model = "\OPTRE_frigate\frigate_part_1.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -224,7 +299,7 @@ class CfgVehicles
 		displayName = "Part 2 A[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_2_a.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -236,7 +311,7 @@ class CfgVehicles
 		displayName = "Part 2 B[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_2_B.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -248,7 +323,7 @@ class CfgVehicles
 		displayName = "Part 2 C[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_2_c.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -260,7 +335,7 @@ class CfgVehicles
 		displayName = "Part 3 A[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_3_a.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -272,7 +347,7 @@ class CfgVehicles
 		displayName = "Part 3 B[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_3_B.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -284,7 +359,7 @@ class CfgVehicles
 		displayName = "Part 3 C[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_3_C.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -296,7 +371,7 @@ class CfgVehicles
 		displayName = "Part 4 A[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_4_a.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -308,7 +383,7 @@ class CfgVehicles
 		displayName = "Part 4 B[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_4_B.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -320,7 +395,7 @@ class CfgVehicles
 		displayName = "Part 4 C[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_4_C.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -332,7 +407,7 @@ class CfgVehicles
 		displayName = "Part 5 A[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_5_a.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -344,7 +419,7 @@ class CfgVehicles
 		displayName = "Part 5 B[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_5_B.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -356,7 +431,7 @@ class CfgVehicles
 		displayName = "Part 5 C[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_5_C.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -368,7 +443,7 @@ class CfgVehicles
 		displayName = "Part 6 A[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_6_a.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -380,7 +455,7 @@ class CfgVehicles
 		displayName = "Part 6 B[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_6_B.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -392,7 +467,7 @@ class CfgVehicles
 		displayName = "Part 6 C[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_6_C.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -404,7 +479,7 @@ class CfgVehicles
 		displayName = "Part 7 A[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_7_a.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -416,7 +491,7 @@ class CfgVehicles
 		displayName = "Part 7 B1[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_7_B1.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -428,7 +503,7 @@ class CfgVehicles
 		displayName = "Part 7 B2[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_7_B2.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -440,7 +515,7 @@ class CfgVehicles
 		displayName = "Part 7 C[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_7_C.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -452,7 +527,7 @@ class CfgVehicles
 		displayName = "Part 8 A[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_8_a.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -464,7 +539,7 @@ class CfgVehicles
 		displayName = "Part 8 B[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_8_B.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -476,7 +551,7 @@ class CfgVehicles
 		displayName = "Part 8 C[Frigate]";
 		model = "\OPTRE_frigate\frigate_part_8_C.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -488,7 +563,7 @@ class CfgVehicles
 		displayName = "Vehicle Lift[Frigate]";
 		model = "\OPTRE_frigate\vehicle_lift_PH.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 		class AnimationSources
@@ -539,7 +614,7 @@ class CfgVehicles
 		displayName = "Hangar Ground Doors[Frigate]";
 		model = "\OPTRE_frigate\hangar_ground_doors.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -551,7 +626,7 @@ class CfgVehicles
 		displayName = "Hangar A[Frigate]";
 		model = "\OPTRE_frigate\frigate_hangar_A.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -563,7 +638,7 @@ class CfgVehicles
 		displayName = "Hangar B1[Frigate]";
 		model = "\OPTRE_frigate\frigate_hangar_B1.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -575,7 +650,7 @@ class CfgVehicles
 		displayName = "Hangar B2[Frigate]";
 		model = "\OPTRE_frigate\frigate_hangar_B2.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -587,7 +662,7 @@ class CfgVehicles
 		displayName = "Hangar C[Frigate]";
 		model = "\OPTRE_frigate\frigate_hangar_C.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -599,7 +674,7 @@ class CfgVehicles
 		displayName = "Hangar D[Frigate]";
 		model = "\OPTRE_frigate\frigate_hangar_D.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -611,7 +686,7 @@ class CfgVehicles
 		displayName = "Hangar D2[Frigate]";
 		model = "\OPTRE_frigate\frigate_hangar_D2.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 	};
@@ -623,7 +698,7 @@ class CfgVehicles
 		displayName = "Hangar Door[Frigate]";
 		model = "\OPTRE_frigate\hangar_door.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 		numberOfDoors = 2;
@@ -718,7 +793,7 @@ class CfgVehicles
 		displayName = "Hangar Lift Door[Frigate]";
 		model = "\OPTRE_frigate\frigate_hangar_lift_doors.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 		numberOfDoors = 2;
@@ -777,7 +852,7 @@ class CfgVehicles
 		displayName = "Vehicle Lift 2[Frigate]";
 		model = "\OPTRE_frigate\vehicle_lift_PH2.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 		class AnimationSources
@@ -828,7 +903,7 @@ class CfgVehicles
 		displayName = "Lift Gate[Frigate]";
 		model = "\OPTRE_frigate\lift_gate.p3d";
 		author = "Article 2 Studios";
-		icon = "\OPTRE_frigate\data\frigate_icon.paa";
+		icon = "\A3\Weapons_F\Data\placeholder_co.paa";
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 		class AnimationSources
@@ -890,7 +965,7 @@ class CfgVehicles
 		editorCategory = "OPTRE_EditorCategory_Frigate";
 		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Pieces";
 		numberOfDoors = 2;
-		mapSize = .4;
+		mapSize = 2;
 		class AnimationSources
 		{
 			class cargo_Door_1				/// the class name is later used in model.cfg
