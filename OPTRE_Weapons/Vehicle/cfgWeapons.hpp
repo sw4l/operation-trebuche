@@ -321,11 +321,11 @@ class CfgWeapons
 		displayName = "M910 Cannon";
 		magazines[] = {"OPTRE_M910_5000Rnd_50mm"};
 		autoFire = 1;
-		reloadTime = 0.025;
+		reloadTime = 0.035;
 		class LowROF: Mode_FullAuto
 		{
 			displayName = "$STR_A3_CFGWEAPONS_CANNON_30MM";
-			reloadTime = 0.025;
+			reloadTime = 0.035;
 			sounds[] = {"StandardSound"};
 			class StandardSound
 			{

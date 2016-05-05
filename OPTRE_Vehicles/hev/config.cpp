@@ -85,23 +85,92 @@ class CfgVehicles //This configures units and backpacks
 			class Right;
 		};
 	};
-	class Air;
-	class Plane: Air
+	
+	class OPTRE_HEV: Car_F
 	{
-		class HitPoints;
-	};
-
-	class Plane_Base_F: Plane
-	{
-		class AnimationSources;
-		class HitPoints: HitPoints
+		dlc = "OPTRE";
+		side = 1;
+		scope = 2;
+		author = "Article 2 Studios";
+		model = "OPTRE_Vehicles\HEV\hev_pod.p3d";
+		displayName = "SOEIV Human Entry Vehicle";
+		faction = "OPTRE_UNSC";
+		crew = "OPTRE_UNSC_ODST_Soldier_Scout";
+		transportSoldier = 0;
+		isBicycle = 1;
+		vehicleClass = "OPTRE_UNSC_HEV_class";
+		attenuationEffectType = "CarAttenuation";
+		mapSize = 2.5;
+		weapons[] = {};
+		armor = 10000;
+		explosionShielding = 1;
+		typicalCargo[] = {};
+		icon = "OPTRE_Vehicles\hev\Data\icon.paa";
+		picture = "OPTRE_Vehicles\hev\Data\icon2.paa";
+		driverAction = "OPTRE_Driver_HEV";
+		getInAction = "bench_Heli_Light_01_get_in";
+		getinRadius = 2;
+		getOutAction = "bench_Heli_Light_01_get_out";
+		memoryPointsGetIndriver = "pos driver";
+		memoryPointsGetIndriverDir = "pos driver dir";
+		usePreciseGetInAction = 0;
+		driverIsCommander = 1;
+		canFloat = 1;
+		fuelCapacity = 0;
+		fuelConsumptionRate = 0;
+		fuelExplosionPower = 0;
+		occludeSoundsWhenIn = 1;
+		obstructSoundsWhenIn = 1;
+		crewCrashProtection = 0;
+		crewExplosionProtection = 0;
+		epeImpulseDamageCoef = 0;
+		hideWeaponsDriver = 0;
+		hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
+		hiddenSelectionsTextures[] = {"OPTRE_Vehicles\hev\data\pod_CO.paa","#(argb,256,512,1)r2t(rendertarget0,1.0)","#(argb,256,512,1)r2t(rendertarget1,1.0)","OPTRE_core\data\base\glass_ca.paa"};
+		ejectDeadDriver = 0;
+		maximumLoad = 2000;
+		extCameraPosition[] = {0,2.5,-10};
+		class Turrets{};
+		class Reflectors{};
+		class TextureSources{};
+		class Sounds{};	
+		class Eventhandlers {	
+			init = "_this select 0 allowDamage false";
+		};
+		#include "pip.hpp"
+		class AnimationSources	/// custom made animation sources
 		{
-			class HitHull;
+			class Doors				/// the class name is later used in model.cfg
+			{
+				source 																	= "user";	/// user source means it is waiting on some scripting input
+				animPeriod																= 1.5;		/// how long does it take to change value from 0 to 1 (or vice versa)
+				initPhase 																= 0;		/// what value does it have while creating the vehicle
+			};
+		};	
+		class userActions 
+		{
+			class door_open
+			{
+				displayName																= "Open HEV Doors";
+				position																= "";
+				radius																	= 4;
+				condition																= "((this animationPhase ""main_door_rotation"" == 0) && (this animationPhase ""left_door_rotation"" == 0) && (this animationPhase ""right_door_rotation"" == 0) && (((velocity this) select 2) < 10) && (((velocity this) select 2) > -10) && !(this getVariable ['OPTRE_PlayerControled',false]))";
+				statement																= "this animate [""main_door_rotation"",1]; this animate [""left_door_rotation"",1]; this animate [""right_door_rotation"",1];";
+				onlyforplayer															= 1;
+			};
+			class door_close
+			{
+				displayName																= "Close HEV Doors";
+				position																= "";
+				radius																	= 4;
+				condition																= "((this animationPhase ""main_door_rotation"" == 1) && (this animationPhase ""left_door_rotation"" == 1) && (this animationPhase ""right_door_rotation"" == 1) && (((velocity this) select 2) < 10) && (((velocity this) select 2) > -10) && !(this getVariable ['OPTRE_PlayerControled',false]))";
+				statement																= "this animate [""main_door_rotation"",0]; this animate [""left_door_rotation"",0]; this animate [""right_door_rotation"",0];";
+				onlyforplayer															= 1;
+			};
 		};
 	};
-	class Steerable_Parachute_F;
 	
-	class OPTRE_HEV: Helicopter_Base_H
+	/*class OPTRE_HEV: Helicopter_Base_H
 	{
 		dlc = "OPTRE";
 			side 																		= 1;
@@ -119,13 +188,13 @@ class CfgVehicles //This configures units and backpacks
 			weapons[]																	={};
 			armor 																		= 9999999;
 			epeImpulseDamageCoef 														= 0;
-			altFullForce = 500;	/// in what height do the engines still have full thrust
-			altNoForce = 100;		/// thrust of the engines interpolates to zero between altFullForce and altNoForce
-			maxSpeed = 1;			/// what is the maximum speed of the vehicle
-			maxFordingDepth = 5000;	/// how deep could the vehicle be in water without getting some damage
-			mainBladeRadius = 0.1;	/// describes the radius of main rotor - used for collision detection
+			altFullForce = 0;	/// in what height do the engines still have full thrust
+			altNoForce = 0;		/// thrust of the engines interpolates to zero between altFullForce and altNoForce
+			maxSpeed = 0;			/// what is the maximum speed of the vehicle
+			maxFordingDepth = 0;	/// how deep could the vehicle be in water without getting some damage
+			mainBladeRadius = 0;	/// describes the radius of main rotor - used for collision detection
 			driverCanEject = 0;			/// pilot shouldn't be able to do so as he doesn't have eject seat
-			liftForceCoef = 0.25;	///multiplier of lift force
+			liftForceCoef = 0;	///multiplier of lift force
 			bodyFrictionCoef = 0.0;		///multiplier of body friction
 			cyclicAsideForceCoef = 0.0;	///multiplier of bank force
 			cyclicForwardForceCoef = 0.0;	///multiplier of dive force
@@ -156,15 +225,6 @@ class CfgVehicles //This configures units and backpacks
 			ejectDeadDriver 															= 0;
 			maximumLoad 																= 0;
 			extCameraPosition[] 														= {0,2.5,-10};
-			class Sounds
-			{
-				class WindNoiseIn
-				{
-					sound[] =  {"A3\Sounds_F\air\UAV_02\noise", db+10, 1.0};
-					frequency ="1";
-					volume = "0.25*(1-camPos)*(speed factor[1, 150])";
-				};
-			};
 			class Turrets{};
 			class Reflectors{};
 			class TextureSources{};		
@@ -188,7 +248,7 @@ class CfgVehicles //This configures units and backpacks
 					displayName																= "Open HEV Doors";
 					position																= "";
 					radius																	= 4;
-					condition																= "((this animationPhase ""main_door_rotation"" == 0) && (this animationPhase ""left_door_rotation"" == 0) && (this animationPhase ""right_door_rotation"" == 0) && (((velocity this) select 2) < 10) && (((velocity this) select 2) > -10) && (this getVariable ['OPTRE_PlayerControled',false]))";
+					condition																= "((this animationPhase ""main_door_rotation"" == 0) && (this animationPhase ""left_door_rotation"" == 0) && (this animationPhase ""right_door_rotation"" == 0) && (((velocity this) select 2) < 10) && (((velocity this) select 2) > -10) && !(this getVariable ['OPTRE_PlayerControled',false]))";
 					statement																= "this animate [""main_door_rotation"",1]; this animate [""left_door_rotation"",1]; this animate [""right_door_rotation"",1];";
 					onlyforplayer															= 1;
 				};
@@ -197,7 +257,7 @@ class CfgVehicles //This configures units and backpacks
 					displayName																= "Close HEV Doors";
 					position																= "";
 					radius																	= 4;
-					condition																= "((this animationPhase ""main_door_rotation"" == 1) && (this animationPhase ""left_door_rotation"" == 1) && (this animationPhase ""right_door_rotation"" == 1) && (((velocity this) select 2) < 10) && (((velocity this) select 2) > -10) && (this getVariable ['OPTRE_PlayerControled',false]))";
+					condition																= "((this animationPhase ""main_door_rotation"" == 1) && (this animationPhase ""left_door_rotation"" == 1) && (this animationPhase ""right_door_rotation"" == 1) && (((velocity this) select 2) < 10) && (((velocity this) select 2) > -10) && !(this getVariable ['OPTRE_PlayerControled',false]))";
 					statement																= "this animate [""main_door_rotation"",0]; this animate [""left_door_rotation"",0]; this animate [""right_door_rotation"",0];";
 					onlyforplayer															= 1;
 				};
@@ -241,7 +301,7 @@ class CfgVehicles //This configures units and backpacks
 					explosionShielding = 6;
 				};
 			};
-	};
+	};*/
 	class OPTRE_HEV_Door: RoadCone_F
 	{
 		dlc = "OPTRE";

@@ -123,7 +123,7 @@ class CfgVehicles
 		draconicForceZCoef = 0.5;
 		draconicTorqueXCoef = 0.15;
 		draconicTorqueYCoef = 2.0;
-		thrustCoef[]= {1.5, 1.2, 1.1, 1.0, 1.0, 1.0, 1.0, 0.9, 0.7, 0.5, 0.3, 0.1, 0.0, 0.0, 0.0, 0.0};
+		thrustCoef[]= {1.5, 1.2, 1.1, 1.0, 1.0, 1.0, 1.0, 0.9, 0.8, 0.6, 0.4, 0.2, 0.1, 0.05, 0.025, 0.0};
 		elevatorCoef[]= {};
 		aileronCoef[]= {};
 		//rudderCoef[]= {};
@@ -136,6 +136,9 @@ class CfgVehicles
 		headAimDown = 0.0000;
 		memoryPointLRocket = "Rocket_1";
 		memoryPointRRocket = "Rocket_2";
+		/*memoryPointLMissile = "Missile_1";
+		memoryPointRMissile = "Missile_2";
+		memoryPointGun[] = {"Muzzle_1"};*/
 		flapsFrictionCoef = 0.5;
 		minFireTime = 30;
 		threat[] = {1, 1, 1};

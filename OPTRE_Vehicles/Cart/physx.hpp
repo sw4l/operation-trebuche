@@ -5,7 +5,7 @@
 		turnCoef 									= 3;
 		thrustDelay									= 0.2;
 		brakeIdleSpeed								= 1.78;
-		maxSpeed									= 75;
+		maxSpeed									= 50;
 		fuelCapacity								= 150;
 		antiRollbarForceCoef						= 0.75;
 		antiRollbarForceLimit 						= 0.75;

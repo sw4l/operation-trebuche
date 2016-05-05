@@ -1414,10 +1414,21 @@ class CfgVehicles
 				};
 			};
 		};
+		memoryPointGun[] = {"Rocket_1","Rocket_2"};	
 		memoryPointLMissile = "Rocket_1";
 		memoryPointRMissile = "Rocket_2";
 		memoryPointLRocket = "Rocket_1";
 		memoryPointRRocket = "Rocket_2";
+		gunBeg[] = {"Rocket_1","Rocket_2"};
+		gunEnd[] = {"Rocket_1_dir","Rocket_2_dir"};
+		class AnimationSources: AnimationSources
+		{
+			class Missiles_revolving
+			{
+				source = "revolving";
+				weapon = "OPTRE_M79_MLRS";
+			};
+		};
 		class Turrets:Turrets
 		{
 			class CargoTurret_01: CargoTurret
@@ -1446,8 +1457,13 @@ class CfgVehicles
 				gun						= "maingun";
 				animationsourcebody		= "mainturret";
 				animationSourceGun		= "maingun";
-				//missileBeg			= "spicerakety"
-				//missileEnd			= "konec rakety";
+				memoryPointGun[] 		= {"Rocket_1","Rocket_2"};	
+				memoryPointLMissile 	= "Rocket_1";
+				memoryPointRMissile 	= "Rocket_2";
+				memoryPointLRocket 		= "Rocket_1";
+				memoryPointRRocket 		= "Rocket_2";
+				gunBeg					= "Rocket_1";
+				gunEnd					= "Rocket_1_dir";
 				gunAxis					= "Osa Hlavne";
 				minElev					= -15;
 				maxElev					= 45;
@@ -1478,9 +1494,6 @@ class CfgVehicles
 				magazines[] 			= {"OPTRE_6Rnd_65mm_rockets","OPTRE_6Rnd_65mm_rockets","OPTRE_6Rnd_65mm_rockets","OPTRE_6Rnd_65mm_rockets"};
 				memoryPointGunnerOptics	= "gunnerview";
 				memoryPointGunneroutOptics = "gunneroutview";
-				memoryPointGun			= "machinegun";
-				memoryPointLMissile 	= "Rocket_1";
-				memoryPointRMissile 	= "Rocket_2";
 				gunnerOpticsModel 		= "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";
 				gunnerOpticsShowCursor	= 1;
 				castGunnerShadow		= 1;

@@ -131,18 +131,21 @@ class CfgVehicles
 			class MainTurret: MainTurret
 			{
 				body="mainturret";
-				gun="maingun";
-				animationsourcebody="mainturret";
-				animationSourceGun="maingun";
+				gun="OtocHlaven";
+				animationsourcebody="mainTurret";
+				animationSourceGun="mainGun";
 				gunAxis="OsaHlavne";
-				minElev=-4;
-				maxElev=50;
+				turretAxis="turret_axis";
+				memoryPointGun[] = {"muzzle_1","muzzle_2"};
+				gunBeg	= "muzzle_1";
+				gunEnd	= "chamber_1";
+				minElev=-5;
+				maxElev=90;
 				minTurn=-360;
 				maxTurn=360;
 				initTurn=0;
-				turretAxis="OsaVeze";
-				maxHorizontalRotSpeed=1.2;
-				maxVerticalRotSpeed=1.2;
+				maxHorizontalRotSpeed=2;
+				maxVerticalRotSpeed=2;
 				gunnerAction="driver_boat01";
 				gunnerInAction="driver_boat01";
 				gunnerGetInAction="GetInMRAP_01";
@@ -174,8 +177,8 @@ class CfgVehicles
 				class ViewGunner:ViewOptics
 				{
 					initFov=0.7;
-					minFov=0.05;
-					maxFov=1.1;
+					minFov=0.7;
+					maxFov=0.7;
 				};
 			};
 		};
