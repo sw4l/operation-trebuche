@@ -193,8 +193,8 @@ class CfgVehicles //This configures units and backpacks
 		};
 
 		armor					= 2; // keep constant among various soldiers so that the hit points armor coefficients remains on the same scale
-		armorStructural			= 1.5; // divide all damage taken to total hit point, either directly or through hit point passThrough coefficient, must be adjusted for each model to achieve consistent total damage results
-		explosionShielding		= 0.15; // for consistent explosive damage after adjusting = ( armorStructural / 10 )
+		armorStructural			= 1.8; // divide all damage taken to total hit point, either directly or through hit point passThrough coefficient, must be adjusted for each model to achieve consistent total damage results
+		explosionShielding		= 0.18; // for consistent explosive damage after adjusting = ( armorStructural / 10 )
 		minTotalDamageThreshold	= 0.001; // minimalHit for total damage
 		impactDamageMultiplier	= 0.5; // multiplier for falling damage
 	};

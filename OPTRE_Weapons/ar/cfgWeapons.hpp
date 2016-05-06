@@ -514,7 +514,35 @@ class Mode_FullAuto;
                             descriptionShort = "M301 GL";
                             useModelOptics = false;
                             useExternalOptic = false; /// Doesn't use optics from the attachment, has it's own
-                            magazines[] = {"1Rnd_HE_Grenade_shell", "UGL_FlareWhite_F", "UGL_FlareGreen_F", "UGL_FlareRed_F", "UGL_FlareYellow_F", "UGL_FlareCIR_F", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell", "1Rnd_SmokePurple_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell", "1Rnd_SmokeOrange_Grenade_shell"};
+                            magazines[] = 
+							{
+								"1Rnd_HE_Grenade_shell",
+								"UGL_FlareWhite_F",
+								"UGL_FlareGreen_F",
+								"UGL_FlareRed_F",
+								"UGL_FlareYellow_F",
+								"UGL_FlareCIR_F",
+								"1Rnd_Smoke_Grenade_shell",
+								"1Rnd_SmokeRed_Grenade_shell",
+								"1Rnd_SmokeGreen_Grenade_shell",
+								"1Rnd_SmokeYellow_Grenade_shell",
+								"1Rnd_SmokePurple_Grenade_shell",
+								"1Rnd_SmokeBlue_Grenade_shell",
+								"1Rnd_SmokeOrange_Grenade_shell",
+								"3Rnd_HE_Grenade_shell",
+								"3Rnd_UGL_FlareWhite_F",
+								"3Rnd_UGL_FlareGreen_F",
+								"3Rnd_UGL_FlareRed_F",
+								"3Rnd_UGL_FlareYellow_F",
+								"3Rnd_UGL_FlareCIR_F",
+								"3Rnd_Smoke_Grenade_shell",
+								"3Rnd_SmokeRed_Grenade_shell",
+								"3Rnd_SmokeGreen_Grenade_shell",
+								"3Rnd_SmokeYellow_Grenade_shell",
+								"3Rnd_SmokePurple_Grenade_shell",
+								"3Rnd_SmokeBlue_Grenade_shell",
+								"3Rnd_SmokeOrange_Grenade_shell"
+							};
                             cameraDir = "OP_look";
                             discreteDistance[] = {100, 200, 300, 400};
                             discreteDistanceCameraPoint[] = {"OP_eye", "OP_eye2", "OP_eye3", "OP_eye4"}; /// the angle of gun changes with zeroing

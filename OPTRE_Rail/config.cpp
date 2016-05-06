@@ -46,6 +46,8 @@ class CfgVehicles
 		model = "\OPTRE_rail\station.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
 	};
 	
 	class OPTRE_rail_track_long: static
@@ -60,6 +62,8 @@ class CfgVehicles
 		model = "\OPTRE_rail\track_long.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
 	};
 	
 	class OPTRE_rail_track_short: static
@@ -74,6 +78,8 @@ class CfgVehicles
 		model = "\OPTRE_rail\track_short.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
 	};
 	
 	class OPTRE_rail_track_turn_45: static
@@ -88,6 +94,8 @@ class CfgVehicles
 		model = "\OPTRE_rail\track_turn45.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
 	};
 	
 	class OPTRE_rail_track_incline: static
@@ -102,6 +110,8 @@ class CfgVehicles
 		model = "\OPTRE_rail\track_incline.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
 	};
 	
 	class OPTRE_rail_tunnel_short: static
@@ -116,6 +126,8 @@ class CfgVehicles
 		model = "\OPTRE_rail\tunnel_cent_short.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
 	};
 	
 	class OPTRE_rail_tunnel_long: static
@@ -130,6 +142,8 @@ class CfgVehicles
 		model = "\OPTRE_rail\tunnel_cent_long.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
 	};
 	
 	class OPTRE_rail_tunnel_end: static
@@ -144,6 +158,8 @@ class CfgVehicles
 		model = "\OPTRE_rail\tunnel_end.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
 	};
 	
 	class OPTRE_rail_tunnel_maint: static
@@ -158,6 +174,8 @@ class CfgVehicles
 		model = "\OPTRE_rail\tunnel_maint.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
 	};
 	
 	class OPTRE_rail_tunnel_pillar: static
@@ -172,6 +190,7 @@ class CfgVehicles
 		model = "\OPTRE_rail\tunnel_pillar.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
 	};
 };
-

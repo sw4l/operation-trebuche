@@ -130,12 +130,12 @@ class CfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
-				body="mainturret";
+				body="OtocVez";
 				gun="OtocHlaven";
 				animationsourcebody="mainTurret";
 				animationSourceGun="mainGun";
 				gunAxis="OsaHlavne";
-				turretAxis="turret_axis";
+				turretAxis="OsaVeze";
 				memoryPointGun[] = {"muzzle_1","muzzle_2"};
 				gunBeg	= "muzzle_1";
 				gunEnd	= "chamber_1";
@@ -604,7 +604,7 @@ class CfgVehicles
 				textToolTip = "Lower Lift";
 				priority = 2;
 				condition = "((this animationPhase ""Door_1_rot"" > 0.5))";
-				statement = "this animate [""Door_1_rot"",0]";
+				statement = "this animate [""Door_1_rot"",0];";
 				animPeriod = 1;
             };
 		};

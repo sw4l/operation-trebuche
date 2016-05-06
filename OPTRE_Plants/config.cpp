@@ -38,6 +38,8 @@ class CfgVehicles
 		accuracy = 1000;
 		cost = 1000;
 		class DestructionEffects{};
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Plants";
 	};
 	class OPTRE_tree_Purp_2: OPTRE_tree_Purp_1 
 	{
@@ -45,5 +47,33 @@ class CfgVehicles
 		model = "optre_plants\t_quercus3s.p3d";
 		icon = "IconCrateWpns";
 		displayName = "Tree 2 (Purple)";
+	};
+	class OPTRE_tree_Blue_1: OPTRE_tree_Purp_1 
+	{
+		dlc = "OPTRE";
+		model = "optre_plants\t_quercus2f_blue.p3d";
+		icon = "IconCrateWpns";
+		displayName = "Tree 1 (Blue)";
+	};
+	class OPTRE_tree_Blue_2: OPTRE_tree_Purp_1 
+	{
+		dlc = "OPTRE";
+		model = "optre_plants\t_quercus3s_blue.p3d";
+		icon = "IconCrateWpns";
+		displayName = "Tree 2 (Blue)";
+	};
+	class OPTRE_tree_Red_1: OPTRE_tree_Purp_1 
+	{
+		dlc = "OPTRE";
+		model = "optre_plants\t_quercus2f_red.p3d";
+		icon = "IconCrateWpns";
+		displayName = "Tree 1 (Red)";
+	};
+	class OPTRE_tree_Red_2: OPTRE_tree_Purp_1 
+	{
+		dlc = "OPTRE";
+		model = "optre_plants\t_quercus3s_red.p3d";
+		icon = "IconCrateWpns";
+		displayName = "Tree 2 (Red)";
 	};
 };
