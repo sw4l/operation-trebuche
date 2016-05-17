@@ -953,6 +953,48 @@ class CfgVehicles
 		displayName="Urban Building 01";
 		editorCategory = "OPTRE_EditorCategory_Buildings";
 		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Civilian";
+
+		class AnimationSources
+		{
+			// Animation sources for doors
+			class Door_1_trigger
+			{
+				source = user; // "user" = custom source = not controlled by some engine value
+				initPhase = 0; // Initial value of animations based on this source
+				animPeriod = 1; // Coefficient for duration of change of this animation
+				sound = "GenericDoorsSound"; /// Selects sound class from CfgAnimationSourceSounds that is going to be used for sounds of doors
+			};
+			
+		};
+		
+		class UserActions															// Within this class are contained the definitions for the ingame side action menu options, avaliable to a player to use an animations.
+		{
+			class Open_Door_1															// User defined classname.
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";					
+				displayName        = "Open Door";					// The text that appears in the side action menu.
+				position           = Door_1_trigger;								// The named selection of the memory point in the memory lod of the model, which defines the position the player needs to be near for the side action menu to be come avaliable.
+				radius             = 4;												// The minimum distance the player needs to be from the memory point for option to become avaliable in the side action menu.
+				onlyForPlayer      = true;											// Can AI subordinates be ordered to use this animation, if yes then use the "false" parameter.
+				
+				// Condition is the code used to detirmined if the option to use this animation should be avaliable.
+				// The animation classname from the model.cfg needs to be defined here, in this case "reardoor_right_anim".
+				// The next parameter states that if the animation phase is "less than to 0.5" then the option to open the doors will be avaliable. 0 = closed, 1 = open.				
+				condition = ((this animationPhase 'Door_1_A_slide') < 0.5);
+				statement = "this animate [""Door_1_A_slide"",1]; this animate [""Door_1_B_slide"",1]";	// Once the condition is met this is what will happen.
+			};
+
+			class Close_Door_1	
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName        = "Close Door";
+				position           = Door_1_trigger;
+				radius             = 4;
+				onlyForPlayer      = true;
+				condition = ((this animationPhase 'Door_1_A_slide') >= 0.5); // Checks if the door is currently open and not destroyed.
+				statement = "this animate [""Door_1_A_slide"",0]; this animate [""Door_1_B_slide"",0]";
+			};
+		};
 	};
 
 	class Land_Urban_Building_02: House_F
@@ -966,6 +1008,82 @@ class CfgVehicles
 		displayName="Urban Building 02";
 		editorCategory = "OPTRE_EditorCategory_Buildings";
 		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Civilian";
+		
+		class AnimationSources
+		{
+			// Animation sources for doors
+			class Door_1_trigger
+			{
+				source = user; // "user" = custom source = not controlled by some engine value
+				initPhase = 0; // Initial value of animations based on this source
+				animPeriod = 1; // Coefficient for duration of change of this animation
+				sound = "GenericDoorsSound"; /// Selects sound class from CfgAnimationSourceSounds that is going to be used for sounds of doors
+			};
+			
+			class Door_2_trigger
+			{
+				source = user; // "user" = custom source = not controlled by some engine value
+				initPhase = 0; // Initial value of animations based on this source
+				animPeriod = 1; // Coefficient for duration of change of this animation
+				sound = "GenericDoorsSound"; /// Selects sound class from CfgAnimationSourceSounds that is going to be used for sounds of doors
+			};
+			
+		};
+		
+		class UserActions															// Within this class are contained the definitions for the ingame side action menu options, avaliable to a player to use an animations.
+		{
+			class Open_Door_1															// User defined classname.
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";					
+				displayName        = "Open Door";					// The text that appears in the side action menu.
+				position           = Door_1_trigger;								// The named selection of the memory point in the memory lod of the model, which defines the position the player needs to be near for the side action menu to be come avaliable.
+				radius             = 4;												// The minimum distance the player needs to be from the memory point for option to become avaliable in the side action menu.
+				onlyForPlayer      = true;											// Can AI subordinates be ordered to use this animation, if yes then use the "false" parameter.
+				
+				// Condition is the code used to detirmined if the option to use this animation should be avaliable.
+				// The animation classname from the model.cfg needs to be defined here, in this case "reardoor_right_anim".
+				// The next parameter states that if the animation phase is "less than to 0.5" then the option to open the doors will be avaliable. 0 = closed, 1 = open.				
+				condition = ((this animationPhase 'Door_1_A_slide') < 0.5);
+				statement = "this animate [""Door_1_A_slide"",1]; this animate [""Door_1_B_slide"",1]";	// Once the condition is met this is what will happen.
+			};
+
+			class Close_Door_1	
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName        = "Close Door";
+				position           = Door_1_trigger;
+				radius             = 4;
+				onlyForPlayer      = true;
+				condition = ((this animationPhase 'Door_1_A_slide') >= 0.5); // Checks if the door is currently open and not destroyed.
+				statement = "this animate [""Door_1_A_slide"",0]; this animate [""Door_1_B_slide"",0]";
+			};
+		
+			class Open_Door_2															// User defined classname.
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";					
+				displayName        = "Open Door";					// The text that appears in the side action menu.
+				position           = Door_2_trigger;								// The named selection of the memory point in the memory lod of the model, which defines the position the player needs to be near for the side action menu to be come avaliable.
+				radius             = 4;												// The minimum distance the player needs to be from the memory point for option to become avaliable in the side action menu.
+				onlyForPlayer      = true;											// Can AI subordinates be ordered to use this animation, if yes then use the "false" parameter.
+				
+				// Condition is the code used to detirmined if the option to use this animation should be avaliable.
+				// The animation classname from the model.cfg needs to be defined here, in this case "reardoor_right_anim".
+				// The next parameter states that if the animation phase is "less than to 0.5" then the option to open the doors will be avaliable. 0 = closed, 1 = open.				
+				condition = ((this animationPhase 'Door_2_A_slide') < 0.5);
+				statement = "this animate [""Door_2_A_slide"",1]; this animate [""Door_2_B_slide"",1]";	// Once the condition is met this is what will happen.
+			};
+
+			class Close_Door_2
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName        = "Close Door";
+				position           = Door_2_trigger;
+				radius             = 4;
+				onlyForPlayer      = true;
+				condition = ((this animationPhase 'Door_2_A_slide') >= 0.5); // Checks if the door is currently open and not destroyed.
+				statement = "this animate [""Door_2_A_slide"",0]; this animate [""Door_2_B_slide"",0]";
+			};
+		};
 	};
 	
 	class Land_Urban_Building_03: House_F
@@ -979,7 +1097,110 @@ class CfgVehicles
 		displayName="Urban Building 03";
 		editorCategory = "OPTRE_EditorCategory_Buildings";
 		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Civilian";
+		
+		class AnimationSources
+		{
+			// Animation sources for doors
+			class Door_1_trigger
+			{
+				source = user; // "user" = custom source = not controlled by some engine value
+				initPhase = 0; // Initial value of animations based on this source
+				animPeriod = 1; // Coefficient for duration of change of this animation
+				sound = "GenericDoorsSound"; /// Selects sound class from CfgAnimationSourceSounds that is going to be used for sounds of doors
+			};
+			
+			class Door_2_trigger
+			{
+				source = user; // "user" = custom source = not controlled by some engine value
+				initPhase = 0; // Initial value of animations based on this source
+				animPeriod = 1; // Coefficient for duration of change of this animation
+				sound = "GenericDoorsSound"; /// Selects sound class from CfgAnimationSourceSounds that is going to be used for sounds of doors
+			};
+			
+		};
+		
+		class UserActions															// Within this class are contained the definitions for the ingame side action menu options, avaliable to a player to use an animations.
+		{
+			class Open_Door_1															// User defined classname.
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";					
+				displayName        = "Open Door";					// The text that appears in the side action menu.
+				position           = Door_1_trigger;								// The named selection of the memory point in the memory lod of the model, which defines the position the player needs to be near for the side action menu to be come avaliable.
+				radius             = 4;												// The minimum distance the player needs to be from the memory point for option to become avaliable in the side action menu.
+				onlyForPlayer      = true;											// Can AI subordinates be ordered to use this animation, if yes then use the "false" parameter.
+				
+				// Condition is the code used to detirmined if the option to use this animation should be avaliable.
+				// The animation classname from the model.cfg needs to be defined here, in this case "reardoor_right_anim".
+				// The next parameter states that if the animation phase is "less than to 0.5" then the option to open the doors will be avaliable. 0 = closed, 1 = open.				
+				condition = ((this animationPhase 'Door_1_A_slide') < 0.5);
+				statement = "this animate [""Door_1_A_slide"",1]; this animate [""Door_1_B_slide"",1]";	// Once the condition is met this is what will happen.
+			};
+
+			class Close_Door_1	
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName        = "Close Door";
+				position           = Door_1_trigger;
+				radius             = 4;
+				onlyForPlayer      = true;
+				condition = ((this animationPhase 'Door_1_A_slide') >= 0.5); // Checks if the door is currently open and not destroyed.
+				statement = "this animate [""Door_1_A_slide"",0]; this animate [""Door_1_B_slide"",0]";
+			};
+		
+			class Open_Door_2															// User defined classname.
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";					
+				displayName        = "Open Door";					// The text that appears in the side action menu.
+				position           = Door_2_trigger;								// The named selection of the memory point in the memory lod of the model, which defines the position the player needs to be near for the side action menu to be come avaliable.
+				radius             = 4;												// The minimum distance the player needs to be from the memory point for option to become avaliable in the side action menu.
+				onlyForPlayer      = true;											// Can AI subordinates be ordered to use this animation, if yes then use the "false" parameter.
+				
+				// Condition is the code used to detirmined if the option to use this animation should be avaliable.
+				// The animation classname from the model.cfg needs to be defined here, in this case "reardoor_right_anim".
+				// The next parameter states that if the animation phase is "less than to 0.5" then the option to open the doors will be avaliable. 0 = closed, 1 = open.				
+				condition = ((this animationPhase 'Door_2_A_slide') < 0.5);
+				statement = "this animate [""Door_2_A_slide"",1]; this animate [""Door_2_B_slide"",1]";	// Once the condition is met this is what will happen.
+			};
+
+			class Close_Door_2
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName        = "Close Door";
+				position           = Door_2_trigger;
+				radius             = 4;
+				onlyForPlayer      = true;
+				condition = ((this animationPhase 'Door_2_A_slide') >= 0.5); // Checks if the door is currently open and not destroyed.
+				statement = "this animate [""Door_2_A_slide"",0]; this animate [""Door_2_B_slide"",0]";
+			};
+			
+			class Open_Door_3														// User defined classname.
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";					
+				displayName        = "Open Door";					// The text that appears in the side action menu.
+				position           = Door_3_trigger;							// The named selection of the memory point in the memory lod of the model, which defines the position the player needs to be near for the side action menu to be come avaliable.
+				radius             = 4;												// The minimum distance the player needs to be from the memory point for option to become avaliable in the side action menu.
+				onlyForPlayer      = true;											// Can AI subordinates be ordered to use this animation, if yes then use the "false" parameter.
+				
+				// Condition is the code used to detirmined if the option to use this animation should be avaliable.
+				// The animation classname from the model.cfg needs to be defined here, in this case "reardoor_right_anim".
+				// The next parameter states that if the animation phase is "less than to 0.5" then the option to open the doors will be avaliable. 0 = closed, 1 = open.				
+				condition = ((this animationPhase 'Door_3_A_slide') < 0.5);
+				statement = "this animate [""Door_3_A_slide"",1]; this animate [""Door_3_B_slide"",1]";	// Once the condition is met this is what will happen.
+			};
+
+			class Close_Door_3
+			{
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				displayName        = "Close Door";
+				position           = Door_3_trigger;
+				radius             = 4;
+				onlyForPlayer      = true;
+				condition = ((this animationPhase 'Door_3_A_slide') >= 0.5); // Checks if the door is currently open and not destroyed.
+				statement = "this animate [""Door_3_A_slide"",0]; this animate [""Door_3_B_slide"",0]";
+			};
+		};
 	};
+
 	class Land_Urban_Building_04: House_F
 	{
 		dlc = "OPTRE";
