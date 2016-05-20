@@ -16,10 +16,10 @@ class CfgRemoteExec
 {
     class Commands
     {
-            mode = 0;
+            mode = 2;
     };
     class Functions
     {
-            mode = 0;
+            mode = 2;
     };
 };
