@@ -175,7 +175,7 @@ class CfgWeapons
     };
     class OPTRE_NVG: NVGoggles
     {
-		modelOptics = "\z\ace\addons\nightvision\models\ACE_nvg_wide_optics";
+		modelOptics = "";
         ACE_nightVision_grain = 0;
         ace_nightVision_blur = 0;
         ace_nightVision_radBlur = 0;

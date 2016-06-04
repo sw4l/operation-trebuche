@@ -11,15 +11,65 @@ class CfgPatches //This configures the identification of the pbo to the game
 
 class CfgVehicles //This configures units and backpacks
 {
-	class B_Soldier_base_F;
-	class OPTRE_UNSC_Soldier_Base: B_Soldier_base_F
+	class Land;
+	class Man: Land
 	{
-		class HitPoints
+		class EventHandlers;
+	};
+	class CAManBase: Man
+	{
+		class HitPoints;
+	};
+	class SoldierWB: CAManBase
+	{
+		class HitPoints: HitPoints
 		{
+			class HitFace;
+			class HitNeck;
 			class HitHead;
+			class HitPelvis;
+			class HitAbdomen;
+			class HitDiaphragm;
+			class HitChest;
 			class HitBody;
+			class HitArms;
 			class HitHands;
 			class HitLegs;
+		};
+	};
+	class OPTRE_UNSC_Soldier_Base: SoldierWB
+	{
+		class HitPoints: HitPoints
+		{
+			class HitFace: HitFace {};
+			class HitNeck: HitNeck {};
+			class HitPelvis : HitPelvis
+			{
+				armor = 1;
+				passThrough = 0.5;
+			};
+			class HitAbdomen: HitAbdomen {};
+			class HitDiaphragm: HitDiaphragm {};
+			class HitChest: HitChest {};
+			class HitArms: HitArms
+			{
+				armor = 1;
+				passThrough = 0.5;
+			};
+			class HitHead: HitHead
+			{
+				armor = 1;
+			};
+			class HitBody: HitBody {};
+			class HitHands: HitHands
+			{
+				armor = 1;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 1;
+				passThrough = 0.5;
+			};
 		};
 	};
 	
@@ -46,29 +96,17 @@ class CfgVehicles //This configures units and backpacks
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_co.paa","OPTRE_UNSC_Units\Army\data\uniform_woodland_co.paa"};
 		class HitPoints: HitPoints
 		{
-			class HitHead: HitHead
+			class HitArms: HitArms
 			{
-				armor = 1;
-				//passThrough = 1;
-				//explosionShielding = 0.5;
-			};
-			class HitBody: HitBody
-			{
-				armor = 7;
-				//passThrough = 0.5;
-				//explosionShielding = 1.5;
+				armor = 5;
 			};
 			class HitHands: HitHands
 			{
-				armor = 7;
-				//passThrough = 0.5;
-				//explosionShielding = 0.8;
+				armor = 5;
 			};
 			class HitLegs: HitLegs
 			{
-				armor = 9;
-				//passThrough = 0.5;
-				//explosionShielding = 0.8;
+				armor = 5;
 			};
 		};
 		editorSubcategory = "OPTRE_EditorSubcategory_MenWDL";
@@ -83,21 +121,17 @@ class CfgVehicles //This configures units and backpacks
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder2","attach_rightshoulder2","attach_pant2","attach_leftknee2","attach_rightknee2","attach_shirt2"};
 		class HitPoints: HitPoints
 		{
-			class HitHead: HitHead
+			class HitArms: HitArms
 			{
-				armor = 1;
-			};
-			class HitBody: HitBody
-			{
-				armor = 7;
+				armor = 5;
 			};
 			class HitHands: HitHands
 			{
-				armor = 7;
+				armor = 5;
 			};
 			class HitLegs: HitLegs
 			{
-				armor = 7;
+				armor = 4;
 			};
 		};
 	};
@@ -111,21 +145,17 @@ class CfgVehicles //This configures units and backpacks
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_pant2","attach_leftknee2","attach_rightknee2","attach_shirt1"};
 		class HitPoints: HitPoints
 		{
-			class HitHead: HitHead
+			class HitArms: HitArms
 			{
-				armor = 1;
-			};
-			class HitBody: HitBody
-			{
-				armor = 7;
+				armor = 3;
 			};
 			class HitHands: HitHands
 			{
-				armor = 5;
+				armor = 3;
 			};
 			class HitLegs: HitLegs
 			{
-				armor = 7;
+				armor = 4;
 			};
 		};
 	};
@@ -142,6 +172,21 @@ class CfgVehicles //This configures units and backpacks
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_shirt2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_desert_co.paa","OPTRE_UNSC_Units\Army\data\uniform_desert_co.paa"};
 		editorSubcategory = "OPTRE_EditorSubcategory_MenDES";
+		class HitPoints: HitPoints
+		{
+			class HitArms: HitArms
+			{
+				armor = 5;
+			};
+			class HitHands: HitHands
+			{
+				armor = 5;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 5;
+			};
+		};
 	};
 	class OPTRE_UNSC_Army_Soldier_M_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
@@ -151,6 +196,21 @@ class CfgVehicles //This configures units and backpacks
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_M_DES";
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2","attach_shirt2"};
+		class HitPoints: HitPoints
+		{
+			class HitArms: HitArms
+			{
+				armor = 5;
+			};
+			class HitHands: HitHands
+			{
+				armor = 5;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 4;
+			};
+		};
 	};
 	class OPTRE_UNSC_Army_Soldier_L_DES: OPTRE_UNSC_Army_Soldier_DES
 	{
@@ -160,6 +220,21 @@ class CfgVehicles //This configures units and backpacks
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_L_DES";
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2","attach_shirt1"};
+		class HitPoints: HitPoints
+		{
+			class HitArms: HitArms
+			{
+				armor = 3;
+			};
+			class HitHands: HitHands
+			{
+				armor = 3;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 4;
+			};
+		};
 	};
 	
 	class OPTRE_UNSC_Army_Soldier_TRO: OPTRE_UNSC_Army_Soldier_WDL
@@ -173,6 +248,21 @@ class CfgVehicles //This configures units and backpacks
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_shirt2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_co.paa","OPTRE_UNSC_Units\Army\data\uniform_tropic_co.paa"};
 		editorSubcategory = "OPTRE_EditorSubcategory_MenTRO";
+		class HitPoints: HitPoints
+		{
+			class HitArms: HitArms
+			{
+				armor = 5;
+			};
+			class HitHands: HitHands
+			{
+				armor = 5;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 5;
+			};
+		};
 	};
 	class OPTRE_UNSC_Army_Soldier_M_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
@@ -182,6 +272,21 @@ class CfgVehicles //This configures units and backpacks
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_M_TRO";
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_leftshin","attach_rightshin","attach_shirt2"};
+		class HitPoints: HitPoints
+		{
+			class HitArms: HitArms
+			{
+				armor = 5;
+			};
+			class HitHands: HitHands
+			{
+				armor = 5;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 4;
+			};
+		};
 	};
 	class OPTRE_UNSC_Army_Soldier_L_TRO: OPTRE_UNSC_Army_Soldier_TRO
 	{
@@ -190,6 +295,21 @@ class CfgVehicles //This configures units and backpacks
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_L_TRO";
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2","attach_shirt1"};
+		class HitPoints: HitPoints
+		{
+			class HitArms: HitArms
+			{
+				armor = 3;
+			};
+			class HitHands: HitHands
+			{
+				armor = 3;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 4;
+			};
+		};
 	};
 	
 	class OPTRE_UNSC_Army_Soldier_ARI: OPTRE_UNSC_Army_Soldier_DES
@@ -203,6 +323,21 @@ class CfgVehicles //This configures units and backpacks
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_shirt2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_desert_co.paa","OPTRE_UNSC_Units\Army\data\uniform_arid_co.paa"};
 		editorSubcategory = "OPTRE_EditorSubcategory_MenARI";
+		class HitPoints: HitPoints
+		{
+			class HitArms: HitArms
+			{
+				armor = 5;
+			};
+			class HitHands: HitHands
+			{
+				armor = 5;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 5;
+			};
+		};
 	};
 	class OPTRE_UNSC_Army_Soldier_M_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
@@ -212,6 +347,21 @@ class CfgVehicles //This configures units and backpacks
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_M_ARI";
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_leftshin","attach_rightshin","attach_shirt2"};
+		class HitPoints: HitPoints
+		{
+			class HitArms: HitArms
+			{
+				armor = 5;
+			};
+			class HitHands: HitHands
+			{
+				armor = 5;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 4;
+			};
+		};
 	};
 	class OPTRE_UNSC_Army_Soldier_L_ARI: OPTRE_UNSC_Army_Soldier_ARI
 	{
@@ -221,6 +371,21 @@ class CfgVehicles //This configures units and backpacks
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_L_ARI";
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2","attach_shirt1"};
+		class HitPoints: HitPoints
+		{
+			class HitArms: HitArms
+			{
+				armor = 3;
+			};
+			class HitHands: HitHands
+			{
+				armor = 3;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 4;
+			};
+		};
 	};
 	
 	class OPTRE_UNSC_Army_Soldier_SNO: OPTRE_UNSC_Army_Soldier_WDL
@@ -236,6 +401,21 @@ class CfgVehicles //This configures units and backpacks
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_shirt2"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_snow_co.paa","OPTRE_UNSC_Units\Army\data\uniform_snow_co.paa"};
 		editorSubcategory = "OPTRE_EditorSubcategory_MenSNO";
+		class HitPoints: HitPoints
+		{
+			class HitArms: HitArms
+			{
+				armor = 5;
+			};
+			class HitHands: HitHands
+			{
+				armor = 5;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 5;
+			};
+		};
 	};
 	class OPTRE_UNSC_Army_Soldier_M_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
@@ -245,6 +425,21 @@ class CfgVehicles //This configures units and backpacks
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_M_SNO";
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant1","attach_leftshin","attach_rightshin","attach_shirt2"};
+		class HitPoints: HitPoints
+		{
+			class HitArms: HitArms
+			{
+				armor = 5;
+			};
+			class HitHands: HitHands
+			{
+				armor = 5;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 4;
+			};
+		};
 	};
 	class OPTRE_UNSC_Army_Soldier_L_SNO: OPTRE_UNSC_Army_Soldier_SNO
 	{
@@ -254,6 +449,21 @@ class CfgVehicles //This configures units and backpacks
 		author															= "Article 2 Studios";
 		uniformClass													= "OPTRE_UNSC_Army_Uniform_L_SNO";
 		hiddenSelections[] 												= {"camo1","camo2","insignia","clan","attach_leftshin","attach_rightshin","attach_leftshoulder","attach_rightshoulder","attach_leftshoulder2","attach_rightshoulder2","attach_leftknee2","attach_rightknee2","attach_pant2","attach_shirt1"};
+		class HitPoints: HitPoints
+		{
+			class HitArms: HitArms
+			{
+				armor = 3;
+			};
+			class HitHands: HitHands
+			{
+				armor = 3;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 4;
+			};
+		};
 	};
 	// BASE UNITS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -280,6 +490,21 @@ class CfgVehicles //This configures units and backpacks
 		magazines[] 													= {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke"};
 		respawnMagazines[] 												= {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke","OPTRE_M2_Smoke"};
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_medic_co.paa","OPTRE_UNSC_Units\Army\data\uniform_medic_co.paa"};
+		class HitPoints: HitPoints
+		{
+			class HitArms: HitArms
+			{
+				armor = 6;
+			};
+			class HitHands: HitHands
+			{
+				armor = 6;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 6;
+			};
+		};
 	};
 	// UNITS(MISC) END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

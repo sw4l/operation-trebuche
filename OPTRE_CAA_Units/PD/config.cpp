@@ -11,15 +11,65 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class B_Soldier_base_F;
-	class OPTRE_UNSC_Soldier_Base: B_Soldier_base_F
+	class Land;
+	class Man: Land
 	{
-		class HitPoints
+		class EventHandlers;
+	};
+	class CAManBase: Man
+	{
+		class HitPoints;
+	};
+	class SoldierWB: CAManBase
+	{
+		class HitPoints: HitPoints
 		{
+			class HitFace;
+			class HitNeck;
 			class HitHead;
+			class HitPelvis;
+			class HitAbdomen;
+			class HitDiaphragm;
+			class HitChest;
 			class HitBody;
+			class HitArms;
 			class HitHands;
 			class HitLegs;
+		};
+	};
+	class OPTRE_UNSC_Soldier_Base: SoldierWB
+	{
+		class HitPoints: HitPoints
+		{
+			class HitFace: HitFace {};
+			class HitNeck: HitNeck {};
+			class HitPelvis : HitPelvis
+			{
+				armor = 1;
+				passThrough = 0.5;
+			};
+			class HitAbdomen: HitAbdomen {};
+			class HitDiaphragm: HitDiaphragm {};
+			class HitChest: HitChest {};
+			class HitArms: HitArms
+			{
+				armor = 1;
+				passThrough = 0.5;
+			};
+			class HitHead: HitHead
+			{
+				armor = 1;
+			};
+			class HitBody: HitBody {};
+			class HitHands: HitHands
+			{
+				armor = 1;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 1;
+				passThrough = 0.5;
+			};
 		};
 	};
 	class OPTRE_UNSC_Army_Soldier_Medic;
@@ -91,21 +141,17 @@ class CfgVehicles
 		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\armor_co.paa","OPTRE_CAA_Units\PD\data\uniform_pd_co.paa",""};
 		class HitPoints: HitPoints
 		{
-			class HitHead: HitHead
+			class HitArms: HitArms
 			{
-				armor = 1;
-			};
-			class HitBody: HitBody
-			{
-				armor = 4;
+				armor = 3;
 			};
 			class HitHands: HitHands
 			{
-				armor = 4;
+				armor = 3;
 			};
 			class HitLegs: HitLegs
 			{
-				armor = 4;
+				armor = 3;
 			};
 		};
 		armor= 2;//keep constant so that the hit point armor remains on the same scale
