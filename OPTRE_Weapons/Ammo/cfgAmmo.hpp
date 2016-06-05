@@ -6,7 +6,11 @@ class CfgAmmo
 	class B_762x51_Ball;
 	class B_9x21_Ball;
 	class B_127x99_Ball;
+	class B_20mm;
+	class B_30mm_HE;
+	class B_30mm_MP;
 	class B_35mm_AA;
+	class B_35mm_AA_Tracer_Red;
 	class B_40mm_GPR;
 	class B_40mm_APFSDS;
 	class B_40mm_APFSDS_Tracer_Green;
@@ -15,11 +19,25 @@ class CfgAmmo
 	class SmokeShell;
 	class R_PG32V_F;
 	class R_TBG32V_F;
+	class R_230mm_HE;
+	class M_Scalpel_AT;
+	class M_Air_AA;
+	class M_Zephyr;
+	class M_PG_AT;
+	class M_AT;
 	class M_Titan_AT;
 	class M_Titan_AA; 
 	class M_NLAW_AT_F;
+	class Sh_105mm_HEAT_MP;
+	class Sh_120mm_HE;
+	class Sh_120mm_HE_Tracer_Yellow;
 	class Sh_120mm_APFSDS;
+	class Sh_155mm_AMOS;
 	class Cannon_30mm_HE_Plane_CAS_02_F;
+	class Bo_Mk82;
+	class Bo_GBU12_LGB;
+	class Cluster_155mm_AMOS;
+	class Mine_155mm_AMOS_Range;
 	
 	//7.62x51mm (AR, M247)
 	class OPTRE_B_762x51_Ball: B_762x51_Ball
@@ -362,6 +380,7 @@ class CfgAmmo
 	};
 	
 	//Vehicles
+	//Vehicle Cannons
 	class OPTRE_25x130mm_Slug: B_40mm_APFSDS_Tracer_Green
 	{
 		scope = 2;
@@ -433,6 +452,24 @@ class CfgAmmo
 			distance = 1;
 		};
 	};
+	class OPTRE_30mm_Rail_Slug: OPTRE_25x130mm_Slug
+	{
+		caliber = 120;
+		cost = 1000;
+		explosive = 0;
+		hit = 600;
+		indirectHit = 60;
+		indirectHitRange = 0.30;
+	};
+	class OPTRE_105mm_Rail_Slug: OPTRE_30mm_Rail_Slug
+	{
+		caliber = 200;
+		cost = 1000;
+		explosive = 0.1;
+		hit = 1400;
+		indirectHit = 60;
+		indirectHitRange = 2;
+	};
 	class OPTRE_MAC_Round: OPTRE_25x130mm_Slug
 	{
 		caliber = 1000;
@@ -465,11 +502,179 @@ class CfgAmmo
 		CraterEffects = "HEShellCrater";
 		CraterWaterEffects = "ImpactEffectsWaterHE";
 		ExplosionEffects = "HEShellExplosion";
-	};
+	};	
 	class OPTRE_B_127x99_Ball: B_127x99_Ball
 	{
 		model = "\A3\Weapons_f\Data\bullettracer\tracer_white";
 	};
+	class OPTRE_B_20mm_HE: B_20mm
+	{
+		//Used by: UH-144 Falcon (M638 Autocannon)
+		hit = 70;
+		indirectHit = 6;
+		indirectHitRange = 2;
+		caliber = 3.4;
+		explosive = 0.4;
+		tracerScale = 1;
+		tracerStartTime = 0.005;
+		tracerEndTime = 5;
+	};
+	class OPTRE_B_20mm_HEIAP: B_35mm_AA_Tracer_Red
+	{
+		//Used by: M71 Scythe AA
+		airlock = 1;
+		hit = 75;
+		indirectHit = 4;
+		indirectHitRange = 5;
+		caliber = 5;
+		explosive = 0.4;
+		tracerScale = 1;
+		tracerStartTime = 0.005;
+		tracerEndTime = 8;
+	};
+	class OPTRE_B_30mm_HE: B_30mm_MP
+	{
+		//Used by: AV-14 Hornet, AV-22 Sparrowhawk (GAU-23/AW), B-65 Shortsword (M955 ASW/AC)
+		hit = 90;
+		indirectHit = 8;
+		indirectHitRange = 3.5;
+		caliber = 2;
+		explosive = 0.6;
+		tracerScale = 1;
+		tracerStartTime = 0.005;
+		tracerEndTime = 5;
+	};
+	class OPTRE_B_40mm_HE: B_40mm_GPR
+	{
+		//Used by: G77H-TCI Pelican (Older Models)
+		hit = 120;
+		indirectHit = 8;
+		indirectHitRange = 3.5;
+		caliber = 4.6;
+		explosive = 0.6;
+		tracerScale = 1;
+		tracerStartTime = 0.005;
+		tracerEndTime = 5;
+	};
+	class OPTRE_B_40mm_APHE: B_35mm_AA_Tracer_Red
+	{
+		//Used by: M808B2 Sun Devil
+		hit = 140;
+		indirectHit = 6;
+		indirectHitRange = 5;
+		caliber = 6;
+		explosive = 0.4;
+		tracerScale = 1;
+		tracerStartTime = 0.005;
+		tracerEndTime = 5;
+	};
+	class OPTRE_B_50mm_HE: Cannon_30mm_HE_Plane_CAS_02_F
+	{
+		//Used by: M9109 ASW/AC (Longsword), GAU-32/AW (Vulture&Skyhawk), M230 Autocannon (Cougar)
+		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_red.p3d";
+		hit = 150;
+		indirectHit = 10;
+		indirectHitRange = 4;
+		caliber = 5;
+		explosive = 0.65;
+		tracerScale = 1;
+		tracerStartTime = 0.005;
+		tracerEndTime = 5;
+		allowAgainstInfantry = 1;
+	};
+	class OPTRE_B_50mm_APFSDS: OPTRE_B_50mm_HE
+	{
+		//Used by: M230 Autocannon (Cougar)
+		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_red.p3d";
+		hit = 240;
+		indirectHit = 5;
+		indirectHitRange = 0.2;
+		caliber = 8;
+		explosive = 0;
+		tracerScale = 1;
+		tracerStartTime = 0.005;
+		tracerEndTime = 5;
+		allowAgainstInfantry = 1;
+	};
+	class OPTRE_B_70mm_HE: B_30mm_HE
+	{
+		//Used by: M370 Autocannon (G77H-TCI Pelican (Newer Models))
+		hit = 175;
+		indirectHit = 20;
+		indirectHitRange = 4.2;
+		caliber = 6;
+		explosive = 0.8;
+	};
+	class OPTRE_Sh_90mm_SAPHE: Sh_120mm_HE
+	{
+		//Used by: M808 Scorpion (M512 90mm HVC)
+		hit = 200;
+		indirectHit = 60;
+		indirectHitRange = 4;
+		caliber = 8;
+		explosive = 0.7;
+	};
+	class OPTRE_Sh_90mm_S1: OPTRE_Sh_90mm_SAPHE
+	{
+		//Used by: M808 Scorpion (M512 90mm HVC)
+		//Experiment with the submunitions simulation when I have more time
+		hit = 20;
+		indirectHit = 20;
+		indirectHitRange = 8;
+		caliber = 2;
+		explosive = 0;
+		simulation = "shotSpread";
+		typicalspeed = 750;
+	};
+	class OPTRE_Sh_105mm_SAPHE: Sh_105mm_HEAT_MP
+	{
+		//Used by: M808B Scorpion (M556 105mm HVC)
+		hit = 260;
+		indirectHit = 70;
+		indirectHitRange = 5;
+		caliber = 9;
+		explosive = 0.7;
+	};
+	class OPTRE_Sh_105mm_HEAT: Sh_105mm_HEAT_MP
+	{
+		//Used by: M808B Scorpion (M556 105mm HVC)
+		hit = 600;
+		indirectHit = 20;
+		indirectHitRange = 2;
+		caliber = 12;
+		explosive = 0.9;
+	};
+	class OPTRE_Sh_110mm_HEAT: Sh_105mm_HEAT_MP
+	{
+		//Used by: GA/TL-1 Longsword (GAU-80/AW)
+		hit = 675;
+		indirectHit = 32;
+		indirectHitRange = 3;
+		caliber = 14;
+		explosive = 0.9;
+		allowAgainstInfantry = 0;
+		simulation = "shotBullet";
+	};
+	class OPTRE_Sh_120mm_SAPHE: Sh_120mm_HE_Tracer_Yellow
+	{
+		//Used by: GA/TL-1 Longsword (M310E/AC 120mm HVC)
+		hit = 620;
+		indirectHit = 80;
+		indirectHitRange = 7;
+		caliber = 10;
+		explosive = 0.7;
+		simulation = "shotBullet";
+};
+	class OPTRE_Sh_175mm_HE: Sh_155mm_AMOS
+	{
+		//Used by: Fox Cannon
+		hit = 320;
+		indirectHit = 80;
+		indirectHitRange = 6;
+		caliber = 10;
+		explosive = 0.7;
+	};
+	//Vehicle Missiles
 	class OPTRE_M41_Rocket_ATGM: M_Titan_AT
 	{
 		model = "\A3\Weapons_F_beta\Launchers\titan\titan_missile_at_fly";
@@ -497,40 +702,173 @@ class CfgAmmo
 		fuseDistance = 50;
 		whistleDist = 4;
 	};
-	class OPTRE_M_65mm_AA: M_Titan_AA
+	class OPTRE_M_ASGM2_AA: M_Air_AA
 	{
-		model = "\A3\Weapons_F_beta\Launchers\titan\titan_missile_atl_fly.p3d";
-		hit = 500;
-		indirectHit = 50;
+		//Used by: AA Warthog, M9 Wolverine, Skyhawk, F99 Wombat UCAV, AC-220 Vulture 
+		model = "OPTRE_weapons\Aircraft\ASGM2_missile_fly.p3d";
+		hit = 400;
+		indirectHit = 40;
 		indirectHitRange = 5;
 		allowAgainstInfantry = 1;
 		airLock = 2;
-		irLock = 0;
+		irLock = 1;
 	};
-	class OPTRE_M9109_50mm: Cannon_30mm_HE_Plane_CAS_02_F
+	class OPTRE_M_C2GMLS_AA: OPTRE_M_ASGM2_AA
 	{
-		model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_red.p3d";
-		hit = 225;
-		indirectHit = 5;
-		indirectHitRange = 5;
-		caliber = 5;
-		explosive = 0.5;
-		tracerScale = 1;
-		tracerStartTime = 0.005;
-		tracerEndTime = 5;
+		//Used by: AV-14 Hornet
+		model = "OPTRE_weapons\Aircraft\ASGM2_missile_fly.p3d";
+		hit = 250;
+		indirectHit = 70;
+		indirectHitRange = 7;
 		allowAgainstInfantry = 1;
+		airLock = 1;
+		irLock = 1;
 	};
-	class OPTRE_M91091_110mm: OPTRE_M9109_50mm
+	class OPTRE_M_ASGM10_AA: M_Zephyr
 	{
-		hit = 500;
-		indirectHit = 25;
-		indirectHitRange = 5;
-		caliber = 10;
-		explosive = 0.5;
-		tracerScale = 3;
-		CraterEffects = "HEShellCrater";
-		CraterWaterEffects = "ImpactEffectsWaterHE";
-		ExplosionEffects = "HEShellExplosion";
+		//Used by: G/A TL-1 Longsword, M95 Lance
+		model = "OPTRE_weapons\Aircraft\ASGM10_missile_fly.p3d";
+		hit = 850;
+		indirectHit = 50;
+		indirectHitRange = 7;
+		allowAgainstInfantry = 1;
+		airLock = 2;
+		irLock = 1;
+	};
+	class OPTRE_M_Scorpion_AT: M_Scalpel_AT
+	{
+		//Used by: G/A TL-1 Longsword, Skyhawk, F99 Wombat UCAV
+		model = "OPTRE_weapons\Aircraft\Scorpion_missile_fly.p3d";
+		hit = 1750;
+		indirectHit = 60;
+		indirectHitRange = 7;
+		explosive = 1;
+		irLock = 1;
+		laserLock = 0;
+	};
+	class OPTRE_M_Jackknife_LGM: M_Scalpel_AT
+	{
+		//Used by: G/A TL-1 Longsword, F99 Wombat UCAV
+		model = "OPTRE_weapons\Aircraft\Jackknife_missile_fly.p3d";
+		hit = 2200;
+		indirectHit = 100;
+		indirectHitRange = 10;
+		explosive = 1;
+		irLock = 0;
+		laserLock = 1;
+	};
+	class OPTRE_M_ANVIL_1_Rocket: M_AT
+	{
+		//Used by: G/A TL-1 Longsword, G77H-TC Pelican (Older Models)
+		model = "OPTRE_weapons\rockets\M41_rocket.p3d";
+		hit = 700;
+		indirectHit = 50;
+		indirectHitRange = 8;
+		explosive = 1;
+	};
+	class OPTRE_M_ANVIL_2_IR: M_AT
+	{
+		//Used by: G/A TL-1 Longsword,  G77H-TC Pelican (Newer Models)
+		model = "OPTRE_weapons\rockets\M41_rocket.p3d";
+		hit = 800;
+		indirectHit = 60;
+		indirectHitRange = 8;
+		explosive = 1;
+		canlock = 2;
+		irLock = 1;
+		laserLock = 0;
+	};
+	class OPTRE_M_ANVIL_3_LGM: OPTRE_M_ANVIL_2_IR
+	{
+		//Used by: G/A TL-1 Longsword,  G77H-TC Pelican (Newer Models)
+		model = "OPTRE_weapons\rockets\M41_rocket.p3d";
+		hit = 850;
+		indirectHit = 60;
+		indirectHitRange = 8;
+		explosive = 1;
+		irLock = 1;
+		canlock = 2;
+		laserLock = 1;
+	};
+	class OPTRE_M_ANVIL_4_ARTY: R_230mm_HE
+	{
+		//Used by: AC-220 Vulture
+		model = "OPTRE_weapons\rockets\M41_rocket.p3d";
+		hit = 800;
+		indirectHit = 70;
+		indirectHitRange = 9;
+		explosive = 1;
+		simulation = 'shotRocket';
+		submunitionAmmo = '';
+	};
+	//Aircraft Bombs
+	class OPTRE_Bo_500lb: Bo_Mk82
+	{
+		//Used by: G/A TL-1 Longsword, B-65 Shortsword
+		model = "OPTRE_weapons\Aircraft\500lb_bomb_fly.p3d";
+		hit = 5000;
+		indirectHit = 1100;
+		indirectHitRange = 12;
+		caliber = 1;
+		explosive = 1;
+	};
+	class OPTRE_Bo_1000lb: OPTRE_Bo_500lb
+	{
+		//Used by: G/A TL-1 Longsword, B-65 Shortsword
+		model = "OPTRE_weapons\Aircraft\1000lb_bomb_fly.p3d";
+		hit = 8000;
+		indirectHit = 2200;
+		indirectHitRange = 20;
+		caliber = 2;
+		explosive = 1;
+	};
+	class OPTRE_Bo_2000lb: OPTRE_Bo_500lb
+	{
+		//Used by: G/A TL-1 Longsword, B-65 Shortsword
+		model = "OPTRE_weapons\Aircraft\2000lb_bomb_fly.p3d";
+		hit = 12000;
+		indirectHit = 4000;
+		indirectHitRange = 35;
+		caliber = 4;
+		explosive = 1;
+	};
+	class OPTRE_Bo_GBU1071_LGB: Bo_GBU12_LGB
+	{
+		//Used by: G/A TL-1 Longsword, B-65 Shortsword
+		model = "OPTRE_weapons\Aircraft\gbu_bomb_fly.p3d";
+		hit = 7500;
+		indirectHit = 2000;
+		indirectHitRange = 16;
+		caliber = 2;
+		explosive = 1;
+	};
+	class OPTRE_Bo_cluster_AP: Cluster_155mm_AMOS
+	{
+		artilleryLock = 0;
+		model = "OPTRE_weapons\Aircraft\1000lb_bomb_fly.p3d";
+		//Used by: G/A TL-1 Longsword, B-65 Shortsword
+		//Broken.  Simulation shotSubmunition only works with Artillery.  Go figure.  Will need to use scripts to solve this.  
+	};
+	class OPTRE_Bo_scattermine_AP: Mine_155mm_AMOS_Range
+	{
+		artilleryLock = 0;
+		audiblefire = 0;
+		maxspeed = 100;
+		model = "OPTRE_weapons\Aircraft\1000lb_bomb_fly.p3d";
+		//Used by: G/A TL-1 Longsword, B-65 Shortsword
+		//Broken.  Simulation shotSubmunition only works with Artillery.  Go figure.  Will need to use scripts to solve this.  
+	};
+	class OPTRE_M_Shiva_Nuke: OPTRE_M_Jackknife_LGM
+	{
+		//Used by: G/A TL-1 Longsword, UNSC Warships
+		model = "OPTRE_weapons\Aircraft\Shiva_missile_fly.p3d";
+		hit = 11000;
+		indirectHit = 1000;
+		indirectHitRange = 500;
+		explosive = 1;
+		irLock = 0;
+		laserLock = 1;
+		initTime = 5;
 	};
 	
 	//Rockets

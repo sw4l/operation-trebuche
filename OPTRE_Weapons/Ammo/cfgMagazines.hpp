@@ -4,8 +4,15 @@ class CfgMagazines
 	class 150Rnd_762x51_Box;
 	class 30Rnd_45ACP_Mag_SMG_01;
 	class 30Rnd_120mm_APFSDS_shells;
+	class 30Rnd_120mm_HE_shells;
 	class 5Rnd_GAT_missiles;
 	class 4Rnd_GAA_missiles;
+	class 12Rnd_missiles;
+	class 12Rnd_PG_missiles;
+	class 4Rnd_Missile_AGM_01_F;
+	class 2Rnd_LG_Scalpel;
+	class 2Rnd_Bomb_03_F;
+	class 2Rnd_GBU12_LGB;
 	class HandGrenade;
 	class SmokeShell;
 	class RPG32_HE_F;
@@ -386,7 +393,7 @@ class CfgMagazines
 	};
 	
 	//Vehicles
-	class OPTRE_20Rnd_ALIM_Gauss_Slugs: 30Rnd_120mm_APFSDS_shells
+	class OPTRE_3Rnd_ALIM_Gauss_Slugs: 30Rnd_120mm_APFSDS_shells
 	{
 		dlc = "OPTRE";
 		scope 								= 2;
@@ -394,9 +401,9 @@ class CfgMagazines
 		displayNameShort					= "25x130mm Slug";
 		ammo								= "OPTRE_25x130mm_Slug";
 		initSpeed 							= 13680;
-		count								= 20;
+		count								= 3;
 	};
-	class OPTRE_1Rnd_MAC_Rounds: OPTRE_20Rnd_ALIM_Gauss_Slugs
+	class OPTRE_1Rnd_MAC_Rounds: OPTRE_3Rnd_ALIM_Gauss_Slugs
 	{
 		dlc = "OPTRE";
 		displayName							= "MAC Round";
@@ -423,14 +430,92 @@ class CfgMagazines
 		reloadSound[] 						= {"",0.000316228,1,20};
 		nameSound 							= "missiles";
 	};
-	class OPTRE_6Rnd_65mm_rockets: 4Rnd_GAA_missiles
+	class OPTRE_16Rnd_Anvil1_missiles: 12Rnd_missiles
+	{
+		dlc 								= "OPTRE";
+		scope 								= 2;
+		displayName 						= "16Rnd 'ANVIL I' Rocket Pods";
+		displayNameShort 					= "16Rnd HE Rockets";
+		count 								= 16;
+		ammo 								= "OPTRE_M_ANVIL_1_Rocket";
+		initSpeed 							= 55; //40
+		maxLeadSpeed 						= 800;
+		sound[] 							= {"A3\Sounds_F\weapons\Rockets\titan_2",1.25893,1,1000};
+		weaponSoundEffect 					= "DefaultRifle";
+		soundFly[] 							= {"A3\Sounds_F\weapons\Rockets\rocket_fly_2",0.501187,1.3,400};
+		soundHit[] 							= {"",1.25893,1,1};
+		reloadSound[] 						= {"",0.000316228,1,20};
+		nameSound		 					= "rockets";
+	};
+	class OPTRE_32Rnd_Anvil1_missiles: OPTRE_16Rnd_Anvil1_missiles
+	{
+		dlc 								= "OPTRE";
+		scope 								= 2;
+		displayName 						= "32Rnd 'ANVIL I' Rocket Pods";
+		displayNameShort 					= "32Rnd HE Rockets";
+		count 								= 32;
+		ammo 								= "OPTRE_M_ANVIL_1_Rocket";
+	};
+	class OPTRE_12Rnd_Anvil2_missiles: 12Rnd_PG_missiles
+	{
+		dlc 								= "OPTRE";
+		scope 								= 2;
+		displayName 						= "12Rnd 'ANVIL II' Missile Pods";
+		displayNameShort 					= "12Rnd IR Missiles";
+		count 								= 12;
+		ammo 								= "OPTRE_M_ANVIL_2_IR";
+		initSpeed 							= 40; //40
+		maxLeadSpeed 						= 800;
+		sound[] 							= {"A3\Sounds_F\weapons\Rockets\titan_2",1.25893,1,1000};
+		weaponSoundEffect 					= "DefaultRifle";
+		soundFly[] 							= {"A3\Sounds_F\weapons\Rockets\rocket_fly_2",0.501187,1.3,400};
+		soundHit[] 							= {"",1.25893,1,1};
+		reloadSound[] 						= {"",0.000316228,1,20};
+		nameSound		 					= "missiles";
+	};
+	class OPTRE_24Rnd_Anvil2_missiles: OPTRE_12Rnd_Anvil2_missiles
+	{
+		dlc 								= "OPTRE";
+		scope 								= 2;
+		displayName 						= "24Rnd 'ANVIL II' Missile Pods";
+		displayNameShort 					= "24Rnd IR Missiles";
+		count 								= 24;
+		ammo 								= "OPTRE_M_ANVIL_2_IR";
+	};
+	class OPTRE_12Rnd_Anvil3_missiles: 12Rnd_PG_missiles
+	{
+		dlc 								= "OPTRE";
+		scope 								= 2;
+		displayName 						= "12Rnd 'ANVIL III' Laser Guided Missile Pods";
+		displayNameShort 					= "12Rnd LG Missiles";
+		count 								= 12;
+		ammo 								= "OPTRE_M_ANVIL_3_LGM";
+		initSpeed 							= 60; //40
+		maxLeadSpeed 						= 1000;
+		sound[] 							= {"A3\Sounds_F\weapons\Rockets\titan_2",1.25893,1,1000};
+		weaponSoundEffect 					= "DefaultRifle";
+		soundFly[] 							= {"A3\Sounds_F\weapons\Rockets\rocket_fly_2",0.501187,1.3,400};
+		soundHit[] 							= {"",1.25893,1,1};
+		reloadSound[] 						= {"",0.000316228,1,20};
+		nameSound		 					= "missiles";
+	};
+	class OPTRE_24Rnd_Anvil3_missiles: OPTRE_12Rnd_Anvil3_missiles
+	{
+		dlc 								= "OPTRE";
+		scope 								= 2;
+		displayName 						= "24Rnd 'ANVIL III' Laser Guided Missile Pods";
+		displayNameShort 					= "24Rnd LG Missiles";
+		count 								= 24;
+		ammo 								= "OPTRE_M_ANVIL_3_LGM";
+	};
+	class OPTRE_6Rnd_ASGM2_rockets: 4Rnd_GAA_missiles
 	{
 		dlc = "OPTRE";
 		scope 								= 2;
-		displayName 						= "6Rnd 65mm Guided AA Rockets";
-		displayNameShort 					= "65mm Guided AA";
+		displayName 						= "6Rnd ASGM-2 'Argent V' Guided AA Rockets";
+		displayNameShort 					= "6Rnd Guided AA";
 		count 								= 6;
-		ammo 								= "OPTRE_M_65mm_AA";
+		ammo 								= "OPTRE_M_ASGM2_AA";
 		initSpeed 							= 80; //40
 		maxLeadSpeed 						= 320;
 		sound[] 							= {"A3\Sounds_F\weapons\Rockets\titan_2",1.25893,1,1000};
@@ -440,26 +525,296 @@ class CfgMagazines
 		reloadSound[] 						= {"",0.000316228,1,20};
 		nameSound		 					= "missiles";
 	};
-	class OPTRE_M9109_2500Rnd_50mm: 500Rnd_Cannon_30mm_Plane_CAS_02_F
+	class OPTRE_12Rnd_ASGM2_rockets: OPTRE_6Rnd_ASGM2_rockets
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "12Rnd ASGM-2 'Argent V' Guided AA Rockets";
+		displayNameShort 					= "12Rnd Guided AA";
+		count 								= 12;
+	};
+	class OPTRE_48Rnd_ASGM2_rockets: OPTRE_6Rnd_ASGM2_rockets
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "48Rnd ASGM-2 'Argent V' Guided AA Rockets";
+		displayNameShort 					= "48Rnd Guided AA";
+		count 								= 48;
+	};
+	class OPTRE_4Rnd_ASGM10_missiles: 4Rnd_GAA_missiles
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "4Rnd ASGM-10 'Argent X' Guided AA Missile";
+		displayNameShort 					= "6Rnd Guided AA";
+		count 								= 6;
+		ammo 								= "OPTRE_M_ASGM10_AA";
+		initSpeed 							= 80; //40
+		maxLeadSpeed 						= 900;
+		sound[] 							= {"A3\Sounds_F\weapons\Rockets\titan_2",1.25893,1,1000};
+		weaponSoundEffect 					= "DefaultRifle";
+		soundFly[] 							= {"A3\Sounds_F\weapons\Rockets\rocket_fly_2",0.501187,1.3,400};
+		soundHit[] 							= {"",1.25893,1,1};
+		reloadSound[] 						= {"",0.000316228,1,20};
+		nameSound		 					= "missiles";
+	};
+	class OPTRE_8Rnd_ASGM10_missiles: OPTRE_4Rnd_ASGM10_missiles
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "8Rnd ASGM-10 'Argent X' Guided AA Missile";
+		displayNameShort 					= "8Rnd Guided AA";
+		count 								= 8;
+	};
+	class OPTRE_12Rnd_ASGM10_missiles: OPTRE_4Rnd_ASGM10_missiles
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "12Rnd ASGM-10 'Argent X' Guided AA Missile";
+		displayNameShort 					= "12Rnd Guided AA";
+		count 								= 12;
+	};
+	class OPTRE_12Rnd_C2GMLS_missiles: OPTRE_6Rnd_ASGM2_rockets
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "12Rnd Class-2 Self-Guided Missiles";
+		displayNameShort 					= "12Rnd Class-2 GMLS";
+		count 								= 12;
+	};
+	class OPTRE_4Rnd_Scorpion_missiles: 4Rnd_Missile_AGM_01_F
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "4Rnd AGM-90B 'Scorpion' Guided AT Missile";
+		displayNameShort 					= "4Rnd Guided AT";
+		count 								= 4;
+		ammo 								= "OPTRE_M_Scorpion_AT";
+		initSpeed 							= 40; //40
+		maxLeadSpeed 						= 400;
+		sound[] 							= {"A3\Sounds_F\weapons\Rockets\titan_2",1.25893,1,1000};
+		weaponSoundEffect 					= "DefaultRifle";
+		soundFly[] 							= {"A3\Sounds_F\weapons\Rockets\rocket_fly_2",0.501187,1.3,400};
+		soundHit[] 							= {"",1.25893,1,1};
+		reloadSound[] 						= {"",0.000316228,1,20};
+		nameSound		 					= "missiles";
+	};
+	class OPTRE_8Rnd_Scorpion_missiles: OPTRE_4Rnd_Scorpion_missiles
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "8Rnd AGM-90B 'Scorpion' Guided AT Missile";
+		displayNameShort 					= "8Rnd Guided AT";
+		count 								= 8;
+	};
+	class OPTRE_12Rnd_Scorpion_missiles: OPTRE_4Rnd_Scorpion_missiles
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "12Rnd AGM-90B 'Scorpion' Guided AT Missile";
+		displayNameShort 					= "12Rnd Guided AT";
+		count 								= 12;
+	};
+	class OPTRE_16Rnd_Scorpion_missiles: OPTRE_4Rnd_Scorpion_missiles
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "16Rnd AGM-90B 'Scorpion' Guided AT Missile";
+		displayNameShort 					= "16Rnd Guided AT";
+		count 								= 16;
+	};
+	class OPTRE_1Rnd_Jackknife_missile: 2Rnd_LG_Scalpel
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "1Rnd AGM-502 'Jack Knife' Laser Guided Missile";
+		displayNameShort 					= "1Rnd Laser Guided";
+		count 								= 1;
+		ammo 								= "OPTRE_M_Jackknife_LGM";
+		initSpeed 							= 60; //40
+		maxLeadSpeed 						= 350;
+		sound[] 							= {"A3\Sounds_F\weapons\Rockets\titan_2",1.25893,1,1000};
+		weaponSoundEffect 					= "DefaultRifle";
+		soundFly[] 							= {"A3\Sounds_F\weapons\Rockets\rocket_fly_2",0.501187,1.3,400};
+		soundHit[] 							= {"",1.25893,1,1};
+		reloadSound[] 						= {"",0.000316228,1,20};
+		nameSound		 					= "missiles";
+	};
+	class OPTRE_2Rnd_Jackknife_missile: OPTRE_1Rnd_Jackknife_missile
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "2Rnd AGM-502 'Jack Knife' Laser Guided Missile";
+		displayNameShort 					= "2Rnd Laser Guided";
+		count 								= 2;
+	};
+	class OPTRE_3Rnd_Jackknife_missile: OPTRE_1Rnd_Jackknife_missile
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "3Rnd AGM-502 'Jack Knife' Laser Guided Missile";
+		displayNameShort 					= "3Rnd Laser Guided";
+		count 								= 3;
+	};
+	class OPTRE_12Rnd_500lb_bomb: 2Rnd_Bomb_03_F
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "12Rnd Mk208A 500lb Bomb";
+		displayNameShort 					= "12Rnd 500lb Bomb";
+		count 								= 12;
+		ammo 								= "OPTRE_Bo_500lb";
+		initSpeed 							= 0;
+		maxLeadSpeed 						= 1000;
+	};
+	class OPTRE_24Rnd_500lb_bomb: OPTRE_12Rnd_500lb_bomb
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "24Rnd Mk208A 500lb Bomb";
+		displayNameShort 					= "24Rnd 500lb Bomb";
+		count 								= 24;
+	};
+	class OPTRE_36Rnd_500lb_bomb: OPTRE_12Rnd_500lb_bomb
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "36Rnd Mk208A 500lb Bomb";
+		displayNameShort 					= "36Rnd 500lb Bomb";
+		count 								= 36;
+	};
+	class OPTRE_48Rnd_500lb_bomb: OPTRE_12Rnd_500lb_bomb
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "48Rnd Mk208A 500lb Bomb";
+		displayNameShort 					= "48Rnd 500lb Bomb";
+		count 								= 48;
+	};
+	class OPTRE_12Rnd_1000lb_bomb: OPTRE_12Rnd_500lb_bomb
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "12Rnd Mk208B 1000lb Bomb";
+		displayNameShort 					= "12Rnd 1000lb Bomb";
+		count 								= 12;
+		ammo 								= "OPTRE_Bo_1000lb";
+		initSpeed 							= 0;
+		maxLeadSpeed 						= 1000;
+	};
+	class OPTRE_24Rnd_1000lb_bomb: OPTRE_12Rnd_1000lb_bomb
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "24Rnd Mk208B 1000lb Bomb";
+		displayNameShort 					= "24Rnd 1000lb Bomb";
+		count 								= 24;
+	};
+	class OPTRE_36Rnd_1000lb_bomb: OPTRE_12Rnd_1000lb_bomb
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "36Rnd Mk208B 1000lb Bomb";
+		displayNameShort 					= "36Rnd 1000lb Bomb";
+		count 								= 36;
+	};
+	class OPTRE_8Rnd_2000lb_bomb: OPTRE_12Rnd_500lb_bomb
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "8Rnd Mk208C 2000lb Bomb";
+		displayNameShort 					= "8Rnd 2000lb Bomb";
+		count 								= 8;
+		ammo 								= "OPTRE_Bo_2000lb";
+		initSpeed 							= 0;
+		maxLeadSpeed 						= 1000;
+	};
+	class OPTRE_16Rnd_2000lb_bomb: OPTRE_8Rnd_2000lb_bomb
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "16Rnd Mk208C 2000lb Bomb";
+		displayNameShort 					= "16Rnd 2000lb Bomb";
+		count 								= 16;
+	};
+	class OPTRE_4Rnd_GBU_bomb: 2Rnd_GBU12_LGB
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "4Rnd GBU-1071 Laser Guided Bomb";
+		displayNameShort 					= "4Rnd LG Bomb";
+		count 								= 4;
+		ammo 								= "OPTRE_Bo_GBU1071_LGB";
+		initSpeed 							= 0;
+		maxLeadSpeed 						= 1000;
+	};
+	class OPTRE_8Rnd_GBU_bomb: OPTRE_4Rnd_GBU_bomb
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "8Rnd GBU-1071 Laser Guided Bomb";
+		displayNameShort 					= "8Rnd LG Bomb";
+		count 								= 8;
+	};
+	class OPTRE_12Rnd_Cluster_bomb: OPTRE_12Rnd_500lb_bomb
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "12Rnd CBU-901 Cluster Bomb";
+		displayNameShort 					= "12Rnd Cluster Bomb";
+		count 								= 12;
+		ammo 								= "OPTRE_Bo_cluster_AP";
+		initSpeed 							= 0;
+		maxLeadSpeed 						= 1000;
+	};
+	class OPTRE_12Rnd_scattermine_bomb: OPTRE_12Rnd_500lb_bomb
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "12Rnd CBU-870 Mine Dispersal Bomb";
+		displayNameShort 					= "12Rnd Minelayer Bomb";
+		count 								= 12;
+		ammo 								= "OPTRE_Bo_scattermine_AP";
+		initSpeed 							= 0;
+		maxLeadSpeed 						= 1000;
+	};
+	class OPTRE_2500Rnd_50mm_HE: 500Rnd_Cannon_30mm_Plane_CAS_02_F
 	{
 		author = "Article 2 Studios";
-		displayNameShort = "50mm";
-		ammo = "OPTRE_M9109_50mm";
+		displayNameShort = "50mm HE";
+		ammo = "OPTRE_B_50mm_HE";
 		count = 2500;
 	};
-	class OPTRE_M91091_1000Rnd_110mm: OPTRE_M9109_2500Rnd_50mm
+	class OPTRE_600Rnd_110mm: OPTRE_2500Rnd_50mm_HE
 	{
 		author = "Article 2 Studios";
-		displayNameShort = "110mm";
-		ammo = "OPTRE_M91091_110mm";
-		count = 1000;
+		displayNameShort = "110mm HEAT";
+		ammo = "OPTRE_Sh_110mm_HEAT";
+		count = 600;
 	};
-	class OPTRE_M910_5000Rnd_50mm: OPTRE_M9109_2500Rnd_50mm
+	class OPTRE_120Rnd_120mm: 30Rnd_120mm_HE_shells
 	{
 		author = "Article 2 Studios";
-		displayNameShort = "50mm";
-		ammo = "OPTRE_M9109_50mm";
-		count = 5000;
+		displayNameShort = "120mm SAPHE";
+		ammo = "OPTRE_Sh_120mm_SAPHE";
+		count = 120;
+	};
+	class OPTRE_2Rnd_Shiva_nuke_missile: 2Rnd_LG_Scalpel
+	{
+		dlc = "OPTRE";
+		scope 								= 2;
+		displayName 						= "2Rnd 'SHIVA' TACTICAL NUCLEAR MISSILE";
+		displayNameShort 					= "2Rnd NUCLEAR MISSILE";
+		count 								= 1;
+		ammo 								= "OPTRE_M_Shiva_Nuke";
+		initSpeed 							= 0; //40
+		maxLeadSpeed 						= 800;
+		sound[] 							= {"A3\Sounds_F\weapons\Rockets\titan_2",1.25893,1,1000};
+		weaponSoundEffect 					= "DefaultRifle";
+		soundFly[] 							= {"A3\Sounds_F\weapons\Rockets\rocket_fly_2",0.501187,1.3,400};
+		soundHit[] 							= {"",1.25893,1,1};
+		reloadSound[] 						= {"",0.000316228,1,20};
+		nameSound		 					= "missiles";
 	};
 	
 	
