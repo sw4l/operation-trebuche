@@ -73,7 +73,7 @@
 					scopeArsenal															= 1;
                     handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_Weapons\MG\data\anim\M73_1.rtm"};
                     model                                                                   = "\OPTRE_Weapons\MG\M73.p3d";
-                    displayName                                                             = "M73 Light Machine Gun";
+                    displayName                                                             = "[UNSC] M73 Light Machine Gun";
                     descriptionShort                                                        = "UNSC Light Machine Gun";
 					recoil = "recoil_mk200";
 					picture = "\OPTRE_weapons\MG\icons\M73_1.paa";

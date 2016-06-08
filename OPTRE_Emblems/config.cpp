@@ -13,16 +13,6 @@ class CfgPatches //This configures the identification of the pbo to the game
 
 class CfgUnitInsignia //Unit Insignias to show on players' shoulders
 {
-	class OPTRE_Insignia_foxgaming
-	{
-		dlc = "OPTRE";
-		scope = 2;
-		scopeArsenal = 2;
-		displayName = "[OPTRE] Fox Gaming"; // Name displayed in Arsenal
-		author = "Article 2 Studios"; // Author displayed in Arsenal
-		texture = "\OPTRE_Emblems\data\foxgaming.paa"; // Image path
-		textureVehicle = "\OPTRE_Emblems\data\foxgaming.paa"; // Does nothing currently, reserved for future use
-	};
 	class OPTRE_Insignia_ins
 	{
 		dlc = "OPTRE";
@@ -31,7 +21,7 @@ class CfgUnitInsignia //Unit Insignias to show on players' shoulders
 		texture = "\OPTRE_Emblems\data\insurrection.paa"; // Image path
 		textureVehicle = "\OPTRE_Emblems\data\insurrection.paa"; // Does nothing currently, reserved for future use
 	};
-	class OPTRE_Insignia_medic : OPTRE_Insignia_foxgaming
+	class OPTRE_Insignia_medic : OPTRE_Insignia_ins
 	{
 		dlc = "OPTRE";
 		displayName = "[OPTRE] Medic"; // Name displayed in Arsenal
@@ -39,7 +29,7 @@ class CfgUnitInsignia //Unit Insignias to show on players' shoulders
 		texture = "\OPTRE_Emblems\data\medic.paa"; // Image path
 		textureVehicle = "\OPTRE_Emblems\data\medic.paa"; // Does nothing currently, reserved for future use
 	};
-	class OPTRE_Insignia_odst_7th : OPTRE_Insignia_foxgaming
+	class OPTRE_Insignia_odst_7th : OPTRE_Insignia_ins
 	{
 		dlc = "OPTRE";
 		displayName = "[OPTRE] ODST (7th STB)"; // Name displayed in Arsenal
@@ -47,7 +37,7 @@ class CfgUnitInsignia //Unit Insignias to show on players' shoulders
 		texture = "\OPTRE_Emblems\data\odst_7th.paa"; // Image path
 		textureVehicle = "\OPTRE_Emblems\data\odst_7th.paa"; // Does nothing currently, reserved for future use
 	};
-	class OPTRE_Insignia_odst_13th : OPTRE_Insignia_foxgaming
+	class OPTRE_Insignia_odst_13th : OPTRE_Insignia_ins
 	{
 		dlc = "OPTRE";
 		displayName = "[OPTRE] ODST (13th STB)"; // Name displayed in Arsenal
@@ -55,7 +45,7 @@ class CfgUnitInsignia //Unit Insignias to show on players' shoulders
 		texture = "\OPTRE_Emblems\data\odst_13th.paa"; // Image path
 		textureVehicle = "\OPTRE_Emblems\data\odst_13th.paa"; // Does nothing currently, reserved for future use
 	};
-	class OPTRE_Insignia_odst_19th : OPTRE_Insignia_foxgaming
+	class OPTRE_Insignia_odst_19th : OPTRE_Insignia_ins
 	{
 		dlc = "OPTRE";
 		displayName = "[OPTRE] ODST (19th STB)"; // Name displayed in Arsenal
@@ -63,7 +53,7 @@ class CfgUnitInsignia //Unit Insignias to show on players' shoulders
 		texture = "\OPTRE_Emblems\data\odst_19th.paa"; // Image path
 		textureVehicle = "\OPTRE_Emblems\data\odst_19th.paa"; // Does nothing currently, reserved for future use
 	};
-	class OPTRE_Insignia_oni : OPTRE_Insignia_foxgaming
+	class OPTRE_Insignia_oni : OPTRE_Insignia_ins
 	{
 		dlc = "OPTRE";
 		displayName = "[OPTRE] ONI"; // Name displayed in Arsenal
@@ -71,29 +61,13 @@ class CfgUnitInsignia //Unit Insignias to show on players' shoulders
 		texture = "\OPTRE_Emblems\data\oni.paa"; // Image path
 		textureVehicle = "\OPTRE_Emblems\data\oni.paa"; // Does nothing currently, reserved for future use
 	};
-	class OPTRE_Insignia_unsc_1st : OPTRE_Insignia_foxgaming
+	class OPTRE_Insignia_unsc_1st : OPTRE_Insignia_ins
 	{
 		dlc = "OPTRE";
 		displayName = "[OPTRE] UNSC (1st Cav)"; // Name displayed in Arsenal
 		author = "Article 2 Studios"; // Author displayed in Arsenal
 		texture = "\OPTRE_Emblems\data\unsc_1st.paa"; // Image path
 		textureVehicle = "\OPTRE_Emblems\data\unsc_1st.paa"; // Does nothing currently, reserved for future use
-	};
-	class OPTRE_Insignia_unsc_5th : OPTRE_Insignia_foxgaming
-	{
-		dlc = "OPTRE";
-		displayName = "[OPTRE] UNSC (5th Fleet)"; // Name displayed in Arsenal
-		author = "Article 2 Studios"; // Author displayed in Arsenal
-		texture = "\OPTRE_Emblems\data\unsc_5th.paa"; // Image path
-		textureVehicle = "\OPTRE_Emblems\data\unsc_5th.paa"; // Does nothing currently, reserved for future use
-	};
-	class OPTRE_Insignia_unsc_77th : OPTRE_Insignia_foxgaming
-	{
-		dlc = "OPTRE";
-		displayName = "[OPTRE] UNSC (77th MD)"; // Name displayed in Arsenal
-		author = "Article 2 Studios"; // Author displayed in Arsenal
-		texture = "\OPTRE_Emblems\data\unsc_77th.paa"; // Image path
-		textureVehicle = "\OPTRE_Emblems\data\unsc_77th.paa"; // Does nothing currently, reserved for future use
 	};
 	class OPTRE_Insignia_emblems_blackwidow
 	{

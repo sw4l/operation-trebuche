@@ -179,10 +179,10 @@ class CfgGlasses
 		ACE_TintAmount = 0;
 		ACE_Overlay = "";
 		ACE_OverlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";
-		ACE_OverlayCracked = "\z\ace\addons\goggles\textures\HUD\Cracked.paa";
+		ACE_OverlayCracked = "";
 		ACE_Resistance = 0;
 		ACE_Protection = 0;
-		ACE_DustPath = "\z\ace\addons\goggles\textures\fx\dust\%1.paa";
+		ACE_DustPath = "";
     }; 
     class OPTRE_HUD_Glasses: G_Balaclava_blk
     { 
@@ -190,10 +190,10 @@ class CfgGlasses
 		ACE_TintAmount = 0;
 		ACE_Overlay = "";
 		ACE_OverlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";
-		ACE_OverlayCracked = "\z\ace\addons\goggles\textures\HUD\Cracked.paa";
+		ACE_OverlayCracked = "";
 		ACE_Resistance = 2;
 		ACE_Protection = 1;
-		ACE_DustPath = "\z\ace\addons\goggles\textures\fx\dust\%1.paa";
+		ACE_DustPath = "";
     };
     class OPTRE_EyePiece: G_Tactical_Clear
     { 
@@ -201,9 +201,9 @@ class CfgGlasses
 		ACE_TintAmount = 0;
 		ACE_Overlay = "";
 		ACE_OverlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";
-		ACE_OverlayCracked = "\z\ace\addons\goggles\textures\HUD\Cracked.paa";
+		ACE_OverlayCracked = "";
 		ACE_Resistance = 0;
 		ACE_Protection = 0;
-		ACE_DustPath = "\z\ace\addons\goggles\textures\fx\dust\%1.paa";
+		ACE_DustPath = "";
     }; 
 }; 

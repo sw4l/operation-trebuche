@@ -1032,7 +1032,7 @@ class CfgVehicles
 				gunnerRightHandAnimName	= "trigger";
 				memoryPointGun			= "machinegun";
 				weapons[]				= {"OPTRE_M68_GAUSS"};
-				magazines[] 			= {"OPTRE_20Rnd_ALIM_GAUSS_slugs","OPTRE_20Rnd_ALIM_GAUSS_slugs"};
+				magazines[] 			= {"OPTRE_3Rnd_ALIM_Gauss_Slugs","OPTRE_3Rnd_ALIM_Gauss_Slugs","OPTRE_3Rnd_ALIM_Gauss_Slugs","OPTRE_3Rnd_ALIM_Gauss_Slugs"};
 				memoryPointGunnerOptics	= "gunnerview";
 				gunnerOpticsModel 		= "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";
 				gunnerOpticsShowCursor	= 1;

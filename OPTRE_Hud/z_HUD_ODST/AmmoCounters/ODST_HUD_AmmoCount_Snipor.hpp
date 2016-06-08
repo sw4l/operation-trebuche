@@ -106,5 +106,4 @@ class OPTRE_ODST_HUD_AmmoCount_Snipor
 		};
 
 	};
-	
 };

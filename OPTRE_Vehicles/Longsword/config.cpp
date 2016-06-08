@@ -454,152 +454,23 @@ class CfgVehicles
 		driverForceOptics=0;
 	};
 
-	class OPTRE_Longsword_CAS: OPTRE_Longsword_Base
+	class OPTRE_Longsword_BASIC: OPTRE_Longsword_Base
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "GA-TL1/A Longsword (CAS)";								/// how is the plane displayed in editor
+		displayName = "GA-TL1/A Longsword";								/// how is the plane displayed in editor
 		dlc = "OPTRE";
 		author="Article 2 Studios";
 		
 		weapons[] =	/// lets use the weapons from Buzzard
 		{
 			OPTRE_M9109,
-			missiles_DAR,
-			missiles_SCALPEL,
-			missiles_ASRAAM,
-			GBU12BombLauncher,
 			CMFlareLauncher
 		};
 		magazines[] = /// and their respective magazines
 		{
-			OPTRE_M9109_2500Rnd_50mm,
-			24Rnd_missiles,
-			24Rnd_missiles,
-			2Rnd_LG_scalpel,
-			2Rnd_LG_scalpel,
-			2Rnd_LG_scalpel,
-			2Rnd_LG_scalpel,
-			2Rnd_AAA_missiles,
-			2Rnd_AAA_missiles,
-			2Rnd_GBU12_LGB_MI10,
-			2Rnd_GBU12_LGB_MI10,
-			120Rnd_CMFlare_Chaff_Magazine
-		};
-	};
-
-	class OPTRE_Longsword_BOMB: OPTRE_Longsword_Base
-	{
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "GA-TL1/A Longsword (Bomber)";								/// how is the plane displayed in editor
-		dlc = "OPTRE";
-		author="Article 2 Studios";
-		
-		weapons[] =	/// lets use the weapons from Buzzard
-		{
-			OPTRE_M9109,
-			missiles_SCALPEL,
-			missiles_ASRAAM,
-			GBU12BombLauncher,
-			CMFlareLauncher
-		};
-		magazines[] = /// and their respective magazines
-		{
-			OPTRE_M9109_2500Rnd_50mm,
-			2Rnd_LG_scalpel,
-			2Rnd_AAA_missiles,
-			2Rnd_GBU12_LGB_MI10,
-			2Rnd_GBU12_LGB_MI10,
-			2Rnd_GBU12_LGB_MI10,
-			2Rnd_GBU12_LGB_MI10,
-			2Rnd_GBU12_LGB_MI10,
-			2Rnd_GBU12_LGB_MI10,
-			2Rnd_GBU12_LGB_MI10,
-			2Rnd_GBU12_LGB_MI10,
-			120Rnd_CMFlare_Chaff_Magazine
-		};
-	};
-	
-	class OPTRE_Longsword_AA: OPTRE_Longsword_Base
-	{
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "GA-TL1/A Longsword (CAP)";								/// how is the plane displayed in editor
-		dlc = "OPTRE";
-		author="Article 2 Studios";
-		
-		weapons[] =
-		{
-			OPTRE_M9109,
-			missiles_ASRAAM,
-			missiles_Zephyr,
-			CMFlareLauncher
-		};
-		magazines[] =
-		{
-			OPTRE_M9109_2500Rnd_50mm,
-			2Rnd_AAA_missiles,
-			2Rnd_AAA_missiles,
-			2Rnd_AAA_missiles,
-			2Rnd_AAA_missiles,
-			4Rnd_GAA_missiles,
-			4Rnd_GAA_missiles,
-			4Rnd_GAA_missiles,
-			120Rnd_CMFlare_Chaff_Magazine
-		};
-	};
-	
-	class OPTRE_Longsword_CANNON: OPTRE_Longsword_Base
-	{
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "GA-TL1/A  Longsword (Cannon)";								/// how is the plane displayed in editor
-		dlc = "OPTRE";
-		author="Article 2 Studios";
-		
-		weapons[] =
-		{
-			OPTRE_M91091,
-			missiles_ASRAAM,
-			missiles_SCALPEL,
-			CMFlareLauncher
-		};
-		magazines[] =
-		{
-			OPTRE_M91091_1000Rnd_110mm,
-			2Rnd_AAA_missiles,
-			2Rnd_AAA_missiles,
-			2Rnd_LG_scalpel,
-			2Rnd_LG_scalpel,
-			120Rnd_CMFlare_Chaff_Magazine
-		};
-	};
-	
-	class OPTRE_Longsword_SUPPRESS: OPTRE_Longsword_Base
-	{
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "GA-TL1/A  Longsword (Suppression)";								/// how is the plane displayed in editor
-		dlc = "OPTRE";
-		author="Article 2 Studios";
-		
-		weapons[] =
-		{
-			OPTRE_M9109,
-			missiles_DAR,
-			missiles_ASRAAM,
-			CMFlareLauncher
-		};
-		magazines[] =
-		{
-			OPTRE_M9109_2500Rnd_50mm,
-			OPTRE_M9109_2500Rnd_50mm,
-			2Rnd_AAA_missiles,
-			24Rnd_missiles,
-			24Rnd_missiles,
-			24Rnd_missiles,
-			24Rnd_missiles,
+			OPTRE_2500Rnd_50mm_HE,
+			OPTRE_2500Rnd_50mm_HE,
 			120Rnd_CMFlare_Chaff_Magazine
 		};
 	};

@@ -63,7 +63,7 @@
 		
 		class ModuleDescription
 		{
-			description[] = {"This module will spawn a CAS asset that will perform a air strike at the location the module is placed. The direction of this module determines from which direction the CAS asset will approach the target from.";};
+			description = "This module will spawn a CAS asset that will perform a air strike at the location the module is placed. The direction of this module determines from which direction the CAS asset will approach the target from.";
 			sync[] = {"EmptyDetector"};
 			position = 1;
 			direction = 1;

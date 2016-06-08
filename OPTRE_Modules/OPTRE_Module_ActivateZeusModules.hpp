@@ -22,9 +22,7 @@
 
 		class ModuleDescription
 		{
-			description[] = {
-				"Placing this module will correctly load all OPTRE modules for curators. Placing any other OPTRE editor module will also have this effect.";
-			};
+			description = "Placing this module will correctly load all OPTRE modules for curators. Placing any other OPTRE editor module will also have this effect.";
 			sync[] = {"EmptyDetector"};
 			position = 0;
 			direction = 0;

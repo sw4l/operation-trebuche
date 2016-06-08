@@ -398,7 +398,7 @@ class CfgMagazines
 	{
 		dlc = "OPTRE";
 		scope 								= 2;
-		displayName							= "20Rnd ALIM Gauss Slugs";
+		displayName							= "3Rnd ALIM Gauss Slugs";
 		displayNameShort					= "25x130mm Slug";
 		ammo								= "OPTRE_25x130mm_Slug";
 		initSpeed 							= 13680;

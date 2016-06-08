@@ -279,6 +279,7 @@ class CfgWeapons
 	{
 		displayName							= "M370 Autocannon";
         modes[] = {"FullAuto"};
+		magazines[] = {"OPTRE_2500Rnd_50mm_HE"};
         class FullAuto: MGun
         {
             reloadTime = 0.125;

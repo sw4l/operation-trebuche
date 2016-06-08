@@ -645,6 +645,7 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		displayname = "[INS] AT Rocket Pack";
+		scopeArsenal = 1;
 		class TransportMagazines
 		{
 			class OPTRE_M41_Twin_HEAT
@@ -658,6 +659,7 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		displayname = "[INS] Explosives Pack";
+		scopeArsenal = 1;
 		class TransportMagazines
 		{
 			class _xx_APERSBoundingMine_Range_Mag

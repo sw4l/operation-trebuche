@@ -925,8 +925,8 @@ class CfgVehicles
 		accuracy = 1.50; 					/// harder to distinguish side than vehicle type
 		memoryPointLMissile = "Rocket_1";
 		memoryPointRMissile = "Rocket_2";
-		weapons[] = {"CMFlareLauncher","missiles_DAR"};	/// array of various vehicle weapons mounted on the heli
-		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","24Rnd_missiles","24Rnd_missiles"}; /// array of corresponding magazines
+		weapons[] = {"CMFlareLauncher","OPTRE_missiles_Anvil1"};	/// array of various vehicle weapons mounted on the heli
+		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","OPTRE_32Rnd_Anvil1_missiles"}; /// array of corresponding magazines
 	   	availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 	 	cost = 900000;						/// we need some high cost for such vehicles to be prioritized by AA defences
 		class Turrets: Turrets										/// just a copilot seat as a turret to enable taking the controls
