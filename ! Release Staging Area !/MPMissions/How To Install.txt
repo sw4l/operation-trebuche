@@ -1,0 +1,5 @@
+1. Copy the desired missions in the folder
+
+2. Paste them in Arma 3\MPMissions\
+
+5. Enjoy

@@ -1,18 +1,19 @@
 class CfgPatches
 {
-	class OPTRE_Buildings_Highway
-	{
-		units[]										= {};
-		weapons[]									= {};
-		requiredVersion								= 0.1;
-		requiredAddons[]							= {"OPTRE_Core"};
-	};
+	
+	class OPTRE_UNSC_Structure_Highway
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 0.1;
+        requiredAddons[] = {"A3_structures_f","OPTRE_Core"};
+    };
 };
 
 class CfgVehicles
 {
 	class House_F;
-	class Ruins_F;
+	
 	class Land_Highway_Straight: House_F
 	{
 		dlc = "OPTRE";
@@ -29,6 +30,38 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Highway";
 	};
 	
+	class Land_Highway_Straight_up: House_F
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 2;
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_Trans_Building_class";
+		displayName = "Highway (Straight Up)";
+		model = "\OPTRE_buildings\Highway\Highway_straight_up.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Highway";
+	};
+	
+	class Land_Highway_Straight_down: House_F
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 2;
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_Trans_Building_class";
+		displayName = "Highway (Straight Down)";
+		model = "\OPTRE_buildings\Highway\Highway_straight_down.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Highway";
+	};
+	
 	class Land_Highway_bridge: House_F
 	{
 		dlc = "OPTRE";	
@@ -39,6 +72,38 @@ class CfgVehicles
 		vehicleClass = "OPTRE_Trans_Building_class";
 		displayName = "Highway (Bridge)";
 		model = "\OPTRE_buildings\Highway\Highway_bridge.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Highway";
+	};
+	
+	class Land_Highway_bridge_up: House_F
+	{
+		dlc = "OPTRE";	
+		scope = 2;
+		scopeCurator = 2;
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_Trans_Building_class";
+		displayName = "Highway (Bridge Up)";
+		model = "\OPTRE_buildings\Highway\Highway_bridge_up.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Highway";
+	};
+	
+	class Land_Highway_bridge_down: House_F
+	{
+		dlc = "OPTRE";	
+		scope = 2;
+		scopeCurator = 2;
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_Trans_Building_class";
+		displayName = "Highway (Bridge Down)";
+		model = "\OPTRE_buildings\Highway\Highway_bridge_down.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 		editorCategory = "OPTRE_EditorCategory_Buildings";

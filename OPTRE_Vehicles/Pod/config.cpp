@@ -45,7 +45,7 @@ class CfgVehicles
 		class DestructionEffects{};
         armor = 1000000;
 		accuracy = 0.2;
-		destrType = "";
+		destrType = "DestructNo";
 		gearRetracting=0;	
 		model = "OPTRE_Vehicles\Pod\pod.p3d";
 		crewVulnerable 					= 0;

@@ -450,7 +450,7 @@ class CfgVehicles
 			thermalMode[]={0,1};
 		};
 		memoryPointDriverOptics="pilotcam";
-		driverOpticsModel="A3\drones_f\Weapons_F_Gamma\Reticle\UGV_01_Optics_Driver_F.p3d";
+		driverOpticsModel="A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
 		driverForceOptics=0;
 	};
 
