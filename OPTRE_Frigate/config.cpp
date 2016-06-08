@@ -11,7 +11,6 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class OPTRE_Objects_Base;
 	class Land;
 	class LandVehicle: Land
 	{
@@ -53,6 +52,20 @@ class CfgVehicles
 		class CargoLight;
 		class Reflectors;
 		class UserActions;
+	};
+	class House_F;
+	class OPTRE_Objects_Base: House_F
+	{
+		dlc = "OPTRE";
+		scope = 0;
+		scopeCurator = 0;
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_UNSC_Object_class";
+		model = "\A3\Weapons_F\empty.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+		class DestructionEffects{};
 	};
 	
 	class OPTRE_Frigate_Final_Dawn: OPTRE_Objects_Base

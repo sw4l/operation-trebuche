@@ -767,11 +767,11 @@ class cfgWeapons
 		author																					= "Article 2 Studios";
 		displayName  																			= "[UNSC] M53 Body Armor [ODST]";
 		hiddenSelections[]   																	= {"camo1","camo2","attach_knife","attach_nade"};
-		hiddenSelectionsTextures[]   															= {"optre_unsc_units\odst\data\vest_basic_co.paa",""};
+		hiddenSelectionsTextures[]   															= {"optre_unsc_units\odst\data\vest_co.paa",""};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]   																= {"camo1","camo2","attach_knife","attach_nade"};
-			hiddenSelectionsTextures[]   														= {"optre_unsc_units\odst\data\vest_basic_co.paa",""};
+			hiddenSelectionsTextures[]   														= {"optre_unsc_units\odst\data\vest_co.paa",""};
 		};
 	};
 	class OPTRE_UNSC_ODST_Vest_Medic: OPTRE_UNSC_ODST_Vest

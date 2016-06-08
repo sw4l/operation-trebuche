@@ -6,7 +6,7 @@ class CfgPatches //This configures the identification of the pbo to the game
 		weapons[] 																				= {};																								
 		requiredVersion 																		= 0.1;
 		version																					= 0.1;
-		requiredAddons[] 																		= {"Extended_EventHandlers", "cba_main", "ACE_Main"};
+		requiredAddons[] 																		= {"ACE_Main", "OPTRE_Weapons", "OPTRE_Vehicles", "OPTRE_UNSC_Units", "OPTRE_Misc"};
 		author[] 																				= {"Article 2 Studios"};
 		fileName 																				= "OPTRE_ACE_Compat.pbo";
 	};
@@ -61,19 +61,6 @@ class CfgWeapons
                 "1Rnd_SmokePurple_Grenade_shell",
                 "1Rnd_SmokeBlue_Grenade_shell",
                 "1Rnd_SmokeOrange_Grenade_shell",
-                "3Rnd_HE_Grenade_shell",
-                "3Rnd_UGL_FlareWhite_F",
-                "3Rnd_UGL_FlareGreen_F",
-                "3Rnd_UGL_FlareRed_F",
-                "3Rnd_UGL_FlareYellow_F",
-                "3Rnd_UGL_FlareCIR_F",
-                "3Rnd_Smoke_Grenade_shell",
-                "3Rnd_SmokeRed_Grenade_shell",
-                "3Rnd_SmokeGreen_Grenade_shell",
-                "3Rnd_SmokeYellow_Grenade_shell",
-                "3Rnd_SmokePurple_Grenade_shell",
-                "3Rnd_SmokeBlue_Grenade_shell",
-                "3Rnd_SmokeOrange_Grenade_shell",
                 "ACE_HuntIR_M203"
             };
         };

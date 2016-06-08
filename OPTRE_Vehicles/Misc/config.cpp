@@ -266,6 +266,7 @@ class CfgVehicles
 		faction = "OPTRE_UNSC";
 		crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
 		typicalCargo[] = {"OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL"};
+		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\OPTRE_Quadbike01_green_CO.paa","\A3\soft_f_beta\Quadbike_01\data\Quadbike_01_wheel_civblack_co.paa"};
 	};
 
@@ -276,6 +277,7 @@ class CfgVehicles
 		scope = 2;
 		crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_DES";
 		typicalCargo[] = {"OPTRE_UNSC_Army_Soldier_Rifleman_AR_DES"};
+		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\OPTRE_Quadbike01_tan_CO.paa","\A3\soft_f_beta\Quadbike_01\data\Quadbike_01_wheel_civblack_co.paa"};
 	};
 	
@@ -286,6 +288,7 @@ class CfgVehicles
 		scope = 2;
 		crew = "OPTRE_UNSC_ODST_Soldier_Scout";
 		typicalCargo[] = {"OPTRE_UNSC_ODST_Soldier_Scout"};
+		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\OPTRE_Quadbike01_black_CO.paa","\A3\soft_f_beta\Quadbike_01\data\Quadbike_01_wheel_civblack_co.paa"};
 	};
 	
@@ -296,6 +299,7 @@ class CfgVehicles
 		scope = 2;
 		crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_SNO";
 		typicalCargo[] = {"OPTRE_UNSC_Army_Soldier_Rifleman_AR_SNO"};
+		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\OPTRE_Quadbike01_white_CO.paa","\A3\soft_f_beta\Quadbike_01\data\Quadbike_01_wheel_civwhite_co.paa"};
 	};
 	
@@ -305,6 +309,7 @@ class CfgVehicles
 		displayName = "M274 Mongoose ULATV (Marine)";
 		scope = 2;
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
+		hiddenSelections[] = {"camo1","camo2"};
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
 	};
 	
@@ -319,6 +324,7 @@ class CfgVehicles
 		faction = "OPTRE_Ins";
 		crew = "OPTRE_Ins_URF_Rifleman_AR";
 		typicalCargo[] = {"OPTRE_Ins_URF_Rifleman_AR"};
+		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\OPTRE_Quadbike01_ins_CO.paa","\A3\soft_f_beta\Quadbike_01\data\Quadbike_01_wheel_civblack_co.paa"};
 	};
 

@@ -17,7 +17,7 @@
             {
 					dlc = "OPTRE";
                     scope                                                                   = 2;
-                    displayName                                                             = "M73 Smart-Link Scope";
+                    displayName                                                             = "[UNSC] M73 Smart-Link Scope";
 					picture = "\OPTRE_weapons\MG\icons\scope.paa";
                     model                                                                   = "\OPTRE_Weapons\MG\M73_SmartLink.p3d";
                     descriptionShort                                                        = "M73 Smart-Linked Neural Interface Scope";
@@ -70,7 +70,7 @@
             {
 					dlc = "OPTRE";		
                     scope                                                                   = 1;
-					scopeArsenal = 2;
+					scopeArsenal															= 1;
                     handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_Weapons\MG\data\anim\M73_1.rtm"};
                     model                                                                   = "\OPTRE_Weapons\MG\M73.p3d";
                     displayName                                                             = "M73 Light Machine Gun";
@@ -405,11 +405,11 @@
             {
 					dlc = "OPTRE";
                     model                                                                   = "\OPTRE_Weapons\MG\M73.p3d";
-                    displayName                                                             = "M73 Light Machine Gun";
+                    displayName                                                             = "[UNSC] M73 Light Machine Gun";
                     descriptionShort                                                        = "UNSC Light Machine Gun";
                     inertia                                                                 = 0.75;
 					scope																	= 2;
-					scopeArsenal = 2;
+					scopeArsenal 															= 2;
 					maxRecoilSway 															= 0.0115;
 					swayDecaySpeed 															= 1.15;
                     modes[] 																= {"Single","FullAuto"};
@@ -438,7 +438,7 @@
 					scope                                                                   = 1;
                     handAnim[]                                                              = {"OFP2_ManSkeleton", "\A3\weapons_f\Machineguns\M200\data\Anim\M200.rtm"};
                     model                                                                   = "\OPTRE_Weapons\MG\M247.p3d";
-                    displayName                                                             = "M247 Medium Machine Gun";
+                    displayName                                                             = "[UNSC] M247 Medium Machine Gun";
                     descriptionShort                                                        = "UNSC Medium Machine Gun";
                     picture 																= "";
                     magazines[]                                                             = {"OPTRE_100Rnd_762x51_Box","OPTRE_100Rnd_762x51_Box_Tracer"};

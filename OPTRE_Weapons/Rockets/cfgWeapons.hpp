@@ -15,7 +15,7 @@ class CfgWeapons
 		dlc = "OPTRE";
 		scope = 2;
 		author = "Article 2 Studios";
-		displayname = "M41 SSR MAV/AW";
+		displayname = "[UNSC] M41 SSR MAV/AW";
 		descriptionshort = "Surface-to-Surface Rocket Medium Anti-Vehicle/Assault Weapon";
 
 		class Library
@@ -69,7 +69,7 @@ class CfgWeapons
 	{
 		dlc = "OPTRE";
 		author = "Article 2 Studios";
-		displayname = "M41 SSR MAV/AW (Guided)";
+		displayname = "[UNSC] M41 SSR MAV/AW (Guided)";
 		descriptionshort = "Surface-to-Surface Rocket Medium Anti-Vehicle/Assault Weapon (Guided)";
 		magazines[] = {"OPTRE_M41_Twin_HEAT_G"};
 		lockingTargetSound[] = {"\A3\Sounds_F\weapons\Rockets\locked_1",0.316228,1};

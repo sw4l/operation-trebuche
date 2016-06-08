@@ -1,53 +1,55 @@
-enum {
-DESTRUCTENGINE 																					= 2,
-DESTRUCTDEFAULT 																				= 6,
-DESTRUCTWRECK 																					= 7,
-DESTRUCTTREE 																					= 3,
-DESTRUCTTENT 																					= 4,
-STABILIZEDINAXISX 																				= 1,
-STABILIZEDINAXESXYZ 																			= 4,
-STABILIZEDINAXISY 																				= 2,
-STABILIZEDINAXESBOTH 																			= 3,
-DESTRUCTNO 																						= 0,
-STABILIZEDINAXESNONE 																			= 0,
-DESTRUCTMAN 																					= 5,
-DESTRUCTBUILDING 																				= 1,
-};
-
 class CfgPatches
 {
-	class OPTRE_Buildings_Misc
-	{
-		units[]										= {};
-		weapons[]									= {};
-		requiredVersion								= 0.1;
-		requiredAddons[]							= {"OPTRE_Core"};
-	};
+	
+	class OPTRE_UNSC_Structure_Misc
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 0.1;
+        requiredAddons[] = {"A3_structures_f","OPTRE_Core"};
+    };
 };
 
 class CfgVehicles
 {
-	class All {};
-	class Static: All {};
-	class Building: Static {};
-	class NonStrategic: Building {};
-	class TargetTraining: NonStrategic {};
-	class TargetGrenade: TargetTraining {};
+	class House_F;
 	
-	class OPTRE_KOTH_Playset: static
+	class Land_KOTH_playset: House_F
 	{
 		dlc = "OPTRE";
-		scope = 2;
-		scopeCurator = 2;
+		model="\OPTRE_Buildings\Misc\KOTH_playset";
+		vehicleClass = "OPTRE_City_Building_class";
 		armor = 999999;
 		armorStructural = 999;
-		vehicleClass = "OPTRE_City_Objects_class";
-		displayName = "King of the Hill Playset";
-		model = "\OPTRE_buildings\Misc\KOTH_Playset.p3d";
-		author = "Article 2 Studios";
-		icon = "iconCrateWpns";
+		scope=2;
+		displayName="King of the Hill Playset";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+	};
+	
+	class Land_OPTRE_windmill_large: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Misc\OPTRE_windmill_large";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Large Windmill";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+	};
+	
+	class Land_OPTRE_windmill_small: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Misc\OPTRE_windmill_small";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Small Windmill";
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 };
-

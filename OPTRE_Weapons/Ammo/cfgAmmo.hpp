@@ -38,6 +38,7 @@ class CfgAmmo
 	class Bo_GBU12_LGB;
 	class Cluster_155mm_AMOS;
 	class Mine_155mm_AMOS_Range;
+	class IRStrobeBase;
 	
 	//7.62x51mm (AR, M247)
 	class OPTRE_B_762x51_Ball: B_762x51_Ball
@@ -963,8 +964,27 @@ class CfgAmmo
 	{
 		smokeColor[]  					= {0.4341,0.1388,0.4144,1};
 	};
-	class OPTRE_G_M8_Flare: OPTRE_G_M2_Smoke
+	class Chemlight_base;
+	class OPTRE_G_M8_Flare: Chemlight_base
 	{
 		model 							= "\OPTRE_Weapons\explosives\m8_flare.p3d";
+		effectsSmoke					= "ChemlightLight_red";
+	};
+	class OPTRE_G_ELB47_Strobe: IRStrobeBase
+	{
+		model="\OPTRE_Weapons\items\beacon.p3d";
+		timeToLive=1800;
+		class NVGMarkers
+		{
+			class Blinking1
+			{
+				name="cerveny pozicni blik";
+				color[]={0.0099999998,0.0099999998,0.0099999998,1};
+				ambient[]={0.0049999999,0.0049999999,0.0049999999,1};
+				blinking=1;
+				brightness=0.0020000001;
+				onlyInNvg=0;
+			};
+		};
 	};
 };

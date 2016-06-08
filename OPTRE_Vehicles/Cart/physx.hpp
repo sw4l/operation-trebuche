@@ -1,16 +1,16 @@
 		/// splendid tutorial by RedPhoenix could be found at 
 		/// http://forums.bistudio.com/showthread.php?165390-Tutorial-Creating-Custom-Engine-Gearbox-and-Suspension-Vehicle-configuration
 		
-		terrainCoef									= 0.1;
+		terrainCoef									= 0.45;
 		turnCoef 									= 3;
 		thrustDelay									= 0.2;
 		brakeIdleSpeed								= 1.78;
-		maxSpeed									= 50;
+		maxSpeed									= 40;
 		fuelCapacity								= 150;
 		antiRollbarForceCoef						= 0.75;
 		antiRollbarForceLimit 						= 0.75;
-		antiRollbarSpeedMin							= 25;
-		antiRollbarSpeedMax							= 100;
+		antiRollbarSpeedMin							= 10;
+		antiRollbarSpeedMax							= 40;
 		idleRpm										= 800;
 		redRpm										= 4500;
 		slowSpeedForwardCoef						= 0.35;

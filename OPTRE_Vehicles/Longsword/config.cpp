@@ -3,7 +3,7 @@ class CfgPatches
 {
 	class OPTRE_Vehicles_Longsword
 	{
-		units[] = {"OPTRE_Longsword_F"};
+		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F","A3_Air_F_Beta","A3_Weapons_F","OPTRE_Core"};
@@ -21,13 +21,15 @@ class CfgVehicles
 	class Plane_Base_F: Plane
 	{
 		class AnimationSources;
+		class ViewPilot;
+		class ViewOptics;
 		class HitPoints: HitPoints
 		{
 			class HitHull;
 		};
 	};
 
-	class OPTRE_Longsword_Base_F: Plane_Base_F
+	class OPTRE_Longsword_Base: Plane_Base_F
 	{
 		scope = 1;
 		scopeCurator = 1;
@@ -102,17 +104,13 @@ class CfgVehicles
 		};
 
 		#include "sounds.hpp"
-
 		landingSpeed = 200;
 		acceleration = 500;
 		maxSpeed = 1750;
-
 		driveOnComponent[] = {"wheel_1","wheel_2","wheel_3"};
-
 		rudderInfluence = 0.5;
 		aileronSensitivity = 5;
 		elevatorSensitivity = 5;
-
 		irScanRangeMin = 500;
 		irScanRangeMax = 5000;
 		irScanToEyeFactor = 2;
@@ -136,67 +134,249 @@ class CfgVehicles
 		headAimDown = 0.0000;
 		memoryPointLRocket = "Rocket_1";
 		memoryPointRRocket = "Rocket_2";
-		/*memoryPointLMissile = "Missile_1";
+		memoryPointLMissile = "Missile_1";
 		memoryPointRMissile = "Missile_2";
-		memoryPointGun[] = {"Muzzle_1"};*/
+		memoryPointGun[] = {"Muzzle_1"};
 		flapsFrictionCoef = 0.5;
 		minFireTime = 30;
 		threat[] = {1, 1, 1};
-		class Reflectors
-		{
-			class Left
-			{
-				color[] = {7000, 7500, 10000, 1}; 	/// defines red, green, blue and alpha components of the light
-				ambient[] = {100, 100, 100};		/// the same definition format for colouring the environment around
-				position = "Light_L";				/// name of memory point in model to take the origin of the light
-				direction = "Light_L_end";			/// name of memory point in the model to make a vector of direction of light from it's position
-				hitpoint = "Light_L";				/// name of hitpoint selection in hitpoint lod of the model to be affected by damage
-				selection = "Light_L";				/// name of selection in visual lods of the model that are going to be hidden while the light is off
-				innerAngle = 20;					/// angle from light direction vector where the light is at full strength
-				outerAngle = 60;					/// angle from light direction vector where the light is completely faded out
-				coneFadeCoef = 10;					/// coefficient of fading the light between inner and outer cone angles
-				intensity = 50;						/// how much does the light shine (in some strange units, just tweak until it is satisfying), rough approximation is intensity = (brightness * 50) ^ 2
-				useFlare = true;					/// boolean switch if the light produces flare or not
-				dayLight = false;					/// boolean switch if the light is used during day or not
-				FlareSize = 4;						/// how big is the flare, using the same metrics as intensity
-				size = 1;							/// defines the visible size of light, has not much of an effect now
-				class Attenuation					/// describes how fast does the light dim
-				{
-					start = 1;						/// offset of start of the attenuation
-					constant = 0;					/// constant attenuation of the light in any distance from source
-					linear = 0;						/// coefficient for linear attenuation
-					quadratic = 4;					/// coefficient for attenuation with square of distance from source
 
-					hardLimitStart = 150;			/// distance from source where the light intensity decreases for drawing
-					hardLimitEnd = 300;				/// distance from source where the light is not displayed (shorter distances increase performance)
-				};
-			};
-			class Right: Left
-			{
-				position = "Light_R";
-				direction = "Light_R_end";
-				hitpoint = "Light_R";
-				selection = "Light_R";
-			};
-		};
-
-		/*class Damage
-		{
-			tex[] = {};
-			mat[] =
-			{
-				"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1.rvmat",			/// material mapped in model
-				"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_damage.rvmat",	/// changes to this one once damage of the part reaches 0.5
-				"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_destruct.rvmat"	/// changes to this one once damage of the part reaches 1
-			};
-		};*/
-		/*class MFD
+		class MFD
 		{
 			class AirplaneHUD
 			{
-				#include "cfgHUD.hpp"
+				topLeft = "HUD_top_left";
+				topRight = "HUD_top_right";
+				bottomLeft = "HUD_bottom_left";
+				borderLeft = 0;
+				borderRight = 0;
+				borderTop = 0;
+				borderBottom = 0;
+				color[] = {0.0,0.13,0.16,1.0};
+				helmetMountedDisplay = 1;
+				helmetPosition[] = {-0.025,0.025,0.1};
+				helmetRight[] = {0.05,0.0,0.0};
+				helmetDown[] = {0.0,-0.05,0.0};
+				class Bones
+				{
+					class HUDCenter
+					{
+						type = "fixed";
+						pos[] = {0.5,0.5};
+					};
+					class WeaponAim
+					{
+						type = "vector";
+						source = "weapon";
+						pos0[] = {0.5,0.5};
+						pos10[] = {0.847,0.845};
+					};
+					class VelocityVector
+					{
+						type = "vector";
+						source = "velocityToView";
+						pos0[] = {0.5,0.5};
+						pos10[] = {0.847,0.845};
+					};
+					class ForwardVector
+					{
+						type = "vector";
+						source = "forward";
+						pos0[] = {0,0};
+						pos10[] = {0.347,0.345};
+					};
+					class HorizonVector
+					{
+						type = "horizon";
+						pos0[] = {0.5,0.5};
+						pos10[] = {0.990727,0.987899};
+						angle = 0;
+					};
+					class GunnerAim
+					{
+						type = "vector";
+						source = "weapon";
+						pos0[] = {0,-0.0025};
+						pos10[] = {0.01,0.0025};
+					};
+					class VerticalSpeedBone
+					{
+						type = "linear";
+						source = "vspeed";
+						sourceScale = 1;
+						min = -15;
+						max = 15;
+						minPos[] = {0,-0.15};
+						maxPos[] = {0,0.15};
+					};
+				};
+				class Draw
+				{
+					alpha = 1.0;
+					color[] = {0.25,1.0,0.25};
+					condition = "on";
+					class Static
+					{
+						type = "line";
+						width = 4.0;
+						points[] = {{ { 0.48,0.14 },1 },{ { 0.5,0.12 },1 },{ { 0.52,0.14 },1 },{  },{ { 0.4,0.86 },1 },{ { 0.4,0.94 },1 },{ { 0.6,0.94 },1 },{ { 0.6,0.86 },1 },{ { 0.4,0.86 },1 },{  },{ { 0.4,0.9 },1 },{ { 0.408,0.9 },1 },{  },{ { 0.6,0.9 },1 },{ { 0.592,0.9 },1 },{  },{ { 0.5,0.86 },1 },{ { 0.5,0.868 },1 },{  },{ { 0.5,0.94 },1 },{ { 0.5,0.932 },1 }};
+					};
+					class VelocityLine
+					{
+						type = "line";
+						width = 4.0;
+						points[] = {{ "HUDCenter",1 },{ "VelocityVector",1 }};
+					};
+					class CollectiveGroup
+					{
+						condition = "simulRTD";
+						class CollectiveText
+						{
+							type = "text";
+							source = "static";
+							text = "%";
+							align = "right";
+							scale = 1;
+							pos[] = {{ 0.22,0.2 },1};
+							right[] = {{ 0.28,0.2 },1};
+							down[] = {{ 0.22,0.24 },1};
+						};
+						class CollectiveNumber
+						{
+							type = "text";
+							source = "rtdCollective";
+							sourceScale = 100;
+							align = "left";
+							scale = 1;
+							pos[] = {{ 0.22,0.2 },1};
+							right[] = {{ 0.28,0.2 },1};
+							down[] = {{ 0.22,0.24 },1};
+						};
+					};
+					class SpeedNumber
+					{
+						type = "text";
+						source = "speed";
+						sourceScale = 3.6;
+						align = "right";
+						scale = 1;
+						pos[] = {{ 0.16,0.48 },1};
+						right[] = {{ 0.22,0.48 },1};
+						down[] = {{ 0.16,0.52 },1};
+					};
+					class AltNumber
+					{
+						type = "text";
+						source = "altitudeAGL";
+						sourceScale = 1;
+						align = "left";
+						scale = 1;
+						pos[] = {{ 0.84,0.48 },1};
+						right[] = {{ 0.9,0.48 },1};
+						down[] = {{ 0.84,0.52 },1};
+					};
+					class Weapons
+					{
+						type = "text";
+						source = "weapon";
+						sourceScale = 1;
+						align = "right";
+						scale = 0.5;
+						pos[] = {{ 0.0,0.85 },1};
+						right[] = {{ 0.04,0.85 },1};
+						down[] = {{ 0.0,0.89 },1};
+					};
+					class Ammo
+					{
+						type = "text";
+						source = "ammo";
+						sourceScale = 1;
+						align = "right";
+						scale = 0.5;
+						pos[] = {{ 0.0,0.9 },1};
+						right[] = {{ 0.04,0.9 },1};
+						down[] = {{ 0.0,0.94 },1};
+					};
+					class VerticalSpeedScale
+					{
+						type = "line";
+						width = 4.0;
+						points[] = {{ "VerticalSpeedBone",{ 0.85,0.48 },1 },{ "VerticalSpeedBone",{ 0.87,0.5 },1 },{ "VerticalSpeedBone",{ 0.85,0.52 },1 },{  },{ { 0.875,0.35 },1 },{ { 0.885,0.35 },1 },{  },{ { 0.875,0.4 },1 },{ { 0.885,0.4 },1 },{  },{ { 0.875,0.45 },1 },{ { 0.885,0.45 },1 },{  },{ { 0.875,0.5 },1 },{ { 0.895,0.5 },1 },{  },{ { 0.875,0.55 },1 },{ { 0.885,0.55 },1 },{  },{ { 0.875,0.6 },1 },{ { 0.885,0.6 },1 },{  },{ { 0.875,0.65 },1 },{ { 0.885,0.65 },1 }};
+					};
+					class HeadingScale
+					{
+						type = "scale";
+						horizontal = 1;
+						source = "heading";
+						sourceScale = 1;
+						width = 4.0;
+						top = 0.2;
+						center = 0.5;
+						bottom = 0.8;
+						lineXleft = 0.11;
+						lineYright = 0.1;
+						lineXleftMajor = 0.11;
+						lineYrightMajor = 0.09;
+						majorLineEach = 2;
+						numberEach = 2;
+						step = 22.5;
+						stepSize = "(0.80 - 0.20) / 6";
+						align = "center";
+						scale = 1;
+						pos[] = {0.2,0.05};
+						right[] = {0.26,0.05};
+						down[] = {0.2,0.09};
+					};
+					class HorizonLine
+					{
+						clipTL[] = {0.2,0.145};
+						clipBR[] = {0.8,0.855};
+						class HorizonLineDraw
+						{
+							type = "line";
+							width = 4.0;
+							points[] = {{ "HorizonVector",{ "-6 * 0.0375",0.0 },1 },{ "HorizonVector",{ "-5 * 0.0375",0.0 },1 },{  },{ "HorizonVector",{ "-4 * 0.0375",0.0 },1 },{ "HorizonVector",{ "-3 * 0.0375",0.0 },1 },{  },{ "HorizonVector",{ "-2 * 0.0375",0.0 },1 },{ "HorizonVector",{ "-1 * 0.0375",0.0 },1 },{  },{ "HorizonVector",{ "1 * 0.0375",0.0 },1 },{ "HorizonVector",{ "2 * 0.0375",0.0 },1 },{  },{ "HorizonVector",{ "3 * 0.0375",0.0 },1 },{ "HorizonVector",{ "4 * 0.0375",0.0 },1 },{  },{ "HorizonVector",{ "5 * 0.0375",0.0 },1 },{ "HorizonVector",{ "6 * 0.0375",0.0 },1 }};
+						};
+					};
+					class Gunner
+					{
+						type = "line";
+						width = 4.0;
+						points[] = {{ "GunnerAim",{ "0.5 - 0.015","0.9 - 0.008" },1 },{ "GunnerAim",{ "0.5 - 0.015","0.9 + 0.008" },1 },{ "GunnerAim",{ "0.5 + 0.015","0.9 + 0.008" },1 },{ "GunnerAim",{ "0.5 + 0.015","0.9 - 0.008" },1 },{ "GunnerAim",{ "0.5 - 0.015","0.9 - 0.008" },1 }};
+					};
+					class MGun
+					{
+						condition = "mgun";
+						class Circle
+						{
+							type = "line";
+							width = 4.0;
+							points[] = {{ "ForwardVector",1,"WeaponAim",{ 0.025,0 },1 },{ "ForwardVector",1,"WeaponAim",{ 0.01,0 },1 },{  },{ "ForwardVector",1,"WeaponAim",{ 0,0.0248559 },1 },{ "ForwardVector",1,"WeaponAim",{ 0,0.00994236 },1 },{  },{ "ForwardVector",1,"WeaponAim",{ -0.025,0 },1 },{ "ForwardVector",1,"WeaponAim",{ -0.01,0 },1 },{  },{ "ForwardVector",1,"WeaponAim",{ 0,-0.0248559 },1 },{ "ForwardVector",1,"WeaponAim",{ 0,-0.00994236 },1 }};
+						};
+					};
+					class AAMissile
+					{
+						condition = "AAmissile";
+						class Circle
+						{
+							type = "line";
+							width = 4.0;
+							points[] = {{ "ForwardVector",1,"HUDCenter",{ 0,-0.248559 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.0434,-0.244781 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.0855,-0.233571 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.125,-0.215252 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.1607,-0.190396 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.1915,-0.159774 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.2165,-0.12428 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.234925,-0.0850072 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.2462,-0.0431499 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.25,0 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.2462,0.0431499 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.234925,0.0850072 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.2165,0.12428 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.1915,0.159774 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.1607,0.190396 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.125,0.215252 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.0855,0.233571 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.0434,0.244781 },1 },{ "ForwardVector",1,"HUDCenter",{ 0,0.248559 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.0434,0.244781 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.0855,0.233571 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.125,0.215252 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.1607,0.190396 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.1915,0.159774 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.2165,0.12428 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.234925,0.0850072 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.2462,0.0431499 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.25,0 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.2462,-0.0431499 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.234925,-0.0850072 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.2165,-0.12428 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.1915,-0.159774 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.1607,-0.190396 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.125,-0.215252 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.0855,-0.233571 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.0434,-0.244781 },1 },{ "ForwardVector",1,"HUDCenter",{ 0,-0.248559 },1 }};
+						};
+					};
+					class ATMissile
+					{
+						condition = "ATmissile";
+						class Circle
+						{
+							type = "line";
+							width = 4.0;
+							points[] = {{ "ForwardVector",1,"HUDCenter",{ -0.15,-0.149135 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.15,-0.129251 },1 },{  },{ "ForwardVector",1,"HUDCenter",{ -0.15,0.149135 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.15,0.129251 },1 },{  },{ "ForwardVector",1,"HUDCenter",{ 0.15,-0.149135 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.15,-0.129251 },1 },{  },{ "ForwardVector",1,"HUDCenter",{ 0.15,0.149135 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.15,0.129251 },1 },{  },{ "ForwardVector",1,"HUDCenter",{ -0.15,-0.149135 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.13,-0.149135 },1 },{  },{ "ForwardVector",1,"HUDCenter",{ -0.15,0.149135 },1 },{ "ForwardVector",1,"HUDCenter",{ -0.13,0.149135 },1 },{  },{ "ForwardVector",1,"HUDCenter",{ 0.15,-0.149135 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.13,-0.149135 },1 },{  },{ "ForwardVector",1,"HUDCenter",{ 0.15,0.149135 },1 },{ "ForwardVector",1,"HUDCenter",{ 0.13,0.149135 },1 }};
+						};
+					};
+				};
 			};
-		};*/
+		};
 		
 		class AnimationSources: AnimationSources	/// custom made animation sources
 		{
@@ -242,30 +422,39 @@ class CfgVehicles
 				condition = "((this animationPhase ""ramp_anim"" > 0.5) AND (alive this))"; /// only openable from inside and when closed
 				statement = "this animate [""ramp_anim"",0];";
             };
-            /*class BayOpen: RampOpen
-            {
-				userActionID = 62;
-				displayName = "Open Weapons Bay";
-				displayNameDefault = "Open Weapons Bay";
-				textToolTip = "Open Weapons Bay";
-				priority = 2;
-				condition = "((this animationPhase ""leftbay_anim"" > 0.5) AND (this animationPhase ""rightbay_anim"" > 0.5) AND (alive this))"; /// only openable from inside and when closed
-				statement = "this animate [""leftbay_anim"",0]; this animate [""rightbay_anim"",0];";
-            };
-            class BayClose: RampOpen
-            {
-				userActionID = 63;
-				displayName = "Close Weapons Bay";
-				displayNameDefault = "Close Weapons Bay";
-				textToolTip = "Close Weapons Bay";
-				priority = 2;
-				condition = "((this animationPhase ""leftbay_anim"" < 0.5) AND (this animationPhase ""rightbay_anim"" < 0.5) AND (alive this))"; /// only openable from inside and when closed
-				statement = "this animate [""leftbay_anim"",1]; this animate [""rightbay_anim"",1];";
-            };*/
 		};
+		
+		class ViewPilot: ViewPilot 	/// describes what does the pilot see using bare eyes
+		{
+			initFov = 0.5; 		/// this is the standard field of view angle for soldier, bit more narrow than a real-life one
+			minFov = 0.25; 		/// this is how much can people "zoom" their view via focusing on something
+			maxFov = 1.0;			/// this is how wide can the field of view be
+		};
+		class Viewoptics: ViewOptics
+		{
+			initAngleX=0;
+			minAngleX=0;
+			maxAngleX=0;
+			initAngleY=0;
+			minAngleY=0;
+			maxAngleY=0;
+			minFov=0.25;
+			maxFov=1.25;
+			initFov=0.5;
+			visionMode[]=
+			{
+				"Normal",
+				"NVG",
+				"Ti"
+			};
+			thermalMode[]={0,1};
+		};
+		memoryPointDriverOptics="pilotcam";
+		driverOpticsModel="A3\drones_f\Weapons_F_Gamma\Reticle\UGV_01_Optics_Driver_F.p3d";
+		driverForceOptics=0;
 	};
 
-	class OPTRE_Longsword_CAS_F: OPTRE_Longsword_Base_F
+	class OPTRE_Longsword_CAS: OPTRE_Longsword_Base
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -299,7 +488,7 @@ class CfgVehicles
 		};
 	};
 
-	class OPTRE_Longsword_BOMB_F: OPTRE_Longsword_Base_F
+	class OPTRE_Longsword_BOMB: OPTRE_Longsword_Base
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -332,7 +521,7 @@ class CfgVehicles
 		};
 	};
 	
-	class OPTRE_Longsword_AA_F: OPTRE_Longsword_Base_F
+	class OPTRE_Longsword_AA: OPTRE_Longsword_Base
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -361,7 +550,7 @@ class CfgVehicles
 		};
 	};
 	
-	class OPTRE_Longsword_CANNON_F: OPTRE_Longsword_Base_F
+	class OPTRE_Longsword_CANNON: OPTRE_Longsword_Base
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -387,7 +576,7 @@ class CfgVehicles
 		};
 	};
 	
-	class OPTRE_Longsword_SUPPRESS_F: OPTRE_Longsword_Base_F
+	class OPTRE_Longsword_SUPPRESS: OPTRE_Longsword_Base
 	{
 		scope = 2;
 		scopeCurator = 2;

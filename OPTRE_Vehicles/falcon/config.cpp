@@ -431,6 +431,8 @@ class CfgVehicles
         memoryPointDriverOptics = "slingCamera";	/// what memory point is the origin of the camera
 		slingLoadMaxCargoMass 	= 500;				/// maximum weight of cargo for this chopper
 		slingLoadMemoryPoint 	= "slingLoad0";		/// memory point for sling load to attach ropes to
+		ace_fastroping_enabled = 1;
+		ace_fastroping_ropeOrigins[] = {"ropeOriginLeft", "ropeOriginRight"};
 		class Turrets: Turrets										/// just a copilot seat as a turret to enable taking the controls
 		{
 			class CargoTurret_01: CargoTurret 						/// position for Firing from Vehicles
@@ -621,6 +623,8 @@ class CfgVehicles
 		hiddenSelectionsTextures[]= {"OPTRE_Vehicles\Falcon\data\falcon_hull_CO.paa","optre_vehicles\falcon\data\falcon_hullextra_co.paa","optre_vehicles\falcon\data\falcon_wingtips_co.paa","optre_vehicles\falcon\data\falcon_skid_co.paa"};
 		availableForSupportTypes[] = {"Drop", "Transport"};	/// use any number of expressions from "Artillery", "CAS_Heli", "CAS_Bombing", "Drop", "Transport"
 		cost = 2000000;	/// we need some high cost for such vehicles to be prioritized by AA defences
+		ace_fastroping_enabled = 1;
+		ace_fastroping_ropeOrigins[] = {"ropeOriginLeft", "ropeOriginRight"};
 	};
 	class OPTRE_UNSC_falcon_tan: OPTRE_falcon_base
 	{

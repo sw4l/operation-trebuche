@@ -205,6 +205,14 @@ class CfgMusic
 		musicClass = "OPTRE_OST";
 		duration = 168;
 	};
+	class OPTRE_Music_Pieces
+	{
+		dlc = "OPTRE";
+		name	="[OPTRE OST] Pieces";
+		sound[]	={"\OPTRE_Music\OST\OPTRE_OriginalSoundtrackMusic_pieces.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 75;
+	};
 	class OPTRE_Music_PrepareToDrop
 	{
 		dlc = "OPTRE";
@@ -228,6 +236,14 @@ class CfgMusic
 		sound[]	={"\OPTRE_Music\OST\OPTRE_OriginalSoundtrackMusic_shotgun.ogg",1,1};
 		musicClass = "OPTRE_OST";
 		duration = 132;
+	};
+	class OPTRE_Music_TurningTheTide
+	{
+		dlc = "OPTRE";
+		name	="[OPTRE OST] Turning The Tide";
+		sound[]	={"\OPTRE_Music\OST\OPTRE_OriginalSoundtrackMusic_turningthetide.ogg",1,1};
+		musicClass = "OPTRE_OST";
+		duration = 77;
 	};
 	class OPTRE_Music_Unforgotten
 	{

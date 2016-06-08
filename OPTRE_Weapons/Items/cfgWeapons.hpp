@@ -19,7 +19,7 @@ class CfgWeapons
 		dlc = "OPTRE";
 		scope 										= 2;
 		scopeArsenal 								= 2;
-		displayName 								= "Medical Biofoam";
+		displayName 								= "[UNSC] Biofoam Canister";
 		picture 									= "\OPTRE_weapons\items\icons\biofoam.paa";
 		model 										= "\OPTRE_Weapons\items\Biofoam.p3d";
 		descriptionShort 							= "Self-sealing coagulant foam to stop bleeding and haemorrhaging";
@@ -34,7 +34,7 @@ class CfgWeapons
 		dlc = "OPTRE";
 		scope 										= 2;
 		scopeArsenal 								= 2;
-		displayName 								= "Medical Pack";
+		displayName 								= "[UNSC] Medical Kit";
 		picture 									= "\OPTRE_weapons\items\icons\medkit.paa";
 		model 										= "\OPTRE_Weapons\items\MedKit.p3d";
 		descriptionShort 							= "Medical Kit to treat all combat inflicted wounds and injuries";

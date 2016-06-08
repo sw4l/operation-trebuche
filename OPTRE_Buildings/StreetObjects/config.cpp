@@ -1,19 +1,3 @@
-enum {
-DESTRUCTENGINE 																					= 2,
-DESTRUCTDEFAULT 																				= 6,
-DESTRUCTWRECK 																					= 7,
-DESTRUCTTREE 																					= 3,
-DESTRUCTTENT 																					= 4,
-STABILIZEDINAXISX 																				= 1,
-STABILIZEDINAXESXYZ 																			= 4,
-STABILIZEDINAXISY 																				= 2,
-STABILIZEDINAXESBOTH 																			= 3,
-DESTRUCTNO 																						= 0,
-STABILIZEDINAXESNONE 																			= 0,
-DESTRUCTMAN 																					= 5,
-DESTRUCTBUILDING 																				= 1,
-};
-
 class CfgPatches
 {
 	class OPTRE_Buildings_Street_Objects
@@ -27,8 +11,8 @@ class CfgPatches
 
 class CfgVehicles
 {
-	
 	class Land_Castle_01_step_F;
+	class RoadCone_F;
 	
 	class Land_sidewalk_wide_short: Land_Castle_01_step_F
 	{
@@ -124,6 +108,16 @@ class CfgVehicles
 		displayName = "Intersection (4-Way)";
 		model = "\OPTRE_buildings\streetobjects\4way_intersection.p3d";
 		author = "Article 2 Studios";
+	};
+
+	class Land_OPTRE_Cone: RoadCone_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\StreetObjects\OPTRE_Cone";
+		scope = 2;
+		displayName="Traffic Cone";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 };
 

@@ -17,7 +17,7 @@ class Mode_FullAuto;
             {
 					dlc = "OPTRE";
                     scope                                                                   = 2;
-                    displayName                                                             = "MA5B Ammo Counter";
+                    displayName                                                             = "[UNSC] MA5B Ammo Counter";
 					picture = "\OPTRE_weapons\ar\icons\scope_a.paa";
                     model                                                                   = "\OPTRE_Weapons\AR\AR_AmmoCount.p3d";
                     descriptionShort                                                        = "MA5B Ammunition Counter and Direction Finder";
@@ -65,7 +65,7 @@ class Mode_FullAuto;
 			{
 				dlc = "OPTRE";
 				scope = 2;
-				displayName                                                             = "MA5B Ammo Counter (No IS)";
+				displayName                                                             = "[UNSC] MA5B Ammo Counter (No IS)";
 				picture = "\OPTRE_weapons\ar\icons\scope_b.paa";
 				model                                                                   = "\OPTRE_Weapons\AR\AR_AmmoCount_NoIS.p3d";
 				class ItemInfo: InventoryOpticsItem_Base_F
@@ -111,7 +111,7 @@ class Mode_FullAuto;
 			{
 			dlc = "OPTRE";
 			scope 										= 2;
-			displayName 									= "MA5B Flashlight";
+			displayName 									= "[UNSC] MA5B Flashlight";
 			picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
 			descriptionShort 								= "Flashlight for the MA5B Assault Rifle";
 			model 										= "\OPTRE_Weapons\AR\AR_flashlight.p3d";
@@ -158,7 +158,7 @@ class Mode_FullAuto;
                     scope                                                                   = 2;
                     handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_Weapons\AR\data\anim\hand_anim_ma5c.rtm"};
                     model                                                                   = "\OPTRE_Weapons\AR\AR.p3d";
-                    displayName                                                             = "MA5B ICWS Assault Rifle";
+                    displayName                                                             = "[UNSC] MA5B ICWS Assault Rifle";
                     descriptionShort                                                        = "UNSC Assault Rifle";
                     picture 																= "\OPTRE_weapons\ar\icons\ar_a.paa";
 					pictureWire 															= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\AssaultRifle\AR.paa";
@@ -484,7 +484,7 @@ class Mode_FullAuto;
                     scope                                                                   = 2;
                     handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_Weapons\AR\data\anim\hand_anim_ma5c.rtm"};
                     model                                                                   = "\OPTRE_Weapons\AR\ARGL.p3d";
-                    displayName                                                             = "MA5B + M301 Assault Rifle";
+                    displayName                                                             = "[UNSC] MA5B + M301 Assault Rifle";
                     descriptionShort                                                        = "UNSC Assault Rifle + GL";
                     picture = "\OPTRE_weapons\ar\icons\argl_a.paa";
 					pictureWire 															= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\AssaultRifle\AR_UGL.paa";
@@ -528,20 +528,7 @@ class Mode_FullAuto;
 								"1Rnd_SmokeYellow_Grenade_shell",
 								"1Rnd_SmokePurple_Grenade_shell",
 								"1Rnd_SmokeBlue_Grenade_shell",
-								"1Rnd_SmokeOrange_Grenade_shell",
-								"3Rnd_HE_Grenade_shell",
-								"3Rnd_UGL_FlareWhite_F",
-								"3Rnd_UGL_FlareGreen_F",
-								"3Rnd_UGL_FlareRed_F",
-								"3Rnd_UGL_FlareYellow_F",
-								"3Rnd_UGL_FlareCIR_F",
-								"3Rnd_Smoke_Grenade_shell",
-								"3Rnd_SmokeRed_Grenade_shell",
-								"3Rnd_SmokeGreen_Grenade_shell",
-								"3Rnd_SmokeYellow_Grenade_shell",
-								"3Rnd_SmokePurple_Grenade_shell",
-								"3Rnd_SmokeBlue_Grenade_shell",
-								"3Rnd_SmokeOrange_Grenade_shell"
+								"1Rnd_SmokeOrange_Grenade_shell"
 							};
                             cameraDir = "OP_look";
                             discreteDistance[] = {100, 200, 300, 400};

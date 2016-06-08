@@ -20,7 +20,7 @@ class CfgWeapons
 	{
 		dlc = "OPTRE";
  		scope 										= 2;
- 		displayName 									= "M45 Flashlight";
+ 		displayName 									= "[UNSC] M45 Flashlight";
  		picture										="\a3\weapons_f\data\ui\gear_accv_flashlight_ca.paa";
 		descriptionShort 								= "Flashlight for the M45 Tactical Shotgun";
  		model 										= "\OPTRE_Weapons\Shotgun\flashlight.p3d";
@@ -60,7 +60,7 @@ class CfgWeapons
 	{
 		dlc = "OPTRE";
  		scope 										= 2;
- 		displayName 								= "M45 Flashlight [Red]";
+ 		displayName 								= "[UNSC] M45 Flashlight [Red]";
 		class ItemInfo: InventoryFlashLightItem_Base_F
 		{
 			class FlashLight
@@ -100,7 +100,7 @@ class CfgWeapons
 		scope 										= 2;
 		handAnim[] 									= {"OFP2_ManSkeleton", "\OPTRE_Weapons\Shotgun\data\anim\benelli.rtm"};
 		model										= "\OPTRE_Weapons\Shotgun\shotgun.p3d";
-		displayName 									= "M45 Tactical Shotgun";
+		displayName 									= "[UNSC] M45 Tactical Shotgun";
 		descriptionShort 								= "8 Gauge Shotgun";
 		picture = "\OPTRE_weapons\shotgun\icons\shotgun_black.paa";
 		pictureWire 								= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\Shotgun\Shotgun.paa";
@@ -243,7 +243,7 @@ class CfgWeapons
 	{
 		dlc = "OPTRE";
 		model										= "\OPTRE_Weapons\Shotgun\shotgun_e.p3d";
-		displayName 								= "M45E Combat Shotgun";
+		displayName 								= "[UNSC] M45E Combat Shotgun";
 		magazines[] 								= {"OPTRE_12Rnd_8Gauge_Pellets","OPTRE_12Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Slugs"};
 		inertia										= 0.85;
 		class Single : Single
@@ -258,7 +258,7 @@ class CfgWeapons
 	class OPTRE_M45A : OPTRE_M45E
 	{
 		dlc = "OPTRE";
-		displayName 								= "M45A Semi Automatic Shotgun";
+		displayName 								= "[UNSC] M45A Semi Automatic Shotgun";
 		class Single : Single
 		{
 			sounds[] 								= {"StandardSound"}; //Defines weapon sounds

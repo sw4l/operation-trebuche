@@ -87,7 +87,7 @@ class CfgVehicles
 		crewExplosionProtection 		= 0.5;
 		fuelExplosionPower 				= 2;
 		epeImpulseDamageCoef 			= 25;
-		armor							= 100;
+		armor							= 50;
 		cost							= 500000;
 		canFloat						= 0;
 		threat[]						= {0.8,0.6,0.3};
@@ -328,5 +328,246 @@ class CfgVehicles
 		crew							= "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
 		hiddenSelections[]				= {"camo1","clan","insignia"};
 		hiddenSelectionsTextures[]		= {"OPTRE_Vehicles\cart\data\truck_01_ext_024_co.paa"};
+	};
+	class OPTRE_forklift_base: OPTRE_cart_base
+	{
+		dlc = "OPTRE";
+		author							= "Article 2 Studios";
+		displayName						= "";
+		class Library
+		{
+			libTextDesc					= "The Forklift lifts forks.";
+		};
+		model							= "OPTRE_Vehicles\Cart\forklift.p3d";
+		picture							= "OPTRE_Vehicles\Cart\Data\picture.paa";
+		Icon							= "OPTRE_Vehicles\cart\Data\icon.paa";
+		mapSize 						= 4;
+		transportMaxBackpacks 			= 5;
+		slingLoadCargoMemoryPoints[]	= {"SlingLoadCargo1","SlingLoadCargo2","SlingLoadCargo3","SlingLoadCargo4"};
+		vehicleClass					= "OPTRE_UNSC_Vehicle_class";
+		transportSoldier				= 0;
+		crewVulnerable 					= 1;
+		crewCrashProtection				= 0;
+		crewExplosionProtection 		= 0.5;
+		fuelExplosionPower 				= 2;
+		epeImpulseDamageCoef 			= 25;
+		armor							= 50;
+		cost							= 500000;
+		canFloat						= 0;
+		threat[]						= {0.8,0.6,0.3};
+		camouflage						= 4;
+		ejectDeadGunner					= 1;
+		class Reflectors
+		{
+			class LightCarHeadL01
+			{
+				color[]					= {1900,1800,1700};
+				ambient[]				= {5,5,5};
+				position				= "LightCarHeadL01";
+				direction				= "LightCarHeadL01_end";
+				hitpoint				= "Light_L";
+				selection				= "Light_L";
+				size					= 1;
+				innerAngle				= 100;
+				outerAngle				= 179;
+				coneFadeCoef			= 10;
+				intensity				= 1;
+				useFlare				= 1;
+				dayLight				= 0;
+				flareSize				= 1;
+				class Attenuation
+				{
+					start				= 1;
+					constant			= 0;
+					linear				= 0;
+					quadratic			= 0.25;
+					hardLimitStart		= 30;
+					hardLimitEnd		= 60;
+				};
+			};
+			class LightCarHeadL02:LightCarHeadL01
+			{
+				position				= "LightCarHeadL02";
+				direction				= "LightCarHeadL02_end";
+				FlareSize				= 0.5;
+			};
+		};
+		aggregateReflectors[]			= {{"LightCarHeadL01","LightCarHeadL02"},{"LightCarHeadR01","LightCarHeadR02"}};
+		class Exhausts
+		{
+			class Exhaust1
+			{
+				position				= "exhaust";
+				direction				= "exhaust_dir";
+				effect					= "ExhaustsEffect";
+			};
+		};
+		class AnimationSources:AnimationSources
+		{
+			class liftForks_1				/// the class name is later used in model.cfg
+			{
+				source = "user";	/// user source means it is waiting on some scripting input
+				animPeriod = 5;		/// how long does it take to change value from 0 to 1 (or vice versa)
+				initPhase = 0;		/// what value does it have while creating the vehicle
+				sound = "ServoRampSound_2";
+			};
+			class liftForks_2				/// the class name is later used in model.cfg
+			{
+				source = "user";	/// user source means it is waiting on some scripting input
+				animPeriod = 5;		/// how long does it take to change value from 0 to 1 (or vice versa)
+				initPhase = 0;		/// what value does it have while creating the vehicle
+				sound = "";
+			};
+		};
+		class HitPoints:HitPoints
+		{
+			class HitLFWheel:HitLFWheel
+			{
+				armor					= 999;
+				explosionShielding		= 0;
+				radius					= 0.25;
+				passThrough				= 0;
+			};
+			class HitLF2Wheel:HitLF2Wheel
+			{
+				armor 					= 999;
+				explosionShielding		= 0;
+				radius					= 0.25;
+				passThrough				= 0;
+			};
+			class HitRFWheel:HitRFWheel
+			{
+				armor					= 999;
+				explosionShielding		= 0;
+				radius					= 0.25;
+				passThrough				= 0;
+			};
+			class HitRF2Wheel:HitRF2Wheel
+			{
+				armor					= 999;
+				explosionShielding		= 0;
+				radius					= 0.25;
+				passThrough				= 0;
+			};
+			class HitFuel:HitFuel
+			{
+				armor					= 0.5;
+				name					= "palivo";
+				passThrough				= 0.5;
+				explosionShielding		= 0.5;
+			};
+			class HitEngine:HitEngine
+			{
+				armor					= 0.5;
+				name					= "motor";
+				passThrough				= 0.5;
+				explosionShielding		= 0.5;
+			};
+			class HitBody:HitBody
+			{
+				armor					= 2;
+				name					= "karoserie";
+				visual					= "body";
+				passThrough				= 1;
+				explosionShielding		= 0.5;
+			};
+		};
+		wheelDamageThreshold			= 1;
+		wheelDestroyThreshold			= 1;
+		wheelDamageRadiusCoef			= 1;
+		wheelDestroyRadiusCoef			= 1;
+		driverAction					= "OPTRE_Driver_HEV";
+		cargoAction[]					= {};
+		hiddenSelections[]				= {"camo1","camo2","camo3"};
+		hiddenSelectionsTextures[]		= {"optre_vehicles\cart\data\forklift_hull_yellow_co.paa","optre_vehicles\cart\data\forklift_forks_yellow_co.paa","optre_vehicles\cart\data\forklift_cockpit_yellow_co.paa"};
+		showNVGCargo[]					= {0,1};
+		maxFordingDepth 				= 0.95;
+		getInAction						= "GetInOffroad";
+		getOutAction					= "GetOutMRAP_01";
+		cargoGetInAction[]				= {"GetInHeli_Transport_01Cargo"};
+		cargoGetOutAction[]				= {"GetOutHelicopterCargoRfl"};
+		commanderCanSee					= 31;
+		hideWeaponsDriver				= 1;
+		hideWeaponsCargo				= 1;
+		driverDoor						= "";
+		cargoDoors[]					= {};
+		precision						= 15;
+		weapons[]						= {"TruckHorn2"};
+		magazines[]						= {};
+
+		#include "sounds.hpp"
+		#include "physx.hpp"
+		
+		supplyRadius					= 5;
+		transportMaxMagazines			= 20;
+		class TransportMagazines
+		{};
+		class TransportItems
+		{};
+		class TransportWeapons
+		{};
+		class Turrets
+		{};
+		class UserActions
+		{
+			class ForksUp
+			{
+				userActionID = 60;	
+				displayName = "Raise Forks";
+				displayNameDefault = "Raise Forks";
+				textToolTip = "Raise Forks";
+				position = forks_handle;
+				radius = 5;
+				priority = 2;
+				onlyForPlayer = 0;
+				condition = "((this animationPhase ""liftforks_2_anim"" < 0.5) AND (this animationPhase ""liftforks_1_anim"" < 0.5) AND (alive this) AND (player == driver this))"; /// only openable from inside and when closed
+				statement = "this animate [""liftforks_2_anim"",1]; this animate [""liftforks_1_anim"",1]";
+				animPeriod = 5;
+            };
+            class ForksDown: ForksUp
+            {
+				userActionID = 61;
+				displayName = "Lower Forks";
+				displayNameDefault = "Lower Forks";
+				textToolTip = "Lower Forks";
+				priority = 2;
+				condition = "((this animationPhase ""liftforks_2_anim"" > 0.5) AND (this animationPhase ""liftforks_1_anim"" > 0.5) AND (alive this) AND (player == driver this))"; /// only openable from inside and when closed
+				statement = "this animate [""liftforks_2_anim"",0]; this animate [""liftforks_1_anim"",0]";
+				animPeriod = 5;
+            };
+		};
+	};
+	class OPTRE_forklift_yellow: OPTRE_forklift_base
+	{
+		scope 							= 2;
+		displayName						= "S-2 Cargo Transporter (Yellow)";
+		author							= "Article 2 Studios";
+		faction							= "OPTRE_UEG_Civ";
+		crew 	= "C_man_1"; 	/// we need someone to fit into the car
+		side	= 3; 			/// civilian car should be on civilian side
+		hiddenSelections[]				= {"camo1","camo2","camo3"};
+		hiddenSelectionsTextures[]		= {"optre_vehicles\cart\data\forklift_hull_yellow_co.paa","optre_vehicles\cart\data\forklift_forks_yellow_co.paa","optre_vehicles\cart\data\forklift_cockpit_yellow_co.paa"};
+	};
+	class OPTRE_forklift_grey: OPTRE_forklift_base
+	{
+		scope 							= 2;
+		displayName						= "S-2 Cargo Transporter (Grey)";
+		author							= "Article 2 Studios";
+		faction							= "OPTRE_UEG_Civ";
+		crew 	= "C_man_1"; 	/// we need someone to fit into the car
+		side	= 3; 			/// civilian car should be on civilian side
+		hiddenSelections[]				= {"camo1","camo2","camo3"};
+		hiddenSelectionsTextures[]		= {"optre_vehicles\cart\data\forklift_hull_white_co.paa","optre_vehicles\cart\data\forklift_forks_white_co.paa","optre_vehicles\cart\data\forklift_cockpit_white_co.paa"};
+	};
+	class OPTRE_forklift_green: OPTRE_forklift_base
+	{
+		scope 							= 2;
+		displayName						= "S-2 Cargo Transporter (Green)";
+		author							= "Article 2 Studios";
+		faction							= "OPTRE_UEG_Civ";
+		crew 	= "C_man_1"; 	/// we need someone to fit into the car
+		side	= 3; 			/// civilian car should be on civilian side
+		hiddenSelections[]				= {"camo1","camo2","camo3"};
+		hiddenSelectionsTextures[]		= {"optre_vehicles\cart\data\forklift_hull_green_co.paa","optre_vehicles\cart\data\forklift_forks_green_co.paa","optre_vehicles\cart\data\forklift_cockpit_green_co.paa"};
 	};
 };

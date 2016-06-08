@@ -44,6 +44,45 @@ class cfgVehicles
 				hiddenSelections[] 									= {"camo1","pouches","biofoam"};
 				hiddenSelectionsTextures[] 							= {"OPTRE_Weapons\Backpacks\data\ruck_black_CO.paa"};
         };
+        class OPTRE_S12_SOLA_Jetpack : OPTRE_ILCS_Rucksack_Black 
+		{
+				dlc = "OPTRE";
+				scope 												= 2;
+				isbackpack 											= 1;
+				picture 											= "\OPTRE_weapons\backpacks\icons\rucksack_black.paa";
+				transportMaxWeapons 								= 0;
+				transportMaxMagazines 								= 0;
+                displayName 										= "[UNSC] S12 SOLA Jetpack";
+                model 												= "\OPTRE_weapons\backpacks\jetpack.p3d";
+				vehicleClass 										= "OPTRE_UNSC_Backpack_class";
+				allowedSlots[] 										= {901};
+				maximumLoad 										= 0;
+				mass 												= 60;
+		};
+        class OPTRE_S12_SOLA_Jetpack_On : OPTRE_S12_SOLA_Jetpack 
+		{
+				dlc = "OPTRE";
+				scope 												= 1;
+                model 												= "\OPTRE_weapons\backpacks\jetpack_on.p3d";
+				hiddenSelections[]= {"camo1"}; //Determines what hiddenselections are enabled
+				hiddenSelectionsTextures[]= {""};
+		};
+        class OPTRE_Fury_Backpack_Nuke : OPTRE_ILCS_Rucksack_Black 
+		{
+				dlc = "OPTRE";
+				scope 												= 2;
+				isbackpack 											= 1;
+				picture 											= "\OPTRE_weapons\backpacks\icons\rucksack_black.paa";
+				transportMaxWeapons 								= 0;
+				transportMaxMagazines 								= 0;
+				class DestructionEffects{};
+                displayName 										= "[UNSC] Fury Portable Nuclear Device";
+                model 												= "\OPTRE_weapons\backpacks\fury.p3d";
+				vehicleClass 										= "OPTRE_UNSC_Backpack_class";
+				allowedSlots[] 										= {901};
+				maximumLoad 										= 0;
+				mass 												= 100;
+        };
 		class OPTRE_ILCS_Rucksack_Black_Pouches : OPTRE_ILCS_Rucksack_Black
 		{
 					dlc = "OPTRE";
@@ -145,6 +184,7 @@ class cfgVehicles
 		class OPTRE_ILCS_Rucksack_Black_AT : OPTRE_ILCS_Rucksack_Black_Pouches
 		{
 					dlc = "OPTRE";
+				scopeArsenal 										= 1;
 				picture 											= "\OPTRE_weapons\backpacks\icons\rucksack_black_po.paa";
                 displayName 										= "[UNSC] ILCS Rucksack+ [Black + AT Rockets]";
 				maximumLoad 										= 350;
@@ -163,6 +203,7 @@ class cfgVehicles
 		class OPTRE_ILCS_Rucksack_Black_EXP : OPTRE_ILCS_Rucksack_Black_Pouches
 		{
 					dlc = "OPTRE";
+				scopeArsenal 										= 1;
 				picture 											= "\OPTRE_weapons\backpacks\icons\rucksack_black_po.paa";
                 displayName 										= "[UNSC] ILCS Rucksack+ [Black + Explosives]";
 				maximumLoad 										= 350;
@@ -207,29 +248,32 @@ class cfgVehicles
 				};
         };
 		class OPTRE_kitbag_rgr_AT : B_Kitbag_rgr {
-		displayname = "[UNSC] AT Rocket Pack";
-		class TransportMagazines
-			{
-				class OPTRE_M41_Twin_HEAT
+			displayname = "[UNSC] AT Rocket Pack";
+			scopeArsenal 										= 1;
+			class TransportMagazines
 				{
-				magazine = "OPTRE_M41_Twin_HEAT";
-				count = 2;
+					class OPTRE_M41_Twin_HEAT
+					{
+					magazine = "OPTRE_M41_Twin_HEAT";
+					count = 2;
+					};
 				};
-			};
 		};
 		class OPTRE_kitbag_rgr_AA : B_Kitbag_rgr {
-		displayname = "[UNSC] AA Rocket Pack";
-		class TransportMagazines
+			displayname = "[UNSC] AA Rocket Pack";
+			scopeArsenal 										= 1;
+			class TransportMagazines
 			{
 				class OPTRE_M41_Twin_HEAT
 				{
-				magazine = "OPTRE_M41_Twin_HEAT_G";
-				count = 2;
+					magazine = "OPTRE_M41_Twin_HEAT_G";
+					count = 2;
 				};
 			};
 		};
 		class OPTRE_kitbag_rgr_EXP : B_Kitbag_rgr {
 		displayname = "[UNSC] Demolitions Pack";
+		scopeArsenal 										= 1;
 		class TransportMagazines
 			{
 				class _xx_APERSBoundingMine_Range_Mag
@@ -269,6 +313,7 @@ class cfgVehicles
 		};
 		class OPTRE_kitbag_rgr_ENG : B_Kitbag_rgr {
 		displayname = "[UNSC] Engineer Pack";
+		scopeArsenal 										= 1;
 		class TransportItems
 			{
 				class _xx_ToolKit

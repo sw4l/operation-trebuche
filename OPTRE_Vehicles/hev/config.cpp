@@ -121,8 +121,8 @@ class CfgVehicles //This configures units and backpacks
 		fuelExplosionPower = 0;
 		occludeSoundsWhenIn = 1;
 		obstructSoundsWhenIn = 1;
-		crewCrashProtection = 0;
-		crewExplosionProtection = 0;
+		crewCrashProtection = 1;
+		crewExplosionProtection = 1;
 		epeImpulseDamageCoef = 0;
 		hideWeaponsDriver = 0;
 		hiddenSelections[] = {"camo1","camo2","camo3","camo4"};

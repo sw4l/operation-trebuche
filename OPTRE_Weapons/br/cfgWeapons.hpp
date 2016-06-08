@@ -16,7 +16,7 @@ class CfgWeapons
 	{
 		dlc = "OPTRE";
 		scope 										= 2;
-		displayName 								= "BR55 A2 Scope";
+		displayName 								= "[UNSC] BR55 A2 Scope";
 		picture 									= "\OPTRE_weapons\br\icons\scope.paa";
 		model 										= "\OPTRE_Weapons\BR\BR_Scope.p3d";
 		descriptionShort 							= "2-4x Scope for BR55HB Service Rifle";
@@ -71,7 +71,7 @@ class CfgWeapons
 		scope 										= 2;
 		handAnim[] 									= {"OFP2_ManSkeleton", "\OPTRE_Weapons\BR\data\anim\BR.rtm"};
 		model										= "\OPTRE_Weapons\BR\BR.p3d";
-		displayName 								= "BR55HB Battle Rifle";
+		displayName 								= "[UNSC] BR55HB Battle Rifle";
 		descriptionShort 							= "UNSC Battle Rifle";
 		picture = "\OPTRE_weapons\br\icons\br.paa";
 		pictureWire 								= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\BattleRifle\BR_SCOPE.paa";

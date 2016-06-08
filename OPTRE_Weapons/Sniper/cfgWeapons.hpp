@@ -23,7 +23,7 @@ class Mode_FullAuto;
 			{
 				dlc = "OPTRE";
 			   scope                                                                   = 2;
-			   displayName                                                             = "SRS99D Suppressor";
+			   displayName                                                             = "[UNSC] SRS99D Suppressor";
 			   picture = "\OPTRE_weapons\smg\icons\silencer.paa";
 			   model                                                                   = "\OPTRE_Weapons\Sniper\suppressor.p3d";
 			   descriptionShort                                                        = "SRS99D Suppressor";
@@ -72,7 +72,7 @@ class Mode_FullAuto;
             {
 					dlc = "OPTRE";
                     scope                                                                   = 2;
-                    displayName                                                             = "Oracle N-variant SRS99 Scope";
+                    displayName                                                             = "[UNSC] Oracle N-variant SRS99 Scope";
 					picture 																= "\OPTRE_weapons\sniper\icons\scope.paa";
                     model                                                                   = "\OPTRE_Weapons\Sniper\scope.p3d";
                     descriptionShort                                                        = "Oracle N-variant SRS99 Sniper Rifle 5-10x56 Scope";
@@ -113,13 +113,13 @@ class Mode_FullAuto;
             };
             //WEAPONS
 			
-        class LMG_Mk200_F;
-        class OPTRE_SRS99D: LMG_Mk200_F
+        class EBR_Base_F;
+        class OPTRE_SRS99D: EBR_Base_F
         {
 					dlc = "OPTRE";
                     scope                                                                   = 2;
                     model                                                                   = "\OPTRE_Weapons\Sniper\sniper.p3d";
-                    displayName                                                             = "SRS99D-S2 Sniper Rifle";
+                    displayName                                                             = "[UNSC] SRS99D-S2 Sniper Rifle";
                     descriptionShort                                                        = "UNSC Sniper Rifle";
                     picture 																= "\OPTRE_weapons\sniper\icons\sniper.paa";
 					pictureWire 															= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\Sniper\SNIPER.paa";
