@@ -55,7 +55,7 @@ class OPTRE_HUD_CoustomiseODST
 		class RscButton_m1: OPTRE_HUD_RscButton
 		{
 			idc = -1;
-			text = "Update HUD Settings"
+			text = "Update HUD Settings";
 			x = 0.29375 * safezoneW + safezoneX;
 			y = 0.665 * safezoneH + safezoneY;
 			w = 0.134062 * safezoneW;
