@@ -21,7 +21,6 @@ class CfgMagazines
 	class Titan_AA;
 	class Titan_AT;
 	class 500Rnd_Cannon_30mm_Plane_CAS_02_F;
-	class B_IR_Grenade;
 	
 	//7.62x51mm (AR, M247)
 	class OPTRE_60Rnd_762x51_Mag: 20Rnd_762x51_Mag
@@ -398,7 +397,7 @@ class CfgMagazines
 	{
 		dlc = "OPTRE";
 		scope 								= 2;
-		displayName							= "3Rnd ALIM Gauss Slugs";
+		displayName							= "20Rnd ALIM Gauss Slugs";
 		displayNameShort					= "25x130mm Slug";
 		ammo								= "OPTRE_25x130mm_Slug";
 		initSpeed 							= 13680;
@@ -959,13 +958,5 @@ class CfgMagazines
 		ammo = "OPTRE_G_M8_Flare";
 		descriptionShort = "Emergency Flare";
 		displayNameShort = "Flare";
-	};
-	class OPTRE_ELB47_Strobe: B_IR_Grenade
-	{
-		dlc = "OPTRE";
-		ammo = "OPTRE_G_ELB47_Strobe";
-		displayName="[UNSC] Emergency Locator Beacon 47";
-		descriptionShort = "Beacon";
-		displayNameShort = "Beacon";
 	};
 };

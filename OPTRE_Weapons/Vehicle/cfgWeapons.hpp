@@ -118,10 +118,11 @@ class CfgWeapons
 		displayName							= "'ANVIL I' Rocket Pods";
 		magazines[] 						= {"OPTRE_16Rnd_Anvil1_missiles","OPTRE_32Rnd_Anvil1_missiles"};
 		showAimCursorInternal 				= 1;
-		reloadTime							= 0.05;
+		reloadTime							= 1;
 		magazineReloadTime 					= 5;
 		cursor 								= "EmptyCursor";
 		cursorAim 							= "rocket";
+		ballisticsComputer 					= 4;
 	};
 	class OPTRE_missiles_Anvil2: missiles_DAGR
 	{
@@ -134,6 +135,7 @@ class CfgWeapons
 		canlock 							= 2;
 		cursor 								= "EmptyCursor";
 		cursorAim 							= "rocket";
+		ballisticsComputer 					= 4;
 	};
 	class OPTRE_missiles_Anvil3: missiles_DAGR
 	{
@@ -146,6 +148,7 @@ class CfgWeapons
 		canlock 							= 2;
 		cursor 								= "EmptyCursor";
 		cursorAim 							= "rocket";
+		ballisticsComputer 					= 4;
 	};
 	class OPTRE_missiles_ASGM2: missiles_ASRAAM
 	{
@@ -188,6 +191,7 @@ class CfgWeapons
 		magazines[] 						= {"OPTRE_2Rnd_Shiva_nuke_missile"};
 		maxRange = 10000;
 		weaponLockDelay 					= 1;
+		ballisticsComputer 					= 4;
 	};
 	class OPTRE_M68_GAUSS: cannon_120mm
 	{
@@ -261,6 +265,7 @@ class CfgWeapons
 	};
 	class OPTRE_M638: gatling_20mm
 	{
+		ballisticsComputer 					= 4;
 		displayName							= "M638 Autocannon";
         modes[] = {"FullAuto"};
         class FullAuto: MGun
@@ -277,9 +282,9 @@ class CfgWeapons
 	};
 	class OPTRE_M370: gatling_30mm
 	{
+		ballisticsComputer 					= 4;
 		displayName							= "M370 Autocannon";
         modes[] = {"FullAuto"};
-		magazines[] = {"OPTRE_2500Rnd_50mm_HE"};
         class FullAuto: MGun
         {
             reloadTime = 0.125;
@@ -297,7 +302,7 @@ class CfgWeapons
 		displayName = "M9109 ASW/AC 50mm";
 		magazines[] = {"OPTRE_2500Rnd_50mm_HE"};
 		holdsterAnimValue = 0;
-		ballisticsComputer = 2;
+		ballisticsComputer = 4;
 		canLock = 1;
 		cursor = "EmptyCursor";
 		cursorAim = "mg";
@@ -350,7 +355,7 @@ class CfgWeapons
 		displayName = "GAU-80/AW Rotary Cannon";
 		magazines[] = {"OPTRE_600Rnd_110mm"};
 		holdsterAnimValue = 0;
-		ballisticsComputer = 2;
+		ballisticsComputer = 4;
 		canLock = 1;
 		cursor = "EmptyCursor";
 		cursorAim = "mg";
@@ -435,6 +440,7 @@ class CfgWeapons
 	class OPTRE_bomblauncher_500lb: Mk82BombLauncher
 	{
 		displayName							= "Mk208A 500lb Bomb";
+		ballisticsComputer					= 8;
 		magazines[] 						= {"OPTRE_12Rnd_500lb_bomb", "OPTRE_24Rnd_500lb_bomb", "OPTRE_36Rnd_500lb_bomb", "OPTRE_48Rnd_500lb_bomb"};
 	};
 	class OPTRE_bomblauncher_1000lb: OPTRE_bomblauncher_500lb
@@ -462,6 +468,7 @@ class CfgWeapons
 	class OPTRE_bomblauncher_GBU: GBU12BombLauncher
 	{
 		displayName							= "GBU-1071 Laser Guided Bomb";
+		ballisticsComputer					= 8;
 		magazines[] 						= {"OPTRE_4Rnd_GBU_bomb", "OPTRE_8Rnd_GBU_bomb"};
 	};
 };
