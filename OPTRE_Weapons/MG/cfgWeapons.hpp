@@ -69,8 +69,8 @@
             class OPTRE_M73_base: LMG_Mk200_F
             {
 					dlc = "OPTRE";		
-                    scope                                                                   = 1;
-					scopeArsenal															= 1;
+                    scope                                                                   = 2;
+					scopeArsenal															= 2;
                     handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_Weapons\MG\data\anim\M73_1.rtm"};
                     model                                                                   = "\OPTRE_Weapons\MG\M73.p3d";
                     displayName                                                             = "[UNSC] M73 Light Machine Gun";
@@ -408,8 +408,6 @@
                     displayName                                                             = "[UNSC] M73 Light Machine Gun";
                     descriptionShort                                                        = "UNSC Light Machine Gun";
                     inertia                                                                 = 0.75;
-					scope																	= 2;
-					scopeArsenal 															= 2;
 					maxRecoilSway 															= 0.0115;
 					swayDecaySpeed 															= 1.15;
                     modes[] 																= {"Single","FullAuto"};
