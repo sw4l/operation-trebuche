@@ -5,13 +5,16 @@ Planned Release Version
 	0.14
 
 Planned Release Date
-	01/01/16
+	06/30/16
 
 Official OPTRE Email/YT Info
 	Email: optremod@gmail.com
 	Pass: OPTRE_2513
 	Twitter
 	User: @OPTREBUCHET
+	Pass: ArticlE2
+Steam
+	User: article_2_studios
 	Pass: ArticlE2
 
 Bugs
