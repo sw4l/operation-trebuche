@@ -46,23 +46,7 @@ class CfgWeapons
 		ace_overheating_slowdownFactor[] = {1, 0.8, 0.6, 0.5};
         class M309GL: UGL_F
         {
-            magazines[]=
-            {
-                "1Rnd_HE_Grenade_shell",
-                "UGL_FlareWhite_F",
-                "UGL_FlareGreen_F",
-                "UGL_FlareRed_F",
-                "UGL_FlareYellow_F",
-                "UGL_FlareCIR_F",
-                "1Rnd_Smoke_Grenade_shell",
-                "1Rnd_SmokeRed_Grenade_shell",
-                "1Rnd_SmokeGreen_Grenade_shell",
-                "1Rnd_SmokeYellow_Grenade_shell",
-                "1Rnd_SmokePurple_Grenade_shell",
-                "1Rnd_SmokeBlue_Grenade_shell",
-                "1Rnd_SmokeOrange_Grenade_shell",
-                "ACE_HuntIR_M203"
-            };
+            magazines[] += {"ACE_HuntIR_M203"};
         };
     };
     class OPTRE_M41_SSR: launch_RPG32_F
@@ -84,7 +68,7 @@ class CfgWeapons
         ACE_barrelTwist=177.8;
         ACE_barrelLength=368.29999;
     };
-    class OPTRE_M392_DMR: LMG_Mk200_F
+    class OPTRE_M392_DMR: EBR_Base_F
     {
         ACE_barrelTwist=177.8;
         ACE_barrelLength=465.29999;
@@ -133,7 +117,7 @@ class CfgWeapons
 		ace_overheating_jamChance[] = {0, 0, 0, 0};
 		ace_overheating_slowdownFactor[] = {1, 0.8, 0.6, 0.5};
 	};
-    class OPTRE_SRS99D: LMG_Mk200_F
+    class OPTRE_SRS99D: EBR_Base_F
     {
         ACE_barrelTwist=482.70001;
         ACE_barrelLength=1062.6;
@@ -148,17 +132,17 @@ class CfgWeapons
     class OPTRE_UNSC_ODST_Helmet_Base: H_helmetB
     {
         ace_hearing_protection = 1;
-        ace_hearing_lowervolume = 0.1;
+        ace_hearing_lowervolume = 0;
     };
     class OPTRE_UNSC_Marine_Helmet_Base: H_helmetB
     {
         ace_hearing_protection = 1;
-        ace_hearing_lowervolume = 0.1;
+        ace_hearing_lowervolume = 0;
     };
     class OPTRE_UNSC_CH252_Helmet_Base: H_helmetB
     {
         ace_hearing_protection = 1;
-        ace_hearing_lowervolume = 0.1;
+        ace_hearing_lowervolume = 0;
     };
     class OPTRE_NVG: NVGoggles
     {
