@@ -293,13 +293,7 @@ class CfgVehicles
         memoryPointDriverOptics = "slingCamera";	/// what memory point is the origin of the camera
 		slingLoadMaxCargoMass 	= 500000;				/// maximum weight of cargo for this chopper
 		slingLoadMemoryPoint 	= "slingLoad0";		/// memory point for sling load to attach ropes to
-		/*ace_fastroping_enabled = 1;
-		ace_fastroping_ropeOrigins[] = {"ropeOriginLeft", "ropeOriginRight"};*/
-		ace_fastroping_enabled = 2;
-		ace_fastroping_friesType = "ACE_friesAnchorBar";
-		ace_fastroping_friesAttachmentPoint[] = {"ropeFRIESOrigin"};
-		ace_fastroping_onCut = "ace_fastroping_fnc_onCutCommon";
-		ace_fastroping_onPrepare = "ace_fastroping_fnc_onPrepareCommon";
+		ace_fastroping_enabled = 1;
 		ace_fastroping_ropeOrigins[] = {"ropeOriginLeft", "ropeOriginRight"};
 		class MFD
 		{

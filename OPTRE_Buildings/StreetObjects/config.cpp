@@ -13,7 +13,7 @@ class CfgVehicles
 {
 	class Land_Castle_01_step_F;
 	class RoadCone_F;
-	class Land_HelipadCircle_F;
+	class Helipad_base_F;
 	
 	class Land_sidewalk_wide_short: Land_Castle_01_step_F
 	{
@@ -110,7 +110,7 @@ class CfgVehicles
 		model = "\OPTRE_buildings\streetobjects\4way_intersection.p3d";
 		author = "Article 2 Studios";
 	};
-	class Land_main_road_short: Land_HelipadCircle_F
+	class Land_main_road_short: Helipad_base_F
 	{
 		dlc = "OPTRE";
 		displayName = "Main Road (Short)";
@@ -119,7 +119,7 @@ class CfgVehicles
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
 	};
-	class Land_main_road_long: Land_main_road_short
+	/*class Land_main_road_long: Land_main_road_short
 	{
 		dlc = "OPTRE";
 		displayName = "Main Road (Long)";
@@ -139,7 +139,7 @@ class CfgVehicles
 		displayName = "Service Road (Long)";
 		model = "\OPTRE_buildings\streetobjects\service_road_long.p3d";
 		author = "Article 2 Studios";
-	};
+	};*/
 
 	class Land_OPTRE_Cone: RoadCone_F
 	{

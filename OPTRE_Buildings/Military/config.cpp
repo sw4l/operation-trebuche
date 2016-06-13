@@ -13,7 +13,6 @@ class CfgPatches
 class CfgVehicles
 {
 	class House_F;
-	class placed_B_IR_grenade;
 
 	class Land_OPTRE_catwalk_end: House_F
 	{
@@ -564,16 +563,5 @@ class CfgVehicles
 				"end1"
 			}
 		};
-	};
-
-	class Land_beacon: placed_B_IR_grenade
-	{
-		dlc = "OPTRE";
-		model="\OPTRE_Weapons\items\beacon.p3d";
-		ammo = "OPTRE_G_ELB47_Strobe";
-		scope=2;
-		displayName="Emergency Locator Beacon 47";
-		editorCategory = "OPTRE_EditorCategory_Objects";
-		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 };
