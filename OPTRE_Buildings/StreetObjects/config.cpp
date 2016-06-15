@@ -14,6 +14,7 @@ class CfgVehicles
 	class Land_Castle_01_step_F;
 	class RoadCone_F;
 	class Helipad_base_F;
+	class Items_base_F;
 	
 	class Land_sidewalk_wide_short: Land_Castle_01_step_F
 	{

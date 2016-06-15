@@ -13,6 +13,7 @@ class CfgPatches
 class CfgVehicles
 {
 	class House_F;
+	class Items_base_F;
 	class RoadCone_F;
 	
 	class Land_Small_Plaza: House_F
@@ -132,7 +133,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 	
-	class Land_OPTRE_Dumpster_01: House_F
+	class Land_OPTRE_Dumpster_01: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\OPTRE_Dumpster_Closed_01";
@@ -145,7 +146,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 	
-	class Land_OPTRE_Dumpster_02: House_F
+	class Land_OPTRE_Dumpster_02: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\OPTRE_Dumpster_Closed_02";
@@ -353,7 +354,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
-	class Land_Vending_Machine_ded: House_F
+	class Land_Vending_Machine_ded: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Vending_Machine_ded";
@@ -366,7 +367,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
-	class Land_Vending_Machine_drink: House_F
+	class Land_Vending_Machine_drink: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Vending_Machine_drink";
@@ -379,7 +380,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
-	class Land_Vending_Machine_rooster: House_F
+	class Land_Vending_Machine_rooster: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Vending_Machine_rooster";
@@ -392,7 +393,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
-	class Land_Vending_Machine_teeth: House_F
+	class Land_Vending_Machine_teeth: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Vending_Machine_teeth";
@@ -413,7 +414,7 @@ class CfgVehicles
 		armor = 999999;
 		armorStructural = 999;
 		scope=2;
-		displayName="Recruiting Kiosk 1";
+		displayName="UNSC Recruiting Kiosk";
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
@@ -426,7 +427,7 @@ class CfgVehicles
 		armor = 999999;
 		armorStructural = 999;
 		scope=2;
-		displayName="Recruiting Kiosk 2";
+		displayName="Kiosk 1";
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
@@ -439,7 +440,7 @@ class CfgVehicles
 		armor = 999999;
 		armorStructural = 999;
 		scope=2;
-		displayName="Recruiting Kiosk 3";
+		displayName="Kiosk 2";
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
@@ -457,7 +458,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
-	class Land_OPTRE_Trash_Can_1a: House_F
+	class Land_OPTRE_Trash_Can_1a: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\OPTRE_Trash_Can_1a";
@@ -470,7 +471,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
-	class Land_OPTRE_Trash_Can_1b: House_F
+	class Land_OPTRE_Trash_Can_1b: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\OPTRE_Trash_Can_1b";
@@ -483,7 +484,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
-	class Land_OPTRE_Trash_Can_1c: House_F
+	class Land_OPTRE_Trash_Can_1c: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\OPTRE_Trash_Can_1c";

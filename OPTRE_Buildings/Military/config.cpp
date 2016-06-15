@@ -12,7 +12,19 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class House_F;
+	class House;
+	class House_F: House
+	{
+		class DestructionEffects;
+	};
+	class Strategic;
+	class ThingX;
+	class Items_base_F: ThingX
+	{
+		class DestructionEffects;
+	};
+	class Ruins_F;
+	class B_Slingload_01_fuel_F;
 
 	class Land_OPTRE_catwalk_end: House_F
 	{
@@ -160,7 +172,7 @@ class CfgVehicles
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};*/
-	class Land_OPTRE_generator: House_F
+	class Land_OPTRE_generator: Items_base_F
 	{
 		dlc = "OPTRE";
 		scope = 2;
@@ -238,54 +250,181 @@ class CfgVehicles
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
-
-	class Land_OPTRE_barrel_hydrogen: House_F
+	
+	class Land_OPTRE_barrel_hydrogen: Items_Base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\OPTRE_barrel_hydrogen";
 		vehicleClass = "OPTRE_City_Building_class";
-		armor = 999999;
-		armorStructural = 999;
+		armor = 55;
+		armorStructural = 4;
 		scope=2;
-		displayName="Barrel (Hydrogen)";
+		displayName="Barrel (HydrogenEXP1)";
+		destrType="DestructBuilding";
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
+		class EventHandlers
+		{
+			Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";
+		};
+		class DestructionEffects
+		{
+			class Light1
+			{
+				simulation = "light";
+				type = "ObjectDestructionLight";
+				position = "DestructionFire";
+				intensity = 0.001;
+				interval = 1;
+				lifeTime = 0.5;
+			};
+			class FuelFire1
+			{
+				simulation = "particles";
+				type = "BarelDestructionFire";
+				position = "DestructionFire";
+				intensity = 0.15;
+				interval = 1;
+				lifeTime = 0.5;
+			};
+			class FuelDestr
+			{
+				simulation = "destroy";
+				type = "FuelStationDestr";
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
 	};
-
-	class Land_OPTRE_barrel_unmarked: House_F
+	
+	class Land_OPTRE_fusion_coil: Items_Base_F
+	{
+		//SERIOUSLY DO NOT INCLUDE THIS IN THE FINAL BUILD UNLESS THE PROPER MODEL IS MADE. SET IT TO SCOPE 1 or 0. THIS IS JUST TO TEST THE PHYSICS/SCRIPTS OF IT
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Military\OPTRE_fusion_coil";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 75;
+		armorStructural = 4;
+		scope=2;
+		displayName="Fusion Coil (PLACEHOLDER!)";
+		destrType="DestructBuilding";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
+		class EventHandlers
+		{
+			Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.2); _explo = ""OPTRE_Exp_Fusion_Coil"" createVehicle _pos; };";
+		};
+		class DestructionEffects
+		{
+			class Light1
+			{
+				simulation = "light";
+				type = "ObjectDestructionLight";
+				position = "DestructionFire";
+				intensity = 0.001;
+				interval = 1;
+				lifeTime = 0.5;
+			};
+			class FuelFire1
+			{
+				simulation = "particles";
+				type = "FireBallBrightSmall";
+				position = "DestructionFire";
+				intensity = 0.15;
+				interval = 1;
+				lifeTime = 0.5;
+			};
+			class FuelDestr
+			{
+				simulation = "destroy";
+				type = "FuelStationDestr";
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
+	};	
+	
+	class Land_OPTRE_barrel_unmarked: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\OPTRE_barrel_unmarked";
 		vehicleClass = "OPTRE_City_Building_class";
-		armor = 999999;
-		armorStructural = 999;
+		armor = 5;
+		armorStructural = 1;
 		scope=2;
 		displayName="Barrel";
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 
-	class Land_OPTRE_barrel_water: House_F
+	class Land_OPTRE_barrel_water: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\OPTRE_barrel_water";
 		vehicleClass = "OPTRE_City_Building_class";
-		armor = 999999;
-		armorStructural = 999;
+		armor = 5;
+		armorStructural = 1;
 		scope=2;
 		displayName="Barrel (Water)";
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 
-	class Land_OPTRE_blast_barrier: House_F
+
+
+
+	class Land_OPTRE_blast_barrier_dest: House_F
 	{
 		dlc = "OPTRE";
-		model="\OPTRE_Buildings\Military\OPTRE_blast_barrier";
+		model="\OPTRE_Buildings\Military\OPTRE_blast_barrier_dest";
 		vehicleClass = "OPTRE_City_Building_class";
 		armor = 999999;
 		armorStructural = 999;
 		scope=2;
+		displayName="Blast Barrier (Destroyed)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
+	};
+
+		class Land_OPTRE_blast_barrier_dam: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Military\OPTRE_blast_barrier_dam";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 500;
+		armorStructural = 4;
+		scope=2;
+		displayName="Blast Barrier (Damaged)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
+		destrType="DestructBuilding";
+		class DestructionEffects: DestructionEffects
+		{
+			class Ruin1
+			{
+				simulation = "ruin";
+				type = "\OPTRE_Buildings\Military\OPTRE_blast_barrier_dest.p3d";
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
+	};
+	
+		class Land_OPTRE_blast_barrier: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Military\OPTRE_blast_barrier";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 500;
+		armorStructural = 4;
+		scope=2;
+		destrType="DestructBuilding";
 		displayName="Blast Barrier";
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
@@ -333,35 +472,22 @@ class CfgVehicles
 				direction = "Light_4_dir";
 			};
 		};
+		class DestructionEffects: DestructionEffects
+		{
+			class Ruin1
+			{
+				simulation = "ruin";
+				type = "\OPTRE_Buildings\Military\OPTRE_blast_barrier_dam.p3d";
+				position = "";
+				intensity = 1;
+				interval = 1;
+				lifeTime = 1;
+			};
+		};
 	};
 
-	class Land_OPTRE_blast_barrier_dam: House_F
-	{
-		dlc = "OPTRE";
-		model="\OPTRE_Buildings\Military\OPTRE_blast_barrier_dam";
-		vehicleClass = "OPTRE_City_Building_class";
-		armor = 999999;
-		armorStructural = 999;
-		scope=2;
-		displayName="Blast Barrier (Damaged)";
-		editorCategory = "OPTRE_EditorCategory_Objects";
-		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
-	};
-
-	class Land_OPTRE_blast_barrier_dest: House_F
-	{
-		dlc = "OPTRE";
-		model="\OPTRE_Buildings\Military\OPTRE_blast_barrier_dest";
-		vehicleClass = "OPTRE_City_Building_class";
-		armor = 999999;
-		armorStructural = 999;
-		scope=2;
-		displayName="Blast Barrier (Destroyed)";
-		editorCategory = "OPTRE_EditorCategory_Objects";
-		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
-	};
-
-	class Land_OPTRE_fury_static: House_F
+	
+	class Land_OPTRE_fury_static: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\OPTRE_fury_static";
@@ -400,7 +526,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 
-	/*class Land_OPTRE_hard_tent_urban: House_F
+	class Land_OPTRE_hard_tent_urban: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\OPTRE_hard_tent_urban";
@@ -411,7 +537,7 @@ class CfgVehicles
 		displayName="Hard Tent (Urban)";
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
-	};*/
+	};
 
 	class Land_OPTRE_medical_tent_tan: House_F
 	{
@@ -452,7 +578,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 
-	class Land_OPTRE_ONI_barrier: House_F
+	class Land_OPTRE_ONI_barrier: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\OPTRE_ONI_barrier";

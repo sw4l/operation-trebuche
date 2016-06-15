@@ -872,6 +872,36 @@ class CfgAmmo
 		laserLock = 1;
 		initTime = 5;
 	};
+	class OPTRE_Exp_Hydrogen_Small: Bo_Mk82
+	{
+		//Used by: Hydrogen Barrel
+		model = "\OPTRE_Buildings\Military\OPTRE_barrel_hydrogen.p3d";
+		effectssmoke = "";
+		explosioneffects = "ExploAmmoExplosion";
+		explosionEffectsRadius = 4;
+		CraterEffects = "GrenadeCrater";
+		hit = 80;
+		indirectHit = 80;
+		indirectHitRange = 1.5;
+		caliber = 0.7;
+		explosive = 0.7;
+	};
+	
+	class OPTRE_Exp_Fusion_Coil: Bo_Mk82
+	{
+		//Used by: Fusion Coil
+		model = "\OPTRE_Buildings\Military\OPTRE_fusion_coil.p3d";
+		effectsSmoke = "";
+		explosioneffects = "ExploAmmoExplosion";
+		explosionEffectsRadius = 5;
+		CraterEffects = "GrenadeCrater";
+		hit = 175;
+		indirectHit = 175;
+		indirectHitRange = 2;
+		caliber = 0.5;
+		explosive = 0.95;
+	};
+	
 	
 	//Rockets
 	class OPTRE_M41_Rocket_HEAT: R_PG32V_F

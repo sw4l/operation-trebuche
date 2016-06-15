@@ -14,6 +14,7 @@ class CfgVehicles
 {
 	class House_F;
 	class RoadCone_F;
+	class Items_base_F;
 	class Land_Cargo_House_V1_F;
 	class Land_Cargo_HQ_V1_F;
 	class Land_Cargo_Patrol_V1_F;
@@ -111,7 +112,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Civilian";
 	};
 	
-	class Land_shipping_crate_lg_locked: House_F
+	class Land_shipping_crate_lg_locked: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Containers\shipping_crate_lg_locked";
@@ -121,7 +122,7 @@ class CfgVehicles
 		scope=2;
 		displayName="Shipping Container [Locked]";
 		editorCategory = "OPTRE_EditorCategory_Objects";
-		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Containers";
 	};	
 	
 	class Land_shipping_crate_lg_open: Land_shipping_crate_lg_locked
@@ -257,7 +258,7 @@ class CfgVehicles
 		displayName="Shipping Container (Traxus 3)";
 	};
 
-	class Land_packing_crate_lg_blue: House_F
+	class Land_packing_crate_lg_blue: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Containers\packing_crate_lg_blue";
@@ -267,10 +268,10 @@ class CfgVehicles
 		scope=2;
 		displayName="Packaging Crate (Large / Blue)";
 		editorCategory = "OPTRE_EditorCategory_Objects";
-		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Containers";
 	};
 
-	class Land_packing_crate_lg_green: House_F
+	class Land_packing_crate_lg_green: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Containers\packing_crate_lg_green";
@@ -280,10 +281,10 @@ class CfgVehicles
 		scope=2;
 		displayName="Packaging Crate (Large / Green)";
 		editorCategory = "OPTRE_EditorCategory_Objects";
-		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Containers";
 	};
 
-	class Land_packing_crate_lg_red: House_F
+	class Land_packing_crate_lg_red: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Containers\packing_crate_lg_red";
@@ -293,10 +294,10 @@ class CfgVehicles
 		scope=2;
 		displayName="Packaging Crate (Large / Red)";
 		editorCategory = "OPTRE_EditorCategory_Objects";
-		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Containers";
 	};
 
-	class Land_packing_crate_lg_unsc: House_F
+	class Land_packing_crate_lg_unsc: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Containers\packing_crate_lg_unsc";
@@ -306,10 +307,10 @@ class CfgVehicles
 		scope=2;
 		displayName="Packaging Crate (Large / UNSC)";
 		editorCategory = "OPTRE_EditorCategory_Objects";
-		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Containers";
 	};
 
-	class Land_packing_crate_lg_yellow: House_F
+	class Land_packing_crate_lg_yellow: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Containers\packing_crate_lg_yellow";
@@ -319,6 +320,90 @@ class CfgVehicles
 		scope=2;
 		displayName="Packaging Crate (Large / Yellow)";
 		editorCategory = "OPTRE_EditorCategory_Objects";
-		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Containers";
+	};
+	class Land_OPTRE_crate_bundle: Items_base_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Containers\optre_crate_bundle";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Corrugated Crate Bundle";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Containers";
+	};
+	class Land_OPTRE_corrugated_crate01: Items_base_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Containers\OPTRE_corrugated_crate01";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Corrugated Crate";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Containers";
+	};
+	class Land_OPTRE_corrugated_crate02: Items_base_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Containers\OPTRE_corrugated_crate02";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Corrugated Crate (Shipping)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Containers";
+	};
+	class Land_OPTRE_corrugated_crate03: Items_base_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Containers\OPTRE_corrugated_crate03";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Corrugated Crate (Striped)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Containers";
+	};
+	class Land_OPTRE_corrugated_crate04: Items_base_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Containers\OPTRE_corrugated_crate04";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Corrugated Crate (Fragile)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Containers";
+	};
+	class Land_OPTRE_corrugated_crate05: Items_base_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Containers\OPTRE_corrugated_crate05";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Corrugated Crate (Fragile Shipping)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Containers";
+	};
+	class Land_OPTRE_corrugated_crate06: Items_base_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Containers\OPTRE_corrugated_crate06";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Corrugated Crate (Striped Shipping)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Containers";
 	};
 };
