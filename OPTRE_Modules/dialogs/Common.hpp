@@ -55,6 +55,8 @@
 #define ST_PICTURE        0x30
 #define ST_FRAME          0x40
 #define ST_BACKGROUND     0x50
+#define ST_GROUP_BOX      0x60
+#define ST_GROUP_BOX2     0x70
 #define ST_HUD_BACKGROUND 0x80
 #define ST_TILE_PICTURE   0x90
 #define ST_WITH_RECT      0xA0
@@ -353,10 +355,10 @@ class OPTRE_ZEUS_RscButton
     colorFocused[] = {0.75,0.75,0.75,.5};
     colorShadow[] = {0.023529,0,0.0313725,1};
     colorBorder[] = {0.023529,0,0.0313725,1};
-	soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1};
-	soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1};
-	soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1};
-	soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1};
+    soundEnter[] = {"\ca\ui\data\sound\onover",0.09,1};
+    soundPush[] = {"\ca\ui\data\sound\new1",0,0};
+    soundClick[] = {"\ca\ui\data\sound\onclick",0.07,1};
+    soundEscape[] = {"\ca\ui\data\sound\onescape",0.09,1};
     style = 2;
     x = 0;
     y = 0;
@@ -387,10 +389,10 @@ class OPTRE_ZEUS_RscButton_Invisible
     colorFocused[] = {0,0,0,0};
     colorShadow[] = {0,0,0,0};
     colorBorder[] = {0,0,0,0};
-	soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1};
-	soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1};
-	soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1};
-	soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1};
+    soundEnter[] = {"\ca\ui\data\sound\onover",0.09,1};
+    soundPush[] = {"\ca\ui\data\sound\new1",0,0};
+    soundClick[] = {"\ca\ui\data\sound\onclick",0.07,1};
+    soundEscape[] = {"\ca\ui\data\sound\onescape",0.09,1};
     style = 2;
     x = 0;
     y = 0;

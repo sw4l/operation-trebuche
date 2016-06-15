@@ -12,7 +12,8 @@
 		//isDisposable = 1;// 1 if modules is to be disabled once it's activated (i.e., repeated trigger activation won't work) // CAUSEING ERROR?? // 
 		//curatorInfoType = "RscDisplayAttributeModuleNuke";// Menu displayed when the module is placed or double-clicked on by Zeus
 		author = "Article 2 Studios";
-		
+		is3DEN = 0;
+				
 		// Module arguments
 		class Arguments
 		{
@@ -83,16 +84,17 @@
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 				class values
 				{
-					class n1	{name = "Cycle Back To First Waypoint"; value = "cycle"; default = 1; }; 
-					class n2	{name = "Garrison Near Final Waypoint"; value = "garrison";}; 
-					class n3    {name = "Patrol Around Final Waypoint"; value = "patrol ";};						
+					class n1	{name = "BIS Cycle Back To First Waypoint"; value = "cycle"; default = 1; }; 
+					class n2	{name = "CBA Garrison Near Final Waypoint"; value = "garrison";}; 
+					class n3    {name = "CBA Patrol Around Final Waypoint"; value = "patrol";};		
+					class n4    {name = "Stop, Do Nothing"; value = "";};	
 				};
 			};				
 		};	
 		
 		class ModuleDescription
 		{
-			description = "This module will spawn a ODST team in HEVs 3000m above the position this module is placed. Teams spawned can also be given waypoints and end waypoint commands such as garrison vehicles or patrol area.";
+			description[] = {"This module will spawn a ODST team in HEVs 3000m above the position this module is placed. Teams spawned can also be given waypoints and end waypoint commands such as garrison vehicles or patrol area.";};
 			sync[] = {"EmptyDetector"};
 			position = 1;
 			direction = 0;

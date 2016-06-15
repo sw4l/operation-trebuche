@@ -53,11 +53,13 @@ While {OPTRE_Hud_On AND cameraView != "EXTERNAL"} do {
 	
 	if OPTRE_HUD_CompassWanted then {
 		_text_1000 ctrlSetText (format ["DIR: %1",round getDir player]);
-		_task = [player] call BIS_fnc_taskCurrent;
-		if (_task != "") then {
-			_taskDest = [_task] call BIS_fnc_taskDestination;
-			if (typeName _taskDest == "ARRAY") then {_text_1001 ctrlSetText (format ["OBJ: %1",round ([player, _taskDest] call BIS_fnc_dirTo)]);};
-		} else {_text_1001 ctrlSetText "OBJ: N/A";};
+		_task = currentTask player;
+		_taskDest = taskDestination currentTask player;
+		if (!isNil "_taskDest" AND !isNil "_task" AND str _task != "No task") then {
+			_text_1001 ctrlSetText (format ["OBJ: %1",round ([player, _taskDest] call BIS_fnc_dirTo)]);
+		} else {
+			_text_1001 ctrlSetText "OBJ: N\A";
+		};
 	};
 	
 	_text_1002 ctrlSetText (format ["%1  %2",(currentWeaponMode player),(currentZeroing  player)]);

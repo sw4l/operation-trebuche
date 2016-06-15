@@ -13,7 +13,8 @@
 		//isDisposable = 1;// 1 if modules is to be disabled once it's activated (i.e., repeated trigger activation won't work) // CAUSEING ERROR?? // 
 		//curatorInfoType = "RscDisplayAttributeModuleNuke";// Menu displayed when the module is placed or double-clicked on by Zeus
 		author = "Article 2 Studios";
-		
+		is3DEN = 0;
+				
 		// Module arguments
 		class Arguments
 		{
@@ -22,7 +23,9 @@
 
 		class ModuleDescription
 		{
-			description = "Placing this module will correctly load all OPTRE modules for curators. Placing any other OPTRE editor module will also have this effect.";
+			description[] = {
+				"Placing this module will correctly load all OPTRE modules for curators. Placing any other OPTRE editor module will also have this effect.";
+			};
 			sync[] = {"EmptyDetector"};
 			position = 0;
 			direction = 0;

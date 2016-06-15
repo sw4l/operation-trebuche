@@ -12,29 +12,30 @@
 		//isDisposable = 1;// 1 if modules is to be disabled once it's activated (i.e., repeated trigger activation won't work) // CAUSEING ERROR?? // 
 		//curatorInfoType = "RscDisplayAttributeModuleNuke";// Menu displayed when the module is placed or double-clicked on by Zeus
 		author = "Article 2 Studios";
-		
+		is3DEN = 0;
+				
 		// Module arguments
 		class Arguments
 		{
 			class vehicle
   			{
 				displayName = "CAS Vehicle";
-				description = "Chose from either a pelican or Falcon to strike at heart of the enemy! Maybe even one day a Longsword..";
-				defaultValue = "NONE"; // Default text filled in the input box
+				description = "Chose what aircraft to strike at heart of the enemy!";
+				defaultValue = "OPTRE_Pelican_armed_black"; // Default text filled in the input box
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 				class values
 				{
-					class n1	{name = "UNSC D77H-TCI [Black]"; 		value = "OPTRE_Pelican_armed_black"; 				}; 
-					class n2	{name = "UNSC D77H-TCI [Green]"; 		value = "OPTRE_Pelican_armed_green";				}; 
-					class n3	{name = "UNSC D77H-TCI [Marine]"; 		value = "OPTRE_Pelican_armed_marine"; 	default = 1;}; 
-					class n4	{name = "UNSC D77H-TCI [Tan]"; 			value = "OPTRE_Pelican_armed_tan";					}; 
-					class n5 	{name = "URF D77H-TCI [Insurrection]"; 	value = "OPTRE_Pelican_armed_ins";					};
-					class n6	{name = "UNSC UH-144 Falcon [Black]"; 	value = "OPTRE_UNSC_falcon_black";					}; 
-					class n7	{name = "UNSC UH-144 Falcon [Green]"; 	value = "OPTRE_UNSC_falcon_green";					}; 
-					class n8	{name = "UNSC UH-144 Falcon [Snow]"; 	value = "OPTRE_UNSC_falcon_snow";					}; 
-					class n9	{name = "UNSC UH-144 Falcon [Tan]"; 	value = "OPTRE_UNSC_falcon_tan";					}; 
-					class n10	{name = "UNSC GA-TL1/A Longsword [CAS]"; 	value = "OPTRE_Longsword_CAS_F";					}; 
-					class n11	{name = "UNSC GA-TL1/A Longsword [Cannon]"; 	value = "OPTRE_Longsword_CANNON_F";					}; 					
+					class n1	{name = "UNSC D77H-TCI [Black]"; 			value = "OPTRE_Pelican_armed_black"; 	default = 0;	}; 
+					class n2	{name = "UNSC D77H-TCI [Green]"; 			value = "OPTRE_Pelican_armed_green";					}; 
+					class n3	{name = "UNSC D77H-TCI [Marine]"; 			value = "OPTRE_Pelican_armed_marine";					}; 
+					class n4	{name = "UNSC D77H-TCI [Tan]"; 				value = "OPTRE_Pelican_armed_tan";						}; 
+					class n5 	{name = "URF D77H-TCI [Insurrection]"; 		value = "OPTRE_Pelican_armed_ins";						};
+					class n6	{name = "UNSC UH-144 Falcon [Black]"; 		value = "OPTRE_UNSC_falcon_black";						}; 
+					class n7	{name = "UNSC UH-144 Falcon [Green]"; 		value = "OPTRE_UNSC_falcon_green";						}; 
+					class n8	{name = "UNSC UH-144 Falcon [Snow]"; 		value = "OPTRE_UNSC_falcon_snow";						}; 
+					class n9	{name = "UNSC UH-144 Falcon [Tan]"; 		value = "OPTRE_UNSC_falcon_tan";						}; 
+					class n10	{name = "UNSC GA-TL1/A Longsword [CAS]"; 	value = "OPTRE_Longsword_CAS_F";						}; 
+					class n11	{name = "UNSC GA-TL1/A Longsword [Cannon]"; value = "OPTRE_Longsword_CANNON_F";						}; 					
 				};
 			};	
 			class flyOutHeight
@@ -63,7 +64,7 @@
 		
 		class ModuleDescription
 		{
-			description = "This module will spawn a CAS asset that will perform a air strike at the location the module is placed. The direction of this module determines from which direction the CAS asset will approach the target from.";
+			description[] = {"This module will spawn a CAS asset that will perform a air strike at the location the module is placed. The direction of this module determines from which direction the CAS asset will approach the target from.";};
 			sync[] = {"EmptyDetector"};
 			position = 1;
 			direction = 1;

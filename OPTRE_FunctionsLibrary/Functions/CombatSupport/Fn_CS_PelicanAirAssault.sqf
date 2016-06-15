@@ -194,6 +194,8 @@ if _isVehicleDrop then {
 	(_crew select 1) moveInGunner _veh;
 	if (vehicle (_crew select 1) == (_crew select 1)) then {deleteVehicle (_crew select 1);};
 	0 = _veh call _code;
+	_veh disableCollisionWith _pelican;
+	//_veh enableSimulation false;
 	_veh attachTo [_pelican, ([_vehicleMagLiftedClassname] call OPTRE_fnc_PelicanAttachToPoints)]; 	
 	_VehWPPosArray pushBack ([_pos, 70, 180] call OPTRE_fnc_MathsTriangulatePos);
 	/*_exitRearWP = _crewGroup addWaypoint [([_pos, 70, 180] call OPTRE_fnc_MathsTriangulatePos) , 0];
@@ -240,9 +242,11 @@ _exitRightWP1 setWaypointTimeout [0, 0, 0];*/
 	_MarkerPos = getMarkerPos _x;
 	if (str _MarkerPos != "[0,0,0]") then {
 		_x1 = _group1 addWaypoint [([_MarkerPos, 50, 90 ] call OPTRE_fnc_MathsTriangulatePos), 0];
-		_x1 setWaypointBehaviour "AWARE";
+		_x1 setWaypointBehaviour "COMBAT";
+		_x1 setWaypointCombatMode "RED";
 		_x2 = _group2 addWaypoint [([_MarkerPos, 50, 270] call OPTRE_fnc_MathsTriangulatePos), 0];
-		_x2 setWaypointBehaviour "AWARE";
+		_x2 setWaypointBehaviour "COMBAT";
+		_x2 setWaypointCombatMode "RED";
 		if _isVehicleDrop then {_VehWPPosArray pushBack ([_MarkerPos, 100, 270] call OPTRE_fnc_MathsTriangulatePos);};	
 	};
 } forEach _waypointsMapMarkers;

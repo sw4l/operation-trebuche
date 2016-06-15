@@ -111,17 +111,11 @@ While {OPTRE_Hud_On AND cameraView != "EXTERNAL"} do {
 		private ["_dir","_dest"];
 		
 		_dirPlayer = getDir player; 
-		
-		_task = [player] call BIS_fnc_taskCurrent;
-		if (_task != "") then {
-			_taskDest = [_task] call BIS_fnc_taskDestination;
-			if (typeName _taskDest == "ARRAY") then {
-				_dest = mapGridPosition _taskDest;
-				_dir = str round ([player, _taskDest] call BIS_fnc_dirTo)
-			} else {
-				_dir = "N/A";
-				_dest = "N/A"; 
-			};
+		_task = currentTask player;
+		_taskDest = taskDestination currentTask player;
+		if (!isNil "_taskDest" AND !isNil "_task" AND str _task != "No task") then {
+			_dest = mapGridPosition _taskDest;
+			_dir = str round ([player, _taskDest] call BIS_fnc_dirTo);
 		} else {
 			_dir = "N/A";
 			_dest = "N/A"; 

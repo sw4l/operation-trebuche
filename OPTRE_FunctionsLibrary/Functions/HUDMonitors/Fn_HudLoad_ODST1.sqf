@@ -136,9 +136,9 @@ While {OPTRE_Hud_On AND cameraView != "EXTERNAL"} do {
 					};
 		};
 		_vD = vectorDir player; _c ctrlSetModelDirAndUp [[(_vD select 0),(_vD select 1),0],[0,0,1]];
-		_currTask = [player] call BIS_fnc_taskCurrent;
-		//(([player, ([_currTask] call BIS_fnc_taskDestination)] call BIS_fnc_dirTo) - getDir player)
-		if (_currTask != "") then {/*hintSilent str ([player,([_currTask] call BIS_fnc_taskDestination),-_dirPlayer] call OPTRE_fnc_ModelToWorldCalcPitchBankYaw);*/ _W1 ctrlSetModelDirAndUp ([player,([_currTask] call BIS_fnc_taskDestination),-_dirPlayer] call OPTRE_fnc_ModelToWorldCalcPitchBankYaw);} else {_W1 ctrlSetModelDirAndUp ([[0,0,0],[0,1,0], 180] call OPTRE_fnc_ModelToWorldCalcPitchBankYaw);};
+		_task = currentTask player;
+		_taskDest = taskDestination currentTask player;
+		if (!isNil "_taskDest" AND !isNil "_task" AND str _task != "No task") then { _W1 ctrlSetModelDirAndUp ([player,_taskDest,-_dirPlayer] call OPTRE_fnc_ModelToWorldCalcPitchBankYaw);} else {_W1 ctrlSetModelDirAndUp ([[0,0,0],[0,1,0], 180] call OPTRE_fnc_ModelToWorldCalcPitchBankYaw);};
 		_dirGroupLeader = (getDir leader _grpPlayer); _W2 ctrlSetModelDirAndUp ([[0,0,0],[0,0,0], (_dirGroupLeader - _dirPlayer) ] call OPTRE_fnc_ModelToWorldCalcPitchBankYaw);
 		_currentWaypointPos = (waypointPosition [_grpPlayer, (currentWaypoint _grpPlayer)]); if (str _currentWaypointPos != "[0,0,0]") then { _W3 ctrlSetModelDirAndUp ([player,(waypointPosition [_grpPlayer, (currentWaypoint _grpPlayer)]), -_dirPlayer] call OPTRE_fnc_ModelToWorldCalcPitchBankYaw);} else {_W3 ctrlSetModelDirAndUp ([[0,0,0],[0,0,0], 180] call OPTRE_fnc_ModelToWorldCalcPitchBankYaw);};
 	};

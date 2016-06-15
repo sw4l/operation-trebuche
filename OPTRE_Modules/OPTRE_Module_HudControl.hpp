@@ -13,6 +13,7 @@
 		//isDisposable = 1;// 1 if modules is to be disabled once it's activated (i.e., repeated trigger activation won't work) // CAUSEING ERROR?? // 
 		//curatorInfoType = "RscDisplayAttributeModuleNuke";// Menu displayed when the module is placed or double-clicked on by Zeus
 		author = "Article 2 Studios";
+		is3DEN = 0;
 		
 		// Module arguments
 		class Arguments
@@ -47,7 +48,9 @@
 		
 		class ModuleDescription
 		{
-			description = "Changes the way OPTRE's HUD system works, this module also allows for certain features of the HUD system to be turn off or on.";
+			description[] = {
+				"Changes the way OPTRE's HUD system works, this module also allows for certain features of the HUD system to be turn off or on.";
+			};
 			sync[] = {"EmptyDetector"};
 			position = 0;
 			direction = 0;

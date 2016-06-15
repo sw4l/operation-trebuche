@@ -14,7 +14,6 @@ class CfgFunctions
 			class ToggleLowLight {};
 			class GetHudTypeString {};
 			class SetAmmoCounterState {};
-			
 		};
 		
 		class HUDCommon
@@ -26,7 +25,15 @@ class CfgFunctions
 			class HealCheck {};
 			class AmmoCountSetProgress {};
 			class HudMap {};
-
+		};
+		
+		class HUDMonitors
+		{
+			file = "OPTRE_FunctionsLibrary\Functions\HUDMonitors";
+			
+			class HudLoad_MarrineEyeDisplay1 {};			
+			class HudLoad_MarrineGlass1 {};			
+			class HudLoad_ODST1 {};
 		};
 		
 		class Maths
@@ -43,35 +50,44 @@ class CfgFunctions
 			file = "OPTRE_FunctionsLibrary\Functions\Modules";
 			
 			class ModuleHUD {};
-			//class ModuleHEVStart {};
+			class ModuleHEVCleanUp {};
 			class ModulePelicanDropSupplys {};
 			class ModulePelicanAirAssault {};
 			class ModuleODSTHEV {};
 			class ModuleCAS {};
 			class ModuleZeus {};
-			
+			class ModuleHEV {};
 		};
-		
-		
-		class HUDLoaders 
-		{
-			file = "OPTRE_FunctionsLibrary\Functions\HudLoaders";
 			
-			class HudLoad_MarrineEyeDisplay1 {};
-			class HudLoad_ODST1 {};
-			class HudLoad_MarrineGlass1 {};
-		};
-		
-		/*
-		class HEVnew 
+		class HEV
 		{
+		
 			file = "OPTRE_FunctionsLibrary\Functions\HEV";
 			
-			class AssignAsDriverRemotely {};
+			class HEV {};
 			
+			class SpawnHEVsFrigate {};
+			class SpawnHEVsNoFrigate {};
+			
+			class HEVCleanUp {};
+			class HEVControls {};
+			class HEVDoor {};
+			class HEVHandleLanding {};
+			
+			class PlayerHEVEffectsUpdate_BoasterDown {};
+			class PlayerHEVEffectsUpdate_Chute {};
+			class PlayerHEVEffectsUpdate_Light {};
+			class PlayerHEVEffectsUpdate_ReEntrySounds {};
 		};
-		*/
-
+		
+		class Misc
+		{
+			file = "OPTRE_FunctionsLibrary\Functions\Misc";
+			
+			class CountDown {};
+			class CleanUp {};	
+		};
+		
 		class SupportSystem
 		{
 			file = "OPTRE_FunctionsLibrary\Functions\CombatSupport";
@@ -81,7 +97,6 @@ class CfgFunctions
 			class CS_PelicanAirAssault {};
 			class CS_ODSTHEV {};
 			class PelicanAttachToPoints {};
-			
 		};
 		
 		class Arrays
@@ -116,7 +131,6 @@ class CfgFunctions
 			class FrigateUpDownLift {};
 			
 			class AddActionGlobal {};
-			
 		};*/
 
 	}; 

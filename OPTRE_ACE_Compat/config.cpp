@@ -30,6 +30,9 @@ class CfgWeapons
 	class Binocular;
 	class cannon_120mm;
 	class NVGoggles;
+	class U_B_CombatUniform_mcam;
+	class U_B_HeliPilotCoveralls;
+	class OPTRE_UNSC_Marine_Uniform;
     
     class OPTRE_MA5B: EBR_Base_F
     {
@@ -150,6 +153,18 @@ class CfgWeapons
         ACE_nightVision_grain = 0;
         ace_nightVision_blur = 0;
         ace_nightVision_radBlur = 0;
+    };
+	class OPTRE_UNSC_Airforce_Uniform: U_B_CombatUniform_mcam
+	{
+        ACE_GForceCoef = 0.5;
+	};
+	class OPTRE_UNSC_Marine_Uniform_Pilot: OPTRE_UNSC_Marine_Uniform
+	{
+        ACE_GForceCoef = 0.5;
+	};
+	class OPTRE_UNSC_Navy_Uniform : U_B_HeliPilotCoveralls 
+	{
+        ACE_GForceCoef = 0.5;
     };
 };
 

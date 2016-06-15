@@ -143,7 +143,7 @@ _pelican setVehicleLock "LOCKEDPLAYER";
 _pelican addEventHandler ["HandleDamage",{
 	if isServer then {
 		if ((_this select 2) == 1) then {
-			{detach _x;} forEach ( (_this select 0) getVariable "OPTRE_CS_SupPods" ); 
+			{detach _x;} forEach attachedObjects (_this select 0);
 			//deleteVehicle ( (_this select 0) getVariable ["OPTRE_LANDPAD",objNull] );
 			{_x addCuratorEditableObjects [( (_this select 0) getVariable ["OPTRE_AllSpawned",[]] ), true];} forEach allCurators;
 			{
@@ -154,7 +154,7 @@ _pelican addEventHandler ["HandleDamage",{
 }];
 driver _pelican addEventHandler ["killed",{
 	if isServer then {
-		{detach _x;} forEach ( vehicle (_this select 0) getVariable "OPTRE_CS_SupPods" ); 
+		{detach _x;} forEach attachedObjects (_this select 0);
 		//deleteVehicle ( (_this select 0) getVariable ["OPTRE_LANDPAD",objNull] );
 		{_x addCuratorEditableObjects [( (_this select 0) getVariable ["OPTRE_AllSpawned",[]] ), true];} forEach allCurators;
 		{
@@ -165,7 +165,7 @@ driver _pelican addEventHandler ["killed",{
 _pelican addEventHandler ["GetOut",{
 	if isServer then { 
 		if ( (_this select 1) == "driver" ) then {
-			{detach _x;} forEach ( (_this select 0) getVariable "OPTRE_CS_SupPods" ); 
+			{detach _x;} forEach attachedObjects (_this select 0);
 			//deleteVehicle ( (_this select 0) getVariable ["OPTRE_LANDPAD",objNull] );
 			{_x addCuratorEditableObjects [( (_this select 0) getVariable ["OPTRE_AllSpawned",[]] ), true];} forEach allCurators;
 			{
@@ -221,8 +221,9 @@ if (typeName _podArrayString == "ARRAY") then {
 	} forEach _podArrayString; 
 	
 } else {
-
-	_pad = "Land_HelipadEmpty_F" createVehicle _pos;
+	
+	_pad = createVehicle ["Land_HelipadEmpty_F", _pos, [], 0, "FLY"];
+	//_pad = "Land_HelipadEmpty_F" createVehicle _pos;
 	_pelican setVariable ["OPTRE_LANDPAD",_pad,false];
 	
 	_Aproach = [[(_pos select 0), (_pos select 1), _flyInHeight], 1000, _dir] call OPTRE_fnc_MathsTriangulatePos;
@@ -241,7 +242,7 @@ if (typeName _podArrayString == "ARRAY") then {
 	//_wpDrop waypointAttachVehicle _pad;
 	//_wpDrop setWaypointTimeout [20, 20, 20];
 
-	_veh = createVehicle [_podArrayString, [_pos select 0, _pos select 1, 10000], [], 0, "FLY"];
+	_veh = createVehicle [_podArrayString, [(_pos select 0), (_pos select 1), 1000], [], 0, "FLY"];
 	_podArray pushBack _veh;
 	0 = _veh call _code;
 	_veh attachTo [_pelican, ([_podArrayString] call OPTRE_Fnc_PelicanAttachToPoints)]; 	

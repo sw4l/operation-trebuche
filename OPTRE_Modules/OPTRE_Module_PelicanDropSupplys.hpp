@@ -12,6 +12,7 @@
 		//isDisposable = 1;// 1 if modules is to be disabled once it's activated (i.e., repeated trigger activation won't work) // CAUSEING ERROR?? // 
 		//curatorInfoType = "RscDisplayAttributeModuleNuke";// Menu displayed when the module is placed or double-clicked on by Zeus
 		author = "Article 2 Studios";
+		is3DEN = 0;
 		
 		// Module arguments
 		class Arguments
@@ -293,7 +294,7 @@
 		
 		class ModuleDescription
 		{
-			description = "This module will spawn a Pelican drop ship that can deliver supply pods or vehicles to troops on ground. Place the module where you would like the supplies to be dropped on the map. Note that if a Landing Pad is nearby the pelican will always try to land on that position when delivering vehicles as this module uses the LAND command, this may cause a problem if more than one Pelican try to land on a pad at once (This apply s to Landing Pads native to the map as well a spawned / placed pads.).";
+			description[] = {"This module will spawn a Pelican drop ship that can deliver supply pods or vehicles to troops on ground. Place the module where you would like the supplies to be dropped on the map. Note that if a Landing Pad is nearby the pelican will always try to land on that position when delivering vehicles as this module uses the LAND command, this may cause a problem if more than one Pelican try to land on a pad at once (This apply s to Landing Pads native to the map as well a spawned / placed pads.).";};
 			sync[] = {"EmptyDetector"};
 			position = 1;
 			direction = 0;
