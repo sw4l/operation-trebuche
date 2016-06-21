@@ -716,6 +716,7 @@ class cfgWeapons
 			uniformModel 																		= "\OPTRE_UNSC_Units\ODST\vest.p3d";
 			//armor 																				= 40;
 			containerClass 																		= "Supply180";
+			vesttype																			= "rebreather";
 			mass 																				= 80;
 			passThrough 																		= 0.1;
 			modelSides[] 																		= {6};

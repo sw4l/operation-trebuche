@@ -111,6 +111,13 @@ class CfgVehicles
 		model = "\OPTRE_buildings\streetobjects\4way_intersection.p3d";
 		author = "Article 2 Studios";
 	};
+	class Land_OPTRE_Traffic_Light: Land_sidewalk_wide_short
+	{
+		dlc = "OPTRE";
+		displayName = "Traffic Light";
+		model = "\OPTRE_buildings\streetobjects\OPTRE_Traffic_Light.p3d";
+		author = "Article 2 Studios";
+	};
 	class Land_main_road_short: Helipad_base_F
 	{
 		dlc = "OPTRE";

@@ -62,6 +62,10 @@ class CfgEditorSubcategories
 	{
 		displayName = "Transportation"; // Name visible in the list
 	};
+	class OPTRE_EditorSubcategory_Objects_Containers // Category class, you point to it in editorSubcategory property
+	{
+		displayName = "Containers"; // Name visible in the list
+	};
 	class OPTRE_EditorSubcategory_Frigate_Pieces // Category class, you point to it in editorSubcategory property
 	{
 		displayName = "Pieces"; // Name visible in the list
@@ -113,6 +117,10 @@ class CfgEditorSubcategories
 	class OPTRE_EditorSubcategory_MenMAR // Category class, you point to it in editorCategory property
 	{
 		displayName = "Men (Marines)"; // Name visible in the list
+	};
+	class OPTRE_EditorSubcategory_MenFORECON // Category class, you point to it in editorCategory property
+	{
+		displayName = "Men (FORECON)"; // Name visible in the list
 	};
 	class OPTRE_EditorSubcategory_MenODST // Category class, you point to it in editorCategory property
 	{
@@ -316,6 +324,15 @@ class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor"
 	{
 		dlc = "OPTRE";
 		displayName 																			= "Men (Marines)";
+		author																					= "Article 2 Studios";
+		scope																					= 2;
+		scopeArsenal																			= 2;
+		scopeCurator																			= 2;
+	};
+	class OPTRE_UNSC_Man_FORECON_class
+	{
+		dlc = "OPTRE";
+		displayName 																			= "Men (FORECON)";
 		author																					= "Article 2 Studios";
 		scope																					= 2;
 		scopeArsenal																			= 2;

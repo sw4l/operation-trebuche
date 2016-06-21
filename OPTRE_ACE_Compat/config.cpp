@@ -125,13 +125,6 @@ class CfgWeapons
         ACE_barrelTwist=482.70001;
         ACE_barrelLength=1062.6;
     };
-    class OPTRE_SRS99_Scope: ItemCore
-    {
-		ace_scopeAdjust_vertical[] = {-4, 30};  // Maxmimum vertical adjustment limits
-		ace_scopeAdjust_horizontal[] = {-6, 6};  // Maximum horizontal adjustment limits
-		ace_scopeAdjust_verticalIncrement = 0.1;  // Vertical increment
-		ace_scopeAdjust_horizontalIncrement = 0.1;  // Horizontal increment
-    };
     class OPTRE_UNSC_ODST_Helmet_Base: H_helmetB
     {
         ace_hearing_protection = 1;

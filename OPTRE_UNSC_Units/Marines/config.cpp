@@ -643,6 +643,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]   									= {"OPTRE_UNSC_Units\Marines\data\vest_marines_co.paa","OPTRE_UNSC_Units\Marines\data\addons_marines_co.paa","OPTRE_UNSC_Units\Army\data\pouches_khaki_co.paa"};
 		class ItemInfo: ItemInfo
 		{
+			vesttype													= "rebreather";
 			hiddenSelections[]   										= {"camo1","camo2","camo3","attach_knife","attach_ghillie"};
 			hiddenSelectionsTextures[]   								= {"OPTRE_UNSC_Units\Marines\data\vest_marines_co.paa","OPTRE_UNSC_Units\Marines\data\addons_marines_co.paa","OPTRE_UNSC_Units\Army\data\pouches_khaki_co.paa"};
 			class HitpointsProtectionInfo

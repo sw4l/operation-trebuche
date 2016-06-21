@@ -510,6 +510,19 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
+	class Land_OPTRE_Exhaust_Vent: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\CityObjects\OPTRE_Exhaust_Vent";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Industrial Exhaust Vent";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+	};
+
 	/*class Land_RTG_Crane: House_F
 	{
 		dlc = "OPTRE";

@@ -307,7 +307,7 @@ class CfgVehicles
 		vehicleClass = "OPTRE_City_Building_class";
 		armor = 75;
 		armorStructural = 4;
-		scope=2;
+		scope=1;
 		displayName="Fusion Coil (PLACEHOLDER!)";
 		destrType="DestructBuilding";
 		editorCategory = "OPTRE_EditorCategory_Objects";
@@ -373,6 +373,19 @@ class CfgVehicles
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
+	
+	class Land_OPTRE_IV_Drip: Items_base_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Military\OPTRE_IV_Drip";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 5;
+		armorStructural = 1;
+		scope=2;
+		displayName="IV Drip";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
+	};
 
 
 
@@ -390,7 +403,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 
-		class Land_OPTRE_blast_barrier_dam: House_F
+	class Land_OPTRE_blast_barrier_dam: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\OPTRE_blast_barrier_dam";
@@ -416,7 +429,7 @@ class CfgVehicles
 		};
 	};
 	
-		class Land_OPTRE_blast_barrier: House_F
+	class Land_OPTRE_blast_barrier: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\OPTRE_blast_barrier";
