@@ -41,7 +41,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayName = "Street Light (Off)";
 		model = "\OPTRE_Buildings\Citylights\Colony_Light_Street_off.p3d";
-		armor = 500;
+		armor = 300;
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Light";
 	};
@@ -54,7 +54,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayName = "Street Light (On)";
 		model = "\OPTRE_Buildings\Citylights\Colony_Light_Street.p3d";
-		armor = 500;
+		armor = 300;
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Light";
 		class Reflectors

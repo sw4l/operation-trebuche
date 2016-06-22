@@ -374,6 +374,58 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 
+	class Land_OPTRE_warthog_tire: Items_base_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Military\OPTRE_warthog_tire";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 55;
+		armorStructural = 5;
+		scope=2;
+		displayName="Warthog Tire";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
+	};
+	
+	class Land_OPTRE_field_bunk_closed: Items_base_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Military\OPTRE_field_bunk_closed";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 555;
+		armorStructural = 5;
+		scope=2;
+		displayName="Field Bunk (Closed)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
+	};
+	
+	class Land_OPTRE_field_bunk_open: Items_base_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Military\OPTRE_field_bunk_open";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 555;
+		armorStructural = 5;
+		scope=2;
+		displayName="Field Bunk (Open)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
+	};
+	
+	class Land_OPTRE_field_bunk_double: Items_base_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Military\OPTRE_field_bunk_double";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 1055;
+		armorStructural = 5;
+		scope=2;
+		displayName="Field Bunk (Double)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
+	};
+	
 	class Land_OPTRE_IV_Drip: Items_base_F
 	{
 		dlc = "OPTRE";

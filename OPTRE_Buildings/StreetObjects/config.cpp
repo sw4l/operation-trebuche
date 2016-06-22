@@ -13,6 +13,7 @@ class CfgVehicles
 {
 	class Land_Castle_01_step_F;
 	class RoadCone_F;
+	class Land_Colony_Light_Street_Off;
 	class Helipad_base_F;
 	class Items_base_F;
 	
@@ -111,13 +112,6 @@ class CfgVehicles
 		model = "\OPTRE_buildings\streetobjects\4way_intersection.p3d";
 		author = "Article 2 Studios";
 	};
-	class Land_OPTRE_Traffic_Light: Land_sidewalk_wide_short
-	{
-		dlc = "OPTRE";
-		displayName = "Traffic Light";
-		model = "\OPTRE_buildings\streetobjects\OPTRE_Traffic_Light.p3d";
-		author = "Article 2 Studios";
-	};
 	class Land_main_road_short: Helipad_base_F
 	{
 		dlc = "OPTRE";
@@ -157,6 +151,102 @@ class CfgVehicles
 		displayName="Traffic Cone";
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+	};
+	class Land_OPTRE_Traffic_light_single_off: Land_Colony_Light_Street_off
+	{
+		dlc = "OPTRE";
+		author = "Article 2 Studios";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Traffic Light (Single/Off)";
+		model = "\OPTRE_Buildings\streetobjects\OPTRE_Traffic_light_single_off.p3d";
+		armor = 300;
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
+	};
+	class Land_OPTRE_Traffic_light_single_p1: Land_OPTRE_Traffic_light_single_off
+	{
+		dlc = "OPTRE";
+		author = "Article 2 Studios";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Traffic Light (Single/Phase 1)";
+		model = "\OPTRE_Buildings\streetobjects\OPTRE_Traffic_light_single_p1.p3d";
+		armor = 300;
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
+	};
+	class Land_OPTRE_Traffic_light_single_p2: Land_OPTRE_Traffic_light_single_off
+	{
+		dlc = "OPTRE";
+		author = "Article 2 Studios";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Traffic Light (Single/Phase 2)";
+		model = "\OPTRE_Buildings\streetobjects\OPTRE_Traffic_light_single_p2.p3d";
+		armor = 300;
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
+	};
+	class Land_OPTRE_Traffic_light_single_flash: Land_OPTRE_Traffic_light_single_off
+	{
+		dlc = "OPTRE";
+		author = "Article 2 Studios";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Traffic Light (Single/Flashing)";
+		model = "\OPTRE_Buildings\streetobjects\OPTRE_Traffic_light_single_flash.p3d";
+		armor = 300;
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
+	};
+	class Land_OPTRE_Traffic_light_double_off: Land_Colony_Light_Street_off
+	{
+		dlc = "OPTRE";
+		author = "Article 2 Studios";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Traffic Light (Double/Off)";
+		model = "\OPTRE_Buildings\streetobjects\OPTRE_Traffic_light_double_off.p3d";
+		armor = 300;
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
+	};
+	class Land_OPTRE_Traffic_light_double_p1: Land_OPTRE_Traffic_light_double_off
+	{
+		dlc = "OPTRE";
+		author = "Article 2 Studios";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Traffic Light (Double/Phase 1)";
+		model = "\OPTRE_Buildings\streetobjects\OPTRE_Traffic_light_double_p1.p3d";
+		armor = 300;
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
+	};
+	class Land_OPTRE_Traffic_light_double_p2: Land_OPTRE_Traffic_light_double_off
+	{
+		dlc = "OPTRE";
+		author = "Article 2 Studios";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Traffic Light (Double/Phase 2)";
+		model = "\OPTRE_Buildings\streetobjects\OPTRE_Traffic_light_double_p2.p3d";
+		armor = 300;
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
+	};
+	class Land_OPTRE_Traffic_light_double_flash: Land_OPTRE_Traffic_light_double_off
+	{
+		dlc = "OPTRE";
+		author = "Article 2 Studios";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Traffic Light (Double/Flashing)";
+		model = "\OPTRE_Buildings\streetobjects\OPTRE_Traffic_light_double_flash.p3d";
+		armor = 300;
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
 	};
 };
 
