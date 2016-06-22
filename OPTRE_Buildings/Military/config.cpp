@@ -373,7 +373,7 @@ class CfgVehicles
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
-	
+
 	class Land_OPTRE_IV_Drip: Items_base_F
 	{
 		dlc = "OPTRE";
@@ -386,9 +386,6 @@ class CfgVehicles
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
-
-
-
 
 	class Land_OPTRE_blast_barrier_dest: House_F
 	{

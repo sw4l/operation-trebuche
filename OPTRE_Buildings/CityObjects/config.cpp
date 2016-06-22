@@ -67,6 +67,97 @@ class CfgVehicles
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
+	
+	class Land_Ped_Bridge_Mid_Over: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_Mid_Over";
+		vehicleClass = "OPTRE_City_Objects_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Pedestrian Bridge (Middle/Unsupported)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+	};
+
+	class Land_Ped_Bridge_Single_Mid: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_Single_Mid";
+		vehicleClass = "OPTRE_City_Objects_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Pedestrian Bridge (Single/Middle)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+	};
+	
+	class Land_Ped_Bridge_Single_End: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_Single_End";
+		vehicleClass = "OPTRE_City_Objects_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Pedestrian Bridge (Single/End)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+	};
+	
+	class Land_Ped_Bridge_T_Int: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_T_Int";
+		vehicleClass = "OPTRE_City_Objects_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Pedestrian Bridge (T Intersection)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+	};
+
+	class Land_Ped_Bridge_Int: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_Int";
+		vehicleClass = "OPTRE_City_Objects_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Pedestrian Bridge (Intersection)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+	};
+	
+	class Land_Ped_Bridge_DoubleT_Int: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_DoubleT_Int";
+		vehicleClass = "OPTRE_City_Objects_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Pedestrian Bridge (Double T Intersection)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+	};
+
+	class Land_Ped_Bridge_Double_Int: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_Double_Int";
+		vehicleClass = "OPTRE_City_Objects_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Pedestrian Bridge (Double Intersection)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+	};
 		
 	class Land_Rectangular_Plant_Box: House_F
 	{
@@ -198,6 +289,19 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
+	class Land_Advert_V_Offline: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\CityObjects\Advert_V_Offline";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Street Advertisement (Offline)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+	};
+	
 	class Land_Advert_V_AMG: House_F
 	{
 		dlc = "OPTRE";
@@ -509,7 +613,7 @@ class CfgVehicles
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
-
+	
 	class Land_OPTRE_Exhaust_Vent: House_F
 	{
 		dlc = "OPTRE";

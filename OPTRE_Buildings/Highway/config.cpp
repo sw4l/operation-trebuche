@@ -214,8 +214,70 @@ class CfgVehicles
 		armor = 999999;
 		armorStructural = 999;
 		vehicleClass = "OPTRE_Trans_Building_class";
-		displayName = "Highway Gate (A)";
+		displayName = "Highway Gate (Open)";
 		model = "\OPTRE_buildings\Highway\Highway_gate_a.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Highway";
+		class AnimationSources
+		{
+			class gate_door_1				/// the class name is later used in model.cfg
+			{
+				source = "user";	/// user source means it is waiting on some scripting input
+				animPeriod = 20;		/// how long does it take to change value from 0 to 1 (or vice versa)
+				initPhase = 1;		/// what value does it have while creating the vehicle
+				sound = "ServoRampSound_2";
+			};
+			class gate_door_2				/// the class name is later used in model.cfg
+			{
+				source = "user";	/// user source means it is waiting on some scripting input
+				animPeriod = 20;		/// how long does it take to change value from 0 to 1 (or vice versa)
+				initPhase = 1;		/// what value does it have while creating the vehicle
+				sound = "ServoRampSound_2";
+			};
+		};
+		//This section defined custom actions for action menu. Each class defined here represent one action. Here we have Open+Close pairs of action for each door (1-5)
+		class UserActions
+		{
+			class RampOpen
+			{
+				userActionID = 62;	
+				displayName = "Open Gate";
+				displayNameDefault = "Open Gate";
+				textToolTip = "Open Gate";
+				position = "switches";
+				radius = 10;
+				priority = 2;
+				onlyForPlayer = 1;
+				condition = "((this animationPhase ""Door_1_rot"" < 0.5) AND (this animationPhase ""Door_2_rot"" < 0.5))";
+				statement = "this animate [""lock_1_rot"",1]; this animate [""lock_2_rot"",1]; this animate [""Door_1_rot"",1]; this animate [""Door_2_rot"",1]; this animate [""lights_green_hide"",1]";
+				animPeriod = 1;
+            };
+            class RampClose: RampOpen
+            {
+				userActionID = 63;
+				displayName = "Close Gate";
+				displayNameDefault = "Close Gate";
+				textToolTip = "Close Gate";
+				priority = 2;
+				condition = "((this animationPhase ""Door_1_rot"" > 0.5) AND (this animationPhase ""Door_2_rot"" > 0.5))";
+				statement = "this animate [""Door_1_rot"",0]; this animate [""Door_2_rot"",0];this animate [""lock_1_rot"",0]; this animate [""lock_2_rot"",0]";
+				animPeriod = 1;
+            };
+		};
+	};
+	
+	class Land_Highway_gate_B: Land_Highway_gate_A
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 2;
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_Trans_Building_class";
+		displayName = "Highway Gate (Closed)";
+		model = "\OPTRE_buildings\Highway\Highway_gate_b.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
 		editorCategory = "OPTRE_EditorCategory_Buildings";
@@ -268,6 +330,22 @@ class CfgVehicles
 		};
 	};
 	
+	class Land_Highway_gate_locked: Land_Highway_gate_A
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 2;
+		armor = 999999;
+		armorStructural = 999;
+		vehicleClass = "OPTRE_Trans_Building_class";
+		displayName = "Highway Gate (A/Locked)";
+		model = "\OPTRE_buildings\Highway\Highway_gate_locked.p3d";
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Highway";
+		class UserActions {};
+	};
 	class Land_Highway_gate_house_a: House_F
 	{
 		dlc = "OPTRE";
