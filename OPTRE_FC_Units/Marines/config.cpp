@@ -120,6 +120,7 @@ class CfgVehicles
 		scopeCurator													= 0;
 		author															= "Article 2 Studios";
 		model															= "\OPTRE_FC_Units\Marines\h3_uniform_light.p3d";
+		uniformClass													= "OPTRE_FC_Marines_Uniform_L";
 		linkedItems[] 													= {"OPTRE_FC_Marines_Vest_L","OPTRE_FC_Marines_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		respawnLinkedItems[] 											= {"OPTRE_FC_Marines_Vest_L","OPTRE_FC_Marines_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 	};
@@ -128,6 +129,7 @@ class CfgVehicles
 		dlc = "OPTRE";
 		author															= "Article 2 Studios";
 		model															= "\OPTRE_FC_Units\Marines\h3_uniform_light_s.p3d";
+		uniformClass													= "OPTRE_FC_Marines_Uniform_LS";
 	};
 	// BASE UNITS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
