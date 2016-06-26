@@ -1,2 +1,0 @@
-make rvmats
-flex model to fit mesh of base a3 man
