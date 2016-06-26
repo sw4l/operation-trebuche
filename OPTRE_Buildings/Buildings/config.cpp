@@ -222,6 +222,19 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Civilian";
 	};
 	
+	class Land_Garage_UnCovered_b: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\buildings\Garage_UnCovered";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Parking Garage (Open v2)";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Civilian";
+	};
+	
 	/*class Land_OPTRE_Garage_Covered: House_F
 	{
 		dlc = "OPTRE";
@@ -555,6 +568,58 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="Round Office (Part B)";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Civilian";
+	};
+	
+	class Land_OPTRE_mod_building_civ: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\buildings\OPTRE_mod_building_civ";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Large Modular Shack (Orange)";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Civilian";
+	};
+	
+	class Land_OPTRE_mod_building_white: class Land_OPTRE_mod_building_civ
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\buildings\OPTRE_mod_building_white";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Large Modular Shack (White)";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Civilian";
+	};
+	
+	class Land_OPTRE_mod_building_grey: class Land_OPTRE_mod_building_civ
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\buildings\OPTRE_mod_building_grey";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Large Modular Shack (Grey)";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Civilian";
+	};
+	
+	class Land_OPTRE_mod_building_green: class Land_OPTRE_mod_building_civ
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\buildings\OPTRE_mod_building_green";
+		vehicleClass = "OPTRE_City_Building_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="Large Modular Shack (Green)";
 		editorCategory = "OPTRE_EditorCategory_Buildings";
 		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Civilian";
 	};

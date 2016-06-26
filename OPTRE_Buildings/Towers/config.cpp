@@ -92,7 +92,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Skyscraper";
 	};
 	
-	/*class Land_Can_Tower2: House_F
+	class Land_Can_Tower2: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Towers\Can_Tower2";
@@ -116,7 +116,7 @@ class CfgVehicles
 		displayName="Can Tower 3";
 		editorCategory = "OPTRE_EditorCategory_Buildings";
 		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Skyscraper";
-	};*/
+	};
 	
 	class Land_J_Tower_a: House_F
 	{

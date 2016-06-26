@@ -627,7 +627,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
-	/*class Land_RTG_Crane: House_F
+	class Land_RTG_Crane: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\RTG_Crane";
@@ -638,9 +638,9 @@ class CfgVehicles
 		displayName="RTG Crane";
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
-	};*/
+	};
 
-	/*class Land_RTG_Crane_Lowered: House_F
+	class Land_RTG_Crane_Lowered: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\RTG_Crane_Lowered";
@@ -651,5 +651,5 @@ class CfgVehicles
 		displayName="RTG Crane (Lowered)";
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
-	};*/
+	};
 };
