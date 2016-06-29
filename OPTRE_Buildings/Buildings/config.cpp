@@ -92,7 +92,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Civilian";
 	};*/
 	
-	/*class Land_Industrial_Office: House_F
+	class Land_Industrial_Office: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\buildings\Industrial_Office";
@@ -103,7 +103,7 @@ class CfgVehicles
 		displayName="Industrial Office";
 		editorCategory = "OPTRE_EditorCategory_Buildings";
 		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Civilian";
-	};*/
+	};
 
 	class Land_Building_sApartment: House_F
 	{
@@ -585,7 +585,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Civilian";
 	};
 	
-	class Land_OPTRE_mod_building_white: class Land_OPTRE_mod_building_civ
+	class Land_OPTRE_mod_building_white: Land_OPTRE_mod_building_civ
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\buildings\OPTRE_mod_building_white";
@@ -598,7 +598,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Civilian";
 	};
 	
-	class Land_OPTRE_mod_building_grey: class Land_OPTRE_mod_building_civ
+	class Land_OPTRE_mod_building_grey: Land_OPTRE_mod_building_civ
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\buildings\OPTRE_mod_building_grey";
@@ -611,7 +611,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Civilian";
 	};
 	
-	class Land_OPTRE_mod_building_green: class Land_OPTRE_mod_building_civ
+	class Land_OPTRE_mod_building_green: Land_OPTRE_mod_building_civ
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\buildings\OPTRE_mod_building_green";
