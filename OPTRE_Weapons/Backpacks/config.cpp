@@ -48,15 +48,10 @@ class cfgVehicles
 		{
 				dlc = "OPTRE";
 				scope 												= 2;
-				isbackpack 											= 1;
 				picture 											= "\OPTRE_weapons\backpacks\icons\rucksack_black.paa";
-				transportMaxWeapons 								= 0;
-				transportMaxMagazines 								= 0;
                 displayName 										= "[UNSC] S12 SOLA Jetpack";
                 model 												= "\OPTRE_weapons\backpacks\jetpack.p3d";
-				vehicleClass 										= "OPTRE_UNSC_Backpack_class";
-				allowedSlots[] 										= {901};
-				maximumLoad 										= 0;
+				maximumLoad 										= 1;
 				mass 												= 60;
 		};
         class OPTRE_S12_SOLA_Jetpack_On : OPTRE_S12_SOLA_Jetpack 
@@ -70,17 +65,10 @@ class cfgVehicles
         class OPTRE_Fury_Backpack_Nuke : OPTRE_ILCS_Rucksack_Black 
 		{
 				dlc = "OPTRE";
-				scope 												= 2;
-				isbackpack 											= 1;
 				picture 											= "\OPTRE_weapons\backpacks\icons\rucksack_black.paa";
-				transportMaxWeapons 								= 0;
-				transportMaxMagazines 								= 0;
-				class DestructionEffects{};
                 displayName 										= "[UNSC] Fury Portable Nuclear Device";
                 model 												= "\OPTRE_weapons\backpacks\fury.p3d";
-				vehicleClass 										= "OPTRE_UNSC_Backpack_class";
-				allowedSlots[] 										= {901};
-				maximumLoad 										= 0;
+				maximumLoad 										= 1;
 				mass 												= 100;
         };
 		class OPTRE_ILCS_Rucksack_Black_Pouches : OPTRE_ILCS_Rucksack_Black

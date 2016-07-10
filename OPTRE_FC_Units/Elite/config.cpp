@@ -80,6 +80,7 @@ class CfgVehicles //This configures units and backpacks
 		scope															= 1;
 		scopeCurator													= 0;
 		faction															= "OPTRE_FC_Covenant";
+		side															= 0;
 		author															= "Article 2 Studios";
 		displayName														= "-";
 		vehicleClass													= "OPTRE_FC_Infantry_class";

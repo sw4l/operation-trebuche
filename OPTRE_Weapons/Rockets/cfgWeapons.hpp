@@ -34,7 +34,7 @@ class CfgWeapons
 		handAnim[]={"OFP2_ManSkeleton","\OPTRE_Weapons\Rockets\Data\Anim\m41_hand_anim.rtm"};
 		drysound[] = {"A3\sounds_f\weapons\other\dry6", 0.0316228, 1, 10};
 		soundfly[] = {"A3\sounds_f\weapons\rockets\rocket_fly_1", 0.316228, 1.5, 700};
-		modelOptics = "\A3\Weapons_F\acc\reticle_NLAW.p3d";
+		modelOptics = "\OPTRE_Weapons\Rockets\M41_Optic.p3d";
 		recoil = "recoil_single_law";
 		aiRateOfFire = 5.0;	// delay between shots at given distance
 		aiRateOfFireDistance = 250;

@@ -641,7 +641,7 @@ class CfgVehicles
 		
 		class UserActions
 		{
-			class RampOpen
+			/*class RampOpen
 			{
 				userActionID = 60;	
 				displayName = "Open Ramp";
@@ -664,26 +664,6 @@ class CfgVehicles
 				priority = 2;
 				condition = "((this animationPhase ""ramp_anim"" > 0.5) AND (alive this))"; /// only openable from inside and when closed
 				statement = "this animate [""ramp_anim"",0];";
-            };
-            /*class BayOpen: RampOpen
-            {
-				userActionID = 62;
-				displayName = "Open Weapons Bay";
-				displayNameDefault = "Open Weapons Bay";
-				textToolTip = "Open Weapons Bay";
-				priority = 2;
-				condition = "((this animationPhase ""leftbay_anim"" > 0.5) AND (this animationPhase ""rightbay_anim"" > 0.5) AND (alive this))"; /// only openable from inside and when closed
-				statement = "this animate [""leftbay_anim"",0]; this animate [""rightbay_anim"",0];";
-            };
-            class BayClose: RampOpen
-            {
-				userActionID = 63;
-				displayName = "Close Weapons Bay";
-				displayNameDefault = "Close Weapons Bay";
-				textToolTip = "Close Weapons Bay";
-				priority = 2;
-				condition = "((this animationPhase ""leftbay_anim"" < 0.5) AND (this animationPhase ""rightbay_anim"" < 0.5) AND (alive this))"; /// only openable from inside and when closed
-				statement = "this animate [""leftbay_anim"",1]; this animate [""rightbay_anim"",1];";
             };*/
 		};
 		class ViewPilot: ViewPilot 	/// describes what does the pilot see using bare eyes

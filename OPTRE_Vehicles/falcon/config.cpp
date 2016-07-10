@@ -692,33 +692,6 @@ class CfgVehicles
 		weapons[] = {"CMFlareLauncher","Laserdesignator_mounted"};	/// array of various vehicle weapons mounted on the heli
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"}; /// array of corresponding magazines
 	};
-	class OPTRE_UNSC_falcon_CMA: OPTRE_UNSC_falcon_green
-	{
-		side = 2;					/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
-		vehicleClass = "OPTRE_CMA_Air_class";
-		author="Article 2 Studios";
-		faction	= "OPTRE_CAA";			/// defines the faction inside of the side
-		crew = "OPTRE_CMA_Pilot_WDL";	/// lets use the sample soldier we have as default captain of the boat
-		displayName = "UH-144 Falcon (CMA)";
-	};
-	class OPTRE_UNSC_falcon_CMADES: OPTRE_UNSC_falcon_tan
-	{
-		side = 2;					/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
-		vehicleClass = "OPTRE_CMA_Air_class";
-		author="Article 2 Studios";
-		faction	= "OPTRE_CAA";			/// defines the faction inside of the side
-		crew = "OPTRE_CMA_Pilot_DES";	/// lets use the sample soldier we have as default captain of the boat
-		displayName = "UH-144 Falcon (CMA / Tan)";
-	};
-	class OPTRE_UNSC_falcon_CMASNO: OPTRE_UNSC_falcon_snow
-	{
-		side = 2;					/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
-		vehicleClass = "OPTRE_CMA_Air_class";
-		author="Article 2 Studios";
-		faction	= "OPTRE_CAA";			/// defines the faction inside of the side
-		crew = "OPTRE_CMA_Pilot_SNO";	/// lets use the sample soldier we have as default captain of the boat
-		displayName = "UH-144 Falcon (CMA / Snow)";
-	};
 	
 	class PlaneWreck;
 	class OPTRE_Objects_Wreck_Falcon: PlaneWreck

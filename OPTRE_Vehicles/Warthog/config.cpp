@@ -472,33 +472,6 @@ class CfgVehicles
 		crew							= "OPTRE_PD_Soldier_Officer";
 		faction							= "OPTRE_PD";
 	};
-	class OPTRE_M12_FAV_CMA: OPTRE_M12_FAV
-	{
-		displayName						= "M12 FAV Warthog (Unarmed) [CMA]";
-		author							= "Article 2 Studios";
-		vehicleClass					= "OPTRE_CMA_Vehicle_class";
-		side							= 2;
-		crew							= "OPTRE_CMA_Soldier_Rifleman_WDL";
-		faction							= "OPTRE_CAA";
-	};
-	class OPTRE_M12_FAV_CMADES: OPTRE_M12_FAV_tan
-	{
-		displayName						= "M12 FAV Warthog (Unarmed) [CMA / Tan]";
-		author							= "Article 2 Studios";
-		vehicleClass					= "OPTRE_CMA_Vehicle_class";
-		side							= 2;
-		crew							= "OPTRE_CMA_Soldier_Rifleman_DES";
-		faction							= "OPTRE_CAA";
-	};
-	class OPTRE_M12_FAV_CMASNO: OPTRE_M12_FAV_snow
-	{
-		displayName						= "M12 FAV Warthog (Unarmed) [CMA / Snow]";
-		author							= "Article 2 Studios";
-		vehicleClass					= "OPTRE_CMA_Vehicle_class";
-		side							= 2;
-		crew							= "OPTRE_CMA_Soldier_Rifleman_SNO";
-		faction							= "OPTRE_CAA";
-	};
 	
 	///troop hog
 	
@@ -652,33 +625,6 @@ class CfgVehicles
 		displayName						= "M831 TT Warthog (Transport) [Marine]";
 		crew							= "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		author							= "Article 2 Studios";
-	};
-	class OPTRE_M813_TT_CMA: OPTRE_M813_TT
-	{
-		displayName						= "M831 TT Warthog (Transport) [CMA]";
-		author							= "Article 2 Studios";
-		vehicleClass					= "OPTRE_CMA_Vehicle_class";
-		side							= 2;
-		crew							= "OPTRE_CMA_Soldier_Rifleman_WDL";
-		faction							= "OPTRE_CAA";
-	};
-	class OPTRE_M813_TT_CMADES: OPTRE_M813_TT_tan
-	{
-		displayName						= "M831 TT Warthog (Transport) [CMA / Tan]";
-		author							= "Article 2 Studios";
-		vehicleClass					= "OPTRE_CMA_Vehicle_class";
-		side							= 2;
-		crew							= "OPTRE_CMA_Soldier_Rifleman_DES";
-		faction							= "OPTRE_CAA";
-	};
-	class OPTRE_M813_TT_CMASNO: OPTRE_M813_TT_snow
-	{
-		displayName						= "M831 TT Warthog (Transport) [CMA / Snow]";
-		author							= "Article 2 Studios";
-		vehicleClass					= "OPTRE_CMA_Vehicle_class";
-		side							= 2;
-		crew							= "OPTRE_CMA_Soldier_Rifleman_SNO";
-		faction							= "OPTRE_CAA";
 	};
 	
 	/// MG hog
@@ -876,33 +822,6 @@ class CfgVehicles
 		crew							= "OPTRE_Ins_URF_Rifleman_BR";
 		faction							= "OPTRE_Ins";
 	};
-	class OPTRE_M12_LRV_CMA: OPTRE_M12_LRV
-	{
-		displayName						= "M12 LRV Warthog (MG) [CMA]";
-		author							= "Article 2 Studios";
-		vehicleClass					= "OPTRE_CMA_Vehicle_class";
-		side							= 2;
-		crew							= "OPTRE_CMA_Soldier_Rifleman_WDL";
-		faction							= "OPTRE_CAA";
-	};
-	class OPTRE_M12_LRV_CMADES: OPTRE_M12_LRV_tan
-	{
-		displayName						= "M12 LRV Warthog (MG) [CMA / Tan]";
-		author							= "Article 2 Studios";
-		vehicleClass					= "OPTRE_CMA_Vehicle_class";
-		side							= 2;
-		crew							= "OPTRE_CMA_Soldier_Rifleman_DES";
-		faction							= "OPTRE_CAA";
-	};
-	class OPTRE_M12_LRV_CMASNO: OPTRE_M12_LRV_snow
-	{
-		displayName						= "M12 LRV Warthog (MG) [CMA / Snow]";
-		author							= "Article 2 Studios";
-		vehicleClass					= "OPTRE_CMA_Vehicle_class";
-		side							= 2;
-		crew							= "OPTRE_CMA_Soldier_Rifleman_SNO";
-		faction							= "OPTRE_CAA";
-	};
 	
 	/// gauss hog
 	
@@ -1097,33 +1016,6 @@ class CfgVehicles
 		crew							= "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		author							= "Article 2 Studios";
 	};
-	class OPTRE_M12G1_LRV_CMA: OPTRE_M12G1_LRV
-	{
-		displayName						= "M12G1 Warthog (Gauss) [CMA]";
-		author							= "Article 2 Studios";
-		vehicleClass					= "OPTRE_CMA_Vehicle_class";
-		side							= 2;
-		crew							= "OPTRE_CMA_Soldier_Rifleman_WDL";
-		faction							= "OPTRE_CAA";
-	};
-	class OPTRE_M12G1_LRV_CMADES: OPTRE_M12G1_LRV_tan
-	{
-		displayName						= "M12G1 Warthog (Gauss) [CMA / Tan]";
-		author							= "Article 2 Studios";
-		vehicleClass					= "OPTRE_CMA_Vehicle_class";
-		side							= 2;
-		crew							= "OPTRE_CMA_Soldier_Rifleman_DES";
-		faction							= "OPTRE_CAA";
-	};
-	class OPTRE_M12G1_LRV_CMASNO: OPTRE_M12G1_LRV_snow
-	{
-		displayName						= "M12G1 Warthog (Gauss) [CMA / Snow]";
-		author							= "Article 2 Studios";
-		vehicleClass					= "OPTRE_CMA_Vehicle_class";
-		side							= 2;
-		crew							= "OPTRE_CMA_Soldier_Rifleman_SNO";
-		faction							= "OPTRE_CAA";
-	};
 	
 	/// rocket hog
 	
@@ -1314,33 +1206,6 @@ class CfgVehicles
 		side							= 0;
 		crew							= "OPTRE_Ins_URF_Rifleman_AR";
 		faction							= "OPTRE_Ins";
-	};
-	class OPTRE_M12A1_LRV_CMA: OPTRE_M12A1_LRV
-	{
-		displayName						= "M12A1 Warthog (Rocket) [CMA]";
-		author							= "Article 2 Studios";
-		vehicleClass					= "OPTRE_CMA_Vehicle_class";
-		side							= 2;
-		crew							= "OPTRE_CMA_Soldier_Rifleman_WDL";
-		faction							= "OPTRE_CAA";
-	};
-	class OPTRE_M12A1_LRV_CMADES: OPTRE_M12A1_LRV_tan
-	{
-		displayName						= "M12A1 Warthog (Rocket) [CMA / Tan]";
-		author							= "Article 2 Studios";
-		vehicleClass					= "OPTRE_CMA_Vehicle_class";
-		side							= 2;
-		crew							= "OPTRE_CMA_Soldier_Rifleman_DES";
-		faction							= "OPTRE_CAA";
-	};
-	class OPTRE_M12A1_LRV_CMASNO: OPTRE_M12A1_LRV_snow
-	{
-		displayName						= "M12A1 Warthog (Rocket) [CMA / Snow]";
-		author							= "Article 2 Studios";
-		vehicleClass					= "OPTRE_CMA_Vehicle_class";
-		side							= 2;
-		crew							= "OPTRE_CMA_Soldier_Rifleman_SNO";
-		faction							= "OPTRE_CAA";
 	};
 	
 	/// AA hog
@@ -1564,33 +1429,6 @@ class CfgVehicles
 		side							= 0;
 		crew							= "OPTRE_Ins_URF_Rifleman_AR";
 		faction							= "OPTRE_Ins";
-	};
-	class OPTRE_M12R_AA_CMA: OPTRE_M12R_AA
-	{
-		displayName						= "M12R Warthog (AA) [CMA]";
-		author							= "Article 2 Studios";
-		vehicleClass					= "OPTRE_CMA_Vehicle_class";
-		side							= 2;
-		crew							= "OPTRE_CMA_Soldier_Rifleman_WDL";
-		faction							= "OPTRE_CAA";
-	};
-	class OPTRE_M12R_AA_CMADES: OPTRE_M12R_AA_tan
-	{
-		displayName						= "M12R Warthog (AA) [CMA / Tan]";
-		author							= "Article 2 Studios";
-		vehicleClass					= "OPTRE_CMA_Vehicle_class";
-		side							= 2;
-		crew							= "OPTRE_CMA_Soldier_Rifleman_DES";
-		faction							= "OPTRE_CAA";
-	};
-	class OPTRE_M12R_AA_CMASNO: OPTRE_M12R_AA_snow
-	{
-		displayName						= "M12R Warthog (AA) [CMA / Snow]";
-		author							= "Article 2 Studios";
-		vehicleClass					= "OPTRE_CMA_Vehicle_class";
-		side							= 2;
-		crew							= "OPTRE_CMA_Soldier_Rifleman_SNO";
-		faction							= "OPTRE_CAA";
 	};
 	
 	/// apc hog

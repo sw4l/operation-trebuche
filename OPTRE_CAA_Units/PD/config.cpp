@@ -154,11 +154,6 @@ class CfgVehicles
 				armor = 3;
 			};
 		};
-		armor= 2;//keep constant so that the hit point armor remains on the same scale
-		armorStructural= 0.4;// [*] must be adjusted for each model to achieve consistent total damage results
-		explosionShielding = 0.04;// [*] for consistent explosive damage after adjusting = ( armorStructural / 10 )
-		minTotalDamageThreshold = 0.001;//minimalHit for total damage
-		impactDamageMultiplier= 0.5;//multiplier for falling damage
 	};
 	// BASE UNITS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

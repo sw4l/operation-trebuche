@@ -395,12 +395,12 @@ class Mode_FullAuto;
 					class fullauto_medium: FullAuto
 					{
 						showToPlayer = 0;
-						burst = 3;
-						minRange = 2;
+						burst = 6;
+						minRange = 1;
 						minRangeProbab = 0.5;
-						midRange = 75;
+						midRange = 100;
 						midRangeProbab = 0.7;
-						maxRange = 100;
+						maxRange = 300;
 						maxRangeProbab = 0.05;
 						aiRateOfFire = 2.0;
 					};

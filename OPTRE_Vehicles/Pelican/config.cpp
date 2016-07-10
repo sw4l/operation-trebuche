@@ -559,7 +559,7 @@ class CfgVehicles
 				weapons[]={"Laserdesignator_mounted"};
 				magazines[]={"Laserbatteries"};	
 				minElev = -90;
-				maxElev = 38.2;
+				maxElev = 40;
 				initElev = -45;
 				minTurn = -180;
 				maxTurn = 180;
@@ -733,7 +733,7 @@ class CfgVehicles
 				statement = "this animate [""cargoDoor_1"",0]; this animate [""cargoDoor_2"",0]";
 				animPeriod = 5;
             };
-			class LightOn
+			/*class LightOn
 			{
 				userActionID = 62;	
 				displayName = "Interior Light On";
@@ -755,7 +755,7 @@ class CfgVehicles
 				position = cargo_door_handle;
 				condition = "((this getvariable [""OPTRE_Pelican_isLightOn"",false]) AND (player == driver this) AND (alive this))";
 				statement = "this execVM ""\OPTRE_Vehicles\Pelican\InteriorLightOff.sqf""";
-            };
+            };*/
 			class ThrusterEngage
 			{
 				userActionID = 64;	
@@ -953,11 +953,11 @@ class CfgVehicles
 				visionMode[]={"Normal","NVG","Ti"};
 				weapons[] = {"OPTRE_M370","CMFlareLauncher","Laserdesignator_mounted"};	/// array of various vehicle weapons mounted on the heli
 				magazines[] = {"250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","250Rnd_30mm_HE_shells","168Rnd_CMFlare_Chaff_Magazine","Laserbatteries"}; /// array of corresponding magazines
-				minElev = -80;
-				maxElev = 15;
+				minElev = -90;
+				maxElev = 30;
 				initElev = 0;
-				minTurn = -120;
-				maxTurn = 120;
+				minTurn = -180;
+				maxTurn = 180;
 				initTurn = 0;
 				stabilizedInAxes = "StabilizedInAxesBoth";
 				startEngine = 0;
