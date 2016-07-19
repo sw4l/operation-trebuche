@@ -87,10 +87,12 @@ class CfgVehicles
 		epeImpulseDamageCoef 								= 25;
 		armor												= 100;
 		cost												= 500000;
+		gunBeg[] = {"z_gunL_muzzle", "z_gunR_muzzle"};
+		gunEnd[] = {"z_gunL_chamber", "z_gunR_chamber"};
 		canFloat											= 1;
 		threat[]											= {0.8,0.6,0.3};
 		camouflage											= 4;
-		destrType											= "DestructBuilding";
+		destrType											= "DestructWreck";
 		ejectDeadDriver 									= 1;
 		hideWeaponsDriver 									= 1;
 		class Turrets{};
@@ -164,6 +166,8 @@ class CfgVehicles
 		maxFordingDepth 									= 1;
 		getInAction											= "GetInMRAP_01";
 		getOutAction										= "GetOutMRAP_01";
+		driverLeftHandAnimName								= "";
+		driverRightHandAnimName								= "";
 		commanderCanSee										= 31;
 		driverDoor											= "";
 		cargoDoors[]										= {};

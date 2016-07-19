@@ -13,11 +13,11 @@ class CfgWeapons
     class EBR_Base_F;
     class OPTRE_FC_Energy_Sword: EBR_Base_F
     {
-        scope                                                                   = 1;
-        scopeArsenal                                                            = 0;
+        scope                                                                   = 2;
+        scopeArsenal                                                            = 2;
         //handAnim[]                                                            = {"OFP2_ManSkeleton", "\OPTRE_FC_Weapons\EnergySword\data\anim\handanim.rtm"};
         model                                                                   = "\OPTRE_FC_Weapons\EnergySword\EnergySword.p3d";
-        displayName                                                             = "Type-1 Energy Sword";
+        displayName                                                             = "[Covenant] Type-1 Energy Sword";
         descriptionShort                                                        = "Covenant Energy Sword";
         //picture 																= "\OPTRE_FC_Weapons\PlasmaPistol\icons\PlasmaRifle_ca.paa";
 		//drySound[] 															= {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};

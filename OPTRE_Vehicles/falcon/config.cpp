@@ -83,7 +83,7 @@ class CfgVehicles
 		accuracy = 0.5;											/// how hard it is to distinguish the type of the vehicle (bigger number means harder)
 		displayName = "Falcon"; 								/// how is the heli displayed in editor
 		model = "\OPTRE_vehicles\falcon\falcon.p3d"; 	/// path to model of the heli
-		driveOnComponent[] = {"Wheels"};
+		driveOnComponent[] = {"skid"};
 		author="Article 2 Studios";
 		icon = "OPTRE_Vehicles\Falcon\Data\icon.paa";	/// icon in map/editor
 		picture = "OPTRE_Vehicles\Falcon\Data\icon2.paa";	/// small picture in command menu

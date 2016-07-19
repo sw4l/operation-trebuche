@@ -8,10 +8,10 @@
 		maxSpeed									= 100;
 		fuelCapacity								= 1000;
 		wheelCircumference							= 3.924; //radius 1.962
-		antiRollbarForceCoef						= 100;
-		antiRollbarForceLimit 						= 100;
-		antiRollbarSpeedMin							= 20;
-		antiRollbarSpeedMax							= 80;
+		antiRollbarForceCoef						= 0.75;
+		antiRollbarForceLimit 						= 0.75;
+		antiRollbarSpeedMin							= 5;
+		antiRollbarSpeedMax							= 100;
 		idleRpm										= 800;
 		redRpm										= 4500;
 		slowSpeedForwardCoef						= 0.35;

@@ -91,27 +91,12 @@ class CfgWeapons
 			soundBegin[] = {"begin1",1};
 		};
 	};
-	class OPTRE_M79_MLRS: missiles_DAGR
+	class OPTRE_M79_MLRS: missiles_ASRAAM
 	{
 		displayName							= "M79 MLRS";
 		magazines[] 						= {"OPTRE_6Rnd_ASGM2_rockets"};
-		aiDispersionCoefY 					= 15.0;
-        aiDispersionCoefX 					= 20.0;
 		showAimCursorInternal 				= 1;
 		magazineReloadTime 					= 5;
-		weaponLockDelay 					= 1.5;
-		initFov 							= 0.75;
-		minFov 								= 0.375;
-		maxFov 								= 1.1;
-		cursor 								= "EmptyCursor";
-		cursorAim 							= "rocket";
-		class manual:RocketPods
-		{
-			displayName						= "M79 MLRS";
-			reloadTime						= 0.33;
-			dispersion						= 0;
-			sounds[]						= {"StandardSound"};
-		};
 	};
 	class OPTRE_missiles_Anvil1: missiles_DAR
 	{
@@ -330,6 +315,63 @@ class CfgWeapons
 			class StandardSound
 			{
 				begin1[] = {"A3\Sounds_F\weapons\gatling\gatling3",1.5,1,2000};
+				soundBegin[] = {"begin1",1};
+			};
+			soundContinuous = 0;
+			flash = "gunfire";
+			flashSize = 0.1;
+			recoil = "Empty";
+			aiDispersionCoefX = 8;
+			aiDispersionCoefY = 8;
+			ffMagnitude = 0.5;
+			ffFrequency = 11;
+			ffCount = 6;
+			minRange = 50;
+			minRangeProbab = 0.6;
+			midRange = 800;
+			midRangeProbab = 0.6;
+			maxRange = 1800;
+			dispersion = 0.005;
+			showToPlayer = 1;
+		};
+	};
+	class OPTRE_GUA23A: M134_minigun
+	{
+		displayName = "GUA-23/A Heavy Autocannon";
+		magazines[] = {"OPTRE_2000Rnd_20mm_HEIAP"};
+		holdsterAnimValue = 0;
+		ballisticsComputer = 4;
+		canLock = 1;
+		cursor = "EmptyCursor";
+		cursorAim = "mg";
+		nameSound = "cannon";
+		shotFromTurret = 0;
+		muzzlePos = "Usti hlavne1R";
+		muzzleEnd = "konec hlavne1R";
+		selectionFireAnim = "Usti hlavne1R";
+		autoFire = 1;
+		reloadTime = 0.1;
+		class GunParticles
+		{
+			class Effect
+			{
+				effectName = "MachineGun2";
+				positionName = "konec hlavne1R";
+				directionName = "Usti hlavne1R";
+			};
+		};
+		modes[]=
+		{
+			"LowROF"
+		};
+		class LowROF: Mode_FullAuto
+		{
+			displayName = "$STR_A3_CFGWEAPONS_CANNON_30MM";
+			reloadTime = 0.1;
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"A3\Sounds_F\weapons\30mm\30mm_st_01",1,1,2000};
 				soundBegin[] = {"begin1",1};
 			};
 			soundContinuous = 0;

@@ -15,12 +15,13 @@ class CfgWeapons
     {
         scope                                                                   = 2;
         scopeArsenal                                                            = 2;
+		type																	= 2;
         handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_FC_Weapons\PlasmaRifle\data\anim\handanim.rtm"};
         model                                                                   = "\OPTRE_FC_Weapons\PlasmaPistol\PlasmaPistol.p3d";
-        displayName                                                             = "Type-25 Directed Energy Pistol";
+        displayName                                                             = "[Covenant] Type-25 Directed Energy Pistol";
         descriptionShort                                                        = "Covenant Plasma Pistol";
         //picture 																= "\OPTRE_FC_Weapons\PlasmaPistol\icons\PlasmaRifle_ca.paa";
-		//drySound[] 																= {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
+		//drySound[] 															= {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};
 		reloadMagazineSound[] 													= {"\OPTRE_FC_Weapons\PlasmaRifle\data\sounds\reload.wss",1,1,50};
         magazines[]                                                             = {"OPTRE_FC_Plasma_Pistol_Battery"};
         modelOptics                                                             = "-";

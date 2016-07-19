@@ -521,7 +521,7 @@ class CfgAmmo
 	};
 	class OPTRE_B_20mm_HEIAP: B_35mm_AA_Tracer_Red
 	{
-		//Used by: M71 Scythe AA
+		//Used by: M71 Scythe AA, GUA23
 		airlock = 1;
 		hit = 75;
 		indirectHit = 4;

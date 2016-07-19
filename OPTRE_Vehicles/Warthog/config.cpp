@@ -1216,7 +1216,7 @@ class CfgVehicles
 		displayName 					= "M12R Warthog (AA)";
 		hiddenSelections[]				= {"camo1","camo2","clan","clan_text","insignia"};
 		hiddenSelectionsTextures[]		= {"OPTRE_Vehicles\Warthog\data\warthog_co.paa","OPTRE_Vehicles\Warthog\data\warthog_aa_co.paa"};
-		class RenderTargets
+		/*class RenderTargets
 		{
 			class FrontView
 			{
@@ -1278,14 +1278,9 @@ class CfgVehicles
 					fov					= 0.5;
 				};
 			};
-		};
-		memoryPointGun[] = {"Rocket_1","Rocket_2"};	
+		};*/
 		memoryPointLMissile = "Rocket_1";
 		memoryPointRMissile = "Rocket_2";
-		memoryPointLRocket = "Rocket_1";
-		memoryPointRRocket = "Rocket_2";
-		gunBeg[] = {"Rocket_1","Rocket_2"};
-		gunEnd[] = {"Rocket_1_dir","Rocket_2_dir"};
 		class AnimationSources: AnimationSources
 		{
 			class Missiles_revolving
@@ -1322,13 +1317,13 @@ class CfgVehicles
 				gun						= "maingun";
 				animationsourcebody		= "mainturret";
 				animationSourceGun		= "maingun";
-				memoryPointGun[] 		= {"Rocket_1","Rocket_2"};	
-				memoryPointLMissile 	= "Rocket_1";
-				memoryPointRMissile 	= "Rocket_2";
-				memoryPointLRocket 		= "Rocket_1";
-				memoryPointRRocket 		= "Rocket_2";
-				gunBeg					= "Rocket_1";
-				gunEnd					= "Rocket_1_dir";
+				memoryPointLMissile = "Rocket_1";
+				memoryPointRMissile = "Rocket_2";
+				memoryPointGun[]=
+				{
+					"Rocket_1",
+					"Rocket_2"
+				};
 				gunAxis					= "Osa Hlavne";
 				minElev					= -15;
 				maxElev					= 45;
@@ -1356,7 +1351,7 @@ class CfgVehicles
 				gunnerRightHandAnimName	= "trigger";
 				stabilizedInAxes 		= 3;
 				weapons[]				= {"OPTRE_M79_MLRS"};
-				magazines[] 			= {"OPTRE_6Rnd_65mm_rockets","OPTRE_6Rnd_65mm_rockets","OPTRE_6Rnd_65mm_rockets","OPTRE_6Rnd_65mm_rockets"};
+				magazines[] 			= {"OPTRE_6Rnd_ASGM2_rockets","OPTRE_6Rnd_ASGM2_rockets","OPTRE_6Rnd_ASGM2_rockets","OPTRE_6Rnd_ASGM2_rockets"};
 				memoryPointGunnerOptics	= "gunnerview";
 				memoryPointGunneroutOptics = "gunneroutview";
 				gunnerOpticsModel 		= "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";

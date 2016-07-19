@@ -778,6 +778,13 @@ class CfgMagazines
 		initSpeed 							= 0;
 		maxLeadSpeed 						= 1000;
 	};
+	class OPTRE_2000Rnd_20mm_HEIAP: 500Rnd_Cannon_30mm_Plane_CAS_02_F
+	{
+		author = "Article 2 Studios";
+		displayNameShort = "20mm HEIAP";
+		ammo = "OPTRE_B_20mm_HEIAP";
+		count = 2000;
+	};
 	class OPTRE_2500Rnd_50mm_HE: 500Rnd_Cannon_30mm_Plane_CAS_02_F
 	{
 		author = "Article 2 Studios";

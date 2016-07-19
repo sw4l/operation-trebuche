@@ -94,8 +94,8 @@ class CfgVehicles
 		respawnMagazines[]												= {};
 		linkedItems[] 													= {"OPTRE_FC_Marines_Vest","OPTRE_FC_Marines_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		respawnLinkedItems[] 											= {"OPTRE_FC_Marines_Vest","OPTRE_FC_Marines_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-		//hiddenSelections[] 											= {"camo1","camo2"}; //Determines what hiddenselections are enabled
-		//hiddenSelectionsTextures[] 									= {};
+		hiddenSelections[] 												= {"camo1","attach_nosleeves"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] 										= {"optre_fc_units\marines\data\h3_uniform_co.paa"};
 		class HitPoints: HitPoints
 		{
 			class HitArms: HitArms
@@ -116,20 +116,44 @@ class CfgVehicles
 	class OPTRE_FC_Marines_Soldier_L: OPTRE_FC_Marines_Soldier
 	{
 		dlc = "OPTRE";
-		scope															= 1;
-		scopeCurator													= 0;
 		author															= "Article 2 Studios";
-		model															= "\OPTRE_FC_Units\Marines\h3_uniform_light.p3d";
 		uniformClass													= "OPTRE_FC_Marines_Uniform_L";
 		linkedItems[] 													= {"OPTRE_FC_Marines_Vest_L","OPTRE_FC_Marines_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		respawnLinkedItems[] 											= {"OPTRE_FC_Marines_Vest_L","OPTRE_FC_Marines_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-	};
-	class OPTRE_FC_Marines_Soldier_LS: OPTRE_FC_Marines_Soldier_L
+		hiddenSelections[] 												= {"camo1","attach_kneepads","attach_sleeves"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] 										= {"optre_fc_units\marines\data\h3_uniform_co.paa"};
+	};	
+	class OPTRE_FC_Marines_Soldier_WDL: OPTRE_FC_Marines_Soldier
 	{
 		dlc = "OPTRE";
 		author															= "Article 2 Studios";
-		model															= "\OPTRE_FC_Units\Marines\h3_uniform_light_s.p3d";
-		uniformClass													= "OPTRE_FC_Marines_Uniform_LS";
+		uniformClass													= "OPTRE_FC_Marines_Uniform_WDL";
+		hiddenSelections[] 												= {"camo1","attach_nosleeves"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] 										= {"optre_fc_units\marines\data\h3_uniform_wdl_co.paa"};
+	};
+	class OPTRE_FC_Marines_Soldier_WDL_L: OPTRE_FC_Marines_Soldier_L
+	{
+		dlc = "OPTRE";
+		author															= "Article 2 Studios";
+		uniformClass													= "OPTRE_FC_Marines_Uniform_WDL_L";
+		hiddenSelections[] 												= {"camo1","attach_kneepads","attach_sleeves"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] 										= {"optre_fc_units\marines\data\h3_uniform_wdl_co.paa"};
+	};
+	class OPTRE_FC_Marines_Soldier_URB: OPTRE_FC_Marines_Soldier
+	{
+		dlc = "OPTRE";
+		author															= "Article 2 Studios";
+		uniformClass													= "OPTRE_FC_Marines_Uniform_URB";
+		hiddenSelections[] 												= {"camo1","attach_nosleeves"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] 										= {"optre_fc_units\marines\data\h3_uniform_urb_co.paa"};
+	};
+	class OPTRE_FC_Marines_Soldier_URB_L: OPTRE_FC_Marines_Soldier_L
+	{
+		dlc = "OPTRE";
+		author															= "Article 2 Studios";
+		uniformClass													= "OPTRE_FC_Marines_Uniform_URB_L";
+		hiddenSelections[] 												= {"camo1","attach_kneepads","attach_sleeves"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] 										= {"optre_fc_units\marines\data\h3_uniform_urb_co.paa"};
 	};
 	// BASE UNITS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -449,14 +473,44 @@ class cfgWeapons
 			mass														= 30;
 		};
 	};
-	class OPTRE_FC_Marines_Uniform_LS: OPTRE_FC_Marines_Uniform_L
+	class OPTRE_FC_Marines_Uniform_WDL: OPTRE_FC_Marines_Uniform
 	{
 		dlc = "OPTRE";
 		author															= "Article 2 Studios";
-		displayName														= "[UNSC] '31 Marine BDU (Light / Short-Sleeve)";
+		displayName														= "[UNSC] '31 Marine BDU [Woodland]";
 		class ItemInfo: ItemInfo
 		{
-			mass														= 30;
+			uniformClass												= "OPTRE_FC_Marines_Soldier_WDL";
+		};
+	};
+	class OPTRE_FC_Marines_Uniform_WDL_L: OPTRE_FC_Marines_Uniform_L
+	{
+		dlc = "OPTRE";
+		author															= "Article 2 Studios";
+		displayName														= "[UNSC] '31 Marine BDU (Light) [Woodland]";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass												= "OPTRE_FC_Marines_Soldier_WDL_L";
+		};
+	};
+	class OPTRE_FC_Marines_Uniform_URB: OPTRE_FC_Marines_Uniform
+	{
+		dlc = "OPTRE";
+		author															= "Article 2 Studios";
+		displayName														= "[UNSC] '31 Marine BDU [Urban]";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass												= "OPTRE_FC_Marines_Soldier_URB";
+		};
+	};
+	class OPTRE_FC_Marines_Uniform_URB_L: OPTRE_FC_Marines_Uniform_L
+	{
+		dlc = "OPTRE";
+		author															= "Article 2 Studios";
+		displayName														= "[UNSC] '31 Marine BDU (Light) [Urban]";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass												= "OPTRE_FC_Marines_Soldier_URB_L";
 		};
 	};
 	// UNIFORMS END
@@ -472,6 +526,7 @@ class cfgWeapons
 		displayName  													= "-";
 		picture   														= "\OPTRE_UNSC_Units\marines\icons\marine_vest.paa";
 		model   														= "\OPTRE_FC_Units\Marines\h3_vest.p3d";
+		hiddenSelections[] 												= {"attach_arms"};
 		class ItemInfo: VestItem 
 		{
 			uniformModel 												= "\OPTRE_FC_Units\Marines\h3_vest.p3d";
@@ -515,12 +570,10 @@ class cfgWeapons
 		scope 															= 2;
 		author															= "Article 2 Studios";
 		displayName  													= "[UNSC] M55 Body Armor";
-		//hiddenSelections[]   											= {"camo1"};
-		//hiddenSelectionsTextures[]   									= {};
+		hiddenSelections[] 												= {};
 		class ItemInfo: ItemInfo
 		{
-			//hiddenSelections[]   										= {"camo1"};
-			//hiddenSelectionsTextures[]   								= {};
+			hiddenSelections[]   										= {};
 		};
 	};
 	class OPTRE_FC_Marines_Vest_L: OPTRE_FC_Marines_Vest
@@ -528,10 +581,10 @@ class cfgWeapons
 		dlc = "OPTRE";	
 		author															= "Article 2 Studios";
 		displayName  													= "[UNSC] M55 Body Armor (Light)";
-		model   														= "\OPTRE_FC_Units\Marines\h3_vest_light.p3d";
+		hiddenSelections[] 												= {"attach_arms"};
 		class ItemInfo: ItemInfo
 		{
-			model   													= "\OPTRE_FC_Units\Marines\h3_vest_light.p3d";
+			hiddenSelections[] 											= {"attach_arms"};
 		};
 	};
 	// VESTS END
@@ -547,8 +600,8 @@ class cfgWeapons
 		displayName    									= "-";
 		picture   										= "\OPTRE_UNSC_Units\marines\icons\marine_helmet.paa";
 		model     										= "\OPTRE_FC_Units\Marines\h3_helmet.p3d";
-		//hiddenSelections[]   							= {"camo1"};
-		//hiddenSelectionsTextures[]   					= {};
+		hiddenSelections[]   							= {"camo","attach_visor"};
+		hiddenSelectionsTextures[]   					= {"optre_fc_units\marines\data\h3_helmet_co.paa"};
 		class ItemInfo: HeadgearItem 
 		{
 			uniformModel   								= "\OPTRE_FC_Units\Marines\h3_helmet.p3d";
@@ -556,8 +609,8 @@ class cfgWeapons
 			mass   										= 30;
 			modelSides[]   								= {6};
 			passThrough   								= 0.15;
-			//hiddenSelections[]   						= {"camo1"};
-			//hiddenSelectionsTextures[]   				= {};
+			hiddenSelections[]   						= {"camo","attach_visor"};
+			hiddenSelectionsTextures[]   				= {"optre_fc_units\marines\data\h3_helmet_co.paa"};
 			class HitpointsProtectionInfo
 			{
 				class Head
@@ -575,12 +628,54 @@ class cfgWeapons
 		scope   										= 2;
 		author											= "Article 2 Studios";
 		displayName    									= "[UNSC] CH255 Helmet";
-		//hiddenSelections[]   							= {"camo1"};
-		//hiddenSelectionsTextures[]   					= {};
+		hiddenSelections[]   							= {"camo","attach_visor"};
+		hiddenSelectionsTextures[]   					= {"optre_fc_units\marines\data\h3_helmet_co.paa"};
 		class ItemInfo: ItemInfo
 		{
-			//hiddenSelections[]   						= {"camo1"};
-			//hiddenSelectionsTextures[]   				= {};
+			hiddenSelections[]   						= {"camo","attach_visor"};
+			hiddenSelectionsTextures[]   				= {"optre_fc_units\marines\data\h3_helmet_co.paa"};
+		};
+	};
+	class OPTRE_FC_Marines_Helmet_Visor: OPTRE_FC_Marines_Helmet_Base
+	{	
+		dlc = "OPTRE";
+		scope   										= 2;
+		author											= "Article 2 Studios";
+		displayName    									= "[UNSC] CH255 Helmet (Visor)";
+		hiddenSelections[]   							= {"camo"};
+		hiddenSelectionsTextures[]   					= {"optre_fc_units\marines\data\h3_helmet_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]   						= {"camo"};
+			hiddenSelectionsTextures[]   				= {"optre_fc_units\marines\data\h3_helmet_co.paa"};
+		};
+	};
+	class OPTRE_FC_Marines_Helmet_Medic: OPTRE_FC_Marines_Helmet_Base
+	{	
+		dlc = "OPTRE";
+		scope   										= 2;
+		author											= "Article 2 Studios";
+		displayName    									= "[UNSC] CH255 Helmet [Medic]";
+		hiddenSelections[]   							= {"camo","attach_visor"};
+		hiddenSelectionsTextures[]   					= {"optre_fc_units\marines\data\h3_helmet_med_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]   						= {"camo","attach_visor"};
+			hiddenSelectionsTextures[]   				= {"optre_fc_units\marines\data\h3_helmet_med_co.paa"};
+		};
+	};
+	class OPTRE_FC_Marines_Helmet_Visor_Medic: OPTRE_FC_Marines_Helmet_Base
+	{	
+		dlc = "OPTRE";
+		scope   										= 2;
+		author											= "Article 2 Studios";
+		displayName    									= "[UNSC] CH255 Helmet (Visor) [Medic]";
+		hiddenSelections[]   							= {"camo"};
+		hiddenSelectionsTextures[]   					= {"optre_fc_units\marines\data\h3_helmet_med_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]   						= {"camo"};
+			hiddenSelectionsTextures[]   				= {"optre_fc_units\marines\data\h3_helmet_med_co.paa"};
 		};
 	};
 	// HELMETS END

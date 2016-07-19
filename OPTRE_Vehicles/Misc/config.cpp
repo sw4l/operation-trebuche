@@ -254,7 +254,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\KAMAZ_INS_01_CO.paa","\OPTRE_Vehicles\Misc\data\KAMAZ_INS_02_CO.paa"};
 	};
 	
-	class OPTRE_Mongoose_Green_F: B_Quadbike_01_F
+	/*class OPTRE_Mongoose_Green_F: B_Quadbike_01_F
 	{
 		dlc = "OPTRE";
 		author = "Article 2 Studios";
@@ -326,6 +326,6 @@ class CfgVehicles
 		typicalCargo[] = {"OPTRE_Ins_URF_Rifleman_AR"};
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Misc\data\OPTRE_Quadbike01_ins_CO.paa","\A3\soft_f_beta\Quadbike_01\data\Quadbike_01_wheel_civblack_co.paa"};
-	};
+	};*/
 
 };

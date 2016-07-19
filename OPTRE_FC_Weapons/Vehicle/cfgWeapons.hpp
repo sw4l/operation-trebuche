@@ -3,8 +3,8 @@ class Mode_Burst;
 class Mode_FullAuto;
 class CfgWeapons
 {
-	class HMG_127;
-	class OPTRE_FC_PlasmaCannons: HMG_127
+	class M134_minigun;
+	class OPTRE_FC_PlasmaCannons: M134_minigun
 	{
 		class GunParticles
         {

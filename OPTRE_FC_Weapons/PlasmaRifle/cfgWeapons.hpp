@@ -17,7 +17,7 @@ class CfgWeapons
         scopeArsenal                                                            = 2;
         handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_FC_Weapons\PlasmaRifle\data\anim\handanim.rtm"};
         model                                                                   = "\OPTRE_FC_Weapons\PlasmaRifle\PlasmaRifle.p3d";
-        displayName                                                             = "Type-25 Directed Energy Rifle";
+        displayName                                                             = "[Covenant] Type-25 Directed Energy Rifle";
         descriptionShort                                                        = "Covenant Plasma Rifle";
         //picture 																= "\OPTRE_FC_Weapons\PlasmaRifle\icons\PlasmaRifle_ca.paa";
 		//drySound[] 																= {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};

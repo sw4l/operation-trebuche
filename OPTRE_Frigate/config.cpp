@@ -123,22 +123,27 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		scope = 2;
-		scopeCurator = 0;
+		scopeCurator = 2;
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		faction	= "OPTRE_UNSC";					/// defines the faction inside of the side
 		crew = "B_UAV_AI";					/// lets use the sample soldier we have as default captain of the boat
-		armor = 450;
+		armor = 250;
 		vehicleClass = "OPTRE_UNSC_Object_class";
 		displayName = "M910 Point Defense Gun";
 		model = "\OPTRE_Frigate\turret.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
-		mapSize = 2;
-		editorCategory = "OPTRE_EditorCategory_Frigate";
-		editorSubcategory = "OPTRE_EditorSubcategory_Frigate_Objects";
-		memoryPointGun[] = {"muzzle_1","muzzle_2"};
-		gunBeg[] = {"muzzle_1","muzzle_2"};
-		gunEnd[] = {"chamber_1","chamber_2"};
+		mapSize = 2;	
+		gunBeg[] = {"z_gunL_chamber", "z_gunR_chamber"};
+		gunEnd[] = {"z_gunL_muzzle", "z_gunR_muzzle"};
+		class AnimationSources
+		{
+			class muzzle_rot
+			{
+				source="ammorandom";
+				weapon="OPTRE_M9109";
+			};
+		};
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -147,18 +152,20 @@ class CfgVehicles
 				gun="OtocHlaven";
 				animationsourcebody="mainTurret";
 				animationSourceGun="mainGun";
+				memoryPointGun[]=
+				{
+					"z_gunL_chamber",
+					"z_gunR_chamber"
+				};
 				gunAxis="OsaHlavne";
 				turretAxis="OsaVeze";
-				memoryPointGun[] = {"muzzle_1","muzzle_2"};
-				gunBeg	= "muzzle_1";
-				gunEnd	= "chamber_1";
 				minElev=-5;
 				maxElev=90;
 				minTurn=-360;
 				maxTurn=360;
 				initTurn=0;
-				maxHorizontalRotSpeed=2;
-				maxVerticalRotSpeed=2;
+				maxHorizontalRotSpeed=3;
+				maxVerticalRotSpeed=3;
 				gunnerAction="driver_boat01";
 				gunnerInAction="driver_boat01";
 				gunnerGetInAction="GetInMRAP_01";
@@ -171,10 +178,8 @@ class CfgVehicles
 				soundServo[] = { "", 0.01, 2.000000 };
 				memoryPointsGetInGunner = "Pos Gunner";
 				memoryPointsGetInGunnerDir = "Pos Gunner dir";
-				gunnerLeftHandAnimName = "trigger";
-				gunnerRightHandAnimName = "trigger";
-				weapons[] = {"OPTRE_M910_cannon"};
-				magazines[] = {"OPTRE_M910_5000Rnd_50mm","OPTRE_M910_5000Rnd_50mm"};
+				weapons[] = {"OPTRE_M9109"};
+				magazines[] = {"OPTRE_2500Rnd_50mm_HE","OPTRE_2500Rnd_50mm_HE","OPTRE_2500Rnd_50mm_HE","OPTRE_2500Rnd_50mm_HE"};
 				memoryPointGunnerOptics = "gunnerview";
 				gunnerOpticsModel="A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
 				gunnerOpticsShowCursor=1;

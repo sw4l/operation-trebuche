@@ -269,9 +269,7 @@
 		
 		class ModuleDescription
 		{
-			description[] = {
-				"Synchronising this module to a frigate will set up a frigates. Internal sections of the ship will be spawned and the frigates computer system will be initialized. This module also determines a ships virtual stock.";
-			};
+			description = "Synchronising this module to a frigate will set up a frigates. Internal sections of the ship will be spawned and the frigates computer system will be initialized. This module also determines a ships virtual stock.";
 			sync[] = {"OPTRE_Frigate_Final_Dawn","OPTRE_Frigate_Final_Dawn"};
 			position = 0;
 			direction = 0;
