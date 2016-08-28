@@ -24,7 +24,6 @@ class CfgWeapons
     class Rifle_Base_F;
     class SMG_01_F;
     class launch_RPG32_F;
-    class WeaponSlotsInfo;
     class InventoryOpticsItem_Base_F;
 	class H_helmetB;
 	class Binocular;

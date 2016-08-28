@@ -61,8 +61,8 @@ deleteVehicle _logic;
 	_units,
 	(getPos _logic),
 	((_logic getVariable ["waypoints",""]) call OPTRE_fnc_StringToArrayOfString),
-	(_logic getVariable ["finalWaypoint",""])
-	//WEST
+	(_logic getVariable ["finalWaypoint",""]),
+	WEST
 ] call OPTRE_fnc_CS_ODSTHEV;
 
 deleteVehicle _logic;

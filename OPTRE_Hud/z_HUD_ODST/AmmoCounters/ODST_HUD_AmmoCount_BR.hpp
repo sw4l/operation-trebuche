@@ -12,9 +12,13 @@ class OPTRE_ODST_HUD_AmmoCount_BR
 			idc = 1200;
 			text = "\OPTRE_Hud\data\Bullets\18pip.paa";
 			onLoad = "_array = (profileNamespace getVariable [""OPTRE_ODST_HUDColourTextNEW"",[1,0.5,0,.95]]); (_this select 0) ctrlSetTextColor [ (_array select 0), (_array select 1), (_array select 2),  ((_array select 3) / 3)];";
-	x = 0.87125 * safezoneW + safezoneX;
+	/*x = 0.87125 * safezoneW + safezoneX;
 	y = 0.852 * safezoneH + safezoneY;
 	w = 0.0773437 * safezoneW;
+	h = 0.011 * safezoneH;*/
+	x = 0.866094 * safezoneW + safezoneX;
+	y = 0.874 * safezoneH + safezoneY;
+	w = 0.0721875 * safezoneW;
 	h = 0.011 * safezoneH;
 			colorText[] = {1,1,1,1};
 		};
@@ -23,9 +27,13 @@ class OPTRE_ODST_HUD_AmmoCount_BR
 			idc = 1201;
 			text = "\OPTRE_Hud\data\Bullets\18pip.paa";
 			onLoad = "_array = (profileNamespace getVariable [""OPTRE_ODST_HUDColourTextNEW"",[1,0.5,0,.95]]); (_this select 0) ctrlSetTextColor [ (_array select 0), (_array select 1), (_array select 2),  ((_array select 3) / 3)];";
-	x = 0.87125 * safezoneW + safezoneX;
+	/*x = 0.87125 * safezoneW + safezoneX;
 	y = 0.863 * safezoneH + safezoneY;
 	w = 0.0773437 * safezoneW;
+	h = 0.011 * safezoneH;*/
+	x = 0.866094 * safezoneW + safezoneX;
+	y = 0.885 * safezoneH + safezoneY;
+	w = 0.0721875 * safezoneW;
 	h = 0.011 * safezoneH;
 			colorText[] = {1,1,1,1};
 		};
@@ -36,9 +44,13 @@ class OPTRE_ODST_HUD_AmmoCount_BR
 			idc = 120;
 			//text = "OPTRE_Hud\Data\Hud_ODST_1\hud_healthBar.paa";
 			texture = "\OPTRE_Hud\data\Bullets\18pip.paa";
-	x = 0.87125 * safezoneW + safezoneX;
+	/*x = 0.87125 * safezoneW + safezoneX;
 	y = 0.852 * safezoneH + safezoneY;
 	w = 0.0773437 * safezoneW;
+	h = 0.011 * safezoneH;*/
+	x = 0.866094 * safezoneW + safezoneX;
+	y = 0.874 * safezoneH + safezoneY;
+	w = 0.0721875 * safezoneW;
 	h = 0.011 * safezoneH;
 			colorText[] = {1,1,1,1};
 			onLoad = "uinamespace setvariable ['OPTRE_HUD_AmmoCountCurrent_1',(_this select 0)]; (_this select 0) ctrlSetTextColor (profileNamespace getVariable [""OPTRE_ODST_HUDColourTextNEW"",[1,0.5,0,.95]]);"; 
@@ -49,9 +61,13 @@ class OPTRE_ODST_HUD_AmmoCount_BR
 			idc = 121;
 			//text = "OPTRE_Hud\Data\Hud_ODST_1\hud_healthBar.paa";
 			texture = "\OPTRE_Hud\data\Bullets\18pip.paa";
-	x = 0.87125 * safezoneW + safezoneX;
+	/*x = 0.87125 * safezoneW + safezoneX;
 	y = 0.863 * safezoneH + safezoneY;
 	w = 0.0773437 * safezoneW;
+	h = 0.011 * safezoneH;*/
+	x = 0.866094 * safezoneW + safezoneX;
+	y = 0.885 * safezoneH + safezoneY;
+	w = 0.0721875 * safezoneW;
 	h = 0.011 * safezoneH;
 			colorText[] = {1,1,1,1};
 			onLoad = "uinamespace setvariable ['OPTRE_HUD_AmmoCountCurrent_2',(_this select 0)]; (_this select 0) ctrlSetTextColor (profileNamespace getVariable [""OPTRE_ODST_HUDColourTextNEW"",[1,0.5,0,.95]]);";

@@ -4,13 +4,9 @@
      
     class CfgWeapons
     {
-            class WeaponSlotsInfo;
-            class SlotInfo;
             class ItemCore;
             class InventoryOpticsItem_Base_F;
-            class GunParticles;
 			class UnderBarrelSlot;
-			class InventoryUnderItem_Base_F; /// base class for #bipodz
             //ATTACHMENTS
      
             class OPTRE_M73_SmartLink: ItemCore
@@ -65,7 +61,23 @@
 			
      
             //WEAPONS
-            class LMG_Mk200_F;
+			class Rifle_Base_F;
+			class Rifle_Long_Base_F: Rifle_Base_F
+			{
+				class WeaponSlotsInfo;
+				class GunParticles;
+			};
+			class LMG_Mk200_F: Rifle_Long_Base_F
+			{
+				class WeaponSlotsInfo: WeaponSlotsInfo
+				{
+					class UnderBarrelSlot: UnderBarrelSlot
+					{
+						iconPosition[]={0.34999999,0.80000001};
+						iconScale=0.2;
+					};
+				};
+			};
             class OPTRE_M73_base: LMG_Mk200_F
             {
 					dlc = "OPTRE";		
@@ -364,41 +376,37 @@
 						aiRateOfFire = 10;
 						aiRateOfFireDistance = 900;
 					};
-                    class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
+                    class WeaponSlotsInfo: WeaponSlotsInfo  //Defines attachment slots
                     {
 							mass = 160;
-                            class MuzzleSlot: SlotInfo
-                            {
-                                    access                                                  = 1;
-                                    compatibleitems[]                                       = {"muzzle_snds_B"};
-                                    displayname                                             = "Muzzle Slot";
-                                    linkproxy                                               = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-                                    scope                                                   = 2;
-                            };
-                            class CowsSlot: SlotInfo
-                            {
-                                    access                                                  = 1;
-                                    compatibleitems[]                                       = {"OPTRE_M73_SmartLink", "OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope"};
-                                    displayname                                             = "Optics Slot";
-                                    linkproxy                                               = "\A3\data_f\proxies\weapon_slots\TOP";
-                                    scope                                                   = 2;
-                            };
-                            class PointerSlot: SlotInfo
-                            {
-                                    access                                                  = 1;
-                                    compatibleitems[]                                       = {};
-                                    displayname                                             = "Pointer Slot";
-                                    linkproxy                                               = "\A3\data_f\proxies\weapon_slots\SIDE";
-                                    scope                                                   = 2;
-                            };
-							/*class UnderBarrelSlot: SlotInfo /// using test bipod
+							class MuzzleSlot
 							{
-                                access                                                  = 1;
-								compatibleItems[] 										= {"bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk"};	
-                                displayname                                             = "Underbarrel Slot";
-                                linkproxy                                               = "\A3\data_f\proxies\weapon_slots\UNDERBARREL";
-                                scope                                                   = 2;	
-							};	*/
+								access 								= 1;
+								compatibleitems[] 					= {"muzzle_snds_B"};
+								displayname 						= "Muzzle Slot";
+								linkproxy 							= "\A3\data_f\proxies\weapon_slots\MUZZLE";
+								scope 								= 2;
+							};
+							class CowsSlot
+							{
+								access 								= 1;
+								compatibleitems[] 					= {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope","OPTRE_M73_SmartLink"};
+								displayname 						= "Optics Slot";
+								linkproxy 							= "\A3\data_f\proxies\weapon_slots\TOP";
+								scope 								= 2;
+							};
+							class PointerSlot
+							{
+								access 								= 1;
+								compatibleitems[] 					= {};
+								displayname 						= "Pointer Slot";
+								linkproxy 							= "\A3\data_f\proxies\weapon_slots\SIDE";
+								scope 								= 2;
+							};
+							/*class UnderBarrelSlot: UnderBarrelSlot /// using test bipod
+							{
+								compatibleItems[] 					= {"bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk"};		
+							};*/
                     };
             };
 			class OPTRE_M73: OPTRE_M73_base

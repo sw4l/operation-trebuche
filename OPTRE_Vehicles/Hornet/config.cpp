@@ -628,21 +628,14 @@ class CfgVehicles
 		hiddenSelectionsTextures[]= {"optre_vehicles\hornet\data\hornet_hull_innie_co.paa"};
 	};
 	
-	/*class PlaneWreck;
-	class OPTRE_Objects_Wreck_Falcon: PlaneWreck
+	class PlaneWreck;
+	class OPTRE_Objects_Wreck_Hornet: PlaneWreck
 	{
 		scope = 2;
 		scopeCurator = 2;
-		model = "OPTRE_Vehicles\falcon\falcon_wreck.p3d";
-		displayname = "UH-144 Falcon Wreck";
+		model = "OPTRE_Vehicles\hornet\hornet_wreck.p3d";
+		displayname = "AV-14 Hornet Wreck";
 		icon = "OPTRE_Vehicles\Falcon\Data\icon.paa";	/// icon in map/editor
-		typicalCargo[] = {};
-		irTarget = 0;
 		vehicleClass = "OPTRE_UNSC_Object_class";
-		transportAmmo = 0;
-		transportRepair = 0;
-		transportFuel = 0;
-		transportSoldier = 1;
-		class Eventhandlers{};
-	};*/
+	};
 };

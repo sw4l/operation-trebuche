@@ -1,0 +1,13 @@
+name = "Operation: TREBUCHET First Contact";
+picture = "mod.paa";
+description = "Covenant Expansion for Operation: TREBUCHET";
+actionName = "Forums";
+action = "http://forums.bistudio.com/showthread.php?190567-Operation-Trebuchet-Total-conversion-mod-for-Arma-3";
+logo = "mod.paa";
+logoOver = "mod.paa";
+tooltip = "Operation: TREBUCHET First Contact";
+tooltipOwned = "Drakedaeron & Article 2 Studios";
+overview = "Operation: TREBUCHET First Contact is an expansion for the Operation: TREBUCHET mod for ArmA 3.";
+author = "Drakedaeron & Article 2 Studios";
+overviewPicture = "mod.paa";
+overviewText = "Operation: TREBUCHET First Contact";

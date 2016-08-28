@@ -28,6 +28,8 @@ Result: Drops two
 
 if !isServer exitWith {};
 
+private ["_units","_pos","_wayPoints","_endWaypoint","_side"];
+
 _units = switch (typeName (_this select 0)) do {
 	case "ARRAY": {(_this select 0)};
 	case "SCALAR": {
@@ -51,6 +53,7 @@ _units = switch (typeName (_this select 0)) do {
 		};
 		_result
 	};
+	//case "GROUP": {(units (_this select 0))}
 	default { ["OPTRE_UNSC_ODST_Soldier_Scout_AT","OPTRE_UNSC_ODST_Soldier_TeamLeader","OPTRE_UNSC_ODST_Soldier_Scout","OPTRE_UNSC_ODST_Soldier_Paramedic"] };
 };
 _pos = [_this,1,[0,0,0]] call BIS_fnc_param;
@@ -60,14 +63,18 @@ _side = [_this,4,WEST] call BIS_fnc_param;
 
 if (str _pos == "[0,0,0]") exitWith {};
 
-_group = [[0,0,0], _side, _units,[],[],[],[],[],0] call BIS_fnc_spawnGroup;		
-_wp =_group addWaypoint [_pos, 0];
+_group = [[0,0,0], _side, _units,[],[],[],[],[],0] call BIS_fnc_spawnGroup;	
+_unitsInGroup = units _group; 
 {
-	_wpPos = getMarkerPos _x; 
-	if (str _wpPos != "[0,0,0]") then {
-		_wpX =_group addWaypoint [_wpPos, 0];
-	};
-} forEach _wayPoints;
+	_spawnPos =  [_pos, 50] call CBA_fnc_randPos;
+	_x setPos [(_spawnPos select 0), (_spawnPos select 1), 10000];
+} forEach _unitsInGroup;
+(leader _group) setPos [(_pos select 0), (_pos select 1), 10000];
+
+0 = [_pos,_unitsInGroup,"No Frigate",5,0,-250,0,2500,1500,1200,1000,500,10,true,true,600] spawn OPTRE_Fnc_HEV; 
+
+_wp =_group addWaypoint [_pos, 0];
+{_wpPos = getMarkerPos _x; if (str _wpPos != "[0,0,0]") then {_wpX =_group addWaypoint [_wpPos, 0];};} forEach _wayPoints;
 
 if (count _wayPoints > 0 AND _endWaypoint != "") then {
 	switch (_endWaypoint) do {
@@ -78,7 +85,7 @@ if (count _wayPoints > 0 AND _endWaypoint != "") then {
 		case "garrison": {
 			_wpX = _group addWaypoint [(getMarkerPos (_wayPoints select (count _wayPoints - 1))), 0];
 			_wpX setWaypointType "MOVE";	
-			_wpX setWaypointStatements ["true", "0 = [(group this), (getPos this), 25, 2, false] call CBA_fnc_taskDefend"];
+			_wpX setWaypointStatements ["true", "0 = [(group this), (getPos this), 75, 2, false] call CBA_fnc_taskDefend"];
 		}; 
 		case "patrol": {
 			_wpX = _group addWaypoint [(getMarkerPos (_wayPoints select (count _wayPoints - 1))), 0];
@@ -87,15 +94,6 @@ if (count _wayPoints > 0 AND _endWaypoint != "") then {
 		};
 	};
 };
-
-_unitsInGroup = units _group; 
-{
-	_spawnPos =  [_pos, 50] call CBA_fnc_randPos;
-	//_spawnPos = _randomisedPos findEmptyPosition [0,25,"OPTRE_HEV"];
-	_x setPos [(_spawnPos select 0), (_spawnPos select 1), 10000];
-} forEach _unitsInGroup;
-
-0 = [[0,0,0],_unitsInGroup,"No Frigate",5,0,-250,0,2500,1500,1200,1000,500,10,true,false] spawn OPTRE_Fnc_HEV; 
 
 {_x addCuratorEditableObjects [_unitsInGroup, true];} forEach allCurators;	
 

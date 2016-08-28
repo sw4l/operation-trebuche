@@ -3,13 +3,10 @@ class Mode_Burst;
 class Mode_FullAuto;
     class CfgWeapons
     {
-            class WeaponSlotsInfo;
-            class SlotInfo;
-            class ItemCore;
+			class ItemCore;
             class InventoryOpticsItem_Base_F;
 			class InventoryFlashLightItem_Base_F;
 			class InventoryMuzzleItem_Base_F;
-            class GunParticles;
      
             //ATTACHMENTS
      
@@ -182,7 +179,7 @@ class Mode_FullAuto;
 					recoil = "recoil_trg20";
 					maxRecoilSway = 0.01;
 					swayDecaySpeed = 1;
-                    class GunParticles: GunParticles
+                    class GunParticles
                     {
                        class SecondEffect
                        {
@@ -395,13 +392,13 @@ class Mode_FullAuto;
 					class fullauto_medium: FullAuto
 					{
 						showToPlayer = 0;
-						burst = 6;
+						burst = 10;
 						minRange = 1;
-						minRangeProbab = 0.5;
-						midRange = 100;
-						midRangeProbab = 0.7;
-						maxRange = 300;
-						maxRangeProbab = 0.05;
+						minRangeProbab = 0.95;
+						midRange = 200;
+						midRangeProbab = 0.75;
+						maxRange = 500;
+						maxRangeProbab = 0.25;
 						aiRateOfFire = 2.0;
 					};
 					class single_medium_optics1: Single
@@ -429,9 +426,9 @@ class Mode_FullAuto;
 						aiRateOfFire = 6;
 						aiRateOfFireDistance = 600;
 					};
-                    class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
+                    class WeaponSlotsInfo
                     {
-                            class MuzzleSlot: SlotInfo
+                            class MuzzleSlot
                             {
                                     access                                                  = 1;
                                     compatibleitems[]                                       = {"muzzle_snds_B"};
@@ -439,7 +436,7 @@ class Mode_FullAuto;
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\MUZZLE";
                                     scope                                                   = 2;
                             };
-                            class CowsSlot: SlotInfo
+                            class CowsSlot
                             {
                                     access                                                  = 1;
                                     compatibleitems[]                                       = {"OPTRE_MA5B_AmmoCounter", "OPTRE_MA5B_AmmoCounter_NoIS"};
@@ -447,7 +444,7 @@ class Mode_FullAuto;
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\TOP";
                                     scope                                                   = 2;
                             };
-                            class PointerSlot: SlotInfo
+                            class PointerSlot
                             {
                                     access                                                  = 1;
                                     compatibleitems[]                                       = {"acc_pointer_IR", "acc_flashlight", "OPTRE_MA5B_Flashlight"};
@@ -461,7 +458,7 @@ class Mode_FullAuto;
 			
 		class OPTRE_MA5B_AC: OPTRE_MA5B
 		{
-					dlc = "OPTRE";
+			dlc = "OPTRE";
 			picture = "\OPTRE_weapons\ar\icons\ar_b.paa";
 			class LinkedItems
 			{
@@ -574,7 +571,7 @@ class Mode_FullAuto;
 					};
                     class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
                     {
-                            class MuzzleSlot: SlotInfo
+                            class MuzzleSlot: MuzzleSlot
                             {
                                     access                                                  = 1;
                                     compatibleitems[]                                       = {"muzzle_snds_B"};
@@ -582,7 +579,7 @@ class Mode_FullAuto;
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\MUZZLE";
                                     scope                                                   = 2;
                             };
-                            class CowsSlot: SlotInfo
+                            class CowsSlot: CowsSlot
                             {
                                     access                                                  = 1;
                                     compatibleitems[]                                       = {"OPTRE_MA5B_AmmoCounter", "OPTRE_MA5B_AmmoCounter_NoIS"};
@@ -590,7 +587,7 @@ class Mode_FullAuto;
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\TOP";
                                     scope                                                   = 2;
                             };
-                            class PointerSlot: SlotInfo
+                            class PointerSlot: PointerSlot
                             {
                                     access                                                  = 1;
                                     compatibleitems[]                                       = {"acc_pointer_IR", "acc_flashlight"};

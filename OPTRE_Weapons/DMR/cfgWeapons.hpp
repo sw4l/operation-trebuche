@@ -4,15 +4,9 @@ class Mode_FullAuto;	// External class reference
 	
 class CfgWeapons
 {
-	class WeaponSlotsInfo;
-	class SlotInfo;
-	class MuzzleSlot;
-	class CowsSlot;
-	class PointerSlot;
-	class UnderBarrelSlot;
 	class ItemCore;
 	class InventoryOpticsItem_Base_F;
-	class GunParticles;
+	class UnderBarrelSlot;
 	
 	//ATTACHMENTS
 	
@@ -59,8 +53,24 @@ class CfgWeapons
 		
 	//WEAPONS
 	
-	class EBR_Base_F;
-	class OPTRE_M392_DMR: EBR_Base_F
+	class Rifle_Base_F;
+	class Rifle_Long_Base_F: Rifle_Base_F
+	{
+		class WeaponSlotsInfo;
+		class GunParticles;
+	};
+	class LMG_Mk200_F: Rifle_Long_Base_F
+	{
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				iconPosition[]={0.34999999,0.80000001};
+				iconScale=0.2;
+			};
+		};
+	};
+	class OPTRE_M392_DMR: LMG_Mk200_F
 	{
 		dlc = "OPTRE";
 		scope 										= 2;
@@ -199,27 +209,35 @@ class CfgWeapons
 			maxRange = 1000;
 			maxRangeProbab = 0.05;
 		};
-		class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
+		class WeaponSlotsInfo: WeaponSlotsInfo //Defines attachment slots
  		{
- 			class MuzzleSlot: MuzzleSlot
+ 			class MuzzleSlot
 			{
+				access 								= 1;
 				compatibleitems[] 					= {"muzzle_snds_B"};
+				displayname 						= "Muzzle Slot";
+				linkproxy 							= "\A3\data_f\proxies\weapon_slots\MUZZLE";
+				scope 								= 2;
 			};
-			class CowsSlot: CowsSlot
+			class CowsSlot
 			{
+				access 								= 1;
 				compatibleitems[] 					= {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope"};
+				displayname 						= "Optics Slot";
+				linkproxy 							= "\A3\data_f\proxies\weapon_slots\TOP";
+				scope 								= 2;
 			};
-			class PointerSlot: PointerSlot
+			class PointerSlot
 			{
-				compatibleitems[] 					= {"acc_pointer_IR", "acc_flashlight"};
+				access 								= 1;
+				compatibleitems[] 					= {};
+				displayname 						= "Pointer Slot";
+				linkproxy 							= "\A3\data_f\proxies\weapon_slots\SIDE";
+				scope 								= 2;
 			};
-			/*class UnderBarrelSlot: SlotInfo /// using test bipod
+			/*class UnderBarrelSlot: UnderBarrelSlot /// using test bipod
 			{
-                access                                                  = 1;
-				compatibleItems[] = {"bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk"};	
-                displayname                                             = "Underbarrel Slot";
-                linkproxy                                               = "\A3\data_f\proxies\weapon_slots\UNDERBARREL";
-                scope                                                   = 2;	
+				compatibleItems[] 					= {"bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk"};		
 			};*/
 			mass = 75;
  		};

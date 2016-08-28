@@ -4,11 +4,8 @@ class Mode_FullAuto;    // External class reference
      
 class CfgWeapons
 {
-    class WeaponSlotsInfo;
-    class SlotInfo;
     class ItemCore;
     class InventoryOpticsItem_Base_F;
-    class GunParticles;
 	class InventoryMuzzleItem_Base_F;
 	class InventoryFlashLightItem_Base_F;
      
@@ -63,7 +60,7 @@ class CfgWeapons
 				};			
 			};
 	   };
-		class acc_flashlight;
+		/*class acc_flashlight;
 		class OPTRE_M7_Flashlight: ItemCore
 		{
 		dlc = "OPTRE";
@@ -103,7 +100,7 @@ class CfgWeapons
 				};
 			};
 			inertia 									= 0.1;
-		};
+		};*/
 		class optic_Aco;
 		class OPTRE_M7_Sight: optic_Aco
 		{
@@ -396,7 +393,7 @@ class CfgWeapons
 							displayName = "$STR_DN_MODE_FULLAUTO";
 							textureType = "fullAuto";
                     };
-                    class GunParticles: GunParticles
+                    class GunParticles
                     {
                        class SecondEffect
                        {
@@ -405,9 +402,9 @@ class CfgWeapons
                             effectName                                                      = "CaselessAmmoCloud";
                        };
                     };
-                    class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
+                    class WeaponSlotsInfo //Defines attachment slots
                     {
-                            class MuzzleSlot: SlotInfo
+                            class MuzzleSlot
                             {
                                     access                                                  = 1;
                                     compatibleitems[]                                       = {"OPTRE_M7_Silencer"};
@@ -415,7 +412,7 @@ class CfgWeapons
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\MUZZLE";
                                     scope                                                   = 2;
                             };
-                            class CowsSlot: SlotInfo
+                            class CowsSlot
                             {
                                     access                                                  = 1;
                                     compatibleitems[]                                       = {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope"};
@@ -423,10 +420,10 @@ class CfgWeapons
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\TOP";
                                     scope                                                   = 2;
                             };
-                            class PointerSlot: SlotInfo
+                            class PointerSlot
                             {
                                     access                                                  = 1;
-                                    compatibleitems[]                                       = {"OPTRE_M7_flashlight","OPTRE_M7_Laser"};
+                                    compatibleitems[]                                       = {"OPTRE_M7_Laser"};
                                     displayname                                             = "Pointer Slot";
                                     linkproxy                                               = "\A3\data_f\proxies\weapon_slots\SIDE";
                                     scope                                                   = 2;

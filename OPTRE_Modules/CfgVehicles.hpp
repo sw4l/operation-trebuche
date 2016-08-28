@@ -24,5 +24,6 @@ class CfgVehicles
 	#include "OPTRE_Module_ActivateZeusModules.hpp"
 	#include "OPTRE_Module_HEV.hpp"
 	#include "OPTRE_Module_HEVCleanUp.hpp"
+	#include "OPTRE_Module_NoShipODSTRoom.hpp"
 	
 };

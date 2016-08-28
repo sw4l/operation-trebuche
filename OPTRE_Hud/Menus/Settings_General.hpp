@@ -117,7 +117,7 @@ class OPTRE_HUD_GenralSettings
 		class OPTRE_RscCombo_1504: OPTRE_HUD_RscCombo
 		{
 			idc = 1504;
-			onLBSelChanged = "OPTRE_Hud_RadarMode = (lbCurSel (_this select 0)); ";
+			onLBSelChanged = "OPTRE_Hud_RadarMode = (lbCurSel (_this select 0));";
 			OnLoad = "if (isNil 'OPTRE_Hud_RadarMode2Allowed') then {OPTRE_Hud_RadarMode2Allowed = 2;}; { if !((_x select 1) > OPTRE_Hud_RadarMode2Allowed) then {_index = (_this select 0) lbAdd (format ['Radar Shows: %1',(_x select 0)]) ; };  } forEach [ ['Group',0], ['Side',1], ['Side & Known Enemy',2] ] ; (_this select 0) lbSetCurSel OPTRE_Hud_RadarMode;";
 			x = 0.432969 * safezoneW + safezoneX;
 			y = 0.5 * safezoneH + safezoneY;
@@ -138,7 +138,7 @@ class OPTRE_HUD_GenralSettings
 		{
 			idc = 1505;
 			onLBSelChanged = "OPTRE_LHD_PIPSel = (lbCurSel (_this select 0)); ";
-			OnLoad = "{   _index = (_this select 0) lbAdd (format ['Should Camera Vein: %1 %2',rank _x, name _x]) ;  } forEach units group player - [player];  (_this select 0) lbSetCurSel OPTRE_LHD_PIPSel;";
+			OnLoad = "{   _index = (_this select 0) lbAdd (format ['VIEW: %1 %2',rank _x, name _x]) ;  } forEach units group player - [player];  (_this select 0) lbSetCurSel OPTRE_LHD_PIPSel;";
 			
 			x = 0.432969 * safezoneW + safezoneX;
 			y = 0.566 * safezoneH + safezoneY;
@@ -149,7 +149,7 @@ class OPTRE_HUD_GenralSettings
 		{
 			idc = 1506;
 			onLBSelChanged = "OPTRE_HUD_PIP_NVGTI = lbCurSel (_this select 0); ";
-			OnLoad = "{   _index = {   _index = (_this select 0) lbAdd (format ['Should Camera Vein: %1 %2',rank _x, name _x]) ;  } forEach units group player - [player];  (_this select 0) lbSetCurSel OPTRE_LHD_PIPSel; (_this select 0) lbAdd (format ['Shoulder Camera Mode: %1',(_x select 0)]) ;  } forEach [   ['Normal',0],   ['Night Vision',1],   ['Thermal Vision',2]  ];   (_this select 0) lbSetCurSel OPTRE_HUD_PIP_NVGTI;";
+			OnLoad = "{   _index = {   _index = (_this select 0) lbAdd (format ['MODE: %1 %2',rank _x, name _x]) ;  } forEach units group player - [player];  (_this select 0) lbSetCurSel OPTRE_LHD_PIPSel; (_this select 0) lbAdd (format ['Shoulder Camera Mode: %1',(_x select 0)]) ;  } forEach [   ['Normal',0],   ['Night Vision',1],   ['Thermal Vision',2]  ];   (_this select 0) lbSetCurSel OPTRE_HUD_PIP_NVGTI;";
 
 			x = 0.432969 * safezoneW + safezoneX;
 			y = 0.599 * safezoneH + safezoneY;

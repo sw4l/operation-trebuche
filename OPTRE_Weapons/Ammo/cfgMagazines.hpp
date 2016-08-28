@@ -838,7 +838,7 @@ class CfgMagazines
 		modelSpecial 					= "\OPTRE_Weapons\Rockets\M41_launcher_loaded.p3d";
 		count							= 2;
 		mass 							= 80;
-		initSpeed 						= 350;
+		initSpeed 						= 150;
 	};
 	class OPTRE_M41_Twin_HEAT_G: OPTRE_M41_Twin_HEAT
 	{
@@ -872,7 +872,7 @@ class CfgMagazines
 		displaynameshort				= "HEAP";
 		mass 							= 80;
 		count 							= 2;
-		initSpeed						= 350;
+		initSpeed						= 150;
 	};
 	
 	//Grenades

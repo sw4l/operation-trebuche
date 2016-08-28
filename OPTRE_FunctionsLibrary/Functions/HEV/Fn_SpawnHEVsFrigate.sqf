@@ -70,7 +70,7 @@ for "_i" from 0 to (_totalUnits - 1) do {
 			if (isPlayer _unit) then {
 				_listOfPlayers pushBack _unit; 
 				_hevArrayPlayer pushBack _hev;
-				_hev setVariable ["OPTRE_PlayerControled",true,false];
+				_hev setVariable ["OPTRE_PlayerControled",true,true];
 			} else {
 				_listOfAi pushBack _unit; 
 				_hevArrayAi pushBack _hev;

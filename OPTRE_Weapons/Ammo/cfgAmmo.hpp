@@ -912,9 +912,11 @@ class CfgAmmo
 		indirectHitRange = 2.5;
 		explosive = 0.8;
 		cost = 500;
-		airFriction = 0.075;
-		sideAirFriction = 0.075;
+		airFriction = 0;
+		sideairFriction = 0;
+		coefGravity = 0.0;
 		maxSpeed = 150;
+		typicalSpeed = 150;
 		initTime = 0;
 		thrustTime = 0.1;
 		thrust = 0.1;
@@ -947,11 +949,9 @@ class CfgAmmo
 		model = "OPTRE_weapons\rockets\M41_rocket.p3d";
 		hit = 300;
 		indirectHit = 100;
-		indirectHitRange = 15;
+		indirectHitRange = 10;
 		explosive = 1;
 		allowAgainstInfantry = 1;
-		coefGravity = 0;
-		airFriction = 0;
 	};
 	
 	//Grenades

@@ -40,7 +40,7 @@ class OPTRE_LHD_LeftBottom_Radar {
 				y = 0.951 * safezoneH + safezoneY;
 				w = 0.04125 * safezoneW;
 				h = 0.022 * safezoneH;
-				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Pictures; _OPTRE_Hud_ScaleMeters = (round (OPTRE_Hud_RadarScale / 0.01) * 50); _OPTRE_Hud_ScaleMetersString = ( str _OPTRE_Hud_ScaleMeters + 'm' ); _this select 0 ctrlSetText _OPTRE_Hud_ScaleMetersString";
+				onLoad = "_scale = [] call OPTRE_Fnc_MapScale; (_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Pictures; _OPTRE_Hud_ScaleMeters = (round (OPTRE_Hud_RadarScale / _scale) * 50); _OPTRE_Hud_ScaleMetersString = ( str _OPTRE_Hud_ScaleMeters + 'm' ); _this select 0 ctrlSetText _OPTRE_Hud_ScaleMetersString";
 				size = 0.040;
 				class Attributes {
 				  align = "left";

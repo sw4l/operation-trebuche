@@ -57,7 +57,7 @@ class OPTRE_LHD_LeftBottom_HudMap {
 				class Attributes {
 				  align = "right";
 				};	
-				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Pictures; (_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Pictures; _OPTRE_Hud_ScaleMeters = (round (OPTRE_Hud_MapScale / 0.01) * 100); _OPTRE_Hud_ScaleMetersString = ( str _OPTRE_Hud_ScaleMeters + 'm' ); _this select 0 ctrlSetText _OPTRE_Hud_ScaleMetersString";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Pictures; (_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Pictures; _OPTRE_Hud_ScaleMeters = ( (round ( OPTRE_Hud_MapScale / ([] call OPTRE_Fnc_MapScale) ) ) * 100); _OPTRE_Hud_ScaleMetersString = ( str _OPTRE_Hud_ScaleMeters + 'm' ); _this select 0 ctrlSetText _OPTRE_Hud_ScaleMetersString";
 			};
 			////////////////////////////////////////////////////////
 			// GUI EDITOR OUTPUT END

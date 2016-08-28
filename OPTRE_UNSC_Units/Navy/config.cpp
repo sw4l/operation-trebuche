@@ -386,7 +386,6 @@ class cfgWeapons
 	class H_Cap_oli;
 	class H_HelmetCrew_B;
 	class U_B_HeliPilotCoveralls;
-	class Iteminfo;
 	
 	// UNIFORMS START
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -397,7 +396,7 @@ class cfgWeapons
 		author																					= "Article 2 Studios";
 		//picture   																			= "\OPTRE_UNSC_Units\marines\icons\marine_uniform.paa"; //Need a picture
 		displayName																				= "-";
-		class ItemInfo: ItemInfo
+		class ItemInfo: UniformItem
 		{
 			uniformClass																		= "OPTRE_UNSC_Navy_Soldier";
 		};

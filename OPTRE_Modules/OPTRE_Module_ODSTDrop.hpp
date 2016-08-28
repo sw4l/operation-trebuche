@@ -21,7 +21,7 @@
   			{
 				displayName = "Team Leader";
 				description = "Class of ODST to be inserted via HEV.";
-				defaultValue = "NONE"; // Default text filled in the input box
+				defaultValue = "random"; // Default text filled in the input box
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 				class values
 				{
@@ -72,22 +72,22 @@
  			class waypoints
   			{
 				displayName = "WayPoints"; // Argument label
-				description = "An array or marker position that the groups spawned will follow once on the ground.";// Tooltip description
-				defaultValue = "MapMarkerName1,MapMarkerName2,Map_Marker_Name_Three";
+				description = "An array or map marker variable names that the groups spawned will follow once on the ground as waypoints. No quotations are needed for example: M1,Marker2,MapMarker1";// Tooltip description
+				defaultValue = "";
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 			};
 			class finalWaypoint 
   			{
 				displayName = "Final Waypoint Task";
-				description = "Side Of Pelican, WEST or EAST";
-				defaultValue = "NONE"; // Default text filled in the input box
+				description = "What should the group do on their final waypoint. If you have given no waypoints then this option is ignored. If CBA Garrison is selected units will find houses within 75m of last waypoint. If CBA patrol is selected group will patrol within a 300m area of last waypoint.";
+				defaultValue = " "; // Default text filled in the input box
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 				class values
 				{
-					class n1	{name = "BIS Cycle Back To First Waypoint"; value = "cycle"; default = 1; }; 
+					class n1	{name = "BIS Cycle Back To First Waypoint"; value = "cycle"; }; 
 					class n2	{name = "CBA Garrison Near Final Waypoint"; value = "garrison";}; 
 					class n3    {name = "CBA Patrol Around Final Waypoint"; value = "patrol";};		
-					class n4    {name = "Stop, Do Nothing"; value = "";};	
+					class n4    {name = "Stop, Do Nothing"; value = ""; default = 1;};	
 				};
 			};				
 		};	

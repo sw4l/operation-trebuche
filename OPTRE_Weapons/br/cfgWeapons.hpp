@@ -4,11 +4,8 @@ class Mode_FullAuto;	// External class reference
 	
 class CfgWeapons
 {
-	class WeaponSlotsInfo;
-	class SlotInfo;
 	class ItemCore;
 	class InventoryOpticsItem_Base_F;
-	class GunParticles;
 	
 	//ATTACHMENTS
 	
@@ -95,7 +92,7 @@ class CfgWeapons
 		deployedPivot    							= "bipod";
 		swayDecaySpeed = 1.25;
 		recoil = "recoil_mx";
-		class GunParticles: GunParticles
+		class GunParticles
 		{
 		   class SecondEffect
 		   {
@@ -305,9 +302,9 @@ class CfgWeapons
 			soundBurst = 0;
 			burst = 3;
 		};
-		class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
+		class WeaponSlotsInfo //Defines attachment slots
  		{
- 			class MuzzleSlot: SlotInfo
+ 			class MuzzleSlot
 			{
 				access 								= 1;
 				compatibleitems[] 					= {"muzzle_snds_B"};
@@ -315,7 +312,7 @@ class CfgWeapons
 				linkproxy 							= "\A3\data_f\proxies\weapon_slots\MUZZLE";
 				scope 								= 2;
 			};
-			class CowsSlot: SlotInfo
+			class CowsSlot
 			{
 				access 								= 1;
 				compatibleitems[] 					= {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope"};
@@ -323,7 +320,7 @@ class CfgWeapons
 				linkproxy 							= "\A3\data_f\proxies\weapon_slots\TOP";
 				scope 								= 2;
 			};
-			class PointerSlot: SlotInfo
+			class PointerSlot
 			{
 				access 								= 1;
 				compatibleitems[] 					= {"acc_pointer_IR", "acc_flashlight"};

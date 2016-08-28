@@ -98,6 +98,13 @@ class CfgVehicles
 		model = "\OPTRE_buildings\streetobjects\sidewalk_service_invcorner.p3d";
 		author = "Article 2 Studios";
 	};
+	class Land_sidewalk_service_straight: Land_sidewalk_wide_short
+	{
+		dlc = "OPTRE";
+		displayName = "Sidewalk (Service Straight)";
+		model = "\OPTRE_buildings\streetobjects\sidewalk_service_straight.p3d";
+		author = "Article 2 Studios";
+	};
 	class Land_2way_intersection: Land_sidewalk_wide_short
 	{
 		dlc = "OPTRE";
@@ -115,33 +122,35 @@ class CfgVehicles
 	class Land_main_road_short: Helipad_base_F
 	{
 		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 2;
 		displayName = "Main Road (Short)";
 		model = "\OPTRE_buildings\streetobjects\main_road_short.p3d";
 		author = "Article 2 Studios";
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
 	};
-	/*class Land_main_road_long: Land_main_road_short
+	class Land_main_road_medium: Land_main_road_short
+	{
+		dlc = "OPTRE";
+		displayName = "Main Road (Medium)";
+		model = "\OPTRE_buildings\streetobjects\main_road_medium.p3d";
+		author = "Article 2 Studios";
+	};
+	class Land_main_road_long: Land_main_road_short
 	{
 		dlc = "OPTRE";
 		displayName = "Main Road (Long)";
 		model = "\OPTRE_buildings\streetobjects\main_road_long.p3d";
 		author = "Article 2 Studios";
 	};
-	class Land_service_road_short: Land_main_road_short
+	class Land_service_road: Land_main_road_short
 	{
 		dlc = "OPTRE";
-		displayName = "Service Road (Short)";
-		model = "\OPTRE_buildings\streetobjects\service_road_short.p3d";
+		displayName = "Service Road";
+		model = "\OPTRE_buildings\streetobjects\service_road.p3d";
 		author = "Article 2 Studios";
 	};
-	class Land_service_road_long: Land_main_road_short
-	{
-		dlc = "OPTRE";
-		displayName = "Service Road (Long)";
-		model = "\OPTRE_buildings\streetobjects\service_road_long.p3d";
-		author = "Article 2 Studios";
-	};*/
 
 	class Land_OPTRE_Cone: RoadCone_F
 	{

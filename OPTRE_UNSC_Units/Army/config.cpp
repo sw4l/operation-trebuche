@@ -1964,8 +1964,6 @@ class CfgVehicles //This configures units and backpacks
 
 class cfgWeapons
 {
-	class ItemCore;
-	class ItemInfo;
 	class U_B_CombatUniform_mcam;
 	class UniformItem;
 	class V_PlateCarrier1_rgr;

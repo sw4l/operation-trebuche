@@ -66,7 +66,7 @@
   			{
 				displayName = "Side Of Pelican";
 				description = "Side Of Pelican, WEST or EAST";
-				defaultValue = "NONE"; // Default text filled in the input box
+				defaultValue = "WEST"; // Default text filled in the input box
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 				class values
 				{
@@ -87,7 +87,7 @@
 				{
 					class n1	{name = "Drop Supply Pods Not Vehicles"; value = "none"; default = 1;}; 
 					
-					class a	{name = "Insurrectionist Warthog APC"; value = "OPTRE_M12_FAV_APC";}; 
+					/*class a	{name = "Insurrectionist Warthog APC"; value = "OPTRE_M12_FAV_APC";}; 
 					class b	{name = "Insurrectionist Warthog Unarmed"; value = "PTRE_M12_FAV_ins";}; 
 					class c	{name = "Insurrectionist Warthog MG"; value = "OPTRE_M12_LRV_ins";}; 
 					class d	{name = "Insurrectionist Warthog Rocket"; value = "OPTRE_M12A1_LRV_ins";}; 
@@ -137,7 +137,7 @@
 					class n35	{name = "Falcon Tan"; value = "OPTRE_UNSC_falcon_tan";}; 
 					
 					class n36	{name = "Stallion Tan"; value = "OPTRE_m1087_stallion_unsc";}; 
-					class n37	{name = "Mule Tan"; value = "OPTRE_m1015_mule_unsc";}; 
+					class n37	{name = "Mule Tan"; value = "OPTRE_m1015_mule_unsc";}; */
 					
 				};
 			};
@@ -146,7 +146,7 @@
   			{
 				displayName = "Supply Pod 1";
 				description = "Type of box required.";
-				defaultValue = "NONE"; // Default text filled in the input box
+				defaultValue = "rdm"; // Default text filled in the input box
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 				class values
 				{
@@ -169,7 +169,7 @@
   			{
 				displayName = "Supply Pod 2";
 				description = "Type of box required.";
-				defaultValue = "NONE"; // Default text filled in the input box
+				defaultValue = "rdm"; // Default text filled in the input box
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 				class values
 				{
@@ -192,7 +192,7 @@
   			{
 				displayName = "Supply Pod 3";
 				description = "Type of box required.";
-				defaultValue = "NONE"; // Default text filled in the input box
+				defaultValue = "rdm"; // Default text filled in the input box
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 				class values
 				{
@@ -215,7 +215,7 @@
   			{
 				displayName = "Supply Pod 4";
 				description = "Type of box required.";
-				defaultValue = "NONE"; // Default text filled in the input box
+				defaultValue = "rdm"; // Default text filled in the input box
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 				class values
 				{
@@ -238,7 +238,7 @@
   			{
 				displayName = "Supply Pod 5";
 				description = "Type of box required.";
-				defaultValue = "NONE"; // Default text filled in the input box
+				defaultValue = "rdm"; // Default text filled in the input box
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 				class values
 				{
@@ -261,7 +261,7 @@
   			{
 				displayName = "Supply Pod 6";
 				description = "Type of box required.";
-				defaultValue = "NONE"; // Default text filled in the input box
+				defaultValue = "rdm"; // Default text filled in the input box
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 				class values
 				{
@@ -284,8 +284,8 @@
 			class code
   			{
 				displayName = "Custom Box Code"; // Argument label
-				description = "A script that will be run on any pod assigned as CUSTOM. _This refers to the pod that is spawned.";// Tooltip description
-				defaultValue = "_this addMagazineCargoGlobal ['OPTRE_60Rnd_5x23mm_Mag',4]; _this addWeaponCargoGlobal ['OPTRE_M7',1];";
+				description = "A script that will be run on any pod assigned as CUSTOM. _This refers to the pod that is spawned. Example: _this addWeaponCargoGlobal ['OPTRE_M7',1];";// Tooltip description
+				defaultValue = "";
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 			};
 					   

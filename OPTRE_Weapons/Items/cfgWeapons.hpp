@@ -6,9 +6,6 @@ class asdg_OpticRail1913;
 	
 class CfgWeapons
 {
-	class WeaponSlotsInfo;
-	class SlotInfo;
-	class ItemCore;
 	class FirstAidKit;
 	class InventoryFirstAidKitItem_Base_F;
 	class Medikit;

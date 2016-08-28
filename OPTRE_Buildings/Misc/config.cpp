@@ -13,8 +13,9 @@ class CfgPatches
 class CfgVehicles
 {
 	class House_F;
+	class Items_base_F;
 	
-	class Land_KOTH_playset: House_F
+	class Land_KOTH_playset: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Misc\KOTH_playset";

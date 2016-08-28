@@ -40,11 +40,13 @@ if (_manualControlState > 0) then {0 = [_manualControlState] call OPTRE_fnc_HEVC
 
 _count = 0;
 playSound "OPTRE_Sounds_WindLoopNewLong";
-while {!(isTouchingGround _hev) AND (getPosASLW _hev select 2) > 1} do {
+while {!(isTouchingGround _hev) AND (getPosASLW _hev select 2) > 1 AND alive player} do {
 	sleep 0.5;
 	playSound "OPTRE_Sounds_WindLoopNewLong";
 	_count = _count + 1; 
 };
+
+if (!alive player) exitWith {resetCamShake;};
 
 if (surfaceIsWater getPos _hev) then {
 	_hev removeAllEventHandlers "GetOut";

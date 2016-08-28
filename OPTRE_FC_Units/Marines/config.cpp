@@ -111,6 +111,31 @@ class CfgVehicles
 				armor = 4;
 			};
 		};
+		class Wounds /// changes material of skin according to damage
+		{
+			tex[] = {};
+			mat[] = {
+				"A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",	
+
+				"A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat",
+				"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",	
+				
+				"A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",	
+				
+				"A3\Characters_F\Heads\Data\hl_white_old.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",	
+				
+				"A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat",
+				"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"					
+			};
+		};
 		editorSubcategory = "OPTRE_FC_EditorSubcategory_Marines";
 	};
 	class OPTRE_FC_Marines_Soldier_L: OPTRE_FC_Marines_Soldier
@@ -122,6 +147,31 @@ class CfgVehicles
 		respawnLinkedItems[] 											= {"OPTRE_FC_Marines_Vest_L","OPTRE_FC_Marines_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		hiddenSelections[] 												= {"camo1","attach_kneepads","attach_sleeves"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"optre_fc_units\marines\data\h3_uniform_co.paa"};
+		class Wounds /// changes material of skin according to damage
+		{
+			tex[] = {};
+			mat[] = {
+				"A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",	
+
+				"A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat",
+				"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",	
+				
+				"A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",	
+				
+				"A3\Characters_F\Heads\Data\hl_white_old.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",	
+				
+				"A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat",
+				"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat",
+				"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"					
+			};
+		};
 	};	
 	class OPTRE_FC_Marines_Soldier_WDL: OPTRE_FC_Marines_Soldier
 	{
@@ -215,8 +265,8 @@ class CfgVehicles
 		scope															= 2;
 		scopeCurator													= 2;
 		displayName														= "Rifleman (Light)";
-		linkedItems[] 													= {"OPTRE_FC_Marines_Vest","OPTRE_BoonieHat_FORECON","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] 											= {"OPTRE_FC_Marines_Vest","OPTRE_BoonieHat_FORECON","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] 													= {"OPTRE_FC_Marines_Vest_L","OPTRE_BoonieHat_FORECON","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] 											= {"OPTRE_FC_Marines_Vest_L","OPTRE_BoonieHat_FORECON","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		weapons[] 														= {"OPTRE_MA5B_AC","Throw","Put"};
 		respawnWeapons[] 												= {"OPTRE_MA5B_AC","Throw","Put"};
 		magazines[] 													= {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
@@ -433,15 +483,12 @@ class CfgVehicles
 
 class cfgWeapons
 {
-	class ItemCore;
 	class U_B_CombatUniform_mcam;
 	class UniformItem;
 	class V_PlateCarrier1_rgr;
 	class VestItem;
-	class HeadgearItem;
 	class H_HelmetB;
-	class H_MilCap_Blue;
-	class H_Booniehat_khk;
+	class HeadgearItem;
 	
 	// UNIFORMS START
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

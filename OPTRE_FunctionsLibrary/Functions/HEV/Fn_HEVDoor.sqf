@@ -1,7 +1,7 @@
 /* 
 	OPTRE_Fnc_HEVDoor
 	
-	Description: Can be used to open the HEVs door, or eject it, can also be forced to make ai or players eject from vehicle afterwards. 
+	Description: Can be used to open the HEVs door, or eject it, can also be to make ai or players eject from vehicle afterwards. 
 	
 	Author: Big_Wilk
 	

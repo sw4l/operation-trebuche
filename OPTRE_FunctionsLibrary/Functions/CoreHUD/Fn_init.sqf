@@ -34,15 +34,16 @@ OPTRE_Hud_UnFullyLoaded = true;
 OPTRE_Hud_On_Helmet = ""; 
 OPTRE_HUD_CompassWanted = true; 
 OPTRE_LHD_Function = 1;
-setAperture -1;
-OPTRE_HUD_PIP_NVGTI = 0;
 
+setAperture -1;
+
+OPTRE_HUD_PIP_NVGTI = 0;
 OPTRE_LHD_PIPSel = 0;
 OPTRE_LHD_PIPMode = 0; 
 
 OPTRE_Hud_RadarMode = 2; // 	0 group only 	1: all units known by side + side
 OPTRE_Hud_UnitSize = 0; // init. 
-OPTRE_Hud_RadarScale = 0.01; // 50m is 0.01 100m is 0.02 
+OPTRE_Hud_RadarScale = [] call OPTRE_Fnc_MapScale;; // 50m is 0.01 100m is 0.02 on altis. 
 
 OPTRE_Hud_ColorScheme_Pictures = [0,0,0,.5];
 OPTRE_Hud_ColorScheme_Text = [0,0,0,.5];

@@ -57,7 +57,7 @@ _text_103 ctrlSetTextColor [
 // If hud on first time and not refresh from menu do animations: 
 if !OPTRE_Hud_On then {
 
-	showHUD [true, false, true, false, true, true, false, true]; 
+	showHUD [true, false, true, false, true, true, false, true, FALSE]; 
 
 	[player, "OPTRE_Sounds_HUD_Visor", 50] call CBA_fnc_globalSay3d;
 	
@@ -87,11 +87,8 @@ if !OPTRE_Hud_On then {
 ////////////////////////////////////////////////////////////////////// Set Initial HUD Conditions ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-if OPTRE_HUD_CompassWanted then {
-	_compText = format ["\n\n\nSUBJECT: %1. %2",([player, "displayNameShort"] call BIS_fnc_rankParams), (name player)];
-} else {
-	ctrlDelete _text_103;
-};
+_compText = format ["\n\n\nSUBJECT: %1. %2",([player, "displayNameShort"] call BIS_fnc_rankParams), (name player)];
+if !OPTRE_HUD_CompassWanted then {ctrlDelete _text_103;};
 
 OPTRE_HUD_CurrentThrowCheck = "";
 OPTRE_HUD_stringNumbs = ""; 
@@ -146,8 +143,10 @@ While {OPTRE_Hud_On AND cameraView != "EXTERNAL"} do {
 
 	// Monitor Weapons
 	_magazinesPlayer = magazines player;
-	_stringNumbs = str ({_x == (currentMagazine player)} count _magazinesPlayer) splitString '';		
 	_currentWeapon = currentWeapon player; 
+	_weaponMagsAllowed = (getArray (configfile >> "CfgWeapons" >> _currentWeapon >> "magazines")); 
+	_stringNumbs = str ({_x in _weaponMagsAllowed} count _magazinesPlayer) splitString '';	
+	
 	if (OPTRE_HUD_UPDATEALL_Main OR OPTRE_HUD_stringNumbs != str _stringNumbs OR OPTRE_HUD_WepCurrent != _currentWeapon) then {
 	
 		_secondaryWeapon = secondaryWeapon player; 
@@ -204,7 +203,7 @@ While {OPTRE_Hud_On AND cameraView != "EXTERNAL"} do {
 if OPTRE_Hud_On then {
 
 	{_x cutFadeOut 0;} forEach [300,301,302];  
-	showHUD [true, true, true, true, true, true, true, true]; 
+	showHUD [true, true, true, true, true, true, true, true, FALSE]; 
 	
 	waitUntil {cameraView != "EXTERNAL" OR !OPTRE_Hud_On};
 	
@@ -215,7 +214,7 @@ if OPTRE_Hud_On then {
 		//302 cutRsc [OPTRE_Hud_AmmoCurrent,"PLAIN",-1, false];
 		0 = [true] call OPTRE_Fnc_SetAmmoCounterState;
 		
-		showHUD [true, false, true, false, true, true, false, true]; 
+		showHUD [true, false, true, false, true, true, false, true, FALSE]; 
 
 	};
 	
@@ -249,7 +248,7 @@ if !OPTRE_Hud_On then {
 	
 	if !OPTRE_Hud_On then {
 		300 cutFadeOut 1;
-		showHUD [true, true, true, true, true, true, true, true]; 
+		showHUD [true, true, true, true, true, true, true, true, TRUE]; 
 	};
 		
 };

@@ -42,7 +42,7 @@ _listOfAi = []; 		// All ai units
 		if (isPlayer _x) then {
 			_listOfPlayers pushBack _x; 
 			_hevArrayPlayer pushBack _hev;
-			_hev setVariable ["OPTRE_PlayerControled",true,false];
+			_hev setVariable ["OPTRE_PlayerControled",true,true];
 		} else {
 			_listOfAi pushBack _x; 
 			_hevArrayAi pushBack _hev;

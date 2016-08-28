@@ -208,14 +208,8 @@ class CfgVehicles
 
 class cfgWeapons
 {
-	class ItemCore;
 	class U_B_CombatUniform_mcam;
 	class UniformItem;
-	class V_PlateCarrier1_rgr;
-	class VestItem;
-	class HeadgearItem;
-	class H_MilCap_Blue;
-	class H_Booniehat_khk;
 	
 	// UNIFORMS START
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

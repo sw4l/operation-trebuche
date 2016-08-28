@@ -30,6 +30,7 @@ disableSerialization;
 
 _ctrl = ( _this select 0 ); 
 
+
 // Set Map Scale Based On Need
 _ctrl ctrlMapAnimAdd [0, OPTRE_Hud_RadarScale, [0,0,0] ]; // 0.01m on ~50m 
 ctrlMapAnimCommit _ctrl; 
@@ -37,8 +38,8 @@ ctrlMapAnimCommit _ctrl;
 // Icon Size Of Units on map based on mapscale. 
 OPTRE_Hud_UnitSize = (4 * 0.15) * 8 ^(abs log (ctrlMapScale _ctrl)); 
 
-// Determine the map Scale Values 
-OPTRE_Hud_ScaleMeters = (round (OPTRE_Hud_RadarScale / 0.01) * 50);
+_scale = [] call OPTRE_Fnc_MapScale;
+OPTRE_Hud_ScaleMeters = (round (OPTRE_Hud_RadarScale / _scale) * 50);
 //OPTRE_Hud_ScaleMetersString = ( OPTRE_Hud_ScaleMeters + "m" ); 
 
 // Check the modes limits have been applyed correclty and are not nil. 

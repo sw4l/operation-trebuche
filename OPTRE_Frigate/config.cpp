@@ -122,8 +122,8 @@ class CfgVehicles
 	class OPTRE_Frigate_M910_Turret: StaticWeapon
 	{
 		dlc = "OPTRE";
-		scope = 2;
-		scopeCurator = 2;
+		scope = 1;
+		scopeCurator = 1;
 		side = 1;						/// 3 stands for civilians, 0 is OPFOR, 1 is BLUFOR, 2 means guerrillas
 		faction	= "OPTRE_UNSC";					/// defines the faction inside of the side
 		crew = "B_UAV_AI";					/// lets use the sample soldier we have as default captain of the boat
@@ -141,7 +141,7 @@ class CfgVehicles
 			class muzzle_rot
 			{
 				source="ammorandom";
-				weapon="OPTRE_M9109";
+				weapon="OPTRE_M9109_Turret";
 			};
 		};
 		class Turrets: Turrets
@@ -178,7 +178,7 @@ class CfgVehicles
 				soundServo[] = { "", 0.01, 2.000000 };
 				memoryPointsGetInGunner = "Pos Gunner";
 				memoryPointsGetInGunnerDir = "Pos Gunner dir";
-				weapons[] = {"OPTRE_M9109"};
+				weapons[] = {"OPTRE_M9109_Turret"};
 				magazines[] = {"OPTRE_2500Rnd_50mm_HE","OPTRE_2500Rnd_50mm_HE","OPTRE_2500Rnd_50mm_HE","OPTRE_2500Rnd_50mm_HE"};
 				memoryPointGunnerOptics = "gunnerview";
 				gunnerOpticsModel="A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";

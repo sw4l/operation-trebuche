@@ -16,7 +16,7 @@ true */
 disableSerialization;    
 
 if (isNil "OPTRE_Hud_MapScale") then {
-	OPTRE_Hud_MapScale = 0.19;
+	OPTRE_Hud_MapScale = (2 * ([] call OPTRE_Fnc_MapScale));
 };    
 
 	( _this select 0 ) ctrlAddEventHandler ["Draw", "

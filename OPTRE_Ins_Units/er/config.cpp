@@ -702,7 +702,6 @@ class CfgVehicles
 
 class cfgWeapons
 {
-	class ItemCore;
 	class Uniform_Base;	
 	class UniformItem;
 	class V_PlateCarrier1_rgr;
@@ -1184,7 +1183,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]   				= {"OPTRE_Ins_Units\er\data\helmet_innie_veteran_co.paa"}; 
 		};
 	};
-    class OPTRE_h_Booniehat_Grey: ItemCore
+    class OPTRE_h_Booniehat_Grey: OPTRE_INS_Helmet_1
     {
 		dlc = "OPTRE";
         scope = 2;
@@ -1210,7 +1209,7 @@ class cfgWeapons
 		picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_H_Booniehat_oli_ca.paa";
 		hiddenSelectionsTextures[] = {"OPTRE_Ins_Units\data\innie_boonie_green_co.paa"};
 	};
-	class OPTRE_h_PatrolCap_Green: ItemCore
+	class OPTRE_h_PatrolCap_Green: OPTRE_INS_Helmet_1
     {
 		dlc = "OPTRE";
         scope = 2;

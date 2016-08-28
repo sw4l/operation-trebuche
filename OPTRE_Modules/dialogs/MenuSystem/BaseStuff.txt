@@ -1,0 +1,36 @@
+class OPTRE_UnscDataBase {
+	
+	idd = -1; 
+		
+	class Objects
+	{
+				
+	};			
+	
+	class controls 
+	{
+	
+		class menuSwitchList: OPTRE_UNSCMENU_RscListbox
+		{
+			idc = 990;
+			x = 0.17 * safezoneW + safezoneX;
+			y = 0.182 * safezoneH + safezoneY;
+			w = 0.113437 * safezoneW;
+			h = 0.242 * safezoneH;
+			OnLoad = "{_menuName = getText (configfile >> 'cfgOptreUNSCmenus' >> _x >> 'MenuName');_function = getText (configfile >> 'cfgOptreUNSCmenus' >> _x >> 'Function');_securityValue = getNumber (configfile >> 'cfgOptreUNSCmenus' >> _x >> 'Security');_i = (_this select 0) lbAdd _menuName;(_this select 0) lbSetData [_i, _function];(_this select 0) lbSetValue [_i, _securityValue];(_this select 0) lbSetPicture [_i,(getText (configfile >> 'cfgOptreUNSCmenus' >> _x >> 'icon'))];if (_x == 'UNSC_DATABASE') then {(_this select 0) lbSetCurSel _i;};} forEach OPTRE_UNSC_Console_MenusAllowed;";
+		};		
+		class menuSwitchButton: OPTRE_UNSCMENU_RscButton
+		{
+			idc = -1;
+			type = 1; 
+			text = "Switch Menu"; //--- ToDo: Localize;
+			x = 0.17 * safezoneW + safezoneX;
+			y = 0.423 * safezoneH + safezoneY;
+			w = 0.0928125 * safezoneW;
+			h = 0.022 * safezoneH;
+			onButtonClick = "closeDialog 0; _function = getText	(configfile >> ""cfgOptreUNSCmenus"" >> (OPTRE_UNSC_Console_MenusAllowed select (lbCurSel 990)) >> ""Function""); if (_function != """") then {0 = [OPTRE_CurrentConsole,OPTRE_CurrentConsoleString] spawn (missionNamespace getVariable _function);} else {createDialog (getText	(configfile >> ""cfgOptreUNSCmenus"" >> (OPTRE_UNSC_Console_MenusAllowed select (lbCurSel 990)) >> ""Dialog""));};";
+		};
+		
+	};
+
+};

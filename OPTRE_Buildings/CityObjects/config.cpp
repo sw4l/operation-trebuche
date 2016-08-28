@@ -42,7 +42,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
-	class Land_Ped_Bridge_Mid: House_F
+	class Land_Ped_Bridge_Mid: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_Mid";
@@ -55,7 +55,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
-	class Land_Ped_Bridge_End: House_F
+	class Land_Ped_Bridge_End: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_End";
@@ -68,7 +68,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 	
-	class Land_Ped_Bridge_Mid_Over: House_F
+	class Land_Ped_Bridge_Mid_Over: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_Mid_Over";
@@ -81,7 +81,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
-	class Land_Ped_Bridge_Single_Mid: House_F
+	class Land_Ped_Bridge_Single_Mid: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_Single_Mid";
@@ -94,7 +94,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 	
-	class Land_Ped_Bridge_Single_End: House_F
+	class Land_Ped_Bridge_Single_End: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_Single_End";
@@ -107,7 +107,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 	
-	class Land_Ped_Bridge_T_Int: House_F
+	class Land_Ped_Bridge_T_Int: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_T_Int";
@@ -120,7 +120,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
-	class Land_Ped_Bridge_Int: House_F
+	class Land_Ped_Bridge_Int: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_Int";
@@ -133,7 +133,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 	
-	class Land_Ped_Bridge_DoubleT_Int: House_F
+	class Land_Ped_Bridge_DoubleT_Int: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_DoubleT_Int";
@@ -146,7 +146,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
-	class Land_Ped_Bridge_Double_Int: House_F
+	class Land_Ped_Bridge_Double_Int: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Ped_Bridge_Double_Int";
@@ -250,7 +250,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 	
-	class Land_Optican_Kiosk_lg: House_F
+	class Land_Optican_Kiosk_lg: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Optican_Kiosk_lg";
@@ -276,7 +276,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 		
-	class Land_Information_Board: House_F
+	class Land_Information_Board: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\Information_Board";
@@ -510,7 +510,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
-	class Land_OPTRE_Kiosk_1: House_F
+	class Land_OPTRE_Kiosk_1: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\OPTRE_kiosk_1";
@@ -523,7 +523,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
-	class Land_OPTRE_Kiosk_2: House_F
+	class Land_OPTRE_Kiosk_2: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\OPTRE_kiosk_2";
@@ -536,7 +536,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
-	class Land_OPTRE_Kiosk_3: House_F
+	class Land_OPTRE_Kiosk_3: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\OPTRE_kiosk_3";
@@ -549,7 +549,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
-	class Land_OPTRE_Information_Kiosk: House_F
+	class Land_OPTRE_Information_Kiosk: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\OPTRE_Information_Kiosk";
@@ -601,7 +601,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
 	};
 
-	class Land_OPTRE_vidphone_terminal: House_F
+	class Land_OPTRE_vidphone_terminal: Items_base_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\CityObjects\OPTRE_vidphone_terminal";

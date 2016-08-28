@@ -4,11 +4,9 @@ class Mode_FullAuto;	// External class reference
 
 class CfgWeapons
 {
-	class Launcher;
 	class Launcher_Base_F;
 	class launch_Titan_base;    // External class reference
 	class launch_RPG32_F;	// External class reference
-	class WeaponSlotsInfo;	// External class reference
 
 	class OPTRE_M41_SSR : launch_RPG32_F
 	{
@@ -33,14 +31,14 @@ class CfgWeapons
 		model = "\OPTRE_Weapons\Rockets\M41_launcher_loaded.p3d";
 		handAnim[]={"OFP2_ManSkeleton","\OPTRE_Weapons\Rockets\Data\Anim\m41_hand_anim.rtm"};
 		drysound[] = {"A3\sounds_f\weapons\other\dry6", 0.0316228, 1, 10};
-		soundfly[] = {"A3\sounds_f\weapons\rockets\rocket_fly_1", 0.316228, 1.5, 700};
+		soundfly[] = {"A3\sounds_f\weapons\rockets\rocket_fly_2", 0.5, 1, 500};
 		modelOptics = "\OPTRE_Weapons\Rockets\M41_Optic.p3d";
 		recoil = "recoil_single_law";
 		aiRateOfFire = 5.0;	// delay between shots at given distance
 		aiRateOfFireDistance = 250;
 		reloadaction = "ReloadRPG";
 		reloadmagazinesound[] = {"A3\sounds_f\weapons\rockets\titan_reload_final", 0.562341, 1, 50};
-		class WeaponSlotsInfo: WeaponSlotsInfo
+		class WeaponSlotsInfo
 		{
 			mass = 200;
 		};

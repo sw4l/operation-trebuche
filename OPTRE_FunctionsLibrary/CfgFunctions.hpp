@@ -14,6 +14,7 @@ class CfgFunctions
 			class ToggleLowLight {};
 			class GetHudTypeString {};
 			class SetAmmoCounterState {};
+			class MapScale {};
 		};
 		
 		class HUDCommon
@@ -57,6 +58,7 @@ class CfgFunctions
 			class ModuleCAS {};
 			class ModuleZeus {};
 			class ModuleHEV {};
+			class ModuleHEVFakeODSTRoom {};
 		};
 			
 		class HEV
@@ -68,6 +70,7 @@ class CfgFunctions
 			
 			class SpawnHEVsFrigate {};
 			class SpawnHEVsNoFrigate {};
+			class SpawnFakeHEVRoom {};
 			
 			class HEVCleanUp {};
 			class HEVControls {};
@@ -78,6 +81,24 @@ class CfgFunctions
 			class PlayerHEVEffectsUpdate_Chute {};
 			class PlayerHEVEffectsUpdate_Light {};
 			class PlayerHEVEffectsUpdate_ReEntrySounds {};
+			
+			class HEVRoomDynamicSetupGrabUnits;
+			class HEVRoomFrigateSetupGrabUnits;
+		};
+		
+		class MenuSystem
+		{
+			file = "OPTRE_FunctionsLibrary\Functions\MenuSystem";
+			
+			class Menu {};
+		};
+		
+		class MenuFunctions
+		{
+			file = "OPTRE_FunctionsLibrary\Functions\MenuFunctions";
+			
+			class HEVRoom {};
+			class UNSCdatabase {};
 		};
 		
 		class Misc
@@ -104,6 +125,13 @@ class CfgFunctions
 			file = "OPTRE_FunctionsLibrary\Functions\Arrays";
 			
 			class StringToArrayOfString {}; 
+		};
+		
+		class Jetpack 
+		{
+			file = "OPTRE_FunctionsLibrary\Functions\Jetpack";
+			
+			class JetPack {};
 		};
 		
 		/*class FrigateSystem 

@@ -177,12 +177,14 @@ _pelican addEventHandler ["GetOut",{
 
 if (typeName _podArrayString == "ARRAY") then {
 
-	_wpDrop = _pelicanGroup addWaypoint [_pos , 0];
+	_dropPosSupPods = [_pos, 100, (_dir - 180)] call OPTRE_fnc_MathsTriangulatePos;
+	_wpDrop = _pelicanGroup addWaypoint [_dropPosSupPods , 0];
 	_wpDrop setWaypointStatements ["true", "if isServer then {_count = 0; { _time = (_count * 0.25); [_x,_time] spawn OPTRE_fnc_CS_MonitorSupplyPodDrop; _count = _count + 1; } forEach (vehicle this getVariable ""OPTRE_CS_SupPods""); vehicle this setVariable [""OPTRE_CS_SupPods"",[],false];};"];
 	_wpDrop setWaypointType "MOVE";
 	_wpDrop setWaypointBehaviour "CARELESS";
 	_wpDrop setWaypointCombatMode "RED";
-
+	_wpDrop setWaypointCompletionRadius 0;
+	
 	_count = 0; 
 	{
 		if (_count < 6) then { 		

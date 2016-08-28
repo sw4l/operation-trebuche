@@ -224,118 +224,107 @@ class OPTRE_ODST_Main_1_red_NoHex {
 			class primeWeaponIcon: OPTRE_HUD_RscPicture
 			{
 				idc = 120;
-				//text = "#(argb,8,8,3)color(1,1,1,1)";
-				x = 0.876406 * safezoneW + safezoneX;
-				y = 0.786 * safezoneH + safezoneY;
-				w = 0.12375 * safezoneW;
-				h = 0.088 * safezoneH;
-				//onLoad = "(_this select 0) ctrlSetText (getText (configFile >> 'CfgWeapons' >> (currentWeapon player) >> 'picture')); (_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Pictures;";
+				x = 0.866094 * safezoneW + safezoneX;
+				y = 0.808 * safezoneH + safezoneY;
+				w = 0.113437 * safezoneW;
+				h = 0.088 * safezoneH;				
 			};			
 			class secondaryWeaponIcon: OPTRE_HUD_RscPicture
 			{
 				idc = 121;
-				//text = "#(argb,8,8,3)color(1,0,0,1)";
-				x = 0.938281 * safezoneW + safezoneX;
+				x = 0.927969 * safezoneW + safezoneX;
 				y = 0.918 * safezoneH + safezoneY;
-				w = 0.061875 * safezoneW;
-				h = 0.055 * safezoneH;
-				//onLoad = "(_this select 0) ctrlSetText (if (currentWeapon player == primaryWeapon player) then { (getText (configFile >> 'CfgWeapons' >> (handgunWeapon player) >> 'picture')) } else { (getText (configFile >> 'CfgWeapons' >> (primaryWeapon player) >> 'picture')) }); (_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Pictures;";
+				w = 0.0515625 * safezoneW;
+				h = 0.044 * safezoneH;
 			};
 			class throwIcon: OPTRE_HUD_RscPicture
 			{
 				idc = 122;
-				//text = "#(argb,8,8,3)color(0,1,0,1)";
-				x = 0.891875 * safezoneW + safezoneX;
-				y = 0.918 * safezoneH + safezoneY;
-				w = 0.04125 * safezoneW;
-				h = 0.066 * safezoneH;
-				//onLoad = "_grenDetail = currentThrowable player; if (count _grenDetail > 0) then { _gren = _grenDetail select 0; (_this select 0) ctrlSetText (getText (configFile >> 'CfgMagazines' >> _gren >> 'picture')); }; (_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Pictures;";
+				x = 0.762969 * safezoneW + safezoneX;
+				y = 0.929 * safezoneH + safezoneY;
+				w = 0.0257812 * safezoneW;
+				h = 0.044 * safezoneH;
 			};
 			class atIcon: OPTRE_HUD_RscPicture
 			{
 				idc = 123;
-				//text = "#(argb,8,8,3)color(0,0,1,1)";
-				x = 0.752656 * safezoneW + safezoneX;
-				y = 0.885 * safezoneH + safezoneY;
-				w = 0.0825 * safezoneW;
-				h = 0.066 * safezoneH;
-				//onLoad = "(_this select 0) ctrlSetText (getText (configFile >> 'CfgWeapons' >> (secondaryWeapon player) >> 'picture')); (_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Pictures;";
+				x = 0.87125 * safezoneW + safezoneX;
+				y = 0.918 * safezoneH + safezoneY;
+				w = 0.0515625 * safezoneW;
+				h = 0.044 * safezoneH;				
 			};			
-			
 			
 			// Ammo Count
 			class RscPicture_101: OPTRE_HUD_RscPicture
 			{
 				idc = 101;
-				//text = "Data\Numbers\1.paa";
 				x = 0.850625 * safezoneW + safezoneX;
-				y = 0.808 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				y = 0.841 * safezoneH + safezoneY;
+				w = 0.0103125 * safezoneW;
+				h = 0.022 * safezoneH;
 			};
 			class RscPicture_102: OPTRE_HUD_RscPicture
 			{
 				idc = 102;
-				//text = "Data\Numbers\2.paa";
-				x = 0.824844 * safezoneW + safezoneX;
-				y = 0.808 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				x = 0.840312 * safezoneW + safezoneX;
+				y = 0.841 * safezoneH + safezoneY;
+				w = 0.0103125 * safezoneW;
+				h = 0.022 * safezoneH;			
 			};
 			class RscPicture_103: OPTRE_HUD_RscPicture
 			{
 				idc = 103;
-				//text = "Data\Numbers\3.paa";
-				x = 0.799062 * safezoneW + safezoneX;
-				y = 0.808 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				x = 0.83 * safezoneW + safezoneX;
+				y = 0.841 * safezoneH + safezoneY;
+				w = 0.0103125 * safezoneW;
+				h = 0.022 * safezoneH;		
 			};
 
 			class RscPicture_104: OPTRE_HUD_RscPicture
 			{
-				idc = 104;
-				//text = "Data\Numbers\4.paa";
-				x = 0.866094 * safezoneW + safezoneX;
-				y = 0.918 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				idc = 104;	
+				x = 0.742344 * safezoneW + safezoneX;
+				y = 0.94 * safezoneH + safezoneY;
+				w = 0.0103125 * safezoneW;
+				h = 0.022 * safezoneH;	
 			};
 			class RscPicture_105: OPTRE_HUD_RscPicture
 			{
 				idc = 105;
-				//text = "Data\Numbers\5.paa";
-				x = 0.840312 * safezoneW + safezoneX;
-				y = 0.918 * safezoneH + safezoneY;
-				w = 0.0257812 * safezoneW;
-				h = 0.044 * safezoneH;
+				x = 0.752656 * safezoneW + safezoneX;
+				y = 0.94 * safezoneH + safezoneY;
+				w = 0.0103125 * safezoneW;
+				h = 0.022 * safezoneH;
 			};
-			
 			
 			// Info: 
 			class RscText_300: OPTRE_HUD_SructuredText
 			{
 				idc = 300;
-				//text = "Semi  300m"; //--- ToDo: Localize;
-				x = 0.876406 * safezoneW + safezoneX;
-				y = 0.775 * safezoneH + safezoneY;
-				w = 0.118594 * safezoneW;
-				h = 0.022 * safezoneH;
-			   class Attributes {
+				x = 0.850625 * safezoneW + safezoneX;
+				y = 0.8025 * safezoneH + safezoneY;
+				w = 0.134062 * safezoneW;
+				h = 0.011 * safezoneH;
+			    class Attributes {
 					align = "center";
 					color = "#070103"; 	
-				 };
+				};
 			};
 			class RscText_301: OPTRE_HUD_SructuredText
 			{
 				idc = 301;
 				//text = "Smoke Grenade Whilte"; //--- ToDo: Localize;
-				x = 0.396875 * safezoneW + safezoneX;
-				y = 0.962 * safezoneH + safezoneY;
-				w = 0.495 * safezoneW;
-				h = 0.022 * safezoneH;
+				x = 0.737188 * safezoneW + safezoneX;
+				y = 0.9785 * safezoneH + safezoneY;
+				w = 0.0773437 * safezoneW;
+				h = 0.011 * safezoneH;
+				class Attributes {
+					align = "left";
+					color = "#070103"; 	
+				 };
 			};
-			class RscText_302: OPTRE_HUD_SructuredText
+			
+			/*class RscText_302: OPTRE_HUD_SructuredText
 			{
 				idc = 302;
 				//text = "RID: Cpt Big_Wilk LOC: 000000 TIME: 00:00:00"; //--- ToDo: Localize;
@@ -344,9 +333,9 @@ class OPTRE_ODST_Main_1_red_NoHex {
 				w = 1.00547 * safezoneW;
 				h = 0.022 * safezoneH;
 				 class Attributes {
-					align = "center";
+					align = "left";
 					color = "#070103"; 	
-				  };
+			    };
 			};
 			class RscText_303: OPTRE_HUD_SructuredText
 			{
@@ -355,12 +344,11 @@ class OPTRE_ODST_Main_1_red_NoHex {
 				y = 0.110 * safezoneH + safezoneY;
 				w = 0.4125 * safezoneW;
 				h = 0.021 * safezoneH;
-				//size = 0.025;
 				class Attributes {
-					align = "center";
+					align = "left";
 					color = "#070103"; 	
 				};
-			};
+			};*/
 
 		};
 	

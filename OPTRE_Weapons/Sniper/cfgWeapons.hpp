@@ -3,17 +3,10 @@ class Mode_Burst;
 class Mode_FullAuto;
     class CfgWeapons
     {
-            class WeaponSlotsInfo;
-            class SlotInfo;
             class ItemCore;
             class InventoryOpticsItem_Base_F;
 			class InventoryFlashLightItem_Base_F;
 			class InventoryMuzzleItem_Base_F;
-            class GunParticles;
-			class MuzzleSlot;
-			class CowsSlot;
-			class PointerSlot;
-			class UnderBarrelSlot;
 			class InventoryUnderItem_Base_F; /// base class for #bipodz
      
             //ATTACHMENTS
@@ -149,7 +142,7 @@ class Mode_FullAuto;
 					hasBipod																= true;	
 					drySound[] 																= {"A3\Sounds_F\weapons\Other\dry6.wss",1.0,1,20};
 					reloadMagazineSound[] 													= {"A3\Sounds_F\weapons\M320\M320_reload.wss",1.0,1,10};
-					class GunParticles: GunParticles
+					class GunParticles
                     {
 						class FirstEffect
 						{
@@ -265,24 +258,32 @@ class Mode_FullAuto;
                             maxRange = 2000;
                             maxRangeProbab = 0.25;
                     };
-                    class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
+                    class WeaponSlotsInfo //Defines attachment slots
                     {
-                            class MuzzleSlot: MuzzleSlot
-                            {
-                                compatibleitems[]        	                               = {"OPTRE_SRS99D_Suppressor"};
-                            };
-							class PointerSlot: PointerSlot
+							class MuzzleSlot
 							{
-								compatibleitems[] 											= {};
+								access 								= 1;
+								compatibleitems[] 					= {"OPTRE_SRS99D_Suppressor"};
+								displayname 						= "Muzzle Slot";
+								linkproxy 							= "\A3\data_f\proxies\weapon_slots\MUZZLE";
+								scope 								= 2;
 							};
-                            class CowsSlot: CowsSlot
-                            {
-                                compatibleitems[]        	                               = {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope"};
-                            };
-							class UnderBarrelSlot: UnderBarrelSlot /// using test bipod
+							class CowsSlot
 							{
-								compatibleItems[] 											= {};		
-							};	
+								access 								= 1;
+								compatibleitems[] 					= {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope"};
+								displayname 						= "Optics Slot";
+								linkproxy 							= "\A3\data_f\proxies\weapon_slots\TOP";
+								scope 								= 2;
+							};
+							class PointerSlot
+							{
+								access 								= 1;
+								compatibleitems[] 					= {};
+								displayname 						= "Pointer Slot";
+								linkproxy 							= "\A3\data_f\proxies\weapon_slots\SIDE";
+								scope 								= 2;
+							};
 							mass = 200;
 							inertia = 1.25;
 							dexterity = 1.25;

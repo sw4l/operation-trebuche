@@ -13,8 +13,8 @@ class OPTRE_ODST_HUD_AmmoCount_AR
 			text = "\OPTRE_Hud\data\Bullets\30pip.paa";
 			onLoad = "_array = (profileNamespace getVariable [""OPTRE_ODST_HUDColourTextNEW"",[1,0.5,0,.95]]); (_this select 0) ctrlSetTextColor [ (_array select 0), (_array select 1), (_array select 2),  ((_array select 3) / 3)];";
 	x = 0.866094 * safezoneW + safezoneX;
-	y = 0.863 * safezoneH + safezoneY;
-	w = 0.128906 * safezoneW;
+	y = 0.885 * safezoneH + safezoneY;
+	w = 0.118594 * safezoneW;
 	h = 0.011 * safezoneH;
 			colorText[] = {1,1,1,1};
 		};
@@ -24,8 +24,8 @@ class OPTRE_ODST_HUD_AmmoCount_AR
 			text = "\OPTRE_Hud\data\Bullets\30pip.paa";
 			onLoad = "_array = (profileNamespace getVariable [""OPTRE_ODST_HUDColourTextNEW"",[1,0.5,0,.95]]); (_this select 0) ctrlSetTextColor [ (_array select 0), (_array select 1), (_array select 2),  ((_array select 3) / 3)];";
 	x = 0.866094 * safezoneW + safezoneX;
-	y = 0.874 * safezoneH + safezoneY;
-	w = 0.128906 * safezoneW;
+	y = 0.896 * safezoneH + safezoneY;
+	w = 0.118594 * safezoneW;
 	h = 0.011 * safezoneH;
 			colorText[] = {1,1,1,1};
 		};
@@ -36,8 +36,8 @@ class OPTRE_ODST_HUD_AmmoCount_AR
 			//text = "OPTRE_Hud\Data\Hud_ODST_1\hud_healthBar.paa";
 			texture = "\OPTRE_Hud\data\Bullets\30pip.paa";
 	x = 0.866094 * safezoneW + safezoneX;
-	y = 0.863 * safezoneH + safezoneY;
-	w = 0.128906 * safezoneW;
+	y = 0.885 * safezoneH + safezoneY;
+	w = 0.118594 * safezoneW;
 	h = 0.011 * safezoneH;
 			colorText[] = {1,1,1,1};
 			onLoad = "uinamespace setvariable ['OPTRE_HUD_AmmoCountCurrent_1',(_this select 0)]; (_this select 0) ctrlSetTextColor (profileNamespace getVariable [""OPTRE_ODST_HUDColourTextNEW"",[1,0.5,0,.95]]);"; 
@@ -49,8 +49,8 @@ class OPTRE_ODST_HUD_AmmoCount_AR
 			//text = "OPTRE_Hud\Data\Hud_ODST_1\hud_healthBar.paa";
 			texture = "\OPTRE_Hud\data\Bullets\30pip.paa";
 	x = 0.866094 * safezoneW + safezoneX;
-	y = 0.874 * safezoneH + safezoneY;
-	w = 0.128906 * safezoneW;
+	y = 0.896 * safezoneH + safezoneY;
+	w = 0.118594 * safezoneW;
 	h = 0.011 * safezoneH;
 			colorText[] = {1,1,1,1};
 			onLoad = "uinamespace setvariable ['OPTRE_HUD_AmmoCountCurrent_2',(_this select 0)]; (_this select 0) ctrlSetTextColor (profileNamespace getVariable [""OPTRE_ODST_HUDColourTextNEW"",[1,0.5,0,.95]]);";

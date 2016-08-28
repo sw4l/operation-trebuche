@@ -4,14 +4,10 @@ class Mode_FullAuto;	// External class reference
 	
 class CfgWeapons
 {
-	class Rifle; // External class reference
-	class WeaponSlotsInfo;
-	class SlotInfo;
 	class ItemCore;
 	class InventoryOpticsItem_Base_F;
 	class InventoryFlashLightItem_Base_F;
 	class InventoryMuzzleItem_Base_F;
-	class GunParticles;
 	class Rifle_Base_F;
 	
 	//ATTACHMENTS
@@ -126,7 +122,7 @@ class CfgWeapons
 		discreteDistance[] 								= {50,100,200,300};
 		inertia										= 0.75;
 		maxZeroing = 300;
-		class GunParticles: GunParticles
+		class GunParticles
 		{
 		   class SecondEffect
 		   {
@@ -197,7 +193,8 @@ class CfgWeapons
 				};
 			};
 			reloadTime 								= 1.11; //0.75
-			dispersion 								= 0.00005;
+			//dispersion 								= 0.00005;
+			dispersion 								= 0.5;
 			minRange 								= 2;
 			minRangeProbab 								= 0.20;
 			midRange 								= 75;
@@ -210,9 +207,9 @@ class CfgWeapons
 			recoilProne 								= "M45_recoilProne";
 			
 		};
-		class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
+		class WeaponSlotsInfo //Defines attachment slots
  		{
- 			class MuzzleSlot: SlotInfo
+ 			class MuzzleSlot
 			{
 				access 								= 1;
 				compatibleitems[] 						= {};
@@ -220,7 +217,7 @@ class CfgWeapons
 				linkproxy 							= "\A3\data_f\proxies\weapon_slots\MUZZLE";
 				scope 								= 2;
 			};
-			class CowsSlot: SlotInfo
+			class CowsSlot
 			{
 				access 								= 1;
 				compatibleitems[] 					= {"OPTRE_M392_Scope", "OPTRE_BR55HB_Scope", "OPTRE_M7_Sight", "OPTRE_SRS99_Scope"};
@@ -228,7 +225,7 @@ class CfgWeapons
 				linkproxy 							= "\A3\data_f\proxies\weapon_slots\TOP";
 				scope 								= 2;
 			};
-			class PointerSlot: SlotInfo
+			class PointerSlot
 			{
 				access 								= 1;
 				compatibleitems[] 						= {"OPTRE_M45_FLASHLIGHT", "OPTRE_M45_FLASHLIGHT_red","acc_pointer_IR", "acc_flashlight"};

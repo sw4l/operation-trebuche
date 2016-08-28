@@ -51,7 +51,7 @@ _posMarkerArrays = ( _logic getVariable ["box3",""] ) call OPTRE_fnc_StringToArr
 _code = _logic getVariable "code";
 _veh =  _logic getVariable "vehicle";
 
-_typeOfSpawn = ( if ( _veh == "none" ) then { _podArray } else { _veh } );
+//_typeOfSpawn = ( if ( _veh == "none" ) then { _podArray } else { _veh } );
 deleteVehicle _logic; 
 
 0 = [

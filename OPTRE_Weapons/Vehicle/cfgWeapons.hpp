@@ -53,7 +53,7 @@ class CfgWeapons
 		initFov 							= 0.75;
 		minFov 								= 0.375;
 		maxFov 								= 1.1;
-        modes[] = {"FullAuto"};
+        modes[] = {"FullAuto","close","short","medium"};
         class FullAuto: MGun
         {
 			sounds[] = {"StandardSound"};
@@ -62,7 +62,7 @@ class CfgWeapons
 				begin1[] = {"OPTRE_Weapons\Vehicle\data\sounds\M41LAAG_1.wss",1,1,1500};
 				soundBegin[] = {"begin1",1};
 			};
-            reloadTime = 0.075;
+            reloadTime = 0.06;
             dispersion = 0.001;
             minRange = 2;
             minRangeProbab = 0.3;
@@ -71,6 +71,43 @@ class CfgWeapons
             maxRange = 800;
             maxRangeProbab = 0.05;
         };
+		class close: FullAuto
+		{
+			burst = 10;
+			aiRateOfFire = 0.5;
+			aiRateOfFireDistance = 50;
+			minRange = 10;
+			minRangeProbab = 0.05;
+			midRange = 20;
+			midRangeProbab = 0.7;
+			maxRange = 50;
+			maxRangeProbab = 0.04;
+			showToPlayer = 0;
+		};
+		class short: close
+		{
+			burst = 8;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 300;
+			minRange = 50;
+			minRangeProbab = 0.05;
+			midRange = 150;
+			midRangeProbab = 0.7;
+			maxRange = 300;
+			maxRangeProbab = 0.04;
+		};
+		class medium: close
+		{
+			burst = 7;
+			aiRateOfFire = 4;
+			aiRateOfFireDistance = 600;
+			minRange = 200;
+			minRangeProbab = 0.05;
+			midRange = 300;
+			midRangeProbab = 0.7;
+			maxRange = 500;
+			maxRangeProbab = 0.1;
+		};
 	};
 	class OPTRE_102R_Turret: missiles_titan
 	{
@@ -252,7 +289,7 @@ class CfgWeapons
 	{
 		ballisticsComputer 					= 4;
 		displayName							= "M638 Autocannon";
-        modes[] = {"FullAuto"};
+        modes[] = {"FullAuto","close","short","medium"};
         class FullAuto: MGun
         {
             reloadTime = 0.1;
@@ -264,12 +301,49 @@ class CfgWeapons
             maxRange = 800;
             maxRangeProbab = 0.05;
         };
+		class close: FullAuto
+		{
+			burst = 10;
+			aiRateOfFire = 0.5;
+			aiRateOfFireDistance = 50;
+			minRange = 10;
+			minRangeProbab = 0.05;
+			midRange = 20;
+			midRangeProbab = 0.7;
+			maxRange = 50;
+			maxRangeProbab = 0.04;
+			showToPlayer = 0;
+		};
+		class short: close
+		{
+			burst = 8;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 300;
+			minRange = 50;
+			minRangeProbab = 0.05;
+			midRange = 150;
+			midRangeProbab = 0.7;
+			maxRange = 300;
+			maxRangeProbab = 0.04;
+		};
+		class medium: close
+		{
+			burst = 7;
+			aiRateOfFire = 4;
+			aiRateOfFireDistance = 600;
+			minRange = 200;
+			minRangeProbab = 0.05;
+			midRange = 300;
+			midRangeProbab = 0.7;
+			maxRange = 500;
+			maxRangeProbab = 0.1;
+		};
 	};
 	class OPTRE_M370: gatling_30mm
 	{
 		ballisticsComputer 					= 4;
 		displayName							= "M370 Autocannon";
-        modes[] = {"FullAuto"};
+        modes[] = {"FullAuto","close","short","medium"};
         class FullAuto: MGun
         {
             reloadTime = 0.125;
@@ -281,6 +355,43 @@ class CfgWeapons
             maxRange = 800;
             maxRangeProbab = 0.05;
         };
+		class close: FullAuto
+		{
+			burst = 10;
+			aiRateOfFire = 0.5;
+			aiRateOfFireDistance = 50;
+			minRange = 10;
+			minRangeProbab = 0.05;
+			midRange = 20;
+			midRangeProbab = 0.7;
+			maxRange = 50;
+			maxRangeProbab = 0.04;
+			showToPlayer = 0;
+		};
+		class short: close
+		{
+			burst = 8;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 300;
+			minRange = 50;
+			minRangeProbab = 0.05;
+			midRange = 150;
+			midRangeProbab = 0.7;
+			maxRange = 300;
+			maxRangeProbab = 0.04;
+		};
+		class medium: close
+		{
+			burst = 7;
+			aiRateOfFire = 4;
+			aiRateOfFireDistance = 600;
+			minRange = 200;
+			minRangeProbab = 0.05;
+			midRange = 300;
+			midRangeProbab = 0.7;
+			maxRange = 500;
+			maxRangeProbab = 0.1;
+		};
 	};
 	class OPTRE_M9109: M134_minigun
 	{
@@ -333,6 +444,25 @@ class CfgWeapons
 			maxRange = 1800;
 			dispersion = 0.005;
 			showToPlayer = 1;
+		};
+	};
+	class OPTRE_M9109_Turret: OPTRE_M9109
+	{
+		shotFromTurret = 1;
+		class GunParticles
+		{
+			class Effect1
+			{
+				effectName = "MachineGun1";
+				positionName = "konec hlavne1R";
+				directionName = "Usti hlavne1R";
+			};
+			class Effect2
+			{
+				effectName = "MachineGun2";
+				positionName = "konec hlavne2L";
+				directionName = "Usti hlavne2L";
+			};
 		};
 	};
 	class OPTRE_GUA23A: M134_minigun

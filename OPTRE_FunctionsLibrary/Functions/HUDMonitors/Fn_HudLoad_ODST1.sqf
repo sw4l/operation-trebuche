@@ -57,7 +57,7 @@ sleep 0.1;
 // If hud on first time and not refresh from menu do animations: 
 if !OPTRE_Hud_On then {
 
-	showHUD [true, false, true, false, true, true, false, true]; 
+	showHUD [true, false, true, false, true, true, false, true, FALSE]; 
 	//titleCut ["", "BLACK FADED", 999];
 	
 	//player switchCamera "Internal";
@@ -148,9 +148,12 @@ While {OPTRE_Hud_On AND cameraView != "EXTERNAL"} do {
 	
 	
 	// Common Weapon Variable 
-	_magazinesPlayer = magazines player;
-	_stringNumbs = str ({_x == (currentMagazine player)} count _magazinesPlayer) splitString '';		
 	_currentWeapon = currentWeapon player; 
+	_magazinesPlayer = magazines player;
+	//_stringNumbs = str ({_x == (currentMagazine player)} count _magazinesPlayer) splitString '';
+	_weaponMagsAllowed = (getArray (configfile >> "CfgWeapons" >> _currentWeapon >> "magazines")); 
+	_stringNumbs = str ({_x in _weaponMagsAllowed} count _magazinesPlayer) splitString '';
+	
 	
 	// Monitor Weapons
 	if (OPTRE_HUD_UPDATEALL_Main OR OPTRE_HUD_stringNumbs != str _stringNumbs OR OPTRE_HUD_WepCurrent != _currentWeapon) then {
@@ -202,7 +205,7 @@ While {OPTRE_Hud_On AND cameraView != "EXTERNAL"} do {
 if OPTRE_Hud_On then {
 
 	{_x cutFadeOut 0;} forEach [300,301,302];  
-	showHUD [true, true, true, true, true, true, true, true]; 
+	showHUD [true, true, true, true, true, true, true, true, FALSE]; 
 	
 	waitUntil {cameraView != "EXTERNAL" OR !OPTRE_Hud_On};
 	
@@ -213,7 +216,7 @@ if OPTRE_Hud_On then {
 		//302 cutRsc [OPTRE_Hud_AmmoCurrent,"PLAIN",-1, false];
 		0 = [true] call OPTRE_Fnc_SetAmmoCounterState;
 		
-		showHUD [true, false, true, false, true, true, false, true]; 
+		showHUD [true, false, true, false, true, true, false, true, FALSE]; 
 
 	};
 	
@@ -223,7 +226,7 @@ if OPTRE_Hud_On then {
 if !OPTRE_Hud_On then {
 
 	{_x cutFadeOut 1;} forEach [300,301,302,303];  
-	showHUD [true, true, true, true, true, true, true, true]; 
+	showHUD [true, true, true, true, true, true, true, true, TRUE]; 
 	[player, "OPTRE_Sounds_HUD_Visor", 50] call CBA_fnc_globalSay3d;
 	
 	if ( cameraView != "EXTERNAL" OR (str (findDisplay 11000) != "No display") ) then {

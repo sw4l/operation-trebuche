@@ -8,20 +8,27 @@ _randomXYVelocity  = _logic getVariable ["randomXYVelocity",0.1];
 _launchSpeed = _logic getVariable ["launchSpeed",-250];
 _manualControl  = _logic getVariable ["manualControl",1];
 
-_startHeight  = _logic getVariable ["startHeight",5000];
-_hevDropArmtmosphereStartHeight = _logic getVariable ["hevDropArmtmosphereStartHeight",5000];
+_startHeight  = _logic getVariable ["startHeight",5500];
+_hevDropArmtmosphereStartHeight = _logic getVariable ["hevDropArmtmosphereStartHeight",4000];
 _hevDropArmtmosphereEndHeight = _logic getVariable ["hevDropArmtmosphereEndHeight",3000];
 _chuteDeployHeightHeight = _logic getVariable ["chuteDeployHeightHeight",1000];
 _chuteDetachHeight  = _logic getVariable ["chuteDetachHeight",500];
 _boasterHeight = _logic getVariable ["boasterHeight",100];
 
 _deleteFrigate = _logic getVariable ["deleteFrigate",1];
-//_deleteFrigate = if (_deleteFrigate > 0) then {true} else {false};
-
 _deleteChutes = _logic getVariable ["deleteChutes",0];
-//_deleteChutes = if (_deleteChutes > 0) then {true} else {false};
-
 _deleteHEVSafter = _logic getVariable ["deleteHEVafter",600];
+
+waitUntil {time > 0};
+
+/*if (isMultiplayer AND time < 20) then {
+
+	{[0,["OPTRE_LoadScreen_20_Seconds", "PLAIN"]] remoteExec ["cutRsc", _x, false];} forEach playableUnits;
+	{[_x,[10,10,10000]] remoteExec ["setPos", _x, false];} forEach _units;
+	
+	sleep 20;
+	
+};*/
 
 0 = [
 	getPos _logic, 

@@ -21,7 +21,7 @@
   			{
 				displayName = "D77H-TCI Stock Paint";
 				description = "[Pelican Unarmed] The D77H-TCI is an unarmed variant of the Pelican Drop Ship, this option determines what kind of camouflage pattern the spawned pelican will have.";
-				defaultValue = "NONE"; // Default text filled in the input box
+				defaultValue = "marine"; // Default text filled in the input box
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 				class values
 				{
@@ -65,7 +65,7 @@
   			{
 				displayName = "Side Of Pelican / Groups";
 				description = "Side Of Pelican, WEST or EAST";
-				defaultValue = "NONE"; // Default text filled in the input box
+				defaultValue = "WEST"; // Default text filled in the input box
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 				class values
 				{
@@ -80,13 +80,13 @@
   			{
 				displayName = "Vehicle To Drop";
 				description = "Type of vehicle required. A driver and a gunner will be added to the vehicles.";
-				defaultValue = "NONE"; // Default text filled in the input box
+				defaultValue = ""; // Default text filled in the input box
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 				class values
 				{
-					class n1	{name = "Don't Drop A Vehicles"; value = "";}; 
+					class n1	{name = "Don't Drop A Vehicles"; value = ""; default = 1;}; 
 
-					class a	{name = "Insurrectionist Warthog APC"; value = "OPTRE_M12_FAV_APC";}; 
+					/*class a	{name = "Insurrectionist Warthog APC"; value = "OPTRE_M12_FAV_APC";}; 
 					class b	{name = "Insurrectionist Warthog Unarmed"; value = "PTRE_M12_FAV_ins";}; 
 					class c	{name = "Insurrectionist Warthog MG"; value = "OPTRE_M12_LRV_ins";}; 
 					class d	{name = "Insurrectionist Warthog Rocket"; value = "OPTRE_M12A1_LRV_ins";}; 
@@ -136,7 +136,7 @@
 					class n35	{name = "Falcon Tan"; value = "OPTRE_UNSC_falcon_tan";}; 
 					
 					class n36	{name = "Stallion Tan"; value = "OPTRE_m1087_stallion_unsc";}; 
-					class n37	{name = "Mule Tan"; value = "OPTRE_m1015_mule_unsc";}; 
+					class n37	{name = "Mule Tan"; value = "OPTRE_m1015_mule_unsc";}; */
 					
 				};
 			};
@@ -145,7 +145,7 @@
   			{
 				displayName = "Branch Of Military";
 				description = "Type of units to be spawned, ODST, Army..";
-				defaultValue = "NONE"; // Default text filled in the input box
+				defaultValue = "Marines"; // Default text filled in the input box
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 				class values
 				{
@@ -165,7 +165,7 @@
   			{
 				displayName = "Squad Sizes";
 				description = "The number of units in both squads spawned. 2 squads will always be spawned.";
-				defaultValue = "NONE"; // Default text filled in the input box
+				defaultValue = "6"; // Default text filled in the input box
 				typeName = "NUMBER"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 				class values
 				{
@@ -180,8 +180,8 @@
  			class box3
   			{
 				displayName = "WayPoints"; // Argument label
-				description = "An array or marker position that the groups spawned will follow once on the ground.";// Tooltip description
-				defaultValue = "MapMarkerName1,MapMarkerName2,Map_Marker_Name_Three";
+				description = "An array or marker position that the groups spawned will follow once on the ground. For Example: M1,M2,Marker1,MapMarkerZ (No Spaces).";// Tooltip description
+				defaultValue = "";
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 			};
 
@@ -189,7 +189,7 @@
   			{
 				displayName = "Final Waypoint Task";
 				description = "Side Of Pelican, WEST or EAST";
-				defaultValue = "NONE"; // Default text filled in the input box
+				defaultValue = "cycle"; // Default text filled in the input box
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 				class values
 				{
@@ -202,8 +202,8 @@
 			class code
   			{
 				displayName = "Custom Box Code"; // Argument label
-				description = "A script that will be run on any pod assigned as CUSTOM. _This refers to the pod that is spawned.";// Tooltip description
-				defaultValue = "_this addMagazineCargoGlobal ['OPTRE_60Rnd_5x23mm_Mag',4]; _this addWeaponCargoGlobal ['OPTRE_M7',1];"; // Default text filled in the input box
+				description = "A script that will be run on any pod assigned as CUSTOM. _This refers to the pod that is spawned. For example: _this addMagazineCargoGlobal ['OPTRE_60Rnd_5x23mm_Mag',4];";// Tooltip description
+				defaultValue = ""; // Default text filled in the input box
 				typeName = "STRING"; // Value type, can be "NUMBER", "STRING" or "BOOL"
 			};
 					   

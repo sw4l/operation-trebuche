@@ -3,11 +3,6 @@ class Mode_Burst;
 class Mode_FullAuto;
 class CfgWeapons
 {
-    class WeaponSlotsInfo;
-    class SlotInfo;
-    class ItemCore;
-    class GunParticles;
-     
     //WEAPONS
      
     class EBR_Base_F;
@@ -28,7 +23,7 @@ class CfgWeapons
         dexterity                                                               = 3.25;
         muzzlePos                                                               = "usti hlavne";
         muzzleEnd                                                               = "konec hlavne";
-        reloadAction                                                            = "GestureReloadTRG";
+        reloadAction                                                            = "GestureReloadPistol";
         inertia                                                                 = 0.25;
 		maxRecoilSway 															= 0.01;
 		swayDecaySpeed 															= 1;
@@ -37,7 +32,7 @@ class CfgWeapons
 		distanceZoomMax 														= 100;
 		discreteDistance[] 														= {100};
 		maxZeroing 																= 100;
-        class GunParticles: GunParticles
+        class GunParticles
         {
             class SecondEffect
             {
@@ -65,9 +60,9 @@ class CfgWeapons
                 soundBegin[] 													= {"begin1",2.0};
             };
 		};
-        class WeaponSlotsInfo : WeaponSlotsInfo //Defines attachment slots
+        class WeaponSlotsInfo //Defines attachment slots
         {
-			class MuzzleSlot: SlotInfo
+			class MuzzleSlot
 			{
                 access                                                  		= 1;
                 compatibleitems[]                                      			= {};
@@ -75,7 +70,7 @@ class CfgWeapons
                 linkproxy                                               		= "\A3\data_f\proxies\weapon_slots\MUZZLE";
                 scope                                                   		= 2;
             };
-            class CowsSlot: SlotInfo
+            class CowsSlot
             {
                 access                                                  		= 1;
                 compatibleitems[]                                       		= {};
@@ -83,7 +78,7 @@ class CfgWeapons
                 linkproxy                                               		= "\A3\data_f\proxies\weapon_slots\TOP";
                 scope                                                   		= 2;
             };
-            class PointerSlot: SlotInfo
+            class PointerSlot
             {
                 access                                                  		= 1;
                 compatibleitems[]                                       		= {};

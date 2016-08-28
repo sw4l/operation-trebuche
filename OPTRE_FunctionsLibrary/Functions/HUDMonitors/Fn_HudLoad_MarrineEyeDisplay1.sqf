@@ -23,7 +23,7 @@ OPTRE_HUD_UPDATEALL_Main = true;
 OPTRE_Hud_On = true; 
 
 301 cutRsc [OPTRE_Hud_HealthCurrent,"PLAIN",-1, false]; 
-showHUD [true, false, true, false, true, true, false, true]; 
+showHUD [true, false, true, false, true, true, false, true, FALSE]; 
 
 While {OPTRE_Hud_On AND cameraView != "EXTERNAL"} do {
 
@@ -93,7 +93,7 @@ While {OPTRE_Hud_On AND cameraView != "EXTERNAL"} do {
 if OPTRE_Hud_On then {
 
 	{_x cutFadeOut 0;} forEach [300,301,302];  
-	showHUD [true, true, true, true, true, true, true, true]; 
+	showHUD [true, true, true, true, true, true, true, true, FALSE]; 
 	
 	waitUntil {cameraView != "EXTERNAL" OR !OPTRE_Hud_On};
 	
@@ -104,7 +104,7 @@ if OPTRE_Hud_On then {
 		//302 cutRsc [OPTRE_Hud_AmmoCurrent,"PLAIN",-1, false];
 		0 = [true] call OPTRE_Fnc_SetAmmoCounterState;
 		
-		showHUD [true, false, true, false, true, true, false, true]; 
+		showHUD [true, false, true, false, true, true, false, true, FALSE]; 
 
 	};
 	
@@ -114,7 +114,7 @@ if OPTRE_Hud_On then {
 if !OPTRE_Hud_On then {
 
 	{_x cutFadeOut 1;} forEach [300,301,302,303];  
-	showHUD [true, true, true, true, true, true, true, true]; 
+	showHUD [true, true, true, true, true, true, true, true, TRUE]; 
 	[player, "OPTRE_Sounds_HUD_Visor", 50] call CBA_fnc_globalSay3d;
 	
 	if ( cameraView != "EXTERNAL" OR (str (findDisplay 11000) != "No display") ) then {

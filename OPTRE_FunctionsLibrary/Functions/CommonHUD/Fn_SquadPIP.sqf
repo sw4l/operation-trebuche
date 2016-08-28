@@ -4,7 +4,6 @@ _unitsArray = units group player - [player];
 if (count _unitsArray < 1) exitWith { ((_this select 0) displayCtrl 1000) ctrlSetText ""; 303 cutFadeOut 1;};
 _numberOfUnitsInArray = (count _unitsArray) - 1; 
 
-
 OPTRE_LHD_Units removeAllEventHandlers "Killed"; 
 _unit = _unitsArray select OPTRE_LHD_PIPSel;
 OPTRE_LHD_Units = _unit;

@@ -391,8 +391,6 @@ class CfgVehicles
 
 class cfgWeapons
 {
-	class ItemCore;
-	class ItemInfo;
 	class Uniform_Base;	
 	class UniformItem;
 	class Vest_Base;
@@ -442,7 +440,7 @@ class cfgWeapons
 	
 	// HELMETS AND HEADGEAR
 	
-	class OPTRE_h_Ins_beret_od: ItemCore
+	class OPTRE_h_Ins_beret_od: H_HelmetB
     {
 		dlc = "OPTRE";
         scope 								= 2;
@@ -461,7 +459,7 @@ class cfgWeapons
             modelSides[] 					= {6};
         };
 	};
-	class OPTRE_h_helmet_OD: ItemCore
+	class OPTRE_h_helmet_OD: H_HelmetB
     {
 		dlc = "OPTRE";
         scope = 2;
@@ -502,7 +500,7 @@ class cfgWeapons
 		picture = "\OPTRE_Ins_Units\data\icon_innie_vest_press_od_ca.paa";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"OPTRE_Ins_Units\data\innie_vest_od1_co.paa"}; //Vest texture path
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			uniformModel = "\A3\Characters_F_EPC\Civil\equip_press_vest_01";
 			containerClass = "Supply120"; //Carry Amount
@@ -554,7 +552,7 @@ class cfgWeapons
 		picture = "\A3\characters_f_Beta\Data\UI\icon_V_I_Vest_02_ca.paa";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"OPTRE_Ins_Units\data\innie_cmbtvest_od1_co.paa"}; //Vest texture path
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			uniformModel = "A3\Characters_F_Beta\INDEP\equip_ia_vest02";
 			containerClass = "Supply160"; //Carry Amount

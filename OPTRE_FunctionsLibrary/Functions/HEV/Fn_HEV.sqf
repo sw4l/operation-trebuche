@@ -33,7 +33,7 @@ _randomXYVelocity 				= [_this,4,0.5] call BIS_fnc_param;								// Randomised V
 _launchSpeed 					= [_this,5,-1] call BIS_fnc_param;								// Speed HEVs will be launched at
 _manualControl					= [_this,6,1] call BIS_fnc_param;								// Can the player take manual control of the HEV? 0: No, 1: Rotate Only 2: Full Control (Not Implemented).
 
-_startHeight 					= [_this,7,5000] call BIS_fnc_param;							// The Height your start at and the ship your are deployed from will spawn (if wanted)
+_startHeight 					= [_this,7,5500] call BIS_fnc_param;							// The Height your start at and the ship your are deployed from will spawn (if wanted)
 _hevDropArmtmosphereStartHeight = [_this,8,3000] call BIS_fnc_param;							// The height atmospheric entry effects start at
 _hevDropArmtmosphereEndHeight 	= [_this,9,2000] call BIS_fnc_param;							// The height atmospheric entry effects end at
 _chuteDeployHeightHeight 		= [_this,10,1000] call BIS_fnc_param;							// The height HEvs chute deploy at, the height engines switch off at
@@ -46,6 +46,7 @@ _deleteHEVsAfter 				= [_this,15,600] call BIS_fnc_param;							// Number in sec
 						
 _DirOfShip = 0; // direction ship faces WIP. 
 
+if (str _pos == "[0,0,0]" or {alive _x} count _units < 1) exitWith {};
 waitUntil {time > 0};
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
