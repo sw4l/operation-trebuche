@@ -483,10 +483,11 @@ class Mode_FullAuto;
                     model                                                                   = "\OPTRE_Weapons\AR\ARGL.p3d";
                     displayName                                                             = "[UNSC] MA5B + M301 Assault Rifle";
                     descriptionShort                                                        = "UNSC Assault Rifle + GL";
-                    picture = "\OPTRE_weapons\ar\icons\argl_a.paa";
+                    picture 																= "\OPTRE_weapons\ar\icons\argl_a.paa";
 					pictureWire 															= "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\AssaultRifle\AR_UGL.paa";
-                    muzzles[]                                                           = {"this", "M309GL"}; // this was the missing
+                    muzzles[]                                                          	 	= {"this", "M309GL"}; // this was the missing
                     inertia                                                                 = 0.6;
+                    magazines[]                                                             = {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag_Tracer"};
                     class GunParticles: GunParticles
                     {
                        class SecondEffect

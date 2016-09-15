@@ -1,7 +1,7 @@
 class CfgAmmo
 {
 	class B_762x51_Ball;
-	class OPTRE_FC_Plasma_Pistol_Bolt: B_762x51_Ball
+	class OPTRE_FC_Energy_Sword_Swipe: B_762x51_Ball
 	{
 		hit 							= 20;
 		indirectHit 					= 0;
@@ -10,12 +10,12 @@ class CfgAmmo
 		caliber 						= 0.0;
 		coefGravity 					= 0.0;
 		deflecting 						= 0;
-		typicalSpeed 					= 1;
-		maxSpeed 						= 1;
+		typicalSpeed 					= 1000;
+		maxSpeed 						= 1000;
 		explosive 						= 0;
 		airFriction 					= 0;
 		sideairFriction 				= 0;
-		timeToLive 						= 1;
+		timeToLive 						= 0.001;
 		tracerScale 					= 0;
 		tracerStartTime 				= 0;
 		tracerEndTime 					= 0;

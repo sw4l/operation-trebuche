@@ -8,9 +8,9 @@ class CfgWeapons
     class EBR_Base_F;
     class OPTRE_FC_Energy_Sword: EBR_Base_F
     {
-        scope                                                                   = 2;
-        scopeArsenal                                                            = 2;
-        //handAnim[]                                                            = {"OFP2_ManSkeleton", "\OPTRE_FC_Weapons\EnergySword\data\anim\handanim.rtm"};
+        scope                                                                   = 1;
+        scopeArsenal                                                            = 1;
+        handAnim[]                                                            	= {"OFP2_ManSkeleton", "\OPTRE_FC_Weapons\EnergySword\data\sword_handanim.rtm"};
         model                                                                   = "\OPTRE_FC_Weapons\EnergySword\EnergySword.p3d";
         displayName                                                             = "[Covenant] Type-1 Energy Sword";
         descriptionShort                                                        = "Covenant Energy Sword";
