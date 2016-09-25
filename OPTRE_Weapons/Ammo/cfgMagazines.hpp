@@ -966,4 +966,13 @@ class CfgMagazines
 		descriptionShort = "Emergency Flare";
 		displayNameShort = "Flare";
 	};
+	class OPTRE_ELB47_Strobe: OPTRE_M2_Smoke
+	{
+		dlc = "OPTRE";
+		displayName = "ELB-47 Strobe";
+		model = "\OPTRE_Weapons\items\beacon.p3d";
+		ammo = "OPTRE_G_ELB47_Strobe";
+		descriptionShort = "Emergency Beacon";
+		displayNameShort = "Beacon";
+	};
 };

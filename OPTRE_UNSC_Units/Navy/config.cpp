@@ -398,7 +398,11 @@ class cfgWeapons
 		displayName																				= "-";
 		class ItemInfo: UniformItem
 		{
+			uniformModel																		= "-";
 			uniformClass																		= "OPTRE_UNSC_Navy_Soldier";
+			containerClass																		= "Supply100";
+			mass																				= 30;
+			modelSides[] 																		= {6};
 		};
     };
 	class OPTRE_UNSC_Navy_Uniform_Yellow : OPTRE_UNSC_Navy_Uniform

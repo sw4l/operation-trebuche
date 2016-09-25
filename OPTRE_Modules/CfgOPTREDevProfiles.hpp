@@ -65,25 +65,6 @@ class OPTRE_Wiki_DevProfiles
            bioParagraph2 = "His dedication and commitment to the mission reflect great credit upon himself, the Development Team, and the United Nations Space Command"; // Leave blank if unneeded.
 		   bioParagraph3 = "With the right recipe you can make panda's taste like anything really, panda soup, panda cake, panda gumbo... (Profile Picture Credited To: Le Baboulinet).";
        };
-		
-	   class scorch
-       {
-           profilePicture = "\OPTRE_Modules\data\picture\DevProfilePics\scorch.paa"; // leave blank for question mark profile picture
-           tittle = "Private"; // Dr, captain, rear admiral, Lord..
-           firstName = "Tyrone"; // Fake Name / Real Name or Leave Blank For Unknown
-           secondName = "Hudson"; // Fake Name / Real Name or Leave Blank For Unknown
-           pseudonym = "Scorch052"; // Preferably the name you are known by on reddit / arma
-           sex = "Male"; // Leave blank for unknown.
-           DOB = "1995"; // Day Mouth Year, Aprox, made up whatever.
-           homeWorld = "Earth"; // Leave blank for unknown.
-           nationality = "US of A baby"; // Leave blank for unknown.
-		   Allegiance = "UNSC";
-		   Affiliations = "Marines";
-           role = "Mastering / Configuration Specialist"; // sqf, sqs, php, 3d artist, sound, music, video, public relations, god of all the universe
-           bioParagraph1 = "Been at it since May 2014. Spearheaded the team alongside thedog during the transition phase and onwards."; // Something Here Please. List of stuf you've done for the mod?
-           bioParagraph2 = "Does not play well with others."; // Leave blank if unneeded.
-		   bioParagraph3 = "";
-       };
 	   
 	class bradster
     {
@@ -156,5 +137,24 @@ class OPTRE_Wiki_DevProfiles
 		bioParagraph1 = "Been with Article2 since they formed, worked on animations and help with \OPTRE_Modules\data revision and distribution through our repository"; // Something Here Please. List of stuf you've done for the mod?
 		bioParagraph2 = ""; // Leave blank if unneeded.
 		bioParagraph3 = ""; // Leave blank if unneeded.
-    };	   
+    };	 
+
+	class scorch
+    {
+        profilePicture = "\OPTRE_Modules\data\picture\DevProfilePics\scorch.paa"; // leave blank for question mark profile picture
+        tittle = "Private"; // Dr, captain, rear admiral, Lord..
+        firstName = "Tyrone"; // Fake Name / Real Name or Leave Blank For Unknown
+        secondName = "Hudson"; // Fake Name / Real Name or Leave Blank For Unknown
+        pseudonym = "Scorch052"; // Preferably the name you are known by on reddit / arma
+        sex = "Male"; // Leave blank for unknown.
+        DOB = "1995"; // Day Mouth Year, Aprox, made up whatever.
+        homeWorld = "Earth"; // Leave blank for unknown.
+        nationality = "US of A baby"; // Leave blank for unknown.
+		Allegiance = "UNSC";
+		Affiliations = "Marines";
+        role = "Mastering / Configuration Specialist"; // sqf, sqs, php, 3d artist, sound, music, video, public relations, god of all the universe
+        bioParagraph1 = "Been at it since May 2014. Spearheaded the team alongside TheDog during the transition phase from TEI and onward."; // Something Here Please. List of stuf you've done for the mod?
+        bioParagraph2 = "Does not play well with others."; // Leave blank if unneeded.
+		bioParagraph3 = "";
+    };	
 };

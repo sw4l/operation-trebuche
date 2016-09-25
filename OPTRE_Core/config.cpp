@@ -614,15 +614,46 @@ class CfgMissions
 {
 	class Cutscenes
 	{
-		class Stratis_intro1
+		class OPTRE_Tanoa_Intro1
 		{
-			directory = "OPTRE_Core\scenes\OPTRE_Intro1.Stratis";
+			directory = "OPTRE_Core\scenes\OPTRE_Intro1.Tanoa";
 		};
-		class Altis_intro1
+		class OPTRE_Altis_Intro1
 		{
 			directory = "OPTRE_Core\scenes\OPTRE_Intro1.Altis";
 		};
+		class OPTRE_Stratis_Intro1
+		{
+			directory = "OPTRE_Core\scenes\OPTRE_Intro1.Stratis";
+		};
+		class OPTRE_VR_Intro1
+		{
+			directory = "OPTRE_Core\scenes\OPTRE_Intro1.VR";
+		};
 	};
+};
+
+
+class CAWorld;
+
+class CfgWorlds
+{
+    class Stratis: CAWorld
+    { 
+            cutscenes[] = {"OPTRE_Stratis_Intro1"};
+    };
+    class Altis: CAWorld
+    { 
+            cutscenes[] = {"OPTRE_Altis_Intro1"};
+    };    
+    class Tanoa: CAWorld
+    { 
+            cutscenes[] = {"OPTRE_Tanoa_Intro1"};
+    };   
+    class VR: CAWorld
+    { 
+            cutscenes[] = {"OPTRE_VR_Intro1"};
+    };   
 };
 
 class CfgSounds

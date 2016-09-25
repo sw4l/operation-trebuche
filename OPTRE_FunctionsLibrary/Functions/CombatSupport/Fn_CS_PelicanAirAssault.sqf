@@ -213,7 +213,7 @@ _exitLeftWP setWaypointFormation "LINE";
 //_exitLeftWP setWaypointCompletionRadius 0;
 _exitLeftWP setWaypointTimeout [20, 20, 20];
 _exitLeftWP setWaypointType "MOVE";
-_exitLeftWP setWaypointBehaviour "CARELESS";
+_exitLeftWP setWaypointBehaviour "COMBAT";
 _exitLeftWP setWaypointCombatMode "RED";
 _exitLeftWP setWaypointSpeed "FULL";
 
@@ -229,13 +229,15 @@ _exitRightWP setWaypointFormation "LINE";
 //_exitRightWP setWaypointCompletionRadius 0;
 _exitRightWP setWaypointTimeout [20, 20, 20];
 _exitRightWP setWaypointType "MOVE";
-_exitRightWP setWaypointBehaviour "CARELESS";
+_exitRightWP setWaypointBehaviour "COMBAT";
 _exitRightWP setWaypointCombatMode "RED";
 _exitRightWP setWaypointSpeed "FULL";
 
 /*_exitRightWP1 = _group2 addWaypoint [([_pos, 75, 90] call OPTRE_fnc_MathsTriangulatePos), 0];
 _exitRightWP1 setWaypointBehaviour "AWARE";
 _exitRightWP1 setWaypointTimeout [0, 0, 0];*/
+
+{_x setUnitAbility (0.5 + (random 0.5));} forEach (units _group2 + units _group1);
 
 {
 	private ["_MarkerPos"];

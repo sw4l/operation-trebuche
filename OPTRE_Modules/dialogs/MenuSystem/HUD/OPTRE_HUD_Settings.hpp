@@ -169,7 +169,7 @@ class OPTRE_Menu_HudGenralSettings {
 		class i2: OPTRE_UNSCMENU_RscPicture
 		{
 			idc = 2;
-			text = "empty_ca.paa";//"\A3\ui_f\data\igui\cfg\simpleTasks\types\navigate_ca.paa";
+			text = "\OPTRE_Modules\data\picture\empty_ca.paa";//"\A3\ui_f\data\igui\cfg\simpleTasks\types\navigate_ca.paa";
 			x = 0.649531 * safezoneW + safezoneX;
 			y = 0.236 * safezoneH + safezoneY;
 			w = 0.020625 * safezoneW;

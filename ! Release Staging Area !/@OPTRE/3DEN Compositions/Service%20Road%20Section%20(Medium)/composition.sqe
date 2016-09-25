@@ -1,0 +1,250 @@
+version=52;
+center[]={1858.1589,5.5,5772.5601};
+class items
+{
+	items=15;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.01159668,0.032320976,-19.92627};
+			angles[]={6.2806959,0,0.0049914722};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=2;
+		type="Land_service_road";
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={8.2385254,-0.31677198,-19.913574};
+			angles[]={6.2806959,0,0.0075011365};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=3;
+		type="Land_sidewalk_service_straight";
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-8.2338867,-0.39155674,-19.933594};
+			angles[]={0,3.1415927,0.0024897563};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=4;
+		type="Land_sidewalk_service_straight";
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.0084228516,0.050753117,-9.9575195};
+			angles[]={0,0,0.0049914722};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=50;
+		type="Land_service_road";
+		atlOffset=4.7683716e-007;
+	};
+	class Item4
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={8.2416992,-0.29182625,-9.9448242};
+			angles[]={6.2806959,0,0.0075011365};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=51;
+		type="Land_sidewalk_service_straight";
+		atlOffset=4.7683716e-007;
+	};
+	class Item5
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-8.2307129,-0.38506079,-9.9648438};
+			angles[]={6.2806959,3.1415927,0.0024897563};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=52;
+		type="Land_sidewalk_service_straight";
+	};
+	class Item6
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.0095214844,0.049983025,-0.0043945313};
+			angles[]={0.0024897563,0,0.0049914722};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=53;
+		type="Land_service_road";
+		atlOffset=0.00062513351;
+	};
+	class Item7
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={8.2406006,-0.28979397,0.0083007813};
+			angles[]={0.0024897563,0,0.0075011365};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=54;
+		type="Land_sidewalk_service_straight";
+	};
+	class Item8
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-8.2318115,-0.38155174,-0.01171875};
+			angles[]={0,3.1415927,0.0024897563};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=55;
+		type="Land_sidewalk_service_straight";
+	};
+	class Item9
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.0063476563,0.034451008,9.9643555};
+			angles[]={0.0024897563,0,0.0049914722};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=56;
+		type="Land_service_road";
+		atlOffset=-4.7683716e-007;
+	};
+	class Item10
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={8.2437744,-0.3170414,9.9770508};
+			angles[]={0.0049914722,0,0.0049914722};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=57;
+		type="Land_sidewalk_service_straight";
+	};
+	class Item11
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-8.2286377,-0.39154339,9.9570313};
+			angles[]={0,3.1415927,0.0024897563};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=58;
+		type="Land_sidewalk_service_straight";
+	};
+	class Item12
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.0098876953,0.015372753,19.913574};
+			angles[]={0,0,0.0024897563};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=59;
+		type="Land_service_road";
+	};
+	class Item13
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={8.2402344,-0.35558939,19.92627};
+			angles[]={0.0024897563,0,0.0049914722};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=60;
+		type="Land_sidewalk_service_straight";
+	};
+	class Item14
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-8.2321777,-0.39636946,19.90625};
+			angles[]={0,3.1415927,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=61;
+		type="Land_sidewalk_service_straight";
+	};
+};

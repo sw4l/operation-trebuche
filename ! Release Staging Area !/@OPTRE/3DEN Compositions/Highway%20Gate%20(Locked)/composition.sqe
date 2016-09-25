@@ -1,0 +1,101 @@
+version=52;
+center[]={1803.6776,5.4998155,5746.8652};
+class items
+{
+	items=6;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-29.620239,8.4029732,-0.053710938};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+		};
+		id=169;
+		type="Land_gate_house";
+		atlOffset=-5.7220459e-006;
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={29.630005,8.4029388,-0.070800781};
+			angles[]={0,3.1415927,0};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+		};
+		id=170;
+		type="Land_gate_house";
+		atlOffset=-3.9577484e-005;
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.0026855469,3.4091401,16.397949};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+		};
+		id=171;
+		type="Land_Highway_Straight";
+		atlOffset=-4.2438507e-005;
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.0040283203,3.408998,-16.255859};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+		};
+		id=172;
+		type="Land_Highway_Straight";
+		atlOffset=-0.00018453598;
+	};
+	class Item4
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.0025634766,4.4157376,-9.9643555};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=177;
+		type="Land_Highway_gate_locked";
+	};
+	class Item5
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.014648438,4.4157376,9.9487305};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=178;
+		type="Land_Highway_gate_locked";
+	};
+};

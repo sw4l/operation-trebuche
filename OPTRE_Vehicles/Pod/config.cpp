@@ -43,7 +43,7 @@ class CfgVehicles
 		crew = "OPTRE_UNSC_Airforce_Soldier_Airman";
 		author="Article 2 Studios";
 		class DestructionEffects{};
-        armor = 1000000;
+        armor = 100000000000;
 		accuracy = 0.2;
 		destrType = "DestructNo";
 		gearRetracting=0;	

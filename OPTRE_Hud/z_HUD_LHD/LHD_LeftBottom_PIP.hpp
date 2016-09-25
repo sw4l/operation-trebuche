@@ -11,10 +11,10 @@ class OPTRE_LHD_LeftBottom_PIP {
 		
 		class controls {
 			
-			class RscFrame_1200: OPTRE_HUD_RscPicture
+			class OPTRE_HUD_REND1 : OPTRE_HUD_RscPicture
 			{
 				idc = 1200;
-				text = "#(argb,256,256,1)r2t(OPTRE_HUD_REND1,1.0)";
+				text = "#(argb,256,512,1)r2t(OPTRE_HUD_REND1,1.0)";//"#(argb,256,256,1)r2t(OPTRE_HUD_REND1,1.0)";
 				x = 0.0307812 * safezoneW + safezoneX;
 				y = 0.819 * safezoneH + safezoneY;
 				w = 0.134062 * safezoneW;

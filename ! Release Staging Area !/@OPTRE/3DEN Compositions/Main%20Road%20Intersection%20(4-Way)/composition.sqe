@@ -1,0 +1,149 @@
+version=52;
+center[]={5685.125,5,3279.4294};
+class items
+{
+	items=9;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={12.973145,-0.53702688,13.023682};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=584;
+		type="Land_sidewalk_wide_corner";
+		atlOffset=7.6293945e-006;
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.005859375,0.25456572,0.014404297};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=585;
+		type="Land_4way_intersection";
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={12.994629,-0.5369668,-12.98877};
+			angles[]={0,1.5707964,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=586;
+		type="Land_sidewalk_wide_corner";
+		atlOffset=6.7710876e-005;
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-13.013184,-0.53697205,-12.981445};
+			angles[]={0,3.1415927,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=587;
+		type="Land_sidewalk_wide_corner";
+		atlOffset=6.2465668e-005;
+	};
+	class Item4
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-13.004395,-0.53703451,12.986816};
+			angles[]={0,4.712389,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=588;
+		type="Land_sidewalk_wide_corner";
+	};
+	class Item5
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.0092773438,0,13.956787};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=589;
+		type="Land_main_road_short";
+	};
+	class Item6
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={13.957031,0,0.034179688};
+			angles[]={0,1.5707964,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=590;
+		type="Land_main_road_short";
+	};
+	class Item7
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.051757813,0,-13.974609};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=591;
+		type="Land_main_road_short";
+	};
+	class Item8
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-13.961426,0,-0.072265625};
+			angles[]={0,1.5707964,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=592;
+		type="Land_main_road_short";
+	};
+};

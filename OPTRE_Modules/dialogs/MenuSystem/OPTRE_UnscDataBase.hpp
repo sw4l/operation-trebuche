@@ -33,7 +33,7 @@ class OPTRE_UnscDataBase
 			w = 0.70125 * safezoneW;
 			h = 0.638 * safezoneH;
 		};
-		class BACKGROUND_COLOUR: OPTRE_UNSCMENU_RscPicture
+		/*class BACKGROUND_COLOUR: OPTRE_UNSCMENU_RscPicture
 		{
 			idc = -1;
 			text = "#(argb,8,8,3)color(1,1,1,1)";
@@ -42,7 +42,7 @@ class OPTRE_UnscDataBase
 			w = 1.00547 * safezoneW;
 			h = 1.012 * safezoneH;
 			colorText[] = {0,0,0,0.3};
-		};	
+		};*/
 		
 
 		/*class podList: OPTRE_UNSCMENU_RscListbox

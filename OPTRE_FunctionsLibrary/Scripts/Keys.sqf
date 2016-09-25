@@ -5,7 +5,33 @@ waitUntil {time > 0};
 // 1
 ["Operation Trebuchet & First Contact", "OPTRE_Hud_HudTog", ["Switch HUD On / Off", "Loads the appropriate HUD for the player"], { false call OPTRE_fnc_ToggleVisor }, { }, [DIK_APPS, [false, false, false]], false, -1, false] call cba_fnc_addKeybind;
 // 2
-["Operation Trebuchet & First Contact", "OPTRE_Hud_Settings", ["Open HUD Settings Menu", "Opens The Settings Menu For the HUD"], { [ objNull, player, -1, ["UNSC_HUD_Settings","UNSC_HUD_ODST","UNSC_HUD_Glass","UNSC_DATABASE"] ] call OPTRE_fnc_Menu; }, { }, [DIK_APPS, [true, false, false]], false, -1, false] call cba_fnc_addKeybind;
+["Operation Trebuchet & First Contact", "OPTRE_Hud_Settings", ["Open HUD Settings Menu", "Opens The Settings Menu For the HUD"], { 
+
+	//player switchCamera "Internal";
+	
+	_helmet = headgear player; 
+		
+	_varHelmetArray = ( getArray (configfile >> "CfgWeapons" >> _helmet >> "optreVarietys") );
+	_hudStyle = (getText (configfile >> "CfgWeapons" >> _helmet >> "optreHUDStyle") );
+
+	if (_hudStyle == "") then {
+		_googles = goggles player;
+		_varHelmetArray = ( getArray (configfile >> "CfgGlasses" >> _googles >> "optreVarietys") ); 
+		_hudStyle = (getText (configfile >> "CfgGlasses" >> _googles >> "optreHUDStyle") );
+	};
+
+	OPTRE_HUD_ListOfAvalibleMenus = switch _hudStyle do {
+		case "ODST_1": 	{ [ objNull, player, -1, ["UNSC_HUD_Settings","UNSC_HUD_ODST","UNSC_DATABASE"] ] call OPTRE_fnc_Menu; };
+		case "Glasses": { [ objNull, player, -1, ["UNSC_HUD_Settings","UNSC_HUD_Glass","UNSC_DATABASE"] ] call OPTRE_fnc_Menu; };
+		case "EYE": 	{ [ objNull, player, -1, ["UNSC_HUD_Settings","UNSC_DATABASE"] ] call OPTRE_fnc_Menu; };
+		case "ONI": 	{ [ objNull, player, -1, ["UNSC_HUD_Settings","UNSC_HUD_ODST","UNSC_DATABASE"] ] call OPTRE_fnc_Menu; };
+		default 		{ [ objNull, player, -1, ["UNSC_HUD_Settings","UNSC_DATABASE"] ] call OPTRE_fnc_Menu; };
+	};
+
+	true;
+	
+}, { }, [DIK_APPS, [true, false, false]], false, -1, false] call cba_fnc_addKeybind;
+
 // 3
 ["Operation Trebuchet & First Contact", "OPTRE_Hud_TN", ["HUD Toggle Function Next", "Toggles the current Left Hand Displays functionality for example in radar mode zooms in"], {true call OPTRE_fnc_ToggleLHDFnc;}, { }, [DIK_H, [true, false, false]], false, -1, false] call cba_fnc_addKeybind;
 // 4

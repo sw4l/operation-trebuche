@@ -1,9 +1,0 @@
-1. Copy the compositions folder
-
-2. Paste it in My Documents\Arma 3\ (If you're using multiple profiles, you may need to paste it in Arma 3 - Other Profiles\*YOURPROFILENAME*\)
-
-3. Open 3DEN
-
-4. Click on the Groups tab and navigate to the Compositions section on the far right
-
-5. Enjoy

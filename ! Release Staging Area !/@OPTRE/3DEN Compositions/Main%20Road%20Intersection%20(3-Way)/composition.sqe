@@ -1,0 +1,171 @@
+version=52;
+center[]={5737.0186,4.9999352,3275.0806};
+class items
+{
+	items=10;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={12.289551,-0.53698015,13.010742};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=584;
+		type="Land_sidewalk_wide_corner";
+		atlOffset=-1.0490417e-005;
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={12.274902,-0.53700686,-12.995361};
+			angles[]={0,1.5707964,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=586;
+		type="Land_sidewalk_wide_corner";
+		atlOffset=-3.7193298e-005;
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.66162109,5.7220459e-005,13.955078};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=589;
+		type="Land_main_road_short";
+		atlOffset=-7.6293945e-006;
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={13.223633,4.4822693e-005,-0.029052734};
+			angles[]={0,1.5707964,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=590;
+		type="Land_main_road_short";
+		atlOffset=-2.0027161e-005;
+	};
+	class Item4
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={2.784668,0.25466108,-0.0014648438};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=593;
+		type="Land_2way_intersection";
+		atlOffset=3.0517578e-005;
+	};
+	class Item5
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-12.870117,-0.36496687,13.958252};
+			angles[]={0,3.1415927,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=594;
+		type="Land_sidewalk_wide_short";
+		atlOffset=-6.4849854e-005;
+	};
+	class Item6
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.65673828,0.0005106926,0.0024414063};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=596;
+		type="Land_main_road_short";
+		atlOffset=0.00044584274;
+	};
+	class Item7
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-12.865234,-0.3645134,0.0056152344};
+			angles[]={0,3.1415927,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=597;
+		type="Land_sidewalk_wide_short";
+		atlOffset=0.00038862228;
+	};
+	class Item8
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.65673828,0.00015830994,-13.95459};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=598;
+		type="Land_main_road_short";
+		atlOffset=9.3460083e-005;
+	};
+	class Item9
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-12.865234,-0.36486578,-13.951416};
+			angles[]={0,3.1415927,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=599;
+		type="Land_sidewalk_wide_short";
+		atlOffset=3.6239624e-005;
+	};
+};

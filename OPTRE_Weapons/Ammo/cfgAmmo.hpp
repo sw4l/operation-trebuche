@@ -17,6 +17,7 @@ class CfgAmmo
 	class B_coil_20g_spike;
 	class GrenadeHand;
 	class SmokeShell;
+	class B_IRStrobe;
 	class R_PG32V_F;
 	class R_TBG32V_F;
 	class R_230mm_HE;
@@ -42,8 +43,8 @@ class CfgAmmo
 	//7.62x51mm (AR, M247)
 	class OPTRE_B_762x51_Ball: B_762x51_Ball
 	{
-		hit 							= 11;
-		typicalSpeed 					= 500;
+		hit 							= 10;
+		typicalSpeed 					= 600;
 		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_762x51_Tracer: OPTRE_B_762x51_Ball
@@ -54,9 +55,9 @@ class CfgAmmo
 	//9.5x40mm (BR, M73)
 	class OPTRE_B_95x40_Ball: B_762x51_Ball
 	{
-		hit 							= 12;
+		hit 							= 11;
 		caliber 						= 2;
-		typicalSpeed 					= 500;
+		typicalSpeed 					= 600;
 		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_95x40_Tracer: OPTRE_B_95x40_Ball
@@ -71,7 +72,9 @@ class CfgAmmo
 		cartridge 						= "FxCartridge_127";
 		caliber 						= 8;
 		typicalSpeed 					= 700;
-		airFriction 					= 0;
+		airFriction = 0;
+		sideairFriction = 0;
+		coefGravity = 0.0;
 		timeToLive 						= 15;
 		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_white";
 		tracerScale 					= 1.5;
@@ -97,7 +100,6 @@ class CfgAmmo
 		hit 							= 75;
 		caliber 						= 15;
 		typicalSpeed 					= 700;
-		airFriction 					= -0.00005;
 	};
 	class OPTRE_B_145x114_HEDP: OPTRE_B_145x114_APFSDS
 	{
@@ -107,11 +109,9 @@ class CfgAmmo
 		indirectHitRange 				= 1;
 		caliber 						= 0.1;
 		typicalSpeed 					= 700;
-		airFriction 					= -0.00015;
 		timeToLive 						= 15;
 		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_red";
-		tracerScale 					= 2;		
-		deflecting 						= 5;
+		tracerScale 					= 2;	
 		explosionEffects 				= "ExploAmmoExplosion";
 		craterEffects 					= "ExploAmmoCrater";
 		explosionSoundEffect 			= "DefaultExplosion";
@@ -120,7 +120,7 @@ class CfgAmmo
 	//12.7x40mm (Pistol)
 	class OPTRE_B_127x40_Ball : B_762x51_Ball   
 	{
-		hit 							= 10;
+		hit 							= 9;
 		indirectHit 					= 8;
 		indirectHitRange 				= 0.1;
 		explosive						= 0;
@@ -131,7 +131,7 @@ class CfgAmmo
 	};
 	class OPTRE_B_127x40_AP : OPTRE_B_127x40_Ball   
 	{
-		hit 							= 11;
+		hit 							= 9.5;
 		indirectHit 					= 0;
 		indirectHitRange 				= 0;
 		caliber 						= 2;
@@ -144,7 +144,7 @@ class CfgAmmo
 	//8 Gauge (Shotgun)
 	class OPTRE_8Gauge_Pellets : ShotgunBase   
 	{
-		hit 							= 10;
+		hit 							= 8;
 		typicalSpeed					= 100;
 		indirectHit 					= 0;
 		indirectHitRange 				= 0;
@@ -347,7 +347,7 @@ class CfgAmmo
 	};
 	class OPTRE_8Gauge_Slugs : B_762x51_Ball   
 	{
-		hit 							= 14;
+		hit 							= 12;
 		cartridge 						= "FxCartridge_slug";
 		caliber 						= 2;
 		typicalSpeed					= 200;
@@ -356,7 +356,7 @@ class CfgAmmo
 	//5x23mm (SMG)
 	class OPTRE_B_5x23_Caseless: B_9x21_Ball
 	{
-		hit 							= 9;
+		hit 							= 8;
 		typicalSpeed 					= 200;
 		caliber 						= 0.75;
 		cartridge 						= "FxCartridge_65_caseless";
@@ -368,13 +368,13 @@ class CfgAmmo
 	};
 	class OPTRE_B_5x23_Caseless_JHP: OPTRE_B_5x23_Caseless
 	{
-		hit 							= 10;
+		hit 							= 9;
 		caliber 						= 0.15;
 		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	class OPTRE_B_5x23_Caseless_FMJ: OPTRE_B_5x23_Caseless
 	{
-		hit 							= 9.5;
+		hit 							= 8.5;
 		caliber 						= 1.5;
 		model 							= "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
@@ -998,5 +998,27 @@ class CfgAmmo
 	class OPTRE_G_M8_Flare: OPTRE_G_M2_Smoke
 	{
 		model 							= "\OPTRE_Weapons\explosives\m8_flare.p3d";
+		lightColor[]					= {0.5,0.25,0.25,0};
+		effectsSmoke					= "ChemlightLight_red";
+		effectFlare						= "CounterMeasureFlare";
+		useFlare 						= 1;
+		timeToLive						= 900;
+		grenadeFireSound[]				= {};
+		grenadeBurningSound[]			= {};
+		aiAmmoUsageFlags				= "2 + 1";
+		brightness						= 12;
+		size							= 1;
+		triggerTime						= 3;
+		triggerSpeedCoef				= 1;
+	};
+	class OPTRE_G_ELB47_Strobe: B_IRStrobe
+	{
+		model 							= "\OPTRE_Weapons\items\beacon.p3d";
+		class NVGMarkers
+		{
+			class Blinking1
+			{
+			};
+		};
 	};
 };

@@ -217,7 +217,7 @@ class OPTRE_Menu_Glass_HUD_Coustomisation {
 		class OPTRE_UNSCMENU_RscStructuredText_1000: OPTRE_UNSCMENU_RscStructuredText
 		{
 			idc = 103;
-			onLoad = "(_this select 0) ctrlSetStructuredText parseText 'TEXT TEXT TEXT<br/>TEXT TEXT TEXT<br/>TEXT TEXT TEXT<br/>TEXT TEXT TEXT<br/>TEXT TEXT TEXT<br/>TEXT TEXT TEXT<br/>';";
+			onLoad = "(_this select 0) ctrlSetStructuredText parseText 'TEXT TEXT TEXT<br/>TEXT TEXT TEXT<br/>TEXT TEXT TEXT<br/>TEXT TEXT TEXT<br/>TEXT TEXT TEXT<br/>TEXT TEXT TEXT<br/>'; (_this select 0) ctrlSetTextColor (profileNamespace getVariable ['OPTRE_GLASS_CompassAlpha',[0,0,0,0]]);";
 			x = 0.309219 * safezoneW + safezoneX;
 			y = 0.324 * safezoneH + safezoneY;
 			w = 0.0567187 * safezoneW;
@@ -272,7 +272,7 @@ class OPTRE_Menu_Glass_HUD_Coustomisation {
 		class OPTRE_UNSCMENU_RscEdit_1407: OPTRE_UNSCMENU_RscEdit
 		{
 			idc = 1408;
-			onKeyUp = "_colourArray = []; {_colourArray pushBack (parseNumber (ctrlText (( findDisplay 5604 ) displayCtrl _x)));} forEach [141,143,143,1408]; hint str _colourArray; profileNamespace setVariable ['OPTRE_GLASS_CompassAlpha',_colourArray]; {(( findDisplay 5604 ) displayCtrl _x) ctrlSetTextColor (profileNamespace getVariable ['OPTRE_GLASS_CompassAlpha',[0,0,0,0]]);} forEach [103];  {(( findDisplay 5604 ) displayCtrl _x) ctrlSetTextColor (profileNamespace getVariable ['OPTRE_GLASS_HUDColourPictNEW',[0,0,0,0]]);} forEach [101,102];";
+			onKeyUp = "_colourArray = []; {_colourArray pushBack (parseNumber (ctrlText (( findDisplay 5604 ) displayCtrl _x)));} forEach [141,143,143,1408]; profileNamespace setVariable ['OPTRE_GLASS_CompassAlpha',_colourArray]; {(( findDisplay 5604 ) displayCtrl _x) ctrlSetTextColor (profileNamespace getVariable ['OPTRE_GLASS_CompassAlpha',[0,0,0,0]]);} forEach [103];  {(( findDisplay 5604 ) displayCtrl _x) ctrlSetTextColor (profileNamespace getVariable ['OPTRE_GLASS_HUDColourPictNEW',[0,0,0,0]]);} forEach [101,102];";
 			onLoad = "(_this select 0) ctrlSetText str ( (profileNamespace getVariable ['OPTRE_GLASS_CompassAlpha',[0,0,0,0.5]]) select 3);";			
 			x = 0.62375 * safezoneW + safezoneX;
 			y = 0.731 * safezoneH + safezoneY;
@@ -318,8 +318,8 @@ class OPTRE_Menu_Glass_HUD_Coustomisation {
 	y = 0.5 * safezoneH + safezoneY;
 	w = 0.0154688 * safezoneW;
 	h = 0.022 * safezoneH;
-			onMouseEnter  = "((findDisplay 5604) displayCtrl 2) ctrlSetTextColor [0.85,0,0,1];";
-			onMouseExit   = "((findDisplay 5604) displayCtrl 2) ctrlSetTextColor [1,1,1,1];";		
+			//onMouseEnter  = "((findDisplay 5604) displayCtrl 2) ctrlSetTextColor [0.85,0,0,1];";
+			//onMouseExit   = "((findDisplay 5604) displayCtrl 2) ctrlSetTextColor [1,1,1,1];";		
 			onButtonClick = " _savedVariableFull = (profileNameSpace getVariable ['OPTRE_GLASS_HUDSavedSchemes',[]]);	 _savedVariable = _savedVariableFull select (lbCurSel (( findDisplay 5604 ) displayCtrl 150));			_listBoxText = _savedVariable select 1;	 _textArray = _savedVariable select 2;	 _pictArray = _savedVariable select 3;			for '_i' from 0 to 3 do {			_ctrl = [141,142,143,144] select _i;		_string = _textArray select _i;		 (( findDisplay 5604 ) displayCtrl _ctrl) ctrlSetText str _string;				_ctrl = [141,142,143,1408] select _i;		_string = _pictArray select _i;		(( findDisplay 5604 ) displayCtrl _ctrl) ctrlSetText str _string;			 };			profileNamespace setVariable ['OPTRE_GLASS_HUDColourPictNEW',_textArray];	 profileNamespace setVariable ['OPTRE_GLASS_CompassAlpha',_pictArray];			_exitLoop = false;		_count = 0;	 While {!_exitLoop} do {		_text = (( findDisplay 5604 ) displayCtrl 1502) lbText _count;		if (_text == _listBoxText) then {		 ((findDisplay 5604) displayCtrl 1502) lbSetCurSel _count;		 _exitLoop = true;		 };		if (_text == '' or 'No control' == str (( findDisplay 5604 ) displayCtrl 1502) ) then {		 _exitLoop = true;			((findDisplay 5604) displayCtrl 1502) lbSetCurSel 0;		};		_count = _count + 1;	 }; _colourArray = []; {_colourArray pushBack (parseNumber (ctrlText (( findDisplay 5604 ) displayCtrl _x)));} forEach [1405,1406,1407,1408]; profileNamespace setVariable ['OPTRE_GLASS_CompassAlpha',_colourArray]; (( findDisplay 5604 ) displayCtrl 1201) ctrlSetTextColor _colourArray; _colourArray = []; {_colourArray pushBack (parseNumber (ctrlText (( findDisplay 5604 ) displayCtrl _x)));} forEach [1405,1406,1407,1408]; profileNamespace setVariable ['OPTRE_GLASS_CompassAlpha',_colourArray]; (( findDisplay 5604 ) displayCtrl 1200) ctrlSetTextColor _textArray; {(( findDisplay 5604 ) displayCtrl _x) ctrlSetTextColor (profileNamespace getVariable ['OPTRE_GLASS_CompassAlpha',[0,0,0,0]]);} forEach [103];  {(( findDisplay 5604 ) displayCtrl _x) ctrlSetTextColor (profileNamespace getVariable ['OPTRE_GLASS_HUDColourPictNEW',[0,0,0,0]]);} forEach [101,102];";
 			tooltip = "Load Currently Selected Scheme";
 		};
@@ -340,8 +340,8 @@ class OPTRE_Menu_Glass_HUD_Coustomisation {
 	y = 0.5 * safezoneH + safezoneY;
 	w = 0.0154688 * safezoneW;
 	h = 0.022 * safezoneH;
-			onMouseEnter  = "((findDisplay 5604) displayCtrl 3) ctrlSetTextColor [0.85,0,0,1];";
-			onMouseExit   = "((findDisplay 5604) displayCtrl 3) ctrlSetTextColor [1,1,1,1];";		
+			//onMouseEnter  = "((findDisplay 5604) displayCtrl 3) ctrlSetTextColor [0.85,0,0,1];";
+			//onMouseExit   = "((findDisplay 5604) displayCtrl 3) ctrlSetTextColor [1,1,1,1];";		
 			onButtonClick = "	 _savedVariableFull = (profileNameSpace getVariable ['OPTRE_GLASS_HUDSavedSchemes',[]]);	 _curSel = (lbCurSel (( findDisplay 5604 ) displayCtrl 150));		if (_curSel > -1) then {				_savedVariableFullMinus = _savedVariableFull - [(_savedVariableFull select _curSel)];		profileNameSpace setVariable ['OPTRE_GLASS_HUDSavedSchemes',_savedVariableFullMinus];				_ctrlList = (( findDisplay 5604 ) displayCtrl 150);		lbClear _ctrlList;		 {_i = (_ctrlList lbAdd (_x select 0));} forEach (profileNameSpace getVariable ['OPTRE_GLASS_HUDSavedSchemes',[]]);		playSound 'AddItemOK';			 } else {			 playSound 'AddItemFailed';			 };	 ";
 			tooltip = "Delete Currently Selected Scheme";
 		};

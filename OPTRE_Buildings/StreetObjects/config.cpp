@@ -217,8 +217,10 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayName = "Traffic Light (Double/Off)";
 		model = "\OPTRE_Buildings\streetobjects\OPTRE_Traffic_light_double_off.p3d";
-		armor = 300;
+		armor = 999999;
+		armorStructural = 999;
 		editorCategory = "OPTRE_EditorCategory_Objects";
+		destrType = "DestructNo";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Transport";
 	};
 	class Land_OPTRE_Traffic_light_double_p1: Land_OPTRE_Traffic_light_double_off

@@ -1,5 +1,55 @@
 v0.14
-	So much shit bro
+	Added
+			-Longsword
+			-Forklift
+			-Maintenance Cart
+			-Several New Structures and Frigate Assets
+			-Fury Nuke
+			-Jetpack (Non-functional)
+			-Bumblebee Escape Pod
+			-ACE Compatiblity (Fast roping, Ear Pro, G Forces, etc)
+			-Emergency IR Beacon
+			-Gridlock Terrain (by Lumnuon)
+			-HEV Modules
+			-HUD Modules
+			-Short-sleeve Uniform
+			-Several New Music Tracks
+			-Tactical Glasses and Eye Piece
+			-Support Variants of M1087 Stallion
+			-Pistol Holster Proxy on Vests
+			-Placeholder Police Units
+			-3DEN Categories and Subcategories
+			-Balaclava Variants of M52 Helmets
+			-SRS99D Suppressor
+			-Thruster Function for Pelican
+			-Hornet
+	Fixed
+			-Semi-transparency on some vehicles/units
+			-Floating Backpacks
+			-Tiny belt on M73 when reloading
+			-Shadow error on ODST Helmet
+			-Open faces on ODST vest
+			-Warthog headlights too bright
+			-M6C Alpha layering errors
+			-DMR ejecting machinegun belt links
+			-Soldier Hitpoints
+			-ODST Vest "skirt" look
+			-Fixed normals on Warthog wheels
+	Tweaked
+			-All Weapon recoils slightly
+			-Armor of Innie vests decreased slightly
+			-Overall damage of weapons more in line with Vanilla
+			-Innie Warthog texture now more distinguishable
+			-Improved Sniper and M73 Textures
+			-Sniper Bipod is now built into weapon
+			-Moved all music to new pbo (OPTRE_Music.pbo)
+			-Adjusted Falcon and Pelican Flight Models
+			-SRS99D Scope now has built-in rangefinder
+			-Added PIP screens to Pelican
+			-Adjusted Rocket and Sniper trajectory to more reflect the games
+	Removed
+			-M910 PDN
+			-Mongoose Re-textures
 v0.13.1
 	Fixed
 			-Hitpoints changes post-v1.54

@@ -39,7 +39,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 
-	/*class Land_OPTRE_catwalk_helipad: Items_base_F
+	class Land_OPTRE_catwalk_helipad: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\OPTRE_catwalk_helipad";
@@ -50,9 +50,9 @@ class CfgVehicles
 		displayName="Catwalk (Helipad)";
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
-	};*/
+	};
 
-	class Land_OPTRE_catwalk_long: Items_base_F
+	class Land_OPTRE_catwalk_long: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\OPTRE_catwalk_long";
@@ -65,7 +65,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 
-	class Land_OPTRE_catwalk_short: Items_base_F
+	class Land_OPTRE_catwalk_short: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\OPTRE_catwalk_short";
@@ -78,7 +78,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 
-	class Land_OPTRE_catwalk_supported: Items_base_F
+	class Land_OPTRE_catwalk_supported: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\OPTRE_catwalk_supported";
@@ -116,7 +116,7 @@ class CfgVehicles
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
-	class Land_OPTRE_Monument: Items_base_F
+	class Land_OPTRE_Monument: House_F
 	{
 		dlc = "OPTRE";
 		scope = 2;
@@ -129,7 +129,7 @@ class CfgVehicles
 		editorCategory = "OPTRE_EditorCategory_Objects";
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
-	class Land_OPTRE_Holotable: Items_base_F
+	class Land_OPTRE_Holotable: House_F
 	{
 		dlc = "OPTRE";
 		scope = 2;
@@ -186,7 +186,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 
-	class Land_optre_milwall_corner: Items_base_F
+	class Land_optre_milwall_corner: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\optre_milwall_corner";
@@ -199,7 +199,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 
-	class Land_optre_milwall_damage: Items_base_F
+	class Land_optre_milwall_damage: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\optre_milwall_damage";
@@ -212,7 +212,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 
-	class Land_optre_milwall_gate: Items_base_F
+	class Land_optre_milwall_gate: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\optre_milwall_gate";
@@ -225,7 +225,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 
-	class Land_optre_milwall_hub: Items_base_F
+	class Land_optre_milwall_hub: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\optre_milwall_hub";
@@ -238,7 +238,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 
-	class Land_optre_milwall_segment: Items_base_F
+	class Land_optre_milwall_segment: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\optre_milwall_segment";
@@ -653,7 +653,7 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Military";
 	};
 
-	class Land_OPTRE_watchtower_desert: Items_base_F
+	class Land_OPTRE_watchtower_desert: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\OPTRE_watchtower_desert";
@@ -673,7 +673,7 @@ class CfgVehicles
 		};
 	};
 
-	class Land_OPTRE_watchtower_jungle: Items_base_F
+	class Land_OPTRE_watchtower_jungle: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\OPTRE_watchtower_jungle";
@@ -693,7 +693,7 @@ class CfgVehicles
 		};
 	};
 
-	class Land_OPTRE_watchtower_snow: Items_base_F
+	class Land_OPTRE_watchtower_snow: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\OPTRE_watchtower_snow";
@@ -713,7 +713,7 @@ class CfgVehicles
 		};
 	};
 
-	class Land_OPTRE_watchtower_urban: Items_base_F
+	class Land_OPTRE_watchtower_urban: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\OPTRE_watchtower_urban";
@@ -733,7 +733,7 @@ class CfgVehicles
 		};
 	};
 
-	class Land_OPTRE_watchtower_woodland: Items_base_F
+	class Land_OPTRE_watchtower_woodland: House_F
 	{
 		dlc = "OPTRE";
 		model="\OPTRE_Buildings\Military\OPTRE_watchtower_woodland";

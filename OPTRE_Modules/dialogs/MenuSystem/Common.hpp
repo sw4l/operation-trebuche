@@ -55,6 +55,8 @@
 #define ST_PICTURE        0x30
 #define ST_FRAME          0x40
 #define ST_BACKGROUND     0x50
+#define ST_GROUP_BOX      0x60
+#define ST_GROUP_BOX2     0x70
 #define ST_HUD_BACKGROUND 0x80
 #define ST_TILE_PICTURE   0x90
 #define ST_WITH_RECT      0xA0
@@ -150,6 +152,8 @@
 #define ST_PICTURE        0x30
 #define ST_FRAME          0x40
 #define ST_BACKGROUND     0x50
+#define ST_GROUP_BOX      0x60
+#define ST_GROUP_BOX2     0x70
 #define ST_HUD_BACKGROUND 0x80
 #define ST_TILE_PICTURE   0x90
 #define ST_WITH_RECT      0xA0
@@ -563,7 +567,8 @@ class OPTRE_UNSCMENU_ButtonInvisible
     colorDisabled[] = {0,0,0,0};
     colorBackground[] = {0,0,0,0};
     colorBackgroundDisabled[] = {0,0.0,0};
-    colorBackgroundActive[] = {0.15,0.35,0.55,0.7};
+    colorBackgroundActive[] = {0,0,0,0};
+	//colorBackgroundActive[] = {0,0,0,0};
     colorFocused[] = {0,0,0,0};
     colorShadow[] = {0,0,0,0};
     colorBorder[] = {0,0,0,0};
@@ -585,6 +590,39 @@ class OPTRE_UNSCMENU_ButtonInvisible
     offsetPressedY = 0.002;
     borderSize = 0;
 };
+/*class OPTRE_UNSCMENU_ButtonInvisible
+{
+    
+    access = 0;
+    idc = -1;
+    type = CT_BUTTON;
+    text = "";
+    colorText[] = {0,0,0,0};
+    colorDisabled[] = {0,0,0,0};
+    colorBackground[] = {0,0,0,0};
+    colorBackgroundDisabled[] = {0,0.0,0};
+    colorBackgroundActive[] = {0,0,0,0};
+    colorFocused[] = {0,0,0,0};
+    colorShadow[] = {0,0,0,0};
+    colorBorder[] = {0,0,0,0};
+    soundEnter[] = {"\ca\ui\data\sound\onover",0.09,1};
+    soundPush[] = {"\ca\ui\data\sound\new1",0,0};
+    soundClick[] = {"\ca\ui\data\sound\onclick",0.07,1};
+    soundEscape[] = {"\ca\ui\data\sound\onescape",0.09,1};
+    style = 2;
+    x = 0;
+    y = 0;
+    w = 0.055589;
+    h = 0.039216;
+    shadow = 2;
+    font = "PuristaMedium";
+    sizeEx = 0.02921;
+    offsetX = 0.003;
+    offsetY = 0.003;
+    offsetPressedX = 0.002;
+    offsetPressedY = 0.002;
+    borderSize = 0;
+};*/
 
 class OPTRE_UNSCMENU_RscProgress
 {

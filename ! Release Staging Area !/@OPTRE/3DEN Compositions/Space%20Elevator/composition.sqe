@@ -1,0 +1,270 @@
+version=52;
+center[]={6004.793,5,3042.3894};
+class items
+{
+	items=16;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.00048828125,541.31219,-0.0090332031};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=293;
+		type="Land_Elevator_Piece";
+		atlOffset=39.999908;
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.005859375,932.28424,-0.0090332031};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=294;
+		type="Land_Elevator_Piece";
+		atlOffset=49.332031;
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.0024414063,1322.5151,-0.00073242188};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=295;
+		type="Land_Elevator_Piece";
+		atlOffset=48.590942;
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.0009765625,1713.5903,-0.0095214844};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=296;
+		type="Land_Elevator_Piece";
+		atlOffset=49.435059;
+	};
+	class Item4
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.0034179688,2105.2305,-0.0046386719};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+		};
+		id=302;
+		type="Land_Elevator_Piece";
+	};
+	class Item5
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.0034179688,2496.1182,-0.0036621094};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=303;
+		type="Land_Elevator_Piece";
+		atlOffset=49.247559;
+	};
+	class Item6
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.00048828125,2886.3491,0.0017089844};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=304;
+		type="Land_Elevator_Piece";
+		atlOffset=48.59082;
+	};
+	class Item7
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.0034179688,3277.4241,-0.0090332031};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=305;
+		type="Land_Elevator_Piece";
+		atlOffset=49.434814;
+	};
+	class Item8
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.0053710938,3666.2463,-0.0041503906};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=306;
+		type="Land_Elevator_Piece";
+		atlOffset=47.182129;
+	};
+	class Item9
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.0009765625,4044.4453,-0.00073242188};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=307;
+		type="Land_Elevator_Piece";
+		atlOffset=36.558838;
+	};
+	class Item10
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.0009765625,4436.2612,0.0085449219};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+		};
+		id=308;
+		type="Land_Elevator_Piece";
+		atlOffset=0.17626953;
+	};
+	class Item11
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.0024414063,4777.9019,0.0080566406};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+		};
+		id=309;
+		type="Land_Elevator_Piece";
+		atlOffset=0.0009765625;
+	};
+	class Item12
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.00048828125,5167.8232,0.010498047};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=310;
+		type="Land_Elevator_Piece";
+		atlOffset=48.281738;
+	};
+	class Item13
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.0034179688,5558.5713,0.010742188};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=311;
+		type="Land_Elevator_Piece";
+		atlOffset=49.108398;
+	};
+	class Item14
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.0053710938,5949.9204,0.0056152344};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=327;
+		type="Land_Elevator_Piece";
+		atlOffset=49.709473;
+	};
+	class Item15
+	{
+		dataType="Layer";
+		name="Layer 1";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.001953125,178.41357,0.0080566406};
+				};
+				side="Empty";
+				flags=5;
+				class Attributes
+				{
+				};
+				id=292;
+				type="Land_Elevator_Base";
+			};
+		};
+		id=297;
+	};
+};

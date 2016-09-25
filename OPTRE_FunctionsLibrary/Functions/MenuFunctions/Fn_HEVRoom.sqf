@@ -1,3 +1,5 @@
+	disableSerialization;
+
 	_console = _this select 0;
 	_highestCard = _this select 1; 
 		

@@ -289,8 +289,8 @@ class OPTRE_Menu_ODST_HUD_Coustomisation {
 	y = 0.5 * safezoneH + safezoneY;
 	w = 0.0154688 * safezoneW;
 	h = 0.022 * safezoneH;
-			onMouseEnter  = "((findDisplay 5603) displayCtrl 1) ctrlSetTextColor [0.85,0,0,1];";
-			onMouseExit   = "((findDisplay 5603) displayCtrl 1) ctrlSetTextColor [1,1,1,1];";		
+			//onMouseEnter  = "((findDisplay 5603) displayCtrl 1) ctrlSetTextColor [0.85,0,0,1];";
+			//    = "((findDisplay 5603) displayCtrl 1) ctrlSetTextColor [1,1,1,1];";		
 			onButtonClick = "	 _savedVariable = profileNameSpace getVariable ['OPTRE_ODST_HUDSavedSchemes',[]];	 _colourArrayText = [];		_colourArrayPict = [];		_savedName = (ctrlText (( findDisplay 5603 ) displayCtrl 140));		 if !(_savedName == '' OR _savedName == 'Enter A Valid Name' OR _savedName == 'Name Used') then {			if !({_savedName == (_x select 0)} count _savedVariable > 0) then {				 {			_colourArrayText pushBack (parseNumber (ctrlText (( findDisplay 5603 ) displayCtrl _x)));		 } forEach [1405,1406,1407,1408];					 {			_colourArrayPict pushBack (parseNumber (ctrlText (( findDisplay 5603 ) displayCtrl _x)));		 } forEach [141,142,143,144];				 _savedVariable pushBack [			 _savedName,			 ((( findDisplay 5603 ) displayCtrl 1502) lbData (lbCurSel (( findDisplay 5603 ) displayCtrl 1502))),			 _colourArrayText,			 _colourArrayPict		 ];			 profileNameSpace setVariable ['OPTRE_ODST_HUDSavedSchemes',_savedVariable];		 profileNamespace setVariable ['OPTRE_ODST_HUDColourTextNEW',_colourArrayText];		 profileNamespace setVariable ['OPTRE_ODST_HUDColourPictNEW',_colourArrayPict];			 _ctrlList = (( findDisplay 5603 ) displayCtrl 150);		 lbClear _ctrlList;			{_i = (_ctrlList lbAdd (_x select 0));} forEach (profileNameSpace getVariable ['OPTRE_ODST_HUDSavedSchemes',[]]);	 playSound 'AddItemOK';		 (( findDisplay 5603 ) displayCtrl 140) ctrlSetTextColor [1,1,1,1];		 (( findDisplay 5603 ) displayCtrl 140) ctrlSetText '';				 } else {			 (( findDisplay 5603 ) displayCtrl 140) ctrlSetText 'Name Used';		 (( findDisplay 5603 ) displayCtrl 140) ctrlSetTextColor [1,0,0,1];		 playSound 'AddItemFailed';				 };		 } else {			(( findDisplay 5603 ) displayCtrl 140) ctrlSetText 'Enter A Valid Name';		(( findDisplay 5603 ) displayCtrl 140) ctrlSetTextColor [1,0,0,1];		playSound 'AddItemFailed';			 };	 0 = [] execVM 'OPTRE_FunctionsLibrary\Scripts\UpdateMenusIf.sqf';";
 			tooltip = "Save Currently Selected Scheme";
 		};
@@ -311,8 +311,8 @@ class OPTRE_Menu_ODST_HUD_Coustomisation {
 	y = 0.5 * safezoneH + safezoneY;
 	w = 0.0154688 * safezoneW;
 	h = 0.022 * safezoneH;
-			onMouseEnter  = "((findDisplay 5603) displayCtrl 2) ctrlSetTextColor [0.85,0,0,1];";
-			onMouseExit   = "((findDisplay 5603) displayCtrl 2) ctrlSetTextColor [1,1,1,1];";		
+			//onMouseEnter  = "((findDisplay 5603) displayCtrl 2) ctrlSetTextColor [0.85,0,0,1];";
+			//onMouseExit   = "((findDisplay 5603) displayCtrl 2) ctrlSetTextColor [1,1,1,1];";		
 			onButtonClick = "_savedVariableFull = (profileNameSpace getVariable ['OPTRE_ODST_HUDSavedSchemes',[]]);   _savedVariable = _savedVariableFull select (lbCurSel (( findDisplay 5603 ) displayCtrl 150));     _listBoxText = _savedVariable select 1;    _textArray = _savedVariable select 2;      _pictArray = _savedVariable select 3;     for '_i' from 0 to 3 do {   _ctrl = [141,142,143,144] select _i;     _string = _textArray select _i;      (( findDisplay 5603 ) displayCtrl _ctrl) ctrlSetText str _string;       _ctrl = [1405,1406,1407,1408] select _i;     _string = _pictArray select _i;     (( findDisplay 5603 ) displayCtrl _ctrl) ctrlSetText str _string;      };       profileNamespace setVariable ['OPTRE_ODST_HUDColourTextNEW',_textArray];    profileNamespace setVariable ['OPTRE_ODST_HUDColourPictNEW',_pictArray];       _exitLoop = false;    _count = 0;   While {!_exitLoop} do {     _text = (( findDisplay 5603 ) displayCtrl 1502) lbData _count;     if (_text == _listBoxText) then {       ((findDisplay 5603) displayCtrl 1502) lbSetCurSel _count;       _exitLoop = true;      };     if (_text == '' or 'No control' == str (( findDisplay 5603 ) displayCtrl 1502) ) then {       _exitLoop = true;       ((findDisplay 5603) displayCtrl 1502) lbSetCurSel 0;     };     _count = _count + 1;    }; 0 = [] execVM 'OPTRE_FunctionsLibrary\Scripts\UpdateMenusIf.sqf'; [] spawn { sleep 0.1; {(( findDisplay 5603 ) displayCtrl _x) ctrlSetTextColor (profileNamespace getVariable ['OPTRE_ODST_HUDColourTextNEW',[0,0,0,0]]);} forEach [103];  {(( findDisplay 5603 ) displayCtrl _x) ctrlSetTextColor (profileNamespace getVariable ['OPTRE_ODST_HUDColourPictNEW',[0,0,0,0]]);} forEach [101,102]; };";
 			tooltip = "Load Currently Selected Scheme";
 		};
@@ -333,8 +333,8 @@ class OPTRE_Menu_ODST_HUD_Coustomisation {
 	y = 0.5 * safezoneH + safezoneY;
 	w = 0.0154688 * safezoneW;
 	h = 0.022 * safezoneH;
-			onMouseEnter  = "((findDisplay 5603) displayCtrl 3) ctrlSetTextColor [0.85,0,0,1];";
-			onMouseExit   = "((findDisplay 5603) displayCtrl 3) ctrlSetTextColor [1,1,1,1];";		
+			//onMouseEnter  = "((findDisplay 5603) displayCtrl 3) ctrlSetTextColor [0.85,0,0,1];";
+			//onMouseExit   = "((findDisplay 5603) displayCtrl 3) ctrlSetTextColor [1,1,1,1];";		
 			onButtonClick = "	 _savedVariableFull = (profileNameSpace getVariable ['OPTRE_ODST_HUDSavedSchemes',[]]);	 _curSel = (lbCurSel (( findDisplay 5603 ) displayCtrl 150));		if (_curSel > -1) then {				_savedVariableFullMinus = _savedVariableFull - [(_savedVariableFull select _curSel)];		profileNameSpace setVariable ['OPTRE_ODST_HUDSavedSchemes',_savedVariableFullMinus];				_ctrlList = (( findDisplay 5603 ) displayCtrl 150);		lbClear _ctrlList;		 {_i = (_ctrlList lbAdd (_x select 0));} forEach (profileNameSpace getVariable ['OPTRE_ODST_HUDSavedSchemes',[]]);		playSound 'AddItemOK';			 } else {			 playSound 'AddItemFailed';			 };";//	 0 = [] execVM 'OPTRE_FunctionsLibrary\Scripts\UpdateMenusIf.sqf';";
 			tooltip = "Delete Currently Selected Scheme";
 		};

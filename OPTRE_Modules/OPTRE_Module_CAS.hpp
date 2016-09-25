@@ -34,8 +34,8 @@
 					class n7	{name = "UNSC UH-144 Falcon [Green]"; 		value = "OPTRE_UNSC_falcon_green";						}; 
 					class n8	{name = "UNSC UH-144 Falcon [Snow]"; 		value = "OPTRE_UNSC_falcon_snow";						}; 
 					class n9	{name = "UNSC UH-144 Falcon [Tan]"; 		value = "OPTRE_UNSC_falcon_tan";						}; 
-					class n10	{name = "UNSC GA-TL1/A Longsword [CAS]"; 	value = "OPTRE_Longsword_CAS_F";						}; 
-					class n11	{name = "UNSC GA-TL1/A Longsword [Cannon]"; value = "OPTRE_Longsword_CANNON_F";						}; 					
+					class n10	{name = "UNSC GA-TL1/A Longsword [CAS]"; 	value = "OPTRE_Longsword_CAS";						}; 
+					class n11	{name = "UNSC GA-TL1/A Longsword [Cannon]"; value = "OPTRE_Longsword_CANNON";						}; 					
 				};
 			};	
 			class flyOutHeight
@@ -64,7 +64,7 @@
 		
 		class ModuleDescription
 		{
-			description = "This module will spawn a CAS asset that will perform a air strike at the location the module is placed. The direction of this module determines from which direction the CAS asset will approach the target from.";
+			description[] = {"This module will spawn a CAS asset that will perform a air strike at the location the module is placed. The direction of this module determines from which direction the CAS asset will approach the target from.";};
 			sync[] = {"EmptyDetector"};
 			position = 1;
 			direction = 1;

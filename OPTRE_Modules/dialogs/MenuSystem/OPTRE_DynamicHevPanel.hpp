@@ -22,7 +22,7 @@ class OPTRE_HEVPanel
 			y = 0.225 * safezoneH + safezoneY;
 			w = 0.4125 * safezoneW;
 			h = 0.55 * safezoneH;
-			onMouseButtonClick = "onMapSingleClick ""if (getMarkerColor 'OPTRE_Local_HEVConsolePosMarker' != '') then {deleteMarkerLocal 'OPTRE_Local_HEVConsolePosMarker';}; _marker = createMarkerLocal ['OPTRE_Local_HEVConsolePosMarker', _pos]; _marker setMarkerShapeLocal 'ICON'; _marker setMarkerColorLocal 'ColorBlue'; _marker setMarkerTypeLocal 'END'; _marker setMarkerTextLocal 'HEV Drop Location';  onMapSingleClick ''; true;"""; 
+			onMouseButtonClick = "onMapSingleClick ""if (getMarkerColor 'OPTRE_Local_HEVConsolePosMarker' != '') then {deleteMarkerLocal 'OPTRE_Local_HEVConsolePosMarker';}; _marker = createMarkerLocal ['OPTRE_Local_HEVConsolePosMarker', _pos]; _marker setMarkerShapeLocal 'ICON'; _marker setMarkerColorLocal 'ColorBlue'; _marker setMarkerTypeLocal 'hd_dot'; _marker setMarkerTextLocal 'HEV Drop Location';  onMapSingleClick ''; true;"""; 
 		};
 		class BACKGROUND_COLOUR: OPTRE_UNSCMENU_RscPicture
 		{
@@ -114,7 +114,7 @@ class OPTRE_HEVPanel
 			y = 0.72 * safezoneH + safezoneY;
 			w = 0.134062 * safezoneW;
 			h = 0.055 * safezoneH;
-			onButtonClick = "if (getMarkerColor 'OPTRE_Local_HEVConsolePosMarker' != '') then {_dialog = findDisplay 5600;_10 = (_dialog displayCtrl 10);_11 = (_dialog displayCtrl 11);_12 = (_dialog displayCtrl 12);_13 = (_dialog displayCtrl 13);_14 = (_dialog displayCtrl 14);_15 = (_dialog displayCtrl 15);_16 = (_dialog displayCtrl 16);0 = [[(getMarkerPos 'OPTRE_Local_HEVConsolePosMarker'),[],'Frigate Lowering Arm',45,0.1,-1,(_16 lbValue (lbCurSel _16)),(_10 lbValue (lbCurSel _10)),(_11 lbValue (lbCurSel _11)),(_12 lbValue (lbCurSel _12)),(_13 lbValue (lbCurSel _13)),(_14 lbValue (lbCurSel _14)),(_15 lbValue (lbCurSel _15)),true,false,600],OPTRE_CurrentConsole] remoteExec [""OPTRE_Fnc_HEVRoomDynamicSetupGrabUnits"", 2, false];} else {playSound 'FD_CP_Not_Clear_F';};";
+			onButtonClick = "if (getMarkerColor 'OPTRE_Local_HEVConsolePosMarker' != '') then {disableSerialization; _dialog = findDisplay 5600;_10 = (_dialog displayCtrl 10);_11 = (_dialog displayCtrl 11);_12 = (_dialog displayCtrl 12);_13 = (_dialog displayCtrl 13);_14 = (_dialog displayCtrl 14);_15 = (_dialog displayCtrl 15);_16 = (_dialog displayCtrl 16);0 = [[(getMarkerPos 'OPTRE_Local_HEVConsolePosMarker'),[],'Frigate Lowering Arm',45,0.1,-1,(_16 lbValue (lbCurSel _16)),(_10 lbValue (lbCurSel _10)),(_11 lbValue (lbCurSel _11)),(_12 lbValue (lbCurSel _12)),(_13 lbValue (lbCurSel _13)),(_14 lbValue (lbCurSel _14)),(_15 lbValue (lbCurSel _15)),true,false,600],OPTRE_CurrentConsole] remoteExec [""OPTRE_Fnc_HEVRoomDynamicSetupGrabUnits"", 2, false];} else {playSound 'FD_CP_Not_Clear_F';};";
 		};
 		
 		

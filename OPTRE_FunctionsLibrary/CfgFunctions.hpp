@@ -107,6 +107,7 @@ class CfgFunctions
 			
 			class CountDown {};
 			class CleanUp {};	
+			class ExportClassnames {};
 		};
 		
 		class SupportSystem

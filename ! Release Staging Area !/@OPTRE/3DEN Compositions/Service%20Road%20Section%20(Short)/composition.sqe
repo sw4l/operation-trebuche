@@ -1,0 +1,55 @@
+version=52;
+center[]={1875.4355,5.5194058,5736.5859};
+class items
+{
+	items=3;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.00061035156,0.030842781,0.024902344};
+			angles[]={6.278194,0,0.0049914722};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=2;
+		type="Land_service_road";
+		atlOffset=1.335144e-005;
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={8.2358398,-0.33304214,-0.0024414063};
+			angles[]={6.2756844,0,0.0049914722};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=3;
+		type="Land_sidewalk_service_straight";
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-8.2365723,-0.39636946,-0.022460938};
+			angles[]={6.2806959,3.1415927,0.0024897563};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=4;
+		type="Land_sidewalk_service_straight";
+	};
+};

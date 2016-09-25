@@ -94,7 +94,7 @@
 		
 		class ModuleDescription
 		{
-			description = "This module will spawn a ODST team in HEVs 3000m above the position this module is placed. Teams spawned can also be given waypoints and end waypoint commands such as garrison vehicles or patrol area.";
+			description[] = {"This module will spawn a ODST team in HEVs 3000m above the position this module is placed. Teams spawned can also be given waypoints and end waypoint commands such as garrison vehicles or patrol area.";};
 			sync[] = {"EmptyDetector"};
 			position = 1;
 			direction = 0;
