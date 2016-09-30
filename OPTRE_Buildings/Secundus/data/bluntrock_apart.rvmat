@@ -1,0 +1,171 @@
+ambient[]={0.5,0.5,0.5,1};
+diffuse[]={0.40000001,0.40000001,0.40000001,1};
+forcedDiffuse[]={0,0,0,0};
+emmisive[]={0,0,0,1};
+specular[]={0.13,0.13,0.13,1};
+specularPower=45;
+PixelShaderID="Multi";
+VertexShaderID="Multi";
+class TexGen0
+{
+	uvSource="tex1";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,1};
+		pos[]={0,0,0};
+	};
+};
+class TexGen1
+{
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={2,0,0};
+		up[]={0,2,0};
+		dir[]={0,0,1};
+		pos[]={0.5,0.5,0};
+	};
+};
+class TexGen2
+{
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,1};
+		pos[]={0,0,0};
+	};
+};
+class TexGen3
+{
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={2,0,0};
+		up[]={0,2,0};
+		dir[]={0,0,1};
+		pos[]={0,0,0};
+	};
+};
+class TexGen4
+{
+	uvSource="tex1";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,1};
+		pos[]={0,0,0};
+	};
+};
+class TexGen5
+{
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,1};
+		pos[]={0,0,0};
+	};
+};
+class TexGen6
+{
+	uvSource="tex";
+	class uvTransform
+	{
+		aside[]={3,0,0};
+		up[]={0,3,0};
+		dir[]={0,0,1};
+		pos[]={0,0,0};
+	};
+};
+class TexGen7
+{
+	uvSource="tex1";
+	class uvTransform
+	{
+		aside[]={1,0,0};
+		up[]={0,1,0};
+		dir[]={0,0,1};
+		pos[]={0,0,0};
+	};
+};
+class Stage0
+{
+	texture="#(argb,8,8,3)color(0.0,0.0,0.0,1,co)";
+	texGen="0";
+};
+class Stage1
+{
+	texture="a3\rocks_f\blunt\data\bluntrock_co.paa";
+	texGen="1";
+};
+class Stage2
+{
+	texture="a3\rocks_f\blunt\data\bluntrock_co.paa";
+	texGen="2";
+};
+class Stage3
+{
+	texture="a3\rocks_f\blunt\data\bluntrock_floor_co.paa";
+	texGen="3";
+};
+class Stage4
+{
+	texture="a3\rocks_f\blunt\data\bluntrock_apart_mask.paa";
+	texGen="4";
+};
+class Stage5
+{
+	texture="#(argb,8,8,3)color(0.5,0,1,1,DTSMDI)";
+	texGen="5";
+};
+class Stage6
+{
+	texture="a3\rocks_f\blunt\data\bluntrock_dtsmdi.paa";
+	texGen="6";
+};
+class Stage7
+{
+	texture="a3\rocks_f\blunt\data\bluntrock_dtsmdi.paa";
+	texGen="7";
+};
+class Stage8
+{
+	texture="a3\rocks_f\blunt\data\bluntrock_floor_dtsmdi.paa";
+	texGen="3";
+};
+class Stage9
+{
+	texture="#(argb,8,8,3)color(0,0,0,0,MC)";
+	texGen="4";
+};
+class Stage10
+{
+	texture="a3\rocks_f\blunt\data\bluntrock_apart_as.paa";
+	texGen="4";
+};
+class Stage11
+{
+	texture="a3\rocks_f\blunt\data\bluntrock_apart_nohq.paa";
+	texGen="0";
+};
+class Stage12
+{
+	texture="a3\rocks_f\blunt\data\bluntrock_nohq.paa";
+	texGen="1";
+};
+class Stage13
+{
+	texture="a3\rocks_f\blunt\data\bluntrock_hard_nohq.paa";
+	texGen="2";
+};
+class Stage14
+{
+	texture="a3\rocks_f\blunt\data\bluntrock_floor_nohq.paa";
+	texGen="3";
+};
