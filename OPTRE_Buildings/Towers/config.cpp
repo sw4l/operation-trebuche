@@ -131,6 +131,19 @@ class CfgVehicles
 		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Skyscraper";
 	};
 	
+		class Land_J_Tower_a_2: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Towers\J_Tower_a_2";
+		vehicleClass = "OPTRE_City_Skyscrapers_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="J Tower (Part A_2)";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Skyscraper";
+	};
+	
 	class Land_J_Tower_b: House_F
 	{
 		dlc = "OPTRE";
@@ -140,6 +153,19 @@ class CfgVehicles
 		armorStructural = 999;
 		scope=2;
 		displayName="J Tower (Part B)";
+		editorCategory = "OPTRE_EditorCategory_Buildings";
+		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Skyscraper";
+	};
+	
+		class Land_J_Tower_b_2: House_F
+	{
+		dlc = "OPTRE";
+		model="\OPTRE_Buildings\Towers\J_Tower_b_2";
+		vehicleClass = "OPTRE_City_Skyscrapers_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope=2;
+		displayName="J Tower (Part B_2)";
 		editorCategory = "OPTRE_EditorCategory_Buildings";
 		editorSubcategory = "OPTRE_EditorSubcategory_Buildings_Skyscraper";
 	};
