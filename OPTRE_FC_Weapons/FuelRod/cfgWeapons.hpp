@@ -8,11 +8,11 @@ class CfgWeapons
     class EBR_Base_F;
     class OPTRE_FC_Fuel_Rod_Cannon: EBR_Base_F
     {
-        scope                                                                   = 0;
-        scopeArsenal                                                            = 0;
+        scope                                                                   = 1;
+        scopeArsenal                                                            = 1;
         handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_FC_Weapons\PlasmaRifle\data\anim\handanim.rtm"};
         model                                                                   = "\OPTRE_FC_Weapons\FuelRod\FuelRod.p3d";
-        displayName                                                             = "Type-33 Light Anti Armor Weapon";
+        displayName                                                             = "[Covenant] Type-33 Light Anti Armor Weapon";
         descriptionShort                                                        = "Covenant Fuel Rod Cannon";
         //picture 																= "\OPTRE_FC_Weapons\PlasmaPistol\icons\PlasmaRifle_ca.paa";
 		//drySound[] 															= {"A3\sounds_f\weapons\Other\dry_1",0.56234133,1,10};

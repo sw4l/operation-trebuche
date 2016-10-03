@@ -205,6 +205,22 @@ class CfgVehicles
 		hiddenSelections[] 												= {"camo1","attach_kneepads","attach_sleeves"}; //Determines what hiddenselections are enabled
 		hiddenSelectionsTextures[] 										= {"optre_fc_units\marines\data\h3_uniform_urb_co.paa"};
 	};
+	class OPTRE_FC_Marines_Soldier_TRO: OPTRE_FC_Marines_Soldier
+	{
+		dlc = "OPTRE";
+		author															= "Article 2 Studios";
+		uniformClass													= "OPTRE_FC_Marines_Uniform_TRO";
+		hiddenSelections[] 												= {"camo1","attach_nosleeves"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] 										= {"optre_fc_units\marines\data\h3_uniform_tro_co.paa"};
+	};
+	class OPTRE_FC_Marines_Soldier_TRO_L: OPTRE_FC_Marines_Soldier_L
+	{
+		dlc = "OPTRE";
+		author															= "Article 2 Studios";
+		uniformClass													= "OPTRE_FC_Marines_Uniform_TRO_L";
+		hiddenSelections[] 												= {"camo1","attach_kneepads","attach_sleeves"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] 										= {"optre_fc_units\marines\data\h3_uniform_tro_co.paa"};
+	};
 	// BASE UNITS END
 	// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	
@@ -558,6 +574,26 @@ class cfgWeapons
 		class ItemInfo: ItemInfo
 		{
 			uniformClass												= "OPTRE_FC_Marines_Soldier_URB_L";
+		};
+	};
+	class OPTRE_FC_Marines_Uniform_TRO: OPTRE_FC_Marines_Uniform
+	{
+		dlc = "OPTRE";
+		author															= "Article 2 Studios";
+		displayName														= "[UNSC] '31 Marine BDU [Tropical]";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass												= "OPTRE_FC_Marines_Soldier_TRO";
+		};
+	};
+	class OPTRE_FC_Marines_Uniform_TRO_L: OPTRE_FC_Marines_Uniform_L
+	{
+		dlc = "OPTRE";
+		author															= "Article 2 Studios";
+		displayName														= "[UNSC] '31 Marine BDU (Light) [Tropical]";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass												= "OPTRE_FC_Marines_Soldier_TRO_L";
 		};
 	};
 	// UNIFORMS END

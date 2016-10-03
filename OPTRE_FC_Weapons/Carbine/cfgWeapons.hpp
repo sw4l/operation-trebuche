@@ -8,8 +8,8 @@ class CfgWeapons
     class EBR_Base_F;
     class OPTRE_FC_Carbine: EBR_Base_F
     {
-        scope                                                                   = 1;
-        scopeArsenal                                                            = 1;
+        scope                                                                   = 2;
+        scopeArsenal                                                            = 2;
         handAnim[]                                                              = {"OFP2_ManSkeleton", "\OPTRE_FC_Weapons\PlasmaRifle\data\anim\handanim.rtm"};
         model                                                                   = "\OPTRE_FC_Weapons\Carbine\Carbine.p3d";
         displayName                                                             = "[Covenant] Type-51 Carbine";

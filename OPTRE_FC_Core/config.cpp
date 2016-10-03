@@ -42,6 +42,10 @@ class CfgEditorSubcategories
 	{
 		displayName = "Men (Marines `31)"; // Name visible in the list
 	};
+	class OPTRE_FC_EditorSubcategory_Misc // Category class, you point to it in editorCategory property
+	{
+		displayName = "Misc"; // Name visible in the list
+	};
 };
 
 class CfgFactionClasses //This configures the in-game factions
