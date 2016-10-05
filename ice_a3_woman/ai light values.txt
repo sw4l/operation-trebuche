@@ -1,0 +1,6 @@
+ 
+AI_Light = "#lightpoint" createVehicle position this; 
+AI_Light setLightBrightness 0.4; 
+AI_Light setLightAmbient[ 0.0, 0.2, 0.5]; 
+AI_Light setLightColor [0.0, 0.2, 0.5]; 
+AI_Light lightAttachObject [this, [0, 0, 1.5]];
