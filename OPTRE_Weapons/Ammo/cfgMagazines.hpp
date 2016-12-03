@@ -26,7 +26,7 @@ class CfgMagazines
 	class OPTRE_60Rnd_762x51_Mag: 20Rnd_762x51_Mag
 	{
 		dlc = "OPTRE";
-		model								= "\OPTRE_Weapons\AR\AR_Magazine.p3d";
+		model								= "\OPTRE_Weapons\AR\MA5_Magazine.p3d";
 		displayname							= "60Rnd 7.62x51mm Magazine";
 		displaynameshort					= "7.62x51mm";
 		ammo								= "OPTRE_B_762x51_Ball";
@@ -94,7 +94,7 @@ class CfgMagazines
 	class OPTRE_15Rnd_762x51_Mag: OPTRE_60Rnd_762x51_Mag
 	{
 		dlc = "OPTRE";
-		model								= "\OPTRE_Weapons\AR\AR_Magazine.p3d";
+		model								= "\OPTRE_Weapons\AR\MA5_Magazine.p3d";
 		displayname							= "15Rnd 7.62x51mm Magazine";
 		displaynameshort					= "7.62x51mm";
 		ammo								= "OPTRE_B_762x51_Ball";
@@ -359,7 +359,7 @@ class CfgMagazines
 	class OPTRE_4Rnd_145x114_APFSDS_Mag: 20Rnd_762x51_Mag
 	{
 		dlc = "OPTRE";
-		model								= "\OPTRE_Weapons\AR\AR_Magazine.p3d";
+		model								= "\OPTRE_Weapons\AR\MA5_Magazine.p3d";
 		displayname							= "4Rnd 14.5x114mm APFSDS Magazine";
 		displaynameshort					= "APFSDS";
 		ammo								= "OPTRE_B_145x114_APFSDS";

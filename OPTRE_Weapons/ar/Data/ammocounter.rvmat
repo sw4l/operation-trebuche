@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="OPTRE_Weapons\AR\data\ammocounter_smdi.paa";
+	texture="OPTRE_Weapons\AR\data\ammocounterB_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
